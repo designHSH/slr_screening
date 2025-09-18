@@ -1,0 +1,80 @@
+decision_tree:
+  description: "Paper is included only if BOTH Full HCD Cycle (Condition A) AND TASKS Elements (Condition B) are satisfied."
+  root:
+    ConditionA:
+      name: "Full HCD Cycle"
+      description: "Study must explicitly demonstrate both active/iterative user involvement AND complete lifecycle."
+      required: true
+      subconditions:
+        A1:
+          name: "User Involvement"
+          description: "Users or stakeholders actively involved in shaping the design, not limited to final usability testing."
+          look_for:
+            - "Co-design or co-creation activities"
+            - "Contextual inquiry, field studies, or ethnographic research"
+            - "User input before/during design that influenced design decisions"
+        A2:
+          name: "Iteration"
+          description: "Iteration between design stages explicitly present (e.g., ideation ↔ prototyping, evaluation ↔ design, or full cycle loops)."
+          look_for:
+            - "Iterative feedback cycles"
+            - "Multiple rounds of prototyping or evaluation"
+            - "Explicit mention of iteration across stages"
+        A3:
+          name: "Complete Lifecycle"
+          description: "All four phases of HCD lifecycle must be explicitly present."
+          subconditions:
+            - "Understanding users (direct engagement: interviews, observations, focus groups)"
+            - "Ideation (idea/concept generation, co-design workshops)"
+            - "Prototyping (low/high-fidelity design artifacts)"
+            - "Evaluation (testing/assessment of prototypes with users/stakeholders)"
+          logic: "All four required"
+    ConditionB:
+      name: "TASKS Elements"
+      description: "At least one TASKS element related to designers must be explicitly discussed."
+      required: true
+      subconditions:
+        B1:
+          name: "Workload"
+          include_if:
+            - "Designer cognitive load, strain, or task complexity noted"
+          exclude_if:
+            - "Focuses only on user workload with product"
+        B2:
+          name: "Skills"
+          include_if:
+            - "Reasoning/analytical skills (inductive, deductive, abductive, problem-solving, critical thinking)"
+            - "Design-specific skills (facilitation, ideation, evaluation) and gaps"
+          exclude_if:
+            - "Skills discussed only for end-users post-design"
+        B3:
+          name: "Knowledge"
+          include_if:
+            - "Designer domain knowledge gaps/limitations noted"
+            - "Specialized expertise designers needed"
+          exclude_if:
+            - "User knowledge of product use only"
+        B4:
+          name: "Emotion"
+          include_if:
+            - "Stress, frustration, confusion, burnout, strain"
+            - "Excitement, motivation, satisfaction linked to design challenges"
+          exclude_if:
+            - "User emotions when using product"
+        B5:
+          name: "Barriers/Challenges (Designer-Focused)"
+          include_if:
+            - "Collaboration/communication issues in teams"
+            - "Difficulty applying/synthesizing user feedback"
+            - "Time or budget constraints affecting iteration"
+            - "Cognitive/emotional/skill/knowledge barriers for designers"
+          exclude_if:
+            - "Post-design issues (deployment, integration, maintenance)"
+            - "Purely technical product performance"
+            - "Organizational/user adoption issues unrelated to design process"
+      logic: "At least one of B1–B5 required"
+      bonus_signal: "Papers that show interactions between TASKS elements (e.g., workload ↑ due to skill/knowledge gaps) are especially relevant."
+  decision_logic:
+    - If ConditionA satisfied AND ConditionB satisfied → "Include"
+    - If either ConditionA or ConditionB not satisfied → "Exclude"
+    - If evidence insufficient/unclear → "Needs Review"
