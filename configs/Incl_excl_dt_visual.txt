@@ -1,0 +1,61 @@
+Decision Tree: Paper Inclusion
+-----------------------------------------
+Description:
+Paper is included only if BOTH Condition A (Full HCD Cycle) 
+AND Condition B (TASKS Elements) are satisfied.
+
+ROOT
+ ├── Condition A: Full HCD Cycle (REQUIRED)
+ │     ├── A1: User Involvement
+ │     │     - Must show active/iterative involvement 
+ │     │       beyond final usability testing
+ │     │     - Look for:
+ │     │         * Co-design / co-creation activities
+ │     │         * Contextual inquiry, field studies, ethnography
+ │     │         * User input influencing design decisions
+ │     │
+ │     ├── A2: Iteration
+ │     │     - Must show iteration across design stages
+ │     │     - Look for:
+ │     │         * Iterative feedback cycles
+ │     │         * Multiple rounds of prototyping or evaluation
+ │     │         * Explicit mention of iteration across stages
+ │     │
+ │     └── A3: Complete Lifecycle
+ │           - All FOUR required:
+ │               1. Understanding users (interviews, observations, focus groups)
+ │               2. Ideation (idea/concept generation, co-design workshops)
+ │               3. Prototyping (low/high-fidelity artifacts)
+ │               4. Evaluation (prototype testing/assessment with users)
+ │
+ └── Condition B: TASKS Elements (REQUIRED)
+       ├── B1: Workload
+       │     - Include if: Designer cognitive load/complexity noted
+       │     - Exclude if: Only user workload discussed
+       │
+       ├── B2: Skills
+       │     - Include if: Reasoning/analytical or design-specific skills & gaps
+       │     - Exclude if: Only end-user skills discussed
+       │
+       ├── B3: Knowledge
+       │     - Include if: Designer domain knowledge gaps or expertise needs
+       │     - Exclude if: Only user knowledge of product use
+       │
+       ├── B4: Emotion
+       │     - Include if: Stress, frustration, burnout, or motivation noted
+       │     - Exclude if: Only user emotions when using product
+       │
+       └── B5: Barriers/Challenges (Designer-Focused)
+             - Include if: Collaboration issues, applying feedback difficulty, 
+               time/budget constraints, cognitive/emotional/skill/knowledge barriers
+             - Exclude if: Post-design issues, technical performance only,
+               or adoption issues unrelated to design process
+       ── Logic: At least ONE of B1–B5 required
+       ── Bonus Signal: Papers showing interactions between TASKS elements 
+          (e.g., workload ↑ due to skill gaps) are especially relevant.
+
+-----------------------------------------
+Decision Logic:
+- If Condition A satisfied AND Condition B satisfied → INCLUDE
+- If either Condition A or Condition B not satisfied → EXCLUDE
+- If evidence insufficient/unclear → NEEDS REVIEW
