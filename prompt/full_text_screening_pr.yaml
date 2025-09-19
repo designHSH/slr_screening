@@ -5,12 +5,12 @@ user_command: |
   The decision must be based only on the text provided. Do not infer or assume missing information.  
 
   Paper data (JSON):
-    {
+    {{
       "title": "{title}",
       "authors": "{authors}",
       "year": "{year}",
       "text": "{text}"
-    }
+    }}
 
 system_command: |
   You are an expert systematic review assistant.  
@@ -44,7 +44,7 @@ system_command: |
     Note: Papers showing interaction between TASKS elements (e.g., workload ↑ due to skill/knowledge gaps) are especially relevant.  
 
   OUTPUT FORMAT (JSON):  
-  {
+  {{
     "title": "{title}",
     "authors": "{authors}",
     "year": "{year}",
@@ -57,4 +57,4 @@ system_command: |
       "Concise reason 1",
       "Concise reason 2"
     ]
-  }
+  }}
