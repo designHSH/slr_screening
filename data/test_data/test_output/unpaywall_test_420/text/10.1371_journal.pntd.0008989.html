@@ -1,0 +1,2198 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:doi="http://dx.doi.org/"
+      lang="en" xml:lang="en"
+      itemscope itemtype="http://schema.org/Article"
+      class="no-js">
+
+
+
+<head prefix="og: http://ogp.me/ns#">
+
+
+
+
+<link rel="stylesheet" href="/resource/css/screen.css?c74e939b589ca13037d4e7a8e8d4f467"/>
+  <!-- allows for  extra head tags -->
+
+
+<!-- hello -->
+<link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600">
+
+<link media="print" rel="stylesheet" type="text/css"  href="/resource/css/print.css"/>
+    <script type="text/javascript">
+        var siteUrlPrefix = "/plosntds/";
+    </script>
+  <script src="/resource/js/vendor/modernizr-v2.7.1.js" type="text/javascript"></script>
+  <script src="/resource/js/vendor/detectizr.min.js" type="text/javascript"></script>
+
+  <link rel="shortcut icon" href="/resource/img/favicon.ico" type="image/x-icon"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+
+
+
+
+
+  <link rel="canonical" href="https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0008989" />
+  <meta name="description" content="Author summary Cutaneous leishmaniasis (CL) and other tropical diseases primarily affect people in developing and underserved parts of the world where healthcare infrastructure, resources and trained personnel are scarce. Smartphones, connected to the internet and running innovative health-applications&mdash;&quot;apps&quot;&mdash;have shown promise to bridge gaps in access to healthcare in even the most remote areas. Using participatory and human centered-design methods, we developed a mobile application for Android smartphones that supports community health workers to screen potential cases of CL in rural settings. We developed this application using a previously validated clinical prediction rule and tested it with patients, community workers and health workers in the municipality of Tumaco on the Pacific Coast of Colombia. Results from this study showed that the mobile app was easy to use, could detect cutaneous leishmaniasis in over 95% of cases, and reduced the time to diagnosis by half compared to passive case detection dependent on consultation at referral facilities. Overall, this work showed the value of designing health interventions with early engagement of all users, and supports the general use of mobile health applications for neglected tropical disease research and care." />
+
+  <meta name="citation_abstract" content="Background Detection and management of neglected tropical diseases such as cutaneous leishmaniasis present unmet challenges stemming from their prevalence in remote, rural, resource constrained areas having limited access to health services. These challenges are frequently compounded by armed conflict or illicit extractive industries. The use of mobile health technologies has shown promise in such settings, yet data on outcomes in the field remain scarce.   Methods We adapted a validated prediction rule for the presumptive diagnosis of CL to create a mobile application for use by community health volunteers. We used human-centered design practices and agile development for app iteration. We tested the application in three rural areas where cutaneous leishmaniasis is endemic and an urban setting where patients seek medical attention in the municipality of Tumaco, Colombia. The application was assessed for usability, sensitivity and inter-rater reliability (kappa) when used by community health volunteers (CHV), health workers and a general practitioner, study physician.   Results The application was readily used and understood. Among 122 screened cases with cutaneous ulcers, sensitivity to detect parasitologically proven CL was &gt;95%. The proportion of participants with parasitologically confirmed CL was high (88%), precluding evaluation of specificity, and driving a high level of crude agreement between the app and parasitological diagnosis. The chance-adjusted agreement (kappa) varied across the components of the risk score. Time to diagnosis was reduced significantly, from 8 to 4 weeks on average when CHV conducted active case detection using the application, compared to passive case detection by health facility-based personnel.   Conclusions Translating a validated prediction rule to a mHealth technology has shown the potential to improve the capacity of community health workers and healthcare personnel to provide opportune care, and access to health services for underserved populations. These findings support the use of mHealth tools for NTD research and healthcare.">
+
+
+  <meta name="keywords" content="Lesions,Physicians,Leishmaniasis,Parasitology,Apps,Cell phones,Ulcers,Rural areas" />
+
+
+<meta name="citation_doi" content="10.1371/journal.pntd.0008989"/>
+<meta name="citation_author" content="Luisa Rubiano"/>
+  <meta name="citation_author_institution" content="Centro Internacional de Entrenamiento e Investigaciones Médicas, CIDEIM, Cali, Colombia"/>
+  <meta name="citation_author_institution" content="Universidad Icesi, Cali, Colombia"/>
+<meta name="citation_author" content="Neal D. E. Alexander"/>
+  <meta name="citation_author_institution" content="Centro Internacional de Entrenamiento e Investigaciones Médicas, CIDEIM, Cali, Colombia"/>
+  <meta name="citation_author_institution" content="Universidad Icesi, Cali, Colombia"/>
+<meta name="citation_author" content="Ruth Mabel Castillo"/>
+  <meta name="citation_author_institution" content="Centro Internacional de Entrenamiento e Investigaciones Médicas, CIDEIM, Cali, Colombia"/>
+  <meta name="citation_author_institution" content="Universidad Icesi, Cali, Colombia"/>
+<meta name="citation_author" content="Álvaro José Martínez"/>
+  <meta name="citation_author_institution" content="Centro Internacional de Entrenamiento e Investigaciones Médicas, CIDEIM, Cali, Colombia"/>
+<meta name="citation_author" content="Jonny Alejandro García Luna"/>
+  <meta name="citation_author_institution" content="Centro Internacional de Entrenamiento e Investigaciones Médicas, CIDEIM, Cali, Colombia"/>
+<meta name="citation_author" content="Juan David Arango"/>
+  <meta name="citation_author_institution" content="Grupo i2t, Universidad Icesi, Cali, Colombia"/>
+<meta name="citation_author" content="Leonardo Vargas"/>
+  <meta name="citation_author_institution" content="Grupo i2t, Universidad Icesi, Cali, Colombia"/>
+<meta name="citation_author" content="Patricia Madriñán"/>
+  <meta name="citation_author_institution" content="Grupo i2t, Universidad Icesi, Cali, Colombia"/>
+<meta name="citation_author" content="Lina-Rocío Hurtado"/>
+  <meta name="citation_author_institution" content="Centro Internacional de Entrenamiento e Investigaciones Médicas, CIDEIM, Cali, Colombia"/>
+<meta name="citation_author" content="Yenifer Orobio"/>
+  <meta name="citation_author_institution" content="Centro Internacional de Entrenamiento e Investigaciones Médicas, CIDEIM, Cali, Colombia"/>
+  <meta name="citation_author_institution" content="Universidad Icesi, Cali, Colombia"/>
+<meta name="citation_author" content="Carlos A. Rojas"/>
+  <meta name="citation_author_institution" content="Facultad Nacional de Salud Pública, Universidad de Antioquia, Medellín, Colombia"/>
+<meta name="citation_author" content="Helena del Corral"/>
+  <meta name="citation_author_institution" content="Facultad Nacional de Salud Pública, Universidad de Antioquia, Medellín, Colombia"/>
+<meta name="citation_author" content="Andrés Navarro"/>
+  <meta name="citation_author_institution" content="Universidad Icesi, Cali, Colombia"/>
+<meta name="citation_author" content="Nancy Gore Saravia"/>
+  <meta name="citation_author_institution" content="Centro Internacional de Entrenamiento e Investigaciones Médicas, CIDEIM, Cali, Colombia"/>
+  <meta name="citation_author_institution" content="Universidad Icesi, Cali, Colombia"/>
+<meta name="citation_author" content="Eliah Aronoff-Spencer"/>
+  <meta name="citation_author_institution" content="University of California, San Diego, California, United States of America"/>
+
+<meta name="citation_title" content="Adaptation and performance of a mobile application for early detection of cutaneous leishmaniasis"/>
+<meta itemprop="name" content="Adaptation and performance of a mobile application for early detection of cutaneous leishmaniasis"/>
+<meta name="citation_journal_title" content="PLOS Neglected Tropical Diseases"/>
+<meta name="citation_journal_abbrev" content="PLOS Neglected Tropical Diseases"/>
+<meta name="citation_date" content="Feb 11, 2021"/>
+<meta name="citation_firstpage" content="e0008989"/>
+<meta name="citation_issue" content="2"/>
+<meta name="citation_volume" content="15"/>
+<meta name="citation_issn" content="1935-2735"/>
+<meta name="citation_publisher" content="Public Library of Science"/>
+
+  <meta name="citation_pdf_url" content="https://journals.plos.org/plosntds/article/file?id=10.1371/journal.pntd.0008989&type=printable">
+
+  <meta name="citation_article_type" content="Research Article">
+
+<meta name="dc.identifier" content="10.1371/journal.pntd.0008989" />
+
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="plosntds"/>
+    <meta name="twitter:title" content="Adaptation and performance of a mobile application for early detection of cutaneous leishmaniasis" />
+    <meta property="twitter:description" content="Author summary Cutaneous leishmaniasis (CL) and other tropical diseases primarily affect people in developing and underserved parts of the world where healthcare infrastructure, resources and trained personnel are scarce. Smartphones, connected to the internet and running innovative health-applications&mdash;&quot;apps&quot;&mdash;have shown promise to bridge gaps in access to healthcare in even the most remote areas. Using participatory and human centered-design methods, we developed a mobile application for Android smartphones that supports community health workers to screen potential cases of CL in rural settings. We developed this application using a previously validated clinical prediction rule and tested it with patients, community workers and health workers in the municipality of Tumaco on the Pacific Coast of Colombia. Results from this study showed that the mobile app was easy to use, could detect cutaneous leishmaniasis in over 95% of cases, and reduced the time to diagnosis by half compared to passive case detection dependent on consultation at referral facilities. Overall, this work showed the value of designing health interventions with early engagement of all users, and supports the general use of mobile health applications for neglected tropical disease research and care." />
+    <meta property="twitter:image" content="https://journals.plos.org/plosntds/article/figure/image?id=10.1371/journal.pntd.0008989.g003&size=inline" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0008989"/>
+<meta property="og:title" content="Adaptation and performance of a mobile application for early detection of cutaneous leishmaniasis"/>
+<meta property="og:description" content="Author summary Cutaneous leishmaniasis (CL) and other tropical diseases primarily affect people in developing and underserved parts of the world where healthcare infrastructure, resources and trained personnel are scarce. Smartphones, connected to the internet and running innovative health-applications&mdash;&quot;apps&quot;&mdash;have shown promise to bridge gaps in access to healthcare in even the most remote areas. Using participatory and human centered-design methods, we developed a mobile application for Android smartphones that supports community health workers to screen potential cases of CL in rural settings. We developed this application using a previously validated clinical prediction rule and tested it with patients, community workers and health workers in the municipality of Tumaco on the Pacific Coast of Colombia. Results from this study showed that the mobile app was easy to use, could detect cutaneous leishmaniasis in over 95% of cases, and reduced the time to diagnosis by half compared to passive case detection dependent on consultation at referral facilities. Overall, this work showed the value of designing health interventions with early engagement of all users, and supports the general use of mobile health applications for neglected tropical disease research and care."/>
+<meta property="og:image" content="https://journals.plos.org/plosntds/article/figure/image?id=10.1371/journal.pntd.0008989.g003&size=inline"/>
+
+<meta name="citation_reference" content="citation_title=Geospatial-temporal distribution of Tegumentary Leishmaniasis in Colombia (2007–2016);citation_author=G Herrera;citation_author=A Teheran;citation_author=I Pradilla;citation_author=M Vera;citation_author=JD Ramirez;citation_journal_title=PLoS Negl Trop Dis;citation_volume=12;citation_number=12;citation_issue=4;citation_first_page=e0006419;citation_publication_date=2018;"/>    
+<meta name="citation_reference" content="citation_title=Leishmaniasis Worldwide and Global Estimates of Its Incidence;citation_author=J Alvar;citation_author=ID Velez;citation_author=C Bern;citation_author=M Herrero;citation_author=P Desjeux;citation_author=J Cano;citation_journal_title=PloS ONE;citation_volume=7;citation_number=7;citation_issue=5;citation_publication_date=2012;"/>    
+<meta name="citation_reference" content="citation_title=Surveillance and screening of American cutaneous leishmaniasis by Colombian primary health care workers using a clinical prediction rule;citation_author=CA Rojas;citation_author=KA Weigle;citation_author=L Barrera;citation_author=C Collazos;citation_journal_title=Trans R Soc Trop Med Hyg;citation_volume=96;citation_number=96;citation_issue=4;citation_first_page=405;citation_last_page=10;citation_publication_date=2002;"/>    
+
+<meta name="citation_reference" content="Holmes KK, Bertozzi S, Bloom BR, Jha P. Major Infectious Diseases Third Edition ed. Washington, DC: World Bank; 2017."/>
+<meta name="citation_reference" content="citation_title=Taking connected mobile-health diagnostics of infectious diseases to the field;citation_author=CS Wood;citation_author=MR Thomas;citation_author=J Budd;citation_author=TP Mashamba-Thompson;citation_author=K Herbst;citation_author=D Pillay;citation_journal_title=Nature;citation_volume=566;citation_number=566;citation_issue=7745;citation_first_page=467;citation_last_page=74;citation_publication_date=2019;"/>    
+<meta name="citation_reference" content="citation_title=Developing mobile health applications for neglected tropical disease research;citation_author=A Navarro;citation_author=L Rubiano;citation_author=JD Arango;citation_author=CA Rojas;citation_author=N Alexander;citation_author=NG Saravia;citation_journal_title=PLoS Negl Trop Dis;citation_volume=12;citation_number=12;citation_issue=11;citation_first_page=e0006791;citation_publication_date=2018;"/>    
+
+<meta name="citation_reference" content="Torres Rodriguez GE. Informe del Evento Leishmaniasis, hasta el Periodo Epidemiológico XIII, Colombia, 2016. Bogotá: 2017."/>
+
+<meta name="citation_reference" content="Agudelo Chivatá NJ. Informe del Evento Leishmaniasis, Colombia, 2017. Bogotá: 2018."/>
+
+<meta name="citation_reference" content="Agudelo Chivatá NJ. Informe del Evento Leishmaniasis, Colombia, 2018. Bogotá: 2019."/>
+
+<meta name="citation_reference" content="Agudelo Chivatá NJ. Informe de Evento Leishmaniasis Cutánea, Periodo Epidemiológico XIII. Colombia, 2019. Bogotá: 2019."/>
+
+<meta name="citation_reference" content="Claro (Colombia). Cobertura Soluciones Móviles 2019 [10 February 2020].  https://www.claro.com.co/personas/soporte/mapas-de-cobertura/ ."/>
+
+<meta name="citation_reference" content="Movistar (Colombia). Cobertura y Calidad 2019 [10 February 2020].  https://www.movistar.co/web/portal-col/atencion-cliente/cobertura-tecnologia/ ."/>
+
+<meta name="citation_reference" content="Tigo (Colombia). Áreas de cobertura de los servicios en mapa interactivo en WEB 2019 [10 February 2020].  https://www.tigo.com.co/regimen-de-proteccion-al-usuario/mapa-cobertura ."/>
+
+<meta name="citation_reference" content="Ministerio de Salud y Protección Social. Guía de Atención Clínica Integral del Paciente con Leishmaniasis. Bogotá: 2010."/>
+<meta name="citation_reference" content="citation_title=Diagnosis of cutaneous and mucocutaneous leishmaniasis in Colombia: a comparison of seven methods;citation_author=KA Weigle;citation_author=M de Davalos;citation_author=P Heredia;citation_author=R Molineros;citation_author=NG Saravia;citation_author=A D’Alessandro;citation_journal_title=Am J Trop Med Hyg;citation_volume=36;citation_number=36;citation_issue=3;citation_first_page=489;citation_last_page=96;citation_publication_date=1987;"/>    
+<meta name="citation_reference" content="citation_title=R: A language and environment for statistical computing;citation_publication_date=2019;citation_publisher=R Foundation for Statistical Computing"/>    
+<meta name="citation_reference" content="citation_title=Approximate is better than &amp;quot;exact&amp;quot; for interval estimation of binomial proportions;citation_author=A Agresti;citation_author=BA Coull;citation_journal_title=The American Statistician;citation_volume=52;citation_number=52;citation_issue=2;citation_first_page=119;citation_last_page=26;citation_publication_date=1998;"/>    
+<meta name="citation_reference" content="citation_title=A coefficient of agreement for nominal scales;citation_author=J Cohen;citation_journal_title=Educational and Psychological Measurement;citation_volume=20;citation_number=20;citation_first_page=37;citation_last_page=46;citation_publication_date=1960;"/>    
+<meta name="citation_reference" content="citation_title=Large sample standard errors of kappa and weighted kappa;citation_author=JL Fleiss;citation_author=J Cohen;citation_author=BS Everitt;citation_journal_title=Psychological bulletin;citation_volume=72;citation_number=72;citation_issue=5;citation_first_page=323;citation_publication_date=1969;"/>    
+<meta name="citation_reference" content="citation_title=The measurement of observer agreement for categorical data;citation_author=JR Landis;citation_author=GG Koch;citation_journal_title=Biometrics;citation_volume=33;citation_number=33;citation_first_page=159;citation_last_page=74;citation_publication_date=1977;"/>    
+<meta name="citation_reference" content="citation_title=A note on the interpretation of weighted kappa and its relations to other rater agreement statistics for metric scales;citation_author=C Schuster;citation_journal_title=Educational and Psychological Measurement;citation_volume=64;citation_number=64;citation_issue=2;citation_first_page=243;citation_last_page=53;citation_publication_date=2004;"/>    
+<meta name="citation_reference" content="citation_title=A clinical prediction rule for American cutaneous leishmaniasis in Colombia;citation_author=KA Weigle;citation_author=M Escobar;citation_author=AL Arias;citation_author=F Martinez;citation_author=C Rojas;citation_journal_title=Int J Epidemiol;citation_volume=22;citation_number=22;citation_issue=3;citation_first_page=548;citation_last_page=58;citation_publication_date=1993;"/>    
+<meta name="citation_reference" content="citation_title=Evaluation of an Android-based mHealth system for population surveillance in developing countries;citation_author=ZA Rajput;citation_author=S Mbugua;citation_author=D Amadi;citation_author=V Chepngeno;citation_author=JJ Saleem;citation_author=Y Anokwa;citation_journal_title=J Am Med Inform Assoc;citation_volume=19;citation_number=19;citation_issue=4;citation_first_page=655;citation_last_page=9;citation_publication_date=2012;"/>    
+<meta name="citation_reference" content="citation_title=Leishmaniasis, conflict, and political terror: A spatio-temporal analysis;citation_author=I Berry;citation_author=L Berrang-Ford;citation_journal_title=Soc Sci Med;citation_volume=167;citation_number=167;citation_first_page=140;citation_last_page=9;citation_publication_date=2016;"/>    
+<meta name="citation_reference" content="citation_title=Use of a clinical tool for screening and diagnosis of cutaneous leishmaniasis in Sri Lanka;citation_author=HV Siriwardana;citation_author=U Senarath;citation_author=PH Chandrawansa;citation_author=ND Karunaweera;citation_journal_title=Pathogens and global health;citation_volume=109;citation_number=109;citation_issue=4;citation_first_page=174;citation_last_page=83;citation_publication_date=2015;"/>    
+<meta name="citation_reference" content="citation_title=Validez del diagnóstico presuntivo de leishmaniasis cutánea realizado por mediadores comunitarios en Colombia;citation_author=J Sánchez;citation_author=L Orozco;citation_author=J Buendía;citation_author=G Muñoz;citation_journal_title=Rev Panam Salud Publica;citation_volume=21;citation_number=21;citation_issue=6;citation_first_page=335;citation_last_page=44;citation_publication_date=2007;"/>    
+
+
+<script type="text/javascript">
+    var WombatConfig = WombatConfig || {};
+    WombatConfig.journalKey = "PLoSNTD";
+    WombatConfig.journalName = "PLOS Neglected Tropical Diseases";
+    WombatConfig.figurePath = "/plosntds/article/figure/image";
+    WombatConfig.figShareInstitutionString = "plos";
+    WombatConfig.doiResolverPrefix = "https://dx.plos.org/";
+</script>
+
+<script type="text/javascript">
+  var WombatConfig = WombatConfig || {};
+  WombatConfig.metrics = WombatConfig.metrics || {};
+  WombatConfig.metrics.referenceUrl      = "http://lagotto.io/plos";
+  WombatConfig.metrics.googleScholarUrl  = "https://scholar.google.com/scholar";
+  WombatConfig.metrics.googleScholarCitationUrl  = WombatConfig.metrics.googleScholarUrl + "?hl=en&lr=&q=";
+  WombatConfig.metrics.crossrefUrl  = "https://www.crossref.org";
+</script>
+<script defer="defer" src="/resource/js/defer.js?cf8cea70cb19c8314b72"></script><script src="/resource/js/sync.js?cf8cea70cb19c8314b72"></script>
+<script src="/resource/js/vendor/jquery.min.js" type="text/javascript"></script>
+
+          <script type="text/javascript" src="https://widgets.figshare.com/static/figshare.js"></script>
+
+<script src="/resource/js/vendor/fastclick/lib/fastclick.js" type="text/javascript"></script>
+<script src="/resource/js/vendor/foundation/foundation.js" type="text/javascript"></script>
+<script src="/resource/js/vendor/underscore-min.js" type="text/javascript"></script>
+<script src="/resource/js/vendor/underscore.string.min.js" type="text/javascript"></script>
+<script src="/resource/js/vendor/moment.js" type="text/javascript"></script>
+
+
+<script src="/resource/js/vendor/jquery-ui-effects.min.js" type="text/javascript"></script>
+
+<script src="/resource/js/vendor/foundation/foundation.tooltip.js" type="text/javascript"></script>
+<script src="/resource/js/vendor/foundation/foundation.dropdown.js" type="text/javascript"></script>
+<script src="/resource/js/vendor/foundation/foundation.tab.js" type="text/javascript"></script>
+<script src="/resource/js/vendor/foundation/foundation.reveal.js" type="text/javascript"></script>
+<script src="/resource/js/vendor/foundation/foundation.slider.js" type="text/javascript"></script>
+
+<script src="/resource/js/util/utils.js" type="text/javascript"></script>
+<script src="/resource/js/components/toggle.js" type="text/javascript"></script>
+<script src="/resource/js/components/truncate_elem.js" type="text/javascript"></script>
+<script src="/resource/js/components/tooltip_hover.js" type="text/javascript"></script>
+<script src="/resource/js/vendor/jquery.dotdotdot.js" type="text/javascript"></script>
+
+
+<!-- DoubleClick overall ad setup script -->
+<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  if (window.plosCookieConsent?.hasConsented('advertising')) {
+    (function() {
+      var gads = document.createElement('script');
+      gads.async = true;
+      gads.type = 'text/javascript';
+      var useSSL = 'https:' == document.location.protocol;
+      gads.src = (useSSL ? 'https:' : 'http:') +
+          '//www.googletagservices.com/tag/js/gpt.js';
+      var node = document.getElementsByTagName('script')[0];
+      node.parentNode.insertBefore(gads, node);
+    })();
+  }
+</script>
+
+<!-- DoubleClick ad slot setup script -->
+
+  <script id="doubleClickSetupScript" type='text/javascript'>
+    googletag.cmd.push(function() {
+  googletag.defineSlot('/75507958/PNTD_728x90_ATF', [728, 90], 'div-gpt-ad-1458247671871-0').addService(googletag.pubads());
+  googletag.defineSlot('/75507958/PNTD_160x600_BTF', [160, 600], 'div-gpt-ad-1458247671871-1').addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    });
+  </script>
+
+<!--For Google Tag manager to be able to track site information  -->
+<script>
+
+  dataLayer = [{
+    'mobileSite': 'false',
+    'desktopSite': 'true'
+  }];
+
+</script>
+
+    <title>Adaptation and performance of a mobile application for early detection of cutaneous leishmaniasis | PLOS Neglected Tropical Diseases</title>
+</head>
+
+<body class="article plosntd">
+
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TP26BH"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TP26BH');
+</script>
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MQQMGF"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MQQMGF');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Start of HubSpot Embed Code -->
+<script>
+  // from https://developers.hubspot.com/docs/reference/api/analytics-and-events/cookie-banner/cookie-banner-api#example-using-a-third-party-cookie-banner-to-control-hubspot-cookies
+  window.disableHubSpotCookieBanner = true;
+  window._hsp = window._hsp || [];
+  window._hsp.push(['setHubSpotConsent',
+      {
+        analytics: window.plosCookieConsent?.hasConsented('analytics'),
+        advertisement: window.plosCookieConsent?.hasConsented('advertising'),
+        functionality: window.plosCookieConsent?.hasConsented('functionality')
+      }
+    ]);
+</script>
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/44092021.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<!-- New Relic -->
+<script type="text/javascript">
+  ;window.NREUM||(NREUM={});NREUM.init={distributed_tracing:{enabled:true},privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]}};
+  window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(32),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{l?l-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(33),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError";if(!c.disabled){var l=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(14),t(13),"addEventListener"in window&&t(7),c.xhrWrappable&&t(15),d=!0)}s.on("fn-start",function(t,e,n){d&&(l+=1)}),s.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){U++,L=g.hash,this[u]=y.now()}function o(){U--,g.hash!==L&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,p="cb"+s,l="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable&&!y.disabled){var x=t(11),b=t(12),E=t(9),R=t(7),O=t(14),T=t(8),P=t(15),S=t(10),M=t("ee"),N=M.get("tracer"),C=t(23);t(17),y.features.spa=!0;var L,U=0;M.on(u,r),b.on(p,r),S.on(p,r),M.on(d,o),b.on(l,o),S.on(l,o),M.buffer([u,d,"xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+c,"clearTimeout"+s,u]),P.buffer([u,"new-xhr","send-xhr"+s]),T.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",p,l,"executor-err","resolve"+s]),N.buffer([u,"no-"+u]),S.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(T,m+s),a(T,m+"-done"),a(S,"new-jsonp"),a(S,"jsonp-end"),a(S,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,C(!0)),w[v]("load",i,C(!0)),w[v]("popstate",function(){i(0,U>1)},C(!0))}},{}],5:[function(t,e,n){function r(){var t=new PerformanceObserver(function(t,e){var n=t.getEntries();s(v,[n])});try{t.observe({entryTypes:["resource"]})}catch(e){}}function o(t){if(s(v,[window.performance.getEntriesByType(w)]),window.performance["c"+p])try{window.performance[h](m,o,!1)}catch(t){}else try{window.performance[h]("webkit"+m,o,!1)}catch(t){}}function i(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var a=t("ee"),s=t("handle"),c=t(14),f=t(13),u=t(6),d=t(23),p="learResourceTimings",l="addEventListener",h="removeEventListener",m="resourcetimingbufferfull",v="bstResource",w="resource",g="-start",y="-end",x="fn"+g,b="fn"+y,E="bstTimer",R="pushState",O=t("loader");if(!O.disabled){O.features.stn=!0,t(9),"addEventListener"in window&&t(7);var T=NREUM.o.EV;a.on(x,function(t,e){var n=t[0];n instanceof T&&(this.bstStart=O.now())}),a.on(b,function(t,e){var n=t[0];n instanceof T&&s("bst",[n,e,this.bstStart,O.now()])}),c.on(x,function(t,e,n){this.bstStart=O.now(),this.bstType=n}),c.on(b,function(t,e){s(E,[e,this.bstStart,O.now(),this.bstType])}),f.on(x,function(){this.bstStart=O.now()}),f.on(b,function(t,e){s(E,[e,this.bstStart,O.now(),"requestAnimationFrame"])}),a.on(R+g,function(t){this.time=O.now(),this.startPath=location.pathname+location.hash}),a.on(R+y,function(t){s("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u()?(s(v,[window.performance.getEntriesByType("resource")]),r()):l in window.performance&&(window.performance["c"+p]?window.performance[l](m,o,d(!1)):window.performance[l]("webkit"+m,o,d(!1))),document[l]("scroll",i,d(!1)),document[l]("keypress",i,d(!1)),document[l]("click",i,d(!1))}}},{}],6:[function(t,e,n){e.exports=function(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}},{}],7:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],8:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return o.emit(n+"start",[t,a],s),s.then(function(t){return o.emit(n+"end",[null,t],s),t},function(t){throw o.emit(n+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(33),a=t(32);e.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,p=s.Response,l=s.fetch,h="prototype",m="nr@context";d&&p&&l&&(a(u,function(t,e){r(d[h],e,f),r(p[h],e,f)}),r(s,"fetch",c),o.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(c+"done",[null,e],n)}else o.emit(c+"done",[t],n)}))},{}],9:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],10:[function(t,e,n){function r(t){function e(){f.emit("jsonp-end",[],l),t.removeEventListener("load",e,c(!1)),t.removeEventListener("error",n,c(!1))}function n(){f.emit("jsonp-error",[],l),f.emit("jsonp-end",[],l),t.removeEventListener("load",e,c(!1)),t.removeEventListener("error",n,c(!1))}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var d=s(a),p="function"==typeof d.parent[d.key];if(p){var l={};u.inPlace(d.parent,[d.key],"cb-",l),t.addEventListener("load",e,c(!1)),t.addEventListener("error",n,c(!1)),f.emit("new-jsonp",[t.src],l)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(d);return e?e[1]:null}function a(t,e){var n=t.match(l),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(p);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t(23),f=t("ee").get("jsonp"),u=t("wrap-function")(f);if(e.exports=f,o()){var d=/[?&](?:callback|cb)=([^&#]+)/,p=/(.*)\.([^.]+)/,l=/^(\w+)(\.|$)(.*)$/,h=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?u.inPlace(Node.prototype,h,"dom-"):(u.inPlace(HTMLElement.prototype,h,"dom-"),u.inPlace(HTMLHeadElement.prototype,h,"dom-"),u.inPlace(HTMLBodyElement.prototype,h,"dom-")),f.on("dom-start",function(t){r(t[0])})}},{}],11:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],12:[function(t,e,n){function r(t){var e=i.context(),n=s(t,"executor-",e,null,!1),r=new f(n);return i.context(r).getCtx=function(){return e},r}var o=t("wrap-function"),i=t("ee").get("promise"),a=t("ee").getOrSetContext,s=o(i),c=t(32),f=NREUM.o.PR;e.exports=i,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){i.emit("propagate",[null,!o],a,!1,!1),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var a=e.apply(f,arguments),s=f.resolve(a);return s}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&i.emit("propagate",[t,!0],n,!1,!1),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),o.wrapInPlace(f.prototype,"then",function(t){return function(){var e=this,n=o.argsToArray.apply(this,arguments),r=a(e);r.promise=e,n[0]=s(n[0],"cb-",r,null,!1),n[1]=s(n[1],"cb-",r,null,!1);var c=t.apply(this,n);return r.nextPromise=c,i.emit("propagate",[e,!0],c,!1,!1),c}}),i.on("executor-start",function(t){t[0]=s(t[0],"resolve-",this,null,!1),t[1]=s(t[1],"resolve-",this,null,!1)}),i.on("executor-err",function(t,e,n){t[1](n)}),i.on("cb-end",function(t,e,n){i.emit("propagate",[n,!0],this.nextPromise,!1,!1)}),i.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=i.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],13:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],14:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],15:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){x.push(t),m&&(E?E.then(a):w?w(a):(R=-R,O.data=R))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(7);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),p=t(23),l=NREUM.o,h=l.XHR,m=l.MO,v=l.PR,w=l.SI,g="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,o,p(!1))}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(h,b),b.prototype=h.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),m){var E=v&&v.resolve();if(!w&&!v){var R=1,O=document.createTextNode(R);new m(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],16:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=l.generateSpanId(),m=l.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&p())&&(w.traceContextParentHeader=o(h,m),w.traceContextStateHeader=i(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function o(t,e){return"00-"+e+"-"+t+"-01"}function i(t,e,n,r,o){var i=0,a="",s=1,c="",f="";return o+"@nr="+i+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=h(n.allowed_origins[r]);if(t.hostname===o.hostname&&t.protocol===o.protocol&&t.port===o.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function p(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var l=t(29),h=t(18);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],17:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,s("xhr",[e,n,this.startTime,this.endTime,"xhr"],this))}}function o(t,e){var n=c(e),r=t.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(18),f=t(16).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],p=d.length,l=t("id"),h=t(24),m=t(22),v=t(19),w=t(23),g=NREUM.o.REQ,y=window.XMLHttpRequest;a.features.xhr=!0,t(15),t(8),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){i(e,t)},w(!1)),h&&(h>34||h<10)||t.addEventListener("progress",function(t){e.lastSize=t.loaded},w(!1))}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<p;s++)e.addEventListener(d[s],this.listener,w(!1))}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("xhr-resolved",function(){this.endTime=a.now()}),u.on("addEventListener-end",function(t,e){e instanceof y&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof y&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof y&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=f(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),e(i.headers,o)&&(this.dt=o),t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),this.dt=e,t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},i=this.target;"string"==typeof i?n=i:"object"==typeof i&&i instanceof g?n=i.url:window.URL&&"object"==typeof i&&i instanceof URL&&(n=i.href),o(this,n);var s=(""+(i&&i instanceof g&&i.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}),u.on("fetch-done",function(t,e){this.endTime=a.now(),this.params||(this.params={}),this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime,this.endTime,"fetch"],this)})}},{}],18:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],19:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(22);e.exports=r},{}],20:[function(t,e,n){function r(){}function o(t,e,n,r){return function(){return u.recordSupportability("API/"+e+"/called"),i(t+e,[f.now()].concat(s(arguments)),n?null:this,r),n?void 0:this}}var i=t("handle"),a=t(32),s=t(33),c=t("ee").get("tracer"),f=t("loader"),u=t(25),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",h=l+"ixn-";a(p,function(t,e){d[e]=o(l,e,!0,"api")}),d.addPageAction=o(l,"addPageAction",!0),d.setCurrentRouteName=o(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(h+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=o(h,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),u.recordSupportability("API/noticeError/called"),i("err",[t,f.now(),!1,e])}},{}],21:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],22:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],23:[function(t,e,n){var r=!1;try{var o=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,o),window.removeEventListener("testPassive",null,o)}catch(i){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],24:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],25:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return i("storeMetric",n,null,"api"),n}function o(t,e){var n=[s,t,{name:t},e];return i("storeEventMetrics",n,null,"api"),n}var i=t("handle"),a="sm",s="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:s},recordSupportability:r,recordCustom:o}},{}],26:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-a}function o(){return i}var i=(new Date).getTime(),a=i,s=t(34);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=o},{}],27:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],28:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?p("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&p("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(c&&c<r.startTime)return;p("lcp",[r])}}function i(t){t.getEntries().forEach(function(t){t.hadRecentInput||p("cls",[t])})}function a(t){if(t instanceof v&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),g=!0,p("timing",["fi",e,n])}}function s(t){"hidden"===t&&(c=l.now(),p("pageHide",[c]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,f,u,d,p=t("handle"),l=t("loader"),h=t(31),m=t(23),v=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(w){}u=new PerformanceObserver(o);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(w){}d=new PerformanceObserver(i);try{d.observe({type:"layout-shift",buffered:!0})}catch(w){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(t){document.addEventListener(t,a,m(!1))})}h(s)}},{}],29:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){return a(16)}function i(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,o=window.crypto||window.msCrypto;o&&o.getRandomValues&&Uint8Array&&(n=o.getRandomValues(new Uint8Array(31)));for(var i=[],a=0;a<t;a++)i.push(e().toString(16));return i.join("")}e.exports={generateUuid:r,generateSpanId:o,generateTraceId:i}},{}],30:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],31:[function(t,e,n){function r(t){function e(){t(s&&document[s]?document[s]:document[i]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,o(!1))}var o=t(23);e.exports=r;var i,a,s;"undefined"!=typeof document.hidden?(i="hidden",a="visibilitychange",s="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",a="webkitvisibilitychange",s="webkitVisibilityState")},{}],32:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],33:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],34:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,o,i,a){if(a!==!1&&(a=!0),!l.aborted||i){t&&a&&t(n,r,o);for(var s=e(o),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var p=d[y[n]];return p&&p.push([x,n,r,s]),s}}function i(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return p[t]=p[t]||o(n)}function w(t,e){l.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:i,addEventListener:i,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:s,aborted:!1};return x}function i(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",f=t("gos"),u=t(32),d={},p={},l=e.exports=o();e.exports.getOrSetContext=i,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!P++){var t=T.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(R,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+T.offset],null,"api"),s("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=h+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function o(){"complete"===v.readyState&&i()}function i(){s("mark",["domContent",a()+T.offset],null,"api")}var a=t(26),s=t("handle"),c=t(32),f=t("ee"),u=t(30),d=t(27),p=t(21),l=t(23),h=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,w="addEventListener",g="attachEvent",y=m.XMLHttpRequest,x=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var E=""+location,R={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1212.min.js"},O=y&&x&&x[w]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:u,disabled:b};if(!b){t(20),t(28),v[w]?(v[w]("DOMContentLoaded",i,l(!1)),m[w]("load",r,l(!1))):(v[g]("onreadystatechange",o),m[g]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var P=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var i,a,u,p;try{a=this,i=d(arguments),u="function"==typeof r?r(i,a):r||{}}catch(l){o([l,"",[i,a,c],u],t)}s(n+"start",[i,a,c],u,f);try{return p=e.apply(a,i)}catch(h){throw s(n+"err",[i,a,h],u,f),h}finally{s(n+"end",[i,a,p],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,i(e,nrWrapper,t),nrWrapper)}function r(t,e,r,o,i){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,o,c,i))}function s(n,r,i,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,i,e,a)}catch(c){o([c,n,r,i],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=p,n}function o(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function i(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(i){o([i],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function s(t,e){var n=e(t);return n[p]=t,i(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(33),p="nr@original",l=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,17,5,3,4]);
+  ;NREUM.loader_config={accountID:"804283",trustKey:"804283",agentID:"402703674",licenseKey:"cf99e8d2a3",applicationID:"402703674"}
+  ;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"cf99e8d2a3",
+    // Modified this value from the generated script, to pass prod vs dev
+    applicationID: window.location.hostname.includes('journals.plos.org') ? "402703674" : "402694889",
+    sa:1}
+</script>
+<!-- End New Relic -->
+
+
+
+<header>
+  <div id="topslot" class="head-top">
+  <a id="skip-to-content" tabindex="0" class="button" href="#main-content">
+    Skip to main content
+  </a>
+
+<div class="center">
+<div class="title">Advertisement</div>
+<!-- DoubleClick Ad Zone -->
+  <div class='advertisement' id='div-gpt-ad-1458247671871-0' style='width:728px; height:90px;'>
+    <script type='text/javascript'>
+      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1458247671871-0'); });
+    </script>
+  </div>
+</div>
+  </div>
+
+  <div id="user" class="nav" data-user-management-url="https://community.plos.org">
+  </div>
+  <div id="pagehdr">
+
+    <nav class="nav-main">
+
+
+
+
+<h1 class="logo">
+  <a href="/plosntds/.">PLOS Neglected Tropical Diseases</a>
+</h1>
+
+<section class="top-bar-section"> 
+
+<ul class="nav-elements">
+
+
+
+
+  <li class="menu-section-header has-dropdown " id="browse">
+    <span class="menu-section-header-title">  Browse </span>
+
+    <ul class="menu-section dropdown "
+        id="browse-dropdown-list">
+      <li>
+    <a href="/plosntds/issue" >Current Issue</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/volume" >Journal Archive</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/collections" >Collections</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/find-and-read-articles" >Find and Read Articles</a>
+  </li>
+
+    </ul>
+
+  </li>
+
+
+    <li class="multi-col-parent menu-section-header has-dropdown" id="publish">
+    Publish
+      <div class="dropdown mega ">
+        <ul class="multi-col" id="publish-dropdown-list">
+
+  <li class="menu-section-header " id="submissions">
+    <span class="menu-section-header-title">  Submissions </span>
+
+    <ul class="menu-section "
+        id="submissions-dropdown-list">
+      <li>
+    <a href="/plosntds/s/getting-started" >Getting Started</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/submission-guidelines" >Submission Guidelines</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/figures" >Figures</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/tables" >Tables</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/supporting-information" >Supporting Information</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/latex" >LaTeX</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/other-article-types" >Other Article Types</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/preprints" >Preprints</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/revising-your-manuscript" >Revising Your Manuscript</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/submit-now" >Submit Now</a>
+  </li>
+
+    </ul>
+
+  </li>
+
+
+  <li class="menu-section-header " id="policies">
+    <span class="menu-section-header-title">  Policies </span>
+
+    <ul class="menu-section "
+        id="policies-dropdown-list">
+      <li>
+    <a href="/plosntds/s/best-practices-in-research-reporting" >Best Practices in Research Reporting</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/human-subjects-research" >Human Subjects Research</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/animal-research" >Animal Research</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/competing-interests" >Competing Interests</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/disclosure-of-funding-sources" >Disclosure of Funding Sources</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/licenses-and-copyright" >Licenses and Copyright</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/data-availability" >Data Availability</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/complementary-research" >Complementary Research</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/materials-software-and-code-sharing" >Materials, Software and Code Sharing</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/ethical-publishing-practice" >Ethical Publishing Practice</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/authorship" >Authorship</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/corrections-expressions-of-concern-and-retractions" >Corrections, Expressions of Concern, and Retractions</a>
+  </li>
+
+    </ul>
+
+  </li>
+
+
+  <li class="menu-section-header " id="manuscript-review-and-publication">
+    <span class="menu-section-header-title">  Manuscript Review and Publication </span>
+
+    <ul class="menu-section "
+        id="manuscript-review-and-publication-dropdown-list">
+      <li>
+    <a href="/plosntds/s/editorial-and-peer-review-process" >Editorial and Peer Review Process</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/reviewer-guidelines" >Guidelines for Reviewers</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/guidelines-for-editors" >Guidelines for Editors</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/accepted-manuscripts" >Accepted Manuscripts</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/comments" >Comments</a>
+  </li>
+
+    </ul>
+
+  </li>
+        </ul>
+          <div class="calloutcontainer">
+
+
+  <h3 class="callout-headline">Submit Your Manuscript</h3>
+
+  <div class="action-contain">
+  <p class="callout-content">
+<em>PLOS Neglected Tropical Diseases</em> is the top Open Access tropical medicine journal, featuring an International Editorial Board and increased <a href="https://plos.org/fee-assistance#loc-global-initiative">support</a> for developing country authors.
+  </p>
+  <p class="button-contain">
+    <a class="button button-default" href="/plosntds/s/submit-now">
+Get Started
+    </a>
+  </p>
+  </div> <!-- opens in siteMenuCalloutDescription -->
+          </div>
+      </div>
+    </li>
+
+
+
+
+  <li class="menu-section-header has-dropdown " id="about">
+    <span class="menu-section-header-title">  About </span>
+
+    <ul class="menu-section dropdown "
+        id="about-dropdown-list">
+      <li>
+    <a href="/plosntds/s/journal-information" >Journal Information</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/editors-in-chief" >Editors-in-Chief</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/editorial-board" >Editorial Board</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/publishing-information" >Publishing Information</a>
+  </li>
+
+      <li>
+    <a href="https://plos.org/publication-fees" >Publication Fees</a>
+  </li>
+
+      <li>
+    <a href="https://plos.org/press-and-media" >Press and Media</a>
+  </li>
+
+      <li>
+    <a href="/plosntds/s/contact" >Contact</a>
+  </li>
+
+    </ul>
+
+  </li>
+
+
+<script src="/resource/js/vendor/jquery.hoverIntent.js" type="text/javascript"></script>
+<script src="/resource/js/components/menu_drop.js" type="text/javascript"></script>
+<script src="/resource/js/components/hover_delay.js" type="text/javascript"></script>
+      <li id="navsearch" class="head-search">
+
+
+    <form name="searchForm" action="/plosntds/search" method="get">
+      <fieldset>
+        <legend>Search</legend>
+        <label for="search">Search</label>
+        <div class="search-contain">
+          <input id="search" type="text" name="q" placeholder="SEARCH" required/>
+          <button id="headerSearchButton" type="submit" aria-label="Submit search">
+            <i title="Submit search" class="search-icon"></i>
+          </button>
+        </div>
+      </fieldset>
+      <input type="hidden" name="filterJournals" value="PLoSNTD"/>
+    </form>
+
+    <a id="advSearch"
+       href="/plosntds/search">
+      advanced search
+    </a>
+
+
+
+
+<script src="/resource/js/components/placeholder_style.js" type="text/javascript"></script>
+      </li>
+
+      </ul>     
+      </section>  
+    </nav>
+  </div>
+
+</header>
+<main id="main-content"> <div class="set-grid">
+
+<header class="title-block">
+
+
+
+<script src="/resource/js/components/signposts.js" type="text/javascript"></script>
+
+<ul id="almSignposts" class="signposts">
+  <li id="loadingMetrics">
+    <p>Loading metrics</p>
+  </li>
+</ul>
+
+<script type="text/template" id="signpostsGeneralErrorTemplate">
+  <li id="metricsError">Article metrics are unavailable at this time. Please try again later.</li>
+</script>
+
+<script type="text/template" id="signpostsNewArticleErrorTemplate">
+  <li></li><li></li><li id="tooSoon">Article metrics are unavailable for recently published articles.</li>
+</script>
+
+<script type="text/template" id="signpostsTemplate">
+    <li id="almSaves">
+      <%= s.numberFormat(saveCount, 0) %>
+      <div class="tools" data-js-tooltip-hover="trigger">
+        <a class="metric-term" href="/plosntds/article/metrics?id=10.1371/journal.pntd.0008989#savedHeader">Save</a>
+        <p class="saves-tip" data-js-tooltip-hover="target"><a href="/plosntds/article/metrics?id=10.1371/journal.pntd.0008989#savedHeader">Total Mendeley and Citeulike bookmarks.</a></p>
+      </div>
+    </li>
+
+    <li id="almCitations">
+      <%= s.numberFormat(citationCount, 0) %>
+      <div class="tools" data-js-tooltip-hover="trigger">
+        <a class="metric-term" href="/plosntds/article/metrics?id=10.1371/journal.pntd.0008989#citedHeader">Citation</a>
+        <p class="citations-tip" data-js-tooltip-hover="target"><a href="/plosntds/article/metrics?id=10.1371/journal.pntd.0008989#citedHeader">Paper's citation count computed by Dimensions.</a></p>
+      </div>
+    </li>
+
+    <li id="almViews">
+      <%= s.numberFormat(viewCount, 0) %>
+      <div class="tools" data-js-tooltip-hover="trigger">
+        <a class="metric-term" href="/plosntds/article/metrics?id=10.1371/journal.pntd.0008989#viewedHeader">View</a>
+        <p class="views-tip" data-js-tooltip-hover="target"><a href="/plosntds/article/metrics?id=10.1371/journal.pntd.0008989#viewedHeader">PLOS views and downloads.</a></p>
+      </div>
+    </li>
+
+    <li id="almShares">
+      <%= s.numberFormat(shareCount, 0) %>
+      <div class="tools" data-js-tooltip-hover="trigger">
+        <a class="metric-term" href="/plosntds/article/metrics?id=10.1371/journal.pntd.0008989#discussedHeader">Share</a>
+        <p class="shares-tip" data-js-tooltip-hover="target"><a href="/plosntds/article/metrics?id=10.1371/journal.pntd.0008989#discussedHeader">Sum of Facebook, Twitter, Reddit and Wikipedia activity.</a></p>
+      </div>
+    </li>
+</script>
+
+    <div class="article-meta">
+
+<div class="classifications">
+  <p class="license-short" id="licenseShort">Open Access</p>
+  <p class="peer-reviewed" id="peerReviewed">Peer-reviewed</p>
+
+<div class="article-type" >
+  <p class="type-article" id="artType">Research Article</p>
+</div>
+
+
+</div>
+    </div>
+    <div class="article-title-etc">
+
+
+
+<div class="title-authors">
+  <h1 id="artTitle"><?xml version="1.0" encoding="UTF-8"?>Adaptation and performance of a mobile application for early detection of cutaneous leishmaniasis</h1>
+
+<ul class="author-list clearfix"  data-js-tooltip="tooltip_container" id="author-list">
+
+
+
+<li
+  data-js-tooltip="tooltip_trigger"
+  
+>
+   <a  data-author-id="0" class="author-name" >
+Luisa Rubiano,</a>    <div id="author-meta-0" class="author-info" data-js-tooltip="tooltip_target">
+
+  
+  <p class="roles" id="authRoles">
+    <span class="type">Roles</span>
+    Conceptualization,
+
+    Data curation,
+
+    Formal analysis,
+
+    Funding acquisition,
+
+    Investigation,
+
+    Methodology,
+
+    Project administration,
+
+    Resources,
+
+    Supervision,
+
+    Validation,
+
+    Visualization,
+
+    Writing – original draft,
+
+    Writing – review & editing
+  </p>
+  
+  <p id="authAffiliations-0"><span class="type">Affiliations</span>
+    Centro Internacional de Entrenamiento e Investigaciones Médicas, CIDEIM, Cali, Colombia, 
+    Universidad Icesi, Cali, Colombia
+  </p>
+  <div>
+  <p class="orcid" id="authOrcid-0">
+    <span>
+      <a id="connect-orcid-link" href="https://orcid.org/0000-0001-6655-6843" target="_blank" title="ORCID Registry">
+        <img id="orcid-id-logo" src="/resource/img/orcid_16x16.png" width="16" height="16" alt="ORCID logo"/>
+        https://orcid.org/0000-0001-6655-6843
+      </a>
+    </span>
+  </p>
+  </div>
+
+      <a data-js-tooltip="tooltip_close" class="close" id="tooltipClose0"> &#x02A2F; </a>
+    </div>
+</li>
+
+<li
+  data-js-tooltip="tooltip_trigger"
+  
+>
+   <a  data-author-id="1" class="author-name" >
+Neal D. E. Alexander <span class="email">  </span>,</a>    <div id="author-meta-1" class="author-info" data-js-tooltip="tooltip_target">
+
+  
+  <p class="roles" id="authRoles">
+    <span class="type">Roles</span>
+    Data curation,
+
+    Formal analysis,
+
+    Visualization,
+
+    Writing – original draft,
+
+    Writing – review & editing
+  </p>
+  <p id="authCorresponding-1"> <span class="email">* E-mail:</span> <a href="mailto:nalexander@cideim.org.co">nalexander@cideim.org.co</a> (NDEA); <a href="mailto:earonoffspencer@ucsd.edu">earonoffspencer@ucsd.edu</a> (EA-S)</p>
+  <p id="authAffiliations-1"><span class="type">Affiliations</span>
+    Centro Internacional de Entrenamiento e Investigaciones Médicas, CIDEIM, Cali, Colombia, 
+    Universidad Icesi, Cali, Colombia
+  </p>
+  <div>
+  <p class="orcid" id="authOrcid-1">
+    <span>
+      <a id="connect-orcid-link" href="https://orcid.org/0000-0002-6707-7876" target="_blank" title="ORCID Registry">
+        <img id="orcid-id-logo" src="/resource/img/orcid_16x16.png" width="16" height="16" alt="ORCID logo"/>
+        https://orcid.org/0000-0002-6707-7876
+      </a>
+    </span>
+  </p>
+  </div>
+
+      <a data-js-tooltip="tooltip_close" class="close" id="tooltipClose1"> &#x02A2F; </a>
+    </div>
+</li>
+
+<li
+  data-js-tooltip="tooltip_trigger"
+  
+>
+   <a  data-author-id="2" class="author-name" >
+Ruth Mabel Castillo,</a>    <div id="author-meta-2" class="author-info" data-js-tooltip="tooltip_target">
+
+  
+  <p class="roles" id="authRoles">
+    <span class="type">Roles</span>
+    Conceptualization,
+
+    Investigation,
+
+    Methodology,
+
+    Supervision,
+
+    Writing – review & editing
+  </p>
+  
+  <p id="authAffiliations-2"><span class="type">Affiliations</span>
+    Centro Internacional de Entrenamiento e Investigaciones Médicas, CIDEIM, Cali, Colombia, 
+    Universidad Icesi, Cali, Colombia
+  </p>
+
+      <a data-js-tooltip="tooltip_close" class="close" id="tooltipClose2"> &#x02A2F; </a>
+    </div>
+</li>
+
+<li
+  data-js-tooltip="tooltip_trigger"
+  
+>
+   <a  data-author-id="3" class="author-name" >
+Álvaro José Martínez,</a>    <div id="author-meta-3" class="author-info" data-js-tooltip="tooltip_target">
+
+  
+  <p class="roles" id="authRoles">
+    <span class="type">Roles</span>
+    Conceptualization,
+
+    Investigation,
+
+    Methodology,
+
+    Supervision,
+
+    Writing – review & editing
+  </p>
+  
+  <p id="authAffiliations-3"><span class="type">Affiliation</span>
+    Centro Internacional de Entrenamiento e Investigaciones Médicas, CIDEIM, Cali, Colombia
+  </p>
+  <div>
+  <p class="orcid" id="authOrcid-3">
+    <span>
+      <a id="connect-orcid-link" href="https://orcid.org/0000-0002-5641-2392" target="_blank" title="ORCID Registry">
+        <img id="orcid-id-logo" src="/resource/img/orcid_16x16.png" width="16" height="16" alt="ORCID logo"/>
+        https://orcid.org/0000-0002-5641-2392
+      </a>
+    </span>
+  </p>
+  </div>
+
+      <a data-js-tooltip="tooltip_close" class="close" id="tooltipClose3"> &#x02A2F; </a>
+    </div>
+</li>
+
+<li
+  data-js-tooltip="tooltip_trigger"
+  
+>
+   <a  data-author-id="4" class="author-name" >
+Jonny Alejandro García Luna,</a>    <div id="author-meta-4" class="author-info" data-js-tooltip="tooltip_target">
+
+  
+  <p class="roles" id="authRoles">
+    <span class="type">Roles</span>
+    Data curation,
+
+    Formal analysis,
+
+    Writing – original draft,
+
+    Writing – review & editing
+  </p>
+  
+  <p id="authAffiliations-4"><span class="type">Affiliation</span>
+    Centro Internacional de Entrenamiento e Investigaciones Médicas, CIDEIM, Cali, Colombia
+  </p>
+  <div>
+  <p class="orcid" id="authOrcid-4">
+    <span>
+      <a id="connect-orcid-link" href="https://orcid.org/0000-0002-4784-6519" target="_blank" title="ORCID Registry">
+        <img id="orcid-id-logo" src="/resource/img/orcid_16x16.png" width="16" height="16" alt="ORCID logo"/>
+        https://orcid.org/0000-0002-4784-6519
+      </a>
+    </span>
+  </p>
+  </div>
+
+      <a data-js-tooltip="tooltip_close" class="close" id="tooltipClose4"> &#x02A2F; </a>
+    </div>
+</li>
+
+<li
+  data-js-tooltip="tooltip_trigger"
+  
+>
+   <a  data-author-id="5" class="author-name" >
+Juan David Arango,</a>    <div id="author-meta-5" class="author-info" data-js-tooltip="tooltip_target">
+
+  
+  <p class="roles" id="authRoles">
+    <span class="type">Roles</span>
+    Conceptualization,
+
+    Resources,
+
+    Software,
+
+    Writing – review & editing
+  </p>
+  
+  <p id="authAffiliations-5"><span class="type">Affiliation</span>
+    Grupo i2t, Universidad Icesi, Cali, Colombia
+  </p>
+  <div>
+  <p class="orcid" id="authOrcid-5">
+    <span>
+      <a id="connect-orcid-link" href="https://orcid.org/0000-0001-8448-8258" target="_blank" title="ORCID Registry">
+        <img id="orcid-id-logo" src="/resource/img/orcid_16x16.png" width="16" height="16" alt="ORCID logo"/>
+        https://orcid.org/0000-0001-8448-8258
+      </a>
+    </span>
+  </p>
+  </div>
+
+      <a data-js-tooltip="tooltip_close" class="close" id="tooltipClose5"> &#x02A2F; </a>
+    </div>
+</li>
+
+<li
+  data-js-tooltip="tooltip_trigger"
+  
+>
+   <a  data-author-id="6" class="author-name" >
+Leonardo Vargas,</a>    <div id="author-meta-6" class="author-info" data-js-tooltip="tooltip_target">
+
+  
+  <p class="roles" id="authRoles">
+    <span class="type">Roles</span>
+    Conceptualization,
+
+    Resources,
+
+    Software,
+
+    Writing – review & editing
+  </p>
+  
+  <p id="authAffiliations-6"><span class="type">Affiliation</span>
+    Grupo i2t, Universidad Icesi, Cali, Colombia
+  </p>
+  <div>
+  <p class="orcid" id="authOrcid-6">
+    <span>
+      <a id="connect-orcid-link" href="https://orcid.org/0000-0002-9280-0632" target="_blank" title="ORCID Registry">
+        <img id="orcid-id-logo" src="/resource/img/orcid_16x16.png" width="16" height="16" alt="ORCID logo"/>
+        https://orcid.org/0000-0002-9280-0632
+      </a>
+    </span>
+  </p>
+  </div>
+
+      <a data-js-tooltip="tooltip_close" class="close" id="tooltipClose6"> &#x02A2F; </a>
+    </div>
+</li>
+
+<li
+  data-js-tooltip="tooltip_trigger"
+  
+>
+   <a  data-author-id="7" class="author-name" >
+Patricia Madriñán,</a>    <div id="author-meta-7" class="author-info" data-js-tooltip="tooltip_target">
+
+  
+  <p class="roles" id="authRoles">
+    <span class="type">Roles</span>
+    Conceptualization,
+
+    Supervision,
+
+    Writing – review & editing
+  </p>
+  
+  <p id="authAffiliations-7"><span class="type">Affiliation</span>
+    Grupo i2t, Universidad Icesi, Cali, Colombia
+  </p>
+
+      <a data-js-tooltip="tooltip_close" class="close" id="tooltipClose7"> &#x02A2F; </a>
+    </div>
+</li>
+
+<li
+  data-js-tooltip="tooltip_trigger"
+  
+>
+   <a  data-author-id="8" class="author-name" >
+Lina-Rocío Hurtado,</a>    <div id="author-meta-8" class="author-info" data-js-tooltip="tooltip_target">
+
+  
+  <p class="roles" id="authRoles">
+    <span class="type">Roles</span>
+    Conceptualization,
+
+    Data curation,
+
+    Investigation,
+
+    Methodology,
+
+    Project administration,
+
+    Supervision,
+
+    Validation,
+
+    Visualization,
+
+    Writing – review & editing
+  </p>
+  
+  <p id="authAffiliations-8"><span class="type">Affiliation</span>
+    Centro Internacional de Entrenamiento e Investigaciones Médicas, CIDEIM, Cali, Colombia
+  </p>
+  <div>
+  <p class="orcid" id="authOrcid-8">
+    <span>
+      <a id="connect-orcid-link" href="https://orcid.org/0000-0002-9539-1141" target="_blank" title="ORCID Registry">
+        <img id="orcid-id-logo" src="/resource/img/orcid_16x16.png" width="16" height="16" alt="ORCID logo"/>
+        https://orcid.org/0000-0002-9539-1141
+      </a>
+    </span>
+  </p>
+  </div>
+
+      <a data-js-tooltip="tooltip_close" class="close" id="tooltipClose8"> &#x02A2F; </a>
+    </div>
+</li>
+
+<li
+  data-js-tooltip="tooltip_trigger"
+  
+>
+   <a  data-author-id="9" class="author-name" >
+Yenifer Orobio,</a>    <div id="author-meta-9" class="author-info" data-js-tooltip="tooltip_target">
+
+  
+  <p class="roles" id="authRoles">
+    <span class="type">Roles</span>
+    Data curation,
+
+    Formal analysis,
+
+    Methodology,
+
+    Software,
+
+    Validation,
+
+    Visualization,
+
+    Writing – review & editing
+  </p>
+  
+  <p id="authAffiliations-9"><span class="type">Affiliations</span>
+    Centro Internacional de Entrenamiento e Investigaciones Médicas, CIDEIM, Cali, Colombia, 
+    Universidad Icesi, Cali, Colombia
+  </p>
+
+      <a data-js-tooltip="tooltip_close" class="close" id="tooltipClose9"> &#x02A2F; </a>
+    </div>
+</li>
+
+<li
+  data-js-tooltip="tooltip_trigger"
+  
+>
+   <a  data-author-id="10" class="author-name" >
+Carlos A. Rojas,</a>    <div id="author-meta-10" class="author-info" data-js-tooltip="tooltip_target">
+
+  
+  <p class="roles" id="authRoles">
+    <span class="type">Roles</span>
+    Conceptualization,
+
+    Formal analysis,
+
+    Funding acquisition,
+
+    Investigation,
+
+    Methodology,
+
+    Supervision,
+
+    Validation,
+
+    Writing – review & editing
+  </p>
+  
+  <p id="authAffiliations-10"><span class="type">Affiliation</span>
+    Facultad Nacional de Salud Pública, Universidad de Antioquia, Medellín, Colombia
+  </p>
+  <div>
+  <p class="orcid" id="authOrcid-10">
+    <span>
+      <a id="connect-orcid-link" href="https://orcid.org/0000-0002-1906-6048" target="_blank" title="ORCID Registry">
+        <img id="orcid-id-logo" src="/resource/img/orcid_16x16.png" width="16" height="16" alt="ORCID logo"/>
+        https://orcid.org/0000-0002-1906-6048
+      </a>
+    </span>
+  </p>
+  </div>
+
+      <a data-js-tooltip="tooltip_close" class="close" id="tooltipClose10"> &#x02A2F; </a>
+    </div>
+</li>
+
+<li
+  data-js-tooltip="tooltip_trigger"
+  
+>
+   <a  data-author-id="11" class="author-name" >
+Helena del Corral,</a>    <div id="author-meta-11" class="author-info" data-js-tooltip="tooltip_target">
+
+  
+  <p class="roles" id="authRoles">
+    <span class="type">Roles</span>
+    Conceptualization,
+
+    Formal analysis,
+
+    Funding acquisition,
+
+    Investigation,
+
+    Methodology,
+
+    Writing – review & editing
+  </p>
+  
+  <p id="authAffiliations-11"><span class="type">Affiliation</span>
+    Facultad Nacional de Salud Pública, Universidad de Antioquia, Medellín, Colombia
+  </p>
+  <div>
+  <p class="orcid" id="authOrcid-11">
+    <span>
+      <a id="connect-orcid-link" href="https://orcid.org/0000-0003-2581-0758" target="_blank" title="ORCID Registry">
+        <img id="orcid-id-logo" src="/resource/img/orcid_16x16.png" width="16" height="16" alt="ORCID logo"/>
+        https://orcid.org/0000-0003-2581-0758
+      </a>
+    </span>
+  </p>
+  </div>
+
+      <a data-js-tooltip="tooltip_close" class="close" id="tooltipClose11"> &#x02A2F; </a>
+    </div>
+</li>
+
+<li
+  data-js-tooltip="tooltip_trigger"
+  
+>
+   <a  data-author-id="12" class="author-name" >
+Andrés Navarro,</a>    <div id="author-meta-12" class="author-info" data-js-tooltip="tooltip_target">
+
+  
+  <p class="roles" id="authRoles">
+    <span class="type">Roles</span>
+    Conceptualization,
+
+    Project administration,
+
+    Resources,
+
+    Supervision,
+
+    Writing – review & editing
+  </p>
+  
+  <p id="authAffiliations-12"><span class="type">Affiliation</span>
+    Universidad Icesi, Cali, Colombia
+  </p>
+
+      <a data-js-tooltip="tooltip_close" class="close" id="tooltipClose12"> &#x02A2F; </a>
+    </div>
+</li>
+
+<li
+  data-js-tooltip="tooltip_trigger"
+  
+>
+   <a  data-author-id="13" class="author-name" >
+Nancy Gore Saravia,</a>    <div id="author-meta-13" class="author-info" data-js-tooltip="tooltip_target">
+
+  
+  <p class="roles" id="authRoles">
+    <span class="type">Roles</span>
+    Conceptualization,
+
+    Funding acquisition,
+
+    Investigation,
+
+    Project administration,
+
+    Supervision,
+
+    Writing – original draft,
+
+    Writing – review & editing
+  </p>
+  
+  <p id="authAffiliations-13"><span class="type">Affiliations</span>
+    Centro Internacional de Entrenamiento e Investigaciones Médicas, CIDEIM, Cali, Colombia, 
+    Universidad Icesi, Cali, Colombia
+  </p>
+
+      <a data-js-tooltip="tooltip_close" class="close" id="tooltipClose13"> &#x02A2F; </a>
+    </div>
+</li>
+
+<li
+  data-js-tooltip="tooltip_trigger"
+  
+>
+   <a  data-author-id="14" class="author-name" >
+Eliah Aronoff-Spencer <span class="email">  </span></a>    <div id="author-meta-14" class="author-info" data-js-tooltip="tooltip_target">
+
+  
+  <p class="roles" id="authRoles">
+    <span class="type">Roles</span>
+    Conceptualization,
+
+    Formal analysis,
+
+    Funding acquisition,
+
+    Methodology,
+
+    Project administration,
+
+    Resources,
+
+    Software,
+
+    Supervision,
+
+    Writing – original draft,
+
+    Writing – review & editing
+  </p>
+  <p id="authCorresponding-14"> <span class="email">* E-mail:</span> <a href="mailto:nalexander@cideim.org.co">nalexander@cideim.org.co</a> (NDEA); <a href="mailto:earonoffspencer@ucsd.edu">earonoffspencer@ucsd.edu</a> (EA-S)</p>
+  <p id="authAffiliations-14"><span class="type">Affiliation</span>
+    University of California, San Diego, California, United States of America
+  </p>
+
+      <a data-js-tooltip="tooltip_close" class="close" id="tooltipClose14"> &#x02A2F; </a>
+    </div>
+</li>
+
+</ul>
+<script src="/resource/js/components/tooltip.js" type="text/javascript"></script>
+
+</div>
+
+
+<div id="floatTitleTop" data-js-floater="title_author" class="float-title" role="presentation">
+  <div class="set-grid">
+    <div class="float-title-inner">
+      <h1><?xml version="1.0" encoding="UTF-8"?>Adaptation and performance of a mobile application for early detection of cutaneous leishmaniasis</h1>
+
+<ul id="floatAuthorList" data-js-floater="floated_authors">
+
+  <li data-float-index="1">Luisa Rubiano,&nbsp;
+
+  </li>
+  <li data-float-index="2">Neal D. E. Alexander,&nbsp;
+
+  </li>
+  <li data-float-index="3">Ruth Mabel Castillo,&nbsp;
+
+  </li>
+  <li data-float-index="4">Álvaro José Martínez,&nbsp;
+
+  </li>
+  <li data-float-index="5">Jonny Alejandro García Luna,&nbsp;
+
+  </li>
+  <li data-float-index="6">Juan David Arango,&nbsp;
+
+  </li>
+  <li data-float-index="7">Leonardo Vargas,&nbsp;
+
+  </li>
+  <li data-float-index="8">Patricia Madriñán,&nbsp;
+
+  </li>
+  <li data-float-index="9">Lina-Rocío Hurtado,&nbsp;
+
+  </li>
+  <li data-float-index="10">Yenifer Orobio
+
+</ul>
+
+
+
+    </div>
+    <div class="logo-close" id="titleTopCloser">
+      <img src="/resource/img/logo-plos-full-color.svg" style="height: 2em" alt="PLOS" />
+      <div class="close-floater" title="close">x</div>
+    </div>
+  </div>
+</div>
+
+      <ul class="date-doi">
+          <li class="revisionList">
+
+<script src="/resource/js/components/revision_menu.js" type="text/javascript"></script>
+
+
+<!-- make ascending order in the FTL -->
+<div id="revisionMenu">
+  <form>
+   <select name="revisionLink" id="revisionLink">
+        <option value="/plosntds/article?id=10.1371/journal.pntd.0008989&rev=2" selected>
+          Version 2 
+        </option>
+        <option value="/plosntds/article?id=10.1371/journal.pntd.0008989&rev=1" >
+          Version 1     Uncorrected Proof
+
+        </option>
+    </select>
+  </form>
+</div>
+
+          </li>
+        <li id="artPubDate">Published: February 11, 2021</li>
+        <li id="artDoi">
+<a   href="https://doi.org/10.1371/journal.pntd.0008989">https://doi.org/10.1371/journal.pntd.0008989</a>
+        </li>
+        <li class="flex-spacer"></li>
+      </ul>
+
+    </div>
+  <div>
+
+  </div>
+</header>
+  <section class="article-body">
+
+
+
+<ul class="article-tabs">
+
+          <li class="tab-title active" id="tabArticle">
+            <a href="/plosntds/article?id=10.1371/journal.pntd.0008989" class="article-tab-1">Article</a>
+        </li>
+
+
+              <li class="tab-title " id="tabAuthors">
+            <a href="/plosntds/article/authors?id=10.1371/journal.pntd.0008989" class="article-tab-2">Authors</a>
+        </li>
+
+
+          <li class="tab-title " id="tabMetrics">
+            <a href="/plosntds/article/metrics?id=10.1371/journal.pntd.0008989" class="article-tab-3">Metrics</a>
+        </li>
+
+
+          <li class="tab-title " id="tabComments">
+            <a href="/plosntds/article/comments?id=10.1371/journal.pntd.0008989" class="article-tab-4">Comments</a>
+        </li>
+
+  <li class="tab-title" id="tabRelated">
+    <a class="article-tab-5" id="tabRelated-link">Media Coverage</a> 
+    <script>$(document).ready(function() { $.getMediaLink("10.1371/journal.pntd.0008989").then(function (url) { $("#tabRelated-link").attr("href", url) } ) })</script>
+  </li>
+</ul>
+
+    <div class="article-container">
+
+
+<div id="nav-article">
+  <ul class="nav-secondary">
+
+    <li class="nav-comments" id="nav-comments">
+      <a href="article/comments?id=10.1371/journal.pntd.0008989">Reader Comments</a>
+    </li>
+
+    <li id="nav-figures"><a href="#" data-doi="10.1371/journal.pntd.0008989">Figures</a></li>
+  </ul>
+  <div id="nav-data-linking" data-data-url="https://osf.io/w5zn2/">
+  </div>
+</div>
+<script src="/resource/js/components/scroll.js" type="text/javascript"></script>
+<script src="/resource/js/components/nav_builder.js" type="text/javascript"></script>
+<script src="/resource/js/components/floating_nav.js" type="text/javascript"></script>
+
+<div id="figure-lightbox-container"></div>
+
+<script id="figure-lightbox-template" type="text/template">
+  <div id="figure-lightbox" class="reveal-modal full" data-reveal aria-hidden="true"
+       role="dialog">
+    <div class="lb-header">
+      <h1 id="lb-title"><%= articleTitle %></h1>
+
+      <div id="lb-authors">
+              <span>Luisa Rubiano</span>
+              <span>Neal D. E. Alexander</span>
+          <a class="more-authors" href="/plosntds/article/authors?id=10.1371/journal.pntd.0008989">...</a>
+          <span>Eliah Aronoff-Spencer</span>
+      </div>
+
+      <div class="lb-close" title="close">&nbsp;</div>
+    </div>
+    <div class="img-container">
+      <div class="loader"> <i class="fa-spinner"></i> </div>
+      <img class="main-lightbox-image" src=""/>
+      <aside id="figures-list">
+        <% figureList.each(function (ix, figure) { %>
+        <div class="change-img" data-doi="<%= figure.getAttribute('data-doi') %>">
+          <img class="aside-figure" src="/plosntds/article/figure/image?size=inline&id=<%= figure.getAttribute('data-doi') %>" />
+        </div>
+        <% }) %>
+        <div class="dummy-figure">
+        </div>
+      </aside>
+    </div>
+    <div id="lightbox-footer">
+
+      <div id="btns-container" class="lightbox-row <% if(figureList.length <= 1) { print('one-figure-only') } %>">
+        <div class="fig-btns-container reset-zoom-wrapper left">
+          <span class="fig-btn reset-zoom-btn">Reset zoom</span>
+        </div>
+        <div class="zoom-slider-container">
+          <div class="range-slider-container">
+            <span id="lb-zoom-min"></span>
+            <div class="range-slider round" data-slider data-options="start: 20; end: 200; initial: 20;">
+              <span class="range-slider-handle" role="slider" tabindex="0"></span>
+              <span class="range-slider-active-segment"></span>
+              <input type="hidden">
+            </div>
+            <span id="lb-zoom-max"></span>
+          </div>
+        </div>
+        <% if(figureList.length > 1) { %>
+        <div class="fig-btns-container">
+          <span class="fig-btn all-fig-btn"><i class="icon icon-all"></i> All Figures</span>
+          <span class="fig-btn next-fig-btn"><i class="icon icon-next"></i> Next</span>
+          <span class="fig-btn prev-fig-btn"><i class="icon icon-prev"></i> Previous</span>
+        </div>
+        <% } %>
+      </div>
+      <div id="image-context">
+      </div>
+    </div>
+  </div>
+</script>
+
+<script id="image-context-template" type="text/template">
+  <div class="footer-text">
+    <div id="figure-description-wrapper">
+      <div id="view-more-wrapper" style="<% descriptionExpanded? print('display:none;') : '' %>">
+        <span id="figure-title"><%= title %></span>
+        <p id="figure-description">
+          <%= description %>&nbsp;&nbsp;
+        </p>
+        <span id="view-more">show more<i class="icon-arrow-right"></i></span>
+
+      </div>
+      <div id="view-less-wrapper" style="<% descriptionExpanded? print('display:inline-block;') : '' %>" >
+        <span id="figure-title"><%= title %></span>
+        <p id="full-figure-description">
+          <%= description %>&nbsp;&nbsp;
+          <span id="view-less">show less<i class="icon-arrow-left"></i></span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="show-context-container">
+    <a class="btn show-context" href="<%= showInContext(strippedDoi) %>">Show in Context</a>
+  </div>
+  <div id="download-buttons">
+    <h3>Download:</h3>
+    <div class="item">
+      <a href="/plosntds/article/figure/image?size=original&download=&id=<%= doi %>" title="original image">
+        <span class="download-btn">TIFF</span>
+      </a>
+      <span class="file-size"><%= fileSizes.original %></span>
+    </div>
+    <div class="item">
+      <a href="/plosntds/article/figure/image?size=large&download=&id=<%= doi %>" title="large image">
+        <span class="download-btn">PNG</span>
+      </a>
+      <span class="file-size"><%= fileSizes.large %></span>
+    </div>
+    <div class="item">
+      <a href="/plosntds/article/figure/powerpoint?id=<%= doi %>" title="PowerPoint slide">
+        <span class="download-btn">PPT</span>
+      </a>
+    </div>
+
+  </div>
+</script>
+      <div class="article-content">
+
+
+
+
+
+
+<div id="figure-carousel-section">
+  <h2>Figures</h2>
+
+  <div id="figure-carousel">
+
+    <div class="carousel-wrapper">
+      <div class="slider">
+
+          <div class="carousel-item lightbox-figure" data-doi="10.1371/journal.pntd.0008989.t001">
+
+                <img src="/plosntds/article/figure/image?size=inline&amp;id=10.1371/journal.pntd.0008989.t001"
+                     loading="lazy"
+                     alt="Table 1"
+                />
+
+            </div>
+
+          <div class="carousel-item lightbox-figure" data-doi="10.1371/journal.pntd.0008989.g001">
+
+                <img src="/plosntds/article/figure/image?size=inline&amp;id=10.1371/journal.pntd.0008989.g001"
+                     loading="lazy"
+                     alt="Fig 1"
+                />
+
+            </div>
+
+          <div class="carousel-item lightbox-figure" data-doi="10.1371/journal.pntd.0008989.g002">
+
+                <img src="/plosntds/article/figure/image?size=inline&amp;id=10.1371/journal.pntd.0008989.g002"
+                     loading="lazy"
+                     alt="Fig 2"
+                />
+
+            </div>
+
+          <div class="carousel-item lightbox-figure" data-doi="10.1371/journal.pntd.0008989.g003">
+
+                <img src="/plosntds/article/figure/image?size=inline&amp;id=10.1371/journal.pntd.0008989.g003"
+                     loading="lazy"
+                     alt="Fig 3"
+                />
+
+            </div>
+
+          <div class="carousel-item lightbox-figure" data-doi="10.1371/journal.pntd.0008989.t002">
+
+                <img src="/plosntds/article/figure/image?size=inline&amp;id=10.1371/journal.pntd.0008989.t002"
+                     loading="lazy"
+                     alt="Table 2"
+                />
+
+            </div>
+
+          <div class="carousel-item lightbox-figure" data-doi="10.1371/journal.pntd.0008989.t003">
+
+                <img src="/plosntds/article/figure/image?size=inline&amp;id=10.1371/journal.pntd.0008989.t003"
+                     loading="lazy"
+                     alt="Table 3"
+                />
+
+            </div>
+
+          <div class="carousel-item lightbox-figure" data-doi="10.1371/journal.pntd.0008989.t004">
+
+                <img src="/plosntds/article/figure/image?size=inline&amp;id=10.1371/journal.pntd.0008989.t004"
+                     loading="lazy"
+                     alt="Table 4"
+                />
+
+            </div>
+      </div>
+    </div>
+
+    <div class="carousel-control">
+      <span class="button previous"></span>
+      <span class="button next"></span>
+    </div>
+    <div class="carousel-page-buttons">
+
+    </div>
+  </div>
+</div>
+<script src="/resource/js/vendor/jquery.touchswipe.js" type="text/javascript"></script>
+<script src="/resource/js/components/figure_carousel.js" type="text/javascript"></script>
+<script src="/resource/js/vendor/jquery.dotdotdot.js" type="text/javascript"></script>
+
+
+        <div class="article-text" id="artText">
+          
+
+
+
+<div xmlns:plos="http://plos.org" class="abstract toc-section abstract-type-"><a id="abstract0" name="abstract0" data-toc="abstract0" class="link-target" title="Abstract"></a><h2>Abstract</h2><div class="abstract-content">
+<div id="section1" class="section toc-section"><a id="sec001" name="sec001" class="link-target" title="Background"></a>
+<h3>Background</h3>
+<a id="article1.front1.article-meta1.abstract1.sec1.p1" name="article1.front1.article-meta1.abstract1.sec1.p1" class="link-target"></a><p>Detection and management of neglected tropical diseases such as cutaneous leishmaniasis present unmet challenges stemming from their prevalence in remote, rural, resource constrained areas having limited access to health services. These challenges are frequently compounded by armed conflict or illicit extractive industries. The use of mobile health technologies has shown promise in such settings, yet data on outcomes in the field remain scarce.</p>
+</div>
+
+<div id="section2" class="section toc-section"><a id="sec002" name="sec002" class="link-target" title="Methods"></a>
+<h3>Methods</h3>
+<a id="article1.front1.article-meta1.abstract1.sec2.p1" name="article1.front1.article-meta1.abstract1.sec2.p1" class="link-target"></a><p>We adapted a validated prediction rule for the presumptive diagnosis of CL to create a mobile application for use by community health volunteers. We used human-centered design practices and agile development for app iteration. We tested the application in three rural areas where cutaneous leishmaniasis is endemic and an urban setting where patients seek medical attention in the municipality of Tumaco, Colombia. The application was assessed for usability, sensitivity and inter-rater reliability (kappa) when used by community health volunteers (CHV), health workers and a general practitioner, study physician.</p>
+</div>
+
+<div id="section3" class="section toc-section"><a id="sec003" name="sec003" class="link-target" title="Results"></a>
+<h3>Results</h3>
+<a id="article1.front1.article-meta1.abstract1.sec3.p1" name="article1.front1.article-meta1.abstract1.sec3.p1" class="link-target"></a><p>The application was readily used and understood. Among 122 screened cases with cutaneous ulcers, sensitivity to detect parasitologically proven CL was &gt;95%. The proportion of participants with parasitologically confirmed CL was high (88%), precluding evaluation of specificity, and driving a high level of crude agreement between the app and parasitological diagnosis. The chance-adjusted agreement (kappa) varied across the components of the risk score. Time to diagnosis was reduced significantly, from 8 to 4 weeks on average when CHV conducted active case detection using the application, compared to passive case detection by health facility-based personnel.</p>
+</div>
+
+<div id="section4" class="section toc-section"><a id="sec004" name="sec004" class="link-target" title="Conclusions"></a>
+<h3>Conclusions</h3>
+<a id="article1.front1.article-meta1.abstract1.sec4.p1" name="article1.front1.article-meta1.abstract1.sec4.p1" class="link-target"></a><p>Translating a validated prediction rule to a mHealth technology has shown the potential to improve the capacity of community health workers and healthcare personnel to provide opportune care, and access to health services for underserved populations. These findings support the use of mHealth tools for NTD research and healthcare.</p>
+</div>
+</div></div><div xmlns:plos="http://plos.org" class="abstract toc-section abstract-type-summary"><a id="abstract1" name="abstract1" data-toc="abstract1" class="link-target" title="Author summary"></a>
+<h2>Author summary</h2>
+<div class="abstract-content"><a id="article1.front1.article-meta1.abstract2.p1" name="article1.front1.article-meta1.abstract2.p1" class="link-target"></a><p>Cutaneous leishmaniasis (CL) and other tropical diseases primarily affect people in developing and underserved parts of the world where healthcare infrastructure, resources and trained personnel are scarce. Smartphones, connected to the internet and running innovative health-applications—"apps"—have shown promise to bridge gaps in access to healthcare in even the most remote areas. Using participatory and human centered-design methods, we developed a mobile application for Android smartphones that supports community health workers to screen potential cases of CL in rural settings. We developed this application using a previously validated clinical prediction rule and tested it with patients, community workers and health workers in the municipality of Tumaco on the Pacific Coast of Colombia. Results from this study showed that the mobile app was easy to use, could detect cutaneous leishmaniasis in over 95% of cases, and reduced the time to diagnosis by half compared to passive case detection dependent on consultation at referral facilities. Overall, this work showed the value of designing health interventions with early engagement of all users, and supports the general use of mobile health applications for neglected tropical disease research and care.</p>
+</div></div>
+
+
+<div xmlns:plos="http://plos.org" class="articleinfo"><p><strong>Citation: </strong>Rubiano L, Alexander NDE, Castillo RM, Martínez ÁJ, García Luna JA, Arango JD, et al.  (2021) Adaptation and performance of a mobile application for early detection of cutaneous leishmaniasis. PLoS Negl Trop Dis 15(2):
+           e0008989.
+        
+        https://doi.org/10.1371/journal.pntd.0008989</p><p><strong>Editor: </strong>Johan van Griensven, Institute of Tropical Medicine, BELGIUM</p><p><strong>Received: </strong>July 10, 2020; <strong>Accepted: </strong>November 17, 2020; <strong>Published: </strong> February 11, 2021</p><p><strong>Copyright: </strong> © 2021 Rubiano et al. This is an open access article distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p><p><strong>Data Availability: </strong>The data are available at the following URL: <a href="https://osf.io/w5zn2/">https://osf.io/w5zn2/</a> S1 Software: Guaral/Leishmaniasis app. The most recent version of the software can be downloaded from the Google Play Store by searching “Leishmanisis” or directly at: <a href="https://play.google.com/store/apps/details?id=guaralrpctwo.cideim.guaral.guaralrpc">https://play.google.com/store/apps/details?id=guaralrpctwo.cideim.guaral.guaralrpc</a>.</p><p><strong>Funding: </strong>This research was supported by the US National Institutes of Health Fogarty International Center (<a href="http://www.fic.nih.gov">www.fic.nih.gov</a>) grants R21 TW009907 A1, awarded to EAS and NGS, and D43 TW006589 awarded to NGS; COLCIENCIAS contract number 222956934763, awarded to LR; and the Special Programme for Research and Training in Tropical Diseases (TDR), hosted at the World Health Organization, Challenge Grant 2013/386736-0, awarded to NGS. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p><p><strong>Competing interests: </strong> The authors have declared that no competing interests exist.</p></div>
+
+
+
+
+
+<div xmlns:plos="http://plos.org" id="section1" class="section toc-section"><a id="sec005" name="sec005" data-toc="sec005" class="link-target" title="Introduction"></a><h2>Introduction</h2><a id="article1.body1.sec1.p1" name="article1.body1.sec1.p1" class="link-target"></a><p>Cutaneous leishmaniasis (CL) remains a significant public health concern in Colombia due to its high endemicity and prevalence in resource-limited and remote settings, where diagnosis, treatment and monitoring is particularly challenging. In the Americas, Colombia reports the second highest incidence of CL, between 9.99 and 34.17 cases per 100,000 inhabitants over recent years [<a href="#pntd.0008989.ref001" class="ref-tip">1</a>]. However, this reported incidence is based on passive surveillance of cases consulting health care institutions, leading to under-ascertainment, -diagnosis and -reporting, which hinder control and the provision of diagnostic and treatment resources in areas of transmission [<a href="#pntd.0008989.ref002" class="ref-tip">2</a>].</p>
+<a id="article1.body1.sec1.p2" name="article1.body1.sec1.p2" class="link-target"></a><p>Diagnosis of CL relies on microscopy or culture of lesion samples, procedures that require highly trained laboratory personnel and/or specialized laboratory equipment, to which there is limited access in areas where transmission occurs [<a href="#pntd.0008989.ref003" class="ref-tip">3</a>]. Moreover, many individuals with CL do not seek medical attention because the lesions are painless or because they prefer traditional treatments. Delay or failure to diagnose result in poor outcomes with higher disability, disfigurement and risk of mucosal involvement [<a href="#pntd.0008989.ref004" class="ref-tip">4</a>], as well as potentially contributing to ongoing transmission. Access to diagnosis in remote rural areas with limited infrastructure is a priority of control programs yet affordable means of achieving access are not yet available.</p>
+<a id="article1.body1.sec1.p3" name="article1.body1.sec1.p3" class="link-target"></a><p>Smartphone-based mHealth strategies have recently been developed and evaluated with promising results for surveillance, diagnosis and outcome evaluation of infectious diseases in low-resource settings [<a href="#pntd.0008989.ref005" class="ref-tip">5</a>]. Providing mHealth tools to guide community health volunteers (CHV) and health workers (HW) in the presumptive diagnosis of CL in remote areas and their referral for etiologic diagnosis and treatment, could begin to overcome some of the challenges for the control of this disease. Here we describe the user-centered development and field evaluation of a smartphone application that adapted a validated CL prediction rule [<a href="#pntd.0008989.ref003" class="ref-tip">3</a>], to provide early, sensitive, case detection and referral for confirmatory diagnosis and treatment in Colombia. In addition to developing the app, this study sought to evaluate its diagnostic performance and usability for detection of CL; and to measure the benefit of its use by CHV, compared to passive case detection, on time to CL diagnosis.</p>
+</div>
+
+<div xmlns:plos="http://plos.org" id="section2" class="section toc-section"><a id="sec006" name="sec006" data-toc="sec006" class="link-target" title="Methods"></a><h2>Methods</h2>
+<div id="section1" class="section toc-section"><a id="sec007" name="sec007" class="link-target" title="Ethics statement"></a>
+<h3>Ethics statement</h3>
+<a id="article1.body1.sec2.sec1.p1" name="article1.body1.sec2.sec1.p1" class="link-target"></a><p>This study was reviewed, approved and monitored by the institutional ethical review boards of the International Center for Training and Medical Research (CIDEIM) (reference number 1229) and UC San Diego (reference number 160040). During field data collection, the purpose of the study was explained to potential participants. Written consent of participants was obtained from app users, and adults with suggestive lesions. Legal guardians of minors (aged less than 18 years) provided written informed consent. Those minors who were aged at least 7 years provided written informed assent. Cases were sought only in areas considered safe by the CHVs.</p>
+</div>
+
+<div id="section2" class="section toc-section"><a id="sec008" name="sec008" class="link-target" title="Technology development"></a>
+<h3>Technology development</h3>
+<a id="article1.body1.sec2.sec2.p1" name="article1.body1.sec2.sec2.p1" class="link-target"></a><p>We adapted a previously validated clinical prediction rule for CL (<a href="#pntd-0008989-t001">Table 1</a>) [<a href="#pntd.0008989.ref003" class="ref-tip">3</a>] as a mobile application (app) to support screening for presumptive diagnosis of CL by CHV and HW. The mobile app was created for the Android operating system considering its availability on relatively low-cost smartphones. The app was developed using Android Studio (developer.android.com) and tested using a low-cost, locally available smartphone (Motorola Moto G).</p>
+<a class="link-target" id="pntd-0008989-t001" name="pntd-0008989-t001"></a><div class="figure" data-doi="10.1371/journal.pntd.0008989.t001"><div class="img-box"><a title="Click for larger image" href="article/figure/image?size=medium&amp;id=10.1371/journal.pntd.0008989.t001" data-doi="10.1371/journal.pntd.0008989" data-uri="10.1371/journal.pntd.0008989.t001"><img src="article/figure/image?size=inline&amp;id=10.1371/journal.pntd.0008989.t001" alt="thumbnail" class="thumbnail" loading="lazy"></a><div class="expand"></div></div><div class="figure-inline-download">
+          Download:
+          <ul><li><a href="article/figure/powerpoint?id=10.1371/journal.pntd.0008989.t001"><div class="definition-label">PPT</div><div class="definition-description">PowerPoint slide</div></a></li><li><a href="article/figure/image?download&amp;size=large&amp;id=10.1371/journal.pntd.0008989.t001"><div class="definition-label">PNG</div><div class="definition-description">larger image</div></a></li><li><a href="article/figure/image?download&amp;size=original&amp;id=10.1371/journal.pntd.0008989.t001"><div class="definition-label">TIFF</div><div class="definition-description">original image</div></a></li></ul></div><div class="figcaption"><span>Table 1. </span> Components of the clinical prediction rule [<a href="#pntd.0008989.ref003" class="ref-tip">3</a>].</div><p class="caption_target"></p><p class="caption_object"><a href="https://doi.org/10.1371/journal.pntd.0008989.t001">
+              https://doi.org/10.1371/journal.pntd.0008989.t001</a></p></div><a id="article1.body1.sec2.sec2.p2" name="article1.body1.sec2.sec2.p2" class="link-target"></a><p>Software development followed principles of human-centered design [<a href="#pntd.0008989.ref006" class="ref-tip">6</a>] through an iterative process to achieve an efficient and user friendly app. The user interface was designed collaboratively through a participatory process that included the engineering team, study physicians having expertise in the diagnosis and management of leishmaniasis, and CHV [<a href="#pntd.0008989.ref006" class="ref-tip">6</a>]. The design sought to maximize graphic content with an intuitive structure, and to minimize typed data entry and potential inconsistencies. Security features of the app include strong encryption and two-factor authentication.</p>
+<a id="article1.body1.sec2.sec2.p3" name="article1.body1.sec2.sec2.p3" class="link-target"></a><p>A second, web-based, application for researchers and physicians was designed to store and process data captured through the mobile application by each end-user (CHV and HW). This web application was developed using a services platform for the collection and management of mobile health data, denoted SND, or System for Neurological Diseases, based on its original purpose (<a href="http://sndweb.azurewebsites.net">sndweb.azurewebsites.net</a>).</p>
+</div>
+
+<div id="section3" class="section toc-section"><a id="sec009" name="sec009" class="link-target" title="Study design"></a>
+<h3>Study design</h3>
+<a id="article1.body1.sec2.sec3.p1" name="article1.body1.sec2.sec3.p1" class="link-target"></a><p>We performed a prospective study to evaluate the usability and performance of the mobile application for community-based presumptive diagnosis, and referral for confirmatory diagnosis and treatment.</p>
+</div>
+
+<div id="section4" class="section toc-section"><a id="sec010" name="sec010" class="link-target" title="Setting"></a>
+<h3>Setting</h3>
+<a id="article1.body1.sec2.sec4.p1" name="article1.body1.sec2.sec4.p1" class="link-target"></a><p>Field evaluation of the mobile app was conducted in one urban area (town of Tumaco) and three rural areas (La Guayacana, Llorente and El Pinde districts) within the municipality of Tumaco (population of 187,084 inhabitants), located on the southwestern Colombian Pacific Coast. The municipality of Tumaco was selected because it has both urban and remote rural communities, and a high burden of CL, with over 300 cases reported per year from 2016 to 2019 [<a href="#pntd.0008989.ref007" class="ref-tip">7</a>–<a href="#pntd.0008989.ref010" class="ref-tip">10</a>]. Notably, the municipality has a history of internal armed conflict, and electric power is intermittent. The rural part of the municipality has 365 <em>veredas</em> (townships), of which only a small proportion have road access. For the rest, the main access is by canoe or launch. In particular, the three rural areas of the current study have limited transportation and access to parasitological diagnosis, which is required for authorization of treatment. Maps facilitated by the principal telecommunication providers show no 3G coverage outside of a few of the larger settlements within the municipality [<a href="#pntd.0008989.ref011" class="ref-tip">11</a>–<a href="#pntd.0008989.ref013" class="ref-tip">13</a>].</p>
+<a id="article1.body1.sec2.sec4.p2" name="article1.body1.sec2.sec4.p2" class="link-target"></a><p>Most cases (approximately 90%) in the Pacific coast region of Colombia are caused by <em>Leishmania panamensis</em> with the remainder generally being <em>L</em>. <em>braziliensis</em>. Other species such as <em>L</em>. <em>mexicana</em> are rarely encountered. The proportion of these two species of the <em>Vianna</em> subgenus can vary by focus and sylvatic or peridomestic transmission.</p>
+</div>
+
+<div id="section5" class="section toc-section"><a id="sec011" name="sec011" class="link-target" title="Evaluators"></a>
+<h3>Evaluators</h3>
+<a id="article1.body1.sec2.sec5.p1" name="article1.body1.sec2.sec5.p1" class="link-target"></a><p>Application users lived and worked within communities in the endemic areas of the municipality of Tumaco. The CHV are unpaid community leaders who voluntarily provide health support in rural areas. They include homemakers, teachers, a radio broadcaster and health promoters of the public health system. They provide information about the diagnosis and treatment of CL to members of the community who are either self-identified and seek assistance of the volunteer, or are identified/referred through community members or during gatherings such as social activities, community centers and services, and marketplace encounters as well as in the conduct of their daily activities.</p>
+<a id="article1.body1.sec2.sec5.p2" name="article1.body1.sec2.sec5.p2" class="link-target"></a><p>Four CHV were selected from among the leaders of communities in La Guayacana, Llorente and El Pinde who had experience in community work and CL case surveillance. Other app users included two nursing assistants (<em>auxiliares de enfermería</em>) and one of the study physicians, who are permanent staff of the CIDEIM clinical facility and CL referral center in the urban center of Tumaco, and two nursing assistants employed by the local health department. CIDEIM (Centro Internacional de Entrenamiento e Investigaciones Médicas) is an independent research institution and led the project. Because of their differing experience in attending leishmaniasis patients, data from the CIDEIM nursing assistants are presented separately from those of the health department, henceforth denoted HW and NA, respectively.</p>
+</div>
+
+<div id="section6" class="section toc-section"><a id="sec012" name="sec012" class="link-target" title="Enrollment"></a>
+<h3>Enrollment</h3>
+<a id="article1.body1.sec2.sec6.p1" name="article1.body1.sec2.sec6.p1" class="link-target"></a><p>CHVs employed the mobile application to evaluate individuals with cutaneous lesions by active case finding in their communities. HW and the attending study physician evaluated patients consulting the referral center using the mobile application. The data from the local health department nursing assistants are presented for usability and sensitivity but not for agreement due to the small number of case assessments (n = 5).</p>
+</div>
+
+<div id="section7" class="section toc-section"><a id="sec013" name="sec013" class="link-target" title="Inclusion criteria for patients"></a>
+<h3>Inclusion criteria for patients</h3>
+<a id="article1.body1.sec2.sec7.p1" name="article1.body1.sec2.sec7.p1" class="link-target"></a><p>Patients of any gender or race, between 0 and 70 years of age, with at least one cutaneous lesion of less than six months duration, were eligible to participate, and following informed consent, were evaluated with the mobile application.</p>
+</div>
+
+<div id="section8" class="section toc-section"><a id="sec014" name="sec014" class="link-target" title="Implementation"></a>
+<h3>Implementation</h3>
+<a id="article1.body1.sec2.sec8.p1" name="article1.body1.sec2.sec8.p1" class="link-target"></a><p>CHVs and NAs received training on the clinical presentation of CL and all users received training on the conceptual basis of the clinical prediction rule, interpretation of the score obtained after evaluating each of the variables, handling of the smartphone, and use of the application. Refresher training, covering the same topics, was conducted six months after initial training, to review and reinforce use of the tool. Individualized training was also provided as needed. A smartphone (Motorola Moto G3) was provided to each user. CHVs and NAs were instructed to apply the prediction rule using the mobile application and refer all evaluated patients, independently of the score, to the CIDEIM clinic for further medical and parasitological evaluation. Although in standard use, only presumptively diagnosed cases would be referred, for the purposes of the current study, all patients were referred in order to fully evaluate the performance and operating characteristics of the mobile application. All patients evaluated by CHVs and NAs were also evaluated at the CIDEIM clinical facility by one or both HW and the study physician who used the mobile app prior to clinical and parasitological assessment.</p>
+<a id="article1.body1.sec2.sec8.p2" name="article1.body1.sec2.sec8.p2" class="link-target"></a><p>At the end of the intervention, users were asked to complete an assessment questionnaire consisting of 11 statements on the use and acceptance of the app. The options for each response were displayed on a Likert scale of 1, 2, 3, 4, or 5.</p>
+</div>
+
+<div id="section9" class="section toc-section"><a id="sec015" name="sec015" class="link-target" title="Clinical assessment and management"></a>
+<h3>Clinical assessment and management</h3>
+<a id="article1.body1.sec2.sec9.p1" name="article1.body1.sec2.sec9.p1" class="link-target"></a><p>Clinical history and physical examination were conducted by the study physician who also obtained samples for parasitological evaluation. Treatment and additional procedures (biopsies, laboratory tests) were conducted in accordance with the standard of care [<a href="#pntd.0008989.ref014" class="ref-tip">14</a>].</p>
+</div>
+
+<div id="section10" class="section toc-section"><a id="sec016" name="sec016" class="link-target" title="Parasitological assays"></a>
+<h3>Parasitological assays</h3>
+<a id="article1.body1.sec2.sec10.p1" name="article1.body1.sec2.sec10.p1" class="link-target"></a><p>Microscopic evaluation for the presence of amastigotes of <em>Leishmania spp</em> in tissue smears, and culture of tissue aspirates in biphasic media, were performed as described elsewhere [<a href="#pntd.0008989.ref015" class="ref-tip">15</a>]. Diagnosis of CL was confirmed by visualization of amastigotes in tissue smears or by culture of <em>Leishmania spp</em> from tissue aspirates.</p>
+</div>
+
+<div id="section11" class="section toc-section"><a id="sec017" name="sec017" class="link-target" title="Statistical analysis"></a>
+<h3>Statistical analysis</h3>
+<a id="article1.body1.sec2.sec11.p1" name="article1.body1.sec2.sec11.p1" class="link-target"></a><p>Data were extracted from the SND platform and clinical histories, and analyzed using R software version 3.6 [<a href="#pntd.0008989.ref016" class="ref-tip">16</a>]. Operating characteristics of the mobile application for presumptive diagnosis of CL were determined considering parasitological diagnosis as the gold standard, and were presented with their corresponding binomial confidence intervals, calculated using the Wilson method [<a href="#pntd.0008989.ref017" class="ref-tip">17</a>] (‘binom’ package in R). For concordance analysis of between-rater assessment using the application, Cohen’s kappa was used [<a href="#pntd.0008989.ref018" class="ref-tip">18</a>–<a href="#pntd.0008989.ref020" class="ref-tip">20</a>] (‘irr’ package in R). Kappa is a chance-adjusted measure of concordance, accounting for higher agreement for a characteristic with high prevalence. For concordance between ordered categories, such as the total score, quadratic weighting of differences was used [<a href="#pntd.0008989.ref021" class="ref-tip">21</a>]. Kappa was not calculated if two or more of the four cells were zero. The arbitrary, but widely used, nomenclature of Landis and Koch [<a href="#pntd.0008989.ref020" class="ref-tip">20</a>] was used to describe the strength of concordance based on the value of kappa. To designate a presumptive case using the application score, the previously validated threshold point was set at 7 (a score of ≥ 7 or &lt; 7) [<a href="#pntd.0008989.ref022" class="ref-tip">22</a>]. The <em>t</em> test was used to compare mean differences in time from onset of symptoms and diagnostic assessment, between the different types of users of the application.</p>
+</div>
+</div>
+
+<div xmlns:plos="http://plos.org" id="section3" class="section toc-section"><a id="sec018" name="sec018" data-toc="sec018" class="link-target" title="Results"></a><h2>Results</h2>
+<div id="section1" class="section toc-section"><a id="sec019" name="sec019" class="link-target" title="Adaptation of the clinical prediction rule to a mobile application"></a>
+<h3>Adaptation of the clinical prediction rule to a mobile application</h3>
+<a id="article1.body1.sec3.sec1.p1" name="article1.body1.sec3.sec1.p1" class="link-target"></a><p>The clinical prediction rule was iteratively adapted to the form of an application for mobile phones (<a href="#pntd.0008989.s001">S1</a> and <a href="#pntd.0008989.s002">S2</a> Movies and S1 Software (available from: <a href="https://play.google.com/store/apps/details?id=guaralrpctwo.cideim.guaral.guaralrpc">https://play.google.com/store/apps/details?id=guaralrpctwo.cideim.guaral.guaralrpc</a>)). The initial approach was to identify the main components of the application and to design an interaction model that allows the user to focus on the patients rather than on the tool.</p>
+<a id="article1.body1.sec3.sec1.p2" name="article1.body1.sec3.sec1.p2" class="link-target"></a><p>After the user logs in with an identifier and password, and enters the basic identification data of the patient (<a href="#pntd-0008989-g001">Fig 1A-B</a>), they reach the main screen, which schematically shows six color-coded icons (<a href="#pntd-0008989-g001">Fig 1C</a>), each corresponding to one element of the prediction rule (<a href="#pntd-0008989-t001">Table 1</a>). The iconography was chosen to facilitate navigation, and guide the question content of the prediction rule app (<a href="#pntd-0008989-g001">Fig 1D–1F</a>). Users can tap on icons in any order to enter the corresponding information. Some icons also have multimedia guidance. For instance, the orange lesion icon (<a href="#pntd-0008989-g001">Fig 1D</a>) asks about the presence of lesions with raised borders and shows a typical CL ulcer (<a href="#pntd-0008989-g001">Fig 1E</a>). Users may indicate the site on the body where each lesion is located simply by touching the screen (<a href="#pntd-0008989-g001">Fig 1F</a>). The scoring for this item, lesion site(s) (number 3 in <a href="#pntd-0008989-t001">Table 1</a>), is relatively complex and the app obviates the need for manual calculation, which was previously found to be a main source of errors.</p>
+<a class="link-target" id="pntd-0008989-g001" name="pntd-0008989-g001"></a><div class="figure" data-doi="10.1371/journal.pntd.0008989.g001"><div class="img-box"><a title="Click for larger image" href="article/figure/image?size=medium&amp;id=10.1371/journal.pntd.0008989.g001" data-doi="10.1371/journal.pntd.0008989" data-uri="10.1371/journal.pntd.0008989.g001"><img src="article/figure/image?size=inline&amp;id=10.1371/journal.pntd.0008989.g001" alt="thumbnail" class="thumbnail" loading="lazy"></a><div class="expand"></div></div><div class="figure-inline-download">
+          Download:
+          <ul><li><a href="article/figure/powerpoint?id=10.1371/journal.pntd.0008989.g001"><div class="definition-label">PPT</div><div class="definition-description">PowerPoint slide</div></a></li><li><a href="article/figure/image?download&amp;size=large&amp;id=10.1371/journal.pntd.0008989.g001"><div class="definition-label">PNG</div><div class="definition-description">larger image</div></a></li><li><a href="article/figure/image?download&amp;size=original&amp;id=10.1371/journal.pntd.0008989.g001"><div class="definition-label">TIFF</div><div class="definition-description">original image</div></a></li></ul></div><div class="figcaption"><span>Fig 1. </span> mHealth tool (app) for presumptive diagnosis of leishmaniasis.</div><p class="caption_target"><a id="article1.body1.sec3.sec1.fig1.caption1.p1" name="article1.body1.sec3.sec1.fig1.caption1.p1" class="link-target"></a><p>(A) Homepage requesting user’s name and ID. (B) Personal information for each patient. (C) Main screen with six icons representing the six items of the prediction rule. (D) Menu for Item 1, lesions. (E) Image for user guidance, showing a typical CL lesion. (F) Interface for item 3, allowing the user to select the exact lesion site(s).</p>
+</p><p class="caption_object"><a href="https://doi.org/10.1371/journal.pntd.0008989.g001">
+              https://doi.org/10.1371/journal.pntd.0008989.g001</a></p></div><a id="article1.body1.sec3.sec1.p3" name="article1.body1.sec3.sec1.p3" class="link-target"></a><p>The data flow and storage are shown in <a href="#pntd-0008989-g002">Fig 2</a>. As necessary, data captured by the mobile application can be stored off-line (locally on the phone) and transmitted later to the SND platform, when connectivity is re-established.</p>
+<a class="link-target" id="pntd-0008989-g002" name="pntd-0008989-g002"></a><div class="figure" data-doi="10.1371/journal.pntd.0008989.g002"><div class="img-box"><a title="Click for larger image" href="article/figure/image?size=medium&amp;id=10.1371/journal.pntd.0008989.g002" data-doi="10.1371/journal.pntd.0008989" data-uri="10.1371/journal.pntd.0008989.g002"><img src="article/figure/image?size=inline&amp;id=10.1371/journal.pntd.0008989.g002" alt="thumbnail" class="thumbnail" loading="lazy"></a><div class="expand"></div></div><div class="figure-inline-download">
+          Download:
+          <ul><li><a href="article/figure/powerpoint?id=10.1371/journal.pntd.0008989.g002"><div class="definition-label">PPT</div><div class="definition-description">PowerPoint slide</div></a></li><li><a href="article/figure/image?download&amp;size=large&amp;id=10.1371/journal.pntd.0008989.g002"><div class="definition-label">PNG</div><div class="definition-description">larger image</div></a></li><li><a href="article/figure/image?download&amp;size=original&amp;id=10.1371/journal.pntd.0008989.g002"><div class="definition-label">TIFF</div><div class="definition-description">original image</div></a></li></ul></div><div class="figcaption"><span>Fig 2. </span> Data flow.</div><p class="caption_target"><a id="article1.body1.sec3.sec1.fig2.caption1.p1" name="article1.body1.sec3.sec1.fig2.caption1.p1" class="link-target"></a><p>Users capture the information in the field via the mobile application and synchronize data when a connection is available, via secure cloud storage. The data can be accessed and analyzed by study physicians or researchers via the desktop web application. Sources: the app screen images are created by the authors; other images are in the public domain, taken from publicdomainvectors.org (cloud) and icon-library.net (others).</p>
+</p><p class="caption_object"><a href="https://doi.org/10.1371/journal.pntd.0008989.g002">
+              https://doi.org/10.1371/journal.pntd.0008989.g002</a></p></div></div>
+
+<div id="section2" class="section toc-section"><a id="sec020" name="sec020" class="link-target" title="Usability of the mobile application"></a>
+<h3>Usability of the mobile application</h3>
+<a id="article1.body1.sec3.sec2.p1" name="article1.body1.sec3.sec2.p1" class="link-target"></a><p>Eight users (3 CHV, 2 HW, 1 physician and 2 local health department nursing assistants) completed a questionnaire on the usability of the app (<a href="#pntd-0008989-g003">Fig 3</a>). The app scored favorably on all statements, with a median score of 1, 1.5 or 2, on a scale of 1–5, 1 being the most favorable.</p>
+<a class="link-target" id="pntd-0008989-g003" name="pntd-0008989-g003"></a><div class="figure" data-doi="10.1371/journal.pntd.0008989.g003"><div class="img-box"><a title="Click for larger image" href="article/figure/image?size=medium&amp;id=10.1371/journal.pntd.0008989.g003" data-doi="10.1371/journal.pntd.0008989" data-uri="10.1371/journal.pntd.0008989.g003"><img src="article/figure/image?size=inline&amp;id=10.1371/journal.pntd.0008989.g003" alt="thumbnail" class="thumbnail" loading="lazy"></a><div class="expand"></div></div><div class="figure-inline-download">
+          Download:
+          <ul><li><a href="article/figure/powerpoint?id=10.1371/journal.pntd.0008989.g003"><div class="definition-label">PPT</div><div class="definition-description">PowerPoint slide</div></a></li><li><a href="article/figure/image?download&amp;size=large&amp;id=10.1371/journal.pntd.0008989.g003"><div class="definition-label">PNG</div><div class="definition-description">larger image</div></a></li><li><a href="article/figure/image?download&amp;size=original&amp;id=10.1371/journal.pntd.0008989.g003"><div class="definition-label">TIFF</div><div class="definition-description">original image</div></a></li></ul></div><div class="figcaption"><span>Fig 3. </span> Results of questionnaire on usability.</div><p class="caption_target"><a id="article1.body1.sec3.sec2.fig1.caption1.p1" name="article1.body1.sec3.sec2.fig1.caption1.p1" class="link-target"></a><p>The median (range) score per question are: Q1, 1 (range 1–1); Q2, 1 (1–2); Q3, 1 (1–5); Q4, 1.5 (1–3); Q5, 1 (1–5); Q6, 2 (1–5); Q7, 1 (1–2); Q8, 1 (1–2); Q9, 1 (1–2); Q10, 2 (1–4); Q11, 1 (1–2). *Indicates statements that were posed in terms of difficulty of use, rather than ease of use. Here they have been inverted, in order to facilitate comparability across all the statements.</p>
+</p><p class="caption_object"><a href="https://doi.org/10.1371/journal.pntd.0008989.g003">
+              https://doi.org/10.1371/journal.pntd.0008989.g003</a></p></div></div>
+
+<div id="section3" class="section toc-section"><a id="sec021" name="sec021" class="link-target" title="Evaluation of patients with lesions suggestive of CL using the mobile app"></a>
+<h3>Evaluation of patients with lesions suggestive of CL using the mobile app</h3>
+<a id="article1.body1.sec3.sec3.p1" name="article1.body1.sec3.sec3.p1" class="link-target"></a><p>Between February 2015 and March 2016, 122 participants with lesion(s) suggestive of CL were evaluated by the physician using the mobile app. Of these, 85 were also evaluated by HW1, 96 by HW2, and 15 by one of the four CHV. Demographic and clinical characteristics of the study participants are summarized in <a href="#pntd-0008989-t002">Table 2</a>. Patients were predominantly male (81%), of African descent (50%), and between 15 and 44 years of age (73%). During the study period, a further four people were screened by the CHV with the app but were not included due to: lack of parasitological data (n = 2), reported duration of lesions of more than six months, which was an exclusion criterion (n = 1), and missing evidence of consent (n = 1).</p>
+<a class="link-target" id="pntd-0008989-t002" name="pntd-0008989-t002"></a><div class="figure" data-doi="10.1371/journal.pntd.0008989.t002"><div class="img-box"><a title="Click for larger image" href="article/figure/image?size=medium&amp;id=10.1371/journal.pntd.0008989.t002" data-doi="10.1371/journal.pntd.0008989" data-uri="10.1371/journal.pntd.0008989.t002"><img src="article/figure/image?size=inline&amp;id=10.1371/journal.pntd.0008989.t002" alt="thumbnail" class="thumbnail" loading="lazy"></a><div class="expand"></div></div><div class="figure-inline-download">
+          Download:
+          <ul><li><a href="article/figure/powerpoint?id=10.1371/journal.pntd.0008989.t002"><div class="definition-label">PPT</div><div class="definition-description">PowerPoint slide</div></a></li><li><a href="article/figure/image?download&amp;size=large&amp;id=10.1371/journal.pntd.0008989.t002"><div class="definition-label">PNG</div><div class="definition-description">larger image</div></a></li><li><a href="article/figure/image?download&amp;size=original&amp;id=10.1371/journal.pntd.0008989.t002"><div class="definition-label">TIFF</div><div class="definition-description">original image</div></a></li></ul></div><div class="figcaption"><span>Table 2. </span> Socio-demographic and clinical characteristic of study participants.</div><p class="caption_target"></p><p class="caption_object"><a href="https://doi.org/10.1371/journal.pntd.0008989.t002">
+              https://doi.org/10.1371/journal.pntd.0008989.t002</a></p></div><a id="article1.body1.sec3.sec3.p2" name="article1.body1.sec3.sec3.p2" class="link-target"></a><p>Of the 122 participants, most (n = 107, 88%) had parasitologically confirmed CL (<a href="#pntd-0008989-t002">Table 2</a>). Of those positive, all but one were positive on microscopy, with the exception being positive on culture. Microscopy was done for all those parasitologically positive, and culture on 22% (24/107). Among those who were parasitologically negative (n = 14, 11%), other diagnoses were clinically defined by the attending physician and included predominantly bacterial infections and vascular ulcers, as well as one case each of sporotrichosis and squamous cell carcinoma. Most had a single lesion (61% of 122) and a large majority (89%) presented ulcerated lesions, with 44% located on exposed areas like the arms. More than half of the patients reported having a lesion with &gt;1 month duration.</p>
+</div>
+
+<div id="section4" class="section toc-section"><a id="sec022" name="sec022" class="link-target" title="Diagnostic performance"></a>
+<h3>Diagnostic performance</h3>
+<a id="article1.body1.sec3.sec4.p1" name="article1.body1.sec3.sec4.p1" class="link-target"></a><p>The sensitivity of the mobile app was very high (&gt;95%) for all users (<a href="#pntd-0008989-t003">Table 3</a>). The CHV results are aggregated because no potential CL patient was assessed by more than one of them. Specificity was not determined due to the small number of participating patients having a confirmed diagnosis of another etiology.</p>
+<a class="link-target" id="pntd-0008989-t003" name="pntd-0008989-t003"></a><div class="figure" data-doi="10.1371/journal.pntd.0008989.t003"><div class="img-box"><a title="Click for larger image" href="article/figure/image?size=medium&amp;id=10.1371/journal.pntd.0008989.t003" data-doi="10.1371/journal.pntd.0008989" data-uri="10.1371/journal.pntd.0008989.t003"><img src="article/figure/image?size=inline&amp;id=10.1371/journal.pntd.0008989.t003" alt="thumbnail" class="thumbnail" loading="lazy"></a><div class="expand"></div></div><div class="figure-inline-download">
+          Download:
+          <ul><li><a href="article/figure/powerpoint?id=10.1371/journal.pntd.0008989.t003"><div class="definition-label">PPT</div><div class="definition-description">PowerPoint slide</div></a></li><li><a href="article/figure/image?download&amp;size=large&amp;id=10.1371/journal.pntd.0008989.t003"><div class="definition-label">PNG</div><div class="definition-description">larger image</div></a></li><li><a href="article/figure/image?download&amp;size=original&amp;id=10.1371/journal.pntd.0008989.t003"><div class="definition-label">TIFF</div><div class="definition-description">original image</div></a></li></ul></div><div class="figcaption"><span>Table 3. </span> Sensitivity of the clinical prediction rule for presumptive diagnosis of cutaneous leishmaniasis, relative to parasitological diagnosis.</div><p class="caption_target"></p><p class="caption_object"><a href="https://doi.org/10.1371/journal.pntd.0008989.t003">
+              https://doi.org/10.1371/journal.pntd.0008989.t003</a></p></div></div>
+
+<div id="section5" class="section toc-section"><a id="sec023" name="sec023" class="link-target" title="Inter-observer agreement of the mobile application"></a>
+<h3>Inter-observer agreement of the mobile application</h3>
+<a id="article1.body1.sec3.sec5.p1" name="article1.body1.sec3.sec5.p1" class="link-target"></a><p>Overall, with the threshold score of seven for presumptive diagnosis of CL using the mobile application, high agreement was observed between the physician and the HW and CHV (<a href="#pntd-0008989-t004">Table 4</a>). However, the concordance (kappa) was low. For example, comparing the assessment of HW1 with that of the physician, there were 80 agreements on being a presumptive case, but no agreements on being CL-negative, yielding a kappa of -0.02. The agreement for individual components of the score varied from ‘almost perfect’ [<a href="#pntd.0008989.ref020" class="ref-tip">20</a>] for the site of the lesions, to ‘slight’ or ‘poor’, for the item grouped lesions.</p>
+<a class="link-target" id="pntd-0008989-t004" name="pntd-0008989-t004"></a><div class="figure" data-doi="10.1371/journal.pntd.0008989.t004"><div class="img-box"><a title="Click for larger image" href="article/figure/image?size=medium&amp;id=10.1371/journal.pntd.0008989.t004" data-doi="10.1371/journal.pntd.0008989" data-uri="10.1371/journal.pntd.0008989.t004"><img src="article/figure/image?size=inline&amp;id=10.1371/journal.pntd.0008989.t004" alt="thumbnail" class="thumbnail" loading="lazy"></a><div class="expand"></div></div><div class="figure-inline-download">
+          Download:
+          <ul><li><a href="article/figure/powerpoint?id=10.1371/journal.pntd.0008989.t004"><div class="definition-label">PPT</div><div class="definition-description">PowerPoint slide</div></a></li><li><a href="article/figure/image?download&amp;size=large&amp;id=10.1371/journal.pntd.0008989.t004"><div class="definition-label">PNG</div><div class="definition-description">larger image</div></a></li><li><a href="article/figure/image?download&amp;size=original&amp;id=10.1371/journal.pntd.0008989.t004"><div class="definition-label">TIFF</div><div class="definition-description">original image</div></a></li></ul></div><div class="figcaption"><span>Table 4. </span> Concordance between the evaluation performed by the CHV and the HW compared to the evaluation performed by the physician using the mobile application.</div><p class="caption_target"></p><p class="caption_object"><a href="https://doi.org/10.1371/journal.pntd.0008989.t004">
+              https://doi.org/10.1371/journal.pntd.0008989.t004</a></p></div></div>
+
+<div id="section6" class="section toc-section"><a id="sec024" name="sec024" class="link-target" title="Impact of active community case finding and referral versus facility-based passive detection using the mobile app"></a>
+<h3>Impact of active community case finding and referral versus facility-based passive detection using the mobile app</h3>
+<a id="article1.body1.sec3.sec6.p1" name="article1.body1.sec3.sec6.p1" class="link-target"></a><p>Individuals identified and evaluated within their communities using the mobile app by CHV were diagnosed on average 4.4 weeks (n = 15, range 2–12) after initiation of symptoms, compared to 8.5 weeks (n = 102, range 2–21) for those directly consulting the CIDEIM referral center, where they were evaluated by the health personnel using the app. Hence the difference was 4.1 weeks, 95% confidence interval 1.3–6.8, p = 0.005.</p>
+</div>
+</div>
+
+<div xmlns:plos="http://plos.org" id="section4" class="section toc-section"><a id="sec025" name="sec025" data-toc="sec025" class="link-target" title="Discussion"></a><h2>Discussion</h2><a id="article1.body1.sec4.p1" name="article1.body1.sec4.p1" class="link-target"></a><p>This study reports the development and evaluation of a mobile adaptation of a validated clinical prediction rule [<a href="#pntd.0008989.ref003" class="ref-tip">3</a>,<a href="#pntd.0008989.ref006" class="ref-tip">6</a>] for presumptive diagnosis of CL by CHV and health workers. Our findings join a growing corpus of literature demonstrating that mHealth systems using mobile telephones have the potential to be viable and cost-effective strategies to improve access to healthcare, opportune diagnosis and epidemiological surveillance for under-served populations [<a href="#pntd.0008989.ref023" class="ref-tip">23</a>]. The current study was carried out in a resource-constrained region with limited health care infrastructure and access to diagnosis and treatment of CL. Furthermore, ongoing conflict, a circumstance that is often associated with CL [<a href="#pntd.0008989.ref024" class="ref-tip">24</a>] is a contributing factor to under-reporting and under-ascertainment of this disease.</p>
+<a id="article1.body1.sec4.p2" name="article1.body1.sec4.p2" class="link-target"></a><p>In this challenging context the training process of the CHVs was re-enforced by their frequent contact with the population at risk of CL. Their adoption of the mHealth tool was facilitated by their ready recognition of the risk factors evaluated (<a href="#pntd.0008989.s001">S1 Movie</a>).</p>
+<a id="article1.body1.sec4.p3" name="article1.body1.sec4.p3" class="link-target"></a><p>The app performed with high sensitivity (&gt;95%) in detecting true CL cases, whether in the hands of a physician, health worker, or community health volunteers. The results of this study confirmed the discriminatory cutoff score of ≥ 7 for presumptive CL derived from the prior validation study. These findings support the feasibility of screening with the app as a first step to triage patients for the confirmatory parasitological diagnosis required to authorize and administer treatment. The app could economize the use of rapid diagnostic (confirmatory) tests by CHV when such tests become available. Importantly, besides facilitating active case detection, the app encourages and empowers community health volunteers through its interactive and intuitive format, and access to the support of health professionals.</p>
+<a id="article1.body1.sec4.p4" name="article1.body1.sec4.p4" class="link-target"></a><p>Compared to the previous validation study that was based on a mechanical prediction rule device [<a href="#pntd.0008989.ref003" class="ref-tip">3</a>], a higher percentage of agreement was observed with the application for most of the prediction rule variables for HW and CHV when they were compared with the study physician. This improvement is likely due to the instructive information that is provided by the application, which facilitates the understanding and assessment of the variables. This improvement was generally observed both for variables related to the clinical characteristics of the lesion (ulcer with raised borders, and lesion site), and for variables related to clinical history such as the presence of risk activity when the infection was acquired and lesion developed. The exception was the variable “no grouped lesions”, which had a lower level of agreement with the application compared to the mechanical prediction rule. This is not surprising because it has been one of the most difficult variables to evaluate by non-medical personnel, since the development of the prediction rule in 1993 [<a href="#pntd.0008989.ref022" class="ref-tip">22</a>]. The adaptation that was made for the application evidently did not overcome the limitation that we have experienced with this variable. However, this contrasts with the results of the usability assessment (<a href="#pntd-0008989-g003">Fig 3</a>), in which most of the user participants agreed about the ability of the application to identify grouped lesions. The characteristics of lesions may differ in other regions, e.g. in terms of raised borders and whether nodular or ulcerated, and the app could require adaptation in those terms to be effective elsewhere.</p>
+<a id="article1.body1.sec4.p5" name="article1.body1.sec4.p5" class="link-target"></a><p>In this study we had limited ability to assess other operating characteristics of the app (in particular, specificity and negative predictive value), because few of the eligible cases were of an etiology other than CL. In this area, common differential diagnoses are vascular ulcers, squamous cell carcinomas and bacterial infections.</p>
+<a id="article1.body1.sec4.p6" name="article1.body1.sec4.p6" class="link-target"></a><p>Inter-observer agreement—the percentage of assessments with the same result—was high, although this was again driven by the high proportion of true CL cases among the participants. We hope to address this limitation in further studies of the app which are currently underway. In areas of low prevalence, the specificity, and positive and negative predictive values of the app score are critical, and it is important to train users in epidemiological, clinical, diagnostic, dermatologic concepts of leishmaniasis, and differential diagnosis.</p>
+<a id="article1.body1.sec4.p7" name="article1.body1.sec4.p7" class="link-target"></a><p>The point estimates of the chance-corrected concordance (kappa) for the individual components of the score ranged from very high to zero (for grouped lesions), and were generally lower than found in a previous study using a mechanical version of the prediction rule that included a higher proportion of etiologies different from CL [<a href="#pntd.0008989.ref003" class="ref-tip">3</a>], although the confidence intervals were generally wide. Another limitation of our study is that most of the data are from users with a higher level of education, and experience with CL, than the target population of users (i.e. CHV). A major reason for this was security concerns, since those perceived as social activists are often targeted by outlaw groups.</p>
+<a id="article1.body1.sec4.p8" name="article1.body1.sec4.p8" class="link-target"></a><p>The availability of the app as a tool for active case detection in the hands of CHV in rural areas resulted in a significantly shorter interval between the onset of symptoms and diagnosis as compared to the current practice of passive detection through patient consultation of health facilities and health personnel in urban Tumaco. Active case detection in the community, together with referral, has the potential to promote prompt parasitological diagnosis and treatment as well as improve case ascertainment and reporting. Although the operating characteristics of the app require further evaluation, particularly in relation with dermal lesions of different etiologies, the mHealth app could become an integral part of an active community-based surveillance model in low resource areas, possibly involving schools.</p>
+<a id="article1.body1.sec4.p9" name="article1.body1.sec4.p9" class="link-target"></a><p>The didactic components of the app contribute to its potential as a training resource for CL detection by health care personnel. Future increase in 3G coverage in endemic areas of Colombia anticipate a scenario where mHealth will be even more effective. In the meantime, portable antennas could improve access, while awareness could be enhanced via broadcast media such as radio. On the other hand, although each individual’s scores are necessary for a research study such as the current one, in routine use it may not be necessary to transmit the scores to a physician once they have been generated by the app.</p>
+<a id="article1.body1.sec4.p10" name="article1.body1.sec4.p10" class="link-target"></a><p>The participation of community or primary health workers presumptively diagnosing cutaneous leishmaniasis based on clinical diagnostic or clinical-historical prediction models, has been evaluated in other settings [<a href="#pntd.0008989.ref025" class="ref-tip">25</a>,<a href="#pntd.0008989.ref026" class="ref-tip">26</a>]. Another study conducted in Colombia, in three municipalities of the Department of Santander, also found that CHW achieved good sensitivity when they sought a presumptive clinical diagnosis of CL, using a qualitative diagnostic Likert five level-scale [<a href="#pntd.0008989.ref026" class="ref-tip">26</a>].</p>
+<a id="article1.body1.sec4.p11" name="article1.body1.sec4.p11" class="link-target"></a><p>Demonstration of the sensitivity and feasibility of surveillance for active case detection at the community level using mHealth technology not only supports its potential to promote opportune diagnosis and treatment, but also of determining the true magnitude of this neglected disease at the local and national levels in Colombia, as well as potentially in other South American countries. This knowledge would inform and support the allocation of resources for prevention and control.</p>
+</div>
+
+<div xmlns:plos="http://plos.org" id="section5" class="section toc-section"><a id="sec026" name="sec026" data-toc="sec026" class="link-target" title="Supporting information"></a><h2>Supporting information</h2><div class="figshare_widget" doi="10.1371/journal.pntd.0008989"></div><div class="supplementary-material"><a name="pntd.0008989.s001" id="pntd.0008989.s001" class="link-target"></a><h3 class="siTitle title-small"><a href="article/file?type=supplementary&amp;id=10.1371/journal.pntd.0008989.s001">S1 Movie. </a>Guaral app overview movie, file name “Guaral app overview movie 270px.mp4”.</h3><a id="article1.body1.sec5.supplementary-material1.caption1.p1" name="article1.body1.sec5.supplementary-material1.caption1.p1" class="link-target"></a><p class="preSiDOI">Overview movie of the overall study using the mobile application. A higher resolution version can be accessed at: <a href="https://www.youtube.com/watch?v=DDJ08yesYOM&amp;feature=youtu.be">https://www.youtube.com/watch?v=DDJ08yesYOM&amp;feature=youtu.be</a>.</p>
+<p class="siDoi"><a href="https://doi.org/10.1371/journal.pntd.0008989.s001">https://doi.org/10.1371/journal.pntd.0008989.s001</a></p><a id="article1.body1.sec5.supplementary-material1.caption1.p2" name="article1.body1.sec5.supplementary-material1.caption1.p2" class="link-target"></a><p class="postSiDOI">(MP4)</p>
+</div><div class="supplementary-material"><a name="pntd.0008989.s002" id="pntd.0008989.s002" class="link-target"></a><h3 class="siTitle title-small"><a href="article/file?type=supplementary&amp;id=10.1371/journal.pntd.0008989.s002">S2 Movie. </a>Guaral app tutorial video, file name “VIDEO TUTORIAL GUARAL APP INGLES SD.mp4”.</h3><a id="article1.body1.sec5.supplementary-material2.caption1.p1" name="article1.body1.sec5.supplementary-material2.caption1.p1" class="link-target"></a><p class="preSiDOI">Tutorial video showing how to use the mobile application. A higher resolution version can be accessed at: <a href="https://www.youtube.com/watch?v=OjRMA2G92ik&amp;index=9&amp;list=UUYkYVZC4pGQDYPaYe73rRww">https://www.youtube.com/watch?v=OjRMA2G92ik&amp;index=9&amp;list=UUYkYVZC4pGQDYPaYe73rRww</a>.</p>
+<p class="siDoi"><a href="https://doi.org/10.1371/journal.pntd.0008989.s002">https://doi.org/10.1371/journal.pntd.0008989.s002</a></p><a id="article1.body1.sec5.supplementary-material2.caption1.p2" name="article1.body1.sec5.supplementary-material2.caption1.p2" class="link-target"></a><p class="postSiDOI">(MP4)</p>
+</div></div>
+
+
+
+
+
+<div xmlns:plos="http://plos.org" class="section toc-section"><a id="ack" name="ack" data-toc="ack" title="Acknowledgments" class="link-target"></a><h2>Acknowledgments</h2>
+<a id="article1.back1.ack1.p1" name="article1.back1.ack1.p1" class="link-target"></a><p>We are grateful to Drs. Alejandra María del Castillo, Miguel Prieto and David Rebellón for their assistance in the collation of clinical data.</p>
+</div><div xmlns:plos="http://plos.org" class="toc-section"><a id="references" name="references" class="link-target" data-toc="references" title="References"></a><h2>References</h2><ol class="references"><li id="ref1"><span class="order">1.
+            </span><a name="pntd.0008989.ref001" id="pntd.0008989.ref001" class="link-target"></a>Herrera G, Teheran A, Pradilla I, Vera M, Ramirez JD. Geospatial-temporal distribution of Tegumentary Leishmaniasis in Colombia (2007–2016). PLoS Negl Trop Dis. 2018;12(4):e0006419.  pmid:29624582. <ul class="reflinks" data-doi="10.1371/journal.pntd.0006419"><li><a href="https://doi.org/10.1371/journal.pntd.0006419" data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" target="_new" title="Go to article">
+                      View Article
+                    </a></li><li><a href="http://www.ncbi.nlm.nih.gov/pubmed/29624582" target="_new" title="Go to article in PubMed">
+                        PubMed/NCBI
+                      </a></li><li><a href="http://scholar.google.com/scholar?q=Geospatial-temporal+distribution+of+Tegumentary+Leishmaniasis+in+Colombia+%282007%E2%80%932016%29+Herrera+2018" target="_new" title="Go to article in Google Scholar">
+                      Google Scholar
+                    </a></li></ul></li><li id="ref2"><span class="order">2.
+            </span><a name="pntd.0008989.ref002" id="pntd.0008989.ref002" class="link-target"></a>Alvar J, Velez ID, Bern C, Herrero M, Desjeux P, Cano J, et al. Leishmaniasis Worldwide and Global Estimates of Its Incidence. PloS ONE. 2012;7(5). ARTN e35671  pmid:22693548 <ul class="reflinks" data-doi="10.1371/journal.pone.0035671"><li><a href="https://doi.org/10.1371/journal.pone.0035671" data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" target="_new" title="Go to article">
+                      View Article
+                    </a></li><li><a href="http://www.ncbi.nlm.nih.gov/pubmed/22693548" target="_new" title="Go to article in PubMed">
+                        PubMed/NCBI
+                      </a></li><li><a href="http://scholar.google.com/scholar?q=Leishmaniasis+Worldwide+and+Global+Estimates+of+Its+Incidence+Alvar+2012" target="_new" title="Go to article in Google Scholar">
+                      Google Scholar
+                    </a></li></ul></li><li id="ref3"><span class="order">3.
+            </span><a name="pntd.0008989.ref003" id="pntd.0008989.ref003" class="link-target"></a>Rojas CA, Weigle KA, Barrera L, Collazos C. Surveillance and screening of American cutaneous leishmaniasis by Colombian primary health care workers using a clinical prediction rule. Trans R Soc Trop Med Hyg. 2002;96(4):405–10.  pmid:12497977. <ul class="reflinks" data-doi="10.1016/s0035-9203(02)90375-5"><li><a href="https://doi.org/10.1016/s0035-9203(02)90375-5" data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" target="_new" title="Go to article">
+                      View Article
+                    </a></li><li><a href="http://www.ncbi.nlm.nih.gov/pubmed/12497977" target="_new" title="Go to article in PubMed">
+                        PubMed/NCBI
+                      </a></li><li><a href="http://scholar.google.com/scholar?q=Surveillance+and+screening+of+American+cutaneous+leishmaniasis+by+Colombian+primary+health+care+workers+using+a+clinical+prediction+rule+Rojas+2002" target="_new" title="Go to article in Google Scholar">
+                      Google Scholar
+                    </a></li></ul></li><li id="ref4"><span class="order">4.
+            </span><a name="pntd.0008989.ref004" id="pntd.0008989.ref004" class="link-target"></a>Holmes KK, Bertozzi S, Bloom BR, Jha P. Major Infectious Diseases Third Edition ed. Washington, DC: World Bank; 2017. <ul class="find-nolinks"></ul></li><li id="ref5"><span class="order">5.
+            </span><a name="pntd.0008989.ref005" id="pntd.0008989.ref005" class="link-target"></a>Wood CS, Thomas MR, Budd J, Mashamba-Thompson TP, Herbst K, Pillay D, et al. Taking connected mobile-health diagnostics of infectious diseases to the field. Nature. 2019;566(7745):467–74.  pmid:30814711. <ul class="reflinks" data-doi="10.1038/s41586-019-0956-2"><li><a href="https://doi.org/10.1038/s41586-019-0956-2" data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" target="_new" title="Go to article">
+                      View Article
+                    </a></li><li><a href="http://www.ncbi.nlm.nih.gov/pubmed/30814711" target="_new" title="Go to article in PubMed">
+                        PubMed/NCBI
+                      </a></li><li><a href="http://scholar.google.com/scholar?q=Taking+connected+mobile-health+diagnostics+of+infectious+diseases+to+the+field+Wood+2019" target="_new" title="Go to article in Google Scholar">
+                      Google Scholar
+                    </a></li></ul></li><li id="ref6"><span class="order">6.
+            </span><a name="pntd.0008989.ref006" id="pntd.0008989.ref006" class="link-target"></a>Navarro A, Rubiano L, Arango JD, Rojas CA, Alexander N, Saravia NG, et al. Developing mobile health applications for neglected tropical disease research. PLoS Negl Trop Dis. 2018;12(11):e0006791.  pmid:30383809. <ul class="reflinks" data-doi="10.1371/journal.pntd.0006791"><li><a href="https://doi.org/10.1371/journal.pntd.0006791" data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" target="_new" title="Go to article">
+                      View Article
+                    </a></li><li><a href="http://www.ncbi.nlm.nih.gov/pubmed/30383809" target="_new" title="Go to article in PubMed">
+                        PubMed/NCBI
+                      </a></li><li><a href="http://scholar.google.com/scholar?q=Developing+mobile+health+applications+for+neglected+tropical+disease+research+Navarro+2018" target="_new" title="Go to article in Google Scholar">
+                      Google Scholar
+                    </a></li></ul></li><li id="ref7"><span class="order">7.
+            </span><a name="pntd.0008989.ref007" id="pntd.0008989.ref007" class="link-target"></a>Torres Rodriguez GE. Informe del Evento Leishmaniasis, hasta el Periodo Epidemiológico XIII, Colombia, 2016. Bogotá: 2017. <ul class="find-nolinks"></ul></li><li id="ref8"><span class="order">8.
+            </span><a name="pntd.0008989.ref008" id="pntd.0008989.ref008" class="link-target"></a>Agudelo Chivatá NJ. Informe del Evento Leishmaniasis, Colombia, 2017. Bogotá: 2018. <ul class="find-nolinks"></ul></li><li id="ref9"><span class="order">9.
+            </span><a name="pntd.0008989.ref009" id="pntd.0008989.ref009" class="link-target"></a>Agudelo Chivatá NJ. Informe del Evento Leishmaniasis, Colombia, 2018. Bogotá: 2019. <ul class="find-nolinks"></ul></li><li id="ref10"><span class="order">10.
+            </span><a name="pntd.0008989.ref010" id="pntd.0008989.ref010" class="link-target"></a>Agudelo Chivatá NJ. Informe de Evento Leishmaniasis Cutánea, Periodo Epidemiológico XIII. Colombia, 2019. Bogotá: 2019. <ul class="find-nolinks"></ul></li><li id="ref11"><span class="order">11.
+            </span><a name="pntd.0008989.ref011" id="pntd.0008989.ref011" class="link-target"></a>Claro (Colombia). Cobertura Soluciones Móviles 2019 [10 February 2020]. <a href="https://www.claro.com.co/personas/soporte/mapas-de-cobertura/">https://www.claro.com.co/personas/soporte/mapas-de-cobertura/</a>. <ul class="find-nolinks"></ul></li><li id="ref12"><span class="order">12.
+            </span><a name="pntd.0008989.ref012" id="pntd.0008989.ref012" class="link-target"></a>Movistar (Colombia). Cobertura y Calidad 2019 [10 February 2020]. <a href="https://www.movistar.co/web/portal-col/atencion-cliente/cobertura-tecnologia/">https://www.movistar.co/web/portal-col/atencion-cliente/cobertura-tecnologia/</a>. <ul class="find-nolinks"></ul></li><li id="ref13"><span class="order">13.
+            </span><a name="pntd.0008989.ref013" id="pntd.0008989.ref013" class="link-target"></a>Tigo (Colombia). Áreas de cobertura de los servicios en mapa interactivo en WEB 2019 [10 February 2020]. <a href="https://www.tigo.com.co/regimen-de-proteccion-al-usuario/mapa-cobertura">https://www.tigo.com.co/regimen-de-proteccion-al-usuario/mapa-cobertura</a>. <ul class="find-nolinks"></ul></li><li id="ref14"><span class="order">14.
+            </span><a name="pntd.0008989.ref014" id="pntd.0008989.ref014" class="link-target"></a>Ministerio de Salud y Protección Social. Guía de Atención Clínica Integral del Paciente con Leishmaniasis. Bogotá: 2010. <ul class="find-nolinks"></ul></li><li id="ref15"><span class="order">15.
+            </span><a name="pntd.0008989.ref015" id="pntd.0008989.ref015" class="link-target"></a>Weigle KA, de Davalos M, Heredia P, Molineros R, Saravia NG, D’Alessandro A. Diagnosis of cutaneous and mucocutaneous leishmaniasis in Colombia: a comparison of seven methods. Am J Trop Med Hyg. 1987;36(3):489–96.  pmid:2437815. <ul class="reflinks" data-doi="10.4269/ajtmh.1987.36.489"><li><a href="https://doi.org/10.4269/ajtmh.1987.36.489" data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" target="_new" title="Go to article">
+                      View Article
+                    </a></li><li><a href="http://www.ncbi.nlm.nih.gov/pubmed/2437815" target="_new" title="Go to article in PubMed">
+                        PubMed/NCBI
+                      </a></li><li><a href="http://scholar.google.com/scholar?q=Diagnosis+of+cutaneous+and+mucocutaneous+leishmaniasis+in+Colombia%3A+a+comparison+of+seven+methods+Weigle+1987" target="_new" title="Go to article in Google Scholar">
+                      Google Scholar
+                    </a></li></ul></li><li id="ref16"><span class="order">16.
+            </span><a name="pntd.0008989.ref016" id="pntd.0008989.ref016" class="link-target"></a>R Core Team. R: A language and environment for statistical computing. Vienna, Austria: R Foundation for Statistical Computing; 2019. <ul class="find-nolinks"></ul></li><li id="ref17"><span class="order">17.
+            </span><a name="pntd.0008989.ref017" id="pntd.0008989.ref017" class="link-target"></a>Agresti A, Coull BA. Approximate is better than "exact" for interval estimation of binomial proportions. The American Statistician. 1998;52(2):119–26. <ul class="reflinks"><li><a href="#" data-author="Agresti" data-cit="AgrestiA%2C%20CoullBA.%20Approximate%20is%20better%20than%20%22exact%22%20for%20interval%20estimation%20of%20binomial%20proportions.%20The%20American%20Statistician.%201998%3B52%282%29%3A119%E2%80%9326." data-title="Approximate%20is%20better%20than%20%26quot%3Bexact%26quot%3B%20for%20interval%20estimation%20of%20binomial%20proportions" target="_new" title="Go to article in CrossRef">
+                      View Article
+                    </a></li><li><a href="http://scholar.google.com/scholar?q=Approximate+is+better+than+%26quot%3Bexact%26quot%3B+for+interval+estimation+of+binomial+proportions+Agresti+1998" target="_new" title="Go to article in Google Scholar">
+                      Google Scholar
+                    </a></li></ul></li><li id="ref18"><span class="order">18.
+            </span><a name="pntd.0008989.ref018" id="pntd.0008989.ref018" class="link-target"></a>Cohen J. A coefficient of agreement for nominal scales. Educational and Psychological Measurement. 1960;20:37–46. <ul class="reflinks"><li><a href="#" data-author="Cohen" data-cit="CohenJ.%20A%20coefficient%20of%20agreement%20for%20nominal%20scales.%20Educational%20and%20Psychological%20Measurement.%201960%3B20%3A37%E2%80%9346." data-title="A%20coefficient%20of%20agreement%20for%20nominal%20scales" target="_new" title="Go to article in CrossRef">
+                      View Article
+                    </a></li><li><a href="http://scholar.google.com/scholar?q=A+coefficient+of+agreement+for+nominal+scales+Cohen+1960" target="_new" title="Go to article in Google Scholar">
+                      Google Scholar
+                    </a></li></ul></li><li id="ref19"><span class="order">19.
+            </span><a name="pntd.0008989.ref019" id="pntd.0008989.ref019" class="link-target"></a>Fleiss JL, Cohen J, Everitt BS. Large sample standard errors of kappa and weighted kappa. Psychological bulletin. 1969;72(5):323. <ul class="reflinks"><li><a href="#" data-author="Fleiss" data-cit="FleissJL%2C%20CohenJ%2C%20EverittBS.%20Large%20sample%20standard%20errors%20of%20kappa%20and%20weighted%20kappa.%20Psychological%20bulletin.%201969%3B72%285%29%3A323." data-title="Large%20sample%20standard%20errors%20of%20kappa%20and%20weighted%20kappa" target="_new" title="Go to article in CrossRef">
+                      View Article
+                    </a></li><li><a href="http://scholar.google.com/scholar?q=Large+sample+standard+errors+of+kappa+and+weighted+kappa+Fleiss+1969" target="_new" title="Go to article in Google Scholar">
+                      Google Scholar
+                    </a></li></ul></li><li id="ref20"><span class="order">20.
+            </span><a name="pntd.0008989.ref020" id="pntd.0008989.ref020" class="link-target"></a>Landis JR, Koch GG. The measurement of observer agreement for categorical data. Biometrics. 1977;33:159–74. pmid:843571 <ul class="reflinks"><li><a href="#" data-author="Landis" data-cit="LandisJR%2C%20KochGG.%20The%20measurement%20of%20observer%20agreement%20for%20categorical%20data.%20Biometrics.%201977%3B33%3A159%E2%80%9374.%20843571" data-title="The%20measurement%20of%20observer%20agreement%20for%20categorical%20data" target="_new" title="Go to article in CrossRef">
+                      View Article
+                    </a></li><li><a href="http://www.ncbi.nlm.nih.gov/pubmed/843571" target="_new" title="Go to article in PubMed">
+                        PubMed/NCBI
+                      </a></li><li><a href="http://scholar.google.com/scholar?q=The+measurement+of+observer+agreement+for+categorical+data+Landis+1977" target="_new" title="Go to article in Google Scholar">
+                      Google Scholar
+                    </a></li></ul></li><li id="ref21"><span class="order">21.
+            </span><a name="pntd.0008989.ref021" id="pntd.0008989.ref021" class="link-target"></a>Schuster C. A note on the interpretation of weighted kappa and its relations to other rater agreement statistics for metric scales. Educational and Psychological Measurement. 2004;64(2):243–53. <ul class="reflinks"><li><a href="#" data-author="Schuster" data-cit="SchusterC.%20A%20note%20on%20the%20interpretation%20of%20weighted%20kappa%20and%20its%20relations%20to%20other%20rater%20agreement%20statistics%20for%20metric%20scales.%20Educational%20and%20Psychological%20Measurement.%202004%3B64%282%29%3A243%E2%80%9353." data-title="A%20note%20on%20the%20interpretation%20of%20weighted%20kappa%20and%20its%20relations%20to%20other%20rater%20agreement%20statistics%20for%20metric%20scales" target="_new" title="Go to article in CrossRef">
+                      View Article
+                    </a></li><li><a href="http://scholar.google.com/scholar?q=A+note+on+the+interpretation+of+weighted+kappa+and+its+relations+to+other+rater+agreement+statistics+for+metric+scales+Schuster+2004" target="_new" title="Go to article in Google Scholar">
+                      Google Scholar
+                    </a></li></ul></li><li id="ref22"><span class="order">22.
+            </span><a name="pntd.0008989.ref022" id="pntd.0008989.ref022" class="link-target"></a>Weigle KA, Escobar M, Arias AL, Martinez F, Rojas C. A clinical prediction rule for American cutaneous leishmaniasis in Colombia. Int J Epidemiol. 1993;22(3):548–58.  pmid:8359974. <ul class="reflinks" data-doi="10.1093/ije/22.3.548"><li><a href="https://doi.org/10.1093/ije/22.3.548" data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" target="_new" title="Go to article">
+                      View Article
+                    </a></li><li><a href="http://www.ncbi.nlm.nih.gov/pubmed/8359974" target="_new" title="Go to article in PubMed">
+                        PubMed/NCBI
+                      </a></li><li><a href="http://scholar.google.com/scholar?q=A+clinical+prediction+rule+for+American+cutaneous+leishmaniasis+in+Colombia+Weigle+1993" target="_new" title="Go to article in Google Scholar">
+                      Google Scholar
+                    </a></li></ul></li><li id="ref23"><span class="order">23.
+            </span><a name="pntd.0008989.ref023" id="pntd.0008989.ref023" class="link-target"></a>Rajput ZA, Mbugua S, Amadi D, Chepngeno V, Saleem JJ, Anokwa Y, et al. Evaluation of an Android-based mHealth system for population surveillance in developing countries. J Am Med Inform Assoc. 2012;19(4):655–9. Epub 2012/03/01.  pmid:22366295. <ul class="reflinks" data-doi="10.1136/amiajnl-2011-000476"><li><a href="https://doi.org/10.1136/amiajnl-2011-000476" data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" target="_new" title="Go to article">
+                      View Article
+                    </a></li><li><a href="http://www.ncbi.nlm.nih.gov/pubmed/22366295" target="_new" title="Go to article in PubMed">
+                        PubMed/NCBI
+                      </a></li><li><a href="http://scholar.google.com/scholar?q=Evaluation+of+an+Android-based+mHealth+system+for+population+surveillance+in+developing+countries+Rajput+2012" target="_new" title="Go to article in Google Scholar">
+                      Google Scholar
+                    </a></li></ul></li><li id="ref24"><span class="order">24.
+            </span><a name="pntd.0008989.ref024" id="pntd.0008989.ref024" class="link-target"></a>Berry I, Berrang-Ford L. Leishmaniasis, conflict, and political terror: A spatio-temporal analysis. Soc Sci Med. 2016;167:140–9.  pmid:27194448. <ul class="reflinks" data-doi="10.1016/j.socscimed.2016.04.038"><li><a href="https://doi.org/10.1016/j.socscimed.2016.04.038" data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" target="_new" title="Go to article">
+                      View Article
+                    </a></li><li><a href="http://www.ncbi.nlm.nih.gov/pubmed/27194448" target="_new" title="Go to article in PubMed">
+                        PubMed/NCBI
+                      </a></li><li><a href="http://scholar.google.com/scholar?q=Leishmaniasis%2C+conflict%2C+and+political+terror%3A+A+spatio-temporal+analysis+Berry+2016" target="_new" title="Go to article in Google Scholar">
+                      Google Scholar
+                    </a></li></ul></li><li id="ref25"><span class="order">25.
+            </span><a name="pntd.0008989.ref025" id="pntd.0008989.ref025" class="link-target"></a>Siriwardana HV, Senarath U, Chandrawansa PH, Karunaweera ND. Use of a clinical tool for screening and diagnosis of cutaneous leishmaniasis in Sri Lanka. Pathogens and global health. 2015;109(4):174–83. Epub 2015/07/18.  pmid:26184581. <ul class="reflinks" data-doi="10.1179/2047773215Y.0000000024"><li><a href="https://doi.org/10.1179/2047773215Y.0000000024" data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" target="_new" title="Go to article">
+                      View Article
+                    </a></li><li><a href="http://www.ncbi.nlm.nih.gov/pubmed/26184581" target="_new" title="Go to article in PubMed">
+                        PubMed/NCBI
+                      </a></li><li><a href="http://scholar.google.com/scholar?q=Use+of+a+clinical+tool+for+screening+and+diagnosis+of+cutaneous+leishmaniasis+in+Sri+Lanka+Siriwardana+2015" target="_new" title="Go to article in Google Scholar">
+                      Google Scholar
+                    </a></li></ul></li><li id="ref26"><span class="order">26.
+            </span><a name="pntd.0008989.ref026" id="pntd.0008989.ref026" class="link-target"></a>Sánchez J, Orozco L, Buendía J, Muñoz G. Validez del diagnóstico presuntivo de leishmaniasis cutánea realizado por mediadores comunitarios en Colombia. Rev Panam Salud Publica. 2007;21(6):335–44. <ul class="reflinks"><li><a href="#" data-author="S%C3%A1nchez" data-cit="S%C3%A1nchezJ%2C%20OrozcoL%2C%20Buend%C3%ADaJ%2C%20Mu%C3%B1ozG.%20Validez%20del%20diagn%C3%B3stico%20presuntivo%20de%20leishmaniasis%20cut%C3%A1nea%20realizado%20por%20mediadores%20comunitarios%20en%20Colombia.%20Rev%20Panam%20Salud%20Publica.%202007%3B21%286%29%3A335%E2%80%9344." data-title="Validez%20del%20diagn%C3%B3stico%20presuntivo%20de%20leishmaniasis%20cut%C3%A1nea%20realizado%20por%20mediadores%20comunitarios%20en%20Colombia" target="_new" title="Go to article in CrossRef">
+                      View Article
+                    </a></li><li><a href="http://scholar.google.com/scholar?q=Validez+del+diagn%C3%B3stico+presuntivo+de+leishmaniasis+cut%C3%A1nea+realizado+por+mediadores+comunitarios+en+Colombia+S%C3%A1nchez+2007" target="_new" title="Go to article in Google Scholar">
+                      Google Scholar
+                    </a></li></ul></li></ol></div>
+
+
+
+          <div class="ref-tooltip">
+            <div class="ref_tooltip-content">
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <aside class="article-aside">
+
+
+<!--[if IE 9]>
+<style>
+.dload-xml {margin-top: 38px}
+</style>
+<![endif]-->
+<div class="dload-menu">
+  <div class="dload-pdf">
+    <a href="/plosntds/article/file?id=10.1371/journal.pntd.0008989&type=printable"
+       id="downloadPdf" target="_blank">Download PDF</a>
+  </div>
+  <div data-js-tooltip-hover="trigger" class="dload-hover">&nbsp;
+    <ul class="dload-xml" data-js-tooltip-hover="target">
+      <li><a href="/plosntds/article/citation?id=10.1371/journal.pntd.0008989"
+             id="downloadCitation">Citation</a></li>
+      <li><a href="/plosntds/article/file?id=10.1371/journal.pntd.0008989&type=manuscript"
+             id="downloadXml">XML</a>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="aside-container">
+  <div class="print-article" id="printArticle" data-js-tooltip-hover="trigger">
+    <a href="#" onclick="window.print(); return false;" class="preventDefault" id="printBrowser">Print</a>
+  </div>
+  <div class="share-article" id="shareArticle" data-js-tooltip-hover="trigger">
+    Share
+    <ul data-js-tooltip-hover="target" class="share-options" id="share-options">
+
+      <li><a href="https://www.reddit.com/submit?url=https%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pntd.0008989" id="shareReddit" target="_blank" title="Submit to Reddit"><img src="/resource/img/icon.reddit.16.png" width="16" height="16" alt="Reddit">Reddit</a></li>
+
+      <li><a href="https://www.facebook.com/share.php?u=https%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pntd.0008989&t=Adaptation and performance of a mobile application for early detection of cutaneous leishmaniasis" id="shareFacebook" target="_blank" title="Share on Facebook"><img src="/resource/img/icon.fb.16.png" width="16" height="16" alt="Facebook">Facebook</a></li>
+
+      <li><a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pntd.0008989&title=Adaptation and performance of a mobile application for early detection of cutaneous leishmaniasis&summary=Checkout this article I found at PLOS"  id="shareLinkedIn" target="_blank" title="Add to LinkedIn"><img src="/resource/img/icon.linkedin.16.png" width="16" height="16" alt="LinkedIn">LinkedIn</a></li>
+
+      <li><a href="https://www.mendeley.com/import/?url=https%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pntd.0008989"  id="shareMendeley" target="_blank" title="Add to Mendeley"><img src="/resource/img/icon.mendeley.16.png" width="16" height="16" alt="Mendeley">Mendeley</a></li>
+
+      <li><a href="https://bsky.app/intent/compose?text=Checkout%20this%20article%20I%20found%20at%20PLOS:%20https%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pntd.0008989"  id="shareBluesky" target="_blank" title="Share on Bluesky"><img src="/resource/img/icon.bluesky.light.png" width="16" height="16" alt="Bluesky">Bluesky</a></li>
+
+      <li><a href="mailto:?subject=Adaptation and performance of a mobile application for early detection of cutaneous leishmaniasis&body=I%20thought%20you%20would%20find%20this%20article%20interesting.%20From%20PLOS Neglected Tropical Diseases:%20https%3A%2F%2Fdx.plos.org%2F10.1371%2Fjournal.pntd.0008989"  id="shareEmail" rel="noreferrer" aria-label="Email"><img src="/resource/img/icon.email.16.png" width="16" height="16" alt="Email">Email</a></li>
+    </ul>
+  </div>
+</div>
+
+
+     <!-- Crossmark 2.0 widget -->
+    <script src="https://crossmark-cdn.crossref.org/widget/v2.0/widget.js"></script>
+    <a aria-label="Check for updates via CrossMark" data-target="crossmark">
+      <img alt="Check for updates via CrossMark" width="150" src="https://crossmark-cdn.crossref.org/widget/v2.0/logos/CROSSMARK_BW_horizontal.svg">
+    </a>
+    <!-- End Crossmark 2.0 widget -->
+
+
+
+<div class="aside-container collections-aside-container"><!-- React Magic --></div>
+
+
+<div class="skyscraper-container">
+  <div class="title">Advertisement</div>
+<!-- DoubleClick Ad Zone -->
+  <div class='advertisement' id='div-gpt-ad-1458247671871-1' style='width:160px; height:600px;'>
+    <script type='text/javascript'>
+      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1458247671871-1'); });
+    </script>
+  </div>
+</div>
+
+
+
+
+<div class="subject-areas-container">
+  <h3>Subject Areas <div id="subjInfo">?</div>
+    <div id="subjInfoText">
+      <p>For more information about PLOS Subject Areas, click
+        <a href="https://github.com/PLOS/plos-thesaurus/blob/master/README.md" target="_blank" title="Link opens in new window">here</a>.</p>
+      <span class="inline-intro">We want your feedback.</span> Do these Subject Areas make sense for this article? Click the target next to the incorrect Subject Area and let us know. Thanks for your help!
+
+
+    </div>
+  </h3>
+  <ul id="subjectList">
+      <li>
+              <a class="taxo-term" title="Search for articles about Lesions"
+                 href="/plosntds/search?filterSubjects=Lesions&filterJournals=PLoSNTD&q=">Lesions</a>
+        <span class="taxo-flag">&nbsp;</span>
+        <div class="taxo-tooltip" data-categoryname="Lesions"><p class="taxo-explain">Is the Subject Area <strong>"Lesions"</strong> applicable to this article?
+          <button id="noFlag" data-action="remove">Yes</button>
+          <button id="flagIt" value="flagno" data-action="add">No</button></p>
+          <p class="taxo-confirm">Thanks for your feedback.</p>
+        </div>
+      </li>
+      <li>
+              <a class="taxo-term" title="Search for articles about Physicians"
+                 href="/plosntds/search?filterSubjects=Physicians&filterJournals=PLoSNTD&q=">Physicians</a>
+        <span class="taxo-flag">&nbsp;</span>
+        <div class="taxo-tooltip" data-categoryname="Physicians"><p class="taxo-explain">Is the Subject Area <strong>"Physicians"</strong> applicable to this article?
+          <button id="noFlag" data-action="remove">Yes</button>
+          <button id="flagIt" value="flagno" data-action="add">No</button></p>
+          <p class="taxo-confirm">Thanks for your feedback.</p>
+        </div>
+      </li>
+      <li>
+              <a class="taxo-term" title="Search for articles about Leishmaniasis"
+                 href="/plosntds/search?filterSubjects=Leishmaniasis&filterJournals=PLoSNTD&q=">Leishmaniasis</a>
+        <span class="taxo-flag">&nbsp;</span>
+        <div class="taxo-tooltip" data-categoryname="Leishmaniasis"><p class="taxo-explain">Is the Subject Area <strong>"Leishmaniasis"</strong> applicable to this article?
+          <button id="noFlag" data-action="remove">Yes</button>
+          <button id="flagIt" value="flagno" data-action="add">No</button></p>
+          <p class="taxo-confirm">Thanks for your feedback.</p>
+        </div>
+      </li>
+      <li>
+              <a class="taxo-term" title="Search for articles about Parasitology"
+                 href="/plosntds/search?filterSubjects=Parasitology&filterJournals=PLoSNTD&q=">Parasitology</a>
+        <span class="taxo-flag">&nbsp;</span>
+        <div class="taxo-tooltip" data-categoryname="Parasitology"><p class="taxo-explain">Is the Subject Area <strong>"Parasitology"</strong> applicable to this article?
+          <button id="noFlag" data-action="remove">Yes</button>
+          <button id="flagIt" value="flagno" data-action="add">No</button></p>
+          <p class="taxo-confirm">Thanks for your feedback.</p>
+        </div>
+      </li>
+      <li>
+              <a class="taxo-term" title="Search for articles about Apps"
+                 href="/plosntds/search?filterSubjects=Apps&filterJournals=PLoSNTD&q=">Apps</a>
+        <span class="taxo-flag">&nbsp;</span>
+        <div class="taxo-tooltip" data-categoryname="Apps"><p class="taxo-explain">Is the Subject Area <strong>"Apps"</strong> applicable to this article?
+          <button id="noFlag" data-action="remove">Yes</button>
+          <button id="flagIt" value="flagno" data-action="add">No</button></p>
+          <p class="taxo-confirm">Thanks for your feedback.</p>
+        </div>
+      </li>
+      <li>
+              <a class="taxo-term" title="Search for articles about Cell phones"
+                 href="/plosntds/search?filterSubjects=Cell+phones&filterJournals=PLoSNTD&q=">Cell phones</a>
+        <span class="taxo-flag">&nbsp;</span>
+        <div class="taxo-tooltip" data-categoryname="Cell phones"><p class="taxo-explain">Is the Subject Area <strong>"Cell phones"</strong> applicable to this article?
+          <button id="noFlag" data-action="remove">Yes</button>
+          <button id="flagIt" value="flagno" data-action="add">No</button></p>
+          <p class="taxo-confirm">Thanks for your feedback.</p>
+        </div>
+      </li>
+      <li>
+              <a class="taxo-term" title="Search for articles about Ulcers"
+                 href="/plosntds/search?filterSubjects=Ulcers&filterJournals=PLoSNTD&q=">Ulcers</a>
+        <span class="taxo-flag">&nbsp;</span>
+        <div class="taxo-tooltip" data-categoryname="Ulcers"><p class="taxo-explain">Is the Subject Area <strong>"Ulcers"</strong> applicable to this article?
+          <button id="noFlag" data-action="remove">Yes</button>
+          <button id="flagIt" value="flagno" data-action="add">No</button></p>
+          <p class="taxo-confirm">Thanks for your feedback.</p>
+        </div>
+      </li>
+      <li>
+              <a class="taxo-term" title="Search for articles about Rural areas"
+                 href="/plosntds/search?filterSubjects=Rural+areas&filterJournals=PLoSNTD&q=">Rural areas</a>
+        <span class="taxo-flag">&nbsp;</span>
+        <div class="taxo-tooltip" data-categoryname="Rural areas"><p class="taxo-explain">Is the Subject Area <strong>"Rural areas"</strong> applicable to this article?
+          <button id="noFlag" data-action="remove">Yes</button>
+          <button id="flagIt" value="flagno" data-action="add">No</button></p>
+          <p class="taxo-confirm">Thanks for your feedback.</p>
+        </div>
+      </li>
+  </ul>
+</div>
+<div id="subjectErrors"></div>
+  </aside>
+</div>
+
+
+
+
+</main>
+<footer id="pageftr">
+  <div class="row">
+    <div class="block x-small">
+
+<ul class="nav nav-secondary">
+    <li class="ftr-header"><a href="https://plos.org/our-journals/">Publications</a></li>
+    <li><a href="/plosbiology/" id="ftr-bio">PLOS Biology</a></li>
+    <li><a href="/climate/" id="ftr-climate">PLOS Climate</a></li>
+    <li><a href="/complexsystems/" id="ftr-complex-systems">PLOS Complex Systems</a></li>
+    <li><a href="/ploscompbiol/" id="ftr-compbio">PLOS Computational Biology</a></li>
+    <li><a href="/digitalhealth/" id="ftr-digitalhealth">PLOS Digital Health</a></li>
+    <li><a href="/plosgenetics/" id="ftr-gen">PLOS Genetics</a></li>
+    <li><a href="/globalpublichealth/" id="ftr-globalpublichealth">PLOS Global Public Health</a></li>
+  </ul>
+    </div>
+    <div class="block x-small">
+
+<ul class="nav nav-secondary">
+    <li class="ftr-header">&nbsp;</li>
+    <li><a href="/plosmedicine/" id="ftr-med">PLOS Medicine</a></li>
+    <li><a href="/mentalhealth/" id="ftr-mental-health">PLOS Mental Health</a></li>
+    <li><a href="/plosntds/" id="ftr-ntds">PLOS Neglected Tropical Diseases</a></li>
+    <li><a href="/plosone/" id="ftr-one">PLOS One</a></li>
+    <li><a href="/plospathogens/" id="ftr-path">PLOS Pathogens</a></li>
+    <li><a href="/sustainabilitytransformation/" id="ftr-sustainabilitytransformation">PLOS Sustainability and Transformation</a></li>
+    <li><a href="/water/" id="ftr-water">PLOS Water</a></li>
+</ul>
+    </div>
+    <div class="block xx-small">	
+
+
+<ul class="nav nav-tertiary">
+  <li>
+    <a href="https://plos.org" id="ftr-home">Home</a>
+  </li>
+  <li>
+    <a href="https://blogs.plos.org" id="ftr-blog">Blogs</a>
+  </li>
+  <li>
+    <a href="https://collections.plos.org/" id="ftr-collections">Collections</a>
+  </li>
+  <li>
+    <a href="mailto:webmaster@plos.org" id="ftr-feedback">Give feedback</a>
+  </li>
+  <li>
+    <a href="/plosntds/lockss-manifest" id="ftr-lockss">LOCKSS</a>
+  </li>
+</ul>
+    </div>
+    <div class="block xx-small">
+
+<ul class="nav nav-primary">
+  <li><a href="https://plos.org/privacy-policy" id="ftr-privacy">Privacy Policy</a></li>
+  <li><a href="https://plos.org/terms-of-use" id="ftr-terms">Terms of Use</a></li>
+  <li><a href="https://plos.org/advertise/" id="ftr-advertise">Advertise</a></li>
+  <li><a href="https://plos.org/media-inquiries" id="ftr-media">Media Inquiries</a></li>
+  <li><a href="https://plos.org/contact" id="ftr-contact">Contact</a></li>
+</ul>
+    </div>
+  </div>
+  <div class="row">
+    <p>
+
+<img src="/resource/img/logo-plos-footer.png" alt="PLOS" class="logo-footer"/>
+
+
+<span class="footer-non-profit-statement">PLOS is a nonprofit 501(c)(3) corporation, #C2354500, based in California, US</span>    </p>
+    <div class="block">
+    </div>
+  </div>
+ 
+<script src="/resource/js/global.js" type="text/javascript"></script>
+</footer>
+
+
+
+
+<script type="text/javascript">
+  var ArticleData = {
+    doi: '10.1371/journal.pntd.0008989',
+    title: '<article-title xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">Adaptation and performance of a mobile application for early detection of cutaneous leishmaniasis<\/article-title>',
+    date: 'Feb 11, 2021'
+  };
+</script>
+<script src="/resource/js/components/show_onscroll.js" type="text/javascript"></script>
+<script src="/resource/js/components/pagination.js" type="text/javascript"></script>
+<script src="/resource/js/vendor/spin.js" type="text/javascript"></script>
+<script src="/resource/js/pages/article.js" type="text/javascript"></script>
+<script src="/resource/js/pages/article_references.js" type="text/javascript"></script>
+<script src="/resource/js/pages/article_sidebar.js" type="text/javascript"></script>
+<script src="/resource/js/vendor/foundation/foundation.dropdown.js" type="text/javascript"></script>
+  <script src="/resource/js/components/table_open.js" type="text/javascript"></script>
+
+        <script src="/resource/js/components/figshare.js" type="text/javascript"></script>
+  <script src="/resource/js/vendor/jquery.panzoom.min.js" type="text/javascript"></script>
+  <script src="/resource/js/vendor/jquery.mousewheel.js" type="text/javascript"></script>
+
+  <script src="/resource/js/components/lightbox.js" type="text/javascript"></script>
+
+  <script src="/resource/js/pages/article_body.js" type="text/javascript"></script>
+
+
+<!-- This file should be loaded before the renderJs, to avoid conflicts with the FigShare, that implements the MathJax also. -->
+
+<!--  mathjax configuration options  -->
+<!-- more can be found at http://docs.mathjax.org/en/latest/ -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  "HTML-CSS": {
+    scale: 100,
+    availableFonts: ["STIX","TeX"],
+    preferredFont: "STIX",
+    webFont: "STIX-Web",
+    linebreaks: { automatic: false }
+  },
+  jax: ["input/MathML", "output/HTML-CSS"]
+});
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=MML_HTMLorMML"></script>
+
+<div class="reveal-modal-bg"></div>
+</body>
+</html>
