@@ -1,0 +1,635 @@
+Thieme E-Journals - Applied Clinical Informatics / Abstract applied clinical informatics Skip to main content Table of Contents Current Issue Free Sample Issue (01/2025) Related Journals ACI Open Methods of Information in Medicine Yearbook of Medical Informatics Subscribe to RSS Please copy the URL and add it into your RSS Feed Reader. https://www.thieme-connect.de/rss/thieme/en/10.1055-s-00035026.xml Share / Bookmark Facebook Linkedin Weibo Download PDF Appl Clin Inform 2021; 12(05): 1091-1100 DOI: 10.1055/s-0041-1740188 Research Article Development, Implementation, and User Evaluation of COVID-19 Dashboard in a Third-Level
+      Hospital in Iran Authors Author Affiliations Somayeh Fazaeli 1 Medical Records and Health Information Technology Department, School of Paramedical
+               Sciences, Mashhad University of Medical Sciences, Mashhad, Iran Taleb Khodaveisi 2 Department of Health Information Technology, School of Allied Medical Sciences, Hamadan
+               University of Medical Sciences, Hamadan, Iran Ali Khorsand Vakilzadeh 3 Department of Complementary and Chinese Medicine, School of Persian and Complementary
+               Medicine, Mashhad University of Medical Sciences, Mashhad, Iran Mehdi Yousefi 4 Social Determinants of Health Research Center, Mashhad University of Medical Sciences,
+               Mashhad, Iran Atousa Ariafar 5 Imam Reza Educational, Research and Medical Institution, Mashhad University of Medical
+               Sciences, Mashhad, Iran Mohsen Shokoohizadeh 1 Medical Records and Health Information Technology Department, School of Paramedical
+               Sciences, Mashhad University of Medical Sciences, Mashhad, Iran Saeed Mohammad-Pour 6 Department of Health Economics, School of Management and Medical Information, Iran
+               University of Medical Sciences, Tehran, Iran Further Information (opens Publication History section) Also available at Abstract Full Text References Permissions and Reprints (opens in new window) Abstract Introduction The implementation of a dashboard enables managers to make informed and evidence-based
+         decisions through data visualization and graphical presentation of information. This
+         study aimed to design and implement a COVID-19 management dashboard in a third-level
+         hospital in Mashhad, Iran. Materials and Methods This descriptive developmental applied study was conducted in the second half of
+         2020 in three stages, using user-centered design methodology in four phases: (1) specification
+         of the application context, (2) specification of requirements, (3) creation of design
+         solutions, and (4) evaluation of designs. Data collection in each phase was performed
+         through holding group discussions with the main users, nominal group techniques, interviews,
+         and questioners. The dashboard prototype for the data display was designed using the
+         Power BI Desktop software. Subsequently, users' comments were obtained using the focus
+         group method and included in the dashboard. Results In total, 25 indicators related to input, process, and output areas were identified
+         based on the findings of the first stage. Moreover, eight items were introduced by
+         participants as dashboard requirements. The dashboard was developed based on users'
+         feedback and suggestions, such as the use of colors, reception of periodic and specific
+         reports based on key performance indicators, and rearrangement of the components visible
+         on the page. The result of the user satisfaction survey indicated their satisfaction
+         with the developed dashboard. Conclusion The selection of proper criteria for the implementation of an effective dashboard
+         is critical for the health care organization since they are designed with a high-tech
+         and content-based environment. The dashboard in the present study was a successful
+         combination of clinical and managerial indicators. Future studies should focus on
+         the design and development of dashboards, as well as benchmarking by using data from
+         several hospitals. Keywords COVID-19 - 
+         dashboard - 
+         hospitals - 
+         information systems - 
+         Iran Protection of Human and Animal Subjects The study was conducted in accordance with the Helsinki Declaration. Note This research is part of a large project (Grant Code No. 990315). The study protocol
+         was approved by the Research Ethics Committee of Tehran University of Medical Sciences,
+         Tehran, Iran (Ethical code: IR.TUMS.NIHR.REC.1400.012). Publication History Received: 20 June 2021 Accepted: 11 September 2021 Article published online: 08 December 2021 © 2021. Thieme. All rights reserved. Georg Thieme Verlag KG Rüdigerstraße 14, 70469 Stuttgart, Germany References 1 Florez H, 
+            
+            
+            Singh S. 
+            
+            Online dashboard and data analysis approach for assessing COVID-19 case and death
+            data. F1000 Res 2020; 9: 570 Reference Link Ris Crossref PubMed Search in Google Scholar 2 Viggiano D, 
+            
+            
+            Lococo F, 
+            
+            
+            Dell'Amore A. 
+            
+            et al; 
+            Italian Thoracic Surgery Society (SICT) Task Force on COVID-19 Pandemic. 
+            Hospital organization and thoracic oncological patient management during the coronavirus
+            disease-2019 outbreak: a brief report from a nationwide survey of the Italian Society
+            of Thoracic Surgery. Interact Cardiovasc Thorac Surg 2020; 31 (06) 895-899 Reference Link Ris Crossref PubMed Search in Google Scholar 3 Knighton AJ, 
+            
+            
+            Ranade-Kharkar P, 
+            
+            
+            Brunisholz KD. 
+            
+            et al. 
+            Rapid implementation of a complex, multimodal technology response to COVID-19 at an
+            integrated community-based health care system. Appl Clin Inform 2020; 11 (05) 825-838 Reference Link Ris Thieme Connect PubMed Search in Google Scholar 4 Yousef M, 
+            
+            
+            Fazaeli S, 
+            
+            
+            Masoudi S, 
+            
+            
+            Masoudi S. 
+            
+            et al. 
+            Comparative study of the physician specialty and laboratory services requested for
+            patients with COVID-19: evidence from a large hospital. J Isfahan Med Sch 2021; 39
+            (610) 33-40 Reference Link Ris PubMed Search in Google Scholar 5 Goniewicz K, 
+            
+            
+            Khorram-Manesh A, 
+            
+            
+            Hertelendy A, 
+            
+            
+            Goniewicz M, 
+            
+            
+            Naylor K, 
+            
+            
+            Burkle F. 
+            
+            Current response and management decisions of the European Union to the COVID-19 outbreak:
+            a review. Sustainability 2020; 12 (09) 3838 Reference Link Ris Crossref PubMed Search in Google Scholar 6 Yousefi M, 
+            
+            
+            Assari Arani A, 
+            
+            
+            Sahabi B, 
+            
+            
+            Kazemnejad A, 
+            
+            
+            Fazaeli S. 
+            
+            Household health costs: direct, indirect and intangible. Iran J Public Health 2014;
+            43 (02) 202-209 Reference Link Ris PubMed Search in Google Scholar 7 Fakhruddin BS, 
+            
+            
+            Blanchard K, 
+            
+            
+            Ragupathy D. 
+            
+            Are we there yet? The transition from response to recovery for the COVID-19 pandemic.
+            Prog Disaster Sci 2020; 7: 100102 Reference Link Ris Crossref PubMed Search in Google Scholar 8 Kitajima M, 
+            
+            
+            Ahmed W, 
+            
+            
+            Bibby K. 
+            
+            et al. 
+            SARS-CoV-2 in wastewater: State of the knowledge and research needs. Sci Total Environ
+            2020; Reference Link Ris Crossref PubMed Search in Google Scholar 9 Sullivan C, 
+            
+            
+            Wong I, 
+            
+            
+            Adams E. 
+            
+            et al. 
+            Moving faster than the COVID-19 pandemic: the rapid, digital transformation of a public
+            health system. Appl Clin Inform 2021; 12 (02) 229-236 Reference Link Ris Thieme Connect PubMed Search in Google Scholar 10 Ye J. 
+            
+            Health information system's responses to COVID-19 pandemic in China: a national cross-sectional
+            study. Appl Clin Inform 2021; 12 (02) 399-406 Reference Link Ris Thieme Connect PubMed Search in Google Scholar 11 Lawrence J, 
+            
+            
+            Hossain N, 
+            
+            
+            Rinaudo C, 
+            
+            
+            Buchanan R, 
+            
+            
+            Jaradat R. 
+            
+            eds. 
+            An approach to improve hurricane disaster logistics using system dynamics and information
+            systems.  18th Annual Conference on Systems Engineering Research (CSER), CA, March
+            19, 2020 Reference Link Ris PubMed 12 Checchi F, 
+            
+            
+            Warsame A, 
+            
+            
+            Treacy-Wong V, 
+            
+            
+            Polonsky J, 
+            
+            
+            van Ommeren M, 
+            
+            
+            Prudhon C. 
+            
+            Public health information in crisis-affected populations: a review of methods and
+            their use for advocacy and action. Lancet 2017; 390 (10109): 2297-2313 Reference Link Ris Crossref PubMed Search in Google Scholar 13 Ahmadi H, 
+            
+            
+            Nilashi M, 
+            
+            
+            Ibrahim O. 
+            
+            Organizational decision to adopt hospital information system: an empirical investigation
+            in the case of Malaysian public hospitals. Int J Med Inform 2015; 84 (03) 166-188 Reference Link Ris Crossref PubMed Search in Google Scholar 14 Grange ES, 
+            
+            
+            Neil EJ, 
+            
+            
+            Stoffel M. 
+            
+            et al. 
+            Responding to COVID-19: the UW medicine information technology services experience.
+            Appl Clin Inform 2020; 11 (02) 265-275 Reference Link Ris Thieme Connect PubMed Search in Google Scholar 15 Joshi A, 
+            
+            
+            Amadi C, 
+            
+            
+            Katz B, 
+            
+            
+            Kulkarni S, 
+            
+            
+            Nash D. 
+            
+            A human-centered platform for HIV infection reduction in New York: development and
+            usage analysis of the Ending the Epidemic (ETE) Dashboard. JMIR Public Health Surveill
+            2017; 3 (04) e95 Reference Link Ris Crossref PubMed Search in Google Scholar 16 Fareed N, 
+            
+            
+            Swoboda CM, 
+            
+            
+            Chen S, 
+            
+            
+            Potter E, 
+            
+            
+            Wu DTY, 
+            
+            
+            Sieck CJ. 
+            
+            U.S. COVID-19 State Government Public Dashboards: an expert review. Appl Clin Inform
+            2021; 12 (02) 208-221 Reference Link Ris Thieme Connect PubMed Search in Google Scholar 17 Buttigieg SC, 
+            
+            
+            Pace A, 
+            
+            
+            Rathert C. 
+            
+            Hospital performance dashboards: a literature review. J Health Organ Manag 2017; 31
+            (03) 385-406 Reference Link Ris Crossref PubMed Search in Google Scholar 18 Dehghani Mahmodabadi A, 
+            
+            
+            Langarizadeh M, 
+            
+            
+            Mosaddegh Mehrjardi MH, 
+            
+            
+            Emadi S. 
+            
+            Development of managerial key performance indicators for a hospital pharmacy digital
+            dashboard. Iran J Pharm Res 2019; 18 (04) 2124-2130 Reference Link Ris PubMed Search in Google Scholar 19 Hadiwijaya H, 
+            
+            
+            Febrianty F, 
+            
+            
+            Azdy R. 
+            
+            Development of prototype electronic dashboard service performance of LPKA class I
+            Palembang. Sinkron 2021; 5 (02) 394 Reference Link Ris Crossref PubMed Search in Google Scholar 20 Weggelaar-Jansen AMJWM, 
+            
+            
+            Broekharst DSE, 
+            
+            
+            de Bruijne M. 
+            
+            Developing a hospital-wide quality and safety dashboard: a qualitative research study.
+            BMJ Qual Saf 2018; 27 (12) 1000-1007 Reference Link Ris Crossref PubMed Search in Google Scholar 21 Rouhani S, 
+            
+            
+            Zamenian SRotbie S. 
+            
+            Prototyping and evaluating a hospital dashboard based on end-user satisfaction model.
+            Journal of Health and Biomedical Informatics 2016; 3 (03) 174-185 Reference Link Ris PubMed Search in Google Scholar 22 Asadzadeh A, 
+            
+            
+            Pakkhoo S, 
+            
+            
+            Saeidabad MM, 
+            
+            
+            Khezri H, 
+            
+            
+            Ferdousi R. 
+            
+            Information technology in emergency management of COVID-19 outbreak. Inform Med Unlocked
+            2020; 21: 100475 Reference Link Ris Crossref PubMed Search in Google Scholar 23 Berry I, 
+            
+            
+            Soucy JR, 
+            
+            
+            Tuite A, 
+            
+            
+            Fisman D. 
+            
+            COVID-19 Canada Open Data Working Group. 
+            Open access epidemiologic data and an interactive dashboard to monitor the COVID-19
+            outbreak in Canada. CMAJ 2020; 192 (15) E420 Reference Link Ris Crossref PubMed Search in Google Scholar 24 Dong E, 
+            
+            
+            Du H, 
+            
+            
+            Gardner L. 
+            
+            An interactive web-based dashboard to track COVID-19 in real time. Lancet Infect Dis
+            2020; 20 (05) 533-534 Reference Link Ris Crossref PubMed Search in Google Scholar 25 Vizcaychipi MP, 
+            
+            
+            Shovlin CL, 
+            
+            
+            McCarthy A. 
+            
+            et al; 
+            ChelWest COVID-19 Consortium. 
+            Development and implementation of a COVID-19 near real-time traffic light system in
+            an acute hospital setting. Emerg Med J 2020; 37 (10) 630-636 Reference Link Ris Crossref PubMed Search in Google Scholar 26 François M, 
+            
+            
+            Osiurak F, 
+            
+            
+            Fort A, 
+            
+            
+            Crave P, 
+            
+            
+            Navarro J. 
+            
+            Usability and acceptance of truck dashboards designed by drivers: two participatory
+            design approaches compared to a user-centered design. Int J Ind Ergon 2021; 81: 103073 Reference Link Ris Crossref PubMed Search in Google Scholar 27 Setyawan M, 
+            
+            
+            Awangga R, 
+            
+            
+            Afriyanti R. 
+            
+            Dashboard settings design in SVARA using user-centred design method. Telkomnika 2019;
+            17 (02) 615-619 Reference Link Ris Crossref PubMed Search in Google Scholar 28 Pestana M, 
+            
+            
+            Pereira R, 
+            
+            
+            Moro S. 
+            
+            Improving health care management in hospitals through a productivity dashboard. J
+            Med Syst 2020; 44 (04) 87 Reference Link Ris Crossref PubMed Search in Google Scholar 29 Yoo DW, 
+            
+            
+            Birnbaum ML, 
+            
+            
+            Van Meter AR, 
+            
+            
+            Ali AF, 
+            
+            
+            Arenare E, 
+            
+            
+            Abowd GD, 
+            
+            
+            De Choudhury M. 
+            
+            Designing a clinician-facing tool for using insights from patients' social media activity:
+            iterative co-design approach. JMIR Ment Health 2020; 7 (08) e16969 Reference Link Ris Crossref PubMed Search in Google Scholar 30 Aggelidis VP, 
+            
+            
+            Chatzoglou PD. 
+            
+            Hospital information systems: measuring end user computing satisfaction (EUCS). J
+            Biomed Inform 2012; 45 (03) 566-579 Reference Link Ris Crossref PubMed Search in Google Scholar 31 Jawa RS, 
+            
+            
+            Tharakan MA, 
+            
+            
+            Tsai C. 
+            
+            et al; 
+            Stony Brook Medicine Enterprise Analytics Team. 
+            A reference guide to rapidly implementing an institutional dashboard for resource
+            allocation and oversight during COVID-19 pandemic surge. JAMIA Open 2020; 3 (04) 518-522 Reference Link Ris Crossref PubMed Search in Google Scholar 32 Campbell T, 
+            
+            
+            Mistry Z, 
+            
+            
+            Gorelick-Feldman G, 
+            
+            
+            Hodanics C, 
+            
+            
+            Babin S, 
+            
+            
+            Lewis S. 
+            
+            Development of the respiratory disease dashboard for the identification of new and
+            emerging respiratory pathogens. Johns Hopkins APL Tech Dig 2014; 32 (04) 726 Reference Link Ris PubMed Search in Google Scholar 33 Cheng CK, 
+            
+            
+            Ip DK, 
+            
+            
+            Cowling BJ, 
+            
+            
+            Ho LM, 
+            
+            
+            Leung GM, 
+            
+            
+            Lau EH. 
+            
+            Digital dashboard design using multiple data streams for disease surveillance with
+            influenza surveillance as an example. J Med Internet Res 2011; 13 (04) e85 Reference Link Ris Crossref PubMed Search in Google Scholar 34 Kostkova P, 
+            
+            
+            Garbin S, 
+            
+            
+            Moser J, 
+            
+            
+            Pan W. 
+            
+            eds. 
+            Integration and visualization public health dashboard: the medi+ board pilot project.
+            Proceedings of the 23rd International Conference on World Wide Web;  2014 Reference Link Ris PubMed Search in Google Scholar 35 Anantham D, 
+            
+            
+            Chai-Lim C, 
+            
+            
+            Zhou JX, 
+            
+            
+            Phua GC. 
+            
+            Operationalization of critical care triage during a pandemic surge using protocolized
+            communication and integrated supportive care. J Intensive Care 2020; 8 (01) 59 Reference Link Ris Crossref PubMed Search in Google Scholar 36 Mok WQ, 
+            
+            
+            Wang W, 
+            
+            
+            Liaw SY. 
+            
+            Vital signs monitoring to detect patient deterioration: an integrative literature
+            review. Int J Nurs Pract 2015; 21 (Suppl. 02) 91-98 Reference Link Ris Crossref PubMed Search in Google Scholar 37 Christen OM, 
+            
+            
+            Mösching Y, 
+            
+            
+            Müller P, 
+            
+            
+            Denecke K, 
+            
+            
+            Nüssli S. 
+            
+            Dashboard visualization of information for emergency medical services. Stud Health
+            Technol Inform 2020; 275: 27-31 Reference Link Ris PubMed Search in Google Scholar 38 Meng Y, 
+            
+            
+            Zhang Y, 
+            
+            
+            Wang S. 
+            
+            et al. 
+            Lessons learned in the development of a web-based surveillance reporting system and
+            dashboard to monitor acute febrile illnesses in Guangdong and Yunnan provinces, China,
+            2017-2019. Health Secur 2020; 18 (S1): S14-S22 Reference Link Ris Crossref PubMed Search in Google Scholar 39 Madhavan S, 
+            
+            
+            Bastarache L, 
+            
+            
+            Brown JS. 
+            
+            et al. 
+            Use of electronic health records to support a public health response to the COVID-19
+            pandemic in the United States: a perspective from 15 academic medical centers. J Am
+            Med Inform Assoc 2021; 28 (02) 393-401 Reference Link Ris Crossref PubMed Search in Google Scholar 40 Gibson B, 
+            
+            
+            Butler J, 
+            
+            
+            Schnock K, 
+            
+            
+            Bates D, 
+            
+            
+            Classen D. 
+            
+            Design of a safety dashboard for patients. Patient Educ Couns 2020; 103 (04) 741-747 Reference Link Ris Crossref PubMed Search in Google Scholar 41 Mlaver E, 
+            
+            
+            Schnipper JL, 
+            
+            
+            Boxer RB. 
+            
+            et al. 
+            User-centered collaborative design and development of an inpatient safety dashboard.
+            Jt Comm J Qual Patient Saf 2017; 43 (12) 676-685 Reference Link Ris PubMed Search in Google Scholar 42 Dixit RA, 
+            
+            
+            Hurst S, 
+            
+            
+            Adams KT. 
+            
+            et al. 
+            Rapid development of visualization dashboards to enhance situation awareness of COVID-19
+            telehealth initiatives at a multihospital healthcare system. J Am Med Inform Assoc
+            2020; 27 (09) 1456-1461 Reference Link Ris Crossref PubMed Search in Google Scholar 43 Ahn J, 
+            
+            
+            Campos F, 
+            
+            
+            Hays M, 
+            
+            
+            DiGiacomo D. 
+            
+            Designing in context: reaching beyond usability in learning analytics dashboard design.
+            J Learn Anal 2019; 6 (02) 70-85 Reference Link Ris PubMed Search in Google Scholar 44 Reeves JJ, 
+            
+            
+            Longhurst CA, 
+            
+            
+            San Miguel SJ. 
+            
+            et al. 
+            Bringing student health and well-being onto a health system EHR: the benefits of integration
+            in the COVID-19 era. J Am Coll Health 2020; •••: 1-7 Reference Link Ris Crossref PubMed Search in Google Scholar 45 Holzer KJ, 
+            
+            
+            Lou SS, 
+            
+            
+            Goss CW. 
+            
+            et al. 
+            Impact of changes in EHR use during COVID-19 on physician trainee mental health. Appl
+            Clin Inform 2021; 12 (03) 507-517 Reference Link Ris Thieme Connect PubMed Search in Google Scholar 46 Pestana M, 
+            
+            
+            Pereira R, 
+            
+            
+            Moro S. 
+            
+            Improving health care management in hospitals through a productivity dashboard. J
+            Med Syst 2020; 44 (04) 87 Reference Link Ris Crossref PubMed Search in Google Scholar 47 Wilbanks B, 
+            
+            
+            Langford P. 
+            
+            A review of dashboards for data analytics in nursing. Comput Inform. Nurs 2014; 32
+            (11) 545-549 Reference Link Ris PubMed Search in Google Scholar 48 Vitacca M, 
+            
+            
+            Vitacca M. 
+            
+            Proposal of a multidimensional strategic-management dashboard for use in a rehabilitation
+            respiratory unit. Medicine (Baltimore) 2019; 98 (20) e15728 Reference Link Ris Crossref PubMed Search in Google Scholar 49 Loginova J, 
+            
+            
+            Wohland P. 
+            
+            How to create an interactive dashboard using R: the example of the Queensland COVID-19
+            tracker. Aust Population Stud 2020; 4 (02) 39-47 Reference Link Ris Crossref PubMed Search in Google Scholar 50 Hsu SM, 
+            
+            
+            Cheng TK, 
+            
+            
+            Chang PJ, 
+            
+            
+            Chen TY, 
+            
+            
+            Lu MH, 
+            
+            
+            Yeh HT. 
+            
+            Tracking hospital visitors/chaperones during the COVID-19 pandemic. Appl Clin Inform
+            2021; 12 (02) 266-273 Reference Link Ris Thieme Connect PubMed Search in Google Scholar 51 Kalankesh LR, 
+            
+            
+            Nasiry Z, 
+            
+            
+            Fein RA, 
+            
+            
+            Damanabi S. 
+            
+            Factors influencing user satisfaction with information systems: a systematic review.
+            Galen Med J 2020; 9: e1686 Reference Ris Wihthout Link Search in Google Scholar 52 Aristizábal-Torres D, 
+            
+            
+            Peñuela-Meneses C, 
+            
+            
+            Barrera-Rodríguez A. 
+            
+            An interactive web-based dashboard to track COVID-19 in Colombia. Case study: five
+            main cities. Rev Salud Publica (Bogota) 2020; 22 (02) e215 Reference Link Ris PubMed Search in Google Scholar

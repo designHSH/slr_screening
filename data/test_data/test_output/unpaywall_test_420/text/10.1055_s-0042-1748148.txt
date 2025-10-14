@@ -1,0 +1,669 @@
+Thieme E-Journals - Applied Clinical Informatics / Abstract applied clinical informatics Skip to main content Table of Contents Current Issue Free Sample Issue (01/2025) Related Journals ACI Open Methods of Information in Medicine Yearbook of Medical Informatics Subscribe to RSS Please copy the URL and add it into your RSS Feed Reader. https://www.thieme-connect.de/rss/thieme/en/10.1055-s-00035026.xml Share / Bookmark Facebook Linkedin Weibo Download PDF Appl Clin Inform 2022; 13(02): 504-515 DOI: 10.1055/s-0042-1748148 Research Article Electronic Health Record-Embedded, Behavioral Science-Informed System for Smoking
+      Cessation for the Parents of Pediatric Patients Authors Author Affiliations Brian P. Jenssen 1 Department of Pediatrics, Perelman School of Medicine, University of Pennsylvania,
+               Philadelphia, Pennsylvania, United States 2 Center for Pediatric Clinical Effectiveness, PolicyLab, and The Possibilities Project,
+               Children's Hospital of Philadelphia, Philadelphia, Pennsylvania, United States 3 Department of Biomedical and Health Informatics, Children's Hospital of Philadelphia,
+               Philadelphia, Pennsylvania, United States Dean J. Karavite 3 Department of Biomedical and Health Informatics, Children's Hospital of Philadelphia,
+               Philadelphia, Pennsylvania, United States Shannon Kelleher 2 Center for Pediatric Clinical Effectiveness, PolicyLab, and The Possibilities Project,
+               Children's Hospital of Philadelphia, Philadelphia, Pennsylvania, United States Ekaterina Nekrasova 2 Center for Pediatric Clinical Effectiveness, PolicyLab, and The Possibilities Project,
+               Children's Hospital of Philadelphia, Philadelphia, Pennsylvania, United States Jeritt G. Thayer 3 Department of Biomedical and Health Informatics, Children's Hospital of Philadelphia,
+               Philadelphia, Pennsylvania, United States Raj Ratwani 4 MedStar Health National Center for Human Factors in Healthcare, Washington, Dist.
+               of Columbia, United States Judy Shea 5 Department of Medicine, Perelman School of Medicine, University of Pennsylvania, Philadelphia,
+               Pennsylvania, United States Emara Nabi-Burza 6 Division of General Academic Pediatrics and Tobacco Research and Treatment Center,
+               Massachusetts General Hospital for Children, Boston, Massachusetts, United States Jeremy E. Drehmer 6 Division of General Academic Pediatrics and Tobacco Research and Treatment Center,
+               Massachusetts General Hospital for Children, Boston, Massachusetts, United States Jonathan P. Winickoff 6 Division of General Academic Pediatrics and Tobacco Research and Treatment Center,
+               Massachusetts General Hospital for Children, Boston, Massachusetts, United States Robert W. Grundmeier 1 Department of Pediatrics, Perelman School of Medicine, University of Pennsylvania,
+               Philadelphia, Pennsylvania, United States 3 Department of Biomedical and Health Informatics, Children's Hospital of Philadelphia,
+               Philadelphia, Pennsylvania, United States Robert A. Schnoll 7 Department of Psychiatry and Abramson Cancer Center, University of Pennsylvania, Philadelphia,
+               Pennsylvania, United States Alexander G. Fiks 1 Department of Pediatrics, Perelman School of Medicine, University of Pennsylvania,
+               Philadelphia, Pennsylvania, United States 2 Center for Pediatric Clinical Effectiveness, PolicyLab, and The Possibilities Project,
+               Children's Hospital of Philadelphia, Philadelphia, Pennsylvania, United States 3 Department of Biomedical and Health Informatics, Children's Hospital of Philadelphia,
+               Philadelphia, Pennsylvania, United States Further Information (opens Publication History section) Also available at Abstract Full Text References Permissions and Reprints (opens in new window) Abstract Background Helping parents quit smoking is a public health priority. However, parents are rarely,
+         if ever, offered tobacco use treatment through pediatric settings. Clinical decision
+         support (CDS) systems developed for the workflows of pediatric primary care may support
+         consistent screening, treatment, and referral. Objectives This study aimed to develop a CDS system by using human-centered design (HCD) that
+         identifies parents who smoke, provides motivational messages to quit smoking (informed
+         by behavioral science), and supports delivery of evidence-based tobacco treatment. Methods Our multidisciplinary team applied a rigorous HCD process involving analysis of the
+         work environment, user involvement in formative design, iterative improvements, and
+         evaluation of the system's use in context with the following three cohorts: (1) parents
+         who smoke, (2) pediatric clinicians, and (3) clinic staff. Participants from each
+         cohort were presented with scenario-based, high-fidelity mockups of system components
+         and then provided input related to their role in using the CDS system. Results We engaged 70 representative participants including 30 parents, 30 clinicians, and
+         10 clinic staff. A key theme of the design review sessions across all cohorts was
+         the need to automate functions of the system. Parents emphasized a system that presented
+         information in a simple way, highlighted benefits of quitting smoking, and allowed
+         direct connection to treatment. Pediatric clinicians emphasized automating tobacco
+         treatment. Clinical staff emphasized screening for parent smoking via several modalities
+         prior to the patient's visit. Once the system was developed, most parents (80%) reported
+         that it was easy to use, and the majority of pediatricians reported that they would
+         use the system (97%) and were satisfied with it (97%). Conclusion A CDS system to support parental tobacco cessation in pediatric primary care, developed
+         through an HCD process, proved easy to use and acceptable to parents, clinicians,
+         and office staff. This preliminary work justifies evaluating the impact of the system
+         on helping parents quit smoking. Keywords tobacco use treatment - 
+         clinical decision support - 
+         human-centered design Protection of Human and Animal Subjects The study was performed in compliance with the World Medical Association Declaration
+         of Helsinki on Ethical Principles for Medical Research Involving Human Subjects and
+         was reviewed by the Children's Hospital of Philadelphia Institutional Review Board. Publication History Received: 20 December 2021 Accepted: 15 March 2022 Article published online: 18 May 2022 © 2022. Thieme. All rights reserved. Georg Thieme Verlag KG Rüdigerstraße 14, 70469 Stuttgart, Germany References 1 National Center for Chronic Disease Prevention and Health Promotion (US) Office on
+            Smoking and Health.. 
+            The Health Consequences of Smoking—50 Years of Progress: A Report of the Surgeon General.
+            Atlanta, GA: Centers for Disease Control and Prevention (US); 2014 Reference Link Ris Search in Google Scholar 2 Tsai J, 
+            
+            
+            Homa DM, 
+            
+            
+            Gentzke AS. 
+            
+            et al. 
+            Exposure to secondhand smoke among nonsmokers - United States, 1988-2014. Morb Mortal
+            Wkly Rep 2018; 67 (48) 1342-1346 Reference Link Ris Crossref PubMed Search in Google Scholar 3 Office on Smoking and Health (US). 
+            Health Consequences of Involuntary Exposure to Tobacco Smoke: A Report of the Surgeon
+            General. Atlanta, GA: Centers for Disease Control and Prevention (US); 2006 Reference Link Ris Search in Google Scholar 4 den Exter Blokland EAW, 
+            
+            
+            Engels RCME, 
+            
+            
+            Hale III WW, 
+            
+            
+            Meeus W, 
+            
+            
+            Willemsen MC. 
+            
+            Lifetime parental smoking history and cessation and early adolescent smoking behavior.
+            Prev Med 2004; 38 (03) 359-368 Reference Link Ris Crossref PubMed Search in Google Scholar 5 Jha P, 
+            
+            
+            Ramasundarahettige C, 
+            
+            
+            Landsman V. 
+            
+            et al. 
+            21st-century hazards of smoking and benefits of cessation in the United States. N
+            Engl J Med 2013; 368 (04) 341-350 Reference Link Ris Crossref PubMed Search in Google Scholar 6 Rosen LJ, 
+            
+            
+            Noach MB, 
+            
+            
+            Winickoff JP, 
+            
+            
+            Hovell MF. 
+            
+            Parental smoking cessation to protect young children: a systematic review and meta-analysis.
+            Pediatrics 2012; 129 (01) 141-152 Reference Link Ris Crossref PubMed Search in Google Scholar 7 Farber HJ, 
+            
+            
+            Walley SC, 
+            
+            
+            Groner JA, 
+            
+            
+            Nelson KE. 
+            
+            Section on Tobacco Control. 
+            Clinical practice policy to protect children from tobacco, nicotine, and tobacco smoke.
+            Pediatrics 2015; 136 (05) 1008-1017 Reference Link Ris Crossref PubMed Search in Google Scholar 8 Winickoff JP, 
+            
+            
+            Nabi-Burza E, 
+            
+            
+            Chang Y. 
+            
+            et al. 
+            Implementation of a parental tobacco control intervention in pediatric practice. Pediatrics
+            2013; 132 (01) 109-117 Reference Link Ris Crossref PubMed Search in Google Scholar 9 Daly JB, 
+            
+            
+            Mackenzie LJ, 
+            
+            
+            Freund M, 
+            
+            
+            Wolfenden L, 
+            
+            
+            Roseby R, 
+            
+            
+            Wiggers JH. 
+            
+            Interventions by health care professionals who provide routine child health care to
+            reduce tobacco smoke exposure in children: a review and meta-analysis. JAMA Pediatr
+            2016; 170 (02) 138-147 Reference Link Ris Crossref PubMed Search in Google Scholar 10 Behbod B, 
+            
+            
+            Sharma M, 
+            
+            
+            Baxi R, 
+            
+            
+            Roseby R, 
+            
+            
+            Webster P. 
+            
+            Family and carer smoking control programmes for reducing children's exposure to environmental
+            tobacco smoke. Cochrane Database Syst Rev 2018; 1: CD001746 Reference Link Ris PubMed Search in Google Scholar 11 Jenssen BP, 
+            
+            
+            Kelly MK, 
+            
+            
+            Faerber J. 
+            
+            et al. 
+            Parent preferences for pediatric clinician messaging to promote smoking cessation
+            treatment. Pediatrics 2020; 146 (01) e20193901 Reference Link Ris Crossref PubMed Search in Google Scholar 12 Jenssen BP, 
+            
+            
+            Kelly MK, 
+            
+            
+            Faerber J. 
+            
+            et al. 
+            Pediatrician delivered smoking cessation messages for parents: a latent class approach
+            to behavioral phenotyping. Acad Pediatr 2021; 21 (01) 129-138 Reference Link Ris Crossref PubMed Search in Google Scholar 13 Bright TJ, 
+            
+            
+            Wong A, 
+            
+            
+            Dhurjati R. 
+            
+            et al. 
+            Effect of clinical decision-support systems: a systematic review. Ann Intern Med 2012;
+            157 (01) 29-43 Reference Ris Wihthout Link Search in Google Scholar 14 Kwan JL, 
+            
+            
+            Lo L, 
+            
+            
+            Ferguson J. 
+            
+            et al. 
+            Computerised clinical decision support systems and absolute improvements in care:
+            meta-analysis of controlled clinical trials. BMJ 2020; 370: m3216 Reference Link Ris Crossref PubMed Search in Google Scholar 15 Boyle R, 
+            
+            
+            Solberg L, 
+            
+            
+            Fiore M. 
+            
+            Use of electronic health records to support smoking cessation. Cochrane Database Syst
+            Rev 2014; 12 (12) CD008743 Reference Link Ris PubMed Search in Google Scholar 16 Matkin W, 
+            
+            
+            Ordóñez-Mena JM, 
+            
+            
+            Hartmann-Boyce J. 
+            
+            Telephone counselling for smoking cessation. Cochrane Database Syst Rev 2019; 5: CD002850 Reference Link Ris Crossref PubMed Search in Google Scholar 17 Vidrine JI, 
+            
+            
+            Shete S, 
+            
+            
+            Li Y. 
+            
+            et al. 
+            The Ask-Advise-Connect approach for smokers in a safety net healthcare system: a group-randomized
+            trial. Am J Prev Med 2013; 45 (06) 737-741 Reference Link Ris Crossref PubMed Search in Google Scholar 18 Hood-Medland EA, 
+            
+            
+            Stewart SL, 
+            
+            
+            Nguyen H. 
+            
+            et al. 
+            Health system implementation of a tobacco quitline eReferral. Appl Clin Inform 2019;
+            10 (04) 735-742 Reference Link Ris Thieme Connect PubMed Search in Google Scholar 19 Sharifi M, 
+            
+            
+            Adams WG, 
+            
+            
+            Winickoff JP, 
+            
+            
+            Guo J, 
+            
+            
+            Reid M, 
+            
+            
+            Boynton-Jarrett R. 
+            
+            Enhancing the electronic health record to increase counseling and quit-line referral
+            for parents who smoke. Acad Pediatr 2014; 14 (05) 478-484 Reference Link Ris Crossref PubMed Search in Google Scholar 20 Jenssen BP, 
+            
+            
+            Bryant-Stephens T, 
+            
+            
+            Leone FT, 
+            
+            
+            Grundmeier RW, 
+            
+            
+            Fiks AG. 
+            
+            Clinical decision support tool for parental tobacco treatment in primary care. Pediatrics
+            2016; 137 (05) e20154185 Reference Link Ris Crossref PubMed Search in Google Scholar 21 Jenssen BP, 
+            
+            
+            Shelov ED, 
+            
+            
+            Bonafide CP, 
+            
+            
+            Bernstein SL, 
+            
+            
+            Fiks AG, 
+            
+            
+            Bryant-Stephens T. 
+            
+            Clinical decision support tool for parental tobacco treatment in hospitalized children.
+            Appl Clin Inform 2016; 7 (02) 399-411 Reference Link Ris Thieme Connect PubMed Search in Google Scholar 22 Jenssen BP, 
+            
+            
+            Muthu N, 
+            
+            
+            Kelly MK. 
+            
+            et al. 
+            Parent eReferral to tobacco quitline: a pragmatic randomized trial in pediatric primary
+            care. Am J Prev Med 2019; 57 (01) 32-40 Reference Link Ris Crossref PubMed Search in Google Scholar 23 Nabi-Burza E, 
+            
+            
+            Drehmer JE, 
+            
+            
+            Hipple Walters B. 
+            
+            et al. 
+            Treating parents for tobacco use in the pediatric setting: the clinical effort against
+            secondhand smoke exposure cluster randomized clinical trial. JAMA Pediatr 2019; 173
+            (10) 931-939 Reference Link Ris Crossref PubMed Search in Google Scholar 24 Nabi-Burza E, 
+            
+            
+            Winickoff JP, 
+            
+            
+            Drehmer JE. 
+            
+            et al. 
+            Innovations in parental smoking cessation assistance delivered in the child healthcare
+            setting. Transl Behav Med 2020; 10 (04) 1039-1052 Reference Link Ris Crossref PubMed Search in Google Scholar 25 Scheffers-van Schayck T, 
+            
+            
+            Hipple Walters B, 
+            
+            
+            Otten R, 
+            
+            
+            Kleinjan M. 
+            
+            Implementation of a proactive referral tool for child healthcare professionals to
+            encourage and facilitate parental smoking cessation in the Netherlands: a mixed-methods
+            study. BMC Health Serv Res 2021; 21 (01) 973 Reference Link Ris Crossref PubMed Search in Google Scholar 26 Gulliksen J, 
+            
+            
+            Göransson B, 
+            
+            
+            Boivie I, 
+            
+            
+            Blomkvist S, 
+            
+            
+            Persson J, 
+            
+            
+            Cajander Å. 
+            
+            Key principles for user-centred systems design. Behav Inf Technol 2003; 22 (06) 397-409 Reference Link Ris Crossref PubMed Search in Google Scholar 27 Belden JL, 
+            
+            
+            Wegier P, 
+            
+            
+            Patel J. 
+            
+            et al. 
+            Designing a medication timeline for patients and physicians. J Am Med Inform Assoc
+            2019; 26 (02) 95-105 Reference Link Ris Crossref PubMed Search in Google Scholar 28 Curran RL, 
+            
+            
+            Kukhareva PV, 
+            
+            
+            Taft T. 
+            
+            et al. 
+            Integrated displays to improve chronic disease management in ambulatory care: A SMART
+            on FHIR application informed by mixed-methods user testing. J Am Med Inform Assoc
+            2020; 27 (08) 1225-1234 Reference Link Ris Crossref PubMed Search in Google Scholar 29 ISO 9241–210:2019 Ergonomics of human-system interaction—Part 210: Human-centred
+            design for interactive systems.  Accessed September 29, 2021 at: https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/75/77520.html Reference Link Ris PubMed 30 Nielsen J. 
+            
+            Usability Engineering. Boston, MA: Academic Press; 1993 Reference Link Ris Crossref Search in Google Scholar 31 Kushniruk AW, 
+            
+            
+            Patel VL. 
+            
+            Cognitive and usability engineering methods for the evaluation of clinical information
+            systems. J Biomed Inform 2004; 37 (01) 56-76 Reference Link Ris Crossref PubMed Search in Google Scholar 32 Thayer JG, 
+            
+            
+            Ferro DF, 
+            
+            
+            Miller JM. 
+            
+            et al. 
+            Human-centered development of an electronic health record-embedded, interactive information
+            visualization in the emergency department using fast healthcare interoperability resources.
+            J Am Med Inform Assoc 2021; 28 (07) 1401-1410 Reference Link Ris Crossref PubMed Search in Google Scholar 33 Marcy TW, 
+            
+            
+            Kaplan B, 
+            
+            
+            Connolly SW, 
+            
+            
+            Michel G, 
+            
+            
+            Shiffman RN, 
+            
+            
+            Flynn BS. 
+            
+            Developing a decision support system for tobacco use counselling using primary care
+            physicians. Inform Prim Care 2008; 16 (02) 101-109 Reference Link Ris PubMed Search in Google Scholar 34 Rush WA, 
+            
+            
+            Schleyer TKL, 
+            
+            
+            Kirshner M. 
+            
+            et al. 
+            Integrating tobacco dependence counseling into electronic dental records: a multi-method
+            approach. J Dent Educ 2014; 78 (01) 31-39 Reference Link Ris Crossref PubMed Search in Google Scholar 35 Winickoff JP, 
+            
+            
+            Buckley VJ, 
+            
+            
+            Palfrey JS, 
+            
+            
+            Perrin JM, 
+            
+            
+            Rigotti NA. 
+            
+            Intervention with parental smokers in an outpatient pediatric clinic using counseling
+            and nicotine replacement. Pediatrics 2003; 112 (05) 1127-1133 Reference Link Ris Crossref PubMed Search in Google Scholar 36 Fiks AG, 
+            
+            
+            Grundmeier RW, 
+            
+            
+            Margolis B. 
+            
+            et al. 
+            Comparative effectiveness research using the electronic medical record: an emerging
+            area of investigation in pediatric primary care. J Pediatr 2012; 160 (05) 719-724 Reference Link Ris Crossref PubMed Search in Google Scholar 37 Tong EK, 
+            
+            
+            Strouse R, 
+            
+            
+            Hall J, 
+            
+            
+            Kovac M, 
+            
+            
+            Schroeder SA. 
+            
+            National survey of U.S. health professionals' smoking prevalence, cessation practices,
+            and beliefs. Nicotine Tob Res 2010; 12 (07) 724-733 Reference Link Ris Crossref PubMed Search in Google Scholar 38 Harris PA, 
+            
+            
+            Taylor R, 
+            
+            
+            Thielke R, 
+            
+            
+            Payne J, 
+            
+            
+            Gonzalez N, 
+            
+            
+            Conde JG. 
+            
+            Research electronic data capture (REDCap)–a metadata-driven methodology and workflow
+            process for providing translational research informatics support. J Biomed Inform
+            2009; 42 (02) 377-381 Reference Link Ris Crossref PubMed Search in Google Scholar 39 Harris PA, 
+            
+            
+            Taylor R, 
+            
+            
+            Minor BL. 
+            
+            et al; 
+            REDCap Consortium. 
+            The REDCap consortium: Building an international community of software platform partners.
+            J Biomed Inform 2019; 95: 103208 Reference Link Ris Crossref PubMed Search in Google Scholar 40 Whittaker R, 
+            
+            
+            McRobbie H, 
+            
+            
+            Bullen C, 
+            
+            
+            Rodgers A, 
+            
+            
+            Gu Y, 
+            
+            
+            Dobson R. 
+            
+            Mobile phone text messaging and app-based interventions for smoking cessation. Cochrane
+            Database Syst Rev 2019; 10 (10) CD006611 Reference Ris Wihthout Link Search in Google Scholar 41 Britto MT, 
+            
+            
+            Jimison HB, 
+            
+            
+            Munafo JK, 
+            
+            
+            Wissman J, 
+            
+            
+            Rogers ML, 
+            
+            
+            Hersh W. 
+            
+            Usability testing finds problems for novice users of pediatric portals. J Am Med Inform
+            Assoc 2009; 16 (05) 660-669 Reference Link Ris Crossref PubMed Search in Google Scholar 42 Wright PC, 
+            
+            
+            Monk AF. 
+            
+            The use of think-aloud evaluation methods in design. SIGCHI Bull 1991; 23 (01) 55-57 Reference Link Ris Crossref PubMed Search in Google Scholar 43 Davis FD. 
+            
+            User acceptance of information technology: system characteristics, user perceptions
+            and behavioral impacts. Int J Man Mach Stud 1993; 38 (03) 475-487 Reference Link Ris Crossref PubMed Search in Google Scholar 44 Ortega Egea JM, 
+            
+            
+            Román González MV. 
+            
+            Explaining physicians' acceptance of EHCR systems: an extension of TAM with trust
+            and risk factors. Comput Human Behav 2011; 27 (01) 319-332 Reference Link Ris Crossref PubMed Search in Google Scholar 45 Nielson J, 
+            
+            
+            Mack RL. 
+            
+            eds. 
+            Usability Inspection Methods. New York, NY: John Wiley and Sons; 1994 Reference Link Ris Search in Google Scholar 46 Salmon P, 
+            
+            
+            Jenkins D, 
+            
+            
+            Stanton N, 
+            
+            
+            Walker G. 
+            
+            Hierarchical task analysis vs. cognitive work analysis: comparison of theory, methodology
+            and contribution to system design. Theor Issues Ergon Sci 2010; 11 (06) 504-531 Reference Link Ris Crossref PubMed Search in Google Scholar 47 Stanton NA. 
+            
+            Hierarchical task analysis: developments, applications, and extensions. Appl Ergon
+            2006; 37 (01) 55-79 Reference Link Ris Crossref PubMed Search in Google Scholar 48 Faulkner L. 
+            
+            Beyond the five-user assumption: benefits of increased sample sizes in usability testing.
+            Behav Res Methods Instrum Comput 2003; 35 (03) 379-383 Reference Link Ris Crossref PubMed Search in Google Scholar 49 U.S. Food and Drug Administration. 
+            Applying human factors and usability engineering to medical devices: guidance for
+            industry and food and drug administration staff.  Available at: Applying Human Factors
+            and Usability Engineering to Medical Devices | FDA. Accessed March 29, 2022 Reference Link Ris PubMed 50 Wang X, 
+            
+            
+            Kim TC, 
+            
+            
+            Hegde S. 
+            
+            et al. 
+            Design and evaluation of an integrated, patient-focused electronic health record display
+            for emergency medicine. Appl Clin Inform 2019; 10 (04) 693-706 Reference Link Ris Thieme Connect PubMed Search in Google Scholar 51 McGeorge N, 
+            
+            
+            Hegde S, 
+            
+            
+            Berg RL. 
+            
+            et al. 
+            Assessment of innovative emergency department information displays in a clinical simulation
+            center. J Cogn Eng Decis Mak 2015; 9 (04) 329-346 Reference Link Ris Crossref PubMed Search in Google Scholar 52 Clark LN, 
+            
+            
+            Benda NC, 
+            
+            
+            Hegde S. 
+            
+            et al. 
+            Usability evaluation of an emergency department information system prototype designed
+            using cognitive systems engineering techniques. Appl Ergon 2017; 60: 356-365 Reference Link Ris Crossref PubMed Search in Google Scholar 53 Overhage JM, 
+            
+            
+            Johnson KB. 
+            
+            Pediatrician electronic health record time use for outpatient encounters. Pediatrics
+            2020; 146 (06) e20194017 Reference Link Ris Crossref PubMed Search in Google Scholar 54 Fiks AG, 
+            
+            
+            Alessandrini EA, 
+            
+            
+            Forrest CB, 
+            
+            
+            Khan S, 
+            
+            
+            Localio AR, 
+            
+            
+            Gerber A. 
+            
+            Electronic medical record use in pediatric primary care. J Am Med Inform Assoc 2011;
+            18 (01) 38-44 Reference Link Ris Crossref PubMed Search in Google Scholar 55 Gardner RL, 
+            
+            
+            Cooper E, 
+            
+            
+            Haskell J. 
+            
+            et al. 
+            Physician stress and burnout: the impact of health information technology. J Am Med
+            Inform Assoc 2019; 26 (02) 106-114 Reference Link Ris Crossref PubMed Search in Google Scholar 56 Arndt BG, 
+            
+            
+            Beasley JW, 
+            
+            
+            Watkinson MD. 
+            
+            et al. 
+            Tethered to the EHR: primary care physician workload assessment using EHR event log
+            data and time-motion observations. Ann Fam Med 2017; 15 (05) 419-426 Reference Link Ris Crossref PubMed Search in Google Scholar 57 Blythe MJ, 
+            
+            
+            Del Beccaro MA. 
+            
+            Committee on Adolescence, 
+            Council on Clinical and Information Technology. 
+            Standards for health information technology to ensure adolescent privacy. Pediatrics
+            2012; 130 (05) 987-990 Reference Link Ris Crossref PubMed Search in Google Scholar 58 Webber EC, 
+            
+            
+            Brick D, 
+            
+            
+            Scibilia JP, 
+            
+            
+            Dehnel P. 
+            
+            Council on Clinical Information Technology, 
+            Committee on Medical Liability and Risk Management, 
+            Section on Telehealth Care. 
+            Electronic communication of the health record and information with pediatric patients
+            and their guardians. Pediatrics 2019; 144 (01) e20191359 Reference Link Ris Crossref PubMed Search in Google Scholar 59 Furniss D. 
+            
+            Beyond problem identification: valuing methods in a ‘system usability practice’. 
+            Available at: Beyond Problem Identification: Valuing methods in a ‘system of usability
+            practice’ (ucl.ac.uk). Accessed March 28, 2022 Reference Link Ris PubMed 60 Yusop N, 
+            
+            
+            Grundy J, 
+            
+            
+            Vasa R. 
+            
+            Reporting usability defects: a systematic literature review. IEEE Trans Softw Eng
+            2019; 43 (09) 848-867 Reference Link Ris Crossref PubMed Search in Google Scholar

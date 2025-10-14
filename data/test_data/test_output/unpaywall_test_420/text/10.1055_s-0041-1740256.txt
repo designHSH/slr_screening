@@ -1,0 +1,602 @@
+Thieme E-Journals - Applied Clinical Informatics / Abstract applied clinical informatics Skip to main content Table of Contents Current Issue Free Sample Issue (01/2025) Related Journals ACI Open Methods of Information in Medicine Yearbook of Medical Informatics Subscribe to RSS Please copy the URL and add it into your RSS Feed Reader. https://www.thieme-connect.de/rss/thieme/en/10.1055-s-00035026.xml Share / Bookmark Facebook Linkedin Weibo Download PDF CC BY-NC-ND 4.0 · Appl Clin Inform 2021; 12(05): 1120-1134 DOI: 10.1055/s-0041-1740256 Research Article A Mobile, Electronic Health Record-Connected Application for Managing Team Workflows
+      in Inpatient Care Authors Author Affiliations Jacqueline M. Soegaard Ballester 1 Division of General Surgery, Department of Surgery, Hospital of the University of
+               Pennsylvania, Philadelphia, Pennsylvania, United States Geoffrey D. Bass 2 Division of Pulmonary, Allergy, and Critical Care Medicine, Department of Medicine,
+               Perelman School of Medicine at the University of Pennsylvania, Philadelphia, Pennsylvania,
+               United States Richard Urbani 3 Department of Information Services, Penn Medicine, Philadelphia, Pennsylvania, United
+               States Glenn Fala 3 Department of Information Services, Penn Medicine, Philadelphia, Pennsylvania, United
+               States Rutvij Patel 3 Department of Information Services, Penn Medicine, Philadelphia, Pennsylvania, United
+               States Damien Leri 4 Center for Healthcare Innovation, Penn Medicine, Philadelphia, Pennsylvania, United
+               States Jackson M. Steinkamp 5 Department of Medicine, Perelman School of Medicine at the University of Pennsylvania,
+               Philadelphia, Pennsylvania, United States Joshua L. Denson 6 Section of Pulmonary Diseases, Critical Care, and Environmental Medicine, Tulane University
+               School of Medicine, New Orleans, Louisiana, United States Roy Rosin 4 Center for Healthcare Innovation, Penn Medicine, Philadelphia, Pennsylvania, United
+               States 7 Leonard Davis Institute of Health Economics, University of Pennsylvania, Philadelphia,
+               Pennsylvania, United States Srinath Adusumalli 8 Division of Cardiovascular Medicine, Department of Medicine, Perelman School of Medicine
+               at the University of Pennsylvania, Philadelphia, Pennsylvania, United States Clarence William Hanson 9 Department of Anesthesiology and Critical Care, Perelman School of Medicine at the
+               University of Pennsylvania, Philadelphia, Pennsylvania, United States 10 Office of the Chief Medical Information Officer, Penn Medicine, Philadelphia, Pennsylvania,
+               United States Ross Koppel 7 Leonard Davis Institute of Health Economics, University of Pennsylvania, Philadelphia,
+               Pennsylvania, United States 11 Institute of Biomedical Informatics, Perelman School of Medicine, University of Pennsylvania,
+               Philadelphia, Pennsylvania, United States 12 Department of Sociology, School of Arts and Sciences, University of Pennsylvania,
+               Philadelphia, Pennsylvania, United States 13 Department of Biomedical informatics, University of Buffalo (SUNY), Buffalo, New York,
+               United States Subha Airan-Javia 14 Section of Hospital Medicine, Department of Medicine, Perelman School of Medicine
+               at the University of Pennsylvania, Philadelphia, Pennsylvania, United States 15 Founder/CEO, CareAlign, Philadelphia, Pennsylvania, United States Further Information (opens Publication History section) Also available at Abstract Full Text References Supplementary Material Permissions and Reprints (opens in new window) Abstract Background Clinical workflows require the ability to synthesize and act on existing and emerging
+         patient information. While offering multiple benefits, in many circumstances electronic
+         health records (EHRs) do not adequately support these needs. Objectives We sought to design, build, and implement an EHR-connected rounding and handoff tool
+         with real-time data that supports care plan organization and team-based care. This
+         article first describes our process, from ideation and development through implementation;
+         and second, the research findings of objective use, efficacy, and efficiency, along
+         with qualitative assessments of user experience. Methods Guided by user-centered design and Agile development methodologies, our interdisciplinary
+         team designed and built Carelign as a responsive web application, accessible from
+         any mobile or desktop device, that gathers and integrates data from a health care
+         institution's information systems. Implementation and iterative improvements spanned
+         January to July 2016. We assessed acceptance via usage metrics, user observations,
+         time–motion studies, and user surveys. Results By July 2016, Carelign was implemented on 152 of 169 total inpatient services across
+         three hospitals staffing 1,616 hospital beds. Acceptance was near-immediate: in July
+         2016, 3,275 average unique weekly users generated 26,981 average weekly access sessions;
+         these metrics remained steady over the following 4 years. In 2016 and 2018 surveys,
+         users positively rated Carelign's workflow integration, support of clinical activities,
+         and overall impact on work life. Conclusion User-focused design, multidisciplinary development teams, and rapid iteration enabled
+         creation, adoption, and sustained use of a patient-centered digital workflow tool
+         that supports diverse users' and teams' evolving care plan organization needs. Keywords mobile application - 
+         workflows - 
+         user-centered design - 
+         handoffs Author Contributions Application conception, design, or development: Soegaard, Urbani, Fala, Patel, Leri, Rosin, Hanson, and Airan-Javia. Application implementation: Soegaard, Bass, Urbani, Patel, Leri, and Airan-Javia. Acquisition of data: Urbani, Patel, and Airan-Javia. Analysis or interpretation of data: Soegaard, Urbani, Koppel, and Airan-Javia. Drafting of manuscript : Soegaard, Steinkamp, Denson, Koppel, and Airan-Javia. Critical revision of the manuscript for important intellectual content: Soegaard, Bass, Urbani, Fala, Patel, Leri, Steinkamp, Denson, Rosin, Adusumalli,
+         Hanson, Koppel, and Airan-Javia. Executive, administrative, technical, or material support: Urbani, Fala, Patel, Rosin, and Hanson. Study supervision: Airan-Javia. Protection of Human and Animal Subjects No human or animal subjects were directly involved in this project. This project was
+         reviewed and categorized as quality improvement by the University of Pennsylvania
+         Institutional Review Board and was therefore exempt from approval. Supplementary Material Supplementary Material (PDF) Publication History Received: 27 April 2021 Accepted: 11 October 2021 Article published online: 22 December 2021 © 2021. The Author(s). This is an open access article published by Thieme under the terms
+         of the Creative Commons Attribution-NonDerivative-NonCommercial License, permitting
+         copying and reproduction so long as the original work is given appropriate credit.
+         Contents may not be used for commercial purposes, or adapted, remixed, transformed
+         or built upon. (https://creativecommons.org/licenses/by-nc-nd/4.0/) Georg Thieme Verlag KG Rüdigerstraße 14, 70469 Stuttgart, Germany References 1 Henry J, 
+            
+            
+            Pylypchuk Y, 
+            
+            
+            Searcy T, 
+            
+            
+            Patel V. 
+            
+            ONC Data Brief 35: Adoption of Electronic Health Record Systems among U.S. Non-Federal
+            Acute Care Hospitals (2008-2015); 2016. Available at: https://dashboard.healthit.gov/evaluations/data-briefs/non-federal-acute-care-hospital-ehr-adoption-2008-2015.php Reference Link Ris PubMed 2 Jamoom EW, 
+            
+            
+            Patel V, 
+            
+            
+            Furukawa MF, 
+            
+            
+            King J. 
+            
+            EHR adopters vs. non-adopters: Impacts of, barriers to, and federal initiatives for
+            EHR adoption. Healthc (Amst) 2014; 2 (01) 33-39 Reference Link Ris Crossref PubMed Search in Google Scholar 3 Karsh BT, 
+            
+            
+            Weinger MB, 
+            
+            
+            Abbott PA, 
+            
+            
+            Wears RL. 
+            
+            Health information technology: fallacies and sober realities. J Am Med Inform Assoc
+            2010; 17 (06) 617-623 Reference Link Ris Crossref PubMed Search in Google Scholar 4 Koppel R, 
+            
+            
+            Kuziemsky C. 
+            
+            Usability across health information technology systems: searching for commonalities
+            and consistency. Stud Health Technol Inform 2019; 264: 649-653 Reference Link Ris PubMed Search in Google Scholar 5 Makary MA, 
+            
+            
+            Daniel M. 
+            
+            Medical error-the third leading cause of death in the US. BMJ 2016; 353: i2139 Reference Link Ris Crossref PubMed Search in Google Scholar 6 Abraham J, 
+            
+            
+            Kannampallil T, 
+            
+            
+            Patel VL. 
+            
+            A systematic review of the literature on the evaluation of handoff tools: implications
+            for research and practice. J Am Med Inform Assoc 2014; 21 (01) 154-162 Reference Link Ris Crossref PubMed Search in Google Scholar 7 Denson JL, 
+            
+            
+            Jensen A, 
+            
+            
+            Saag HS. 
+            
+            et al. 
+            Association between end-of-rotation resident transition in care and mortality among
+            hospitalized patients. JAMA 2016; 316 (21) 2204-2213 Reference Link Ris Crossref PubMed Search in Google Scholar 8 Melnick ER, 
+            
+            
+            Dyrbye LN, 
+            
+            
+            Sinsky CA. 
+            
+            et al. 
+            The association between perceived electronic health record usability and professional
+            burnout among US physicians. Mayo Clin Proc 2020; 95 (03) 476-487 Reference Link Ris Crossref PubMed Search in Google Scholar 9 Shanafelt TD, 
+            
+            
+            Dyrbye LN, 
+            
+            
+            Sinsky C. 
+            
+            et al. 
+            Relationship between clerical burden and characteristics of the electronic environment
+            with physician burnout and professional satisfaction. Mayo Clin Proc 2016; 91 (07)
+            836-848 Reference Link Ris Crossref PubMed Search in Google Scholar 10 Babbott S, 
+            
+            
+            Manwell LB, 
+            
+            
+            Brown R. 
+            
+            et al. 
+            Electronic medical records and physician stress in primary care: results from the
+            MEMO Study. J Am Med Inform Assoc 2014; 21 (e1, E2): e100-e106 Reference Link Ris Crossref PubMed Search in Google Scholar 11 Spinelli WM, 
+            
+            
+            Fernstrom KM, 
+            
+            
+            Britt H, 
+            
+            
+            Pratt R. 
+            
+            “Seeing the patient is the joy:” a focus group analysis of burnout in outpatient providers.
+            Fam Med 2016; 48 (04) 273-278 Reference Link Ris PubMed Search in Google Scholar 12 Yan Q, 
+            
+            
+            Jiang Z, 
+            
+            
+            Harbin Z, 
+            
+            
+            Tolbert PH, 
+            
+            
+            Davies MG. 
+            
+            Exploring the relationship between electronic health records and provider burnout:
+            a systematic review. J Am Med Inform Assoc 2021; 28 (05) 1009-1021 Reference Link Ris Crossref PubMed Search in Google Scholar 13 Sinsky C, 
+            
+            
+            Colligan L, 
+            
+            
+            Li L. 
+            
+            et al. 
+            Allocation of physician time in ambulatory practice: a time and motion study in 4
+            specialties. Ann Intern Med 2016; 165 (11) 753-760 Reference Link Ris Crossref PubMed Search in Google Scholar 14 Overhage JM, 
+            
+            
+            McCallie Jr D. 
+            
+            Physician time spent using the electronic health record during outpatient encounters:
+            a descriptive study. Ann Intern Med 2020; 172 (03) 169-174 Reference Link Ris Crossref PubMed Search in Google Scholar 15 Beasley JW, 
+            
+            
+            Wetterneck TB, 
+            
+            
+            Temte J. 
+            
+            et al. 
+            Information chaos in primary care: implications for physician performance and patient
+            safety. J Am Board Fam Med 2011; 24 (06) 745-751 Reference Link Ris Crossref PubMed Search in Google Scholar 16 Bowman S. 
+            
+            Impact of electronic health record systems on information integrity: quality and safety
+            implications. Perspect Health Inf Manag 2013; 10 (Fall): 1c Reference Link Ris PubMed Search in Google Scholar 17 Carayon P, 
+            
+            
+            Du S, 
+            
+            
+            Brown R, 
+            
+            
+            Cartmill R, 
+            
+            
+            Johnson M, 
+            
+            
+            Wetterneck TB. 
+            
+            EHR-related medication errors in two ICUs. J Healthc Risk Manag 2017; 36 (03) 6-15 Reference Link Ris Crossref PubMed Search in Google Scholar 18 Leventhal R. 
+            
+            Malpractice claims report: EHR documentation errors still far too common.  Healthcare
+            Innovation. Published November 4, 2020. Accessed March 20, 2021 at: https://www.hcinnovationgroup.com/clinical-it/electronic-health-record-electronic-medical-record-ehr-emr/news/21161325/malpractice-claims-report-ehr-documentation-errors-still-far-too-common Reference Link Ris PubMed 19 Friedberg MW, 
+            
+            
+            Chen PG, 
+            
+            
+            Van Busum KR. 
+            
+            et al. 
+            Factors affecting physician professional satisfaction and their implications for patient
+            care, health systems, and health policy. Rand Health Q 2014; 3 (04) 1 Reference Link Ris PubMed Search in Google Scholar 20 Starren JB, 
+            
+            
+            Tierney WM, 
+            
+            
+            Williams MS. 
+            
+            et al. 
+            A retrospective look at the predictions and recommendations from the 2009 AMIA policy
+            meeting: did we see EHR-related clinician burnout coming?. J Am Med Inform Assoc 2021;
+            28 (05) 948-954 Reference Link Ris Crossref PubMed Search in Google Scholar 21 Tajirian T, 
+            
+            
+            Stergiopoulos V, 
+            
+            
+            Strudwick G. 
+            
+            et al. 
+            The influence of electronic health record use on physician burnout: cross-sectional
+            survey. J Med Internet Res 2020; 22 (07) e19274 Reference Link Ris Crossref PubMed Search in Google Scholar 22 Smith SW, 
+            
+            
+            Koppel R. 
+            
+            Healthcare information technology's relativity problems: a typology of how patients'
+            physical reality, clinicians' mental models, and healthcare information technology
+            differ. J Am Med Inform Assoc 2014; 21 (01) 117-131 Reference Link Ris Crossref PubMed Search in Google Scholar 23 Abbott PA, 
+            
+            
+            Weinger MB. 
+            
+            Health information technology: fallacies and sober realities - redux a homage to Bentzi
+            Karsh and Robert Wears. Appl Ergon 2020; 82: 102973 Reference Link Ris Crossref PubMed Search in Google Scholar 24 Miljanic M, 
+            
+            
+            Zaric N. 
+            
+            Review of collaborative software applications and integration with standard collaboration
+            tools.  In: 2020 24th International Conference on Information Technology, IT 2020.
+            Institute of Electrical and Electronics Engineers Inc.; 2020 Reference Link Ris PubMed Search in Google Scholar 25 Vidyarthi AR, 
+            
+            
+            Coffey M. 
+            
+            Paperless handover: are we ready?. BMJ Qual Saf 2016; 25 (05) 299-301 Reference Link Ris Crossref PubMed Search in Google Scholar 26 Ham III PB, 
+            
+            
+            Anderton T, 
+            
+            
+            Gallaher R. 
+            
+            et al. 
+            Development of electronic medical record-based “Rounds Report” results in improved
+            resident efficiency, more time for direct patient care and education, and less resident
+            duty hour violations. Am Surg 2016; 82 (09) 853-859 Reference Link Ris Crossref PubMed Search in Google Scholar 27 Aylward MJ, 
+            
+            
+            Rogers T, 
+            
+            
+            Duane PG. 
+            
+            Inaccuracy in patient handoffs: discrepancies between resident-generated reports and
+            the medical record. Minn Med 2011; 94 (12) 38-41 Reference Link Ris PubMed Search in Google Scholar 28 Emanuele J, 
+            
+            
+            Koetter LE. 
+            
+            Workflow opportunities and challenges in healthcare.  BPM & Workflow Handbook 1: 157.
+            2007;(July). Accessed November 15, 2021 at: https://www.researchgate.net/publication/252065707_Workflow_Opportunities_and_Challenges_in_Healthcare Reference Link Ris PubMed 29 Li P, 
+            
+            
+            Ali S, 
+            
+            
+            Tang C, 
+            
+            
+            Ghali WA, 
+            
+            
+            Stelfox HT. 
+            
+            Review of computerized physician handoff tools for improving the quality of patient
+            care. J Hosp Med 2013; 8 (08) 456-463 Reference Link Ris Crossref PubMed Search in Google Scholar 30 Petersen LA, 
+            
+            
+            Orav EJ, 
+            
+            
+            Teich JM, 
+            
+            
+            O'Neil AC, 
+            
+            
+            Brennan TA. 
+            
+            Using a computerized sign-out program to improve continuity of inpatient care and
+            prevent adverse events. Jt Comm J Qual Improv 1998; 24 (02) 77-87 Reference Link Ris PubMed Search in Google Scholar 31 Van Eaton EG, 
+            
+            
+            Horvath KD, 
+            
+            
+            Lober WB, 
+            
+            
+            Rossini AJ, 
+            
+            
+            Pellegrini CA. 
+            
+            A randomized, controlled trial evaluating the impact of a computerized rounding and
+            sign-out system on continuity of care and resident work hours. J Am Coll Surg 2005;
+            200 (04) 538-545 Reference Link Ris Crossref PubMed Search in Google Scholar 32 Antoine Geissbuhler RAM. 
+            
+            WizOrder, a user-friendly interface for order entry and clinical decision support
+            tools. Proc Annu Symp Comput Appl Med Care 1995; 1002 Reference Link Ris PubMed Search in Google Scholar 33 Miller RA, 
+            
+            
+            Waitman LR, 
+            
+            
+            Chen S, 
+            
+            
+            Rosenbloom ST. 
+            
+            The anatomy of decision support during inpatient care provider order entry (CPOE):
+            empirical observations from a decade of CPOE experience at Vanderbilt. J Biomed Inform
+            2005; 38 (06) 469-485 Reference Link Ris Crossref PubMed Search in Google Scholar 34 Duke JD, 
+            
+            
+            Morea J, 
+            
+            
+            Mamlin B. 
+            
+            et al. 
+            Regenstrief Institute's Medical Gopher: a next-generation homegrown electronic medical
+            record system. Int J Med Inform 2014; 83 (03) 170-179 Reference Link Ris Crossref PubMed Search in Google Scholar 35 Yount RJ, 
+            
+            
+            Vries JK, 
+            
+            
+            Councill CD. 
+            
+            The medical archival system: an information retrieval system based on distributed
+            parallel processing. Inf Process Manage 1991; 27 (04) 379-389 Reference Link Ris Crossref PubMed Search in Google Scholar 36 Giuse DA. 
+            
+            Supporting communication in an integrated patient record system. AMIA Annu Symp Proc
+            2003; 1065 Reference Link Ris PubMed Search in Google Scholar 37 Giuse NB, 
+            
+            
+            Williams AM, 
+            
+            
+            Giuse DA. 
+            
+            Integrating best evidence into patient care: a process facilitated by a seamless integration
+            with informatics tools. J Med Libr Assoc 2010; 98 (03) 220-222 Reference Link Ris Crossref PubMed Search in Google Scholar 38 Dullabh P, 
+            
+            
+            Hovey L, 
+            
+            
+            Heaney-Huls K, 
+            
+            
+            Rajendran N, 
+            
+            
+            Wright A, 
+            
+            
+            Sittig DF. 
+            
+            Application programming interfaces in health care: findings from a current-state sociotechnical
+            assessment. Appl Clin Inform 2020; 11 (01) 59-69 Reference Link Ris Thieme Connect PubMed Search in Google Scholar 39 Abbott PA. 
+            
+            The effectiveness and clinical usability of a handheld information appliance. Nurs
+            Res Pract 2012; 2012: 307258 Reference Link Ris PubMed Search in Google Scholar 40 Rosenbluth G, 
+            
+            
+            Jacolbia R, 
+            
+            
+            Milev D, 
+            
+            
+            Auerbach AD. 
+            
+            Half-life of a printed handoff document. BMJ Qual Saf 2016; 25 (05) 324-328 Reference Link Ris Crossref PubMed Search in Google Scholar 41 Derienzo C, 
+            
+            
+            Lenfestey R, 
+            
+            
+            Horvath M, 
+            
+            
+            Goldberg R, 
+            
+            
+            Ferranti J. 
+            
+            Neonatal intensive care unit handoffs: a pilot study on core elements and epidemiology
+            of errors. J Perinatol 2014; 34 (02) 149-152 Reference Link Ris Crossref PubMed Search in Google Scholar 42 Boustani MA, 
+            
+            
+            van der Marck MA, 
+            
+            
+            Adams N. 
+            
+            et al. 
+            Developing the agile implementation playbook for integrating evidence-based health
+            care services into clinical practice. Acad Med 2019; 94 (04) 556 Reference Link Ris Crossref PubMed Search in Google Scholar 43 Papoutsi C, 
+            
+            
+            Wherton J, 
+            
+            
+            Shaw S, 
+            
+            
+            Morrison C, 
+            
+            
+            Greenhalgh T. 
+            
+            Putting the social back into sociotechnical: case studies of co-design in digital
+            health. J Am Med Inform Assoc 2021; 28 (02) 284-293 Reference Link Ris Crossref PubMed Search in Google Scholar 44 Arora V, 
+            
+            
+            Johnson J. 
+            
+            A model for building a standardized hand-off protocol. Jt Comm J Qual Patient Saf
+            2006; 32 (11) 646-655 Reference Link Ris PubMed Search in Google Scholar 45 Starmer AJ, 
+            
+            
+            O'Toole JK, 
+            
+            
+            Rosenbluth G. 
+            
+            et al; 
+            I-PASS Study Education Executive Committee. 
+            Development, implementation, and dissemination of the I-PASS handoff curriculum: a
+            multisite educational intervention to improve patient handoffs. Acad Med 2014; 89
+            (06) 876-884 Reference Link Ris Crossref PubMed Search in Google Scholar 46 Melnick ER, 
+            
+            
+            Sinsky CA, 
+            
+            
+            Krumholz HM. 
+            
+            Implementing measurement science for electronic health record use. JAMA 2021; 325
+            (21) 2149-2150 Reference Link Ris Crossref PubMed Search in Google Scholar 47 Adusumalli S, 
+            
+            
+            Siddique S, 
+            
+            
+            Airan-Javia S. 
+            
+            Carelign: closing the loop on inpatient consultant communication.  In: Academy Health
+            Conference Proceedigs. Academy Health; 2017. Accessed November 15, 2021 at: https://academyhealth.confex.com/academyhealth/2017arm/meetingapp.cgi/Paper/17259 Reference Link Ris PubMed 48 Shafer BM, 
+            
+            
+            Gorry T, 
+            
+            
+            Tapino P, 
+            
+            
+            Airan-Javia S. 
+            
+            Carelign: a novel handoff system for medical and surgical consultants. Nepal J Ophthalmol
+            2020; 12 (01) e63-e66 Reference Link Ris PubMed Search in Google Scholar 49 Miller DM, 
+            
+            
+            Schapira MM, 
+            
+            
+            Visotcky AM. 
+            
+            et al. 
+            Changes in written sign-out composition across hospitalization. J Hosp Med 2015; 10
+            (08) 534-536 Reference Link Ris Crossref PubMed Search in Google Scholar 50 Airan-Javia SL, 
+            
+            
+            Kogan JR, 
+            
+            
+            Smith M. 
+            
+            et al. 
+            Effects of education on interns' verbal and electronic handoff documentation skills.
+            J Grad Med Educ 2012; 4 (02) 209-214 Reference Link Ris Crossref PubMed Search in Google Scholar 51 Hartung DM, 
+            
+            
+            Hunt J, 
+            
+            
+            Siemienczuk J, 
+            
+            
+            Miller H, 
+            
+            
+            Touchette DR. 
+            
+            Clinical implications of an accurate problem list on heart failure treatment. J Gen
+            Intern Med 2005; 20 (02) 143-147 Reference Link Ris Crossref PubMed Search in Google Scholar 52 Wright A, 
+            
+            
+            McCoy AB, 
+            
+            
+            Hickman T-TT. 
+            
+            et al. 
+            Problem list completeness in electronic health records: a multi-site study and assessment
+            of success factors. Int J Med Inform 2015; 84 (10) 784-790 Reference Link Ris Crossref PubMed Search in Google Scholar 53 Rosenbloom ST, 
+            
+            
+            Denny JC, 
+            
+            
+            Xu H, 
+            
+            
+            Lorenzi N, 
+            
+            
+            Stead WW, 
+            
+            
+            Johnson KB. 
+            
+            Data from clinical notes: a perspective on the tension between structure and flexible
+            documentation. J Am Med Inform Assoc 2011; 18 (02) 181-186 Reference Link Ris Crossref PubMed Search in Google Scholar 54 Wright A, 
+            
+            
+            Maloney FL, 
+            
+            
+            Feblowitz JC. 
+            
+            Clinician attitudes toward and use of electronic problem lists: a thematic analysis.
+            BMC Med Inform Decis Mak 2011; 11 (01) 36 Reference Link Ris Crossref PubMed Search in Google Scholar 55 Starmer AJ, 
+            
+            
+            Spector ND, 
+            
+            
+            Srivastava R. 
+            
+            et al; 
+            I-PASS Study Group. 
+            Changes in medical errors after implementation of a handoff program. N Engl J Med
+            2014; 371 (19) 1803-1812 Reference Link Ris Crossref PubMed Search in Google Scholar 56 Weed LL. 
+            
+            Medical records that guide and teach. N Engl J Med 1968; 278 (12) 652-657 Reference Link Ris Crossref PubMed Search in Google Scholar Supplementary Material Supplementary Material (PDF)
