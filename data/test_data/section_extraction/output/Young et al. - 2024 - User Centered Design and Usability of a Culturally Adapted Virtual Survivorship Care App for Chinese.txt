@@ -1,0 +1,294 @@
+Original Paper
+User-Centered Design and Usability of a Culturally Adapted Virtual
+Survivorship Care App for Chinese Canadian Prostate Cancer
+Survivors: Qualitative Descriptive Study
+Karen Young1,2, BCom, MSc; Ting Xiong1,2, BSc, MSc; Rachel Lee1, BSc, MHI; Ananya Tina Banerjee3, PhD; Myles
+Leslie4, PhD; Wellam Yu Ko5, PhD; Quynh Pham1,2,6,7,8, PhD
+1Centre for Digital Therapeutics, Techna Institute, University Health Network, Toronto, ON, Canada
+2Institute of Health Policy, Management and Evaluation, Dalla Lana School of Public Health, University of Toronto, Toronto, ON, Canada
+3Department of Epidemiology, Biostatistics and Occupational Health, McGill University, Montreal, QC, Canada
+4School of Public Policy, University of Calgary, Calgary, AB, Canada
+5Men’s Health Research Program, University of British Columbia, Vancouver, BC, Canada
+6Toronto General Hospital Research Institute, University Health Network, Toronto, ON, Canada
+7Telfer School of Management, University of Ottawa, Ottawa, ON, Canada
+8School of Public Health Sciences, University of Waterloo, Waterloo, ON, Canada
+Corresponding Author:
+Quynh Pham, PhD
+Centre for Digital Therapeutics
+Techna Institute
+University Health Network
+Toronto General Hospital, R. Fraser Elliott Building, 4th Floor
+190 Elizabeth Street
+Toronto, ON, M5G 2C4
+Canada
+Phone: 1 (416) 340 4800 ext 4765
+Email: q.pham@uhn.ca
+Abstract
+Background: Cultural adaptations of digital health innovations are a growing field. However, digital health innovations can
+increase health inequities. While completing exploratory work for the cultural adaptation of the Ned Clinic virtual survivorship
+app, we identified structural considerations that provided a space to design digitally connected and collective care.
+Objective: This study used a community-based participatory research and user-centered design process to develop a cultural
+adaptation of the Ned Clinic app while designing to intervene in structural inequities.
+Methods: The design process included primary data collection and qualitative analysis to explore and distill design principles,
+an iterative design phase with a multidisciplinary team, and a final evaluation phase with participants throughout the design
+process as a form of member checking and validation.
+Results: Participants indicated that they found the final adapted prototype to be acceptable, appropriate, and feasible for their
+use. The changes made to adapt the prototype were not specifically culturally Chinese. Instead, we identified ways to strengthen
+connections between the survivor and their providers; improve accessibility to resources; and honor participants’ desires for
+relationality, accountability, and care.
+Conclusions: We grounded the use of user-centered design to develop a prototype design that supports the acts of caring through
+digital technology by identifying and designing to resist structures that create health inequities in the lives of this community of
+survivors. By designing for collective justice, we can provide accessible, feasible, and relational care with digital health through
+the application of Indigenous and Black feminist ways of being and knowing.
+(JMIR Hum Factors 2024;11:e49353) doi: 10.2196/49353
+JMIR Hum Factors 2024 | vol. 11 | e49353 | p. 1
+https://humanfactors.jmir.org/2024/1/e49353
+(page number not for citation purposes)
+Young et al
+JMIR HUMAN FACTORS
+XSL•FO
+RenderX
+
+KEYWORDS
+digital health; virtual care; digital therapeutics; prostate cancer; cancer survivorship; user-centred design; usability; supportive
+care; cultural adaptation; Chinese Canadians
+Introduction
+Digital health has been posited as a pathway to more equitable
+and holistic care [1,2]. However, the digital divide, or the
+capacity for digital technology to exacerbate inequities, has
+been widely described [3]. Its differential impacts on the social
+determinants of health are known as the digital determinants of
+health [4]. Recent years have seen an acceleration of digital
+health innovations (DHIs) such as digital therapeutics into health
+care systems, which was supercharged by the COVID-19
+pandemic and the resulting widespread implementation of
+telemedicine [4]. One such digital therapeutic is the Ned Clinic
+(“No Evidence of Disease”), which aims to optimize clinical
+care and patient self-management through virtual asynchronous
+care delivery for prostate cancer (PCa) survivors [5]. The Ned
+Clinic platforms, including clinician-led (Specialist Ned) and
+nurse-led (Ned Nurse) interventions, were developed at the
+University Health Network in Toronto, Canada, by a consortium
+of stakeholders [5].
+PCa is the most commonly diagnosed nonskin cancer for
+Canadian male individuals, and most (99%) are estimated to be
+diagnosed in male individuals aged 50 years and older [6]. Older
+adults are negatively impacted by the digital divide [7]. Race,
+a social determinant of health, is also linked to worse
+survivorship and care outcomes for PCa survivors, most notably
+for Black male individuals [8]. Asian (generally defined as East
+Asian and South Asian ethnicity) male individuals have been
+found to have better survival rates than the median but are more
+likely to present with advanced PCa, suggesting systemic issues
+with identifying health issues and obtaining timely appropriate
+care [9]. These differences carry over into the delivery of
+follow-up care, as PCa survivors’ care needs and access to care
+are affected by the complex intersection of ethnicity, culture,
+and other social and structural factors [10,11].
+Cultural adaptation is the process of applying changes to existing
+health interventions based on “surface” (social and behavioral
+characteristics) and “deep” (worldview, norms, beliefs, and
+values) cultural structures [12]. As these structures are known
+to impact beliefs about illness and well-being, the intent is to
+provide intervention benefits for communities that have
+experienced health inequities [13]. Culturally adapted DHIs
+appear to have been most widely reported in the field of mental
+health; in contrast, cultural adaptations of cancer survivorship
+apps have not been published, likely owing to the few
+interventions in this area [2,14]. The frameworks that appear to
+be most widely used to adapt health interventions were
+developed by Bernal et al [15], Resnicow et al [16] (an
+adaptation of the model by Bernal et al [15]), and Barrera and
+Castro [17].
+However, these guidelines and models often use framings of
+cultural sensitivity and competency (eg, Resnicow et al [16]
+and Castro et al [18]), continuing to place the burden of change
+on individuals rather than addressing the upstream structural
+determinants of health. These framings can serve to
+“museumize” and problematize identity categories and culture
+as causes of ill-health, echoing the long-standing use of culture
+as a scapegoat to fault specific communities for health inequities.
+Moreover, defining “culture” for such adaptations can be a
+complex process in Canada, where culture, race, ethnicity, settler
+colonialism, and white supremacy (ie, the social and structural
+determinants of health) all create intersectional and differential
+lived experiences under a putatively shared identity—Canadian
+[19-21].
+This research reports on the second and final phase of a project
+to design a cultural adaptation of the patient-facing Ned Clinic
+virtual follow-up care app for Chinese Canadian PCa survivors.
+In phase 1, we completed formative work distilling a set of
+themes relevant to survivors’ user needs for follow-up and
+virtual care. Following the user-centered design (UCD)
+framework, we describe the results of the design and formative
+evaluation of a culturally adapted prototype of the app.
+Methods
+Study Design
+The overall qualitative descriptive study design was structured
+using the community-based participatory research (CBPR) and
+UCD frameworks [22-24]. This study was conducted at the
+University of Toronto between December 2022 and March 2023
+during the COVID-19 pandemic. For communities that face
+barriers to care, it was found that CBPR practices such as our
+engagement of a key informant and invitations to community
+members to share their lived experiences through open-ended
+interviews are appropriate [1,25]. CBPR concepts were applied
+to meaningfully involve the community (including several
+authors of this study) and return the results for their benefit.
+Here, community represents a “symbolic totality as well as a
+practical multiplicity,” as the Chinese Canadian community is
+highly heterogeneous [26]. We view our participants as a
+coalition of self-identified Chinese Canadian individuals
+impacted by PCa survivorship to attend to their differences.
+The Chinese Canadian community is an immigrant community
+that exists as a result of settler colonialism. In recognizing this,
+we redefine “immigrants” as “people with ancestral roots outside
+of Indigenous lands, who are beholden to Indigenous laws and
+epistemologies” [27]. This definition led us to apply a relational
+paradigm to this project and an axiology of relational
+accountability. It also provided a pathway to apply several
+multilevel Indigenous and Black feminist theorizations, guiding
+principles, and tools [27-29]. These included decolonial theory,
+Etuaptmumk (two-eyed seeing), intersectionality, and cultural
+safety to inform our conceptualization of digital space as
+intimately related to land [27,30,31]. This approach allowed us
+to contextualize the place-related experiences of our participants
+and uncover their desires for relational and culturally safe care
+[32]. We noted that these desires are not specifically Chinese,
+JMIR Hum Factors 2024 | vol. 11 | e49353 | p. 2
+https://humanfactors.jmir.org/2024/1/e49353
+(page number not for citation purposes)
+Young et al
+JMIR HUMAN FACTORS
+XSL•FO
+RenderX
+
+and this presented an opportunity to design for relationally
+connected digital health.
+UCD is a flexible, iterative, and evidence-based 3-step design
+process framework that consults, involves, and considers the
+needs of the end user throughout the entire project [23]. Phase
+1 of this study encompasses steps 1 and 2; phase 2 encompasses
+steps 2 and 3. We present this study according to the
+Consolidated Criteria for Reporting Qualitative Research
+(COREQ) guidelines [33].
+Step 1: Ideation and Concept Generation
+To contextualize the potential use of this app, we sought to
+understand the structures that impact Chinese Canadian PCa
+survivors’experiences with follow-up care and virtual care. The
+results 
+of 
+this 
+phenomenologically 
+informed
+exploratory-descriptive qualitative study are described elsewhere
+[34]. Based on the findings of this formative research, we
+synthesized a list of design principles (Table 1), which we then
+categorized into the cultural adaptation taxonomy created by
+Spanhel et al [14] to systematically adapt the patient-facing
+prototype.
+Table 1. Summary of design principles for the adaptation of the Ned Nurse patient-facing app.
+Taxonomic classification [14]a
+Design principle
+Research finding
+Content components:
+The system should automatically update, store, and
+provide access to PHI on demand.
+PHIb freedom: patients felt that they were expected
+to track and remember overwhelming amounts of
+information.
+•
+(9) Goals of treatment
+•
+(10) Methods of treatment
+Content components:
+The system should provide access to personalized
+and evidence-based information regarding staging,
+self-management, and treatment options.
+Access to personalized education and information:
+patients felt that they were unable to access informa-
+tion about their care options and disease status.
+•
+(9) Goals of treatment
+•
+(10) Methods of treatment
+Content components:
+The system should improve accessibility and conti-
+nuity of care, as strong care relationships create a
+sense of safety.
+Continuity of care: patients desired a connection with
+their provider and the ability to communicate during
+times of need.
+•
+(9) Goals of treatment
+•
+(10) Methods of treatment
+Methodological components:
+The system should be architected and built with a
+high level of security and privacy.
+Security: patients expressed suspicion about digital
+health because they had concerns about surveillance
+and security.
+•
+(12) Functionality
+Content components:
+The system should provide readable language and
+accessible language formats.
+Accessibility: patients wanted to access care in
+readable and accessible language formats.
+•
+(5) Language translation
+•
+(6) Language tailoring
+Methodological components:
+The system should prioritize usability, provide
+straightforward instruction and support, and maintain
+simple user interface and user experience design.
+Digital literacy: patients felt comfortable with their
+device of choice but desired simplicity, form over
+function, and accessible help and documentation.
+•
+(11) Structure
+•
+(12) Functionality
+•
+(13) Design and aesthetics
+Content components:
+The system should coordinate and provide a clear
+follow-up appointment schedule.
+Care coordination: patients felt like they were expect-
+ed to coordinate their care, as communication be-
+tween specialists, primary care, and other services
+were fragmented.
+•
+(9) Goals of treatment
+•
+(10) Methods of treatment
+Content components:
+The system should provide accessible pathways to
+resources, such as psychological support, supportive
+care, and financial support.
+Resources: patients felt unable to access, refused, or
+unaware of needed resources such as mental health
+support.
+•
+(8) Difference in concepts of mental
+health and its treatment
+•
+(9) Goals of treatment
+•
+(10) Methods of treatment
+aThe design principles used to adapt the Ned Clinic patient app identified here are classified to the corresponding taxonomic components found in
+Spanhel et al [14].
+bPHI: personal health information.
+Step 2: Design and Development
+We applied these design principles to adapt the Ned Nurse
+patient app for Chinese Canadian survivors. A composite profile
+of a sample representative user was created to situate the design
+team during the development of the wireframes. A list of 5 use
+scenarios was created to guide the adaptation. These scenarios
+encompassed the design principles created in step 1 and included
+actions such as completing follow-up tasks, accessing a
+follow-up care schedule, and using the app to chat with a
+clinician. All use scenarios are described in the interview guide
+(Multimedia

@@ -1,0 +1,358 @@
+Citation: Yang, T.; White, M.;
+Lipson-Smith, R.; Shannon, M.M.;
+Latifi, M. Design Decision Support for
+Healthcare Architecture: A
+VR-Integrated Approach for
+Measuring User Perception. Buildings
+2024, 14, 797. https://doi.org/
+10.3390/buildings14030797
+Academic Editors: Frank Petzold,
+Luis Felipe González Böhme
+and Gerhard Schubert
+Received: 31 January 2024
+Revised: 4 March 2024
+Accepted: 12 March 2024
+Published: 15 March 2024
+Copyright: © 2024 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed
+under
+the
+terms
+and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/).
+buildings
+Article
+Design Decision Support for Healthcare Architecture: A
+VR-Integrated Approach for Measuring User Perception
+Tianyi Yang 1,*
+, Marcus White 1
+, Ruby Lipson-Smith 2
+, Michelle M. Shannon 2,3
+and Mehrnoush Latifi 1
+1
+Centre for Design Innovation, Swinburne University of Technology, Melbourne, VIC 3008, Australia;
+marcuswhite@swin.edu.au (M.W.); mlatifi@swin.edu.au (M.L.)
+2
+The Florey Institute of Neuroscience & Mental Health, Heidelberg, VIC 3084, Australia;
+ruby.lipson-smith@florey.edu.au (R.L.-S.); michelle.shannon@monash.edu (M.M.S.)
+3
+NHMRC Centre of Research Excellence in Stroke Rehabilitation and Brain Recovery,
+Heidelberg, VIC 3084, Australia
+*
+Correspondence: tianyiyang@swin.edu.au; Tel.: +61-0452605045
+Abstract: Changing the physical environment of healthcare facilities can positively impact patient
+outcomes. Virtual reality (VR) offers the potential to understand how healthcare environment de-
+sign impacts users’ perception, particularly among those with brain injuries like stroke, an area
+with limited research. In this study, our objective was to forge a new pathway in healthcare en-
+vironment research by developing a comprehensive, six-module ‘user-centered’ design decision
+support approach, utilizing VR technology. This innovative method integrated patient engagement,
+architectural design principles, BIM prototyping, and a sophisticated VR user interface to produce
+realistic and immersive healthcare scenarios. Forty-four stroke survivors participated, experiencing
+32 VR scenarios of in-patient bedrooms, followed by interactive in-VR questions and semi-structured
+interviews. The results of the approach proved to be comparatively efficient and feasible, provided
+a high level of immersion and presence for the participants, and effectively elicited extremely rich
+quantifiable response data, which revealed distinct environmental preferences. Our novel approach
+to understanding end-user responses to stroke rehabilitation architecture demonstrates potential to
+inform user-centered evidence-based design decisions in healthcare, to improve user experiences and
+health outcomes in other healthcare populations and environments.
+Keywords:
+evidence-based design; stroke rehabilitation; healthcare architecture; VR; BIM;
+game engine
+1. Introduction and Background
+The influence of physical environmental factors in healthcare facilities—such as floor
+plan layout, room configurations, and lighting—have a significant impact on patients
+outcomes, safety, and satisfaction [1]. These factors underscore the necessity of designing
+healthcare spaces that positively impact patient care and recovery, a particularly pertinent
+consideration in rehabilitation settings. Virtual reality (VR) allows researchers to study the
+impact of various environmental factors, such as lighting, room size, outdoor views, and
+noise, in a controlled setting, but this technology has rarely been used in vulnerable patient
+groups [2,3] or people with neurological impairments such as stroke. Our study leverages
+VR to assess and quantify the impact of these environmental features on patients.
+1.1. Evidence-Based Design in Healthcare Architecture
+Recognizing the crucial role of environmental factors, the field of healthcare built
+environment design has evolved toward an evidence-based design (EBD) approach [4].
+This evolution marks a shift from intuition-based to research-driven design strategies,
+necessitating tools and methodologies that can effectively incorporate empirical data into
+design decisions. EBD refers to creating environments based on the judicious use of
+Buildings 2024, 14, 797. https://doi.org/10.3390/buildings14030797
+https://www.mdpi.com/journal/buildings
+
+Buildings 2024, 14, 797
+2 of 23
+best evidence from research, an informed client’s view, and interpretation by a skilled
+designer [5]. The growing emphasis on EBD over the past decade highlights the need
+for methodologies that can reliably gauge the impact of environmental factors on patient
+well-being while also providing practical design solutions in healthcare settings [6,7].
+1.2. Integrating User Perspectives in Design
+While EBD emphasizes traditional research and data, a holistic approach also requires
+integrating the lived experiences of end-users. In healthcare design, this means valuing
+patients’ perspectives as much as empirical data [8].
+Incorporating the user perspective is a crucial component of user-centered design [9].
+It is essential to seek feedback from people with lived experiences to understand their
+needs, preferences, and experiences. This information could be used to optimize the design
+and operation of healthcare facilities, with the intention of achieving better outcomes.
+1.3. The Traditional Approach to Engaging End-Users Is Limited
+User contributions to design evaluation largely depend on the institutional context of
+the planning and design project and vary across regions and health systems. Traditional
+approaches, such as post-occupancy surveys, interviews, and observations, often limit user
+input during the design process [10,11]. There is an increasing demand for simulation
+modelling in the early design stage to test design hypotheses and configurations, aiming
+to provide evidence of improved design practice [12,13]. This demand encompasses
+various types of computational simulations, such as the integration of space syntax analysis
+to optimize spatial connectivity [14,15], as well as experiential simulation models like
+virtual rapid prototyping and VR, which allow for the evaluation and testing of design
+options [16,17]. Simulation modelling has been described as the minimum to test design
+iterations for specific healthcare systems [6,18].
+Architectural drawings and mock-ups are commonly used for evaluation, represen-
+tation and communication [19]. However, these methods are limited because they do not
+always provide a sense of immersion and presence in the environment. Further, exist-
+ing methods do not allow for the human perception of dynamic variables in a physical
+environment, involving movement, sound, and social interaction.
+Physical mock-ups have been a mainstay in interactive representation studies [3,19].
+While effective in facilitating stakeholder and patient comprehension of design proposals,
+their utility is hampered by an inability to experiment with dynamic variables [3,13].
+Moreover, the deployment of physical mock-ups, typically in the later stages of design,
+comes with significant financial and temporal costs, and restricts the range of design
+alterations that can be feasibly explored [3].
+1.4. VR as a New Approach for Realistic Virtual Mock-Up with Dynamic Variables
+Virtual reality (VR) technology has experienced significant advancements in the past 30
+years. It is essentially a collection of computer hardware and software designed to immerse
+users in artificially created 3D simulated environments [20]. Compared to traditional
+presentation approaches—such as 2D plans/sections and image mock-ups—VR can give
+users a sensory perception of some spatial variables, for instance, the actual volume of
+spaces, sightlines, and lighting [21]. Furthermore, VR as a simulation technique can engage
+dynamic variables, including movement, sound, and social interaction.
+VR has become a valuable visualization and demonstration tool in architectural design,
+aiding the stakeholder comprehension of projects [21]. However, its application specifically
+in healthcare environmental design, particularly in the context of stroke rehabilitation, is
+not widely explored. Recent research has begun to utilize VR in healthcare facility design,
+yet studies engaging patients, especially vulnerable groups like stroke survivors, to gain
+their perspectives on built environment design are limited [3,22,23]. This raises questions
+about VR’s feasibility as a tool for such purposes. Stroke survivors often confront cognitive
+and physical changes, communication impairments, and fatigue—factors that challenge
+
+Buildings 2024, 14, 797
+3 of 23
+the efficacy of conventional evaluation methods such as 2D mock-ups and post-interaction
+surveys [24]. These traditional tools may not fully meet the specific needs of these indi-
+viduals. Consequently, there is an urgent need for innovative methods that can effectively
+capture the unique perceptions and requirements of stroke survivors in rehabilitation
+facility design. Advancements in VR gaming user interfaces present a promising solution
+to the challenge of measuring user perceptions in VR environments, especially among
+those with memory impairments like stroke survivors. By embedding survey questions
+within interactive VR scenarios, we can facilitate real-time feedback during immersion,
+bypassing the traditional reliance on post-experience memory recall. This is crucial for
+capturing authentic user responses, and the forthcoming sections of this paper will detail
+specific techniques to effectively utilize these VR interfaces. Such integration allows for the
+immediate and accurate capture of participants’ perceptions, enhancing the validity of data
+gathered from cognitively vulnerable populations and streamlining the overall process of
+user experience evaluation in VR.
+1.5. Building Information Modelling (BIM) and VR as an Approach in EBD for
+Healthcare Architecture
+Acknowledging the critical role of user input, input in healthcare facility design un-
+derscores the necessity for innovative approaches in architecture. Building information
+modelling (BIM) is a well-established method that utilizes digital tools and software to man-
+age information throughout a project’s lifecycle, from early stages to construction [25,26].
+Furthermore, BIM’s integration with evidence-based design (EBD) in healthcare projects is
+instrumental in enabling data-driven insights, facilitating collaborative decision-making,
+and enhancing the visualization and analysis of design options, potentially improving
+operational efficiencies and patient outcomes [27].
+This research introduces a novel design approach to using building information
+modelling (BIM) by framing it as a collaborative workflow, aligning with the broader
+perspective of BIM in the field [28]. The integration of game engine and VR technologies
+further expands BIM’s collaborative scope, facilitating dynamic interactions between end-
+users, information systems, and advanced software tools in the context of healthcare design.
+Structured around six modules, this innovative approach prioritizes patient engage-
+ment by suggesting immersive VR interfaces and implementing BIM prototyping to sim-
+ulate healthcare scenarios. These scenarios aim to provide a realistic and immersive
+environment, enhancing the design and decision-making processes by actively involving
+patients and staff in the development of healthcare facilities. This workflow not only
+leverages cutting-edge technologies but also addresses the specific needs and preferences
+of users, marking a significant leap forward in the domain.
+In this experimental study, the selection of VR, BIM, and game engines as approach
+tools explores their feasibility and safety in examining healthcare built environment vari-
+ables with vulnerable groups. This emphasizes the study’s commitment to advancing the
+healthcare design process through technology-driven solutions, ultimately contributing to
+the field’s evolution toward more responsive and user-centered environments.
+1.6. Aim
+The aim of this study is to advance the integration of BIM, VR, and game engines
+in healthcare architecture by developing and evaluating a ‘user-centered’ design decision
+support approach. Specifically, the objectives are two-fold: first, to develop a ‘user-centered’
+design decision support system that leverages BIM, game engine, and VR technologies to
+explore end-users’ perceptions of healthcare environments; and second, to evaluate this
+approach’s efficiency, feasibility, level of immersion and presence, and capability to elicit
+distinct preference responses from participants, particularly in the context of designing a
+stroke rehabilitation facility.
+
+Buildings 2024, 14, 797
+4 of 23
+2. Materials and Methods
+2.1. User-Centered Design Decision Support Approach Modules
+To address these two aims, our method involved the development of a six-module
+‘user-centered’ design decision support approach, which integrates stakeholder engagement
+and architectural design principles with VR technology to create realistic and immersive
+scenarios representative of actual healthcare settings, intended to elicit genuine responses
+from participants. This method uses architectural design building information modelling
+(BIM) prototyping and a game engine user interface to elicit responses from the participants.
+The overall workflow of the approach is described in the flowchart graphic (Figure 1),
+which adopts the American National Standards Institute (ANSI) standard flowchart sym-
+bols to represent the process, decision, data, document, database, and terminator [29].
+The overall method is based upon White et al.’s study for TfNSW, which investigated
+informing streetscape design with public perceptions using immersive virtual reality [30],
+which includes five key steps, including identifying the variables, constructing a digital 3D
+street model, building an online survey with the embedded environments with revealed
+preference, recruiting participants, and analyzing the results. Another study this approach
+was based on is Lin et al.’s study that integrated BIM, game engine, and VR technology
+for healthcare design in 2018 [27]; in this study, the team developed a database-supported,
+VR/BIM-based communication and simulation (DVBCS) system integrated with BIM, game
+engines, and VR technologies for healthcare design in a semi-immersed VR environment.
+TfNSW used an online survey with 360-degree video embedded, while in this study, the
+participants were encouraged to use their mobile devices with headphones to participate
+in the study. Furthermore, in Lin et al.’s study, they adopted the CAVE automatic virtual
+environment, which is a semi-immersed VR environment where six projectors cast onto a
+hyperboloid-designed 4992 mm × 1944 mm wood-made screen. In our study, the method is
+adapted to suit vulnerable groups and investigate the targeted healthcare environment. Our
+implementation is quite different; due to the nature of working with vulnerable groups, we
+adopted head-mounted devices with headphones to fully immerse participants in virtual
+reality. To reduce the reliance on memory, we embedded the preference questions within
+VR. The details of this process are discussed in Section 4.
+The overall approach includes the following modules:
+1.
+Pre-define Module: Workshops with researchers, healthcare providers, clinicians,
+and design team to identify targeted variables and requirements for the specific
+healthcare environment.
+2.
+Mixed Reality Module: Develop an immersive VR environment including outdoor
+scenery, indoor physical environments, and spatial audio by using drone footage,
+ambisonics recordings, and the accurate modelling of the reference healthcare facility.
+3.
+Flexible BIM Module: This module centers on creating a ‘baseline’ model of the
+typical targeted healthcare environment, while also establishing a flexible, cross-
+platform building information modelling (BIM) management system. By leveraging
+procedural modelling, it facilitates efficient design modifications and comprehensive
+scenario testing.
+4.
+Quantifying Module: Design a method to measure and quantify participants’ per-
+ceptions using standardized response options with a user interface (UI) tailored to
+specific needs and abilities of the participants.
+5.
+Game Engine Module: Combine all assets in a game engine to develop a Windows
+VR application with four modes (practice mode, immersive scenario mode, interactive
+mode, and desktop control mode).
+6.
+Implementation Module: Elicit responses from target healthcare end-users. Estab-
+lish a VR testing environment for the recruited participants, introduce them to the
+system through ‘practice mode’ and then immerse them in various ‘VR scenarios’
+operated on a VR head-mounted display (HMD), while capturing their preferences
+and emotional responses through interactive response options, followed by semi-
+structured interviews.
+
+Buildings 2024, 14, 797
+5 of 23
+Figure 1. The overall workflow of the approach, using American National Standards Institute (ANSI)
+guidelines, including the six modules.
+2.2. Test Case Context—Stroke Rehabilitation Architecture
+To evaluate this ‘user-centered’ design decision support approach for healthcare
+design for its potential level of efficiency and feasibility, immersion and presence, and
+preferences for use by end-users, we used a test case study of stroke rehabilitation facility
+design. The choice of a stroke rehabilitation facility for our study was driven by several
+critical factors:
+•
+Cognitive Challenges and Broad Applicability: Stroke survivors often face significant
+cognitive and physical challenges, making them a pertinent group to test the potential
+level of efficiency, feasibility, immersion, and presence in VR environments. Success in
+this group suggests a high likelihood of applicability to other populations with unique
+needs and abilities.
+•
+Under-researched Area: Despite its importance, stroke rehabilitation facility design
+has not been extensively studied, presenting an opportunity to contribute to an area
+with substantial evidence gaps.
+•
+Significance and Long-term Stay: Stroke rehabilitation is a critical and often long-term
+process. Stroke survivors’ prolonged stay in such facilities accentuates the importance
+of their perceptions of the space, making it a significant area to study.
+•
+Global Relevance and Emerging Needs: Stroke is one of the leading causes of disability
+worldwide. With advancements in acute care leading to higher survival rates post-
+stroke, there is an increasing need for effective long-term rehabilitation [31]. Our study
+addresses this emerging need by focusing on the post-acute rehabilitation environment,
+aiming to fill the current research gaps identified by Ruby Lipson-Smith et al. [32] in
+rehabilitation architecture design.
+In our study, we adapted the six-module ‘user-centered’ design decision support
+approach to the specificities of stroke rehabilitation, involving volunteers who had lived
+experiences as patients in stroke rehabilitation facilities.
+
+Buildings 2024, 14, 797
+6 of 23
+2.3. Hardware and 2019 Costs
+The devices and hardware in this study were HTC VIVE head-mounted headsets with
+controllers, Sennheiser 500A headphones, a laptop with NVIDIA GeForce GTX 1080, a DJI
+Mavic Pro drone AUD, and a ZOOM H2n Handy Recorder. Prices, as of November 2019,
+are subject to change and serve as a reference point for the cost of equipment at the time of
+the study, see details in Table 1.
+Table 1. Summary of hardware and prices.
+Equipment
+Model/Specification
+Price (AUD)
+Date of Price Check
+Head-mounted headset
+HTC VIVE with controllers
+900
+19 November
+Headphones
+Sennheiser HD 500A
+165
+19 November
+Laptop
+NVIDIA GeForce GTX 1080
+1399
+19 November
+Drone
+DJI Mavic Pro
+820
+19 November
+Handy Recorder
+ZOOM H2n
+299
+19 November
+2.4. Personnel
+The architectural design, modelling, game engine development, and VR aspects of the
+test case’s approach involved two architects, one of whom also assumed the roles of a BIM
+engineer and a VR software developer, with a total of 150 h of work by personnel. The total
+cost, including personnel and hardware in November 2019, was AUD 11,700.
+3. Results
+In our test case study, we implemented all six of the modules outlined in the method
+section above to explore the influence of the in-patient room physical environment on
+stroke survivors’ emotional perception and preferences. The following outlines the results
+of the application of each module.
+1.
+Pre-define Module.
+In the pre-define module of our study, we streamlined the process to focus on identify-
+ing essential architectural and spatial variables for modelling and testing with participants.
+This involved collaborative workshops with healthcare providers, designers, and software
+developers. The outcome was a concise list of key variables that were critical for the
+design criteria, considering the specific needs of stroke survivors using VR (see Module 1,
+Figure 2).
+Our test case study in a VR-integrated user-centered design setting examined stroke
+survivors’ responses to thirty-two different in-patient bedroom environments. These en-
+vironments varied across four main variables: room size (wide versus narrow), view of
+outdoor greenery (present versus urban outlook (see Figure 3)), audio–visual social connec-
+tivity (present versus absent), and night-time noise levels (noisy versus non-noisy), derived
+from a literature review [33] and workshop outcomes. These variables were methodically
+incorporated into 16 daytime and 16 nighttime VR scenarios using a factorial design ap-
+proach. This focused on sequentially exposing participants to specific physical design
+variables, thereby enabling a comprehensive investigation of participants’ preferences for
+each variable. For example, Day # 1 Baseline Single serves as the baseline (Figure 3 left),
+depicting a single-patient room with a minimal greenery outlook, limited horizontal room
+width, a single patient bed, a window on the façade wall, an ensuite on the corridor wall,
+an interior window with blinds, a door, and non-meaningful hospital background sounds.
+In contrast, Day # 3 Green-View Single, as shown in Figure 3 right, is identical to # 1 in
+all aspects except for with lots of greenery outlook, thus isolating and highlighting the
+variable of ‘greenery’. This controlled approach allows for an in-depth analysis of each
+individual variable. For detailed descriptions of other scenarios and the specifics of the
+factorial design, please refer to

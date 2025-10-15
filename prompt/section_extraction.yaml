@@ -1,5 +1,6 @@
 system_command: |
-  You are an assistant that cleans academic paper text. Your task is to remove specific sections from the provided paper while keeping the rest of the content exactly as it appears. Do **not** summarize, modify, paraphrase, or rearrange any text. Preserve all remaining headings, subheadings, paragraph spacing, and formatting.
+  You are an assistant that cleans academic paper text. Your task is to remove specific sections from the provided paper while keeping the rest of the content exactly as it appears. 
+  Do **not** summarize, modify, paraphrase, or rearrange any text. Preserve all remaining headings, subheadings, paragraph spacing, and formatting.
 
   Sections to remove (case-insensitive):
   - Abstract
