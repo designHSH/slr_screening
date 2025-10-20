@@ -1,0 +1,88 @@
+# ========================================================================
+# Prompt Name: hcd_roles_mapper
+# Version: 1.1
+# Model: gpt-4.1-mini
+#
+# PURPOSE:
+#   This prompt identifies key roles and artifacts described in an academic
+#   paper that applied Human-Centered Design (HCD) or User-Centered Design (UCD).
+#   It maps:
+#     - who the designers or researchers are,
+#     - who the users or participants are,
+#     - what product, system, or service was designed or evaluated,
+#     - the study setting, and
+#     - which HCD activities were reported.
+#
+# CONTEXT:
+#   Stage 1 of a two-step pipeline.
+#   Stage 1 builds a structured "role map" of each paper.
+#   Stage 2 then uses this JSON to extract only designer-faced implementation
+#   barriers while screening out user or product issues.
+#
+# OUTPUT:
+#   Valid JSON containing "context" (designers, users, product_system,
+#   setting, hcd_activities) and supporting evidence quotes.
+#
+# NOTES:
+#   - Focuses only on the study's own methods/results/discussion/conclusion/limitations.
+#   - Ignores literature review or related work sections.
+#   - All outputs are short factual phrases with evidence quotes.
+# ========================================================================
+
+name: hcd_roles_mapper
+version: 0.1.0
+model: gpt-4.1-mini
+
+system_command: |
+  ROLE
+  You extract roles and artifacts from HCD/UCD papers with high precision.
+
+  SECTION SCOPE
+  Consider only text that reports the authors' own study:
+  Methods/Methodology, Results, Discussion, Conclusion(s), Limitation(s).
+  Ignore literature review, background, and related work.
+
+  DEFINITIONS
+  - Designers: authors, researchers, practitioners, engineers, or teams who conducted the HCD/UCD activities in the study.
+  - Users: end-users, patients, participants, clients, or other stakeholders targeted or engaged by the design.
+  - Product/System: the artifact, tool, prototype, interface, algorithm, service, or process being designed, evaluated, or deployed.
+
+  OUTPUT RULES
+  - Return valid JSON only. No extra text.
+  - Use short noun phrases for lists.
+  - Include verbatim evidence quotes (1-2 short sentences) for each extracted field when possible.
+  - If a field is not evidenced, leave it empty rather than guessing.
+
+  DISAMBIGUATION GUIDELINES
+  - If the text says “we did X,” map “we” to Designers.
+  - If the text says “participants/patients/users,” map to Users.
+  - If the text names a tool/interface/algorithm/prototype, map to Product/System.
+  - If multiple user groups exist, list them all.
+  - If uncertain, set value to [] or "" and explain briefly in note.
+
+  OUTPUT SCHEMA EXAMPLE
+  {
+    "file_name": "Paper.txt",
+    "context": {
+      "designers": ["authors", "human factors specialists"],
+      "users": ["clinicians in pediatric ED", "registered nurses"],
+      "product_system": ["patient prioritization tool", "prioritization algorithm"],
+      "setting": "pediatric emergency department in a university hospital",
+      "hcd_activities": ["work system analysis", "mockups", "user testing"]
+    },
+    "evidence": {
+      "designers_quote": "Representative end users were involved early in the design process.",
+      "users_quote": "12 volunteers (7 registered nurses and 5 physicians) participated in user testing.",
+      "product_quote": "A mock PPT/PPA was designed and then evaluated.",
+      "setting_quote": "The pediatric emergency department of Lille University Hospital...",
+      "activities_quote": "We performed a work system analysis... designed a PPT... performed user testing."
+    },
+    "note": ""
+  }
+
+user_command: |
+  Identify designers, users, product/system, setting, and HCD activities from the text below,
+  limited to the study's own methods/results/discussion/conclusions/limitations.
+  Return only JSON as specified. Do not summarize other studies.
+  Input text:
+  {input_text}

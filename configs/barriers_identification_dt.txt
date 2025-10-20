@@ -1,0 +1,128 @@
+Version: 0.1.0
+
+Comment: This decision tree is for identifying barriers by taking the roles and paper text as input. It uses the identified role and their interaction guided by TASK framework
+to extract barriers from text.
+
+START
+│
+├── STEP 1: Identify WHO experiences the problem
+│
+│   Question: Who is primarily affected or experiencing the difficulty?
+│
+│   ├── A. Designers / Researchers / Authors (people applying HCD)
+│   │        → Go to STEP 2
+│   │
+│   ├── B. Users / Patients / Participants (end-users of the product)
+│   │        → EXCLUDE → Label as "User Challenge"
+│   │        → Reason: post-implementation usability or satisfaction issue
+│   │
+│   ├── C. Product / Prototype / Algorithm / System
+│   │        → EXCLUDE → Label as "Product or System Limitation"
+│   │        → Reason: technical or design artifact issue, not designer performance
+│   │
+│   ├── D. Designers + Users / Stakeholders
+│   │        → Go to STEP 1a  (Interactional Challenge)
+│   │
+│   └── E. Designers + Designers (same design team)
+│            → Go to STEP 1b  (Internal Team Conflict)
+│
+│
+├── STEP 1a: Interactional Challenges (Designer ↔ User / Stakeholder)
+│
+│   Question: Does the text describe communication, trust, or alignment issues
+│             between designers and users/stakeholders that hinder HCD?
+│
+│   ├── YES → KEEP as "Collaboration / Interaction Barrier"
+│   │         Reason: problem reduces designers’ ability to gather input,
+│   │                 maintain trust, co-design, or evaluate iteratively.
+│   │         → Proceed to STEP 2
+│   │
+│   └── NO  → EXCLUDE
+│             Reason: issue reflects only user confusion, interface usability,
+│                     or product feedback, not designer limitation.
+│
+│   Example KEEP: "Stakeholders resisted iterative feedback sessions."
+│   Example EXCLUDE: "Users found icons unclear."
+│
+│
+├── STEP 1b: Internal Team Conflicts (Designer ↔ Designer)
+│
+│   Question: Does the text describe disagreements, coordination problems,
+│             or knowledge gaps within the design team that limit HCD activities?
+│
+│   ├── YES → KEEP as "Team Coordination Barrier"
+│   │         Reason: conflict or uneven skills impede HCD performance.
+│   │         → Proceed to STEP 2
+│   │
+│   └── NO  → EXCLUDE
+│             Reason: issue concerns general workflow or project management,
+│                     not HCD-related design activities.
+│
+│   Example KEEP: "Different design subteams had conflicting priorities."
+│   Example EXCLUDE: "Developers updated the software late."
+│
+│
+├── STEP 2: Confirm it affects HCD implementation
+│
+│   Question: Does this problem prevent or hinder designers from performing HCD activities,
+│             such as:
+│                - understanding user needs,
+│                - involving users iteratively,
+│                - evaluating prototypes,
+│                - integrating user feedback,
+│                - maintaining empathy and collaboration,
+│                - balancing user focus and creativity?
+│
+│   ├── YES → Proceed to STEP 3
+│   └── NO  → EXCLUDE
+│             Reason: contextual or descriptive comment, not a real barrier.
+│
+│
+├── STEP 3: Identify Barrier Characteristics (TASKS-based diagnostic cues)
+│
+│   Question: What kind of limitation does this problem represent?
+│
+│   ├── Emotional Barrier
+│   │       - Related to motivation, attitude, belief, feeling, or ethics.
+│   │       - Look for: motivation loss, frustration, stress, anxiety, pressure,
+│   │         uncertainty, low confidence, value or ethical conflicts.
+│   │       Example: "Designers felt pressure to meet management deadlines."
+│   │
+│   ├── Reasoning Barrier (Logic)
+│   │       - Related to thinking, analysis, problem solving, or reasoning style.
+│   │       - Look for: unclear reasoning, difficulty balancing analysis with design,
+│   │         poor decision-making, lack of critical appraisal.
+│   │       Example: "Designers struggled to balance current-state research with
+│   │                 envisioning future solutions."
+│   │
+│   ├── Knowledge Barrier
+│   │       - Related to knowledge, awareness, familiarity, or communication.
+│   │       - Look for: lack of HCD expertise, difficulty translating theory into
+│   │         practice, poor communication, misunderstanding of context.
+│   │       Example: "Team members had varying levels of HCD experience,
+│   │                 which caused misunderstandings."
+│   │
+│   ├── Resource Barrier
+│   │       - Related to environmental or organizational limitations.
+│   │       - Look for: time pressure, budget constraints, limited access to users,
+│   │         lack of support, workload overload, logistical difficulties.
+│   │       Example: "Limited budget prevented iterative prototyping sessions."
+│   │
+│   └── Uncertain
+│           - Actor or nature unclear; mark for human review.
+│
+│   Note:
+│   If none of these elements appear, it is likely NOT an implementation barrier.
+│
+│
+└── STEP 4: Record and Classify the Barrier
+    - Assign unique Barrier ID.
+    - Write concise description (1–2 sentences).
+    - Record actor type:
+          "designer" / "interaction" / "team"
+    - Record category:
+          "emotional" / "reasoning" / "knowledge" / "resource" / "uncertain"
+    - Provide justification (why it qualifies as barrier).
+    - Include supporting quote (1–3 sentences from text).
+    - Output to structured JSON record.
+END
