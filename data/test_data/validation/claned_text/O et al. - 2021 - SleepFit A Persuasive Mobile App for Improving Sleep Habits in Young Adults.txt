@@ -1,0 +1,616 @@
+978-1-6654-2649-7/21/$31.00 ©2021 IEEE 
+
+SleepFit: A Persuasive Mobile App for Improving 
+Sleep Habits in Young Adults 
+
+ 
+
+Oladapo Oyebode  
+Faculty of Computer Science 
+Dalhousie University 
+Halifax, Canada 
+
+Mona Alhasani  
+Faculty of Computer Science 
+Dalhousie University 
+Halifax, Canada 
+
+Dinesh Mulchandani  
+Faculty of Computer Science 
+Dalhousie University 
+Halifax, Canada 
+
+Tolulope Olagunju  
+Faculty of Computer Science 
+Dalhousie University 
+Halifax, Canada 
+
+Rita Orji  
+Faculty of Computer Science 
+Dalhousie University 
+Halifax, Canada 
+
+Abstract—Sleep disorders have been associated with mental 
+distress, depressive symptoms, and anxiety. Digital interventions 
+using mobile technology can address sleep difficulties due to the 
+pervasiveness of smartphones, especially among young adults. 
+Therefore, we design a persuasive mobile app, called SleepFit, 
+targeted at young adults with the aim of improving their sleep 
+habits or behaviours which in turn would improve their mental 
+health and wellbeing. To achieve this, we employ the user-centered 
+design approach in five stages. First, we elicit user preferences by 
+conducting two concurrent focus group (FG) sessions to 
+understand participants’ current sleep habits, contributing 
+factors, and how a persuasive mobile app (such as SleepFit) can 
+help to improve their situation. Second, we design low-fidelity 
+prototypes (LFP) illustrating various features of SleepFit based on 
+our findings from the FG sessions after data analysis. Third, we 
+conduct a user study to assess perceived persuasiveness of the 
+features illustrated by the LFP. Our findings show that users 
+perceived 7 features (Sleep Analysis, News Feed, Smart Alarm, 
+Chat, Sleep Music, Notification, and Sleep Diary) as significantly 
+persuasive for improving their sleep habits. Fourth, we design 
+high-fidelity prototypes which reflect only the features that are 
+perceived as significantly persuasive, based on the results of the 
+LFP evaluation. Finally, we conduct a usability evaluation of the 
+high-fidelity prototypes (HFP) and then refine the HFP based on 
+qualitative feedback after thematic analysis. 
+
+Keywords—sleep disorder, mental health, persuasive technology, 
+persuasive strategies, mobile app, behaviour change, user-centered 
+design, thematic analysis, wellbeing 
+
+I. INTRODUCTION 
+
+Mental health disorders (MHDs) are on the rise globally. 
+According to the World Health Organization, 1 in 4 people are 
+affected by MHDs and 3 in 4 people with severe MHDs are 
+untreated [1]. Depression, which is an MHD, continues to be 
+prevalent among young adults [2] and has been projected to be 
+the leading cause of disease burden globally by 2030 [1]. In 
+addition, suicide is already the second cause of death among 
+young adults [1]. 
+
+Despite the large burden imposed by MHDs on health 
+systems globally, addressing the risk factors of MHD is one of 
+
+the effective ways of curtailing its spread. Research has shown 
+that lack of quality sleep (also called sleep disorders) causes 
+psychotic experiences (such as hallucinations and paranoia) and 
+other mental health problems [3]. Sleep disorders (such as 
+insomnia, dyssomnia or sleep insufficiency) have also been 
+associated with mental distress, depressive symptoms and 
+anxiety [4], [5]. Sleep disorders are prevalent among young 
+adults [6]–[9], hence the need to design interventions that can 
+help to improve their sleep behaviours or habits. 
+
+Digital interventions using mobile technology will be a 
+better approach due to the pervasiveness of smartphones, 
+especially among young adults. For example, more than 90% of 
+young adults own a smartphone in developed countries, while at 
+most 85% of young adults use a smartphone in developing 
+countries [10]. Therefore, interventions in form of mobile health 
+(mHealth) apps that improve sleep habits can yield a positive 
+outcome for young adults experiencing sleep difficulties. 
+
+In this paper, we design a mHealth app, called SleepFit, for 
+improving sleep behaviours or habits in young adults which in 
+turn will improve their mental health and wellbeing. To achieve 
+our goal, we employed the user-centered design approach [11], 
+[12] for app design and evaluation, as described in the following 
+five stages: 
+
+1. We elicited user preferences by conducting two 
+concurrent focus group sessions. The objective of the 
+sessions is to understand users’ current sleep pattern, 
+how they manage it using mHealth apps, and the 
+features they prefer in those apps or any other apps that 
+aim to improve sleep behaviours (such as SleepFit). The 
+focus group (FG) method allowed us to gather broad and 
+diverse perspectives from participants with different 
+levels of sleep disturbance, and ultimately provided 
+insights and ideas on what features will be required to 
+improve sleep behaviours or habits in young adults. 
+
+2. We designed low-fidelity prototypes (LFP) illustrating 
+various features based on the qualitative feedback and 
+suggestions obtained via the FG sessions. 
+
+2021 IEEE 9th International Conference on Serious Games and Applications for Health(SeGAH) | 978-1-6654-2649-7/21/$31.00 ©2021 IEEE | DOI: 10.1109/SEGAH52098.2021.9551907
+
+3. We conducted a user study to assess the perceived 
+persuasiveness of the features in the LFP design. The 
+perceived persuasiveness scale [13] measures each 
+feature’s perceived effectiveness in influencing users’ 
+sleep habits. Our findings showed that users perceived 
+7 features (Sleep Analysis, News Feed, Smart Alarm, 
+Chat, Sleep Music, Notification, and Sleep Diary) as 
+significantly persuasive for improving their sleep habits. 
+
+4. Based on the results of the LFP evaluation, we designed 
+high-fidelity prototypes (HFP) using features perceived 
+as significantly persuasive and then conducted a study 
+to assess its usability and user experience. 
+
+5. After the HFP evaluation, we refined the high-fidelity 
+prototypes based on qualitative feedback after thematic 
+analysis. 
+
+Finally, we reflected upon our findings and discussed design 
+implications. 
+
+II. RELATED WORK 
+Previous works on sleep tracking or monitoring through 
+mobile apps adopt the manual, automated or hybrid techniques 
+in achieving their objectives. For example, Min et al. [14] 
+developed a sleep tracking app, called Toss ‘N’ Turn (TNT). 
+The goal of this app is to collect device information required to 
+detect sleep and wake states, as well as daily and global sleep 
+quality. TNT used phone sensors to collect information such as 
+sound amplitude (using microphone), light intensity (using 
+ambient 
+light 
+sensor), 
+and 
+movement/motion 
+(using 
+accelerometer). It also collected screen proximity sensor values 
+and device states (e.g., screen on/off, battery-charging state, and 
+running apps). In addition to sensor readings, TNT has a sleep 
+diary feature that allows users to provide information related to 
+their sleep patterns, such as sleep time, wake-up time, subjective 
+sleep quality rating (from poor to very good), sleep disturbances, 
+phone location during sleep, co-sleeping behaviour (whether 
+sleeping alone, or with someone else), etc.  
+
+Similarly, Krishna et al. [15] developed a sleep tracker and 
+sleep duration estimator app, called SleepSensei. The app tracks 
+user’s movements (using accelerometer) within a 2-minute 
+window after generating an auditory tone for 5 seconds every 15 
+minutes. This approach allows the authors to determine sleep 
+state. They also account for sleep interruptions by providing 
+additional features to collect phone usage information (such as 
+phone calls, messages, etc.) during sleep time. Environmental 
+data such as weather conditions (e.g., temperature, humidity, 
+rainfall, etc.), ambient sound (e.g., music and noise) and light 
+intensity are also collected. The authors analyzed these data and 
+used it to predict wake-up time which, in turn, triggers an alarm. 
+
+Furthermore, Choe et al. [16] aim to reduce the capture 
+burden of manual sleep tracking and improve access to 
+information. They leveraged optional widgets on both lock 
+screen and home screen to expose features within their app, 
+called SleepTight. Thus, users can quickly access key features, 
+such as daily sleep diary and add activity with a single tab 
+without unlocking the screen or launching the app from the 
+phone’s desktop. SleepTight allows users to capture sleep 
+behaviours (such as sleep quality, sleep duration, etc.) and 
+contributing factors (such as meals, caffeine, tobacco, alcohol, 
+
+medication, etc.) through the sleep diary feature. The app also 
+allows users to visualize their sleep duration and quality, as well 
+as make comparisons in relation to the contributing factors. 
+While Shirazi et al. [17] did not use widgets for their 
+Somnometer app, they provided a feature that allows users to 
+share sleep information with their friends on Facebook. 
+
+The gap in the related works described above is that the 
+highlighted app features were based on designer’s intuition 
+rather than on users’ preferences and perceived persuasiveness 
+of the features. Our work addressed this gap by involving target 
+users throughout the design process and evaluating the features 
+from a persuasion standpoint. First, we understand users’ sleep 
+habits and elicit their preferred features, and then evaluated these 
+features to assess their perceived persuasiveness. We employed 
+features that were perceived as significantly persuasive (i.e., 
+able to motivate or influence users to change their unhealthy 
+sleep habits/behaviours) in the final app design. 
+
+III. METHOD 
+To achieve our goal, we employ a user-centered design 
+approach that involves conducting focus group (FG) sessions to 
+elicit user preferences, followed by low-fidelity prototype 
+design and evaluation, and then high-fidelity prototype design 
+and evaluation. 
+
+A. Study 1: Focus Group 
+To understand our target audience, we conducted two focus 
+group sessions. This allowed us to gather broad and diverse 
+perspectives from participants with respect to their sleep habits 
+such as sleep duration, bedtime, wakeup time, sleep disturbance 
+and contributing factors, etc. Research has shown that the type 
+and range of data generated through the social interaction of 
+focus groups are often deeper and richer than those obtained 
+from one-to-one interviews [18], [19]. 10 participants within the 
+age group of our target audience (17-35 years) were recruited to 
+participate in the study. The participants were assigned to two 
+groups: FG1 (n=5) and FG2 (n=5). The two sessions ran for at 
+least 35 minutes each with a moderator and assistant facilitating 
+each session. The moderators ran the study by using a list of 
+questions to facilitate discussion among participants, while the 
+assistant moderators took notes and audio-recorded the sessions. 
+The focus group sessions were conducted in two stages, as 
+follows: 
+
+ Introduction: The moderator and assistant for each 
+session introduced themselves to the participants, 
+described the primary goal of the focus group, and gave 
+a brief explanation of sleep disorders. Afterwards, the 
+participants were asked to introduce themselves by their 
+first name only. 
+
+ Group discussion: Participants were allowed to interact 
+with each other during the sessions in response to various 
+questions raised by the moderators, such as their daily 
+sleep time (bedtime and wakeup time), how they 
+currently monitor or track their sleep (e.g., use of mobile 
+apps or alarm clock), factors affecting their sleep quality, 
+preferred features in a mobile app that can improve their 
+sleep quality, etc. 
+
+ 
+
+1) Data Analysis and Results 
+To analyze the data, we transcribed audio recordings from 
+the focus group sessions into texts (after listening to each 
+recording). Next, we conducted thematic analysis of the 
+transcripts and the notes taken during the sessions to extract 
+themes that represent user preferences. This informed the design 
+of the LFP. 
+
+Participants’ daily sleep duration ranges from 2 hours to 8 
+hours, with an average of 6.1 hours. Also, participants 
+highlighted that their sleep quality is often affected negatively 
+by the following factors: academics (assignments, projects, 
+deadlines), social media (Facebook, WhatsApp, etc.), social life 
+(parties, meeting with friends), light, noise, and stress. 
+
+Participants suggested certain features that can improve their 
+sleep quality, such as sleep music, cool visualizations, 
+notification/reminder, bedtime recommendation, sleep tracking, 
+setting sleep goal/duration, and virtual rewards. Participants also 
+discussed their perceptions and views about these features, 
+including those suggested by the moderators (based on literature 
+review). Results of thematic analysis of the qualitative data 
+collected uncovered the following themes: (1) analysis and 
+visualization, (2) bedtime and wake-up time suggestion, and (3) 
+sleep improvement using specific features (such as sleep diary, 
+sleep music, automated tracking, notification/reminder, etc.). In 
+summary, below are the preferred features based on the FG 
+sessions. 
+
+a) Smart Alarm: 60% of the participants liked the idea of 
+an alarm that automatically determines the best wake-up time 
+based on their sleep patterns, and they agreed to use it and also 
+want to be able to configure it (e.g., to turn it off when not 
+required). 
+
+b) Sleep Analysis: 100% of the participants were 
+interested to visually see their progress over time using graphs 
+or charts. Sample comments include: “I will like to see how 
+many hours I sleep” [P7], “It should show visualizations per 
+week.” [P8]. 
+
+c) Sleep Diary: 80% of the participants found this feature 
+useful and agreed to use it in the sleep app to log their daily 
+wake-up time, bedtime, as well as factors affecting their sleep 
+patterns and sleep quality. 
+
+d) Automated Tracking: 80% of the participants prefer 
+this feature. However, some participants were concerned about 
+the level of data that would be collected through the phone 
+sensors and if there is an option to disable automated tracking.  
+
+e) News Feed: 100% of the participants liked the idea of 
+a feature that can offer personalized sleep-related news, 
+tutorials or tips based on their sleep patterns and quality.  
+
+f) Notification: 80% of the participants liked the idea of 
+notification or reminder in the app. Some participants want the 
+flexibility to turn it off or on (e.g., “Be able to customize it.” 
+[P10]). 
+
+g) Chat: 60% of the participants liked the idea of being 
+able to chat with a sleep specialist in case of sleep-related issues 
+or whenever expert advice is required on how to handle sleep 
+disorders.  
+
+h) Sleep Music: 20% of the participants suggested “sleep 
+music” as a potential feature, as shown in the following 
+
+comments: “Maybe some Sleep Music which can help me fall 
+asleep.” [P3], “Music will be good feature.” [P9]. 
+
+The features above, including Virtual Rewards which was 
+suggested by 40% of participants, became the potential features 
+of the SleepFit app. In Study 2, we evaluated these features, 
+except “Automated Tracking” which does not require user 
+interaction (since it runs in the background and collects data that 
+can be visualized via the Sleep Analysis feature), to assess their 
+perceived persuasiveness. 
+
+B. Study 2: Low-Fidelity Prototypes and Evaluation 
+Based on our findings from the FG sessions, we created low-
+fidelity prototypes (LFP) using the Balsamiq tool [20] to 
+illustrate 8 features and then conducted a user study to assess 
+their perceived persuasiveness. Fig. 1 shows the LFP illustrating 
+the Sleep Diary and News Feed features. 
+
+ 
+(a) 
+
+ 
+
+ 
+(b) 
+
+Fig. 1. Low-Fidelity Prototypes illustrating the (a) Sleep Diary feature, and (b) 
+News Feed feature. 
+
+We evaluated the LFP through an online survey. We 
+presented the prototype illustrating each feature to the 
+participants as a set of images arranged in a fashion depicting 
+
+typical user interaction with the feature. Each prototype is 
+immediately followed by a set of questions assessing the 
+perceived persuasiveness of the feature. The questions were 
+based on a validated scale adapted from [13] and used in many 
+persuasive technology research including [21]–[25]. The 
+questions, which were measured on a 5-point Likert scale 
+(ranging from “1 - Strongly Disagree” and “5 - Strongly 
+Agree”), are: (i) This feature would motivate me to adopt healthy 
+sleep habits, (ii) This feature would convince or make me to 
+reconsider my current sleep habits, and (iii) This feature would 
+improve my current sleep habits. The survey also includes 
+demographic questions such as age group, gender, marital status, 
+employment status, etc., as well as open-ended questions aimed 
+to collect participants’ qualitative feedback or suggestions 
+related to the features presented. 
+
+We included a total of 23 survey responses in our analysis 
+after removing four incomplete responses. Our participants were 
+young adults (17-35 years old) experiencing varying degrees of 
+sleep disorders and also proficient in English. As regards 
+demographic information, 4% of the participants were within 
+17-21 age group, 57% were within 22-25 age group, 35% were 
+within 26-30 age group, and 4% were within 31-35 age group. 
+Moreover, 70% were males, while 30% were females. In 
+addition, 87% were single, while 13% were married.  
+
+1) Data Analysis and Results 
+To analyze the data, we computed the average score (or 
+persuasiveness score) for each feature, and then conducted a 
+One-Sample t-test to determine the persuasiveness of the 
+features with respect to the neutral score of 3 (based on a 5-point 
+Likert scale). Next, to examine and compare the persuasiveness 
+of the features, we performed a Repeated-Measure Analysis of 
+Variance (RM-ANOVA) analysis with feature type as within 
+subject factor (after validating for ANOVA assumptions), 
+followed by pairwise comparison (using the Bonferroni method 
+for adjusting degrees of freedom for multiple comparisons). 
+When sphericity assumption was violated, we used the 
+Greenhouse-Geisser method to correct the degrees of freedom. 
+
+a) Perceived Persuasiveness of App Features: In general, 
+the result of the One-Sample t-test showed that the 
+persuasiveness scores of the features are significantly higher 
+than the neutral score of 3 (p<.003), except Virtual Rewards 
+(p<.144). This means that our participants perceived the 
+features, except Virtual Rewards, as significantly persuasive. 
+As shown in Fig. 2, Sleep Analysis is perceived as the most 
+persuasive feature (Mean=4.116, SD=0.608), followed by 
+News 
+Feed 
+(Mean=3.971, 
+SD=0.696), 
+Smart 
+Alarm 
+(Mean=3.899, SD=0.768), and Chat (Mean=3.870, SD=0.931). 
+However, the Virtual Rewards feature is perceived as the least 
+persuasive (Mean=3.290, SD=0.917). The rest of the features 
+(Sleep Music, Notification, Sleep Diary) are in the middle. 
+Furthermore, to determine if the features are significantly 
+different in their persuasiveness overall, we conducted an RM-
+ANOVA test. The results of the RM-ANOVA showed 
+significant main effects of feature type on persuasiveness 
+(F4.323, 95.102 = 3.210, p<.014). In other words, there is a 
+significant difference between the features with respect to their 
+persuasiveness overall. Specifically, the Bonferroni-corrected 
+
+pairwise comparisons show that Sleep Analysis emerged as the 
+most persuasive feature, significantly different from Sleep 
+Diary (p<.003) and Virtual Rewards (p<.022). News Feed is the 
+second most persuasive feature, significantly different from 
+Virtual Rewards (p<.034) which emerged as the least 
+persuasive.  
+
+ 
+
+Fig. 2. A bar chart showing the overall persuasiveness of the 8 features on a scale 
+ranging from 1 to 5. The horizontal line indicates the neutral score of 3.  
+
+In summary, the following 7 features were perceived as 
+significantly persuasive: Sleep Analysis, News Feed, Smart 
+Alarm, Chat, Sleep Music, Notification, and Sleep Diary, based 
+on our findings. Hence, these features were used in the design of 
+the high-fidelity prototypes (HFP). 
+
+b) Thematic Analysis of Qualitative Feedback about the 
+LFP: Next, we conducted a thematic analysis of the qualitative 
+feedback and suggestions collected from participants to extract 
+themes that would inform the HFP design. The outcome of the 
+thematic analysis revealed six themes, as shown in Table I.  
+
+TABLE I.  THEMES, DESCRIPTION AND SAMPLE COMMENTS FROM 
+PARTICIPANTS OF THE LOW-FIDELITY PROTOTYPE EVALUATION 
+
+“I found the Sleep Journal 
+to be a bit packed with 
+information so it may be a 
+good idea to make a 
+dropdown feature to 
+replace all the check 
+boxes.”  (P9)
+a Comments from participants are included verbatim throughout the paper, including spelling and 
+grammatical mistakes. 
+
+C. Study 3: High-Fidelity Prototypes and Evaluation 
+We created high-fidelity prototypes (HFP) illustrating the 7 
+features that were perceived as significantly persuasive, based 
+on the results of Study 2. In addition, we considered the 
+qualitative feedback and suggestions offered by participants in 
+the design of the HFP to ensure the SleepFit app is usable and 
+acceptable to users. For example, we added a Community feature 
+that support sharing of sleep ideas and experiences among peers 
+within the app. The HFP was designed using the FluidUI 
+prototyping tool [26]. We conducted a usability study through 
+an online survey completed by 24 participants which were 
+young adults with varying degrees of sleeping issues and also 
+proficient in English.  
+
+The online survey consists of two parts: demographic 
+questions and usability questions. Table II shows the 
+demographic information of participants. Participants were 
+asked to either interact with the HFP on their smartphones (via 
+the FluidUI mobile app) or watch a video showing a typical user 
+interacting with the HFP (similar to the approach used by [27]), 
+and then answer the usability questions. We embedded the video 
+in the online survey to make it easily accessible to participants. 
+The usability questions assess the app in terms of aesthetics 
+(e.g., color, graphics, layout, etc.), ease of use, and overall user 
+experience. In addition, participants were asked to offer 
+suggestions on how the app could be improved. Fig. 3 shows the 
+HFP of Sleep Diary, Sleep Analysis, and News Feed features. 
+The findings from this study were used to refine the HFP.  
+
+TABLE II.  
+DEMOGRAPHIC INFORMATION OF PARTICIPANTS 
+
+  
+ 
+(a) 
+
+  
+ 
+(b) 
+
+ 
+
+ 
+  
+ 
+(c) 
+
+Fig. 3. High-Fidelity Prototypes illustrating the (a) Sleep Diary feature, (b) Sleep 
+Analysis, and (c) News Feed feature. 
+
+1) Usability Evaluation of the High-Fidelity Prototypes 
+We conducted a thematic analysis of the qualitative 
+comments collected from participants with respect to the 
+usability of the SleepFit app. Table III shows the themes that 
+emerged after thematic analysis. 78% of the participants liked 
+the aesthetics of the app, while 79% found the app to be easy to 
+use. In terms of the overall user experience, 88% of the 
+participants had good experience and ready to use the app to 
+improve their sleep habits. 
+
+We refined the high-fidelity prototypes based on the 
+following themes (see Table III): 
+
+ Guide for first-time users: We added introductory 
+screens that visually describe app features in a stepwise 
+fashion when the app is launched (for first time users). 
+
+ Theme customization: We support theme customization 
+by providing a means to customize or change the app 
+theme, such as switching from dark theme to light theme 
+and vice-versa. In addition, users can choose from 
+available color themes. 
+
+TABLE III.  
+THEMES, DESCRIPTION, AND SAMPLE COMMENTS FROM 
+PARTICIPANTS OF THE HIGH-FIDELITY PROTOTYPE 
+EVALUATION 
+
+ 
+
+IV. DISCUSSION 
+
+In this paper, we designed a persuasive mobile app 
+(SleepFit) that allows users to track their sleep patterns with 
+respect to their goal, observe the factors affecting their sleep 
+quality negatively, and receive personalized interventions that 
+improve their sleep quality. Our design process is user-centered 
+rather than designer-driven. This design approach led to the 
+selection of features that users perceived as significantly 
+persuasive in motivating or influencing the desired change in 
+their sleep habits or behaviours, while the usability evaluation 
+led to an app design that is usable and engaging. Research has 
+shown that a design approach that considers the experience of 
+
+users and their involvement in the design process would produce 
+a system that is user-centered, effective, and acceptable in daily 
+life [28]–[30]. As shown in Table IV, SleepFit’s persuasive 
+features align with various persuasive strategies (or behaviour 
+change strategies)  proposed in well-established and widely used 
+persuasion frameworks, such as the Persuasive Systems Design 
+(PSD) framework [31] and the Goal-setting theory [32].  
+
+TABLE IV.  CORE FEATURES OF THE SLEEPFIT APP AND THE 
+CORRESPONDING PERSUASIVE STRATEGIES 
+
+ 
+Furthermore, research shows that technologies that leverage 
+social influence can motivate and persuade users since people 
+naturally respond in social ways [34]. SleepFit applies the 
+persuasion dynamics of social influence through its Community 
+feature. This aligns with the “normative influence” (peer 
+pressure) persuasive strategy [31], [34] which is one of the top 
+5 strategies employed in mental health apps [35]. Users believed 
+that providing means to read (or share) sleep-related success 
+stories and experiences from (or with) their peers would 
+
+motivate them to change their unhealthy sleep habits (see the 
+Social sharing theme in Table I). 
+
+Although the sample size of the studies may not be sufficient 
+to draw strong conclusions, the perceived effectiveness 
+assessment has led to the design of an app that employed 
+persuasive features for promoting healthy sleep habits among 
+young adults, thereby improving their physical and mental 
+wellbeing. Moreover, subsequent refinements applied to the 
+HFP based on participants’ evaluation feedback would improve 
+the app’s usability and overall user experience/engagement. 
+
+V. CONCLUSION 
+
+We designed a persuasive mobile app, called SleepFit, 
+targeted at young adults to improve their sleep habits or 
+behaviours. We applied the user-centered design approach by 
+first conducting two focus group (FG) sessions to elicit user 
+preferences, and then designed and evaluated a low-fidelity 
+prototype based on the FG findings and identified features 
+perceived as significantly persuasive. Our findings showed that 
+users perceived 7 features (Sleep Analysis, News Feed, Smart 
+Alarm, Chat, Sleep Music, Notification, and Sleep Diary) as 
+significantly persuasive for improving their sleep behaviours or 
+habits. Finally, we designed and evaluated high-fidelity 
+prototypes (HFP) that employed these persuasive features. Our 
+usability evaluation findings revealed that most users were 
+satisfied with the app design and believed that SleepFit is 
+aesthetically pleasing, easy to use, and provide good user 
+experience. Moreover, the few suggestions made by users were 
+used in refining the HFP to further enhance the app’s usability 
+and user experience. 
+
+Future work will implement or develop the SleepFit app 
+based on the HFP and deploy it on both Android and iOS 
+platforms, and then conduct a field study to assess the app’s 
+actual effectiveness. 
+
+ACKNOWLEDGMENT  
+
+This research was undertaken, in part, thanks to funding 
+from the Canada Research Chairs Program. We acknowledge 
+the support of the Natural Sciences and Engineering Research 
+Council of Canada (NSERC) through the Discovery Grant.

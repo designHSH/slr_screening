@@ -109,9 +109,9 @@ class PromptRunnerText:
 
 if __name__ == "__main__":
     # === CONFIGURATION ===
-    input_folder = Path(r"data\test_data\files_pdf_to_txt\output_re_cleaning")        # Folder containing .txt files
+    input_folder = Path(r"data\test_data\validation\claned_text")        # Folder containing .txt files
     prompt_file = Path(r"prompt\full_text_screening_pr.yaml")
-    output_csv_path = Path(r"data\test_data\screening_result\full_screening_results.csv")
+    output_csv_path = Path(r"data\test_data\validation\screening _result\full_screening_results.csv")
 
     runner = PromptRunnerText(prompt_file, model="gpt-4.1-mini")
 

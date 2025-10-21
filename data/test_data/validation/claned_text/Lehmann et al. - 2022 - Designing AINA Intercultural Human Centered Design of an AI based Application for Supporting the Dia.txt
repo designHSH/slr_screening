@@ -1,0 +1,945 @@
+Designing AINA - Intercultural Human-Centered
+Design of an AI-based Application for Supporting
+the Diagnosis of Female Genital Schistosomiasis
+
+Nicolas J. Lehmann
+Freie Universit¨at Berlin
+Berlin, Germany
+
+Muhammed-Ugur Karag¨ulle
+Freie Universit¨at Berlin
+Berlin, Germany
+
+Pauline Meurer
+Charit´e -
+Universit¨atsmedizin Berlin
+Berlin, Germany
+
+Elen Niedermeyer
+Freie Universit¨at Berlin
+Berlin, Germany
+
+Petrit Vidishiqi
+Freie Universit¨at Berlin
+Berlin, Germany
+
+Laura Pysz
+Freie Universit¨at Berlin
+Berlin, Germany
+
+Marlene Kreß
+Freie Universit¨at Berlin
+Berlin, Germany
+
+Lea R. Muth
+Institute of Computer Science
+Freie Universit¨at Berlin
+Berlin, Germany
+
+Hermann Feldmeier
+Charit´e -
+Universit¨atsmedizin Berlin
+Berlin, Germany
+
+Bodo Randrianasolo Sahondra
+K’olo Vanona
+Antananarivo, Madagascar
+
+Oliva Rabozakandraina Tiana Onintsoa
+K’olo Vanona
+Ambanja, Diana region, Madagascar
+
+Agn`es Voisard
+Freie Universit¨at Berlin
+& Fraunhofer FOKUS
+Berlin, Germany
+
+Angela Schuster
+Charit´e -
+Universit¨atsmedizin Berlin
+Berlin, Germany
+
+Abstract—The prevalence of Female Genital Schistosomiasis
+(FGS) in northern Madagascar reaches 75% and often lead
+to genital pain, contact bleeding, vaginal discharge, irregular
+menstruation, avoidance of sexual intercourse, and poor preg-
+nancy outcomes. However, due to insufﬁcient access to health
+care despite being free of charge, and lack of medical expertise on
+FGS, FGS remains undiagnosed or misdiagnosed. In this paper,
+we present AINA, an AI-based application for supporting medical
+professionals in the diagnosis of FGS. The AINA application is
+developed in a Human-Centered Design (HCD) approach. The
+HCD approach includes an analysis phase in which the target
+groups, use cases, and environment are considered when eliciting
+requirements. Subsequently, a ﬁnal prototype of the AINA
+application is developed in an iterative design and evaluation
+process using non-participatory and participatory methods. The
+design study acts as preliminary work for developing a medical
+device for use in the rural regions of Africa, i.e., Madagascar.
+Index Terms—human-centered design, user-centered design,
+intercultural design, female genital schistosomiasis, fgs, neglected
+tropical diseases, ntd.
+
+I. INTRODUCTION
+
+Female Genital Schistosomiasis (FGS) is a manifestation
+of infection with Schistosoma haematobium, a helminthic
+
+worm disease belonging to the group of Neglected Tropical
+Diseases (NTDs). In Madagascar, prevalence reaches 75%
+in the northern part of the country [1] and women living
+in rural and disadvantaged areas are generally disproportion-
+ately affected [2]. In the genital area, FGS-related lesions
+have been diagnosed in the cervix, fallopian tubes, clitoris,
+labia, and vagina [3] [4] [5]. The disease often presents
+genital pain, contact bleeding, vaginal discharge, and irregular
+menstruation. Genital pain can lead to avoidance of sexual
+intercourse [4] [6] [7]. FGS is associated with poor pregnancy
+outcomes such as stillbirth, infertility, spontaneous abortion,
+and ectopic pregnancy [3] [8] [9]. It is considered one of the
+signiﬁcant threats to sexual health in endemic regions [10].
+Clinicians should think of FGS as a potential diagnosis when
+patients in endemic regions are in contact with fresh water and
+present with urogenital symptoms [11]. FGS can be diagnosed
+if, by visual inspection of the cervix and vaginal walls, at
+least one of three manifestations can be found: grainy and
+sandy patches, homogeneous yellow sandy patches, or rubbery
+papules, further unspeciﬁc neovascularization might be found
+[11] [12] [14].
+
+2022 IEEE 10th International Conference on Healthcare Informatics (ICHI)
+
+2022 IEEE 10th International Conference on Healthcare Informatics (ICHI) | 978-1-6654-6845-9/22/$31.00 ©2022 IEEE | DOI: 10.1109/ICHI54592.2022.00065
+
+Fig. 1. Illustration of Female Genital Schistosomiasis symptoms from left to
+right: Grainy sandy patches, homogeneous yellow sandy patches, abnormal
+blood vessels, and rubbery papules.
+
+If diagnosed correctly and on time, FGS can be treated
+effectively with praziquantel, but if diagnosed late, sequelae
+may persist for a long time due to calciﬁed eggs in the tissues
+[13] [15]. With 0.143 physicians and 0.218 nurses or midwives
+per 1000 inhabitants [16] human resources for health in Mada-
+gascar are a scarce good which leads to insufﬁcient access to
+health care despite being free of charge [17]. Gynecologists are
+usually absent at the primary health care level in rural areas
+where FGS is endemic. Thus, FGS remains undiagnosed or
+misdiagnosed in endemic regions [18].
+Particularly challenging in rural African regions, such as
+Madagascar, is the lack of medical knowledge about the FGS
+disease, which makes FGS diagnosis difﬁcult. Apart from the
+lack of medical expertise, no technical tools exist locally for
+diagnosing speciﬁc NTDs, such as FGS.
+In this paper, we present a design developed with Human-
+Centered Design (HCD) methods for an application to support
+the diagnosis of FGS in rural areas of Africa, i.e., Madagas-
+car. The developed multi-sided application supports on-site
+physicians, nurses, and midwives in diagnosing FGS using
+AI-based algorithms that can recognize FGS-related lesions in
+captured patient photos and provide further medical education
+to these groups of people regarding FGS. The developed AI
+additionally uses a human-machine feedback loop (reinforce-
+ment learning) to improve diagnostic results continuously. In
+this regard, FGS images captured in the ﬁeld can improve
+the AI models as soon as an Internet connection is available.
+The improved AI models are then downloaded to the mobile
+application as soon as an Internet connection is established
+and are available from that moment on for the predominant
+ofﬂine use on site. Since the AINA mobile application is
+deployed in rural areas of Africa where FGS is endemic, user
+interfaces are needed that are easy to use, especially for local
+doctors, nurses, and midwives. To design these interfaces, it is
+necessary to involve the users of the AINA application in the
+design process to ensure intuitive interaction design in cross-
+cultural understanding.
+This paper is structured as follows. In Section II, related
+work on FGS and Human-Centered Design (HCD) is pre-
+sented. Section III presents our selection of HCD methods
+for the AINA application. In Section IV, the HCD-based
+analysis of the AINA application is provided. The design and
+evaluation process of the AINA application is presented in
+Section V. Section VI presents the result of the application
+design in the form of excerpts from the high-ﬁdelity prototype.
+Finally, we draw our conclusion on the design results in
+Section VII.
+
+II. RELATED WORK
+
+So far, the use of smartphone image applications as an
+alternative to coloscopy has been proven feasible for the
+screening of cervical cancer in low resources settings [19] [20].
+Further, smartphone images are helpful tools for on-site and
+off-site (telemedical) diagnosis in cervical cancer screening
+in low resources settings [21], including Madagascar [22].
+The use of customized software can help users to take high-
+quality images with smartphones, thus supporting experts in
+the on and off-site diagnosis of cervical cancer [20]. Deep
+learning-based diagnosis of cervical squamous intraepithelial
+lesions with colposcopic images has shown high accuracy
+in the identiﬁcation of suspicious lesions as compared to
+conventional cytology, and visual interpretation [21] [22]. For
+FGS, the use of colorimetric image analysis has been proposed
+to improve the diagnostic accuracy of FGS, however, only
+sandy grainy patches can be identiﬁed with this method [23].
+A systematic review on handheld devices as an alternative
+to colposcopes did not recommend smartphones or digital
+cameras for diagnosing FGS. However, only one smartphone
+(Samsung Galaxy S4) with a low pixel density and without
+an optical zoom was included in the review [24]. A focal
+distance of 25 cm to 40 cm, high ﬂexibility, and a 4-16
+fold magniﬁcation can improve the imaging quality. These
+parameters are compatible with a good quality smartphone.
+Further, a LED ring light and a green ﬁlter to reduce glare
+should be used [24]. So far, there is no approach to classify
+all types of FGS lesions with an AI-based algorithm and apply
+AI-based learning methods to reﬁne the tool’s accuracy.
+
+III. METHODOLOGY
+
+The design for the multi-sided AINA application uses a
+Human-Centered Design (HCD) approach and consists of an
+analysis phase in which the mental models of the users in the
+ﬁeld, their tasks, and environmental conditions are captured
+and transformed into an interaction design as a collection of
+requirements in the form of task ﬂow charts. The analysis
+follows the following structure:
+
+A. Analysis
+
+1) Processes, Stakeholders, and Users: First, the mental
+models of the development team are captured by recording
+the processes for the AINA application from their perspective
+in the form of a process diagram. For each process step, the
+groups of people involved in the process are then recorded,
+and ﬁnally, the user groups of particular relevance to the
+AINA application as primary, secondary, and tertiary users are
+identiﬁed.
+2) Interviews with Identiﬁed Users: Subsequently, inter-
+views will be conducted with the identiﬁed user groups. The
+particular challenge in this project is the intercontinental and
+intercultural communication with the user groups on-site since
+the development team consists of German physicians and com-
+puter scientists. The user groups are primarily located in rural
+areas of Africa, especially Madagascar. Another constraint
+is the currently active COVID-19 pandemic, which leads
+
+432
+
+to severe limitations in the availability and communication
+ability of the relevant user groups, especially in Africa. The
+interviews are then transcribed and synthesized in the form of
+key ﬁndings.
+3) Target Groups and Personas:
+Based on the results
+of the interviews, the users are divided into target groups.
+Each target group is detailed by socio-demographic factors
+and application-speciﬁc skills and abilities. The target groups
+deﬁned in this way are then transformed into virtual represen-
+tations, so-called personas. These personas serve as a visual
+and illustrative aid for the development team in developing the
+AINA application from the user’s perspective.
+4) User Stories and Scenarios: For each developed per-
+sona, use cases in the form of user stories are derived from
+the key results of the interviews. A user story has the ﬁxed
+form ”As a PERSONA, I want FUNCTIONALITY, so that
+BENEFIT.”.
+Finally, the user stories of a persona are summarized in a
+scenario. The scenario represents a short everyday story of a
+persona, which, in addition to all user stories of the persona,
+illustrates the environment and circumstances of using the
+AINA application.
+5) Interaction Design: For each scenario of the developed
+personas, task ﬂow charts are created that depict the target
+group’s requirements behind them. In a ﬁnal step, the de-
+veloped task ﬂow charts are merged into a single large task
+ﬂow chart. The ﬁnal task ﬂow chart thus represents the entire
+interaction design of the AINA application.
+
+B. Design and Evaluation
+
+After the analysis has been completed, the development
+proceeds with iterative design and evaluation phases. First,
+adjustments are made to the design based on the ﬁndings
+of the previous phase, or a new design is developed. Sub-
+sequently, non-participatory evaluation methods are used to
+identify and correct signiﬁcant errors in the developed design
+and level the design based on radical knowledge by applying
+best practice models. Subsequently, the resulting design is
+evaluated together with the identiﬁed users using participatory
+evaluation methods. Finally, the results of all evaluations are
+synthesized into key insights and processed for the subsequent
+design phase.
+1) Design Phase: In the design phase, a radical design
+is created based on the ﬁndings of the preceding evaluation
+phase. Therefore, we try to design strongly along the users’
+mental model to capture the users’ essential needs. The
+adherence to best practice guidelines explicitly does not play
+a role.
+2) Non-Participatory Evaluation Phase: The ﬁrst evalua-
+tion phase serves as the ﬁltering and smoothing phase for the
+developed radical design and consists, in the ﬁrst step, of using
+a heuristic evaluation to identify and eliminate signiﬁcant
+errors in the design. In the second step, the design is smoothed
+by adapting it to best practice guidelines, i.e., Material Design.
+
+a) Heuristic Evaluation: The heuristic evaluation used is
+based on the ten heuristics of J. Nielsen [29]. These rules allow
+the evaluation of the interface in order to identify and correct
+signiﬁcant errors. The evaluation is carried out in a group of
+four persons who systematically examine the design in the
+respective phase. The investigation results are ﬁrst noted in
+bullet points and ﬁnally formulated in the form of key ﬁndings.
+b) Best Practice Leveling (Material Design): Since the
+AINA application should run on Android1-based devices and
+iOS2-based devices, the application is developed as a cross-
+platform application using the Google Flutter3 framework. The
+Material Design4 framework is used for the application design,
+which acts as a best practice and thus as a smoothing and
+leveling model for the developed design. By adding a leveling
+phase, the development of a design that is too radical can be
+avoided so that the user’s mental model is not positioned too
+far away from the typical design standards of other application
+providers. The design leveling pursues only making minor
+changes needed to establish conformity.
+3) Participatory Evaluation Phase: In the second evalua-
+tion phase, users develop the AINA application in the form of
+participatory evaluation methods. The participatory evaluations
+take place via intercontinental video conferences. The video
+conferences happen either in French or Malagasy, depend-
+ing on the user group. Due to the lack of language skills,
+interpreters are present in addition to the direct participants
+of the evaluation. Due to the cross-cultural characteristics of
+the region, a deliberate attempt for speciﬁc user groups was
+made to reduce the number of participants and homogenize
+by gender; otherwise, some of the evaluation participants may
+not express themselves honestly or at all.
+a) Thinking-aloud Method: In order to capture the men-
+tal model of the users, the thinking-aloud method was chosen
+as the primary participatory evaluation method. In this method,
+the developed prototypes are presented to the users virtually,
+and the users receive predeﬁned tasks that they must solve
+with the help of the prototype. All AINA prototypes were
+created in FIGMA5 for this purpose in order to be able to
+share them over long distances via the Internet in parallel with
+the video conferences held. The users are asked to express
+their emotions and thoughts aloud while solving the tasks. This
+setting is recorded and transcribed afterwards with appropriate
+annotations. The resulting ﬁndings are synthesized as key
+insights.
+b) Action Analysis: In addition to the thinking-aloud
+method, an action analysis was also conducted, as this was
+appropriate due to similarities in the method structure. An
+action analysis is a quantitative evaluation of the number
+of actions or clicks a user needs to solve a given task to
+derive a statement about user acceptance. The fewer actions
+or clicks a user needs to perform the given action, the better
+
+1Android: https://www.android.com/ (Online; Accessed May 2, 2022)
+2iOS: https://www.apple.com/de/ios/ (Online; Accessed May 2, 2022)
+3Google Flutter: https://ﬂutter.dev/ (Online; Accessed May 2, 2022)
+4Material Design: https://material.io/ (Online; Accessed May 2, 2022)
+5FIGMA: https://www.ﬁgma.com/ (Online; Accessed May 2, 2022)
+
+433
+
+Fig. 2. Processes of the AINA application.
+
+the developed design. Since the thinking-aloud method already
+provided a ﬁxed set of tasks, the number of user actions and
+clicks was measured and evaluated in parallel to the thinking-
+aloud method.
+
+IV. ANALYSIS
+
+A. Processes, Stakeholders, and Users
+
+In the beginning, a diagram of the processes that the AINA
+application is designed to facilitate was created to capture our
+mental model visually. The process diagram is illustrated in
+Figure 2 and contains the four main lines of action
+
+• Support for FGS diagnosis,
+
+• Reference guide for FGS and differential diagnosis of
+FGS,
+
+• FGS advanced training and examination to become an
+FGS expert, and
+
+• Expert labeling of FGS images.
+The AINA application primarily aims to support local med-
+ical personnel in diagnosing FGS. For this purpose, the local
+medical staff can take photos with a suitable smartphone and
+have the images analyzed by the AINA application’s artiﬁcial
+intelligence (AI). As a result, the AINA application gives the
+medical staff a statement about the patient’s probability of
+having FGS and eventually recommends further examinations
+to increase or decrease the likelihood of an FGS diagnosis.
+In order to provide the medical staff with knowledge about
+FGS as independent of time and place as possible, the AINA
+application has a reference book on NTDs, especially on FGS.
+The AINA application has a human-machine feedback loop
+(reinforcement learning) that allows the AI to improve con-
+tinuously. This requires labeled FGS image data. FGS experts
+
+can label medical images showing FGS-speciﬁc alterations of
+the cervix. FGS experts are identiﬁed through a standardized
+qualifying examination on FGS, which includes a virtual
+recognition of FGS lesions through visual diagnosis. The
+qualifying examination serves as an access barrier to the
+labeling process and ensures high-quality FGS labeling.
+In the FGS diagnosis storyline, the primary users are medi-
+cal health workers working in rural areas of Africa. In addition,
+secondary users are physicians, nurses, and midwives.
+Therefore, we identiﬁed medical health workers, physicians,
+nurses, and midwives as primary users from the process
+participants.
+
+B. Interviews
+
+Interviews were conducted with the identiﬁed users. The
+interviews were conducted in the form of online conferences.
+Due to the COVID-19 pandemic, only a few participants were
+available for the entire three-month survey period. Neverthe-
+less, several interviews with representatives of all user groups
+could be performed. The goal of the interviews was to develop
+target groups based on the identiﬁed users and understand their
+mental models.
+Interviews were conducted in English, French, and Mala-
+gasy. Interpreters translated from French to English or Mala-
+gasy to English when necessary. The number of participants in
+the interviews was kept low to reduce social desirability and
+barriers due to occupational, gender, and cultural hierarchies.
+Furthermore, when possible, we ensured that only women
+were interviewed and avoided the presence of hierarchically
+more senior health professionals when conducting the inter-
+views.
+The results of the interviews allowed us to obtain a detailed
+picture of the participant’s level of knowledge about FGS
+and the working conditions existing in rural areas of Africa,
+particularly Madagascar. In general, there was little experience
+with FGS. Stable IT infrastructure was only partially present
+in primary health care facilities. Medical care was considered
+inadequate due to low presence, density, funding, and medical
+personnel qualiﬁcation in rural areas. Patients’ access to health
+care was limited due to long travel distances to reach a
+physician.
+
+C. Target Groups and Personas
+
+From the interview results, we identiﬁed the two target
+groups
+
+• medical professionals with high FGS expertise and
+
+• medical professionals with low FGS expertise
+for the AINA application.
+The target groups have different roles in the usage of the
+AINA application. The mobile AINA application primarily
+addresses medical professionals with low FGS expertise to
+support them in diagnosing FGS. Although medical profes-
+sionals with low FGS expertise beneﬁt more from this feature,
+the mobile FGS reference tool addresses both target groups
+equally. An adequate medical professional with low FGS ex-
+pertise can be invited by medical professionals with high FGS
+
+434
+
+Fig. 3. Persona of medical professionals with high FGS expertise.
+
+Fig. 4. Persona of medical professionals with low FGS expertise.
+
+expertise to increase their competencies by pursuing online
+training with the AINA Web service. Candidates have the
+opportunity to take online training on FGS and take the exam
+to become a medical professional with high FGS expertise.
+After successfully passing the qualifying examination, they
+become medical professionals with high FGS expertise and
+have the opportunity to label FGS image data for the AI-based
+algorithm of the AINA application.
+Finally, we developed personas for the identiﬁed target
+groups, which are shown in Figure 3 and Figure 4.
+Miora Rakotomalala represents a medical professional with
+high FGS expertise. She is a medical physician and 48 years
+old. She is married and has two sons. She is very communica-
+tive and motivated. Her FGS expertise is exceptionally high,
+whereas her afﬁnity for technology is somewhat weaker than
+average.
+Marie Rakotonirina represents a medical professional with
+low FGS expertise. She is a midwife, single, and 26 years old.
+She is very communicative and highly motivated. Her FGS
+expertise is low, and her afﬁnity for technology is slightly
+stronger than average.
+
+D. User Stories and Scenarios
+For both personas, a set of user stories was developed,
+which, based on the needs and mental model of the users,
+
+describe the entire functional scope of the AINA application.
+Based on the interviews, we then used the user stories to
+develop scenarios that take particular account of the living
+conditions and the social and cultural characteristics of the
+region.
+
+Excerpt of the scenario of Marie Rakotonirina:
+... Because of the emergency, Marie rides her motorcycle
+about 12 km from her home to the nearest community health
+center, where several patients are already waiting for her.
+She immediately begins to examine the patients. During the
+examination, she suspects that a patient is suffering from
+FGS. To conﬁrm her suspicion, Marie takes a photo of the
+patient’s cervix and, after obtaining the patient’s consent,
+uploads the image to the AINA mobile application, which
+conﬁrms her suspicion. Marie begins further examination.
+Suddenly, a male physician appears in her treatment area,
+and Marie immediately hands the patient over to the attending
+physician. After the physician addresses Marie directly and
+asks her what she has done so far regarding the patient,
+Marie begins to exchange ideas with the physician. After
+questioning Marie, the physician diagnoses the patient with
+FGS and asks Marie to treat the patient by administering
+praziquantel. After the treatment, Marie explicitly informs
+the patient and her companion that she does not have a
+Sexually Transmitted Disease (STD) to avoid the otherwise
+usual stigmatization of the patient by other villagers as far
+as possible. After the educational talk, Marie devotes herself
+to the next patient without taking a break. After Marie has
+ﬁnished her work, she stays at the Community Health Center
+for a while to upload the pictures taken that day via the AINA
+application since she does not have an Internet connection
+at home. After that, Marie uses the AINA application to
+educate herself about the symptoms of FGS and takes one or
+two mockup online qualifying examinations to pass the FGS
+expert qualifying examination as soon as possible so that she
+feels more conﬁdent in her diagnosis, but also so that she
+can rise in the esteem of her direct supervisor, for whom she
+has great respect, and have the opportunity to speak up when
+asked about FGS. She then leaves the Community Center and
+goes home. ...
+
+E. Task-Flow Charts
+
+Detailed task ﬂow charts were created for the complete
+scenarios of both personas, depicting all individual aspects of
+the AINA application. Figure 5 shows an excerpt from the task
+ﬂow chart for the scenario of the persona Miora Rakotomalala,
+which depicts the process of labeling FGS images.
+Finally, the two resulting task ﬂow charts are combined
+into one task ﬂow chart that depicts the entire interaction
+design and, thus, all functional requirements of the AINA
+application. The interaction design developed in this way
+serves as the basis for the developed design of the prototypes
+in the following phase, Design and Evaluation.
+
+435
+
+Fig. 5. Excerpt of ﬁnal task ﬂow chart: Labeling of FGS pictures.
+
+Fig. 6. Excerpt of ﬁrst design based on the analysis (in French).
+
+V. DESIGN AND EVALUATION
+
+In the Design and Evaluation phase, a three-stage iterative
+process is used to ﬁrst develop designs from the insights gained
+in the preceding iteration, which are then evaluated using non-
+participatory and participatory methods.
+
+A. First Iteration of Design and Evaluation
+
+The ﬁrst design, presented in excerpts in Figure 6, imple-
+ments the ﬁnal task ﬂow chart from the analysis phase in a
+rudimentary design, consisting of simple control elements and
+an otherwise plain design.
+1) Findings of Heuristic Evaluation: The visibility of the
+system status of the ﬁrst prototype is still strongly underdevel-
+oped. The user receives almost no feedback after a function is
+
+triggered and loading time occurs. The ﬁrst prototype still uses
+numerous technical terms and thus only incompletely speaks
+the user’s language. The implementation of the navigation
+design does not yet allow users to end all actions prematurely.
+Furthermore, the ﬁrst prototype does not use consistent nam-
+ing. Also, error messages have not yet been incorporated into
+the design. Users currently still have to remember which area
+of the application they are in because, with a few exceptions,
+it does not contain any hints about this. Shortcuts are also not
+supported by the ﬁrst prototype. The design does not yet claim
+to be aesthetic or minimalistic. The application documentation
+is only accessible via the start screen so far.
+2) Findings of Leveling with Material Design: As a follow-
+up to the ﬁrst design iteration and the heuristic evaluation, the
+used controls and icons were replaced by relevant (simple)
+material design elements. Their positions and basic layout
+were not changed.
+3) Findings of Thinking-aloud Evaluation: The users re-
+ceived a set of tasks that they had to solve independently with-
+out help using the AINA application. They were continuously
+asked to express their thoughts and feelings.
+a) Task 1: Find and Read Information about FGS:
+Two-thirds of the users had slight difﬁculties ﬁnding their
+way around the given interaction design. Another third had
+more signiﬁcant difﬁculties and expressed an increased level
+of frustration. In addition, users criticized the lack of an option
+to select a suitable language. The control elements used were
+described as somewhat unintuitive. The arrangement of buttons
+and keys seemed confusing to one-third of the users. All users
+criticized the font size, as it was difﬁcult to read on mobile
+devices. In particular, the combination of long text passages
+and small font size led to frustration among users.
+b) Task 2: Take a picture, let AINA diagnose it, and then
+upload it to improve AINA’s diagnostic quality: All users had
+difﬁculty following the instructions in the AINA application
+due to the use of overly technical terms. Likewise, control
+mechanisms such as holding a button longer to open context
+menus were described as unintuitive. All users had problems
+with using elements such as images or texts themselves
+for navigation and explicitly wished for buttons to navigate
+through the application.
+c) Task 3: Take a test to become a FGS expert: All users
+had little difﬁculty in performing the assignment. Two-thirds
+of the users said they did not know which step they were
+currently in and would like to see a corresponding indicator.
+About half of the users were also concerned with the number
+of questions remaining to be solved.
+d) Task 4: Label a FGS picture: One-third of the users
+had particularly great difﬁculty in recognizing FGS symptoms.
+A typical behavior among all users was clicking with the
+mouse on parts of the FGS images where they suspected
+symptoms. Users expressed that they wished they could see
+what selections they had already made, even before saving
+their input. All users complained about the poor contrast of the
+images. All users expressed increased frustration with marking
+FGS symptoms on the images using minimum bounding
+
+436
+
+Fig. 7. Excerpt of second design based on results of ﬁrst iteration.
+
+boxes, both because they were unfamiliar with the concept
+and perceived the control of the minimum bounding boxes to
+be particularly complicated.
+4) Findings of Evaluation using Action Analysis: The Ac-
+tion Analysis was performed in parallel with the Thinking-
+aloud method of the ﬁrst iteration and is therefore based on
+the same set of tasks. It measured the number of clicks users
+need to complete one of the following tasks compared to the
+optimal number of clicks.
+a) Task 1: Find and Read Information about FGS: Two-
+thirds of users averaged a negative deviation of about 40%,
+and one-third averaged a negative deviation of about 60% in
+terms of the optimal number of clicks needed to complete the
+tasks.
+b) Task 2: Take a picture, let AINA diagnose it, and
+then upload it to improve AINA’s diagnostic quality: All users
+averaged a negative deviation of about 55% in terms of the
+optimal number of clicks needed to complete the tasks.
+c) Task 3: Take a test to become an FGS expert: On
+average, the ﬁrst half of the users have a negative deviation of
+about 25% and the second half of the users have a negative
+deviation of about 35% in terms of the optimal number of
+clicks needed to complete the tasks.
+d) Task 4: Label an FGS picture: Two-thirds of users
+averaged a negative deviation of about 120%, and one-third
+averaged a negative deviation of about 40% in terms of the
+optimal number of clicks needed to complete the tasks.
+
+B. Second Iteration of Design and Evaluation
+
+1) Findings of Heuristic Evaluation: The second prototype
+uses a burger menu to allow navigation uniformly across the
+different components of the AINA application. Breadcrumbs
+that show the user where they are within the application are
+missing. The language of the application matches the user’s
+language in all parts except the documentation. All terms are
+now used consistently across the different components of the
+application. The user also has the option to exit all dialogs
+directly. Error messages have been developed for all possible
+system actions, explaining the error to the user in an under-
+standable way. The system still does not have any shortcuts. By
+applying the basic rules of Gestalt theory [30] in the second
+
+prototype design, the design is aesthetic in the sense of the
+arrangement of the elements. All unnecessary information has
+been reduced as much as possible. The documentation is now
+accessible from anywhere in the application via the burger
+menu.
+2) Findings of Leveling with Material Design: As a follow-
+up to the second design iteration and the heuristic evaluation,
+the header, content and footer sections, and the menus were
+given a consistent format. In addition, icons, labels, and
+controls used were consistently uniﬁed according to their
+function based on Material Design.
+3) Findings of Thinking-aloud Evaluation: The users re-
+ceived a set of tasks that they had to solve independently with-
+out help using the AINA application. They were continuously
+asked to express their thoughts and feelings.
+a) Task 1: Find and Read Information about FGS: All
+users had difﬁculties with the newly introduced navigation
+elements, especially with the idea of the burger menu, as
+this hid the possible navigation destinations in their percep-
+tion. They wanted visible navigation elements. The improved
+structuring of text passages by breaking up long texts and
+consistently positioning information elements was perceived
+as positive. Unfortunately, the revision of the manual, based on
+AI guidelines for medical devices, did not reduce the number
+of technical terms used, so all users commented negatively on
+this.
+b) Task 2: Take a picture, let AINA diagnose it, and then
+upload it to improve AINA’s diagnostic quality: All users
+commented positively on the use of the new controls. The
+requirement to obtain approval for medical data processing
+prior to recording and uploading was considered beneﬁcial but
+was not described as user-friendly. All users commented posi-
+tively on the step-by-step user guidance through the diagnostic
+process.
+c) Task 3: Take a test to become an FGS expert: Users
+wanted an educational area where they could practice for the
+test they would take. There was also a desire to link the
+information area of the AINA application to this new area. The
+color scheme was described as not particularly appealing for
+a medical application. The newly introduced error messages
+were perceived as consistently positive. However, users wished
+that error messages should be actively conﬁrmed and not
+disappear on their own after a short time.
+d) Task 4: Label a FGS picture: Two-thirds of users
+commented positively on the new minimum bounding box
+controls for marking FGS symptoms, whereas one-third per-
+ceived no change from the previous state. Overall, all users
+described the layout in this speciﬁc step as cluttered. The size
+of the image to be labeled was perceived as disadvantageous.
+All users wished for more intuitive control of the minimum
+bounding boxes for labeling FGS symptoms.
+4) Findings of Evaluation using Action Analysis: The Ac-
+tion Analysis was performed in parallel with the Thinking-
+aloud method of the second iteration and is therefore based
+on the same set of tasks. It measured the number of clicks
+
+437
+
+Fig. 8. Excerpt of third design based on results of second iteration.
+
+users need to complete one of the following tasks compared
+to the optimal number of clicks.
+a) Task 1: Find and read information about FGS: Two-
+thirds of users averaged a negative deviation of about 30%,
+and one-third averaged a negative deviation of about 45% in
+terms of the optimal number of clicks needed to complete the
+tasks.
+b) Task 2: Take a picture, let AINA diagnose it, and then
+upload it to improve AINA’s diagnostic quality: Two-thirds of
+users averaged a negative deviation of about 35%, and one-
+third averaged a negative deviation of about 50% in terms of
+the optimal number of clicks needed to complete the tasks.
+c) Task 3: Take a test to become an FGS expert: Two-
+thirds of users averaged a negative deviation of about 20%,
+and one-third averaged a negative deviation of about 25% in
+terms of the optimal number of clicks needed to complete the
+tasks.
+d) Task 4: Label an FGS picture: The ﬁrst half of the
+users have on average a negative deviation of about 30%,
+and the second half of the users have, on average, a negative
+deviation of about 75% in terms of the optimal number of
+clicks needed to complete the tasks.
+
+C. Third Iteration of Design Evaluation
+
+1) Findings of Heuristic Evaluation: The application uses
+clear headings, breadcrumbs, and highlightings in the navi-
+gation bar to show users where they are currently located in
+the application. All terms across the application have been
+adapted to the users’ language, and inconsistent naming is
+avoided. Users can exit dialogues at any time and switch to
+other actions without losing their work, as the application
+stores intermediate results. All error messages were understood
+by the users and resulted in the users behaving adequately in
+case of an error. Users are also helped to handle the appli-
+cation appropriately by clear paths in the interaction design.
+To address a aesthetic design and minimalism, the decision
+was made to develop and use a corporate design across the
+application. Unnecessary information is completely removed
+from the application. Finally, the application’s documentation
+was further adapted to the needs and language of the users,
+based on the ﬁndings of the second iteration.
+
+Fig. 9. Developed corporate design of the AINA application.
+
+2) Findings of Leveling with Material Design: As a follow-
+up to the third design iteration and the heuristic evaluation, a
+complete corporate design, as illustrated in Figure 9, for the
+AINA application, i.e., the mobile application and the Web
+service, was created. The design includes a color scheme that
+uses #5D7398 as the primary color, #BBDD4F as the sec-
+ondary color, and #018786 as the tertiary color. Furthermore,
+a logo for the AINA application was developed that stylizes
+the affected organs of FGS, and a set of consistent icons was
+deﬁned across the different parts of the application.
+3) Findings of Thinking-aloud Evaluation: The users re-
+ceived a set of tasks that they had to solve independently with-
+out help using the AINA application. They were continuously
+asked to express their thoughts and feelings.
+a) Task 1: Find and Read Information about FGS: All
+users commented positively on the optimized navigation and
+the simpliﬁcation of the language used. No user expressed
+frustration. Two-thirds commented positively on the ﬁnal nav-
+igation design. The use of templates for consistent presentation
+of information was particularly praised and perceived as
+intuitive by users. The redesign of the language selection was
+also perceived as positive.
+b) Task 2: Take a picture, let AINA diagnose it, and then
+upload it to improve AINA’s diagnostic quality: All users were
+generally positive about the newly developed step-by-step
+navigation through the diagnostic process. The visualization
+of the process steps was perceived particularly positively. The
+users would like to see a percentage probability display for the
+individual FGS symptoms on the results screen of the photo
+analysis to feel more conﬁdent about ambiguous results.
+c) Task 3: Take a test to become a FGS expert:
+Users commented positively on the consistent design and
+standardized buttons and knobs with consistent functions.
+The color differentiation of control and action elements was
+also perceived positively. Font sizes and contrasts were rated
+positively.
+d) Task 4: Label a FGS picture: All users described the
+newly introduced control of the minimum bounding boxes by
+clicking and dragging while resizing and selecting the shape
+of the minimum bounding box as intuitive. Users also wanted
+clear step-by-step instructions for the labeling process with the
+minimum bounding box to make this step, in particular, even
+more straightforward.
+4) Findings of Evaluation using Action Analysis: The ac-
+tion analysis was performed in parallel with the Thinking-
+
+438
+
+Fig. 10. Architecture of the AINA application.
+
+aloud method of the third iteration and is therefore based on
+the same set of tasks. It measured the number of clicks users
+need to complete one of the following tasks compared to the
+optimal number of clicks.
+a) Task 1: Find and Read Information about FGS: All
+users averaged a negative deviation of about 15% regarding
+the optimal number of clicks needed to complete the tasks.
+b) Task 2: Take a picture, let AINA diagnose it, and then
+upload it to improve AINA’s diagnostic quality: Two-thirds of
+users averaged a negative deviation of about 20%, and one-
+third averaged a negative deviation of about 25% in terms of
+the optimal number of clicks needed to complete the tasks.
+c) Task 3: Take a test to become an FGS expert: All
+users averaged a negative deviation of about 10% regarding
+the optimal number of clicks needed to complete the tasks.
+d) Task 4: Label an FGS picture: Two-thirds of users
+averaged a negative deviation of about 20%, and one-third
+averaged a negative deviation of about 35% in terms of the
+optimal number of clicks needed to complete the tasks.
+
+VI. HIGH-FIDELITY PROTOTYPE
+
+A. System Architecture
+
+Figure 10 illustrates the system architecture of the AINA
+application. It consist of a backend that includes a component
+for the training of the AI algorithms for the classiﬁcation of
+FGS pictures and RESTful APIs for the labeling Web service
+and the mobile application. The mobile application is designed
+to work as a stand-alone solution as long as no updates for
+the AI-based classiﬁcation algorithm are needed. For model
+updates, the mobile application needs an Internet connection
+to connect to the AINA backend server.
+
+B. Mobile Application
+
+Excerpts of the mobile application interface design are
+illustrated in Figure 11,
+
+Fig. 11. AINA mobile application (in French).
+
+C. Web Service
+
+Excerpts of the Web service interface design are illustrated
+in Figure 12, Figure 13, and Figure 14.
+
+Fig. 12. AINA Web service - Excerpt of information page (in French).
+
+VII. CONCLUSION
+
+A. Discussion of Results
+
+We developed the application AINA in a human-centered
+approach to support physicians, nurses, midwives, and medical
+health workers in diagnosing FGS in rural areas of Africa,
+particularly in Madagascar.
+In a three-month analysis phase, a process model was
+ﬁrst created to describe the mental model of the developers,
+which was then continuously compared and adapted to the
+
+439
+
+Fig. 13. AINA Web service - Excerpt of test page (in French).
+
+Fig. 14. AINA Web service - Excerpt of labeling service.
+
+mental model of the target groups of the AINA application.
+From the interviews conducted with the identiﬁed users, we
+learned important information about the socio-cultural living
+conditions and the local environment in which the AINA
+application is to be used. We ﬁrst had to learn, with the
+help of resident physicians, that certain interview settings
+did not produce the needed outcome because, due to socio-
+cultural differences, certain groups of people did not express
+themselves freely or at all in some settings, which is a major
+problem for participatory design methods. However, with the
+help of locally resident physicians, we successfully adapted
+our interview settings over time. Despite the large number
+of users involved in the AINA application, we derived two
+relevant target groups that differed primarily in their level of
+knowledge regarding FGS. For each of these target groups, we
+developed a complete set of user stories and a summarizing
+scenario for each, which, besides the use cases, also considers
+regional characteristics and socio-cultural differences. We ﬁrst
+generated individual task ﬂow charts from the scenarios, which
+we then merged into a ﬁnal and consistent task ﬂow chart.
+Subsequently, we developed a prototype of the AINA
+application in three design and evaluation iterations, which
+was ﬁnally described and evaluated as positive by all user
+groups involved and no longer contained any identiﬁable
+design problems. The evaluation strategy was based on an
+alternation of non-participatory methods, which served as a
+
+ﬁltering technique for major design ﬂaws, and participatory
+methods, which enabled radical design for the users.
+We are conﬁdent that based on our successful design study,
+the development of the AINA application as a medical device,
+for which this design study was conducted as preliminary
+work, can be started in a short time.
+
+B. Limitations
+
+Intercultural differences have the most substantial impact in
+all settings where participatory methods are used. Since these
+methods, in particular, powerfully drove this design study, and
+we had to learn to adapt in practice in a suitable way, we
+cannot eliminate the possibility of bias in the users’ responses
+and thus bias in the ﬁnal design. However, we tried to the
+best of our knowledge and belief to create interference-free
+interview and evaluation settings as far as this was possible
+with the technologies used.
+Since user behavior plays a crucial role in any technology,
+we wished to conduct additional on-site observations during
+the analysis and evaluation phases. Unfortunately, this was not
+possible due to the global COVID-19 pandemic.
+
+C. Future Work
+
+In the near future, the AINA application is to be developed
+as a medical device in cooperation with Charit´e - Univer-
+sit¨atsmedizin Berlin. The AI-based algorithms have already
+been developed and tested by a second team of developers.
+By implementing a human-machine-feedback loop (Reinforce-
+ment Learning), which enables the AINA application to learn
+independently and thus improve itself, we hope that the AINA
+application can solidly contribute to the ﬁght against the ﬁght
+FGS.
+In our vision, the techniques of the AINA application can
+be easily adapted to diagnose other NTDs as long as they can
+be diagnosed by medical image analysis.

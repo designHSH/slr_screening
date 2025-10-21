@@ -1,0 +1,732 @@
+Science of Computer Programming 78 (2013) 2268–2281
+
+Contents lists available at ScienceDirect
+
+Science of Computer Programming
+
+journal homepage: www.elsevier.com/locate/scico
+
+A guide to agile development of interactive software with a
+‘‘User Objectives’’-driven methodology
+
+Begoña Losada ∗, Maite Urretavizcaya, Isabel Fernández-Castro
+
+Department of Computer Languages and Systems, Faculty of Computer Engineering, University of the Basque Country, 20001 San Sebastián, Spain
+
+a r t i c l e
+i n f o
+
+Article history:
+Received 19 January 2012
+Received in revised form 16 July 2012
+Accepted 26 July 2012
+Available online 24 September 2012
+
+Keywords:
+User-centred design
+Agile methods
+Model-driven development
+Software engineering
+
+a b s t r a c t
+
+This paper presents the InterMod methodology. By combining the widely accepted Agile
+Methods, Model-Driven Developments and User-Centred Design it allows us to develop
+high-quality interactive applications. As a main characteristic, it plans and organises the
+software project as a series of iterations that are guided by the User Objectives in an
+agile and user-centred manner. At each iteration, the software development work can be
+distributed to different teams according to some developmental and integration activities.
+Each activity is driven by models that are validated by a multidisciplinary team composed
+of developers and users. The requirements are incrementally collected and formalised
+by means of models based on user-centred design. Besides, the Semantically Enriched
+Human–Computer Interaction model is proposed to speed up project validation. This model
+enriches a human–computer interaction model with some visual characteristics and the
+application semantic. Thus, the enriched model provides enough information to generate
+prototypes so users and developers can easily validate this model. Diagram project is a real
+case study that is used to illustrate the application of the InterMod methodology through
+the whole paper.
+© 2012 Elsevier B.V. All rights reserved.
+
+1. Introduction
+
+Agile Methods (AMs), Model-Driven Developments (MDDs) and User-Centred Design (UCD) are three approaches widely
+accepted by the community that share a common objective of efficiency in the resulting software. However, none of them
+on its own achieves success without encountering problems during application development. Therefore, efforts are being
+made to integrate these techniques so that the advantages of one mitigate the problems of the others.
+
+AMs and MDDs are the predominant approaches in Software Engineering. AMs are able to develop a software product
+incrementally and iteratively. They get feedback from the client at each incremental delivery and, as a result, adapt the
+development plan accordingly. Most studies report increased code quality when agile methods are used but also report a lack
+of attention to design and architectural issues [1]. Moreover, Software Engineering principles directly derive the quality of
+the software from good design. Current trends establish design as a set of final product models characterised by iterative and
+incremental development while, at the same time, promote formal development along the lines of traditional or waterfall
+methodologies. Some authors [2] point out a drawback of MDD: models are difficult to maintain because changes come up
+and new requirements are added while a project is progressing.
+
+Abbreviations: AM, Agile methods; AMDD, Agile model driven development; MDD, Model-driven developments; UCD, User-centred design; UO,
+User objective; UOs, User objectives; DA, Developmental activity; DAs, Developmental activities; IA, Integration activity; IAs, Integration activities; RM,
+Requirements model; SE-HCI, Semantically enriched human–computer interaction; XIML, Extensible interface markup language; UIML, User interface
+markup language; SysML, Systems modelling language; FDD, Feature-driven development; AUI, Abstract user interface; CUI, Concrete user interface; HTA,
+Hierarchical task analysis.
+∗Corresponding author. Tel.: +34 943 015025; fax: +34 943 01 5590.
+E-mail addresses: b.losada@ehu.es (B. Losada), maite.urretavizcaya@ehu.es (M. Urretavizcaya), isabel.fernandez@ehu.es (I. Fernández-Castro).
+
+0167-6423/$ – see front matter © 2012 Elsevier B.V. All rights reserved.
+doi:10.1016/j.scico.2012.07.022
+
+2269
+
+On the other hand, UCD is the dominant approach in the area of Human–Computer Interaction. UCD involves the end
+user in a multidisciplinary development process based on iterative design and evaluation, so the designer understands the
+user’s needs and tasks [3,4]. But, in the same way as traditional or heavyweight methodologies, UCD needs all requirements
+be gathered and evaluated before they can be implemented [5–7].
+
+To make up for the weaker aspects of these trends, several proposals have emerged that integrate AMs into both MDD
+[8,9] and UCD [10]. However, due to the fact that a majority of software engineering development processes focus on
+software architecture, a satisfactory integration has not been achieved yet. Therefore, we have focused on integrating these
+three techniques into one approach that takes into account the User Objective to guide developments.
+
+The User Objective concept appears both in Usability Engineering and in classical software engineering for different
+purposes. Usability Engineering uses both task analysis and scenarios as usual techniques to describe how users accomplish
+tasks in an interface. Different authors in this area also mention usability goals [11,12], user’s motivations [6], user’s needs
+[13] or user tasks [14,15]. On the other hand, traditional Software Engineering utilises Use Cases to describe the system
+behaviour from the user point of view. Use Cases aim to express the functional requirements of the application in order to
+configure the domain model. Cooper [6] states that: ‘‘Use cases permit a complete cataloguing of user tasks for different classes
+of users but say little or nothing about how these tasks are presented to the user or how they should be prioritised in the interface’’.
+Our User Objectives concept approximates or resembles to concepts developed by Usability Engineering (see Section 3.1).
+
+In this paper we propose a new approach to software development that combines agile characteristics, model-driven
+development and user-centred techniques. The main contributions of the paper can be summarised as follows:
+
+c1. An agile methodology organised as a series of iterations based on User Objectives is proposed as a new way to promote a
+
+correct development. This iterative approach guides the incremental development of software.
+c2. The Semantically Enriched Human–Computer Interaction (SE-HCI) Model is proposed to support project requirements. SE-
+
+HCI is a new model integrated in the Model Driven Process that allows usability and incremental evaluation. This model
+is tested by a multidisciplinary team composed of developers and users, just as it is proposed by UCD.
+
+This paper is structured as follows: Section 2 outlines the primary characteristics of agile methods and compares them
+to the other above-mentioned approaches. Section 3 presents the InterMod methodology by means of a real case study. The
+concept of User Objective, the activities and models of the proposed agile development are also described. The next section
+explains the SE-HCI Model. Section 5 shows the InterMod process model and applies it to the case study. Finally, we draw
+some conclusions and outline our future work.
+
+2. Agile development process: virtues and defects
+
+Agile software development establishes the following principles [16]: individuals and interactions over processes
+and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and
+responding to change over following a plan.
+
+This approach challenges waterfall or heavyweight methods in which one activity begins only when the previous one
+finishes and where extensive and well-founded documentation is required. The rationale behind these traditional methods
+is to reduce the number of corrections further on in the process and consequently reduce the cost of the project. However,
+this type of planning fails in practice, as it does not allow the changes that inevitably come up and are to be made during
+development [17]. Because of this, versions of the agile philosophy such as eXtreme Programming [18], Scrum [19], Crystal
+Clear [20], Feature Driven Development [21] or Unified Process [22] currently prevail among others.
+
+2.1. Agile processes and user-centred design
+
+One important aspect of UCD is the collaboration between users and developers to build software solutions, so that each
+group brings its own experience [23]. According to Norman [24], first it is necessary to identify and model the needs of
+future users, and later to involve those users in the iterative evaluations of the product. Thus, the purpose is to improve the
+product’s usability in order to: reduce errors, satisfy users and facilitate its learning and use, as it is defined in ISO standard
+9241-11 [25].
+
+Both UCD and AM are centred on the user/client and apply an iterative development process with continuous testing.
+These proposals contrast with traditional architecture-based development processes, which are directed by developers
+whose first focus is to achieve a good implementation.
+
+Nevertheless, UCD and AM show great differences related to how they act and what their interests are [10]. On the
+one hand, the agile philosophy recommendation of flexibility in action to face changes is at odds with the UCD principle
+of interface design prior to implementation (up-front). On the other hand, UCD develops a holistic product, while the agile
+process is incremental and results in sub products. Besides, while agile methods focus on code development, UCD methods
+focus on designing the interactions in which users will be engaged.
+
+Finally, both approaches seek to satisfy the users’ needs but in different manners. AM involves users in checking the
+correct implementation of the functionality; while UCD records users’ opinion about other aspects of the whole application,
+such as satisfaction or use efficiency. UCD focuses on how end-users work with the system, whereas AM is more concerned
+with how software should be built or how the process is managed.
+
+2270
+
+2.2. Agile processes and model-driven development
+
+MDDs use models mainly as documentation and guidance for the subsequent implementation phase. Although models
+are fundamental for general engineering processes, they are underused in Software Engineering. Many developers consider
+that modelling demands creating excessive and extensive documentation, which ultimately is of little help when it comes
+time to implement and maintain the system [2]. The changes arising throughout development seem to cause difficulties in
+updating the models. In fact, many developers skip the model re-design phases and prefer to modify the code directly.
+
+From this point of view, two issues are in strong conflict in software development. On the one hand, as MDD needs
+to maintain model consistency when changes come up during application development, the representing model must be
+an accurate and updated abstraction of the system in progress [26]. On the other hand, due to unforeseen changes, AMs
+perform modifications on the implementations that are not reflected in their designs. Therefore, if the designed model does
+not correspond with the current implementation this model cannot be used to drive the future evolution of the project and
+so this could spell its failure.
+
+The Agile Modelling method defines a collection of principles and practices for effective modelling and for diminishing
+documentation efforts. Agile Model Driven Development (AMDD) [27] proposes fast model-storming sessions, on a just-
+in-time basis during development iterations, in order to analyse a requirement or to design a solution. Modelling sessions
+usually involve two or three people, who discuss an issue while sketching on paper or a whiteboard. In the same way, other
+agile methods propose several formalisms to model requirements: Use Cases are formalized on RUP or AUP projects; major
+Features are identified on FDD [21] projects; and User Stories are written on XP projects.
+
+3. InterMod, a new methodology proposal
+
+InterMod is a methodology [28] whose aim is to help with the accurate development of interactive software, web design
+included. Recent studies have led us to revisit it by integrating the three philosophies previously discussed, i.e. UCD, MDD
+and AM, and by including User Objectives as guidelines for the developing process.
+
+This proposal organises the project as a series of iterations, just as the agile methodologies do, and distributes the work
+in iterations according to the different developmental and integration activities of the User Objectives. These processes can
+be carried out in parallel by different teams. Each activity is driven by models and must be validated by a multidisciplinary
+team composed of developers and end-users.
+
+In the following subsections the different aspects of the methodology will be illustrated by means of a real case study: the
+development of Diagram. The interactive application Diagram allows designers to easily build and validate user task models
+constructed for interactive applications. So, once the theoretical aspects of the methodology are explained, they will be put
+into practice on the example. The example part will be framed.
+
+3.1. User objectives, the development guide
+
+In this context, a User Objective (UO) is a user desire (e.g., ‘‘buying a t-shirt’’ or ‘‘reserving a meeting room in a workplace’’)
+that can be achieved by one or more user functionalities. UOs are fundamentally determined with the collaboration of a
+group of future users of the application. These UOs are gathered by means of Usability Engineering methods, and contrasted
+with the quality criteria defined in usability standards [13]. UOs are gathered throughout the project using an agile process
+and serve as a guide to developers (see Section 3.2).
+
+The UO syntactical form includes a consecutive number ⟨i⟩, a name and brief description, i.e. UOi-name: description.
+
+The first UO described in the Diagram project was:
+UO0-Representing Task Diagram: Represent the decomposition of user tasks using HTA diagrams.
+
+A UO can fit with one or more functional requirements (use cases) and/or non-functional requirements. Non-functional
+requirements normally relate to efficiency, ergonomics or limitations due to user or device types. For example, in an
+application for buying and selling apartments, the user not only wishes to ‘‘look for an apartment’’ but also ‘‘look quickly
+for an apartment that I like, ask about the price and compare this price with the price of my own apartment’’ or ‘‘ask about the
+price of an apartment and about credit by using my mobile phone’’. These UOs specialise various general cases: ‘‘look for an
+apartment’’, ‘‘ask about price’’, ‘‘appraise an apartment’’, and ‘‘see credits’’.
+
+UOs are formalised by describing the user’s behaviours (actions to complete) and the system behaviours (reaction of the
+application), in terms of the interface. These descriptions include just a part of the functional requirements, as they only
+indicate the system reactions on the interface. That is, they do not include the control reactions of the application such as
+‘‘register purchase’’ or ‘‘save order line’’. UOs are useful to organise the interface and also to help to discover and to formalise
+the use cases in later stages. Thus, they can be seen as abstractions of the use cases, while the use cases describe concrete
+functional aspects.
+
+Lansweerde [29], in his goal-oriented requirement-engineering proposal, uses the term ‘goal’ with a different meaning
+of the ‘Objective’ in this proposal. So, goals are declarative statements of intents to be achieved by the system under
+consideration. Meanwhile, the UOs here presented are defined by means of the operations that the end-user will perform on
+the application interface.
+
+2271
+
+3.2. Agile development process
+
+InterMod process (Fig. 1) starts with step 0-Analyse the Overall Project at the beginning of the project, and then continues
+with a sequence of iterations. Each iteration includes three steps: step 1.i-Build the User Objectives List, step 2.i-Plan the
+Parallel Iteration and step 3.i-Perform Activities of the Iteration (i is the i-th iteration).
+
+All iterations are guided by the same action plan that divides the work according to the Software Engineering activities
+of different User Objectives (UOs). Every activity is driven by models (Fig. 1). And these last can be revised and modified as
+a consequence of the integration processes. All the models can be revised and new UOs can be created even during the final
+integration of software.
+Step 0 — Analyse the Overall Project
+
+At the beginning, the project as a whole must be analysed in order to determine: (a) the starting UOs, and (b) the
+design decisions. The starting UOs (usually the most important or needed), together with a provisional but general menu
+incorporating some functionalities, provide the global view of the application. All starting UOs will be direct UOs, i.e. UOs
+proposed directly by the user. Also, it is important to draw up the models that help to collect the defining characteristics of
+the system type (e.g., device type, security, window size, colour, logo, etc.) and those of the user (e.g., colour preferences,
+font, size, some limitations as colour blindness, deafness, vision loss, etc.). These characteristics are collected in the System
+Model and the User Model respectively. All these initial decisions will give coherence to the incremental process and all
+developments in the project will inherit, supplement or extend these aspects.
+
+The Diagram first UOs requested by users were:
+UO0-Representing Task Model: Represent the decomposition of user tasks using HTA diagrams.
+UO1- Simulating Tasks: Simulate the execution of user tasks in an automatically obtained prototype.
+UO2- Printing Task Report: Print a report of the tasks that serves to document the Task Model.
+UO3- Managing Project/UOs: Manage aspects of user task diagrams for a project/ UOs: new, open, save, and
+save as.
+Some aspects were taken into account in this step: (1) the software should be a desktop application; (2)
+in order to evaluate user–system interactions, the prototypes should include a series of windows with
+buttons; (3) the general appearance of the interface would consist of a display area for the task schema
+and, at least, two initial menus —a ‘‘file menu’’ and an ‘‘edit menu’’; and (4) although different techniques
+can be used to represent the task model, a simple hierarchical representation, such as HTA [39], and an
+internal language based on XML were chosen.
+
+Step 1.i — Build the User Objective List
+
+The application requirements are incrementally collected during the progressive construction of the UOs List. Each
+iteration updates this list with new UOs obtained either from new project needs (direct UOs) or from previous UOs (non-
+direct UOs).
+
+Fig. 2 shows the evolution of the UOs created in the successive iterations of the Diagram example.
+Seven UOs were directly proposed by the user: {0, 1, 2, 3} in the iteration 0 (as described before), {8} in
+the iteration 2 and {10, 11} in the iteration 3. For example the new direct UO at the iteration 2 was:
+UO8-Exporting User Task Model: Export HTA diagram semantics to a XML language for describing user
+interfaces (e.g. XIML, UIML or Teresa XML).
+
+Non-direct UOs are derived UOs by division or fusion of previous UOs developments. A complex UO may be broken down
+into two or more new UOs, and some simple or dependent UOs may be merged in one new integrated or Fusion UO.
+
+For instance UO0 was divided into three UOs at iteration 1:
+UO5-Visualizing User Task Model: Display the diagram as an HTA hierarchy in a section of the main window.
+UO6-Manipulating/Creating User Tasks from buttons: Create, move and delete user tasks as direct buttons
+functionalities.
+UO7-Manipulating/Creating User Tasks from edit menu: Create, move and delete user tasks from the edit
+menu.
+Besides, UO2 and UO3 were merged into UO4 at iteration 1, and other fusions occurred at iterations 3, 4,
+5, 6 and 8. The new Fusion UO4 was:
+UO4- Managing File Menu: Managing aspects of user task model for UOs: new, open, save, save as and print
+tasks.
+
+In this way, the UOs List has been modified in the sense of agile methodologies [30]: after evaluations undertaken by
+stakeholders, and considering criticism arising from meetings of members of the same and different teams.
+Step 2.i — Plan the Parallel Iteration
+
+InterMod includes two kinds of Activities at each iteration: Developmental Activities and Integration Activities. All
+activities are completed with an evaluation process. Table 1 shows the three Developmental Activities (DAs) associated
+with each UO.
+
+2272
+
+Fig. 1. InterMod process: activities and models.
+
+Fig. 2. Example of UOs evolution in diagram
+
+Table 1
+Developmental activities.
+
+Name
+Description
+Representation
+
+DA-1
+Requirement analysis and navigation design
+
+DA-2
+Interface building
+
+DA-3
+Business-logic coding
+
+InterMod activities are close related to the typical development stages of classical Software Engineering. However,
+unlike these, the order among them must meet some order constraints. According to UCD recommendations, given the
+requirements of a relevant UO (DA-1) its interface must be generated and validated (DA-2) before it can be coded (DA-3). That
+is, if a simple and non-divisible UO is considered as a small project, its developmental activities must be ordered as proposed
+
+2273
+
+Table 2
+Integration activities.
+
+Name
+Description
+Representation
+
+IA-1
+Requirement models integration
+
+IA-2
+Interface integration
+
+IA-3
+Code integration & refactoring
+
+in UCD. But as far as the whole project is concerned, the order relationship among activities of several UOs is determined
+only by agile interest. For example, coding a UOi (DA-3(i)) can be done before analysing the requirements of another UOj
+(DA-1(j)), and this only depends on the project progress or the user’s interest. Unlike UCD, developing completely the whole
+application interface (DA-2) is not required before moving to the business logic (DA-3). Thus this constraint must be met only
+to develop one or several UO groups. In short, each UO must be developed by executing its three DAs, taking into account
+the following relationship:
+
+∀i {UOi ∈UOsList →[DA-1(i) < DA-2(i) < DA-3(i)] },
+
+where ‘<’ is a precedence relation and DA-k(i) is the k developmental activity for UOi.
+
+This relationship determines the activities that can be planned for the next iteration and, as a consequence, two
+prerequisites must be taken into account:
+• DA-1(i) is the first activity that can be planned for each UOi.
+Pre-requisite 0:
+
+∀i { UOi ∈UOsList →DA-1(i) can be planned}
+
+In the iteration 0 of the Diagram developments, the pre-requisite 0 allows planning the DA-1 of all UOs
+in the UOs List. Thus, the possible activities to be planned are {DA-1(0), DA-1(1), DA-1(2), DA-1(3)}. But
+finally, just the underlined DAs were planned (see Fig. 3).
+
+• DA-2(i) or DA-3(i) can be performed when DA-1(i) or DA-2(i) respectively, are done. Formally, we express this planning
+pre-requisite such as:
+Pre-requisite 1:
+
+∀i {realized(DA-k(i)) →DA-k+1(i) can be planned }, where k ∈(1,2)
+
+For example, DA-1(0) was performed in iteration 0, therefore DA-2(0) could be planned for the next
+iteration. That is, when the requirements were validated, then the interface could be created and validated.
+
+Furthermore, to assure a correct incremental progress of the project, some Integration Activities (IAs) are needed
+(Table 2).
+
+For controlling the correct development of an Integration Activity (IA), some issues must be considered. Thus, it is possible
+to carry out a IA-k, k ∈(1..3), for some UOs when: (1) some UOs are fused in a new derived Fusion UOi, and (2) the k
+developmental activities of all fused UOs are done.
+Pre-requisite 2:
+
+∀i {[UOi= fused({UOl, UOm, . . . }) ∧realized(DA-k(l), DA-k(m), . . .)] →
+
+IA-k(l,m,. . . ) can be planned}, where k ∈(1..3)
+
+An example of this situation appears in iteration 1. Since UO2 and UO3 were fused in the Fusion UO4 (Fig. 2),
+and DA-1(2) and DA-1(3) were planned and performed in iteration 0 (Fig. 3), then the IA-1(2, 3) could be
+planned in the iteration 1.
+
+The project progress is decided at each iteration: the UOs and the activities to be conducted, and the allocation of activities
+to teams. This step decides three aspects for the current iteration:
+• What UOs to develop.
+
+The UOs to be developed must be selected from the UOs List obtained in step 1.i. These decisions arise from the
+development priority of the UOs, as established by the users, the nearness to completion of a UO, the availability of the
+teams, etc.
+
+In Diagram, {UO0, UO2, UO3} were selected at iteration 0, the selection was {UO5, UO1, UO4} at iteration
+1, {UO6, UO7, UO8} were selected in the next iteration, and so on (see Fig. 3).
+
+2274
+
+Fig. 3. A snapshot of the UOs development progress in diagram
+
+DA-1
+
+DA-2
+
+DA-3
+
+M-1
+
+M-2
+
+M-3
+
+IA-1
+
+IA-2
+
+IA-3
+
+Created Model
+
+Precedence Relation for a UO
+
+Fig. 4. Activities and models relationship
+
+• What activities to make for the selected UOs.
+
+The developmental and integration activities to be completed in this iteration are chosen taking into account the selected
+UOs. Although the prerequisites of the process determine the possible activities at each iteration, which ones are included
+in the plan depend on the number of activities and the experience of the workgroup.
+
+In the example, just one activity could be selected at iteration 0: DA-1. However, other possibilities
+appeared at iteration 1: {DA-1(1), DA-2(0), DA-2(2), DA-2(3), DA-2(5), DA-2(6), DA-2(7), IA-1(2, 3)}.
+Finally, the underlined DAs and IA were planned (Fig. 3).
+
+• How to distribute the different activities to the workgroups.
+
+The chosen activities are distributed among the project teams. The teams’ specialisations in activity or UOs and the
+expertise level influence the distribution of the activities (see Section 5).
+Step 3.i –Perform Activities of the Iteration
+
+Each team performs the activities established in the plan. All developmental and integration activities are driven by
+models generated and evaluated during the project following the Object Management Group’s Model Driven Architecture
+proposal [31].
+
+Each developmental and integration activity gives rise to its corresponding model (Fig. 4). The activities DA-1.Analysis and
+navigation design and IA-1.Requirements Models integration deal with the M-1.Requirements Model that includes the SE-HCI
+Model (more detail in Section 4).
+
+The DA-2.Interface Building creates the M-2.Presentation Model for a UO previously designed and evaluated, and the IA-
+2.Interface Integration fuses together the M-2 of some UOs. The M-2 of a specific UO settles the graphical characteristics
+gathered from the M-1. There are several languages for modelling user interfaces widely used and tested, such as XIML [32]
+or UIML [33], and they may be used to reflect this model.
+
+Finally, the DA-3.Business–Logic Coding and IA-3.Code Integration & Refactoring deal with the M-3.Functionality Model
+that guides the implementation in a particular programming language. This model inherits the behaviour issues from the
+UO M-1 evaluated in the first activity. UML or SysML [34] are alternative languages typically used to represent this model.
+
+Feature-Driven Development (FDD) [21] is a close related methodology that uses MDD and divides the labour into
+different features (e.g., ‘‘calculate the total of a sale’’ or ‘‘add a new customer to a customer list’’) to measure the project
+progress. Use cases obtain the features that allow the domain objects to be modelled (class diagram and operations required
+in the system). However, its main difference with InterMod is that it divides the labour on a user basis, that is by means of
+UOs/user desires, instead of features that can be either user’s or system’s needs. Thus, InterMod models the tasks, navigation
+and presentation of the user rather than the domain objects. Once the objectives have been evaluated in terms of usability
+
+2275
+
+and requirements testing, the proposal here presented naturally ties in with the FDD perspective to model the domain
+objects.
+
+The relationships between activities and models and their implications are summarised in two propositions (k is the
+activity number; i, l, m are UO numbers):
+(a) ∀k { (k ∈(1..3) ∧realized(DA-k(i))) →M-k(i) created & evaluated}
+
+In Diagram example, Iteration 0:
+• Activities performed: {DA-1(0), DA-1(2), DA-1(3)}
+• Models created: {M-1(0), M-1(2), M-1(3)}
+
+(b) ∀k { (k ∈(1..3) ∧UOi= fused({UOl, UOm, . . . }) ∧realized(IA-k(l, m, . . . ))) →(M-k(i) created & evaluated ∧DA-k(i)
+realized) }
+
+The realization of an IA-k implies the creation and evaluation of the model M-k for the Fusion UOi. As a result, the DA-k
+for this Fusion UOi is considered already performed (because M-k is already created).
+
+At iteration 1:
+• Performed activities: {DA-1(1), DA-2(5), IA-1(2,3)}
+• Models created by DAs (proposition a): {M-1(1), M-2(5)}
+• Models created by IAs and derived activities (proposition b) (UO4 = fused (UO2 UO3)): {M-1(4), DA-1(4)}.
+That is, IA-1(2, 3) creates the M-1(4) and then DA-1(4) is considered completed.
+
+But these UOs are not the only ones involved in the models; divided and fused UOs may also be affected. Two others
+propositions are needed:
+(c) ∀k {[k ∈(1..2) ∧UOi= divided_into({UOl, UOm, . . . }) ∧realized(DA-k(i)] →[(M-k(l), M-k(m),..) created & evaluated ∧
+(DA-k(l), DA-k(m), . . .) realized ]}
+
+That is, the models (M-1, M-2) that have been completed for a UOi before its division into new UOs, implies that the same
+kind of models (M-1, M-2) already exist for the new divided UOs (as a part of the UO models). For this reason, the DAs for
+these divided UOs are considered already performed and, therefore, may not be planed. We observe that k may be either 1
+or 2, but not 3 because if DA-3(i) is already carried out, then its division is not suitable.
+
+For example, the activity DA-1(0) done in the iteration 0 created M-1(0) (proposition a). Besides, as UO0
+was divided into three new UOs {UO5, UO6, UO7} (iteration 1), this also implied that the M-1(5), M-1(6)
+and M-1(7) were considered already created as parts of M-1(0), as well as the DAs for these divided UOs.
+
+(d) ∀k {[ k ∈(1..3) ∧UOi= fused({UOl, UOm, . . . }) ∧realized(DA-k(i))] →[(M-k(l), M-k(m),..) created & evaluated
+∧(DA-k(l), DA-k(m), . . .) realized]}
+
+Another interesting situation is related to a Fusion UOi and its fused UOs (UOl, UOm, . . .). The DA-k performed for a
+Fusion UOi implies that the model M-k(i) has been created and evaluated (proposition a). In addition, it is also assumed that
+the M-k of all fused UOs are already created and evaluated (as a part of this Fusion UOi model), and therefore the DA-k for
+these UOs are considered already performed.
+
+This case is illustrated with Fusion UO9- Simulating, Managing and Exporting task model. UO9 is the fusion
+of {UO1-Simulating . . . , UO4-Managing . . . , UO8-Exporting . . .} (see iteration 3 in Fig. 2). The DA-2(9) (at
+iteration 4 in Fig. 3) was performed and so M-2(9) was created and evaluated, as indicated in proposition
+a. Thus, the interface was built and evaluated for UO9. And M-2(1), M-2(4) and M-2(8) were assumed
+created and evaluated as part of M-2(9), according to proposition d. Besides, the development activities
+DA-2(1), DA-2(4) and DA-2(8) were considered already performed.
+
+The progress of the UOs depends on the activities carried out, and so its evolution is not predictable. In each work meeting,
+the project members select the best UOs activities to do taking into account the progress and needs of the project. Fig. 5
+presents two possible evolutions of UO12, which is composed of {UO10, UO11}. Both possibilities end with the complete
+development of {UO10, UO11, UO12}.
+Continuous evaluation Process
+
+All developmental and integration activities of a UO must be evaluated with methods suitable for each type of activity.
+Therefore, the incrementally obtained products are evaluated according to the characteristics gathered in the models.
+Besides, heuristic and metric evaluations are applied in all activities to ensure the consistency of the final application.
+
+The activities DA-1 and IA-1, which gather the user needs in the SE-HCI model (see Section 4), must be evaluated with
+user-centred methods through prototypes. These evaluations must be performed by a multidisciplinary team composed of
+users, designers and developers. In addition, the created SE-HCI model must conform to the restrictions defined in the User
+and System Models, and also the navigation to reach the UO must be effective and efficient. The usability criteria (such as
+those of [11]) of the interface design are checked in the activities DA-2 and IA-2. The implementation activities (i.e. DA-3
+and IA-3) are validated by means of executable tests (as usual in Software Engineering) to verify the desired output results
+
+2276
+
+Fig. 5. A snapshot of two possible evolutions of a UO (e.g. UO12).
+
+from the input data. Furthermore, the implementation activities must be evaluated according to software quality criteria
+such as robustness, speed of execution and security.
+
+4. The SE-HCI model: supporting the project requirements
+
+The requirements are incrementally collected and validated with models based on UCD. The designer’s team formalises
+the requirements model (M-1) for each UO. As mentioned above, all developments in the project draw up the System and User
+Models, especially at the beginning of the project. The requirements model includes the User Task and SE-HCI Models (see
+Fig. 6). The User Task Model is a classic element in Model-Based User Interface Development [14,35,36] that describes user
+performance in completing each UO.
+
+The SE-HCI Model is the core of the proposed methodology. It gathers the requirements associated to the UO described
+in the User, System and Task Models, and also incorporates:
+
+(1) The system–user direct communication. The description of the actions that users and system may carry out at the user
+
+interface level during an interactive session [14], and their possible temporal relationships are included here. Thus, it
+generates those communications in which the system interacts directly with the user by displaying an error window or
+a simple message. This means that the system’s operations on other elements in the application’s environment, e.g. a
+database, will not be expressed in the model since they will not be involved in any direct communication with the user.
+This direct communication will be taken into account to create Presentation and Functionality Models (M-2 and M-3).
+(2) The basic characteristics gathered in the Prototype Model (colours, sections, button types, etc.) that draw the visual
+
+aspects of the application. These will be taken into account to create the UO Presentation Model (M-2).
+(3) The incorrect interactions of the application through interface navigation. Therefore, they define, together with the
+
+correct ones obtained from the Behaviour Model of the User Task Model, the application semantic. Both types of
+interactions express the different UO runs. This semantic will be taken into account to develop the corresponding UO
+Functionality Model (M-3).
+
+The Prototype and Behaviour Models provide the SE-HCI model with enough information to generate prototypes
+automatically. Wiegers [37] points out the difficulty of visualising exactly how software will behave just by reading textual
+requirements or by studying analysis models, and we agree: users are more willing to try a prototype than to read a
+document. So, the generated prototypes allow and that designers, users and developers carry out the evaluation jointly
+and easily.
+
+Similarly to our proposal, Propp and colleagues [38] start with task models in the process of developing interactive
+applications, then define the navigational structure, and finally create an Abstract User Interface (AUI) independent of the
+device, and one or more Concrete User Interface(s) (CUI). During the development process they perform several usability
+evaluations. There is no division of labour. The project is carried out in a block and the different iterations follow the steps
+in the chain: Task Model-Dialogue Model-AUI-CUI.
+
+5. The InterMod process model
+
+Fig. 7 shows the process model of InterMod. A project is made up of iterations and workgroups. Each iteration updates
+the UO List and generates a work plan that chooses the UOs and activities to complete. The teams carry out the activities
+assigned to them in the work plan. Each activity is guided by its models and evaluation processes.
+
+5.1. The diagram process model
+
+The Diagram project involved five developers, two designers and two user-evaluators with usability
+expertise. Teams were created with different compositions and numbers of members, with a maximum
+of three teams working in parallel.
+
+2277
+
+Fig. 6. The SE_HCI model
+
+Fig. 7. The InterMod process model
+
+A worksheet based on the model of InterMod process is used to monitor the project. The sheet is divided into three
+sections: User Objectives, Iterations and Activities for each UO. Fig. 8 shows a piece of the project worksheet.
+
+2278
+
+Fig. 8. A piece of the project worksheet
+
+The UOs section monitors the project UOs: those that have been created, finished, fused and divided. The created
+Objectives are numbered sequentially and, the row ‘‘Finished’’ uses the format Xi to indicate the iteration number (i) in
+which they are completed. UOs involved in fusion or division processes are also registered.
+
+For example, UO2 and UO3 were fused in UO4. Thus cells (Fusion, 2) and (Fusion, 3) are marked with 4. On
+the other hand, UO0 was divided into UO5, UO6 and UO7, and cells (Division, 5), (Division, 6) and (Division,
+7) were marked with 0.
+
+The Iterations section of the worksheet includes three types of information: iteration number, UOs List, and Plan. The
+iteration numbers appear in the final row. At each iteration, the new UOs that update the UOs List are noted, and the plan
+indicates the activities that each team must carry out.
+
+For example, the new UOs {4, 5, 6, 7} appeared in iteration 1. These were added to the previous UOs {0, 1,
+2, 3} in the UOs List. The UOs List of iteration 5 included 13 UOs: seven were User Direct Desires {0, 1, 2,
+3, 8, 10, 11}, five were fusion UOs (marked in bold) {4, 9, 12, 13} and the remaining three UOs arose from
+division (underlined number) {5, 6, 7}.
+At iteration 0, the plan indicated that team-1 should carry out DA-1(2), team-2 DA-1(0) and team-3 DA-
+1(3). At iteration 1, team-1 should perform the integration activity for UO2 and UO3, which were fused in
+UO4; team-2 performs DA-1(1); team-3 carries out DA-2(5); and so forth.
+
+Finally, the Activities section monitors the activities developed and derived at each iteration (proposition b to d). For
+each IA-k, k ∈(1..3), if the cells {(IA-k, l), (IA-k, m), . . .} are marked with Xj, it means that a UOn= fused({UOl, UOm, . . .}) and
+the IA-k(l, m, . . .) has been completed in the j-iteration (Fig. 8b). In case of integration activities, only some cells are filled
+depending on the fusion of UOs.
+
+2279
+
+Fig. 9. Final interface of the diagram tool
+
+All cells of DAs must be full at the end of project. Fig. 8 shows different information for each cell (DA-k, i): how it was
+reached (way of completion) and when it was completed (iteration number). Some examples related to the fulfilment of
+these cells follow:
+
+(a) Xj: DA is directly developed in the j-iteration.
+
+DA-1(0) was planned at iteration 0 (team-2). After its realisation the cell (DA-1, 0) was marked with X0 (a
+direct DA was performed at iteration 0).
+
+(b) Ij: DA is derived from an IA activity in the j-iteration (proposition b).
+
+IA-1(2, 3) was planned at iteration 1 (UO4 was the fusion of {UO2, UO3}) and for that reason (IA-1, 2) and
+(IA-1, 3) were marked with X1. Therefore, (DA-1, 4) was filled with I1 (by proposition b).
+
+(c) Dj: DA is derived from a UO divided in the j-iteration (proposition c).
+
+At iteration 1, UO0 was divided into {UO5, UO6, UO7} and DA-1(0) was already realised, therefore (DA-1,
+5), (DA-1, 6) and (DA-1, 7) were marked as D1 (derived for division in the 1-iteration, by proposition c).
+
+(d) Fj: DA is derived from a UOn which is the fusion of UOi and others, and the DA-k(n) performed in the j-iteration
+
+(proposition d).
+
+{UO1, UO4, UO8} fused in UO9. DA-2(9) performed at iteration 4 means (DA-2, 1), (DA-2, 4) and (DA-2, 8)
+were marked with F4 (derived from fusion at iteration 1 and 3, and from proposition c).
+
+5.2. Some examples of Diagram activity models
+
+To develop the Diagram tool, a model set was generated and evaluated by taking into account the UOs project progression.
+Initially, the Requirements Analysis and Navigation Design activities were carried out manually by using HTA task
+diagrams and paper-based prototyping methods [40]. After the fifth iteration, we used the initial version of UO9-Simulating,
+Managing and Exporting Task Model to carry out the User Task Model and to obtain automatic prototypes. Fig. 9 shows the
+Task Model and prototype of UO0-Representing Task Model in a later version of the tool. From this point, the next version of
+Diagram incorporated new UOs, e.g. Representing SE-HCI, Behaviour and Prototype Models, that helped to carry out DA-1.
+
+The Interface Building activities included the Prototype Models (obtained from earlier activities) and produced the
+Presentation Models. All the interfaces were evaluated using heuristic evaluation methods [11]. The user task model of UO0
+included two creation options: by using ‘‘Buttons’’ (UO6) or ‘‘Edit menu’’ (UO7) (Fig. 9).
+
+On the other hand, the Business-Logic Coding activities produced the Functionality Models created with UML (Fig. 10).
+The organisation of the project by means of the UOs and the Behaviour Models (created and evaluated during Analysis and
+Navigation Design activities) acted as the basis for the obtained functionality models.
+
+2280
+
+Fig. 10. Domain model of diagram
+
+Concerning the UserTask Model, the basis concept is the User Task, which allows capturing user performance. This concept
+is complemented with the Order among tasks (Sequential, Indifferent, Choice), and with the task Type, which establishes
+whether it is compulsory to carry out the task and the number of performances needed (Unitary, Optional, Repetitive).
+That is, the implementation of Diagram UserTask Model allows defining the semantic aspects of the application. This model
+extracts information about characteristics and limitations from User and System Models. The number, type and size of
+buttons; the number and size of windows; colours, etc. are limitations that depend on the user’ skills and the device type.
+Four profiles of users’ skill are predefined: basic, medium, expert, and especial or configurable characteristics. The type of
+device determines the platform to be used and whether it is a Web-running application or not (Fig. 10). The Behaviour Model
+determines the next task to carry out for each task by considering the task type and order.
+
+6. Conclusions and future work
+
+InterMod is a methodology whose aim is to help with the accurate development of high-quality interactive software. The
+software project is planned and organised as a series of iterations that are guided by the User Objectives (UO) in an agile and
+user-centred manner. A User Objective is a user desire that can be achieved by one or more user functionalities.
+
+The proposal here presented integrates three philosophies: AM, UCD and MDD. From the point of view of Agile Methods,
+the work is organised in a series of iterations in which the User Objectives to be dealt with are developed. In the first analysis,
+the initial User Objectives are obtained and then distributed among the workgroups according to different activities. Each
+iteration is open to include new User Objectives, whether obtained through previous refinements or through evolution or
+alterations during the agile development of the application itself.
+
+For developing the UOs, InterMod proposes developmental and integration activities. The possibility to distribute
+the work in parallel increases the speed of resolution, although the process itself requires integration points to ensure
+consistency. This methodology allows the gathering and validation of the requirements incrementally. Because of this
+agile approach, InterMod, unlike UCD, does not require the complete development of the application interface before the
+implementation of the business logic, but assures usability. In order to ensure the coherence of the resulting application,
+integration activities and validations from the perspective of requirements, interface and software models have been
+included.
+
+InterMod follows the guidelines of MDD but improves its lack of consistency by means of the continuous integration of
+models in the agile process, which update all generated models. The SE-HCI model allows the creation of prototypes that
+facilitate the joint participation of end-users, designers and developers in the evaluation processes, as recommended by
+UCD and AM. The most frequent criticism to agile methodologies is their lack of formality. Obtaining a product is prioritized
+over the time invested in its design. Including different models, such as SE_HCI in navigation analysis and design activities,
+requires the formalization of the design prior to its implementation.
+
+The demonstrator Diagram has been developed according to the InterMod methodology. The iterative process started
+with a small group of initial UOs, which evolved and, incorporating new UOs, produced new Diagram versions. This paper has
+shown one of these initial versions. At present, Diagram continues as an active project. Comparing to classical methodologies,
+our agile user-centred methodology has proved: (1) its flexibility on planning and facing unexpected changes that appear
+through the project life by means of ‘‘user desires’’, and (2) the early validation of the models included in SE-HCI allows to
+progress and guide subsequent activities of the UOs.
+
+2281
+
+We are currently working on reusing models. A UO model(s) is defined once in a project, but it can be reused at different
+points. Similarly, a model developed in previous applications can be reused in the current project, and can be converted into
+a pattern or a solution to a design problem. Thus, creating patterns in order to facilitate and speed up design processes is a
+valuable possibility to be considered. In addition, we are focusing on checking the validity of different usability engineering
+techniques in InterMod. So, we are applying them on different developments and, currently, in mobile applications.

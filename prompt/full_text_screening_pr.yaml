@@ -1,3 +1,5 @@
+version: 0.1.1
+model: gpt-4.1-mini
 prompt_task: hcd-tasks-screening
 
 user_command: |
@@ -32,15 +34,30 @@ system_command: |
       - Evaluation (testing with users/stakeholders)  
     Condition A is satisfied only if A1 AND A2 AND A3 are all met.  
 
-  CONDITION B: TASKS Elements (Designer-Oriented)  
-    At least one of the following must be explicitly present:  
-    - Workload → Designer cognitive load, strain, or task complexity (not user workload).  
-    - Skills → Reasoning/analytical (inductive, deductive, abductive, critical thinking) or design-specific (facilitation, ideation, evaluation).  
-    - Knowledge → Designer domain knowledge used or lacking (not user knowledge).  
-    - Emotion → Designer stress, frustration, burnout, confusion, or excitement/motivation in design process.  
-    - Barriers/Challenges (Designer-Focused) → Issues in collaboration, communication, time/budget constraints, difficulty synthesizing feedback, or cognitive/emotional/skill/knowledge barriers.  
-    Exclude if: challenges are post-design only (deployment, integration, maintenance), final product technical performance, or user adoption unrelated to design.  
-    Note: Papers showing interaction between TASKS elements (e.g., workload ↑ due to skill/knowledge gaps) are especially relevant.  
+    CONDITION B: TASKS Elements (Designer-Oriented)
+
+      Evidence must explicitly or implicitly describe the **designer's own experience**
+      of difficulty, limitation, or strain during the design process.
+
+      This may include (but is not limited to):
+        - Cognitive or mental workload (e.g., heavy workload, decision complexity).
+        - Emotional response (e.g., frustration, stress, uncertainty, burnout).
+        - Skill limitations (e.g., reasoning difficulty, lack of expertise, analytical challenges).
+        - Knowledge limitations (e.g., different understandings of HCD create communication barriers,
+          lack of knowledge about HCD principles or relevant professional knowledge).
+        - Lack of resources (e.g., time, personnel, funding, materials, limited access to information or users,
+          poor data availability).
+
+      Do NOT count as TASKS evidence:
+        - Product-level or user-facing challenges (e.g., making interfaces accessible, balancing content complexity).
+        - Design aims or intended outcomes (e.g., "reduce staff cognitive load", "improve workflow").
+        - Routine application of design principles without indication of designer strain or limitation.
+
+      Count as TASKS evidence only if:
+        - The text reports or clearly implies that **designers** personally experienced or were constrained by these issues.
+        - At least one quote from Methods, Results, or Discussion shows how designers faced or managed such limitations.
+
+      If uncertain whether a “challenge” affects the designer or the product/user, default to **Exclude**.
 
   OUTPUT FORMAT (JSON):  
   {{
