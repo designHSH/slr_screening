@@ -9,12 +9,12 @@ from openai import OpenAI
 
 class PromptRunnerText:
     """
-    Executes structured YAML-based prompts on text files using GPT models (e.g., gpt-4.1-mini).
+    Executes structured YAML-based prompts on text files using GPT models (e.g., gpt-5-mini).
     Reads .txt input files, injects content into the user_command ({{paper_text}}),
     and outputs aggregated results as a single CSV file.
     """
 
-    def __init__(self, prompt_path: str, model: str = "gpt-4.1-mini"):
+    def __init__(self, prompt_path: str, model: str = "gpt-5-mini"):
         load_dotenv()
         self.prompt_cfg = self._load_prompt(prompt_path)
         self.model = model
@@ -55,9 +55,7 @@ class PromptRunnerText:
         response = self.client.chat.completions.create(
             model=self.model,
             messages=messages,
-            temperature=0,
             top_p=1,
-            max_tokens=6000,  # allows for large 8–10k token inputs
         )
 
         result_text = response.choices[0].message.content.strip()
@@ -110,10 +108,10 @@ class PromptRunnerText:
 if __name__ == "__main__":
     # === CONFIGURATION ===
     input_folder = Path(r"data\test_data\validation\claned_text")        # Folder containing .txt files
-    prompt_file = Path(r"prompt\full_text_screening_pr.yaml")
-    output_csv_path = Path(r"data\test_data\validation\screening _result\full_screening_results.csv")
+    prompt_file = Path(r"prompt\full_text_screening_pr_v012.yaml")
+    output_csv_path = Path(r"data\test_data\validation\screening _result\full_screening_results-v012-5mini.csv")
 
-    runner = PromptRunnerText(prompt_file, model="gpt-4.1-mini")
+    runner = PromptRunnerText(prompt_file, model="gpt-5-mini")
 
     text_files = list(input_folder.glob("*.txt"))
     if not text_files:
