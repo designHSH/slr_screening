@@ -2,10 +2,6 @@ task: hcd_barrier_extraction
 version: 1.1.0
 model: gpt-5-mini
 
-task: hcd_barrier_extraction
-version: 1.4.0
-model: gpt-5-mini
-
 system_command: |
   ROLE AND PURPOSE
   You are an expert academic researcher specializing in Human-Centered Design (HCD), User-Centered Design (UCD), and implementation science.
