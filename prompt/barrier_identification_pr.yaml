@@ -173,11 +173,8 @@ system_command: |
 
 user_command: |
   Analyze the following text for implementation barriers that hindered the designers or researchers in carrying out their Human-Centered Design (HCD) workloads.
-  Use the provided role map to determine who are designers, users, and products/systems.
+  Identify who experienced each problem based on context within the text.
   Apply the full decision process and classification logic defined above.
-  Report only those challenges that directly prevented or constrained designers from performing process- or operational-level workloads.
-  Input:
-  {
-    "role_map_json": {role_map_json},
-    "paper_text": "{input_text}"
-  }
+  Report only challenges that directly prevented or constrained designers from performing process- or operational-level workloads.
+  Input text:
+    {input_text}
