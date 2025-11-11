@@ -86,8 +86,8 @@ if __name__ == "__main__":
     Example batch usage:
     python src/prompt_runner_cleaner.py
     """
-    prompt_yaml = r"prompt\section_extraction.yaml"
-    input_folder = r"data\test_data\section_extraction\input"
-    output_folder = r"data\test_data\section_extraction\output"
+    prompt_yaml = r"prompt\section_exctraction_pr.yaml"
+    input_folder = r"data\test_data\sorted_by_decision\included"
+    output_folder = r"data\test_data\included_section_extraction"
 
     batch_clean_papers(prompt_yaml, input_folder, output_folder)

@@ -1,0 +1,209 @@
+User-Centric Design Methodology for mHealth Apps: The PainApp Paradigm for Chronic Pain
+
+Yiannis Koumpouros
+
+2. Materials and Methods
+
+The research team followed a highly user-centered design, involving all different target groups. Patients and physicians from different specialties were involved in all steps of the design and development process to guarantee the desired outcome. Since the examined domain concerns applications that should probably be used for a very long time by the patient, user acceptance is a major key performance indicator [40–44].  
+To ensure a good acceptance rate, we formed a highly multidisciplinary design team [15,45–49]. One patient organization, three physicians (one neurologist, one pathologist, and one surgeon), one behavioral scientist, one expert in mHealth solutions, and two senior IT developers were the main working group. At the beginning, a kick-off meeting was held between all stakeholders in order to present the idea and the key features envisaged. In the next two days after a brainstorming process, ideas were shared about the content, workflow, features to be implemented, etc. A meeting was held each week to ensure proper progress and to avoid any delays or failures. The collaboration was achieved using appropriate teleworking/teleconferencing solutions for the convenience of all parties. Nine more patients were collaborating in all steps of the process. All patients were initially informed on the project and participated on a voluntary basis. The design of the first platform took 12 weeks. During the development period, an iterative process was followed (see Figure 1).
+
+Figure 1. User-centered iterative design.
+
+Before even starting to design something, one should consider the technological approach. Based on the market data available (February 2020–February 2021), Android is dominating the mobile market. Android, being an open-source platform owns almost 72% of the total market size. The specific operating system has consistently prevailed over rival awe (iOS) in recent years (see Figure 2).
+
+Figure 2. Mobile operating market share worldwide (Q1 2018–Q3 2021). (Source: StatCounter. Available at: https://infogram.com/ios-vs-android-marketshare-1hxr4zx013edo6y (accessed on 18 December 2021)).
+
+According to the above data, our final solution should support, at least, Android devices. Other criteria to base our decision on were: (i) the profile of the end users (education level, financial status, etc.), (ii) the cost for developing the final product, (iii) the time needed for developing the solution, (iv) the resources needed, and (v) technical complexity during development. Taking into account the above criteria, we decided to develop the first prototype only in the Android platform.  
+A user-centered methodology (UCD) was followed as described by Johnston et al. [50]. The four phases that guided the design and development phases are presented below.
+
+2.1. Phase 1: Background and Conceptualization
+
+During this phase, we defined the evidence base and developed a theoretical understanding of the intervention’s underlying environment. For this to be done, we searched the literature for mHealth solutions targeting pain. The underlying diseases which were causing pain were also a subject of our study in order to conclude in a generic, disease-agnostic solution. Using focus group discussions, we were able to obtain valuable information from both patients and healthcare professionals. This led us to appropriate intervention targets (self-management and objective reporting). An in-depth understanding of end-users’ perspectives was considered crucial before moving on to the next step. This was followed by the development of the flow and content of the intervention. A human-centered approach, based on design thinking methodology, led the innovation process. During this phase, weekly meetings took place with IT and UX (user experience) experts, behavioral scientists, health professionals, and patients. Various mock-ups were designed and presented before deciding on the most suitable one.
+
+2.2. Phase 2: Alpha Testing
+
+This phase helped us to evaluate the quality of the proposed solution. By getting feedback from users, we tried to discover major usability problems and critical feature gaps. To this end, we evaluated the intervention flow, the content, and the design. At each phase, a significant number of end users (patients and physicians) participated. All of them should not have prior experience with the prototype. The objective of this phase was to check whether the solution works following the three requirements of customer validation (real people, real environment, real product). Semi-structured interviews were used to collect the desired information. Data were then analyzed by two experts independently. Based on these results, we finalized the design.
+
+2.3. Phase 3: Software Development
+
+In this phase, we followed a heuristic approach, by acknowledging that the development team do not know everything at the start of the project and will evolve through experience. So, scrum-based design helped us to naturally adapt to changing conditions and user requirements. Following this approach, it was possible to re-prioritize and shorten release cycles. Meetings between the different stakeholders were taking place every week on a constant basis in order to check the progress and decide on the next steps. The three-tier application approach was applied, giving the advantage of divisibility and information structure at independent levels, creating flexible and reusable parts of the application. The data storage tier uses relational databases through RDBMS MySql. The technology of php services that are hosted on the open-source Apache HTTP Server is applied in the logic tier. Specifically, php services are created to manage the flow of information on the part of the user and the retrieval of data from remote data sources. The data model is also created through php classes which represents the data structure as they are grouped in logical records, creating an object-oriented approach to the data stored in a relational database. Php services are accessible through classified access and appropriate practices are followed to prevent data interception. Communication with data sources follows the tcp protocol and is implemented through existing php technologies (PDO, mysqli). Secure Socket Layer [51] was implemented at the transport layer.
+
+2.4. Phase 4: Field Testing
+
+The final phase was dedicated to field testing. Ten patients and two physicians used the solution for fifteen days. Participants were selected to meet the following criteria: (i) physicians who frequently treat patients in pain (e.g., neurologists, orthopedics, etc.), (ii) patients suffering from chronic pain, (iii) participants should be acquainted with smartphones, (iv) participants must have a smartphone with Android operating system, and (v) should not be the same as the ones involved in the design phase. Basic issues explored were the task success, the problems faced by the users, and their satisfaction. At the beginning, all participants received appropriate training and observed a tutorial on how to use the application and the different functionalities provided. For this purpose, an instructional video was developed and watched by all users. A meeting was held in the presence of a member of the IT team who participated in the design of the application in order to explain and clarify any questions. Then, they were observed by two researchers while performing the different tasks offered. A think-aloud process was followed to record their opinion.
+
+3. Results
+
+This section presents the different features and functionalities provided by the final PainApp solution following the highly user-centered methodology followed during the design and development phases. During the brainstorming phase, patients expressed their views on the desired features and characteristics of the application: (i) to be able to record the point of pain very easily without having to type any text; (ii) the application should not require special knowledge for its use and should not be complicated; (iii) developers should take into account the limited knowledge of using mobile phones; (iv) to have functions that help them in their daily life; (v) there should be no labyrinthine menus; (vi) do not know the official names of the drugs or diseases; (vii) the language used should be simple and understandable, even by users with a low level of education; (viii) some treatments and medications may be repetitive; (ix) to be able to add simplistic descriptions that suit them (e.g., the purpose of the treatment received). Doctors, on the other hand, requested functionalities that served the following issues: (i) pain points recording; (ii) recording of how long the pain lasts; (iii) how long after the treatment did the pain decrease and to what extent; (iv) what medications the patient is taking and how often; (v) how and how intensely he/she feels the pain; (vi) if the pain has affected other activities in the patient’s daily life; (vii) if the pain has created other problems in the patient such as depression, stress, etc.; (viii) does the patient believe that some other conditions caused the pain he/she is feeling?; (ix) is the pain permanent or transient; (x) the patient feels that the particular treatment has helped him/her in relieving the pain and to what extent and after how long; (xi) access to complete history data. The following table (Table 1) shows the matching exercise to decide the final functions. Based on this table, the consensus of all parties was reached. The wording of the menus and the embedded text were also approved by all parties.
+
+Table 1. Matching exercise.
+
+Doctor Requirements  
+Patient Requirements  
+Items Included  
+Domains-Features  
+Comments  
+
+D1. Pain recording  
+P1. To record the point of pain very easily without having to type texts  
+D1, D2, D5, D9, D11, P1  
+Pain recording: several locations may be pointed, duration of pain, intense of pain, type of pain.  
+A patient may feel pain in various parts of the body. All different points must be recorded.  
+
+D2. How long the pain lasts  
+P2. Should not require special knowledge for its use and should not be complicated  
+D4, P8, P9  
+Treatment recording: name of medicine, time administered, frequency.  
+
+D3. How long after the treatment did the pain decrease and to what extent  
+P3. Limited knowledge of using mobile phones  
+D3, D10, P9  
+Treatment efficiency: if the treatment helped to reduce the pain, how long after the treatment did the pain decrease, how much did the pain decrease, for how long did the treatment work effectively.  
+
+D4. What medication the patient is taking and how often  
+P4. Functions that help them in daily life  
+D6, D7  
+Domains affected: work, daily life, socializing, psychological issues, etc.  
+Each pain point can have a different effect on the patient and his/her daily life.  
+
+D5. How and how intensely he/she feels the pain  
+P5. No labyrinthine menus  
+D6, D8  
+Other possible causes of pain: new routine, sports, weather, etc.  
+Many of these can happen in parallel.  
+
+D6. Pain has affected other activities in the patient’s daily life  
+P6. Do not know English or the official names of the drugs  
+P2, P3, P5, P7, P10  
+User Interface: easy to use, not many texts, use of images, not many sub-menus, etc.  
+Better to use images and sliders were possible. Not long texts. Simple wording.  
+
+D7. Pain has created other problems in the patient such as depression, stress, etc.  
+P7. Simple and understandable text even by users with a low level of education  
+D10, P4, P6, P8, P10  
+Usability: alarms and notifications, drop down lists, scanning functionality.  
+Notifications for repeated treatments and reminders to evaluate their effectiveness. Scan drugs and choose disease from a list. Very limited typing.  
+
+D8. Are there some other conditions that the patient suspects are the cause of the pain he/she is feeling?  
+P8. Treatments and medications may be repetitive  
+
+D9. The pain is permanent or transient  
+P9. Treatment has helped in pain relief (to what extent and after how long)  
+
+D10. The patient feels that the particular treatment has helped him/her  
+
+P10. Add simplistic descriptions  
+
+D11. How the pain is felt  
+
+D12. Access history data  
+
+Based on the collected information, ten main domains were supported:
+
+1. Pain recording (body location, pain intensity, pain features);  
+2. Consequences (domains affected);  
+3. Pain treatment (medications and related scheduling);  
+4. Pain assessment (medication vs. pain relief);  
+5. Physiological parameters (age, sex, height, weight, body mass index);  
+6. Underlying diseases;  
+7. Lifestyle (habits, physical exercise);  
+8. Alarms;  
+9. History;  
+10. Other functionalities (Login, Registration, Settings).
+
+The following paragraphs present some indicative key features of the above domains. After the user registers, the PainApp application presents a basic summary of the user profile where one can proceed by selecting one of the following functions:
+
+1. Pain recording
+
+The patient is able to record the exact location on the body where he/she feels pain. This is being achieved by rotating the body and simple clicking on the right point on the human figure presented. In case of an error, a long click deletes the specific entry (Figure 3). Each recording is accompanied by individual characteristics per point (i.e., pain intensity, pain nature, type of pain, frequency of pain). Zooming in is also possible in order to enter a more precise point of pain.
+
+Figure 3. Pain recording.
+
+After entering the point(s) of pain, one is given the opportunity to enter data about the specific pain, by clicking on the “Questionnaire/Ερωτηµατολόγιο” green button. The data collected relate to the following sections:
+
+(i) What are the symptoms due to pain (e.g., nausea, dizziness, memory loss, etc.)?  
+(ii) If the pain is accompanied by an event in the last 15 days (e.g., tension in the family or friendly environment, financial problems, weather changes, depression, starting an activity or sport, etc.).  
+(iii) If the pain affected any daily activities (e.g., self-care, socializing, sleeping, housework, work, etc.).
+
+The application allows one to enter the above data for each pain point separately or in bulk or even to skip such an entry. Once an entry is made, one can go to the “Pain Records” and see briefly the entire history, by date of entry.
+
+2. Pain treatment
+
+Through an appropriate interface, the user is asked to register the medications he/she is receiving and/or evaluate the treatments. The PainApp application provides the following options (Figure 4):
+
+(i) When registering a treatment, he/she may choose to give an easy name to the treatment (e.g., shoulder, for a treatment involving a shoulder problem). One can start typing the name of the medicine or alternatively press the “Scan Barcode” button and scan the barcode on the medicine box with the camera of his/her mobile phone. The name of the drug is automatically registered and proceeds to declare the dosage, the route of administration (e.g., capsule, ampoule, injection, etc.), and the start date of the treatment. The user is also allowed to enter notes or make this treatment repeated (e.g., repeated monthly chemotherapy, daily treatments for orthopedic problems or cardiovascular disease, etc.).  
+(ii) When evaluating the treatment/medication, the user can state whether the pain has changed (if it got worse or better and by how much), and for how long since he/she received the specific treatment. Again, the current date is automatically assigned as the evaluation date, but one can change it.
+
+Figure 4. Treatment evaluation.
+
+The “Treatment Evaluations” section stores the entire history of evaluations, presented by date of registration and with all available details.
+
+3. Underlying diseases
+
+Using the appropriate menu, one can state the diseases from which they are suffering and would like to be recorded in the application. Through a very user-friendly interface, the user can enter his/her illness and the application automatically brings to the fore the official ICD-10 names to select one. Again, the current date is automatically assigned as the start date of the disease, but can be changed as wished.
+
+4. Profile and Lifestyle activities
+
+Another feature provided by the PainApp is the recording of data relevant to the profile of the user. Basic information such as height, weight, age, sex, along with the patient’s lifestyle activities (e.g., walking, dancing, sports), and their intensity are recorded to the platform (Figure 5).
+
+Figure 5. User profile.
+
+Figure 6 presents the architectural diagram of the application.  
+The collected data is stored in a remote secure database in the University of West Attica. The doctor can see patient information only if the patient decides to share it. Only the user id is stored locally on the smartphone, so that the user can log in automatically and receive the appropriate notifications. The user id is stored in the internal storage directories of the application. The system prevents other apps from accessing these locations, and on Android 10 (API level 29) and higher, these locations are encrypted [52].
+
+Figure 6. PainApp architecture.
+
+4. Discussion
+
+The paper presents a walk-through methodology for user-centric design of mHealth applications. PainApp intends to serve patients facing chronic or acute pain and their doctors. An initial literature review revealed that there are already several available solutions in the above domain. However, the majority of the provided solutions do not report any user-centered or participatory design processes. This is highly correlated to the fact that the majority (62%) of the mHealth apps have a very limited number of MAUs (mobile active users), while only a very small percentage (7%) have more than 50,000 MAUs [53]. As far as the mHealth apps are concerned, the average time from last usage session to uninstall is approximately 9 days. Another important fact is that mobile health applications have the highest uninstall rates reaching 28% [54,55].  
+According to Baumel et al. [56], the number of app installations and daily active minutes of use are not an indication of success. The study reveals that only a small portion of users actually use the mHealth apps for a long period of time. The user engagement is extremely poor in most cases, ranging from 3.3% (30-day retention) to 3.9% (15-day retention) [56]. It is crucial, therefore, to develop methodologies in order to enhance long-term engagement of real-world usage of mHealth apps.  
+The main reasons that lead users to uninstall the applications can be summarized as follows: (i) the first impression is significant for the users since the uninstall rate is higher in the first day; (ii) a not clear interface and low aesthetics; (iii) implementation of too many features; (iv) unmet expectations; (v) many bugs; (vi) lack of value in the daily life of the user; (vii) many notifications that end up annoying the user; (viii) inadequate communication so they forget to use the app; (ix) content issues (e.g., not interesting, not updated regularly, etc.); (x) too many permissions asked without any explanation, and (xi) a hard to follow interface (not intuitive; that requires a lot of time to learn to use it).  
+Based on the above, the imperative need for a highly participatory design becomes clear in order to arrive at a successful implementation. The current paper proposes such a methodology giving details in the several steps of the design process along with an example of a mobile health application targeting a major health issue: chronic pain.  
+The next table (Table 2) shows how PainApp addressed some major barriers to the successful adoption of the app, as highlighted in the previous paragraphs.
+
+Table 2. PainApp design vs. mHealth adoption barriers.
+
+Barrier  
+Methodology  
+PainApp Approach 1  
+
+Not clear interface  
+UX experts and behavioral scientists collaborated with many and different patients with diverse diseases.  
+Phase 1 →The interface provides only the necessary information considering issues such as low IT literacy. There are a limited number and basic menus without submenus.  
+
+Unmet expectations  
+Frequent meetings with health professionals and patients in order to detect and assess the needs.  
+Phase 1 →Initial recording of all functionalities asked. Prioritization from the end users in order to agree and keep only the “essential” ones.  
+
+Many bugs  
+Debugging in all phases.  
+Phase 2–4 →Continuous debugging was performed in each phase of the project with the active participation of all the different end users. The collected info was then grouped and the necessary actions were taken.  
+
+Lack of value  
+Specific problems should be addressed taking into account all requirements from different users. Generic assumptions and requirements should be avoided.  
+Phase 1–2 →Pain was the core target of the app. Doctors and patients were the only target groups. The solutions should not focus on specific diseases. Intervention flow was assessed at an early stage.  
+
+Notifications and communication strategy  
+Only important notifications should be given.  
+Phase 1–2 →Only notifications regarding assessment of scheduled treatments was provided.  
+
+Content  
+Content should be valid and updated as needed.  
+Phase 1–2 →Only patients can add content. So, its validity is guaranteed. No need for updates from other sources.  
+
+Learning curve  
+Intuitive interface.  
+Phase 1–4 →Graphics are clean and used appropriately only when providing value. Following the principle of simplicity, no confusing content or graphics have been added without providing real value to the user.  
+
+1 The phases mentioned in the last column of the table correspond to the ones in the Methodology section.
+
+The above data reveal the PainApp co-design approach which is a key factor towards mHealth success. A critical issue that arises from the literature is the lack of a gold standard for the subjective evaluation of mHealth applications. The existence of a valid and reliable scale could lead to more successful solutions. Most existing and commonly used usability scales were developed for websites or computer software and are not focused on apps. For example, the Perceived Usefulness and Ease of Use questionnaire [57], the Software Usability Measurement Inventory [58], and the System Usability Scale (SUS) [59]. It is clear that the “quality” evaluation of mHealth apps is difficult to obtain. From 2015 onwards, there are some efforts towards developing such scales. However, most recent scales for rating mHealth apps tend to focus on a specific health domain. For example, the APPLICATIONS scoring system focuses on pregnancy apps [60]; the NICE, on change of behavior apps [61]; the MedAd-AppQ on medical adherence apps [62]; the Nutrition App Quality Evaluation on nutrition apps [63], and the Quality Assessment tool for Evaluating Medical Apps on medication complication apps [64]. Despite the emergence of such efforts, most of the scales have not yet provided evidences of their reliability and validity. Other general scales for quality assessment purposes of mHealth apps are: the Health Care Apps Evaluation Tool [65], the Organisation for the Review of Care and Health Applications-24 Question Assessment [66], and the Mobile Application Rating Scale-MARS [67]. Only MARS has been developed, yet to be used by the general public. The limited scope of the aforementioned scales makes it hard to find the right tool to assess the quality of an mHealth app targeting the pain domain. In addition, many aspects are ignored on most scales (e.g., price, value, etc.). It is obvious that there is still a great need to establish a credible and effective method for subjective evaluation of mobile health applications [68].  
+One of the main concerns of PainApp was to satisfy the General Data Protection Regulation [69]. For this purpose, before the field tests, the required approval was obtained by the Bioethics and Deontology Committee of the University of West Attica. In addition, the appropriate consent form was incorporated into the application. Users are informed, before logging in, about the purpose and the research use of their anonymous data being collected, asking for their positive consent. The security of the data and the access to the data server is ensured by the services of the University of West Attica. All necessary precautionary measures have been taken in accordance with the regulation. More specifically, the users enter only very limited personal data in order to be able to use the application (i.e., user name and password). Indicatively, these data are encrypted and cannot be read by anyone, access to device location in the background requires permission, the system transmits randomized MAC addresses by default, and the communication between the smartphone and the server is encrypted and secure using appropriate Secure Socket Layer (SSL) mechanism [51]. All other information is anonymized and stored in the server side so that users are no longer identifiable. In the current version, the data is not transmitted to the doctor. The patient can choose whether or not to share the data with the doctor only when he/she visits the doctor for consultation. Doctors can have an overview of the patient’s condition from the PainApp history data screen. This screen shows all the data collected with the appropriate timestamps. Thus, the doctor can decide on the effectiveness of the treatments and give the appropriate instructions.  
+The paper presents a step-by-step methodology that can be followed to achieve the best possible implementation of a mobile health application. The process followed is a combination of agile methodologies and reveals important aspects that need to be considered when deciding on a development approach. Team characteristics (size of team, interdisciplinarity of members, etc.), project characteristics (size, complexity, budget, time frame, requirements, etc.), and external project factors (market size, market stability, etc.) are some of the basic considerations. The proposed approach is flexible enough and can be easily adapted to the requirements of users at any time throughout the development phase. Indicatively, characteristics like the iterative process and unpredicted environment comes from the scrum approach [36], while the limited budget and team empowerment comes from lean agile software development model [37]. On the other hand, team collaboration and immediate review from the users is based on the extreme programming model [70].  
+In the example given, several characteristics were critical during the design phase. For example, too much information was initially requested. The prioritization of information was crucial so as not to lose important data, and at the same time, to preserve all the valuable information for the doctors. A common mistake is either to keep all the originally recorded information or for the technicians to decide what should be kept or not. This greatly affects the graphical user interface, making it usually very complex, resulting in the final application losing its value. The domain of pain was decided because of its importance. In addition, its subjectivity, in relation to how a patient feels it, creates a big problem for a successful treatment plan. Finally, the application should be disease-agnostic in order to be able to serve the majority of patients feeling chronic pain.  
+As far as the pain domain is concerned, medications are very often insufficient to reduce pain. Accurate knowledge of which drugs are successful in which types of pain, in which diseases, and in which patient profile is extremely important. The PainApp application collects such data so that the doctor can easily choose the treatment that is appropriate for the patient in order to alleviate the pain. This is a really innovative feature that has not yet been implemented in other mHealth apps that target pain. It is important to emphasize the fact that, many times, doctors give medications to the patient not to fight the cause of the pain but to fight the pain itself. This is in line with the latest directions of WHO, where pain is considered a disease and not a symptom [5]. PainApp can be proved a valuable tool in the hands of a physician, since, according to a recent study, the time of pain recording is critical for making decisions [71]. The subjective experience of pain supports similar solutions [72]. Patient engagement is a critical issue in healthcare nowadays. Most of the patients are willing to disclose extra health information to their clinicians for better treatment. Unsolicited health data can originate from a variety of places (e.g., personal health records and patient-generated from mobile devices). Patients may opt to do so in an effort to assist the physician to better understand their specific medical situation [73]. However, many “side effects” may arise, like too much information received by the clinicians, duplicate information, pertinent information may be mixed in with volumes of non-essential information, or review of the unsolicited information can be very time consuming, etc. Clinicians’ views on the incorporation of patient-reported data vary [74,75]. Pain assessment, on the other hand, relies heavily on subjective data [72].  
+Regarding the limitations of the study, we can mention the small size of the population that tested the final application, the short testing time, as well as the absence of a valid and reliable scale for the evaluation of the PainApp. However, the main purpose of the study was to present the design methodology. PainApp has tried to combine all the different aspects of pain serving both doctors and patients in a way that is useful, but at the same time, simple and intuitive. As far as the future steps are concerned, artificial intelligence (AI) algorithms are being implemented in order to get insights from the collected data that could lead to decisions related to the effectiveness of drugs in pain and health economics. Moreover, PainApp is currently being developed in the iOS environment. We are also finalizing the implementation of a valid and reliable scale that will be able to assess mobile health applications targeting different objects and domains. Additionally, we are currently preparing an appropriate rigorous protocol for the subjective assessment of PainApp with more than 60 users. A new paper will be prepared based on the extensive evaluation of the application, which will present both the perceived subjective satisfaction from PainApp and the new scale. Future work will involve also deployment and clinical validation of the revised version of PainApp, incorporating the AI module under development.
+
+5. Conclusions
+
+The paper presents a highly user-centered approach for designing mHealth applications. A detailed methodology was followed in order to be able to capture the actual needs of the target stakeholders. The study also highlights the steps and methodology for how to effectively address, during development, the various barriers often encountered in most mHealth applications. The ultimate purpose was to develop a generic solution being disease-agnostic, able to fit the real needs of a variety of patients suffering from chronic or acute pain and their doctors. The developed mHealth application (PainApp) provides a practical example of how to adopt the theoretical guidelines presented. The small size of the participants who evaluated the application and the lack of a reliable tool for subjective assessment can be considered as limitations of the study. As for the next steps, artificial intelligence algorithms are currently being implemented and PainApp is being developed in iOS. The work is based on a combination of agile methodologies for developing mobile health applications. The purpose of this article was to describe the mHealth application development process in a way that is easily followed by other researchers and developers. Concluding, to optimize the overall quality and retention rate of an mHealth app, it is important to ensure: (i) active participatory design involving the different stakeholders, (ii) optimal user experience, (iii) communication of what the end user is missing out on by not using it, and (iv) appropriate subjective assessment.

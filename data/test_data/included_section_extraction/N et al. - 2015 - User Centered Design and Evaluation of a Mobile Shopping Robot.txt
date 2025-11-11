@@ -1,0 +1,2028 @@
+User-Centered Design and Evaluation of a Mobile Shopping Robot
+
+Nicola Doering · Sandra Poeschl ·
+Horst-Michael Gross · Andreas Bley ·
+Christian Martin · Hans-Joachim Boehme
+
+4 The Shopping Robot TOOMAS
+
+ThehumanoidshoppingrobotTOOMASwasdevelopedover
+the course of several years (from 2005 until 2009). Selection
+and implementation of technological features were based on
+functional and performance tests. In the following, a brief
+summary will be given on the technological approaches fol-
+lowed in the robot development project (Sect. 4.1), before
+derived requirements (Sect. 4.2) and the ﬁnal implementa-
+tion (see Fig. 1; Sect. 4.3) are presented. Afterwards, a brief
+overview of previous project publications on TOOMAS deal-
+ing with user evaluation studies will be given (Sect. 4.4),
+highlighting the original contribution of this paper.
+
+4.1 Summary of Methodological Approaches
+
+The
+simultaneous
+localization
+and
+mapping
+(SLAM)
+approach followed in this project used for autonomous navi-
+gation was based on a multi-modal Monte–Carlo localization
+[4,19], used memory-efﬁcient grid maps for SLAM using
+low-resolution sonar range sensors [59] and was developed
+into a sensor-independent Map Match SLAM for visual map-
+ping [60]. The robot control architecture consists of the hard-
+ware layer (enclosing sensors and actuators, the operating
+system, and the low-level interface to the hardware), the skill
+layer (including modules for collision avoidance, localiza-
+tion and navigation, speech recognition, speech synthesis,
+people tracking and so on), and the application layer (pro-
+viding elements that are required for a speciﬁc application
+of a mobile interactive robot; [4,17]). Further, a probabilistic
+approach and a Bayesian update scheme have been devel-
+oped for multi-modal user detection and tracking [47] for
+human-robot interaction, where data of various sensory sys-
+tems (range measurements from occupancy gridmaps, leg
+detection laser scans, skin color detection, distance estima-
+tion of moving objects, detection of face images) is merged
+asynchronously.
+
+4.2 Shopping Robot Requirements for TOOMAS
+
+Speciﬁc challenges and requirements were identiﬁed in a
+user-centered design and development process by discussion
+with store owners and managers, experiences from test bed
+evaluations, and surveys of market staff and customers [17].
+The requirements presented in the following section address
+general problems to be solved in shopping robot development
+aimed at implementation into practice.
+
+4.2.1 Navigation and Integration
+
+Complexity of the Environment TOOMAS was implemented
+in a home improvement store, which is a very complex, maze-
+like indoor environment. It consists of parallel, long hallways
+separated by shelves, and corridors connected to a network of
+alleys, to the main store entrance and to the checkout counters
+(see Fig. 2). Typically, the area has a size of 5,000 to 15,000
+square meters. The environment is highly dynamic due to
+moving people (customers, staff) or other moving objects
+like shopping carts. Also, it is a highly evolutive environment
+regardingtheﬁllingoftheshelves,ortheplacementofspecial
+offers at the head sides of the shelves (product heaps, sales,
+etc.).
+
+Plug and Play Solutions Versus Installations The embed-
+ding of mobile service systems in a market should be fea-
+sible without cost- and time-expensive modiﬁcations of the
+market or its technical infrastructure. Therefore, store own-
+
+209
+
+Fig. 2 Home improvement store environment where ﬁeld tests were
+conducted
+
+ers usually do not favor retroﬁtting the whole operation
+area with a dense net of RFID tags or with Indoor-GPS
+techniques based on laser or other active components to
+allow a robust navigation. The best solution we identiﬁed
+is a simple plug & play solution using only the robot’s
+on-board sensors and advanced navigation techniques. Fur-
+ther, a simple integration in existing infrastructure (like
+Wi-Fi, merchandize management system, etc.) is required.
+This serves to ensure high ﬂexibility of the robotic solution
+with regard to reconﬁgurations of the store and changes of
+tasks.
+Moreover, the question of how to accomplish an auto-
+matic labeling of the navigation map with the positions of
+all products is a key problem: a manual labeling of all article
+locations is impossible, since for large hardware stores, up to
+60,000 different products have to be placed in the navigation
+map. We propose an automatic mapping between this map
+and the places of the articles within the shelves (stored in the
+merchandize management system of the store).
+
+4.2.2 Requirements to Human–Robot Interaction
+
+Speech-Based Dialog and Article Search Speech recogni-
+tion is signiﬁcantly more complex than other typical human-
+
+computer interaction scenarios due to (i) the extreme back-
+ground noise in home stores, (ii) distracting public address
+announcements, (iii) the large diversity of descriptions for
+the same article, and (iv) the use of common speech and
+dialects, unclear articulation, and pronunciation. Therefore,
+it proved to be unrealistic to use speech recognition in order
+to identify desired articles. Implementing a pure menu-based
+selection on the touch screen using established methods
+of keyword or product line search was a solution to this
+problem.
+
+Getting and Staying in Contact with Customers Establish-
+ing contact and interactive dialogs with customers has to be
+as intuitive as possible, avoiding prior brieﬁng before using
+a shopping robot. As shopping robots to date still present
+a novelty, customers might be restrained or even anxious
+if confronted with this kind of technology. During test bed
+evaluations, we noticed that in 90 % of all interactions cus-
+tomers waited in the vicinity of the robot to be approached
+[17]. This fact is of immediate importance for the dialog
+design, particularly for the question of how the robot can
+take the initiative while getting in contact with customers.
+Moreover, RFID proved as not practicable for user detec-
+tion and tracking, because most customers are not willing to
+wear RFID tags. Speech-based user tracking is also unsuit-
+able because single users typically do not speak along their
+paths, and background noise is significantly higher than the
+voice of a person from a distance of several meters. How-
+ever, vision in combination with distance measuring sen-
+sors proved to be suitable for robust user detection and
+tracking.
+
+4.3 Robot Equipment
+
+The service robot platform SCITOS A5 is a joint develop-
+ment of the Neuroinformatics and Cognitive Robotics Lab
+at the Technische Universität Ilmenau with the company
+MetraLabs GmbH Ilmenau [17,18]. It is used under the name
+TOOMAS (based on the name of the home improvement store
+chain) as a humanoid and mobile shopping robot for shop-
+ping assistance. To date a total of ten service robots have
+been produced since April 2008 and have been employed
+in three stores of the toom home improvement store chain.
+In the following, we describe robot equipment at the end of
+the development process. With a height of 1.5 m the robot
+is comparable to the size of a 14 year-old child. Its size is
+optimized for a friendly appearance and an ergonomic oper-
+ation. The drive system of the robot consists of a differential
+drive and a caster on the rear. This gives TOOMAS a good
+maneuverability and stability in spite of its height and weight
+of 75 kg, and allows a maximum driving speed of up to 1.0
+m/s.
+
+210
+
+4.3.1 Sensor Equipment
+
+For navigation, human-robot interaction, and safety, the
+system is equipped with various sensor systems. Firstly,
+there is an omnidirectional camera mounted on the top
+of the head. Due to the integrated hardware transforma-
+tion, the camera delivers both a panoramic image (720 ×
+150 pixels) and a high resolution frontal image (720 ×
+362 pixels), which can be panned around 360◦. Sec-
+ondly, the robot is equipped with a set of 24 sonar sen-
+sors at the bottom, which are used for obstacle detec-
+tion, map building, localization and person tracking. They
+cover the whole 360◦space around the robot. Thirdly, a
+laser range ﬁnder (SICK S300) was added and mounted in
+front direction at a height of 35cm, as required by safety
+regulations of the German Technical Inspection Agency
+(TÜV).
+
+4.3.2 Human–Robot Interaction
+
+For interaction with the customers, TOOMAS is equipped
+with an integrated touch display, a sound system, and a 6
+DOF robot head. The head turns, so that the robot’s face
+is always looking at the customers, for example during the
+guidance tour. The robot was equipped with a face in order
+to ensure a friendly and familiar appearance (see also [41]).
+Eyes and eye lids are movable. Initially, the robot blinked
+during oral interactions with customers. However, when it
+was used often, blinking drained the battery very fast, leading
+to frequent recharging. Therefore, that feature was turned
+off.
+The touch screen is the central human-robot interface.
+Customers can use it for controlling the robot, searching for
+articles, pricing information, starting the guidance tour, and
+stopping interactions with the robot.
+A set of stereo loudspeakers and two omnidirectional
+condenser microphones are integrated in the screen device.
+During the ﬁrst developmental stage, voice output was inte-
+grated to guide customers through the search process (for
+example explaining keyword search and product line search
+options, or giving hints on how to proceed in the search
+process). Several social dialogues were also integrated in
+order to make human-robot interaction as intuitively as pos-
+sible. When approaching potential users, the robot played
+a greeting message: “My name is TOOMAS, can I help
+you?”. During the guidance tour, the robot invited partic-
+ipants to come closer when they left the tracking range
+(“I can’t see you anymore, would you please come closer?”).
+When the article location was reached, the robot told the cus-
+tomersthattheyarrivedattheirdestinationandaskedwhether
+further assistance was needed. When customers chose to
+end the interaction, the robot thanked the users and said
+goodbye.
+
+4.3.3 Hardware
+
+SCITOS A5 is controlled by an embedded PC with an Intel
+Core 2 Duo processor and a multitude of small hardware units
+that monitor several functions of the robot [15]. The hierar-
+chical energy-saving concept in conjunction with the energy-
+saving units enables a long run-time. Based on two lead-acid
+gel batteries with an overall charge of 38 Ah, a SCITOS A5
+autonomously operates about 8–12 h until it needs recharg-
+ing. Easily connected to main supply or to its self-charging
+station by its integrated charging system, TOOMAS can be
+recharged in about 10–12 h. The safety system involves a
+closed bumper with tactile sensors for detection of possible
+collisions. In combination with additional sensors, like the
+vision system, the laser range ﬁnder, and the sonar sensors,
+SCITOS has a safety approval of the German TÜV that was
+given after a number of challenging safety tests.
+
+4.3.4 Integration
+
+TOOMAS gets required data about article information, prod-
+uct groups, price information, and current promotions from
+the market server, an off-board PC in the market which it is
+linked to via Wi-Fi. However, it does not rely on this con-
+nection, as it is always running from its on-board computer
+in fully autonomous mode. Other PCs in the market can be
+connected to the market server to be used as info and video-
+link terminals for the staff. This allows to display the current
+positions and statuses of all robots operating within the store.
+
+4.3.5 Service Functionality
+
+The task of the shopping robot TOOMAS is to accompany
+and support the customers during their shopping:
+
+– Contacting In its role as a shopping assistant the robot
+is positioned at the entrance or patrolling the main cor-
+ridors of the market. Using its built-in sensors, it detects
+customers, approaches them within an adequate commu-
+nication distance and presents a multimedia-based greet-
+ing message to show its function as a shopping aid. If the
+customer wishes shopping assistance, more interactions
+follow.
+– Search for Articles The clients can use a touch screen
+attached to the hull of the robot to search for desired arti-
+cles using an article search system. This article search
+system, which is the main human-robot interface for cus-
+tomers, draws on information of a database that is provided
+and maintained by the toom Baumarkt GmbH. Users have
+the choice between a product line search, in which similar
+items are grouped into categories, and a keyword search,
+which can be used to search for certain products system-
+atically. In addition, a brochure search can be conducted.
+
+211
+
+This is only available in promotional weeks when a pro-
+motional brochure of toom Baumarkt GmbH is published.
+In addition to a print version that is sent to households, a
+digital version is integrated into the database at the current
+time. In addition to graphics and text on a screen, a voice
+output is provided through integrated stereo speakers to
+support the search and to facilitate the operation of the
+robot.
+– Location Information After a successful search, the article
+location and the current location of the users are shown on
+a map on the display. They can now choose to navigate
+alone or with the robot to the displayed article location.
+– Guidance Tour If the users decide to let the robot
+guide them to an item’s location, TOOMAS leads them
+throughthehardwarestoreontheshortestcalculatedroute.
+TOOMAS’ speed ideally equates to normal walking pace.
+Using its sensors (camera and distance sensors like a laser
+range ﬁnder and sonar) the robot maintains contact to cus-
+tomers and therefore is able to react by decreasing speed or
+stopping when, for instance, the physical distance between
+robot and accompanied customer increases.
+– PurchaseadviceAfterreachinganarticle’slocation,TOO-
+MAS offers additional services if requested. Price infor-
+mation can be retrieved and consultants can be contacted
+via video conference. If users have no further requests,
+they can end the interaction with the robot by simply push-
+ing a button using the touch screen. If this does not happen,
+the shopping assistant discontinues interaction by itself
+after a certain period of time and moves to the starting
+point in the hardware store.
+
+4.4 Summary of User Evaluation Studies
+
+Besides the technological development of the shopping robot
+over the course of several years, the project followed a user-
+centered design process with an explicit focus on user factors
+of different target groups. Our previous publications dealt
+with ergonomics of the user interface and perceived oppor-
+tunities and challenges of shopping robots [53]. Due to the
+ﬁndings of the user study, voice output was implemented,
+the graphical interface was redesigned and the database of
+the store’s articles was revised (for more detail, see Sect.
+5.2). Findings also showed that the implemented keyword
+search was more effective than the product line search and
+was preferred by most participants.
+Further, a comprehensive evaluation of the robot’s suit-
+ability to its tasks (for example voice output, extensiveness
+of interactions, and suitability of its movements and mobility
+touserneeds)wasconductedincludingcomparisonsbetween
+shopping experiences with or without robot assistance [42].
+Details are presented in this paper, with an additional analysis
+of user experience of different sub-target groups (see Sect.
+6.2).
+
+Additionally, robot acceptability was compared between
+robot users, non users, and aborters [54]. Findings showed
+that users and aborters alike stated general interest in shop-
+ping robots and reported looking for a speciﬁc item as the key
+motivation to use the robot. Whereas users followed the robot
+until it guided them to the article location, aborters mostly
+stopped using the robot when the article was not found in the
+database. This ﬁnding highlights the importance of a func-
+tional search system. Non-users mostly said that they already
+knew where to ﬁnd the article they wanted to buy or came to
+the home improvement store in order to browse.
+We also explored subjective perceptions of robot accept-
+ability and its determinants in the last development stage
+(when the robot was nearly market-ready; [55]). Findings of
+our user study showed that intention to use the robot was
+rather high and inﬂuenced by a positive attitude towards the
+technology, meaning that the robot was perceived as easily
+operable and as a helpful shopping assistant.
+Lastly, robot personality and its inﬂuence on robot accept-
+ability was analyzed by comparing a decidedly extraverted
+version of TOOMAS to the conventional version [41]. The
+extraverted robot had a nose, a smiling mouth and lashes.
+The voice varied in pitch, verbal expressions were more pos-
+itive, accompanied by frequent nodding, and more frequent
+winking. Findings revealed that the extraverted robot was
+clearly preferred by the customers. Especially the nonverbal
+communication features seem to have enriched human-robot
+interaction and increased acceptability.
+In contrast to those publications, in this paper we present
+previously non-published and more detailed results on robot
+usability and acceptability differentiating between different
+sub-target groups based on robot user demographics (gender,
+age, educational background and computer skills levels).
+
+5 Developmental Stage 1: Article Search System
+
+In this section, we present a formative evaluation study serv-
+ing to optimize the usability of the article search system of
+our shopping robot TOOMAS. We followed a user-centered
+design process for the development of the search engine and
+the graphical user interface, as this serves as the most impor-
+tant human-robot interface for the robot at hand. If human-
+robot communication fails at this point, no other interactions
+with the robot will take place. Usability requirements for
+search engines and user interfaces are particularly high, as
+clients from different population groups are to use the system
+freely and without previous learning [3].
+A precise usability evaluation was necessary in order to
+know to what extent the requirements for a user-friendly
+human-robot interaction were fulﬁlled (effectiveness, efﬁ-
+ciency,andsatisfactionaccordingtoISOnormISO9241-11).
+Further, we explored if sociodemographics (gender, age, edu-
+
+212
+
+cational background) and computer skills had an inﬂuence
+on usability. The following research questions were to be
+answered:
+
+– RQ1: Are customers able to retrieve sought-after articles
+using the robot’s article search system (effectiveness)?
+– RQ2:Arecustomersabletoretrievesought-afterarticlesin
+a short time-frame using the robot’s article search system
+(efﬁciency)?
+– RQ3: Is using the robot’s article search system agreeable
+and satisfactory for customers (satisfaction)?
+– RQ4: Do gender, age, educational background, and com-
+puter skills have an effect on the usability of the robot’s
+article search system?
+
+We also explored robot acceptability by store customers,
+using intention to use as an indicator (based on [70]). As
+the robot was seldom available, customers were presented a
+poster introducing the robot and its features. The following
+research question was formulated:
+
+– RQ5: Are customers willing to use the robot as a shop-
+ping assistant in the future? Do gender, age, educational
+background, and computer skills have an effect on future
+intention to use the shopping robot?
+
+Also, we followed a formative evaluation procedure [61],
+which produces ongoing intermediate assessments of eval-
+uation objects. Those assessments are used for an iterative
+optimization process. The main goal is to identify concrete
+usability problems and solve them step by step along the
+process.
+
+5.1 Method
+
+5.1.1 Design
+
+A non-experimental cross-sectional formative evaluation
+study was conducted with three consecutive phases. Every
+phase consisted of data collection in the ﬁeld and statis-
+tical data analysis. Results gained in every data collection
+phasewereanalyzedbysocialscientists,discussedwithrobot
+developers, and included in a usability engineering process
+for the user interface and the search engine installed. During
+the three data collection phases (taking part between August
+2005 and October 2005) usability criteria were tested with
+different samples, as it could not be guaranteed that the same
+walk-in customers would be available for every measurement
+point during the study.
+Oral interviews were used for subjective usability mea-
+sures like satisfaction, and overt observation for technical
+malfunctions and objective usability measures like effective-
+
+ness and efﬁciency. Field trials were conducted in a home
+improvement store of toom Baumarkt Gmbh in Erfurt in Ger-
+many.
+
+5.1.2 Participants
+
+In order to follow a user-centered process, it was necessary
+to test the shopping robot with potential end users, in our
+case customers of home improvement stores. Due to ethical
+issues, all participants were volunteers, in all cases walk-in
+shoppers on the days the study was conducted who used the
+shopping robot for the very ﬁrst time. After their consent,
+they were included in the ad-hoc sample. Our aim was to
+optimize the robot in such a way that novice users are able to
+successfully interact with the robot. Customers who already
+had experience with the robot were excluded from the sam-
+ple.
+In every one of the three subsequent data collection
+phases of the ﬁrst formative evaluation study n = 70 par-
+ticipants took part, resulting in a ﬁnal convenience sam-
+ple of N
+=
+210 subjects. Details on the sociodemo-
+graphic and control variables are presented in Table
+1.
+In order to check for correlations between those vari-
+
+Table 1 Descriptive statistics of sociodemographic and control vari-
+ables for the total sample of study 1
+
+Variable
+n
+%
+
+Gender
+
+Men
+125
+59.5
+
+Women
+85
+40.5
+
+Total
+210
+100
+
+Age group
+
+16–29
+36
+17.1
+
+30–39
+36
+17.1
+
+40–49
+55
+26.2
+
+50–64
+68
+32.4
+
+65 & older
+15
+7.1
+
+Total
+210
+100
+
+Educational level
+
+Secondary modern school (years 5-9)
+34
+16.2
+
+Middle school
+106
+50.5
+
+High school
+29
+13.8
+
+University
+41
+19.5
+
+Total
+210
+100
+
+Computer skills level
+
+Beginners
+50
+23.8
+
+Average users
+100
+47.6
+
+Advanced users
+53
+25.2
+
+Professionals
+7
+3.3
+
+Total
+210
+100
+
+213
+
+ables, we computed exact Fisher tests (as some of the
+cells had an n < 5), showing no signiﬁcant correlations
+between gender, age, educational level, and computer skills
+respectively.
+
+5.1.3 Materials
+
+To measure subjective usability criteria and future intention
+to use the robot, structured interviews were conducted, using
+ﬁve-point Likert scales (from 1 = do not agree to 5 = do
+fully agree).
+Further, sociodemographic variables and computer skills
+were surveyed. Considering prompting and probing, oral
+interviews are more effective than written questionnaires as
+they dealt with an unfamiliar topic (shopping robots in the
+home improvement store setting [5]).
+Satisfaction (as one of the established usability criteria
+according to ISO 9241-11) was measured by a scale consist-
+ing of the following two items: “Were you satisﬁed with
+the search result?” and “How would you rate the system
+in general?”. Future intention to use was measured before
+and after participants used the system for an article search
+by the following item: “Would you use the robot yourself?”
+Although the robot in itself was not tested, we used this item
+in order to ensure compatibility with later user studies testing
+TOOMAS.
+Moreover, two observers recorded objective usability cri-
+teria, for example whether customers were able to ﬁnd
+sought-after articles by using the search engine (articles
+found or not, effectiveness) and search duration (search time
+taken by means of a stop watch, efﬁciency). Due to the obvi-
+ous nature of those criteria, inter-rater reliability was practi-
+cally 100 %.
+
+5.1.4 Procedure
+
+After being recruited by a professional ﬁeld interviewer (peo-
+ple especially trained for recruitment) at the store entrance,
+subjects received basic information on the study and on data
+protection. After informed consent was given, sociodemo-
+graphic variables were collected. In the next step, the robot
+was presented on a poster and its features were explained
+to the participants. In addition, for usability testing, subjects
+were asked to use the robot’s search engine in order to search
+for one article of their own choice and its location. System
+usage was observed to record usability problems and hand-
+ling difﬁculties. After testing the search engine, users were
+interviewed on their experience with the robot and intention
+to use the robot in the future. The user study was conducted at
+a stationary terminal and not with the mobile robot as it was
+seldom available due to intensive technical system revisions.
+
+5.2 Results
+
+Firstly, usability engineering of the user interface will be
+presented (Sect. 5.2.1). Afterwards, ﬁndings of the usabil-
+ity evaluation over the course of the ﬁrst study’s evaluation
+phases as well as according to sociodemographic and con-
+trol variables will be given (Sect. 5.2.2) before corresponding
+results on robot acceptability will be presented (Sect. 5.2.3).
+
+5.2.1 Usability-Engineering of User Interface
+
+After every data collection phase, interviews and observa-
+tion protocols were analyzed and system developers were
+informed about identiﬁed usability problems. Revisions of
+the user interface and the search engine are presented in the
+following, classiﬁed by relevance.
+
+Voice Output The most important revision was the imple-
+mentation of a voice output, guiding participants through the
+search process and giving hints for using the article search
+system. During the ﬁrst test phase, some subjects hesitated
+after having inserted a search keyword. Several product lines
+were presented in the interface, possibly containing the arti-
+cle searched for. Most subjects did not realize that they were
+able to select a speciﬁc product line. In this case, from the
+second phase on, voice output gave feedback after seven sec-
+onds, telling the user to choose a certain category. Further,
+voice output explained alternative ways of searching when
+articles were not found.
+
+Graphical Redesign of User Interface Due to the ﬁndings
+from the ﬁrst data collection phase, the user interface was
+redesigned before the second test phase as follows (Fig. 3
+shows the interface at the beginning and the end of this ﬁrst
+formative evaluation study).
+Most subjects in the first phase hesitated because they
+did not realize that presented product lines were clickable
+and looked for an ‘enter’ button. To handle this problem,
+buttons were designed in a more three-dimensional way. In
+the original version, the back button was placed on the upper
+left side of the interface, as is common in web browsers.
+However, some users did not detect it. During redesign, it
+was placed in the lower right of the interface more closely
+to other control elements. Instead of the back button, a main
+menu button was inserted at the upper left side, leading to the
+optionbetweenproductlinesearchandkeywordsearch.Most
+of the handling problems were addressed by the redesign
+and decreased signiﬁcantly over the three testing phases (see
+Table 2).
+
+Revision of Database The robot’s article search engine was
+based on a database originally constructed for stocktaking
+
+214
+
+Fig. 3 Exemplary presentation of user interface redesign (left: beginning of study, right: end of study)
+
+Table 2 Absolute frequencies
+of handling problems (obtained
+by observation) compared for
+data collection phases
+
+d f = 2, different n due to
+missing data
+
+Product lines
+not clicked on
+Search for
+enter button
+Back button
+not detected
+
+Phase 1
+17
+16
+9
+
+Phase 2
+11
+10
+3
+
+Phase 3
+1
+4
+0
+
+χ2
+16
+8.4
+11.1
+
+p
+<.05
+<.05
+<.05
+
+n
+209
+210
+209
+
+Cramer’s V
+.28
+.20
+.23
+
+by toom Baumarkt GmbH. This database consists of more
+than 60,000 different products, sometimes with several vari-
+ations (for example various sizes of screws), which leads to
+over 80,000 articles in the database. Many terms and deﬁni-
+tions did not conform with everyday language use. Further,
+not every article was included with its actual location. These
+problems decreased effectiveness, as some articles could not
+be found by using the search engine. A list of problematic
+key words was generated and sent to the home improve-
+ment store management. Besides, location declaration was
+adapted. Although the problem could not be solved com-
+pletely, the rate of declared article locations increased sig-
+niﬁcantly over the three data collection phases (see Table 3
+for location presentation when the article was found in the
+database). In the ﬁrst phase, 83% of search requests led to
+accurate article locations, in the third phase, this was the
+case in 98% of requests (χ2 = 15.3; d f = 2; p < .001;
+Cramer’s V = .35; n = 126). Whereas the redesign of
+the graphical user interface and voice output integration was
+accomplished before the second test phase started, revision
+of the database was ongoing.
+
+Table 3 Article location (in percent) of articles found for three data
+collection phases
+
+Article
+location
+presented
+(in %)
+
+Article
+location
+not presented
+(in %)
+
+n
+
+Phase 1
+83
+17
+35
+
+Phase 2
+67
+33
+45
+
+Phase 3
+98
+2
+46
+
+Total
+83
+17
+126
+
+5.2.2 Usability
+
+Further, we analyzed the usability of the user interface and
+the search engine as well as their changes during the three test
+phases. Also, we examined usability with regard to sociode-
+mographic data and control variables. First, ﬁndings for
+usability over the course of the three evaluation phases will be
+presented before detailed results for gender, age group, edu-
+cational background and computer skills will be reported.
+
+215
+
+0
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Phase 1
+Phase 2
+Phase 3
+
+Fig. 4 Rate of successful search requests (in percent) by means of
+product line search and keyword search for the three data collection
+phases
+
+Usability Over the Course of the Evaluation Phases Con-
+sidering effectiveness, half of the search requests during the
+ﬁrst inquiry stage were successful. After a revision of the
+search engine, search success increased up to 64 %. The next
+revision made it up to a success rate of 66 % (see Fig. 4).
+This increase in effectiveness was not signiﬁcant (χ2 =
+4.4; d f = 2; p = .11; Cramer’s V = .15; n = 210).
+However, the 34% unsuccessful search requests during the
+last phase were not a consequence of usability problems but
+of aforementioned problems with the product database pro-
+vided to us by the store management. A basal revision of the
+database would have been very cost and time consuming, due
+to its complexity (more than 80,000 items). On that account,
+it could not be put into effect at the time of research.
+In regard to efﬁciency, a similar pattern was found: One
+search request using the search engine lasted on average 163
+seconds (SD = 87s). In course of the three inquiry stages
+no signiﬁcant decreases of search time were noticed (F =
+2.7; d f = 2; p = 0.07; partial η2 = 0.03; n = 210), but
+compared to the ﬁrst stage with an approximate search time
+of 2m54s (SD = 88 s), in the third stage the search process
+was terminated after 2 m 23 s (SD = 87 s) in average.
+After using the article search system, customers declared
+their satisfaction with the article search engine (M
+=
+3.9; SD = 0.9; ﬁve-point Likert scale from 1= very unsat-
+isﬁed to 5= very satisﬁed), which did not vary signiﬁcantly
+during the inquiry stages (F = 1.6; d f = 2; p = .20;
+partial η2 = 0.15; n = 210).
+
+Usability According to Sociodemographic Variables We fur-
+ther analyzed usability criteria according to sociodemo-
+graphic and control variables for the total sample over
+all three test phases of the study. Gender showed nei-
+ther signiﬁcant differences considering effectiveness (χ2 =
+0.08; d f = 1; p = .77; Cramer’s V = 0.02; n = 210)
+nor satisfaction (Mmale = 3.92, SD = 0.84, N = 125;
+M f emale = 3.89, SD = 0.85; N
+= 85; t
+= 0.30;
+
+Table4 Absolutefrequenciesofsearchsuccess(articlesfound)accord-
+ing to age group
+
+Age group
+Article found
+Article not found
+n
+
+16–29
+25
+11
+36
+
+30–39
+19
+17
+36
+
+40–49
+35
+20
+55
+
+50–64
+43
+25
+68
+
+65 & older
+4
+11
+15
+
+Total
+126
+84
+210
+
+Table 5 Means and standard deviations for search duration in seconds
+(efﬁciency) according to age group
+
+Age group
+M
+SD
+n
+
+16–29
+149.11
+78.05
+36
+
+30–39
+141.03
+73.70
+36
+
+40–49
+152.30
+79.07
+55
+
+50–64
+174.10
+93.62
+68
+
+65 & older
+237.20
+101.95
+15
+
+Total
+162.95
+101.95
+210
+
+d = 0.04; d f = 208; p = .77; d = 0.04). However,
+women were signiﬁcantly faster during the search (Mmale =
+175.18s, SDmale = 92.31s, N = 125; M f emale = 144.96s,
+SD f emale = 76.56s, N = 85; t = 2.49; d f
+= 208;
+p = .014; d = .36).
+Age group also showed a signiﬁcant effect for effective-
+ness (see Table 4). Although in almost every age group more
+articles were found than not found, for seniors being 65 years
+old or older, the reverse effect was shown (χ2 = 9.66; d f =
+4; p = .05; Cramer’s V = .22; n = 210). In order to deter-
+mine what age group led to this effect, we conducted post hoc
+χ2-tests with Bonferroni adjustment to prevent type I error
+inﬂation due to multiple comparisons (adjusted alpha level
+= .005). No signiﬁcant differences were shown. However,
+the standardized residual for articles not found by partici-
+pants being 65 years and older was 2.0, indicating that the
+effect resulted from this cell.
+Although age did not lead to a signiﬁcant effect consid-
+ering satisfation (F = 0.11; d f = 4; p = .978; n = 210,
+partial η2 = .002), it did for efﬁciency (F = 4.23; d f = 4;
+p = .003; n = 210, partial η2 = .076, see Table 5). Games-
+Howell post hoc tests conﬁrmed that seniors of 65 years of
+age and older showed signiﬁcantly longer search durations
+than younger age groups (p < 0.05) with the exception of
+participants between 50–65 years (p = 0.22).
+Educational background showed no signiﬁcant effect for
+effectiveness (χ2 = 2.66; d f = 3; p = .45; Cramer’s
+V = 0.11; n = 210). Neither did satisfaction differ between
+educational levels (F = 0.51; d f = 3; p = .678; n =
+
+216
+
+Table 6 Means and standard deviations for search duration in seconds
+(efﬁciency) according to educational level
+
+Educational level
+M
+SD
+n
+
+Secondary modern school (years 5–9)
+185.74
+85.52
+34
+
+Middle school
+170.01
+87.48
+106
+
+High school
+152.17
+85.35
+29
+
+University
+133.41
+84.30
+41
+
+Total
+162.95
+87.36
+210
+
+Table7 Absolutefrequenciesofsearchsuccess(articlesfound)accord-
+ing to computer skills level
+
+Computer skills
+Article found
+Article not found
+Total
+
+Beginners
+22
+28
+50
+
+Average users
+67
+33
+100
+
+Advanced users
+32
+21
+53
+
+Professionals
+5
+2
+7
+
+Total
+126
+84
+210
+
+Table 8 Means and standard deviations for search duration in seconds
+(efﬁciency) according to computer skills level
+
+Computer skills
+M
+SD
+n
+
+Beginners
+201.64
+85.02
+50
+
+Average users
+161.22
+85.77
+100
+
+Advanced users
+134.60
+80.75
+53
+
+Professionals
+125.86
+87.87
+7
+
+Total
+162.95
+87.36
+210
+
+210, partial η2 = 0.007). However, considering efﬁciency
+again, search duration signiﬁcantly descreased with higher
+education levels (see Table 6; F = 2.78; d f = 3; p = .042;
+n = 210; partial η2 = 0.039). Games-Howell post hoc tests
+conﬁrmed that university graduates were signiﬁcantly faster
+when searching for an article than participants who graduated
+from secondary modern school (p = .047).
+Computer skills showed no signiﬁcant effect for effec-
+tiveness (χ2 = 7.76; d f = 3; p = .051; Cramer’s V =
+0.19; n = 210). However, this effect barely missed reaching
+statistical signiﬁcance. Beginners showed more unsuccessful
+searches (see Table 7).
+Neither did satisfaction differ between computer skill lev-
+els (F = 0.69; d f = 3; p = .558; n = 210, partial
+η2 = 0.010). However, considering efﬁciency, search dura-
+tion signiﬁcantly descreased with higher computer skills (see
+Table 8; F = 5.96; d f = 3; p = .001; n = 210, par-
+tial η2 = .080). Games-Howell post hoc tests revealed that
+beginners took signiﬁcantly more time to accomplish the
+search task than average users and advanced users (p = .04).
+However, due to the low number of professionals and there-
+
+fore insufﬁcient statistical power, there was no signiﬁcant
+post hoc effect between beginners and professionals (p =
+.22).
+
+5.2.3 Robot Acceptability
+
+Additionally, we analyzed if future intention to use a shop-
+ping robot changed after participants had used the article
+search system developed for TOOMAS. Further, we tested
+the inﬂuence of the sociodemographic variables and com-
+puter skills on intention to use the robot after participants
+were interacting with the system. As the robot was a novelty
+and all subjects in the sample were ﬁrst-time robot users,
+intention to use the robot measured before the usability test
+served as a baseline.
+Intention to use the robot before the usability test was
+rather high (Mbef ore = 3.89; SD = 1.11, N = 210)
+and increased slightly after using the article search system
+(Maf ter = 4.00; SD = 1.11; N = 210), although not sig-
+niﬁcantly (t = 1.74; d f = 209; p = .083; d = 0.12).
+Neither gender (t = 1.09; d f = 208; p = .277, d =
+0.15), age (F = 1.76; d f = 4; p = .140; partial η2 = 0.04),
+educational level (F = 0.68; d f = 3; p = .563; partial
+η2 = 0.012), nor computer skills (F = 1.18; d f = 3; p =
+.318, partial η2 = 0.021) showed a statistical signiﬁcant
+effect on intention to use the robot after the participants had
+used the article search system (see Table 9).
+
+5.3 Discussion
+
+In this study, usability engineering on basis of interviews and
+usability tests with customers was successful. Derived user
+needs were acknowledged and drawn on in iterative system
+optimizations: It consisted of an integration of voice output
+to help customers with the search process, a redesign of the
+graphical user interface and a revision of parts of the con-
+nected database. Handling problems decreased signiﬁcantly
+over the three data collection phases. However, effective-
+ness and efﬁciency showed only a non-signiﬁcant tendency
+to increase over the three data collection phases. A reason
+for this might be that until the end of the study, sought-after
+articles sometimes were not included in the article database
+provided by the store management.
+Further, the detailed examination of usability according to
+sociodemographic and control variables led to some interest-
+ing results. Although effectiveness did not show signiﬁcant
+differences between most of the sub-groups, an effect was
+found for age, showing that seniors being 65 years or older
+had a signiﬁcantly lower proportion of successful searches.
+Maybe younger people were better able to cope with han-
+dling problems identiﬁed at this stage of development. Addi-
+tionally, sub-groups showed different results for efﬁciency:
+Women, younger participants, subjects with a higher edu-
+
+217
+
+Table 9 Means and standard deviations for intention to use after testing
+the article search system according to gender, age, educational level, and
+computer skills level
+
+Control variable
+M
+SD
+n
+
+Gender
+
+Men
+3.94
+1.14
+125
+
+Women
+4.11
+1.06
+85
+
+Age group
+
+16–29
+3.89
+1.09
+36
+
+30–39
+4.25
+0.97
+36
+
+40–49
+4.00
+1.02
+55
+
+50–64
+3.97
+1.23
+68
+
+65 & older
+3.87
+1.25
+15
+
+Educational level
+
+Secondary modern school (years 5–9)
+4.29
+0.94
+34
+
+Middle school
+4.06
+1.02
+106
+
+High school
+3.62
+1.29
+29
+
+University
+3.90
+1.26
+41
+
+Computer skills level
+
+Beginners
+4.08
+1.05
+50
+
+Average users
+4.11
+1.04
+100
+
+Advanced users
+3.75
+1.25
+53
+
+Professionals
+3.86
+1.21
+7
+
+Total
+4.00
+1.11
+210
+
+Likert scale from 1 = totally disagree to 5 = totally agree
+
+cational background, and higher computer skills were sig-
+niﬁcantly faster in their search for speciﬁc articles. Although
+this effect might be explained with afﬁnity for technology and
+practical experience with technological systems for age, edu-
+cational background and—naturally—computer skills, this is
+not the case for gender. It has to be noted that the investiga-
+tors also were women. Therefore this might be explained by
+an investigator effect with female participants feeling more
+comfortable in an interaction with female researchers.
+Despite of these drawbacks in effectiveness and efﬁciency,
+satisfaction with the system as well as intention to use the
+robot in the future were rather high from the beginning on
+and did not differ over time or according to gender, age,
+educational level, or computer skills level.
+
+6 Developmental Stage 2: Adaptation to the Robot’s
+Role and Task
+
+During the second developmental stage, the article search
+system was already implemented in the shopping robot.
+Within this second study, developers wanted to optimize the
+robot and meet user requirements concerning its task and
+role. In addition, system acceptability of future customers
+was to be examined before the commercial launch of the
+
+shopping robot in home improvement stores. Therefore, a
+formative evaluation study was conducted in order to elimi-
+nate constraints and technical problems with the robot. The
+following research questions were to be answered:
+
+– RQ1: Do embodiment, mobility, voice output, and per-
+sonality of the shopping robot meet the needs and require-
+ments of users with different demographics?
+– RQ2: Are customers willing to use the robot as a shop-
+ping assistant in the future? Do gender, age, educational
+background, and computer skills have an effect on future
+intention to use the shopping robot?
+
+6.1 Method
+
+6.1.1 Design
+
+A non-experimental cross-sectional ﬁeld study was con-
+ducted. Oral interviews were conducted to obtain user eval-
+uation on usability criteria as well as acceptability. Overt
+observation was used to obtain data on technical malfunc-
+tions.
+
+6.1.2 Participants
+
+Subjects were recruited by a professional interviewer in
+the entrance area of the home improvement store. Walk-
+in shoppers on the days the study was conducted were
+asked to participate. After giving their informed consent,
+they were included in the ad-hoc sample, resulting in a
+ﬁnal sample of N = 39 subjects. Details on the sociode-
+mographic and control variables are presented in Table
+10. In order to check for correlations between those vari-
+ables, we computed exact Fisher tests (as some of the
+cells had an n < 5), showing no signiﬁcant correlations
+between gender, age, educational level, and computer skills
+respectively.
+
+6.1.3 Materials
+
+Evaluation criteria like understandability of voice output
+and adequate embodiment of the robot were operational-
+ized with ﬁve-point Likert scales (from 1 = do not agree
+to 5 = do fully agree). Sociodemographic variables were
+also obtained, using oral interviews. Technical malfunctions
+were collected via observation and log ﬁles, for instance
+whether human-robot interaction was disturbed, e.g. when
+the robot lost contact with the participant during a guidance
+tour.
+
+218
+
+Table 10 Descriptive statistics of sociodemographic and control vari-
+ables for the total sample of study 2
+
+Variable
+n
+%
+
+Gender
+
+Men
+28
+71.8
+
+Women
+11
+28.2
+
+Total
+39
+100
+
+Age group
+
+16–29
+3
+7.7
+
+30–39
+4
+10.3
+
+40–49
+9
+23.1
+
+50–64
+19
+48.7
+
+65 & older
+4
+10.3
+
+Total
+39
+100
+
+Educational level
+
+Secondary modern school (years 5-9)
+5
+12.8
+
+Middle school
+20
+51.3
+
+High school
+10
+25.6
+
+University
+4
+10.3
+
+Total
+39
+100
+
+Computer skills level
+
+Beginners
+9
+23.1
+
+Average users
+20
+51.3
+
+Advanced users
+8
+20.5
+
+Professionals
+2
+5.1
+
+Total
+39
+100
+
+6.1.4 Procedure
+
+Field trials were conducted in a home improvement store of
+toom Baumarkt GmbH in Erfurt in Germany in December
+2006.
+After being recruited by a professional interviewer, subjects
+received basic information on the study and on data protec-
+tion. After consent, sociodemographic variables were col-
+lected. During subsequent usability tests, subjects were asked
+to use the robot to search for an article and its location. Sys-
+tem usage was observed to record usability problems. After
+testing the shopping robot, users were interviewed about their
+experience with the robot, including robot acceptability.
+
+6.2 Results
+
+6.2.1 Technical Malfunctions of the Shopping Robot
+
+Observation and log ﬁles of the human-robot interactions
+were used to keep record of technical malfunctions and to
+optimize the robot. The noticed technical difﬁculties are dis-
+cussed in order of their relevance.
+
+Non-recognition of Customers At the time of the study, one
+elementary problem was that the robot began to move away
+when interested customers were moving towards it (11 %,
+n = 4). The main reason for this problem was the not per-
+fectly working person-tracking function. This defect also
+affected the guidance tour to the article positions in the home
+improvement store. Although customers were following the
+shopping robot during the tour, the robot was partly unable to
+track them. The statement “I cannot see you anymore” led to
+customer’s confusion and averted a ﬂuent tour to the location
+of the article.
+
+Orientation Problems Malfunctions of the robot’s detection
+system led to orientation problems and ‘accidents’ (n = 6).
+For example, the robot cut the curve too closely and hit
+objects like racks or shopping trolleys.
+
+Voice Output Integrated voice output was installed to help
+customers to use the robot. However, TOOMAS sometimes
+quitted in the middle of the sentence. This problem was
+mainly notable when complex situations were at hand. For
+example when the robot wanted to turn around, tried to warn
+the customer at the same time of its movement, and then
+indicated the customers to follow.
+The demonstrated problems concern important criteria
+for a successful human-robot interaction. Non-recognition
+of customers, orientation problems and problems with voice
+outputareindicatorsforaninsufﬁcientadaptationoftherobot
+to its environment and tasks. The results about the technical
+dysfunctions were handed to the developer team who opti-
+mized the system after the study.
+
+6.2.2 Adaptation to Role and Task
+
+Relevant for adaptation of the robot to its main task and role
+in the home improvement store environment is an adequate
+appearance and embodiment. During the ﬁrst inquiry stage,
+the robot still looked very technical (see Fig. 5), because the
+ﬁnal casing was not integrated yet. Accordingly, only 64 %
+(n = 25) of respondents liked the design of the service-robot.
+The majority of the 14 persons who disliked the appearance
+(22 %) said that they missed the envelope of the service-
+robot. Exact Fisher tests (as some of the cells had an n <
+5) did not show any signiﬁcant correlations between partici-
+pants’ rating of the design on one the hand, and gender, age,
+educational background, and computer skills on the other
+hand.
+In reference to the integrated voice output, the study
+showed that enunciation was very comfortable for customers.
+With the help of a ﬁve-point Likert scale, the enunciation
+was mainly rated as not complicated (M = 1.4; SD = 0.90)
+and well articulated (M = 4.8; SD = 0.70). Speech speed
+(M = 3.0; SD = 0.20) and speech volume (M = 3.0;
+
+219
+
+Fig. 5 Shopping Robot
+TOOMAS during and after the
+second study (from left to right)
+
+Table 11 Evaluation of enunciation as complicated according to com-
+puter skills level
+
+Computer skills
+n
+Mean rank
+
+Beginners
+9
+27.17
+
+Average users
+20
+18.77
+
+Advanced users
+8
+16.0
+
+Professionals
+2
+16.0
+
+SD = 0.40) were seen as adequate and matched the envi-
+ronment. Sociodemographic variables showed no inﬂuence
+on voice output ratings, with one exception: participants with
+lower computer skills rated enunciation as more complicated
+(χ2 = 10.15; d f = 3; p = .005; n = 39; see Table 11).
+Extensiveness of human–robot-interactions was rated as
+complete enough (by 95 % of subjects), with exact Fisher
+tests showing no signiﬁcant correlations between sociode-
+mographic variables and computer skills level.
+Considering adaptation of the robot’s Movement and
+Mobility to user requirements it was revealed that 59 % of
+subjects rated driving speed as comfortable. However, the
+robot was too slow for 33 % of customers and too fast for
+another 7 %. Again, no signiﬁcant correlations with sociode-
+mographic variables and computer skills appeared.
+Regarding social behavior, TOOMAS appealed to a rather
+high degree. Human interaction partners rated the robot
+approaching them as comfortable and friendly, and not as
+intrusive or clumsy (see Table 12).
+However, in contrast to the sociodemographic variables,
+computer skills again showed a signiﬁcant effect concern-
+
+Table 12 Evaluation of the robot’s approaching behavior
+
+M
+SD
+n
+
+Friendly
+4.7
+0.5
+39
+
+Comfortable
+4.3
+0.9
+38
+
+Clumsy
+2.2
+1.3
+39
+
+Intrusive
+1.4
+0.9
+39
+
+Likert scale from 1 = totally disagree to 5 = totally agree
+
+Table 13 Evaluation of friendliness of the robot’s approaching behav-
+ior according to computer skills level
+
+Computer skills
+n
+Mean Rank
+
+Beginners
+9
+22.39
+
+Average users
+20
+21.65
+
+Advanced users
+8
+16.81
+
+Professionals
+2
+5.50
+
+ing friendliness of the approach: beginners and participants
+with average computer skills rated the robot’s approach as
+friendlier than advanced and professional computer users
+(χ2 = 8.71; d f = 3; p = .012; n = 39; see Table 13).
+
+6.2.3 Intention to Use
+
+Most of the subjects (87 %) reported intention to use the
+robot again, especially to search for speciﬁc articles (M =
+4.8; SD = 0.40), partially for getting pricing information
+(M = 3.6; SD = 1.5), but less for detailed product infor-
+
+220
+
+mation (M = 2.8; SD = 1.6). Sociodemographic variables
+and computer skills showed no inﬂuence on intention to use
+the robot.
+
+6.3 Discussion
+
+In the presented second study, the robot’s optimization to
+its role and task (embodiment, voice output style, extensive-
+ness of interactions, mobility, and social behavior) was ana-
+lyzed by means of user tests. The ﬁndings provided valuable
+hints for continuous system optimizations. Several proposals
+were implemented during the course of the conducted tests.
+However, optimizations met their limits: again, certain arti-
+cles were not found in the database. Database revision could
+still only take place continuously and in parts. In summary,
+robot usability with regard to its interaction with human part-
+ners was evaluated as relatively positive. Mainly, sociodemo-
+graphic variables showed no correlation with usability mea-
+sures. However, computer skills revealed two effects: partici-
+pants with lower computer skills rated the robot’s enunciation
+as more complicated, but experienced the robot as friendlier
+whenitapproachedthem.Theﬁrstﬁndinghighlightstheneed
+to simplify content of voice output. The second ﬁnding could
+be interpreted as a novelty effect: participants with less expe-
+rience in handling computers might be more impressed by
+the integrated social interactions, whereas subjects with more
+computer experience might also have higher expectations
+regardinghuman-robotinteraction.Finally,acceptabilitywas
+rather high: Most of the participants reported intention to use
+the shopping robot in the future, especially for article search.
+
+7 Developmental Stage 3: Comparison of
+Robot-Assisted and Conventional Shopping
+
+In 2009, at the end of the pilot phase, a summative evaluation
+study of TOOMAS was conducted. It had to be examined if
+effectiveness, efﬁciency and customer satisfaction require-
+ments (DIN EN ISO 9241-11) were met. Fulﬁllment of
+these requirements was compared to shopping without robot
+assistance. The results gained in this study served decision-
+making on potential continuation of the project. The follow-
+ing research questions had to be answered:
+
+– RQ1: Is shoppingwithrobot assistancemoreeffectivethan
+conventional shopping?
+– RQ2: Is shopping with robot assistance more efﬁcient than
+conventional shopping?
+– RQ3: Is shopping with robot assistance more satisfactory
+for customers than conventional shopping?
+
+Further, intention to use was again measured as an indi-
+cator of acceptability.
+
+Table 14 Descriptive statistics of sociodemographic and control vari-
+ables for the total sample of study 3
+
+Variable
+n
+%
+
+Gender
+
+Men
+54
+57.4
+
+Women
+40
+42.6
+
+Total
+94
+100
+
+Age group
+
+16–29
+13
+13.8
+
+30–39
+9
+9.6
+
+40–49
+22
+23.4
+
+50–64
+31
+33
+
+65 & older
+19
+20.2
+
+Total
+94
+100
+
+Educational level
+
+Secondary modern school (years 5–9)
+31
+33
+
+Middle school
+28
+29.8
+
+High school
+26
+27.7
+
+University
+9
+9.6
+
+Total
+94
+100
+
+Computer skills level
+
+Beginners
+19
+20.2
+
+Average users
+44
+46.8
+
+Advanced users
+23
+24.5
+
+Professionals
+8
+8.5
+
+Total
+94
+100
+
+7.1 Method
+
+7.1.1 Design
+
+A quasi-experimental between-subject ﬁeld study was con-
+ducted. Participants were assigned to two conditions: shop-
+ping with robot assistance and conventional shopping, cre-
+ating matched pairs using sociodemographic data and com-
+puter skills to control for personal variables between groups.
+Oral interviews were used to measure satisfaction and inten-
+tion to use, whereas overt observation was used to gain data
+on effectiveness and efﬁciency. The ﬁeld experiment was
+conducted in 2009 in a home improvement store of toom
+Baumarkt GmbH in Bergheim, Germany.
+
+7.1.2 Participants
+
+A total of n = 94 home improvement store customers took
+part in the study. Those were recruited in the entrance area
+of the home improvement store and included in the conve-
+nience sample after giving informed consent. Sociodemo-
+graphic data are presented in Table 14. Participants had a
+mean age of M = 49.9 years (SD = 14.4) ranging from
+
+221
+
+16 to 74 years. Contrary to the previous studies, age was
+not measured with categorial data, but asked for directly.
+This served to create more accurate matched pairs. Partic-
+ipants were arbitrarily subdivided into experimental group
+(shopping with robot assistance, n = 47) and control group
+(conventional shopping without robot assistance; n = 47).
+Randomization was not feasible, due to low customer appear-
+ance on certain days. Instead, matched pairs were formed to
+ensure high comparability between groups. Matched pairs
+were formed by consecutive steps, ﬁrst matching for gender,
+then age, eductional background, and lastly computer skills.
+Age difference between the participants in one pair was kept
+as small as possbile. For categorial data, participants from
+the same group (for example advanced computer skills) were
+matched.
+
+7.1.3 Materials
+
+Evaluation criteria like satisfaction with article search and
+intention to use the robot were operationalized with ﬁve-
+point Likert scales (from 1 = do not agree to 5 = do
+fully agree). Sociodemographic variables were also obtained,
+using oral interviews for data collection. Some evaluation
+criteria were collected via overt observation. Two observers
+recorded whether sought-after articles were obtained (effec-
+tiveness) and measured objective search duration (efﬁciency)
+using a stop watch.
+
+7.1.4 Procedure
+
+After being recruited by an investigator, subjects received
+basic information on the study and on data protection. Fur-
+ther, they were asked whether they came to the store in order
+to buy speciﬁc items and if they did or did not know their
+locations. The shopping robots should be tested with users
+inclined to use the system. People only strolling or looking
+for articles with known location would probably not proﬁt
+from using the shopping assistant TOOMAS and were there-
+fore excluded from the study.
+After giving informed consent, subjects were arbitrarily
+assigned to either the experimental group or the control group
+and asked to search for the item they intended to buy. Both
+kinds of article searches were observed to protocol effective-
+ness and efﬁciency. After the shopping tour, users were inter-
+viewed on sociodemographics, satisfaction with their shop-
+ping activities, and intention to use the robot in the future.
+
+7.2 Results
+
+7.2.1 Effectiveness
+
+With regard to effectiveness, no signiﬁcant difference
+between retrieving an article with or without robot assistance
+
+Table 15 Observed combination of pairs of measured values for robot
+users and robot non-users in regard to ﬁnding sought-after articles (n =
+47 pairs of measured values)
+
+Robot users
+
+Article found Article not found Sum of row
+
+Robot non users
+
+Article found
+30
+6
+36
+
+Article not found
+7
+4
+11
+
+Sum of column
+37
+10
+47
+
+was revealed (see Table 15; McNemar χ2 = 1.0; d f = 1;
+p = 1.0; n = 47 measurement pairs). All in all, ﬁndings
+show that most participants were able to ﬁnd sought-after
+articles with or without robot assistance respectively.
+
+7.2.2 Efﬁciency
+
+Considering efﬁciency, the objective search duration showed
+a signiﬁcant difference. Searching without the shopping
+robot was faster (M = 135.4 s; SD = 85.8) than searching
+with robot assistance (M = 180.3 s; SD = 82.8; t = 2.8;
+d f = 46; p = .003; n = 94). Effect size was medium
+(d = 0.40). Therefore, shopping with robot assistance was
+less efﬁcient than conventional shopping.
+
+7.2.3 Satisfaction and Intention to Use
+
+Regarding customer satisfaction there was no signiﬁcant dif-
+ference between shopping with (M = 4.1; SD = 1.0) and
+without robot assistance (M = 4.1; SD = 0.90; t = 0.30;
+d f = 46; p = .74; n = 94; d = 0.05).
+However, participants who used the robot expressed high
+intention to use the robot in the future (M = 4.11; SD =
+1.32; n = 47).
+
+7.3 Discussion
+
+Shopping with TOOMAS was not more effective, efﬁcient
+or satisfactory than conventional shopping without the robot.
+This could be caused by the following reasons: First of all,
+residual/ﬁnal bugs in the store’s article database could have
+unnecessarily extended search duration. For example, some
+sought-after articles were still not included in the database.
+Secondly, participants used the robot for the very ﬁrst time. It
+can be expected that operation duration will be shorter when
+people are more familiar with handling TOOMAS. Lastly,
+the robot operates more slowly when the store is busy and
+the aisles are full of moving customers, shopping carts and
+staff.Still,measuredeffectiveness,efﬁciencyandsatisfaction
+for shopping with robot assistance were not notably worse
+
+222
+
+compared to conventional shopping, and future intention to
+use the robot was relatively high with robot users. Some non-
+users (53 % of subjects; n = 29) did not retrieve articles
+without help, but asked for help at the information desk either
+immediately (38 %; n = 29) or after an unsuccessful attempt
+to ﬁnd the article on their own (21 %; n = 29).
+
+8 General Discussion
+
+The humanoid mobile shopping robot TOOMAS was devel-
+oped for long-term everyday use in spacious and complex
+home improvement stores. Its main function is to guide cus-
+tomers directly to the locations of the products they are inter-
+ested in. Customers meet the robot at the store entrance and
+interact with it using a graphical user interface on a touch-
+screen where they can select the sought-after articles from
+a database. In addition, they can retrieve price and further
+product information.
+To ensure usability and acceptability of the shopping
+robot the development of TOOMAS followed a user-centered
+design process from the very beginning. This paper presented
+three consecutive evaluation studies addressing usability and
+acceptability that were conducted in different home improve-
+ment stores involving about 350 customers altogether as
+research subjects.
+The ﬁrst formative evaluation study investigated the
+usabilityoftherobot’sarticlesearchsystem.Severalusability
+problems could be identiﬁed and eliminated leading to sig-
+niﬁcantly more successful article searches. In general, partic-
+ipating customers perceived using the robot’s article search
+system as satisfactory and reported high intention to use the
+shopping robot in the future.
+The second formative evaluation study focused on the
+robot’s adaptation to its main task and role. Embodiment,
+voice output, mobility, approaching behavior towards human
+interaction partners, and human-robot interaction were eval-
+uated.Again,someusabilityandacceptabilityproblemswere
+identiﬁed and eliminated (e.g. regarding the robot’s appear-
+ance). Most participants reported high intention to use the
+shopping robot in the future.
+The ﬁrst two studies revealed interesting effects regarding
+sociodemographic variables: In the ﬁrst study, seniors of 65
+yearsorolderwerelesseffectivewhenusingthearticlesearch
+system. Whereas women, younger participants, subjects with
+a higher educational background and more computer skills
+were faster during their search. In the second study, subjects
+with lower computer skills rated the robot’s enunciation as
+more complicated, but experienced the robot’s approaching
+behavior as friendlier. According to these ﬁndings the needs
+of older, less formally educated and less computer experi-
+enced end users should be taken into account to satisfy the
+
+whole diverse target group of home improvement store cus-
+tomers.
+At the end of pilot phase, a third summative evaluation
+study was conducted. Effectiveness, efﬁciency and satis-
+faction with robot-assisted shopping was compared to con-
+ventional shopping without robot assistance. Further, robot
+acceptability was measured. While conventional shopping
+turned out to be faster, there were no differences in customer
+satisfaction between experimental and control group. Again,
+participants’ intention to use the robot in the future was high.
+Some limitations of the three presented evaluation studies
+need to be kept in mind. Data collection was partly conducted
+by overt observations and oral interviews. Therefore, social
+desirability and investigator effects cannot be excluded.
+Although our research involved an unusually large number
+of participants, generalizability is still limited because con-
+venience sampling (instead of random sampling) was used.
+Our research subjects were ﬁrst time users of the shopping
+robot, therefore questions regarding long-term experience
+and acceptability remain open. Intention to use the robot in
+the future was measured as an indicator of acceptability but
+these self-report data need to be conﬁrmed by objective data
+on future use behavior. While some of the identiﬁed usabil-
+ity problems could be eliminated in the course of the itera-
+tive formative evaluation studies, some technical problems
+remained unresolved for economic reasons and affected user
+experience (e.g. problems with missing or mislabeled prod-
+ucts in the article data base provided by the home improve-
+ment store chain).
+The positive ﬁndings of the three presented evaluation
+studies led to the implementation of ten shopping robots in
+threeselectedupscalestoresoftoomBaumarktGmbH,aGer-
+man home improvement trade chain. These stores specialize
+in interior design and are a mix between home improvement
+store and furnishing house. Therefore, they attract more cus-
+tomers in need of consulting. For this reason, the shopping
+robots are supposed to handle all the routine questions about
+article locations, so that staff can focus on providing in-depth
+interior consulting. This purpose was clearly communicated
+to both customers and employees to prevent possible con-
+cerns of shopping robots replacing humans or leading to job
+loss among staff.
+An economic evaluation of the market-ready shopping
+robot TOOMAS is still on the agenda. Such a study should
+aim at clarifying whether and to what degree permanent
+implementation of robots in home improvement stores is
+proﬁtable. Production, purchasing and maintenance costs
+have to be compared to economic proﬁt and added value
+in a systematical way. Ideally, spontaneous robot use by cus-
+tomers should be documented. Additionally, further exam-
+ination of user acceptability over a longer period of time
+promises detailed insights. These do not have to be restricted
+to customer acceptability. Also, employees’ acceptability is
+
+223
+
+of interest: Do they have concerns or fears in relation to the
+robot? Do they see the robots as competition or surveillance
+and how can such concerns be reduced? The launch of shop-
+ping robots should be accompanied by external and inter-
+nal strategic communication activities to assist customer and
+staff acceptability. These PR activities should be systemati-
+cally planned and evaluated as well.
+
+9 Conclusion
+
+Considering long-term goals like implementation of shop-
+ping robots into practice, taking a user-centered approach
+right from the start of development is essential. Still, com-
+prehensive frameworks for service robot usability testing and
+robot acceptability need to be developed. However, trans-
+ferring and adapting approaches from evaluating user inter-
+faces and technology acceptability assessment has proven
+fruitful in case of our project. The theoretical frameworks
+used served as a basis to measure usability with subjective
+and objective measures, as well as taking into account dif-
+ferent sub-groups according to sociodemographic variables
+and computer skills. Thereby, more detailed insights in social
+and technical aspects of human-robot interaction could be
+gained. These results formed the basis for creating solutions
+and ongoing optimizations of the shopping robot TOOMAS
+anditsintroductiontoaneverydayenvironmentlikethehome
+improvement store.

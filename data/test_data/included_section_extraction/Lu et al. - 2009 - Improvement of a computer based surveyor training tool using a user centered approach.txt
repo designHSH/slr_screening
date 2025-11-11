@@ -1,0 +1,955 @@
+Improvement of a computer-based surveyor-training tool
+using a user-centered approach
+
+Cho-Chien Lu, Shih-Chung Kang, Shang-Hsien Hsieh *, Ruei-Shiue Shiu
+
+Department of Civil Engineering, National Taiwan University, 1, Roosevelt Road, Sec. 4, Taipei 10617, Taiwan
+
+a r t i c l e
+i n f o
+
+Article history:
+Received 1 November 2007
+Received in revised form 3 July 2008
+Accepted 9 July 2008
+Available online 21 August 2008
+
+Keywords:
+Iterative and incremental development
+User-centered design
+Software engineering
+Surveyor-training
+Engineering education
+Computer-aided instruction
+
+1. Introduction
+
+In this study, we focus particularly on addressing the usability
+problems of SimuSurvey. We desire to improve this educational
+software by seriously considering the needs of various user groups
+including students, surveying experts, and experienced instructors.
+Users with different backgrounds were involved in each step of the
+redevelopment processes. Through continual improvements, it is
+hoped that SimuSurvey will finally meet all users’ needs. This paper
+summarizes the two iterative cycles of redevelopment. The results
+and experiences are also summarized and presented herein.
+
+2. User-centered design and I&I development
+
+In this research, we integrated the principles of both iterative
+and incremental development and user-centered design, resulting
+in a software redevelopment (or improvement) approach called
+here I&I-UCD. Fig. 1 illustrates the features of the proposed I&I-
+UCD approach. From the figure, it is seen that the redevelopment
+
+Release
+Release
+
+Requirements
+
+Analysis
+
+Plan
+
+Design
+(Paper-based prototype)
+
+Implementation
+
+Analysis
+
+Plan
+
+Design
+(Paper-based prototype)
+
+Implementation
+
+Requirements
+
+nth iteration
+(n+1)th iteration
+
+Fig. 1. I&I-UCD approach.
+
+82
+
+process is a sequence of iterations, each of which is composed of
+five incremental stages: (1) plan; (2) analysis; (3) design; (4)
+implementation; and (5) release. Two sub-iterations exist in both
+the design and implementation phases in which user tests are per-
+formed to evaluate the result of design on implementation until all
+identified usability problems are addressed. The input of each iter-
+ation is a given version of software for redevelopment or improve-
+ment with new requirements from users whereas the output is a
+new released version, resulted from the redevelopment process.
+The released version of one iteration cycle becomes the starting
+version of the next iteration. The iterations proceed until all users
+are satisfied with the results or until the resources for software
+redevelopment are exhausted.
+To better meet the needs of SimuSurvey users of different back-
+grounds and while simultaneously achieving the educational goals
+of SimuSurvey applications, we employed the I&I-UCD approach to
+redevelop SimuSurvey in this research. Fig. 2 shows the I&I proce-
+dure for SimuSurvey redevelopment. Two iterations of redevelop-
+ment cycles were carried out. The first redevelopment iteration
+starts from SimuSurvey R0 [10] and ends with SimuSurvey R1,
+while the second iteration improves SimuSurvey R1 resulting in
+SimuSurvey R2. The proposed I&I-UCD approach focuses on the
+redevelopment of existing software which may still in the form
+of a prototype.
+
+3. Realization of I&I-UCD approach for SimuSurvey
+redevelopment
+
+This section presents the realization of the proposed iterative
+and incremental user-centered development (I&I-UCD) approach
+
+to redevelop SimuSurvey. As mentioned previously, the I&I-UCD
+approach includes five major phases: plan, analysis, design, imple-
+mentation, and release. Table 1 shows the major activities involved
+in each phase of SimuSurvey redevelopment. In the plan phase,
+both the potential users and design goals are defined. In the anal-
+ysis phase, a feasibility study and multiple user tests (i.e., inter-
+view, questionnaire, observation, usability tests, and field tests)
+are performed to refine the original users’ requirements from the
+education standpoint. In the design phase, usability tests are car-
+ried out to specifically evaluate the design result, i.e., the low-fidelity
+prototype [14] and its interaction with users.
+In the implementation phase, field tests and usability tests are conducted
+to verify the implementation result, i.e., the high-fidelity prototype
+[14] and its interaction with users. We focus especially on users’
+behaviors and the manipulations of SimuSurvey in the field because it is more likely to identify the actual usability problems
+when the environmental aspects are considered in the user tests.
+The following sub-sections discuss the implementation details of
+the I&I-UCD approach for SimuSurvey redevelopment in each
+phase.
+
+3.1. Plan phase
+
+The goal of the plan phase is to develop an overall plan for
+improving the given software to meet users’ requirements. Usabil-
+ity and software engineers collaborated in this phase to categorize
+the users into groups. Four groups were defined including
+instructors, surveying experts, experienced students, and novice
+students. These groups were involved in different phases of the
+redevelopment iterations.
+
+Release
+
+Design
+
+Analysis
+
+Plan
+
+High-fidelity prototype
+
+Implementation
+
+Usability tests/Field tests
+
+Paper-based prototype
+
+Usability tests
+
+Development lifecycle
+First iteration
+Second iteration
+
+Fig. 2. I&I procedure for redevelopment of SimuSurvey.
+
+83
+
+Table 1
+Major activities, requirements gathering methods and participants in each redevelopment cycle
+
+Redevelopment lifecycle/major activities
+Requirements gathering methods
+Participants of first iteration
+Participants of second iteration
+
+Users (number)
+Developers (number)
+Users (number)
+Developers (number)
+
+Plan
+Define potential users
+Usability engineers (3)
+Usability engineers (3)
+Define design goals
+Software developers (2)
+Software developers (2)
+Plan requirements gathering procedure
+
+Analysis
+Feasibility study: interview
+Instructors (5)
+Usability engineers (1)
+Evaluate original interface
+Feasibility study: questionnaire
+Novice students ( 323)
+Usability engineers (1)
+Gather user requirements
+Analyze user requirements
+User tests: interview
+Instructors (4)
+Usability engineers (3)
+Instructors (1)
+Usability engineers (3)
+Experts (4)
+Software developers (2)
+Students (5)
+Software developers (2)
+Experienced students (14)
+Novice students (26)
+User tests: questionnaire
+Novice students (26)
+Usability engineers (3)
+Instructors (1)
+Usability engineers (3)
+Students (5)
+Software developers (2)
+User tests: observe user’s act
+Novice students (26)
+Usability engineers (3)
+Instructors (1)
+Usability engineers (3)
+Software developers (1)
+Students (5)
+Software developers (2)
+
+Design/paper-based prototype
+User tests: usability tests
+Experienced students (3)
+Usability engineers (3)
+Experienced students (3)
+Software developers (2)
+Model tasks
+Software developers (2)
+Create storyboards and content diagrams
+Create low-fidelity prototype
+Iteratively improving functional and interface design
+(based on results from usability tests)
+
+Implementation/evaluation
+User tests: usability tests
+Experienced students (3)
+Usability engineers (3)
+Experienced students (4)
+Usability engineers (3)
+Create high-fidelity prototype
+Software developers (2)
+Software developers (2)
+Identify usability problems and gather suggestions on innovation
+User tests: field tests
+Novice students (86)
+Usability engineers (1)
+Novice students (10)
+Usability engineers (1)
+Iteratively refine high-fidelity prototype
+
+Release
+Usability engineers (1)
+Usability engineers (1)
+Apply to a real training class
+Identify new usability problems and gather new requirements
+
+84
+
+Usability and software engineers also worked together to define
+the design goals from the user requirements. Since these require-
+ments were provided only by users from their experiences, they
+need to be further verified and elaborated to become concrete
+design principles. In this study, the usability and software
+engineers developed a testing plan (i.e. feasibility study and user
+tests) for the following phases.
+
+3.2. Analysis phase
+
+The major goal in the analysis phase is to define concrete and
+detailed requirements that need to be achieved by the end of the
+redevelopment iteration. There are two major tasks in this phase.
+The first task is to evaluate the performance of the given software
+for redevelopment. Developers interviewed instructors who have
+extensive experience in surveyor education and conducted ques-
+tionnaire surveys on students to understand their attitudes toward
+SimuSurvey. The second task is to gather and analyze the usability
+problems of SimuSurvey which were then addressed in the design
+phase. We conducted detailed user tests especially with those
+users who have negative attitudes toward SimuSurvey. From more
+in-depth interviews, detailed questionnaires, and observations, we
+then summarized a list of usability problems and a list of pros and
+cons for SimuSurvey. Software developers were involved in the
+analysis process as we expected that they could better understand
+the users’ requirements and be aware of usability problems during
+the design and implementation phases.
+
+3.3. Design phase
+
+In the design phase, the conclusions about software perfor-
+mance and usability obtained from the analysis phase were used
+to redesign SimuSurvey. The major activities in this phase include:
+
+(1) The creation of storyboards and content diagrams to illus-
+trate the expected interaction between users and SimuSur-
+vey. The storyboards include sequences of sketches or
+screen layouts that focus on the main actions and interac-
+tions with users in possible scenarios. Textual descriptions
+of task flows are turned into visual illustrations of interac-
+tions in the storyboards. We also developed content dia-
+
+grams to describe task details because information flows
+and logics of SimuSurvey cannot be presented well by just
+using storyboards alone.
+(2) The creation of low-fidelity prototype by sketching a set of
+user interfaces that can support further usability tests. After
+storyboards and content diagrams are created, software
+developers create low-fidelity prototypes by sketching the
+user interfaces on paper. This method is also called paper-
+based prototyping. Although detailed system functions are
+not specified, users can interact with the system interface
+with the assistance of the developers. The major benefit of
+the paper-based prototype is that, it allows designers to
+develop multiple solutions in a relatively shorter time and
+with lower cost [29]. Therefore, it gives them more freedom
+to explore the design alternatives.
+(3) Running usability tests to determine whether the new
+design is able to solve the identified usability problems.
+Tests were conducted to verify the usability of the low-fidelity prototype. Three students who had taken fundamental
+surveying courses were selected as the participants of the
+usability tests. During the tests, we in particular observed
+their behaviors when they interacted with the paper-based
+interfaces, to confirm whether the interface can support user
+activities and envisage how it might be further developed to
+meet their information and interaction needs. During this
+interactive process, many usability problems were identified
+and solved.
+
+The second and third steps were performed iteratively until we
+obtained a satisfactory design that resolves all usability problems
+found in the analysis phase.
+
+Fig. 3 shows an example of a paper-based prototype developed
+in this study. Since the designers and users have various ideas
+about the interface for controlling the vertical angle in SimuSurvey,
+the main purpose of this prototype is to evaluate the appropriate-
+ness of the design of the vertical angle controller. In the original
+version of SimuSurvey, the vertical angle controller was designed
+based on a drive screw controller of real survey instrument (Fig.
+3a). However, after several design and prototype iterations, the
+design illustrated in Fig. 3b was found to be more suitable. The
+users found that adjusting the vertical angle of SimuSurvey using
+
+Fig. 3. An example of a low-fidelity prototype for SimuSurvey. (a) The drive screw of a surveying instrument for vertical angle control and its corresponding simulated control
+icon in SimuSurvey R0. (b) The vertical angle control drawn in the low-fidelity prototype.
+
+85
+
+a scrollbar (as in Fig. 3b) was more intuitive than using a virtual 3D
+drive screw. This is one example where a low-fidelity prototype
+helped the designer to efficiently determine the user requirements.
+
+Fig. 4 shows two snapshots of usability tests using low-fidelity
+prototypes during the design phase. In this phase, we sketched the
+planned user interface elements of SimuSurvey (menus, buttons,
+icons, windows, dialogue sequences, etc. as shown in Fig. 4a). Once
+the paper-based prototype has been prepared, a developer sat in
+front of a user, played and subsequently played the role of the com-
+puter by moving interface elements around in response to the
+user’s actions. This interactive communicating process refers to
+usability tests (Fig. 4b). The difficulties encountered by the user
+and their comments were noted down by an observer and recorded
+on video. The paper-based prototype approach can be useful for
+demonstrating the interface layouts and iteratively exploring
+design alternatives with users in a relatively short time frame.
+After several design interactions, we finalized the design of the
+user interfaces.
+
+3.4. Implementation phase
+
+In the implementation phase, the major activities include: (1)
+creation of a high-fidelity prototype based on the finalized low-
+fidelity prototype; (2) use of the high-fidelity prototype to gather
+usability problems and innovation suggestions from field tests
+and usability tests; and (3) iterative and incremental refinement
+of the high-fidelity prototype until participants of the field tests
+are satisfied. High-fidelity prototypes are built using software tools
+and have the appearance of the working software products. The
+
+high-fidelity prototype, because it is more detailed than the low-
+fidelity prototype, gives the users greater opportunities to explore
+all the possibilities of using the software system in real cases [30].
+After the low-fidelity prototype has been finalized, we used the
+Microsoft Visual Studio.NET [31] development environment with
+C# programming language [32] to implement a high-fidelity proto-
+type of SimuSurvey that included most functions required for the
+surveyor-training. Since we had tested and finalized the user inter-
+face during the iterative paper-prototyping, in the implementation
+phase we just need to follow the design shown by the paper-pro-
+totype to create the interfaces on the computer.
+When the high-fidelity prototype (i.e. prototype on computers)
+has been completed, we again conducted usability tests with stu-
+dents. The high-fidelity prototype of SimuSurvey was deployed in
+an actual surveying class for a field tests. Students were separated
+into two groups. One group was taught using only physical instru-
+ments. The other group was taught using both physical instru-
+ments and SimuSurvey. The instructor adopted SimuSurvey in
+the classroom to introduce surveying concepts and to demonstrate
+manipulation of the instruments. Students were allowed to down-
+load SimuSurvey from internet to their laptop or standard build PC
+for practice after class. Fig. 5a shows a scenario of using a surveying
+instrument in the field and Fig. 5b shows the scenario of using Sim-
+uSurvey in the classroom. During the study, a developer partici-
+pated in the class and observed the students’ learning processes.
+Through close observation, the developer was able to directly
+collect suggestions from the users.
+We also conducted rigorous usability tests on the high-fidelity
+prototype of SimuSurvey. In this study, we evaluated the usability
+
+Fig. 4. Usability tests by using low-fidelity prototypes. (a) Low-fidelity prototypes. (b) Testing prototype with users.
+
+Fig. 5. Field tests. (a) Physical instruments. (b) Virtual instruments.
+
+86
+
+in five dimensions: efficiency, effectiveness, degree of engagement,
+fault-tolerance, and ease-to-learn, referred to as 5Es [33]. The effi-
+ciency dimension is used to indicate the speed in which the mod-
+eled
+tasks
+can
+be
+completed.
+Effectiveness
+deals
+with
+the
+completeness and accuracy with which users achieve teaching
+and learning goals. Degree of engagement is indicated by how
+pleasant, satisfying or interesting a used interface is. Fault-toler-
+ance is about how well SimuSurvey prevents errors and helps the
+user recover from mistakes that might occur. Ease-to-learn is used
+to indicate how easily the students can learn the system based on
+the hints provided by the system.
+
+Fig. 6 shows the setup of usability tests. Fig. 6a illustrates the
+testing setup of the room while Fig. 6b shows a snapshot during
+the usability tests. The users were assigned simulation surveying
+tasks and to perform the task using SimuSurvey. This setup allows
+two participants in the test. A facilitator sat beside the participants
+to guide them through the test. Two observers, one sitting in front
+and the other behind, observed and recorded the users’ behaviors
+during the test. The results were then used to improve the
+high-fidelity prototype in preparation for an release version of
+SimuSurvey.
+
+3.5. Release phase
+
+After finalizing the high-fidelity prototype, a release version
+of SimuSurvey was created. In this research, the release versions
+of SimuSurvey from the two redevelopment iterations, SimuSur-
+vey R1 and SimuSurvey R2, respectively, have been made public
+on the internet at www.simusurvey.net for users to download.
+The users are also encouraged to post feedback, technical prob-
+lems encountered, and suggestions for SimuSurvey. One usability
+engineer was assigned to maintain the website, reply to the
+users’ postings and troubleshoot the technical problems of the
+software.
+
+4. Results of simuSurvey improvement
+
+In this section, the results of SimuSurvey improvement that
+evolve through two redevelopment iterations are presented. We
+first describe the original design of SimuSurvey (i.e., SimuSurvey
+R0) [10] and report the redevelopment experiences of the first iter-
+ation (i.e., redevelopment of SimuSurvey R1). We then report the
+experiences of second redevelopment iteration (i.e., redevelop-
+ment of SimuSurvey R2). Fig. 7 illustrates the evolution of Simu-
+Survey throughout the two redevelopment iterations using the
+screenshots of representative interface designs of different Simu-
+Survey versions.
+
+4.1. Original design of simusurvey
+
+Fig. 7a shows the original design of SimuSurvey. It includes a
+simulation view, scope view, user control interface and a learning
+behavior recorder.
+The simulation view displays the major elements in a survey
+environment, including a survey instrument and multiple mea-
+surement poles (survey targets).
+On the other hand, a view controller is provided to allow users
+to change the viewpoint of the scene. Users may select the top
+view, front view, right view, or perspective view anytime during
+operation. The surveying tasks can easily be displayed in each of
+these views, which assists instructors in demonstrating examples
+and clarifying surveying concepts.
+The scope view, displayed at the top-right of the original user
+interface, shows what a user would see when operating a real sur-
+vey instrument. This scene changes as users change the telescope
+orientation or height of the tripod. Users are also able to zoom in
+and out of the scope view by adjusting the telescope focus value
+on the virtual instrument.
+The user control interface allows users to manipulate the virtual
+instrument. The manipulation functions are grouped into six cate-
+gories with associated functions on a separate tab. The control tab
+contains the functions for controlling the telescope. The tripod tab
+contains the functions for controlling the angles between each leg
+of the tripod and their lengths. The other tabs contain functions for
+setting lighting, view, measurement pole positions, and the ground
+level.
+The learning behavior recorder, as provided in the original
+SimuSurvey, allows users to record, and playback operations they
+performed on the virtual instrument. Instead of recording the ani-
+mation frame by frame, SimuSurvey parameterizes the operations,
+and stores the data on the computer hard disk. In this way, the
+required storage space is significantly less than that using record-
+ing screen films.
+When a user selects the replay function, SimuSurvey reads and
+decodes the time history of the parameters from the hard disk, and
+renders the animation in real-time. This function allows the
+instructor to review the details of each trainee’s operations and
+locate when and where they erred. Students can also use this
+function to review standard procedures and practice for each
+trainee’s operations and to locate when, for perfect command (or
+perfection).
+Because SimuSurvey R0 was not developed with UCD and the
+users were not involved during the development processes, sev-
+eral problems have been reported when the tool was applied in
+actual surveying classes [11]. This also motivated us to have
+
+Fig. 6. Setup of usability tests. (a) Room layout. (b) A snapshot during the usability tests.
+
+87
+
+gone through two iterations of redevelopment processes for
+addressing these problems and more others discovered during
+the iterations. In the rest of this section, we share our experi-
+ences on two iterations of redevelopment of SimuSurvey using
+the proposed I&I-UCD approach. The focuses of discussions are
+placed on how we identify the needs of users and usability prob-
+lems of SimuSurvey, and address them for improving the soft-
+
+ware
+tool
+through
+the
+incremental
+and
+iterative
+design-
+implementation-evaluation processes.
+
+4.2. First iteration of redevelopment
+
+The first iteration started with SimuSurvey R0. We first
+conducted a feasibility study and user testing to gather user
+
+Fig. 7. The interface evolvement of SimuSurvey. (a) SimuSurvey R0. (b) Low-fidelity prototype. (c) High-fidelity prototype (SimuSurvey V1). (d) Release version (SimuSurvey
+R1). (e) SimuSurvey R1. (f) Low-fidelity prototype. (g) High-fidelity prototype (SimuSurvey V2). (h) Release version (SimuSurvey R2).
+
+88
+
+requirements and identify usability problems. Then, the original
+design of SimuSurvey R0 was developed into a low-fidelity proto-
+type, followed by a high-fidelity prototype; from which the release
+version, SimuSurvey R1, was produced.
+The effectiveness of using SimuSurvey R0 for instruction was
+evaluated by a feasibility study. Five experienced instructors and
+323 novice students from four schools were involved. We first
+demonstrated the use of SimuSurvey R0 and then asked them to
+individually perform a basic surveying task using the virtual
+instrument. We then interviewed the instructors and conducted
+a questionnaire and a quiz after the demonstration. From the
+instructors’ interviews we found that all five instructors had gener-
+ally positive attitudes toward introducing SimuSurvey R0 in the
+surveying training. However, they pointed out many important
+features, such as the interface for customizing survey scenarios,
+are still lacking and that this may impede the application of Simu-
+Survey in an real-life application.
+The results from the student questionnaires and quiz [11,34]
+can be summarized as follows: (1) 91% of students have a positive
+attitude toward using SimuSurvey R0 for self-learning the concepts
+of surveying instrument operations, and (2) 60% of students passed
+the quiz after using SimuSurvey R0 to learn a basic surveying task.
+these results show that SimuSurvey can be a helpful tool for
+surveyor-training and is worthy of further development. More
+detailed results can be found in [34].
+The major activities for user testing in the design and analysis
+phases include: (1) interviews with users; (2) a questionnaire
+about users’ backgrounds and usability problems with the original
+system; and (3) observations of users’ behavior on the system. Four
+instructors, 4 surveying experts, 14 experienced students who had
+taken a basic surveying course, and 26 novice students selected
+from the 323 students involved in the aforementioned feasibility
+study were involved in these user testing activities. The major
+usability problems found from the user tests [35,36] are summa-
+rized as follows:
+
+ Because the mouse control (for navigation) in the simulation
+view is implicit, users without training could not intuit the
+navigation methods.
+ The cross-hairs are missing from the scope view, even though
+the skill of aiming at a target using the cross-hairs are very
+important when students learning the survey instruments.
+ It was confusing for the users to control both the vertical and
+horizontal rotation of the telescope on a 2D display.
+
+4.2.1. Low-fidelity prototype
+
+Fig. 7b shows one of the paper-based interfaces we developed in
+the first iteration. As shown in the figure, the entire interface is
+sketched, and even though the sketching process was interspersed
+with discussions, it still took less than 15 min to develop. Using the
+prototype, we attempted to find solutions for the usability prob-
+lems we found in the previous step. During the process, three expe-
+rienced students participated in the usability tests. The major
+improvements made in the paper-based prototype for SimuSurvey
+R0 are:
+
+ Three icons were added to the bottom of the simulation window
+showing the user how to navigate the virtual environment.
+ The cross-hairs that represent the pattern of a real survey instru-
+ment were added. Students were then able to practice the true-
+to-life aiming procedure.
+ Two circles were added to the scope view to display the rotation
+angles of the telescope. A circle labeled with the letter V repre-
+sents the vertical angle of the telescope, and a circle labeled with
+the letter H represents the horizontal angle of the telescope.
+
+4.2.2. High-fidelity prototype
+After finalizing the design of the low-fidelity prototype, we
+developed a high-fidelity prototype, as shown in Fig. 7c, which
+is based on the final paper-based prototype. We used the C#
+programming language in the Visual Studio.Net development
+environment to implement the high-fidelity prototype. Since
+Visual Studio.Net provides a series of rapid application devel-
+opment
+(RAD)
+tools,
+we
+were
+able
+to
+reduce
+the
+time
+required.
+To verify the design, we demonstrated the high-fidelity proto-
+type to three experienced students and conducted usability tests
+during which we collected their feedback. The usability tests were
+conducted using the 5Es usability tests approach [33], which is
+useful for requirements elicitation and can facilitate the identifi-
+cation of issues that need to be addressed.
+The resulting suggestions from the usability tests are summa-
+rized as follows:
+
+ Because the aiming and reading of the level-rod scale (a scale
+for height determination) is a critical skill, most experienced
+students suggested adding a detailed level-rod scale to the
+scene.
+ The ability to manipulate the telescope with precision is neces-
+sary. A real instrument usually includes a set of clamps (clamps
+are tightened to lock the telescope) and fine motion screws
+(screws are turned to rotate the telescope) in both the horizontal
+and vertical directions. SimuSurvey R0 only supported a set of
+fine motion screws for rotating the telescope at the degree level.
+Whereas, we implemented a set of fine motion screws for rotate
+telescope at minute and second levels to improve on SimuSur-
+vey R0.
+
+To investigate the usability of SimuSurvey further, we con-
+ducted field tests on 86 novice students and collected their feed-
+back. Our suggestions based on the feedback of the field tests are
+summarized as follows:
+
+ There is a need to visualize the motion of the telescope to facil-
+itate demonstrations and explanations.
+ The scene in the virtual world needs to be more realistic to
+enhance students’ interest.
+
+4.2.3. First release version of SimuSurvey
+Following the suggestions from both the usability tests and field
+studies, we implemented a new interface for SimuSurvey (denoted
+as SimuSurvey R1) as shown in Fig. 7d. The major improvements
+built into SimuSurvey R1 are listed below:
+
+ A new level-rod scale was added. It is similar in appearance to a
+real ruler and displays detailed interval marks.
+ A fine-tuning function for rotating the telescope vertically and
+horizontally was added. Because it is difficult to rotate a knob-
+type icon using a mouse, we designed buttons for adjusting
+the minutes and seconds of rotations in both the vertical and
+horizontal directions.
+ A function to illustrate the motion of the telescope in the
+simulation view was implemented. As seen in Fig. 7d, a
+series of red points show the trajectory of the focus of the
+telescope. Users can easily understand the motion path of
+the telescope.
+ The virtual environment was enriched by adding texture;
+making the sky and ground look more realistic. A panel was
+also included for users to add, delete, select, and replace the
+texture in order to create a more visually pleasing interface
+for learning.
+
+89
+
+4.3. Second iteration of redevelopment
+
+Many users downloaded SimuSurvey R1 and reported several
+previously unidentified problems. Hence, work began on the sec-
+ond iteration. We again followed the I&I-UCD procedure and devel-
+oped both low-fidelity and high-fidelity prototypes for usability
+evaluations. Users were involved throughout the development.
+Finally, the second release version, SimuSurvey R2, was developed.
+The detailed processes and results are summarized as follows.
+
+4.3.1. SimuSurvey R1
+SimuSurvey R1, as shown in Fig. 7e, was the starting point for
+redevelopment in the second iteration. The download count of
+download for SimuSurvey R1 at that time was approximately
+150. To collect user feedback, one of the usability engineers in
+the development team was assigned to maintain the download
+website, answer technical queries, and most importantly gather
+users’ opinions that might be useful for defining new requirements
+for the redevelopment iteration. The most significant user feedback
+collected are summarized below:
+
+ Because a clear demonstration of the spatial relationship between
+the surveying instrument and targets is crucial in explaining the
+surveying principles, several instructors requested adding a new
+function to allow the visualization of the virtual environment
+(or space) from multiple viewpoints, such as simultaneously
+showing the top view and the front view of the site. This capability
+is especially helpful when an instructor uses a large projector
+screen or a smart board [37] in the classroom.
+ It was found that, without external help, novice students often
+encountered difficulty in using SimuSurvey R1 to practice sur-
+veying tasks before class because they have little experience
+manipulating a real surveying instrument and know little about
+where to start and how to perform the surveying tasks. There-
+fore, we need to provide a scaffolding system and a real-time
+help tool to facilitate self-learning. These additional functions
+will help them become familiar with the software, manipula-
+tions required and overall constructs of surveying.
+
+We started the redevelopment process based on the above two
+new requirements. As with the processes in the first iteration, we
+conducted a usability evaluation to identify which new functions
+could satisfy the requirements. The user tests involved an experi-
+enced instructor with twelve years experience of teaching survey-
+ing and five students with various degrees of learning experience
+in surveying education. Of the five students, one had taken a basic
+surveying course with SimuSurvey R1, one had taken a basic sur-
+veying course without SimuSurvey R1, one was in the process of
+taking his first basic surveying course with SimuSurvey R1, and
+two were in the process of taking their first basic surveying course
+without SimuSurvey R1. From the usability evaluation, we then
+defined specific design goals:
+
+ An additional function needs to be implemented to allow users
+to freely change the view layout. That is, users should be able
+to the display top view, side view, front view, rear view, perspec-
+tive view, or any such combination on the screen according to
+their preferred layout. Additionally, the user should be able to
+manipulate each view window independently of the other win-
+dows. This multi-view function makes demonstration of 3D sur-
+veying scenarios more comprehensive and therefore provides
+better support for the teaching activities in surveying classes.
+ A learning menu that lists the topics of surveying lessons is
+needed to guide students through the learning process. Students
+can select the topic they would like to learn from the menu and
+SimuSurvey will then setup the surveying scenario that includes
+
+the necessary surveying instrument, virtual environment, and
+surveying targets for the specific topic. This learning menu
+should reduce the problem of learning disorientation [38–40]
+and give students more confidence to learn efficiently using a
+relatively complicated tool.
+
+4.3.2. Low-fidelity prototype
+
+Fig. 7f shows an example screenshot of a low-fidelity prototype
+created during paper prototyping in the second iteration. Using the
+prototype, we attempted to find solutions for the usability problems
+uncovered during the previous step. Three experienced students
+participated in helping verify whether the design fulfills users’
+needs. The major improvements made to SimuSurvey R1, as demon-
+strated using the low-fidelity prototype, are summarized as follows:
+
+ Four selection icons were added to allow users to select one of
+four display modes, i.e., single view, two-view, three-view, and
+four-view mode. As shown in the middle right of Fig. 7f, the
+icons were designed by illustrating different layouts of the
+multi-view. We found that users were able to identify the mean-
+ing of the icons easily.
+ A learning menu was added in the prototype. The learning menu
+included four learning units and a function for creating custom-
+ized learning units. The four learning units include the most
+important topics of a traditional surveying course, namely, (1)
+level surveying, (2) angle surveying, (3) reading a level-rod scale,
+and (4) transverse surveying. This menu automatically pops up
+when the user launches SimuSurvey for the first time. If they
+do not need the menu, they can check the check box with ‘‘In
+future, do not display the learning menu on startup”. From the
+user tests, we found that the learning menu effectively facili-
+tates students to intuitively utilize SimuSurvey and to commit
+to the learning process.
+
+4.3.3. High-fidelity prototype
+
+Fig. 7g shows a screenshot of the high-fidelity prototype as
+developed based on the finalized paper-prototype in the second
+iteration.
+To verify the design, we included 14 users in the development
+process. Of the 14 students, four were selected from those that
+participated in the usability evaluation of the first redevelopment
+iteration. These four participated in the usability tests in a
+controlled environment as shown in Fig. 6a. Ten students, also
+recruited from the participants of the first iteration, participated
+in the field study.
+The conclusions drawn from both the usability tests and the
+field study are summarized as follows:
+
+ Although the learning menu with a list of learning topics had
+been provided to guide students’ learning, students still found
+difficulties to use SimuSurvey after entering each topic. They
+suggested the addition of an onscreen help tool’ that guides
+the users through the surveying tasks in a step by step manner
+and gives hints to the users when they encounter either concep-
+tual or manipulation problems.
+ The elimination of errors is one of the important topics in sur-
+veying. However, instructors often face challenges to illustrate
+the concept of errors in the classroom situation. Therefore, the
+instructors suggested adding a module for error visualization
+in SimuSurvey.
+ Many users pointed out the designs of some icons, such as but-
+tons for multi-view functions, are not intuitive. Also, some con-
+trolling functions, such as the telescope controller, lack ease of
+use. It is suggested that developers apply more considerate
+designs for icons and controllers.
+
+90
+
+4.3.4. Second release version of SimuSurvey
+Following the aforementioned suggestions from user tests, we
+improved the high-fidelity prototype and implemented a new
+release version of SimuSurvey, i.e. SimuSurvey R2, as shown in
+Fig. 7h. The major improvements of SimuSurvey R2 from the
+high-fidelity prototype are summarized as follows:
+
+ A virtual tutor, manifested as a moveable pop-up window, was
+added to guide and help students using SimuSurvey to build
+their understanding of concepts and their skills for each survey-
+ing topic. The content in the pop-up window includes text and
+figures corresponding to the surveying scenarios and tasks.
+The virtual tutor provides hints and step-by-step guides.
+ The Error module was developed and added to simulate and
+illustrate the instrumental errors existing in an actual instru-
+ment. As shown in the scope view in Fig. 7h, a sub-window
+was added on lower-right corner of the scope view to display
+instrumental errors. This function makes SimuSurvey signifi-
+cantly more realistic. Besides, having the option of turning the
+error module on and off, allows users to comprehend the inﬂu-
+ence of errors on surveying tasks more easily. The error module
+also provides an interface for users to modify and edit parame-
+ters related to the instrumental errors.
+ Several icons were redesigned in SimuSurvey R2. For example,
+we used arrow image icons, instead of buttons, for users to
+rotate and move a virtual instrument in a more intuitive man-
+ner. We added the grid line on the ground (as shown in the tele-
+scope view in Fig. 7h), to help users understand the spatial
+relationships inside the virtual environment.
+
+From the final interviews with students and the field observa-
+tion on user groups, SimuSurvey R2 has been shown to be more
+practical for use in actual surveying classes [36].
+
+5. Discussions
+
+In this study, we used the I&I-UCD approach to redevelop Sim-
+uSurvey. Two iteration cycles were performed and two release ver-
+sions of SimuSurvey, SimuSurvey R1, and SimuSurvey R2, were
+delivered. The redevelopment involved 346 users with different
+backgrounds and five developers with various expertise. After such
+an extensive experience, the following points are worthy of
+discussion:
+
+(1) Using storyboards and content diagrams in early design
+phases is effective for identifying user’s requirements.
+Because the application scenarios and workflow are illus-
+trated, users can understand the design more easily and
+determine whether the design fulfills their needs.
+(2) We found that paper-based prototypes effectively aided the
+developers to iteratively obtain user feedback during the
+design process. Paper-based prototypes help developers to
+understand why design elements work or fail, and to iden-
+tify new functions. We also found, however, that paper-
+based prototypes may only be suitable for qualitative evalu-
+ations. They are lack sufficient detail to support quantitative
+decisions. Besides, because developing low-fidelity proto-
+types is quick and inexpensive, we suggest developing mul-
+tiple (more than five in our case) prototypes for identifying a
+complete set of user requirements.
+(3) High-fidelity prototyping is also a powerful technique. In
+this study, we found that high-fidelity prototypes were
+effective for discovering usability problems, especially those
+that can only be identified through observing interactions
+between the user and the computer system during the exe-
+
+cution of a real survey task. Unlike paper-based prototypes,
+it is relatively costly to develop high-fidelity prototypes. We
+suggest developers start from one high-fidelity prototype
+and revise it recursively based on the results of usability
+tests.
+(4) In this study, we found that recruiting different users in each
+phase (including plan, analysis, design, implementation, and
+release) was extremely important because a computer-aided
+instruction tool like SimuSurvey needs to seriously consider
+the needs of both students and instructors. Conducting dif-
+ferent kinds of user tests was also needed in each step of
+the redevelopment process. By iterative improvement, the
+final result eventually satisfies all identified user needs.
+(5) A surveyor-training tool should provide users with experi-
+ences similar to those of using a real instrument. However,
+based on the feedback from users, the interface design of
+controllers for the virtual instrument should place more
+emphasis on user-friendliness rather than on reality. When
+users manipulate the virtual instrument using the control-
+lers, the virtual scene and the scope view should provide
+instant feedback. The design of the screen layout for display-
+ing the virtual scene and the scope view should allow users
+to change vantage point and display method freely and
+synchronously.
+
+6. Conclusions
+
+Although many concepts in I&I and UCD approaches may not be
+new in software engineering, their realization and integrated
+application to real examples are seldom reported. This research
+proposes an integrated I&I-UCD approach for software redevelop-
+ment. The realization of this approach has been presented and
+discussed. The experiences of applying the approach to redevelop-
+ment of a computer-aided instruction tool for surveyor-training,
+called SimuSurvey, have been reported and shared.
+During the redevelopment of SimuSurvey, we found that the
+proposed I&I-UCD approach is effective for developing or improv-
+ing software systems. I&I-UCD involves many user tests (i.e., inter-
+view, questionnaire, observation, usability tests, and field tests) to
+gather integrated requirements for users of different backgrounds
+at different stages in the development. This approach is particu-
+larly suited for developing a complicated computer system such
+as SimuSurvey, which is designed to support users of various back-
+grounds, e.g. instructors and students at different stages of their
+study, for multi-objective tasks. By using I&I-UCD, in which differ-
+ent users are involved during the design process, the design
+evolves from coarse proposals to concrete targets. Such an evolve-
+ment is typical in the development of a complex software project.
+In addition, we also find that prototyping techniques include pa-
+per-based prototype and high-fidelity prototype are effective for
+exploring design alternatives and efficiently obtaining user feed-
+back that iterates back into the design and implementation pro-
+cess. Based on the results of this empirical study, the I&I-UCD
+approach could also be applied to develop or improve other com-
+plex systems.

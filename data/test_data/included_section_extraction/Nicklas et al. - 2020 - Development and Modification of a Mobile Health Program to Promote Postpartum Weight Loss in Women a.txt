@@ -1,0 +1,451 @@
+Original Paper
+
+Development and Modification of a Mobile Health Program to
+Promote Postpartum Weight Loss in Women at Elevated Risk for
+Cardiometabolic Disease: Single-Arm Pilot Study
+
+Jacinda M Nicklas1, MA, MD, MPH; Jenn A Leiferman2, PhD; Steven Lockhart3, MPH; Kristen M Daly2, MPH,
+MSc, PhD; Sheana S Bull2, MPH, PhD; Linda A Barbour4,5, MD, MSPH
+
+1Division of General Internal Medicine, University of Colorado School of Medicine, Aurora, CO, United States
+2Community and Behavioral Health, Colorado School of Public Health, Aurora, CO, United States
+3Adult and Child Consortium for Health Outcomes Research and Delivery Science, University of Colorado School of Medicine, Aurora, United
+States
+4Division of Endocrinology, Metabolism and Diabetes, University of Colorado School of Medicine, Aurora, CO, United States
+5Division of Maternal Fetal Medicine, University of Colorado School of Medicine, Aurora, CO, United States
+
+Jacinda M Nicklas, MA, MD, MPH
+Division of General Internal Medicine
+University of Colorado School of Medicine
+12348 E Montview Blvd
+Aurora, CO, 80045
+United States
+Phone: 1 3037249028
+
+Methods
+
+Development of the Fit After Baby Program
+
+We developed the mHealth Fit After Baby program using
+evidence-based strategies for weight loss, cardiometabolic
+disease prevention, and behavior change based on current
+evidence and best practices [34]. Guided by the Integrated
+Theory of mHealth [35], we incorporated a theoretical
+framework that included traditional health communication and
+behavioral theories including the elaboration likelihood model
+[36], the theory of planned behavior [37], the life-course
+approach [38,39], and Bandura’s model of social cognitive
+theory for behavioral change [40], as well as engagement
+strategies from design-thinking, user-centered design, and
+mobile technology in health promotion [41-45]. This inclusion
+of multiple and diverse theoretical perspectives in app design
+is critical to the creation of a mobile solution that is engaging,
+effective, and scalable. The content and structure were adapted
+from the DPP specifically for a postpartum population, and we
+incorporated features and techniques that have proven efficacy
+for weight loss such as self-monitoring, goal setting, remote
+coaching with tailored feedback, and social support [46-49].
+We designed the Fit After Baby app to integrate with the
+commercial apps Fitbit and MyFitnessPal. Gamification through
+points and badges was used to motivate behaviors through
+accountability and reinforcement [50]. The use of game-like
+components in health and nutrition apps is widespread and some
+initial studies demonstrate that women in particular may derive
+social benefit from gamification [51-53]. The Fit After Baby
+program also included the engagement strategies of push
+notifications to remind or trigger the user to interact with the
+app, as well as favoriting, in which users could curate their own
+health library for future use and thereby personalize the app.
+
+A registered dietitian with experience in both the DPP and
+motivational interviewing served as the lifestyle coach for the
+
+Fit After Baby program. She based her conversations on the
+weekly content contained in the app but was encouraged to
+follow the participants’ lead if they wanted to discuss other
+topics. The lifestyle coach kept detailed notes on her
+conversations and reviewed any issues weekly with the principal
+investigator.
+
+Iterative Feedback and Design Process
+
+Rapid iterative design is a process in which technology is tested
+and repeatedly refined with small groups of users to optimize
+functionality and usability [54,55]. We refined the content and
+delivery of the mHealth Fit After Baby program over three
+rounds of beta-testing through an iterative design process, and
+then we developed a final version of the program.
+
+Recruitment
+
+Women between 18 and 40 years of age with a postpartum BMI
+of 24 to 45 kg/m2 who were within 6 months of a recent
+singleton or twin delivery complicated by gestational
+hypertension, preeclampsia, preterm delivery (32-37 weeks),
+an SGA neonate (weight <10th percentile for gestational age),
+and/or GDM were recruited for the study from women delivering
+at the University of Colorado Hospital on the Anschutz Medical
+Campus in Aurora, Colorado. Women were required to have
+access to an iPhone or iPod (Apple Inc, California) touch ≥5S,
+and women with a history of preexisting diabetes, cancer, or
+CVD were excluded. The institutional review board at the
+University of Colorado approved the study, and all patients gave
+written informed consent.
+
+Pilot Testing
+
+We conducted three 4-week beta-testing pilots with unique
+participants. The participants used the Fit After Baby app for 4
+weeks, received support from the lifestyle coach, and provided
+ongoing feedback. Participants were required to open the app
+and provide online feedback in week 1 to receive a Fitbit by
+mail to use for the remainder of the study. Participants were
+asked to log on to a Web-based asynchronous user group
+platform each week and answer a set of questions in threaded
+discussions. Interactions with the app and threaded discussions
+were tracked by researchers. The three 4-week pilots were
+conducted during the time period June 2015 through February
+2016.
+
+Feedback and Iterative Design
+
+After each round, we analyzed feedback using content analysis,
+and changes were made to the mobile app and program before
+conducting subsequent rounds. Consequently, each subsequent
+round had a new iteration of the app and program. We held two
+in-person group structured interviews lasting 90 min after all
+three rounds were completed. Participants from each round were
+
+included. Group interviews were digitally recorded and
+transcribed verbatim.
+
+Analysis
+
+We used an iterative and team-based process guided by
+qualitative content analysis [56,57]. A qualitatively trained
+analyst and principal investigator both inductively and
+deductively developed the code book. Initial codes were based
+on the interview guide domains, and the code book was
+expanded based on codes that emerged from the data. The
+analyst and investigator jointly reviewed and coded the threaded
+discussions and group interviews until no new codes were
+identified and there was strong code assignment agreement. All
+transcripts were independently read, double coded, and then
+merged before analysis. Any discrepancies in coding were
+addressed through discussion and consensus among the coders.
+Throughout the analytic process, the analyst and principal
+investigator met regularly to check new findings, discuss
+emergent new codes and themes, and assess the preliminary
+and final results. ATLAS.ti version 8.0 was used for data
+organization and management. Data from all rounds and group
+interviews were used to design a final version of the mobile app
+and program.
+
+Results
+
+Demographic, Tracking, and Online Feedback Data
+for Beta Testing
+
+Table 1 demonstrates the characteristics of the participants who
+participated in beta testing. The median age for beta testing was
+33 years, with a median BMI in the obese range of 31.8 kg/m2.
+The majority of participants were white, and preterm birth,
+pre-eclampsia, and gestational hypertension were the most
+common pregnancy complications.
+
+Table 2 shows the user data for the mobile app. The beta-testers
+opened the app an average of 21 out of 28 days. Participants
+tracked a median of 14 of 21 days of suggested diet tracking on
+MyFitnessPal, and tracked physical activity using Fitbit or the
+exercise tracker within the app for a median of 16 of 21
+suggested days. We recommended that participants check in
+with their coach and enter their weight once per week. On
+average, participants checked in three times over the course of
+the program and weighed in five times. The overall mean weight
+loss was 4.3 (SD 2.3) lbs over the 4-week period. The first beta
+pilot round included 4 women, and they were actively engaged
+in the program and app. Many changes were made to the app
+between rounds 1 and 2 in response to feedback and user data.
+In round 2, there was more variable participation, with some
+women engaging much less in the app. After we conducted the
+next round of iterative changes, the engagement increased again
+in round 3.
+
+Feedback and Iterative Development
+
+Feedback addressed usability, navigability, content, and
+function, and certain themes arose which we used to develop
+changes in subsequent iterations of the app and program.
+Multimedia Appendix 1 details the iterative changes made
+throughout the rounds, including representative quotes
+associated with the changes.
+
+Navigation
+
+One major theme addressed through successive iterations was
+navigation. The round 1 version opened to a content screen
+tailored for that particular day, and participants expressed that
+they did not know where they were in the app and they were
+not clear about what they needed to do each day. In response,
+we developed a home screen consisting of a task list. Tapping
+on tasks in the list navigated the participant to the screen for
+that task, and a checkmark automatically appeared once the
+participant had completed a particular task. New participants
+in subsequent rounds were enthusiastic about checkmarks and
+the improved navigation. The final navigation strategy
+developed after round 3 employed rotating task cards that linked
+with tasks in the apps and retained the function of automatically
+checking off completed tasks.
+
+Diet Tracking
+
+We asked participants to use MyFitnessPal for diet tracking.
+Participants expressed some frustration with tracking of dietary
+intake. Participants had to download the MyFitnessPal app and
+open the app to record food and drink, and they complained
+that it was difficult to switch back and forth between apps. As
+has been shown previously, tracking of dietary intake is difficult
+and cumbersome, and can be difficult to maintain for long
+periods of time [58]. Several participants expressed how difficult
+it was to track dietary intake while taking care of an infant. In
+the ultimate version of the program, we elected to ask patients
+to track diet for only certain days coordinated with a particular
+dietary theme (ie, tracking saturated fat during week 6 which
+focuses on dietary fat). However, we retained the option to track
+every day and to earn points for this. In the final version, we
+also decided to ask participants to use the Fitbit app for both
+diet and exercise tracking, so they would not have to download
+or navigate to the MyFitnessPal app, and therefore there would
+be less back and forth between apps.
+
+Tracking and Syncing of Physical Activity
+
+Participants were asked to use Fitbit for step tracking, and there
+was also an exercise tracker built into the Fit After Baby app.
+Participants were sent a Fitbit Zip at the beginning of week 2,
+if they had been using the app. They needed to download the
+Fitbit app and connect it with their Fitbit device. Although
+
+participants did not actually need to open the Fitbit app once it
+was downloaded, they complained that their steps were not
+always syncing qith the Fit AFter Baby app. The majority of
+participants stated that they would have preferred a wrist band
+Fitbit, so we transitioned to this for the final version of the
+program. The wrist Fitbit (Fitbit Flex 2) is also waterproof, so
+we felt that this would encourage adherence since some
+participants told us they forgot to remove the clip Fitbits from
+their clothes before washing them. We retained the ability to
+log workouts in the Fit After Baby app specifically to give
+participants the ability to keep track and earn points if they
+forgot to wear their Fitbit.
+
+Content
+
+Participants in all three rounds requested more content,
+particularly content tailored specifically to postpartum women.
+In round 1, the most common requests for additional content
+included more information about breastfeeding, working, and
+postpartum mental health. This content was added before round
+2, and group 2 also requested additional content about
+breastfeeding, as well as healthy recipes and information about
+exercising with an infant. Although we added this content, round
+3 participants requested even more exercise information as well
+as recipes and more detailed diet information. For the final
+version of the program, we added additional exercise content,
+multiple exercises with instructions and pictures demonstrating
+ways to exercise with an infant, a yoga curriculum, and a more
+extensive recipe collection.
+
+Photos/Graphics
+
+Participants from all three rounds requested more diversity in
+photos to better reflect their own postpartum experiences. They
+expressed that women who look like thin models did not reflect
+what it was like to be a postpartum mom struggling to lose
+weight. However, some women mentioned that the photos were
+appropriate, so at each round, we worked to diversify some
+images but kept others. A few women also commented that the
+women in the photos looked too calm and relaxed, and they
+wanted to see some images that would reflect the stress of
+parenting a newborn. In response, we added additional images
+to reflect the broad range of emotional experiences postpartum.
+
+Points and Rewards
+
+Participants in round 1 felt that the points and badges had little
+meaning and it was not clear how points were earned. Before
+round 2, we simplified the badges and designed an explanatory
+function that would detail what activities earned points and how
+many points were earned. However, participants continued to
+express confusion about point accumulation and also felt that
+the point and reward system was not motivating. When asked,
+participants were enthusiastic about the idea of tangible rewards
+like gift cards. In our final version, we improved the points and
+rewards system by simplifying our point system to a single
+health warrior badge with 4 levels (bronze, silver, gold, and
+platinum). When a participant reaches each health warrior level,
+they earn gift cards that we send to their email.
+
+Coaching
+
+In round 1, some of the participants mentioned that although
+they knew that they were supposed to check in with their coach,
+
+it was not clear what they were supposed to talk about. For the
+subsequent iterations, we added topic suggestions to each coach
+check-in prompt. Some participants also felt the coach check-in
+should not be the responsibility of the participant but should
+rather be initiated by the coach. Others mentioned that the
+information in the coaching sessions should be more
+individualized. Participants also felt that when the coach was
+more aware of exactly what participants were doing with
+exercise, diet, and weight, they were more motivating. To help
+the coach provide more targeted coaching, we designed a coach
+app with a dashboard showing individual activities by
+participants who were using the Fit After Baby app, dietary
+intake, weight, steps, and points earned. This enabled the coach
+to follow each participant’s activities in real time and provide
+targeted feedback and coaching.
+
+Website
+
+We designed a companion website to the Fit After Baby
+program. The website was designed to contain additional content
+that was not included in the app, including recipes. In addition,
+the website also provided a portal for participants to view
+personal data and rewards in greater depth and at a larger visual
+size. However, the website was rarely used, and most
+participants stated that the website was not useful or that they
+did not use the website because it was not easy to use on their
+mobile phones. We decided to remove the companion website
+for the final iteration of the program.
+
+Additional Suggested Features
+
+Several participants requested that mind-body and meditation
+techniques be included in the app. In the final iteration, we
+added a substantial amount of content including mind-body
+techniques and a yoga curriculum introducing two new poses
+per week. Many participants also expressed interest in sharing
+their information socially with the cohort. Further discussion
+revealed that they preferred the idea of sharing within the group
+simultaneously participating in the Fit After Baby program and
+going through similar challenges to sharing with friends or
+family members. There were mixed reviews on the idea of
+competition within the cohort, and on the idea of working
+together to earn points toward a common goal. Other participants
+requested more stories from women who had succeeded at
+achieving their postpartum goals. These features were not added
+to the final version but may be considered in the future.
+
+Overall Impression of the Program
+
+Overall, most participants responded that they were satisfied
+with the Fit After Baby program. Interestingly, we found that
+although the participants responded favorably to the content in
+general, they consistently requested more at each round. This
+feedback substantially modified the content of subsequent
+versions and was valuable in informing the final iteration of the
+program. Our improvements in the navigation of the app resulted
+in fewer complaints about navigational issues in subsequent
+iterations. All participants from the third iteration who responded
+in week 4 about whether they would recommend the Fit After
+Baby program to others said that they would. Participants in the
+group interviews responded favorably to the program overall
+and affirmed that it was helpful. They felt that the program
+
+provided motivation and accountability to make changes in the
+postpartum period. Both participants in the second group
+interview expressed that they would have liked to continue to
+use the program. Overall, participants felt that the most useful
+components were the reminders and tracking components, and
+almost everyone seemed to enjoy using the Fitbit. In addition,
+most seemed to appreciate the information on healthy eating,
+quick and easy recipes, and exercises to do with baby.
+
+Discussion
+
+Principal Findings
+
+We successfully employed an interactive, user-centered,
+participatory method of rapid, iterative design and evaluation
+to optimize the mHealth Fit After Baby program for postpartum
+women. Our multidisciplinary team of researchers and designers
+substantially improved the content and functionality of the app
+at each successive iteration by integrating user feedback.
+Qualitative data collected in the Fit After Baby development
+process provide valuable insight into the use of mobile
+technology–based weight loss apps in the target population of
+postpartum women at elevated cardiometabolic risk.
+
+The most common and consistent theme through the iterative
+development process was a request for added content, and
+particularly added content tailored to postpartum mothers.
+Participants requested more postpartum-focused diet, exercise,
+and weight loss information, and also information on
+breastfeeding and postpartum mental health, including
+mind-body techniques for coping with stress. A consistent theme
+was the need to improve navigation because of difficulties in
+navigating to the appropriate screen. We responded to
+suggestions about navigation by creating a home screen with
+checkboxes so that daily and weekly tasks were more clear. The
+feedback from our participants suggested that the navigation
+was improved significantly by the final iteration. We were
+somewhat surprised to learn that women did not find the
+companion website to be useful, and furthermore, they found
+it difficult to use on a mobile phone. We eliminated the
+companion website for the final iteration. Diet and exercise
+tracking turned out to be challenging to most of our participants.
+Participants were clearly frustrated with the amount of time it
+took to track their diet and also disliked switching between apps,
+so in our final iteration, we limited tracking to particular days
+and decreased app switching by using the Fitbit app to track
+both diet and exercise. Many women said that they would prefer
+
+a wrist Fitbit, and we moved to this for the final version. We
+learned that the gamification component of points and badges
+was confusing and not very motivating. Many women said that
+they would prefer a tangible reward, so we added in the
+opportunity to earn gift cards for the final version. The
+participants also expressed a need for content that we did not
+originally include which led to the addition of a week of content
+focusing on mental health, anxiety, and stress in the final
+version.
+
+Limitations
+
+There are several limitations to this study. We developed and
+tested the Fit After Baby app on an iPhone Operating System
+platform. This affected the demographics and economic status
+of the recruited participants, which may thereby affect
+generalizability. We are currently developing an Android version
+of the Fit After Baby app and will be able to use both versions
+for future studies. The group sizes for the iterations were small,
+and therefore may not be adequately representative. Consistent
+with the demands of women during this very challenging
+postpartum period, all participants did not contribute to the
+online focus group every week. Although we attempted to
+conduct 2 in-person focus groups, we had several women who
+were unable to attend at the last minute and had to convert the
+2 focus groups to 2-person group interviews. For this iterative
+design process, we did not include a control group, and therefore
+are unable to assess the significance of postpartum weight loss
+in this study.
+
+Conclusions
+
+Fit After Baby is a theory-based app using mHealth weight loss
+best practices and developed using the principles of rapid
+iterative design. To our knowledge, Fit After Baby is one of
+only a few weight loss apps designed specifically for postpartum
+women and the only one specifically focused on postpartum
+women at increased cardiometabolic risk. The design process
+involved a multidisciplinary team of researchers in collaboration
+with a technology team. We found the process of iterative
+development to substantially change the content and function
+of the Fit After Baby program which may be helpful for the
+development of similar programs in the future. Our first iteration
+compared with our final version has undergone substantial
+modification owing to this iterative process, and we are currently
+testing the final version of the Fit After Baby program in a pilot
+randomized trial with a primary goal of postpartum weight loss.

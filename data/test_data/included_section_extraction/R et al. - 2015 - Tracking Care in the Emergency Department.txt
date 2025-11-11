@@ -1,0 +1,488 @@
+5 
+
+f e a t u r e
+
+Tracking Care in the Emergency 
+Department
+
+User-centered design 
+employing input from a diverse 
+team of stakeholders leads 
+to improved patient safety. 
+
+FEATURE AT A GLANCE:
+Results are presented from the 
+ED LaunchPoint design project, 
+which received honorable 
+mention for the 2013 Stanley 
+H. Caplan User-Centered 
+Product Design Award. This 
+redesign focused on patients’ 
+progression through their 
+emergency department visits, 
+emphasizing time-sensitive 
+phases for increasing clinical 
+safety. User observation, 
+iterative user-centered design, 
+and usability testing placed 
+users at the core of this project. 
+Close collaboration allowed 
+for the identification of optimal 
+work flows and the creation of a 
+design tailored to users’ needs.
+
+KEYWORDS:
+usability, product design, 
+electronic medical record, 
+user-centered design, interface 
+design, controls and displays, 
+user research
+
+By Rebecca Green, Amanda Buckley, & Bradley Scott
+
+Our team developed a software tracking 
+board called ED LaunchPoint, which enables 
+ED physicians to efficiently care for their 
+patients.
+Our team’s work on ED LaunchPoint, 
+which received honorable mention for the 
+2013 Stanley H. Caplan User-Centered 
+Product Design Award, provided us with the 
+opportunity to redesign the way clinicians 
+interact with their ED tracking software. The 
+
+software redesign demonstrates successful 
+integration of the user-centered design 
+(UCD) process within the development 
+culture at Cerner Corporation. As an orga-
+nization, we assembled a cross-functional, 
+multidisciplinary team of clinical strategists, 
+business analysts, software architects, inter-
+action designers, and usability researchers to 
+analyze key processes and identify opportu-
+nities for improvement to EMR systems.
+In this article, we outline our process and 
+the insights we gained during the design 
+of ED LaunchPoint. To manage patients 
+more efficiently and streamline the clini-
+cian’s work flow, ED LaunchPoint needed 
+to provide advanced capabilities in a more 
+standard, focused view of ED tracking while 
+also serving as a launch point for all future 
+advancements in emergency medicine 
+application. Our objective was to provide 
+physicians with an overview of patient care, 
+starting with a review of pertinent current 
+and historical information to determine a 
+diagnosis, continuing through the initial 
+treatment plan, and ending with the conclu-
+sion of the patient encounter.
+
+The Process
+
+Our team used a UCD process that inte-
+grated iterative design and evaluation during 
+the product development phase, as depicted 
+in Figure 1. During the design and devel-
+opment process, we carried out usability 
+activities to support understanding of the 
+user through early user research, create a 
+vision of the user’s work flow through itera-
+tive design, develop a solution and verify 
+the design through usability testing, and 
+deliver the results as a refined user experi-
+ence. However, the type of application being 
+developed and the environment in which
+
+6   
+
+the user will be working play a part in the extent and type of 
+methods used to explore the users and their work flow.
+Our first step toward understanding and specifying the 
+context of use was reviewing the users, their tasks, and the 
+environments of use for the existing application. This created 
+a vision of the users’ goals through iterative design, and it was 
+during this time that user requirements for the solution were 
+developed in sufficient detail to drive the design. We then 
+refined design iterations through usability research before 
+integrating them back into the design. Finally, a design solu-
+tion was developed and validated to ensure that the users’ 
+goals were accounted for within the design.
+
+Understanding the Users
+
+The development team for ED LaunchPoint considered 
+the direct input of end users throughout the design. During 
+the process of creating a vision and developing the solution, 
+on-site visits and iterative usability testing provided clinical 
+perspectives and verification of the specific clinical tasks being 
+explored. Furthermore, the end users may encounter inter-
+ruptions and several different task scenarios throughout a 
+workday, which often includes frequently changing agendas 
+
+during a single patient work flow (Westbrook et al., 2010). 
+Working with the users during early stages of the develop-
+ment process to understand the information needs within 
+different task scenarios and with frequent interruptions was 
+critical in supporting a good user experience.
+
+Early User Research
+
+On-site visits typically involved observing and inter-
+viewing three or more health-care providers and nurses 
+along with managers and directors in various departments. 
+We performed early user research with 72 ED physicians 
+across the United States, Canada, the United Kingdom, and 
+Australia. The chosen facilities, both academic and nonaca-
+demic, ranged from community hospitals to large networks 
+known as integrated delivery networks (IDNs). Utilizing the 
+interviews, usage metrics, and on-site observation data, we 
+focused on the system’s overall usability using metrics such as 
+steps within the software that were required for completing a 
+task, errors, user comments, and feedback regarding existing 
+“pain points.”
+User observation and interview research during the 
+project’s concept generation phase produced insights that 
+
+Figure 1.  User-centered design process developed by the Cerner Corporation User Experience Team.
+
+7 
+
+specified the design parameters and decisions. By watching 
+users interact with the current solutions, we were able to gain 
+a comprehensive understanding of their work flows. The key 
+activities and pain points we observed provided us with a 
+basis to determine the functional criteria for the solution. The 
+most frequently observed usability insights from our observa-
+tion and interview sessions are listed in Tables 1 and 2.
+One of the key points we wanted to address from our 
+observations was how to reduce current inefficiencies 
+produced by the number and types of work flow scenarios 
+that were addressed in a single view. During the iterative 
+design phase, we paid significant attention to the order 
+process, including the inefficiencies of accessing multiple 
+order information and the variety of patient status icons used 
+to address the different stages of an order.
+
+Creating a Vision
+
+Creating a vision is the process of capturing, communi-
+cating, and translating different user goals and organizing 
+them into a cohesive whole. Once a shared vision for each 
+concept was identified, the team focused on each goal and 
+defined methods for achieving those goals. Techniques such 
+as site maps and storyboards were crucial for identifying 
+options that could be reviewed with the users. Our team 
+sketched out each goal within the user’s work flow and 
+produced iterations until we identified a draft that incorpo-
+rated the best set of characteristics for meeting each user’s 
+goals. A set of sketches created to illustrate iterations of the 
+
+individual elements tracked for a single patient can be seen in 
+Figure 2.
+Storyboarding work flows on how users work through a 
+plan of action enabled us to identify areas for improving the 
+effectiveness of both tracking and placing orders throughout 
+the duration of patients’ stays in the ED. By utilizing a combi-
+nation of design elements, such as calling attention to those 
+items requiring physician action and those not yet completed 
+by other care providers, the work flow simplified the commu-
+nication stages of an order’s progression. An example of a 
+step-by-step work flow of the physician’s journey through 
+obtaining a patient assignment, placing orders, and then 
+discharging the patient can be seen in Figure 3.
+
+Iterative Design
+
+In iterative design, the final product evolves as a natural 
+progression that occurs through sketching, ideation, design 
+development, and user observations. Throughout the design 
+process, our team conducted usability testing to evaluate new 
+elements and work flows as they were designed. We carried 
+
+Table 1.  Key Activities and Events Along With ­Information 
+Needed to Support the Key Events Identified From 
+Usability Research
+
+Prior to treating the 
+patient, both nursing 
+triage summary and 
+key historical chart 
+information were needed 
+to tell the “patient story.” 
+
+Habitual drug user, recent 
+visits, current diagnosis, 
+infections
+
+Physicians frequently were 
+required to check and 
+recheck medication or lab 
+order results for the same 
+patient.
+
+Progress and point in 
+process of each order, 
+identifying roadblocks, 
+and expected deadline for 
+results
+
+Note. EMR = electronic medical record.
+
+Table 2.  Pain Points and Frustrations Identified From 
+Usability Research
+
+Patient status icons were 
+not actionable, leading to 
+more clicks to complete a 
+work flow.
+
+New lab results indicator 
+had no option for 
+marking the results 
+as acknowledged and 
+removing it from the board
+
+Physicians spent large 
+amounts of time 
+deciphering patient 
+status icons due to 
+nonintuitive graphics, 
+quantity, placement, and 
+inconsistency. 
+
+An icon key was typically 
+taped to the side of 
+monitors for help.
+
+Physicians spent excessive 
+time throughout their shift 
+waiting on the spinner icon 
+to load patient data on the 
+board or to open the chart.
+
+Multiple instances of 
+waiting longer than 10 s 
+for patient data to load
+
+Note. ED = emergency department.
+
+8   
+
+out iterative formative studies with five to seven clinicians 
+both in person at the clinical locations and remotely from the 
+usability lab in Kansas City, Missouri. During these forma-
+tive evaluations, we assessed the system for effectiveness and 
+
+satisfaction. In addition, we collected qualitative information 
+consisting of subjective impressions and opinions about the 
+solution and miscellaneous activities performed by the partic-
+ipant during the test session. 
+
+Figure 2.  Set of three sketches of layouts for patient information.
+
+Figure 3.  Patient assignment and discharge work flows.
+
+9 
+
+We conducted the formative usability sessions during two 
+development iterations, resulting in more than 30 usability 
+findings. By performing several iterations of usability testing, 
+our researchers refined and improved the quality of the indi-
+vidual features that contributed to the overall work flow. The 
+four features covered here in more detail demonstrate how 
+design guidelines and user feedback produced changes during 
+a series of design iterations.
+
+Orders. A computerized physician order entry (CPOE) 
+system enables providers to electronically specify medication 
+orders as well as laboratory, admission, radiology, referral, 
+and procedure orders. A tracking board is often used 
+to display the statuses for these medications, laboratory 
+orders, radiology orders, and electrocardiogram orders so 
+physicians can easily see what is new or what is overdue. Our 
+previous tracking board contained an abundance of icons 
+with different meanings, and users demonstrated significant 
+confusion in distinguishing their meanings and use. However, 
+it became clear through observation that logical groupings 
+and statuses were shared across these icons. Through use of 
+the principles of data visualization and task prioritization, 
+the icon sets associated with a category of orders could be 
+combined into a single icon representing the order’s progress.
+This new graphic, labeled as Initial Design in Figure 4, 
+initially was an icon representing the order type and a set of 
+indictors to signify the number of orders and the overdue 
+threshold. However, results from the first round of usability 
+testing determined that additional interaction was needed as 
+well as an additional orderable type that occurs during some 
+
+acute-care work flows: patient care orders. Iterations 2 and 3 
+(Figure 4) show an actionable icon representing the impor-
+tance of the available results and the time remaining in the 
+current state (e.g., waiting on results). Additionally, during 
+the first iteration of usability testing, physicians were not able 
+to recognize levels of duration for events, described as a ring 
+around the icon for the order type.
+The final design, as seen at the bottom of the image in 
+Figure 4, represents a set of orders for each category of medi-
+cation, labs, imaging, and radiology, along with a progress 
+indicator. The icon representation of the order(s) and the 
+progress indicator use different degrees of color to indicate 
+the stage of the order as well as the degree to which it is 
+overdue.
+
+Documentation work flow. Clinical documentation is the 
+method by which physicians document patient care and 
+communicate among providers across venues. Previous 
+tracking boards in the form of free-text comments were often 
+used to track provider comments regarding patient care plans. 
+Therefore, our design goal was to allow the user to be able to 
+complete documentation and view its status directly from the 
+tracking board. By using consistent patterns to represent the 
+status in the form of an icon that became the quick-access 
+point, we achieved both goals.
+Initial design concepts indicated different stages of 
+documentation, including extra flags to identify multiple 
+contributors, an extra indicator for academic hospitals to 
+represent the need for an instructor signature, and different 
+icons to represent the three stages of a document (e.g., “not 
+started,” “in progress,” and “signed”). However, physicians 
+found it difficult to recognize the different indicator levels for 
+the documentation work flow beyond those of “not started,” 
+“incomplete,” and “completed.” Therefore, the only steps in 
+the documentation work flow that were needed were those 
+representing the completion of the documentation and 
+an additional indicator for academic or teaching hospitals 
+requiring a cosign. 
+The design progression, along with the final set of icons for 
+displaying the status of the user’s documentation, is shown as 
+the bottom set of icons in Figure 5. The icons for documenta-
+tion work flow represent “not started” (blank note), “saved” 
+or “incomplete” (note with text), “signed” or “completed” 
+(note with green checkmark), and a “note requiring a cosign” 
+(note with text and pencil icon).
+
+Length-of-stay (LOS) meter. The LOS represents a patient’s 
+current length of stay at each point in the ED work flow, from 
+prearrival through the discharge process. LOS is shown as the 
+number of minutes the patient has stayed in the ED, along 
+with indicators for when the stay has exceeded a threshold 
+(i.e., “overdue”) or has reached a second threshold (i.e., 
+“critically overdue”). The LOS display is designed to alert the 
+provider of the patient’s status as “unassigned to a provider,” 
+“assigned to a provider,” or “time spent in the waiting room.”
+
+Figure 4.  Design iterations for order status indicators.
+
+10   
+
+The primary information pertaining to the length of time 
+the patient has been in the ED work flow is shown face-up 
+alongside the current point in the workflow. The initial LOS 
+designs, shown in Figure 6 as the initial design and Iteration 
+2 versions, were intended to illustrate the different points 
+of the work flow as a single progress indicator. After initial 
+observations, a single progress indicator was used for each 
+point within the work flow, and the actual indication of the 
+point in the ED visit was represented separately from the 
+progress indicator. A third version of the design presented the 
+threshold(s) for the current point in the ED visit within the 
+progress indicator, as seen in Iteration 3.
+Finally, usability testing demonstrated that physicians 
+could successfully identify a patient’s point of treatment 
+but had difficulty identifying the reference thresholds for an 
+overdue or critically overdue LOS. Based on these findings, 
+the final design added the current length of time in digital 
+format and a progress indicator using color and contrast 
+to indicate when the current length of time exceeded a 
+threshold. This final design is shown as the bottom image in 
+Figure 6.
+
+Care delivery window. The care delivery window is a 
+combined view of triage information, patient history, and 
+order progress. It allows the user to quickly progress through 
+each of the order types to see order statuses and their context 
+within historical or current results. Therefore, the physician 
+is presented with orderable information for each patient in a 
+staged disclosure process. The progressive disclosure design 
+pattern needed to help ED physicians prioritize information 
+
+was initially designed using a series of hover boxes. As the 
+user moved the mouse over the icon or design component, 
+the hover boxes presented information related to each section 
+of the screen. However, the physicians reported that the 
+hover boxes were slower and more difficult to use when the 
+physicians inadvertently invoked windows elements with an 
+errant move of the mouse.
+Usability feedback identified concerns with timing delays 
+as well as navigation interactivity inherent in multiple hover 
+boxes being invoked in rapid succession. Therefore, a modal 
+panel was used to enable the user to confirm that something 
+happened as a result of his or her click. The different inter-
+active pieces were combined into a single window, which 
+became an intentional action for something the user wants. 
+This modal panel essentially behaves like a “one-window drill-
+down” mini-application within the context of a single patient. 
+The final design for the care delivery window that combines 
+additional information for each component can be seen in 
+Figure 7.
+
+Delivering Results
+
+During the development of ED LaunchPoint, it was impor-
+tant for our team to maintain the paradigm of a tracking 
+board while focusing on how the information supports user 
+work flows. ED LaunchPoint achieved this goal through 
+iterative changes and progression toward a solution that was 
+most appropriate for the users and their needs. The updated 
+appearance focuses on critical information and advanced 
+viewing capabilities for complex information. By segmenting 
+the tracking board into sections pertaining to patient-specific 
+
+Figure 5.  Documentation work flow design iterations.
+Figure 6.  Length-of-stay meter design iterations.
+
+11 
+
+Figure 8.  Section of final design displaying information 
+pertaining to the patient’s progress through the emergency 
+department.
+
+Figure 7.  Care delivery window final design.
+
+information (e.g., name, room, acuity), the treatment of 
+the patient, and the patient’s progress through the ED, we 
+were able to create a story about the patient that provided 
+a purpose for the board’s layout and composition. Three 
+of the features covered in our approach to iterative design 
+as they appear in the final solution can be seen in Figure 8. 
+These features demonstrate the content found in the section 
+pertaining to the patient’s progress through the ED.
+Finally, after the overall solution was coded and available 
+for release, usability researchers conducted validation studies 
+to evaluate overall system usability. The findings from these 
+summative studies are meant to validate and confirm the 
+changes made during the formative evaluations. Few surprises 
+should arise during this phase of testing given the iterative 
+user‐centered design process used throughout the product 
+development process. 
+The final evaluations were performed remotely from the 
+usability lab in Kansas City and included a total of 12 emer-
+gency physicians using the most recent application code. 
+Usability testing identified three new usability findings that 
+were incorporated into the product’s development prior to 
+its release. These findings fell into two categories of problems: 
+visibility of system status and error feedback.
+Design should be more than the product of a good idea 
+or fixing existing issues. It should be the result of a process 
+that opens up a multitude of possibilities generated through a 
+vigorous design process. Our design changes had real impact,
+
+12   
+
+which was achieved by looking at why the end users needed 
+the information or interactions in the first place. To validate 
+this methodology, our researchers relied heavily on user 
+feedback from usability testing along with observations and 
+user reviews. From this information, we were able to build a 
+tracking board that provided the patient story in context.

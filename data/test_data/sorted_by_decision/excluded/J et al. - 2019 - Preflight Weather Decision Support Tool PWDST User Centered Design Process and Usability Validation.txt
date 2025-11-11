@@ -1,0 +1,487 @@
+Preflight Weather Decision Support Tool (PWDST): User-Centered 
+Design Process and Usability Validation
+ 
+Jayde King, M.S., John Kleber, B.S., Ashlee Harris, B.S., Barbara Chaparro, Ph.D., Beth 
+Blickensderfer, Ph.D.  
+Embry-Riddle Aeronautical University, Daytona Beach, FL  
+ 
+General Aviation flight operations have been negatively affected by the slow decreasing weather related 
+accident rate for the last 20 years. Upon further investigation, research suggests, that poor preflight 
+planning and a lack of aviation weather experience and knowledge may be contributing factors to the 
+stagnant weather related accident rate. Our team developed a Preflight Weather Decision Support Tool 
+(PWDST) to help novice pilots access, interpret, and apply weather information. We used a user-centered 
+design process which involved an initial task analysis, low-fidelity prototyping, low-fidelity usability 
+testing, user interviews and expert review. This study assessed and compared the perceived usability, 
+difficulty, and the system assistance satisfaction of the PWDST. Participants (n=9) completed a usability 
+study and a series of surveys during, as well as, after the completion of the preflight planning scenario. A 
+series of Mann-Whitney U Tests were conducted to compare the difference between Private Pilot and 
+Certified Flight Instructors (CFI) perceived usability, difficulty, and system assistance satisfaction ratings. 
+Results indicated, there were no significant differences between group ratings. Overall, both groups 
+reported above average usability, system assistance and low difficulty rating for the PWDST. Future 
+research and possible implications are discussed.
+
+INTRODUCTION 
+ 
+ 
+The General Aviation (GA) weather related accident rate 
+has remained the slowest decreasing accident rate within GA 
+flight operations (FAA, 2010; Fultz & Ashley, 2016; AOPA, 
+2008). Previous research indicates the majority of these 
+accidents result in fatalities, with Visual Flight Rule flight 
+operations into Instrument Meteorological Conditions (VFR 
+into IMC) being the most hazardous type of weather related 
+accident (FAA, 2010; Fultz & Ashley, 2016; Goh & 
+Wiegmann, 2001; AOPA, 2008). Primarily, low hour 
+inexperienced private pilots incur the majority of weather 
+related accidents (Capobianco & Lee, 2001; Fultz & Ashley, 
+2016). Multiple sources have identified poor preflight 
+planning and a lack of aviation weather knowledge and skills 
+as a possible contributing factors for inadequate inflight 
+weather avoidance and VFR into IMC incidents 
+(Blickensderfer et.al,). To address this need, our team 
+developed an aviation weather decision support tool. The tool 
+is designed to assist low hour inexperienced private pilots with 
+the aviation weather preflight planning process. The purpose 
+of this study is to assess the usability of the Preflight Weather 
+Decision Support Tool (PWDST). 
+ 
+Background 
+Preflight Planning. Weather planning is a crucial 
+component of the preflight planning process. During weather 
+preflight planning pilots access multiple weather sources, 
+interpret weather products, and develop a flight plan. This 
+process is intended to better equip pilots with a mental model 
+of current and developing weather conditions along their flight 
+route. The FAA divides the preflight process into three major 
+components, perceive, process, and perform (Parson et al., 
+2005).  
+ 
+The weather preflight planning process begins with the 
+“perceiving” phase, where pilots collect an array of weather 
+
+products. During weather information acquisition pilots are 
+able to search and navigate various weather sources of 
+differing modalities to form a holistic mental model of 
+prevailing and forecasted weather conditions, including: 
+potable weather applications, websites, and call in services 
+(e.g. Aviation Weather Center (AWC), 1-800 Weather Brief 
+Call-in, and Foreflight). However, a pilot’s ability to navigate 
+these weather sources depends on the pilots’ familiarity with 
+the source, the usability of the source interface, and the quality 
+of the provided weather information. Therefore, limitations 
+within the information acquisition stage may hinder the 
+quantity and quality of information pilots receive, which may 
+in turn result in an inadequate and inaccurate pool of weather 
+information (Parson et al., 2005). 
+ 
+After gathering all the weather information, pilots 
+progress to the “processing” phase of the task (Parson et al., 
+2005). Weather product interpretation can be quite 
+challenging, especially for inexperienced pilots who lack 
+foundational understanding of basic weather principles 
+(Blickensderfer et.al, 2018). The majority of weather 
+information is encoded and may require the user to access 
+legends and/or have previous experience with the product to 
+facilitate product interpretation (e.g. METARS, TAFFs, Wind 
+Aloft, Station Plots). Failure to accurately interpret weather 
+information could lead to a dismal distortion of the received 
+weather information. Furthermore, defective reception of 
+weather information can influence the pilot’s mental model of 
+prevalent weather conditions and may result in hazardous 
+weather behavior (Blickensderfer et.al, 2018). 
+“Perform” is the final stage of the weather prefight 
+planning process (Parson et al., 2005). Subsequent to the 
+interpretation of the received weather information, pilots must 
+apply the extrapolated weather information to their current 
+aeronautical flight plan. Considering this phase requires pilots 
+to have correct completion of both the Perceiving, and 
+processing phase, the perform stage may be the most 
+
+Copyright 2019 by Human Factors and Ergonomics Society. DOI 10.1177/1071181319631435
+
+1915
+
+challenging component of the entire task. Pilots need to 
+understand the prevailing weather conditions, as well as, the 
+flight safety risks each weather phenomena may pose for their 
+specific flight plan. Therefore, this task will demand the user 
+to function at a higher level of cognitive processing and may 
+require previous experience.  
+Since the weather preflight planning phase is a layered 
+task, deficient performance on any weather planning phase 
+could invalidate all the previous and future task phases. This 
+may result in uninformed preflight and inflight decision 
+making. Previous research highlighted poor product usability, 
+inadequate weather knowledge and skills, risk assessment, and 
+decision making as contributing factors for VFR into IMC 
+incidents (NTSB, 2005; Capobianco & Lee, 2001). The effects 
+of these contributing factors may begin in the preflight process 
+and continue to develop throughout the inflight process, 
+resulting in poor weather avoidance and hazardous inflight 
+decision making. 
+Decision Support Tools. A solution to the GA weather 
+problem has been attempted from various perspectives and 
+fields. This includes the development of increasingly adaptive 
+and dynamic weather displays.  Although the development of 
+new weather technology for preflight and in the cockpit 
+interfaces may improve certain aspects of situational 
+awareness, the majority of these technological advances have 
+failed to prevent hazardous weather encounters inflight 
+(Latorella & Chamberlain, 2002; Yuchnovicz et al., 2001; 
+Beringer and Ball, 2004). It may be that aviation weather and 
+flight planning tasks are too complicated and cognitively 
+taxing to simply be addressed by the introduction of new 
+technologies. Instead, new approaches that compensate for the 
+users’ lack of meteorological knowledge and skills is 
+necessary to fill the gap between the user and the weather 
+planning task. King, Ortiz, Blickensderfer, and Christy (2018) 
+explored the possibility of applying Decision support tool 
+technology to the aviation weather preflight planning task. 
+Additionally, Ortiz, Blickensderfer, and Christy (2018) 
+suggest decision support tool technology could address the 
+disparity of skill and knowledge between the user and task, as 
+well as, improve overall preflight and inflight performance. 
+Furthermore, with certain precautions, a preflight decision 
+support tool may offer just enough assistance to help novice 
+private pilots operate at a higher level of performance and 
+safety. In order to promote improved performance, King, 
+Ortiz, Blickensderfer, and Christy (2018) suggest the preflight 
+decision support tool should apply specific levels of 
+automation to specific tasks, consider and avoid the negative 
+impacts of automation, provide training for the preflight 
+weather decision support tool, include a multidisciplinary 
+team for product development, consider usability, and 
+integrate system adaptability. 
+Preflight Weather Decision Support Tool Description & 
+Development. In this study, our team developed a prototype 
+preflight weather decision support tool (PWDST). The tool 
+was developed by a multidisciplinary team including, two 
+human factors specialists, a meteorologist, a private pilot, and 
+a gold standard flight instructor. The purpose of the tool is to 
+assist novice low hour private pilots with the weather portion 
+of the preflight planning process. The PWDST assists pilots 
+
+with accessing, interpreting, and applying weather information 
+in context of their current flight plan. The PWDST uses a 
+mixture of usability, low level information/analysis 
+automation, and expertise knowledge to guide pilots through 
+establishing their personal minimums, determining weather 
+checking airports, accessing, interpreting, and applying 
+weather information, and assessing weather risks. Each team 
+member was included in the application development and beta 
+testing.  
+ 
+Figure 1. PWDST: Low Level Significant Weather Chart     
+                Section Flow 
+
+ 
+ 
+Figure 1. PWDST: Low Level Significant Weather Chart 
+Section. First, Participants view the homepage (a), then 
+participants are introduced to the order for the preflight 
+planning scenario. Next, participants are shown how to access 
+each product on the Aviation Center Website (c through e), 
+then participants are guided through product interpretation and 
+asked prompting questions to encourage the application of the 
+interpreted weather information to their flight. 
+ 
+PWDST Development 
+The PWDST underwent four major phases of review and 
+modifications. The first step in the PWDST development 
+process included a thorough Preflight Planning Task analysis. 
+This task analysis identified the major and minor possible 
+limitations associated with completing weather preflight 
+planning using AWC and traditional preflight planning tools. 
+Next, we interviewed a series of private pilots and instructors 
+to gain a better understanding of common hindrances to 
+novice pilots while preflight weather planning. Through the 
+use of target market feedback and Subject Matter expert 
+guidance, we developed the first PWDT prototype. Next, the 
+PWDST underwent an iterative process including a series of 
+expert reviews and modifications. Data and feedback from 
+expert reviewers and subject matter experts were incorporated 
+into the future designs in order to improve the usability, as 
+
+1916
+
+well as, content and face validity of the tool. Now, that we 
+have completed the development process of our final 
+prototype, it is imperative to observe and assess the usability 
+of the interface and gauge users’ impressions of the system.  
+METHOD 
+ 
+Experimental Design 
+ The study was a mixed group design. The purpose of the 
+study was to assess the usability of the PWDST tool, with 
+consideration for experience. There were two levels of 
+experience, the novice level included Private Pilots, while the 
+expert level included Certified Flight Instructors (CFI). Both 
+groups completed the same preflight scenarios using the 
+PWDST tool 
+ 
+Participants 
+Nine pilots (Mage= 24.11 (SD= 5.11)) from a 
+Southeastern United States university were recruited to 
+participate in this study. Four participants held a private pilot 
+license (Mdnfigtht hours = 102.10 (SD= 55.00)) and five pilots 
+were CFI rated (Mdnfigtht hours = 710.00 (SD= 575.20). The 
+majority of the participants completed their flight training at a 
+Part 141 facility. The study was reviewed and approved in 
+advance by the Embry-Riddle Aeronautical University 
+Institutional Review Board for the protection of our 
+participants. For incentive, each participant received $25 
+dollars for the completion of this study. 
+ 
+Materials 
+The following materials were used in this study: PWDST, 
+PWDST Training Video, and the Simulated Preflight Task  
+Preflight Weather Decision Support Tool. The Preflight 
+Decision Support Tool was wire-framed using Google Drive 
+App Draw.io and the high fidelity mockup was created with 
+AXURE software student license. The purpose of this tool is 
+to guide users through the preflight process and improve 
+preflight and inflight performance. The Preflight Weather 
+Decision Support Tool (PWDST) is comprised of three main 
+components, the preflight guide, the personal minimums 
+sections, and the risk assessment and checklist output. 
+PWDST Training Video. This six-minute video was 
+developed using Microsoft Video Maker. The purpose of the 
+training video is to guide users through the main components 
+of the PWDST. The video illustrates how to navigate the tool’ 
+preflight guide, the personal minimums sections, and the risk 
+assessment and checklist output. 
+Experimental Task: The task for this study required 
+participants to perform a preflight an aviation weather 
+scenario. The flight scenario is a VFR Into IMC scenario. In 
+the scenario, the scheduled flight route starts at the departure 
+airport, KAEL, and ends at the destination airport, KDTL. 
+During the preflight scenario, participants were asked to use 
+the PWDST to access and interpret weather for their flight 
+route. The following weather products were used in this 
+scenario:  
+• 
+Big Picture Products: Low Level Significant 
+Weather Chart, Surface Analysis, Satellite, 
+Radar 
+
+• 
+Hazard Products: Convective SIGMETs and G-
+AIRMETs  
+• 
+Visibility Products: METARs 
+Surveys Measures. All surveys were developed online 
+using Qualtrics survey software. The participants completed 
+all the surveys at the data collection site at their own pace. 
+This study included the following surveys: 1) Demographic 
+questionnaire, 2) After Scenario Questionnaire, 3) Subjective 
+Mental Effort Questionnaire, 4) System Usability Scale, 5) 
+and a Participant Rater Form. 
+1) Demographic Questionnaire: The demographic survey 
+is composed of 84 items. The demographic survey items cover 
+topics such as participant age, flight training, flight 
+experience, weather training, and weather experience. 
+
+2) After Scenario Questionnaire: The After Scenario 
+Questionnaire is a user satisfaction survey (Lewis, 1991). This 
+scale has three items that prompt participants to rate on a scale 
+from 1-7 their overall satisfaction with the system. In this 
+study, this scale was used to assess participants’ satisfaction 
+with systems support and design for various assigned tasks 
+and activities. 
+
+3) Subject Mental Effort Questionnaire: This scale is a 
+one item sale that measures participants’ perceived difficulty 
+of tasks (Sauro & Dumas, 2009). The Scale ranges from (0) 
+Not at all hard to do, (110) Tremendously hard to do, and 
+(150). In this study, this questionnaire was used to assess 
+participants perceived mental effort while completing various 
+assigned tasks. 
+
+4) System Usability Scale: This survey questions users 
+on their perceived usability for a particular system (Brooke, 
+1996). The survey has 10 items; users are prompted to rate 
+how much they agree with each item on a scale from one 
+(Strongly Disagree) to five (Strongly Agree). This scale was 
+used to survey participants’ overall impressions about the 
+system. 
+
+5) Participant Rater Form: These questions prompt the 
+participant about their system assistance satisfaction and 
+difficulty for completing each task. For the difficulty rating for 
+completing each task using the PWDST, the options range 
+from 1 (Very Difficult) to 7 (Very Easy). While for the system 
+assistance satisfaction scale, participants are asked to rate their 
+satisfaction with the support information provided by the 
+PWDST for each task, with options ranging from 1 (strongly 
+disagree) to 7 (strongly agree). 
+
+Procedure 
+After an initial briefing, participants were asked to sign a 
+consent form. Then participants used a computer to complete 
+the online demographic questionnaire. Next, participants were 
+briefed and trained on the Preflight Weather Decision Support 
+Tool and completed the post-training quiz. Participants then 
+completed a series of activities using the Preflight Weather 
+Decision Support Tool system on an iPad. For the activity, 
+participants were asked to complete weather preflight planning 
+using the app and access, interpret, and apply weather 
+products from the Aviation Weather Center Website 
+(AWC.org). After each activity participants answered 
+questions from Participant Rater Form. After all activities 
+
+1917
+
+were completed, participants completed the System Usability 
+Scale, Subjective Mental Effort Questionnaire and the After-
+scenario questionnaire for their overall experience with the 
+PWDT. Lastly, participants were debriefed and compensated. 
+ 
+RESULTS 
+ 
+A series of Mann-Whitney U-Tests were conducted in 
+order to examine the differences in between Private Pilot and 
+Certified Flight Instructors impressions, satisfaction, and rated 
+usability of the PWDST application. Results indicated, there 
+were no significant differences between Private Pilot and 
+Certified Flight Instructor impressions, satisfaction, and rated 
+usability of the app.  
+ 
+System Usability Scale (SUS) 
+For the overall system usability on a scale from 0-100, 
+both groups rated the usability above 68, which is considered 
+above average. Although, Private pilots reported a slightly 
+higher system usability score, there were no significant 
+differences between groups (U = 9.00, z = –.247, p = .81, r = -
+.08). 
+ 
+After Scenario Questionnaire 
+Overall system satisfaction was reported on a scale from 
+1 (strongly disagree) to 7 (strongly agree), both groups 
+average rated the overall system satisfaction above 5. Results 
+indicated, there were no significant difference between groups 
+for overall system satisfaction (U = 7.00, z = –.747, p = .46, r 
+= -.25). However, Private pilots’ reported system satisfaction 
+was slightly higher than CFI reported system satisfaction.  
+ 
+Subjective Mental Effort Questionnaire 
+Overall perceived difficulty completing tasks using the 
+PWDST system was reported on a scale from (0) Not at all 
+hard to do, (110) Tremendously hard to do, and (150). In this 
+study both groups average rating was lower than 25, A bit 
+hard to do. Results indicated, there were no significant 
+difference between groups for overall system satisfaction (U = 
+9.00, z = –.256, p = .80, r = -.09). However, Private pilots’ 
+reported system satisfaction was slightly higher than CFI 
+reported system satisfaction.  
+ 
+Participant Rater form  
+For each product within the Big Picture, Hazards, And 
+Visibility product sections, participants completed a difficulty 
+scale with options ranging from 1 (Very Difficult) to 7 (Very 
+Easy). Additionally, participants also completed a satisfaction 
+scale for each product with options ranging from 1 (strongly 
+disagree) to 7 (strongly agree). Six Mann Whitney U Tests 
+were ran to compare means between Private Pilots and CFI, 
+results indicated, there were no significant difference between 
+groups for participant rated difficulty and satisfaction with 
+system assistance for: Big Picture (rated difficulty: U = 3.5, z 
+= -1.63, p = .10, r = -.05) (rated system assistance satisfaction: 
+U = 4.00, z = -1.50, p = .14, r = -.05), Hazards (rated 
+difficulty: U = 9.50, z = –.13, p = .90, r = -.04) (rated system 
+assistance satisfaction: U = 7.00, z = –.81, p = .42, r = -.03), 
+and Visibility products (rated difficulty: U = 2.00, z = –.2.16, 
+
+p = .03, r = -.72) (rated system assistance satisfaction: U = 
+5.50, z = -1.15, p = .25, r = -.38). 
+ 
+Table 1: Survey Measure Mean Scores for Private Pilots and 
+Certified Instructors. 
+
+ 
+Private Pilots  
+(n=4) 
+
+Certified Flight 
+Instructors        
+
+(n=5) 
+Scale 
+M (SD) 
+M (SD) 
+
+After Scenario 
+Questionnaire 
+5.92 (2.00) 
+5.80 (1.12) 
+
+System Usability Scale 
+76.88 (32.11) 
+87.00 (16.90) 
+
+Subjective Mental Effort 
+Questionnaire 
+18.50 (30.70) 
+16.00 (22.70) 
+
+Big Picture Products 
+Difficulty Rating 
+6.60 (0.49) 
+5.20 (1.26) 
+
+Big Picture Product 
+System Assistance 
+Satisfaction 
+6.50 (0.87) 
+5.15 (1.15) 
+
+Hazard Products 
+Difficulty Rating 
+6.85 (0.10) 
+6.16 (1.31) 
+
+Hazard Products System 
+Assistance Satisfaction 
+6.55 (0.90) 
+6.12 (1.29) 
+
+Visibility Products 
+Difficulty Rating 
+7.00 ( 0.00) 
+4.6 (2.79) 
+
+Visibility Products 
+System Assistance 
+Satisfaction 
+5.50 (3.00) 
+4.40 (2.70) 
+
+ 
+DISCUSSION 
+ 
+Results indicated there were no significant differences 
+between Private pilots and CFI impressions, system assistance 
+satisfaction, and perceived usability of the PWDST 
+application. Furthermore, Private pilots reported higher ratings 
+for usability, system satisfaction, and lower ratings for 
+subjective mental effort. Although, the PWDST was initially 
+designed to assist low hour private pilots through the weather 
+preflight planning process. Results suggest that despite the 
+difference in flight experience and training both groups had 
+positive feedback about the application’s support information 
+and the overall usability for weather preflight planning tasks. 
+Further research should be invested into a more detailed 
+analysis of each application interface and the various possible 
+errors and limitations the application may introduce during 
+each phase and task of the preflight planning process. 
+Additionally, future research should be invested into 
+investigating the effects the PWDST may have on preflight 
+and inflight performance for novice and experienced pilots. 
+ 
+
+DISCLAIMER 
+
+1918
+
+The views expressed in this paper are those of the 
+authors and do not necessarily represent the organization with 
+which they are affiliated.

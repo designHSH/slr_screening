@@ -1,0 +1,917 @@
+Information Architects: Using
+Community-Engaged and Qualitative Methods
+to Design a Technology-Based Nutrition and
+Cancer Risk Intervention for Rural Adults
+
+Melissa J. Vilaro, PhD, MPH1, Kathryn McAlindon, PhD2, Gillian Mertens, PhD2,
+Taylor Ashley, BS2, Mohan Zalake, BS3, Eric J. Cooks, PhD2, and Janice L. Krieger, PhD2
+
+Method
+
+Overview
+
+The current VHA-delivered intervention allows users to report
+their dietary intake during an approximately 12-minute con-
+versation, and receive evidence-based, tailored, recommen-
+dations for CRC prevention. The study protocol was approved
+by the university Institutional Review Board (IRB) and is a
+registered clinical trial (ClinicalTrials.gov, NCT04192071).
+
+Data Collection
+
+A user-centered approach guided our process of including
+rural
+adults
+in
+the
+participatory
+development
+of
+the
+
+technology. Recruitment occurred via HealthStreet, a uni-
+versity afﬁliated community engagement and research re-
+source,
+ﬂyers,
+and
+via
+emailing
+potentially
+eligible
+participants identiﬁed via a university afﬁliated research
+registry. By collaborating with our users/stakeholders (older
+rural adults) we aimed to center their information needs. User-
+centered design approaches follow a typical pattern including
+identifying needs, specifying the context of use, specifying
+requirements, producing design solutions, evaluating designs,
+and determining if the system satisﬁes the user or if not,
+starting over again. For this study, after each round of data
+collection, the VHA was updated based on user feedback.
+Inkle script programming39 was used to write and adapt for the
+virtual human prototype delivered on a virtual interviewer
+platform.40
+
+A purposive sample of participants stratiﬁed by race and
+gender, completed the following in either a focus group or
+think-aloud interview: (1) individually tested an interactive
+VHA prototype via a web-based platform while researchers
+were present and available to troubleshoot as needed. Think-
+aloud participants were prompted to think out load with verbal
+thoughts and questions as they proceeded through the inter-
+vention), (2) completed a self-reported questionnaire on de-
+mographics, perceptions, and behaviors, (3) participated in a
+moderated discussion to provide feedback on the VHA pro-
+totype and preferences for graphic stimuli (eg, food images,
+infographic, visual representations of risk, existing cancer
+prevention resources). The VHA interaction was not the same
+for all participants, as after each round of data collection, the
+VHA was updated with user feedback.
+Moderators were trained members of the research team.
+When possible, we sought to employ gender and racial
+concordance between participants and moderators. The ﬁrst
+two focus groups were conducted in-person in January 2020,
+while the remaining data collection events occurred remotely
+via Zoom after a revision to the protocol to allow data col-
+lection to continue during Covid-19 related restrictions in
+place at the time. Questionnaire items included demographic
+information as well as validated measures to assess risk
+perceptions,41 intentions to screen for CRC,42 message rele-
+vancy,43 and information avoidance among other items rel-
+evant to the larger pilot test of the intervention. Focus groups
+lasted approximately two hours and individual think-aloud
+interviews lasted about one hour. Sessions were video/audio
+recorded and transcribed verbatim. Participants received a $35
+visa gift card or Amazon e-gift card.
+
+Data Analysis
+
+Researchers iteratively reviewed transcripts and notes taken
+during data collection and conducted exploratory analysis to
+determine what changes were needed for each VHA prototype
+update. Regarding researcher characteristics, members of the
+research team hold several identities including Black, White,
+cancer survivor, and have experience working to promote
+
+Vilaro et al.
+3
+
+health equity in interdisciplinary teams that include the ﬁelds
+of health communication, computer science, education, and
+public health. Transcripts were managed with NVIVO soft-
+ware.44 To facilitate data analysis we employed a general
+inducive approach to thematic analysis.45,46 The research team
+created a codebook to formalize analysis of user-generated
+requests for more information which were coded as infor-
+mation gaps. We extract and describe participants experiences
+with the intervention in terms of Cognitive Load Theory. We
+deﬁned information gaps as additional information or content
+requested by participants (beyond what was presented by the
+VHA). Information gaps could include speciﬁc suggestions
+for visual cues (eg, images, pop-up features, graphs), topics of
+interest (eg, recipes, behavior change techniques, cancer
+facts), or format of information (eg, PDFs, links, websites,
+videos).
+Researchers coded transcripts individually and then dis-
+cussed ﬁndings during weekly data analysis meetings from
+August 2020 to November 2020. Weekly meetings included
+discussion of a change log of how the script changed (ad-
+ditions and deletions) during each iteration. There were in-
+stances where new content added during a previous iteration,
+was deleted for the subsequent iteration based on user-
+feedback. Although those details are outside of the scope
+of this paper, we plan to report them with results of the
+quantitative pilot test. Questionnaire data were analyzed using
+SPSS to summarize participant characteristics with descriptive
+statistics and the SRQR reporting guidelines were used to
+ensure rigorous synthesis and reporting of qualitive ﬁndings
+
+Results
+
+Participants
+
+Eligible participants were adults between 50-73 years old,
+proﬁcient in English, and geographically rural areas of one
+southeastern U.S state. Non-Hispanic Black and White, males,
+and females participated and were (M = 61.7, SD = 7) years
+old (Table 1).
+
+Information Gaps
+
+The following categories represent user-generated topics of
+additional interest. While learning about how red meat,
+processed meat, and alcohol contribute to one’s CRC risk from
+the VHA, participants asked for (1) recipes (2) statistics and
+details about scientiﬁc claims (3) more CRC screening in-
+formation (4) meat alternatives and (5) behavior change
+strategies. Table 2 Presents descriptions of each category and
+participant comments from formative data collection. Par-
+ticipant comments and evidence-based strategies to limit
+cognitive overload were used to inform iterative changes to the
+script (VHA) as well as considerations for building a website
+as a supplement to the VHA interaction.
+
+Recipes. During the VHA interaction, The VHA presents the
+user with meal ideas that could be substitutions for dishes with
+red and processed meat. Participants indicated that they found
+suggestions useful but also requested speciﬁc recipes. Some
+users also asked about the possibility of receiving personalized
+meal plans to help them meet the VHA’s recommendations to
+avoid red and processed meat. Participants prefaced requests
+for recipes with questions like, “so what can I eat”?
+
+Statistics and Research. Participants also sought clariﬁcation of
+gradients of risk often in the form of research or statistics that
+could clarify their risk. Participants were also asked if their
+speciﬁc demographic characteristics would change their own
+risk or if speciﬁc populations were driving the trends for
+increased risk as described by the VHA. Often in response to
+the VHA discussing recommendations for alcohol, red meat,
+and processed meats, many participants asked for more data
+on “how much is okay to eat”, perhaps to negotiate their
+existing dietary patterns with the recommendations to avoid or
+limit consumption of nutrition risk factors. Some participants
+also mentioned wanting to do their research to get more in-
+formation after their VHA interaction.
+
+Table 1. Participant Demographics.
+
+Variable
+n
+%
+
+Gender
+Male
+24
+50
+Female
+24
+50
+Race
+Black
+31
+65
+White
+17
+35
+Primary language
+English
+47
+100
+Marital status
+Single
+12
+25
+Married
+23
+48
+Divorced/separated
+9
+19
+Widowed
+3
+6
+Missing
+1
+2
+Education
+Grade 1-8
+1
+2
+HS grad, technical college, some college
+24
+50
+College graduate
+11
+23
+Post-graduate training
+11
+23
+Missing
+1
+2
+Income
+<$11,000
+7
+14
+$11,000-$30,000
+9
+19
+$30,000-$75,000
+14
+29
+$75000+
+10
+21
+Missing/prefer not to answer
+8
+17
+Insurance [Status?]
+Yes
+48
+100
+No
+0
+0
+Total
+48
+100
+
+4
+
+Table 2. User-generated Categories of Additional Information Needs after VHA Interaction.
+
+Category
+Example quotes
+Strategies used to address information needs
+
+Recipes
+“Those are neat suggestions but where do I ﬁnd how to
+make them [meat alternatives listed by VHA during the
+interactive module].” (TA 5)
+
+The website provides users with a dedicated recipe
+section of alternatives to red meat, processed meat, and
+alcoholic beverages. Users can choose to access the
+webpage after interacting with the VHA or choose to
+skip this resource
+(2) Segmenting gives optional access to recipes on a website after talking to the VHA
+(3) Pretraining is used when the VHA names nutrition risk
+factors for colorectal cancer and alternative food items
+(eg, “chicken salad sandwich”)
+Statistics and
+research
+“Then it would have said, you know, it could have spit back
+to me, you know, that this age, this is your likelihood or
+prevalence? You know, for your demographic” (FG11,
+P3)
+
+Per-user request, the VHA script was updated to include
+one statistic describing colorectal cancer incidence
+among adults in the United States
+(2) Segmenting limits statistical facts during the VHA
+interaction but provides more evidence-based statistics
+and research on the website’s “quick links” section
+Give some stats, maybe based on three or four reports,
+not just one. I don’t know how far you want to go, but
+I’m concerned about [if I’m at risk from prior smoking],
+and I will look it up.” (FG14)
+
+(4) Weeding: The trimmed down, need-to-know
+information found on the website’s fast fasts section
+allows users to reorient themselves to key facts within
+the new website presentation space
+(6) Aligning is used by placing the key term “fast facts” near
+the corresponding image of the colon on the website to
+reduce scanning
+Colorectal cancer
+screening
+information
+
+“I don’t know how often you can do the home [test], so I
+guess I like more information about the home option.”
+(FG5)
+
+Requests included colorectal cancer risk statistics and
+quick references about screening
+(2) Segmenting is used by iteratively adding information to
+the VHA describing home-stool and colonoscopy
+screening modalities, frequency, and age requirements
+but providing printed resources for evidence-based
+guidelines on the website
+“What I think is missing is showing where colon cancer
+can start. I don’t know where that place is. Is it the large
+intestine? the colon? Is it the small intestine? Might be
+useful to show Where they go with a colonoscopy.
+Then again, I’m second-guessing myself here because
+maybe that’s off-putting to some people” (FG7)
+
+(3) Pretraining on key screening guidelines and
+terminology for CRC.
+(5) Signaling is used with the website homepage label
+“Colorectal Cancer Fast Facts”, signaling key info.
+Simple icons also provide visually aided reinforcement
+
+(8) Synchronizing is employed with a brief VHA-narrated,
+animated video clip demonstrating the correct stool
+collection process as needed to complete the FIT home
+stool test. This video was user-developed and
+previously pilot-tested
+Meat alternatives
+“Maybe that’s the new module or some new section, what
+a good diet would include? Are there any vegetables
+that you eat more of, and you can have more steak?
+…You’re just telling me not to eat meat. What did he
+say something about replacing it with? I guess chicken or
+beans, legumes and beans and so forth, but that’s only a
+piece of what we all eat.” (FG8)
+
+(1) Ofﬂoading: the use of a VHA, in general, provides an
+opportunity for diversiﬁcation of modalities including
+the use of auditory channels for information delivery
+
+“I would have liked to have had more information
+expanded on...more advice on processed meats.” (TA5)
+(2) Segmenting is used when the VHA discusses examples
+of non-meat food alternatives (eg, beans/legumes). The
+website will provide a list of alternatives and additional
+resources determined in user testing
+Behavior change
+strategies
+“Give me some of the actual other things that I can do, as
+well. So, you know, it’s almost like, here’s all the stuff
+you did, that’s bad, that’s contributing to it, but tell me
+the things that I could do” (FG11, P3)
+
+(3) Pretraining provides users with a few brief strategies
+they can try to reduce consumption of the nutrition risk
+factors described by the VHA.
+(2) Segmenting “Fast Fact” Link directing users to “small
+changes” using the same text used in the VHA script
+
+Vilaro et al.
+5
+
+Colorectal Cancer Screening Information. Participants requested
+additional information on CRC screening most frequently
+during prototypes one and two of the VHA-delivered nutrition
+module. This was due in part to an early focus on developing
+the dietary intake reporting features and accuracy of tailored
+feedback. Due to the extensive focus on nutrition reporting
+early on, scripted content in the initial prototypes omitted
+important details about CRC screening. By prototype three (of
+four) CRC screening content was added into the script. Across
+versions, participants comments changed from general feed-
+back that there was a lack of information on colorectal cancer
+to asking more speciﬁc questions about where in the body
+colon cancer starts and how to screen with different modalities
+(home stool test vs colonoscopy) as well as questions about the
+accuracy of home stool tests compared to colonoscopy.
+
+Meat Alternatives. Participants wanted more holistic infor-
+mation about food in addition to just the three nutrition risk
+factors presented by the VHA. Perhaps because the VHA only
+discussed three food/beverage items to avoid for CRC pre-
+vention, participants were curious about other foods, like
+vegetables, ﬁber, sugars, and simple carbohydrates, protein,
+and how these other foods were related to colorectal cancer
+risk. Table 2. describes in detail the type of user requests.
+
+Behavior Changes Strategies. The VHA script provides users with
+the recommendation to avoid or limit the three nutritional risk
+factors discussed. While this was a theoretically informed design,
+users requested information that would help them engage in
+action-oriented change. Questions of how to engage in behavior
+changes were typically asked after the VHA discussed the brief
+strategies and suggested a list of red/processed meat alternatives.
+
+Delivering Supplemental Information
+
+While the results above addressed what participants wanted to
+know more about in addition to the intervention content, the
+following results emerged from participant discussions on how
+they would like to receive additional information. First, based
+on suggestions a website was chosen to communicate sup-
+plemental information. Speciﬁc considerations and strategies
+were used in the development of a website prototype to optimize
+potential learning and behavior change (Table 4). The following
+considerations emerged as key factors for the visual and in-
+formational prototype design: (1) using a website format to
+provide additional information; (2) incorporating graphics/
+visual aids for key concepts; (3) labeling website sections
+with language that aligns with VHA-delivered content; (4)
+supplementing the intervention with credible and print re-
+sources; and (5) offering interactivity/a feedback loop (Table 3).
+
+Designing the Website Prototype. The ﬁrst design consideration
+involved choosing a medium through which to present the
+supplemental information requested by participants. Initially,
+the study team presented an infographic during focus groups
+
+and interviews (see Appendix) as an example of a static re-
+source that could be provided to participants either in print or
+digitally. As data was reviewed, it became clear that a single
+infographic may not be able to accommodate the breadth of
+additional information that was being requested. Second,
+because participants agreed that the brief VHA interaction
+itself was “just right” in terms of length and information
+density, any additional information would need to be provided
+outside of the VHA content. Third, many participants sug-
+gested a website while viewing the infographic, citing their
+view that because different people might want to know about
+different information, an infographic would be too busy and
+dense if it were to accommodate the diversity of user needs.
+Participants also expressed desires for “links” (ie, hyperlinked
+resources) that elaborated on the main points in the inter-
+vention, so they could select only those that aided their
+learning at that moment. Thus, due to usability, custom-
+izability, and organizational capabilities, a website was con-
+sidered an appropriate supplement to the VHA.
+To help the study team operationalize and conceptualize the
+information design strategies being applied, iterative proto-
+types starting as a concept map and evolving to web wire-
+frames, resulted in a prototype of the landing page for the
+website (Figure 1-3). The prototype design process involved
+using an interdisciplinary and user-centered lens to balance
+ﬁdelity to the data, the use of existing resources, infrastructure
+(ie, a university website template) and visual design.
+
+Communicating Key Concepts with Visual Aids. In terms of visual
+components of a supplemental resource, feedback suggested
+participants preferred a minimal and intentional approach.
+While participants commented on the beneﬁt of graphics for
+“[grabbing] my eye” or aiding developing mental represen-
+tations (eg, for those unfamiliar with CRC or screening, “an
+image of what [CRC] is would help”), they also expressed
+concern about graphics making things “too busy” or being
+superﬂuous and ultimately distracting. To avoid overload from
+extraneous visual elements, weeding and signaling were key
+cognitive load reducing strategy used in website design (see
+Table 4 for deﬁnitions). Thus, the website homepage is labeled
+“Colorectal Cancer Fast Facts’, to signal brief and visually
+aided reinforcement of key information delivered by the VHA
+(see Figure 1, or “Quick Links” in Figure 3 for another ex-
+ample). Signaling reinforces what they just learned cued by
+phrasing taken directly from the intervention. The trimmed-
+down, need-to-know information presented in the Fast Facts
+section of the website is an example of weeding and aims to
+provide participants the opportunity to reorient themselves to
+content priorities within the new website presentation space.
+
+Aligning Virtual Health Assistants and Website Content. As the
+viewer scrolls further down, the next section, labeled “More
+from ALEX”, illustrates the use of the third design consider-
+ation: reinforcing “pretraining,” deﬁned as key information
+participants learn such as terms and deﬁnitions, by labeling
+
+6
+
+additional resources in direct alignment with what was just
+learned. Participants saying, “I hope it’s not the general vague
+complementary materials that you get,” reinforced the need for
+
+this consideration. Some participants discussed the difﬁculty of
+using supplementary materials without explicit connections to
+what they just learned. Thus, the webpage section in Figure 2
+
+Table 3. Website Design Considerations and location of Features in Initial Prototype.
+
+Website design considerations
+Participant suggestions from data
+Website section (Figures 1-3)
+
+(1) Using a website for additional
+information
+“Maybe if [the VHA] could tell you where to get either links or
+websites or brochures, where you can get more in-depth
+information. Because [the intervention] kind of goes kind of
+quick.” TA6
+
+All sections
+
+“Maybe an option at the end. Because I’m not sure where it
+would have ﬁt in the context of this virtual presentation.
+Possibly at the end if there were an option to look at
+[additional information], I would go through that kind of an
+option personally. I think that kind of thing is informative,
+something that [viewers] could download or a link to your
+references.” FG8
+(2) Incorporating graphics/visual aids for
+key concepts
+“You asked about [this infographic], I like this, it kind of grabbed
+my eye with some of the illustrations. The illustration
+sections are very easy to read, quick to read.” FG8
+
+CRC fast facts
+
+“Also, the supplementary info, besides being written for
+patients, should be more graphic.” TA5
+
+Quick links
+
+“I went into this interaction with the assistant, knowing about
+colorectal cancer but there was no image of it...and if this
+assistant is meant to deal with people who are not being
+screened, who don’t know much about it, then I think an
+image of what colorectal cancer is would help.” TA5
+(3) Labeling website sections in plain
+language that align with intervention
+content
+
+“I think having several sections, one would include actual ﬁles,
+like the [infographic you showed, and] I like the idea of the list
+of other websites with the web addresses there. What is, I
+think, important also is to have each one properly labeled.”
+FG8
+
+More from ALEX
+
+“The one doubt I had was when [the VHA] said he’ll be giving
+more complementary materials. I hope it’s not the general
+vague complementary materials that you get. I have seen so
+many materials handed out, by either physicians or that you
+get online, that are just so general and that seem to be
+directed more at satisfying institutional and legal
+requirements rather than coming down and telling the
+patient in more common [language].” TA5
+(4) Adding credible, print resources
+“If it was really going to change my opinion, I got to [know,]
+what are the real stats involved with it?” FG8
+More from ALEX pages
+(information pages for the ﬁve
+info gaps)
+“You always want to read what [you’ve heard] people say, you
+know, that’s where you back it up. If it’s in writing, if it’s in
+print, I’m more likely [to believe it]. Sometimes [what people
+say] is believable but, yeah, you want to read it also.” FG10
+“In this day and age of conspiracy theories, a lot of people say a
+lot of different things. It’s about backing it up with some sort
+of data.” TA2
+(5) Offering interactivity/feedback loops “Like I said, the comment box. Someone may need to leave a
+comment or ask a question that wasn’t [covered] that they
+needed information on regarding nutrition or colorectal
+cancer, you know.” TA1
+
+Ask ALEX
+
+“It would be nice somewhere in there, to have a box, where you
+can ask an additional question. All the questions [in the
+intervention] have already been designed with answers and
+then you may have another question that it cannot answer.”
+TA3
+
+Vilaro et al.
+7
+
+displays the ﬁve categories of desired additional information,
+accompanied by direct quotes from the VHA’s discussion of
+that topic. An image of the VHA accompanies the quote,
+designed as a multimodal cue to reactivate previously learned
+information. This approach again employed signaling and
+brought in the strategy of segmenting which involves breaking
+the information into “bite-size” and distinct segments. These
+“learner-controlled segments’’ help information transfer.27
+
+Credible Information. The fourth consideration involved the
+source of the information. Participants wanted to see credible
+information, so we link users to curated content via the links in
+
+the “More from ALEX” section (Figure 2). While segmenting
+was the primary strategy applied to this consideration, pre-
+training inﬂuenced the decision to include outside resources
+and materials like journal articles or evidence-based guides.
+Meaningful learning of complex topics or systems can be
+assisted by pretraining on basic deﬁnitions and behaviors of
+the system’s components (eg, what is colon cancer and how is
+it affected by nutrition). So, while scientiﬁc journal articles
+may not be a participant’s typical reading choice, pretraining
+from the VHA may support learners in parsing speciﬁc, peer-
+reviewed sources, that represent a curated selection to directly
+address the most requested information.
+
+Table 4. Load reducing methods as deﬁned by Mayer and Moreno19 and applied during content development.
+
+Load reducing
+method
+Deﬁnition
+VHA affordances
+Translation to website*
+
+1. Off-loading
+Moving some essential processing from
+visual channel to auditory channel.
+Better transfer when words are
+presented as narration rather than as
+on-screen text
+
+The use of a VHA provides the
+opportunity to diversify modalities and
+use visual and auditory channels to
+deliver information
+
+Video clips with audio and visuals,
+with bulleted text
+
+2. Segmenting
+Allow time between successive bite-sized
+segments. Better transfer when info is
+presented in learner-controlled
+segments rather than as a continuous
+unit
+
+Users have the option to access the
+website after talking to the VHA,
+allowing for learner-controlled
+segmenting
+
+Segmenting of information on the
+website into topic-speciﬁc
+sections
+
+3. Pretraining
+Provide pretraining in names and
+characteristics of components
+The VHA introduces users to key
+concepts related to colorectal cancer
+nutrition risk factors and prevention
+
+The website expands on the same
+key terms from VHA.
+
+4. Weeding
+Eliminate interesting but extraneous
+material to reduce processing load
+VHA only presents “need to know”
+content to eliminate extraneous info as
+determined by user feedback
+
+Pilot data may be used to test
+algorithms that ﬁlter content
+based on user input
+5. Signaling
+Provide cues for how to process, select,
+and organize the material. Signaling is
+most useful when extra information is in
+a presentation, as it helps learners focus
+on the most important content
+
+Plans to use signaling in VHA include
+adding pop-up images and text to
+emphasize keywords and facts.
+Participant suggestions include pop-up
+text when the VHA discusses nutrition
+risk factors, a pop-up image of a colon,
+pop-up number when the statistics are
+presented
+
+Visible headers signal the reading
+path to readers. Keywords are
+bolded and deﬁned in sidebar
+boxes
+
+6. Aligning
+Place printed words near corresponding
+parts of graphics to reduce the need for
+visual scanning
+
+N/A
+Placed key terms next to
+corresponding graphics to
+prevent excessive scanning
+7. Eliminating
+redundancy
+Avoid presenting identical streams of
+printed and spoken words. Better
+transfer when words are presented as
+narration rather than narration and on-
+screen text
+
+Did not have subtitles in the VHA
+prototype however, based on previous
+work in this area and in accordance with
+ADA guidelines, we plan to build and
+test a ﬁnal version with subtitles to
+enhance accessibility
+
+Website text will be run through
+text Lexile calculator with a
+target Lexile range of 740-875
+
+8. Synchronizing Present narration with animation
+simultaneously to minimize the need to
+hold representation in mind
+
+The current VHA does not include added
+animations. Plans to include animations
+in updated prototypes will follow best
+practices related to synchronizing
+
+The website will house a VHA
+narrated, animation of the
+correct stool collection
+method
+9. Individualizing Typically used when synchronization is not
+possible to ensure users can hold mental
+representations
+
+This would entail matching high-quality
+media design with the users’ spatial
+learning ability if synchronizing could
+not be implemented
+
+N/A
+
+8
+
+Offering Interactivity. Finally, participants requested more per-
+sonalized experiences. This often was expressed by asking about
+ways of sharing comments or questions with the VHA. Thus, the
+“Ask ALEX” Website section was incorporated at the bottom of
+the prototype to allow the participants a feedback loop with the
+research team (Figure 3). While a feedback mechanism of this
+kind may present barriers that still need to be addressed as the
+prototype progresses (eg, making it clear that the team cannot
+provide medical advice, being explicit about the level of privacy,
+deciding if connecting participants to local resources is within the
+scope of the project), user requests made it clear that individ-
+ualizing the information processing experience was of interest.
+
+Discussion
+
+Despite the growing use of information technologies to support the
+health goals of diverse audiences, the development of theoretically
+informed, cancer prevention and control interventions with older
+rural adults have not been adequately explored. The present study
+identiﬁes participants’ preferences for the content and design of a
+VHA-delivered CRC prevention intervention. The main ﬁndings
+suggest that having access to a website after discussing cancer risks
+with a VHA that gives real-time, person-speciﬁc feedback is
+desirable and may support action planning needs. Participants
+speciﬁed ﬁve categories of information gaps after the VHA in-
+teraction. Researchers used this feedback to inform the content and
+design of a website that also considered the potential impact of the
+participant’s cognitive load. Providing participants direct access to
+decision support materials after learning about cancer risks is
+supported by previous research. Zikmund-Fisher et al47 describe
+how women being asked to consider breast cancer treatment
+options who received cancer therapy options sequentially (rather
+than all at once) had improved comprehension of risks.
+
+Theory-Informed vs User-Informed
+
+Cancer information-seekers may be primed to experience
+cancer information overload if confronted with content
+
+without the appropriate schema to process it. Existing research
+indicates as mental schemas evolve and learn, they impact
+cognitive processing and workload of the user.48 For example,
+providing new recipes may be helpful to promote reducing
+processed meat consumption, however, if recipes are pre-
+sented alongside need-to-know information about CRC risk
+and screening options, the recipes have the potential to
+contribute to cognitive overload. Thus, design considerations
+to manage cognitive load may be particularly important.
+Four of the several evidence-based strategies used to
+prevent cognitive overload are expanded on including pre-
+training, segmenting, signaling, and weeding. First, the brief
+VHA interaction serves as a conceptual pretraining for users,
+who can form a mental map of CRC concepts before getting
+access to a website with additional content. Second, the
+website segments or breaks up information into bite-sized
+pieces, which avoids problems from presenting too many risks
+at once.49 Segmenting may be particularly important for the
+task of information recall (eg, recalling information to plan
+diet changes and obtain cancer screening) which otherwise
+could be impeded by the existing cognitive load of learning
+about personal cancer risk in the same interaction.50 Third,
+signaling is most useful when extra information is included in
+a learning aid, as it helps learners focus on the most important
+pieces of information. In the current study, signaling was used
+by placing exact phrases from the VHA interaction into
+website headings.51 Finally, weeding prioritizes need-to-know
+information and was used to eliminate extraneous material
+from the brief VHA interaction throughout the iterative
+process.
+Despite the use of theoretically informed information
+architecture, the importance of user-centered implementation
+strategies beyond the development phase is crucial. In the
+current study, the VHA presents proximal nutrition risk
+factors to activate the more psychologically distant risk of
+potential future cancer based on construal level theory.52
+
+Conversely, the user-centered approach allowed researchers
+to supplement the VHAs risk information with additional
+
+website content as requested by participants. Moreover,
+understanding how cancer information overload is experi-
+enced by audiences with varied social determinants of health
+is important. In fact, education, income, and employment
+status are predictors of cancer information overload; with
+those making less than $50,000 annually, no college degree,
+and no employment more likely to experience overload.36
+
+Preferences of traditionally marginalized populations re-
+garding health are just beginning to enter the literature.
+
+Virtual Health Assistants as Information Curators
+
+As a practical application, VHAs are well suited to act as
+credible gatekeepers and bridges to curated cancer information
+in various ways. First, A common predictor of engaging with
+CRC screening is a recommendation from a doctor or a close
+family/friend.53 If VHAs are seen as credible, familiar sources,
+they may be effective at facilitating the uptake of promoted
+cancer prevention behaviors. Second, VHAs may also be an
+
+Figure 2. Website prototype section two.
+
+10
+
+effective gatekeeper for cancer information seekers an im-
+portant affordance, given the high prevalence of harmful
+cancer information and misinformation on social media.54
+
+VHAs role in ﬁltering information may also avoid message
+fatigue (eg, feeling exhausted when exposed to too many
+undesired similar messages) and the related negative out-
+comes like reactance, opposition, or disengagement.36 Thus,
+Directing information seekers to a curated site may help users
+who want additional resources avoid harmful cancer infor-
+mation and message fatigue.
+
+Study Limitations
+
+The current study ﬁndings should be considered in the context
+of intervention design and development, rather than gener-
+alized to assume causal links with intentions or behavior. The
+impact of website features, content, and implementation must
+still be tested for feasibility and efﬁcacy. Finally, participants
+are given an option to access additional content after the VHA
+interaction, however, the current design does not assess en-
+gaging with a website prior to or simultaneously with a VHA,
+as such content will continue to be adapted as we learn more
+about how adults interact developed cancer prevention
+materials.
+
+Future Directions
+
+The developed intervention will be pilot tested using a na-
+tional Qualtrics survey panel of adults living in rural areas of
+
+the United States. Future directions may also include devel-
+oping models to curate the user experience of navigating
+websites. For example, user data provided during interactions
+with a VHA (eg, content preferences, eating, drinking, or
+smoking habits) could be used by a system to enable or disable
+certain sections of the subsequent website (eg, a recap of
+general screening guidelines, options to order home stool kits,
+resources for how to talk a doctor about screening). While the
+current study does not explicitly test for mechanisms of
+motivation or change, we lay the groundwork for exploring
+theoretically informed navigation between related cancer
+prevention resources among a traditionally understudied
+population. Future studies of mechanistic pathways associated
+with using VHAs as cancer prevention information curators
+are needed. Finally, measuring website user information
+overload with validated scales will be useful for the next steps
+and user-testing.55
+
+Conclusion
+
+The role of curating web-based navigation between evidence-
+based cancer prevention and control resources warrants more
+research, especially among older rural adults. The continual
+incorporation of user feedback allowed the option to add a
+supplemental website, consistent with strategies “to apply
+rapid bidirectional approaches to fail fast and learn quickly”
+that facilitate timely and equitable development of re-
+sources.53 Although information needs of older rural adults
+can be strategically accommodated in health information
+
+Figure 3. Website prototype section three.
+
+Vilaro et al.
+11
+
+technologies- meeting these needs may be enhanced if design
+considerations are informed by cognitive load theories and
+user-centered design principles.
