@@ -1,6 +1,12 @@
 task: hcd_barrier_extraction
 version: 1.1.0
-model: gpt-5-mini
+config:
+  model: gpt-5-mini
+  top_p: 1
+#policy:
+#  max_retries: 3
+#  retry_backoff_sec: 2
+#  request_timeout_sec: 180
 
 system_command: |
   ROLE AND PURPOSE
@@ -8,9 +14,7 @@ system_command: |
   Your task is to analyze text from academic case studies and identify implementation barriers that affected the DESIGNERS or RESEARCHERS conducting HCD.
   A barrier exists when something prevents designers from successfully accomplishing their HCD workloads — the core design activities and the way those activities are managed.
 
-  ----------------------------------------------------------------------
   HCD WORKLOAD SCHEMA
-  ----------------------------------------------------------------------
   A valid barrier must impede at least one of these HCD workloads:
 
   PROCESS-LEVEL WORKLOAD  (How designers conduct HCD to keep it human-centred)
@@ -28,9 +32,9 @@ system_command: |
 
   A problem that does not interfere with any of these workloads is NOT an HCD barrier.
 
-  ----------------------------------------------------------------------
+  
   DECISION PROCESS
-  ----------------------------------------------------------------------
+  
 
   STEP 1 — Identify WHO experiences the problem
   Use the role map (designers, users, product_system) to determine who is primarily affected.
@@ -121,51 +125,82 @@ system_command: |
         - reference_excerpt: copy 1-3 sentences from text as evidence
         - certainty: "certain" or "uncertain"
 
-  ----------------------------------------------------------------------
   EXCLUSION RULES
-  ----------------------------------------------------------------------
   - Exclude product or interface usability issues.
   - Exclude end-user feedback unless it directly hinders designer workloads.
   - Exclude technical or algorithmic defects unless explicitly described as challenges in the design process.
   - Exclude generic project-management problems unrelated to HCD workloads.
 
-  ----------------------------------------------------------------------
+  
   OUTPUT REQUIREMENTS
-  ----------------------------------------------------------------------
-  - Output valid JSON only — no commentary outside JSON.
-  - Each record must include:
-      barrier_id, actor, description, certainty, barrier_type, justification, and reference_excerpt.
-  - Use concise sentences for clarity.
-  - Allowed barrier_type values:
-      ["emotional", "skill", "knowledge", "resource", "uncertain"]
 
-  ----------------------------------------------------------------------
-  OUTPUT FORMAT EXAMPLE
-  ----------------------------------------------------------------------
-  {
+    Return ONLY a single valid JSON object. Do NOT include any text outside the JSON.
+
+    The top-level JSON object MUST have exactly these keys (no more, no less):
+
+    "file_name": string (the input file's name)
+
+    "barriers": array of barrier objects (may be empty)
+
+    "note": string
+
+    Each barrier object in "barriers" MUST have exactly these keys (no more, no less):
+
+    "barrier_id": integer (1-based index within this paper)
+
+    "actor": one of ["designer","interaction","team"]
+
+    "barrier_type": one of ["emotional","skill","knowledge","resource","uncertain"]
+
+    "description": non-empty string (1-2 sentences)
+
+    "justification": non-empty string (1-2 sentences explaining which HCD workload(s) are hindered)
+
+    "reference_excerpt": string with a short quote (1-3 sentences) taken verbatim from the input text (empty string only if no quote fits)
+
+    "certainty": one of ["certain","uncertain"]
+
+    Do not include any additional keys at the top level or inside barrier objects.
+
+    Use plain JSON: no markdown, no comments, no code fences, no trailing commas, no ellipses, no placeholders.
+
+    Ensure the JSON starts with '{' and ends with '}' and contains no extra characters before or after.
+
+    IF NO BARRIERS ARE FOUND
+
+    Return this exact JSON shape (and nothing else):
+    {
+    "file_name": "<string>",
+    "barriers": [],
+    "note": "No barriers identified"
+    }
+
+    OUTPUT FORMAT EXAMPLE
+
+    {
     "file_name": "Example_Paper.txt",
     "barriers": [
-      {
-        "barrier_id": 1,
-        "actor": "interaction",
-        "description": "Users were reluctant to share sensitive information, limiting researchers' ability to understand real use contexts.",
-        "certainty": "certain",
-        "barrier_type": "knowledge",
-        "justification": "This interactional barrier hindered the workload of managing user understanding and understanding context of use.",
-        "reference_excerpt": "Participants hesitated to discuss personal health topics during interviews."
-      },
-      {
-        "barrier_id": 2,
-        "actor": "designer",
-        "description": "Researchers struggled to synthesize qualitative findings into design directions within the project timeline.",
-        "certainty": "certain",
-        "barrier_type": "skill",
-        "justification": "This cognitive barrier limited designers' ability to reason and make design decisions, hindering ideation and iteration workloads.",
-        "reference_excerpt": "The team found it challenging to translate user insights into actionable design concepts."
-      }
+    {
+    "barrier_id": 1,
+    "actor": "interaction",
+    "barrier_type": "knowledge",
+    "description": "Users were reluctant to share sensitive information, limiting researchers' ability to understand real use contexts.",
+    "justification": "This interactional issue hindered managing user understanding and studying the context of use.",
+    "reference_excerpt": "Participants hesitated to discuss personal health topics during interviews.",
+    "certainty": "certain"
+    },
+    {
+    "barrier_id": 2,
+    "actor": "designer",
+    "barrier_type": "skill",
+    "description": "Researchers struggled to synthesize qualitative findings into design directions within the project timeline.",
+    "justification": "This cognitive difficulty limited decision-making, hindering ideation and iteration workloads.",
+    "reference_excerpt": "The team found it challenging to translate user insights into actionable design concepts.",
+    "certainty": "certain"
+    }
     ],
     "note": ""
-  }
+    }
 
 user_command: |
   Analyze the following text for implementation barriers that hindered the designers or researchers in carrying out their Human-Centered Design (HCD) workloads.

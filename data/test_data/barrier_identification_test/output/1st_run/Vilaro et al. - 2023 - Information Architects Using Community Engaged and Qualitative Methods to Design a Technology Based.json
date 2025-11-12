@@ -1,0 +1,51 @@
+{
+  "file_name": "Vilaro et al. - 2023 - Information Architects Using Community Engaged and Qualitative Methods to Design a Technology Based.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "team",
+      "barrier_type": "resource",
+      "description": "Frequent iterative changes across prototypes (including adding content in one iteration and deleting it in the next) created additional coordination and workload for the research team.",
+      "justification": "This complexity hindered the team's ability to efficiently integrate feedback & iteration and to coordinate multidisciplinary team activities needed to maintain coherent design direction.",
+      "reference_excerpt": "There were instances where new content added during a previous iteration, was deleted for the subsequent iteration based on user-feedback. Although those details are outside of the scope of this paper, we plan to report them with results of the quantitative pilot test.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Design work was constrained by existing infrastructure and templates, requiring trade-offs between fidelity to user data, existing resources, university website templates, and visual design.",
+      "justification": "These infrastructural constraints limited the team's ability to produce design solutions and to fully address the holistic experience and information architecture they wanted to implement.",
+      "reference_excerpt": "The prototype design process involved using an interdisciplinary and user-centered lens to balance fidelity to the data, the use of existing resources, infrastructure (ie, a university website template) and visual design.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "Unclear ethical, privacy, and scope boundaries for the planned 'Ask ALEX' feedback mechanism created uncertainty about how to offer interactive, individualized feedback.",
+      "justification": "This uncertainty impeded the team's ability to facilitate user involvement and to implement an interactive feedback loop safely, affecting evaluation and ongoing iteration of that feature.",
+      "reference_excerpt": "While a feedback mechanism of this kind may present barriers that still need to be addressed as the prototype progresses (eg, making it clear that the team cannot provide medical advice, being explicit about the level of privacy, deciding if connecting participants to local resources is within the scope of the project), user requests made it clear that individualizing the information processing experience was of interest.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Technical and resourcing limitations left the VHA prototype without accessibility and media features (no subtitles and no animations) that the team planned to add later.",
+      "justification": "Lack of these features constrained the designers' ability to address holistic user experience and evaluate accessibility and synchronized multimedia presentations during prototyping.",
+      "reference_excerpt": "Did not have subtitles in the VHA prototype however, based on previous work in this area and in accordance with ADA guidelines, we plan to build and test a final version with subtitles to enhance accessibility. The current VHA does not include added animations. Plans to include animations in updated prototypes will follow best practices related to synchronizing",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The brief VHA interaction and a single infographic could not accommodate the breadth of user-requested supplemental information, forcing the team to design and maintain a separate website.",
+      "justification": "This limitation required additional production of design solutions (a supplemental website) and increased workload to manage aligned content and avoid cognitive overload while preserving the VHA's brevity.",
+      "reference_excerpt": "As data was reviewed, it became clear that a single infographic may not be able to accommodate the breadth of additional information that was being requested. Second, because participants agreed that the brief VHA interaction itself was “just right” in terms of length and information density, any additional information would need to be provided outside of the VHA content. Third, many participants suggested a website while viewing the infographic, citing their view that because different people might want to know about different information, an infographic would be too busy and dense if it were to accommodate the diversity of user needs.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

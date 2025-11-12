@@ -1,0 +1,60 @@
+{
+  "file_name": "Lehmann et al. - 2022 - Designing AINA Intercultural Human Centered Design of an AI based Application for Supporting the Dia.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Intercontinental location differences combined with the COVID-19 pandemic limited availability and direct communication with target users in rural Africa, constraining engagement.",
+      "justification": "This reduced the team's ability to facilitate user involvement and to maintain deep, evolving user understanding (and limited opportunities to study real contexts of use), impeding participatory evaluation and contextual inquiry.",
+      "reference_excerpt": "The particular challenge in this project is the intercontinental and intercultural communication with the user groups on-site since the development team consists of German physicians and computer scientists. The user groups are primarily located in rural areas of Africa, especially Madagascar. Another constraint is the currently active COVID-19 pandemic, which leads to severe limitations in the availability and communication ability of the relevant user groups, especially in Africa.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "The team lacked sufficient shared language skills with users, requiring interpreters for interviews and evaluations.",
+      "justification": "Relying on interpreters constrained direct communication and nuance, hindering designers' ability to manage user understanding, elicit deep insights, and run smooth participatory evaluations.",
+      "reference_excerpt": "The participatory evaluations take place via intercontinental video conferences. The video conferences happen either in French or Malagasy, depending on the user group. Due to the lack of language skills, interpreters are present in addition to the direct participants of the evaluation.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "interaction",
+      "barrier_type": "emotional",
+      "description": "Socio-cultural hierarchies and gender dynamics caused some participants not to speak freely in certain interview or evaluation settings.",
+      "justification": "This trust and cultural participation issue limited facilitators' ability to involve users honestly and fully, reducing the quality of user insights needed to inform requirements and scenarios.",
+      "reference_excerpt": "we first had to learn, with the help of resident physicians, that certain interview settings did not produce the needed outcome because, due to socio-cultural differences, certain groups of people did not express themselves freely or at all in some settings, which is a major problem for participatory design methods.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Limited and unstable local IT infrastructure in primary health care facilities reduced users' ability to use online tools and participate remotely.",
+      "justification": "Poor connectivity and partial infrastructure hindered participatory evaluation (e.g., sharing prototypes, uploading images) and limited designers' ability to observe real usage workflows and test prototypes in realistic conditions.",
+      "reference_excerpt": "The results of the interviews allowed us to obtain a detailed picture of the participant’s level of knowledge about FGS and the working conditions existing in rural areas of Africa, particularly Madagascar. In general, there was little experience with FGS. Stable IT infrastructure was only partially present in primary health care facilities.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The team could not perform desired on-site observations during analysis and evaluation because of the global COVID-19 pandemic.",
+      "justification": "The inability to conduct in-person contextual inquiry prevented designers from fully understanding the context of use and limited the depth of ethnographic data that would inform requirements and iterations.",
+      "reference_excerpt": "Since user behavior plays a crucial role in any technology, we wished to conduct additional on-site observations during the analysis and evaluation phases. Unfortunately, this was not possible due to the global COVID-19 pandemic.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Regulatory and guideline constraints (AI/medical device guidance) prevented simplification of technical language in the manual.",
+      "justification": "External regulatory requirements limited the team's ability to adapt documentation language to users, hindering management of user understanding and the holistic user experience despite iterative feedback.",
+      "reference_excerpt": "Unfortunately, the revision of the manual, based on AI guidelines for medical devices, did not reduce the number of technical terms used, so all users commented negatively on this.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

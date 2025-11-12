@@ -1,0 +1,69 @@
+{
+  "file_name": "E and H - 2004 - Procuring a usable system using unemployed personas.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "A very tight project schedule and time pressure forced the usability consultants to work at high speed with only two consultants, compressing user research and design activities.",
+      "justification": "Limited time reduced designers' capacity to run iterative cycles, thoroughly involve stakeholders, and perform slower, deeper synthesis and evaluation (integrate feedback & iteration; facilitate user involvement; evaluate designs).",
+      "reference_excerpt": "The project group had worked for five months nailing down the organizational requirements and their time was running out. ... Therefore the UCD process could not take more than eight weeks. ... it was judged that we would be able to deliver on time by working with two consultants on top speed.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Members of the procurement project group (PPG) only participated occasionally in hands-on research and only one member was allowed to attend each interview, limiting direct stakeholder involvement.",
+      "justification": "Restricted stakeholder presence hindered designers' ability to facilitate user involvement, build shared understanding, and coordinate decisions with the procurers (facilitate user involvement; coordinate multidisciplinary team; manage user understanding).",
+      "reference_excerpt": "Although they were active and engaged, the members of the PPG, on the other hand, only participated occasionally in the hands-on work, such as on an interview or in a design session and then got the results presented to them in a weekly workshop. In order to not interfere too much with the actual interviews only one member of the PPG was allowed to attend on each interview session.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "Organizational requirements were abstract, diffuse or contradictory and had not been detailed to the same level as user requirements.",
+      "justification": "This lack of concrete organizational specification prevented designers and procurers from aligning business goals with design decisions and impeded iterative decision-making and integration of user and organizational requirements (manage user understanding; integrate feedback & iteration; specify user requirements).",
+      "reference_excerpt": "We identified the organizational requirements first and they did not reach the same level of concretization as the users’ requirements. ... Of course, there were still questions that were unanswered and even some contradictions in the documents on organizational requirements, but we expected these to be resolved during the second iteration.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "interaction",
+      "barrier_type": "emotional",
+      "description": "A perceived power imbalance occurred where the usability company was seen as 'too strong' and more professional, leaving the PPG feeling unable to steer or own design decisions.",
+      "justification": "This emotional and trust-related tension reduced the PPG's confidence and willingness to accept or champion design outcomes, forcing designers to pause work to rebuild shared understanding (facilitate user involvement; coordinate multidisciplinary team; integrate feedback & iteration).",
+      "reference_excerpt": "but then… the usability company got to strong somehow. The usability company was much more professional in some way – they had their methodology and they knew where to go and so forth. But we, who sat with the organizational requirements, in which the usability company did not have any competence, we were not as good at steering, so to speak.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Planned evaluation activities were curtailed: only one of two planned card-sorting exercises could be performed.",
+      "justification": "Reduced user evaluation limited designers' ability to study context of use and validate information architecture choices, weakening the evidence base for design decisions (evaluate designs; understand context of use).",
+      "reference_excerpt": "Card-sorting exercises were planned with the two most important user groups, but only one could be performed.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "PPG members had varying experience with design and required explanations of basic design concepts (e.g., navigation levels), slowing discussions.",
+      "justification": "Limited design literacy among stakeholders increased the effort designers needed to coordinate the team and communicate decisions, hindering shared decision-making and smooth iteration (coordinate multidisciplinary team; manage user understanding; facilitate user involvement).",
+      "reference_excerpt": "Since the members had varying experiences of working with design the discussion was not always smooth and concepts such as navigation levels had got to be explained.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 7,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Work location choices (consultants working in their own office rather than in the procurers' offices) reduced opportunities for closer involvement by the PPG.",
+      "justification": "Remote/outsourced working arrangements limited stakeholder immersion and on-site collaboration, making it harder to facilitate involvement and build organizational ownership (facilitate user involvement; coordinate multidisciplinary team).",
+      "reference_excerpt": "they comment that they should have participated more in the activities and that all work should have been done in their offices, instead of having the usability consultants work in their own office.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}
