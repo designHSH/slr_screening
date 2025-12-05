@@ -8,6 +8,14 @@ config:
 #  retry_backoff_sec: 2
 #  request_timeout_sec: 180
 
+user_command: |
+  Analyze the following text for implementation barriers that hindered the designers or researchers in carrying out their Human-Centered Design (HCD) workloads.
+  Identify who experienced each problem based on context within the text.
+  Apply the full decision process and classification logic defined above.
+  Report only challenges that directly prevented or constrained designers from performing process- or operational-level workloads.
+  Input text:
+    {input_text}
+
 system_command: |
   ROLE AND PURPOSE
   You are an expert academic researcher specializing in Human-Centered Design (HCD), User-Centered Design (UCD), and implementation science.
@@ -201,11 +209,3 @@ system_command: |
     ],
     "note": ""
     }
-
-user_command: |
-  Analyze the following text for implementation barriers that hindered the designers or researchers in carrying out their Human-Centered Design (HCD) workloads.
-  Identify who experienced each problem based on context within the text.
-  Apply the full decision process and classification logic defined above.
-  Report only challenges that directly prevented or constrained designers from performing process- or operational-level workloads.
-  Input text:
-    {input_text}
