@@ -1,0 +1,42 @@
+{
+  "file_name": "Vilaro et al. - 2023 - Information Architects Using Community Engaged and Qualitative Methods to Design a Technology Based.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "An early project focus on dietary intake reporting led to omission of colorectal cancer (CRC) screening content in initial prototypes.",
+      "justification": "Prioritizing nutrition-reporting work prevented designers from specifying comprehensive user requirements and addressing the holistic experience (CRC screening information) in early iterations, limiting integration of user feedback into the VHA script.",
+      "reference_excerpt": "This was due in part to an early focus on developing the dietary intake reporting features and accuracy of tailored feedback. Due to the extensive focus on nutrition reporting early on, scripted content in the initial prototypes omitted important details about CRC screening.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Implementing an interactive feedback mechanism raises unresolved constraints around providing medical advice, privacy, and scope that must be resolved.",
+      "justification": "Regulatory/ethical and scope-related considerations limit the team's ability to offer interactivity and a feedback loop, constraining facilitation of user involvement and safe iterative deployment of the Ask ALEX feature.",
+      "reference_excerpt": "While a feedback mechanism of this kind may present barriers that still need to be addressed as the prototype progresses (eg, making it clear that the team cannot provide medical advice, being explicit about the level of privacy, deciding if connecting participants to local resources is within the scope of the project), user requests made it clear that individualizing the information processing experience was of interest.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "team",
+      "barrier_type": "resource",
+      "description": "Content changes were unstable across iterations, with items added in one cycle sometimes deleted in a subsequent cycle based on user feedback.",
+      "justification": "This iterative back-and-forth disrupted the team's ability to consistently integrate feedback and maintain stable design solutions, hindering iterative refinement and evaluation workloads.",
+      "reference_excerpt": "There were instances where new content added during a previous iteration, was deleted for the subsequent iteration based on user-feedback.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The study design did not evaluate website access prior to or simultaneously with the VHA interaction, leaving alternative user flows untested.",
+      "justification": "Not assessing concurrent or prior website engagement constrained the team's ability to evaluate designs and understand context of use for different navigation sequences, limiting specification of requirements and evaluation of integrated experiences.",
+      "reference_excerpt": "Participants are given an option to access additional content after the VHA interaction, however, the current design does not assess engaging with a website prior to or simultaneously with a VHA, as such content will continue to be adapted as we learn more about how adults interact developed cancer prevention materials.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

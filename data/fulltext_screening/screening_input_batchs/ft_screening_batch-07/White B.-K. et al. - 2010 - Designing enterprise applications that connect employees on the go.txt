@@ -1,0 +1,513 @@
+Designing Enterprise Applications that Connect 
+Employees on the Go
+
+Brent-Kaan White 
+Oracle Corporation 
+200 Oracle Parkway 
+Redwood Shores, CA 94065 
+1 650 607-0892 
+
+Sean Rice 
+Oracle Corporation 
+7700 Technology Way 
+Denver, CO 80237 
+1 303 334-7171 
+
+Chun-Yi Chen 
+Oracle Corporation 
+200 Oracle Parkway 
+Redwood Shores, CA 94065 
+1 650 506-0118 
+
+ABSTRACT 
+This paper describes the process of designing an enterprise 
+application that connects employees, the unique interface 
+challenges, research activities, and subsequent changes to the 
+design. The user-centered design process was driven by three 
+research activities that informed the design in stages. Focus group 
+sessions enabled us to understand requirements, wireframe 
+usability evaluations helped us to validate macro level design 
+decisions, and live prototype testing provided feedback that 
+helped refine the design and validate the interactions. The 
+collective research activities contributed to improved usability for 
+navigation, actions, search, and a hierarchical organization chart. 
+In addition, social networking within the work context was better 
+understood and important concerns were identified.  Key changes 
+to the design included a streamlined three-level organization 
+chart, the reduction of icons, and a new layout for search.  
+
+Categories and Subject Descriptors 
+H.5.2 [User Interfaces]: Graphical user interfaces (GUI), user-
+centered design 
+
+General Terms 
+Design, Human Factors 
+
+Keywords 
+Enterprise applications, mobile HCI, usability testing, iterative 
+design, mobile browsers, social networking 
+
+1. INTRODUCTION 
+Consumers have embraced and downloaded enormous quantities 
+of mobile applications, but our research has identified that few of 
+these applications address frequent work tasks [1]. Companies, 
+universities, and governments depend upon specialized software 
+to complete work, but only a small subset of enterprise 
+functionality is currently available on mobile devices. As the 
+percentage of smartphones in the market increases, there are 
+greater opportunities to provide interfaces optimized for mobile 
+enterprise applications. Enterprise applications address activities 
+within domains, such as supply chain, customer relationship, and  
+
+human capital management. Much of the work within these 
+domains is accomplished away from a fixed location.  
+
+Mobile enterprise applications deployed within the past decade 
+have primarily focused on two role types: those in the field, such 
+as sales representatives and maintenance technicians, or workers 
+within the supply chain, such as shipping and receiving clerks. 
+However, the use of mobile applications for work tasks has 
+expanded across employee roles and locations. Snyder et al. 
+created five business mobile personas, one of which included a 
+manager, a position that in today’s workforce frequently uses a 
+mobile device as a common work tool within an office setting [2]. 
+
+The employee mobile application derives much of its 
+functionality from the most recent capabilities of enterprise 
+human resources (HR) desktop software and provides corporate 
+directory information, an editable work profile, social networking, 
+and access to HR data, such as paycheck information. Oracle 
+designed the application by adhering to a research-driven design 
+process and by applying mobile design guidelines identified by 
+Buchanan et al. that emphasize prioritization of content and 
+limiting text entry [3]. This paper describes the process of 
+designing the enterprise mobile employee application, the unique 
+interface challenges, the research activities conducted, and 
+subsequent changes to the design.  
+
+2. METHOD AND DESIGN 
+Oracle uses a user-centered design process that grounds all 
+aspects of design with information about the end users who will 
+use the products to achieve real-world business goals. Seven 
+components comprise Oracle’s user-centered design process: user 
+requirements research, analysis, design, iterative prototyping and 
+evaluation, implementation, and usability benchmarking. This 
+paper focuses on the front portion of the process, specifically, the 
+user requirements research, analysis, design, and iterative 
+prototyping and evaluation. 
+
+2.1 Focus Groups 
+Two focus group interviews were conducted for the mobile 
+employee application with the goal of establishing user 
+requirements for accessing employee profile and HR self-service 
+information from a mobile device. Eleven employees from large-
+sized companies participated in the study. To qualify for the 
+study, participants had to be active smartphone users who use 
+smartphones for work and to access the Internet. All participants 
+used an enterprise self-service HR system.  
+
+Copyright is held by the author/owner(s). 
+MobileHCI ’10, September 7–10, 2010, Lisboa, Portugal. 
+ACM 978-1-60558-835-3/10/09. 
+. 
+
+349
+
+Each focus group began with an overview of the session 
+procedures and goals. The moderator told participants that Oracle 
+is developing a mobile version of an HR application that will 
+provide corporate directory and employee HR self-service 
+functionality from the user's mobile device.  The bulk of the 1.5-
+hour session was spent discussing current mobile device usage, 
+impressions about the mobile employee application concept, and 
+the participants’ expectations regarding search, employee profile 
+content, and representation of the organization chart.   
+
+2.1.1 Focus Group Findings 
+Participants had few overall concerns regarding the proposed 
+application and wanted the same functionality that they have in 
+their desktop self-service HR applications available on their 
+mobile devices. The top concerns that were raised by participants 
+were related to data security and speed of the application on the 
+mobile devices. Key functional recommendations derived from 
+the focus groups included: 
+
+Employee profile content: At a minimum, display name, 
+phone number, e-mail address, IM, department, job title, and 
+manager’s name when viewing an employee’s profile. In 
+addition, we were asked to consider the following: 
+
+o 
+Provide location, administrative assistant, time zone, 
+nickname, job responsibilities, start date, and date/time 
+of last contact. 
+
+o 
+Require the user to take an explicit action and enter a 
+password to see additional personal information, such as 
+performance ratings and goals, salary, employee ID, 
+vacation balance, 401K allocations, paycheck, and 
+skills. 
+
+Organization chart: Provide the ability to browse the 
+management hierarchy and display that hierarchy as a tree.   
+
+Search: Provide a simple name search by default.  Enable the 
+user to easily add or change search criteria. 
+
+2.2 Wireframe Design 
+After gathering the user requirements, a pair of designers created 
+a set of wireframes. Design challenges centered on navigation, 
+hierarchy, multiple actions, social networking, and search. The 
+application was designed to run in the mobile browser across 
+major smartphone platforms. The BlackBerry Bold and Apple 
+iPhone were selected as representative devices to ensure that the 
+design worked well on both physical keyboard and touch screen 
+interfaces. Showing the designs within both form factors from the 
+earliest wireframes helped prevent a single focus on a device-
+specific design solution.  
+
+2.2.1 Wireframe Evaluation 
+A usability test was conducted using low-fidelity wireframe 
+screenshots of the initial design. The sessions helped us discover 
+usability issues with the proposed design for several key tasks.  
+We conducted the usability test on the wireframe design because 
+we wanted to get quick feedback to validate the design approach 
+before building an interactive prototype. 
+
+Six enterprise employees participated in this activity. Each two 
+hour test session involved one participant and was conducted 
+remotely via Web and teleconference. Participants read tasks out 
+loud that involved searching for coworkers in the corporate 
+directory, browsing the organization chart, initiating contact 
+
+(calling or sending an e-mail), editing personal information, and 
+viewing paycheck information. The moderator asked the 
+participants what actions they would take to complete the tasks. 
+The moderator shared wireframe screenshots over the Web 
+conference and displayed different screen mockups in response to 
+the actions that the participants said they would take. Participants 
+were asked to think out loud during the session.   
+
+2.2.2 Wireframe Design Challenges 
+The following discussion describes the major design issues and 
+findings from the wireframe evaluation. 
+
+2.2.2.1 Organization Chart 
+The organization chart in the application is an employee directory 
+that displays the management hierarchy with summarized 
+employee information. Jones et al. identified the importance of 
+flattening hierarchical data into one or two levels for small screen 
+displays [4], but increasing smartphone screen sizes and the need 
+to show employee relationships made us consider displaying a 
+third level of hierarchy.  Our design challenges were: 
+
+How to represent the management hierarchy in the 
+limited screen real estate and communicate the 
+relationships among employees.  
+How to display the many levels of hierarchy on one 
+screen. 
+How to navigate through the hierarchy. 
+ 
+We took a person-centric approach and used tree structure to 
+represent management hierarchy. Each employee takes up one 
+row in the tree (see Figure 1) and contains the key information of 
+name and job title. Instead of displaying the employee directory 
+as a simple list, the row-based hierarchy uses indentations to 
+visually differentiate position levels. In order to help end users 
+quickly recognize the searched person, each employee in the 
+hierarchy is represented by a photo.  
+
+We debated the optimal number of hierarchy levels to display on 
+one screen and amount of content within each level. We wanted 
+rich information about each level of hierarchy but didn’t want to 
+overload the user when viewing all levels together. We used icons 
+to navigate within the hierarchy and to communicate additional 
+information about each employee. Several designs were explored 
+and tested before deciding upon the final version.  
+
+Figure 1. Design Versions: (a) Two levels without reposition 
+icons, (b) Three levels with reposition icons. 
+
+Some preliminary designs included: 
+
+Positioning the focused employee as the top node and 
+displaying two levels of hierarchy: the employee’s direct 
+reports and peers below (see Figure 1a). 
+
+350
+
+Displaying three levels of hierarchy: the focused employee’s 
+manager, along with peers and direct reports (see Figure 1b). 
+
+Using different versions of icons to navigate up and 
+reposition employees in the hierarchy (see Figure 1).  
+
+Icon representation and location are key parts of the design. The 
+icons in the hierarchy not only affect the visual aesthetics of the 
+application, but also serve the purpose of navigation and 
+communicating information about the employee. Bringing an 
+employee into focus and displaying his or her management chain 
+was a challenge. The approach of controlling the view of direct 
+reports with expand and collapse icons adds complexity to the 
+screen and potentially causes more scrolling (see Figure 1). 
+Another method to prioritize content is to reposition employees at 
+the top of the screen by clicking on an icon (see Figure 1b).  
+
+2.2.2.2 Organization Chart Evaluation Findings 
+The excessive icon use and visual representation of icons 
+hindered the user’s ability to complete tasks.  Four of six 
+participants could not navigate up the hierarchy with the proposed 
+icons and could not display the appropriate level without 
+assistance (see Figure 1).   
+
+2.2.2.3 Multiple Actions 
+Multiple actions can be performed on an employee from within 
+the employee profile interface. Most mobile applications provide 
+only a primary affordance for a single page-level action. We spent 
+considerable effort deciding the best location and format for those 
+actions. Our approach was to prioritize the frequently performed 
+actions on the employee profile and introduce an Action toolbar 
+(see Figure 3). The Action toolbar groups a row of icons with text 
+labels beneath. We were not sure if the Action toolbar design was 
+a better solution than placing action buttons interspersed with 
+content (see Figure 2) or at the bottom of the screen.  
+
+ 
+ 
+
+ 
+
+2.2.2.4 Multiple Actions Evaluation Findings 
+The Action toolbar design was well received by participants. The 
+design informed users of possible actions that could be taken on 
+the employee profile. A consistent and prominent location for the 
+primary actions helped users complete their tasks quickly. 
+
+2.2.2.5 Search 
+Search is another key feature in the application. In the preliminary 
+design, a quick keyword search field and a Search link were both 
+provided on the Home screen (See Figure 4). The end user entered 
+keywords in the search field at the top of the screen to perform the 
+search. The Search link in the content area took the user to an 
+advanced search page where users could conduct a more precise 
+search. We were not sure if the advanced search page would be 
+useful because it required more data input, which may prove 
+cumbersome for mobile users.  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2.2.2.6 Search Evaluation Findings 
+Five of the six participants either missed the quick search field on 
+the page header area or were confused when two search options 
+were presented at the same time. After navigating to the advanced 
+search screen, users responded favorably to having the ability to 
+search by multiple criteria.  
+
+2.2.2.7 Social Networking 
+The social networking feature consisted of adding employees by 
+invitation to a private network that displayed work related activity 
+streams, new social connections and status updates. To add an 
+employee to the network, the user pulled up the target employee’s 
+profile page and clicked on the Add to Network icon. Upon this 
+action, an invitation was sent to the target employee with the 
+request to connect. While social networking tasks are frequently 
+performed on mobile devices, the integration of this functionality 
+within a person-centric HR application created challenges. The 
+ability to reject the networking invitation of a coworker could be 
+socially awkward even though a formal invitation process is 
+common for social networking applications. 
+
+2.2.2.8 Social Networking Findings 
+The social networking functionality in the application was well 
+received but misunderstood. Four of the six participants thought 
+that the Add to Network feature would add the person as a contact 
+in the mobile device’s address book. The distinction between 
+favorites within the native device’s address book and invited 
+members of a social network was not clear to users. 
+
+2.3 Prototype Evaluation 
+We revised the design based on the wireframe evaluation findings 
+and developed a functional prototype. The prototype allowed us 
+to test on an actual mobile device and to validate that our live 
+interactions satisfied user expectations. An interactive prototype 
+of the mobile application design was tested at the Oracle HCM 
+Users Group (OHUG) conference in Las Vegas, Nevada, from 
+June 15 to 16, 2009. 
+
+Eight Oracle customers participated in this usability test. The 
+recruitment criteria required that participants currently use a self-
+service HR system, use a BlackBerry or iPhone device for work, 
+and access the Internet from their device. The testing procedures 
+were the same as those employed for the wireframe evaluation, 
+except that the participants sat next to the moderator during the 
+session and interacted with the prototype on the device that they 
+were most familiar with. The three iPhone users accessed the 
+prototype on a first-generation iPhone, and the five BlackBerry 
+users accessed the prototype using a BlackBerry Bold device.  
+
+Figure 2. Design without 
+Figure 3. Design with 
+
+Figure 4. Search design  
+
+351
+
+2.3.1.1 Prototype Evaluation Findings 
+The prototype evaluation provided a realistic experience for users 
+who selected navigational elements with their cursors or fingers 
+and watched screens load on a device. Here are the key prototype 
+evaluation findings: 
+
+Search: Participants had no trouble searching for people, 
+drilling to detail, and initiating communication tasks. 
+
+Action toolbar: Participants liked having the icons at the top 
+of the profile page for quick access to common functions, 
+such as SMS, e-mail, and chat. Participants were able to 
+quickly access these functions with the toolbar. 
+
+Organization chart icons: Six participants did not understand 
+how to use the icons to navigate up the hierarchy or 
+reposition employees within the hierarchy. 
+
+Navigational links and icons: Three of the touch screen 
+iPhone users had difficulty clicking some of the smaller 
+icons and links in the prototype. 
+
+3. DISCUSSION OF DESIGN CHANGES 
+The results of the prototype test along with the findings from the 
+initial 
+round 
+of 
+wireframe 
+tests 
+provided 
+specific 
+recommendations to make our designs more usable. The 
+following discussion focuses on the major changes. 
+
+3.1.1 Organization Chart 
+The hierarchy displayed three 
+levels of the management chain 
+in 
+one 
+view: 
+the 
+target 
+employee 
+in 
+focus, 
+the 
+employee’s manager, and the 
+employee’s direct reports (see 
+Figure 
+5). 
+The 
+usability 
+activities 
+indicated 
+that 
+showing the manager of the 
+focused employee on the same 
+screen 
+is 
+valuable, 
+while 
+showing the peers of the 
+employee on the same screen is not critical. The design fulfilled 
+user expectations and best used the screen real estate without 
+introducing horizontal scrolling.  
+
+The testing revealed that two separate icons for navigating up the 
+hierarchy (up-arrow icon) and setting the employee in focus 
+(reposition icon) were not necessary because the user perceived 
+both as interactions with similar outcomes. Consequently, we 
+updated the design to use the up-arrow icon for both setting focus 
+and navigating up the hierarchy. A single icon offers improved 
+usability due to the difficulty participants had in differentiating 
+the intended purposes of icons without labels.  
+
+The up-arrow icon appears only to the left of employees who are 
+not in focus and have direct reports (see Figure 5). Upon clicking 
+the icon, the employee is repositioned and appears below his 
+manager and above any direct reports. To view the next level up 
+in the hierarchy, the user clicks the up-arrow icon next to the 
+topmost employee in the hierarchy.  
+
+3.1.2 Search 
+The updated design moved the keyword search field to the 
+content area and grouped the keyword and advanced search 
+
+together on the Home screen (see Figure 6a). Because users need 
+to access Search frequently, we provided a link that takes users to 
+an advanced search page at the top of every detail page (see 
+Figure 6b).  
+
+ 
+Figure 6. Search Designs: (a) Home screen, (b) Profile header  
+
+3.1.3 Social Networking 
+Designing a social networking tool for mobile employees requires 
+a deep understanding of the social norms and culture within the 
+work environment. Some organizations that place a higher value 
+on rank may prefer a more formal social networking process that 
+requires invitations while others may embrace a less formal 
+connection style. We did not make any design changes because 
+we realized that further research was required. 
+
+4. CONCLUSION 
+The designs that defined the mobile employee application were 
+informed and refined by a rigorous user-centered design process. 
+Focus group sessions enabled us to understand the specific needs 
+of mobile employees with respect to corporate directory and self-
+service HR functionality. Wireframe usability evaluations helped 
+to validate macro-level design decisions. Live prototype usability 
+testing provided user feedback to refine the design and validate 
+the interaction paradigm and screen transitions.  
+
+5. REFERENCES 
+[1] Rampoldi-Hnilo, L., White, B., Snyder, M. and Sampanes, 
+A.C. 2009. The future of enterprise is with the mobile 
+workforce: An International Field Study. In Proceedings of 
+the 3rd International Conference on Internationalization, 
+Design, and Global Development (July 19-24, 2009, San 
+Diego, CA, USA). HCI International ‘09. Springer Berlin, 
+Heidelberg, 308-315. 
+
+[2] Snyder, M., Sampanes, A. C., White, B. and Rampoldi-
+Hnilo, L. 2010. Creating richer personas - making them 
+mobile, international, and forward thinking. Paper presented 
+at UPA International (May 24-28, 2010, Munich, Germany).  
+
+[3] Buchanan, G., Farrant, S., Jones, M., Thimbleby, H., 
+Marsden, G., and Pazzani, M. 2001. Improving mobile 
+internet usability. In Proceedings of the 10th international 
+conference on World Wide Web (May 01-05, 2001, Hong 
+Kong, Hong Kong). IW3C2 ‘01. ACM, New York, N.Y., 
+673-680. DOI=http://doi.acm.org/10.1145/371920.372181 
+
+[4] Jones, M., Marsden, G., Mohd-Nasir, N., and Buchanan, G. 
+1999. An Evaluation of WebTwig - A Site Outliner for 
+Handheld Web Access. In Proceedings of the 1st 
+international symposium on Handheld and Ubiquitous 
+Computing (September 27-29, 1999, Karlsruhe, Germany). 
+HUC ’99. Springer-Verlag, London, U.K.., 343-345.
+ 
+
+Figure 5. Organization 
+chart 
+
+352

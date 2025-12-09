@@ -1,0 +1,1220 @@
+RESEARCH ARTICLE
+Open Access
+
+Home blood pressure data visualization for
+the management of hypertension:
+designing for patient and physician
+information needs
+
+Richelle J. Koopman1*
+, Shannon M. Canfield1, Jeffery L. Belden1, Pete Wegier2,3,4, Victoria A. Shaffer5,
+K. D. Valentine6,7, Akshay Jain8, Linsey M. Steege9, Sonal J. Patil1, Mihail Popescu10 and Michael L. LeFevre1
+
+Abstract
+
+Background: Nearly half of US adults with diagnosed hypertension have uncontrolled blood pressure. Clinical
+inertia may contribute, including patient-physician uncertainty about how variability in blood pressures impacts
+overall control. Better information display may support clinician-patient hypertension decision making through
+reduced cognitive load and improved situational awareness.
+Methods: A multidisciplinary team employed iterative user-centered design to create a blood pressure visualization
+EHR prototype that included patient-generated blood pressure data. An attitude and behavior survey and 10 focus
+groups with patients (N = 16) and physicians (N = 24) guided iterative design and confirmation phases. Thematic
+analysis of qualitative data yielded insights into patient and physician needs for hypertension management.
+
+Results: Most patients indicated measuring home blood pressure, only half share data with physicians. When
+receiving home blood pressure data, 88% of physicians indicated entering gestalt averages as text into clinical
+notes. Qualitative findings suggest that including a data visualization that included home blood pressures brought
+this valued data into physician workflow and decision-making processes. Data visualization helps both patients and
+physicians to have a fuller understanding of the blood pressure ‘story’ and ultimately promotes the activated
+engaged patient and prepared proactive physician central to the Chronic Care Model. Both patients and physicians
+expressed concerns about workflow for entering and using home blood pressure data for clinical care.
+
+Conclusions: Our user-centered design process with physicians and patients produced a well-received blood
+pressure visualization prototype that includes home blood pressures and addresses patient-physician information
+needs. Next steps include evaluating a recent EHR visualization implementation, designing annotation functions
+aligned with users’ needs, and addressing additional stakeholders’ needs (nurses, care managers, caregivers). This
+significant innovation has potential to improve quality of care for hypertension through better patient-physician
+understanding of control and goals. It also has the potential to enable remote monitoring of patient blood
+pressure, a newly reimbursed activity, and is a strong addition to telehealth efforts.
+
+Keywords: Data visualization, Electronic health record, Home blood pressure monitoring, Hypertension
+
+© The Author(s). 2020 Open Access This article is licensed under a Creative Commons Attribution 4.0 International License,
+which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give
+appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if
+changes were made. The images or other third party material in this article are included in the article's Creative Commons
+licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons
+licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain
+permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.
+The Creative Commons Public Domain Dedication waiver (http://creativecommons.org/publicdomain/zero/1.0/) applies to the
+data made available in this article, unless otherwise stated in a credit line to the data.
+
+1Department of Family & Community Medicine, University of
+Missouri-Columbia, Columbia, MO, USA
+Full list of author information is available at the end of the article
+
+https://doi.org/10.1186/s12911-020-01194-y
+
+Background
+Hypertension affects 70 million US adults and is a major
+risk factor for morbidity and mortality, contributing to
+heart disease, stroke, and chronic kidney disease [1].
+Nevertheless, only 48% of US adults with hypertension
+have their blood pressure controlled, and hypertension
+control is even worse if using new American Heart As-
+sociation guidelines [2, 3]. Given broad awareness of the
+disease and its complications, readily available clinical
+and home monitoring, and multiple treatment options,
+why is blood pressure still uncontrolled in half of those
+diagnosed with hypertension?
+Clinical inertia may account for gaps in care in the
+treatment of hypertension. Clinical inertia is a lack of
+treatment initiation or intensification despite objective
+evidence that disease is not controlled [4–6]. At any par-
+ticular office visit, there is only a 13% probability of
+treatment intensification for uncontrolled hypertension
+[6]. An in-depth examination of clinical inertia in the
+pursuit of blood pressure control showed that clinical
+uncertainty about the representativeness of any one
+clinic blood pressure in characterizing overall blood
+pressure control was a prominent reason that physicians
+do not act to intensify therapy [7]. Blood pressure natur-
+ally rises and falls based on several factors including
+stress and activity level, so variation is common [8, 9].
+These natural fluctuations in blood pressure cause un-
+certainty for patients as well, as shown in our own re-
+search [10], and also persuasively described in the New
+York Times essay “Blood Pressure, a Reading With a
+Habit of Straying” [11]:
+
+“I decided to check my blood pressure with a home
+monitor before a coming physical examination. The
+first night, I was startled to find that my systolic
+pressure was a scary 137. The next night, it was only
+117. The next morning, before I saw my doctor, it
+was a terrifying 152. At the doctor’s office, it was
+150. I measured it again that night, and it had plum-
+meted to 110.”
+
+Because blood pressure variability adds to uncertainty
+for both the patient and physician, data visualization
+tools that can promote better patient and physician un-
+derstanding of the data can improve the quality of
+patient-physician negotiations about control and treat-
+ment as part of hypertension management [7, 11]. For
+this reason, our team elected to create a design that
+could be shared by patients and physicians during a
+time-limited visit.
+Home blood pressures may contribute to the variable
+data problem but are nevertheless important. Several
+large studies reveal that home blood pressure measure-
+ments predict cardiovascular outcomes as well or better
+
+than clinic blood pressure measurements, even after ac-
+counting for clinic blood pressure [12–18]. Although we
+aspire to use these patient-generated data and engage
+patients in their care, home measurements can increase
+physician cognitive load, as patients frequently bring
+home blood pressure data to clinicians on pieces of
+paper during time-limited outpatient visits [19]. This
+form of data presentation does not fit well with the phy-
+sician’s electronic workflow, which in our experience
+typically leads to less than ideal handling of this infor-
+mation, failing to honor the effort of the patient in col-
+lecting these data (Fig. 1). While integration of home
+blood pressure into clinical care is an important goal,
+achieving integration can be difficult and elusive [19].
+Better
+information
+display
+may
+support
+physician-
+patient
+shared
+decision
+making
+through
+improved
+situation awareness and more productive interactions
+between care teams and patients [20–22]. Finding a way
+to meaningfully represent both home and clinic blood
+pressure data for physicians and patients, in a manner
+that meets their information needs, will be a significant
+advance that allows us to finally integrate home blood
+pressure
+into
+clinical
+care,
+translating
+evidence
+to
+practice.
+Well-designed graphs based on principles of human
+cognition and visual perception can “emphasize relation-
+ships, focus interest, save time in analyzing data, help re-
+call, uncover previously hidden facts and break down the
+language barrier,” [23] as well as improve accuracy for
+clinical data [23–28]. Data visualizations, particularly
+icon array and pictographs, may facilitate communica-
+tion about risk [29, 30]. In some cases, effective graphs
+may improve clinical outcomes; a small Japanese clinical
+trial demonstrated that a home blood pressure monitor
+graphic display was associated with better blood pressure
+control [31]. However, while literature and principles of
+cognition can guide design of effective graphs, ineffective
+graphs abound [28, 32]. A review of Fortune 500 com-
+pany annual reports revealed that half of them contained
+inappropriately constructed graphs [33]. Our team’s ex-
+perience viewing multiple EHRs reveals that EHR graphs
+are often similarly ineffective [34]. In an effort to im-
+prove on the current state, we identified the information
+needs of patients and physicians for blood pressure data
+in
+hypertension
+(self-)care.
+We
+describe
+our
+user-
+centered design process to address these needs, includ-
+ing initial and confirmatory evaluation of the data
+visualization.
+
+Methods
+Approach
+To identify and satisfy patient and physician information
+needs for hypertension management, with special atten-
+tion to the growing evidence for including home blood
+
+Page 2 of 15
+
+pressure data, we employed a user-centered design
+process to incorporate patient home blood pressure data
+into the clinical EHR and improve data visualization for
+the care of hypertension. User-centered design is an it-
+erative process that involves understanding user infor-
+mation needs for their work, designing for those needs
+using known design principals, analyzing if needs are ef-
+ficiently met by the design, and iterating design with fur-
+ther understanding of needs [34–37].
+
+Interface design
+To create initial candidate designs, our multidisciplinary
+team used a deep dive approach, incorporating princi-
+ples of data visualization, graphic and health literacy, hu-
+man
+factors,
+health
+psychology,
+the
+tenets
+of
+the
+Chronic Care Model, and usability best practices, as well
+as the views of two important user groups, patients and
+their primary care physicians [38–40]. Our team brought
+together experts from diverse disciplines and multiple
+institutions, including Family Medicine, Human Factors
+Engineering, Informatics, Psychology, Computer Science
+and Public Health. Foundational underpinnings of these
+diverse disciplines guided our team’s work to dually de-
+sign for patients and physicians, creating a blood pres-
+sure data visualization that might promote a shared
+
+understanding of blood pressure data and trends, and fa-
+cilitate decision making between patients and physicians,
+especially during the primary care patient visit [41, 42].
+Informed by known visual display concepts and evi-
+dence from our literature review, we first designed sev-
+eral candidate data visualizations that included a data
+table of BP values, and an aligned medication timeline
+(Fig. 2) [23–37, 42]. Concurrently and in parallel, a series
+of online cognitive perceptual experiments with patients
+with hypertension also informed our design, including a
+smoothing algorithm to improve patient judgments
+about variable blood pressure data [10]. The conduct
+and results of online perceptual experiments are detailed
+elsewhere [10]. We concluded iterations when our de-
+signs met the user identified information needs, with sat-
+isfaction of needs dually determined by focus group
+participant feedback and multidisciplinary team judg-
+ment that the design met expressed needs.
+
+Patient and physician focus groups
+We iteratively tested and refined the visualization in a
+series of 7 formative design focus groups, with 5 itera-
+tions to reach the final prototype (Fig. 3). Design phase
+focus groups alternated between patient and physician
+participants, with separate focus groups for patients and
+
+Fig. 1 Patient supplied home blood pressure data—detailed and abundant
+
+Page 3 of 15
+
+Fig. 2 Early design—grayscale, with data table and medication timeline, lines connecting home BPs
+
+Fig. 3 Project design phases: Pilot Phase (grey), Design Phase (peach), Confirmatory Phase (blue). Rounds 2 and 4 of the Design focus groups and
+Confirmatory Patient round each had 2 focus groups, for a total of 10 Design and Confirmatory focus groups (excluding the pilot focus group)
+
+Page 4 of 15
+
+physicians (Fig. 3). After iterating to a final prototype
+(Fig. 4), we conducted three confirmatory focus groups
+and a key informant interview as a member check. Con-
+firmatory focus groups included participants from the
+initial patient and physician formative focus groups, with
+review of the final prototype data visualization for fit
+with their needs as a member check as well as questions
+about how they would use the new visualization in their
+hypertension decision making. We sought to include 5–
+7 participants in each focus group [43].
+
+Participants and recruitment
+Family medicine and general internal medicine physi-
+cians and their patients age 18 years and older with a
+diagnosis of hypertension were recruited from eight
+community-based practices. Prior to the focus groups,
+we educated physicians about the evidence for home
+blood pressure use in clinical care in a voluntary grand
+rounds-type
+seminar.
+Physician
+participants
+were
+emailed with information about the opportunity to par-
+ticipate; we conducted focus groups at times and places
+convenient for the physicians, such as lunchtime in the
+practice conference room.
+Patient participants were patients of these practices
+age 18 and above with a diagnosis of hypertension. We
+used the EHR hypertension registry to create lists of pa-
+tients, asked their physicians to eliminate those with
+
+cognitive impairment or serious mental health diagnoses,
+and mailed recruitment letters to remaining patients
+asking them to call the coordinator to enroll. The study
+coordinator confirmed hypertension diagnosis, screened
+for cognitive impairment, and described the focus group
+procedure. Eligible patients were invited to the focus
+group. At the start of the focus group, patients were pre-
+sented with a waiver of documentation of consent, in-
+cluding both the written waiver and a verbal discussion
+of the study focus group procedures. Patients were given
+the opportunity to ask clarifying questions about the
+study to confirm understanding and withdraw if they
+preferred. Patients received $30 fair compensation for
+time and travel. A similar consent process occurred at
+the beginning of physician focus groups. The University
+of Missouri Health Sciences Institutional Review Board
+reviewed and approved this study and its human sub-
+jects’ participation and consent process.
+
+Focus groups conduct
+All physician and patient participants completed a pre-
+focus group survey to characterize sample demographics
+and typical data collection, data use, and decision mak-
+ing based on clinic and home blood pressure readings.
+Beyond characterizing sample demographics, the short
+attitudes and behaviors survey addressed research ques-
+tions (see Table 1) that benefited from a quantitative
+
+Fig. 4 Final prototype— color, with data table and medication timeline, user annotations, lines connecting both home and office BPs
+
+Page 5 of 15
+
+characterization. For example, patients were asked to re-
+port on frequency of home blood pressure measurement
+behaviors and physicians were asked to report how they
+most often interpreted and recorded home blood pres-
+sure data supplied on paper.
+Experienced focus group facilitators SMC and RK led
+the focus groups; at least two other authors observed
+and recorded field notes for each focus group. Focus
+group data collection also included written comments by
+participants on a series of paper versions of the visuali-
+zations. Focus group questions and prompts were in-
+formed by research questions (Table 1) and were
+designed to elicit broad feedback regarding usability and
+preferences.
+Participants were presented with candidate designs,
+with iteration of designs between each focus group. Data
+visualizations presented in focus groups varied in both
+1) design element options and 2) the pattern and trend
+of blood pressures to represent common blood pressure
+“stories”, e.g. increasing blood pressure trend, addition
+of new medication and resulting decrease in blood pres-
+sure, or a gap in medication adherence associated with
+blood pressure rising and then returning to goal. Be-
+cause we were aiming for an intuitive design, focus
+group participants were challenged to construct meaning
+from the data visualizations with little to no orientation
+from the facilitators and to construct stories about the
+patient represented in the data visualization. For ex-
+ample, the visualization in Fig. 4 was used during a con-
+firmatory focus groups with patients. Participants were
+asked to “First take a moment to view this image and jot
+down a few notes. We’d like you to describe how this
+patient is doing managing their hypertension.” After dis-
+cussing impressions participants then were asked: “A
+doctor and patient view this image during a clinical visit.
+Imagine and then describe that conversation to the
+group”. Physician participants were also asked to use the
+visualization in role-plays discussing blood pressure re-
+sults with a patient in an effort to help us understand
+
+any barriers/advantages to using these visualizations dur-
+ing patient visits.
+
+Analysis
+We analyzed patient and physician surveys using de-
+scriptive statistics to examine demographics, attitudes
+and behaviors about blood pressure (self-) management.
+Analysis of focus group qualitative data took place in
+three phases: an immediate team debrief, preliminary
+rapid qualitative analysis immediately following each
+focus group, and final thematic analysis of compiled
+data. Rapid qualitative analysis is a process where re-
+searchers review transcripts and identify key aspects of
+the data answering research questions relevant to the it-
+erative design process. We used this method after each
+focus group to quickly identify participant responses to
+design features, to confirm our designs or identify a need
+to iterate design features, and to quickly develop a
+preliminary understanding of remaining unaddressed
+patient/physician information needs and preferences
+[44–46]. Our final qualitative analysis phase was a more
+comprehensive and traditional thematic analysis [47].
+Our approach to thematic analysis included a deductive,
+realist approach to the data using a theoretical frame to
+identify key themes across the dataset in response to
+predefined research questions. Both RJK and SMC are
+experienced with qualitative research, with RJK a family
+physician researcher and SMC a long-time project dir-
+ector with a public health, diversity, and patient needs
+perspective [48–53]. First, researchers RJK and SMC be-
+came familiar with the data by reviewing and checking
+accuracy of verbatim transcripts. Next, using Dedoose©,
+RJK and SMC individually coded transcripts and then
+worked together to develop a coding framework based
+on research questions (Table 1), then conducted consen-
+sus coding, and held frequent meetings throughout the
+process to identify emerging themes and ensure accurate
+representation of the data [54]. Findings were organized
+into main and subthemes and shared with the larger
+
+Table 1 Focus group research questions
+
+Design Phase
+Confirmatory Phase
+
+Representation of BP Data
+Clinical Guidelines and Goal
+Ranges
+Supplemental Features
+Final Prototype Evaluations
+
+How should home and clinic
+blood pressures be
+represented in graphic form?
+
+How can we represent different
+blood pressure goals consistent
+with clinical guidelines?
+
+What type of linguistic summarization would be
+useful to physicians and patients?
+After we design these
+features, are they useful to
+patients and physicians?
+
+How should home blood
+pressures be distinguished
+from clinic blood pressures?
+
+Can we make goals customized
+to the individual patient?
+How can the medication history be presented?
+Does the visualization meet
+patient and physician
+information needs?
+
+How can we effectively
+summarize numeric and
+graphic data?
+
+How can we represent the
+rationale for individualized goals?
+How should we include data about whether and
+when the home blood pressure monitor was
+validated against clinic blood pressure?
+
+Will they encourage patient
+education, activation?
+
+Should a hide/reveal function be used for home
+blood pressures?
+
+Page 6 of 15
+
+team for reaction and refinement. Final names and de-
+scriptions were established representing the story of the
+themes. The analysis of both survey and focus group
+data (both spoken and written comments) as well as the
+examination of two stakeholder perspectives, patients
+and physicians, facilitated convergence and triangulation
+of these data for the investigators. Finally, our confirma-
+tory focus groups served as member checks.
+
+Results
+Survey
+Focus group participant demographics are reported in
+Table 2. Most patients (75%) took blood pressure at
+home, but only half shared that data with physicians.
+Only two patient participants were aware that their doc-
+tor graphed the blood pressure measures using the exist-
+ing EHR graphing feature. Among physicians, 92% felt
+graphing blood pressure data was helpful although less
+reported using graphs in their work. All physicians indi-
+cated receiving measures in paper form; 75% via patient
+portal, and 50% by phone. Most typically, patient home
+blood pressure data was recorded as a gestalt estimate of
+the average recorded in a clinical note (88%).
+
+Qualitative results
+Our rapid qualitative analysis method, occurring after
+each focus group, informed our iterative design process by
+identifying and clarifying information needs for physicians
+and patients, stimulated design iterations to satisfy those
+needs, and allowed us to check if participants indicated
+that our design iterations satisfied those needs. Identified
+needs and design elements to satisfy those needs are pre-
+sented in Table 3. Our subsequent, more in-depth the-
+matic analysis revealed the following themes:
+
+Data visualization to enable engaged, activated patients
+and prepared, proactive physicians
+Focus group findings highlight the importance of accur-
+ate, practical, and time-relevant information that pro-
+motes understanding of the blood pressure story so that
+patients are engaged and activated and physicians are
+equipped with the information they need to be prepared
+and proactive, as suggested by the Chronic Care Model
+[38, 39]. Both patient and physician participants indi-
+cated easily understanding the visualization (Figs. 3 and
+4). In cases of confusion, a simple explanation from the
+facilitator was sufficient. Patients and physicians agreed
+that both home and clinic blood pressure measures
+should be included on the data visualization and intuited
+home blood pressures should be emphasized for general
+accuracy and to encourage patient engagement. Patient
+responses indicated visualizations created engagement
+with blood pressure data and a feeling of preparation
+and readiness to act, an idea echoed by physicians.
+
+“It [data visualization] would make me feel like if
+it’s important enough to her to bring it up to me, it
+ought to be doggone important to me and I should
+pay close attention to it … I mean, blood pressure is
+the silent killer...I need to know how I’m doing,
+where I stand, ‘Girl, you are in trouble, you’re on a
+collision course. You need to make some changes.
+Snap out of this, or we’re gonna be increasing meds
+or adding some.’”
+— Patient, Design Round 5
+
+“I think it’s useful to know the values of home ver-
+sus office and how we’re making decisions on that
+… I think it will incentivize the patient to do [home
+monitoring] because we’re making treatment deci-
+sions on that … So I think that’s therapeutic.”
+— Physician, Design Round 4
+
+Patients and physicians advocated for the addition of con-
+textual information to aid in decision-making. Examples
+of such information include behavioral/lifestyle change,
+weight, stressors, and significant clinical events. For this
+reason, we designed also for the ability to annotate the
+visualization with this contextual information (Fig. 5).
+
+“Maybe I would reflect a little bit about my lifestyle,
+you know … but I would reflect back on oh, yeah,
+that’s right, I was good and watching my salt intake
+and it’s, you know, kind of relaxed a little bit or, or
+maybe forget to take your medications, you know.”
+— Patient, Confirmatory Round
+
+“Well, the whole system sort of implies that the only
+way to treat blood pressure is with medication and
+so there’s nothing about weight, there’s nothing
+about, there’s no others … especially
+for our
+learners, [annotations] would sort of imply “Hey,
+these are other things that you address besides just
+prescribing medications.”
+— Physician, Design Round 4
+
+“So, I have in the annotation that I stopped the
+over-the-counter NSAIDs … and then we’re seeing
+the drop in the blood pressure from that interven-
+tion that wouldn’t show up in your med timeline. It
+pointed out that they were off their meds because
+they lost their job that year and couldn’t afford their
+meds.”
+— Physician, Design Round 2
+
+Data visualization features
+Goal ranges indicated by colored bands were well re-
+ceived, rarely questioned for meaning, and physicians
+
+Page 7 of 15
+
+Table 2 Focus group patient and physician participant characteristics
+
+Characteristicsa
+Patients
+Physicians
+
+N
+16
+24
+
+Gender—% (N)
+
+Female
+62 (10)
+33 (8)
+
+Male
+38 (6)
+67 (16)
+
+Age—M (SD)
+59 (17.6)
+48 (13.6)
+
+Race—% (N)
+
+White
+88 (14)
+92 (22)
+
+Black / African American
+6 (1)
+4 (1)
+
+Other
+6 (1)
+4 (1)
+
+Ethnicity—% (N)
+
+Latino / Latina
+0
+0
+
+Education (patients—% (N)
+
+Some college or greater
+62 (10)
+
+High school or GED
+19 (3)
+
+Less than high school
+19 (3)
+
+Years in practice (physicians—% (N)
+
+Less than 5 years
+29 (7)
+
+6–20 years
+33 (8)
+
+21–30 years
+21 (5)
+
+More than 30 years
+17 (4)
+
+Attitudes—% (N)
+
+Patient beliefs about use of their home blood pressure
+
+Physician has nurse/clinic staff person to enter into my record
+13 (2)
+
+We talk about it during my visit
+38 (6)
+
+I do not believe they do anything with the information
+7 (1)
+
+I don’t know / Other
+13 (2)
+
+Not applicable / No response
+33 (4)
+
+Physician beliefs about graphing blood pressure data
+
+Not at all or not very helpful
+4 (1)
+
+Somewhat helpful
+29 (7)
+
+Very or extremely helpful
+63 (15)
+
+No response
+4 (1)
+
+Behaviors—% (N)
+
+Patient takes home blood pressure
+75 (12)
+
+Patient records home blood pressure
+
+No
+25 (3)
+
+On paper
+50 (6)
+
+Special cuff
+25 (3)
+
+Physician recording of home blood pressure into EHR (all that apply)
+
+Upload or dictate all values into my clinical notes
+25 (6)
+
+Summarize the range or average in my clinical note
+58 (14)
+
+Scan the data into patient chart
+25 (6)
+
+Get help from other profession staff or nurse
+25 (6)
+
+Do not input the data into the electronic record
+8 (2)
+
+Page 8 of 15
+
+appreciated them being set by clinical guidelines. Both
+groups expressed that clear targets would help them
+frame their discussion about blood pressure control.
+Physician
+participants
+did
+indicate
+the
+desire
+to
+customize
+the
+default
+goal
+range
+for
+appropriate
+patients.
+
+“I like those little bands [goal ranges] because you
+can very quickly determine whether your patient is
+within the designated range … and in addition what
+proportion of blood pressure measurements are
+
+really within that range compared with just looking
+at a bunch of numbers.”
+— Physician, Design Round 2
+
+“For
+the
+frail
+older
+adult
+there’s
+discrepancy
+about whether 150 is really the right goal, and
+some would say 160 if you’re not trying to pre-
+vent adverse effects in the long term is fine …
+for me to wiggle that person up to 180 and I’d
+be happy with that.”
+— Physician, Confirmatory Round
+
+Table 2 Focus group patient and physician participant characteristics (Continued)
+
+Characteristicsa
+Patients
+Physicians
+
+Other
+8 (2)
+
+Physician shares view of patient blood pressure data in EHR
+
+Sometimes / Often / Always
+50 (8)
+50 (12)
+
+Rarely / Never
+31 (5)
+46 (11)
+
+I don’t know / No response
+19 (3)
+4 (1)
+
+Physician graphs patient blood pressure during visit
+
+Sometimes / Often / Always
+13 (2)
+50 (12)
+
+Rarely / Never
+31 (5)
+46 (11)
+
+I don’t know / No response
+19 (3)
+4 (1)
+
+Physician uses of home blood pressure data (all that apply)
+
+Review overall control
+92 (22)
+
+Determine the need for treatment
+88 (21)
+
+Encourage dialog and communication
+83 (20)
+
+Encourage shared decision making
+88 (21)
+
+Finalize a treatment plan
+83 (20)
+
+aResponse options included additional categories. Only those reported by participants are included here
+
+Table 3 Identified information needs and design elements to address those needs
+
+Identified Information Needa
+Design Element
+
+Distinguish systolic from diastolic data
+points
+Color differentiation
+
+Visualize clinic home blood pressure data
+Include both on visualization
+
+Differentiate clinic and home data
+Different symbols for sources
+
+Contextual information about lifestyle and
+clinical events
+Annotations
+
+Relationship between medication and blood
+pressure
+Blood pressure graph stacked with medication timeline
+
+Understanding of blood pressure goals
+Shaded goal ranges, default to those appropriate for patients age and comorbidity
+
+Visualize out of range values
+Shaded goal ranges were deemed sufficient, several ways of further highlighting out of range values
+were rejected by both groups
+
+Customizable goal ranges
+Customization using radio buttons corresponding to common guidelines
+
+See the raw data
+Include stacked data table
+
+Patient burden for data entry
+Automated data upload from device
+
+Understand variable blood pressure data
+Lowess smoothing line
+
+Understand flow of data to care team
+Future design of workflow adaptations for comprehensive hypertension care
+
+a All identified needs were expressed by both physicians and patients with the exception of customizable goal ranges, which was identified solely by physicians
+
+Page 9 of 15
+
+“You know, we could then talk about the ranges,
+which I think makes sense. You know, you’re still at
+the higher end of this range. We may want to work
+at getting you into the middle portions.”
+— Physician, Confirmatory Round
+
+The design team presented visualizations of annotations
+that were either physician entered, patient entered, or
+automatically generated (Fig. 5). Both physicians and pa-
+tients indicated that the inclusion of informative annota-
+tions such as “Lisinopril stopped due to cough” would
+eliminate repeated searching through the chart and
+dredging memory for information. Both groups also
+wanted to be able to annotate the visualization with in-
+formation that might influence blood pressure control
+such as “started exercise program” or “increased stress
+due to father’s illness and daughter’s wedding”; patients
+and physicians saw great promise in associating this in-
+formation with blood pressure data to learn the effects
+of life and lifestyle, similar to the advantage of having
+the medication timeline as part of the visualization.
+
+However, physicians indicated a concern that their
+personal
+effort
+expenditure
+for
+physician-entered
+
+annotations might outweigh the benefits of entering an-
+notations manually. They preferred drop-down list op-
+tions
+within
+their
+existing
+workflow
+or
+automated
+population of relevant data. They were also concerned
+about
+the
+potential
+for
+voluminous
+patient-entered
+annotations.
+
+“I like the home entering idea very much, but then
+like for the few patients that check in like three
+times a day and put comments on all of them, what
+do you do about that, I guess? … I get all this infor-
+mation overload and it’s hard to interpret what to
+do in terms of next steps.”
+— Physician, Design Round 4
+
+Sensemaking and understanding the blood pressure story
+Taken together, the data visualization with goal ranges,
+medication timeline, and data table allowed physicians
+and patients to see a snapshot of the patient’s history of
+hypertension, and promoted a fuller shared understand-
+ing of the story of the patient’s medications and blood
+pressure control.
+
+Fig. 5 Annotations in graph area, with details in sidebar
+
+Page 10 of 15
+
+“Neato … It’s really just creating a story where you
+see what the blood pressure was, when the medicine
+was started, where it changed.”
+— Physician, Design Round 4
+
+The medication timeline allowed both groups of
+participants to derive meaning about how changes
+in medications correlate with changes in blood pres-
+sure in a way that might reduce cognitive load. Phy-
+sicians found the medication timeline to be helpful
+and mostly user-friendly and they appreciated its
+flexibility and intuitive nature; both groups believed
+the tool would alleviate the need to rely on memory
+or dig through the EHR for historical/contextual
+notes.
+
+“It shows clearly that when you add, the Hydrochlo-
+rothiazide … and then when you added the add-
+itional Lisinopril, that looks like the combination of
+those … made the blood pressure come down.”
+— Patient, Design Round 1
+
+“I’ve been through that. My doctor’s like ‘Well, let’s
+try this one. No, we took you off of it. Do you
+
+remember why we took you off of it?’”
+— Patient, Design Round 5
+
+In particular, both patient and physician participants
+were able to construct a story of a gap in adherence
+based on the data visualization shown in Fig. 6, making
+the connection between the gap in adherence and a rise
+in blood pressure.
+
+“I mean, it’s doing great … [and then he] quits tak-
+ing the medication, it’s just out of control.”
+— Patient, Design Round 5
+
+Physicians commented that complex medication stories
+involving other prescribers and transitions of care would
+be simplified by the medication timeline.
+
+“Some of my patients who are coming in and out of
+the hospital who are perhaps following with a cardi-
+ologist or the nephrologist, sometimes we don’t
+understand why was this person’s regimen changed
+and, you know, what led up to that … for people
+who are, who are, you know, elderly who are having
+problems or multiple physicians involved with their
+
+Fig. 6 Scenario presented to participants: “You have been working with your doctor to control your blood pressure for a number of years. At one
+time you stopped taking medication. Discuss”
+
+Page 11 of 15
+
+care it’ll be much more straightforward to see why
+were these changes made.”
+— Physician, Design Round 4
+
+Shared understanding of control and goals
+Patients and physicians felt this visualization would help
+them come to consensus on the status of blood pressure
+control and would better enable them to make treatment
+decisions. Physicians began to envision how they would
+use the data visualization in their discussions with
+patients.
+
+“It’s really not me setting the goal. This is enhancing
+shared decision making so it’s the patient and I sit
+down, we define what our goals are, we set those
+goals, and it’s evidence-based and, and then I define
+it, and then I continue to say ‘Have we met that
+goal?’ Just empowering shared decision making ra-
+ther than me saying I’m setting it.”
+— Physician, Confirmatory Round
+
+“I think it’s important for me as a patient to be
+more intentional and more in, participating and not
+be so passive with my healthcare.”
+— Patient, Confirmatory Round
+
+Workflow
+Patients and physicians were concerned about workflow,
+especially collecting and transmitting home blood pres-
+sure data from the patient to physician. Use of patient-
+generated home blood pressure data in the visualization
+increased the patients’ sense of importance for pro-
+viding home blood pressures to portray an accurate
+picture of hypertension control. Physicians anticipated
+using this data in decision-making at appointments.
+Both groups suggested that Bluetooth data uploaded
+from home monitors would ease the patient’s report-
+ing burden.
+
+“What’s really handy for a month or so before you
+come see me if that’s when you can start tracking
+your blood pressures again and bring that data be-
+cause that’s what you’ve done most recently is prob-
+ably more important.”
+— Physician, Confirmatory Round
+
+“The home numbers, are they put in by the phys-
+ician or is it something that we will put in track as
+we go?...I take so many blood pressures and my ma-
+chine only holds so many and then they get wiped
+out … It would be so convenient just to log into
+that [patient portal] and type my numbers in once a
+week or every few days, you know, whenever I do it
+
+while it’s fresh on my mind so it’s on there.”
+— Patient, Confirmatory Round
+
+Both groups wanted to know more about the flow of en-
+tered home blood pressure data and what members of
+the care team would manage patient home blood pres-
+sure
+data.
+Both
+patient
+and
+physician
+participants
+expressed concerns with home blood pressure data qual-
+ity and proper measurement technique. Patients and
+physicians recognized integration of home blood pres-
+sure data into a treatment plan would require a new ap-
+proach in patient care, one that included activated
+patients and workflow adaptations to accommodate re-
+mote monitoring.
+
+“There should be a trigger or something that sends
+a message to the doctor and it’s just not on the
+graph and the doctor never sees it until the patient
+finally comes in again … It’s just sitting there on a
+graph somewhere in a database and the patient’s
+getting ready to die (laughs), they’re getting ready to
+have a serious episode and then when they’re in the
+ER in the crisis they’ll see all of this and it’s like why
+didn’t we see a doctor, well, nobody told me.”
+— Patient, Confirmatory Round
+
+“I kind of like the idea of having the flag in terms of
+the [in-person] discussion … but from a population
+perspective there needs to be something that trig-
+gers somebody looking at the data if it has gotten
+significantly out of line.”
+— Physician, Confirmatory Round
+
+Discussion
+We have gained an understanding of primary care phys-
+ician and patient information needs about blood pres-
+sure data for use in their decision-making work for the
+management of hypertension. We have paid special at-
+tention to their needs for home blood pressure informa-
+tion, how they would like to send and receive this
+information, and their aspirations for using this data in
+their shared work. Employing a user-centered design
+process, we synthesized our multidisciplinary expertise
+with evidence-based knowledge, including cognitive per-
+ceptual experiments, and these discovered information
+needs
+to
+create
+an
+intuitive
+and
+well-received
+visualization that combines clinical blood pressure data,
+home blood pressure data, goal ranges, a smoothing al-
+gorithm, and a medication timeline [10, 42]. This inte-
+gration of information would likely increase situational
+awareness for patients and physicians and has the poten-
+tial to improve the quality of hypertension care [55]. Eli-
+citing
+these
+information
+needs
+is
+a
+significant
+contribution to the hypertension, decision support, and
+
+Page 12 of 15
+
+EHR design literature, as is our creation and implemen-
+tation of a user-informed data visualization that includes
+home blood pressure data in the clinical EHR.
+While there is growing evidence for use of home blood
+pressure data for hypertension decision making [12–18],
+it is also evident that there are questions about how best
+to incorporate these data into clinical work, and the
+physician and care team electronic workflow [19]. While
+we have created a data visualization as a partial solution
+to the home blood pressure data problem, work remains
+to define the flow of home blood pressure data to the
+care team, including possible alerts for high and low
+values, but without creating alert fatigue for the clinical
+team [56, 57]. Defining this data flow and notifications
+will require significant work and further understanding
+of user information needs.
+While we were inclusive of both patients and physi-
+cians, the primary users of these blood pressure data, we
+did not include another significant stakeholder group,
+nurses and other members of the patient’s health care
+team. In addition, our information needs and design
+work takes a primary care perspective, and we have not
+considered the needs of specialty physicians. Our ration-
+ale for this sampling framework was that the majority of
+hypertension management occurs in the primary care
+setting [58]. We have focused on adults with hyperten-
+sion; pediatric blood pressure data visualization is a
+more complex design problem as younger children have
+norms based on both age and height [59]. These current
+limitations all represent fertile areas for future work.
+Additionally, patients and physicians attended separate
+focus groups. We considered the alternative of combin-
+ing patients and physicians in confirmatory focus groups
+to create interaction around the designs, however, in
+addition to being logistically prohibitive among these
+returning participants, we were also concerned that the
+presence of physicians in mixed focus groups might ef-
+fectively diminish the voice of the patient participants,
+especially if logistics did not allow matching of patients
+with their own physician.
+As a result of this work, we collaborated with our EHR
+vendor to implement this visualization into the clinical
+EHR, including patient portal functions that improve pa-
+tient upload of home blood pressure data and allow it to
+be represented in the clinical EHR. Thus far, we have
+not
+been
+able
+to
+incorporate
+annotations
+to
+the
+visualization. Work remains for us to identify ways to
+add annotations that fit into physician workflow, creat-
+ing opportunities for physicians to add meaningful infor-
+mation easily in a way that will add value to their work.
+Additionally, we need to understand the best way to add
+patient annotations, whether to create standardized cat-
+egories of annotations, and how to deal with a high
+density of patient annotations. We also need to add
+
+Bluetooth capability for home blood pressure devices to
+the patient portal. Our algorithms are equipped to han-
+dle large amounts of blood pressure data, but it is inevit-
+able that Bluetooth upload from devices will introduce
+new challenges.
+A significant next step is to evaluate the ongoing pa-
+tient and physician use of these tools, not only how
+much they use these tools, but also how the tools affect
+the quality and process of care. We will also evaluate
+how the visualization that includes home blood pressure
+affects how patients and physicians work together during
+the outpatient clinic visit to manage hypertension, exam-
+ining differences between care with and without the
+visualization with comparison to paper lists of home
+blood pressures.
+Use of these home blood pressure EHR tools will be
+augmented by two new environmental factors. First, the
+January 2020 introduction of new Medicare-reimbursed
+current procedural terminology (CPT) codes for home
+blood pressure management activities could drive adop-
+tion [60]. Second, the significantly increased use of tele-
+health due to the COVID-19 pandemic can leverage the
+home blood pressure data visualization into an oppor-
+tunity to maintain quality of care for patients with
+hypertension during a time of social distancing and in-
+creased reliance on home blood pressure data [61].
+
+Conclusions
+Our blood pressure data visualization that includes
+home blood pressure data is a significant innovation that
+has potential to improve the quality of care for patients
+with
+hypertension,
+both
+through
+a
+better
+patient-
+physician understanding of blood pressure data, and in
+creating new ways for patients and physicians to interact
+around these data in their decision making process dur-
+ing outpatient visits. The patient’s active participation in
+generating these data might better engage them in the
+management process and be more convincing for those
+who resist blood pressure medication intensification by
+facilitating the “prepared patient and proactive health
+care team” that are at the heart of the productive inter-
+actions that lead to improved outcomes in the Chronic
+Care Model [38, 39].
+
+Abbreviation
+EHR: Electronic Health Record

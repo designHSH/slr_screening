@@ -1,0 +1,1194 @@
+Procuring a Usable System Using Unemployed Personas 
+
+Erik Markensten 
+Interaction and Presentation Laboratory 
+
+Royal Institute of Technology 
+
+100 44 Stockholm, Sweden 
+
+Henrik Artman 
+Interaction and Presentation Laboratory 
+
+Royal Institute of Technology 
+
+100 44 Stockholm, Sweden 
+
+ABSTRACT 
+This case study examines a procurement project where the 
+Swedish National Labor Market Administration (AMV) 
+hired usability consultants in order to redesign their website 
+for employment exchange. The user centered design 
+process was part of a larger project to define how the 
+website could be reorganized to better support new 
+organizational goals. The project was managed by a 
+procurement 
+group 
+that 
+had 
+already 
+defined 
+the 
+organizational requirements for the website. They hired the 
+usability consultants to learn about user requirements and to 
+specify an information architecture and design. The 
+usability company suggested a process with a user research 
+phase and an iterative design phase. The primary 
+deliverables would be personas and an evaluated prototype. 
+The results demonstrate how the user centered design 
+process can effectively be used by active procuring 
+organizations as a bridge between abstract organizational 
+requirements and concrete systems requirements. Tools 
+such as personas and prototypes helped the procurers to 
+understand and prioritize among requirements, as well as to 
+communicate their work to the organization. These tools 
+will be used in the continued work to specify and develop 
+the system.  
+
+Author Keywords 
+Procure, 
+Acquire, 
+Procurement, 
+Procurer, 
+Usability, 
+Interaction Architect, Personas, Requirements, Integration, 
+Design, Business.  
+
+ACM Classification Keywords 
+H.5.2 Information Interfaces and Presentation: User 
+Interfaces – theory and methods, user-centred design. K.6.1 
+Management of Computing and Information Systems: 
+Project and People Management – life cycle, strategic 
+information systems planning, systems analysis and design, 
+systems development. K.6.3 Management of Computing 
+
+and Information Systems: Software Management – software 
+development, software process, software selection. D.2.9 
+Software Engineering: Management – life cycle, software 
+process models. 
+
+INTRODUCTION 
+One central problem that HCI practitioners face is that they 
+are seldom allowed to do their job properly. Late 
+involvement and lack of influence on the requirements 
+specifications are more rule than exception [11]. The origin 
+of the problem is twofold.  
+
+On the one hand suppliers, who have been the main 
+proponents of usability as well as employers of usability 
+practitioners, have failed to incorporate the Usage-Centred 
+Design (UCD) process into their development. In spite of 
+the growing interest in usability in the industry few success 
+stories have been reported [5,9]. On the other hand, 
+procuring organisations seldom require UCD activities to 
+the extent they should, or could.  
+
+One reason that suppliers have taken the initiative when it 
+comes to usability issues is because the UCD activities are 
+often understood as being a part of the systems 
+development process, rather than an aspect of defining the 
+organizational activities and operational goals. This is 
+especially evident when examining the literature on HCI 
+and systems design. 
+
+In this paper we want to argue that it is more fruitful to 
+view UCD as part of an organizational development 
+process. Whether it is a business to consumer, business to 
+business or an internal system that is procured the aim is to 
+realise some organizational goals. But as pointed out by 
+Balic, Berndtsson, Ottersten, and Aldman [2] an interactive 
+system can never realise such goals by itself - someone has 
+got to use it: 
+
+“What often seems to be forgotten is that the generated business 
+value corresponds to the level of usage (number of users who 
+actually use the product) and the product’s quality-in-use 
+(effectiveness, efficiency and user satisfaction when the product is 
+used). In other words, business value is generated through 
+product usage.” 
+
+ 
+
+Thus, whether it is a consumer that purchases something at 
+a website or an employee who registers a transaction the 
+actual 
+usage 
+is 
+central 
+in 
+realising 
+the 
+desired 
+organizational goals. Consequently, understanding usage 
+
+ 
+Permission to make digital or hard copies of all or part of this work for 
+personal or classroom use is granted without fee provided that copies 
+are not made or distributed for profit or commercial advantage and that 
+copies bear this notice and the full citation on the first page. To copy 
+otherwise, to republish, to post on servers or to redistribute to lists, 
+requires prior specific permission and/or a fee. 
+
+NordiCHI '04, October 23-27, 2004 Tampere, Finland 
+Copyright 2004 ACM 1-58113-857-1/04/10... $5.00 
+
+13
+
+should be a central task in procuring any interactive system. 
+In order to be able to specify what to procure a procurer 
+needs to understand the requirements of both the current 
+and the future usage of the system being procured. This, as 
+it happens, is exactly what UCD is about.  
+
+We propose that procurers would benefit from becoming 
+more active when it comes to usability issues, and that the 
+UCD process is well suited to bridge organizational goals 
+and systems requirements. To regard usability as an 
+attribute of organizational activities rather than as an 
+attribute of human-computer interaction, is making 
+usability and interaction design a much more general and 
+desirable aspect for many organisations since it is the 
+operational goals that should be fulfilled efficiently rather 
+than the interaction with the computer. 
+
+In this paper we present a case study where the Swedish 
+National Labor Market Administration (AMV) hired a 
+usability firm to perform the UCD process in order to help 
+the organization specify the requirements for a new 
+website. 
+
+The Procurement Competence Research Project 
+For almost three decades usability and UCD have been 
+researched and shown to have great merits for systems 
+design. Yet, many usability professionals, at least in 
+Sweden, feel that they have to preach its value in order to 
+take place in the design process [11]. All too often their 
+work is constrained. The UCD community has partly got 
+itself to blame for this failure. The preaching of usability 
+with its own processes, competence groups and vocabulary 
+has strengthened the separation of HCI. Some (e.g. [4]) 
+have therefore said that our field is mature enough to 
+dismiss the usability as a term – stop talking about it and 
+just do it.  
+
+Since 2001 we have researched on how procurers of system 
+design think and reason about usability and UCD. We have 
+found that most organisations value usability and think it is 
+of high importance. Some organisations think it is so 
+important that they do the usability activities on their own 
+[17], others require it in the general requirement 
+specification [19]. In the former situation the organisation is 
+doing the best they can to make the systems design usable – 
+usability becomes defined by the competence of the 
+procurer organisation. In the latter case the procurer seldom 
+specify it concretely enough in the contract. Consequently, 
+usability becomes defined by the developing organisation 
+and their willingness to do usability work. Procurer and 
+supplier process negotiations is a third form of organisation 
+of usability design, where the degrees of usability are 
+defined ad hoc and on the fly by the procurer and the 
+supplier [1].  
+
+In this study we examine a fourth form of organisation of 
+UCD where the procurer organisation contracted a third 
+party to perform the UCD activities and to make the 
+requirements concrete through an evaluated prototype. The 
+
+general aim of our project is to examine what usability and 
+interaction design can accomplish in these very early stages 
+of systems design, and further dig into how procurer 
+organisations reason about usability. We also investigate 
+how personas can be used as a tool for procuring 
+organisations to reach consensus and merge organizational 
+and usage goals.  
+
+Personas 
+Personas [7,8] is a method/tool that has become 
+increasingly popular among usability practitioners. A 
+Persona is a character representing a group of users with 
+similar usage patterns and goals. It is based on thorough 
+research of actual usage. The tool is used to understand and 
+focus on user requirements and to communicate these 
+requirements among different stakeholders in a project.  
+
+Personas as a methodology has not been thoroughly 
+researched. In addition it has been rejected by some since it 
+replaces some actual user participation [10]. Others argue 
+that this is its strength since actual user involvement in the 
+design work can be perceived as a hinder rather than a help 
+[7,8,10,13]. This may be particularly true when designing 
+systems for large audiences, such as an internet services.  
+
+Personas is usually described as a mediating tool between 
+usability practitioners and developers. In this study we are 
+especially interested in examining how a procurer 
+experienced the use of personas and, as a consequence, how 
+they understood the merits of interaction design in relation 
+to the overall goal of procuring a large implementation 
+project.  
+
+METHOD 
+The case study was conducted as a participatory 
+observation field study where the first author participated as 
+a usability consultant from the usability company 
+throughout the user research and design phase of the overall 
+project. Therefore, this phase is described mainly based on 
+the first author’s experiences of participating in the project. 
+This is complemented with reflections of the process by 
+other project members, both before and after this phase. 
+The interviews were conducted both with the project leader 
+from the usability company and with members of the 
+procurement project group (hereafter called PPG). The 
+interviews were conducted by both authors in a project 
+room at the interviewee’s workplace. The second author 
+was lead interviewer. All interviews were recorded.  
+
+We 
+have 
+analysed 
+the 
+project 
+as 
+it 
+uncovered 
+chronologically. We have triangulated the observations 
+with documentation and with opinions and reflections from 
+the interviews.  
+
+RESULTS 
+This case study describes a pre study that was conducted to 
+gather requirements for a new version of the Swedish 
+National Labor Market Administration’s website. The goal 
+of the pre study was to gather information for making a 
+
+14
+
+management decision of whether to invest in a new website. 
+In large the project consisted of three phases, as described 
+in Figure 1. 
+
+The first author participated as a usability consultant during 
+the gathering of user requirements. Before that the agency 
+had gathered organizational requirements and they 
+continued to prepare the decision material and anchor the 
+results in the agency after the user research and design 
+phase was finished.  
+
+ 
+
+Figure 1. The project as it was planned in relation to the 
+previous and following internal activities.  
+
+Project Background 
+The Swedish National Labor Market Administration 
+(AMV) is a very important government agency in Sweden. 
+It’s role is to monitor the employment market and decrease 
+unemployment. When Internet became widespread in the 
+late nineties the agency was one of the first to use the new 
+medium to offer services to the citizens. The website has 
+since grown with more services and information. Although 
+successful, it has with time become difficult to use. One 
+reason is that the organic growth of the site has created an 
+information structure that is not developed from a usage 
+perspective. One of the procurers conclude that: 
+
+“We have not been able to design with the users interest in mind 
+but everyone sees to their department and their own interests” 
+
+Figure 2. The website as it is presented today  
+
+There are three major user groups of the website: 
+employers, unemployed and various users that seek 
+information about the work of the agency. Since they all 
+
+have to share the same top navigation much important 
+information has today been pushed downwards in the 
+structure, which make services and information difficult to 
+find. Furthermore the website is in general heavy on 
+information which also adds to the difficulties. Figure 2 
+gives a snapshot of the current website. It has six main 
+sections that are directed to different user groups. 
+
+The agency’s mission is to match employers and 
+unemployed. This has traditionally been handled by 
+assistants in the local offices around the country. The 
+website has, until now, mostly been seen as separate from 
+the local offices, and it has been managed and developed by 
+a specific department within the organisation with much 
+authority of its own. During the last year, with up to 
+700.000 visitors every month, the management wanted to 
+create a new organisation in which the website would have 
+a more central role. In the new organisation the website 
+would be the main channel for the matching process and 
+employers and unemployed would handle the process 
+themselves. A new call centre and the local offices would 
+mainly deal with those that need more support and that can 
+not get by on their own. In this way it was envisioned that 
+the organisation’s resources could be used more effectively.  
+
+To accomplish this, the general director ordered a pre study 
+to define the business and user requirements for a new 
+version of the website. This project had been initiated once 
+before but had crashed due to internal disagreements: 
+
+“There had been a project like this earlier to define a new 
+information structure for the website but it collapsed since there 
+were internal disagreements and conflicts about which perspective 
+one should use and how the user groups looked like and so on.”  
+
+The new project leader employed two major strategies to 
+succeed with the project. One was to make the website a 
+management issue rather than a department issue. Hence 
+the project group was put together to represent all major 
+departments and was organised in direct contact with the 
+management. The first months of the project were spent 
+gathering 
+organizational 
+requirements 
+from 
+various 
+documents and statements from the Director General. This 
+work resulted in some central summarizing directives. 
+Since these were based on speeches by the Director General 
+and general documents they were quite abstract, such as: 
+
+“The tools on the website shall above all be an effective support 
+for the visitors’ own matching activities”, “The website shall 
+communicate our mission and clarify our assignment” and “The 
+website shall be developed from a usage perspective and adapt to 
+the citizens and companies needs and conditions.”  
+
+The second strategy was to “disarm” the question of the 
+users’ perspective. There had not been any research done 
+about the users’ needs in the previous project. This had 
+been one reason for its crash since everyone had claimed 
+that they knew what the users actually needed, as a support 
+for their own ideas.  
+
+User Requirements & prototype design 
+
+User 
+interviews 
+
+Organizational 
+requirements 
+
+ 
+Anchoring 
+process 
+
+ 
+The first 
+iteration 
+
+The 
+second 
+iteration
+
+15
+
+“Everyone claimed to have the user’s perspective and I claimed 
+that no one could have it. The only way to get it was to work very 
+systematically with the users” 
+
+Hence, when the PPG had nailed down the business 
+requirements as detailed as they could they decided to 
+conduct a study with the users to define the user 
+requirements. They explained this to the usability 
+consultants that they had a framework agreement with and 
+they had got to respond with a proposal of how they would 
+like to run the project. After a selection process the PPG 
+chose a small usability firm, mainly because of their 
+methodology: 
+
+“What was attractive was that it was not this kind of “we are the 
+experts on the user’s opinions” but a methodological base to 
+stand on that was very clear.”  
+
+The usability company provided two consultants, one 
+responsible project leader and the first author, as assisting 
+consultant. We suggested a process with contextual 
+interviews to create personas and scenarios, followed by an 
+iterative design and evaluation phase to create a prototype. 
+Since the scope of the project was to define a new 
+information structure the interviews would not be used so 
+much to gather new functional requirements as to 
+understand current usage and the segmentation of the user 
+population. An abstract representation of the work process 
+is provided in Figure 1.  
+
+The project group had worked for five months nailing down 
+the organizational requirements and their time was running 
+out. They planned to prepare and anchor the results of the 
+project in the organisation through a review process before 
+the end of the year. Therefore the UCD process could not 
+take more than eight weeks. At the same time they wanted 
+two iterations and a thorough interview phase. Hence, the 
+schedule for the UCD process was very tight. However, the 
+project was important and prestigious for the usability 
+company and it was judged that we would be able to deliver 
+on time by working with two consultants on top speed.  
+
+User Requirements and Prototype Design – a Usability 
+Consultant’s Perspective 
+The user research and design project was initiated with a 
+workshop in which the PPG presented what they had done 
+so far in gathering the business requirements. All relevant 
+documents were also handed over to the usability company. 
+Apart from going through the organizational requirements a 
+persona hypothesis [8] was formulated. Several contextual 
+interviews [3] were planned for each user group in the 
+hypothesis. The hypothesis was based on the agency’s 
+existing information and knowledge about the segmentation 
+of the users of the website.  
+
+We provided the project group with a list of the planned 
+interviews and asked them to participate in as many as 
+possible to gain a first hand insight into the results, as well 
+as of the process. The members of the PPG were very 
+engaged and interested and one of them participated on 
+almost all of the 21 interviews that were conducted. In 
+
+order to not interfere too much with the actual interviews 
+only one member of the PPG was allowed to attend on each 
+interview session. When the interviews were completed we 
+analysed them qualitatively and transformed the data into 
+personas covering the different user groups, their goals and 
+needs. Although the scope was on an information 
+architecture level the needs analysis resulted in several 
+usage scenarios for the new website with new functionality 
+to support the discovered and as yet unmet needs.  
+
+This was all completed in about nine days, Even though this 
+was evidently a very fast tempo we felt that we were in 
+control of the work. Although they were active and 
+engaged, the members of the PPG, on the other hand, only 
+participated occasionally in the hands-on work, such as on 
+an interview or in a design session and then got the results 
+presented to them in a weekly workshop. Thus, they did not 
+get the same insight into the details of the results as we got. 
+Although this was not discussed it seemed to make them 
+uncomfortable. In the following interviews one of them 
+comments this as: 
+
+“Things happened very fast. And I don’t think we were prepared 
+on that. (…) So we felt that we were maybe not really involved in 
+all the details of the work, which we may have wanted to be. But at 
+the same time we had decided to follow this time plan to be able to 
+do all the things we needed to gather the user requirements. But 
+when you look back at it we should have spent more time in the 
+project and been more involved.”  
+
+When the personas were discussed the PPG noticed that 
+two categories of users seemed to be missing. The selection 
+of respondents had not included these user groups. 
+Therefore, one of the members of the PPG complemented 
+the personas with two more, based on discussions with 
+assistants in the local offices. 
+
+After the personas were completed and presented for the 
+PPG we moved on to work with the design and the 
+information architecture of the first prototype. Card-sorting 
+exercises were planned with the two most important user 
+groups, but only one could be performed. Again, only one 
+member of the PPG was allowed to attend in order not to 
+disturb the exercise, but the information architecture was 
+worked through with the whole group in a workshop shortly 
+after this. Alongside with the information architecture we 
+created a first draft prototype. A graphical designer added a 
+first idea of form and visual design to it. The prototype and 
+the fundamental design ideas were presented and discussed 
+with the PPG. Since the members had varying experiences 
+of working with design the discussion was not always 
+smooth and concepts such as navigation levels had got to be 
+explained.  
+
+After the workshop the prototype was made “testable” by 
+making it possible to interact with it. While the prototype 
+was evaluated with users and by experts on accessibility the 
+graphical designer conducted a mood board workshop with 
+the PPG to uncover their ideas about the visual design. 
+Hence, when we presented the results of the evaluations to 
+
+16
+
+the project group the visual designer could start working on 
+the visual design that would be used in the second iteration. 
+
+Altogether, the general directives of organizational 
+requirements, the personas and user requirements, the 
+results from the usability and accessibility evaluations, and 
+a new form provided the basis for a second high fidelity 
+design. However, a few days into the second iteration the 
+procurement project leader called us to announce that the 
+project needed to make a halt. The PPG had not been able 
+to follow and understand all the decisions that had been 
+taken during the design process. Therefore they were also 
+not sure about the connection between their abstract 
+organizational goals and the now concrete design. We were 
+assigned to lead a series of full-day workshops with the 
+PPG to backtrack what had been done and work through 
+both the organizational and user requirements again.  
+
+After three intense workshops spread out over about eight 
+days most questions had been answered and the PPG felt 
+much more comfortable with the work that had been done. 
+We updated the prototype with all the design decisions that 
+had been taken during this period and a second round of 
+usability test was planned. In the meantime the graphical 
+designer negotiated with the PPG about the requirements 
+for the final form. As in the first iteration the prototype was 
+also sent for evaluation by experts on accessibility. There 
+had been many changes in the design, both concerning 
+interaction and form issues since the first iteration, and the 
+usability evaluations indicated some areas that needed 
+reconsideration. This was discussed in a final workshop 
+with the PPG. Design decisions were agreed upon and the 
+final changes were made to the prototype.  
+
+Figure 3. The design of the final prototype. 
+
+In the new design (Figure 3) each primary persona gets 
+their own version, or mode, of the website. This means that 
+the whole top navigation can be used for each target group 
+which gives better overview and a more shallow 
+information architecture. The design is also more action-
+oriented than before and more coherent in the sense that 
+related parts are now integrated rather than spread out in the 
+structure.  
+
+Our last responsibility was to write the final project report 
+that described the work process, the personas and basic 
+ideas about the final design. This was handed over together 
+with the prototype and the final graphical design. Although 
+this was the end of our involvement the PPG had much 
+remaining work. They had to continue and intensify the 
+work of anchoring the results of the whole project in the 
+organisation, mainly through a thorough predefined process 
+in which the prototype would be sent out for review to 
+various departments.  
+
+The halt – an Analysis 
+From a UCD perspective the project had progressed 
+smoothly. In spite of a tough time plan we were on time. 
+Therefore, the halt came as a surprise to us since time had 
+been absolute top priority and a halt would inevitably cause 
+a delay. But suddenly the priorities had changed. Instead of 
+time understanding became essential. When the project was 
+discussed in retrospect the PPG leader gave two major 
+reasons for the halt: 
+
+“The usability company had delivered entirely accordingly to the 
+expectations but the project group did not have full insight and 
+understanding (…) of the results, which made them feel uncertain. 
+And then they would not be able to perform the extremely 
+important work to become ambassadors. So I was forced to halt 
+the project so they would be able to understand the results that 
+had been produced by the usability company.  
+
+We identified the organizational requirements first and they did 
+not reach the same level of concretization as the users’ 
+requirements. (…) And the usability company was in charge of 
+developing the prototype and we got to review it in this kind of 
+dialogue…. but then… the usability company got to strong 
+somehow. The usability company was much more professional in 
+some way – they had their methodology and they knew where to 
+go and so forth. But we, who sat with the organizational 
+requirements, in which the usability company did not have any 
+competence, we were not as good at steering, so to speak.”  
+
+We were aware that the PPG was unsure about how the 
+abstract organizational requirements should be translated 
+into the design and had asked them shortly after the user 
+interviews to try to detail their requirements to be able to 
+discuss them in relation to the design. This was not done, 
+however, and in order to be able to deliver on time we felt 
+that we had to move on. Furthermore, since we had read the 
+report from their previous work and had designed the 
+prototype based on user requirements, but in the overall 
+framework of the organizational goals, we were less 
+worried. Of course, there were still questions that were 
+unanswered and even some contradictions in the documents 
+on organizational requirements, but we expected these to be 
+resolved during the second iteration.  
+
+In retrospect it becomes clear that the halt was necessary 
+not only for the PPG to understand the user requirements, 
+but also to specify and secure the organizational 
+requirements. The PPG had not been able to detail these to 
+the level that the user requirements were specified. Since 
+these were also “owned” primarily by the usability 
+
+17
+
+consultants the PPG experienced that the user requirements 
+grew “too strong”. Considering that the previous attempt to 
+specify the requirements had failed the motivation to 
+actually understand was very high. However, lacking a 
+thorough understanding of the user requirements and with 
+diffuse and contradicting organizational requirements it is 
+not easy to participate in an argumentation about design 
+decisions, especially in the fast pace that the project was 
+moving. 
+
+The halt is interesting from a research point of view since it 
+manifests the importance of working with a dual 
+perspective of business and user requirements, as discussed 
+later on. It is, however, important to emphasize that it was a 
+completely internal project decision and the members of the 
+PPG did not consider it as a big thing in the following 
+interviews but merely as a response to a too tight time plan.  
+
+Understanding Through Cooperation 
+When asked how they would plan the next project based on 
+these experiences the PPG members agree that they were 
+satisfied with the overall process of identifying the 
+organizational requirements first and then the user 
+requirements, and the decision to involve usability 
+competence: 
+
+ “I don’t believe in this type of methodology where you take in 
+users and let them design their own system. I believe in the 
+meeting (…) between those that are (…) specialists on designing 
+systems and the new technologies etc., and the users’ needs. It is 
+in this meeting that you get the absolutely best solutions.”  
+
+If they would change anything the most recurrent comment 
+is rather that they themselves should have been more 
+involved in the project from the start, and spent time on 
+their own with the requirements, without the usability 
+company. Even though they would let an outside company 
+be responsible for the UCD process they comment that they 
+should have participated more in the activities and that all 
+work should have been done in their offices, instead of 
+having the usability consultants work in their own office.  
+
+“Looking back we should have planned to be more involved in the 
+project.” 
+
+Although we who were responsible for the design felt that 
+we had captured the essential organizational requirements 
+in the prototype the PPG needed to work through the design 
+decisions themselves to gain the same understanding.  
+
+“It might not have been that different [had we not had the halt] – 
+but it was mostly a feeling that you got time to think through a lot 
+of issues (…) Things were more clear to me [after the halt]. I 
+could take a discussion with others better than when it was 
+highway all the time.”  
+
+Thus, although the design did not change drastically during 
+the halt it was needed in order to get the PPG up to speed in 
+the design discussions. Nevertheless, the project, although 
+following the project plan with respect to the activities with 
+the users, turned out to be a different project than expected 
+from the PPG’s perspective (Figure 4).  
+
+Anchoring the Results in the Organisation 
+Since the end of the design project the PPG has continued 
+to anchor their results in the organisation. The prototype 
+was sent out for review to different departments with an 
+opportunity to comment on the results. The responses were 
+summarized and the PPG decided to make several changes 
+in the prototype based on the comments. Since this process 
+both required the project group to continue to work with the 
+requirements and also explain it to others in presentations it 
+further increased their feeling of confidence: 
+
+“Now we have done this and we stand up for it – we know it. I 
+believe this is very important for the credibility – that it’s not only 
+something that a consultant has said since it’s much easier then to 
+say “well that’s only a consultant who’s done it. We’ll change 
+it”.”  
+
+Although many comments were handed over in the review 
+process the PPG agree that the results in general have been 
+very well received. Both the final result and the structured 
+work process they used to reach it were appreciated. The 
+management has now made a decision that the prototype 
+represents the vision of the future website and has decided 
+to continue to specify a cost and resource estimate for a 
+development of the new website based on the prototype.  
+
+ 
+
+Figure 4. The process as it actually turned out with a continuous 
+dialogue between organizational and user requirements 
+
+Organizational and User Requirements 
+The PPG comment in the interviews that the UCD process, 
+with the halt, helped them to better understand their own 
+organizational requirements, apart from specifying the user 
+requirements. Although the original organizational goals 
+were not changed their understanding of them and the 
+requirements did: 
+
+“The organizational requirements have become more concrete 
+(…). The policy documents are written on a fairly high level of 
+abstraction. It’s easier now to run in the staircase of abstractions 
+(…) I can go from a detailed level, for example a database table. I 
+can take this with me and run up to the policy document.”  
+
+By working in a structured way with both organizational 
+and user requirements they seem to have built a very solid 
+platform from which to continue the procurement project. 
+In particular the halt and their own work with the material 
+after the design phase seem to have helped them to 
+understand how user and organizational requirements are 
+interrelated and represented in the design. Here is a 
+
+User Requirements & prototype design 
+
+User 
+interviews 
+
+ 
+The first 
+iteration 
+
+ 
+
+Anchoring 
+
+process 
+Organizational 
+
+requirements 
+
+The 
+halt 
+
+The 
+second 
+iteration
+
+18
+
+concrete example of how the personas and the design work 
+aided in this integration and prioritization of the 
+requirements:  
+
+One organizational requirement was that the website should 
+communicate what the agency do and how well they do it. 
+From a usage perspective this was in line with the goals of 
+the information seeking persona (i.e. journalists and 
+researchers) since a large part of their job is about writing 
+about the employment market. However, the employer and 
+unemployed personas did not share this interest. Their 
+primary goal was to find employers or a new job. This was 
+also in line with the main organizational goal of the website 
+– to support the matching process between unemployed and 
+employers. Therefore we decided to emphasize information 
+about the agency in the website for information seekers but 
+minimize it in the website for other personas. The 
+organizational requirement of informing about the agency 
+could not come in conflict with their primary goals of 
+matchmaking, which in turn would realize the overall 
+organizational goals.  
+
+One of the members of the PPG also describe how they 
+now present the personas and the organizational goals 
+together through an integrated concept where it becomes 
+clear how different personas will use their services 
+differently and in different channels in order to realize the 
+organizational goals.  
+
+The members of the PPG agree that this project was 
+successful in that it followed a structured method from 
+abstract 
+organizational 
+goals 
+to 
+detailed 
+systems 
+requirements, and that it took both organizational and user 
+requirements under consideration and integrated the two. If 
+possible, they would use the same work model again if they 
+got involved in a similar project, also because they do not 
+have any method or process for this today. 
+
+Working With Personas 
+The PPG got interested in the tool personas already when 
+the usability company presented it in their project proposal.  
+
+“One thing that caught our interest was to work with personas 
+(…) to get something more concrete to work from”  
+
+The fascination with the tool grew during and even after the 
+project as it proved its effectiveness. For example, although 
+the results of the interviews were much in line with the 
+persona hypothesis there were also some important 
+differences. One such deviance was that the hypothesis 
+divided users based on the agency’s internal categorisation 
+of short-time unemployed and long time unemployed users. 
+In the analysis, however, it turned out that a categorisation 
+based on how long a person had searched for a job, rather 
+than how long he had been unemployed, was more 
+interesting. But the greatest strength of personas was not as 
+an analysis tool but rather as design tool and as a way of 
+communicating requirements: 
+
+“Its not only that it becomes very concrete and tangible when you 
+work, like a really good tool when we should design the prototype. 
+
+We talked about them as friends in the project group. How will 
+Linda handle this? And then everyone knew. Linda was a whole 
+concept that stand for a lot of things instead of having to recount 
+all the details. So it becomes a very, very smooth tool to work 
+with.”  
+
+More interestingly the use of personas did not end with the 
+end of the design project but they have lived on during the 
+internal preparations for a development decision:  
+
+“The second thing that struck me was what an enormous response 
+we have had on these personas when we have been out in the 
+organization talking about the project. Suddenly it has become 
+tangible even for people who do not have a clue about web 
+development. “Right, the users.” And the users are not a grey 
+mass but they want different things!” 
+
+The PPG even report that they have found new uses for the 
+personas in many other projects and completely other 
+settings, such as in education. For example, when 
+discussing with the assistants in the local offices who shall 
+teach unemployed to use the website the personas have 
+helped them understand how different users may need 
+different services and may use the website differently.  
+
+“Suddenly our website gets differentiated in relation to the 
+users… that is really incredible.”  
+
+DISCUSSION 
+As pointed out in the introduction business goals can 
+seldom become realised through technology alone. The 
+technology has got to be used by someone for the goals to 
+be fulfilled. Therefore an analysis of current usage and a 
+prediction of future usage through prototypes and 
+evaluations is a crucial step to take in any development 
+project to come to grip with what kind of system and 
+services that are suitable. By performing these activities 
+already in the procurement project we anticipated several 
+benefits. Mistakes and questions can be solved at an early 
+stage at a low cost. The procurement itself can become 
+more concrete which facilitates communication with 
+suppliers [17]. Most importantly though, from a UCD 
+perspective, usability issues can be integrated, or embodied, 
+into the request for proposal without the need to actually 
+speak about usability.  
+
+These benefits were experienced by the PPG in the current 
+case study. The usability process became a bridge between 
+the PPG’s original abstract business goals and the more 
+concrete systems requirements. Judging by the comments of 
+the PPG and our earlier experiences [e.g. 1,17] it would 
+have been more difficult to go directly from the abstract 
+documents to a detailed systems requirements specification. 
+Furthermore, if the UCD process had not been incorporated 
+already in the procurement usability activities would still 
+have had to be done later in the development phase. An 
+integration of the two would most likely have been more 
+complicated at that stage since there would be a contract 
+based on abstract business requirements regulating what 
+should be done. In this case study the PPG instead let the 
+user and business requirements grow in parallel towards a 
+
+19
+
+final design, solving contradictions between requirements 
+as they came along.  
+
+The idea that the usability process should be used to bridge 
+organizational goals and systems requirements in the 
+procurement presupposes a separation between “external” 
+and “internal” design [16, p. 94]: 
+
+“Software development informed by recent work in design 
+methodology should aim at separating external design from 
+internal design and construction. (…) This has implications for 
+how we view the designer’s role, as well as for the structure and 
+management of software development projects. A problem which 
+remains to be addressed is how to deal with constructional aspects 
+affecting the use of the final product. Response time, reliability, 
+maintenance, etc., all affect the users’ experience of the product 
+(see Gould, 1988, for a discussion). Yet they cannot be adequately 
+addressed in the design work since they are determined by the 
+final construction. A tentative answer is that the designer - much 
+like the architect - is responsible for coordinating the construction 
+work in such a way that it satisfies the design vision to the greatest 
+extent possible.” 
+
+As Löwgren points out the backside of a separation of 
+internal and external qualities is that those that are 
+determined by the final construction cannot be specified 
+alongside other external qualities. It is therefore tempting to 
+argue against such a separation and propose that one and 
+the same supplier can have both usability and technical 
+competence and both design and implement a usable 
+system. We would certainly like this to be the case, but in 
+reality it is does not seem to work. As mentioned in the 
+introduction suppliers in contract development fail over and 
+over again to integrate UCD activities in their development 
+processes. Furthermore, even though we may one day see 
+suppliers that have succeeded with this integration, we 
+believe that usability activities will often be involved too 
+late if they come after a contract for the technical 
+development is in place.  
+
+The Interaction Architect 
+Other case studies that we have done [1,17] highlight that it 
+is not enough to only perform the UCD activities in the 
+procurement process, but the procurer must also possess 
+UCD competence to do it (the same point is raised by 
+Scown [18] but he argues that the procurers should actually 
+learn HCI). This does not necessarily mean that all 
+procurers of interactive systems should employ usability 
+practitioners. A strategy that was used by the agency in this 
+case was instead to hire competence temporarily. Since 
+usability played a key role in this case study it is interesting 
+to analyze this strategy further. We will refer to the role that 
+the usability professionals had as the Interaction Architect. 
+
+The idea of the Interaction Architect, using the metaphor of 
+the construction architect, is to provide UCD competence 
+when needed, without having any interest in also 
+implementing the specified system [17]. The comparison of 
+the usability professional to the construction architect is 
+quite common in the UCD literature (e.g. [6, 14,16, 20]). 
+For example, Kapor [15, p. 4] write: 
+
+“Architects, not construction engineers, are the professionals who 
+have overall responsibility for creating buildings. Architecture 
+and engineering are, as disciplines, peers to each other, but in the 
+actual process of designing and implementing the building, the 
+engineers take direction from the architect. When you go to design 
+a house you talk to an architect first, not an engineer. Why is this? 
+Because the criteria for what makes a good building fall 
+substantially outside the domain of what engineering deals with.”  
+
+As emphasized by Kapor you don’t go to an architect when 
+you have already built the shell of the building, or when the 
+construction is nearly finished. Neither do you involve an 
+architect after you have chosen what to build in detail, and 
+who should build it. Rather, you use the competence of the 
+architect to understand what it is you need, and to define 
+this in a format that is understandable by contractors.  
+
+Consequently, we want to use the metaphor of the architect 
+to stress the point in time in which this role is involved. The 
+responsibility of the Interaction Architect is to secure issues 
+of quality in use before a contract with a technical supplier 
+is signed, as well as to monitor the progress during the 
+systems development. The results from this case study, as 
+well as another that we have performed, are very promising. 
+The UCD process was valued by the procurers. The results 
+from the work of the Interaction Architect – a design, 
+grounded in usage and business goals, will be used as a 
+high level requirement specification by the procurers in the 
+continued specification and development work. Whether or 
+not this will result in a usable system is, however, too early 
+to say since neither development project has started yet. 
+However, the results have in this case persuaded the 
+management to use it as a vision which they will try to 
+reach.  
+
+We believe that we will se more of this, or similar, roles in 
+the future. Perhaps a scenario as described by Winograd 
+[20, p. 11]: 
+
+“As software design continues to mature, perhaps we will see a 
+similar evolution: from the individual artisan-programmer (far 
+from an extinct species today); to a master architect builder, as 
+described by Fredrick Brooks (1995); to a commercial 
+environment that includes software architectural firms that vie for 
+awards for originality and elegance of their designs, but that are 
+not responsible for construction (implementation).” 
+
+Or maybe we will even find, in a not to distant future, a 
+situation where usage requirements are fully taken into 
+account not only in the procurement stage, but also all 
+along the development and implementation stages.  
+
+Integrating User and Business Requirements 
+The results of the case study indicate that viewing the 
+usability activities primarily as a process of organizational 
+development or procurement, rather than as part of a 
+systems development, facilitates an integration of the UCD 
+activities. The procurement organisation saw these steps as 
+necessary to be able to specify what they needed. Usability 
+professionals often have to beg to get involved early in the 
+process, and then “early” is often defined as the start of the 
+supplier’s 
+engagement. 
+In 
+this 
+case 
+the 
+usability 
+
+20
+
+professionals were involved even before that and their 
+results were appreciated by the organisation and have been 
+used extensively.  
+
+However, it is clear that the successful integration of 
+usability did not come automatically by involving usability 
+professionals. Rather, it demanded a lot of work and effort 
+from the procurement project group (PPG). In retrospect the 
+participants seem very pleased that they paused the project 
+since they got a chance not only to listen to the results being 
+presented but also to work their way through the proposals 
+themselves. This suggests that when planning a project with 
+an Interaction Architect, regardless of whether he/she is 
+hired or employed by the procurer, it is also necessary to 
+include time for working through and re-evaluating the 
+business requirements, and to link these to the needs of the 
+users. One method for this integrated approach is suggested 
+by Balic et al [2]. We are not sure, however, that the work 
+needs to be that formalised. It might be enough to establish 
+this two-edged focus early on in the project, to plan it 
+accordingly and, most importantly, to have time not only 
+for practical activities but also for reflection. One difference 
+could, for example, be to not only plan evaluations with 
+presumptive users, but also with the procurers.  
+
+Apart from the benefit of including the organizational 
+requirements more explicitly, the time for reflection also 
+gives the procurers possibilities to get more familiar with 
+the results, which is necessary if they will use them by 
+themselves later on. There exists today no established 
+method or process for procurers to manage their work, but a 
+method inspired by UCD seems to be a promising 
+candidate. In this case study the UCD process was 
+appreciated and effective for the procurers as a method of 
+transforming their abstract goals into detailed requirements, 
+through involving users and designing for them.  
+
+Hence, although the UCD process was originally intended 
+to understand the user requirements it also helped the PPG 
+to understand and deal with their own organizational 
+requirements. With a prototype available it became easier to 
+become concrete regarding the organizational requirements, 
+or to notice that they were not yet embodied in the 
+prototype.  
+
+The Active Procurer 
+Holmlid [12] emphasises “the active procurer”. This case 
+study confirms that a successful procurement and 
+involvement of usability requires an active procurer. The 
+members of the procurement project group were active in 
+many ways: 
+
+• 
+They worked intensively together to specify the 
+organization’s goals and requirements for the new 
+website 
+
+• 
+They were involved in the UCD process in order 
+to really understand the results 
+
+• 
+They worked closely to the organization during the 
+requirements phase to continuously communicate 
+and gain approval for their work 
+
+• 
+They planned a thorough review and approval 
+process after their work with the prototype was 
+completed, in order to anchor their results in the 
+organisation 
+
+Although the involvement of an Interaction Architect and 
+the UCD activities were successful in themselves the result 
+of the whole project would most likely not have been as 
+successful if the procurer had not worked actively and taken 
+responsibility from the very start. Even though the 
+requirements did not change drastically during the halt the 
+PPG got an opportunity to work with the material 
+themselves, which they had not had before. This, together 
+with their continued work with the requirements after the 
+design project, increased their credibility in their internal 
+anchoring process. 
+
+Thus, although the UCD process helped the PPG to detail 
+and evaluate organizational and user requirements this was 
+merely one piece in the overall process. An equally 
+important piece was their engagement in the project, as well 
+as a thorough planning for internal marketing and 
+anchoring.  
+
+Personas & Prototypes  
+One of the worst fears of the PPG was that they would not 
+have an adequate understanding of the results since they 
+had outsourced the UCD process. The usability company 
+introduced a new work process and possessed design and 
+analytical skills that the PPG did not have. In retrospect the 
+fears were unfounded. As mentioned before the PPG’s 
+engagement in the process is identified as one reason for 
+their ability to embrace the results. Another reason is 
+probably the tools that were chosen.  
+
+Both the personas and the prototype have been used 
+extensively by the PPG after the design project ended. They 
+have even made changes in the prototype by themselves. 
+The choice of these concrete and communicative tools for 
+the deliverables was likely important for this to happen. 
+Had the usability company instead delivered a large report 
+and a requirement specification in UML the PPG would 
+likely not have used them as much and the process of 
+anchoring the results would have been more difficult.  
+
+Both the prototype and the personas were appreciated by 
+the PPG for their communicative power and simplicity. The 
+personas represent the users and communicate their goals. 
+The prototype represents the system and communicates the 
+requirements. Both of these tools are non-technical and 
+easy to use in presentations and discussions.  
+
+On the other hand, their power and simplicity may also be a 
+danger since they may start to live a life of their own and be 
+used in areas and for argumentations that they were not 
+designed for. Although this is a pleasant problem compared 
+
+21
+
+to not having any focus on the users at all it is one which a 
+procurer-oriented perspective on usability must deal with.  
+
+CONCLUSIONS 
+This case study emphasises that the user centred design 
+process, which is commonly perceived as a systems 
+development issue, may as well be used in organizational 
+development 
+or 
+systems 
+procurement. 
+Procuring 
+organisations today lack methods or processes to transform 
+their often abstract organizational requirements to a systems 
+specification for procurement. This case study demonstrates 
+how the usability activities may be used in this phase to 
+bridge organizational and systems requirements through an 
+emphasis on usage. The result of such a process is a 
+requirement 
+specification 
+that 
+is 
+based 
+on 
+both 
+organizational and user goals and that can be used to 
+procure a systems development project.  
+
+Furthermore, the case study highlights how tools such as 
+personas and prototypes can aid not only in the design 
+process, but can also be used by procurers with no formal 
+training in usability in their endeavour to communicate and 
+anchor the results of their work. The results indicate that 
+success factors include having access to competence in 
+UCD and an active procurer who is engaged and want to 
+participate in and understand the work of specifying the 
+requirements in order to become confident and secure in 
+one’s own abilities to know what to procure.

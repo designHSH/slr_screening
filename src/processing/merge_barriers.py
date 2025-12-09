@@ -5,7 +5,7 @@ from pathlib import Path
 # -----------------------------
 # Configuration
 # -----------------------------
-INPUT_DIR = Path(r"data/test_data/barrier_identification_test/output/1st_run")
+INPUT_DIR = Path(r"data\test_data\barrier_identification_test\2nd_run\output_2nd")
 OUTPUT_CSV = INPUT_DIR / "barriers_merged.csv"
 
 # -----------------------------

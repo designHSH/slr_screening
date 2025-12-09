@@ -1,0 +1,716 @@
+Francisco Aguilar Acevedo
+Department of Computer Engineering,
+Universidad del Istmo,
+Ciudad Universitaria S/N,
+Barrio Santa Cruz,
+4a. Seccion,
+Santo Domingo Tehuantepec,
+Oaxaca 70760, Mexico
+
+Daniel Pacheco Bautista1
+
+Department of Computer Engineering,
+Universidad del Istmo,
+Ciudad Universitaria S/N,
+Barrio Santa Cruz,
+4a. Seccion,
+Santo Domingo Tehuantepec,
+Oaxaca 70760, Mexico
+
+Marleydy Acevedo Gomez
+Department of Computer Engineering,
+Universidad del Istmo,
+Ciudad Universitaria S/N,
+Barrio Santa Cruz,
+4a. Seccion,
+Santo Domingo Tehuantepec,
+Oaxaca 70760, Mexico
+
+Guadalupe Toledo Toledo
+Department of Computer Engineering,
+Universidad del Istmo,
+Ciudad Universitaria S/N,
+Barrio Santa Cruz,
+4a. Seccion,
+Santo Domingo Tehuantepec,
+Oaxaca 70760, Mexico
+
+Omar S. Nieva Garcıa
+Department of Computer Engineering,
+Universidad del Istmo,
+Barrio Santa Cruz,
+Santo Domingo Tehuantepec,
+Oaxaca 70760, Mexico
+
+User-Centered Virtual
+Environment for Poststroke
+Motor Rehabilitation
+
+The use of virtual reality in the rehabilitation of lost or diminished functions after a
+stroke has been shown to be an innovative means in motor recovery. However, there are
+still several design challenges to increment the efﬁciency of these systems. This paper
+presents the development and evaluation of a nonimmersive three-dimensional virtual
+environment for poststroke rehabilitation of elbow ﬂexion–extension movements, which
+considers the therapist as a direct user and the patient as a secondary user. The develop-
+ment of virtual environment was supported by the criteria of a team of specialists in phys-
+ical and occupational therapy, following the philosophy of user-centered design through
+three iterations, and incorporating tasks based on the activities of daily living of the Bar-
+thel scale. Tests were carried out with healthy users and a patient with a diagnosis of
+stroke, using the system usability scale (SUS) test and a ﬂow status questionnaire, respec-
+tively. Average satisfaction of user group without diagnosis was 79.6 out of 100 points.
+On the other hand, according to mean values observed with the patient, dimensions of
+control sense (6.33) and positive emotional experience (6.66) reﬂect an “optimal” expe-
+rience, which indicates an enjoyment of virtual tasks despite the effort made to fulﬁll
+them. [DOI: 10.1115/1.4053605]
+
+Introduction
+
+Cerebral vascular disease or cerebrovascular disease constitutes
+one of the most frequent causes of death and represents one of the
+main reasons for hospital occupation at a global level [1]. In par-
+ticular, stroke or cerebrovascular accident is a sudden, transitory,
+or permanent alteration of the cerebral circulation in an area of
+functional tissue in the brain. A stroke can be of two types: ische-
+mic or cerebral infarction, which occurs when an artery in the
+brain is blocked, suddenly reducing blood ﬂow, or hemorrhagic,
+in which the artery ruptures causing a blood leak. Among the
+most common sequelae of a stroke are sensory and motor disor-
+ders, vision deﬁcit, impaired balance, and impaired language [2].
+
+The disorder that occurs most frequently is motor deﬁcit, which is
+characterized by difﬁculty in executing voluntary movements,
+resulting in less independence and mobility of the patient.
+After the stroke, rehabilitation plays a very important role in
+relearning the basic skills that the attack affected, such as eating,
+dressing, and walking, improving the independence and quality of
+life of patients. Usually, poststroke rehabilitation exercises are
+performed with daily practice directly assisted by the therapist.
+However, such exercises are tedious and repetitive, frequently
+promoting premature abandonment of rehabilitation programs.
+Against this background, there is great interest in the scientiﬁc
+community to explore new rehabilitation technologies that include
+assistive devices [3,4], telerehabilitation, robotic and virtual real-
+ity technologies (VR) [5–8], neuroprosthesis [9,10], and smart-
+phone applications [11,12], as well as the combination of these
+[13]. Researchers have systematically studied the effectiveness of
+these technologies, mainly in balance control and gait [14,15],
+
+1Corresponding author.
+Manuscript received August 27, 2021; ﬁnal manuscript received December 29,
+2021; published online March 2, 2022. Assoc. Editor: Jason Z. Moore.
+
+JUNE 2022, Vol. 16 / 021014-1
+Copyright V
+C 2022 by ASME
+
+upper and lower limb motor functions [16,17], walking [18], and
+the clinical effects of commercially available VR games [19]. The
+works listed above show that VR-based systems have two very
+important characteristics in the rehabilitation process: Motivation
+and feedback, which is why they represent an important alterna-
+tive mainly in occupational therapy performed at home [5,7].
+In particular, this paper focuses on the use of VR technologies
+for poststroke rehabilitation. A VR system is the set of physical
+solutions or means to generate experiences deﬁned in terms of
+qualities such as immersion, interaction, sensorimotor experiences
+and illusion, and that often incorporate elements of gamiﬁcation
+to increase motivation of the participant. Nonimmersive VR sys-
+tems are the most studied as a therapeutic tool in the treatment of
+neurological disorders such as stroke [20,21], as they do not
+require specialized hardware for their interaction with the virtual
+environment. However, despite the indications about the beneﬁ-
+cial aspects of VR in neurorehabilitation programs, the question
+remains of how to guarantee that virtual rehabilitation interven-
+tions meet the speciﬁc needs of users, as well as the difﬁculty to
+validate the clinical result of the use of virtual reality systems that
+are not speciﬁcally designed for rehabilitation tasks. In this con-
+text, the incorporation of the user’s perspective in the design,
+development and reﬁnement phases [22], attention to usability
+problems [23], as well as the versatility of user interfaces [24], are
+some of the lines of study that seek to increase the usability of
+these virtual environments, making them useful as support tools in
+rehabilitation programs.
+From this perspective, and in attention to one of the most com-
+mon pathologies of neurological origin such as stroke, this paper
+presents the design and evaluation of a virtual environment for the
+rehabilitation of motor function of the upper limb after a stroke,
+under the philosophy of user-centered design (UCD). The purpose
+of three-dimensional (3D) virtual environment developed is to
+support therapy by limiting itself to the ﬂexion–extension move-
+ment of the elbow, considering the therapist as a direct user, and
+the patient as a secondary user. Thus, the method proposed in this
+paper shows, through the development of a virtual environment,
+the advantages of guiding software development from the per-
+spective of the therapist, who is the one who outlines and monitors
+the rehabilitation process. The main contributions of this work
+are: (1) a methodology for the development of virtual environ-
+ments for rehabilitation that considers the therapist as the main
+user, (2) the design and implementation of a virtual environment
+for poststroke rehabilitation that integrated the philosophy of the
+UCD, the approach of occupational therapy through activities of
+daily living (ADLs), and the Kinect and Unity 3D technologies,
+(3) the preliminary evaluation of the virtual environment with a
+patient with poststroke diagnosis, and (4) delineation of possible
+applications of the virtual environment to other mobility disorders
+of the elbow as a result of other pathologies or its application to
+sports medicine.
+The remainder of this paper is organized as follows: in the sec-
+ond section-related works that address the development of 3D vir-
+tual environments for rehabilitation from the perspective of the
+user are presented. The third section describes the design of the
+virtual environment as a product of three iterations of the UCD.
+The fourth and ﬁfth sections show and analyze the evaluation of
+the environment with healthy users and a patient with poststroke
+aftermath. Finally, the sixth section exhibits the conclusions and
+future work derived from this research.
+
+Related Works
+
+Virtual reality applied to poststroke rehabilitation has been ori-
+ented mainly to motor training of the shoulder, elbow, hand, wrist,
+and ﬁngers [25–28], due to that the disorder that occurs most fre-
+quently after a stroke is a motor deﬁcit in the upper limbs. These
+systems, generally semi-immersive, typically use the Nintendo
+Wii (Tokyo, Japan) video game console or the Microsoft Kinect
+(Redmond, WA) sensor (version 2) as the means of interaction,
+
+the latter being preferred by developers because it has an software
+development kit that allows access to all its functions [29]. In
+recent years, a new version of the Kinect called Azure has been
+shown as an alternative means of interaction for these types of
+applications [30,31]. However, although the performance of the
+Azure Kinect ToF (time-of-Flight) camera is superior, the identiﬁ-
+able number of characteristic points of the joints of the upper and
+lower limbs are the same between both versions. With regard to
+software for the development of VR applications, the graphics
+engines unity and unreal engine stand out, the former being the
+most widely used. Subsequently, under the argument of the beneﬁt
+of greater immersion, recent studies have focused on the develop-
+ment and use of virtual environments with 3D visualizations, as
+an alternative to traditional two-dimensional environments that
+continue to represent a viable alternative in medical practice
+[32,33].
+Regarding the use of VR technology, the inherent difﬁculties
+have led to the development of virtual rehabilitation systems that,
+under approaches such as usability engineering and UCD, seek to
+improve the user experience. In Ref. [34], an active video game
+based on Kinect and Unity is presented to improve the balance of
+older people under the principles of human-centered design (used
+in practice as a synonym for UCD). The iterative process consid-
+ers focus group sessions with game designers, the elderly, medical
+professionals and caregivers, the development of prototypes, the
+use of scales and tests (Berg balance scale, 30 s sit to stand test),
+system usability scale (SUS) questionnaires, and semistructured
+interviews. In a similar way, in Ref. [35], a new UCD protocol is
+presented to develop active video games based on the Kinect sen-
+sor, adapted to the needs of older adults. The protocol is the result
+of the experience with a group of users that met every two weeks
+for three years to make use of an active video game and partici-
+pate in interviews and group discussions. Meanwhile, Ref. [36]
+presents the development of a virtual environment for poststroke
+rehabilitation based on games, which makes use of the Kinect sen-
+sor as the main interaction interface. Following the UCD method-
+ology, the requirements of each iteration were derived from the
+observation of rehabilitation sessions and from interviews with
+patients and therapists. At the end of each cycle, the system was
+tested by therapists, who outlined the needs to be considered in
+the new iteration. The evaluation phase was carried out with ﬁf-
+teen healthy users, who after using the virtual environment com-
+pleted a series of questionnaires on the perception of the system
+(SUS usability, difﬁculty, fun, and motivation).
+On the other hand, based on clinical requirements and as result
+of a study with users under the UCD approach, Ref. [37] presents
+the development of an application that is part of a poststroke
+motor tele-rehabilitation system consisting of haptic devices and
+the Kinect sensor. To deﬁne the elements of the application, group
+sessions were held with ﬁve therapists, while the study with the
+tele-rehabilitation system as a whole was carried out with ﬁve par-
+ticipants with hemiparesis (muscle weakness or partial paralysis
+on one side of the body) with severity between “severely affected”
+and “mildly affected.” The participants showed a performance in
+the ADL between 50 and 100 on the Barthel scale; in addition,
+they carried out some tasks that led to a qualitative analysis of the
+problems of use of the application. Meanwhile, Ref. [38]
+describes the development of a system to support poststroke reha-
+bilitation therapy of the upper limbs, which under the guidance of
+UCD makes use of active video games based on Kinect, to repro-
+duce exercises used in a physical therapy intervention. A group of
+therapists assisted in the deﬁnition of design criteria, generating a
+prototype that was evaluated by a group of patients over a period
+of three months, comparing its results with a control group.
+At this point, it is important to note that few works follows the
+UCD
+principles
+in
+the
+development
+of
+poststroke
+motor
+rehabilitation systems, sometimes limiting itself to considering
+the user at the center of decision-making, without adhering to a
+regulation standard to the detriment of the quality of the products
+generated.
+
+021014-2 / Vol. 16, JUNE 2022
+
+It is important to mention that although the cited studies inte-
+grate the UCD to develop systems that have the patient as the pri-
+mary user, studies such as in Ref. [39], indicate the concern that
+exists on the part of the patients on the correct performance of
+their exercises. The foregoing gives great relevance to the sugges-
+tions and corrections that the therapist makes during their execu-
+tion. Since the therapists are the architects of the rehabilitation
+process, it is feasible to consider them as a direct user in the devel-
+opment of virtual environments.
+
+Method
+
+In planning the UCD process following the ISO 9241-210
+standard, the interview was selected as the inquiry method, and
+high-ﬁdelity prototyping as the design method. For the ﬁrst and
+second iterations, meetings with specialists in physical medicine
+and rehabilitation were planned, while for the third iteration, tests
+were carried out with users without and with a poststroke diagno-
+sis. The details of the three contemplated iterations are detailed
+below, the evaluation of the third being addressed in the results
+section.
+
+First Iteration
+
+Understand and Specify the Context of Use. The participation
+of two types of users was contemplated: the specialist and the
+patient. First considered the direct user and who will provide the
+system requirements and the second the indirect user who will use
+the scenes designed for therapy. Thus, a ﬁeld study was carried
+out through observation to identify the activities concerning the
+evaluation of the patient’s mobility, the design of the therapy and
+its supervision by the specialists. As a result of this phase, the
+detailed writing of the activities carried out by the specialists in
+his consulting room was obtained.
+
+Specify User Requirements. An interview was applied to the
+specialists to identify the requirements that could support them in
+the automatic management of their patients and in the monitoring
+of the therapy session. The application of this instrument led to
+the following conclusions: (1) Due to the limitations in motor
+skills that patients may present, it is appropriate to use a noninva-
+sive mechanism for the detection of movement, such as the
+Kinect sensor. (2) Focus on the task of rehabilitation of the
+ﬂexion–extension movement of the elbow joint, since weakness in the
+muscles of this joint is a common consequence after a stroke. There-
+fore, the autonomy of the elbow must be analyzed, to know the gener-
+alities regarding the types of elbow movement, as well as the
+interpretation of the ranges and muscles involved in ﬂexion–extension.
+(3) Scenes and virtual tasks will be developed that represent ADLs
+contemplated in the modiﬁed Barthel scale [40], and in which the
+ﬂexion–extension movement of the elbow is directly implicit.
+
+Produce Design Solutions. The following ADLs considered in
+the modiﬁed Barthel scale were selected: feeding, grooming, and
+dressing, deﬁning the virtual scenes: “dining room,” “bathroom”
+and “bedroom.” To assign to each scene a set of tasks involving
+shoulder/elbow movements, the functional tasks of the arm motor
+ability test were considered, which is used regularly to evaluate and
+quantify upper limb functional limitation in strokes and other con-
+ditions [41]. For this ﬁrst prototype, only one task was considered
+for each virtual scene. For the implementation of the virtual envi-
+ronment, the Unity 3D technology was selected, as well as the
+
+SKETCHUP software to acclimate the different scenes, which allowed
+the integration of a nonhumanoid avatar whose function was to rep-
+resent the arms of the user, employing at the programming level a
+collision mechanism between the avatar and the virtual objects.
+Design evaluation: It was carried out with the help of the team
+of specialists, who underwent a demonstration of a high-ﬁdelity
+prototype that complied with the elements derived from the ﬁeld
+study and the initial interview. Through a directed interview, a
+discussion environment was established between the developers
+
+and the specialists, which allowed the integration in the next itera-
+tion of the UCD of qualitative and quantitative parameters that the
+specialists consider important during the diagnosis and recovery
+of the patient.
+
+Second Iteration
+
+Specify User Requirements. Based on the observations indi-
+cated by the specialists in the evaluation of the prototype in the
+previous iteration, the following improvements were indicated:
+(1) Allowing the presence of two people on scene (patient and
+therapist), with the aim of establishing a system-assisted. (2) Inte-
+grate to the conﬁguration: the ﬂexion angle that the patient must
+achieve in a certain task to consider it a repetition, the time during
+which the patient must perform the repetitions, and the count of
+the number of repetitions achieved. These parameters, at the dis-
+cretion of our team of specialists, are a means to quantify the pro-
+gress of the patient. (3) The inclusion criteria for secondary users
+who would use the system were formalized, considering, (i) met-
+rics available to the specialist to assess the functional status of the
+patient (Ashworth and Daniels scale), (ii) degree of mobility of
+the patient’s joint, (iii) time elapsed since the stroke episode. This
+information will form the details of the medical history of the
+patient. (4) Integration of a database for the initial registration and
+progress of patients, in such a way that at the end of a session, the
+data is saved allowing the specialist to evaluate the progress of the
+patient.
+
+Produce Design Solutions. To meet the new speciﬁcations, a
+local SQLite database was integrated to the selected technology,
+to store the data related to the new modules (login, manage patient
+data, conﬁgure tasks, and consult history) that will be adminis-
+tered by the specialist. On the other hand, adjustments were made
+at the programming level within the object detection scripts of the
+Kinect for the discrimination of the therapist’s skeleton, which is
+commonly found on the side of the patient providing assistance at
+the shoulder level (if this is required). The angle of ﬂexion of the
+elbow (with a precision of 61 deg), was obtained through Eq. (1),
+where h is the angle formed by the intersection of the vectors s1
+and s2, which represent the arm and the forearm, respectively.
+Both vectors are deﬁned by the x, y and z positions of the charac-
+teristic points of the joints (shoulder, elbow, and wrist) so that
+vector s1 is the difference of the points associated with elbow and
+shoulder, while vector s2 is the difference of the wrist and elbow
+points (see Fig. 1)
+
+cos h ¼ s1  s2
+js1jjs2j
+
+where
+
+s1 ¼ r1  r2
+
+Fig. 1
+Obtaining the ﬂexion angle of the elbow
+
+JUNE 2022, Vol. 16 / 021014-3
+
+s2 ¼ r3  r2
+(1)
+
+For the repetition count, the behavior base of the tasks was modi-
+ﬁed. Each task was modeled using a ﬁnite state machine (see
+Fig. 2). The transition between states is determined by the colli-
+sion of the virtual arms with the objects, the target-bending angle,
+and the minimum time to maintain the target angle that make the
+repetition valid, all this subject to the maximum time established
+to perform the repetitions of the task.
+
+Design Evaluation. The demonstration of the prototype to the
+specialists was carried out in the usability laboratory of the Uni-
+versity of the Isthmus. The laboratory is equipped with a 24-in.
+TV with 1360  768 resolution, video surveillance equipment,
+audio, and a Kinect version 2.0 sensor. The specialists gave their
+point of view on the fulﬁllment of the requirements indicated in
+the ﬁrst evaluation (see Fig. 3). The procedure ﬁnalized with a
+guided interview that made it possible to list requirements with
+their respective clariﬁcations.
+
+Third Iteration
+
+Specify User Requirements. Based on the second evaluation of
+the prototype by the team of specialists, new requirements were
+deﬁned: (1) Integrate the conﬁguration of the affected side (right
+or left). (2) Modify the database to incorporate the current inclu-
+sion criteria. (3) Add new tasks to the scenes.
+
+Produce Design Solutions. The adaptation of the system to
+patients with damage in the left side (left hemiparesis) was based
+on the ﬁnite state machines deﬁned in the previous iteration for its
+counterpart. New interfaces were integrated for the management
+of data that can be manipulated by the specialist, such as the his-
+tory of the patients and the conﬁguration of the task, adding the
+new inclusion criteria that needed to be administered. The tech-
+nology established from the second iteration remained current.
+Finally, a visual feedback element was added as a “miniature
+mirror” of the user, as a means of proprioceptive stimulation that
+allows informing the user of incorrect movements. Figure 4
+shows the evolution of the “bathroom” scene and the “brush
+teeth” task.
+
+Results
+
+At the end of the last iteration, the evaluation of the virtual
+environment was carried out by two different secondary users (see
+Fig. 5), at the facilities of the University of the Isthmus, campus
+Tehuantepec, Mexico. All participants were informed of the
+details of the study, giving their written consent. A ﬁrst group of
+14 engineering students (12 men and 2 women), without a history
+of neurological disorder, or motor deﬁciency in the upper limb,
+aged between 18 and 20 years, and without experience in virtual
+environments
+but
+regular
+users
+of
+the
+information
+and
+
+communications technology, provided their level of satisfaction
+through the SUS test in its positive version, after using the system.
+On the other hand, tests were performed by a patient with a diag-
+nosis of stroke and no experience in the use of virtual environ-
+ments. The motivation and personal enjoyment of the patient was
+analyzed based on her optimal psychological state to carry out
+an activity, using a ﬂow state questionnaire as an instrument.
+The test was realized under the supervision of a therapist, who
+performed the assessment of the patient, made the registration in
+the software, and monitored the execution of the exercises.
+In the group of users without diagnosis, who performed a single
+task for two minutes with a target ﬂexion angle of 110 deg,
+71.42% presented an “acceptable” satisfaction measure with
+respect to the SUS score proposed in Ref. [42]. The average satis-
+faction was 79.6 out of 100 points, which indicates that the virtual
+environment is considered acceptable (see Fig. 6). Regarding the
+users who evaluated the seven tasks of the virtual environment,
+two SUS indicators were obtained for each task (see Fig. 7). From
+this test, it was concluded that the task that offered the lowest sat-
+isfaction indicator was that of “cut meat” from the “dining room”
+scene with 60 points, and the task with the highest indicator was
+that of “comb hair” from the “bathroom” scene, with 97.5 points.
+As a result of the verbal observations made by the users, a series
+of improvements were made at the programing level, prior to the
+tests with the patient.
+Regarding the tests with patients, a user with a diagnosis of
+stroke was considered. Table 1 shows the clinical proﬁle of the
+
+Fig. 2
+State machine for the “drink coffee” task
+
+Fig. 3
+A specialist evaluating the system: (a) ﬁrst iteration and
+(b) second iteration
+
+021014-4 / Vol. 16, JUNE 2022
+
+patient based on the on-site assessment carried out by the team of
+specialists. According to the inclusion criteria for secondary users
+established during the development of the software, the patient
+was able to use the virtual environment. The assessment on the
+Barthel scale gave the certainty that the patient could perform the
+virtual tasks considered. On the other hand, the values on the Ash-
+worth scale and the range of motion allowed the therapists to
+deﬁne the angle of ﬂexion that the patient could reach, while the
+Daniels scale deﬁned the duration of each virtual task.
+Once the assessment was carried out, the patient was made
+aware of the purpose of the test and, prior to performing each vir-
+tual activity, it was explained what it would consist of. Subse-
+quently, the primary user (therapist) registered the patient in the
+virtual environment database, and ﬁve ADLs were evaluated with
+a duration of three minutes and a target ﬂexion angle of 110 deg
+for each task. In this way, during the performance of each virtual
+task, the patient had the objective of extending and ﬂexing the
+elbow until reaching the angle, seeking to perform the greatest
+number of repetitions during the established time.
+In the “dining room” scene, the patient performed the tasks
+“drink coffee,” “eat sandwich” and “cut meat,” performing 6, 6,
+
+and 5 repetitions, respectively. While in the “bathroom” and
+“room” scenes, he performed the tasks of “brushing his teeth” and
+“putting on his shirt,” achieving ﬁve and nine repetitions. It
+should be noted that the patient required a 5-min break after per-
+forming the ﬁrst three tasks.
+
+Fig.
+4
+Evolution
+of
+the
+high
+ﬁdelity
+prototype
+for
+the
+“bathroom” scene and the “brush teeth” task: (a) ﬁrst iteration,
+(b) second iteration, and (c) third iteration
+
+Fig. 5
+Tests with healthy users and patient: (a) healthy user
+and (b) patient
+
+Fig. 6
+SUS scores of undiagnosed users
+
+Fig. 7
+SUS scores by task
+
+JUNE 2022, Vol. 16 / 021014-5
+
+Finally, a ﬂow state questionnaire was applied to the patient,
+which refers to the optimal psychological state to perform an
+activity, being closely related to motivation and personal enjoy-
+ment [43]. The 1–7 scale questionnaire (where 1 strongly dis-
+agrees and 7 strongly agrees) was derived from the proposal made
+in Ref. [44] for occupational therapy, considering for each dimen-
+sion (sense of control, positive emotional experience, and absorp-
+tion by concentration) only the three items with the highest load
+factor.
+According to the values obtained in each of the items, the sense
+of control f6, 7, 6g and the positive emotional experience f6, 7,
+7g, were the dimensions in which the patient presented the great-
+est optimal experience. Thus, according to Ref. [43], the patient
+manifested an experience of enjoyment as a result of performing
+the task, leaving reward or incentives in the background, as well
+as getting involved in the task no matter how difﬁcult or compli-
+cated it seemed. On the other hand, the least optimal experience
+occurred in the dimension of absorption by concentration f2, 1,
+1g, where the patient did not present an intense level of concentra-
+tion when performing the task. This is attributed to the progressive
+fatigue that the patient presented while performing the move-
+ments, which led him to be aware of the countdown to end. The
+minimum variation (61) between values of the items in each
+dimension, allows to infer a consistency in the user’s responses.
+In addition, a pilot study was carried out with three rehabilita-
+tion specialists, to whom a Thinking Aloud test was applied, with
+the intention of obtaining feedback on the user’s expectations
+regarding the design of the interface. As a result of the test, only
+two usability problems were identiﬁed, related to a failure in the
+task or loss of functionality, and the rest were minor problems,
+according to the classiﬁcation of Ref. [45]. The prevalence of
+minor problems indicates that users were able to complete the
+associated usability task, but in a slightly longer time than
+expected, indicating design details that were addressed. On the
+other hand, the low occurrence of failures in the task or loss of
+functionality, presupposes a correspondence of the interface
+design with respect to the user’s expectation, which can be
+improved through a new version of the software.
+
+Discussion
+
+This paper presented the design, implementation, and evalua-
+tion of a 3D virtual environment based on ADLs for the motor
+rehabilitation of the elbow after a stroke. Regarding the design
+and implementation of the software under the philosophy of the
+UCD, unlike the related works [34–38], the therapist was placed
+in the center of decision-making, as he is the one who outlines
+and monitors the rehabilitation process. In particular, the virtual
+environment presents a robust data management system, a
+
+characteristic that is only found in commercial software [46–47].
+Additionally, the possibility of conﬁguring virtual tasks responds
+to the need to adapt the tasks to the characteristics of the user,
+which is a limitation of works where active video games from
+video consoles such as the Nintendo Wii are used. Although the
+use of games adapted or developed for rehabilitation can provide
+“fun” for the patient, there should be a balance between fun and
+therapeutic goals. In this sense, the use of virtual ADLs is advan-
+tageous, as they promote functional recovery associated with real
+situations. In the related works mentioned previously, the integra-
+tion of ADLs is not considered for the deﬁnition of virtual tasks.
+Regarding the software evaluation, this was carried out from
+two perspectives. During the ﬁrst two iterations of the UCD, a
+team of therapists, who through directed interviews established
+the requirements of the subsequent iterations, evaluated the high-
+ﬁdelity prototype. In the third iteration of the UCD, tests were car-
+ried out with secondary users, with two complementary purposes:
+to evaluate the ease with which the prototype can be used (usabil-
+ity), and to estimate the experience it can provide. The tests with
+the group of healthy users showed high SUS satisfaction rates,
+while the results with a patient with a diagnosis of stroke indicate
+an optimal response toward performing virtual tasks. Finally, to
+explore the use of the virtual environment for the assessment of
+traditional rehabilitation processes, two months after the ﬁrst
+intervention with the stroke patient, a second test was performed
+with the same tasks, but with an increase of 10 deg in the target
+ﬂexion angle, obtaining on average one more repetition in each
+task compared to the ﬁrst session. It should be noted that the par-
+ticipation of the team of therapists in the test with the diagnosed
+patient allowed us to appreciate the attachment between the
+design carried out with the therapists and its usefulness in a ther-
+apy session, which was reﬂected in the experience of enjoyment
+shown by the patient. It is noteworthy that the comprehensive esti-
+mation of usability and ﬂow experience are unidentiﬁed mecha-
+nisms in works related to the development of virtual environments
+for rehabilitation under the UCD philosophy.
+
+Conclusions
+
+Although various studies today place VR as a complement in
+rehabilitation processes, the combination of virtual rehabilitation
+and traditional approaches, its beneﬁts compared to conventional
+treatments, and how virtual environments meet the speciﬁc needs
+of users, are still reason for study. In this paper, a 3D virtual envi-
+ronment was presented that integrated the philosophy of the UCD,
+the approach of occupational therapy through ADLs, and the Kin-
+ect and Unity 3D technologies, to form a support tool in the motor
+rehabilitation process of patients diagnosed with stroke, contribut-
+ing to the research of the adoption of 3D VR in medical practice.
+
+Table 1
+Clinical proﬁle/patient inclusion criteria
+
+Attribute
+Inclusion criteria
+Characteristic of the patient
+
+Age
+Adult people (>¼ 18 years old)
+51
+Ailing
+Stroke.
+People with involvement of the right / left arm, who present
+difﬁculties in ﬂexion-extension movement at the elbow (right/left
+hemiparesis).
+
+Ischemic stroke (right hemiparesis)
+
+Time elapsed since
+the stroke episode
+People in the process of recovery with less than six months from
+the stroke episode. Date referring to the clinical diagnosis of
+stroke.
+
+4 months ago
+
+Ashworth scale
+People with muscle tension in grade 0, 1, 2, and 3
+Grade 3
+
+Daniels scale
+People with muscle strength in grade 2 and 3.
+Grade 3
+
+Barthel scale
+People with moderate (61–90) or low (91–99) dependence,
+according to the interpretation suggested in Ivanova et al [19].
+85
+
+Range of motion
+Corresponding to the evaluation under the criterion of the Barthel
+scale.
+110 deg in elbow, 70 deg in shoulder, and
+60 deg in wrist.
+
+021014-6 / Vol. 16, JUNE 2022
+
+Despite the fact that virtual rehabilitation may not be superior to
+conventional rehabilitation therapy, it is presented as a useful
+complement to increase the duration of therapy and intensity, a
+situation that was observable in the results obtained. It should be
+noted that, the virtual environment described is presented as a pro-
+gressive diagnostic and evaluation tool. In this sense, it is perti-
+nent to carry out a study with a larger group of patients, which
+allows granting it an attribute of utility in medical practice. Fur-
+thermore, a comparative study with a two-dimensional version of
+the presented development is also part of the future work. Finally,
+from the technological point of view, two lines of research were
+identiﬁed around the work presented. On the one hand, the incor-
+poration into the VR system of technologies such as the leap
+motion controller [48] and the Myo gesture control armband [49],
+which allow the detection of ﬁne hand movements, and therefore
+greater system performance. On the other hand, the incorporation
+of telecommunications technologies to obtain efﬁcient tele-
+rehabilitation systems, which are currently essential as a result of
+the COVID-19 pandemic.
+
+Acknowledgment
+
+To the team of therapists led by Dr. Sandra Luz Nandez
+German for their valuable support in conducting this research.
+
+Nomenclature
+
+s1 ¼ vector which represent the arm
+s2 ¼ vector which represent the forearm
+H ¼ angle of ﬂexion of the elbow

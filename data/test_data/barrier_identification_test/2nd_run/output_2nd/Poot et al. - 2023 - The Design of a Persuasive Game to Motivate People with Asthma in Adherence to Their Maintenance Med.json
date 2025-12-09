@@ -1,0 +1,87 @@
+{
+  "file_name": "Poot et al. - 2023 - The Design of a Persuasive Game to Motivate People with Asthma in Adherence to Their Maintenance Med.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The study had a small number of participants per design phase, limiting the breadth of user input available to the design team.",
+      "justification": "Limited participant numbers constrained the designers' ability to manage user understanding and to thoroughly evaluate and iterate prototypes across diverse user needs.",
+      "reference_excerpt": "Second, the small number of participants per design phase may have an influence on the study findings.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The user-testing period was very short (five days), preventing assessment of long-term engagement and effects.",
+      "justification": "The short testing duration hindered the designers' ability to evaluate long-term usage and to integrate iterative feedback about sustained engagement and adherence.",
+      "reference_excerpt": "Finally, the limited duration of the testing period (ie, five days) calls for caution in drawing conclusions regarding long-term usage.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Not all components of the Ademgenoot game were included in the formative evaluation.",
+      "justification": "Incomplete component testing limited the designers' capacity to fully evaluate the prototype and to iterate on all parts of the system based on user feedback.",
+      "reference_excerpt": "Third, the formative evaluation of Ademgenoot may also present some limitations as not all components of the Ademgenoot game were tested.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Participants were relatively young, which may have limited representativeness of findings.",
+      "justification": "A skewed age sample constrained designers' ability to manage user understanding and specify requirements for older or more diverse populations, limiting generalizability of design decisions.",
+      "reference_excerpt": "First, the relatively young participants could have limited the representativeness of our findings and the applicability of the Ademgenoot concept.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Researcher interference may have altered participant behavior during testing (observer effect).",
+      "justification": "Behavior change caused by observation undermines the designers' ability to accurately evaluate natural user interactions and to integrate authentic feedback into iteration cycles.",
+      "reference_excerpt": "In addition, interference by the researcher may have led to changes in behavior (ie, improved medication adherence) due to the individual being observed.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The study focused only on individuals with mild asthma, limiting applicability to other patient groups.",
+      "justification": "This narrow focus restricted designers' ability to address holistic experiences and specify requirements for users with differing severity, thus constraining design generalizability and future iterations.",
+      "reference_excerpt": "Finally, the focus of our study on individuals with mild asthma may limit the generalizability of our findings to other patient groups.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 7,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Commercial feasibility concerns were raised for some inhaler use patterns (eg, Symbicort SMART), creating uncertainty about market alignment.",
+      "justification": "Stakeholder commercial constraints limited designers' ability to define technically and commercially viable requirements and could restrict design solutions or deployment options.",
+      "reference_excerpt": "However, as some patients receive Symbicort as Symbicort Maintenance and Reliever Therapy (SMART), the commercial feasibility (ie, complementing business strategies) may be less clearly defined.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 8,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Electronic dose-monitoring (EDM) systems have limited large-scale implementation due to lack of long-term evidence and disengagement issues with existing apps.",
+      "justification": "These systemic stakeholder-level barriers constrain designers' ability to implement and evaluate the intervention in real-world settings and to produce and test solutions at scale.",
+      "reference_excerpt": "Despite its potential, EMDs have not yet been implemented on a large scale in practice due to, amongst others, the need for evidence on long-term effectiveness and disengagement challenges with existing apps.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 9,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Integration requirements with existing inhalers and electronic health records (EHRs) pose implementation constraints.",
+      "justification": "External technical and organizational integration needs limit designers' ability to produce deployable solutions and may restrict design choices or require additional stakeholder coordination.",
+      "reference_excerpt": "This requires EMD programs to be compatible with existing inhalers preferably integrated within existing electronic health records.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

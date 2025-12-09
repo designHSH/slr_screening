@@ -1,0 +1,42 @@
+{
+  "file_name": "Tran-Nguyen K - 2022 - Mobile App Prototype in Older Adults for Postfracture Acute Pain Management User Centered Design App.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "COVID-19 pandemic restrictions forced the study to be conducted remotely, which may have altered participant interactions with the prototype.",
+      "justification": "Remote restrictions limited the designers' ability to observe natural in-person use and thereby hindered understanding the real context of use and the richness of user involvement and evaluation activities.",
+      "reference_excerpt": "Our studies were conducted remotely owing to the COVID-19 pandemic restrictions, which may have affected the participants’ interactions with the prototype.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Testing used a desktop mobile-device emulator rather than native smartphones, which may have missed usability issues present on real devices.",
+      "justification": "Using an emulator constrained the evaluation workload by reducing ecological validity and limiting designers' ability to fully evaluate designs in the actual context of use.",
+      "reference_excerpt": "We used only an emulator on a desktop computer to test our medium-fidelity mHealth prototype; thus, it is possible that some usability problems were not detected.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "The protocol required participants to have internet access and use Zoom, biasing the sample toward higher technological literacy.",
+      "justification": "This recruitment constraint limited facilitation of user involvement and understanding of lower-technology users, hindering designers' ability to gather representative user insights and evaluate usability across the target population.",
+      "reference_excerpt": "Third, the protocol for the usability tests required participants to have access to Zoom. Consequently, these participants likely had higher technological literacy than those who would never have used videoconferencing tools.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Convenience sampling recruited participants with prior exposure to bone health studies or clinic care, introducing sample bias.",
+      "justification": "This sampling bias constrained designers' ability to manage user understanding and specify requirements for users with limited prior knowledge, reducing validity of user requirements and iteration decisions.",
+      "reference_excerpt": "Second, convenience sampling may have biased our results, as we recruited participants who had participated in previous studies on bone health or who had been evaluated in orthopedic clinics at our center.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

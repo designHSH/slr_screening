@@ -107,9 +107,9 @@ class PromptRunnerText:
 
 if __name__ == "__main__":
     # === CONFIGURATION ===
-    input_folder = Path(r"data\test_data\validation\claned_text")        # Folder containing .txt files
+    input_folder = Path(r"data\fulltext_screening\screening_input_batchs\ft_screening_batch-07")        # Folder containing .txt files
     prompt_file = Path(r"prompt\full_text_screening_pr_v012.yaml")
-    output_csv_path = Path(r"data\test_data\validation\screening _result\full_screening_results-v012-5mini.csv")
+    output_csv_path = Path(r"data\fulltext_screening\ft_screening_result\07_ft_scr_gpt5mini_pr_v012_b07.csv")
 
     runner = PromptRunnerText(prompt_file, model="gpt-5-mini")
 

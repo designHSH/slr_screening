@@ -1,0 +1,777 @@
+Technology and Health Care 22 (2014) 77–90
+77
+DOI 10.3233/THC-130775
+IOS Press
+
+Health care satisfaction among foreign
+residents in Taiwan – An assessment and
+improvement
+
+Ajit Kumara, Sanjeev Maskarab and I-Jen Chianga,c,∗
+
+aGraduate Institute of Biomedical Informatics, Taipei Medical University, Taipei, Taiwan
+bOvens and King, Community Health Services, Wangaratta, Australia
+cInstitute of Biomedical Engineering, National Taiwan University, Taipei, Taiwan
+
+Received 27 October 2013
+Accepted 19 December, 2013
+
+Abstract.
+BACKGROUND: In 2012, almost half-million foreigners (2.3% of the total population) from 160 countries were estimated to
+live in Taiwan. In 2010, approximately eighty-seven percent of the population expressed high satisfaction in the national health
+care system of Taiwan. However, satisfaction level among foreign residents towards the Taiwanese health care system has not
+been clearly documented in the literature.
+OBJECTIVE: In this study, we assessed satisfaction level among foreign residents for receiving healthcare facility in Tai-
+wanese hospital. In addition, the study came out with some potential solutions to improve health care received by them.
+METHODS: Human-Centered Design (HCD) approach was deployed, which included three phases: observation, pattern recog-
+nition, and ideation and delivery. Each phase involved various steps. Techniques, such as ethnography, interview, discussion,
+and survey were used in accomplishing various steps within each phase. Four participants and two facilitators from Taiwan took
+part in the study.
+RESULTS: The study revealed various stories, insights, and themes about the health care received by the foreigners in Taiwan.
+In addition, some potential solutions and immediate available opportunities were recommended to improve their health care.
+CONCLUSIONS: The results provided a deeper understanding into the satisfaction level among foreign residents in Taiwan.
+For instance, this study pointed out the need to improve English proﬁciency of hospital’s administrative staffs because a lack
+of English language proﬁciencies was found to be a major barrier in delivering quality health care to foreign residents. There-
+fore, adoption of various training modalities, such as English training using mobile device based games, role-play, and hospital’s
+workﬂow depiction using English posters were recommended.
+
+Keywords: Human-centered design, health care, satisfaction, Taiwan
+
+∗Corresponding author: I-Jen Chiang, Graduate Institute of Biomedical Informatics, Taipei Medical University, 250, Wux-
+ing Street, Taipei 11031, Taiwan. Tel.: +886 2 27361661 Ext. 3343; Fax: +886 2 27392914; E-mail: ijchiang@ntu.edu.tw /
+
+0928-7329/14/$27.50 c⃝2014 – IOS Press and the authors. All rights reserved
+
+78
+
+1. Introduction
+
+Taiwan offers a mandatory health insurance system for its citizens called National Health Insurance
+(NHI). The NHI is one of the highly praised health care systems in Asia. It is always rated with high
+satisfaction by its consumers and has shown continuous improvement in health care outcomes [1–3]. The
+NHI program was founded in 1995 to streamline the Taiwanese health care system [1]. The population
+of Taiwan was estimated to be 23 million in 2011 [1,4]. Ninety-nine percent of Taiwanese residents are
+covered under the NHI program [4]. The NHI is such a robust system that foreign residents in Taiwan,
+who have lived continuously for four months, are also covered under this program. The life expectancy
+of Taiwanese people was 79.16 years (75.98 years for males, 82.65 years for females) in 2011 [5]. Some
+of the main achievements of the NHI were equal access to a comprehensive range of health services,
+state-of-art hospital infrastructure, fully qualiﬁed doctors, low premium and copayment, lower health
+care expenditures, and almost zero waiting time for patients [6–8].
+Because of the above achievements, the NHI is the most-favored social policy in Taiwan. It has been
+enjoying high public satisfaction rate from 68% in 2001 to 87% in 2010 [6,9]. However, an important
+question remains unanswered whether ‘foreign residents in Taiwan’ are enjoying the satisfaction level on
+par with local people. In 2012, almost half-million (476, 472) foreigners (2.3% of the total population)
+from 160 countries, excluding mainland China, was estimated to live in Taiwan [10]. Furthermore, the
+population of foreign residents in Taiwan has been continuously increasing in recent years [11,12]. The
+NHI provides the same health care beneﬁts to all foreigners, what they provide to the Taiwanese people.
+Therefore, ideally, we would expect that even the foreigners have the same level of satisfaction with the
+NHI. However, our literature search could not ﬁnd sufﬁcient evidence to support the above assumption.
+Besides the non-clarity about the foreigners’ satisfaction level, we found another interesting fact that
+Taiwan did not perform that well in medical tourism industry despite having state-of-art hospital in-
+frastructure and highly skilled doctors [13]. Medical tourism is a global phenomenon, wherein patients
+travel from the developed nations to overseas (especially Asian countries) for non-emergency invasive
+surgeries [14,15]. Health care has become expensive in the developed nations, which force their citizens
+to resort to cheaper health care destinations. This has provided one hundred billion-dollar opportunity for
+Asian countries, including Thailand, Malaysia, India, Singapore, Taiwan, and China [16–20]. However,
+to date, the share of Taiwan in medical tourism is quite less, compared to other countries. To promote
+medical tourism, Taiwanese government established Taiwan Medical Tourism Development Association
+(TMTDA) in 2007 [21]. Taiwan witnessed an inﬂux of only eleven thousand ﬁve-hundred foreign pa-
+tients in 2010, thirty-nine thousand in 2011, and one-hundred thousand in 2012. However, this ﬁgure is
+much less compared with competing countries like Singapore (around one million in 2010), Thailand
+(around 1.4 million in 2010), India (around 1.1 million in 2010), and Malaysia (around 0.519 million
+in 2010) [22]. Currently, Taiwan is recognized as the ﬁrst destination of choice for Chinese patients
+because China and Taiwan have the similar culture and language [23]. However, Taiwan was not much
+successful in attracting patients from other developed nations.
+Thus, we found that the satisfaction levels towards the Taiwanese health care system were not sufﬁ-
+ciently clear from both perspectives – ‘foreign residents in Taiwan,’ as well as ‘medical tourist.’ We felt
+the need for some empirical studies to ﬁgure out (1) whether foreign residents in Taiwan were satisﬁed
+like Taiwanese citizens, and (2) why Taiwan underperformed in the medical tourism area despite having
+an excellent health care system in place. Therefore, we conducted a study to assess the foreign residents’
+satisfaction with Taiwanese health care and ﬁnd possible ways of its improvement.
+
+79
+
+Table 1
+Summary of timeline, phases, steps and techniques used
+
+Timeline
+Phases
+Steps
+Techniques
+Day 1–Day 22
+Observation
+Direct observation, story telling
+Ethnography, interview, discussion
+Day 23–Day 25
+Pattern identiﬁcation
+Deriving insights from stories, ﬁnding
+themes from the insights, ﬁnding poten-
+tial solutions, ﬁnding candidate oppor-
+tunity
+
+Discussion, voting, consensus
+
+Day 26–Day 90
+Ideation and delivery
+Finding opportunity from candidate op-
+portunities, proposing candidate proto-
+types, ﬁnding prototype from candidate
+prototypes
+
+Voting, discussion, consensus, sur-
+vey using a questionnaire
+
+2. Methods
+
+2.1. Framework
+
+We carried out the literature search to identify different approaches and techniques previously em-
+ployed for assessing patients’ satisfaction for various healthcare systems. The literature search revealed
+that patients’ satisfaction for the products and services was usually evaluated using questionnaire based
+surveys, analytic hierarchy process, focus-group discussions, and interviews [24–26]. The feedback re-
+ceived from these evaluations were used to improve the products and services [24]. However, we argued
+that the foreigners might have pre-formed perception about the health care that should be delivered to
+them. Therefore, it would be better that we apply an inductive approach (ground up approach) on foreign-
+ers by understanding their initial health care needs [27,28]. Recently, Human-Centered Design (HCD)
+has been widely used in various domains for inductively exploring consumers’ needs, preferences, and
+behavior; and then developing products and services, which ﬁt their need [26,28–34]. Moreover, the
+HCD not only considers the individual’s speciﬁc design requirements, but also ensures tasks, functions,
+information, and the environment of the products and services [28,35–37]. We believe that the HCD
+might be deployed to get a better insight into the patients’ (here foreigners) satisfaction level and their
+preferences for various healthcare needs, such as treatment options, degree of involvement in decision-
+making, preferred ways for health care delivery, as well as the understanding about the products and
+services that might be developed [27,38]. Therefore, we decided to deploy the HCD using the IDEO
+toolkit [39,40]. This toolkit is freely available at the IDEO company website, which provides a con-
+ceptual framework to design innovative solutions for some of the human problems [40]. As shown in
+Fig. 1, the IDEO toolkit typically involves three phases: (1) observation; (2) pattern identiﬁcation; and
+(3) ideation and delivery. These phases include various steps and techniques depending on human prob-
+lems. In the initial phases of the HCD approach, our thinking diverges in ﬁnding various solutions to
+a given human problem; and in the later phases, we converge the various solutions and focus on the
+best-chosen innovative solution.
+
+2.2. Application
+
+Satisfaction with Taiwanese health care and possible ways for its improvement with regard to foreign
+residents was considered as a human problem. Four participants and two facilitators from Taiwan partic-
+ipated in this study. Table 1 shows the summary of the timeline, phases, steps, and techniques that were
+employed in carrying out this study.
+
+80
+
+Fig. 1. Study framework.
+
+2.2.1. Observation phase
+The problem (satisfaction with Taiwanese health care and possible ways for its improvement with
+respect to foreign residents) was assigned to four participants through email. The participants were
+asked to observe and interview one or more foreigners each in their neighborhood, workplace, or any
+other convenient place. The participants were given a period of three-week for direct observation. They
+observed and interviewed one foreigner each. One participant interviewed his interviewee thrice, one
+twice, and the other two only once at their convenience. After the three-week observation period, the
+participants had face-to-face meetings at a common location in Taiwan. On Day 22, they shared their
+stories with each other. The highlights of their stories are summarized as below:
+– Story 1: The ﬁrst participant observed an Indian man, Mr. A, living in his neighborhood, who was
+a researcher. Mr. A had been living in Taiwan for the last three years along with his wife and a ﬁve-
+year-old daughter. He needed to visit a neighboring hospital several times because he was suffering
+from cervical spondylosis. For his same problem, earlier he used to visit a few small clinics; how-
+ever, he often found it difﬁcult to communicate with the doctors over there. Therefore, he decided to
+go to a bigger hospital despite the fact that the care he received at those hospitals was more expen-
+sive for him. He was satisﬁed with the facilities and services offered to him at the bigger hospital.
+Nevertheless, he often found difﬁculties in communicating with administrative staffs at the hospi-
+tal because his Chinese proﬁciency was not that good. To bridge the communication gap between
+him and the hospital’s administrative staffs, he often had to use his friend as an interpreter, who
+knew Chinese and English. He was comfortable in communicating with the doctors at the hospitals
+than the clinics; however, his Indian accent was a barrier for the doctors to understand his health
+problem fully. He used to explain about his health condition either by writing or by using sign lan-
+guages (gestures, postures, and facial expressions). However, over the time, after ﬁve to six visits to
+a particular hospital, he observed an appreciable improvement in the hospital’s services, including
+
+81
+
+Table 2
+Insights
+
+Insights
+
+1. Information in English
+2. English speaking people
+3. Multilingual service
+4. Privacy
+5. Standard health care
+6. Diagnosis and treatment
+7. Patient instruction
+8. Hospital website
+9. Nurses’ services
+10. Information availability to patient’s caretaker
+11. Hospital information
+12. Policies of National Health Insurance, Taiwan
+13. Cultural awareness
+14. Nonverbal communication awareness
+15. Chinese language awareness
+
+their English communication skills. For instance, at the medicine dispatch center, the pharmacists
+started providing drug administration related instructions, such as time, route, dose, frequency, us-
+ing template stamps on envelopes that contained the medicines. While availing medical services
+in Taiwanese hospitals, he encountered some cultural shock too. He was surprised to see that the
+medicines, such as capsules and tablets, were usually dispensed to the patients, including him, in
+unsealed envelopes without mentioning the expiry dates of the medicines.
+– Story 2: The second participant interviewed his friend Mr. B from the USA, who was working
+in a Taiwanese company for the last ﬁve years. Mr. B complained about the difﬁculties faced in
+communicating with Taiwanese hospital staffs. Mr. B further explained that, in the beginning, he
+used to go along with a bilingual native friend. For the smooth consultation at the hospital, his friend
+always assisted him while communicating with the doctors and hospital administrative staffs by
+acting as an interpreter. Because of his friend’s involvement, he had no choice but to share his health-
+related conﬁdential matter with him. Fortunately, he did not mind sharing the health care details with
+his friend. He had an impression that the Taiwanese doctors did not understand allopathic medicine
+that well and tended to overprescribe the medications. He shared a bitter experience of spending
+ten days in the hospital (six days in a general hospital and four days in quarantine), while he was
+suffering from an acute infection. The infection could not be identiﬁed even after undergoing all
+possible and available tests. Because of which, since then, he has been highly reluctant to enter the
+Taiwanese health care system. He felt that the doctors and nurses often did not spend enough time
+with the patients to explain their health care problems. However, he appreciated online registration
+facilities offered by some of the Taiwanese hospitals. In one hospital, he found multilingual charts
+with pictures and a bilingual (Chinese and English) liaison ofﬁcer for patients, which he thought to
+be a very useful concept for foreigners like him.
+– Story 3: The third participant shared a story of a British woman, Mrs. C, who was her co-worker
+at a kindergarten. Mrs. C lived along with her husband in Taiwan for the last seven years. She
+had a very little understanding of the native language. She felt that it was virtually impossible to
+deal with the hospital’s administrative staffs without speaking their native languages. She shared
+two of her unpleasant experiences. First, her husband had a knee surgery in Taipei (capital city
+of Taiwan). Her husband was taken into the operating room of the hospital. She was made to wait
+outside the operating room anxiously for a long time without receiving any communication from the
+
+82
+
+operating staffs about the well-being of her husband’s knee surgery. As she used to live on her own
+in Taiwan without any family support, she experienced difﬁculties in dealing with her husband’s
+day to day care needs in the hospital. She expressed that the services provided to her husband were
+not enough and of a high standard. For instance, she mentioned that, in the UK, the nurses in the
+hospitals helped with the patient’s day-to-day care needs like brushing, toileting, bathing, and so on;
+and she expected the same level of care in the Taiwanese hospital. She had some other unpleasant
+experiences while she was suffering from back injuries. She consulted a doctor at a nearby hospital.
+She was quite surprised that the doctor prescribed her some muscle relaxants and painkillers without
+spending enough time with her. In her opinion, the doctor should have at least done an X-Ray to get
+a proper diagnosis. To date, she had been suffering from the same back pain, and now planning to
+visit another hospital. However, she had no idea where to go and whom she should consult. Despite
+these bitter experiences, she appreciated health care insurance of Taiwan, which allowed her to visit
+any health care facility of her choice without any hassle.
+– Story 4: The fourth participant shared a story of a soccer-mate, Mr. D, from Nigeria. Mr. D had been
+studying in Taiwan for the last three years. He had a high opinion of hospital care in Taiwan. He
+did appreciate the extensive coverage of the NHI services after becoming covered under the NHI
+program of Taiwan. However, he was not happy with the fact that a foreign student had to wait for
+a minimum period of 4-months, to be enrolled in the NHI program. He shared a bitter experience
+due to this 4-months waiting period. He needed to undergo a minor surgery on one of his ﬁngers.
+During the waiting period, he needed to pay the entire hospital bill out of his pocket, which he
+found to be very expensive. While availing the health care services, he observed that the people at
+the information desk in the hospitals lacked English proﬁciency. In addition, he found some cultural
+differences that sometimes caused more confusion for him. For example, he was used to the British
+date format, whereas Taiwanese used the American format. Once, he got a different appointment
+date (07/06 is 6 July in American format) from the requested one (07/06 is 7 June in British format).
+Sometimes, he used to take a Taiwanese friend along with him to help and better understand the
+process at the hospital. He felt that the doctors and nurses were very polite and courteous. Besides,
+he was quite impressed by the emergency care delivered in the Taiwanese hospital. On one occasion,
+he witnessed a case of severe burn, wherein a man was rescued and saved due to highly efﬁcient and
+proactive emergency medical system in place. He opined that it would have been nearly impossible
+to save a similar case in his native country.
+
+2.2.2. Pattern identiﬁcation phase
+On Day 23, 24, and 25, the participants discussed the three steps involved in pattern identiﬁcation
+phase. They derived ﬁfteen insights and seventeen questions from these insights, as presented in Tables 2
+and 3 respectively, in the Result section. These insights were primarily identiﬁed based on what solutions
+can be offered to improve health care services to foreigners, whereas the questions from the insights were
+derived based on how solutions can be delivered to foreigners. The participants classiﬁed seventeen
+questions into four themes, as shown in Table 3, in the Result section. Afterwards, they identiﬁed two
+key themes – communication and health services – by voting, discussion, and mutual consensus, as
+shown in Table 4, in the Result section.
+
+2.2.3. Ideation and delivery phase
+On Day 26, two key themes – communication and health services – were considered for the ideation
+of potential solutions. Table 5 shows the potential solutions for the two key themes. Afterwards, two
+
+83
+
+Table 3
+Themes
+Questions based on insights
+Themes
+1. How might we provide information to foreigners in English language?
+Communication
+2. How might we facilitate English-speaking people to foreigners in the hospital?
+Communication
+3. How might we provide multilingual services to foreigners?
+Communication
+4. How might we ensure the privacy of foreigners?
+Health services
+5. How might we provide standard health care across various services, such as clinics, small and
+big hospitals?
+Health services
+
+6. How might we provide adequate diagnoses before commencing treatment?
+Health services
+7. How might we provide instruction to foreigners about their health condition and treatment?
+Communication
+8. How might we provide information through hospitals’ website?
+Communication
+9. How might we provide proper nursing services to foreigners?
+Health services
+10. How might we provide information to foreign patient’s caretaker?
+Communication
+11. How might we provide hospitals’ information in foreigners’ in their area of residence?
+Communication
+12. How might we improve health care policy for foreigners?
+Government policies
+13. How might we provide Taiwanese cultural awareness to foreigners, including its impact on the
+health care system?
+Culture
+
+14. How might we provide doctor’s advance appointment through phone, fax, or website for for-
+eigners?
+Health services
+
+15. How might we provide better National Health Insurance policy to foreign students?
+Government policies
+16. How might we provide some basic Chinese language awareness to foreigners?
+Communication
+17. How might we provide common nonverbal (symbol, gesture, posture, and so forth) skills to
+foreigners?
+Communication
+
+Table 4
+Themes and their rank
+Themes
+Rank
+1. Communication
+1st
+
+2. Health services
+2nd
+
+3. Government policies
+3rd
+
+4. Culture
+4th
+
+solutions were identiﬁed (one for each key theme) through voting, discussion, and consensus, called
+‘candidate opportunities,’ as shown in Table 5. At this juncture, the participants were puzzled over two
+issues pertaining to the two candidate opportunities: (1) cadre of employees (out of doctors, nurses, and
+administrative staffs) needing improvement in their English language proﬁciency, (2) cadre of employees
+(out of doctors, nurses, and administrative staffs) needing improvement in delivering health services to
+foreigners. We found a deadlock situation among the HCD participants. Therefore, to overcome this
+situation, we decided to conduct a small online questionnaire based survey and suspended the HCD
+team discussion for two months (Day 27 to Day 86).
+A small questionnaire was designed based on the two issues raised as above. The questionnaire con-
+tained mainly closed-ended questions. The questionnaire was validated by eight experts, which included
+two doctors, a nurse, a hospital administrator, an applied linguistics professor, a health informatics pro-
+fessor, a Taiwanese student, and an international student. Except the international student, all other
+experts were from Taiwan. The experts recommended a few amendments in the questionnaire, including
+adding one additional question. As we were gathering data from foreigners, the health informatics expert
+had some concerns that we might not get a true picture if the respondents happened to live in Taiwan for
+a long time and were proﬁcient in Chinese language. Therefore, an extra question was added to assess
+whether a foreigner was using English language while availing health services in the Taiwanese hospi-
+tals. One question was re-worded for its clarity based upon the recommendation of the linguistics ex-
+
+84
+
+Table 5
+Potential solutions through brainstorming and opportunity identiﬁcation through voting and mutual consensus
+
+Themes
+Potential solutions
+Candidate opportunities
+Communication
+1. Multilingual charts with pictures
+Improving English proﬁciency of doctors, nurses,
+2. Multilingual staffs recruitment
+and administrative staffs
+3. Improving English proﬁciency of doctors,
+nurses, and administrative staffs
+4. Multilingual hospital locations information
+using advertisement hoardings
+Health services
+1. Online services
+Improving services provided by doctors, nurses,
+2. Online registration facility
+and administrative staffs
+3. Improving services provided by doctors,
+nurses and administrative staffs
+
+Table 6
+Questionnaire1
+
+Questions
+Response
+1. Profession
+2. Nationality∗
+
+3. How long have you been in Taiwan?∗
+
+4. Have you ever visited the hospital during your stay
+⃝Yes
+If your answer is NO, please skip Question 5–11
+in Taiwan?∗
+⃝No
+
+5. Was the English main language to communicate
+⃝Yes
+If your answer is NO, please skip Question 6–11
+with doctors, nurses, and administrative staff when
+you visited any hospital in Taiwan?∗
+⃝No
+
+6. I am satisﬁed with the services of the doctor (s).∗
+Strongly
+Disagree
+Undecided
+Agree
+Strongly
+Disagree
+Agree
+⃝
+⃝
+⃝
+⃝
+⃝
+7. I am satisﬁed with the services of the nurse (s).∗
+Strongly
+Disagree
+Undecided
+Agree
+Strongly
+Disagree
+Agree
+⃝
+⃝
+⃝
+⃝
+⃝
+8. I am satisﬁed with the services of administrative
+Strongly
+Disagree
+Undecided
+Agree
+Strongly
+staffs (front-desk and medicine dispatch center em-
+Disagree
+Agree
+ployees, volunteer, and so forth).∗
+⃝
+⃝
+⃝
+⃝
+⃝
+9. I am satisﬁed with the English proﬁciency of the
+Strongly
+Disagree
+Undecided
+Agree
+Strongly
+doctor (s).∗
+Disagree
+Agree
+⃝
+⃝
+⃝
+⃝
+⃝
+10. I am satisﬁed with the English proﬁciency of the
+Strongly
+Disagree
+Undecided
+Agree
+Strongly
+nurse (s).∗
+Disagree
+Agree
+⃝
+⃝
+⃝
+⃝
+⃝
+11. I am satisﬁed with the English proﬁciency of ad-
+Strongly
+Disagree
+Undecided
+Agree
+Strongly
+ministrative staffs (front-desk and medicine dis-
+Disagree
+Agree
+patch center employees, volunteers, and so forth).∗
+⃝
+⃝
+⃝
+⃝
+⃝
+
+1∗required.
+
+pert. A mandatory question regarding respondents’ profession was made optional based on two experts’
+(hospital administrator and doctor) recommendation as some respondents might not feel comfortable in
+revealing their profession. The questionnaire for its content validity was sent to eight experts after incor-
+porating their recommendations. Each expert independently rated the relevance of each question using a
+4-point Likert scale (1 = not relevant, 2 = somewhat relevant, 3 = relevant, 4 = very relevant). Content
+Validity Index (CVI) was used to evaluate the validity of each question. All the questions were found
+to be valid with CVIs ranging from 0.87 (7/8) to 0.100 (8/8). The readability of the questionnaire was
+
+85
+
+Table 7
+Summary of Questions 1–3 (Number = 108)
+
+Questions
+Summary of responses
+1.
+Profession
+Company employees, researchers, teachers, and students
+2.
+Nationality
+Slovakian (2), Mongolian (7), Nepalese (3), Haitian (2), Hungarian (1), Indone-
+sian (4), Ukrainian (2), Colombian (2), Swazi (2), Ethiopian (1), Ecuadorian (2),
+Thai (9), Kenyan (2), Pakistani (3), Belizean (2), Bangladeshi (3), Jordanian (2),
+Malawian (2), Indian (4), Kyrgyz (2), Honduran (2), Malaysian (4), Nigerian (4),
+Gambian (3), Vietnamese (3), Korean (5), Russian (3), British (7), American (10),
+Canadian (2), Austrian (2), St. Lucian (1), Swedish (1), Australian (1), French (3)
+3.
+How long have you
+been in Taiwan?
+Minimum = 4 months; Years; Maximum = 38 Years; Average = 3.1 Years; Stan-
+dard Deviation = 5.6 Years
+
+calculated using word processing tools. We obtained Flesh-Kincaid Grade Level = 9.6, which meant that
+even a student of 9–10 grade would have no difﬁculty in understanding the questionnaire. The validated
+questionnaire is shown in Table 6.
+The purpose of Questions 1–3 was to ensure that respondents were foreigners, wherein Question 1
+was optional. Question 4 was a ﬁlter question (yes/no) ensuring that we get responses only from those
+foreigners, who had prior experience of visiting Taiwanese hospitals. In case, the answer was ‘no,’ the
+respondents were not required to answer any further question. Question 5 was another ﬁlter question
+(yes/no) ensuring that we get responses from only those foreigners, who used to communicate in English
+while availing Taiwanese hospitals’ services. Again, in case, the answer was ‘no,’ respondents were not
+required to respond any further question. Question 6–11 were required for those, who responded ‘yes’
+to both, Question 4 and 5, and these questions were designed to assess the perception of foreigners with
+respect to employees in Taiwanese hospitals.
+A pilot testing was conducted for the above questionnaire. A convenient sample using a snowball
+sampling technique was used for the pilot testing. We received twenty-nine responses. The Cronbach
+alpha for two constructs – health services (Questions 7–9) and communication skills (Questions 10–
+12) were 0.748 and 0.778 respectively [41]. The pilot testing showed an adequate reliability; hence no
+further modiﬁcations were made to the questionnaire (Table 6).
+Foreigners were considered as the population for this study. In 2012, almost half-million foreigners
+(476,472) from 160 countries were estimated to live in Taiwan. We selected a community portal, which
+had 24,534 members (5.14% of total foreigners). This community portal has been active since 1999.
+A total of 24,554 topics and 1,206,816 messages were posted and discussed on this community portal
+over a span of 13 years from 1999 to 2012. We checked the proﬁles of portal members. The portal had
+members from different countries. The members were scattered and resided in different parts of Taiwan.
+After an online registration and with the approval of the community portal moderator, we got access
+to post messages for the portal’s members. A request to ﬁll the online questionnaire was posted on the
+community portal. The response to the questionnaire was purely voluntary. The request message also
+included a web link to the questionnaire. The request message clearly described the central theme of
+the research. In addition, the respondents were reassured about the conﬁdentiality of the data and their
+use for academic purposes only. We did not collect any personal information of respondents to ensure
+full anonymity in the questionnaire survey. The survey was conducted for a period of four weeks – from
+Mid-January to Mid-February 2013.
+One hundred sixty-six responses were received. However, ﬁfty-eight responses were discarded be-
+cause eight responses were incomplete, eleven respondents never visited any Taiwanese hospital (ﬁlter
+Question 4), and thirty-nine respondents did not use English as a medium of communication while visit-
+ing the hospitals (ﬁlter Question 5). Finally, we were left with only one hundred eight responses. Table 7
+
+86
+
+Table 8
+Satisfaction response of those respondents who had visited the hospital (N = 108)
+
+Stakeholders
+Satisfaction
+Strongly disagree
+Disagree
+Undecided
+Agree
+Strongly agree
+Agree + strongly
+(%)
+(%)
+(%)
+(%)
+(%)
+(%)
+Agree (%)
+Doctor
+Service
+0
+11
+8
+64
+17
+81
+English
+2.8
+5.6
+11
+75
+5.6
+81
+Nurse
+Service
+2.8
+5.6
+14
+56
+22
+78
+English
+11
+11
+28
+47
+2.8
+50
+Administrative
+Service
+0
+14
+22
+58
+5.6
+64
+staff
+English
+6
+36
+19
+39
+0
+39
+
+in the Result section shows the summary (Question 1–3) about one hundred eight response respondents.
+Table 8 in the Results section shows the satisfaction responses (Questions 6–11) arranged from three
+stakeholders’ perspectives – doctors, nurses, and administrative staffs. Furthermore, the combined fre-
+quencies (‘agree’ or ‘strongly agree’) were calculated as shown in the last column of Table 8. We found
+that the health services offered were found to be satisfactory at all the three levels – Doctors (81%),
+nurses (78%), and administrative staffs (64%). In terms of English proﬁciency, only doctors’ English
+proﬁciency was found to be satisfactory (81%), whereas satisfaction rate for nurses and administrative
+staffs were quite low (50% and 39% respectively).
+After the completion of the questionnaire based survey, we resumed the HCD team discussion on Day
+87. The survey results were explained to the HCD participants. Under the purview of results and the HCD
+team discussion, the participants agreed on one opportunity – the improvement of English skills among
+the administrative staffs’, as shown in Table 9, in the Results section. On Day 88 to 90, participants
+conducted a brainstorming session to ﬁnd out candidate’s prototypes for the identiﬁed opportunity, and
+then one prototype for its execution, as shown in Table 9.
+
+3. Results
+
+We obtained various stories, insights, themes, potential solutions, and immediate available opportuni-
+ties. Tables 2–5 and 7–9 show the result obtained from pattern identiﬁcation, and ideation and delivery
+respectively.
+
+4. Discussion
+
+In this study, we assessed foreigners’ satisfaction towards the Taiwanese health care system in Taiwan,
+and tried to ﬁnd some possible ways for its betterment. The HCD approach was deployed to accomplish
+the study. The key outcomes from the study are discussed as below:
+First, this study provided insights, themes, potential solutions, opportunities, and scope of health care
+improvement about foreign residents in Taiwan (Tables 2–5 and 7–9). These results indicated high satis-
+faction levels with health services; however, it was felt that there was a room for substantial improvement
+in English proﬁciency of the administrative staffs, followed by the nurses, and then the doctors. Some of
+the previous studies also mentioned about the lack of English language proﬁciencies among hospital’s
+employees [13]. However, these studies failed to indicate clearly ‘who’ lacked the language proﬁciency
+out of doctors, nurses, and administrative staffs [42]. The doubt naturally goes to the doctors and nurses
+as they are frontiers of any health care system [42]. However, the survey results of this study clearly in-
+dicated that the administrative staffs needed a signiﬁcant improvement in English language proﬁciency
+
+87
+
+Table 9
+Opportunity, candidate prototypes and prototype identiﬁed based on the survey and discussion
+
+Candidate opportunities
+Opportunity
+Candidate prototypes
+Prototype
+1. Improving English
+proﬁciency of doctors,
+nurses, and administra-
+tive staffs
+
+Improving English pro-
+ﬁciency of administra-
+tive staffs
+
+– English training using mobile device
+based games
+– English language training using role
+play
+
+Training of minimum
+English vocabulary
+using mobile device
+based games
+2. Improving services
+provided by doctors,
+nurses, and administra-
+tive staffs
+
+– Depiction of hospital’s workﬂow us-
+ing posters in English language
+– Minimum English vocabulary devel-
+opment to teach hospital’s adminis-
+trative staffs
+– Template stamp for commonly used
+words
+– Development of frequently asked
+questions
+– Availability of translation device
+
+compared with the doctors and nurses (Table 8). In addition, the HCD participants justiﬁed the result
+that the doctors and nurses in Taiwan might not be very proﬁcient in English; however, they would have
+acquired at least some working knowledge of English due to their prolonged involvement with medi-
+cal studies, and the recent thrust of the Taiwanese government to improve English proﬁciency among
+professionals [43]. Thus, in the purview of survey results, including their own opinion, the participants
+identiﬁed English language training for the hospital’s administrative staff as an opportunity for the ‘pro-
+totype development’ and ‘further research’ (Table 9).
+Second, in order to improve English proﬁciency of the administrative staffs, the participants pro-
+posed various candidate prototypes, such as English training using mobile device based games, role-
+play, hospital’s workﬂow depiction using posters in English, minimum English vocabulary development
+for hospital’s administrative staffs, template stamp for the commonly used words in medical settings,
+and development of the frequently asked questions in medical settings (Table 9). Out of the proposed
+candidate prototypes, the participants supported ‘minimum English vocabulary training using mobile
+device based games’ for its implementation [44–46].
+Third, we deployed the HCD in this study, which was a systematic approach, involving various phases,
+steps, and techniques. This approach was found to be effective not only in revealing the foreigner’s
+satisfaction with the health care system of Taiwan, but also in suggesting the areas of improvement,
+potential solutions, and prototype product development. The lessons learned from the HCD application
+might be employed in addressing some of the other human problems.
+
+4.1. Limitations and future studies
+
+This study had a few limitations, which opens up the scope for future studies and research. First,
+the HCD approach needs analysis (divergence of ideas) and design (convergence of ideas) from three
+perspectives – desirability, feasibility, and viability; and the convergence of these three perspectives
+provides a direction to ﬁnd an innovative solution [40]. However, our focus mainly remained from the
+desirability perspective [40]. Technical feasibility and ﬁnancial viability are required to be explored
+further. Second, this study was carried out until the identiﬁcation of a prototype that might improve
+English proﬁciency among the hospital’s administrative staffs. However, the making of the prototype
+and its testing were not executed. In future studies, we would like to build prototypes and test them
+
+88
+
+in real-world settings. Third, the HCD participants argued that most administrative staffs in Taiwanese
+hospitals are relatively young and technologically savvy, especially the mobile technology; therefore,
+some games could be availed on mobile devices for English learning [47,48]. We think that an empirical
+study is needed to verify the argument of the HCD participants. Fourth, the study recommended the
+training of minimum English vocabulary to hospital’s administrative staffs. We require conducting a
+study to identify the minimum English vocabulary set for the hospital’s administrative staffs in healthcare
+settings of Taiwan. Fifth, in the beginning, in the Introduction section of this paper, we have the argument
+that Taiwan is not performing that well in medical tourism industry. As the subjects of this study were
+foreign resident in Taiwan, the results of this study do not truly provide enough insight into why Taiwan
+is not performing that well in the medical tourism. Therefore, a study, involving medical tourists, needs
+to be carried out for the better understanding of the under-performance of Taiwan in the medical tourism
+industry.
+
+5. Conclusions
+
+This study provided a deeper insight into foreigners’ satisfaction with respect to the health care sys-
+tem in Taiwan, including its further scope of improvement. The lack of English proﬁciency among
+administrative staffs of Taiwanese hospitals was found to be a major barrier in delivering quality care to
+foreigners in Taiwan. Therefore, our study recommended various measures to improve English language
+proﬁciency of hospital’s administrative staffs and suggested training of minimum English vocabulary
+using mobile device enabled games. The HCD approach was deployed to accomplish this study, which
+was found to be highly effective. The key learning points from the HCD deployment might be used in
+addressing some of the other human problems.

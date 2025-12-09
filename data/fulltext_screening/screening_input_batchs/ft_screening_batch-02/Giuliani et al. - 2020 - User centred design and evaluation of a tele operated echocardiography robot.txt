@@ -1,0 +1,1510 @@
+https://doi.org/10.1007/s12553-019-00399-0
+
+ORIGINAL PAPER
+
+User-centred design and evaluation of a tele-operated
+echocardiography robot
+
+Manuel Giuliani1
+· Dorota Szcze
+
+¸
+
+´sniak-Sta´nczyk2 · Nicole Mirnig3 · Gerald Stollnberger3 · Malgorzata Szyszko4 ·
+Bartlomiej Sta´nczyk4 · Manfred Tscheligi3
+
+Received: 22 August 2019 / Accepted: 25 November 2019
+© The Author(s) 2020
+
+Abstract
+We present the collected findings of a user-centred approach for developing a tele-operated robot for remote
+echocardiography examinations. During the three-year development of the robot, we involved users in all development stages
+of the robot, to increase the usability of the system for the doctors. For requirement compilation, we conducted a literature
+review, observed two traditional examinations, arranged focus groups with doctors and patients, and conducted two online
+surveys. During the development of the robot, we regularly involved doctors in usability tests to receive feedback from them
+on the user interface for the robot and on the robot’s hardware. For evaluation of the robot, we conducted two eye tracking
+studies. In the first study, doctors executed a traditional echocardiography examination. In the second study, the doctors
+conducted a remote examination with our robot. The results of the studies show that all doctors were able to successfully
+complete a correct ultrasonography examination with the tele-operated robot. In comparison to a traditional examination,
+the doctors on average only need a short amount of additional time to successfully examine a patient when using our remote
+echocardiography robot. The results also show that the doctors fixate considerably more often, but with shorter fixation
+times, on the USG screen in the traditional examination compared to the remote examination. We found further that some of
+the user-centred design methods we applied had to be adjusted to the clinical context and the hectic schedule of the doctors.
+Overall, our experience and results suggest that the usage of user-centred design methodology is well suited for developing
+medical robots and leads to a usable product that meets the end users’ needs.
+
+Keywords User-centred design · Tele-operated robots · Echocardiography · Medical robotics
+
+1 Introduction
+
+The World Health Organisation (WHO) regularly assesses
+the number of people working in the healthcare sector (doc-
+tors, nurses, other healthcare personnel) for all countries that
+publish numbers about employment in the healthcare sector.
+In the latest employment statistics, the WHO reports that
+in 2016 there was an estimated global needs-based shortage
+of health care workers of about 17.4 million workers [33].
+The shortage of workers in the health care sector is also
+addressed in the WHO’s strategy for human resources for
+health which contains a global milestone for 2030 that “all
+countries are making progress towards halving inequalities
+
+ Manuel Giuliani
+
+Extended author information available on the last page of the article.
+
+in access to a health worker.” World Health Organization
+[30]. The usage of tele-operated robots for remote exam-
+inations is one way to guarantee better access to health
+specialists for people living in underdeveloped and rural
+areas. For example, Boman et al. [8] showed that the use of
+robot-assisted remote echocardiographic examination dras-
+tically reduces the time to diagnosis in rural areas. In a
+clinical trial that took place in the north of Sweden, they
+randomly assigned 19 patients to remote consultation and
+imaging, and 19 to standard consultation. The results of
+the study showed that the total process time from when the
+patient first contacted the doctor to when a correct diagno-
+sis was issued was significantly reduced from 114 days to
+26.5 days when using remote examination for consultation.
+The process time was reduced so drastically, because in a
+traditional consultation, patients first report to their primary
+healthcare centre and then, based on their condition, have
+to travel to secondary/tertiary centres for further examina-
+tions. When using remote examinations, patients only have
+
+Health and Technology (2020) 10:
+
+/ Published online: 1
+2019
+March
+6
+
+Fig. 1 The ReMeDi system
+enables a doctor (left) to execute
+an echocardiography
+examination with a remotely
+controlled robot (right)
+
+to travel to their primary healthcare centre, but still can get
+access to additional expertise from doctors, who execute
+examinations remotely from other centres.
+In the ReMeDi project (Remote Medical Diagnosti-
+cian1), we developed a robot system for remote echocardio-
+graphy (Fig. 1). Shaw showed that the involvement of end
+users in the development is one necessary part for creating a
+successful medical product [35]. Thus, we followed a user-
+centred design (UCD) process for developing the robot. We
+involved the future end users of the robot (i.e., echocardio-
+graphy specialists) in all development phases: requirement
+analysis, iterative system development, and system evalua-
+tion. In this paper, we report the collected findings of work-
+ing together with end users to develop the ReMeDi robot.
+The main contributions of this work are: (1) Results of two
+eye tracking studies to compare traditional echocardiogra-
+phy examinations to remote examinations with the robot
+(Section 6); (2) results and best practices from the iterative
+development sessions with medical end users (Section 5);
+(3) a report on UCD methods to involve medical end users
+in requirement analysis (Section 4); and (4) an extensive
+discussion of the practicability and limitations of the UCD
+approach for developing a medical robot in an everyday
+clinical environment and the usability of eye tracking as
+comparative tool between traditional and remote examina-
+tions (Section 7). The main aims of this work is to provide
+new insights in using eye tracking as tool to compare task
+efficiency in traditional and tele-operated medical exam-
+inations and to share best practices when applying UCD
+methods in clinical practice.
+
+2 Related work
+
+Robots have been used for medical applications since
+the 1980s.
+The first medical
+robots were parts of
+computer-integrated surgery systems, e.g., [19]. Taylor and
+Stoianovici [40] give an overview for the first two decades
+
+1http://www.remedi-project.eu
+
+of research on surgery robotics. Since the late 1990s, robots
+have also been used for ultrasound applications. Priester
+et al. [31] provide a review of medical robotic ultrasound
+systems. They define three classes of applications for ultra-
+sound robots: extracorporeal imaging, needle-guidance, and
+intraoperative surgery. The ReMeDi system that we are
+describing in this paper (Section 3) is used for extracor-
+poreal imaging, specifically for echocardiography. Other
+extracorporeal imaging systems have been proposed for
+ultrasonography (USG) of the abdomen (e.g., [15]), the
+carotid artery (e.g.,[32]), the lower limbs (e.g., [17]), and for
+general usage (e.g., [26]). Other groups have proposed sys-
+tems for remote echocardiography, which are similar to the
+ReMeDi system. Boman et al. [9] presented the CARDISTA
+system (CARdiological consultation at a DISTance) and
+showed that long distance real-time echocardiography is
+technically possible. Koizumi et al. [18] presented a remote
+ultrasound diagnostic system for dialysis-related amyloid
+arthropathy and demonstrated in a diagnostic experiment
+a successful examination by a doctor on a real patient.
+Mathiassen et al. [27] showed that it is possible to realise
+tele-operated ultrasonography with a UR5 robot arm by
+Universal Robots. The robots of the other groups use simi-
+lar technology to our system. However, the other groups do
+not report insights of working together with end users for
+system development.
+We used eye tracking to measure the differences for
+doctors when conducting a traditional compared to a remote
+examination. Eye movements can provide insight into
+cognitive processes, such as attention and mental and visual
+workload. Eye tracking has been used in various fields,
+although not in the medical robotics context. The most
+commonly used eye tracking measurements are glances,
+fixations, and saccades. According to DIN EN ISO 15007-
+1 2013, a glance is defined as maintaining of visual gaze
+within an area of interest, bounded by the perimeter of the
+area of interest. A gaze may be comprised of more than
+one fixation and saccades to and from it. Its duration is
+measured as glance duration. A fixation is an alignment of
+the eyes so that the image of the fixated area of interest falls
+
+650
+
+on the fovea (the middle of the retina responsible for our
+central, sharpest vision) for a given time period. A saccade
+is a brief, fast movement of the eyes that changes the
+point of fixation. In our eye tracking studies, we measured
+glances and fixations. Glances are used to measure the
+general attention of a person towards and area of interest.
+Fixations are used for visual information extraction, which
+is relevant for our study, because study from which areas of
+interest the doctors extract the most information. Saccades
+are informative for analysis of reading tasks or information
+search gaze patterns, which are both not relevant in our
+study.
+Comparisons between traditional and remote examina-
+tions have been made before, although without using eye
+tracking. Arbeille et al. [2] asked doctors to execute a tele-
+operated ultrasound examination on 20 patients. As mea-
+surement for the reliability of the remote robotised system,
+they used the ratio between the number of well-visualised
+organs with the robotic system compared to the number of
+visualised organs in the traditional echography. The doc-
+tors were able to execute the examination correctly in 18
+out of 20 cases, but needed approximately 50% longer than
+in a traditional examination. Smith-Guerin et al. [36] vali-
+dated a tele-echography system on 20 patients. They found
+that post traumata could be correctly highlighted in 80%
+of the cases and four cardiac chambers views had been
+obtained by the doctor in 90% of the cases when using
+the remote system. The doctors were able to detect all
+digestive systems on liver, gall bladder, pancreas and kid-
+ney and all urinary symptoms on bladder, kidney, prostate,
+uterus and ovaries had been seen with remote and tradi-
+tional examinations. Martinelli et al. [24] used a robot-based
+tele-echography system for remote ultrasound examination
+of the abdomen to examine 58 patients. They compared
+the diagnostic findings of the remote examination with
+that of a traditional examination. The doctors were able to
+find all aneurysms the patients had, using both examina-
+tion techniques. Georgescu et al. [13] studied a doctor using
+a tele-operated echography robot for one year in every-
+day usage. The doctor used the robot 300 times over that
+year, examining abdominal organs, pelvic organs (6.7% of
+the examinations), supraaortic vessels (46%), the thyroid
+(11%), on leg veins (10%), and on the kidney and urinary
+tract (3.7%). These results show that tele-operated ultra-
+sound is indeed a useful tool for doctors. Adams et al. [1]
+compared adult abdominal examinations using a tele-
+operated ultrasound system in a study with 18 patients. The
+doctors participating in this study identified 5 pathologi-
+cal findings in both examinations, but 3 findings were only
+identified in the traditional examination, and 2 findings were
+only identified using the tele-operated ultrasound robot. In
+all of the above reviewed comparison studies, the authors
+used either the number of correctly visualised organs or of
+
+found traumata as measurement for reliability of the remote
+examination. In the comparison study reported in this paper,
+we are focusing on echocardiography, i.e. ultrasonography
+of the heart. Our measurement criteria for a successful
+examination is the number of positions on the patient body,
+from which the doctors were able to correctly visualise the
+patient’s heart.
+Finally, we review the application of user-centred design
+methods in medical robotics. User-centred Design (UCD)
+is a design methodology that involves the end user of a
+new product or human-machine interface in all product
+design stages: analysis, design and development, and
+evaluation. These stages are usually executed in an iterative,
+cyclical fashion. Figure 2 shows a general representation
+of the three stages. UCD has been recognised as product
+development methodology that leads to a better product
+usability and higher user acceptance [29]. It has also been
+formally standardised in ISO standard 9241-210:2019. In
+the development of the ReMeDi tele-operation system,
+we involved medical doctors and patients in focus groups
+and design sessions for analysis of user requirements;
+during the design phase of the robot we regularly organised
+feedback sessions with doctors to iterate robot prototypes;
+for evaluation of the system, we executed comparative
+eye tracking studies with medical doctors. Throughout this
+paper, we have used the key words analyis, design, and
+evaluation in section headers to make it clear to the reader
+which UCD method we describe in the section.
+UCD has been used in the development of other medical
+technology.
+Martin et al. [23] summarise user-centred
+design methods and discuss their applicability for the
+development of medical devices. They recommend the use
+of contextual inquiry and ethnography at the beginning
+of development and other methods, including usability
+tests and focus groups during developing a new system.
+
+Fig. 2 General overview of a user-centred design process: the user is
+involved in analysis, design, and evaluation of the new system
+
+651
+
+This is similar to our approach for user-centred design of
+the ReMeDi system. Shah et al. [14] show a survey of
+literature between 1980 and 2005 in which user-centred
+design methods have been used mostly for involving users
+in development and evaluation of healthcare technology.
+The analysis of the surveyed literature revealed that users
+are involved to different degrees in the development stages.
+Most often, they are involved in system design and in taking
+part in testing and trials. End users are less often involved in
+the deployment of new healthcare systems and very seldom
+take part in the concept stages of developing new systems.
+Similar to our approach, Brandt et al. [10] used a user-
+centred approach to collect the user requirements for an
+image-guided orthopaedic surgery robot. They executed a
+literature review, handed out questionnaires, and conducted
+workshops with domain experts. Similar to the second part
+of our requirement analysis, Lee at al. [20] conducted
+a survey with physiotherapists as part of a user-centred
+design process. Holt et al. [16] report on the involvement of
+therapists and users for a robotic system for rehabilitation
+therapy. They involved users not only in requirement
+analysis, but also in quarterly reviews to get feedback on
+system design and development. Lu et al. [22] present a
+user-centred design process for developing a limb stroke
+rehabilitation robot, which is similar to our approach. The
+authors observed stroke therapy sessions and conducted
+a survey with stroke therapists. They evaluated a first
+prototype of the robot with stroke therapists in a focus group
+and a preliminary study.
+
+3 ReMeDi remote echocardiography robot
+
+The work carried out and described in this paper has been
+part of the ReMeDi project. The goal of the project was
+to develop a robot that enables doctors to remotely execute
+echocardiography and auscultation on patients. Figure 1
+shows the final implementation of the robot. It consists of
+two parts; one is stationed at the site of the doctor, the other
+is located at the site of the patient. The doctor controls the
+robot using a set of input devices (Fig. 1a), including a
+haptic interface for controlling the robot arm, a dedicated
+keyboard for the ultrasonic device, and a joystick to adjust
+the view angle of a camera on the robot to see the patient
+and robot arm.
+The haptic interface was designed to let the doctors
+perform the same movements as during traditional examina-
+tions. The kinematics of the interface [5] cover the required
+workspace of the doctor and assure the stiffness of the
+overall device. It provides three degrees of freedom for
+the translation of the end effector and contains three legs
+supporting the end effector. Each leg is composed of two
+rotational joints, four bar linkages and a rotational joint. At
+
+the end of the interface, we installed a 3D-printed probe han-
+dle that is similar to that of standard ultrasonography probes
+used for echocardiography.
+With a foot pedal (not visible in Fig. 1a), the doctor can
+switch between two robot arm movement modes. Doctors
+can either move the arm to position the ultrasonic probe
+or keep the tool centre point of the arm stable during
+the ultrasonography examination. The doctor further has
+three screens that show a live view from the patient
+site, the image from the ultrasonic device, and a three-
+way video conference system between doctor, assistant,
+and patient [39]. The robot is located at the patient site
+(Fig. 1b). It consists of a mobile platform [4], a screen that
+shows the doctor’s face to the patient, and a light-weight,
+compliant robot arm that can be equipped with either an
+ultrasonography probe or a stethoscope end effector. An
+assistant monitors the examination and ensures the safety of
+the patient. The two parts of the robot communicate over
+remote distances via the Internet.
+For a general overview of the technical components
+of the ReMeDi robot please refer to [3]. A technical
+description of the control architecture is described in [37].
+
+4 Analysis: user requirements
+
+As first step in our user-centred design process, we
+conducted an extensive user requirement analysis. We
+began with a literature review in the fields of remote
+ultrasonography, physical examination, and robotic systems
+within a medical context. In the second step, we executed
+two observations of a health check performed by a doctor on
+a patient. The patient received two palpation examinations
+by the same doctor, the first one during a standard health
+check, the second one while being ill and having stomach
+pains. The observations allowed us to get a better feeling
+for the patients’ perspective during a physical examination
+and to generate a list of typically performed examination
+steps. In the third step, we organised two workshops with
+doctors, one in Austria and one in Poland. The main goals
+of the workshops were to get a deeper understanding for
+examination techniques, as well as to investigate when and
+why they are used. We also asked for the doctors’ opinions
+about the usage of robotics systems for remote medical
+examination. In the fourth step, we organised two focus
+groups with patients, again, one in Austria and one in
+Poland. The main goals of these workshops were to get
+a deeper insight into the patients’ perspective concerning
+examinations and about their opinions and needs regarding
+examinations executed remotely with a robotic system.
+Finally, we conducted two online surveys, one with doctors
+and another one with patients, in order to quantify the
+insights gained in the workshops.
+
+652
+
+The result of these analysis steps was a list of 21
+user requirements (11 doctor, 3 assistant, 5 patient, 2
+common requirements). In this publication, we focus on the
+implementation of the requirements by the doctors, hence
+we only discuss the 11 doctor requirements presented in
+Table 1. Please refer to [38] for more details of the user
+requirement analysis.
+The first four requirements, RQ1–RQ4, cover aspects of
+communication and information exchange between doctors,
+assistants, and patients. In order to meet these requirements,
+we implemented a three-way video conference system [39]
+that has separate communication channels between doctor
+and patient (RQ1), and between doctor and assistant (RQ2).
+The video conference system also allows submission of
+additional patient data (RQ3, RQ4). Requirements RQ5
+and RQ6 concern the control of the robot arm. For
+implementation of these requirements, the arm of the
+ReMeDi robot can be moved by hand, without using
+an additional steering device (RQ5). We iterated the
+placement of the camera facing the patient to ensure a
+visual observation of the patient by the doctor for the entire
+duration of the examination (RQ6). This is described in
+more detail in Section 5.2. There were two requirements
+about the ultrasonography examination, (RQ8, RQ9). We
+implemented RQ8 in the design of the probe handle used
+on the haptic interfaces as well as in the kinematics used
+to control the robot arm with the handle, as described in
+Section 3. We also implemented the three requirements for
+the other examination techniques percussion and palpation
+(RQ7, RQ10, RQ11), but do not discuss these here, since
+the focus of this paper is on ultrasonography.
+
+Fig. 3 Usability test with a prototype of the ReMeDi system
+
+We implemented the user requirements in the first
+prototype of the ReMeDi robot, which can be seen in Fig. 3.
+In the following section, we describe how we iterated the
+design of the robot together with the end users, which
+ultimately led to the development of the second prototype
+(Fig. 1) that we then used for the comparative user study
+described in Section 6.
+
+5 Design: iterative, user-centred robot
+development
+
+In this section, we describe how we involved the end users
+in the design and development of the ReMeDi system. The
+
+Table 1 User requirements by doctors
+
+RQ1
+Doctors want to communicate with the patient during the whole examination using video and audio channels.
+RQ2
+Doctors want to have an additional communication channel to the assistant that is separated from communication with the
+patient and can be put into a private mode in which the patient cannot observe the doctor-assistant communication.
+RQ3
+Doctors would like to observe local changes of the patient’s body temperature and assess wetness of patient’s skin.
+RQ4
+Olfactory information can be crucial to make a diagnosis in some cases, for example, if the patient is drunk, has vomited, or
+has diarrhoea.
+RQ5
+Regarding the positioning of the robot, doctors want the assistant to position the robot roughly in front of the patient and do
+the fine-positioning of the system themselves. The doctors have no preference towards a certain input device (e.g., a joystick,
+3D mouse, or 3D touch device).
+RQ6
+For the doctors, it is essential that the robot is positioned in a way that a visual observation of the patient is possible at all
+times during the examination.
+RQ7
+In addition to ultrasonography and physical examination, the doctors would also like to perform percussion on the patient. In
+this examination technique, the doctor taps the thorax or abdomen of the patient to determine the underlying structure.
+RQ8
+Doctors need to position the ultrasound probe with a vertex angle of at least 60o.
+RQ9
+Doctors need to see the ultrasound images, preferably in real-time, as the quality of the diagnosis can badly suffer from a long
+delay in the transmission of the ultrasound images but also in the robot control.
+RQ10
+Doctors state that it is not really necessary for them to see their own hands when they palpate a patient by the aid of a robotic
+system. During a traditional examination, they look at the patient’s face to monitor their reactions. However, the doctors also
+mentioned that this could increase the necessary training time, due to their unfamiliarity with robots.
+RQ11
+It is essential to the doctors that the robotic medical system offers different pressure levels for physical examinations. These
+should range from very slight, in cases of extreme pain, to hard, which is required for deep palpation.
+
+653
+
+goal here is to share our experiences of working together
+with users from the medical field and summarise the most
+important findings that are also relevant for development of
+other medical robots.
+During the course of the project, a selected group
+of five medical doctors from the Medical University of
+Lublin, Poland, participated in designing and evaluating
+the ReMeDi system at different development stages. Virzi
+[42] showed that in a usability test 80% of the usability
+problems are detected with four or five participants. The
+doctors provided their feedback on an ongoing basis as soon
+as the engineers reached a new stage in the system design
+process. The group of doctors was involved in the following
+development steps:
+
+–
+Preparation of CAD models of the first version of the
+ReMeDi system. The doctors reviewed and revised the
+CAD models together with the hardware developers.
+They systematically evaluated whether the robot would
+meet the collected user requirements and the medical
+prerequisites for a successful examination.
+–
+Involvement in evaluation of single robot components.
+The doctors reviewed several system parts at early
+development stages: the robot arm, the teleconferencing
+system [4], and the haptic interface for remote robot
+control.
+–
+Evaluation of the first version of the integrated ReMeDi
+system. We report the findings from this evaluation in
+Section 5.2. The evaluation results directly influenced
+the design of the second system version.
+–
+Assessment and consultation for the 3D models of the
+second version of the ReMeDi system. In this step, the
+doctors were involved in analysing the kinematics of the
+robotic arm from a medical perspective.
+–
+Evaluation of the second integrated version of the
+ReMeDi prototype. We report the setup and results of
+this study in Section 6.2.
+
+In the following sections, we describe details of the
+evaluation for the first system prototype of the ReMeDi
+system. This evaluation stands as a good example of how
+we applied user-centred design methodology to involve the
+doctors in iterative system development. We review the
+deployed user-centred design methods in Section 5.1 and
+report the results of the evaluation in Section 5.2.
+
+5.1 User-centred design methods
+
+During the first prototype evaluation, we deployed a set
+of user-centred design methods. The main user feedback
+sessions took part in form of scenario-based usability
+tests. The main goal of these tests was to research
+whether the doctors consider the remote control of the
+ultrasonography probe with the ReMeDi system as natural.
+
+We also wanted to know, whether the doctors can
+reach all necessary positions for echocardiography on a
+patient’s body when using the robot. As safety is of
+utmost importance in medical devices, we additionally
+studied whether the doctors consider the tele-operated
+ultrasonography examination as safe for the patient.
+We arranged all usability test sessions in Clinical
+Hospital No 4 Lublin, which means that we transported
+and set up the robot on hospital premises for each of the
+usability tests. Being in the hospital environment increased
+the authenticity of the tests. Furthermore, it proved to be
+useful being physically near the doctors. A typical day
+at the hospital is quite busy and being able to execute
+usability tests spontaneously to fit into the tight schedule of
+the doctors led to more opportunities to get valuable user
+feedback.
+The tasks that the doctors had to perform during the
+usability tests was to execute a remote echocardiography
+examination on a practice dummy. For this, the doctors
+had to use the ReMeDi system to remotely place the
+ultrasonography probe on three pre-defined positions on the
+body of the dummy. The doctors carried out these tasks
+under two different conditions. In the first condition, the
+doctors were able to see the patient practice dummy. This
+condition was chosen to get a first indication whether the
+doctors can control the robot at all. Figure 3 shows the
+setup for this condition. In the second condition, we placed
+a curtain between doctor and patient, so that the doctors
+had to use the visual input on the control screens of the
+system. This condition was chosen to simulate a remote
+examination, in which the doctor can only rely on the
+inputs by the robot’s sensors. Before executing the tasks, we
+instructed the doctors how to operate the prototype of the
+ReMeDi system. The doctors were allowed as much as time
+as needed to get familiar with the system.
+During the usability tests, we used the thinking-aloud
+method [21].
+In this method, the users are asked to actively talk about
+what they are thinking while they are performing a set of
+specified tasks with a new user interface. For example, we
+encouraged the doctors to say what they are looking at,
+what they think when they look at parts of the system, and
+how they feel as they go about their task. This enabled the
+present system developers to see first-hand how real users
+complete tasks with their system and allowed them to get
+direct feedback from the users. In addition to the first-hand
+experience, we also video-recorded all usability tests for
+further analysis.
+
+5.2 Robot prototype evaluation results
+
+A total of 12 doctors (9 cardiologists and 3 radiologists)
+took part in this usability test. While 5 of the participants
+
+654
+
+were our team of associated doctors, the other 7 doctors
+were staff members of Clinical Hospital No 4 Lublin. We
+chose to invite additional doctors to use the system to get
+extra feedback on the robot and to include users in the
+evaluation, who had not seen the robot before. We sorted
+the findings of the evaluation into five categories: haptic
+interface, vision system, interface element layout, robot
+arm, and general comments.
+
+Haptic interface During the remote examination, a majority
+of the participants (10 out of 12 doctors) had problems
+with synchronising the haptic input device to the robot arm.
+In the first prototype of the ReMeDi system, the doctors
+had to manually align the rotation and direction of the
+haptic handle for the ultrasonography probe to that of the
+robot. The doctors suggested implementing an automatic
+synchronisation of handle and arm. The doctors furthermore
+reported a noticeable delay between moving the robot arm
+with the haptic interface and receiving visual feedback
+from the robot’s camera. They received force feedback over
+the haptic interface when the probe touched the patient’s
+body, but this feedback was not synchronised with the
+visual feedback. Six doctors pointed out that it would be
+useful to have a visual indicator for the forces the robot
+arm applies to the patient’s body. In general, the doctors
+commented that the haptic interface is working well, but
+some doctors pointed out that it should have covers to
+secure the mechanics and motors of the device. The doctors
+also positively commented that switching between robot
+movement modes with the foot pedal to either use the
+haptic interface for moving the arm or for executing the
+ultrasonography examination works well.
+
+Robot arm All doctors commented that the robot arm in the
+first prototype of the ReMeDi system was too loud. A loud
+robot arm could unsettle the patient and lead to difficulties
+during examination techniques that are sensitive to noise,
+for example auscultation. The doctors also suggested that
+the ultrasonic probe always needs to touch the patient’s body
+with its full surface to avoid losing the ultrasonographic
+image. The doctors found that it would be desirable to
+separate control of the robot arm rotation from robot arm
+movement, once the probe is placed into position for
+examination. Additionally, the doctors reported that the
+robot’s workspace did not cover the entire examination area.
+The testing with end users also unveiled that it was very
+easy to drive the robot arm into rotation and translation
+limits. Finally, the robot sometimes moved rapidly and
+unpredictably, which could potentially lead to harming the
+patient.
+
+Vision system In the first prototype of the ReMeDi system,
+the robot was equipped with two cameras. The first camera
+
+was mounted on top of the robot, combined with a screen
+that showed the doctor’s face to the patient. The other
+camera was directly mounted on the examination settee. The
+doctors reported that this setup was not usable for remote
+ultrasonography, because they were not able to clearly see
+the ultrasonic probe. The robot arm was sometimes blocking
+the view on both cameras. The doctors suggested to redesign
+the placement of the camera, to add more cameras to the
+system, to increase camera shutter speed, and to implement
+a zoom function on the main camera to be able to zoom in
+on the patient’s body.
+
+Interface element layout The doctors had a few comments
+about setting up the different interface elements for
+controlling the robot. First, they suggested to arrange
+the screens of the interface similar to the traditional
+examination, with the view of the patient to the left and
+the ultrasonography image in front of the doctor (compare
+also to Fig. 4). The second suggestion was to develop
+rearrangeable interface components to accommodate right-
+handed and left-handed users. Some of the doctors felt
+back pains after using the ReMeDi prototype for a while.
+Therefore, they suggested to include an arm rest below the
+haptic handle to increase the ergonomics of the interface.
+
+General comments All doctors pointed out that they used
+the ReMeDi system successfully, even at the prototype
+stage. They were able to align the probe on the pre-defined
+points of the patient body, although sometimes needing
+longer times. The doctors also positively noticed that it was
+possible to rotate the ultrasonic probe on the patient’s body,
+which is a vital part of an ultrasonography examination.
+Most doctors mentioned that they would need a proper
+training session before being able to productively use the
+system every day.
+
+Fig. 4 Setup of eye tracking study for traditional examination. Doctor
+uses a mobile ultrasonography device for echocardiography. Screen in
+foreground shows live eye tracking preview
+
+655
+
+In summary, the feedback and comments by the doctors
+were very valuable and led to changes in system design for
+the second prototype of the ReMeDi system. We changed
+the procedure to synchronise the haptic interface to the robot
+arm. It turned out that the problems the users had with
+synchronisation was due to the visualisation of a virtual
+probe handle shown on the patient screen, in combination
+with the camera angle of the camera pointing towards
+the patient. An improved virtual handle visualisation and
+optimised camera angle solved the synchronisation problem
+as well as the other mentioned camera angle shortcoming of
+the robot arm blocking the view. Additionally, we decreased
+the delay for robot arm control, vision system, and
+video conferencing system. The robot arm was completely
+redesigned in the second iteration of the ReMeDi system.
+It is less noisy and lighter than the first robot arm
+and drives with less force, to ensure patient safety, and
+its kinematics avoid driving into arm limitations. We
+furthermore restructured the interface elements to resemble
+a more traditional examination setup (see Fig. 1a). Finally,
+we equipped the haptic interface with an armrest to increase
+economic usage of the handle and covered the interface’s
+mechanical parts and motors with a piece of cloth to avoid
+doctors reaching into them.
+There were two comments by the doctors that we could
+not address in the second system prototype. Some of the
+doctors asked to make the system adaptable for left-hand
+and right-hand users. This could be implemented in future
+iterations of the system by rearranging the layout of the
+interface elements for the doctor. The doctors furthermore
+asked whether the alignment of the haptic interface and the
+ultrasonic probe could be automated. For this, the haptic
+interface needs to be equipped with additional motors to
+move the probe-shaped handle, which was outside of the
+project scope.
+We tested the second prototype of the ReMeDi system
+with a similar test protocol to the first prototype evaluation,
+this time using a real ultrasonic probe and a real patient
+instead of a practice dummy. We also used eye tracking
+to compare this remote examination to a traditional
+examination. The next section describes the study setup and
+results for these two studies.
+
+6 Evaluation: eye tracking comparison
+studies
+
+In this section, we describe the final step in the UCD cycle,
+the evaluation of the robot together with end users for which
+we used two eye tracking studies. The main goal of these
+studies was to compare focus of attention, task execution
+
+times, and gaze fixation of traditional echocardiography
+examination to remote examination with the ReMeDi
+system. For that, we asked doctors to wear a mobile eye
+tracker while performing the two types of examination. We
+specifically chose to use eye tracking studies to compare
+traditional to remote examination in order to see whether
+the gaze patterns and fixation times that user automatically
+apply in both applications are similar. We
+first describe
+the method, participants, and materials of both studies
+(Sections 6.1 and 6.2. After that, we report and compare the
+results of both studies (Section 6.3). Finally, we discuss the
+results in Section 7.
+
+6.1 Eye tracking study I: traditional
+echocardiography examination
+
+The goal of the first eye tracking study we carried out
+was to measure the focus of attention, task execution
+times, and gaze fixations of doctors performing a traditional
+echocardiography examination.
+
+6.1.1 Study setup
+
+Figure 4 shows the setup for the eye tracking study of
+the traditional examination. The participating doctors per-
+formed a complete examination of real patients on the
+premises of Clinical Hospital No 4 Lublin, Poland. The
+examination consisted of an initial interview, auscultation
+(depending on patient condition), palpation of the stom-
+ach (depending on patient condition), echocardiographical
+examination with an ultrasonography device, and documen-
+tation of the diagnostic findings. For the examination, the
+patients first entered the examination room and were either
+sitting on or standing in front of an examination settee for
+the interview. The doctors asked the patients to lay down on
+the settee for palpation and echocardiography. For echocar-
+diography, the doctors used a mobile ultrasonic device by
+GE. During the whole examination, the doctors wore an
+Ergoneers Dikablis Professional mobile eye tracker. The
+tracker records a scene view in HD quality and tracks the
+eyes with 60 Hz eye tracking frequency. We equipped the
+areas around the ultrasonic device and around the exam-
+ination settee with tracking markers to enable automated
+analysis of the eye tracking data. The experimenters cali-
+brated the eye tracker for each participating doctor and then
+left the room during the examinations, to give privacy to
+doctor and patient.
+We informed all doctors and patients about the purpose
+of this study. All participants signed an informed consent
+form. The ethics committee of Clinical Hospital No 4 Lublin
+reviewed and approved this study.
+
+656
+
+6.1.2 Participants
+
+9 doctors (5 male, 4 female) and 24 patients took
+part in this study. The mean age of the doctors was
+34.6 years (SD = 4.3). The areas of expertise of the
+doctors were echocardiography, cardiology, radiology, and
+ultrasonography. We recruited all doctors from the hospital
+staff at Clinical Hospital No 4 Lublin. The doctors reported
+that they had been working as doctors for 8.2 years on
+average (SD = 4.1). Although the doctors had expertise
+in different clinical areas, they were all regular users of
+ultrasonography systems and they all did regularly execute
+echocardiography examinations. The patients were regular
+patients of the hospital. We did not collect any personal
+details, such as age, gender, and health condition, to protect
+the privacy of the patients.
+
+6.1.3 Eye tracking data
+
+We excluded the eye tracking data of 4 examinations,
+because they were abdominal ultrasonography examina-
+tions, which we cannot execute with the ReMeDi robot.
+Furthermore, we had to exclude data from 1 echocardiogra-
+phy examination, because the eye tracker was not calibrated
+correctly. From the 19 remaining examinations, we recorded
+data consisting of the tracked position of the eye gaze and
+two synchronised video streams from the field camera of
+the eye tracker (1920 x 1080 pixel resolution) and from
+an external USB camera (640 x 480 pixel resolution). We
+
+did not record a sound source during the examinations. We
+defined several areas of interest (AOI) in the viewing field
+of the doctors. Figure 5 shows the AOIs for the patient’s
+body and face, as well as the screen and keyboard of the
+ultrasonic device. Additionally, we defined an AOI to the
+right of the ultrasonic device on a table where the doctors
+placed their papers for documenting the diagnostic findings
+(not shown in figure). We used Ergoneers D-Lab to define
+the AOIs using the tracking markers visible in the field of
+view of the eye tracker.
+
+6.2 Eye tracking study II: remote echocardiography
+examination
+
+In the second eye tracking study, we measured the focus of
+attention, task execution times, and gaze fixations of doctors
+performing a remote echocardiography examination with
+the ReMeDi robot.
+
+6.2.1 Study setup
+
+As with the first study, we performed the second eye
+tracking study at the premises of Clinical Hospital No 4
+Lublin. The participants were all doctors from the hospital.
+Since, in this study, we were interested in the doctors’
+perspective, the patients were healthy members of the
+project team. The doctors were welcomed to the study room
+and they were asked to give their consent to participate in the
+study. Next, the participants were given a short introduction
+
+Fig. 5 Tracked areas of interest
+during the traditional
+examination
+
+657
+
+Fig. 6 Setup of eye tracking study for remote examination. Patient
+receives echocardiography examination remotely controlled by doctor
+
+to the ReMeDi robot (Fig 6), in which they were shown how
+to operate the robot and how to place the ultrasonography
+probe on the patient’s body using the robot. After the
+introduction the doctors were given as much time as they
+wanted to train with
+the robot. Only when the doctors
+could operate the ultrasonographic probe well with the help
+of the robot, the researchers calibrated the eye tracker for
+each participating doctor and then the echocardiographic
+examination began. During the examination, the doctors
+wore the same Ergoneers Dikablis Professional mobile eye
+tracker already used in the traditional examination (see
+Section 6.1). Similarly to the previous study, we used
+markers to enable automated analysis of the eye tracking
+data (see Fig. 7). The ethics committee of Clinical Hospital
+No 4 Lublin reviewed and approved the study.
+Figure 8 shows the doctor’s workspace. With her left
+hand, the doctor operated the haptic device with which she
+moved the ultrasonic probe (Fig. 8a). The left screen shows
+a live feed of the patient and the robot arm moving the probe
+(Fig. 8c). The screen in the middle and the keyboard in front
+
+Fig. 7 Setup of eye tracking study for remote examination. Doctor
+controls the robot with the ReMeDi interface and wears a mobile eye
+tracker during the examination
+
+of it are the ultrasonography device (Fig. 8b). The screen
+on the right shows a three-way video conferencing system
+between doctor, assistant, and patient [39].
+
+6.2.2 Participants
+
+In this study, 8 doctors (5 male, 3 female) examined 14
+patients. We recruited all doctors from the hospital staff
+at Clinical Hospital No 4 Lublin. As stated previously, the
+patients in this study were part of the ReMeDi project team,
+since we were only interested in the doctors’ perspective.
+Due to hospital emergencies, 2 doctors did not have
+the opportunity to complete the questionnaires. In the
+following, we report the eye tracking results from 8 doctors
+and the questionnaire data from the remaining 6 doctors.
+Three doctors had gained previous experience with the
+ReMeDi system and three doctors were new to the system.
+Participants’ age ranged from 34 to 58 years (mean =
+41.00, SD = 8.85). Their experience in echocardiography
+ranged from 10 to 33 years (mean = 15.16, SD = 8.93).
+Five doctors reported to regularly perform ultrasonography
+examinations, while one doctor only rarely performed this
+kind of examination, but knew how to perform a regular
+examination.
+
+6.2.3 Eye tracking data
+
+We recorded data consisting of the tracked position of the
+eye gaze and two synchronised video streams from the field
+camera of the eye tracker (1920 x 1080 pixel resolution). We
+did not record sound during the examinations. In alignment
+to the eye tracking study on traditional ultrasonography
+examination, we defined several areas of interest (AOI) in
+the viewing field of the doctors. Figure 8 shows the AOIs for
+the USG probe handle, the USG screen and keyboard, the
+patient screen, and the additional screen. We used Ergoneers
+D-Lab to define the AOIs using the tracking markers visible
+in the field of view of the eye tracker.
+
+6.2.4 Questionnaire data
+
+Prior to the doctors’ interaction with the ReMeDi system,
+we asked them to complete a short questionnaire on their
+demographics (age, gender, pre-experience as a cardiologist
+and with robots). Furthermore, we asked them to rate
+their affinity for technology on the Attitude Towards
+Technology scale (ATT) that has
+ten 5-point Likert-
+scaled items [12]. At the end of the user study, we asked
+the cardiologists to complete the System Usability Scale
+[11] (ten 5-point Likert-scaled items), the Perceived Safety
+Scale from the Godspeed Questionnaire Series [7] (three
+semantic differentials), and a questionnaire assessing their
+trust in the ReMeDi system (23 5-point Likert-scaled
+
+658
+
+Fig. 8 Tracked areas of interest
+during the remote examination
+
+items). The Trust Questionnaire was combined with sub-
+scales from [28] (functionality, reliability, helpfulness), [41]
+(perceived usefulness, perceived ease of use), and [25]
+(system trust). Finally, the doctors were asked three open
+questions regarding their opinion on the system.
+
+6.3 Results
+
+6.3.1 Average ﬁxation ratios
+
+Firstly, we measured the average fixation ratios for all
+defined AOIs compared for each study individually. Table 2
+shows the average fixation ratios in percentage and their
+standard deviations for the traditional examination for all
+AOIs per examination task. To remind the reader, in the
+first eye tracking study, we captured data from traditional
+
+examinations that included palpation, auscultation, and
+echocardiography. Table 2 shows the fixation ratios for all
+three tasks separately.
+For the palpation task, the doctors mostly looked at the
+patient’s body (∼48.60% of the time) and face (∼11.04%).
+The doctors also looked at the wall near the examination
+settee, hence there is a long time (∼37.53%) in which
+doctors did not fixate on one of the predefined AOIs
+(category Other in Table 2). For the auscultation task,
+doctors mostly looked at the patient’s body (∼33.03%) and
+face (∼7.00%). During auscultation, most doctors looked
+away to concentrate on the patient’s heartbeat. Thus, there
+is a high percentage of fixations outside of the predefined
+AOIs (∼58.60%). For the echocardiography task, doctors
+mostly fixated on the USG screen (∼69.91%) and keyboard
+(∼9.88%). The data also shows, that the doctors started
+
+Table 2 Average fixation ratios on areas of interest in traditional examination tasks
+
+AOI
+Palpation
+Auscultation
+Echocardio.
+Mean
+Std
+Mean
+Std
+Mean
+Std
+
+USG screen
+0.49%
+0.85
+0.18%
+0.37
+69.91%
+4.00
+USG keyboard
+2.14%
+2.49
+0.72%
+1.22
+9.88%
+4.06
+Patient body
+48.60%
+27.70
+33.03%
+21.21
+1.76%
+1.15
+Patient face
+11.04%
+13.46
+7.00%
+10.07
+1.22%
+1.04
+Documentation
+0.20%
+0.35
+0.48%
+0.98
+4.80%
+1.23
+Other
+37.53%
+24.30
+58.60%
+25.14
+12.42%
+3.81
+
+659
+
+Table 3 Average fixation ratios on areas of interest in remote examination with ReMeDi
+
+AOI
+Mean
+Min
+Max
+SD
+
+USG screen
+55.42%
+14.41%
+83.62%
+17.52
+USG keyboard
+2.25%
+0.06%
+6.60%
+2.42
+USG probe handle
+2.21%
+0.02%
+17.81%
+5.23
+Patient screen
+9.87%
+0.07%
+24.97%
+9.78
+Additional screen
+1.19%
+0.01%
+4.93%
+1.63
+Other
+29.06%
+-
+-
+-
+
+to document their findings during the echocardiography
+examination (∼4.80% fixation time on Documentation
+AOI).
+In comparison to the data from the traditional examina-
+tion, Table 3 gives an overview on the fixation ratios on
+individual AOIs for the remote examination. In this study,
+the doctors looked at the USG screen for ∼55.42% of the
+examination time. In ∼9.87% of the time they looked at the
+patient screen, followed by the USG keyboard (∼2.25%),
+the USG probe handle (∼2,21%), and the additional screen
+(∼1.19%). For ∼29.06% of the time, the cardiologists fix-
+ated regions outside the defined AOIs (category Other in
+Table 3).
+Upon comparing the fixation times of the cardiologists
+when using the ReMeDi system with them performing
+the examination traditionally without a robot, we notice
+the following. When using the ReMeDi system, the
+cardiologists fixated less on the USG screen (∼-15%) and
+USG keyboard (∼-7%), and they fixated more on the patient
+(∼+7%) and more on other areas outside our predefined
+AOIs (∼+16%).
+The results show on one hand, that the focus of attention
+is quite similar between traditional and remote examination.
+Most attention lies on the USG screen, which suggests that
+we transferred the traditional examination needs quite well
+into the interaction design of the ReMeDi system. There
+was slightly more visual attention on the patient screen in
+the remote examination than on the actual patient in the
+traditional examination, which is due to the prior rough
+positioning of the robotic arm.
+
+6.3.2 Task execution times
+
+Table 4 shows the task execution times for the separate
+tasks of the 19 traditional echocardiography examinations
+(palpation, auscultation, echocardiography) from the first
+eye tracking study and the echocardiography of the 14
+remote examinations. For the traditional examination, we
+have no exact data for the duration of the interviews and
+the documentation of findings, since the doctors were often
+interrupted during these tasks, e.g., by colleagues who asked
+questions in between patients. The data from the traditional
+examination shows that the doctors need relatively short
+times for palpation (∼37.3s) and auscultation (∼51.2s) in
+comparison to echocardiography, which takes them over 15
+minutes (∼937.7s) on average. For the remote examination,
+which consisted only of the echocardiography task, doctors
+on average needed over 19 minutes (∼1153.0s) to complete
+the task. Table 4 also shows that the doctors, who completed
+the task the fastest, took comparable times in traditional
+and remote examination (631.6s vs. 653.8s). Doctors, who
+needed more time took almost twice as long in the remote
+examination than in the traditional examination (2165.5s
+vs. 1272.5s) to complete the task.
+
+6.3.3 Number and duration of ﬁxations and glances
+
+Table 5 shows the number of fixations and glances and their
+durations. We included fixations and glances of both eye
+tracking studies for comparable AOIs in the same table.
+From the data we see that the doctors have a much higher
+
+Table 4 Task execution times in seconds for subtasks in traditional and remote examination
+
+Task
+Mean
+Min
+Max
+Std
+
+Trad. Palpation
+37.321
+10.336
+66.782
+18.417
+Trad. Auscultation
+51.160
+15.515
+83.511
+20.538
+Trad. Echocardiography
+937.719
+631.584
+1272.522
+174.769
+Rem. Echocardiography
+1152.971
+653.761
+2165.530
+421.218
+
+660
+
+Table 5 Comparison of number and duration of fixations and glances on different AOIs during traditional and remote examination
+
+AOI
+Study
+Number of Fixations
+Fixation Duration (s)
+Number of Glances
+Glance Duration (s)
+Mean
+Std
+Mean
+Std
+Mean
+Std
+Mean
+Std
+
+USG Screen
+Traditional
+1224.68
+305.64
+0.514
+0.086
+393.05
+209.56
+1.959
+0.670
+Remote
+582.79
+192.07
+1.151
+0.612
+547.71
+224.02
+1.378
+0.860
+USG Keyboard
+Traditional
+566.74
+251.18
+0.132
+0.035
+259.00
+162.69
+0.395
+0.174
+Remote
+131.00
+111.86
+0.140
+0.086
+125.86
+112.25
+0.172
+0.126
+Patient Face
+Traditional
+149.79
+112.66
+0.130
+0.068
+83.74
+70.82
+0.482
+0.677
+Patient Screen
+Remote
+259.62
+317.52
+0.532
+0.229
+196.64
+303.26
+0.731
+0.458
+Patient Body
+Traditional
+40.67
+29.05
+0.114
+0.049
+27.33
+22.03
+0.221
+0.128
+Haptic Interface
+Remote
+61.92
+90.63
+0.165
+0.108
+67.58
+105.28
+0.190
+0.107
+
+number of fixations and glances on USG screen and USG
+keyboard during the traditional examination in comparison
+to the remote examination. However, the fixation duration
+and glance duration on the USG screen is shorter for the
+traditional examination than for the remote examination, but
+durations are comparable for the fixations and glances on
+the USG keyboard, regardless of examination type.
+We decided to also include a comparison between the
+AOIs Patient face (traditional examination) and Patient
+screen (remote examination) as well as the AOIs Patient
+body (traditional examination) and Haptic interface (remote
+examination). The reasoning behind this decision was
+that, although these AOIs are not identical, they are still
+comparable, because the doctors in both cases fixate on the
+patient’s face (Patient face vs. Patient screen) and the handle
+of the ultrasonography probe (Patient body vs. Haptic
+interface) respectively. For both of these comparisons
+Table 5 shows that the number of fixations and number
+of glances as well as their durations are not significantly
+different.
+
+6.3.4 Subjective results remote examination
+
+Finally, we analysed the subjective results from the
+questionnaires we used in the user study for the remote
+examination. The participants rated their own attitude
+towards technology with 3.82 (SD = .47) points on the
+Attitude Towards Technology Scale (ATT), a questionnaire
+that contains 10 items to assess the attitude of the participant
+towards technology [12]. The ATT Likert scale ranges from
+1 (positive) to 5 (negative attitude).
+On the Godspeed questionnaire, our participants rated
+the ReMeDi system as safe (mean = 4.11, SD = .86). The
+perceived safety subscale of the Godspeed questionnaire
+ranges from 1 (negative) to 5 (positive).
+On the Trust questionnaire the participants rated their
+overall trust in the system above average (mean = 3.46,
+SD = .322). All subscales of the trust questionnaire were
+rated above average (Reliability: mean = 3.25, SD = .39;
+
+Functionality: mean = 3.94; SD = .14; Perceived Ease of
+Use: mean = 3.21; SD = .62; System Trust: mean = 3.45;
+SD = .52). The Trust questionnaire ranges from 1 (negative)
+to 5 (positive).
+The participants rated the usability of the ReMeDi
+system with an average of 59.17 (SD = 13.66) points on
+the System Usability Scale (SUS), which is a ten-item
+attitude Likert scale giving a global view of subjective
+assessments of usability
+[11]. SUS ranges from 0 (bad
+usability) to 100 (best usability) points. According to [6],
+our result corresponds to a usability between “acceptable”
+and “good”.
+
+7 Discussion
+
+In this section, we first discuss the results of our comparison
+study and describe additional qualitative results to underpin
+our interpretation of the data. We then discuss the
+application of user-centred design methods in the medical
+context and our experience with applying these methods.
+Finally, we explain limitations of our work.
+
+7.1 Traditional vs. Remote examination
+
+The results from our two eye tracking studies show that
+in principle the doctors were able to successfully conduct
+a remote examination with the ReMeDi system. Our study
+participants rated the usability of the system between
+acceptable and good (on average 59.17 points of the
+100 point System Usability Scale), which means that the
+usability still needs to be increased. In our opinion, there
+are two main reasons for the low usability of the system.
+On one hand, the doctors need extra time to correctly place
+the probe on the patient’s body. This can be seen in the
+longer execution times for the overall examination and the
+fixation percentages. In the second study, the doctors looked
+longer at the screen showing patient and robot arm to make
+sure that the ultrasonography probe is placed correctly. On
+
+661
+
+the other hand, the doctors need more training for operation
+of the system. All of our participants reported that they
+would need training in order to use the robot on an everyday
+basis. This is similar to other medical robotics fields. E.g.,
+in minimal invasive surgery, doctors are now exclusively
+trained to execute operations with surgical robots.
+The differences in number of fixations and glances and
+their durations between traditional and remote examination
+are noteworthy. The number of fixations on USG screen and
+keyboard are considerably higher in the traditional examina-
+tion (screen: 1224.68 vs. 582.79 fixations, keyboard: 566.74
+vs. 131.00 fixations), while at the same time, the mean dura-
+tion of the fixations on the USG screen is considerably
+lower (screen: 0.514s vs. 1.151s), compared to the remote
+examination. The higher fixation numbers can partly be
+explained by our experiment design. In the traditional exam-
+inations doctors usually put the ultrasonography probe on
+4 positions of the patient’s body to examine the heart from
+different angles. In the remote examinations, we asked the
+doctors to put the probe to only 3 positions, because one
+of the positions was not reachable inside the workspace of
+the robot arm. Figure 4 shows the doctor placing the probe
+on exactly the position that was not reachable by the robot
+arm, it is directly placed below the patients’ neck above
+their collarbone. The longer duration of the fixations in the
+remote examination can partly be explained, because we did
+not use real patients to take part in the remote examination,
+which allowed the doctors to work under less time pressure.
+However, we still interpret the longer fixation durations
+in the remote examination as a sign for that our doctors
+did not trust the robot to show the ultrasonography image
+correctly. Hence, they took more time to ensure a correct
+diagnosis.
+Finally, we analysed in more detail, whether the
+experience level of the doctors taking part in the remote
+examination study had an influence on their task success
+and questionnaire ratings. First of all, we have to declare
+the caveat that we only had 8 participants in the study,
+of which 5 participants were expert users, the 5 doctors
+that were part of the ReMeDi development team and had
+used the robot before, and the remaining 3 doctors were
+novice users, who had not used the robot before. Hence,
+the results of the questionnaire data needs to be handled
+with care. Especially the relatively high trust ratings in
+the system would have probably not achieved with only
+novice users.
+The different task execution times of our
+users (Table 4) show that the expert users needed less time
+than the novice users to complete the remote examination.
+We computed a Mann-Whitney-U test for the 6 completely
+filled out questionnaires (3 experts, 3 novices) and did not
+find any significant difference on any of the questionnaire
+scales. This could be interpreted as sign that different task
+execution times are a matter of personal preference and not
+
+a sign for problems with the system. This is also reflected by
+the fact that all doctors reported that they successfully used
+the ReMeDi system. However, it has to be noted that due to
+the low sample size, a statistical evaluation can only be an
+indication and not definitive prove for our interpretation.
+
+7.2 User-centred design for medical robotics
+development
+
+The medical domain is specific in that one has to deal with
+special user groups—not only doctors, but also patients—
+who have specific needs in safety and privacy. Hence,
+we experienced that the usage of UCD methods is on
+one hand especially useful for this domain. On the other
+hand, we found that some of the methods needed to be
+adjusted to fit to the medical context. Shah et al. [34]
+found in a literature review that time, money, and labour
+are the main barriers to user involvement in medical device
+technology development. Similar to this finding, we also
+experienced that it is best to move the robot near the doctors
+in order to reduce the time and labour that doctors had to
+invest and to increase the potential to collect valuable user
+feedback. We had to adapt some of the UCD methods we
+used to the hospital environment. Our tests were structured
+less rigidly as typical usability tests, especially during the
+task execution phase. Each doctor develops his/her own
+procedure when executing echocardiography examinations.
+Thus, we did not follow an exact task execution protocol
+during the usability tests. The thinking-aloud technique
+worked very well with doctors and did not need any
+adaptation. Eye tracking proved to be a useful tool for
+getting objective measurements to make the traditional and
+remote examination comparable to each other.
+
+7.3 Limitations
+
+We have to notice that the comparison between the
+traditional and the remote examination is not completely
+accurate. We did not have real patients as participants in
+the remote examination study (Section 6.2). We did not
+include real patients in this study due to safety concerns,
+the ReMeDi robot was not certified for clinical trials when
+we executed the study, and because we did not want
+to put the patients into the risk of getting an incorrect
+diagnosis. Furthermore, the traditional examination did
+include more steps in the examination procedure than
+the remote examination. In addition to echocardiography,
+the traditional examination also included auscultation and
+palpation. Both of these steps did not take the doctors
+long (37.3s and 51.2s on average, respectively), still these
+additional steps have to be taken into account when
+comparing the execution times and fixation percentages for
+both examinations.
+
+662
+
+7.4 Future work
+
+In future work, we plan to introduce quicker ultrasonic
+probe placement by automating the alignment of virtual
+handle and the probe on the end effector. We also plan to
+further evaluate the second prototype of the ReMeDi system
+together with the end users.
+
+8 Conclusion
+
+Our work shows that in medical robotics development the
+usage of user-centred design methods can lead to a product
+that meets the requirements
+of the doctors, who are the
+end users of the system. We furthermore presented that
+some of the methods have to be adjusted to the clinical
+context, especially usability tests, which have to be executed
+in a more flexible way and near the users. Eye tracking
+proved to be a useful tool for comparing traditional and
+remote examination, although there were differences in the
+structure of both examinations and we were not able to
+execute the remote examination with real patients.
+Our results are relevant for researchers, who apply user-
+centred design methods in the medical robotics context and
+for medical robot system builders. Working together with
+end users is a somewhat time-consuming process, which
+has to be executed carefully. However, it leads to a more
+usable medical product. We also strongly believe that our
+work contributes to the WHO’s goal to increase access for
+patients in underdeveloped or sparsely populated areas to
+medical specialists.
+
+Funding Information This work was supported by the project ReMeDi
+(Remote Medical Diagnostician, Grant No. 610902) funded by the
+European Commission through the 7th Framework Programme.
+
+Compliance with Ethical Standards
+
+Conﬂict of interests The authors declare that they have no conflict of
+interest.
+
+Ethical approval The ethics committee of Clinical Hospital No 4
+Lublin reviewed and approved this study.
+
+Informed Consent We informed all doctors and patients about the
+purpose of this study. All participants signed an informed consent
+form.
+
+Open Access This article is licensed under a Creative Commons
+Attribution 4.0 International License, which permits use, sharing,
+adaptation, distribution and reproduction in any medium or format, as
+long as you give appropriate credit to the original author(s) and the
+source, provide a link to the Creative Commons licence, and indicate
+if changes were made. The images or other third party material in this
+article are included in the article’s Creative Commons licence, unless
+indicated otherwise in a credit line to the material. If material is not
+included in the article’s Creative Commons licence and your intended
+use is not permitted by statutory regulation or exceeds the permitted
+
+use, you will need to obtain permission directly from the copyright
+holder. To view a copy of this licence, visit http://creativecommons.
+org/licenses/by/4.0/.

@@ -1,0 +1,399 @@
+HYPOalert: Designing Mobile Technology for Hypoglycemic 
+Detection and Monitoring—Based on Human Breath 
+
+Anthony Faiola, Haleh Vatani, Kate Greenhill 
+
+Dept. of Biomedical & Health Information 
+Sciences, University of Illinois at Chicago 
+Chicago, IL, USA 
+
+Manjula Bhuma 
+Dept. of Health Informatics, 
+Karolinska Institutet,  
+Solna, Sweden 
+
+Mangilal Agarwal 
+Dept. of Mechanical Engineering, 
+
+Purdue University, Indianapolis, 
+IN, USA 
+
+ABSTRACT 
+Hypoglycemia (HYPO) is characterized by low blood glucose 
+(BG)—leading to complications such as sweating, weakness, 
+passing-out, coma, and even death. Effective HYPO 
+management is required to avoid complications and to increase 
+quality of life. Recently, a noninvasive smart breathing sensor 
+was developed for detection of HYPO in human breath 
+(HYPOalert). The device has the ability to deliver data (via 
+Bluetooth) to a mobile application—with the intent to support 
+Type 1 and 2 diabetics with the self-management of their 
+hypoglycemia. This paper presents the first two (prototype) 
+design iterations of research and testing of HYPOalert. Twelve 
+Type 1 and 2 diabetics were interviewed to deduce user 
+requirements and to understand their perception and level of 
+interest in the proposed mobile system. Outcomes informed a 
+human-centered design process of the interactive prototype, 
+currently under final testing. Results were positive—showing 
+that users were very interested in HYPOalert’s use of 
+visualization, as well as its HYPO monitoring and alert system 
+that supports diabetes patients’ healthy lifestyle management. 
+
+Author Keywords 
+Hypoglycemia; Diabetes, Breathing sensor; Mobile health; 
+Interface; Data visualization  
+
+ACM Classification Keywords 
+H: Information Systems→H.5: INFORMATION INTERFACES 
+AND PRESENTATION (e.g., HCI)→H.5.2: User Interfaces 
+
+INTRODUCTION 
+In 2012, the American Diabetes Association stated that one-
+tenth of all health care dollars were spent on costs directly 
+attributable to diabetes. The total cost—$245 billion. More 
+
+importantly, over half of these costs were directly or indirectly 
+resulting from poor maintenance of blood glucose (BG) levels 
+[3]. Diabetes has two classifications with accompanying 
+medical conditions—depending upon the glucose level. Type 
+1 diabetes (T1D) is characterized by deficient insulin 
+production and requires external insulin administration every 
+day, and Type 2 diabetes (T2D) is an outcome of the body’s 
+ineffective usage of insulin [6]. The direct healthcare costs 
+per-person for Type 1 diabetes (T1D) are 50% higher than 
+for Type 2 diabetes (T2D) [1]. According to recent data, 
+there are more than 970K people living in the US who have 
+T1D, with projections that by 2050, more than half of these 
+will be children. Diabetes mellitus is a chronic disease 
+caused by the body’s insufficient production of insulin. As a 
+hormone, insulin regulates BG levels, thus diabetics take 
+insulin as an external medication to regulate BG levels [2]. 
+Managing diabetes requires tight control of BG levels, 
+where too high BG results in hyperglycemia (HYPER) and 
+causes long-term complications. Conversely, low BG results 
+in hypoglycemia (HYPO, i.e., BG levels of <70 mg/dL) [4] 
+and 
+can 
+cause 
+short-term 
+complications 
+including 
+unconsciousness, permanent brain loss, or even death. 
+HYPO, common in T1D, is most dangerous for infants, 
+young children [16], elderly [10], and those who have 
+impaired awareness for HYPO [8]. In addition, the fear of 
+HYPO causes many patients to err towards HYPER and lead 
+passive life-styles, including decisions not to engage in 
+healthy exercise [5] and not driving [14]. 
+Of the mHealth diabetes devices and applications (apps) 
+on the market, there are four basic ways of glucose 
+monitoring: skin prick, saliva, urine, and continuous glucose 
+monitoring systems. The most used methods for detecting 
+HYPO are invasive and rely on analyzing glucose levels in 
+blood (through finger-stick) or interstitial fluids (continuous 
+glucose monitors, CGMs) [9]. However, CGMs often under-
+report HYPO [7] or display a significant time lag before 
+indicating HYPO [11]. A recent study showed CGMs may 
+not significantly improve glycemic control in children with 
+T1D  [12]. Each method has its own limitations related to 
+invasiveness, expense, and availability. There is, however, a 
+method that has shown considerable promise is trained 
+canines—diabetes alert dogs (DADs), that act as an early 
+warning system by alerting patients without any noticeable 
+symptoms of HYPO [15] [16]. 
+
+Permission to make digital or hard copies of all or part of this work for 
+personal or classroom use is granted without fee provided that copies are not 
+made or distributed for profit or commercial advantage and that copies bear 
+this notice and the full citation on the first page. Copyrights for components 
+of this work owned by others than ACM must be honored. Abstracting with 
+credit is permitted. To copy otherwise, or republish, to post on servers or to 
+redistribute to lists, requires prior specific permission and/or a fee. Request 
+permissions from Permissions@acm.org. 
+PervasiveHealth '18, May 21–24, 2018, New York, NY, USA 
+© 2018 Association for Computing Machinery. 
+ACM ISBN 978-1-4503-6450-8/18/05…$15.00 
+https://doi.org/10.1145/3240925.3240975 
+
+___________________________________________________________________
+
+This is the author's manuscript of the article published in final edited form as:
+
+Faiola, A., Vatani, H., Greenhill, K., Bhuma, M., & Agarwal, M. (2018). HYPOalert: Designing Mobile Technology for Hypoglycemic Detection and Monitoring–Based on Human 
+Breath. Proceedings of the 12th EAI International Conference on Pervasive Computing Technologies for Healthcare, 402–406. https://doi.org/10.1145/3240925.3240975
+
+Figure 1. Illustrates the 
+nanosensor array and de-  
+vice configuration with 
+breath-inlet, 
+antenna, 
+battery, Bluetooth, and 
+charger.  
+ 
+
+As noted, research has demonstrated that DADs can 
+smell the metabolic by-products of HYPO even before it 
+registers on a glucose-based detection device, prompting 
+patients to check their BG levels and take action before they 
+suffer a HYPO episode. This early detection is due to the 
+ability of DADs to smell volatile organic compounds (VOCs) 
+from breath caused by metabolic changes that lead to HYPO, 
+not by smelling glucose itself. Preliminary studies indicate 
+patients with DADs have improved glycemic control and 
+improved quality of life with fewer complications and lower 
+healthcare costs. However, there are long wait-lists and 
+many costs associated with training and maintaining DADs. 
+As such, we believe an accurate, affordable, and non-
+invasive device can be designed to detect (through human 
+breath) these metabolic changes. The smart sensor system 
+will mimic the DAD’s ability to detect HYPO from VOCs 
+in breath—thus being a technological breakthrough in 
+hypoglycemic detection, while decreasing costs of care, 
+decreasing morbidity and mortality, and transforming the 
+health and well-being of patients with diabetes.  
+ 
+PROPOSED RESEARCH 
+In response to these challenges, we are in the final phase of 
+designing and developing a noninvasive connected mobile 
+health system for T1D and T2D patients—that includes a 
+canine-inspired, smart nanosensor (breathing device) 
+technology that connects via Bluetooth with a mobile 
+application. We tentatively refer to the system as: 
+HYPOalert. The app has the capability of 24/7 (HIPAA 
+compliant) determination of HYPO, while providing early 
+warning alerts detecting chemical changes in human breath. 
+Incorporated into a smart device, the sensor system will 
+communicate health data to caregivers, collect data for 
+health management, and integrate with other diabetes 
+management devices. See Figure 1. 
+ 
+
+ 
+ 
+Thus far, the research team has collected and analyzed 
+human breath samples using gas chromatography/mass 
+spectrometry—creating signature VOC breath profiles that 
+correlate to HYPO. Second, the design, fabrication and 
+testing of the nanosensor array and breathing smart sensor 
+device will allow patients to obtain a registered response—
+arising from any detected metabolic change during a 
+transient condition leading to HYPO. Each sensor on the 
+
+array will respond to one or more of the identified VOCs. 
+The sensor array will be equipped with computational 
+resources and wireless data transmission-communication 
+modules. Data will be transmitted via Bluetooth and mobile 
+devices (e.g., smartphone)—alerting patients or caregivers 
+(between doctor-recommended blood glucose measurement 
+intervals) that the patient may be trending toward HYPO and 
+needs to test BG levels or take immediate corrective action.  
+The focus of this paper (and subsequent presentation) 
+will review the design and testing of the first two prototype 
+iterations of the mobile app—that will accompany the 
+forthcoming smart breath device system. 
+ 
+DESIGN ITERATION—PHASE 1 
+Design Iteration Process 
+Based on a preliminary review of existing diabetes products 
+and mobile applications, we developed a series of 
+exploratory static/rapid interfaces for inspection by diabetes 
+patients. As outlined, the primary purpose of HYPOalert is 
+to warn patients of an approaching or existing state of 
+HYPO. For this reason, the initial interfaces reflect this 
+primary functional aspect. Figure 2 illustrates the first 
+conceptual iteration of HYPOalert. Based on this iteration 
+of interfaces, we performed a user requirements study—
+focusing on understanding user needs through questionnaire, 
+semi-structured interviews, and a preliminary review of the 
+first iteration of the mobile app interface design. Findings 
+provided design requirements and the users’ overall 
+perception and interest in a breath smart sensor app for 
+supporting HYPO monitoring. 
+
+ 
+Figure 2. First iteration of the HYPOalert static interfaces. 
+First interface displays the app splash-page. All remaining 
+interfaces indicate the patient’s name and reading date/time. 
+Interfaces 2-4: (1) Three color-coded visualization areas: 
+Green=NORMAL, Yellow=APPROACHING (or Caution), 
+and Red=HYPO, and (2) Hourly indication of breathing 
+times and their location on the HYPO visualization scale. 
+Interface 4 displays the patient’s weekly breathing summary, 
+broken down in percentages. 
+ 
+Method—User Requirements and Design Testing 
+Participants: We recruited 12 participants with T1D (60%) 
+and 8 with T2D (40%), n=20. Recruitment including paper 
+flyers circulated across the University of Illinois at Chicago 
+(UIC) campus and email to all UIC staff and students. All
+
+3 
+
+participated receive an Amazon $10 eGift for their 
+participation. Inclusion criteria included: volunteer’s age 
+must be above 18 years, must speak fluent English and all 
+vulnerable populations are omitted. 
+Interview, Questionnaire and Rapid Prototype Review: 
+Participants received eight open-ended interviews and 13 
+multiple-choice survey questions. At the conclusion of the 
+questionnaire, participants were shown the first iteration of 
+the mobile app interface designs, with follow-up questions 
+related to benefits, functionality, and overall appeal. Data 
+analysis of the 13 questions consisted of means and standard 
+deviations (SD)—converting integer values using Excel 
+2010. The histogram values of each question were 
+graphically displayed as bar plots and pie charts.  
+ 
+Findings 
+Questionnaire: Regarding the method for tracking BG 
+levels, 65% participants use the skin prick, 30% used both 
+continuous glucose monitoring and skin prick, and 5% used 
+urine testing. Regarding HYPO management, 35% of 
+participants had sugar intake at random hours, 25% make use 
+of health apps to track glucose levels by measuring food 
+intake and physical exercise, while only one participant uses 
+noninvasive glucose tracking. Only three participants use a 
+combination of all three methods for managing HYPO 
+levels. Only 20% of participants did not use any method to 
+track their HYPO levels.  
+Regarding satisfaction with their current monitoring 
+system, only 10% of participants were pleased, 45% 
+participants are somewhat satisfied, and 40% are not 
+satisfied with their current BG measuring method and 
+devices. A total of 85% of participants expressed their 
+interest to use the proposed HYPOalert noninvasive 
+breathing sensor over their current HYPO management 
+devices. Regarding the extent of use of a breathing sensor, 
+70% wished to use the device more than 20 times a day, if 
+available today—while only 20% expressed that they would 
+only use it only once a day to manage their HYPO condition. 
+Regarding BG data display types, 40% of participants 
+wanted to see their data visualized with alerts, rather than a 
+color-coded visualization—while 45% wished to see the 
+data visualization color-coded (with numbers, color coding 
+data, and line/bar plots)—similar to the HYPOalert app. And 
+15% expressed an interest in visualizing their BG data with 
+bar or line plots only. Regarding sharing their data with 
+others, 95% stated their interest in including their family, 
+while 90% wanted to include a way to share their HYPO data 
+with their primary provider.  
+All participants (100%) were interested in using the 
+HYPOalert app, with its data visualization system—stating 
+that it would help advance their understanding and 
+management of a HYPO condition. All participants (100%) 
+were slightly to strongly in agreement that the proposed 
+
+HYPOalert system (sensor and app) would positively impact 
+their daily lifestyle practices. 
+Open-Ended Interview: Outcomes of our interviews 
+showed the frequency of both severe HYPO and mild HYPO 
+episodes among the participants. We found that the 
+occurrence of mild HYPO episodes (5.1±7.3 times per week) 
+is approximately 10-fold higher than the severe HYPO 
+episodes (2.1±2.3 times per month). The average 
+participants monitoring of Blood Glucose (BG) levels was 
+2.8±2.9 times per day—while BG monitoring still varied 
+from patient to patient, e.g., one T1D participant monitors 
+BG levels 10 times a day whereas four participants check 
+their BG randomly throughout the week.   
+About 80% of participants use BG measuring devices to 
+specifically manage their hypoglycemia. Although, most of 
+participants use traditional or advanced BG monitoring 
+devices, the adoption of mHealth apps is very poor, i.e., 75% 
+of participants do not use any type of mobile app that links 
+their BG results from the device to their smartphone. The 
+remaining 25% use GoMeal, Dexom, OneDrop, or other 
+apps to review BG data from their monitoring devices. 
+Regarding HYPO data visualization, the majority of 
+participants (70%) recommended that the device save the 
+breathing sensor data through a log option (up to six months), 
+with the ability to visualize the data at any point in time 
+according to glucose levels, mg/dL and trends. In addition, 
+three participants expressed their interest to include an 
+option for food intake data whereas one participant 
+suggested we include insulin dosage option and alerts when 
+HYPO occurs. Two patients would like to include 
+predictions or causes of HYPO. 
+ 
+DESIGN ITERATION—PHASE 2 
+Product Review 
+To better understand the advancements of other mHealth 
+diabetes products, we conducted an audit of two FDA 
+approved mobile products that include both a BG measuring 
+device, with data transmission capabilities (via Bluetooth or 
+directly) to a smartphone app. Our assessment included the 
+Dario and iHealth wireless blood glucose monitoring systems. 
+After registering online, our team tested and assessed the 
+products for two weeks; including daily blood samples. We 
+then de-constructed and built an interface/system information 
+architecture flow-chart, followed by a comparative analysis 
+of the two products using the same criteria. 
+
+Briefly, both apps offer innovative solutions that improves 
+patient satisfaction by enabling them to manage health more 
+efficiently. Patients can set thresholds for normal and danger 
+glucose levels, personalized goals, medication reminders, 
+diet, and exercise plans. They can also log their blood sugar 
+level manually/using the device as often as they want, follow 
+their progress visually, and export results as an Excel, PDF, or 
+CSV file to their healthcare provider or family members using 
+e-mail, text, or via shared access in social media.
+
+At the same time, our findings showed there was a lack 
+of consistency in color codes to display some of the HYPO 
+BG reading levels, creating some confusion in interpreting 
+the results. For example, although iHealth had a well-
+designed interface and visualization system, the color coding 
+system was difficult to distinguish. While Dario provides 
+access to most options with an inside hamburger menu, 
+iHealth features/commands can be assessed directly from the 
+interface as icons, text or a combination of both. Unlike 
+Dario, iHealth requires Bluetooth connection, and does not 
+support the visually impaired. However, Dario supports 
+adding emergency contacts and uses GPS to locate the 
+patient when blood glucose levels reach a dangerous range.  
+ 
+Design Process 
+Findings from the first iteration and the review of the two 
+BG monitoring systems informed our design of the 
+interactive prototype (Figure 3) of phase two. Usability 
+testing using the interactive prototype (on an iPhone 7 Plus) 
+is currently on the way—consisting of three parts: (1) a 
+scenario task-based time-on-task study, (2) a post-test 
+questionnaire, and (3) a post-test interview. 
+ 
+
+ 
+Figure 3: Illustrates the HYPOalert interactive interfaces that focus 
+on data monitoring using several temporal systems, the alert system, 
+along with reminders, settings, and summary reports. 
+
+ 
+ 
+
+CONCLUSIONS 
+Hypoglycemia can be a life-threating condition, of which 
+regular metabolic monitoring is critical. This paper reported 
+on a two-iteration design process of a mobile app 
+(HYPOalert) that will accompany a new noninvasive smart 
+sensor that detects HYPO by human breath for Type 1 and 2 
+diabetics. After our first design iteration, we interviewed 
+users regarding the system (with static prototypes). Findings 
+suggest a strong reception of HYPOalert. Participants agreed 
+that the proposed system will have a positive impact on 
+managing their HYPO. We then conducted the evaluation of 
+two FDA approved mHealth BG monitoring systems to 
+compare/assess product features. Our comparative analysis 
+was used to inform/enhance the prototype design of the 
+second iteration. Lessons learned have guided our 
+understanding that—Data visualizations should offer a 
+summary of individual BG level readings/trends, with 
+customizable timeframes and a standardized color coding 
+system that accompanies the actual values displayed. We’ve 
+confirmed that customizing BG thresholds for normal and 
+danger levels is required to enable HYPO alerts and for 
+patients to define their own BG management plan. Finally, a 
+usability study that observes for ease of use and functionality 
+is currently on the way. Study findings will provide 
+significant insight for the third design iteration of product 
+development, followed by a clinical trials.

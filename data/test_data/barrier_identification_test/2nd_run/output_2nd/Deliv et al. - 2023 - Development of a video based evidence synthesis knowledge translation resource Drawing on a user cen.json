@@ -1,0 +1,42 @@
+{
+  "file_name": "Deliv et al. - 2023 - Development of a video based evidence synthesis knowledge translation resource Drawing on a user cen.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "interaction",
+      "barrier_type": "emotional",
+      "description": "Some public participants were known to lead authors and may have felt pressure not to be too critical, reducing candour of feedback during user testing.",
+      "justification": "This interactional pressure limited the team's ability to obtain honest, critical user feedback, hindering management of user understanding, facilitation of user involvement, and authentic evaluation of prototypes.",
+      "reference_excerpt": "A limitation of our approach is the use of convenience sampling. This meant that some of the members of the public involved were known to the lead authors (CD and ET), and therefore may have felt some degree of pressure not to be too critical of the resource for fear of offending.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Severely limited time and budget (8 weeks, €2000, undergraduate student project) constrained the scope of work and the team's ability to outsource specialist expertise.",
+      "justification": "These resource constraints reduced capacity for additional user-testing cycles, external production support, and extended iteration, directly hindering iteration, prototyping, and evaluation workloads within the HCD process.",
+      "reference_excerpt": "Resource-use for the project was minimal, as this was conducted over 8 weeks as an undergraduate summer student project supported by Evidence Synthesis Ireland for €2000. ... our limited time and resources hindered our ability to outsource expertise (e.g., the hiring of a digital media company as used by Archibald et al.)",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Use of convenience and snowball sampling with a one-week recruitment window limited participant diversity and the opportunity for wider user input.",
+      "justification": "The constrained recruitment strategy reduced the team's ability to manage evolving, representative user understanding and to facilitate broader user involvement that could inform specification and evaluation of the design.",
+      "reference_excerpt": "We used a combination of convenience and snowball sampling via word of mouth ... The timeframe of the recruitment for participants was one week.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Ethical/consent requirements for minors made recruiting under-18 participants difficult, resulting in incomplete representation in that age category.",
+      "justification": "This external regulatory/consent constraint limited facilitation of user involvement among younger users and hindered the team's ability to fully understand and design for that user subgroup's context of use.",
+      "reference_excerpt": "We were successful in recruiting one male and female participant from each age category except in the <18 years category where one male was recruited, due to the fact that minors are more difficult to recruit given the necessity of parent/guardian consent.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

@@ -1,0 +1,1366 @@
+Friends, Family, and Food:
+Development of a Food Allergy Intervention,
+F3-App, for Children
+
+Barbara N. Jandasek1, 2, 3, Sheryl J. Kopel1, 2, 3, Cynthia A. Esteban1, 3, Susan A. Rudders3,
+Josh S. Spitalnick4, Margo Adams Larsen4,
+Grace K. Cushman1, 2, and Elizabeth L. McQuaid1, 2, 3
+
+1 Bradley Hasbro Children’s Research Center, Rhode Island Hospital, Providence, Rhode Island, United States
+2 Department of Psychiatry and Human Behavior, Alpert Medical School of Brown University
+3 Department of Pediatrics, Alpert Medical School of Brown University
+4 Virtually Better, Inc., Decatur, Georgia, United States
+
+Objective: Despite a marked increase in the prevalence of pediatric immunoglobulin E-
+mediated food allergy (FA) in recent decades, there is a dearth of age-appropriate manage-
+ment education and support tools for youth with FA. The purpose of this report is to detail
+our methods for intervention design and reﬁnement of an interactive educational software
+program for school-aged children with FA. Method: Development of the “Friends,
+Family, and Food Application (F3-App)” employed an iterative, user-centered design
+approach with input from children with FA, their caregivers, and other key experts.
+Phase 1 (prototype development/pilot evaluation) involved family input on key themes
+and educational messages, development of a prototype, and pilot testing. Phase 2 (full
+F3-App development/open trial) included reﬁnement and expansion of the prototype
+per advisory panel and end-user recommendations, followed by an open trial with addi-
+tional iterative reﬁnement. Results: Acceptability and credibility of the F3-App were rated
+highly by most participants. Relatively few technical challenges arose with F3-App instal-
+lation or use. Follow-up interviews with children and caregivers suggested that the F3-
+App was generally well received, families found the content useful, and that it prompted
+family discussion about the child’s FA management. Conclusions: User input is critical
+to developing family-friendly software to support management of pediatric chronic con-
+ditions. Interactive educational software can be a useful channel for children to practice
+skills and build conﬁdence in disease self-management and to facilitate family commu-
+nication regarding the stresses of FA management.
+
+Implications for Impact Statement
+This study describes the development of the Friends, Family, and Food Application
+(F3-App), with a focus on the community partner-driven design process. The F3-
+App was credible and highly accepted and recommended by families and promoted
+family communication around food allergy management. The F3-App that was devel-
+oped was used in a subsequent randomized, controlled trial.
+
+Editor’s Note.
+Christina L. Duncan served as the action
+editor for this article.—CLD.
+
+This article was published Online First January 8, 2024.
+Barbara N. Jandasek
+https://orcid.org/0000-0001-
+9217-9287
+
+Elizabeth L. McQuaid
+https://orcid.org/0000-0001-
+9573-3781
+
+Susan A. Rudders is now at the Division of Immunology,
+Boston Children’s Hospital, Department of Pediatrics,
+Harvard Medical School, and Josh S. Spitalnick is now at
+the Anxiety Specialists of Atlanta.
+Preliminary data from this study were presented at the
+
+American Academy of Allergy, Asthma, and Immunology
+(AAAAI) Annual Meeting in 2015. This project was supported
+by R43 HD075524-01 (Elizabeth L. McQuaid and Josh
+S. Spitalnick, Principal Investigators) and R42 HD075524
+(Elizabeth L. McQuaid and Margo Adams Larsen, Principal
+Investigators). The study was registered with ClinicalTrials.gov
+(ClinicalTrial Identiﬁer NCT05093114). The authors have no
+conﬂicts of interest to disclose.
+Correspondence
+concerning
+this
+article
+should
+be
+addressed
+to
+Elizabeth
+L.
+McQuaid,
+Bradley/Hasbro
+Children’s Research Center, Rhode Island Hospital, 1 Hoppin
+Street, Suite 204, Providence, RI 02903, United States. Email:
+
+Clinical Practice in
+Pediatric Psychology
+
+© 2024 American Psychological Association
+2024, Vol. 12, No. 2, 143–156
+ISSN: 2169-4826
+https://doi.org/10.1037/cpp0000513
+
+143
+
+Keywords: food allergy, user-centered design, disease management, intervention,
+interactive software
+
+Pediatric food allergy (FA) affects nearly six mil-
+lion children in the United States (Dyer & Gupta,
+2013) with steady increases in prevalence over the
+past
+three
+decades
+(Loh
+&
+Tang,
+2018).
+Immunoglobulin E (IgE)-mediated FA is character-
+ized by an immune response caused by an
+allergen-speciﬁc IgE antibody when exposure to a
+speciﬁc food occurs. These allergic reactions may
+be severe: food-related anaphylaxis, a multisystem
+reaction, can be life threatening and is growing
+more common (Jackson et al., 2013; Robinson
+et al., 2021). Currently, there is no cure for
+IgE-mediated FA; it must be managed through
+avoidance of the allergenic food and prompt treat-
+ment of symptoms. Although new therapies are
+emerging to promote food tolerance (e.g., oral
+immunotherapy), they can be burdensome, have
+limited uptake by clinical practices, and are not cov-
+ered widely by health insurance (Licari et al., 2019).
+Diagnosis and management of FA is associated
+with increased parental distress and anxiety (Ravid
+et al., 2012), lower child quality of life (King et al.,
+2009), impact on daily activities and social events
+(Bollingeret al., 2006), and increased psychosocial
+(Rubeiz & Ernst, 2021) and economic burden
+(Gupta et al., 2013). These challenges may be par-
+ticularly salient for youth learning to balance FA
+management in the context of increasing indepen-
+dence (e.g., in school and social events with peers).
+FA knowledge, skills, and self-efﬁcacy are all
+likely required in self-management, yet few pediat-
+ric FA management interventions exist to build
+these skills.
+Existing FA interventions typically target care-
+givers, are educational (Sugunasingha et al.,
+2020), and are not tailored to youths’ needs. To
+date, interventions for youth include educational
+videos to improve peers’ knowledge in school set-
+tings (Jiang et al., 2019; Reddy et al., 2018), smart-
+phone
+apps
+that
+are
+either
+educational
+or
+skills-based focused, not both, and are focused
+on psychosocial functioning rather than disease
+management (Cuervo-Pardo et al., 2015). Recent
+reviews of apps to support FA management have
+focused on tools to ﬁnd acceptable foods (e.g., res-
+taurant choices and ingredients) and indicate most
+existing apps (a) do not adequately differentiate
+between food intolerances and IgE-mediated FA
+and (b) are not geared speciﬁcally toward youth
+(Mandracchia et al., 2020; Wu et al., 2022).
+
+Most resources available to support families
+with FA are parent oriented, with some excep-
+tions (Ramos et al., 2021; Vreeken-Ross et al.,
+2022). Food Allergy Research and Education
+(FARE), a nonproﬁt organization for FA educa-
+tion and advocacy, hosts moderated virtual talks
+for youth with FA and webinars for caregivers
+(e.g., school advocacy) and youth (e.g., navigat-
+ing college and dating). Online, video-based
+information is increasingly available via plat-
+forms such as YouTube, although a 2018 review
+concluded that much of the information is mis-
+leading or controversial and does not represent
+IgE-mediated reactions (Reddy et al., 2018).
+The purpose of this study was to design a novel
+interactive educational software program through
+a partnership of an academic research team and a
+small-business-based technology team (Virtually
+Better, Inc. [VBI]). This collaboration facilitated
+the use of highly relevant intervention develop-
+ment technology that was advanced for the
+study time period (2013–2016).
+Intervention development focused on both edu-
+cation and skills acquisition to enhance pediatric
+FA self-management. Consideration of FA man-
+agement challenges most salient to the targeted
+developmental level was selected based on the
+review of the literature and consultation with an
+expert panel, caregivers, and youth. Following
+the Pediatric Self-Management Model framework
+(Modi et al., 2012), the development phases of
+this intervention considered FA self-management
+inﬂuences, processes, behaviors, and contexts
+most developmentally relevant to the targeted
+age group and targeted modiﬁable inﬂuences pri-
+marily within the individual (e.g., knowledge,
+self-efﬁcacy, and skills) and familial (e.g., com-
+munication and planning) levels. The F3-App
+was designed as a behaviorally based multicom-
+ponent intervention containing strategies targeting
+challenges to FA management. It incorporated
+educational and skills development strategies
+with supported efﬁcacy to promote effective man-
+agement (Kahana et al., 2008; Lemanek et al.,
+2001). The interactive capability of the F3-App
+integrated a skills training approach involving
+instruction, modeling, behavioral rehearsal, feed-
+back, and reinforcement.
+The purpose of this report is to describe our
+methods for development and reﬁnement of the
+
+144
+
+F3-App.
+Consistent
+with
+recommendations,
+this pilot/feasibility study focuses on feasibility,
+acceptability, and credibility, and the methods
+used to enhance these aspects of the F3-App,
+rather than on preliminary efﬁcacy (Hilliard
+et al., 2021). An iterative, user-centered design
+approach was employed throughout intervention
+development and reﬁnement to ensure represen-
+tation of relevant aspects of FA management;
+each study phase included qualitative input for
+program
+development
+and
+reﬁnement
+and
+mixed method assessment of feasibility, credibil-
+ity, and acceptability.
+Phase 1 involved child and caregiver input on
+key themes and educational messages, develop-
+ment, and pilot testing of the prototype. Phase
+2 included prototype reﬁnement and expansion
+based on an advisory panel’s recommendations
+and input from end-users, followed by an open
+trial (McCurdie et al., 2012; Figure 1). This iter-
+ative multimethod process was designed to elicit
+perspectives from multiple community partners
+(researchers, medical providers, patients/caregiv-
+ers) to optimize content accuracy, material
+usability, and appropriateness for elementary
+school-aged children with FA. We describe the
+development and evaluation of the feasibility,
+acceptability, and credibility of the “Friends,
+Family and Food Application (F3-App),” focus-
+ing on the design and reﬁnement process. We
+expected that the F3-App would be a feasible
+approach for children with FA, and that it
+would be acceptable and credible to families.
+This study was registered with ClinicalTrials.gov
+(ClinicalTrial Identiﬁer NCT05093114). All activi-
+ties were approved by the Institutional Review
+Board of the academic medical center where the
+study took place. Families for all development
+and testing phases of the F3-App were identiﬁed
+via electronic medical records of the Allergy and
+Asthma Clinic of a local children’s hospital based
+on child age and diagnostic criterion and through
+targeted mailings to a local FA support network.
+Families were compensated forcompleting research
+sessions.
+
+Phase 1: Prototype Development and Pilot
+Evaluation
+
+Phase 1 involved development of the F3-App
+prototype and initial evaluation of feasibility
+and credibility (see Figure 1 for diagram of
+phases).
+
+Method for Phase 1A: Prototype Development
+
+Procedures
+
+After enrollment, families completed demo-
+graphic and medical history questionnaires and
+participated in focus groups, which were recorded
+and transcribed. Focus groups were implemented
+by our team, which included a facilitatorand note-
+taker trained in qualitative methods. Groups were
+audio recorded, and a debrief form was completed
+by the study staff. Using a deductive, rapid ana-
+lytic approach (Nevedal et al., 2021), executive
+summaries were created for each focus group by
+careful, independent review of the notes, audio
+recording, and debrief form by at least two
+doctoral-level members of the research team
+with experience in qualitative methods, pediatric
+psychology, and food allergies. Discrepancies
+were discussed and resolved by the qualitative
+team. Executive summaries were then presented
+to the other research and technology team mem-
+bers for intervention development. These same
+procedures were followed to analyze all subse-
+quent sources of qualitative data.
+
+Participants
+
+The F3-App prototype developed during this
+phase focused exclusively on peanut allergy and
+was guided by national guidelines (Boyce et al.,
+2011) and input from participants. Nine families
+of children with FA participated in parallel child/
+caregiver focus groups. Children were 8–12 years
+old (M = 8.8; SD = 1.2); slightly more than half
+were male (56%; 44% female). All had allergies
+to tree nuts and/or peanuts, and two thirds (67%)
+had experienced an anaphylactic reaction. The
+majority of participants identiﬁed as non-Latino
+White
+([NLW]
+56%;
+22%
+Black/African
+American; 11% Native American; 11% mixed
+race) and one identiﬁed as Latino. Families’ educa-
+tional levels were as follows: 44% of mothers and
+55% of fathers had a college education or higher.
+All participating caregivers were female. Only
+one caregiver per family participated.
+
+Results for Phase 1A: Prototype Development
+
+During separate parent and child focus groups,
+respondents described critical areas to include in
+the F3-App, feature preferences, and feedback on
+preliminary materials. This feedback was key to
+developing a prototype incorporating aspects of
+
+DEVELOPMENT OF A FOOD ALLERGY INTERVENTION
+145
+
+FA management that children found most chal-
+lenging, such as resisting foods offered by adults
+and responding to teasing/bullying (Table 1).
+Feedback
+also
+informed
+elements
+of
+the
+F3-App design (e.g., visual features, methods
+of sustained engagement, and user interface).
+The prototype included one experiential context
+(school cafeteria) and three social vignettes illus-
+trating skills for (a) food avoidance, (b) FA reac-
+tion management, and (c) social pressures. Two
+interactive games addressed skills related to read-
+ing food labels and recognizing symptoms of FA
+reactions. Children received reinforcement for
+progressing through the F3-App by earning
+points for completed tasks, redeemable for
+items to decorate a virtual aquarium (Figure 2).
+
+Method for Phase 1B: Prototype Pilot
+Evaluation
+
+Participants
+
+Feasibility, acceptability, and credibility of
+the F3-App prototype were assessed with 32
+
+families of children 8–12 years old (Table 2)
+who had physician-documented FA to pea-
+nuts/tree nuts. Additional inclusion criteria
+were ability to read and speak English and
+access to a computer and the internet to down-
+load the program. Participants from Phase 1a
+were excluded.
+
+Procedures
+
+Conﬁrmation of FA diagnosis was obtained
+from the child’s healthcare provider via a
+Physician Query form, summarizing (a) history
+of FA reactions; (b) diagnostic testing (i.e.,
+allergen-speciﬁc IgE testing blood test ﬁndings
+and skin prick testing), and/or (c) oral food chal-
+lenge results (all past 2 years). Informed consent
+and assent were obtained at a home visit after
+which research staff initiated an email prompting
+the F3-App log-in process. Families completed a
+preassessment survey and used the F3-App at
+home for up to 4 weeks, playing through the
+experiential contexts until they had completed
+the game.
+
+Figure 1
+Study Phases of the Iterative, User-Centric Design Approach Used to Develop the F3-App
+
+Note.
+See the online article for the color version of this ﬁgure.
+
+146
+
+Table 1
+Community Partner Feedback Incorporated Into Intervention
+
+Phase
+Method
+Themes/feedback
+Corresponding intervention adaptation
+
+Prototype
+development
+Child and
+caregiver
+focus groups
+
+Provided information regarding aspects of FA
+management families ﬁnd most
+challenging, including social and family
+events, bullying or taunting by peers, and
+resisting food offered by adults.
+
+Added speciﬁc content in social scene
+about responding to teasing and
+bullying.
+Identiﬁed additional content and social
+scenes to create for the full App,
+including children’s birthday party and
+family BBQ gathering.
+Children articulated confusion about which
+child had FA in one of the scenes given the
+visual perspective of the player.
+
+Changed illustration of characters and
+added game narrators for ﬁnal full F3-
+App.
+Gauged children’s comfort with showing a
+child experiencing a FA reaction.
+Children validated importance of the
+scene and were open to including
+ambulance in scene as long as story
+included the child being safe at the
+conclusion.
+Solicited feedback and ideas on parental
+involvement in game. Parents requested
+links for FA information and tips on
+communication with child.
+
+Identiﬁed need and relevant content of
+Parent Dashboard for full F3-App,
+including parental updates on child
+game progress and parental tip sheets
+addressing topics of interest.
+Food pantry game feedback: children wanted
+more food items to choose from, options
+with more challenging food labels.
+
+Added items with labeling “May contain
+peanuts.”
+Added more varied food choices.
+Prototype pilot
+Child and
+caregiver exit
+interviews
+
+Children provided feedback on visuals and
+wording in FA reaction scene.
+Edited wording and visuals to address
+feedback.
+
+Parents reported the F3-App prompted
+discussions with their child regarding the
+social pressures of FA, including bullying
+and overall FA management.
+
+Validated importance of inclusion of this
+scene. Feedback used to build content
+for the Parent Dashboard tip sheets.
+
+Full app
+development
+Advisory panel
+Provided information on variety of strategies
+families use to manage social gatherings
+and importance of empowering family
+choice.
+Emphasized importance of children
+developing self-advocacy skills and
+various strategies families use to facilitate
+this.
+Provided information relevant to markers
+of child readiness for carrying and
+administering epinephrine autoinjector.
+
+Feedback used to develop out two new
+experiential contexts: Arcade and a
+Family Barbecue.
+Feedback used to build content for the
+Parent Dashboard tip sheets.
+
+Child and
+caregiver
+focus group
+
+Caregivers highlighted importance of
+addressing fear about epinephrine
+autoinjector and conducting practice
+administrations, as well as communication
+about epinephrine autoinjector with other
+parents in social situations.
+Caregivers shared markers of readiness
+parents they use to gauge child readiness
+for carrying epipen.
+
+Feedback used to develop epinephrine
+autoinjector education included in a
+social scene and epinephrine
+autoinjector tip sheet on Parent
+Dashboard.
+
+Parents stressed importance of and discussed
+strategies to achieve balance of teaching
+children self-advocacy and checking in
+with parent.
+Emphasized child being prepared to
+manage interactions with adults who view
+food allergies as a nuisance and are
+uneducated about food allergies.
+
+Feedback used to develop content for new
+scenarios and inclusion of characters
+representing these perspectives with the
+scenarios.
+
+(table continues)
+
+DEVELOPMENT OF A FOOD ALLERGY INTERVENTION
+147
+
+Caregiver postintervention surveys assessed
+treatment feasibility (i.e., ability to access and
+use the software program), acceptability (i.e.,
+perceived appropriateness and value), and credi-
+bility. An a priori benchmark of 80% of
+
+caregivers reporting favorable outcomes was
+used (e.g., .80% reporting they would refer
+other families). Semistructured exit interviews
+conducted with families assessed acceptability
+and credibility (e.g., feedback about the accuracy
+
+Table 1 (continued)
+
+Phase
+Method
+Themes/feedback
+Corresponding intervention adaptation
+
+Parents shared feedback on Parent Dashboard
+such as details regarding child level
+completion and performance.
+
+Features added to parent dashboard.
+
+Families shared preference for platform.
+PC and Tablet versions developed.
+Children provided positive feedback on new
+teen “coach” avatars (in lieu of narrator
+format used in prototype) and appreciated
+updated visuals.
+
+Retained these features in the F3-App.
+
+Open trial
+Child and
+caregiver exit
+interviews
+
+Like It or Lose It Cafeteria experiential
+context: recommended more food options
+for children with egg allergy, fewer
+“whole/organic” foods, and more
+representation of snack foods.
+
+Expanded food options.
+
+Location of epipen injection was unclear in
+Cafeteria scenario.
+Improved visual to clearly demonstrate
+correct injection site.
+Parents and children provided feedback on
+wording of narration, ease of game
+features, and clarity of game instructions.
+
+Changed wording to match family
+preferences, improved game features,
+and clariﬁed instructions.
+
+Note.
+FA = food allergy.
+
+Figure 2
+Key Aspects of the F3-App, Including the (1) Main User Interface, (2) An Example of an Avatar Used to Help
+Children Navigate Through the Game, (3) Sea Life Spectacular, and (4) Label Learning Game
+
+3. Sea Life Spectacular
+
+2. Example of One Coach
+1. Main User Interface
+
+4. Label Learning
+
+Note.
+Images used with permission from Virtually Better, Inc. (2016). See the online article for the color version of this
+ﬁgure.
+
+148
+
+and representation of the experiential contexts),
+overall impressions (e.g., family discussion gener-
+ated by participating), and child FA knowledge
+acquisition. Quantitative and qualitative data on fea-
+sibility, acceptability, and credibility were reviewed
+prior to proceeding to the next development phase
+to identify areas needing reﬁnement. Information
+from interviews was reviewed and integrated to fur-
+ther improve the F3-App.
+
+Results for Phase 1B: Prototype Pilot
+Evaluation
+
+Feasibility
+
+Several indicators were used to examine feasi-
+bility: families’ ability to access and use the
+F3-App.
+After
+a
+baseline
+assessment,
+the
+F3-App was loaded onto the family’s home com-
+puter (PC or Mac) with few installation difﬁcul-
+ties (two cases; 6.4%), which were resolved
+through consultation with VBI. Families used
+the F3-App at will for 2–4 weeks with little to
+no prompting. Caregivers’ survey ratings indi-
+cated the program was easy to use (Table 3).
+
+Questions from families occurred at 11% of 64
+total scheduled visits or phone calls, and through
+three unsolicited contacts. Data indicated 100%
+of children completed all components of the caf-
+eteria experiential context at least once; most
+revisited various cafeteria vignettes, and all
+revisited the Social Pressure/Bullying vignette.
+All participants spent earned points in the
+Aquarium, purchasing an average of 12 items,
+and often 15 or more (31.3%), indicating that
+all participants used and frequently returned to
+this optional feature, which was designed to pro-
+vide positive reinforcement for engaging with the
+F3-App.
+
+Acceptability
+
+Caregivers consistently provided very positive
+ratings of the overall quality of the App, comfort
+with the presented content, likelihood of recom-
+mending it to other families, and helpfulness for
+children in learning about FA in general and man-
+agement in the school setting (Table 3). In exit
+interviews, families provided positive feedback
+and some suggestions (Table 1). Qualitative data
+
+Table 2
+Demographics and Characteristics of Sample for Pilot and Open Trial
+
+Characteristic
+Phase 1
+Pilot (n = 32)
+Phase 2
+Open trial (n = 39)
+
+Female/malea (%)
+44/56
+46/54
+Child age in years, M (SD)
+9.8 (1.3)
+9.6 (1.3)
+Grade range
+2–7
+2–6
+Race (%)
+White
+81
+74
+Black/African American
+9
+13
+Native American
+0
+0
+Asian
+3
+3
+Mixed race
+3
+8
+Latino ethnicity
+0
+10
+Caregiver 1 education (%)
+≥Completed college
+53
+69
+Caregiver 2 education
+≥Completed college
+41
+74
+Financial strain (%)
+Live “very well” or “comfortably”
+84
+77
+Live “paycheck to paycheck”
+16
+18
+“Almost poor” or “poor”
+0
+0
+Type of common IgE FA (%)
+Peanut
+94
+74
+Tree nut
+69
+74
+Egg
+28
+36
+Milk
+22
+23
+History of anaphylaxis (%)
+53
+53.8
+
+Note.
+FA = food allergy.
+a Child sex was collected as female/male only.
+
+DEVELOPMENT OF A FOOD ALLERGY INTERVENTION
+149
+
+from exit interviews enriched caregiver percep-
+tions of the F3-App’s value: many caregivers
+articulated the unique ability of the F3-App to
+cater to a child’s learning style (e.g., “the software
+program provides different ways of learning about
+how to manage food allergies that a health care
+professional cannot provide”) and to provide a
+new channel of learning (e.g., “children…don’t
+want to listen to parents, doctors, etc. It’s impor-
+tant to have another way to communicate with
+them.”).
+
+Credibility
+
+Surveys and exit interviews evaluated the
+degree of realism of the virtual environment,
+such as represented locations and dialogue, and
+audio and visual features. Overall, caregivers
+provided very positive ratings for each category
+(Table 3). All but one rating (quality of the
+visuals, 78.9%) exceeded our benchmark of
+.80%. Follow-up interviews revealed speciﬁc
+suggestions to improve credibility (e.g., “A real
+cafeteria would be more packed with people”).
+
+Additional Feedback
+
+In exit interviews, children were queried
+about what they had learned relevant to each
+skill (e.g., food avoidance: “What ideas do you
+remember about how to handle when someone
+offers you food?”). Children’s responses con-
+ﬁrmed that educational messages were absorbed
+as intended (e.g., “I learned you have to be care-
+ful about what someone offers you and that you
+have to read the ingredients before you eat some-
+thing that you get.”). Many caregivers (62%)
+reported that using the program prompted dis-
+cussions
+regarding
+FA’s
+social
+pressures,
+including bullying, for example, “… the game
+was incredible. It opened the dialogue between
+my son and I regarding how to deal with situa-
+tions at school.” Some caregivers also expressed
+that the F3-App could reinforce or enhance
+child–physician communication, “The best-case
+scenario for my daughter is to have a conversa-
+tion regarding the issues and then to use self-
+guided software to help formulate her thoughts
+and questions.”
+
+Table 3
+Parent-Completed Feasibility, Acceptability, and Credibility Data Across
+Phases
+
+Intervention aspect assessed
+
+Phase 1:
+percentage
+endorsed
+
+Phase 2:
+percentage
+endorsed
+
+Feasibility
+Ease of movement through the programa
+89.5
+91.7
+Conﬁdence in understanding the
+software’s directions accuratelya
+94.7
+97.2
+
+Acceptability
+Overall quality of programa
+94.7
+88.9
+Would recommend the program to other
+familiesb
+89.5
+86.1
+
+App would be helpful for children
+learning about FA in generalc
+94.7
+94.4
+
+App would be helpful for children
+learning about FA management in the
+school settingc
+
+100
+91.7
+
+Comfort with the experiential contexts/
+vignettes presenteda
+94.7
+97.2
+
+Credibility
+Quality of the audio/soundsa
+94.7
+91.7
+Quality of the visualsa
+78.9
+80.6
+Quality of the realism of locationsa
+84.2
+86.1
+Quality of the dialoguea
+84.2
+88.9
+
+a Percentages
+reﬂect
+endorsement
+of
+ratings
+ranging
+from
+“good”
+to
+“excellent.”
+b Percentages reﬂect endorsement of ratings ranging from “probably”
+to “deﬁnitely.”
+c Percentages reﬂect endorsement of ratings of “very likely” to
+“extremely likely.”
+
+150
+
+Phase 2: Full F3-App Development and Open
+Trial
+
+Phase 2 incorporated feedback from the pilot
+evaluation of Phase 1 to create a fully developed
+version of the F3-App. Changes included expan-
+sion to include the four most common food aller-
+gies (peanut, tree nut, milk, and egg). Based on
+Phase 1 feedback, (a) teen “coach” avatars were
+developed in lieu of a narrator (see Figure 2),
+(b) child voice actors provided narration, (c)
+graphics were improved, (d) increased opportuni-
+ties for parental involvement were created, and
+(e) the program format was transitioned to an
+App with two versions (computer or tablet).
+Increased opportunities for parent involvement
+included a “Parent Dashboard,” with ongoing
+feedback about child progress through the game
+and tip sheets with overviews of child knowledge
+and skills targeted (e.g., label reading), how to
+support skill development (e.g., how to teach
+your child about label reading), and comple-
+mentary information and resources (e.g., laws
+governing food labeling). Finally, a joint care-
+giver–child
+activity
+was
+developed
+(“Game
+Plan”) to facilitate communication and decision
+making around planning for social gatherings.
+Parents and children, together, selected from sev-
+eral strategies to create a personalized family plan
+for these situations (e.g., pack food ahead of time).
+
+Method for Phase 2A: Full F3-App
+Development
+
+Participants and Procedures
+
+An advisory panel and a second set of focus
+groups were conducted to gather feedback on
+this new version, which was then revised and
+evaluated in an open trial.
+
+Advisory Panel
+
+An advisory panel provided feedback and input
+on areas critical to F3-App reﬁnement. Panel mem-
+bers participated in one of two groups. Group 1 was
+composed of a board-certiﬁed allergist and a pedi-
+atric psychologist with experienceworking with FA
+patients and families. Group 2 was comprised of
+another psychologist of similar background and
+experience, two staff from the local chapter of the
+Asthma and Allergy Foundation of America
+(AAFA), and the former leader of a FA support
+group. The groups included an orientation to the
+
+project and the F3-App, as well as questions target-
+ing speciﬁc areas, including management chal-
+lenges not yet represented and ways to enhance
+family discussion and caregiver involvement.
+Procedures for conducting advisory panel discus-
+sions and analyzing the generated qualitative data
+were parallel to focus group procedures described
+above.
+
+Focus Groups
+
+Another set of parallel child and caregiver
+focus groups provided additional feedback on
+new and adapted content. Phase 1 participants
+interested in continued involvement in the project
+and families of children 8–12 years old with
+IgE-mediated FA were recruited, resulting in
+seven families of children diagnosed with FA.
+Following the informed consent/assent process,
+participants completed demographic and medical
+history questionnaires.
+
+Results for Phase 2A: Full App Development
+
+Feedback from the advisory panel was used to
+build content for the Parent Dashboard and to
+develop two new experiential contexts: Arcade
+and Family Barbeque. In the Arcade experiential
+context, players navigate FA management at a
+peer-focused
+birthday
+party.
+Vignettes
+in
+Arcade emphasize preparedness, describing FA
+to others, and food refusal skills. An interactive
+true/false
+quiz
+about
+epinephrine
+is
+also
+included. In the Family Barbeque experiential
+context, vignettes reinforce FA management
+skills and navigating FA communication and
+self-advocacy with adult relatives and an option
+for children and caregivers to jointly construct a
+“Game Plan” to prepare for family gatherings
+(as described above).
+Children who participated in the focus group
+were 10–12 years old (M = 11.14), predomi-
+nantly male (86%; 14% female) and slightly
+less than half were NLW (43%; 29% Black/
+African American; 14% Asian; 14% mixed
+race). Families’ educational levels were as fol-
+lows: all mothers and 58% of fathers had attained
+a college education or higher. Of the participat-
+ing caregivers, ﬁve were mothers and two were
+fathers. All children had an allergy to peanut
+and/or tree nut; the other most reported allergy
+was milk (28%). Forty-three percent had experi-
+enced anaphylaxis.
+
+DEVELOPMENT OF A FOOD ALLERGY INTERVENTION
+151
+
+During focus groups, caregivers highlighted
+additional content to include (see Table 1), such
+as illustrating correct use of self-injectable epi-
+nephrine, and strategies and challenges regarding
+family communication and coordination around
+FA management. Caregivers also voiced prefer-
+ences regarding information they would like to
+receive from the F3-App. Child feedback cen-
+tered around further improvement of visuals and
+preferences about game features.
+
+Method for Phase 2B: Open Trial
+
+Participants
+
+Thirty-nine children with IgE-mediated FA
+and their caregivers were recruited to provide
+feedback on the new and revised components
+of the F3-App (see Table 2 for demographics).
+Phase 2 inclusion criteria were similar to Phase
+1, with slightly broader child age range (inclu-
+sion of 7-year-olds) and additional inclusion of
+milk and/or egg allergy. FA diagnosis was veri-
+ﬁed through identical procedures described in
+Phase 1. Participants from Phase 1a, Phase 1b,
+and Phase 2a were excluded.
+
+Procedures
+
+Families were enrolled in the open trial in one
+of three staggered cohorts to allow for iterative
+waves of feedback. Informed consent and assent,
+baseline questionnaires, and F3-App installation
+on the family’s device(s) were completed during
+a home visit. Families were instructed to use the
+F3-App at their leisure for 2 weeks. A research
+assistant called the family after 1 week to main-
+tain contact and problem solve any issues. A
+follow-up home visit occurred 2 weeks after
+baseline
+to
+readminister
+survey
+measures.
+Families provided feedback about the new expe-
+riential contexts and vignettes through a semi-
+structured interview. Interview content was
+reviewed by the research and technology teams,
+and changes were incorporated for the next
+cohort. Feedback directly informed the content
+and format of the ﬁnal product and the evaluation
+measures to be used in the implementation of a
+future randomized controlled trial (RCT).
+
+Results for Phase 2B: Open Trial
+
+Feedback from Phase 1 participants, our advi-
+sory board, and focus groups was utilized to
+
+develop the Phase 2 version of the F3-App
+(Figure 1). Once initial changes were made to
+the games and the Cafeteria experiential context,
+the research team began collecting data with
+Open Trial participants (n = 39). First, the
+revised Cafeteria experiential context and new
+games versions were tested with 12 participants;
+feedback was collected throughout. Then, once
+developed, the F3-App including the Cafeteria
+and Arcade experiential contexts and the further-
+developed games were tested with 11 partici-
+pants. Lastly, the fully developed prototype,
+with Cafeteria, Arcade, and Family Barbecue
+experiential contexts, plus multilevel, tailored
+versions
+of
+Reaction
+Action!
+and
+Label
+Learning, was evaluated with 16 participants.
+Most families had the software program installed
+on a laptop (43.6%; 38.4% desktop computer;
+17.9% tablet).
+Thirty-six families completed posttest surveys
+and interviews evaluating F3-App feasibility,
+acceptability, and credibility. Given that Phase
+2 involved a substantial expansion of content
+and features, feasibility, acceptability, and credi-
+bility were evaluated with regard to this speciﬁc
+version.
+
+Feasibility
+
+Caregiver survey responses indicated the pro-
+gram was easy to use in terms of ease of move-
+ment through the program and conﬁdence in
+understanding software’s directions accurately
+(see Table 3).
+
+Acceptability
+
+Most caregivers provided very positive ratings
+about the overall quality of the software program,
+the likelihood of recommending the program to
+other families, comfort with the vignettes, and
+the likelihood the F3-App would be helpful for
+children learning about FA in general and about
+FA management in the school setting (see
+Table 3). In feedback interviews, children and
+caregivers described the game as “great,” “enjoy-
+able,” and “fun” and reported that it reduced
+stigma related to FA: “It’s okay that I have a
+food allergy.”
+
+Credibility
+
+With respect to credibility, caregivers posi-
+tively rated the quality of the fully developed
+
+152
+
+F3-App’s audiovisual qualities and realism of
+locations and dialogue (see Table 3).
+
+Additional Feedback
+
+Interviews gathered caregiver and child feed-
+back for further improvement of all content,
+visuals, and instructions (see Table 1). For exam-
+ple, participants provided constructive criticism
+of visuals and suggested additional choice
+options (e.g., adding a strategic option of “Bring
+something to share with everyone” to the family
+barbeque). Examination of children’s responses
+related to key strategies and information they
+remembered conﬁrmed that new content con-
+veyed
+the
+intended
+skills
+and
+knowledge.
+Interview feedback was further integrated into
+the ﬁnalized F3-App for use in the RCT.
+Caregivers described the ability of the game and
+the new caregiver features in prompting family
+communication. As one caregiver stated, “[The
+App] helped me see what I need to reinforce. I
+thought she understood things and obviously she
+didn’t because she got those questions wrong, but
+then we were able to talk about it so that was very
+helpful. It deﬁnitely starts conversations, much
+needed, or necessary conversations.” Finally, care-
+givers reported that the F3-App exposed them and
+their children to new potential challenges and strat-
+egies to manage them; for example, “I deﬁnitely
+saw things [strategies for managing FA in social sit-
+uations] that we usually do in real life, and things
+that I never even thought of before.”
+
+Discussion
+
+This feasibility study describes an iterative,
+user-centered design process to develop and reﬁne
+a novel intervention delivered via interactive soft-
+ware for elementary school-aged children with
+physician-diagnosed IgE-mediated FA. The pur-
+pose of this intervention is to provide support, edu-
+cation, and skill acquisition to children with FA
+and their caregivers to help them manage their
+FA. Ultimately, participants rated the F3-App as
+acceptable and credible, found the content useful,
+and reported the F3-App prompted family discus-
+sions about managing their child’s FA.
+Reviews of existing apps marketed for FA reveal
+that feware speciﬁc to IgE-mediated FA, many lack
+adequate education and medical guideline-focused
+recommendations, many focus on identifying
+safe foods/restaurants, and collaborations with
+
+community partners are needed (Cuervo-Pardo et
+al., 2015; Mandracchia et al., 2020; Matricardi et
+al., 2020). Development of this interactive educa-
+tional software program focused on IgE-mediated
+FA included perspectives of medical providers
+critical to ensure consistency with medical guide-
+lines, and educational material and skills appropri-
+ate for this developmental age group. Caregiver
+and child input also informed formulation of expe-
+riential contexts and vignettes, including manag-
+ing social situations (e.g., resisting foods offered
+by adults), and responding to teasing and bullying.
+Feedback also provided valuable input into visual
+presentation and user features, including the user
+interface and methods of sustained engagement
+throughout the program. Finally, caregiver feed-
+back indicated that increased communication
+about social issues relating to FA management
+was a key beneﬁt of using the F3-App. This
+aided in further development of intervention ele-
+ments promoting caregivers’ involvement and
+family discussion of FA management.
+Findings indicate that this iterative, user-centered
+design process was effective in creating an interven-
+tion for elementary school-aged children with FA
+with acceptability and credibility. Use of quantita-
+tive metrics and qualitative input from key partners
+throughout development helped to identify and pri-
+oritize areas for targeted change and further devel-
+opment. The F3-App was described as enjoyable
+and a helpful learning and communication tool.
+Apps are recognized as a valuable tool to sup-
+port self-management in chronic conditions
+(Ackerman et al., 2010) and use of this interven-
+tion method could inform design of future apps
+targeting pediatric self-management. This study
+supports the use of interactive educational soft-
+ware programs for pediatric populations includ-
+ing FA given their highly engageable format. In
+addition to potentially enhancing knowledge
+and management self-efﬁcacy, interactive educa-
+tional software programs can facilitate exposure
+to social scenarios that require unique skills for
+FA management, facilitating parent–child com-
+munication and planning for effective manage-
+ment. This last point is particularly critical;
+while successfully navigating social situations
+is critical to FA management, it is often not
+addressed in FA clinical care. Interactive educa-
+tional software programs also have the capability
+to tailor intervention content to children’s aller-
+gies, which is important given the diversity of
+this condition and the fact that children’s
+
+DEVELOPMENT OF A FOOD ALLERGY INTERVENTION
+153
+
+allergies may change over time. Finally, this for-
+mat allows families to revisit experiential con-
+texts to refresh their knowledge and practice
+management of different situations as children
+mature (e.g., explaining FA in social situations).
+These study ﬁndings support progression to the
+next phase of behavioral intervention development:
+pilot testing of the F3-App using a randomized
+design (Czajkowski et al., 2015). This RCT will
+examine the efﬁcacy of the F3-App versus
+Standard Care (SC; brief ofﬁce visit and educa-
+tional handouts) using a crossover design to evalu-
+ate the combined effects of SC and the F3-App
+(e.g., is the greatest efﬁcacy found after a physician
+refers family to use the F3-App after an ofﬁce
+visit?). We will assess changes in children’s FA
+knowledge and FA self-efﬁcacy and changes in
+parent–child communication regarding FA man-
+agement. Intervention outcomes will be presented
+in a separate article. We plan to disseminate this
+product for wide availability to families through
+VBI’s pediatric health product suite supported
+with marketing sponsorships and advertising part-
+nerships. Distribution will be supported through
+self-promotion, national patient support groups,
+and
+professional
+medical
+organizations.
+The
+F3-App has the potential to signiﬁcantly impact
+families of children with FA who beneﬁt from
+enhanced education and skills practice via engag-
+ing, easily accessible formats.
+
+Study Limitations
+
+A few key limitations bear mention. Our study
+samples were primarily NLW and overrepresented
+higher socioeconomic status. Including children
+from diverse racial, ethnic, and socioeconomic
+backgrounds is important given likely disparities
+in FA management (e.g., epinephrine access/use,
+access to medical care, and food access/security)
+(McQuaid et al., 2016). More diverse samples
+would promote broader inclusion of culturally
+based FA beliefs and family management practices
+and is an important consideration prior to dis-
+semination of this intervention. Use of speciﬁc
+recruitment strategies (e.g., community events,
+organization, and locations) and translation of the
+intervention into Spanish could enhance diversity.
+Additionally, most participating caregivers were
+mothers. A broader representation of family
+members would incorporate different perspec-
+tives involved in FA management. While we
+assessed family preferences and sought to make
+
+the F3-App available across multiple platforms
+and operating systems, there may be families
+with limited access to these resources. Use of the
+F3-App in settings outside of the home (e.g., phy-
+sicians’
+ofﬁces,
+public/school
+libraries)
+may
+improve access and uptake of this intervention
+and enhance or reinforce both child-caregiver
+and family-provider communication regarding
+FA management. While our methods integrated
+community partner feedback and an iterative
+design, incorporation of an organizational frame-
+work speciﬁc to intervention development, such
+as the ORBIT model (Czajkowski et al., 2015),
+would have further strengthened study design.
+The app content could be adjusted to reﬂect
+updated approaches to FA management since
+its development (e.g., food choices based on
+precautionary
+labeling).
+The
+technological
+methods used to create the F3-App were also
+highly relevant during the study time period
+(i.e., 2013–2016), yet future research could
+incorporate the ever-progressing technological
+advancements for intervention development.
+
+Conclusion and Future Directions
+
+Interactive educational programs have increas-
+ingly become important adjunctive disease manage-
+ment tools (McCurdie et al., 2012) and can enhance
+children’s conﬁdence in FA management and fam-
+ily communication regarding the stresses and chal-
+lenges of disease management. Yet, future work is
+needed to promote diversity, equity, and inclusion
+(DEI) in intervention development and implemen-
+tation. Given racial and ethnic disparities in
+FA-related outcomes (Warren et al., 2021), success-
+ful dissemination of educational programs to the
+diverse group of patients with pediatric FA is criti-
+cal. Once educational programs, like the F3-App,
+have demonstrated efﬁcacy, research and clinical
+care teams should consider how to incorporate
+these interventions into existing care models (e.g.,
+appointments with allergists, other specialists, pri-
+mary care providers, school settings) or to have
+interventions be available through the internet to
+increase accessibility. Including individuals from
+diverse backgrounds from the intervention develop-
+ment through implementation stages is essential to
+promote health equity. Moving forward, DEI efforts
+will remain central as our team begins pilot testing
+of the F3-App using an RCT to evaluate the impact
+on FA management, adjustment, self-efﬁcacy,
+knowledge, and family communication.
+
+154

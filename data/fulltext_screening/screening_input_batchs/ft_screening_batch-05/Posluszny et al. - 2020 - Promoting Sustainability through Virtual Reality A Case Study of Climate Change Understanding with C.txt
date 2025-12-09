@@ -1,0 +1,808 @@
+Promoting Sustainability through Virtual Reality: A 
+
+Case Study of Climate Change Understanding with 
+
+College Students 
+
+ 
+
+Monica Posluszny  
+Human Centered Design & Engineering 
+
+University of Washington 
+
+Seattle, WA, USA 
+
+Geon Soo Park  
+Digital Tech. Center 
+
+SK Holdings C&C 
+Seongnam-si, Gyeonggi-do, Republic of Korea 
+
+Irini Spyridakis 
+Human Centered Design & Engineering 
+
+University of Washington 
+
+Seattle, WA, USA 
+
+Sarina Katznelson 
+Human Centered Design & Engineering 
+
+University of Washington 
+
+Seattle, WA, USA 
+
+Sam O’Brien 
+
+Attain LLC  
+Tacoma, WA, USA  
+
+Abstract—The primary objective of this case study was to use 
+a user centered design (UCD) process to create a virtual reality 
+(VR) educational experience that could instill empathy and 
+encourage behavior change concerning climate change in an 
+American city. We developed a VR prototype concerning flooding 
+caused by climate change in Miami. Guided by the UCD process 
+that takes into account the users’ context and needs, our methods 
+consisted of a literature review, participatory design, semi-
+structured interviews, a focus group, an affinity diagram of the 
+interview and focus group results, ideation, storyboarding, and 
+prototyping. We used information from the literature and from 
+participants concerning what they believed would impact their 
+thinking regarding climate change and incorporated those 
+perspectives into our VR prototype. We sought to demonstrate the 
+value of incorporating user feedback into the design of a VR 
+experience. Throughout the process, we addressed many of the 
+United Nations’ Sustainable Development Goals, ranging from 
+climate action and quality education to resilient, safe, and 
+inclusive cities and communities, addressing some of the world’s 
+grand sustainability challenges. 
+
+Keywords—climate change, education, sustainability, virtual 
+reality (VR), user centered design, technology, social impact 
+
+I. INTRODUCTION 
+This paper presents an exploratory case study in which we 
+applied the user centered design (UCD) process to create a 
+virtual reality (VR) educational experience concerning the 
+effects of climate change in an American city. We employed 
+persuasive user experience (UX) concepts to design a VR 
+experience that could instill empathy and encourage behavior 
+change. Our goal was to use a participatory design approach to 
+explore VR as an approach to sustainability education.  
+
+Climate change refers to natural and human causes for 
+warming and its effect it on the planet, as well as related long-
+term changes in weather patterns regionally and globally. Many 
+regions of the world are experiencing warming that is higher 
+than the global average, with warming higher over the land area 
+than over oceans. Up to 40% of humans live in areas that 
+experienced warming of greater than 1.5 degrees C in one season 
+above pre-industrial times by 2015 [1]. If the VR experience we 
+designed shows how life could look on American soil 50 years 
+into the future, then it is possible that it could spark a behavioral 
+change that might reduce climate change. 
+
+To address the issue of climate change, we conducted a case 
+study that used Virtual Reality (VR) as a tool that could create 
+empathy, build awareness, and incite behavior change 
+concerning climate change. VR has been on the rise in recent 
+years, showing drastic improvements in the quality of immersive 
+experiences possible on devices. VR has proved to be a powerful 
+empathy-building tool [2]. VR has made it possible for 
+participants to personally experience stories of people from 
+across the globe. Recognizing VR’s enormous potential has 
+revealed the importance of making this resource accessible to 
+students who could use it in creative ways to share stories that 
+need to be heard.  
+
+Designing successful VR experiences draws on expertise 
+across many disciplines both technical and artistic. For example, 
+STEAM (Science, Technology, Engineering, Arts, and 
+Mathematics) education incorporates the arts into traditional 
+STEM fields, promoting an interdisciplinary approach to 
+problem-solving and opening up pathways to diverse learning 
+styles. Encouraging and including diverse thinking and 
+embracing an interdisciplinary approach to problems is key to 
+coming up with creative solutions. 
+
+978-1-7281-7388-7/20/$31.00 ©2020 IEEE
+
+2020 IEEE Global Humanitarian Technology Conference (GHTC) | 978-1-7281-7388-7/20/$31.00 ©2020 IEEE | DOI: 10.1109/GHTC46280.2020.9342907
+
+Miami, Florida, was chosen as the setting for this project as 
+research has shown that climate change is already impacting this 
+city [3]. Many Americans have remained largely unaware that 
+the issues that did not seem to affect them have already reached 
+their shores. To decide on an effective story and design for our 
+VR project, we conducted an extensive literature review; held 
+semi-structured interviews with professors who teach about 
+sustainability and also college students; led a focus group; and 
+engaged in many design activities.  
+
+The primary objective of this case study was to use 
+information gathered from the literature and from users, given 
+the user centered design (UCD) process, that would facilitate the 
+design and creation of a VR experience about the effects of 
+climate change in an American city. The purpose of the story 
+being told in VR was to influence Americans to spark change, 
+which is why the concept strives to incorporate persuasive 
+design, which is a design based on psychological and social 
+theories with the purpose of influencing human behavior, in this 
+case to prevent climate change. We addressed many of the 
+United Nations’ Development Goals, ranging from climate 
+action and quality education to resilient, safe, and inclusive 
+cities and communities, addressing some of the world’s grand 
+sustainability challenges. 
+
+This paper briefly reviews relevant literature, presents our 
+methods, describes results and discussion, and ends with 
+conclusions and a discussion of future work. 
+
+II.  RELEVANT LITERATURE 
+
+We briefly examined relevant literature on climate change; 
+empathy, prosocial behavior, and VR; VR and education; and 
+storytelling methods. 
+
+A. Climate Change 
+
+According to the Sierra Club’s Dave Tilford, the U.S. has a 
+very small percent of the world’s population (5%) yet it uses 
+close to 30% of the world’s paper, 25% of the world’s oil, 23% 
+of its coal, 27% of its aluminum, and 19% of its copper [4]. 
+There are differing views of what Americans know and do about 
+climate change. Many believe that Americans are not very aware 
+of the significant impact their country has on climate change. 
+Understanding of climate change is quite low with the general 
+public, college students, and even college students in STEM 
+disciplines [5], [6], [7], [8], [9], [10]. However, Semenza et al., 
+after surveying 1,202 Portland and Houston residents, found that 
+a majority had “heightened concern about climate change but 
+there were “number of cognitive, behavioral, and structural 
+obstacles to voluntary mitigation” [11]. In other words, even 
+those with awareness did not necessarily carry through with 
+behavior change. 
+
+B. Empathy, Prosocial Behavior, and VR 
+
+Many have maintained that VR can promote empathy and 
+support prosocial behavior [12], [13]. Herrera et al. assessed the 
+value of using VR to build long-term empathy in two 8-week 
+studies with >560 participants, ranging in age from 15-88 years 
+old [14]. Some participants had an immersive VR experience 
+concerning the homeless and some had a more traditional task 
+such as reading about the homeless. The VR participants were 
+more likely to have long lasting positive attitudes about the 
+
+homeless and were more likely to sign a petition supporting 
+affordable housing than participants who read the narratives. 
+Schutte and Stilinović investigated whether VR can increase 
+empathy and engagement [1]. They assigned participants to 
+view a documentary of a young girl living in a refugee camp 
+either in a VR format or a 2-D format. Participants in the VR 
+condition had greater engagement and empathy for the refugee 
+girl vs. participants in the control condition. In a 2015 VR film 
+about a Syrian refugee camp, participants live a day in the life 
+of a 12-year-old child living in a Syrian refugee camp since 
+2013. Initial evidence has shown that VR is twice as effective in 
+fund-raising [15]. B.G. Fogg asserts that for a person to affect 
+behavior, the person must simultaneously “(1) be sufficiently 
+motivated, (2) have the ability to perform the behavior, and (3) 
+be triggered to perform the behavior,” aka motivation, ability, 
+and prompt [16]. 
+
+C. VR and Education 
+
+VR is increasingly used in training and education given its 
+ability to motivate users and stimulate learning and 
+comprehension activity [17], [18], [19], [20]. Spaces that are 
+difficult to access in the real world provide rich material for VR 
+exploration and include sites of danger, physically inaccessible 
+sites, or experiences that involve an element of time travel [21]. 
+
+VR provides unique immersive user experiences in 
+education environments by creating a sense of presence and co-
+presence, and through the construction of identity. These user 
+experiences provide a range of features that can aid in learning. 
+The following five features can result in learning outcomes and 
+benefits: (1) experiential learning, (2) collaborative learning, (3) 
+contextual learning, (4) engagement, and (5) spatial knowledge 
+representations [22]. While constructivism has been widely used 
+as a theoretical framework for VR education, a more detailed 
+pedagogical framework that encompasses the features above 
+advocated by Mayes an Fowler consists of three learning stages: 
+conceptualization, construction, and dialogue [23]. Each stage 
+touches on conceptual, task, or social forms of immersion. These 
+stages vary in levels of abstraction and task ability with 
+conceptual immersion representing more abstract concepts in 
+which learners engage in identifying and empathizing with 
+concepts, task immersion representing more realism where 
+learners need to make concepts more concrete, and dialogue 
+depending on learners sufficiently understanding the content so 
+as to be able to structure discussions and arguments. 
+
+Identifying educational goals and the context of the learning 
+environment is critical. Factors to consider include teacher 
+dynamics (class size), group dynamics (collaboration, 
+interdisciplinary and size), the degree of realism in various tasks, 
+and the level of interactivity desired [23]. 
+
+Art can play a dynamic role in creating realism. Jordan 
+Potash addresses the important role of art therapy in driving 
+social change and states that it is important to create visuals that 
+increase viewers’ receptivity to the messages being portrayed so 
+as to create empathy and impactful change [24]. 
+
+D. Storytelling Methods 
+
+We completed a competitive analysis of different 
+storytelling methods with strong visual components to better 
+understand various forms of conceptual, task, and dialogue 
+
+immersion. Storytelling for sustainability creates affordances for 
+users to build social capital and contribute to sustainability 
+conversations by challenging assumptions, creating awareness, 
+and becoming agents of social change. Fischer et al. [25], 
+Pantelidis [26], and Mantovani [27] state that VR harnesses the 
+power of the visual through new forms, offering a variety of 
+learning styles and experiences to diverse learners. We drew 
+visual inspiration from the Netflix documentary Chasing Coral, 
+where the filmmaker kept the story engaging by illustrating the 
+interdependence of the ocean’s various forms of life along with 
+powerful cinematography [28]. Theater design was also 
+examined and provides VR designers with a plethora of 
+expertise to draw from for VR experiences. 
+
+III. METHODS 
+
+As a methodological framework, we employed a user 
+centered design (UCD) process to create a VR experience over 
+a 10-week time frame and conducted semi-structured interviews 
+with professors and students, a focus group with students, an 
+affinity diagram, ideation, storyboarding, and prototyping. We 
+also reviewed relevant literature, some just discussed, and some 
+discussed where relevant in this section. 
+
+A. User Centered Design (UCD)Process  
+
+We employed a UCD process, employing roles as 
+participatory designers. The UCD process builds empathy for 
+users and takes into account the users’ context and needs. The 
+process also includes the users in the design process, allowing 
+room for feedback and iterations along the way.  
+
+As participatory designers in the UCD process, we worked 
+in a research group of four undergraduate students comprised of 
+three American students and one international student with 
+guidance from our professor in order to explore possible 
+approaches for our VR research and experience. Over the course 
+of a 10-week quarter, we met twice weekly. Towards the end of 
+the project, we scheduled more group sessions with the goal of 
+completing the prototype. Before beginning the project, we 
+created a plan that divided up how we planned to execute the 
+project. The first two weeks were dedicated to research, the third 
+and fourth week to ideation and storyboarding, and the final 
+weeks focused on learning and creating the final prototype in 
+Blender and Unity. Blender and Unity have large learning 
+curves, which is why we decided to leave the most time for the 
+prototype. 
+
+The research was the most important part as it set the 
+foundation for creating an effective, immersive experience. In 
+participatory design “members of the wider community...are 
+also recognized as legitimate stakeholders with the ability to 
+impact the project” [29], [30], [31]. Aside from the main design 
+team, college students and sustainability professors also took on 
+the role of participatory designers. Their input on what impacts 
+them, specific climate knowledge, knowledge on what needs to 
+be done to address climate change was important for making 
+sure that the VR experience would make a difference regarding 
+perspectives on climate change.  
+
+The entire team was interested in virtual reality design, but 
+team members approached the project with varied interests in 
+different parts of the VR design process. Two of our members 
+had more of an interest in the artistic side of the VR design 
+
+process, which led to the focus on exploring 3D art in Blender. 
+The other two members wanted to learn the more technical side 
+and focused on using Unity to put together the prototype. 
+
+B. Semi-Structured Interviews and Focus Group 
+
+To decide on an effective story that would move users to care 
+about climate change, the case study began with research. This 
+process incorporated semi-structured interviews with two 
+professors who teach sustainability classes, five college-age 
+students, and one focus group with four students. Interview 
+questions with the sustainability professors focused on what has 
+proven to be effective in sparking action with regards to climate 
+change. Additionally, questions explored how to inform the 
+public about climate change. The remaining interviews focused 
+on probing students on their current climate change knowledge, 
+personal impact, and what engages people in different stories, 
+whether that be movies, books, etc. 
+
+C. Affinity Diagram 
+
+From the semi-structured interviews and the focus group, we 
+analyzed qualitative data on people’s general thoughts on 
+climate change and virtual reality and used an affinity diagram 
+to organize some of the essential topics that we found from our 
+research. We clustered that analysis into a table displayed in the 
+results section. 
+
+D. Ideation 
+
+After analyzing the research, the next steps were 
+scriptwriting, story write-ups, and sketching using divergent and 
+convergent design sessions. To begin the ideation sessions, 
+every team member engaged in an individual free-write of the 
+entire experience from start to finish, based on tips in Casey 
+Fictum’s book VR UX [32]. In addition to the general storyline, 
+the brainstorms included lighting, interactions, sound, and color 
+ideas for different scenes. Following the completion of 
+individual 
+brainstorming, 
+the 
+team 
+came 
+together 
+collaboratively to develop an immersive storyline and script. 
+
+E. Storyboarding 
+
+After the ideation process, we created a storyboard, complete 
+with details regarding how a scene should look and added the 
+triggers that lead the user to the next scene. Vincent McCurley’s 
+VR 360 storyboarding sheets were a valuable resource during 
+ideation and storyboarding phases [33]. The main challenge was 
+to maintain a balance between letting users explore the world a 
+bit but also have a clear indication of what they should do to get 
+to the next scene.  
+
+F. Prototyping 
+
+Due to time constraints, after storyboarding, our goal was to 
+create the initial prototype using Unity, a game engine, and 
+Blender, a modeling tool. However, it was necessary to first 
+learn the tools. Two team members focused on learning Unity 
+and figuring out the set-up while two team members learned 
+how to use Blender following online tutorials. Another reason 
+for jumping straight into creating the experience was to have 
+time to navigate any roadblocks in the digital creation process. 
+One challenge here was finding 3D models with a consistent art 
+style. 
+
+IV. RESULTS AND DISCUSSION 
+
+To facilitate a more complete understanding and 
+interpretation of the results and their implementation into the VR 
+experience that we developed, we combined results and 
+discussion. 
+
+A. Participatory Design, Semi-Structured Interviews, and 
+
+Focus Group 
+Our participatory design, interviews, and focus group 
+yielded results that show that VR could help foster empathy 
+concerning the effects of climate change. Participants expressed 
+that they wanted to help, but did not know how. In addition, they 
+revealed that seeing the effects of a city close to their home had 
+a larger impact, and that the direct impact can then be showcased 
+through immersion into the VR experience. 
+
+Our participants expressed the positive impact that imagery 
+has on them in inciting empathy. One college student participant 
+stated that images of sea turtles entangled in plastic made her 
+want to help them: “What gets me is the sea turtles, with the little 
+coke plastic things [around their necks]...if you’re [going to] 
+throw them away at least cut them up.” However, we also found 
+that even though the images and stories of climate change elicit 
+strong reactions from participants. They can often turn a blind 
+eye because of the oversaturation of such ideas without the 
+means to individually provide assistance. When asked what 
+stands out about climate change, one participant stated, “Well to 
+be honest it doesn’t really shock me anymore, I just read stuff 
+online I’m like ‘oh’.”  
+
+Although participants may possess some motivation, they 
+stated they often do not have the ability or a prompt to actually 
+produce a behavior in combating climate change (see Table I for 
+more details). To balance imagery but not overwhelm 
+participants with it as well, we made sure to end our experience 
+on a positive note with a call to action about what you can do 
+today to make a difference. After having participants experience 
+what the future could look like, they realized it was a dream and 
+they headed over to a climate change rally (see Fig. 3c). 
+
+We wanted to leverage participants’ feelings about imagery 
+through our VR design. Our findings further solidified the idea 
+that VR could be a great empathy-building tool. Participants 
+made statements such as “[VR] is a technology that allows for 
+in-depth experiences” and “I think VR is a good learning tool 
+for experiences. It's very immersive...you can capture something 
+like my experience with the climate change rally.” VR would 
+allow people to see places being impacted without having to 
+travel to them. To address the lack of ability or a prompt, we 
+provided a “How You Can Help” screen at the conclusion of the 
+VR experience including relevant resources for the user to take 
+further action. 
+
+When asked what had a large impact on participants 
+regarding climate change, many participants replied that the 
+largest impact occurred when the effects could be seen close to 
+their home or a place they frequent. For example, a college 
+student participant stated that she read an article about climate 
+change in a city because she “had a personal connection to it,” 
+and felt more impacted by it since she had such “vivid 
+memories” about the town. Since our study focused on students 
+in America, we chose Miami to depict effects of climate change, 
+
+especially because so many Americans are unaware of the 
+surprising effects like water level rise and acidification. 
+However, when adapting the idea of using VR for empathy 
+about climate change to different countries around the world, it 
+would be beneficial to depict the effects of a city in a relevant 
+country. 
+
+B. Affinity Diagram 
+
+Using an affinity diagram, we clustered the results from the 
+semi-structured interviews and focus groups concerning climate 
+change and virtual reality into the groups seen in Table 1. To 
+create the table below, we took the qualitative answers from the 
+interviews and focus groups and typed them on digital post-it 
+notes in Lucidchart and arranged and rearranged the post-it notes 
+many times until the groupings that appear in Table 1 surfaced. 
+We grouped the nine groups into three subcategories regarding 
+college students’ feelings toward climate change, effective 
+storyboard ideas, and all participants’ feelings about VR. As the 
+content of the Table I shows, people want to help but have little 
+understanding. As mentioned earlier, they are concerned about 
+resources and believe stories would be helpful and VR could be 
+helpful if content hit close to home. However participants 
+cautioned that VR can cause motion sickness.  
+
+TABLE I.  
+AFFINITY DIAGRAM TABLE OF SEMI-STRUCTURED 
+INTERVIEW AND FOCUS GROUP RESULTS 
+
+ 
+
+C. Ideation 
+
+While climate change is a worldwide issue, the results from 
+the interviews showed that for the user group (American 
+college-age students), an experience showing an American city 
+being affected by climate change would be more effective in 
+showing that climate is a pressing issue that needs to be 
+addressed. Miami was the city of choice for the VR experience 
+for a few reasons. One is that Miami is a global hub. In 2017, 
+“Miami ranked 30th on A.T. Kearney’s Global Cities Index, just 
+behind Frankfurt and Dubai. With its enviable location, 
+prominent international airport, and major port, Miami now 
+serves as an economic and financial hub for Latin America and 
+a gateway to Europe and the rest of the world” [34]. Miami is 
+also already seeing impacts from climate change. The flooding 
+in Miami since 2006 has increased mostly during high tide [3]. 
+“The average rate of sea-level rise in Southeast Florida increased 
+from 3 ± 2 mm/yr. prior to 2006 to 9 ± 4 mm/yr. after 2006” [3]. 
+
+Unless action is taken to address climate change, Miami could 
+see major damage in the near future while simultaneously 
+impacting citizens from across the world. 
+
+To further increase immersion in the story, our team turned 
+to psychology principles to engage users in VR. Maslow’s 
+hierarchy of needs maintains that all humans strive to climb the 
+hierarchy from the basic needs of food, water, and shelter to 
+esteem and self-actualization [35]. To achieve these needs 
+requires a person to feel a great amount of control over their 
+environment. To make a user experience the most aligned with 
+user goals, designs should allow for user control. For this reason, 
+our team decided to allow for control and interaction within our 
+virtual world--the user can look and walk around, and pick up 
+and examine objects in the scenes. Rather than depicting our 
+story as a VR movie, this user agency allows for higher 
+comfortability, immersion, and engagement with the story.  
+
+In addition to focusing on what keeps users engaged in 
+virtual reality, we sought to incorporate persuasive UX so as to 
+persuade participants to care about climate change. We also 
+sought to move the user into taking action against the effects of 
+climate change. Following Fogg’s model [16] of motivation, 
+ability and prompt, we designed the storyline to motivate the 
+user, provide links to assist in the climate change issue to allow 
+the user the ability to help, and prompt them at the end of the 
+experience to follow through with resources provided. 
+
+D. Storyboarding and Prototyping 
+
+1) Storyboarding: Starting in Miami 
+ Our storyboard starts out in Miami, Florida, along Ocean 
+Drive, a fairly well-known area of art deco architecture usually 
+bustling with people. The sun is setting, casting an eerie glow on 
+the scene. The user finds themselves standing knee deep in water 
+with an “Ocean Drive” street sign floating by and everything is 
+completely abandoned (see Fig. 1).  
+
+Fig. 1. Miami, Florida: Ocean Drive 
+
+When creating a VR experience, it is important to allow the 
+user freedom to explore but indicators, such as lighting, 
+movement, or sound, help guide the user to continue the story. 
+In this case, the user hears a splash and will see a fish swimming 
+around their legs (see Fig. 1). A fish then swims into an open 
+building (see Fig. 2a). When the user follows the fish, they will 
+find themselves in an empty apartment building. Leftover 
+
+furniture and photos are scattered around the flooded and 
+abandoned apartment. A glass of water is sitting on top of the 
+kitchen counter . Everything in the apartment is dark; only light 
+from the window illuminates the glass (note the arrow in Fig. 
+2a), indicating to the user to pick it up. When the user picks it 
+up, they suddenly hear the voice of a fisherman, telling them the 
+freshwater is contaminated and has been so for a long time (see 
+Fig. 2b). The fisherman begins to describe how life used to be 
+and what happened over time. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 2. Example of Persuasive UI Pattern  
+
+The persuasive concept of scarcity was implemented in 
+Figure 2 with the glass of water to show how it can trigger a 
+desire to act, given the less available we find something to be 
+(free drinking water, in this instance), and therefore the more 
+value we assign to it [16]. In the scenes in Figure 2, we wanted 
+users to feel the lack of freshwater as it was contaminated by 
+ocean acidification.  
+
+In Figure 2b with the human guide expressing emotion 
+throughout the VR experience, the fisherman shows emotional 
+expressions as he describes what has happened in Miami in the 
+last few decades. The goal was to see if this would help users 
+empathize more. Human presence has a great effect on emotions 
+and helps to place the user in someone else’s shoes. By using a 
+human form and voice to communicate the effects of climate 
+change throughout the scene, we hoped to further incite 
+empathy. 
+
+As is shown in Figures 3a-3c, the user wakes up and realizes the 
+future has not yet occurred and still has a chance to act (Fig. 3a), 
+picks up a poster about a climate change rally (Fig. 3b), and 
+attends the rally where they learn what action they can take (Fig. 
+3c). This user gets a chance to take behavioral action based on 
+the VR script and become a change agent for sustainability. 
+Figures 2 and 3 show users considering or taking action for 
+climate action for safe and inclusive cities and communities, 
+some of the United Nations’ Sustainable Development Goals. 
+
+ 
+
+Fig. 3. Persuasive UI, Social Proof 
+
+2) Storyboarding: Leaning on the Arts 
+During storyboarding, many opportunities arose to 
+implement 3D and 2D art. The art opportunities within VR show 
+potential for overlap in this area of study. Two difficulties 
+Jordan Potash [24] brings up regarding the role of art driving 
+social change is “how to make viewers receptive to the artist’s 
+message and … [how] to sustain empathic feelings long enough 
+to result in meaningful change.” This is where VR comes in with 
+its power to literally put a participant in someone’s shoes. As 
+mentioned earlier, empathy-building is a strength in VR and art 
+additionally creates a bridge between different perspectives. 
+Besides bringing social change, VR can additionally bring a 
+personal story to life.  
+
+During the creation process, multi-disciplinary skill sets 
+were needed to complete the experience. This included but was 
+not limited to 3D art, writing, coding, theatre design, 
+sustainability experts, etc. The UCD process offers much 
+opportunity for overlap within the arts, which is what reaches 
+out and touches people when it comes to empathy. In the case of 
+VR, 3D artists are needed to create the models needed for 
+experience, theatre design can be incorporated with how models 
+are arranged in a scene and lighting to set the mood, writing to 
+create an engaging story, music for mood-setting, knowledge on 
+lighting, psychology in regards to what tricks the brain into 
+believing an immersive experience is real and more. VR proved 
+to be an effective medium to be incorporated into STEAM 
+education.  
+
+The implementation of art during the creative process of 
+making this VR project come to life was a major aspect of the 
+project. The beginning of the project was done with relative ease 
+as it involved pen, paper, and brainstorming between team 
+members with different areas of expertise. In hindsight, the 
+storyboard and script could have been iterated and tested more 
+before attempting to translate it into a 3D space as the 3D 
+creation process was time consuming. 
+
+3) Storyboarding: Realistic vs. Cartoon VR Scenes 
+This project was set to be in a fairly realistic scene as the 
+goal was to show users what their “home” could look like in 
+future decades. It seemed intuitive that having a more realistic 
+scene would impact users and help imagine how America could 
+look into the future. However, a sense of immersion is created 
+in different ways. For example, having hands on experience and 
+making sure to match real-life hand movements creates 
+immersion [36]. There is also the question of when making VR 
+experiences “realistic,” creators risk entering “uncanny” valley 
+[36]. This occurs when “observer comfort increases as a 
+character becomes more human-like up until a certain point at 
+which observers start to feel uncomfortable with the almost, but 
+not quite, human character.” If the fisherman in the story looked 
+almost human but not quite, this posed a risk of making 
+participants of the experience uncomfortable. The question here 
+is, since entering “uncanny” valley is a risk, does the project 
+need to be realistic to get the climate change message across? 
+Will users still be impacted if the story is less visually realistic? 
+Further testing would be needed to answer these questions. 
+Additionally, if the experience is less realistic, much more free 
+3D models are available online for use on sites such as Google 
+Poly (which would be easier to use within a STEAM classroom). 
+
+4) Storyboarding: Collaborative Development Team 
+Many prototyping ideas and suggestions are online, one of 
+which was being able to act out VR scenes with teammates. This 
+approach can be a fun way to prototype and test ideas in a 
+classroom with no tools needed, just creativity from all 
+participants. In terms of story creation, brainstorming, and 
+research, there was considerable space for collaboration. Work 
+could be divided among team members to be combined later in 
+the process. In this process, there was a space for diverse 
+thinking depending on the expertise of each team member 
+during ideation. Collaboration became difficult when it came to 
+different skill levels. Additionally, lowering barriers to this 
+technology will lead to more diverse thinking when creating 
+experiences. Diverse thinking leads to more creative solutions. 
+
+5) Prototyping: Constraints in VR Development 
+As we developed the prototype, some constraints stemmed 
+from high learning curves for programs, limited VR headset 
+availability, and time constraints on our group as we conducted 
+this project over an academic quarter. The main tools used for 
+bringing the story to life were Unity and Blender. This project 
+and research were done over the course of a 10-week quarter and 
+the last few weeks were spent learning Unity and Blender and 
+this learning curve competed with completing the prototype. 3D 
+models can be found online; however, many of them need to be 
+paid for and the models that are free do not necessarily all have 
+the same style.  
+
+When building a scene, it is important for everything to be 
+consistent; otherwise, you could break immersion. Figure 4 
+shows an example of applying skills learned from Andrew 
+Price’s Blender Beginner series on YouTube to create a more 
+realistic Betsy Ross hotel, one of the businesses on Ocean Drive. 
+
+Fig. 4. Betsy Ross Model Work in Progress in Blender 
+
+One constraint we encountered in this type of VR 
+development concerned the availability of VR headsets. One 
+team member owned a headset and was able to put together an 
+initial prototype. The rest of the team relied on equipment 
+rentals; however, there was a wait time and the rentals lasted 
+only one week. There was a time restriction on having enough 
+time to consistently test and prototype within Unity. One 
+drawback in universities is that VR headsets are not always 
+readily available. However, Google Cardboard or phone VR 
+headsets can be a good alternative in starting out designing for 
+VR. There are trade-offs: higher end headsets such as Oculus 
+offer more immersive experiences but for a much smaller 
+audience since there has not been widespread adoption. Google 
+Cardboard or any other VR sets use a phone that leads to less 
+immersion and less interaction, immersion and less interaction, 
+but has a much wider audience and the tool is much more 
+accessible for use within a classroom [32].  
+
+If VR headsets had been more readily available at the time 
+of this project, some additional tools that would have potentially 
+benefited the project are Microsoft Maquette, Google Blocks, 
+and Tilt Brush. These tools have been created for quick 
+prototyping directly in VR. These tools, had they been available, 
+would likely have shortened the time it took for our team to 
+assemble the initial story. 
+
+V. CONCLUSIONS AND FUTURE WORK 
+
+The purpose of our research was to use the UCD process to 
+inform the creation of a persuasive VR experience for 
+educational purposes on sustainability and climate change, 
+specifically. We wanted to understand what makes a story 
+engaging both within and outside VR. We also wanted to 
+understand what participants knew about climate change and 
+what affected their climate change behaviors in the past so that 
+we could create a more persuasive VR experience in which users 
+would feel motivated or empowered to take action within a VR 
+experience related to climate change. Throughout the process, 
+we addressed many of the United Nations’ Sustainable 
+Development Goals, from climate action and quality education 
+to resilient, safe, and inclusive cities and communities, 
+addressing some of the world’s grand sustainability challenges. 
+
+Our user centered design (UCD) approach that included 
+participatory design, interviews, a focus group, an affinity 
+diagram, and ideation, leading to storyboarding and prototyping, 
+proved successful in creating an initial VR prototype of the 
+
+impact of climate change in Miami. The design decisions 
+implemented in the storyboard and prototype were based on 
+participants’ statements concerning a desire to help but not 
+knowing how to help. Further, the choice of Miami for the VR 
+experience with the incorporation of a considerable amount of 
+art was based on participants stating that seeing the effects of a 
+city close to their home would have a larger impact and that the 
+use of imagery could have a positive impact on them in inciting 
+empathy. Participants expressed having some motivation, but 
+stated they often do not have the ability or prompt to actually 
+produce a behavior of combating climate change. This view 
+resulted in the incorporation of a prompt into the storyboard.  
+
+The next step in our research would be to assess whether the 
+completed VR experience would inspire action or behavior 
+change concerning climate change. The goal for our project was 
+to use the UCD process to lead to the design of the VR prototype. 
+Other steps would be to user test the prototype, iterate on the 
+prototype, and also test its effectiveness. The testing should have 
+a focus on whether the implementation of persuasive UX made 
+a difference in the user reactions to the storyline. 
+
+Participatory design implications from our exploratory 
+research show that co-designing a sustainable STEAM project 
+can be achieved in 10 weeks, harnessing various skill sets from 
+different participants with limited resources. While our team 
+would ideally have liked access to more VR headsets, the most 
+accessible tool would have been to use phones and google 
+cardboard. While prototypes will not necessarily be the most 
+immersive, there would still be benefits for students from a 
+collaborative research and design process perspective. However, 
+if higher-end headsets are available, there are tools available for 
+quick prototyping directly in VR. Even if the end goal of the 
+experience is for it to be more realistic, the prototyping is still 
+effective for planning out the layout of the scene, adjusting 
+lighting, and so on. For much of the initial design process, pen 
+and paper can be used, so most STEAM curriculums can create 
+VR projects from the research phase through the storyboard 
+phase. Additionally, before jumping into creating the experience 
+in programs such as Unity and Blender, rough prototypes can be 
+created using 2D images, sketches, or photographs stitched 
+together in flat UI prototyping programs such as Marvel. 
+
+Our UCD process for developing a VR experience can be 
+transferred to any sustainability story one wishes to address such 
+as stories from underserved or underrepresented communities. 
+VR can help bring in a lens to create empathy so as to better 
+understand the social and economic impacts of such stories. 
+Creators of a VR experience can exercise their creativity, social 
+capital, and use of technical and artistic skills to effect social 
+change.

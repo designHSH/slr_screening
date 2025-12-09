@@ -1,0 +1,69 @@
+{
+  "file_name": "Lehmann et al. - 2022 - Designing AINA Intercultural Human Centered Design of an AI based Application for Supporting the Dia.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "Intercontinental and intercultural communication between the German development team and remote African user groups impeded effective engagement and understanding.",
+      "justification": "This intercultural communication gap hindered the team's ability to manage evolving user understanding and to facilitate meaningful user involvement during interviews and participatory evaluations.",
+      "reference_excerpt": "The particular challenge in this project is the intercontinental and intercultural communication with the user groups on-site since the development team consists of German physicians and computer scientists. The user groups are primarily located in rural areas of Africa, especially Madagascar.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The COVID-19 pandemic severely limited participant availability and prevented on-site observations and engagement.",
+      "justification": "Travel and contact restrictions reduced the designers' ability to conduct in-person observations and sustained user involvement, constraining their ability to understand context of use and to carry out iterative, in-person evaluations.",
+      "reference_excerpt": "Another constraint is the currently active COVID-19 pandemic, which leads to severe limitations in the availability and communication ability of the relevant user groups, especially in Africa. Unfortunately, this was not possible due to the global COVID-19 pandemic.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "The team lacked language capacity, requiring interpreters for interviews and participatory evaluations.",
+      "justification": "Dependence on interpreters increased coordination complexity and may have reduced direct rapport and fidelity in user insight gathering, hindering managing user understanding and facilitating user involvement.",
+      "reference_excerpt": "Interviews were conducted in English, French, and Malagasy. Interpreters translated from French to English or Malagasy to English when necessary. ... Due to the lack of language skills, interpreters are present in addition to the direct participants of the evaluation.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "Socio-cultural differences and hierarchical norms caused some participant groups not to speak freely in standard interview settings.",
+      "justification": "These cultural dynamics constrained participatory methods and required adaptation of interview settings, impeding designers' ability to elicit authentic user insights and manage user understanding.",
+      "reference_excerpt": "we first had to learn, with the help of resident physicians, that certain interview settings did not produce the needed outcome because, due to socio-cultural differences, certain groups of people did not express themselves freely or at all in some settings, which is a major problem for participatory design methods.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Unstable or partial IT infrastructure in rural primary health facilities limited how users could interact with prototypes and upload data.",
+      "justification": "Limited connectivity prevented real-time testing and constrained realistic evaluation of workflows and context of use, reducing designers' ability to observe and iterate on actual in-situ behavior.",
+      "reference_excerpt": "Stable IT infrastructure was only partially present in primary health care facilities. ... After Marie has finished her work, she stays at the Community Health Center for a while to upload the pictures taken that day via the AINA application since she does not have an Internet connection at home.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Regulatory requirements (AI/medical device guidelines) constrained simplification of language in documentation and manuals.",
+      "justification": "External guideline-driven wording prevented designers from fully adapting language to users, hindering management of user understanding and the effectiveness of participatory evaluations.",
+      "reference_excerpt": "Unfortunately, the revision of the manual, based on AI guidelines for medical devices, did not reduce the number of technical terms used, so all users commented negatively on this.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 7,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "The requirement to obtain approval for medical data processing before recording/uploading was seen as necessary but not user-friendly.",
+      "justification": "This regulatory/data-protection constraint complicated the user workflow and made participatory testing and routine use less natural, hindering facilitation of user involvement and evaluation of realistic tasks.",
+      "reference_excerpt": "The requirement to obtain approval for medical data processing prior to recording and uploading was considered beneficial but was not described as user-friendly.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

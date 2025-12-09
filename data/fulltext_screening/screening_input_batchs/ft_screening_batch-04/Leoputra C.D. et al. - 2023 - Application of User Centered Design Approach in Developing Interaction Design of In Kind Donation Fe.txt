@@ -1,0 +1,782 @@
+979-8-3503-8129-0/23/$31.00 ©2023 IEEE 
+
+Application of User-Centered Design Approach in 
+Developing Interaction Design of In-Kind Donation 
+
+Feature on a Crowdfunding Platform  
+
+Christopher Davin Leoputra1, Dicky Prima Satya2, Muhammad Romadhon Al-ghazali3 
+
+Information System and Technology 
+Bandung Institute of Technology (ITB) 
+
+Bandung, Indonesia 
+
+Abstract—The rapid advancement of technology has had a 
+profound impact on human life, driving the need for faster and 
+more effective social activities, including donation practices. 
+One notable example of technological progress is the 
+emergence of social crowdfunding platforms, which have 
+revolutionized the way donations are made. However, the 
+integration of in-kind donation features, specifically donating 
+goods, remains relatively limited on crowdfunding platforms, 
+as 
+they 
+predominantly 
+focus 
+on 
+managing 
+monetary 
+contributions. Nonetheless, there are segments of the 
+population who require the donation of goods due to 
+difficulties in managing unused items and a preference for 
+ensuring that donated items serve their intended purpose. This 
+background necessitates the development of an interaction 
+design 
+for 
+incorporating 
+the 
+donation 
+of 
+goods 
+on 
+crowdfunding platforms. The primary objective of this 
+research is to explore and identify the challenges and design 
+considerations related to digital donation features for goods. 
+Employing a user-centered design approach, based on the ISO 
+9241-210:2019 method, the study follows a four-stage 
+development 
+process 
+that 
+prioritizes 
+user 
+needs 
+and 
+preferences. The culmination of this research effort is a high-
+fidelity interactive prototype that achieves usability goals 
+related to effectiveness and utility, as well as user experience 
+goals associated with helpfulness and enjoyment. The 
+evaluation of the prototype's effectiveness and user experience 
+employs usability testing methods, including interviews, Single 
+Ease Question (SEQ) surveys, and the System Usability Scale 
+(SUS). The results of the second iteration of testing indicate 
+that the constructed interaction design successfully addresses 
+the predefined usability and user experience goals. Moreover, 
+this phase of testing generates valuable insights that can inform 
+future design recommendations. 
+
+Keywords— in-kind donation, crowdfunding platform, 
+interaction design, user-centered design, usability test. 
+
+I. INTRODUCTION 
+
+The rapid advancement of global development in tandem 
+with the rapid growth of information technology can no 
+longer 
+be 
+disregarded. 
+Information 
+technology 
+has 
+empowered consumers to demand and establish higher levels 
+of satisfaction, exemplified by the desire for more efficient 
+and expeditious services available anytime, anywhere, and 
+on any device [1]. The progress of information technology in 
+supporting digital transformation has yielded substantial 
+impacts and benefits across all spheres of societal existence, 
+rendering all facets of human activities more interconnected, 
+including humanitarian aspects. The presence of technology 
+not only serves as a facilitator for human activities but also 
+
+engenders novel activities aimed at resolving multifarious 
+challenges. 
+
+One emerging trend that has accompanied technological 
+advancement 
+is 
+online 
+crowdfunding. 
+Crowdfunding 
+platforms have become the norm in the digital era, owing to 
+the strategic endeavors of various entities leveraging the 
+collective efforts of numerous individuals through internet-
+based crowdfunding platforms to actualize their objectives. 
+The objectives of crowdfunding extend beyond commercial 
+or profit-oriented endeavors such as venture capital 
+investment and political campaign financing; they can also 
+encompass philanthropic endeavors through voluntary 
+contributions. Typically, crowdfunding platforms operating 
+in the realms of donations or social causes operate on a 
+nonprofit basis. 
+
+These 
+nonprofit 
+crowdfunding 
+platforms 
+act 
+as 
+intermediaries between donors and beneficiaries, be they 
+institutions or individuals in need. The role of technology in 
+the development of fundraising methodologies, particularly 
+online donations, introduces novel and positive experiences 
+from the perspective of the populace. Intriguing findings 
+from The Global Trends in Giving Survey 2018 conducted 
+by Nonprofit Tech for Good, which surveyed over 6,000 
+donors from 119 countries, shed light on this matter. 
+Approximately 74% of respondents reported that the 
+integration of digital media in donation activities has 
+increasingly served as an inspiration for them to engage in 
+philanthropic acts [2]. Consequently, based on this data, they 
+express a preference for online donation modalities. 
+
+In Indonesia, several nonprofit crowdfunding platforms have 
+already emerged in the social domain, such as Kitabisa and 
+WeCare.id. These platforms collaborate with various 
+foundations, institutions, and individuals seeking to amass 
+funds to provide assistance to those in need. However, these 
+platforms primarily facilitate monetary contributions. Online 
+social crowdfunding platforms undoubtedly offer convenient 
+donation mechanisms that can be accessed by individuals 
+from any location at any time via electronic devices. This 
+ease of use has sparked increased interest within the 
+community to participate in philanthropic activities. 
+Nevertheless, alongside the convenience provided by these 
+social platforms, certain members of society encounter 
+obstacles due to the limited options for non-monetary 
+contributions. This constraint restricts individuals who wish 
+to donate goods such as essential supplies or reusable 
+clothing that they possess. Consequently, they often choose 
+
+2023 International Conference on Electrical Engineering and Informatics (ICEEI) | 979-8-3503-8129-0/23/$31.00 ©2023 IEEE | DOI: 10.1109/ICEEI59426.2023.10346892
+
+to bestow these items solely upon their immediate 
+acquaintances. 
+
+Despite the commonplace nature of donating goods, the 
+prevailing system for donating physical items predominantly 
+adheres 
+to 
+traditional 
+practices, 
+involving 
+direct 
+communication with charitable organizations engaged in 
+specific relief efforts. Consequently, individuals frequently 
+experience confusion when attempting to match their 
+donated goods with suitable recipient organizations, given 
+that each foundation operates with distinct target assistance 
+criteria. Another challenge encountered during the process of 
+donating goods pertains to logistical handling and 
+conditioning 
+of 
+donated 
+items. 
+Considering 
+these 
+circumstances, the adaptation of crowdfunding systems 
+through the development of digital features for in-kind 
+donations expands the array of options available to 
+prospective donors, enabling them to precisely allocate their 
+goods to deserving recipients. Accordingly, this research 
+endeavors to design a feature for donating goods that 
+streamlines the donation process through the application of a 
+user-centered design approach. Hence, the implementation of 
+a feature enabling the donation of goods on online social 
+crowdfunding platforms is of utmost importance. 
+
+II. LITERATURE REVIEW 
+
+A. Interaction Design  
+Interaction design is a multifaceted process encompassing 
+the creation of interactive products aimed at facilitating 
+human communication and interaction in daily life [3]. It can 
+be perceived as an artistic endeavor that fosters seamless 
+interaction between individuals through a diverse range of 
+products and services (Saffer, 2010). At its core, interaction 
+design integrates design principles that emphasize the 
+effective presentation of information within systems, 
+enabling users to comprehend complex information 
+effortlessly [4], while ensuring that the interaction between 
+users and products remains comprehensible without undue 
+simplification [5]. 
+
+From a scholarly standpoint, interaction design constitutes an 
+integral component of the interdisciplinary field of user 
+experience design, which underpins numerous scientific 
+disciplines and primarily focuses on the analysis and design 
+of computer-based systems [6]. Each discipline within the 
+realm of interaction design is intricately interconnected with 
+other interdisciplinary domains, fostering a comprehensive 
+understanding of the intricate relationships between humans, 
+technology, and design principles. 
+
+The field of interaction design encompasses five dimensions 
+that are crucial for understanding and modeling the 
+involvement of interaction design in a product or system. 
+Initially, the concept of these interaction design dimensions 
+was introduced by Gillian Crampton Smith as four 
+dimensions of interaction design language [7], which were 
+later expanded with the addition of a fifth dimension by 
+Kevin Silver from IDEXX Laboratories. These dimensions 
+consists of words, visual representations, physical object or 
+space, time, and behaviour provide a framework for 
+analyzing and conceptualizing the various aspects of 
+interaction design, enabling designers to create more holistic 
+and effective interactive experiences. 
+
+In addition to those five dimensions, there are several 
+international laws that serve as guidelines and play a role in 
+
+achieving the goals of interaction design in creating positive 
+interactions. Some laws explain the principles of interaction 
+design including Hick’s law, Fitt’s law, and Tesler’s law [8]. 
+
+B. Nielsen’s Usability Principles 
+Usability principles are a set of principles used to evaluate 
+and enhance the usability of a system or product, as proposed 
+by Jakob Nielsen and Rolf Molich (Nielsen, 1990). These 
+principles aim to assist in the development, particularly in 
+the context of interaction design. By applying these 
+principles, the resulting products are expected to be more 
+accessible, usable, and intuitive.  
+
+Nielsen’s usability principles include Visibility of System 
+Status, Match Between System and the Real World, User 
+Control and Freedom, Consistency and Standards, Error 
+Prevention, Recognition Rather than Recall, Flexibility and 
+Efficiency of Use, Aesthetic and Minimalist Design, Help 
+Users Recognize, Diagnose, and Recover from Errors, Help 
+and Documentation. 
+
+These principles serve as guidelines for designers to create 
+user-friendly and effective interactive systems, ultimately 
+improving the overall user experience. 
+
+C. User Experience & Usability Goals 
+According to ISO 9241-210, user experience (UX) is the 
+perception and response of users resulting from the use of a 
+product, system, or service. UX encompasses all aspects of 
+end-users' interaction with a company, its services, and its 
+products (Nielsen, 2017). 
+
+One cannot directly design user experience but can design a 
+product that can generate a user experience. User experience 
+goals represent a spectrum of emotions and experiences 
+perceived by users based on specific aspects [3]. These 
+aspects can be categorized into desired aspects and undesired 
+aspects, each influencing the overall user experience. 
+
+TABLE I.  
+USER EXPERIENCE GOALS ASPECTS 
+
+ 
+
+TABLE II.  
+USER EXPERIENCE GOALS ASPECTS 
+
+Efficient to Use 
+Good Utility 
+Memorable 
+ 
+
+In general, usability is an attribute of quality used to evaluate 
+the ease of interaction. According to ISO 9241-11, usability 
+
+refers to the extent to which a product can be used by 
+specific users to achieve specific goals with effectiveness, 
+efficiency, and user satisfaction in a given context of use [9]. 
+Usability goals are related to the usefulness and ease of use 
+of a product or system. In determining usability goals, there 
+are six established standards: Easy to learn, Safe to use, 
+Effective to use, Efficient to use, Good utility, and 
+Memorable [10]. 
+
+D. Social Crowdfunding Platform 
+The phenomenon of digital donation is an exemplification of 
+the concept of virtual Conspicuous Donation Behavior 
+(CDB), which is a phenomenon carried out through the 
+utilization of social media, particularly among the younger 
+generation [11]. In Indonesia, there are several platforms 
+engaged in social crowdfunding, such as Kitabisa, which 
+raises funds for social projects, WeCare.id, which collects 
+donations for patients in need, and Rumah Zakat, which 
+gathers 
+online 
+zakat 
+contributions. 
+According 
+to 
+SimilarWeb's traffic analysis, Kitabisa alone has averaged 
+1.6 million visits in the past three months, starting from 
+September 2022. The success of these online donation 
+platforms is supported by the convenience offered by digital 
+platforms in facilitating contributions, which is considered an 
+important factor by donors. 
+
+E. Similar Applications 
+As a platform operating in the social domain, the in-kind 
+donation feature mechanism is adapted from several other 
+technology platforms that operate in the same field and have 
+similar 
+service 
+mechanisms 
+in 
+different 
+contexts. 
+Additionally, there are adaptations of relevant features to 
+support the functioning of the in-kind donation feature, such 
+as pick-up methods, creating assistance campaigns, and 
+donation history recording. Examples of platforms that have 
+similar service mechanisms as their main activities include 
+Kitabisa, Octopus Indonesia, and DonateStuff.com and Share 
+at Door Step. 
+
+1. Kitabisa 
+
+Kitabisa is the first online social crowdfunding platform in 
+Indonesia, allowing individuals to raise funds online for 
+various social causes. The platform's digital convenience has 
+revolutionized social initiatives like fundraising. Kitabisa 
+offers a range of services as a social crowdfunding platform, 
+including donations for different vulnerable groups, such as 
+disaster victims, medical expenses, and environmental 
+assistance. Additionally, Kitabisa provides other services like 
+zakat (Islamic alms) and mutual assistance among donors. 
+
+2. Octopus Indonesia 
+
+Octopus is a circular economy platform that enables 
+manufacturers to track and collect post-consumer products 
+for recyclable and non-recyclable materials. Established in 
+2019, Octopus offers waste management services using 
+digital technology to address waste management issues in 
+Indonesia. It has various services in the field of cleanliness, 
+particularly waste management, including collection, sorting, 
+and processing of waste. The platform aims to tackle waste 
+management problems in Indonesia by connecting users with 
+trusted 
+and 
+professional 
+waste 
+management 
+service 
+providers. Through the platform, users can easily and 
+conveniently book waste management services and monitor 
+the progress of their waste management activities. Octopus 
+Indonesia introduces innovative approaches and modern 
+
+technologies to revolutionize waste management, building 
+upon traditional practices of waste collection, sorting, and 
+recycling. 
+
+3. DonatesStuff.com 
+
+DonateStuff.com is an online platform based in the United 
+States that enables users to easily donate their unused items 
+such as clothing, shoes, toys, and books. The platform 
+collects these donations and delivers them to charitable 
+institutions 
+and 
+nonprofit 
+organizations 
+focused 
+on 
+humanitarian aid and social welfare. Operating in multiple 
+states including Michigan, Texas, Illinois, and Ohio, 
+DonateStuff.com streamlines the donation process, promotes 
+transparency 
+in 
+donation 
+management, 
+and 
+fosters 
+community engagement in social and environmental 
+initiatives. With its convenient pick-up service, the platform 
+facilitates access to donation opportunities while also 
+contributing to waste reduction efforts and raising awareness 
+about 
+recycling 
+and 
+waste 
+reduction 
+within 
+local 
+communities. 
+
+4. Share at Door Step 
+
+SADS India (Share at Door Step) is an India-based online 
+donation platform dedicated to assisting individuals in need 
+within the country. It serves as a platform for receiving 
+donations of various items, including clothing, food, 
+medicine, books, and other usable goods, which are sent 
+through mail or courier services to those in need throughout 
+India. The primary objective of SADS India is to meet the 
+daily needs of underprivileged communities while also 
+reducing waste by ensuring that still-usable items are not 
+discarded as trash. A distinguishing feature of SADS is its 
+postal donation service, which sets it apart from similar 
+donation platforms. This feature provides convenience and 
+options for users who wish to make donations, particularly in 
+the form of goods. Through its initiatives, SADS India aims 
+to make a positive impact on both individuals in need and the 
+environment by facilitating donations and minimizing waste 
+disposal. 
+
+III. METHODOLOGY 
+
+Various methodologies commonly employed in interaction 
+design include user-centered design, activity-centered design, 
+genius design, and design sprint. The utilization of the user-
+centered design method in this research is intrinsically linked 
+to the inherent characteristics of user-centered design itself, 
+which entails a collection of processes that are focused on 
+placing users at the core of design and product development, 
+with the aim of generating products that are in line with the 
+needs and expectations of end-users (Abras, Maloney-
+Krichmar, Preece, 2004). Human-centered design is a 
+philosophy and a set of procedures that commence with a 
+deep understanding of individuals as users and their needs, 
+which must be addressed by design [12] .Norman perceives 
+it as synonymous with user-centered design and asserts that 
+the creation of exceptional, successful, and customer-
+preferred products is highly feasible through the adoption of 
+this approach. 
+
+According to Jennifer Peerce, Hellen Sharp, and Yvonne 
+Rogers in their book titled "Interaction Design: Beyond 
+Human-Computer 
+Interaction," 
+user-centered 
+design 
+encompasses four flows and activities. In this study, the user-
+centered design method employed adhered to the standards 
+set by the International Standardization Organization (ISO), 
+
+specifically ISO 9241-210:2019 on human-centered design 
+for interactive systems. Similar to the stages defined by 
+Peerce, ISO 9241-210:2019 delineates the user-centered 
+design process into four phases, commencing with the 
+planning of the design process with a human/user focus. 
+
+ 
+
+Fig. 1. User-centered design ISO 9241-210:2019 
+
+A. Context of Use 
+During this stage, the focus is on comprehending the user 
+characteristics and the extent of system utilization, which 
+involves the identification of users, their system objectives, 
+their behavioral patterns while interacting with the system, 
+and the delineation of the system's usage boundaries. 
+
+B. Specify Requirements 
+During this phase, research is conducted to further refine the 
+context of system usage that has been defined in the previous 
+stage. This research involves surveying users to validate the 
+identified issues (user validation). This stage focuses on 
+formulating the requirements and system needs that must be 
+fulfilled in relation to the context of system usage, as well as 
+determining the expectations to be achieved in terms of UX 
+and usability goals.. 
+
+C. Design Solution 
+During this phase, an iterative process is employed to 
+develop the interaction design prototype, beginning with the 
+construction 
+of 
+low-fidelity 
+designs 
+derived 
+from 
+rudimentary 
+concepts, 
+and 
+advancing 
+towards 
+a 
+comprehensive design that effectively illustrates the system's 
+functionality, satisfying all user-defined specifications and 
+requirements. 
+
+D. Evaluate Against Requirements 
+During this stage, the design solution undergoes testing by 
+engaging actual users with the aim of ensuring the attainment 
+of predetermined UX and usability goals. The evaluation is 
+conducted not only to assess the functional aspects of the 
+system but also to gather user input regarding the fulfillment 
+of requirements in the proposed design solution. The testing 
+outcomes and user input are subsequently analyzed and 
+utilized as the foundation for enhancing the design solution, 
+ultimately yielding a comprehensive design solution that 
+satisfies all user needs. 
+
+IV. RESULTS 
+
+The results of the design solution analysis conducted in the 
+previous stage serve as the basis for identifying the screen 
+requirements, which will then be developed into a design 
+prototype. The design is created for the crowdfunding 
+platform in general while focusing on establishing the flow 
+of in-kind donation. 
+
+A. Prototype Design 
+To articulate the conceptual design idea, the interface 
+designers first sketch out the initial ideas on paper form with 
+wireframe. As advocated in the UID process, it is important 
+that the interface designers give thoughts on the overall 
+hierarchical menus, icons design, and its screen and display 
+layout arrangement based on the user’s mental model 
+(Norman, 1983) rather than designer’s mental model 
+(McDaniel, 2003) 
+
+In the initial phase, a low-fidelity design was created. The 
+development of the low-fidelity prototype focused on 
+determining the layout, information, and components to be 
+displayed on the screen. 
+
+   
+ 
+
+ 
+
+Fig. 2. Sumbang.in Low-fidelity Prototype Design 
+
+An advanced high-fidelity (hi-fi) prototype was designed, 
+which is an enhancement of the previously created low-
+fidelity design. The development of the high-fidelity 
+prototype aims to provide a more detailed and refined 
+interaction design, with a focus on comprehensive 
+visualization and more complex features. It produces a more 
+accurate representation of the features, enabling realistic user 
+experience testing. 
+
+Fig. 3. Sumbang.in High-fidelity Prototype Design 
+
+Once the prototype has been completed, a user evaluation 
+study was conducted to assess whether the usability and 
+functionality of the system align with the requirements of the 
+targeted users. 
+
+B. Testing Scenario 
+Based on the results obtained from the SUS questionnaire, an 
+average score of 88.75 was obtained. Referring to the 
+average SUS score standard based on previous research, 
+which is 68, this score is considered above average and falls 
+into the category B, indicating excellent usability. This 
+indicates that the tested design of the in-kind donation 
+feature in the crowdfunding platform has a very good level 
+of usability. However, there may still be areas that need 
+improvement or refinement to enhance the overall user 
+experience, especially in terms of consistency 
+
+C. First Iteration 
+The initial testing phase involved a sample of twenty 
+participants who exhibited characteristics representative of 
+the predefined user personas. According to Nielsen's 
+usability testing theory outlined in Chapter 2, conducting 
+tests with five participants is typically sufficient to identify 
+approximately 85% of usability issues. However, given the 
+objective of this testing phase to uncover deeper insights, 
+gather more comprehensive data, and enhance confidence in 
+the obtained results, a larger participant pool was utilized. 
+
+Based on the test results, 25 new findings were collected 
+from participant feedback during the testing process, both 
+during task completion and independent exploration. These 
+new findings serve as the basis for improving the interaction 
+design of the in-kind donation feature in this crowdfunding 
+platform. The following presents the test results and findings 
+related to the interaction design of the in-kind donation 
+feature. 
+
+SEQ questionnaire, an average score of 6.39 was obtained. 
+Referring to the average SEQ score standard based on 
+previous research, which is 5.5, this score is considered 
+above average, with the closest value to the average being 
+
+task 7 with a score of 6.05. To provide a more effective 
+visualization, the mapping of SEQ scores is depicted in a 
+radar chart as follows. 
+
+ 
+
+ 
+
+Fig. 4. First Iteration Single Ease Question Radar Chart  
+
+Based on the results obtained from the SUS questionnaire, an 
+average score of 88.75 was obtained. Referring to the 
+average SUS score standard based on previous research, 
+which is 68, this score is considered above average and falls 
+into the category B, indicating excellent usability. This 
+indicates that the tested design of the in-kind donation 
+feature in the crowdfunding platform has a very good level 
+of usability. However, there may still be areas that need 
+improvement or refinement to enhance the overall user 
+experience, especially in terms of consistency.  
+
+The design solution has also successfully met the target 
+usability goals of being effective to use and having good 
+utility. This is evidenced by the participants' high task 
+success rate, which reached 100%. Additionally, the tested 
+design solution was found to be easy to understand, navigate, 
+and operate by participants with varying levels of expertise 
+and backgrounds. However, there are still some feedback 
+points to further maximize the usability of the designed 
+feature. 
+
+The participants were also asked to share their experiences 
+while using the platform's services to validate the 
+achievement of user experience goals, namely helpfulness 
+and enjoyability. The testing involved four questions, each 
+rated on a scale of 1 (strongly disagree) to 5 (strongly agree). 
+
+TABLE III.  
+ FIRST ITERATION UX GOALS SCORE 
+
+2 
+Enjoyable 
+4.45 
+ 
+
+When measuring the achievement of the user experience goal 
+"enjoyable" based on the collected questionnaire responses, 
+an average score of 4.45 was obtained, with the lowest score 
+being for the first question related to word choice, which 
+scored 4.15. This indicates that the majority of participants 
+felt that the design solution of the in-kind donation feature 
+created a pleasant impression.  
+
+5
+
+5.5
+
+6
+
+6.5
+
+7
+
+Task 1. Locate
+In-Kind Donation
+
+Feature
+
+Task 2. Donation
+
+Campaign
+
+Task 3. Start
+
+Donating
+
+Task 4. Continue
+
+the Donation
+
+Steps
+
+Task 5.
+Complete
+
+Donation
+
+Task 6. Donation
+
+History
+
+Task 7. Raise a
+
+Donation
+
+Task 8. Locate
+Crowdfunding
+
+Features
+
+Single Ease Question UT 1
+
+D. Second Iteration 
+The second testing phase was conducted with twenty 
+participants who had previously participated in the first 
+iteration of testing. This was done to provide a clearer picture 
+of the improvements or progress made in the tested design 
+solution and to re-evaluate the identified issues from the first 
+iteration. Additionally, testing the updated version with 
+participants from the first round ensured that the 
+implemented improvements had indeed enhanced the 
+usability and user experience of using the in-kind donation 
+feature on the crowdfunding platform. 
+
+Based on the SEQ questionnaire, the average score obtained 
+in the second iteration of testing was 6.80, showing an 
+improvement of 0.41 points compared to the first iteration. 
+The scores in the second iteration were also above average, 
+and improvements were observed across all tasks. The 
+highest score was achieved in Task 5 with a perfect score of 
+7, while the lowest score was in Task 7 with a score of 6.63. 
+To provide a more effective visualization, the mapping of 
+SEQ scores is depicted in the following radar chart. 
+
+ 
+
+ 
+
+Fig. 5. Second Iteration Single Ease Question Radar Chart  
+
+By using the same scoring scheme as the SUS calculation in 
+the first iteration, the average SUS score in the second 
+iteration of testing was 93.88, showing an improvement of 
+5.13 points compared to the previous score of 88.75. 
+Referring to the standard SUS score scale, the SUS score 
+obtained in the second iteration falls into the A class, 
+indicating that after the improvement process, the interaction 
+design of the in-kind donation feature has successfully met 
+the specific user needs and has been built excellently. It can 
+also be observed in Table IV.3.1.1.2 that the average score 
+for question 6, "I feel there are many inconsistencies in this 
+application," which was previously the lowest-scoring 
+question, has significantly increased from 2.20 to 1.15. In 
+other words, the focus on consistency as a primary 
+improvement area in the design solution has been successful 
+and yielded satisfactory results. Overall, the obtained scores 
+have improved except for the first question, "I feel I would 
+frequently use this application," which maintained the same 
+score of 4.45. 
+
+TABLE IV.  
+SECOND ITERATION UX GOALS SCORE 
+
+2 
+Enjoyable 
+4.78 
+ 
+
+When assessing the achievement of the user experience goal 
+of enjoyment based on the collected questionnaire responses, 
+an average score of 4.78 was obtained, indicating a 0.32-
+point increase compared to the previous testing score of 4.45. 
+This indicates that the majority of participants perceived the 
+refined design solution for the in-kind donation feature as 
+creating a more enjoyable impression. 
+
+V. CONCLUSION 
+
+According to the extensive research process and iterative 
+design approach conducted in this study, titled "Development 
+of Interaction Design for In-Kind Donation Feature on 
+Crowdfunding Platform 
+Using User-Centered Design 
+Approach," it is concluded that this study successfully used a 
+user-centered design approach to create a mobile web 
+interaction design for in-kind donations on a crowdfunding 
+platform. It involved extensive research, including user 
+research with 108 participants and iterative design 
+refinements with 20 users. The integration of the in-kind 
+donation feature was justified for its potential to boost user 
+acquisition and expand donation options. The evaluation 
+confirmed that the design met usability goals and garnered 
+high user satisfaction, emphasizing the importance of user 
+involvement in designing user-friendly interactive systems 
+on crowdfunding platforms.

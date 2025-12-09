@@ -199,8 +199,8 @@ def main():
     """
     # --- Configuration ---
     # Create dummy directories and files for demonstration
-    pdf_directory = r"data\test_data\validation\manully_screened"
-    output_directory = r"data\test_data\validation\claned_text"
+    pdf_directory = r"data\fulltext_screening\title_abs_screening_incl_pdf"
+    output_directory = r"data\fulltext_screening\title_abs_screening_incl_txt"
     
     if not os.path.exists(pdf_directory):
         os.makedirs(pdf_directory)

@@ -1,0 +1,60 @@
+{
+  "file_name": "Hall et al. - 2023 - Co designing an Integrated Health and Social Care Hub With and for Families Experiencing Adversity.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "COVID-19 and related resource pressures forced exclusive online engagement and left families and practitioners stretched, limiting designers' ability to engage stakeholders in person.",
+      "justification": "This interactional and contextual constraint reduced designers' ability to facilitate user involvement, gather contextual insights through informal 'hanging out', and limited opportunities for iterative user testing and feedback integration.",
+      "reference_excerpt": "Resourcing (i.e., time, human resources) was a challenge to the co-design process. We also had to exclusively engage stakeholders online which limited our engagement with community members in the early part of the project because we could not rely on ‘hanging out’ at community services or warm face-to-face connections with clients through Hub practitioners.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "team",
+      "barrier_type": "resource",
+      "description": "The co-design process required substantial time investment and intensive participation, creating scheduling and workload burdens for team members.",
+      "justification": "Heavy time demands and short turnaround for prototyping hindered designers' capacity to produce design solutions, run iterative tests, and coordinate multidisciplinary participation across workshops.",
+      "reference_excerpt": "A substantial time investment was required to plan and execute the workshops and consultations. \"It was very intensive and I felt like I was neglecting my work. The turnaround times were a bit short to do the prototyping.\"",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "interaction",
+      "barrier_type": "emotional",
+      "description": "Power dynamics and emotional safety issues made some community representatives reluctant to express critical views and made some practitioners feel threatened by critique.",
+      "justification": "These relational and emotional barriers impeded open participation and honest feedback, limiting the facilitators' ability to manage user understanding, integrate critical feedback, and maintain psychological safety needed for iterative design work.",
+      "reference_excerpt": "Working in a mixed stakeholder team added complexity. One community representative said it was difficult to express critical views of services despite facilitation encouraging this. Likewise, despite the improvement focus of the design process, some practitioners were threatened by the critique brought about through the ‘emphasise’ phase.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "The project's pre-defined scope and fixed inputs (set by the funding agreement) limited how community-led the co-design could be.",
+      "justification": "Top-down scope constraints imposed by stakeholders prevented fuller community leadership and limited designers' flexibility to manage user involvement and address holistic experience beyond funded parameters.",
+      "reference_excerpt": "We positioned co-design as a point on a spectrum of participatory approaches: our project involved more than a one-off consultation, but its defined scope precluded it from being fully community-led. The fixed inputs were those specified in the project funding agreement based on evidence reviews and program theories...",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Participant sampling was skewed toward female, English-speaking caregivers, limiting engagement with male and linguistically diverse families.",
+      "justification": "This recruitment limitation reduced designers' ability to develop a comprehensive, representative user understanding and to evaluate designs across diverse user groups, affecting the holism of the design and requirements specification.",
+      "reference_excerpt": "In total, we engaged 121 family participants and 80 practitioners... Our sample was disproportionately female, spoke English as a main language and were aged 25 to 44 years old. The co-designed Hub may not adequately meet the needs of male caregivers and diverse communities because we primarily engaged with females who spoke English.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "designer",
+      "barrier_type": "knowledge",
+      "description": "The team did not record detailed demographics of user testing, an oversight that limited the evaluative information captured.",
+      "justification": "This procedural oversight reduced designers' ability to accurately assess who was represented in testing and to manage user understanding and evaluation tasks needed to ensure designs met diverse needs.",
+      "reference_excerpt": "A second limitation is that we did not record detailed demographics of user testing; an oversight partly because we did not expect this tool to be so effective.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

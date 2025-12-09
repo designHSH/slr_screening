@@ -1,0 +1,439 @@
+3 
+ 
+
+Contributing to Planning for 
+Sustainability: Advancing User 
+Involvement for User-Centred 
+Geoparticipation Applications 
+
+ 
+GI_Forum 2022, Issue 1  
+
+Page: 3 - 16 
+
+Full Paper 
+
+DOI: 10.1553/giscience2022_01_s3 
+
+ 
+
+Sabine Hennig1 
+
+1Salzburg University, Austria 
+
+Abstract 
+
+Public participation, including the use of geospatial technologies, is pivotal in planning for 
+sustainability. Contributory participation initiatives, however, face challenges, such as the 
+quantity and quality of the data provided by the public. User-centred applications can 
+address these issues, but since developers often lack understanding of public users, 
+appropriate user involvement in application development processes is crucial. Despite the 
+manifold practices that exist, there is a need to further support user involvement in 
+development processes. This paper contributes to this through findings from three projects 
+aimed at developing applications tailored to the public.  
+
+Analysing and comparing user involvement in the three projects, several key results 
+emerged. In order to increase developers’ knowledge about public users and to deliver 
+particularly user-centred applications, (i) user involvement should be considered not only in 
+development activities such as requirement-gathering, evaluation and testing, but also in 
+design and implementation; (ii) user involvement can vary in type and extent (i.e. ranging 
+from informative and consultative to participative), allowing user integration in the different 
+development phases; (iii) the combination of process models and design approach, which 
+delivers project-specific development workflows, is suitable for involving users in a project-
+appropriate and structured manner in development activities. 
+
+Keywords: 
+
+participatory design, process model, user-centred design, planning for sustainability, 
+geospatial technologies 
+
+1 
+Introduction and research questions 
+
+Planning for sustainability covers a variety of topics related to sustainable and liveable 
+communities. Public participation and the use of geospatial technologies play an important 
+role here (UN Habitat 2020, Wheeler 2013). Examples that underline this by combining both 
+aspects are smart city projects (Clarinval 2021), spatial planning initiatives (Ahern 2005), and 
+green infrastructure approaches (Vaňo et al. 2021). 
+
+Public participation can be at different levels. The so-called ‘ladder of participation’ refers to 
+informing, consulting (i.e. community input, including data contribution), involving,
+
+4 
+ 
+
+collaborating and empowering. For participation, traditional (i.e. analogue) and web-based 
+tools, including geospatial technologies, are used (Steinmann et al. 2004). The current focus is 
+on informative and consultative participation (Haklay 2021; UN Habitat 2020), and the use of 
+geodata and geospatial technologies, also referred to as geoparticipation. Forms of 
+geoparticipation include public participation GIS (PPGIS), participatory GIS (PGIS), and 
+volunteered geographic information (VGI).  
+
+Geoparticipation brings several advantages for planning for sustainability. The use of geodata 
+and geospatial tools contributes to proactive and innovative planning because structuring is 
+supported, and planning processes are further inspired (Ahern 2005). Involving the public in 
+participatory projects brings benefits such as transparency, increasing interest in public and 
+policy issues, and an increase in the amount and scale of available data (UN Habitat 2020; 
+Hecker et al. 2019). But participatory initiatives also face challenges in terms of the quantity 
+and quality of the data contributed, and the sufficient involvement of the intended target group 
+(Hennig 2020). This is because the public, who include laypeople with some degree of 
+competence in information and communication technologies (ICT) and geoinformatics (GI), 
+often find applications (too) complex, (too) non-intuitive, or (too) unsuitable. Tools must be 
+(more) centred on the public, their requirements, preferences, knowledge and skills. This is 
+described as one of the success factors for participatory approaches (Haltofová 2019). Despite 
+the many possibilities of involving users in application development processes, there is still a 
+need for approaches that allow a better understanding of users and combine the best elements 
+of various promising techniques (Damodaran 1996; Kujala et al. 2005).  
+
+The development of user-centred applications, including geoparticipation tools intended for 
+the public, is challenging. One reason for this is that the public is very diverse, and less known 
+to developers than traditional GI users regarding their needs and barriers when using ICT and 
+GI tools (Tsou & Curran 2010). To counter this situation, sufficient consideration of users 
+and their participation in development processes (including requirements specification, 
+application design and implementation, and testing) is key (Hickey & Davis 2004; Kujala et al. 
+2005).  
+
+Comparable to the ladder of participation, various concepts exist to capture user involvement 
+in development processes. Damodaran (1996) explains that the level of user involvement can 
+vary between informative (users provide and/or receive information), consultative (users 
+comment on predefined services or facilities), and participative (users influence decisions 
+relating to the whole system). François et al. (2017) distinguish between informative (user 
+involvement in requirement specification), consultative (user involvement in requirement 
+specification, testing/assessment), and participative user involvement (user involvement in 
+requirement specification, design including implementation, testing/assessment).  
+
+But how can participatory applications be developed that do in fact meet the needs of users 
+who are members of the general public? Which aspects of application development are suitable 
+for supporting user involvement? These questions are answered based on findings from the 
+projects YouthMap 5020 (Hennig & Vogler 2016), citizenMorph (Hennig et al. 2020; Hennig 
+et al. 2021), and Covid-19 Impressions. Among other things, these projects aimed to develop 
+user-centred applications that rely on the use of geospatial technologies, and which are related 
+to planning for sustainability in different ways (Table 1).
+
+5 
+ 
+
+Descriptions and references to the three projects throughout this paper are always based on 
+the literature cited above, without this being explicitly cited again in each case. 
+
+Table 1: Background to the YouthMap 5020, citizenMorph and Covid-19 Impressions projects 
+
+In all projects, the use of methods that are usually applied in the development of applications 
+in the context of user involvement allowed learning about the intended users and their needs. 
+The use of qualitative research approaches, such as focus groups, observation and content 
+analysis (Frechtling & Sharp 1997), resulted in information that was relevant not only for the 
+development of the respective applications but also regarding the possibilities created by the 
+development frameworks for delivering user-centred tools. 
+
+To answer the questions above, the three projects were analysed and compared. This related 
+to the underlying development workflow (including process models and design approaches), 
+the methods used, the artefacts and solutions delivered, and the type and extent of user 
+involvement. The findings were discussed in the context of the existing literature, 
+differentiating between phase- and activity-related user involvement with reference to the 
+concepts of Damodaran (1996) and François et al. (2017) mentioned above.
+
+6 
+ 
+
+2 
+Project-specific development workflows 
+
+The application development processes within the three projects followed individual 
+workflows. Each workflow was developed to appropriately involve users in development 
+activities, for all of which easy-to-handle off-the-shelf tools were used (e.g., ESRI ecosystem 
+tools: ArcGIS online, Survey123 for ArcGIS online, Operations Dashboard). The three 
+workflows encompass the common tasks of application development (i.e. requirement 
+specification), application design and implementation, and testing (Sommerville 2012); they 
+are characterized by a project-specific combination of a development process model and a 
+particular design approach. Development process models and design approaches are briefly 
+described below.  
+
+Application development comprises the above tasks, but the focus and order of these tasks 
+may vary, according to the specific development process model used. Within these models, 
+the activities related to requirement specification, design, implementation and testing are 
+organized into different phases, which also assign varying degrees of importance to the 
+activities. Examples of process models include the waterfall model, the incremental model, 
+and the prototyping model (Mohammed et al. 2010; Munassar & Govardhan 2010; Stoica et 
+al. 2013; Subbarayudu et al. 2017). Process models are widely used in application development, 
+including GI tool development (Kujala et al. 2005; Mwangi et al. 2019). They structure the 
+development process, help coordinate and communicate the tasks needed to achieve the 
+product as effectively as possible, and deliver a comprehensive picture of the development 
+process to the people involved in the development activities (Mohammed et al. 2010; Stoica et 
+al. 2013). 
+
+In design approaches the users are at the centre of the development process. Examples of 
+design approaches, which are also related to the field of human-computer interaction, include 
+user-centred design and participatory design (Baek et al. 2007; Mithun & Yafooz 2018; 
+Wilkinson & De Angeli 2014). User-centred design aims for early and repeated user feedback 
+during application design and implementation. This allows for the iterative refinement of the 
+design and implementation, including the requirement specification. ‘User-centred design’ 
+refers to methods and tasks (depending on the project) to enable users to assess a tool for its 
+usability. User-centred design can be integrated into a process model (Roth et al. 2015). 
+Participatory design aims to design with, rather than for, users. Users take part in all activities 
+of the development process (Baek et al. 2007; Wilkinson & De Angeli 2014). A distinction is 
+made between strong and weak participatory design. In strong participatory design, users 
+participate throughout the entire development process and in decision-making. In weak 
+participatory design, user input is solicited, but decision-making is undertaken by the 
+developers (Baek et al. 2007; Kensing & Blomberg 1998). The use of development process 
+models is considered helpful in meeting and supporting the demand for appropriate ways to 
+involve users in the different development tasks (Peris et al. 2011; Sanders 2002).
+
+7 
+ 
+
+2.1 YouthMap 5020 web map application development 
+
+The workflow for developing the YouthMap 5020 web map application followed a modified 
+waterfall model. The traditional waterfall model was the first process model to be introduced; 
+it is the classic description of an application development process. It refers to an easy-to-
+understand, linear-sequential process model in which each phase (requirement specification, 
+design, implementation and testing) must be completed before the next phase can begin, with 
+no overlap (Stoica et al. 2013). The modified waterfall model uses the same phases as the 
+traditional waterfall model, but the phases may overlap. Tasks can be performed in parallel, 
+and feedback loops exist. This introduces flexibility into the development process (Munassar 
+& Govardhan 2010). To fit the needs of the YouthMap 5020 project, the modified waterfall 
+model was adapted. As shown in Figure 1, the YouthMap 5020 development process consisted 
+of four phases: (i) gathering user requirements; (ii) realizing a database on youth-relevant urban 
+infrastructure; (iii) designing and implementing the city web map application; (iv) testing and 
+optimizing it. In each phase, different school classes were involved. In addition, the YouthMap 
+5020 web map application development process was shaped using strong participatory design. 
+Thus users (i.e., young people) took part in all development phases and activities, including 
+decision-making. Various methods, as presented in Figure 1, were used. 
+
+ 
+
+Figure 1: Schematic and simplified workflow for the development of the Youthmap 5020 web map 
+application 
+
+2.2 citizenMorph system development 
+
+The development process of the citizenMorph system followed the prototyping model. This 
+model is characterized by its iterative nature. Starting from an initial specification, further 
+requirements for the application are identified and continuously refined until the stakeholders, 
+including the end-users, are satisfied. This relies on several loops, including the design and 
+implementation of prototypes, their discussion, and evolution. The model allows for the 
+comprehensive learning of requirements and the specification of the final user requirements,
+
+8 
+ 
+
+which form the basis for the design, implementation and testing of the final product (Agarwal 
+et al. 2010; Kumar 2021).  
+
+To develop the citizenMorph system, the weak participatory design approach was used in 
+addition to the prototyping model: user input was solicited, but decisions were made by the 
+developers. The involvement of the users, that is citizens, in the development relied on the use 
+of various methods (Figure 2). Here, not all groups of citizens were integrated in all 
+development activities. 
+
+ 
+
+Figure 2: Schematic and simplified workflow for the development of the citizenMorph system 
+
+2.3 Covid-19 Impressions platform development 
+
+The workflow for developing the Covid-19 Impressions platform is shaped by the use of the 
+incremental model (Figure 3). In this process model, the requirements are divided into subsets; 
+standalone increments are developed based on the respective requirements. The development 
+of each increment includes requirement specification, design, implementation and testing 
+(Stoica et al. 2013). The development process of the Covid-19 Impressions platform consists 
+of three increments that reflect the different phases of participation and their aims (West & 
+Pateman 2016): pre-participation (e.g., information), initial participation (e.g., data 
+contribution), and ongoing participation (e.g., feedback).
+
+9 
+ 
+
+ 
+
+Figure 3: Schematic and simplified workflow for the development of the Covid-19 Impressions platform  
+
+A user-centred design approach was also used. While users’ requirements were identified by 
+the developers through document-centric techniques and Analysis of Similar Systems (AoSS), 
+citizen representatives were involved in the development process in several rounds of 
+discussion. 
+
+3 
+Project-specific development results 
+
+Through project-specific user involvement, based on different methods (Figure 1, Figure 2, 
+and Figure 3), insights into users’ backgrounds, requirements and preferences were gained. 
+This is reflected in the three applications, each of which has a particular structure, design and 
+content. Examples are briefly outlined below and summarized in Table 2. 
+
+Cooperating with young people in developing the YouthMap 5020 web map application, it 
+was confirmed that young people form a very heterogeneous and complex user group (e.g., 
+with an age range of 12 to 20; different skills and knowledge levels) and that they have 
+particular characteristics regarding ICT use, namely low patience levels, quickness to judge 
+applications, and low willingness to read instructions and explore tools. In focus groups and 
+workshops, the young people outlined design preferences and needs regarding the map 
+content, which differ from what developers (i.e. adults) consider relevant to young people. 
+Accordingly, the YouthMap 5020 web map application was developed with a youth-specific 
+interface and map design, and youth-relevant map content. 
+
+The citizenMorph project, the aim of which is to collect data on landforms, is related to 
+geomorphology, a topic that the public is less aware of, as communicated by the citizens who 
+participated in the development process (e.g. in citizen surveys and workshops). Taking this
+
+10 
+ 
+
+into account, the solution created considers people’s personal resources related to the topic 
+and the data contribution tasks – i.e. their motivations, and their knowledge and skills to 
+observe, map and report landforms. To meet these demands, the system consists of three 
+components: a data contribution component, a content management system (CMS) project 
+website, and aspects contributing to community building. These components encompass 
+numerous elements related to project-related information, feedback, and instructions for 
+contributing landform data; they are also characterized by a design tailored to the preferences 
+and needs of the citizen representatives. 
+
+During the development of the Covid-19 Impressions platform, repeated user feedback was 
+given on the three increments. Several critical issues were identified and discussed by the 
+citizens involved, thanks to which the products developed in the context of the different 
+increments were improved. The ‘information increment’ was created to provide relevant 
+information and to support smooth user-onboarding. The ‘feedback increment’ focuses on 
+using various feedback possibilities (e.g., web hook, dashboard). 
+
+Table 1: Selected aspects of the YouthMap 5020 web map application, the citizenMorph system and 
+the Covid-19 Impressions platform
+
+11 
+ 
+
+* Support materials associated with the data contribution app meeting citizens’ motivation and 
+skills to take part in the project 
+
+4 
+Results and discussion of phase- and activity-related user 
+involvement 
+
+Analysing and comparing the three projects (taking into account the particular development 
+workflow, including development process and design approaches, the methods used, the 
+artefacts and solutions delivered, and the type and extent of user involvement) resulted in 
+distinguishing phase- and activity-related user involvement of different types and extents. This 
+and the related benefits are discussed below. 
+
+User involvement in the development workflows of the three projects can be characterized 
+using the concepts of Damodaran (1996) and François et al. (2017). This allows the 
+characterization not only of the development processes per se, but also of the individual phases 
+with regard to user involvement (informative, consultative or participatory) (Figure 4). There 
+are benefits to be derived from considering different types and levels of user involvement in 
+the contexts of requirement specification, design, implementation and testing (i.e. assessment).
+
+12 
+ 
+
+ 
+
+Figure 4: Types and levels of user involvement in the requirement specification, design, implementation 
+and testing/assessment (adapted from Damodaran (1996) and François et al. (2017)), as well as findings 
+from the YouthMap 5020, citizenMorph and Covid-19 Impressions project 
+
+4.1 User involvement in requirement specification 
+
+There are a variety of methods to collect requirements. Several were used in each project, since 
+a combination of different requirement-gathering methods gives the best results (Spath et al. 
+2012). Because users are good primary sources of information (Kujala 2003), the use of 
+methods related to informative user involvement was essential for the YouthMap 5020 and 
+citizenMorph projects. The information gained through methods such as questionnaires, focus 
+groups and prototyping provided knowledge about the specific user groups (Table 2): 
+regarding the citizenMorph project, this referred to understanding and addressing people’s 
+motivation and interest in geomorphology, and their skills to contribute landform data; 
+regarding the YouthMap 5020 project, this related to knowing youth-centred urban 
+infrastructure. Through collaborating with the users in the elaboration and application of the 
+requirement-collection methods (i.e., participative user involvement), additional information 
+about the users and their needs was revealed. This follows Kujala et al. (2005) and Steen et al. 
+(2007), who highlight that users must be effectively integrated into application development 
+because they are experts in their own requirements. For instance, questionnaires realized 
+together with the users were more tailored to the people being surveyed by asking the right 
+questions, using appropriate language, and avoiding technical terms. In AoSS, users 
+participated in the identification of the systems to be analysed, the elaboration of the list of 
+criteria to analyse the systems, and the analysis of the systems. In this way, the developers 
+learned which applications are used by the public, which assessment criteria are important to 
+them, and how they rate applications.
+
+13 
+ 
+
+4.2 User involvement in design and implementation 
+
+With user involvement in the design and implementation, users are in a ‘making’ situation. 
+Participatory user involvement ensures that developers can learn about users’ tacit and latent 
+needs, which is not possible by simply listening to or watching users. It also ensures that the 
+information about the users gained during the requirements phase is actually used in the 
+implementation of the tool, which is not always the case. This leads to solutions that allow 
+users do whatever they aim to do in a better way, and delivers a better user experience (François 
+et al. 2017; Sanders 2002; Steen et al. 2007). Against this background, the participatory 
+involvement of the users in the YouthMap 5020 and citizenMorph projects took place in 
+different ways and to different extents. While users participated in the design and 
+implementation of the entire system in the YouthMap 5020 project, in the citizenMorph 
+project they did so only with regard to selected materials. Other elements (e.g., the survey 
+form) were inspired by participants’ ideas revealed during the discussion of the prototypes. 
+This is where the benefits of using the prototyping model and its influence on the requirements 
+analysis become clear. Following Agarwal et al. (2010) and Kumar (2021), the prototyping 
+model is suitable if the demands of the future users of an application are relatively unknown 
+at the beginning of the development process, or if developers are dealing with a new issue. 
+This was the case with the citizenMorph project, where citizens’ motivations and skills for 
+landform data collection were largely unknown. 
+
+4.3 User involvement in testing 
+
+Testing refers to checking applications not only for errors but also for whether they meet the 
+requirements of the users (i.e. user assessment, usability testing). Users are requested to provide 
+feedback on a product, and they might be observed using a product. Based on this, applications 
+can be adapted and improved (François et al. 2017; Roth et al. 2015). Testing and user 
+assessment took place in all three projects. Unlike the citizenMorph and Covid-19 Impressions 
+projects, the YouthMap 5020 project used consultative user involvement supported by 
+participative user involvement. The users participated in the elaboration of the questionnaire 
+to obtain feedback from the testers. This allowed the questionnaire to be better tailored to the 
+young people testing the city web map (Section 4.1). In the Covid-19 Impressions project, the 
+products resulting from the three increments were repeatedly assessed and discussed. The use 
+of the incremental model proved beneficial here: it is useful when user feedback on the 
+components of an application is important, when developers have little experience of the topic 
+or user group, or when a quick release of the product, with its crucial aspects, is required 
+(Sommerville 2012; Stoica et al. 2013). 
+
+5 
+Conclusion 
+
+User-centred solutions are a success factor for geoparticipation initiatives, and user 
+involvement is key for their development. Despite the manifold practices that exist to involve 
+users in development processes, there is a need to further support user involvement in 
+development processes. Experiences gained from the YouthMap 5020, citizenMorph and
+
+14 
+ 
+
+Covid-19 Impressions projects contributed to answer how, by involving users in a suitable 
+manner, participatory applications can be developed that in fact meet the needs of users from 
+among the public.  
+
+The findings showed that the use of a process model in combination with a design approach 
+is promising in the development of people-centred applications. While design approaches 
+relate to ways of putting the users at the centre of a development process, process models 
+determine the order of the development phases and focus on the individual tasks differently. 
+Thus, using a process model and design approach together defines the development 
+framework and allows the integration of different types and levels of user involvement in the 
+development of an application, in the contexts of requirement specification, application design, 
+implementation and testing, with the levels of user involvement ranging from informative and 
+consultative to participative. Involving users in different ways and to different extents in 
+development tasks and activities has several benefits for the development process and the final 
+product. For instance, participatory user involvement in requirement-gathering and product 
+assessment together with having them collaborate on the design and implementation of 
+materials such as questionnaires provides additional understanding of users’ needs; preferences 
+come to light (e.g. use of language) which do not emerge when user involvement is purely 
+informative.  
+
+This hybrid approach of combining process model and design approach – with the use of 
+informative, consultative or participative user involvement (with or without decision-making 
+by the users) in the context of the different development phases and activities – is clearly 
+applicable to other projects. It is important, however, that the following should be taken into 
+account: (i) the benefits and challenges of the particular process model and design approaches 
+to be used; (ii) the appropriateness of the process model and design approach selected 
+regarding the project topic, aims and resources, and the background of the users to be involved 
+in the development process; (iii) the need to compose a multidisciplinary project team 
+comprising, among others, domain experts, developers, moderators and mediators, and (most 
+importantly) skilled and motivated people from the public to act as peer-tutors; (iv) provision 
+of suitable tools, materials and methods for public users to participate in the various activities; 
+(v) the possibility to recruit a sufficient number of users from the target group to be involved 
+in the application development process.
