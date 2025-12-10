@@ -9,7 +9,7 @@ from openai import OpenAI
 
 class PromptRunnerText:
     """
-    Executes structured YAML-based prompts on text files using GPT models (e.g., gpt-5-mini, gpt-5.1-codex-mini).
+    Executes structured YAML-based prompts on text files using GPT models (e.g., gpt-4.1, gpt-5.1-codex-mini).
     Reads .txt input files, injects content into the user_command ({{paper_text}}),
     and outputs aggregated results as a single CSV file.
     """

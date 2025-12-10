@@ -1,0 +1,764 @@
+mHealth intervention for carers of individuals
+with a history of stroke: Heuristic evaluation and
+user perspectives
+
+Elton H Lobo1,2
+, Finn Kensing3, Anne Frølich2,4, Lene J Rasmussen5,6,
+Patricia M Livingston7, Sheikh Mohammed Shariful Islam8
+, John Grundy9
+
+and Mohamed Abdelrazek1
+
+Abstract
+
+Background: Caregiving in stroke is complex, with most carers having little to no preparation to care for individuals with a
+history of stroke, leading to emotional impact. Technologies such as Mobile Health can provide the carer with real-time sup-
+port and prepare the carer to assume their new roles and responsibilities.
+
+Objectives: To perform a heuristic evaluation of mHealth interventions designed to support carers of individuals with a his-
+tory of stroke and determine the user preferences in stroke caregiving technology to inform future researchers and devel-
+opers regarding the best practices to support these individuals.
+
+Methods: Twenty adults (i.e. 10 usability experts and 10 carers) participated in an iterative user-centred design study that
+focused on developing and modifying the mHealth intervention (StrokeCaregiver (SeCr)) created to support stroke caregiving.
+The intervention was repeated in four cycles, including two cycles with ﬁve usability experts each and ﬁve carers each.
+
+Results: SeCr was iteratively improved to develop a highly usable product in multiple cycles. Participants demonstrated crit-
+ical needs in personalized information support, communication with their healthcare needs, and the trust of the user, con-
+tent, and developer. These critical needs are required to be met to promote long-term acceptance and adherence.
+
+Conclusions: While SeCr was developed to address the needs of carers of individuals with a history of stroke, several con-
+siderations must be made to ensure it can be used in a real-world setting. Researchers and developers can use co-design or
+living lab approaches to further meet the needs and expectations of the carer and enable these individuals to be better pre-
+pared for stroke caregiving.
+
+Keywords
+
+mHealth, intervention, carer, stroke, usability, user experience, heuristic
+
+Submission date: 18 October 2021; Revision date: 11 February 2022; Acceptance date: 6 March 2022
+
+1School of Information Technology, Faculty of Science, Engineering and Built Environment, Deakin University, Geelong, Victoria, Australia
+2Department of Public Health, University of Copenhagen, Copenhagen, Denmark
+3Department of Computer Science, University of Copenhagen, Copenhagen, Denmark
+4Innovation and Research Centre for Multimorbidity, Slagelse Hospital, Region Zealand, Denmark
+5Department of Cellular and Molecular Medicine, University of Copenhagen, Copenhagen, Denmark
+6Center for Healthy Aging, University of Copenhagen, Copenhagen, Denmark
+7Faculty of Health, Deakin University, Geelong, Victoria, Australia
+8Institute for Physical Activity and Nutrition (IPAN), Deakin University, Geelong, Australia
+9Faculty of Information Technology, Monash University, Victoria, Australia
+
+Elton H Lobo, School of Information Technology, Faculty of Science, Engineering and Built Environment, Deakin University, Geelong, Victoria 3216, Australia.
+
+Creative Commons NonCommercial-NoDerivs CC BY-NC-ND: This article is distributed under the terms of the Creative Commons Attribution-
+NonCommercial-NoDerivs 4.0 License (https://creativecommons.org/licenses/by-nc-nd/4.0/) which permits non-commercial use, reproduction
+and distribution of the work as published without adaptation or alteration, without further permission provided the original work is attributed as speciﬁed on
+the SAGE and Open Access page (https://us.sagepub.com/en-us/nam/open-access-at-sage).
+
+Original Research
+
+Digital Health
+Volume 8: 1–10
+© The Author(s) 2022
+Article reuse guidelines:
+sagepub.com/journals-permissions
+DOI: 10.1177/20552076221089070
+journals.sagepub.com/home/dhj
+
+Introduction
+
+Around the world, more than 80 million individuals have
+survived one or more stroke(s),1 which requires acute
+inpatient care and continued home-based care,2 generally
+provided by carers.3 Unlike other chronic conditions,
+stroke occurs suddenly, with most carers having little to
+no time to prepare or adjust to their new roles and respon-
+sibilities.4 As a consequence, over two-thirds of these
+carers suffer from stress, while approximately 80%
+experience frustration and anxiety.5 To reduce the emo-
+tional impact of stroke caregiving, researchers have
+implemented technological support to address the differ-
+ent needs of the carer, including information, therapy,
+communication and health management. These technolo-
+gies have demonstrated potential to improve carers health
+and preparedness outcomes.6 However, a majority of
+these technologies were developed based on literature
+studies or past experiences of the researcher, which
+results in the lack of understanding of the carer’s
+needs, leading to reduced acceptance.7
+
+In response to this issue, there is a growing interest in
+user-centred design (UCD) principles towards the design
+of health care technology to improve outcomes, i.e. usabil-
+ity and functionality. The shift towards UCD, in the past
+few years, is evident through the increasing number of itera-
+tive and participatory design practices implemented in
+stroke caregiving.8–14 However, the extent of its implemen-
+tation is fairly limited, with a majority of studies failing to
+describe the rationale of the intervention or its ability to
+meet users’ needs and capabilities.7 For example,
+Sureshkumar et al.11 designed an educational mobile
+application to support carers of individuals with stroke
+using user-centred methodology, however, it was devel-
+oped based on an assumption with no clear assessment
+of the user requirements and technical capabilities that
+may lead to issues in the initial design and lack of inte-
+gration of technology in the everyday lives of the
+carer.7 Hence, the approach considered should focus on
+including target users during the intervention design
+and implementation to provide a clear understanding of
+the user needs for an effective intervention to support
+them in their daily care activities.15 In this study, a
+mHealth intervention was developed based on an itera-
+tive UCD approach to understand the technical needs of
+the carer and create an intervention that is usable and
+meaningful in their care activities.
+
+Methods
+
+Study design
+
+The study focuses on using an iterative UCD approach that
+uses three general principles: (i) early focus on users and
+tasks, (ii) empirical measurement, and (iii) iterative
+
+design.16,17 Initially, the authors understood the needs of
+family carers in their daily care activities based on data col-
+lected from literature, social media and surveys, reported
+and submitted elsewhere.18 Using a grounded theory
+approach for interpreting such data,19 the mHealth interven-
+tion was developed and evaluated in a real-world setting as
+presented in this study.
+
+Intervention
+
+SeCr is a hybrid mobile intervention that provides carers
+with around-the-clock information and support. This
+mobile intervention technology was developed by under-
+standing carers’ needs in their daily care activities as
+described above.18 This mobile intervention technology
+prototype consists of four key features: (i) information
+delivery, (ii) survivor and carer health monitoring, (iii)
+social
+communication
+and
+(iv)
+task
+scheduling
+and
+sharing, as shown in Figure 1 and are described below:
+
+1. The information delivery feature consists of a persona-
+lized recommendation system that uses ontologies con-
+sisting of user proﬁles, activities and interests. The
+algorithm combines a domain-based inference method
+and semantic reasoning method, which provides a
+measure of afﬁnity between the user and the item
+described by the ontology to provide information
+more effectively and accurately.
+2. The survivor and carer health monitoring feature
+consists of tools to monitor health vitals such as blood
+pressure, blood glucose, physical activity, heart rate
+and weight. Users have the freedom within this feature
+to install the app that best suits their needs. The web
+version of the intervention allowed for manual user
+data input, while the Android version enabled the con-
+nection
+to
+numerous
+off-the-shelf
+sensors
+using
+Bluetooth Generic ATTribute Proﬁle protocols.
+3. The social communication feature consists of a social
+media wall such as Facebook or Twitter where the
+carer could communicate or ask questions to people
+living with similar experiences.
+4. The task scheduling and sharing feature allow carers
+to plan for their day using a calendar function within
+the intervention. Moreover, it enables the primary
+carer to share tasks with other carers supporting them
+in their daily care activities.
+
+Participants and procedure
+
+Two participant groups were included in this study, i.e.
+Usability Experts and Carers. Usability experts were
+recruited from Amazon Mechanical Turk between 30 July
+and 12 August 2021. Amazon Mechanical Turk is a
+popular crowdsourcing marketplace that enables a large
+
+2
+
+Figure 1. SeCr intervention mobile technology prototype illustrating (a) information, (b) health monitoring, (c) social communication and
+(d) task scheduling and sharing features in use.
+
+Lobo et al.
+3
+
+number of people (generally known as ‘Turkers’) to work
+on tasks online.20 On the other hand, Carers were recruited
+from Carer Organizations in Australia, such as Carers VIC
+and Carers QLD between 1 July and 1 September 2021.
+These organizations provide a statewide voice for family
+carers by representing and providing support in their daily
+activities. A purposive sampling approach was considered
+for acquiring a range of variations within the sample,
+including age, sex, educational qualiﬁcations and experi-
+ence. The inclusion criteria for usability experts were
+aged 18 years or more with over 1 year of usability experi-
+ence, have conducted over 20 similar tasks and can read and
+write in English. Furthermore, carers were included if they
+were over the age of 18 years, caring for an individual with
+a history of stroke in the last 5 years, and reading and
+writing in English.
+The study employed an iterative testing approach for
+intervention reﬁnement, which consisted of four cycles.
+Each cycle included ﬁve different participants who per-
+formed the following steps: (i) introduction to the
+mHealth intervention, (ii) participant performs a set of
+tasks and (iii) intervention review and evaluation. The
+inclusion of different participants in each cycle was due
+to the inability of each participant to commit their time
+towards the research project due to other priorities
+despite the compensation provided in the form of work
+credits (for usability experts) and gift vouchers (for
+carers).
+The ﬁrst two cycles included usability experts who
+would pre-evaluate the intervention to ensure it is usable
+for the carer, while the remaining two cycles included
+carers. The evaluation was conducted using Likert scales
+from 1 to 7, with open-ended questions to understand
+user preferences in the design or practices to improve the
+overall intervention usability. The feedback received from
+each cycle was used to reﬁne the intervention to ensure it
+is usable for the carer.
+The evaluation survey was delivered in the form of a
+custom-built webpage that provides a step-by-step guide
+on the evaluation process for each cycle and the anonymous
+
+online survey. Each cycle took approximately 7–10 min to
+complete. The study obtained ethics approval from Deakin
+University HEAG before its start.
+
+Study instruments
+
+The study survey was adapted from the User Experience
+Questionnaire (UEQ-S)21 and the mHealth App Usability
+Questionnaire (MAUQ).22 The UEQ-S was used by the
+usability expert to evaluate the user experience of the inter-
+vention. The UEQ-S includes 26 items on a 7-level Likert
+scale that are grouped into six categories. The UEQ-S
+instrument highlights user experience based on two dimen-
+sions, the pragmatic dimension that assesses perspicuity,
+efﬁciency and dependability of the intervention, and the
+hedonic dimension that focuses on the novelty and stimula-
+tion of the intervention. Additionally, the overall attractive-
+ness of the intervention is calculated by combining the
+results from the pragmatic and hedonic dimensions as
+shown in Figure 2.21 Furthermore, 27 open-ended questions
+were included in the survey to gain user feedback regarding
+each aspect dimension to improve the experience for the
+carer.
+The MAUQ was used by carers of individuals with a
+history of stroke to evaluate the usability of the interven-
+tion. The MAUQ was included as it is a valid and reliable
+instrument of 21 items on a 7-level Likert scale. The
+MAUQ highlights usability based on three categories: (i)
+ease of use and satisfaction, (ii) system information
+arrangement and (iii) usefulness.22 In addition to the
+MAUQ survey, 22 open-ended questions were included
+based on each item to understand user preferences to
+improve system usability.
+
+Data analysis
+
+The survey responses from each heuristic evaluation were
+extracted in a Microsoft Excel sheet. The data collected
+from these responses were divided into qualitative and
+quantitative datasets. The qualitative data were analysed
+using a grounded theory methodology that considers three
+phases: (i) open coding, (ii) axial coding, and (iii) selective
+coding.19 Open coding is an analytical process that identi-
+ﬁes different concepts, properties and dimensions in the dis-
+covered data. Axial coding is the process of relating the
+concepts into relevant categories and sub-categories.
+Selective coding is the process of reﬁning and integrating
+the categories into theory to discover variations among con-
+cepts and enrich categories in terms of their properties and
+dimensions.23 All phases considered were iteratively con-
+ducted by the primary author under the supervision of the
+other authors using NVivo 12 for data collected in each
+cycle. Furthermore, the quantitative data were divided
+into two parts, i.e. the demographic and heuristic data,
+which was analysed descriptively using Microsoft Excel
+Figure 2. User Experience Questionnaire (UEQ-S) assumed scale
+structure.21
+
+4
+
+to highlight the mean overall impression based on individ-
+ual domains.
+
+Results
+
+A total of 15 carers consented to participate in the study, of
+which 11 (73.33%) used the SeCr intervention, and 10
+(66.67%) completed the follow-up questionnaire. The
+four carers who did not use the intervention found it difﬁ-
+cult to participate due to their care commitments and the
+one carer who did not complete the follow-up questionnaire
+declined to continue participation as their loved ones fell
+too ill. Carers ranged in age from 24 to 61 years (mean =
+41.7; SD = 14.2), the majority were female (70%) and
+held a tertiary-level qualiﬁcation (80%). On the other
+hand, all usability experts (n = 10) who consented to partici-
+pate in the study used the SeCr intervention and completed
+the follow-up questionnaire. The usability experts ranged in
+age from 30 to 49 years (mean = 34.6; SD = 5.8), the major-
+ity were male (70%), held a master’s (30%) or bachelor’s
+(70%) degree and had usability experience of more than 2
+
+years (90%). Table 1 outlines the fully demographic charac-
+teristics of the sample included in this study.
+
+Heuristic evaluation and user preferences
+
+Four iterative cycles of heuristic evaluations and interven-
+tion
+reiterations
+were
+conducted
+during
+a
+7-week
+(August–September 2021) iterative design cycle, including
+10 usability experts and 10 carers of individuals with a
+history of stroke, respectively. Users in each cycle were
+brieﬂy introduced to the intervention, and were then
+instructed to use the intervention for a single day according
+to their needs. At the end of the day, users would provide
+feedback using an online survey that would be used by
+the primary author to reiterate the intervention. On
+average each cycle of feedback and design reiteration
+took about 1.5 weeks.
+
+Iterative cycle 1. Five usability experts with an average
+usability experience of 5.2 years participated in the heuristic
+evaluation based on the UEQ-S survey instrument. Three
+male and two female usability experts participated in this
+cycle, with ages ranging from 32 to 39 years (mean =
+34.8; SD = 2.68), as shown in Table 1. The usability
+experts in this cycle demonstrated concerns regarding the
+text size and users’ understanding of the icons used with
+the intervention. Furthermore, some usability experts
+described the need to make the social aspect more encour-
+aging and motivating and provide features that allow the
+carer to track their health progress. Despite these concerns,
+the outcomes of the UEQ-S scale demonstrated that the
+usability experts rated the intervention highly in terms of
+attractiveness, perspicuity, efﬁciency, dependability and
+stimulation. However, a majority of the usability experts
+have a negative opinion in terms of novelty, as shown in
+Figure 3.
+Using these ﬁndings, the intervention prototype was
+improved in its next iteration. The key modiﬁcations
+included: (i) increase in font size, (ii) use of standardized
+icons, (iii) separate page for health tracking and (iv) inclu-
+sion of likes and comments section within the social media
+page to encourage and motivate the user.
+
+Iterative cycle 2. Five usability experts with an average
+usability experience of 2.6 years participated in the heuristic
+evaluation based on the UEQ-S survey instrument. Most
+participants were male (n = 4; 80%), with ages ranging
+from 30 to 49 years (mean = 34.4; SD = 8.26), as shown
+in Table 1. In this cycle, a majority of the usability
+experts were satisﬁed with the intervention. However, one
+expert discussed the need to make the intervention unique
+from other technologies. This promoted the integration
+into the intervention of a feature of ‘MicroApps’ to
+provide the carer with the freedom to choose and install
+the service that best suits their needs for health monitoring
+
+Table 1. Demographic characteristics of survey respondents (n =
+20).
+
+Characteristic
+Phase 1
+(n= 5)
+Phase 2
+(n = 5)
+Phase 3
+(n = 5)
+Phase 4
+(n = 5)
+
+Participant
+group
+Expert
+Expert
+Carer
+Carer
+
+Age, years
+
+18–38
+4
+4
+3
+2
+
+38–58
+1
+1
+2
+2
+
+58 +
+-
+-
+-
+1
+
+Sex
+
+Male
+3
+4
+1
+2
+
+Female
+2
+1
+4
+3
+
+Education
+
+Diploma
+-
+-
+3
+1
+
+Bachelor’s
+degree
+3
+4
+1
+1
+
+Master’s
+degree
+2
+1
+1
+2
+
+Other
+-
+-
+-
+1
+
+Lobo et al.
+5
+
+for themselves and their loved ones. The satisfaction of the
+usability expert was evident in the outcomes of the UEQ-S
+scales, which demonstrated positive results for attractive-
+ness, perpetuity, efﬁciency, dependability and stimulation.
+However, the usability experts continued to have a neutral
+opinion concerning the novelty with a slight change in
+the outcomes, as shown in Figure 4.
+
+Iterative cycle 3. Five carers participated in the heuristic
+evaluation based on the MAUQ survey instrument. Four
+female and one male carer(s) participated in this cycle,
+with ages ranging from 24 to 56 years (mean = 38.2; SD
+= 13.6), as shown in Table 1. In this cycle, carers discussed
+
+several concerns about the usability of the intervention.
+Issues were predominately on the information page. Some
+carers debated the issues with the font size, image quality,
+and loading times. Others discussed the need to have cat-
+egories for each topic to allow easy searching. Other sug-
+gestions
+provided by the carers include having an
+emergency call option for nearby hospitals, knowing if
+the user positing or answering content is genuine to
+prevent misinformation, and the inclusion of personal
+healthcare professionals to communicate their needs.
+To address these concerns, the information pages were
+updated to present the information more clearly, and
+loading times were optimized. Information related to the
+
+Figure 3. User Experience Questionnaire (UEQ-S) outcomes for cycle 1 with mean ranging from 1 to 3.
+
+Figure 4. User Experience Questionnaire (UEQ-S) outcomes for cycle 2 with mean ranging from 1 to 3.
+
+6
+
+nearby stroke clinics was added with the option to call the
+clinic should there be an emergency. As the intervention
+was a prototype and did not consider user account creation,
+it was challenging to provide a feature to determine the
+authenticity of the user, and hence was not considered in
+this cycle of intervention reﬁnement. In addition to this, per-
+sonal healthcare professionals could not be considered in
+this cycle as the intervention is in its early stages of devel-
+opment. However, the introduction of the mHealth inter-
+vention step of iterative cycle 4 was updated to ensure the
+participant is aware of the following stages of the research
+and the possibility for the inclusion of healthcare profes-
+sionals. Similar concerns demonstrated in the user feedback
+were evident in the MAUQ survey items, as shown in
+Table 2 based on the mean score, while Figure 5 shows
+the impact of these concerns on the overall usability.
+
+Iterative cycle 4. Five carers participated in the heuristic
+evaluation based on the MAUQ survey instrument. Three
+female and two male carers participated in this cycle,
+with ages ranging from 28 to 61 years (mean = 45.2; SD
+= 14.9), as shown in Table 1. In this cycle, carers discussed
+the need for more personalized information, including
+nutrition and psychological factors, to monitor to pre-
+diagnose an impending stroke. Moreover, some carers dis-
+cussed the need to import blood reports and medication. In
+contrast, one carer discussed the possibility of having
+support functions within the intervention to receive profes-
+sional help in case of an emergency. Despite several carers
+discussing various needs, the carers were satisﬁed with the
+intervention, as shown in Figure 5. The only known usabil-
+ity issue within the intervention was identiﬁed by the item
+‘the app adequately acknowledged and provided informa-
+tion to let me know the progress of my action’ (mean =
+5.4; SD = 0.9).
+
+Discussion
+
+This study performed a heuristic evaluation on an earlier
+designed prototype for carers of individuals with a history
+of stroke and to identify their preferences in technological
+design. Our ﬁndings indicate that iteratively revising the
+intervention based on expert and user feedback signiﬁcantly
+improved the usability and user experience of the prototype.
+Further, it is important to note the necessity for including
+usability and user experience heuristics in stroke caregiv-
+ing, as mHealth apps that support stroke caregiving in the
+past have described the inability of designers to consider
+user needs and preference in the design, which leads to
+reduced acceptance and adherence.15
+
+Another ﬁnding is the similarities in usability experts
+and carers opinions in terms of presentation, font size and
+image quality. While experts primarily focused on uncover-
+ing issues related to the design and presentation, the critical
+focus (or discussion) of carers were based on the features
+that support information and communication. The differ-
+ences in opinions were expected due to the lack of under-
+standing of the expert with regards to stroke caregiving.
+However, this ﬁnding describes the importance of including
+the carer (s) in the design and development process to
+ensure improved acceptance, which is rarely considered
+as described in the user reviews of previously published
+mHealth interventions that support carers of individuals
+living with stroke.15
+
+In terms of the carers’ information and communication
+needs; several studies in the past have assessed its poten-
+tial,10,11,24,25 with carers describing being satisﬁed with
+the intervention as it supported their demands.10,11,24
+
+However, despite the past studies exploring needs to
+support the information and communication needs of
+carers, the carers in this study described the need for
+
+Table 2. Critical usability issues based on the usability items in the
+MAUQ scale.
+
+Items
+Mean
+
+Whenever I made a mistake using the app, I could
+recover easily and quickly
+4.8
+
+This app has all the functions and capabilities I expect it
+to have
+4.8
+
+The information in the app was well organized, so I
+could easily ﬁnd the information I needed.
+5
+
+I feel comfortable using this app in social settings
+5
+
+The amount of time involved in using this app has ﬁtted
+for me
+5.2
+
+I would use this app again
+5.2
+
+Overall, I am satisﬁed with this app
+5.2
+
+I like the interface of the app.
+5.2
+
+This mHealth app provided an acceptable way to receive
+health care services
+5.2
+
+The app adequately acknowledged and provided
+information to let me know the progress of my action
+5.2
+
+Using the app, I had many more opportunities to interact
+with my health care provider
+5.2
+
+I felt conﬁdent that any information I sent to my provider
+using the app would be received
+5.2
+
+I felt comfortable communicating with my health care
+provider using the app
+5.2
+
+MAUQ: mHealth App Usability Questionnaire.
+
+Lobo et al.
+7
+
+personalized information support and for communication
+with their healthcare team, i.e. the individuals who are
+aware of their situation. These aspects were not described
+in past studies, which could be critical in the carers accept-
+ance of the technology.
+A further critical aspect that may affect the carers accept-
+ance of the mHealth technology is trust In the different
+stages of the heuristic evaluation, trust was a key point of
+discussion among the carers. The discussion of trust was
+based on the information available, user answering and
+communicating information, intervention does not fail at
+the time of need and safety of their data. Trust is considered
+an essential determinant for technology adoption and inﬂu-
+ences its acceptance.26,27 Studies suggest that users often
+hesitate to share their personal information with unfamiliar
+suppliers due to the fear of misuse of data.28 As a conse-
+quence, it affects the way users interact with the technology.
+
+Future work
+
+Evans et al.29 argue for the potential of building relation-
+ships through co-design practices may facilitate trust
+between the various stakeholders and help understand the
+problems faced by the target group. Moreover, it will help
+develop mechanisms to support their needs and aspirations
+over time. The potential of co-design in facilitating user
+trust was evident in this study, with carers discussing prac-
+tices that the researchers can use to ensure they feel safe to
+use the intervention.
+Co-design practices can facilitate user trust and form a
+partnership between the researcher and the stakeholder to
+work together in all aspects of intervention development,
+which includes needs assessment, development, pilot
+testing, and dissemination.30 The co-design process is rela-
+tively new within stroke caregiving literature, and the
+concept has the potential to improve technical design and
+
+develop service improvements for carers.31 Hence, the
+process needs to be considered by future researchers to
+create interventions that are meaningful, actionable, and
+feasible interventions for the carer.
+
+Limitations
+
+The study has some limitations. First, the researchers
+recruited usability experts from Amazon mTurk based on
+deﬁned criteria. However, it is challenging to validate the
+authenticity of the usability expert’s credentials within
+this platform, and hence the outcomes highlighted by
+usability experts need to be considered with caution.
+Second, the inability of the researcher to physically
+conduct a workshop to monitor stakeholder interactions
+and get real-time feedback. This was due to the local restric-
+tions required for social distancing to limit the spread of the
+disease. Third, the small sample size made it difﬁcult to
+draw statistical conclusions, which may have uncovered
+several usability issues and bugs that may otherwise not
+be evident. Finally, the limited time provided to the carer
+to use the intervention. Due to the short duration of the
+project, the carer was provided only one day to interact
+with the intervention which was not sufﬁcient to conduct
+a comprehensive heuristic evaluation. However, as this is
+a pilot evaluation, we aim to perform a more comprehensive
+future evaluation with real-life interactions and integration
+of the intervention in the daily activities of the carer to
+determine its acceptance and effectiveness in supporting
+carers of individuals with a history of stroke.
+
+Conclusions
+
+mHealth interventions can support carers of individuals
+with a history of stroke if it addresses their needs and expec-
+tations. Some of the critical needs and expectations
+
+Figure 5. mHealth App Usability Questionnaire (MAUQ) outcomes for cycle 3 and 4 with mean ranging from 1 to 7.
+
+8
+
+identiﬁed in this study include a comprehensive, persona-
+lized information platform, communication with their
+healthcare teams, and a private system or that the carer
+can trust The ﬁndings suggest that there is still room for
+improvement, creating a more inclusive environment for
+carers through co-design practices to evaluate the interven-
+tion based on their needs and identify issues to ensure that
+the ﬁnal product developed is usable and meaningful for the
+carer.
+
+Acknowledgements: This study was supported through doctoral
+scholarships from the School of Information Technology, Deakin
+University, and the Department of Public Health, University of
+Copenhagen. Prof John Grundy is supported by an Australian
+Research Council Laureate Fellowship FL190100035.
+
+Declaration of conﬂicting interests: The author(s) declared no
+potential conﬂicts of interest with respect to the research,
+authorship, and/or publication of this article.
+
+Contributorship: All authors designed and conceptualized the
+study, and were involved in developing the protocol, gaining
+ethical approval and participant recruitment. EL developed the
+mHealth app and coordinated with the participants at different
+iterative cycles to update and ensure it addresses their needs and
+requirements during the care trajectory. EL performed these
+activities under the supervision of MA, JG, FK and AF. Further,
+EL wrote the ﬁrst draft of the manuscript. All authors reviewed,
+edited and approved the ﬁnal version of the manuscript.
+
+Ethical approval: Not applicable to this study.
+
+Funding: The author(s) received no ﬁnancial support for the
+research, authorship, and/or publication of this article.
+
+Guarantor: Not applicable to this study.
+
+Informed consent: Not applicable, because this article does not
+contain any studies with human or animal subjects.
+
+Trial registration: Not applicable, because this article does not
+contain any clinical trials.
+
+ORCID iDs: Elton H Lobo
+https://orcid.org/0000-0003-0096-
+6318
+Sheikh Mohammed Shariful Islam
+https://orcid.org/0000-
+0001-7926-9368

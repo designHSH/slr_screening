@@ -1,0 +1,696 @@
+RESEARCH/Original Article
+
+The EU-project United4Health: User-centred
+design of an information system for a
+Norwegian telemedicine service
+
+Berglind Smaradottir1, Martin Gerdes1, Santiago Martinez2
+
+and Rune Fensli1
+
+Abstract
+Introduction: Organizational changes of health care services in Norway brought to light a need for new clinical pathways. This
+study presents the design and evaluation of an information system for a new telemedicine service for chronic obstructive
+pulmonary disease patients after hospital discharge.
+Methods: A user-centred design approach was employed composed of a workshop with end-users, two user tests and a field
+trial. For data collection, qualitative methods such as observations, semi-structured interviews and a questionnaire were used.
+Results: User workshop’s outcome informed the implementation of the system initial prototype, evaluated by end-users in a
+usability laboratory. Several usability and functionality issues were identified and solved, such as the interface between the initial
+colour scheme and the triage colours. Iterative refinements were made and a second user evaluation showed that the main
+issues were solved. The responses to a questionnaire presented a high score of user satisfaction. In the final phase, a field trial
+showed satisfactory use of the system.
+Discussion: This study showed how the target end-users groups were actively involved in identifying the needs, suggestions
+and preferences. These aspects were addressed in the development of an information system through a user-centred design
+process. The process efficiently enabled users to give feedback about design and functionality. Continuous refinement of the
+system was the key to full development and suitability for the telemedicine service. This research was a result of the inter-
+national cooperation between partners within the project United4Health, a part of the Seventh Framework Programme for
+Research of the European Union.
+
+Keywords
+Health information systems, human-computer interaction, usability, telemedicine, user-centred design
+
+Date received: 15 August 2015; Date accepted: 8 October 2015
+
+Introduction
+
+In Norway, the Coordination reform1 focuses on strate-
+gies for increased continuity of care in the National
+Health Services. One key consequence is the need for
+eﬀective technological solutions that support new clinical
+pathways and facilitate coordination, collaboration and
+information ﬂow between health care providers across
+organizational
+borders.
+In
+this
+context,
+the
+project
+United4Health
+(U4H),2
+framed
+inside
+the
+Seventh
+Framework
+Programme
+for
+Research
+(FP7)
+of
+the
+European Union (EU), develops and evaluates telehealth
+solutions for chronic disease patients. The Norwegian
+contribution to the U4H project was the development of
+a collaborative telemedicine system for remote monitoring
+of
+chronic
+obstructive
+pulmonary
+disease
+(COPD)
+patients after hospital discharge. A municipal partner
+established a telemedicine service where COPD patients
+performed daily routines of self-reported symptoms at
+home,
+sending
+measurement
+readings
+of
+pulse
+and
+
+peripheral capillary oxygen saturation (i.e. pulse oximetry
+or SpO2) and questionnaire answers on a tablet device3
+
+over a mobile network. For information management and
+communication eﬃciency, an information system (IS)
+was built to support the new telemedicine service (see
+Figure 1). The IS was designed for sustainable operation
+and implementation within the secured Norwegian Health
+Network (NHN).4 The details of privacy and security are
+further
+described
+elsewhere.5
+In
+order
+to
+achieve
+
+1Department of Information and Communication Technology, Faculty of
+Engineering and Science, University of Agder, Norway
+2Department of Psychosocial Health, Faculty of Health and Sport Sciences,
+University of Agder, Norway
+
+Berglind Smaradottir, Department of Information and Communication
+Technology, Faculty of Engineering and Science, University of Agder,
+Post Box 422, N-4604 Kristiansand, Norway.
+
+Journal of Telemedicine and Telecare
+2016, Vol. 22(7) 422–429
+! The Author(s) 2015
+Reprints and permissions:
+sagepub.co.uk/journalsPermissions.nav
+DOI: 10.1177/1357633X15615048
+jtt.sagepub.com
+
+acceptable levels of eﬀectiveness, eﬃciency, and satisfac-
+tion,
+a
+user-centred
+design
+(UCD)6–8
+process
+was
+employed for the development of the IS. This paper pre-
+sents the results from the UCD process of the IS develop-
+ment, with the aim of validation from operational and
+qualitative usability perspectives. The following research
+questions (RQs) were addressed:
+
+RQ1: How can a functional collaborative information
+system be developed taking into account user needs and
+requirements of a telemedicine service?
+RQ2: What lessons and methodological procedures from
+this study are transferable to the development of other
+clinical systems?
+
+Methods
+
+Qualitative methods were used for data collection and
+analysis. The UCD process was divided into two phases:
+(a) workshop with representatives of the end-user groups
+to gather user requirements and (b) iterative development
+of the IS including user evaluations, interviews and a ﬁeld
+trial. The UCD process had a total duration of six months
+
+during the years 2013–2014 and involved 24 end-users, see
+Table 1 for distribution of the participants. The work-
+shop, user evaluations and interviews were audio-visually
+recorded, with a total of 20 hours verbatim transcribed by
+the researchers. Transcripts were coded into categories
+and a qualitative content analysis9 was made with the
+software QSR NVIVO v10.
+
+Workshop with end-users
+
+The workshop aimed to understand the context of use and
+gather user requirements for the design of the IS.
+Workshop attendees (n ¼ 7) were representative of the
+end-user groups: two nurses, two technicians, two mem-
+bers of the union for cardiac and pulmonary patients
+(average age of 69 years) and one project manager.
+During the workshop, attendees deﬁned the optimal
+workﬂow for the telemedicine service, described their pre-
+ferred way of interacting with the IS and suggested ideas
+for the user interface layout.
+
+Iterative development
+
+The initial design of the IS was based on the outcome of the
+end-user workshop. An interaction designer created the ini-
+tial graphical user interface (GUI), inspired by the results of
+the project eHealth-extended Care Coordination.10 An
+industry partner (Devoteam AS in Grimstad, Norway) in
+the U4H project implemented the functionality of the IS.
+The security network infrastructure of the Centre for
+eHealth and Healthcare Technology at the University of
+Agder, Norway, was used as a test bed.
+
+User test 1 and 2. Two user tests based on a think aloud
+protocol11–15 were carried out with end-users to evaluate
+the usability of the system and propose potential reﬁne-
+ments for further development iterations. The user tests
+took place in the Usability Laboratory at the Centre for
+eHealth and Healthcare Technology, a facility with three
+separate test rooms and one observation room. The details
+of the infrastructure are described elsewhere.16 In user test
+1 (n ¼ 15), 11 nurses, two physicians and two technicians
+
+Figure 1. The telemedicine service information flow. Tranmission of measurements through a Virtual Private Network (VPN) tunnel.
+
+Table 1. The end-user participation in the UCD process.
+
+End-users
+n ¼ 24
+Workshop
+n ¼ 7
+User test 1
+n ¼ 15
+User test 2
+n ¼ 9
+Field trial
+n ¼ 11
+
+Nurse 1
+
+Nurse 2
+Nurse 3
+
+Nurse 4–6 (n ¼ 3)
+
+Nurse 7–12 (n ¼ 6)
+
+Patient 1
+
+Patient 2
+
+Patient 3–7 (n ¼ 5)
+
+Physician 1–2 (n ¼ 2)
+
+Project manager
+Technician 1–2 (n ¼ 2)
+
+423
+
+participated in the execution of a role-play scenario.17 The
+scenario was designed by the research team and included a
+simulation of the proposed telemedicine service workﬂow
+using the developed technology where the interface design
+and functionalities were tested (see Table 1 for participant
+distribution). After user test 1, two weeks were spent reﬁn-
+ing the IS. In user test 2 (n ¼ 9), ﬁve nurses, two techni-
+cians and two members of the union for cardiac and
+pulmonary patients simulated the steps of the telemedicine
+service workﬂow and tested the functionality of the second
+version of the IS. To complete the feedback, the question-
+naire System Usability Scale (SUS)18 was individually
+ﬁlled in after both user tests. In addition, two post-test
+semi-structured group interviews (n ¼ 15, n ¼ 9) were
+made with the aim of discussing the ﬁndings from the
+user tests regarding GUI and functionality of the IS.
+The participants were shown the IS on a large screen
+during the interview session, allowing to see the GUI in
+detail.
+For the telemedicine service, nurses were assigned a key
+role regarding data management in the IS, which was
+reﬂected in the participant distribution in the user tests,
+shown in Table 1. The representatives for COPD patients
+had the key role as advisors regarding the patient role in
+the telemedicine monitoring scenario. In addition, they
+provided data for the test and transmission to the IS,
+which contributed to a realistic test scenario. Four
+people from the research team had roles as moderators
+and observers during the user tests. In addition, two devel-
+opers from the company were present as observers in user
+tests and interviews.
+
+Field trial. The last step in the iterative development was to
+run a ﬁeld trial for the continuous functioning of the IS
+and identiﬁcation of usability issues. Five nurses utilizing
+the service at a telemedicine centre established by a muni-
+cipality partner participated in the ﬁeld trial, see Table 1
+for participation of the nurses in earlier phases. Six rep-
+resentatives of voluntary COPD patients were enrolled
+and used a tablet application at home for a week to
+daily send data. Every day, nurses used the IS to evaluate
+the participants’ data and, in addition, a videoconference
+call was made. During the ﬁeld trial, a usability evaluation
+with a think aloud protocol evaluating the daily tasks of
+the nurses in the IS was conducted in the workplace envir-
+onment followed by a post-test interview. At the end of
+the ﬁeld trial, the COPD patient participants were visited
+at home for an evaluation and interview focusing on the
+tablet device in the telemedicine scenario, further pre-
+sented elsewhere.19
+
+Ethical considerations
+
+This study was approved by Norwegian Social Science
+Data Services (project number: 35356). All participants
+received oral and written information about the project
+and
+conﬁdential
+treatment
+of
+the
+collected
+data.
+Participation
+was
+voluntary
+and
+participants
+could
+
+withdraw at any time without reason. The participants
+representing COPD patients were informed that the
+main aim of the project was the development and func-
+tional evaluation of the technology and not a medical
+follow-up. All participants gave explicit written consent.
+
+Results
+
+The results are presented following the stages of the UCD
+process: workshop with end-users; the iterative develop-
+ment divided into user test 1, user test 2, SUS question-
+naire and ﬁeld trial.
+
+Workshop with end-users
+
+The workshop results are categorised by context of use,
+telemedicine scenario workﬂow and user interface design.
+
+Context of use. The overall aim of the new IS was to create
+a platform that supported the information ﬂow and col-
+laborative work between the user groups involved in
+remote monitoring of COPD patients; nurses at hospital;
+technical department at hospital for conﬁguration of
+patient tablet devices for remote communication with
+the IS; telemedicine service nurses for management of
+patient data and patient follow up. In addition, patient’s
+GP and hospital physicians would have access granted to
+IS data of those patients they were responsible for.
+
+The workflow of the telemedicine scenario. The workﬂow for
+the telemedicine scenario contained two diﬀerentiated
+phases, the administrative and the practical. The adminis-
+trative phase started at the hospital lung ward, where a
+COPD patient would soon be discharged for home and
+asked for consent to participate in telemedicine monitor-
+ing. The hospital nurse would register the new COPD
+patient and notify the technical department at the hos-
+pital. The technical department created a new user in the
+IS (with the data ﬁelds name, birthday, address, mobile
+telephone number, tablet ID and JabberID for videocon-
+ference external to the system; privacy and security details
+are described)5 and prepared a suitcase with the remote
+monitoring equipment inside. In the practical phase, a
+hospital nurse provided user training to the patient
+before hospital discharge. The patient was instructed
+how to connect the equipment and take physiological
+measurements for transmission to the IS. Later on, the
+hospital nurse established the medical baseline reference
+values for calculation of triage with measurements made
+on the day of discharge. In the triage, patient data were
+diﬀerentiated by a colour scheme: green colour for data
+within the pre-deﬁned values, yellow colour when data fell
+outside those values meaning ‘attention required’, and red
+colour when data fell far from the values resulting in a
+‘immediate attention and alert triggered’ state. The cut-oﬀ
+values alerts were deﬁned in the common U4H protocol
+for COPD and represented deﬁned percentage deviations
+from the baseline reference values. In addition, three
+
+424
+Journal of Telemedicine and Telecare 22(7)
+
+questions in the questionnaire related to dyspnoea,
+sputum volume and sputum colour were ﬁlled in with
+values
+representing
+patient’s
+own
+symptom
+sensing
+(normal, worse, much worse). These questions align with
+the recommended symptoms to be evaluated when decid-
+ing whether antibiotics should be given or not.20
+
+At the time of discharge from hospital, two documents
+were transferred to the IS by the hospital nurse: nurse’s
+and doctor’s discharge letters. After the patients went
+home, physiological measurements (SpO2 and pulse)
+were sent daily together with the questionnaire on self-
+reported symptoms. A nurse used the IS for continuous
+management and evaluation of patient data for the patient
+follow-up. During the ﬁrst 10 days, a daily videoconfer-
+ence initiated by the nurse was made. The next 20 days,
+patient data were transmitted and evaluated. In the case
+that any of these data alerted the professionals (e.g. yellow
+or red colour in the triage), the nurse would contact the
+patient.
+
+User interface design. For the user interface design, support
+for certain administrative functions, such as creating a
+new user, establishing reference values for each patient
+and Personal Identiﬁcation Number (PIN) management
+were requested. Related to the functionality of the IS,
+users requested to get an informed overview of patients’
+
+names and measurements related visible at one glance.
+Individual patient selection was assigned for accessing
+patient’s health record with historical data, visualised on
+a line chart. The patient’s overview had to distinguish
+between short-term and long-term follow-ups. According
+to legal security and privacy requirements on information,
+all health care professional actions would need to be regis-
+tered and logged in the system database.
+
+User test 1
+
+User test 1 was executed with the ﬁrst version of the imple-
+mented IS, the initial GUI is shown in Figure 2.
+The results are based on the ﬁndings in the user test in
+laboratory and group interview. They are presented
+divided into two subcategories: graphical user interface
+design and suggestions about functionality.
+
+Graphical user interface design. Related to the GUI, nine
+usability issues were identiﬁed. The major one was that
+the colour scheme selected for patient list overview and
+headings could interfere with the coloured evaluation of
+triage calculated from the patient data (e.g. colours yellow
+and green were used in the triage but also in the patient list
+overview). A grey-scale colour scheme for the GUI was
+instead suggested. The patient overview presented was
+
+Figure 2. The graphical user interface (GUI) of the first information system (IS) implementation. (a) Patient list overview; (b) individual
+patient’s overview. SpO2 represents peripheral capillary oxygen saturation.
+
+425
+
+satisfactorily accepted by users because – as they argued –
+it showed the relevant information associated rather each
+patient and only minor changes were required regarding
+element labelling. Patient names marked with a red tri-
+age value were suggested to be placed at the top of the
+patient overview and an additional column was needed to
+mark patients already followed-up in the current day.
+Clicking with the mouse anywhere inside the GUI in the
+patient’s name row was suggested as a way of accessing the
+corresponding patient ﬁle. In the contact information sec-
+tion, patient’s name had to be clearly visible on top of the
+record and there had to be suﬃcient space to include mobile
+telephone numbers of patient and relatives, being very
+useful, e.g. in case of a videoconference error.
+
+Functionality of the IS. The user interaction with the IS
+during the performance of the tasks was generally success-
+ful, with minor technical problems related to transmission
+of patient data and videoconference’s quality.
+The users made nine suggestions about the functional-
+ity. Triage was automatically calculated, but it should also
+incorporate the option to manually override it by a health
+care professional after patient follow-up (e.g. manually
+change the ﬁnal triage colour from yellow to green after
+supervision). In this case, a journal note made with the
+new triage colour would automatically update triage
+colour in the patient view.
+The nurses asked for an electronic appointment book-
+ing system, in order to set up videoconference sessions
+with patients and avoid overbooking. They requested an
+overview of all patient measurements of the same day
+when a certain day was selected because the IS did only
+show one measurement per day. A notiﬁcation was sug-
+gested when new patient data was received by the IS,
+instead of having to actively press the refresh button to
+see
+the
+latest
+measurement
+value.
+In
+the
+heading
+Documents, users requested to see by default the last ﬁve
+documents, with the possibility of maximizing the list to see
+the remaining ones. Search for a speciﬁc patient had to be
+possible by birthday and social security number, in add-
+ition to by name. Users suggested having a unique storage
+for journal notes to sign at the end of the day, instead of
+having multiple journal notes from the same day. When
+users logged out, they asked for a notiﬁcation, such as
+‘You have unsigned journal notes’, as a reminder when
+there still were notes to be signed. The option to create a
+journal note should be always available even when having
+unsigned notes associated to the same patient.
+In the group interview after the test, the users’ com-
+ments about the IS use were positive overall: We learned a
+lot about it, it was useful.. . . It is a fantastic feeling to be
+able to come with feedback and know they can lead to
+changes. I miss that with other systems that we have.
+
+User test 2
+
+User test 2 showed that most of the suggestions and prob-
+lems from the previous evaluation were solved and
+
+incorporated in the IS. For instance, the transmission of
+patient data was successful in all cases and manual insert-
+ing of triage values as a coloured journal note was suc-
+cessfully tested. The new interface colour scheme, see
+Figure 3, was evaluated as appropriate providing a
+better overview in the patients’ view. In the group inter-
+view, users highlighted their satisfaction with the function-
+ality for inserting triage colour by making a correctly
+coloured journal note.
+
+The SUS questionnaire
+
+The results of the SUS questionnaire18,21,22 from the user
+tests are presented in Table 2. When comparing the SUS
+scores of user test 1 and user test 2, the scores improved in
+nine out of 10 questions, and the other question kept the
+same score in both tests. The results of the second test
+showed that the median of satisfaction ratings were on
+the range of ‘Agree’ or ‘Strongly agree’ for all the answers
+to the positively enunciated questions, and in the range of
+‘Disagree’ or ‘Strongly disagree’ for all the answers to the
+negatively enunciated questions.
+
+Field trial
+
+In the ﬁeld trial, the nurses’ overall rating concerning the
+IS was satisfactory. Font size was evaluated as suﬃcient,
+the choice of colours as appropriate and the critical infor-
+mation was placed on top in patients’ overview as
+requested. The patient‘s record provided a useful overview
+of patient’s data, where historical data were represented as
+triage colour scheme drawn in the calendar. At the bottom
+of the interface there was a line graph representing pulse
+oximetry measurements. The navigation in the IS was
+reported as easy, even though there were some technical
+problems due to data transmission into the IS. In the
+interviews nurses commented: I think this system is easy
+to use. With small adjustments this will be a good tool to
+support the workﬂow.. . . The IS seems to work well and
+gives a good overview, most of it is self-explained.. . . The
+ﬁeld trial has been very useful in order to identify errors that
+can occur when using the equipment.
+
+Discussion
+
+In this paper, a UCD process of an IS for a collaborative
+telemedicine service has been presented. A UCD process
+involves end-users throughout the entire development
+cycle of an intended technological solution. Telemedicine
+services often involve multiple user groups, making user
+participation in the design and evaluation crucial in order
+to understand the clinical context and user interactions.
+UCD has proven to be an eﬀective approach for gathering
+user requirements23 increasing level of user acceptance7
+
+and reducing development time because usability prob-
+lems can be identiﬁed before deployment.6
+
+The RQs were answered based on the results of this
+study. About the RQ1, which asked about how to take
+
+426
+Journal of Telemedicine and Telecare 22(7)
+
+Figure 3. The graphical user interface (GUI) of second information system (IS) implementation. (a) Patient list; (b) individual patient’s overview.
+FTO represents full telemedicine monitoring during the 10 first days and ETO limited telemedicine monitoring for the next 20 days (i.e
+transmission of patient data, but videoconference only in case of yellow or red alert).
+
+Table 2. System Usability Scale (SUS) questionnaire scores.
+
+Question
+
+User test 1
+User test 2
+
+M
+IQR
+M
+IQR
+
+1. I think that I would like to use this system frequently.
+3
+1.5
+4.5
+0
+2. I found the system unnecessarily complex.
+2
+1.0
+2.0
+1.0
+3. I thought the system was easy to use.
+3.5
+1.0
+4.5
+1.0
+4. I think that I would need the support of a technical person to
+be able to use this system.
+3.0
+1.0
+2.5
+2.0
+
+5. I found the various functions in this system were well integrated.
+3.5
+0.5
+4.5
+1.0
+6. I thought there was too much inconsistency in this system.
+2.5
+1.5
+1.5
+0
+7. I would imagine that most people would learn to
+use this system very quickly.
+4.0
+0.5
+4.5
+0
+
+8. I found the system very cumbersome to use.
+2.5
+1.0
+1.0
+0
+9. I felt very confident using the system.
+3.5
+1.0
+4.0
+2.0
+10. I needed to learn a lot of things before I could
+get going with this system.
+3.0
+1.5
+1.5
+0
+
+M: median; IQR: interquartile range.
+Questionnaire responses on a five-point Likert scale from one (strongly disagree) to five (strongly agree).
+
+427
+
+into account user needs and requirements in the new
+system, the study showed that the UCD approach success-
+fully included user needs in the design and development.
+The workshop with end-users eﬀectively outlined the clin-
+ical context of use and user requirements regarding GUI,
+interaction and functionalities. User evaluations during the
+iterative development were carried out both in laboratory
+and real settings of the telemedicine service. The evaluations
+in the laboratory were performed in a high ﬁdelity simula-
+tion task environment which enabled users to give useful
+feedback about GUI design and interactions with the
+system. These ﬁndings are in line with the use of a simula-
+tion laboratory in health for education,24 training25 and
+research purposes,26 where the task environment provides
+controlled complexity to experimental tasks performed by
+human participants in research.27 In addition, the ﬁeld trial
+allowed analysis of the IS in real settings, providing both
+real-time evaluation and continuous observation of long-
+term technology use in working environment.
+Several lessons were learned during the UCD process
+that can be transferable for the development of other clin-
+ical systems (RQ2). Firstly, the creation of clinical systems
+requires active involvement of all target user groups in the
+design and continuous evaluation of the solution and,
+when possible, in a high-ﬁdelity simulation environment
+that realistically recreates the context of use. Due to the
+workshop with end-users, constructive comments were
+gathered regarding data visualisation, such as a historical
+overview of the triage using a line-graph that helped to
+detect trends in data. In addition, the user evaluations
+between the iterations usefully informed IS reﬁnements,
+such as using a grey-scale colour scheme to not interfere
+with the colours used in the triage. Secondly, interoper-
+ability problems,28,29 are common within clinical environ-
+ments, so the execution of the ﬁeld trial provided valuable
+insights into the interactions between the technologies
+involved, and a continuous long-term feedback of users’
+interactions with these technologies. There were some
+limitations associated to this study, such as a reduced
+number of end-users and a simulated test environment.
+However, the laboratory setting allowed creating realistic
+scenarios for the validation of the system under controlled
+conditions, and the ﬁeld trial gave the opportunity to test
+the system in real clinical settings and realistic conditions
+including mobile data transfer from patients in home
+environment. These tests were carried out with represen-
+tatives of the end-user groups intended to use the tele-
+medicine system. Based on the comments gathered from
+health professionals involved in the clinical workﬂow after
+system implementation and deployment, these factors
+were assumed to suﬃciently compensate the limitations
+mentioned above.
+This study was framed inside the EU FP7 project U4H.
+The implemented IS has been deployed in three telemedi-
+cine centres that provide services to 23 municipalities of
+Norway, being ready to be adapted to other services
+within the secured NHN. Future research would cover
+increased
+complexity
+of
+autonomous
+reasoning
+and
+
+decision support and the inclusion of other clinical patient
+groups.

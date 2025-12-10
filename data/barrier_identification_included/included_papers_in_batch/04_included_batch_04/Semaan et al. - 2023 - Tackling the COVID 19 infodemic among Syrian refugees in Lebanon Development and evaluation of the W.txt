@@ -1,0 +1,1492 @@
+Tackling the COVID-19 infodemic among Syrian
+refugees in Lebanon: Development and
+evaluation of the “Wikaytek” tool
+
+Juliette Semaan1, Christopher Farah2, Reem Abou Harb1,3, Marco Bardus1,3,4
+,
+Aline Germani1,5 and Imad H Elhajj1,2
+
+Abstract
+
+Objective: The COVID-19 infodemic has been a global public health challenge, especially affecting vulnerable populations
+such as Syrian refugees with limited internet access and functional, health, digital, and media literacies. To address this
+problem, we developed Wikaytek, a software to diffuse reliable COVID-19 information using WhatsApp, the preferred com-
+munication channel among Syrian refugees. In this paper, we describe the systematic development of the tool.
+
+Methods: We undertook a pilot study guided by the Humanitarian Engineering Initiative (HEI)’s user-centered design frame-
+work, comprising ﬁve stages: (a) user research, including needs assessment and desk review of interventions with target
+users; (b) concept design based on platform and source selection, message format, concept testing, and architecture design;
+(c) prototyping and implementation, encompassing software development and system operation; (d) user testing (alpha and
+beta); and (e) evaluation through software analytics and user interviews. We reported a qualitative process evaluation.
+
+Results: Wikaytek scrapes validated and reliable COVID-19-related information from reputable sources on Twitter, automat-
+ically translates it into Arabic, attaches relevant media (images/video), and generates an audio format using Google text-to-
+speech. Then, messages are broadcast to WhatsApp. Our evaluation shows that users appreciate receiving “push” informa-
+tion from reliable sources they can trust and prefer the audio format over text.
+
+Conclusions: Wikaytek is a useful and well-received software for diffusing credible information on COVID-19 among Syrian
+refugees with limited literacy, as it complements the texts with audio messages. The tool can be adapted to diffuse messages
+about other public health issues among vulnerable communities, extending its scope and reach in humanitarian settings.
+
+Keywords
+
+COVID-19, misinformation, refugees, mobile applications
+
+Submission date: 10 March 2023; Acceptance date: 15 September 2023
+
+1Humanitarian Engineering Initiative, Faculty of Health Sciences and Maroun Semaan Faculty of Engineering and Architecture, American University of Beirut,
+Beirut, Lebanon
+2Department of Electrical and Computer Engineering, Maroun Semaan Faculty of Engineering and Architecture (MSFEA), American University of Beirut,
+Beirut, Lebanon
+3Department of Health Promotion and Community Health (HPCH), Faculty of Health Sciences, American University of Beirut, Beirut, Lebanon
+4Institute of Applied Health Research, College of Medical and Dental Sciences, University of Birmingham, Edgbaston, UK
+5Center for Public Health Practice, Faculty of Health Sciences (FHS), American University of Beirut, Beirut, Lebanon
+
+Marco Bardus, Institute of Applied Health Research, College of Medical and Dental Sciences, University of Birmingham, Murray Learning Centre, Edgbaston
+B15 2TT, UK.
+
+Creative Commons NonCommercial-NoDerivs CC BY-NC-ND: This article is distributed under the terms of the Creative Commons Attribution-
+NonCommercial-NoDerivs 4.0 License (https://creativecommons.org/licenses/by-nc-nd/4.0/) which permits non-commercial use, reproduction
+and distribution of the work as published without adaptation or alteration, without further permission provided the original work is attributed as speciﬁed on
+the SAGE and Open Access page (https://us.sagepub.com/en-us/nam/open-access-at-sage).
+
+User Design
+
+Volume 9: 1–18
+© The Author(s) 2023
+Article reuse guidelines:
+sagepub.com/journals-permissions
+DOI: 10.1177/20552076231205280
+journals.sagepub.com/home/dhj
+
+Introduction
+
+The COVID-19 infodemic
+
+The Internet has played a signiﬁcant role in the COVID-19
+pandemic. On one side, research institutions, public health
+agencies, and governments have used the Internet to
+monitor the diffusion of the virus using infoveillance tech-
+niques1 or to spread timely information about how to
+prevent transmission, manage outbreaks, and promote pro-
+tective behaviors. However, on another side, individuals
+and organizations have used the Internet to share inaccurate
+information (i.e., misinformation) or deliberately shared
+wrong information and conspiracy theories (i.e., disinfor-
+mation), creating panic and contributing to the diffusion
+of rumors2,3 and confusion among the general public and
+mass media, who were diffusing information received
+through internet resources.4
+
+Since its beginning, the COVID-19 pandemic has been
+characterized by the abundance of misinformation and dis-
+information shared on the Internet, which the director
+general of the World Health Organization (WHO), Tedros
+Ghebreyesus, called an “infodemic.”5 While some research
+suggests that misinformation about health topics is not a
+prerogative of the COVID-19 pandemic,6,7 and myths and
+rumors
+were
+diffused
+on
+other
+health
+topics,8
+the
+COVID-19 infodemic contributed to an increased sense of
+uncertainty, which was already associated with a novel cor-
+onavirus.9 For example, at the beginning of the outbreak in
+Lebanon, a study on the volume of misinformation on
+Twitter reported that about 25% of the analyzed posts con-
+tained misinformation, and 17% had unveriﬁable informa-
+tion spread by informal personal accounts of Internet
+personalities.10
+
+Even if misinformation or disinformation related to
+COVID-19 was generated by a handful of inﬂuencers on
+social media,11 myths, conspiracy theories, and “fake
+news” endangered the work of public health organizations
+and governments, diffusing rumors and unveriﬁed informa-
+tion, diffusing mistrust in research and governmental insti-
+tutions, especially when political ﬁgures were diffusing
+disinformation.12 For example, the lack of trust in govern-
+ments has been associated with the limited use of initiatives
+to counter the pandemic, including contact-tracing apps.13
+
+In addition, the politicization of the pandemic in several
+countries translated into a polarized public opinion, espe-
+cially on social media, which have increasingly become
+ideological
+eco-chambers
+of
+diametrically
+opposing
+views.14 Whether at the containment or immunization
+stages, misinformation and disinformation can cost lives
+and amplify the harm caused by the virus, making it chal-
+lenging for people to ﬁnd reliable sources and follow guid-
+ance.15 For example, a study by Johns Hopkins Center for
+Health Security estimated that the misinformation and dis-
+information about COVID-19 vaccines cost the US
+
+government between $50 and $300 million daily due to
+the treatment of unvaccinated individuals.16
+
+The infodemic among vulnerable populations and refugees.
+The pandemic and the infodemic inequitably hit vulnerable
+segments of the population worldwide.17–19 COVID-19
+misinformation has been linked to poor health and
+limited digital health literacy, which are notoriously con-
+nected with low socioeconomic status and health inequal-
+ities.20–22 Migrants and refugees from conﬂicts have been
+among the most vulnerable populations left out of a
+global COVID-19 response.23,24 Considering the lessons
+learned from the inﬂuenza pandemic, Truman et al.25
+
+recommended that public health organizations engage refu-
+gees by considering different cultural, linguistic, and
+literacy-related dimensions. The authors also highlighted
+the need to reach this vulnerable population through author-
+ities such as religious leaders or institutions that gained their
+trust.25 Other researchers called for a more equitable
+response to the pandemic and a shared responsibility to
+ensure that vaccines and other services are available to
+the most vulnerable.26
+
+In countries with multiple crises and weak political and
+economic infrastructures, it has been harder for governmen-
+tal and public health organizations to manage COVID-19
+public health and communication responses. Lack of trust
+toward institutions27 was coupled with the difﬁculties in
+promoting effective contact tracing and quarantine enforce-
+ment.28 Furthermore, people with chronic conditions and
+disabilities and refugees had even more challenges acces-
+sing health services during lockdowns in low-resource
+countries (e.g., Lebanon29,30).
+
+COVID-19
+response
+and
+Syrian
+refugees
+in
+Lebanon.
+Lebanon, a small country in the Eastern Mediterranean
+Region, is the largest refugee-hosting country per capita
+in the world, with an estimated 1.5 million Syrian refugees
+living in the country.31 Since 2019, the country has been
+facing an unprecedented series of economic, ﬁnancial,
+and social crises, deeply affecting the livelihoods of all
+communities residing there.32,33 Political instability at dif-
+ferent levels is further stalling any ﬁscal or social reforms.
+The COVID-19 pandemic soon followed by the Beirut
+port explosion32 accelerated the country’s economic down-
+turn and the suffering, especially for the most vulnerable
+segments of the population, including the Syrian refugees.
+The absence of viable and durable solutions results in
+greater vulnerability, extreme poverty, and resorting to
+harmful coping strategies, such as increased uptake of
+debt, rationing food, domestic violence, child labor, and
+child marriage.31 Although the government, local commu-
+nities, and multiple international organizations have been
+acting together to bear the brunt of the refugee inﬂux,
+there still exists a gap in addressing vulnerabilities and
+meeting the basic needs of Syrian refugees.
+
+2
+
+Regarding health, Syrian refugees have limited access to
+health care due to their low rates on legal residency. Only
+17% of the total estimated population is ofﬁcially registered
+within
+the
+United
+Nations
+High
+Commissioner
+for
+Refugees (UNHCR).31 The multiple crises have also under-
+mined the local response to COVID-19, with locals gener-
+ally mistrusting messages and recommendations coming
+from Lebanese governmental institutions, unable to con-
+textualize and enforce infection control standards.27 The
+level of mistrust was even higher among Syrian refugees,31
+
+who were already facing difﬁculties accessing healthcare
+services due to limited awareness, education, and discrimin-
+ation;34 they also have limited access to reliable, accurate
+healthcare information, living in difﬁcult circumstances.34
+
+The COVID-19 pandemic exacerbated this precarious situ-
+ation due to high levels of crowding, inadequate access to
+clean water, protective equipment such as masks, health
+care,
+and
+community
+awareness.30,34
+The
+problems
+mainly affect women living in urban settings, primarily
+unemployed, at extreme risk of gender-based violence.35
+
+Initiatives to counter the COVID-19 infodemic globally. Since
+the beginning of the pandemic, the WHO has engaged in
+numerous activities to combat the infodemic, such as the
+ﬁrst infodemiology conference, in June 2020,36 or the
+“MythBusters” campaign to dispel misconceptions about
+the virus and its transmission.37 At the same time, the
+WHO partnered with technology companies such as Meta
+(Facebook) and Alphabet (Google) to reduce the spread
+of misinformation through algorithms and semiautomated
+search ﬁltering.38 In addition, the WHO, recognizing the
+need for a coordinated COVID-19 infodemic response,
+through
+its
+Information
+Network
+for
+Epidemics
+(EPI-WIN), gathered ideas from 50 action points organiza-
+tions could use to minimize the problem.39 The main action
+areas include strengthening the evidence, simplifying
+knowledge translation, fact-checking and addressing misin-
+formation, amplifying messages to reach communities and
+individuals most in need, and monitoring rumors and mis-
+information through “social listening.”39 An example of
+an intervention that teaches how to recognize fake news
+(using the principles of inoculation theory40 on critical
+media literacy) is the University of Cambridge’s “Go
+Viral” game.41 However, a recent meta-analysis of 16 inter-
+ventions to counter COVID-19 misinformation found limited
+evidence of their effectiveness on changing beliefs and beha-
+viors.42 Yet, a signiﬁcant limitation of these initiatives is that
+they were developed in high-income countries with high-
+resource settings. They were based on the assumption that
+many people have basic functional literacy and minimal
+digital and media literacies.42 Media, computer, and health
+literacy skills are hard to transfer and take time to develop;
+moreover, they are rarely measured or considered in digital
+health intervention development.43 Moreover, these initia-
+tives targeted savvy social media users with access to the
+
+internet and social media, neglecting vulnerable segments
+of the population.
+
+Initiatives to counter the infodemic among refugees in
+humanitarian settings and Lebanon. Mobile phones are com-
+monly used as delivery modes of health communication
+interventions
+targeting
+refugees
+in
+low-resource
+and
+humanitarian settings. Examples of mobile-based interven-
+tions include UNRWA’s Khan Younis Health Centers used
+text messages to improve adherence to appointments
+among vulnerable patients with noncommunicable dis-
+eases.44 Another example includes a mHealth app devel-
+oped to increase access to maternal and child health
+services among Syrian refugees living in Turkey was
+adapted for the pandemic.45 Following data from user feed-
+back, the app was successfully modiﬁed to include crucial
+COVID-19-related information and symptom checking,
+contributing to national prevention efforts.45 Another
+example is the UN Women’s WhatsApp service dissemin-
+ating
+COVID-19-related
+information
+among
+Syrian
+women in Jordan.46 While successful considering the pro-
+pensity of Syrian refugees to receive information via
+WhatsApp,47 this intervention did not account for different
+literacy levels and skills. Another technology, interactive
+voice response (IVR), has been used with refugees in
+several
+low-resource
+countries,
+such
+as
+India
+and
+Pakistan, where health workers host radio-like shows, and
+beneﬁciaries
+access
+the
+show
+through
+their
+mobile
+devices.48 However, these interventions required dedicated
+staff to create and disseminate health messages to ensure the
+system remained operational.
+In Lebanon, the UNHCR’s 2022 refugee vulnerability
+assessment report (VASyR) found that 90% of Syrian refu-
+gees own a phone, and 89% had an active mobile data
+plan.31 Furthermore, the vast majority reported using
+WhatsApp (93%), followed by Facebook (29%).31 Some
+research shows refugees prefer Facebook and WhatsApp
+over traditional text services.49–51 Most refugees like
+WhatsApp’s voice notes over texting52 even though some
+other studies reported that Syrian refugee women consid-
+ered text messages a reliable source of information.53
+
+Other forms of communication include the “Citizen
+Radio” initiative, which involved IVR technology and con-
+nected participants to a host, guest speaker, and other listen-
+ers through a mobile app, delivering audio-based health
+information to refugees.54 IVR-based interventions have
+limitations because some refugees might share a phone
+line with other family members or need an active voice
+plan.52 Yet, a recent cross-sectional study investigating
+eHealth literacy among people living in Lebanon revealed
+low literacy levels among Syrian respondents.55
+
+A preliminary report on COVID-19 vaccine acceptance
+among Syrian refugee beneﬁciaries of a humanitarian organiza-
+tion in Lebanon56 showed that about a third refused to vaccin-
+ate. The main reasons behind this refusal were concerns about
+
+Semaan et al.
+3
+
+vaccine safety and effectiveness.56 Another qualitative study
+argued that these misconceptions might be due to misinforma-
+tion shared on informal social networks.30 International organi-
+zations such as the local and regional WHO ofﬁces, the United
+Nations Children’s Fund (UNICEF), the Norwegian Refugee
+Council, and others have attempted to develop campaigns in
+Arabic and English to raise awareness about COVID-19 and
+promote vaccine uptake among refugees. However, to our
+knowledge, no published reports evaluated such campaigns.
+
+Aims and objectives
+
+In response to these gaps in the literature and practice,
+the
+Humanitarian
+Engineering
+Initiative
+(HEI) at
+the
+American University of Beirut (AUB) developed Wikaytek
+(which means “your protection” in Arabic), a tool to dissem-
+inate credible and reliable COVID-19-related information
+among Syrian refugees, speciﬁcally among women living in
+urban settings. This report summarizes a pilot study used to
+develop and evaluate Wikaytek. Speciﬁcally, this pilot study
+was aimed at (a) describing the iterative process of developing
+Wikaytek, (b) evaluating its features and impact, and (c)
+reﬂecting on future applications.
+
+Methods
+
+Design
+
+We conducted a pilot study to develop the Wikaytek tool
+according to a user-centered design framework adapted from
+an interfaculty-based service model of the HEI described in
+Najem et al.57 The HEI team includes expert researchers
+from engineering and public health disciplines, research assis-
+tants, and interns working to develop solutions to humanitar-
+ian and global public health problems. Most of HEI’s work
+has addressed Syrian refugees’ challenges in Lebanon.
+The user-centered design framework57 consists of ﬁve
+main phases: (a) user research and analysis through needs
+
+assessment, (b) concept design, (c) prototyping and implemen-
+tation, (d) user testing, and (e) evaluation, as represented in
+Figure 1. We utilized social marketing as our overarching
+evidence-based,
+theory-driven
+planning
+framework58
+to
+deﬁne the behavioral change strategy to promote the adoption
+of the tool against COVID-19 misinformation among vulner-
+able populations. Social marketing has been applied to
+develop and implement COVID-19 vaccination interventions
+among various populations.59–61
+
+Phase 1: user research and analysis
+
+Needs assessment
+
+A group of four female graduate students enrolled in the
+Master of Public Health (MPH) at the Faculty of Health
+Sciences in the Fall 2020 semester conducted a needs
+assessment on behalf of the HEI team. The HEI was the
+partner organization in a service-learning course entitled
+“Social marketing for public health” (HPCH 333),62 a
+course taught by a member of the research team (MB).
+The students worked with HEI to develop a marketing
+plan to deﬁne the “product” (i.e., the platform itself) and
+promote its adoption. The ﬁrst (JS), ﬁfth (AG), and last
+author (IHE) cosupervised the MPH students along with
+the fourth author (MB). Before the social marketing
+course, the students took a qualitative research methods
+course as part of their MPH program, so they had some
+experience in undertaking qualitative research. Formal or
+informal formative research activities are an essential
+stage in developing a social marketing plan63 and are
+used to gain insight into the experiences of the potential
+target audience.63,64 As such they follow a descriptive phe-
+nomenological
+qualitative
+research
+approach.65
+The
+purpose of the needs assessment was to understand per-
+ceived barriers, beneﬁts, and motivating factors related to
+the use of mobile phones for health, particularly for using
+them
+to
+receive
+COVID-19-related
+information. The
+
+Figure 1. Humanitarian Engineering Initiative’s user-centered design framework.57
+
+4
+
+needs assessment allowed the team to identify the tool’s
+basic features and develop an overarching marketing strategy
+for the project. This activity was deemed exempt from ethical
+review because it was not research aimed at generalizable
+knowledge and did not involve collecting personal or identi-
+fying data. This is aligned with the deﬁnitions included in the
+regulations of the US Department of Health and Human
+Services (HHS), to which the AUB refers to—see §46.104
+Exempt research (Subpart A) Basic HHS Policy for
+Protection of Human Research Subjects.66
+
+Sample. A convenience sample of 10 Syrian refugee
+women living in urban settings in Beirut, in the suburb of
+Sil El Fil, in the areas of Jesr Matar, Tarik Jdide,
+Al-Hersh, Al-Rihab, and Al-Bashoura. We purposefully
+sampled women because most were homemakers or
+unemployed and were more likely to have sufﬁcient time
+to participate in the project and disseminate the knowledge
+and practices acquired to their families. Women also consti-
+tute most of the refugee population in the Eastern
+Mediterranean region, with some estimates referring to
+70%.67 Displaced women are particularly vulnerable, as
+they lack basic needs crucial for health, such as water sani-
+tation and hygiene.68 They have also reported barriers to
+healthcare services due to cost, distance, lack of aware-
+ness,69–71 limited literacy, and lack of trust in local govern-
+mental organizations.69 We chose urban settings because
+the refugee population seldom receives aid from govern-
+mental or nongovernmental organizations (NGOs), unlike
+in informal tented settlements.72 We chose Sin El Fil
+because it is a “community of practice” whose municipality
+has a longstanding relationship with the university and the
+Faculties of Health Sciences and Engineering. To summar-
+ize, the inclusion criteria were Syrian refugee women of any
+age living in the suburb of Sin El Fil, with a mobile phone to
+conduct the interview, interested in participating in the
+project.
+
+Recruitment. Mission Village, a local NGO dedicated to
+support the homeless and alleviate poverty in Lebanon,
+based in Sin El Fil helped recruit participants. Mission
+Village, which is a longstanding partner of the HEI, dif-
+fused invites to participate in the project both verbally, or
+via WhatsApp using their network of beneﬁciaries, includ-
+ing Syrian refugees living in the area. Mission Village col-
+lected a list of phone numbers of potential interviewees and
+shared it with a member of the HEI (the ﬁrst author JS),
+who, in turn, shared the numbers with the students. The
+NGO provided a list of 10 participants who agreed to be
+interviewed. The student interviewers had no relationship
+with the interviewees before the interviews.
+
+Data collection procedures. Given the limitations due to the
+lockdowns and quarantine imposed by the government in
+2020 and to ensure safety, the MPH students conducted
+
+the needs assessment through informal interviews over
+mobile phones (WhatsApp) while participants were at
+home. As participants were women homemakers, they
+likely had children or other family members around them
+during the interview, but this was not deemed to inﬂuence
+their responses. The interviewers introduced themselves
+as students and explained that they were investigating the
+use
+of
+mobile
+phones
+for
+information
+related
+to
+COVID-19, as part of a project on COVID-19 information
+among Syrian refugees in Beirut. The students explained
+that the information collected was treated conﬁdentially
+and that they did not collect any identifying information.
+They collected oral consent before proceeding with the
+interview, which took about 15 min. The interviews were
+not recorded, and students took notes without collecting
+personal identiﬁers. All 10 refugees who were contacted
+agreed to participate and were interviewed. No further inter-
+views were conducted, and the students believed the infor-
+mation provided reached theoretical saturation.
+
+Materials. Four students conducted the interviews follow-
+ing a bespoke, structured interview guide to assess the inter-
+viewees’ availability of a mobile phone, accessibility to the
+Internet and ability to use apps (prompted digital literacy),
+COVID-19-related knowledge (prompted health literacy),
+and ability to fact-check (prompted media literacy), as
+well as scientiﬁc, or functional literacy (unprompted),
+based on the eHealth literacy model.73 This model was fol-
+lowed as a recent study showed that eHealth literacy was
+lower among Syrian nationals residing in Lebanon.55 The
+assessment also looked at the potential use of a uniﬁed plat-
+form to receive COVID-19 information and the refugees’
+preferred
+communication
+channels,
+to
+identify
+its
+features and perceived beneﬁts. The interview guide was
+approved by the HEI research team but was not pilot
+tested. The guide is provided in the Supplemental Material.
+
+Data analyses. All four students combined their notes to
+summarize ﬁndings and organize them without coding
+around the themes of barriers related to “technological
+availability,” the different types of literacies according to
+the eHealth literacy model (functional, digital, health,
+media, scientiﬁc, and information literacies), beneﬁts, moti-
+vators for using the tool, and competition. The students
+validated their summary through discussions with the
+supervisors JS and MB. Then, JS and MB codeveloped sub-
+themes based on the summary provided by the students.
+The subthemes were inductively generated, following a
+mixed-method, deductive–inductive thematic analysis.74,75
+
+Themes and subthemes were then reported in a narrative
+summary and included in the current report. No quotations
+were produced as the information was gathered in an aggre-
+gate format.
+
+Semaan et al.
+5
+
+Desk review
+
+In parallel, we conducted a desk review of digital interven-
+tions targeting Syrian refugees in low-income countries and
+humanitarian settings to contextualize the needs assessment
+results. In addition, we completed a competition analysis,
+based on the needs assessment to identify possible solutions
+to promote access to the platform. Competition analysis is a
+tool commonly used in social marketing76,77 to understand
+the nature of competing behaviors, services, or products
+that would limit the adoption of the proposed solution.
+
+Phase 2: concept design
+
+This phase used the results of Phase 1 to develop a human-
+centered design solution, including a clear, detailed
+step-by-step workﬂow. This phase encompassed the ele-
+ments of platform and information sources selection,
+choice of message formats, and concept testing.
+
+Concept testing
+
+Concept testing was done to test the workﬂow and accept-
+ability of the platform before designing a prototypical soft-
+ware architecture. Concept testing was conducted with the
+help of another group of undergraduate students enrolled
+in
+another
+service-learning-based
+“social
+marketing”
+course (HPCH 204) in Spring 2021, taught by the same
+member of the research team (MB). The students tested
+the protocol for delivering the messages using a private
+WhatsApp group called “Wikaytek –ﻭﻗﺎﻳﺘﻚ
+”which was
+opened to a selected group of Syrian refugee women
+recruited through a local religious organization based in
+Sin El Fil (the Church of the Nazarene). The WhatsApp
+group was set to private to ensure conﬁdentiality while
+monitoring access and reactions to the messages.
+
+Phase 3: prototyping and implementation
+
+This phase involved the production of a prototype, includ-
+ing software and technology development. A computer
+science and engineering team member (CF) developed the
+code to automate retrieving, translating, and disseminating
+information to WhatsApp.
+
+Phase 4: user testing
+
+In this phase, the Wikaytek prototype was tested by diffus-
+ing messages in the same group of users recruited in Phase
+2, following the alpha and beta testing stages of software
+development. Alpha testing allowed us to address bugs
+and reﬁne the software. Then, before the development of
+the ﬁnal design, beta testing was conducted to check the
+prototype’s
+feasibility,
+usability,
+and
+acceptability.
+Finally, we modiﬁed the tool based on the feedback and
+
+developed a ﬁnal product, which was then released to the
+same group of users.
+
+Phase 5: evaluation
+
+This phase involved the assessment of the ﬁnal version of
+the Wikaytek operating tool, with feedback collected
+throughout the process, using a combination of sources of
+information as follows:
+
+WhatsApp analytics
+
+Continuous usage analytics are provided by WhatsApp’s
+internal analytics features. These include the number of
+messages sent and received, the number of times audio mes-
+sages were played, and the number of active users.
+
+Qualitative evaluation
+
+A qualitative evaluation of Wikaytek was conducted
+between August 2021 and March 2022 to collect users’
+feedback. Similar to the needs assessment, this activity
+was aimed to understand the experience of users; hence, it
+conﬁgures as a descriptive phenomenological approach.65
+
+Sample. A consecutive sample of all nine “active users” of
+Wikaytek WhatsApp testing group—all Syrian women refu-
+gees living in the suburb of Sin El Fil. Active users meant
+that they read the messages and actively engaged with the
+messages by sharing them, liking, or responding to them.
+Two participants were not interviewed, because they
+actively (n = 1) or accidentally (n = 1) left the group.
+
+Recruitment. Participants were recruited in Phase 2 through
+the Church of the Nazarene, a religious organization part-
+nering with the HEI. A pastor of the religious organization
+verbally invited Syrian refugee women acolytes to share
+their mobile phone number for participating in the
+project. The pastor then shared the number list with the
+HEI team. All users agreed to be included in the
+WhatsApp group and test the tool.
+
+Data collection procedures. A female member of the research
+team (RAH), at the time of the interview an undergraduate
+intern student in Health Communication, managed the
+WhatsApp group, and invited group members to participate
+in a brief structured interview over a WhatsApp call.The inter-
+viewer undertook qualitative research methods as part of her
+health communication program. The interviewer brieﬂy men-
+tioned the purpose of the interview and obtained assent before
+completing the interview, which lasted 10 min and was likely
+conducted while participants were at home. As in the needs
+assessments, participants may have had children or other
+family members around them during the interview, but this
+was not deemed to inﬂuence their responses. Participants
+
+6
+
+were already familiar with the name of the interviewer and the
+project, as they were in the WhatsApp group since Phase 2 of
+the project. The interviews were not recorded, and the
+researchertook notesfollowing each question.The researchers
+believethatdatasaturationwasreachedastheentireusergroup
+was interviewed (excluding the drop-offs).
+
+Materials. The interviewer followed a bespoke set of ques-
+tions, which were as follows: How beneﬁcial did you ﬁnd
+the service? What did you like about the service? What did
+you dislike? Would you use it again? Did you share the infor-
+mation with someone, if so with whom? What did you like
+the most about the service? The questions were approved
+by the research team but were not pilot tested.
+
+Data analyses. The researcher took the interview notes and
+generated narrative summaries for each user without coding
+the answers. The researcher organized the summaries
+according to the questions as they were asked. A visual
+summary of the comments was generated through a word
+cloud, based on the frequency of responses.
+
+Results
+
+Phase 1: user research and analysis
+
+Barriers
+
+The barriers to digital, health, and media literacies and com-
+munication channels related to COVID-19 are summarized
+
+in Table 1, along with potential solutions deducted from
+interventions identiﬁed through our desk review.
+
+Technology availability, accessibility, and use (digital literacy).
+All women had access to a mobile phone since they were
+interviewed through WhatsApp phone calls, but most did
+not have an active data plan. In fact, many accessed the inter-
+net through a shared Wi-Fi connection at home. Most parti-
+cipants used WhatsApp and Facebook, and a few reported
+using YouTube and Instagram. However, all the interviewed
+women
+had
+access
+to
+a
+phone
+and
+an
+internet
+connection during the day.
+
+COVID-19-related knowledge (health literacy). Most partici-
+pants declared knowing basic information about COVID-19,
+and all participants were aware of preventive measures, such
+as wearing masks in public, physical distancing, washing
+hands with water and soap, and sanitizing products from
+supermarkets. They received this information mainly from
+the television, Facebook, and WhatsApp groups. However,
+many participants were not aware of how to make sure that
+the information they receive is accurate or comes from a cred-
+ible source. Despite knowing about the preventive measures,
+most abided by them only seldom. Some mentioned that
+they hated wearing masks, which are not always available.
+Also, some felt obliged to shake hands in public, increasing
+the transmission risk. Most of them mentioned that the dire
+economic situation made it challenging to buy sanitizers and
+
+Table 1. Competition and needs analysis for Syrian refugees receiving COVID-19 information on the phone.
+
+Barrier/need
+Description
+Potential solutions
+
+Technological
+availability
+- None of the participants interviewed have access to a mobile
+data connection.
+- All participants had Wi-Fi at home, and some shared the
+connection with their neighbors, so the connection might
+sometimes be weak and does not allow for the installation/use
+of an online platform.
+- Many participants could not download large apps on their
+phones because of limited storage.
+
+- Use text messages (e.g., UN Women and
+UNRWA’s examples44,46,78)
+- Use asynchronous communication such as
+audio formats on WhatsApp (e.g., Talhouk
+et al.52)
+- Create something that consumes low
+bandwidth51
+
+Functional literacy
+- Due to limited education, many refugees need help reading,
+writing, and understanding basic information in English or
+Arabic.
+
+- Use images and audio formats (e.g., “Citizen
+Radio”54)
+
+Media literacy
+- Many participants needed to be made aware of how to ensure
+the information they received was accurate or credible.
+- Some mentioned that only some of the information they ﬁnd
+on social media is trustworthy, but they needed to ﬁgure out
+how to check the facts.
+
+- Preselect veriﬁed messages from credible
+sources50
+
+Digital literacy
+Many participants used only or primarily WhatsApp; they might
+refuse or need to learn how to use other apps.
+- Use WhatsApp50 or text messages
+
+Semaan et al.
+7
+
+proper hand-washing soaps (they were using what was avail-
+able at home, i.e., dishwashing soap).
+
+Media literacy. Most participants were aware of the conse-
+quences of using noncredible information and were con-
+scious of the beneﬁts of seeking credible information
+about COVID-19. However, they needed to learn how to
+check facts and verify the information coming to them.
+Despite being able to recognize credible sources such as
+the Ministry of Public Health and Doctors Without
+Borders, most of them relied on other sources of informa-
+tion, including social media and their entourage, because
+it required less time and effort and the belief that any infor-
+mation even if not entirely correct is better than no informa-
+tion at all.
+
+Preferred
+communication
+channels
+for
+health-related
+information. Almost all participants declared sharing infor-
+mation
+with
+their
+family
+members
+and
+friends
+on
+WhatsApp or Facebook when they felt this knowledge
+was worth sharing. They also showed a willingness to
+explore a new information platform. Most participants pre-
+ferred receiving COVID-19 and health information via
+WhatsApp. Most participants were ﬂexible about the
+format (texts, videos, or pictures). However, a few respon-
+dents could not read, and thus they stated that video or
+audio messages would be the most accessible for them.
+
+Beneﬁts
+
+The use and installation of the mobile platform designed by
+the HEI at AUB will have signiﬁcant health and social ben-
+eﬁts
+on
+Syrian
+refugee
+women
+and
+their
+families.
+Participants identiﬁed the following: (a) Reliable informa-
+tion reduces the risk of COVID-19 exposure in the commu-
+nity through the implementation of accurate preventive
+measures; (b) a mobile platform may increase the awareness
+about misconceptions that prevail on social media and
+lessen the fear of COVID-19 since these women will be
+empowered to overcome this disease and the stigma sur-
+rounding it.
+
+Motivators
+
+Participants mentioned several reasons for using a mobile
+platform for COVID-19-related information: (a) Need to
+know how to protect themselves and their loved ones:
+Almost all participants had children at home or cared for
+older people, who needed extra attention and care; (b)
+Convenience: All these women have access to a mobile
+phone and are connected to Wi-Fi at home; (c) Need for
+reliable information: Participants acknowledged that not
+all the information they obtained from people and social
+media platforms was credible, but they did not have the cap-
+acity and preparedness to do fact-checking before sharing.
+
+Competition
+
+The perceived competing, alternative behaviors and ser-
+vices were: (a) Social media platforms, in particular social
+networking sites such as Facebook and WhatsApp, which
+participants already used for entertainment and connecting
+with others. Social media were easy to use and required
+less effort and energy than learning to use a new platform;
+(b) Personal social networks: Asking people around is
+much faster and easier than waiting for an answer on
+social media pages; (c) Existing reliable sources of infor-
+mation: Very-known reliable and trustworthy channels
+such as the UNHCR and Doctors Without Borders were
+perceived as more appealing than checking new platforms
+developed by an academic institution albeit well reputed.
+
+Phase 2: concept design
+
+Platform selection
+
+Based on the ﬁndings above, we chose a platform that
+could overcome the barriers that the refugees mentioned.
+The platform had to be easily accessible, possibly without
+an internet connection (or work asynchronously), and
+lightweight (i.e., consume little data). We selected
+WhatsApp, commonly used among Syrian refugees, for
+communicating with peers and sharing information.
+WhatsApp allows users to read messages whenever they
+can establish an internet connection and does not necessi-
+tate much data to operate.
+
+Sources of information
+
+To address the problem of limited media literacy (i.e., the
+ability to discern among different sources of information),
+we had to provide credible information already veriﬁed.
+Therefore, assuming very limited or no critical media
+skills, we selected sources of information based on their
+credibility and trustworthiness among refugees and expert-
+ise in the COVID-19 response. These included the local
+ofﬁce of the WHO (@WHOLebanon), the local and
+regional ofﬁce of the United Nations Children’s Fund
+(@UNICEFLebanon, @UNICEFmena), and the local
+ofﬁce of the UNHCR (@UNHCRLebanon), and the
+Lebanese Ministry of Public Health (@mophleb). These
+sources provided information in both Arabic and English
+through their Twitter channels, with publicly available
+Tweets. However, Twitter is accessed mainly by literate,
+well-educated, and tech-savvy users.
+
+Message format. The information had to be written in
+Arabic and include audio ﬁles to account for those unable
+to read.
+
+8
+
+Concept testing
+
+With the help of a local religious organization, other nine Syrian
+refugee women were recruited to test the process of delivering
+messages through WhatsApp. A team member sent the mes-
+sages selected from Twitter manually to the WhatsApp group,
+which were manually translated from English into Arabic.
+Our team also voice-recorded the messages to provide an alter-
+native to text before sharing them in the WhatsApp group.
+Allparticipantsexpressedinterestinreceivingcredibleinfor-
+mation about COVID-19 and participating in the project. After
+only 1 hour following the ﬁrst welcoming message and after 10
+COVID-19 messages were sent to the group, 80% of the
+members read them, demonstrating that they were interested
+and accepted the communication modality.
+
+Platform architecture design
+
+We designed an automated process to extract, ﬁlter, and
+push messages generated from the identiﬁed reputable
+
+sources. The process is described in Figure 2. It entails an
+automated retrieval of data, followed by an agent-based
+selection, automated text-to-speech (TTS) translation, and
+semiautomated scheduling of messages to the dedicated
+WhatsApp group.
+
+Phase 3: prototyping and implementation
+
+Software development
+
+Programming language. The Wikaytek tool is written in
+Python, a general-purpose programming language com-
+monly used to construct websites and apps, automate tasks,
+and analyze data.79 The library for the graphical user inter-
+face (GUI) is PyQt, a Python wrapper for the open-source
+widget toolkit Qt that also serves as a cross-platform applica-
+tion development framework. Qt is a popular C++ frame-
+work for developing GUI applications for all major
+desktop, mobile, and embedded platforms (supporting
+
+Figure 2. Process used to extract, ﬁlter, automate COVID-19-related information in Wikaytek.
+
+Semaan et al.
+9
+
+Linux, Windows, macOS, Android, iOS, Raspberry Pi, and
+more).80,81 The GUI is presented in Figure 3.
+The Python program scraped information from the Twitter
+accounts of selected sources, allowing the operator to choose
+relevant information related to COVID-19. In addition, a
+button was created to translate the message into Arabic (if
+the original message was in English) and convert the text to
+audio. Finally, the software allowed us to push the messages
+to a closed WhatsApp group automatically.
+
+Twitter scraper. Wikaytek uses Twitter’s application pro-
+gramming interface (API) to automatically view and import
+data from Twitter. Considering that Twitter API allows
+only 180 requests every 15 min, a modiﬁed TwitterScraper
+was developed. TwitterScraper is a GitHub-hosted Python
+scraper that scrapes tweets and user information by
+giving the appropriate search query, speciﬁc Twitter
+accounts, time range, and geolocation.82 Our scraper cir-
+cumvented Twitter API restrictions by directly collecting
+all query information using web scraping automation.
+Data are then extracted and saved as raw data before
+
+being transformed into a CSV ﬁle using the Python
+Pandas package. Finally, the scraped data is displayed in
+the Wikaytek tool GUI, making it easier for nontechnical
+users to import tweets.
+
+TTS conversion and translation. We used Google Cloud TTS,
+a Google Cloud AI and Machine Learning product, to
+convert text into audio messages. TTS enables developers
+to generate playable audio of natural-sounding, synthetic
+human speech. Google TTS is appropriate for any applica-
+tion that provides consumers with human speech audio,
+turning text into natural-sounding speech in 220+ voices
+across 40+ languages powered by Google’s machine-
+learning technology.83 To collect COVID-19-related news
+from international sources, Wikaytek integrated Google
+Cloud translation services to provide immediate translation
+and tweet language recognition for tool agents. The
+Google Translation tool assisted by automatically recogniz-
+ing the text language and translating the tweet into
+Arabic.84 The tool allows for manual changes to be applied
+
+Figure 3. Wikaytek graphical user interface (GUI).
+
+10
+
+to the translation before converting to voice for the pronun-
+ciation to be more accurate.
+
+Automated messaging. To automate message forwarding,
+Twilio services were used to facilitate broadcasting the
+messages, related media, and audio ﬁles to WhatsApp.
+Twilio API for WhatsApp allows developers to create pro-
+totypes using WhatsApp API without WhatsApp Business
+API, which is in beta and only available with dedicated
+access permission from WhatsApp.85
+
+Wikaytek facilitated the interaction between Google
+Cloud Services, Python Automated Scraping, and Twilio
+WhatsApp API without the necessity for programming
+
+skills on the part of the operator. The GUI sample in
+action is shown in Figure 4.
+
+System operation
+
+After selecting the sources, the tool automatically scraped infor-
+mation from them. Keywords such as COVID-19, vaccine, and
+campaign ﬁltered the tweets. Tweets were chosen based on their
+relevance to COVID-19 while considering many of the target
+audience’s characteristics and geographical location (Sin el Fil,
+Beirut). The tool allowed the team to restrict the time range of
+the tweets. Only recent tweets were considered (1–3 days after
+tweets were posted). The messages shared on the Wikaytek
+WhatsApp group were all in Arabic. When the scraped tweets
+
+Figure 4. Wikaytek graphical user interface (GUI) with original Tweet and translated text.
+
+Semaan et al.
+11
+
+were in English, they were automatically translated into Arabic.
+The team added Arabic accents and phonetic signs to the text
+translated via Google to ensure correct pronunciation in the
+TTS service. Then, textual messages were converted to audio,
+and the audio ﬁle was sent to the WhatsApp group.
+The Wikaytek tool operated from 26 July 2021, until 4
+March 2022. During the pandemic’s peak, COVID-19-
+related messages were sent 3 days a week on the
+Wikaytek group. One message as a text and an audio ﬁle
+was shared on Mondays, Wednesdays, and Fridays. The
+frequency of messaging was reduced with time. A team
+member ran the tool and sent the updates to the group.
+
+Phase 4: user testing
+
+Alpha testing
+
+The alpha-testing phase for the ﬁrst version of the software
+was conducted from 26 to 29 July 2021. During this phase,
+the buttons were labeled sequentially to guide the user
+through the button ﬂow. A ﬁltering feature was introduced
+to sort the scraped tweets based on speciﬁc keywords,
+making it easier to locate relevant information. After verify-
+ing all features’ full functionality, the capability to scrape
+data from multiple accounts simultaneously was added,
+and the source of the tweets was made visible through auto-
+mation. Based on feedback from the testers, the TTS model
+was reﬁned to sound more human like, and its speed was
+decreased to better accommodate individuals with limited
+literacy. Lastly, in addition to the scraped tweets, the
+media attached to the tweets was facilitated for appending
+during message forwarding.
+
+Beta testing
+
+The beta-testing phase was conducted over three days (26–
+29 July 2021). Generally, 1 h after receiving the welcoming
+and COVID-19-related messages sent to the group, seven out
+of nine members (80%) read the messages. Within a day, all
+group members listened to the audio ﬁles (9/9, 100%).
+
+Phase 5: evaluation
+
+WhatsApp analytics
+
+WhatsApp analytics was used to monitor the participant’s
+engagement with the messages and user activity. Most mes-
+sages were read by most participants (80%) throughout the
+project period. Figure 5 shows the average number of times
+audio messages were played monthly, ranging from 55% in
+August 2021 to 65% in March 2022.
+
+Qualitative evaluation
+
+Qualitative interviews showed that participants were overall
+satisﬁed with the Wikaytek service and declared that they
+would use it again to get information about COVID-19.
+They stated that it increased their awareness and knowledge
+of COVID-19, and regularly shared the messages with their
+friends and relatives. They liked the information being pro-
+vided and speciﬁcally the audio tool stating that the mes-
+sages were better delivered through this modality. Below
+is a summary of the answers grouped by questions as
+these were asked:
+
+Figure 5. Wikaytek group WhatsApp analytics: frequency of audios played.
+
+12
+
+How beneﬁcial did you ﬁnd the service? All participants
+found the messages beneﬁcial (7/7, 100%), and 5/7 (71%)
+found them very helpful. One participant found this
+service is very beneﬁcial for their health and their kids’
+health, and she was able to teach people around her about
+COVID-19. They liked everything about the service, espe-
+cially that the information provided was credible.
+
+What did you like/dislike about the service? Most participants
+declared liking “everything about it” (6/7, 86%). One par-
+ticipant stated that it helped her protect herself against
+COVID-19 and understand the importance of taking the
+COVID-19 vaccine. Only one participant disliked the fact
+that it was impossible to interact with the service and to
+ask questions. The service was in fact designed to “push”
+information rather than provide a bidirectional communica-
+tion channel with the researchers or organizations. Based on
+this feedback, we considered adding interactive chatbot fea-
+tures, such as a menu to “know more” about COVID-19 to
+receive other messages from the pool. However, these are
+features available in the WhatsApp for Business, not for
+closed user groups. Therefore, we considered transforming
+the service into an open group service, but more funding
+would be needed for such development.
+
+Would you use it again? All interviewees stated they would
+use the Wikaytek group in the future (7/7, 100%).
+
+Did you share the information with someone, if so with
+whom? Five out of seven users (71%) declared forwarding
+the messages to family members and friends in Lebanon
+and Syria, some even multiple times.
+
+What did you like the most about the service? Most partici-
+pants appreciated the audio format (6/7, 86%), stating
+that this modality delivered the messages better than the
+text.
+Based on the above information, we developed a visual
+summary of the preferred features of Wikaytek (Figure 6).
+We used a free online tool (freewordcloudgenerator.com)
+to generate a word cloud representing the keywords asso-
+ciated with Wikaytek most frequently mentioned in the sum-
+maries. The size of the text represents the number of times
+the word was mentioned by the users in the notes taken
+from the interviewer.
+
+Discussion
+
+General ﬁndings
+
+In this report, we described a pilot study that was conducted
+to develop the Wikaytek tool and its concept and process
+evaluation. In summary, Wikaytek (a) automatically dissemi-
+nates existing veriﬁed messages, publicly available on social
+media; (b) it uses asynchronous communication to minimize
+the problem of intermittent internet connectivity; (c) it
+automatically translates text into audio to accommodate for
+
+Figure 6. Word cloud representing the preferred features of Wikaytek.
+
+Semaan et al.
+13
+
+illiterate individuals; and (d) it uses a platform, WhatsApp,
+that is commonly used among refugees.
+To our knowledge, Wikaytek is the ﬁrst tool that addresses
+COVID-19 misinformation among Syrian refugees in
+Lebanon and accounts for the intended users’ needs, prefer-
+ences, and literacy levels (i.e., functional, media, health, and
+digital).43 This project contributes to the limited literature on
+disseminating credible health information during the ongoing
+COVID-19 pandemic among vulnerable populations like
+refugees.23,24,36,39 Additionally, our project contributes to
+the humanitarian and public health literature demonstrating
+how a technological tool could be codeveloped with the
+target audience, considering their functional, health, and
+digital literacy levels.43 We took a realistic and pragmatic
+approach to communicate information about a global
+public
+health
+emergency
+among
+refugees
+living
+in
+Lebanon,27,30 accounting for the context and political and
+socioeconomic determinants of health. The project speciﬁc-
+ally focused on a vulnerable segment of the population,
+Syrian refugees, who are generally underrepresented in the
+literature
+and
+marginalized
+by
+the
+global
+pandemic
+response.20,23,24 In addition, we decided to focus on
+women Syrian refugees residing in urban areas precisely
+because they are among the most vulnerable segment of
+the population, given their limited literacy and socio-
+economic status.34,69–71
+
+This project leverages mobile technology to diffuse
+COVID-19-related information. Wikaytek overcomes the
+technological and literacy barriers to disseminating reliable
+COVID-19-related information among Syrian refugees in
+low-resource settings. We elaborate on each of these dimen-
+sions in the paragraphs below.
+
+Functional, health, and digital literacies
+
+Existing evidence highlights that most refugee households
+have access to a mobile phone with an internet data
+plan;25 however, some might need money to use the inter-
+net. Furthermore, not all refugees might have the digital,
+functional, and health literacies necessary to interpret
+COVID-19 messages.55 Critical health literacy22 and
+digital literacy are generally limited among vulnerable
+populations.20 Hence, we developed a solution that diffuses
+a combination of text and audio messages on WhatsApp
+that refugees already use and does not require a stable
+and constant internet connection.53
+
+Previous research highlighted the value of using text
+messages to promote health among refugees in multiple
+low-resource settings during a health crisis (e.g., UN
+Women46 or Kazakos et al.48). Also, our project corrobo-
+rates previous qualitative evidence from Lebanon and the
+region demonstrating the utility of WhatsApp in diffusing
+messages among Syrian refugees about health-related
+issues such as preconception and antenatal care.52,54 As
+done in “Citizen Radio,”54 Wikaytek produces messages
+
+in audio format to account for low functional literacy
+among our target population.30,55 However, these messages
+can be accessed and played asynchronously, at the user’s
+convenience, when they have an internet connection.
+Contrary to other available solutions or standard practices,
+we did not develop a new app or service that would
+consume the limited space on the phone and that would
+rely on a stable internet connection.
+
+Media literacy and dissemination of veriﬁed
+information
+
+Refugees consider text messages credible but need more
+critical media literacy to determine whether the sources
+are reliable.50 Wikaytek includes software that collects
+COVID-19-related information already diffused on social
+media from credible and reliable sources (e.g., the WHO,
+various UN agencies, and the local Ministry of Public
+Health). By diffusing already veriﬁed and trustworthy
+information, Wikaytek addresses the problem of refugees’
+limited media literacy (i.e., inability to fact-check and
+discern different media sources).20 In addition, Wikaytek
+repackages the information that public health agencies
+diffuse on social media, channels that refugees do not regu-
+larly use.24 While social media might have increased the
+reach
+of
+COVID-19-related
+prevention
+messages,
+it
+excluded those disengaged with the public discourse and
+those with limited critical media literacy, such as refu-
+gees.27,30
+We
+utilized
+existing
+reliable
+sources
+for
+COVID-19 information, knowing that refugees rarely refu-
+gees consult those channels due to their mistrust of local gov-
+ernmental organizations.27 Hence, Wikaytek can increase the
+reach of existing social media communications that local and
+international public health agencies disseminate.
+
+Strengths, limitations, and future research
+
+An essential strength of Wikaytek is its automation, which
+has excellent potential for replicability and scalability
+across refugees and other vulnerable communities. For
+example, Wikaytek could combat COVID-19 vaccine mis-
+information, which is high among Syrian refugees living
+in Lebanon.56 In addition, Wikaytek can be used by organi-
+zations operating in humanitarian settings to diffuse mes-
+sages to selected groups of users.
+Another strength is our process, the user-centered design
+framework57 that the HEI has used for many years working
+with Syrian refugees and other vulnerable communities in
+Lebanon. We developed this framework to maximize con-
+textualization and adapt the solution to the users’ needs.
+We applied social marketing principles to deﬁne the behav-
+ioral change strategy to promote COVID-19 among Syrian
+refugees, knowing that it has been used in the context of
+COVID-19
+vaccination
+interventions
+among
+various
+
+14
+
+populations.59–61 According to social marketing and as
+recommended by Truman et al.,25 we codesigned a solution
+to deliver important COVID-19-related information.
+Despite the many strengths, we need to acknowledge
+some limitations. First, the users who participated in this
+project were from one suburb of the capital city. They
+were highly interested in contributing to the project so
+that they might have different views and experiences than
+refugees living in smaller urban areas. Not only were they
+interested but also they possessed some level of eHealth lit-
+eracy—which encompasses the domains of functional,
+computer, media, health, information, and scientiﬁc liter-
+acies.73 While we have not formally assessed eHealth liter-
+acy like in other studies,55 the analysis of the notes
+generated from the needs assessment interviews demon-
+strates that participants declared having good knowledge
+about COVID-19 protective measures (health literacy)
+and were familiar with social media platforms and mobile
+phones (digital literacy), yet they had difﬁculties discerning
+the trustworthiness of information (media literacy). The
+sample included participants who could read and under-
+stand Arabic (functional literacy), even though probably
+in a spoken format, as some of them declared unable to
+read. Future studies should formally assess the level of
+eHealth literacy (e.g., through the popular eHEALS,86
+
+which has been used in local studies55 and has also been
+validated in Arabic87), and other speciﬁc literacies such as
+critical media literacy, which is essential to navigating the
+ocean of information especially during the COVID-19
+infodemic.88
+
+Another limitation was working with a very mobile and
+hard-to-reach population (i.e., Syrian refugees living in
+urban settings) has always been challenging. These refu-
+gees avoid being registered with the UNHCR or local muni-
+cipalities to avoid discrimination or the risk of being
+deported to Syria. We tried to overcome these problems
+by recruiting users through our partner nongovernmental
+and religious organizations because refugees consider
+these trustworthy and reliable, as suggested by Truman
+et al.25 Third, working with Syrian refugees in urban
+areas has been even more challenging due to the restrictions
+imposed by COVID-19 curfews and lockdowns, which
+limited the opportunity to visit the targeted areas and talk
+to our intended beneﬁciaries. As a result, future investiga-
+tions should include a more diverse and extensive group
+of participants and ﬁnd alternative ways to approach this
+invisible population.
+A technical limitation that needs to be considered is the
+maximum number of users allowed in a closed WhatsApp
+group. While WhatsApp has recently increased this
+number from 512 to 1,024,89 it still limits the reach of
+WhatsApp-based communication interventions targeting
+larger groups, possibly millions of individuals. A way to
+overcome this limitation might be to use WhatsApp
+Communities90 or a WhatsApp channel. The ﬁrst option
+
+would allow combining multiple groups, but scaling this
+up would require human resources to manage these groups.
+
+Conclusions
+
+Wikaytek
+helps
+disseminate
+credible
+and
+reliable
+COVID-19-related information to Syrian refugees through
+WhatsApp. The Wikaytek tool repurposes existing informa-
+tion that public health and international organizations
+already diffuse on social media (e.g., Twitter) and adapts
+to the needs and skills of Syrian refugees. As a result,
+Wikaytek can be used to reach this vulnerable segment of
+the population, who need guidance and support for protect-
+ing themselves from COVID-19. Even though the project
+targeted Syrian refugees living in urban settings in Beirut,
+the tool could be scaled up to reach other metropolitan
+areas or remote areas in Lebanon and different countries.
+
+Acknowledgments: We want to thank the refugee women who
+participated in this project and provided insight and the
+organizations that helped access this population (Church of the
+Nazarene and Mission Village). We also thank the Master of
+Public Health students enrolled in the “Social Marketing for
+Public Health” course in the Fall of 2020: Yasmen Baroudi, Lea
+Chaiban,
+Madison
+Grant,
+and
+Maya
+Hammoud;
+and
+the
+Bachelor of Arts in Health Communication students enrolled in
+the “Social marketing” course in Spring 2021: Sophie Abou
+Ghaida, Reem Abou Harb, Elissa Hamadeh, Jana Kazan, and
+Jalila Issa.
+
+Contributorship: IHE, AG, and JS conceived and designed the
+project with intellectual input from MB. JS coordinated the
+project, and RAH assisted in its operation and evaluation,
+collecting data, and summarizing information. CF developed the
+platform and helped with the pilot testing and evaluation. JS and
+MB drafted the ﬁrst version of the manuscript with input from
+CF and RAH, which all authors then edited. Finally, all authors
+reviewed and approved the ﬁnal version of the manuscript.
+
+Declaration of Conﬂicting Interests: The authors declared no
+potential conﬂicts of interest with respect to the research,
+authorship, and/or publication of this article.
+
+Ethical approval: The study was deemed exempt from ethical
+review by the Institutional Review Board because it was not
+research aimed at generalizable knowledge and did not involve
+collecting personal or identifying data (section §46.104, subpart
+A, Basic HHS Policy for Protection of Human Research
+Subjects, US Department of Health and Human Services). All
+Syrian refugees voluntarily agreed to participate in the Wikaytek
+project and consented to enroll in the related WhatsApp group.
+
+Funding: The authors disclosed receipt of the following ﬁnancial
+support for the research, authorship, and/or publication of this
+article: This work was supported by the Maroun Seeman Faculty
+
+Semaan et al.
+15
+
+of Engineering and Architecture Endowment under the Crisis
+Research Catalyst Grants.
+
+Guarantor: MB.
+
+ORCID iD: Marco Bardus
+https://orcid.org/0000-0002-0707-
+7196
+
+Supplemental material: Supplemental material for this article is
+available online.

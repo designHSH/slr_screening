@@ -1,0 +1,710 @@
+O R I G I N A L  R E S E A R C H
+The Design of a Persuasive Game to Motivate 
+People with Asthma in Adherence to Their 
+Maintenance Medication
+
+Charlotte C Poot
+1,2, Jasmijn de Boer3, Lyè Goto3, Susanne J van de Hei4,5, Niels H Chavannes
+1,2, 
+Valentijn T Visch3, Eline Meijer1,2
+
+1Department of Public Health and Primary Care, Leiden University Medical Centre, Leiden, The Netherlands; 2National eHealth Living Lab (NeLL), 
+Leiden University Medical Centre, Leiden, The Netherlands; 3Department of Human-Centered Design, Faculty of Industrial Design Engineering, Delft 
+University of Technology, Delft, The Netherlands; 4Department of Health Sciences, University of Groningen, University Medical Center Groningen, 
+Groningen, The Netherlands; 5General Practitioners Research Institute, Groningen, The Netherlands
+
+Objective: This study aimed to design a persuasive game, using objective adherence data, to motivate people with asthma to adhere 
+to their medication regimen.
+Methods: A participatory user-centered design approach was employed, involving end-users and other stakeholders throughout the 
+study. The approach consisted of four phases. Semi-structured interviews and a survey were conducted to understand user needs and 
+reasons for poor adherence (Phase 1: define). Key themes were identified, leading to the formulation of behavior change strategies and 
+design and game requirements. Several design directions were ideated, resulting in a concept for a serious game (Phase 2: ideate). Two 
+rounds of user-tests were performed to evaluate a prototype of the serious game in terms of usability, perceived impact on medication 
+adherence and motivation (Phase 3: prototype and Phase 4: evaluate).
+Results: Findings from semi-structured interviews (n = 6) and the online survey (n = 20) revealed that people’s non-adherence was 
+often attributed to the perception of asthma as an episodic condition, the delayed experienced effect of maintenance inhalers, and lack 
+of knowledge regarding difference of effect between maintenance and reliever inhalers. The study used behavior change strategies to 
+translate these insights into design requirements for the development of the narrative-based persuasive game Ademgenoot. This six- 
+week challenge-based game combines various behavior change strategies, including personal goal setting and continuous visual 
+feedback, as well as persuasive game design elements, such as a narrative and rewards, with the aim of enhancing motivation to adhere 
+to their medication regimen. User-testing (n = 8; round 1 and 2) showed that Ademgenoot is feasible in clinical practice and has the 
+potential to support people with mild asthma in adherence to their maintenance medication.
+Discussion: Future efforts should be directed towards a larger evaluation to assess the impact on motivation and inhaler use 
+behaviour.
+
+Plain Language Summary: The goal of this study was to create a serious game that encourages people with asthma to take their 
+medication regularly. During the study, we worked closely with individuals who have asthma and other stakeholders throughout the 
+study. We conducted interviews and surveys to understand why people have difficulties using their maintenance inhaler as prescribed 
+by their doctor. Based on the feedback we received, we developed a serious game called “Ademgenoot”. The game uses information 
+on inhaler use automatically collected with a device attached to the inhaler. The game includes features like personal goals and visual 
+feedback on inhaler use to motivate users to take their medication consistently. We tested a prototype of the game with users to see if it 
+was easy to use and if it motivated them to use their maintenance inhaler. The results showed that Ademgenoot is a viable option for 
+helping individuals with mild asthma stay on track with their medication. 
+
+Key words: medication adherence, serious game design, behavior change, adherence monitoring, participatory design
+
+Patient Preference and Adherence 2023:17 2719–2736                                                    
+2719
+© 2023 Poot et al. This work is published and licensed by Dove Medical Press Limited. The full terms of this license are available at https://www.dovepress.com/terms.php 
+and incorporate the Creative Commons Attribution – Non Commercial (unported, v3.0) License (http://creativecommons.org/licenses/by-nc/3.0/). By accessing the work 
+you hereby accept the Terms. Non-commercial uses of the work are permitted without any further permission from Dove Medical Press Limited, provided the work is properly attributed. For 
+permission for commercial use of this work, please see paragraphs 4.2 and 5 of our Terms (https://www.dovepress.com/terms.php).
+
+Patient Preference and Adherence                                                        
+
+open access to scientific and medical research
+
+Open Access Full Text Article
+
+Received: 14 July 2023
+Accepted: 14 October 2023
+Published: 1 November 2023
+
+Patient Preference and Adherence downloaded from https://www.dovepress.com/
+
+For personal use only.
+
+Background
+Despite the availability of effective inhaler medication, almost half of all asthma patients have poor asthma control.1,2 
+
+Poor adherence to maintenance inhalers is a major cause of inadequate asthma control and is associated with 2.5-fold 
+increased risk of uncontrolled asthma. As such, non-adherence is associated with increased risk of severe asthma 
+exacerbations,3 more asthma-related emergency department visits,4 hospitalization and decreased lung function and 
+quality of life.5 Moreover, non-adherence has been shown to increase healthcare costs, as patients with uncontrolled 
+asthma require more frequent medical visits, interventions and step-ups in medication regimen.6,7 In addition, medication 
+non-adherence is often accompanied by over-reliance on short-acting B2 agonists (SABA) for symptom relief.8–11 This is 
+of particular concern as high SABA use is associated with increased exacerbations and 2.2 times higher asthma-related 
+healthcare costs than low SABA use.12 Hence, it is important to address poor medication adherence and promote 
+appropriate SABA usage.
+
+Numerous factors contribute to poor medication adherence, including forgetfulness, limited understanding of the 
+importance of adherence (necessity), and concerns about medication side effects.13,14 Improving medication adherence 
+may be especially challenging among people with mild asthma as they may have a lower feeling of necessity and 
+underestimate the importance of adhering to the maintenance inhaler compared to people with severe asthma.15 
+
+Interventions, such as patient education, reminder systems, and simplified medication regimens, have been developed 
+to target the problem of poor adherence.16 More recent technological developments targeting poor adherence include 
+electronic monitoring devices (EMDs) to track and monitor inhaler usage, providing objective and accurate data on 
+medication adherence. EMD data can be used by healthcare providers to identify patients who do not adhere to their 
+medication regimens, intervene with appropriate education, and support or help in decisions on the step-up of treatment. 
+EMDs that connect to patients’ smartphones (also known as smart inhalers) can, in addition, provide patient self- 
+management support by providing medication reminders, personalized feedback and motivational messages. Overall, 
+EMDs have shown promise in improving medication adherence,17–21 however their impact on asthma control and the 
+long-term sustainability in improving adherence and asthma control still require further investigation.17–19
+
+Studies on the effectiveness of smart inhalers have primarily focused on examining the overall effect on medication 
+adherence, rather than identifying which patient groups benefit the most based on determinants of non-adherence. 
+Nevertheless, it is generally believed that smart asthma inhalers, featuring electronic reminders, primarily benefit 
+unintentional nonadherence due to forgetfulness.22 Furthermore, while people with severe or persistent asthma have 
+shown interest in using an app to manage their condition.23 This interest may stem from their heightened necessity for 
+effective asthma control.15,21,23 Moreover, it should be noted that self-management-based interventions are typically used 
+by individuals who are already motivated to self-manage their condition, feel more necessity in doing so and actively 
+monitor their symptoms and behavior. In addition, engagement with such self-monitoring programs can be challenged, as 
+they often require people to enter their symptoms or asthma control manually.21,24–26
+
+Serious games are designed to motivate and engage users for non-entertainment goals, utilizing game elements and 
+game mechanisms. Consequently, they are increasingly used as strategies within behavior change interventions to 
+overcome the challenges of disengagement. Although serious games are often applied to facilitate educational purposes, 
+they have also proven effective in motivating users to adopt specific attitudes and health behaviors such as medication- 
+and therapy adherence or adopting a healthy lifestyle.27 Notably, serious games have demonstrated effectiveness in 
+improving medication adherence among cancer patients,28 promoting physical activity in people with diabetes29 and 
+addressing several mental disorders.27
+
+To understand the underlying mechanisms through which serious games promote beneficial health outcomes, the 
+Persuasive Game Design Model was developed.30,31 According to the model, the skills, attitudes, and beliefs developed 
+within the game world can be transferred to the real world. The Persuasive Game Design Model offers, at the same time, 
+a comprehensive step-by-step framework to standardize and guide the development of serious games. This framework 
+entails (1) defining the transfer effect, including the type of effect and the type of change (eg, reinforcing, altering or 
+forming new behaviors or attitudes) (2) investigating the users’ context, (3) identifying, developing and testing game 
+components (eg, challenges, game levels, and virtual rewards) and game mechanics (eg, collaboration and competition), 
+
+https://doi.org/10.2147/PPA.S423161                                                                                                                                                                                                                                  
+
+DovePress                                                                                                                                               
+
+2720
+
+and (4) evaluating the effectiveness of the game in achieving the intended transfer effect.31 Given the potential of serious 
+game to engage individuals and change behaviors, serious games could prove to be an effective way of motivating people 
+to adhere to their maintenance inhaler.
+
+When designing a persuasive game interconnected to an EDM, it is important to actively involve all stakeholders, to 
+ensure alignment with stakeholder and end-user needs and preferences.22,32 In recent years, a participatory design 
+methodology has emerged as a valuable approach to include end-users and other stakeholders in the development of 
+eHealth. This approach emphasizes several key processes, including at least two iterative cycles of testing and feedback, 
+involving end-users at all stages of the process, and incorporating input from other stakeholders such as clinicians and 
+smart inhaler developers.33
+
+The objective of this study was to apply a participatory design approach to design a persuasive game aimed at 
+improving medication adherence among people with asthma by leveraging the potential of smart inhalers and incorpor­
+ating behavior change and persuasive game design strategies. This paper describes the development cycle, design 
+requirements and assessment of the final prototype on usability, usefulness, and perceived impact on improving 
+medication adherence.
+
+Method
+Study Design
+This study employed a user-centered, participatory design approach, during which people with asthma, as the end-users, 
+had an important role in the design process. The approach consisted of four phases: define, ideate, prototype, and 
+evaluate. The define phase (phase 1) was used to gain a deep understanding of the users’ needs, lived experiences and 
+reasons for non-adherence and to identify design requirements. Design requirements were translated into several design 
+directions in the ideation phase (phase 2). In two iterations, a prototype was developed (phase 3) and evaluated with end- 
+users to gather user-feedback and improve the prototype (phase 4). Multiple stakeholder groups were included and 
+consulted throughout the project. Healthcare professionals (ie, general practitioner, practice nurse) provided input on 
+medical content and feasibility for practice. Smart inhaler developers (ie, representatives from pharmaceutical and 
+medical device companies involved in the development and manufacturing of smart inhalers) provided input on technical 
+and commercial feasibility. A visual representation of the study design and phases, including the core study activities and 
+stakeholders involved, is presented in Figure 1.
+
+Design Context
+The study was conducted between February 2019 and August 2019 in the area of Zuid-Holland, the Netherlands.
+
+Participants and Recruitment Procedures
+Participants
+People with asthma were eligible for study participation if they reported the following: 18 years and older, self-reported 
+diagnosis of asthma, use of an ICS inhaler, difficulties being medication adherent, adequate oral fluency in Dutch or 
+English. Participants were sampled purposively to represent diversity in age, gender, frequency of inhaler use and 
+educational level.
+
+Recruitment Procedure
+Multifaceted strategies were utilized including advertising on social media and university websites, and posters placed in 
+sporting clubs and on university noticeboards. The recruitment poster included an illustration of three people representing 
+different reasons to be non-adherent, with the question “do you recognize yourself? Participate in our study”. Upon 
+expression of interest in participation a patient information sheet was sent by e-mail. The sheet contained information 
+about the purpose of the study, the description of the study activity, that participation is voluntary, that audio is recorded, 
+that data is treated confidentially and anonymously and that responses are reported pseudonymized. The information 
+sheet was adapted per study activity (ie, interview, survey, user test 1, user test 2, and online survey).
+
+https://doi.org/10.2147/PPA.S423161                                                                  
+
+DovePress                                                                
+2721
+
+Figure 1 Schematic overview study design and design phases.
+
+https://doi.org/10.2147/PPA.S423161                                                                                                                                                                                                                                  
+
+DovePress                                                                                                                                               
+
+2722
+
+Ethical Considerations
+The study was cleared for ethics by the Medical Ethical Review Committee of the Leiden University Medical Centre (No 
+P18.158). The study was conducted in accordance with the Helsinki declaration. Written informed consent was obtained 
+from all participants prior to all study activities.
+
+Study Procedures
+The research was conducted in multiple phases using a mixed-methods approach. Throughout the phases, design 
+methods such as personas, creative assignments, and prototyping were used to gain an in-depth understanding of user 
+needs and preferences, identify opportunities for design and facilitate engagement of the participants with the research 
+activities.
+
+Phase 1: Define
+To gain an in-depth understanding of people’s inhaler use, reasons for non-adherence and their needs, semi-structured 
+interviews (n = 6) were held. The number of participants were deemed sufficient in light of the specific study activity 
+purpose (ie, to identify design directions). Interviews were guided by a topic list including questions about inhaler usage, 
+beliefs about medication and challenges in everyday life dealing with inhaler use and their asthma. Interviews were – in 
+agreement with the participant – held at the participants’ house or at another place which offered sufficient privacy (eg, 
+university). The duration of the interviews was approximately 30 to 60 minutes. Interviews were audio recorded and 
+transcribed.
+
+A 5-minute online survey was administered among people with asthma (n = 20), containing items on efficacy and 
+attitude from the Knowledge Attitude Self Efficacy Questionnaire (KASE-Q)34 and Beliefs about Medication 
+Questionnaire – Specific (BMQ-specific) used to measure beliefs about asthma medication.35 Both questionnaires were 
+available in Dutch36,37 and used in previous studies.38,39 The online survey was distributed via social media. Descriptive 
+statistics were obtained using SPSS.
+
+Interview transcripts were analyzed and triangulated with results from an online survey. Results were discussed with 
+four primary care healthcare professionals to facilitate contextual understanding. Also, current strategies on how 
+healthcare professionals motivate people to adhere to their maintenance medication were discussed to identify potentially 
+useful behavior change strategies. Themes were identified and mapped onto The Transtheoretical Model (TTM) for 
+Behavior Change to identify behavior change strategies and place these within the five stages of behavior change (ie, 
+precontemplation; contemplation; preparation; action and maintenance). The TTM helped to structure behavioral change 
+strategies, without losing the complex interactions between individual and environmental factors that can impact 
+behavior out of sight.
+
+Phase 2: Ideation
+Insights from phase 1 were translated into personas. Personas are used to better understand the needs, goals and 
+behaviors of different user groups and create solutions that tailor to those needs.40 Personas included background 
+information (ie, short biography to give each persona more depth), everyday challenges with asthma self-management, 
+asthma medication beliefs and behaviors, personal goals regarding their asthma-related health and opportunities for 
+design. Personas were used as illustrative scenarios in ideation sessions. Multiple ideation exercises were held with user- 
+centered designers to spark creative thinking, envision a solution, and explore various design directions. Design 
+directions were discussed with an expert on behavior change strategies and a persuasive game design expert (author 
+VV), which led to a number of design and game requirements (ie criteria, constraints, and specifications that a product, 
+system, or service must meet in order to fullfill its intended purpose and meet the needs of its end-users). Design and 
+game requirements were translated into the final design concept.
+
+Phase 3 and 4: Prototype and Formative Evaluation – Iteration 1
+The concept was translated to a paper-prototype (ie, a physical representation of the design) to easily gather user 
+feedback and make changes to the design as needed. This helped to improve the overall user experience and ensure 
+that the final product or service is well aligned with user needs and preferences. The paper-prototype consisted of the 
+
+https://doi.org/10.2147/PPA.S423161                                                                  
+
+DovePress                                                                
+2723
+
+different screens that the end-users would interact with. User feedback sessions were held with people with mild 
+asthma. We estimated the number of participants based on guidelines for user testing. Five participants generally find 
+80% of all usability problems in prototype testing.41 During the user-feedback sessions, participants were introduced 
+to the concept, and a step-by-step scenario was used to let the participant walk through all the elements of the 
+concept. Participants were asked to verbalize their thoughts and reasoning. This “think aloud” method allowed the 
+researchers to continuously capture feedback, with participants describing their actions and immediate thoughts for 
+each step.
+
+After the walk-through, participants were asked to rate their level of agreement with self-developed statements developed 
+specifically for this study, regarding usability and usefulness on a 5-point Likert scale (1 = strongly disagree, 5 = strongly agree), 
+for example, “I would find the app useful in managing my inhaler use”. The feedback sessions were audio-recorded. Recordings 
+were transcribed and analyzed using content analysis to determine usability and user preferences and identify further 
+improvements.
+
+Insights from the feedback sessions were discussed with smart inhaler developers. Input was gathered on technical feasibility 
+(ie, does the concept require new technical functionalities to be developed) and commercial feasibility (ie, does the concept add to 
+the market value of existing smart inhalers). Healthcare professionals were asked to comment on accuracy, feasibility, and their 
+overall opinion on the expected impact on medication adherence. Feedback was collected and used in combination with the list of 
+improvements to identify necessary features and improvements.
+
+Phase 3 and 4: Prototype and Evaluation – Iteration 2
+Improvements were made to the paper prototype, which was then translated to a WhatsApp prototype. The prototype mimicked 
+the use of the new concept in practice. Using WhatsApp as a communication tool between the investigator and the participant, the 
+participants received the screens they would interact with if they were using the real app. This approach allowed participants to 
+interact with the concept for a longer period of time, within their own setting (eg, at home) and at the same time did not require the 
+costly development of a functional app in this early phase. Participants were asked every day at a fixed time (12 pm) “Did you use 
+your maintenance medication this morning (yes/no)”? and “Did you use your reliever medication yesterday (yes/no)”? Based on 
+their answers, participants received the corresponding screen via WhatsApp. The participants did not receive any instructions on 
+inhaler use. After the five-day testing period, participants were invited for a semi-structured interview. The participants were asked 
+to reflect on the screens they had received in terms of motivation to use their maintenance inhaler, usefulness, inhaler use and 
+usability. During the interview, the other screens (eg, those that were sent with a different combination of answers) were also 
+presented and asked to provide feedback on. In total, the interviews lasted approximately 1.5 hours. The interview was audio 
+recorded and transcribed. Transcripts were analyzed and used to formulate design recommendations.
+
+Results
+Phase 1: Define
+All participants of the questionnaire (n = 20) expressed that they found it difficult to use their maintenance inhaler on 
+a daily basis. While the initial answer of all participants was that they did not adhere to their inhaler, because they simply 
+forgot, further questioning revealed additional reasons and motives. Based on the interview data and data from the online 
+survey, five key themes were identified regarding reasons for non-adherence to maintenance medication. Each theme is 
+described below. Demographics of the participants of the interviews and the online survey are depicted in Appendix 1. 
+Although not a specific inclusion criterion, participants in the interviews (and subsequent study activities, as chosen 
+design focus) included participants with mild asthma only.
+
+Theme 1: Asthma Feels Episodic and No Need for Medication When Feeling Well
+Participants found it difficult to use their inhaler daily because their asthma felt episodic rather than chronic, marked by 
+periods where they hardly experienced any symptoms. During these periods, they did not use their maintenance inhaler 
+until their symptoms increased. Participants initially indicated that they believed there was no necessity to use the 
+maintenance inhaler in the period they hardly felt any symptoms. Not experiencing symptoms or feeling “well enough” 
+were reasons to not use their maintenance medication on a regular basis for the majority of the participants. Comparable 
+
+https://doi.org/10.2147/PPA.S423161                                                                                                                                                                                                                                  
+
+DovePress                                                                                                                                               
+
+2724
+
+results were seen in the online survey. Half of the participants agreed, or completely agreed with the statement “Asthma 
+feels episodic to me”.
+
+Theme 2: Not Wanting to Feel Like a Patient
+Participants mentioned that using the inhaler made them feel like “a patient”. Two out of six participants mentioned that even 
+filling in a symptom and asthma control questionnaires reminded them of “being a patient” and made them more conscious of their 
+asthma, which they preferred to not be aware of. They explained that they rather “live in the moment” and not be reminded of 
+having asthma. In line with these qualitative findings, 33.3% of the online survey participants strongly agreed with the statement 
+“using my maintenance inhaler is not necessary when I feel well”. When asked how to deal with flare-up of symptoms, one 
+interviewee answered that he would use the reliever inhaler more often, up to six times a day.
+
+Theme 3: Health and Symptom Burden as an Important Motivator to Use 
+a Maintenance Inhaler
+All participants experienced moments of worsening of their asthma. During these moments, all except one participant 
+used their maintenance inhaler daily or occasionally. The increased burden of disease on everyday life activities was 
+a reason to start using the maintenance inhaler after a period of non-adherence. For two participants, important sport 
+performances, requiring optimal physical condition, were reasons to be medication adherent. During these periods of 
+performance (eg, an important hockey tournament) they were more consciously self-managing their asthma which meant 
+using their maintenance inhaler daily (temporarily), stopping smoking and avoiding other triggers.
+
+Theme 4: (Delayed) Experienced Effect of Medication
+When discussing reasons why participants rather used the reliever medication, the fact that people did not feel an effect 
+of maintenance medication but did feel the effect (ie, being able to breath and feeling of relieve) of their reliever 
+medication were the main reasons, as one participant explained: “I find it hard to feel the effect of the medication. I do 
+notice it when I feel bad, but I don’t notice it when it goes well.’
+
+Another participant indicated that she found it difficult to distinguish between breathlessness as the result of asthma or ‘bad’ 
+condition.
+
+Theme 5: Need for Knowledge on Inhaler Differences
+Other reasons for not using the maintenance inhaler included participants’ limited knowledge regarding the distinction 
+between the maintenance and reliever inhaler, as well as fear of potential side effects (eg, sore throat), they associated 
+with the use of inhaled corticosteroids (ICS). Three participants expressed a desire for more information about the 
+difference in effect between the different inhalers. This need for more information was reinforced by the results of the 
+online survey in which 50% of all respondents agreed or completely agreed with the statement “I would like to have 
+more knowledge about the effect of my medication”.
+
+None of the participants were familiar with EDMs. However, when asked if insight into their inhaler use and 
+symptoms would help them gain a better understanding of how inhaler use can help in controlling their asthma, the 
+majority of the participants affirmed the potential benefits. They clarified that seeing trends between medication use and 
+asthma control would help them understand how proper inhaler use can facilitate asthma control. Two participants also 
+indicated that they also would like to have more insight in their triggers.’
+
+Based on the aforementioned findings, eight behavioral change techniques were identified which were mapped onto the TTM 
+to identify the stage in which the technique should intervene. Behavior change techniques were: i) motivational interviewing, ii) 
+patient education, iii) personal goal setting, and iv) commitment to support contemplation; v) feedback on inhaler usage behavior, 
+vi) self-monitoring of behavior, and vii) self-monitoring of asthma control to support action; and viii) evaluation moments to 
+support maintenance.
+
+https://doi.org/10.2147/PPA.S423161                                                                  
+
+DovePress                                                                
+2725
+
+Phase 2: Ideation
+Five personas were created (see Appendix 2 for an example) and used to identify three design directions each focusing on 
+a separate stage within the TTM (see Appendix 3 for the three design directions and the different ideas). Discussion 
+meeting of the three design directions with an expert on persuasive game design and behaviour change led to the 
+formulation of design requirements (see Table 1). Game requirements were deducted from persuasive game design theory 
+to ensure that the persuasive game is fun, engaging and effective in promoting adherence to maintenance inhalers. These 
+included that the game must be rewarding if the desired behavior is carried out, visualize the effects of medication use, 
+create an overview of medication use over time and be entertaining to engage with (see Table 1).
+
+Final Concept – Ademgenoot
+The desired design and game requirements were translated into a serious game concept “Ademgenoot”. The name of the 
+concept was based on a wordplay of the Dutch words “Ademnood” (Breathlessness) and “genoot” (Buddy). Using 
+automatic data logging with an EDM to detect inhaler use and narrative game-elements, Ademgenoot aims to motivate 
+people with mild asthma to adhere to their prescribed maintenance medication treatment. Ademgenoot does so by 
+focusing on the positive effects of taking the daily maintenance medication. Moreover, the application gives the patients 
+the opportunity to try-out the daily intake of their medication as prescribed, by offering them a six-week challenge linked 
+to an asthma-related personal goal (eg, join friends on a skiing weekend). During this six-week period Ademgenoot 
+visualizes inhaler use (maintenance and reliever inhaler) in a playful way to make the effect of the medication visible and 
+to stimulate engagement with the game and thus use of their inhaler. Six weeks was chosen as this is generally the period 
+in which individuals respond to ICS with an improvement in pulmonary function.42 At the end of the challenge, users 
+should have gained insights into the effect of the daily use of their maintenance inhaler and their improved asthma 
+control within their daily lives (see Figure 2 for a visual representation of the game). As such, Ademgenoot supports the 
+intention, action, and evaluation of behavior change.
+
+Table 1 Behavior Change Strategies and Design and Serious Game Requirements
+
+https://doi.org/10.2147/PPA.S423161                                                                                                                                                                                                                                  
+
+DovePress                                                                                                                                               
+
+2726
+
+Intention
+Upon onboarding the app, Ademgenoot offers a brief instruction on inhaler technique and the difference between 
+maintenance and reliever inhaler and its effect on the lungs. Motivational Interviewing techniques are included through 
+the use of personal goal setting and creating a commitment. After the onboarding screens, users are offered a six-week 
+challenge, linked to a personal goal. Upon accepting the challenge, users enter the game world.
+
+Action
+Use of Narrative and Game Elements
+Ademgenoot employs the use of a narrative and metaphors to motivate users to adhere to their maintenance 
+inhaler. The narrative involves a cloud-like character named Brad, whose mission is to reach a treasure island, 
+which represents the user’s personal adherence goal. To do so, Brad must cross over water. Connected to the 
+EDM, Brad is able to “safely” cross the water when inhaler use is detected. However, when inhaler use is not 
+detected he falls into the water. Therefore, it is the patient’s responsibility to create bridges for Brad to safely 
+cross the water by adhering to the inhaler regimen. The user is also confronted with the possibility of Brad falling 
+into the water and drowning when not adhering to the regimen. In the scenario of one missed dose, Brad can hang 
+on to the bridge.
+
+Visualization Effect of Maintenance Inhaler Use
+The protective effect of maintenance medication on the lungs is visualized through the environment and Brad’s physical 
+appearance. Whereas one missed dose is not detrimental (ie, Brad is able to hang on to the bridge), the negative impact of 
+multiple non-adherence days is represented through a gradual shift towards a greyer and gloomier environment, with 
+Brad sinking deeper. On the other hand, longer streaks of adherent days, result in a stronger Brad, equipped with a diving 
+
+Figure 2 Visual representation of the core elements of the persuasive game “Ademgenoot”.
+
+https://doi.org/10.2147/PPA.S423161                                                                  
+
+DovePress                                                                
+2727
+
+goggle to be able to endure longer under water (ie, metaphor for protection of the lungs). The environment also becomes 
+brighter, and users are rewarded with an enriched environment, which for example includes a turtle underwater. Users are 
+provided with a report on the medication usage every three days, represented as intermediate treasure chests.
+
+Visualization Effect of Relieve Inhaler Use
+Use of the reliever inhaler is logged through a reliever EMD. When reliever inhaler use is detected, a push-notification is 
+sent to the user, who is then prompted to indicate the reason for use by selecting triggers from a pre-specified list of 
+triggers. Additionally, the user is asked to indicate their level of asthma control using a color scale. To improve 
+engagement with the app and improve the input of self-monitoring data, which can be a challenging aspect of self- 
+monitoring interventions, the to be filled in form is depicted as a piranha, which transforms upon completion of the form 
+into a friendly-looking fish.
+
+Evaluation
+Overview Medication Use and Asthma Control
+After six weeks, users are provided a report that displays their maintenance inhaler usage, reliever inhaler usage, triggers, 
+and level of asthma control. The report serves as a tool to identify trends and assess the impact of increased adherence to 
+their maintenance inhaler on asthma control.
+
+Phase 3 and 4: Prototype and Evaluation – Iteration 1
+Feedback on the paper prototype (see Figure 3) was obtained from four people with mild asthma who had not 
+participated in previous activities. This number was deemed sufficient to identify major issues on usability.43,44 
+
+Overall, the participants enjoyed the games and the six-week challenge. They appreciated the ability to set a personal 
+goal. However, two participants mentioned finding it difficult to think of one. The commitment to the challenge itself was 
+motivating enough for them to start using Ademgenoot. One participant suggested to incorporate more daily goals, such 
+as cycling to work without feeling out of breath, rather than linking the goal to a specific event (eg, entering a sporting 
+competition). Some participants preferred a weekly overview instead of updates every 3 days. While two participants 
+considered the cloud character Brad to be childish, the other two felt affection for the character and found him not too 
+childish.
+
+The paper prototype was also reviewed by two general practice nurses who commented on the clinical feasibility and 
+provided additional clinical feedback. They expressed their enthusiasm and found the game to be feasible in practice. 
+However, they pointed out that inhaler use may not always result in better asthma control. Therefore, it is important for 
+healthcare professions and the serious game to manage expectations to maintain user’s motivation to continue with the 
+challenge. Instead of “promising” improvement it is important to reflect on the effect of behavior and asthma control 
+
+Figure 3 Paper prototype testing of the serious game Ademgenoot with a participant.
+
+https://doi.org/10.2147/PPA.S423161                                                                                                                                                                                                                                  
+
+DovePress                                                                                                                                               
+
+2728
+
+together. The data collected with the app can be useful for health care professionals to evaluate inhaler usage behavior 
+and asthma symptoms. In addition, three patient advocates provided feedback and expressed that the game, despite its 
+playful appearance, could appeal to a broad range of patients, including children and those over the age of 45. They 
+appreciated the breathlessness metaphor but emphasized the importance of providing a proper explanation for the 
+piranha/fish aspect to avoid being perceived as punishment for reliever use. A review and discussion of the prototype 
+with smart inhaler developers showed that the Ademgenoot concept was technically feasible as EDM can be used for 
+several reliever and maintenance inhalers. However, as some patients receive Symbicort as Symbicort Maintenance and 
+Reliever Therapy (SMART), the commercial feasibility (ie, complementing business strategies) may be less clearly 
+defined.
+
+Based on the first prototype evaluation, several improvements were made to the prototype: a weekly report instead of 
+every 3 days, icons instead of text in the trigger self-monitoring form, a more human-like character, a different color 
+pallet and design style to appear less child-like.
+
+Phase 3 and 4: Prototype and Evaluation – Iteration 2
+Four novel individuals with mild asthma participated in the WhatsApp prototyping and provided feedback during a semi- 
+structured interview afterwards. Two participants indicated that they never until rarely used their maintenance inhaler, 
+two participants occasionally used their maintenance inhaler. During the test period, one participant had multiple non- 
+adherent days (ie, received the grey and gloomy screens), while the other three were fully adherent during the test period.
+
+Usability and User-Friendliness
+All participants understood the purpose of the game and found the game user-friendly and engaging. Participants 
+appreciated the ease of registering trigger moments with the push-notification and the use of icons.
+
+“If I get such a pop-up in my screen, I open it and tap it [the trigger icon]. Easy”.
+
+Use of Metaphors and Narrative
+All participants enjoyed the narrative of Brad and indicated that it motivated them to use the app more often. Two out of 
+the four participants mentioned that the character motivated them to use their maintenance inhaler daily. They 
+emphasized with the character and felt responsible for his “wellbeing”, becoming concerned if Brad would fall into 
+the water or drown. This was reinforced when they were presented with the grey and gloomy screens (ie, the result of 
+longer streaks of non-adherence) during the interview. The gloomy screens would motivate them to “get Brad back on 
+track” and use their maintenance inhaler again. The other two participants did not require Brad as a motivator and stated 
+that the challenge in itself was sufficient. The end report was helpful, but they predicted that it without the narrative the 
+reports would only become monotonous over time, and they would lose interest in the game.
+
+Usefulness
+All participants indicated that the game helped them to be more aware of their asthma and their inhaler use. Importantly, 
+they also mentioned that due to playful and non-medical appearance it did not make them feel like a patient.
+
+Effect on Adherence Behavior
+Three of the four participants indicated that Ademgenoot had a positive effect on their inhaler use during the test period. 
+One participant, who had practically never used her maintenance inhaler before the challenge, reported improvement but 
+still encountered difficulties in using her inhaler in the morning. Nonetheless, the gloomy screens served as motivating 
+factor to exert her best effort:
+
+The confrontation with the screen worked for me. I am very sensitive to color. I like that, the grey sky with the character. I start 
+with sunshine and a beautiful sky. I’m doing a bad job and really have to do something. 
+
+https://doi.org/10.2147/PPA.S423161                                                                  
+
+DovePress                                                                
+2729
+
+Furthermore, participants expressed curiosity to continue using Ademgenoot for the following six-weeks and stated that 
+this first week was a good first motivator. Various reasons to continue after the first week were mentioned. For instance, 
+one participant was curious to see if taking their medication would have a positive effect on their symptoms:
+
+I now have more symptoms, and I want to try to see if it [using maintenance inhaler daily] helps. I have not used it for such 
+a long period now and I am learning to live with that. I am however short of breath. If I use it for a longer period, do I notice it? 
+I am very curious about that. 
+
+Another participant mentioned that especially getting insight into her trigger moments would be a reason to continue with 
+Ademgenoot.
+
+Effect on Sense of Control Over the Asthma
+Three participants expressed their expectation that, if Ademgenoot helped them to adhere to their maintenance inhaler 
+and experience fewer symptoms, they would gain a greater sense of control over their asthma. They mentioned that 
+continuing to track symptom triggers over time would help them get better insight into their triggers, recognize trigger 
+events, and respond better to the triggers. In addition, the weekly overviews provided them with a sense of control. 
+Participants trusted that the Ademgenoot could also help in controlling their asthma symptoms. However, two partici­
+pants mentioned that relying on reliever use as a benchmark was not appropriate, as they rarely used their reliever 
+medication despite feeling breathless and experiencing symptom flare-ups. They suggested the possibility of reporting on 
+their level of asthma control regardless of reliever use, and the user could be rewarded with a fish in the water for 
+doing so.
+
+Evaluation of the concept with two patient advocates showed similar findings. The patient advocates found 
+Ademgenoot easy to use and particularly valuable for individuals recently diagnosed with asthma and children, owing 
+to its playful and fun approach. The combination of game elements and medication usage statistics was especially 
+appreciated, as they expected that this would motivate people to be adherent. However, the patient advocates emphasized 
+the importance of evaluating the inhaler behavior and asthma control with a healthcare professional during regular 
+consultations as improvement may be less when medication is not properly adjusted. They considered the weekly reports 
+to be helpful in reflecting together on medication use, asthma control and trigger events. Furthermore, they emphasized 
+that the report on symptoms or control should reflect how one feels, as one might be medication adherent. Yet stich 
+experience significant discomfort. Finally, both patient advocates suggested that Ademgenoot could also be beneficial for 
+individuals with limited health literacy due to its prominent visual component.
+
+Discussion
+This paper demonstrates that a participatory user-centered design approach, combined with involvement from healthcare 
+professionals, behavior change experts and persuasive game design experts, can result in an engaging, fun persuasive 
+game that has the potential to motivate people with mild asthma to be adherent to their maintenance medication. We 
+identified reasons for non-adherence and user needs, identified behavior change strategies (phase 1) and translated these 
+into design and serious game requirements (phase 2). Several iterations were performed in which prototypes were 
+evaluated with end-users, which led to the final persuasive game Ademgenoot (phase 3 and 4). Final evaluation showed 
+that Ademgenoot has the potential to motivate people to adhere to their maintenance inhaler, promote long-term behavior 
+change and is feasible in clinical practice.
+
+A key finding during the define phase (phase 1) was that people’s non-adherence was often due to their perception of 
+asthma as an episodic rather than chronic condition. This perception stems from the intermittent periods of symptom 
+worsening and has been previously reported in qualitative research studies on reasons for non-adherence.45 Furthermore, 
+non-adherence was influenced by the delayed perceived effect of maintenance medication, and a lack of comprehension 
+regarding the distinction between maintenance and reliever inhaler. Consistent with our findings, multiple studies have 
+reported perceived lack of efficacy and suboptimal knowledge of reliever and maintenance medications as drivers for 
+non-adherence.45–48
+
+https://doi.org/10.2147/PPA.S423161                                                                                                                                                                                                                                  
+
+DovePress                                                                                                                                               
+
+2730
+
+Our study is unique as it targets multiple drivers for non-adherence, serving as a foundation for the design of 
+Ademgenoot, a six-week challenge-based game designed to increase medication adherence. Ademgenoot aims to 
+motivate users, employ goal-oriented strategies, and provide visual feedback on adherence behavior to raise awareness 
+of the effect of adherence on asthma control. Ademgenoot incorporates various behavioral change strategies, such as 
+personal goal setting and continuous direct feedback, along with persuasive game design elements, including a narrative 
+and rewards. These combined elements are intended to increase patients’ motivation to adhere to their maintenance 
+inhaler regimen.
+
+Self-Determination Theory and Motivation
+Increasing motivation to adhere to the maintenance inhaler and sustain the behavior is an important design strategy and in 
+accordance with the Self-Determination Theory’s motivational underpinnings. According to this theory, there are three 
+essential psychological needs – autonomy, relatedness, and competence – that are critical in forming motivation.49,50 In 
+the context of asthma medication adherence, Self-Determination Theory suggests that patients are more likely to adhere 
+to their medication regimen when they have a sense of autonomy in decision-making, feel competent in managing their 
+asthma, and have a supportive relationship with their healthcare provider.
+
+To promote autonomy, the six-week challenge of Ademgenoot, along with personal goal setting, contributes to 
+patients’ sense of control. Competence is targeted through patient education on inhaler differences and fostering a sense 
+of accomplishment through being adherent. Generally, patients experience better well-being and a greater sense of being 
+in control over their asthma when they comply with their medication regimen. Relatedness, another vital aspect, can be 
+achieved by integrating Ademgenoot into a blended-care setting, as suggested by the patient advocates, and by 
+incorporating evaluation moments that focus on successes, thereby providing support for competence. Ademgenoot 
+could facilitate conversations between patients and healthcare providers on adherence behavior, asthma control and 
+decisions regarding therapy step-up.
+
+Ademgenoot employs a combination of internal motivation (eg, personal goal setting), external motivation (such as 
+motivating screens featuring Brad's progression), additional rewards (eg, the environment becoming richer) and intrinsic 
+motivation by fostering engagement and enjoyment with the app itself (instead of using the inhaler itself having to be 
+enjoyable). While short-term motivation is achieved through these fun and rewarding elements, long-term adherence 
+requires the internalization of extrinsic motivation according to the Self-Determination Theory.51 The six-week challenge 
+stimulates long-term engagement, allowing users to experience the benefits of using a maintenance inhaler and facil­
+itating the process of internalizing extrinsic motivation, thereby increasing the chances of maintaining desired behavior in 
+the long run.
+
+Use of Narrative to Complement Behavior Change
+The internalization of motivation is further facilitated by a narrative with the protagonist (Brad). Narratives have been 
+successfully employed in serious games to complement behavior change theories and have shown to effectively support 
+behavior change.52 Through immersion and the creation of affection for the narrative protagonist, people can mentally 
+envision the health benefits related to the desired behavior and apply them in the real life. Furthermore, narratives can 
+provide intriguing incentives for people who, having affection for the protagonist, feel obliged to finish the story and act 
+on feeling of relatedness to the protagonist.53 As such, our protagonist Brad may foster internalization of external 
+motivation to complete the game and adopt the behavior promoted in the game. Furthermore, a narrative can serve as an 
+analogy of a real-world setting, enhancing a possibly boring and unstimulating context, and inspiring players by adding 
+a narrative overlay.54
+
+Ongoing Feedback on Behavior to Change Behavior
+Ademgenoot utilizes EDM logging to offer direct and continuous feedback on inhaler usage. Feedback delivered through 
+digital technologies, in order to facilitate behavior change’, has been promising to disrupt and change undesired habits or 
+automatic behavior.55 Effective feedback depends on factors such as timing, delivery, modality, and content.55 Generally, 
+continuous, real-time feedback delivered visually, enabling reflection-in-action (ie, in the moment), is the most effective. 
+
+https://doi.org/10.2147/PPA.S423161                                                                  
+
+DovePress                                                                
+2731
+
+Ademgenoot offers continuous real-time visual feedback on inhaler usage and perceived asthma control, which is an 
+improvement over the current reflection-on-action-based (ie, afterwards) practice during regular consultations. Future 
+developments should explore how best to provide feedback on perceived asthma control, for example, by incorporating 
+asthma questionnaires such as the Asthma Control Questionnaire (ACQ). Moreover, integration of automatic monitoring 
+of environmental triggers (eg, pollen data) or peak flow data could provide a more comprehensive self-management 
+tool.56
+
+Strengths and Limitations
+Our paper takes a distinctive approach by utilizing participatory user-centered design with service design techniques, 
+behavior change principles, and persuasive game theory. This approach involves creating personas and multiple prototype 
+iterations. By actively involving end-users, key design requirements were identified, increasing the chances of the 
+intervention being accepted and adopted. Furthermore, by integrating theoretical frameworks, we promote understanding 
+of mechanisms explaining motivational effects.57 As such, our study contributes to the knowledge base of persuasive 
+game design as an effective method for changing health-related behavior. Another strength of our study is that besides the 
+end-users, multiple other stakeholders were involved, including healthcare professionals, patient advocates and devel­
+opers of smart inhalers. Their involvement ensured the accuracy, feasibility, and commercial and technical viability of 
+Ademgenoot, making it a strong candidate for future implementation.
+
+Our study is subject to several limitations. First, the relatively young participants could have limited the representa­
+tiveness of our findings and the applicability of the Ademgenoot concept. However, by involving various stakeholders, 
+we were able to achieve a wider perspective. Second, the small number of participants per design phase may have an 
+influence on the study findings. Nonetheless, considering that we were able to involve participants throughout all phases 
+of design and development, involving individuals that had not been involved during the previous phase and iterate on the 
+previous feedback, we believe we were able to capture their needs in a valid way. Third, the formative evaluation of 
+Ademgenoot may also present some limitations as not all components of the Ademgenoot game were tested. In addition, 
+interference by the researcher may have led to changes in behavior (ie, improved medication adherence) due to the 
+individual being observed. Finally, the limited duration of the testing period (ie, five days) calls for caution in drawing 
+conclusions regarding long-term usage. Furthermore, the focus of our study on individuals with mild asthma may limit 
+the generalizability of our findings to other patient groups.
+
+Implications for Practice
+Our paper demonstrated how data logging through EDMs can be utilized to provide a fun persuasive game to motivate, 
+in the first place, adults with mild asthma to adhere to their medication regimen. Despite its potential, EMDs have not 
+yet been implemented on a large scale in practice due to, amongst others, the need for evidence on long-term 
+effectiveness and disengagement challenges with existing apps.56 Adoption of EDMs may be facilitated by offering 
+different types of adherence support programs that cater to the needs, reasons for non-adherence, capabilities and 
+preferences of individual patients, in a shared-decision making way.22,58 This requires EMD programs to be compa­
+tible with existing inhalers preferably integrated within existing electronic health records. Inquiring into reasons for 
+poor-adherence should be standard practice to provide appropriate adherence support. We observed, in our study, 
+behind the initial answer of “simply forgetting” were several underlying reasons for nonadherence, which should be 
+addressed to support medication adherence effectively. Moreover, to reach its full potential, developments with EMD 
+should focus on providing feedback on inhalation techniques to ensure proper usage. Ademgenoot offers an engaging 
+way to incorporate inhalation techniques into self-management interventions for asthma. Finally, the concept of 
+providing feedback on medication use via automatic logging, such as through electronic pill bottles, may also be 
+applicable to other chronic diseases with medication non-adherence as a common challenge and where there is no 
+direct tangible benefit of being adherent.
+
+https://doi.org/10.2147/PPA.S423161                                                                                                                                                                                                                                  
+
+DovePress                                                                                                                                               
+
+2732
+
+Implications for Research and Future Directions
+The evaluation of Ademgenoot through WhatsApp prototype testing provided a low-cost and efficient way to assess people’s 
+perceived impact on medication adherence and motivation. However, further research should focus on a real-world evaluation 
+of Ademgenoot as a fully functional prototype to assess its long-term usage, impact on inhaler usage, and the expected shift 
+from external to internal motivation, and include people with limited (health)literacy.59 Long-term evaluation should in 
+addition provide more understanding of the degree of adherence to the app to acquire the desired behavior.60 Eventually, 
+effectiveness on clinical outcomes (eg, asthma control) and medication adherence should be evaluated by including 
+considering study design appropriate for summative evaluation of eHealth interventions (eg, step-wedged-design). While 
+the involvement of healthcare professionals within this study ensured that Ademgenoot fits with care processes, feasibility in 
+practice should also be assessed through pilot studies, taking into account the perspectives of patients, healthcare profes­
+sionals in both first (ie, GP and practice nurses) and secondary care (ie, respiratory physicians), and decision makers. Finally, 
+considering that smart inhalers are a relatively new field of research, further research is needed to determine which patients 
+would benefit the most from these programs.39 Hence, we encourage that studies into the effectiveness of smart asthma 
+inhalers include patient characteristics (eg, beliefs about medication and eHealth literacy) to gain insight into which smart 
+inhaler programs benefit which patients based on these characteristics and reasons for non-adherence.57
+
+Conclusion
+Combining a participatory user-centered design with behavior change principles and persuasive game theory, we 
+developed an innovative six-week challenge-based persuasive game that was evaluated as user-friendly and useful and 
+has the potential to increase motivation to be medication adherent. Active involvement of all stakeholders throughout the 
+design process ensured that our solution does not only meet the end-users needs but is also technically, commercially, and 
+practically feasible and has the potential to improve medication adherence among people with mild asthma and other 
+chronic conditions in which non-adherence is a common challenge.
+
+Data Sharing Statement
+Individual de-identified participant data supporting the findings are available from the corresponding author on reason­
+able request.

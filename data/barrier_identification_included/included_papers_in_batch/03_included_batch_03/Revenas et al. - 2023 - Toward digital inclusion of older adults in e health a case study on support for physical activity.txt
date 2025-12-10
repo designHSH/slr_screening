@@ -1,0 +1,1311 @@
+Vol.:(0123456789)
+
+https://doi.org/10.1007/s10209-023-01049-z
+
+LONG PAPER
+
+Toward digital inclusion of older adults in e‑health: a case study 
+on support for physical activity
+
+Åsa Revenäs1,2,3   · Lars Ström4   · Antonio Cicchetti5   · Maria Ehn5 
+
+Accepted: 20 September 2023 / Published online: 12 October 2023 
+© The Author(s) 2023
+
+Abstract
+Older adults are a heterogeneous population for which many e-health innovations are inaccessible. Involving older adults in 
+user-centered design (UCD) with a specific focus on inclusive design is important to make e-health more accessible to this 
+user group. This case study aimed to explore the feasibility of a new UCD approach aiming to minimize bias in the design 
+phase of a digital support for older adults’ physical activity (PA). The study used mixed methods and applied UCD principles 
+in a four-iteration design phase followed by an evaluation phase where 11 and 15 older adults participated, respectively. The 
+users’ gender, PA level and technology experience (TE) were considered in recruitment, data analysis and prioritization of 
+improvement efforts. In the design phase, users with different gender, PA level and TE participated and contributed with 
+feedback, which was prioritized in the development. The adaptation included improving readability, simplifying layout 
+and features, clarifying structure, and making the digital content more inclusive and relevant. The evaluation showed that 
+the users had a positive experience of the prototype and could use it with some help. The study demonstrated that adopt-
+ing e-health to assure digital inclusion among older adults must address several aspects. The UCD approach was feasible 
+for amending user bias and for confirming that users of both genders and with varied PA- and TE level shaped the design. 
+However, evaluation of the method with larger samples is needed. Moreover, further research on methods to involve digitally 
+excluded populations in UCD is needed.
+
+Keywords  Equity · Gender · Digital technology · Older adults · User representation
+
+1  Introduction
+
+Insufficient physical activity (PA) is a global health chal-
+lenge that is particularly severe in specific groups such 
+as older adults [1], a globally growing population [2] for 
+which PA has additional health advantages including pre-
+vention of falls, fall-related injuries, functional decline, and 
+
+osteoporosis [3]. Since e-health interventions are effective 
+for increasing older adults’ PA, it has been recommended 
+that e-health interventions should be included in guidelines 
+to enhance PA [4]. However, digital exclusion is especially 
+acute in older adults [5]. As e-health traditionally is a tech-
+nology-driven domain [6], the need to pay specific atten-
+tion to health-risk groups during design and development 
+of health information technologies has been emphasized [7].
+Digital inclusion, broadly defined as different strate-
+gies designed to ensure that all people have equal access, 
+opportunities, and skills to benefit from digital tech-
+nologies and systems [8], is essential in e-health [9]. To 
+increase the accessibility of e-health innovations to digi-
+tally excluded populations, user-centered design (UCD) 
+[10–12], with a specific focus on inclusive design [8] 
+needs to be more influential in e-health [13]. Moreover, 
+since older adults are a heterogeneous population, the 
+problem of underestimating the diversity of target users 
+[14] needs to be considered. Notably current digital solu-
+tions for older adults’ PA, such as research-based apps 
+
+ *	 Åsa Revenäs 
+	
+
+1	
+School of Health, Care and Social Welfare, Mälardalen 
+University, Box 223, 72123 Västerås, Sweden
+
+2	
+Centre for Clinical Research, Region Västmanland – Uppsala 
+University, Västerås, Sweden
+
+3	
+Orthopaedic clinic Västerås hospital, Region Västmanland, 
+Västerås, Sweden
+
+4	
+Livanda Internetkliniken AB, Ludvika, Sweden
+
+5	
+School of Innovation, Design and Engineering, Mälardalen 
+University, Västerås, Sweden
+
+294
+	
+
+containing digital exercise programs and motivational 
+instruments (ActiveLifeStyle [15], Safe Steps [16], and 
+M-OTAGO [17]), as well as apps/web sites adopting 
+behavioral change techniques (Delbaere et al. [18] found 
+significant reduction in falls and severe fall accidents in 
+older adult in a randomized control trial) are supposed to 
+be used independently by the users.
+Inclusive UCD has been used in development and 
+improvement of web-based mental health interventions to 
+increase uptake, adherence, and efficiency [19, 20]. How-
+ever, a systematic review on UCD and participatory design 
+with older people showed that research on new methods that 
+are flexible and responsive to the limitations and specific 
+characteristics of older adults are needed [21]. Newell et al. 
+claim there are challenges in conventional UCD in including 
+needs of older and disabled users in the design process [22]. 
+They therefore proposed an adaptation called User-Sensi-
+tive Inclusive Design focusing on defining the user group, 
+building empathic relationships between users and research-
+ers, considering the whole person in design, designing for 
+dynamic diversity, as well as using critical design- and pro-
+fessional theater techniques to address sensitive issues [23].
+Finding and recruiting representative users is essential 
+in UCD [14, 24] and a challenge in research on digital 
+health for older adults where participants, as compared 
+to non-participants, on average are slightly younger, 
+more educated, and report better memory, higher social 
+participation, as higher familiarity with and greater use of 
+digital technologies [25]. Hence, methods on how to recruit 
+and engage older adults representing the heterogeneous 
+user group in UCD are needed. A second gap in current 
+knowledge on how to involve older adults in UCD concerns 
+how to consider the heterogeneity of the older population 
+in UCD: Schlesinger et al. [26] stated that understanding 
+users becomes increasingly complicated when considering 
+various overlapping attributes of an individual’s identity. 
+Moreover, they identified that previous identity-focused 
+Human–Computer Interaction research mainly analyzed 
+one attribute at a time and introduced intersectionality as 
+a framework for engaging with the complexity of users 
+[26]. Related to this, Grates et al. identified representative 
+clusters of older adults based on life-situations and involved 
+cluster representatives in digital platform development [27]. 
+However, as Grates et al. [27] describe their approach is 
+time consuming and lighter methods for considering the 
+complexity of users in UCD are needed. A third gap in 
+knowledge on how to include older adults in UCD is related 
+to methodologies available for prioritizing user needs of 
+this heterogeneous user group in design of user interface. 
+In fact, in the current UCD design literature methods for 
+prioritizing user needs mainly focus on early design stages 
+such as prioritization of requirements [28] and features to 
+include in prototypes [29], or in UX road mapping [30].
+
+This case study proposes a new, more inclusive, solution 
+to support older adults’ PA, which combines a digital PA-
+application used independently and a video application by 
+which the older adult gets support from a coach. Video com-
+munication was included based on previous research [31]. 
+Video coaching may improve adherence and effectiveness 
+of digital health interventions for PA [32]. In addition, the 
+proposed solution contained step count, which has been sug-
+gested to increase PA participation [33, 34]. The proposed 
+system was based on user needs [35] and created by adap-
+tation of an existing e-health service followed by its inte-
+gration into a software system to which industrial partners 
+contributed with specific sub-solutions. The objective of this 
+case study was to explore the feasibility of a new proposed 
+UCD approach aiming to consider the heterogeneity of and 
+minimize bias among users of a digital support for older 
+adults’ PA. The study addressed three research questions:
+
+(1)	 What kind of improvements were requested by the users 
+in adaptation of digital support for PA aiming to make 
+it more inclusive for older adults?
+(2)	 How may the heterogeneity among older adults be con-
+sidered in UCD to prevent bias in the design phase?
+(3)	 How effective was the new proposed UCD approach 
+in producing a high-fidelity prototype that older adults 
+could and wanted to use?
+
+This article is structured as follows: Sect. 2 describes 
+the method adopted to drive the research activities while 
+Sect. 3 reports the results obtained in the various develop-
+ment phases, including requirements collection, implemen-
+tation of the solutions, users’ validation, feedback evaluation 
+and planning for the next phase. Section 4 discusses both the 
+qualities and the critical aspects of the proposed approach 
+and Sect. 5 concludes the work.
+
+2  Methods
+
+This study had an explorative, mixed method design to sup-
+port an open innovation (OI) development. It was performed 
+according to UCD principles [36] and included a four itera-
+tions design phase followed by an evaluation phase. The 
+study was conducted during April to October 2018. An over-
+view of the study design including study outcomes and their 
+exploitation in the OI development is presented in Fig. 1.
+
+2.1  Proposed UCD approach
+
+In this case study, we wanted to illustrate how a new 
+UCD approach, aiming to finding views and perceptions 
+which were common for users with different personal 
+characteristics, may be applied in the design and
+
+295
+
+development of a digital support system for older adults’ 
+PA. Hence, the approach characterized the users by a 
+limited number of main characteristics potentially relevant 
+for the users’ experiences of the developed applications. In 
+this case, the UCD approach was founded on three main 
+characteristics: gender, technology experience (TE) and 
+PA level. Previous research describes that sampling in 
+UCD can be based on user groups identified by the main 
+user characteristics, i.e., the most relevant characteristics 
+for the specific product- or system type [14], and personal 
+characteristics [37]. The characteristics were selected from 
+scientific literature on fall prevention, PA, and technology 
+adoption among older adults, as detailed in the following.
+
+Gender was chosen since gender-based differences have 
+been demonstrated as related to fall risk [38, 39], fall injury 
+[40], fear of falling [41, 42] and have been indicated in 
+exercise- and PA habits [43, 44], as well as in preferences 
+for PA [45]. The need to integrate a gender perspective in the 
+
+strategies to support older adults’ exercise for fall prevention 
+has also been highlighted in a review by Sandlund et al. [46] 
+and gender-bias in software is a well-documented problem 
+[47].
+
+Technology Experience (TE) was selected since integration 
+of values from older adults not engaged in digital technolo-
+gies, i.e., non-users [48], has proven to yield beneficial out-
+comes in technology adoption but also in terms of learning 
+and increased sense of participation [49]. In addition, a case 
+study has identified that most of the innovation initiatives 
+in a participatory design process of software artifacts came 
+from future users (i.e., users with no or limited previous 
+experience of similar software) [50].
+
+PA level was selected since the purpose of the digital appli-
+cation was to increase older adults’ PA level and thereafter 
+maintain healthy activity habits in a behavior change process 
+
+Fig. 1   Overview of the study 
+design including the design and 
+evaluation phases of an UCD 
+process
+
+296
+	
+
+[51]. Consequently, users’ activities and goals could differ 
+between users with different PA levels.
+All three main characteristics had two possible values 
+(gender: male/female, PA level: high/low, TE: high/low). 
+Eight (= ­23) different combinations of values, i.e., user 
+profiles, could be defined (Fig. 2).
+The case study aimed to recruit a group of users that 
+represented all six values and with a distribution of user 
+profiles (Males, Females, High PA level, Low PA level, 
+High TE, Low TE) which was as equal as possible. Moreo-
+ver, it was estimated that at least eight users would be 
+plausible to involve in each test cycle (TC) of the UCD, 
+a group size in line with recommendations from previous 
+research [52].
+In the design phase, the users contributed with individual 
+feedback and usability data on high-fidelity prototype ver-
+sions in four iterations. A user’s feedback was coded with 
+his/her user profile (for example, “Males, Low PA, Low 
+TE” indicated by a blue asterisk in Fig. 2). In the thematic 
+analysis, feedback from all users was clustered according 
+to similarity. When a cluster was identified, the codes of all 
+included feedback (i.e., views) were summarized. The sum-
+marized code of a cluster was intended to describe the link 
+between users’ characteristics and corresponding feedback. 
+Our underlying idea was that summarized codes including 
+higher numbers of values reflected that diverse groups from 
+at least two user profiles had provided the same feedback. 
+More specifically, a summarized code with three values (of 
+the six possible) corresponded to users from a single user 
+profile (e.g., “Females, High PA, High TE” indicated by a 
+black asterisk in Fig. 2), while a summarized code includ-
+ing four values corresponded to users from two user pro-
+files which only differed in values of one main characteristic 
+(e.g., “Females, High PA, High TE” and “Females, Low PA, 
+High TE,” indicated by black and red asterisks, respectively, 
+in Fig. 2). Accordingly, summarized codes with five and 
+six values corresponded to users from combinations of user 
+profiles that differed in values on two and three main char-
+acteristics, respectively. For example, a combination of the 
+two user profiles “Males, Low PA, High TE” and “Females, 
+High PA, High TE” (both indicated by green asterisks in 
+
+Fig. 2) resulted in a summarized code representing five pos-
+sible values.
+
+2.2  Co‑production team and team member roles
+
+The researchers (ME, ÅR, AC) represented academia and 
+were responsible for the research study’s planning and exe-
+cution. One of them (ME) was also the leader of a larger pro-
+ject which included the current case study. The project was a 
+collaboration between the university, one municipality and 
+one regional health care provider, as well as four companies. 
+Developers engaged in this case study were representatives 
+of two companies. The companies had been identified by the 
+researchers based on their existing products and recruited 
+to the project based on their interest to contribute to the 
+development. After each test cycle, the researchers presented 
+results from the user tests to the company representatives 
+and joint discussions concluded how prioritized suggested 
+improvements could be implemented. Thereafter, the devel-
+opers were responsible for developing their prototype based 
+on the users’ feedback and the prioritization. The municipal-
+ity and region representatives contributed with knowledge 
+on the system’s potential context of use.
+
+2.3  Participants
+
+Users were selected according to the rationale presented 
+above and the published protocol in Revenäs et al. [53]. In 
+total, 11 older adults participated in the design phase, which 
+included four iterations where 8–10 participants used the 
+applications during observation. Fifteen older adults partici-
+pated in the usability evaluation phase, where eight of these 
+also had participated in the design phase (Table 1).
+Inclusion criteria were age 65 years or older and living 
+independently. Exclusion criteria were sight or hearing 
+impairment that could not be compensated by aids and cog-
+nitive impairments considered to affect the ability to provide 
+feedback. The older adults were recruited through contact 
+persons in primary care, municipality, a fitness organization 
+and by direct contact with the researchers after having heard 
+about the project. The contact persons informed about the 
+
+Fig. 2   Definition of eight pos-
+sible user profiles by three main 
+dichotomized characteristics 
+(Physical Activity (PA) Level, 
+Technology Experience (TE), 
+and gender). The asterisks 
+indicate different user profiles 
+referred to in the text
+
+297
+
+study and for those who were interested they asked for con-
+sent to share their contact information with the researchers. 
+The researchers then telephoned the potential participants 
+to inform about the study and to obtain oral consent. Writ-
+ten information (including information about the aim, what 
+was needed from the participants in terms of activities and 
+time, voluntariness, safe data storage) was sent out to those 
+who consented to participate. The study participants did not 
+get any compensation for participating in the study. Written 
+informed consent was collected from all users prior to the 
+tests.
+The gender distribution was almost equal in the user 
+groups of all test cycles (TCs) in the design phase and in the 
+evaluation phase (Table 1). Initially, the user group had a 
+higher proportion of users with high PA level, but the balance 
+was improved after TC2. The representation of users with 
+
+Table 1   Users in the case study’s design- and evaluation phases pre-
+sented in numbers (n) of users per gender, physical activity (PA) level 
+and technology experience (TE)
+
+Study phase
+Design
+Evaluation
+
+Test 
+cycle 1
+Test 
+cycle 2
+Test 
+cycle 3
+Test 
+cycle 4
+
+Total, n
+8
+10
+8
+9
+15
+Men/women, n
+5/3
+6/4
+5/3
+5/4
+7/8
+Users with high PA 
+level/users with 
+low PA level, n
+
+6/2
+7/3
+4/4
+5/4
+8/7
+
+Users with high TE 
+/users with low 
+TE, n
+
+7/1
+8/2
+6/2
+8/1
+15/0
+
+Fig. 3   Screen shot of the home-
+page’s prototype version of the 
+motivation support used in the 
+evaluation (the language used in 
+the application is Swedish)
+
+298
+	
+
+self-rated low TE was low in all TCs. In the evaluation, it 
+was desired that users had experience of using a smart phone. 
+Here, 7 of the 15 users had not participated in the design 
+phase (i.e., inexperienced users) and 8 had participated (i.e., 
+experienced users) in 2–4 of the previous TCs.
+
+2.4  The high‑fidelity prototypes
+
+Prototypes of two digital applications (“motivation support” 
+and “social support”) were used on a tablet. The former 
+aimed to support older adults to increase PA in daily life 
+and to perform regular PA (a screenshot is shown in Fig. 3). 
+It was based on a web-based self-help program for cognitive 
+behavioral therapy developed for other target groups [54]. 
+The social support aimed to enhance coaches’ work in sup-
+porting older adults changing PA behavior. The application 
+included a calendar (commercialized product [55]) and a 
+video-communication feature, integrated and developed in 
+the OI process. Both prototypes represented the appearance 
+and interaction of the final products, i.e., they were high-
+fidelity prototypes [56], which were gradually improved 
+and developed based on feedback and identified in the four 
+iterations.
+
+2.5  Procedures
+
+All user tests were performed in a meeting room in a munici-
+pal social meeting point for older adults. They were per-
+formed individually under supervision of a researcher who 
+was also a physiotherapist.
+
+2.5.1  Design phase
+
+The users completed a questionnaire [53] on background 
+information in the beginning of their first test session. There-
+after, the test was performed during 30–45 min following 
+the same procedure:
+
+1)	 Users were informed about improvements made in the 
+prototypes after the previous TC;
+2)	 Program features to be used were briefly demonstrated 
+and the pre-defined tasks introduced;
+3)	 Users performed tasks according to a think-aloud meth-
+odology [57]. The researcher asked questions to facili-
+tate for the users to verbalize thoughts and experiences;
+4)	 Users were interviewed about their experiences.
+
+Each TC included 2–5 tasks, in particular: TC 1—
+registering as a user and reading about PA in the motivation 
+support; TC 2—setting activity goals in the motivation 
+support; scheduling activities in calendar and setting activity 
+reminders in the social support; TC 3—reading improved 
+texts and using improved features (goal setting, PA planning 
+
+and self-evaluation) in the motivation support; TC 4—
+reviewing the welcome page and using improved features 
+(goal setting, PA planning, support texts) in the motivation 
+support; making video calls in the social support.
+
+2.5.2  Evaluation phase
+
+The evaluation was performed according to the following 
+procedure:
+
+1)	 Users were asked to perform pre-defined tasks in a list, 
+as many as possible in 30 min. The evaluation included 
+seven tasks which had been conceived by considering 
+their relevance for the purpose of the applications and 
+were ordered according to their estimated level of dif-
+ficulty. The tasks following were included: level 1—log-
+ging in and retrieving specific information in the motiva-
+tion support (2 tasks); level 2—setting goals, planning 
+PA, and evaluating PA in the motivation support (3 
+tasks); and level 3—retrieving PA results in the motiva-
+tion support and making video calls in the social support 
+(2 tasks);
+2)	 The researcher observed and noted down which tasks the 
+user completed, if support was requested, and the kind 
+of support provided;
+3)	 Users completed the User Experience Questionnaire 
+(UEQ) [58] and an interview.
+
+2.6  Data collection
+
+2.6.1  Questionnaire on users’ background characteristics
+
+A study-specific questionnaire [53] collected data on 
+users’ demographics, PA, and TE levels.
+
+2.6.2  Observation protocols
+
+The researchers documented observations in study-specific 
+protocols. In the design phase, observations focused on what 
+the users did and said when using the prototypes; notably, 
+the experienced difficulties, errors, or lacking features. In 
+the evaluation, the observations focused on the number of 
+tasks completed within the test time (30 min) as well as the 
+number and type of support requested per task.
+
+2.6.3  Interviews including rating questions
+
+In the design phase, the users were interviewed about their 
+experience of performing the tasks and answered 1–3 rating 
+questions on a 100 mm visual analog scale. In the evalua-
+tion, the researcher asked open questions related to the user’s 
+experience with the program; the overall impression, if it
+
+299
+
+was perceived as motivating, supportive, valuable, useful 
+and if anything was missing in the program. The answers 
+were noted down by the researcher. The test sessions in the 
+design- and evaluation phases were audio recorded to allow 
+for validation of written documentation.
+
+2.6.4  User experience questionnaire (UEQ)
+
+In the evaluation, user experience was measured using the 
+validated questionnaire UEQ [58]. UEQ contains six scales, 
+all including four or six items formed as semantic differen-
+tials (i.e., each item is represented by two terms with oppo-
+site meanings) on a scale from –3 to 3. UEQ enables com-
+paring products, identifying deficiencies, evaluating users’ 
+overall experience of products and benchmarking products 
+against a data set from more than 450 evaluations [59]. The 
+questionnaire is available in 30 languages [60], including 
+Swedish, which is the native language of the users in this 
+study.
+
+2.7  Data analysis
+
+Data analysis was performed by the researchers in both study 
+phases. In the design phase, clinically active PTs also par-
+ticipated in the thematic analysis [61] of observations and 
+interviews in most of the TCs and representatives from the 
+companies that owned the digital applications participated 
+in discussions on how to realize prioritized improvements 
+after each TC.
+
+2.7.1  Questionnaire on users’ background characteristics
+
+Background data collected in questionnaires on the users’ 
+demographics, PA, and TE levels, were analyzed using 
+descriptive statistics. In the UCD, a user’s feedback was 
+coded with his/her user profile based on gender (man, M/ 
+woman, W), PA level (High PA level, HA/ Low PA level, 
+LA) and TE (High TE, HT/ Low TE, LT). These codes were 
+used in the thematic analysis of user feedback according to 
+Revenäs et al. [53]. In the evaluation, a user’s quantitative 
+results and qualitative feedback was coded with his/her gen-
+der (M/W), PA level (HA/LA) and number of test iterations 
+that he/she had participated in (0–4) in the design phase.
+
+2.7.2  Observation protocols and interviews
+
+In the design phase, the researcher’s notes on user feedback 
+from observation protocols and interviews were processed 
+and analyzed according to Revenäs et al. [53]. The analy-
+sis followed a thematic approach [61] and identified both 
+the users’ overall experiences as well as deficiencies in 
+the applications. Here, the codes of all users in a cluster of 
+feedback were summarized and the summarized code was 
+
+analyzed based on which values of the main characteristics 
+represented (for detailed description see Sect. 2.1).
+In the evaluation, quantitative data from observation 
+protocols on user performance was analyzed per task and 
+by descriptive statistics. The types of support that the users 
+requested for each task were analyzed qualitatively to iden-
+tify deficiencies in the applications: support types were 
+categorized according to similarities in underlying reasons. 
+Also in this analysis, the codes of all users in a cluster of 
+feedback were summarized and the summarized code was 
+analyzed based on which values of the main characteris-
+tics that were represented. The notes on users’ answers to 
+the interviews were analyzed by following principles of a 
+qualitative thematic analysis [61]. The answers were cat-
+egorized according to similarities in experiences or deficien-
+cies related to the involved applications. Identified themes 
+were labeled to reflect users’ views and coded as described 
+above. The themes were further categorized according to 
+the UEQ-scales [58] and two additional categories (namely, 
+Suggestions of new/modified functionality and Potential). 
+The qualitative data provided an additional description of the 
+users’ experiences related to the ratings on the UEQ-scales.
+
+2.7.3  User experience questionnaire (UEQ)
+
+In the evaluation, UEQ data were analyzed in the corre-
+sponding analysis Excel-tool [62]. As the sample in this 
+study was limited, the tool was used to estimate the user 
+experience of the prototype. Therefore, the Excel-tool was 
+used to calculate means for each UEQ-scale, as well as com-
+pare means of all items within a scale with each other to ena-
+ble comparison of the results with a benchmark dataset from 
+452 UEQ studies with 20,190 users [62]. The UEQ analysis 
+included data from 13 of the 15 users since data from two 
+users was omitted due to identified score inconsistencies.
+
+2.8  Prioritization of user feedback in OI 
+development
+
+In the design phase, improvements to amend the elicited 
+deficiencies were prioritized based on criteria. The fol-
+lowing three criteria had been defined: (1) The number 
+(3–6) of values of the user characteristics in the sum-
+marized code; (2) Whether the users had rated the defi-
+ciency as important; and (3) Whether the researchers 
+and developer considered that the deficiency had a high 
+impact on the prototypes’ overall aim and usability [53]. 
+The second criterion was based on the users’ scores on a 
+100 mm rating scale which were measured and dichoto-
+mized as “important” (scores > 50 mm) or “not impor-
+tant” (scores < 50 mm). The researchers decided the cut-
+off score.
+
+300
+	
+
+2.9  Quantification of user feedback in the design 
+phase
+
+Contributions (i.e., feedback clusters) from each TC were 
+categorized as “overall experiences” or “improvements.” 
+“Improvements” were priority-categorized as “immedi-
+ate,” “later” or “not prioritized.” Numbers of contributions 
+per category and per TC were summarized. In particular, 
+the numbers of contributions that came from both men and 
+women, from only women and from only men, respectively, 
+were counted. The same calculations were performed in rela-
+tion to the users’ PA level (low PA level (LA) + high PA 
+level (HL), LA only, HA only) and TE (high TE (HT) + low 
+TE (LE), HT only, LT only). The method had a similar aim 
+as the analysis of user group contributions performed in a 
+case study by Roccetti et al. [50] but was less sophisticated 
+since no statistical methods was included.
+
+3  Results
+
+3.1   Qualitative user feedback in design phase
+
+This section presents results to address the first research 
+question “What kind of improvements were requested by 
+older adults in adaptation of a digital support for PA aiming 
+to make it more inclusive for older adults?”.
+Overall, the design phase focused on making the digital 
+support easier to understand and use. For example, navi-
+gation was facilitated, readability and layout were clarified 
+and features for complex tasks (goal setting, planning and 
+evaluation) were simplified. Moreover, the text content was 
+expanded and processed according to the users’ needs to 
+make the examples of activities more relevant as well as the 
+texts more precise and meaningful. A more detailed pres-
+entation of the results from the user tests per TC and their 
+exploitation in the innovation development is provided next.
+In TC1, the users registered themselves as users of the 
+motivation support, logged in and retrieved information 
+on PA. A group of users whose summarized profiles con-
+taining all six possible values, i.e., Low PA, High PA, Low 
+TE, High TE, Men, Women) expressed that the motivation 
+support was thought-provoking, seemed useful for motivat-
+ing PA, but also seemed to require a support from another 
+person during an initial learning period (Table 2). The user 
+tests identified several needed improvements (Table 2). The 
+prioritization focused on improving the application’s fea-
+sibility for the users, for example, by improving the layout 
+and increasing the font size. Also, minor alterations and 
+additions of texts and pictures that could positively influ-
+ence the user experience were prioritized. The prioritization 
+included feedback that came from a narrower range of users. 
+For example, touch pens were purchased since men found it 
+
+difficult to click on targets on the touch screen that were too 
+small for their fingers. Things had been identified in TC1 
+but not prioritized for immediate action included both func-
+tions that were planned to be developed in later iterations 
+(reminders, diary) or that were considered non-essential 
+for the application’s feasibility (sound files of text content, 
+option to hide to login letters). All had been expressed by 
+users representing only single user profiles (summarized 
+profiles containing three values).
+In TC2, the users logged into the motivation support 
+where they set activity goals. Thereafter, they jumped to 
+the social support to schedule specific activities and set up 
+reminders in calendar. A group of users whose summarized 
+profile contained all six possible values expressed positive 
+views on the motivation support and the video application 
+and described the motivation support as thought-provoking 
+(Table 3). The users expressed different views on whether 
+the motivation support was easy or difficult to navigate in 
+and use. They also had different opinions about whether the 
+concept of self-rewards after performed PA (described in 
+the motivation support) seemed relevant or not. It was also 
+stated that the test situation was stressful and that learn-
+ing how to use the tablet and the applications took some 
+time. Making the goal setting and PA planning smoother for 
+the users gained the highest priority after TC2. The overall 
+result indicated that jumping between the two applications 
+for goal setting and planning procedures caused confusion 
+and problems. Consequently, researchers and developers 
+agreed that the two applications needed to be better inte-
+grated. Therefore, a calendar feature was included in the 
+motivation support thus enabling all necessary steps in goal 
+setting and planning to be performed in the same applica-
+tion. Moreover, textual descriptions in the motivation sup-
+port were revised and the goal setting feature was refined. 
+Some issues identified in TC2 were not prioritized for 
+action, for example problems impossible to address in the 
+OI development (e.g., dazzling screen) and functions in the 
+abandoned calendar. Some suggested functions were also 
+scheduled for later: for example, a group of users whose 
+summarized profile contained all six possible values had 
+asked for rewards after performed PA as well as confirma-
+tions on goal-achievement. Also, users representing single 
+user profiles had asked for statistics on performed training, 
+overviews of planned activities, and exercise videos.
+In TC3, the users logged into the motivation support, read 
+the improved textual descriptions, and used the improved 
+features for goal setting, PA planning and self-evaluation. 
+A group of users whose summarized profile contained all 
+six possible values described the applications as easy to 
+use, motivating for PA and having good help texts (Table 4). 
+Most of the identified deficiencies were prioritized for 
+immediate action (Table 4), for example, making the features 
+for goal setting, PA planning and self-evaluation clearer and
+
+301
+
+Table 2   User feedback on prototype version 0 (motivation support) in test cycle (TC)1
+
+User profiles
+
+User profiles: Men (M), Women (W), Low physical activity level (LA), High physical activity level (HA), high technology experience (HT), 
+Low technology experience (LT)
+
+X = feedback from users with that characteristic
+
+Green cells = feedback on needed improvements that were implemented before the next TC
+
+Yellow cells = feedback implemented in later TCs
+
+Red cells = feedback not implemented
+
+Blue cells = feedback that describe general experiences which could not be translated to specific needed improvements
+
+302
+	
+
+Table 3   User feedback 
+on prototype versions 1 
+(motivation- and social support) 
+in test cycle (TC) 2
+
+User profile
+
+303
+
+less complex. Also, textual descriptions were improved by 
+revising unclear concepts and adding more relevant exam-
+ples on PAs. Further, a set of technical errors (bugs) discov-
+ered during the tests were fixed. Things not implemented 
+after TC3 included a suggested feature to evaluate effects 
+of PA as well as functions to make help texts optional, add-
+ing exact time for planned activities and spell check of text 
+insertions. These features were not considered to be essential 
+for the application’s feasibility and were expressed by users 
+representing single user profiles.
+In TC4, the users logged into the motivation support 
+application, reviewed the welcome page and the support 
+texts as well as used the improved features for goal setting 
+and PA planning. Thereafter, they were asked to enter the 
+social support application and make a video call with a 
+researcher in another room. A group of users whose summa-
+rized profile contained all six possible values described that 
+the digital support was overall easy to manage and under-
+stand (Table 5). It was also stated that the step count was not 
+wanted by some users and excluded users that cannot walk. 
+Except for two functions (exercise training videos and chat 
+functions) that were suggested by users representing single 
+user profiles, all identified improvements were implemented 
+immediately. Those aimed to make the motivation support 
+application easier to understand and use. Notably, unclear 
+words still needed to be changed or explained by concrete 
+examples. Moreover, the goal setting feature was further 
+refined based on user feedback.
+
+3.2  Quantification of user feedback in the design 
+phase
+
+This section presents results to address the second research 
+question, i.e., “How may the heterogeneity among older 
+adults be considered in UCD to prevent bias in the design 
+phase?” In this case study, the user groups were small, 
+and this analysis was performed to illustrate how the UCD 
+approach may be evaluated in larger samples.
+Each TC in the design phase yielded 20–40 feedback 
+clusters, hereafter called contributions (Fig. 4).
+Numbers of contributions per TC were analyzed based 
+on which users had expressed them. The analysis considered 
+one main characteristic at a time to count the number of 
+contributions that had been expressed by both variants of a 
+
+characteristics (e.g., both men and women), as well as only 
+by the two variants (e.g., only by men, and only by women, 
+respectively) (Fig. 5).
+Gender (Fig. 5a): Contributions expressed by both men 
+and women outnumbered contributions expressed only by 
+men and only by women, respectively (Fig. 5a). However, 
+in TC 3 and 4, the number of contributions expressed by 
+both men and women was only slightly higher than the 
+amount expressed by men only. The number of contribu-
+tions expressed by only women was lower than the amount 
+expressed by only men. In the user groups of all TCs, num-
+bers of females and men had been almost equal.
+PA level (Fig.  5b): In TC1 and TC2, contributions 
+expressed by both users with high and low PA level outnum-
+bered contributions expressed by only users with high PA 
+level, as well as by only users with low PA level (Fig. 5b). 
+Here, the number of users with a low PA level was slightly 
+lower compared to the number of users with a high PA level. 
+However, in TC3 and TC4, where numbers of the users with 
+high and low PA level were almost equal, contributions 
+expressed only users by with high PA level outnumbered 
+contributions expressed both high and low PA level users, 
+as well as by only users with low PA level.
+TE (Fig. 5c): Considering TE, which is difficult since only 
+one or two users in each TC had low TE, the analysis indi-
+cated that contributions expressed only by users with high 
+TE outnumbered contributions expressed by users with both 
+high and low TE in all TCs. The number of contributions 
+expressed only by users with low TE was low in all TCs.
+Although some of these received contributions 
+described the users’ overall experience, most contributions 
+identified needed or suggested improvements. Most of the 
+improvements were prioritized immediately (Fig. 4). Three 
+prioritization criteria were set up before TC1 (Methods 
+section). However, the criteria were only used as support in 
+the prioritization for downgrading suggested improvements. 
+Suggested improvements were downgraded if they suggested 
+additional features rather than improving excising once (e.g., 
+features for evaluating effects of performed PA and for 
+chatting with the coach) or required larger efforts perceived 
+not feasible in the project time (e.g., sound files and films 
+presenting information and training exercises). Downgrading 
+was decided in joint discussions between the researchers 
+and the company representatives. Also, a few suggested 
+
+Table 3   (continued)
+User profiles: Men (M), Women (W), Low physical activity level (LA), High physical activity level (HA), 
+high technology experience (HT), Low technology experience (LT) 
+
+X = feedback from users with that characteristic
+
+Green cells = feedback on needed improvements that were implemented before the next TC
+
+Yellow cells = feedback implemented in later TCs
+
+Red cells = feedback not implemented
+
+Blue cells = feedback that describe general experiences which could not be translated to specific needed 
+improvements
+
+304
+	
+
+Table 4   User feedback on prototype version 2 (motivation support) in test cycle (TC) 3
+
+User profile
+
+User profiles: Men (M), Women (W), Low physical activity level (LA), High physical activity level (HA), High technology experience (HT), 
+Low technology experience (LT)
+
+305
+
+improvements related to a calendar feature removed 
+after TC2 were consequently not prioritized. Suggested 
+improvements that were identified in TCs 1–3 but prioritized 
+for later related to the features for planning and evaluating 
+PA, which indeed were planned to be developed in future 
+iterations. Moreover, improvements which were a bit out of 
+scope yet potentially valuable for the users were prioritized 
+for future developments. In fact, as their summarized codes 
+contained only 3 values, they were only suggested by users 
+from single user profiles. Thus, the codes indicated that the 
+suggestions were not expressed by a broad group of users 
+based on the three main characteristics.
+
+3.3  Evaluation of prototypes developed 
+in the design phase
+
+This section presents results to address the third research 
+question, i.e., “How effective was the used UCD approach 
+in producing a high-fidelity prototype that older adults could 
+and wanted to use?”.
+
+3.3.1  Task performance
+
+All users, both inexperienced (had not participated in the 
+design phase) and experienced (had participated in the 
+design phase), were able to log in to the motivation support 
+and retrieve information (Supplementary file 1, Table 1: 
+Tasks 1a–b). Many users asked for support from the 
+researcher. All users initiated the block of tasks that included 
+setting PA goals, planning PA, and evaluating performed 
+PA (Supplementary file 1, Table 1: Tasks 2a–c) but only a 
+subset of them completed all three tasks. Both inexperienced 
+and experienced users were able to accomplish the 
+tasks mentioned, help was needed in all cases. Fewer 
+inexperienced users than experienced ones were able to 
+initiate the tasks focusing on reviewing PA results as well 
+as entering to the social support application and making a 
+video call (Supplementary file 1, Table 1: Tasks 3a–b). All 
+participants that used the video application were able to use 
+it, though help was needed in all cases. No conclusions on 
+gender-related differences in task performance should be 
+drawn from the test results. Moreover, no clear differences 
+between genders or users with previous experience of the 
+applications could be identified in the type of help that 
+the users needed (Supplementary file 1, Table 2). On the 
+
+contrary, both inexperienced and experienced users of 
+both genders needed help to understand how to navigate 
+between specific pages and how to use specific features 
+(Supplementary file 1, Table 2).
+
+3.3.2  User experience
+
+The users’ experience of the prototypes was measured by the 
+UEQ and explored by interviews.
+Based on the users’ (n = 13) mean scores on UEQ-scales 
+(Fig. 6) and a comparison with the benchmark data set 
+(Fig. 6), the digital support prototype delivered a positive 
+user experience.
+The categorization of users’ experiences with the digital 
+applications based on the interviews is presented in detail 
+in Supplementary file 1, Table 3. A group of users repre-
+senting men, women, inexperienced, and experienced users 
+stated that the applications were too cumbersome to use: 
+“Cost more energy than they give” and “Some technology 
+experience and a certain educational level is needed to use 
+the applications.” It was also described that the applications 
+were not accessible and available for all older adults: for 
+example, persons with dyslexia and walking impairments. 
+A group of users representing men, women, inexperienced, 
+and experienced users also described the applications as fun, 
+interest-raising, helpful for establishing PA routines, as well 
+as motivating inactive persons to PA. Features for making 
+one’s own planning and video coaching were described as 
+motivating. The analysis suggested that the motivation sup-
+port application needed enhanced intuitiveness and clarity, 
+simplified navigation, and structure, strengthened motiva-
+tional feedback and praise, as well as features to provide 
+clearer feedback on the users’ personal development.
+
+4  Discussion
+
+This article reports results of a case study on how the hetero-
+geneity of the older population can be considered in proto-
+type development of digital support for PA in UCD. In this 
+study, the users’ gender, PA level and TE were considered in 
+the recruitment, data analysis and prioritization of 
+improvement effort to minimize bias in the design and 
+evaluation phase by coding feedback from users according 
+to their user profile (i.e., gender, PA level and TE). This 
+
+X = feedback from users with that characteristic
+
+Green cells = feedback on needed improvements that were implemented before the next TC
+
+Yellow cells = feedback implemented in later TCs
+
+Red cells = feedback not implemented
+
+Blue cells = feedback that describe general experiences which could not be translated to specific needed improvements
+
+Table 4   (continued)
+
+306
+	
+
+Table 5   User feedback on prototype versions 3 (motivation- and social support) in test cycle (TC) 4
+
+Characteristics represented 
+
+User profiles: Men (M), Women (W), Low physical activity level (LA), High physical activity level (HA), High technology experience (HT), 
+Low technology experience (LT)
+
+X = feedback from users with that characteristic
+
+Green cells = feedback on needed improvements that were implemented before the next TC
+
+Red cells = feedback not implemented
+
+Blue cells = feedback that describe general experiences which could not be translated to specific needed improvements
+
+307
+
+section discusses the main study results in relation to 
+research literature and is structured according to the case 
+study’s three research questions.
+In this case study, the suggested adaptations of the 
+motivation support included improving the readability 
+(e.g., text fonts, contrasts), simplifying the layout, 
+
+clarifying structure and page content, as well as making 
+the features easier to use. These suggestions are well 
+in line with results from other research on barriers and 
+facilitators to the use of e-health by older adults [63] and 
+on research on usability as experienced by older adults 
+[64]. Moreover, the users in this case study needed 
+help in using the features for planning, goal setting, 
+and evaluation of PA, both in the design and evaluation 
+phases. These features required by the users to accomplish 
+several successive steps and users asked for confirmation 
+about the completion of each step. This might both reflect 
+that the tasks were complex and that the users needed 
+more flexible interfaces, a need also identified by [64]. 
+Moreover, the users suggested modification of the content 
+in the motivation support (e.g., texts, pictures, examples 
+in features) to make it more inclusive and relevant for the 
+older adults which are in line with the above-mentioned 
+studies [63, 64]. The results confirm that there is a need to 
+pay attention to older adults’ specific needs [7] to ensure 
+e-health interventions to enhance PA are accessible and 
+effective for older adults.
+
+Fig. 4   Number of contributions received per test cycle (TC) catego-
+rized as “overall experiences” and “improvements,” further catego-
+rized as “immediate,” “later” or “not prioritized”
+
+Fig. 5   Number of contributions per test cycle (TC) received: a Both 
+Men (M) and Women (W), only Men, and only Women, respectively; 
+b Users with both Low and High physical activity (PA) level, only 
+users with Low PA (LA) level, and only users with High PA (HA) 
+
+level, respectively; c Users with both Low and High technology expe-
+rience (TE), only users with Low TE (LT), and only users with High 
+TE (HT), respectively
+
+Fig. 6   Benchmarking of the study’s user experience questionnaire 
+(UEQ) data against the UEQ benchmark dataset. For each of the six 
+UEQ-scales, the colored bar indicates UEQ score intervals corre-
+
+sponding to excellent, good, above average, below average and bad 
+user experience. The mean UEQ score from the study is plotted in 
+each bar
+
+308
+	
+
+This study recruited a group of users with almost equal 
+distributions of gender and PA level, both for the design- 
+and evaluation phases. However, it was difficult to recruit 
+users with low TE in the UCD, a challenge also described 
+previously [25]. Nevertheless, the approach used to code 
+each user by gender, PA level and TE, made the research-
+ers aware of this bias and resulted in efforts to recruit users 
+with low TE after TC1. The number of users involved in the 
+design iterations was in line with previous recommendations 
+[52, 65]. Finding and recruiting less experienced users of 
+e-health in the design and development of e-health interven-
+tions is a challenge, though essential to understand these 
+users’ needs and enable digital inclusion of these groups.
+The difficulty in engaging users with low TE in the design 
+phase was also reflected in the results: While large amount 
+of user feedback was obtained in the test sessions, a rela-
+tively small amount of feedback was conveyed only by users 
+with low TE. The tests were performed in a familiar place (a 
+meeting room at the municipality social meeting point for 
+older adults) with an individual test approach which made it 
+possible for the user to perform the tests at own pace where 
+the researchers could guide and answer questions when 
+needed. However, users with low TE described that the test 
+situation could be rather stressful. This clearly indicates that 
+there is a need to further adopt UCD to user groups with 
+specific needs, for example user with low TE, something 
+addressed by the User-Sensitive Inclusive Design approach 
+[23]. Although concurrent think-aloud has been shown to 
+outperform both the retrospective and the hybrid methods 
+in facilitating successful usability testing [66], co-discovery 
+has proven to be the more effective among frail older adults 
+[67]. The low abundance of user feedback unique for users 
+with low TE can also reflect that few users with low TE 
+participated in the UCD.
+In this case study we propose a novel strategy to 
+prioritize design ideas and modifications of already 
+existing e-health applications. The prioritization was 
+guided by relevance for the systems’ aim, size of needed 
+effort, and impact for users representing as many of the 
+user profiles as possible. This is all in line with previous 
+research [14, 28, 30]. Most of the improvements identified 
+in the design phase were implemented immediately (prior 
+to the next TC). The defined criteria for prioritizing 
+needed improvements, were used as guidance in the OI 
+development which focused on increasing usability and 
+inclusiveness for users representing as many of the user 
+profiles as possible. Thereby, new functions considered 
+a bit out of the system’s scope were not prioritized for 
+action in the project but were documented for future 
+development. The same thing applied to suggested 
+improvements that required larger efforts from the 
+development team and that were not crucial for usability 
+or inclusiveness. The approach used by Rothgangel et al., 
+
+(2017) [28] to select features for a digital application, to 
+include available evidence from research literature in the 
+prioritization, was not used as a direct criterion in the 
+design phase of this case study. Instead, all the features 
+of the motivation support prototype were evidence-based 
+and the TCs focused on adapting them to the needs of the 
+users.
+The qualitative and quantitative results from the evalu-
+ation indicated that the design iterations had been fruitful 
+but not entirely sufficient for developing a prototype that 
+met the needs of older adults. The four iterations identified 
+and implemented improvements to increase the prototype’s 
+usability and user experience. Nevertheless, the evalua-
+tion showed that the participants could use the support but 
+needed help. The UEQ indicated that the digital support was 
+overall positively experienced by the participants. Although 
+this result should be interpreted with caution due to the small 
+sample. The users expressed that they would like to get more 
+positive feedback and praise from the applications. These 
+suggestions are relevant since digital behavioral change 
+interventions to promote PA in older adults often include 
+feedback on behavior as a supporting technique [68]. The 
+interviews also identified that further development was 
+needed to make the support more intuitive, motivating, and 
+easy to use. These needed improvements are in accordance 
+with identified facilitators to older adults’ use of e-health 
+[63]. The users also pointed out that the support was inac-
+cessible for users with visual impairment, dyslexia, and gait 
+problems. This result is in line with previous research stating 
+the complexity of understanding the various attributes of an 
+individual that should be considered in UCD [26].
+One main strength of this study is the group of recruited 
+participants that, both in the design- and evaluation phases, 
+had a representation of users of both genders and of users 
+with self-rated high and low PA level. Moreover, all TCs 
+of the design phase involved both users with high and low 
+self-rated TE and had group sizes well in line with previous 
+recommendations [52, 65]. Another strength is the combina-
+tion of complementary methods used in the design- and the 
+evaluation phases, which increased the comprehensibility 
+of the users’ views. Also, the four iterations in the design 
+phase which enabled repeated testing of stepwise developed 
+features proved to be valuable both for the development and 
+for the understanding of users’ needs [24]. The combination 
+of usability testing and UX in the evaluation is another study 
+strength: although both aspects are relevant [69] and the 
+focus on UX has increased in product design, it is common 
+that user evaluations still focus only on usability testing. On 
+the contrary, this study used a validated tool to measure UX, 
+which has been recognized to methodologically improve the 
+UX field [70]. Finally, the multidisciplinary team involved 
+created the preconditions for cross-fertilization thanks to
+
+309
+
+complementary roles, competences, and responsibilities 
+throughout the study.
+A weakness of this study is the small user group size in 
+the evaluation, which limited the possibilities to draw any 
+firm conclusions from the results, particularly regarding 
+UEQ. With a bigger sample size statistical analysis of the 
+impact of the users’ personal characteristic, as for example 
+performed in Ayalon and Toch [37] could have provided 
+more solid evidence of the relevance of the three selected 
+user characteristics. However, the approach is reported 
+in this article with the aim of illustrating how it can be 
+applied in a specific user group. Moreover, although evalu-
+ation participants had varied amount of previous experi-
+ence with the applications, they all had high self-rated 
+TE; this could constitute a bias in the sample and hence 
+in the corresponding results. Furthermore, there were 
+more contributions from men and from participants with 
+high PA level and high TE, which may indicate a risk that 
+the result reflects this group more specifically. Another 
+potential discussion point is whether the single-occasion 
+evaluation procedure in lab environment could represent 
+a study weakness. In fact, tests in real environments can 
+enable more authentic user experience [71] and may be 
+particularly important when it comes to mobile devices 
+[72]. Nonetheless, laboratory tests were considered appro-
+priate in this case to quickly iterate on designs and address 
+usability issues before real-life testing, thus avoiding 
+releasing a poorly designed product [71].
+This case study on digital support for PA has provided 
+further insights into the design of e-health for the hetero-
+geneous group of older adults, both related to practice and 
+to research:
+
+•	 Recruiting users with low TE is important yet chal-
+lenging. Therefore, efforts should be made to recruit 
+users with low TE both in UCD practice as well as in 
+research on digital technology. Further research on best 
+practice for performing tests with users with low TE is 
+also recommended to strengthen their impact in UCD 
+and thereby increase their digital inclusiveness. This rec-
+ommendation is also relevant for other user groups with 
+functional impairments, visual impairments or dyslexia;
+•	 To gain a deepened understanding of the users’ needs 
+in UCD, repeated iterations are needed. This case study 
+illustrated that it is not advisable to decide in advance 
+how many iterations to perform since that may result in 
+prototypes insufficiently inclusive for the users. Instead, 
+deciding the number of iterations during the process is 
+recommended;
+•	 Combining data collection methods in prototyping and 
+evaluation is valuable for collecting diverse types of 
+user feedback and therefore recommended. In this case 
+study, the users’ immediate reactions and thoughts were 
+
+collected by think-aloud methodology while interview 
+questions after the tests gave them time to reflect;
+•	 Monitoring specific user characteristics in UCD is help-
+ful for identifying potential biases in group composition 
+and to ensure all user profiles are shaping the design. 
+However, the method used in this case study for monitor-
+ing, coding and prioritizing user feedback was experi-
+enced as time consuming. Development of lighter meth-
+ods with the same aim is recommended;
+•	 Several aspects should be considered when prioritizing 
+improvement efforts in UCD processes. The few sug-
+gestions that were not prioritized for actions in this case 
+study were suggestions considered to be out of the sys-
+tem’s scope.
+
+5  Conclusions
+
+The results from this case study confirmed the need of adapt-
+ing e-health applications to promote digital inclusion among 
+older adults. The study reports aspects that may be important 
+to address in the adaptation: for example, applications must 
+be easy to navigate, have clean pages, be experienced as 
+helpful and efficient, and have a content that is relevant and 
+inclusive. The approach to code the users’ feedback accord-
+ing to user profiles made it possible for making strategic 
+recruitment efforts to amend bias. Moreover, the approach 
+confirmed that all user groups contributed to the design of 
+the digital applications and facilitated decisions on prioriti-
+zation. Further, the results confirm the heterogeneity of older 
+adults and indicated that user characteristics, such as low 
+TE, visual impairment, and dyslexia, should be considered 
+in the testing and design of digital solutions.
+This case study contributes with knowledge on how to 
+better support diversity and promote digital inclusion for 
+heterogeneous user groups with limited uptake of digital 
+support systems. As such, this proposed UCD approach 
+can be used both in the design of solutions and in future 
+research on how interaction-design can support accessibility 
+and inclusion of information technologies. Further research 
+on lighter, less time-consuming methods to involve digitally 
+excluded populations in UCD is needed. Moreover, older 
+adults’ adoption of the case study’s digital applications 
+needs to be evaluated in real-life setting with larger groups 
+of users.
+
+Supplementary Information  The online version contains supplemen-
+tary material available at https://​doi.​org/​10.​1007/​s10209-​023-​01049-z.
+
+Acknowledgments  The authors would like to thank all older adults 
+participating in the study. Moreover, the authors are grateful to Ann-
+Christin Johansson for contributing to the planning and execution of 
+the study and to Titti Johansson, Birgitta Knutsson and Jakob Vosjö 
+for contributing in recruitment of participants and in the analysis of the
+
+310
+	
+
+user feedback. The authors also want to thank the companies Abilia 
+and Real-Test for their contributions in the technical development of 
+the system.
+
+Funding  Open access funding provided by Mälardalen University. 
+This work was supported by the Swedish innovation agency (Vinnova) 
+under Grant Dnr: 2017-0317 and the project partners (Abilia, Livanda 
+Internetkliniken AB, Mälardalen University, Real-Test, Region 
+Västmanland, Vital Integration of Scandinavia, Västerås Municipality).
+
+Declarations 
+
+Internetkliniken AB that owns and developed the motivation support 
+application within the article. The other authors have no conflict of 
+interest to declare relevant to this article's content.
+
+Open Access  This article is licensed under a Creative Commons 
+Attribution 4.0 International License, which permits use, sharing, 
+adaptation, distribution and reproduction in any medium or format, 
+as long as you give appropriate credit to the original author(s) and the 
+source, provide a link to the Creative Commons licence, and indicate 
+if changes were made. The images or other third party material in this 
+article are included in the article’s Creative Commons licence, unless 
+indicated otherwise in a credit line to the material. If material is not 
+included in the article’s Creative Commons licence and your intended 
+use is not permitted by statutory regulation or exceeds the permitted 
+use, you will need to obtain permission directly from the copyright 
+holder. To view a copy of this licence, visit http://creativecommons.
+org/licenses/by/4.0/.

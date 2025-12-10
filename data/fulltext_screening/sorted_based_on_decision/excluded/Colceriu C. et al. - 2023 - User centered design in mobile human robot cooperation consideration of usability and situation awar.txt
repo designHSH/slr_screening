@@ -1,0 +1,1398 @@
+i-com 2023; 22(3): 193–213
+
+Christian Colceriu*, Sabine Theis, Sigrid Brell-Cokcan and Verena Nitsch
+User-centered design in mobile human-robot
+cooperation: consideration of usability and
+situation awareness in GUI design for mobile
+robots at assembly workplaces
+
+https://doi.org/10.1515/icom-2023-0016
+Received April 6, 2023; accepted September 22, 2023;
+published online October 31, 2023
+
+Abstract: Mobile cobots can increase the potential for
+assembly work in industry. For human-friendly automa-
+tion of cooperative assembly work, user-centered interfaces
+are necessary. The design process regarding user interfaces
+for mobile human-robot cooperation (HRC) shows large
+research gaps. In this article an exemplary approach is
+shown to design a graphical user interface (GUI) for mobile
+HRC at assembly workplaces. The design is based on a wire-
+frame developed to support situation awareness. An inter-
+active mockup is designed and evaluated. This is done in
+two iterations. In the ﬁrst iteration, a user analysis is carried
+out using a quantitative survey with n = 31 participants to
+identify preferred input modalities and a qualitative survey
+with n = 11 participants that addresses touch interfaces. The
+interactive mockup is developed by implementing design
+recommendations of the usability standards ISO 9241 – 110,
+112 and 13. A heuristic evaluation is conducted with n = 5
+usability experts and the measurement of situation aware-
+ness with n = 30 end users. In the second iteration, ﬁndings
+from the preceding iteration are implemented in the GUI
+and a usability test with n = 20 end users is conducted. The
+process demonstrates a combination of methods that leads
+to high usability and situation awareness in mobile HRC.
+
+*Corresponding author: Christian Colceriu, Corporate Research
+and Development, Krones AG, Böhmerwaldstr. 5, 93073 Neutraubling,
+
+Sabine Theis, Institute for Software Technology, DLR, Linder Höhe, 51147
+
+Sigrid Brell-Cokcan, Chair of Individualized Production, Faculty of Archi-
+tecture, RWTH Aachen University, Aachen, Nordrhein-Westfalen,
+
+Verena Nitsch,
+Chair and Institute of Industrial Engineering and
+Ergonomics, Faculty of Mechanical Engineering, RWTH Aachen University,
+Aachen, Nordrhein-Westfalen, Germany,
+
+Keywords: user-centered design; graphical user interface;
+situation awareness; usability engineering; human-robot
+cooperation
+
+1 Introduction
+
+1.1 Background
+
+In production and construction, there is currently a high
+shortage of skilled workers and an ever-increasing complex-
+ity [1, 2]. The Corona pandemic has increased personnel
+shortages [3]. This leads to the fact that the use of robots
+working together with humans, the so-called human-robot
+cooperation (HRC), is gaining importance [4, 5]. Especially
+easy-to-use interfaces become more and more important,
+because they increase the acceptance of automated systems
+by the users [6, 7]. In the context of the investigation on the
+future use of mobile, ad-hoc cooperating robot teams for
+industrial applications [8, 9], this research adapts existing
+methods for user-centered development for the design of
+a graphical user interface (GUI) for mobile HRC. Here, a
+user interface is designed for the HRC to support humans in
+the work task at assembly workplaces. Figure 1 shows the
+demonstrator of the project in ﬁeld tests. The demonstrator
+was programmed as an example to take servo motors from
+a shelf and insert them into a container table in sequence.
+This corresponds to one of the steps performed today by
+assembly personnel. In parallel, the worker carries out
+assembly steps, e.g. greasing the motor shafts and screw-
+ing in the inserted servo motors. During the human-robot
+cooperation, the worker always has the robot’s activity and
+its current status in view with the help of a GUI, as well
+as the overall goal of the assembly task. A dynamic system
+is present because both the cobot and the worker are con-
+tinuously moving around while performing the common
+work task. At the same time, the work object is constantly
+changing its shape due to the assembly process. Since this
+is a dynamic system, the construct situation awareness is
+highly relevant [10]. This was already included in the design
+of the wireframe, the pre-model of the GUI. When operating
+
+Open Access. © 2023 the author(s), published by De Gruyter.
+This work is licensed under the Creative Commons Attribution 4.0 International License.
+
+194 —
+
+Figure 1: Demonstrator for mobile HRC in a field study.
+
+the GUI during assembly, usability is also of high relevance.
+Both aspects are considered and evaluated in this work. The
+ways to choose and combine methods for a GUI for mobile
+HRC are diverse and context dependent.
+
+1.2 Related work
+
+Previous work on the topic of mobile HRC is mainly
+technology-oriented [11–13]. Approaches that pursue user-
+centered design draw on ISO 9241-110. For example, a service
+robot was developed for customers in a hardware store. An
+evaluation by end users took place in a ﬁeld test. The imple-
+mentation of the principles is not described [14, 15]. Related
+to human-robot cooperation, research is also being con-
+ducted on a control loop model for human-centered design.
+The context is general, it does not talk about a mobile robot
+in an assembly context [16]. For a robotic arm attached to a
+wheelchair, GUIs were designed and tested using a System
+Usability Scale [17]. For a mobile robot for elderly care that
+is remotely controlled by a caregiver, a user interface was
+developed where both situation awareness and usability
+were evaluated. The workload was assessed by means of
+a questionnaire and NASA-TLX was used as an assessment
+tool. Usability was determined by using a System Usability
+Scale questionnaire and situation awareness was measured
+by applying the 3D-SART method [18]. A guide to support the
+design of usable user interfaces for human-robot collabo-
+ration at the production workplace was developed, where
+the process phases were divided into analysis, iterative
+design, and evaluation [19]. The user-centered design of a
+GUI for human-robot collaboration was also investigated
+for mechanical joining processes in aircraft ﬁnal assembly
+[20]. An iterative user-centered design process in human-
+robot interaction was also applied in a robot for agricultural
+vineyard spraying [21], where a heuristic evaluation was
+performed. The iterative design of a mobile assistance sys-
+tem for maintenance workers applies design guidelines and
+standards for software ergonomics [22]. However, the user-
+centered approaches do not address the same factors that
+are addressed in this research, such as the industry context,
+
+mobile HRC, or GUIs. Be it the lack of user-centered design
+intent or the industry context, especially the reference to
+cooperation at assembly workplaces.
+The user-centered design process according to ISO 9241-
+210 recommends the application of design principles, among
+others from ISO 9241-110, 112 and 13, when designing user
+interfaces. Inspection methods are particularly economi-
+cal for evaluation because they can be carried out in a
+short time [23], such as the heuristic evaluation according
+to Nielsen [24]. An evaluation of elaborated user interfaces
+should also be performed with end users. These usability
+tests can be conducted with standardized questionnaires
+such as IsoMetrics or ISONORM 9241/110, both of which are
+similarly meaningful [25]. An overview of usability methods
+has been implemented in a taxonomy. It is divided into the
+classes Testing, Inspection, Inquiry, Analytical Modeling and
+Simulation [26, 27]. In order to measure situation awareness
+in a user interface, the application of different methods
+is possible. The situation awareness measurement meth-
+ods ASAGAT, CARS, PASA, QUASAGAT, SAGAT and SPASA
+were compared [28, 29]. Similarly, a direct comparison of
+both SAGAT and SART methods has been conducted [30,
+31]. These are mostly questionnaire-based and differ, among
+other things, in that the questions are asked either dur-
+ing the execution of the experiment – by brieﬂy pausing
+the experiment – or afterwards. From 4-point to 7-point
+Likert scales are recommended to evaluate performance
+and situation awareness. The previous process which is
+the starting point for this research consisted of the phases
+Goal-Directed Task Analysis, Physical Model, and wireframe
+design, in which design principles for situation awareness
+were implemented. One view on the GUI represents the
+overall goal, one represents the status of the robot related
+to its current activity, and one shows the checklist to ver-
+ify that the current task is being performed correctly (see
+Figure 2). The existing wireframe has been pre-evaluated
+using qualitative interviews. The measurement of situation
+awareness can only be done once an interactive mockup
+has been created. As further preliminary work, a GUI was
+developed to enable intuitive programming [32]. This should
+
+C. Colceriu et al.: User-centered design in mobile human-robot cooperation — 195
+
+Figure 2: Wireframe design as source material for performing usability engineering; overall goal view (left), robot view (middle), checklist view (right).
+
+also be implemented in the GUI for HRC in order to be able
+to evaluate the user-centered approach here as well.
+
+1.3 Motivation and research question
+
+The motivation of this work is to develop an approach to
+design a user interface to support usability and situation
+awareness in a mobile HRC. It has been shown that there is
+a current need for user-centered user interfaces for mobile
+HRC. Preliminary work has already been done by devel-
+oping a wireframe that deﬁned relevant information that
+targets human-robot cooperation for situation awareness
+[33]. Similarly, a GUI for intuitive robot programming has
+been developed that can take a holistic approach through
+its implementation in the HRC [32]. The next step completed
+through this work is to create an interactive mockup to eval-
+uate the GUI in terms of usability and to measure situation
+awareness. The value of this research for science is to show
+a process how to design a GUI for mobile HRC that supports
+situation awareness and usability. The following research
+question arises:
+Which combination of methods can be used to design
+a GUI that supports situation awareness and usability for
+mobile HRC at assembly workplaces?
+
+2 Methods
+
+2.1 Experimental task
+
+In the use case, a mobile robot is used in an industrial environment
+to assist in assembly by having workers and robot work on a com-
+mon work task. As in the previous work to develop a wireframe [33],
+the work task consists of assembling a container table for a labeling
+machine in the beverage industry. For this study, the complex assembly
+task was reduced from 25 to 4 steps. These are the greasing of motor
+shafts (step 1), the insertion of servo motors into a container table (step
+2), the greasing of screws (step 3) and the screwing of the servo motors
+to the container table (step 4). Human-robot cooperation is realized
+insofar as worker and robot share the workspace while working on
+
+the common work task. The worker can also assist the robot in posi-
+tioning the servomotors or screws the already placed drives in the
+meantime. Figure 3 shows the elements and resources for the work
+task and the task allocation. The sequence as it is handled during the
+execution of the task in this use case is shown in a slide diagram,
+based on the Gantt diagram of an assembly sequence for human-robot
+cooperation [34].
+The work task of container table assembly is a suitable appli-
+cation for mobile HRC because it was assessed in the work system
+analysis as monotonous, which could result in errors for workers [35].
+Related to the theory of assembly in industrial production, the use
+case corresponds to a stationary, manual assembly of large equipment
+[36]. This creates a dynamic system that makes mobile HRC useful and
+supportive. The individual assembly steps can be assigned capabilities
+that are proven in assembly theory [37]. Greasing components corre-
+sponds to the capability “lubrication”, inserting servo motors corre-
+sponds to “handling” and screwing servo motors corresponds to the
+capability “pressing on/in”, which is described in the German standard
+DIN 8593-3.
+
+2.2 Experimental design: user-centered design process
+
+A user-centered design process has been applied, as described in ISO
+9241-210. The context of use described in this document has already
+been carried out in previous work [33, 35]. In this research, the
+approach is carried out in two iterations. The ﬁrst iteration includes a
+user analysis, the design of the interactive mockup, the heuristic evalu-
+ation and the measurement of the situation awareness. The second iter-
+ation includes the design of the GUI by implementing the ﬁndings from
+the previous evaluation and a usability test with end users by applying
+the questionnaire ISONORM 9241/110. Figure 4 shows an overview of
+the applied process. The description is divided into “Process Phase”,
+“Chapter”, Method and “Goal of the Method”. Each of the methods
+relates to the research objective as follows: The quantitative survey
+examines which input modalities are preferred by the target group
+when operating GUIs, because the input form has a strong inﬂuence
+on the GUI design. The qualitative interview picks up on the preferred
+input modality and ask users about their experiences, because the use
+of familiar elements leads to higher user acceptance. An interactive
+mockup is necessary to measure situation awareness and test usability.
+The heuristic evaluation results in suggestions for improvement of
+the GUI with the help of experts. The situation awareness evaluation
+makes measurement of situation awareness possible and additionally
+obtains feedback from users. The high ﬁdelity mockup synthesizes all
+the ﬁndings into a holistic GUI design so that this can then be tested with
+potential users in a usability test. The HRC speciﬁcation of the process
+
+196 —
+
+Figure 3: Elements and resources for work task and task allocation.
+
+Figure 4: Approach to a method combination for the user-centered design process of a GUI for mobile HRC.
+
+C. Colceriu et al.: User-centered design in mobile human-robot cooperation — 197
+
+mainly results from the relevance of the constructs situation awareness
+and usability because the context refers to mobile HRC, not stationary
+HRC.
+
+2.3 User analysis methods
+
+2.3.1
+Quantitative survey on input modalities:
+The user analysis
+consists of two studies to obtain information about potential end users
+on the use of user interfaces and modalities. The ﬁrst analysis is a
+survey on the experience with different input modalities and the pref-
+erence of certain ones for the user interface of the cobot. Figure 5 shows
+the input modalities that are available for selection in the survey. The
+two questions asked are “How often do you use this input modality in
+everyday life?” and “Can you imagine this form of input in human-robot
+collaboration?” The questions were each rated by the respondents
+using a 4-point Likert scale. For the evaluation a score is assigned to
+each item. In reference to the question “How often do you use this input
+modality in everyday life?” the items “Almost daily” (score 3), “Weekly”
+(score 2), “Rarely” (score 1) and “Never” (score 0) are available for
+selection. Related to the question “Can you imagine this form of input in
+human-robot collaboration?” the items “Very well” (score 3), “Basically”
+(score 2), “Less” (score 1) and “Not at all” (score 0) are available for the
+participants to choose from. For both questions, scoring is conducted in
+the same manner. For each input modality, the scores are summed, and
+then the mean and standard deviation are calculated.
+There were 31 respondents, of which 27 were male and 4 were
+female, ranging in age from 17 to 60 years (M = 37.19; SD = 13.35)
+and work experience in manufacturing from 2 to 42 years (M = 17.53;
+SD = 12.22). All respondents work in the assembly department and thus
+correspond to potential end users of the robotic system.
+
+2.3.2
+Qualitative interview on touch interfaces:
+The second analy-
+sis consists of qualitative interviews with assembly workers. The topic
+of the questions is derived from the preferences for input modalities.
+Since touch systems performed best in the previous survey, they will
+
+be addressed in the qualitative interviews. The people are asked which
+touch systems they use in everyday life. They are also asked how they
+cope with the touch systems and individual apps on smartphones. The
+interviews were audio recorded and transcribed. Subsequently, a quali-
+tative content analysis according to Mayring was conducted to evaluate
+the interviews [38]. The transcripts were paraphrased and coded. A
+coding agenda was created and the frequency of mentions of elements
+(e.g., apps used) was shown. The coding agenda contains numbered
+categories, the deﬁnition of a category, and an anchor example in which
+the interview number and the page number of the text passage are
+written. Furthermore, the coding rules are written when a text passage
+is assigned to a category and according to which criteria it is assigned.
+11 workers participated in the survey. All were male, from 26 to 50 years
+old (M = 40.1; SD = 8.63).
+
+2.4 Design methods
+
+In the ﬁrst iteration, the design of the interactive mockup is done by
+applying design principles from parts 110, 112 and 13 of ISO 9241 and
+by implementing the outcomes from the wireframe evaluation in the
+previous research. ISO 9241-110 recommends the 7 design principles
+of suitability for the task, self-descriptiveness, conformity with user
+expectations, suitability for learning, controllability, error tolerance and
+suitability for individualization. These principles are based on the 2016
+version, and although the 2019 version includes a slightly modiﬁed
+form of the principles, the 2006 version is compliant with the ISONORM
+9241/110 questionnaire. The ISO 9241-112 standard contains principles
+for presenting information in order to design systems that are suitable
+for use, whether visual, auditory or tactile. These are the 6 principles
+of detectability, freedom from distraction, discriminability, unambigu-
+ous interpretability, conciseness and consistency (internal and external).
+The ISO 9241-13 standard deals with user guidance for human-system
+interaction, which is divided into the following topics: common guid-
+ance recommendations, prompts, feedback, status information, error
+management, and on-line help. In the second iteration the design is
+done by implementing the outcomes from the heuristic evaluation and
+
+Figure 5: Input modalities that are available for selection in the quantitative survey.
+
+198 —
+
+the controlled experiment. Also the intuitive programming mode from
+the previous work is implemented, so that it results in a high ﬁdelity
+mockup.
+
+2.5 Evaluation methods
+
+In the ﬁrst iteration, the evaluation consists of a heuristic evalua-
+tion and a measurement of situation awareness. In the second iter-
+ation it consists of a usability test by means of ISONORM 9241/110
+questionnaire.
+
+2.5.1
+Heuristic evaluation:
+The heuristic evaluation according to
+Nielsen was conducted with n = 5 usability experts working in the
+mechanical engineering industry. They all design and develop user
+interfaces for industrial applications in their daily work. The reviews
+with the experts take place as individual interviews. In heuristic eval-
+uation, each individual reviewer examines the user interface alone
+to ensure an independent and uninﬂuenced review. The reviewers
+evaluate the user interface with respect to Nielsen’s 10 heuristics and
+enter the current status and suggestions for improvement for each
+principle.
+
+2.5.2
+Situation awareness evaluation with controlled experiment:
+The ﬁrst draft of the GUI, which was designed and evaluated as a
+wireframe, is designed to support situation awareness. By means of
+an interactive mockup, situation awareness can be measured. Here,
+a measurement was performed that is adapted from SAGAT [39]. The
+evaluation setup consists of a test room in which participant, mod-
+erator, and facilitator are located. The test person views two screens
+during the measurement. The work task is simulated by showing the
+situations of the individual work steps on one screen. On a second
+screen the current GUI is shown. Figure 6 shows the evaluation setup
+of the controlled experiment.
+The participant has to perform four work steps and has to name
+the interaction performed at the interface. Performance and situation
+
+awareness are measured by 20 questions. The questions related to
+situation awareness are divided into task awareness (TA) and robot
+awareness (RA). They are questions related to level 1, 2 and 3 for
+situation awareness. The performance is evaluated by the researchers.
+Performance was assessed by the researchers by checking “yes” on
+the sheet if the question was answered successfully and “no” if the
+question was not answered successfully. After each question, the tester
+is asked how useful the information on the GUI is. The respondent has
+to indicate this on a 6-point Likert scale, from “very helpful” to “not
+helpful at all”. This corresponds to scores from 100 (very helpful) in
+increments of 20 down to 0 (not helpful at all) for situation awareness.
+For each question, the scores are multiplied by the number of people
+who selected that item. Then the results for each question are added
+up and divided by the maximum possible score (high score = 3000).
+This yields the situation awareness scores for each question. The values
+are divided into the topics TA, RA and total values. Mean values and
+standard deviations are calculated for each topic. Figure 7 illustrates
+the calculation of the situation awareness as an example.
+The study involved 30 people, all of whom worked as assemblers
+in the production department of a company that manufactures machin-
+ery and equipment for the beverage industry. They are therefore end
+users of the interface developed. Thirty people were interviewed, 27 of
+whom were male and 3 female, ranging in age from 17 to 60 years (M
+= 37.6; SD = 13.38) and work experience in manufacturing from 2 to
+42 years (M = 17.78; SD = 12.35).
+
+2.5.3
+Usability test with end users:
+In order to evaluate the usabil-
+ity of the GUI, a usability test is conducted using the standardized ques-
+tionnaire ISONORM 9241/110. For the evaluation setup the laboratory
+environment was chosen, which displays both the working environ-
+ment and the GUI on two screens, analogous to the situation awareness
+measurement. The evaluation involved 20 assembly workers who are
+potential end users for the developed interface. 17 participants were
+male and 3 female, ranging in age from 17 to 54 years (M = 34.75; SD =
+12.30) and a work experience in manufacturing from 1 to 38 years (M =
+16.15; SD = 10.16). The usability test includes 19 tasks for operating the
+user interface during a hypothetical performance of the assembly task.
+
+Figure 6: Evaluation setup of the controlled experiment.
+
+C. Colceriu et al.: User-centered design in mobile human-robot cooperation — 199
+
+Figure 7: Calculation of situation awareness as an example.
+
+After completing the tasks, each respondent completed the ISONORM
+9241/110 questionnaire. The performance of the persons during the
+tasks as well as the ratings in the questionnaire were evaluated.
+
+3 Results of first iteration
+
+In the previous chapter, the methods of development were
+explained in more detail. In this chapter, the results of
+the user-centered design process are described. The results
+of the analysis are divided into quantitative and qualita-
+tive surveys. The results of the design are divided into the
+applied parts of ISO 9241 and the visualization of the results.
+Afterwards, the result of the evaluation is explained and the
+results are illustrated in a visualization of the graphical user
+interface in order to recognize connections between GUIs
+and principles from ISO 9241. The results of the evaluation
+are divided into the heuristic evaluation and the situation
+awareness measurement.
+
+3.1 User analysis
+
+To carry out a user analysis, the quantitative survey was
+conducted to investigate the workers’ experience with input
+modalities and to identify which modalities are preferred
+for the use case. A qualitative survey was conducted to
+analyze the basic experience with touch systems.
+
+3.1.1 Result of quantitative surveys on input modalities
+
+The survey on input modalities for GUIs has produced quite
+clear results. In terms of the use of input modalities, the 3
+
+most common are mouse & keyboard, touch display with
+ﬁnger and the remote control. Gesture control is the least
+used. When asked how suitable an input form is for use
+for human-robot interaction at the assembly workplace,
+opinions lean strongly toward touch display with ﬁnger and
+touch display with stylus. Input via gesture control is the
+least imaginable. A correlation between the frequency of
+use of certain input forms and how suitable these input
+forms are for HRC in the assembly task is not discernible, or
+the factors are only weakly related to each other. Figure 8
+shows the results of the survey on input modalities.
+
+3.1.2 Result of qualitative interviews on touch interfaces
+
+The ﬁndings of the surveys on touch interfaces revealed that
+the respondents use a manageable number of touch inter-
+faces in their everyday lives. The ﬁrst thing they came across
+were smartphones or tablets; they ﬁrst had to be introduced
+to other devices with touch displays, e.g. navigation devices
+in cars, ATMs or ordering displays in fast food restaurants.
+When asked about apps used on smartphones, the number
+of apps is equally manageable. Every person surveyed who
+owns a smartphone also uses the messenger app WhatsApp.
+Frequently used apps are the social network facebook, the
+map service Google Maps and the video portal YouTube.
+When asked about the satisfaction of touch systems used,
+the participants surveyed are generally satisﬁed with the
+apps they use. Likewise with displays for ordering food at
+McDonald’s. They are more dissatisﬁed with the user guid-
+ance of navigation devices. Table 1 shows the coding agenda
+for the qualitative survey, divided in category, deﬁnition and
+anchor example.
+
+200 —
+
+Figure 8: Result of the surveys on input modalities.
+
+Table 1: Coding agenda for the qualitative survey of factory personnel on touch systems.
+
+Category
+Definition
+Anchor example
+
+1.1 Used devices with touch display at home
+Naming of devices with touch display
+used at home
+“I mainly use my smartphone at home.”
+
+1.2 Used devices with touch display at work
+Naming of devices with touch display
+used at work
+“At work I use a control panel with touch
+display.”
+1.3 Used devices with touch display on the road
+Naming of devices with touch display
+used on the road
+“In the car I have a navigation system with
+touch display.”
+2 Used applications on touch devices
+Naming of used applications
+“I use WhatsApp.”
+3 Problems of touch displays
+Naming of problems in use
+“The control panels hang too high.”
+4 Suggestions for improvement of touch displays
+Suggestions for improvement to
+facilitate use
+“The displays should be better calibrated.”
+
+Figure 9 shows on the left side the apps that were
+mentioned in the interviews and how many of the respon-
+dents use them. The right side shows which apps are most
+frequently used on the smartphone.
+
+3.2 Results of design
+
+After the analysis phase, the design phase is carried out, in
+
+which the standards ISO 9241-110, 112 and 13 were applied to
+
+Figure 9: Result of the survey on touch systems.
+
+C. Colceriu et al.: User-centered design in mobile human-robot cooperation — 201
+
+design the GUI. The principles were systematically applied
+by looking for application possibilities that proved to be
+coherent. To illustrate the systematics, the principles were
+entered in a table and the application of the respective prin-
+ciple in the GUI, as well as a coding, in order to reproduce
+the application later in the GUI. The coding of the principles
+consists of the part of the standard (e.g. 110), an abbrevia-
+tion for the principle created especially for this application
+(e.g. Ta = Suitability for the Task) and a consecutive num-
+bering starting anew for each principle. Findings from the
+qualitative evaluation conducted in the analysis phase were
+also implemented in the GUI. These included, for example,
+omitting the material from the component description
+and adding the indication whether fasteners need to be
+greased.
+
+3.2.1 Design approach by applying ISO 9241-110
+
+The design principles are applied to the GUI of the mobile
+collaborative robot to create a usable human-robot interac-
+tion. The principle of suitability for the task was applied by
+making the button with the robot invisible when robot assis-
+tance is not available for the task at hand. Similarly, infor-
+mation about the component is only displayed if requested.
+In the display for time and tasks, the remaining time and the
+remaining number of tasks are displayed so that they do not
+have to be calculated by the worker. The principle of self-
+descriptiveness has been applied to the numbering of tasks,
+for example, in that the current task is always highlighted in
+blue in the task bar and is visible in every mode. Completed
+tasks should be quickly recognized by being colored black.
+The color red was used for markings to guide the user,
+such as the motor shaft to be greased. Conformity with user
+expectations was applied by using familiar vocabulary in
+the checklist, for example. So are generally accepted con-
+ventions such as the play button and back and forward but-
+tons familiar from video players and media galleries. Inter-
+nal consistency of information presentation is implemented
+through elements that are always in the same place. The
+principle of suitability for learning can be found in that the
+button at the top left can be pressed for further instructions
+but does not have to be pressed. In the test window, the user
+receives explanations through which the system guides the
+user through the application. Likewise, the system allows
+the user to retry dialog steps by deselecting buttons from
+the checklist. In the controllability principle, for example,
+the user controls how a dialog is continued, since switching
+between tasks is always possible. Likewise, the user controls
+the speed by being able to pause and restart the robot. The
+last dialog step can be undone by opening and closing the
+
+window, e.g. to conﬁrm a test protocol. Error tolerance has
+been applied by preventing the user from errors by inactive
+elements. Likewise, the user is supported by a hint he or
+she receives in case of an erroneous action in the checklist.
+Activating a conﬁrmation in the checklist can also undo the
+action if it was not intended. The principle of suitability for
+individualization has been applied, for example, by giving
+the user the option to select the hint in the upper left corner,
+but he does not have to. Similarly, the user has the option
+to choose between different dialog techniques by clicking
+on the next button or directly on the task. Table 2 shows
+how the application of the design principles according to ISO
+9241-110 was coded and used.
+
+3.2.2 Design approach by applying ISO 9241-112
+
+The 6 design principles for information presentation were
+implemented in the design as follows. The principle
+detectability was applied by red markings at components,
+a blue border at the currently visible task on the screen,
+by ﬂashing the next button and by providing access to
+information about which actions are possible. The prin-
+ciple of freedom from distraction was implemented into
+the design by grouping the list elements. Likewise by the
+checklist with red and green buttons, for better differenti-
+ation. The display with the remaining tasks and time was
+implemented with round and square buttons. Unambigu-
+ous interpretability was applied to the checklist by using
+known vocabulary for the text. The clear representation
+of parts was also improved, using a 3-dimensional view.
+Conciseness was applied by a simple representation without
+unnecessary colors, by possible actions and by a compact
+alternative possibility to click directly on tasks. The princi-
+ple of internal and external consistency was implemented
+by familiar elements, such as the Pause button and Back
+and Forward button as external consistency, but also the
+consistent arrangement of buttons as internal consistency.
+Table 3 shows how the application of the design principles
+was coded and used according to ISO 9241-112.
+
+3.2.3 Design approach by applying ISO 9241-13
+
+The user guidance recommendations have been imple-
+mented in the interface using various examples. Com-
+mon guidance recommendations can be found, for example,
+by hiding the checklist window when the OK button is
+clicked. Likewise, by using familiar language and vocabu-
+lar. Prompts have been implemented in that the Next but-
+ton ﬂashes after a task has been completed to prompt for
+input. The checklist is a speciﬁc prompt, since there are
+
+202 —
+
+Table 2: Design principles of ISO 9241-110 related to the GUI.
+
+Principle
+Application
+Code
+
+Suitability for the task
+Robot button not visible if robot is not available
+110-Ta-1
+Information about component only on request
+110-Ta-2
+Remaining time and number of tasks is displayed
+110-Ta-3
+Self-descriptiveness
+Current task is marked blue in the task bar and always visible
+110-Se-1
+Completed tasks are colored black
+110-Se-2
+User is guided by red markers
+110-Se-3
+Conformity with user expectations
+Familiar vocabulary in checklist (e.g. lubricant, dosage etc.)
+110-Ex-1
+Generally accepted conventions through play button like in video player and back and
+forward buttons like in media galleries
+110-Ex-2
+
+Internal consistency of information presentation through elements that are always in
+the same place, e.g. servo motor
+110-Ex-3
+
+Suitability for learning
+System teaches user, as button on top left can be pressed or not
+110-Le-1
+System guides through application, by explanation in checklist
+110-Le-2
+System allows user to retry dialog steps by deselecting checklist buttons
+110-Le-3
+Controllability
+User controls how dialog continues, since switching between tasks is always possible
+110-Co-1
+User controls speed by pausing the robot
+110-Co-2
+Dialogue windows can be closed and reopened
+110-Co-3
+Error tolerance
+System prevents user from errors, as inactive elements cannot be pressed, e.g.
+play/pause button
+110-Er-1
+
+Error management by indication of wrong action in checklist
+110-Er-2
+Activation can be undone by confirmation of check in checklist; error correction
+110-Er-3
+Suitability for individualization
+Possibility to select level by hint, which can be viewed, but doesn’t have to be
+110-In-1
+Possibility to choose between different dialog techniques by clicking Next button or
+directly clicking on task
+110-In-2
+
+Table 3: Design principles of ISO 9241-112 related to the GUI.
+
+Principle
+Application
+Code
+
+Detectability
+Red markings at components
+112-De-1
+Blue border at current task
+112-De-2
+Flashing of the next button
+112-De-3
+Freedom from distraction
+Task-related information is distinguishable from the background
+112-Fr-1
+Discriminability
+Structuring of information by grouping the list elements
+112-Di-1
+Checklist with red and green buttons for better differentiation
+112-Di-2
+Round and angular shape of buttons when displaying remaining tasks and time
+112-Di-3
+Unambiguous interpretability
+Familiar vocabulary in checklist
+112-Un-1
+Clear representation of parts through 3-dimensional view
+112-Un-2
+Conciseness
+Simple representation without unnecessary colors
+112-Conc-1
+Possible actions
+112-Conc-2
+Compact alternative by possibility to click on tasks directly
+112-Conc-3
+Consistency (internal and external)
+Known elements pause button and back and forward button as external consistency
+112-Cons-1
+Position and layout of different groups always the same as inner consistency
+112-Cons-2
+
+only a limited number of input options, namely Conﬁrm and
+Non-Conﬁrm. The recommendation feedback was applied
+by opening the robot window immediately after clicking.
+Likewise, the Pause button becomes the Play button after
+clicking. The task page and button change after clicking. The
+status information recommendation is applied by displaying
+the task progress in the task bar, displaying the number
+
+of remaining tasks and the remaining time, and displaying
+the robot progress in the robot view. The recommendation
+error management has been applied by displaying a hint on
+what to do when the Non-Conﬁrm button is clicked. Simi-
+larly, there is an error handling by the user by undoing or
+deselecting the conﬁrm button of the checklist. On-line help
+is found in the checklist by appearing the hint to assist in
+
+C. Colceriu et al.: User-centered design in mobile human-robot cooperation — 203
+
+Table 4: Design principles of ISO 9241-13 related to the GUI.
+
+Principle
+Application
+Code
+
+Common guidance recommendations
+Window can be closed and reopened on demand
+13-Co-1
+Terms like lubricant and dosage are typically used by workers
+13-Co-2
+Prompts
+Click the button that flashes, as explicit input
+13-Pr-1
+Specific input prompt, as limited number of input possibilities
+13-Pr-2
+Feedback
+Window opens after click
+13-Fe-1
+Pause button becomes Play button when clicked
+13-Fe-2
+Task page and button change after click
+13-Fe-3
+Status information
+Progress of tasks
+13-St-1
+Number of remaining tasks and time left
+13-St-2
+Progress of the robot
+13-St-3
+Error management
+Hint appears when checkbox is clicked
+13-Er-1
+Error handling by user, clicking can be undone
+13-Er-2
+On-line help
+Hint appears in checklist
+13-On-1
+
+accomplishing the task. Table 4 shows how the application
+of the design principles according to ISO 9241-13 was coded
+and used.
+
+3.2.4 Design result of the interactive mockup
+
+The design of the interactive mockup is illustrated in
+Figure 10. The deﬁnition of each term for the GUI is
+described as follows.
+1.
+The Resource button is visible when the overall goal
+view is displayed and is selected to get details about the
+execution of the task.
+2.
+The Robot button changes from the overall goal view to
+the robot view and becomes the overall goal button to
+return to the overall goal view.
+3.
+The Checklist button is visible in both the overall goal
+view and the robot view and calls up the checklist.
+4.
+The Back button leads to the previous task and is not
+present when you are at the ﬁrst task.
+
+5.
+The Next button leads to the next task and is not
+present if you are at the last task.
+6.
+The Pause button stops the robot and can be activated
+once the robot has started its task. Once it is pressed,
+the robot stops and the Pause button becomes a Play
+button. When pressed, the Play button starts the robot
+again and becomes a Pause button.
+7.
+Task bar with Task buttons; the Task buttons call up
+the respective task page when clicked; the view can be
+switched between the tasks at any time.
+8.
+The task display shows the remaining number of tasks.
+9.
+The time display shows the remaining time until the
+task has to be completed.
+10.
+The assembly display is visible in the overall target
+view and shows the current assembly that has to be
+completed.
+11.
+The robot status window shows which task the robot
+is currently performing and how far it has progressed
+with this task.
+
+Figure 10: Control and display elements of the GUI.
+
+204 —
+
+12.
+The equipment status window shows which equipment
+the robot is currently assembling and how many ele-
+ments of it are still to be assembled. The equipment is
+also displayed graphically with its part number.
+13.
+The Conﬁrm button conﬁrms that a task has been per-
+formed correctly. If it is clicked again, the button will
+be inactive again.
+14.
+The Non-Conﬁrm button should be clicked if a speciﬁ-
+cation of a task was not correctly executed. If clicked
+again, the button will be inactive again.
+15.
+The checklist message text appears as soon as the Non-
+Conﬁrm button is clicked. When the button is clicked
+again, the text disappears.
+16.
+The checklist is a dialog box that appears when the
+Checklist button is clicked. In it, the compliance of the
+task must be conﬁrmed in order to complete a task.
+17.
+The Window Close button closes the checklist again
+when clicked.
+
+The principles used from the three parts of ISO 9241 are
+illustrated in the mockup of the GUI. Here, application cases,
+but also overlaps or repetitions of the principles become
+visible. The individual parts of ISO 9241 were colored in
+three colors in order to be able to distinguish them eas-
+ily. ISO 9241-110 was colored red, ISO 9241-112 was colored
+blue, and ISO 9241-13 was colored green. Figure 11 shows
+the overall goal of the work task where the assembly is
+
+visible. It has already been stated that the GUI needs a
+representation of the overall goal, which is the result, the
+necessary component and a status bar with the overview
+of the number of tasks and time. The required component
+is displayed in the button in the upper left corner of the
+GUI. It can display additional information at the click of
+a button as a support for the task execution. According to
+the principle suitability for the task the display is optional,
+because an experienced worker does not need the informa-
+tion. The same result of the design comes out if the principle
+suitability for learning is applied as well as the principle
+suitability for individualization. The blue marking of the
+current task results from the application of the principle
+self-descriptiveness. The same result is obtained by applying
+the feedback recommendation. According to the principle
+controllability, the display of a task results by clicking the
+numbered button of the respective task. The same result
+is produced by the conciseness principle. It considers the
+mapping with the overall goal of the user interface. As an
+example, three design principles of ISO 9241-110 have been
+applied to the resource button. The result is a button that
+should be selected ﬁrst to get more detailed information
+about the current task.
+The illustration with the robot activity of the GUI is con-
+sidered. Several design recommendations act on elements
+like the Back and Next button. Suitability for individual-
+ization leaves the freedom to choose the task. Detectability
+
+Figure 11: Overall goal of the assembly.
+
+C. Colceriu et al.: User-centered design in mobile human-robot cooperation — 205
+
+makes the design easily recognizable. Prompts lead to a
+blink to promote clicking on the next task. Conciseness rec-
+ommends simple presentation. Conformity with user expec-
+tations recommends a familiar design, e.g. as with media
+galleries. Figure 12 shows the status of the robot related to
+its current activity.
+The illustration with the checklist is considered (see
+Figure 13). The checklist message contains several design
+principles. The suitability for learning principle results in
+the solution that the system guides through the application
+by means of explanations in the checklist. This can also be
+seen as error tolerance since hints are displayed in case
+of an incorrect action. The error management recommen-
+dation is also applied, as support is provided to deal with
+failure to complete the task. Unambiguous interpretability
+is employed through known vocabulary that is used. It can
+be seen that there are some redundancies in the design
+of the hint text as far as the use of design principles is
+concerned.
+The insight is forming that several design recommen-
+dations can relate to the same element. Nevertheless, each
+recommendation has a different inﬂuence on the element.
+Thus, shaping, coloring, word ﬁnding, or animation (e.g.,
+blinking) are inﬂuenced. Although there are redundancies
+in the application of recommendations to individual ele-
+ments (e.g., error tolerance and error management), there
+are no indicators of which recommendations are particu-
+larly relevant and which are redundant.
+
+3.3 Results of evaluation
+
+3.3.1 Result of heuristic evaluation
+
+The heuristic evaluation produced a total of 40 different sug-
+gestions for improvement. One suggestion was mentioned
+by three experts independently of each other. Namely, a doc-
+umentation or tutorial should be displayed at the beginning
+to introduce the user to the GUI. Seven suggestions were
+made by two experts independently of each other. These
+included setting tasks interactively if they cannot yet be
+edited. Or adding the note “Activate robot”, avoiding dialog
+boxes and providing space for error messages. 32 sugges-
+tions were made by only one person at a time. These include
+having the lubricant material number noted, putting more
+information in the center of the screen that is associated
+with the part, or better highlighting statuses when the task
+is completed.
+
+3.3.2 Result of situation awareness evaluation with
+controlled experiment
+
+The overall performance of the controlled experiment is
+M = 0.92 (SD = 0.08). For assignments related to the task it
+is M = 0.93 (SD = 0.08), for assignments related to the robot
+it is M = 0.87 (SD = 0.07). These are very high values for
+a ﬁrst interactive mockup and indicate that the acquisition
+
+Figure 12: Status of the robot related to its current activity.
+
+206 —
+
+Figure 13: Checklist window to verify that the current task is being performed correctly.
+
+of information was extremely positive. Overall situation
+awareness is at a value of M = 0.83 (SD = 0.20), which
+is also a high value. This indicates that the information
+displayed on the user interface is not only easy to grasp,
+but also useful, thus supporting situation awareness. This
+applies both to the awareness of the task, whose value is
+at M = 0.82 (SD = 0.20), and the awareness of the robot,
+whose value is at M = 0.84 (SD = 0.20). Figure 14 shows the
+results of the measurement for situation awareness, divided
+in a performance boxplot and situation awareness boxplot.
+The assignments were solved well, the worst performance
+was in assignment 6, where only about 73 % of the partic-
+ipants solved it. Situation awareness was also quite high
+across the assignments. There is no signiﬁcant mean differ-
+ence between TA and RA assignments in performance or
+situation awareness. However, descriptively it can be seen
+that the mean value of performance is somewhat higher
+
+for TA assignments and situation awareness is higher for
+RA assignments, which could possibly have something to
+do with the new and unfamiliar assignments in connection
+with the robot.
+
+4 Results of second iteration
+
+4.1 Results of design with high fidelity
+mockup
+
+The second iteration of the design implemented the results
+from the previous phases. These include the recommenda-
+tions from the heuristic evaluation and the measurements
+for situation awareness. Similarly, for a holistic approach to
+interface design, the intuitive robot programming designed
+
+Figure 14: Results of the measurement for performance and situation awareness.
+
+C. Colceriu et al.: User-centered design in mobile human-robot cooperation — 207
+
+and evaluated in another study is integrated into the design.
+In the measurements for situation awareness, feedback
+recorded in the form of comments from the subjects was
+also implemented in the GUI. Here are a few examples of
+this: In both the heuristic evaluation and the feedback for
+the situation awareness measurement, it was recommended
+to add the name of the lubricant. Feedback from the sit-
+uation awareness measurement, for example, is that the
+lubricant dosage is better represented. This was resolved
+by adding a short instructional video that can be played
+in the interface. The wish to have text descriptions for the
+images was also mentioned as feedback by test persons.
+Buttons were made more prominent, using contrasts and
+shadows. Simple changes suggested by some workers that
+sounded coherent were implemented in the design, such
+as a red drop to clearly mark lubricants. In the heuristic
+evaluation, a suggestion was also made by one person. The
+current task of human and robot was displayed more con-
+cisely and the status of the robot was made visible at any
+time. An added function, which was also proposed in the
+heuristic evaluation, is the manual control of the robot. It
+switches to a mode in which the robot can be controlled via
+teleoperation. Figure 15 shows two views of the GUI as an
+example.
+Due to the implementation of desired functions, the
+interface has become visually more complex at the same
+time. This has made it necessary to cluster it into three
+sections. These three sections have been colored for better
+distinction. The upper section is the menu bar, which is col-
+ored blue. It contains the main buttons menu, manual con-
+trol, current job number, programming mode and the help
+button. The middle section is colored light gray and contains
+basically the same elements as in iteration 1. Some informa-
+tion has been added, such as text information, which is why
+the buttons themselves are distinguished from the light gray
+
+background by a white coloring. The bottom section is col-
+ored medium gray and contains information about the robot
+(battery level and activity), information about the work task
+(completed tasks and current task allocation), and the status
+of the overall goal (number of completed and uncompleted
+tasks, expected completion of tasks). Colors were applied
+even more clearly for marking, as recommended in the
+Heuristic Evaluation. Thus, a high battery level of the robot
+was marked with a green bar and a completed task was col-
+ored green in the lower section. Status elements that should
+basically be easily recognizable were colored dark blue.
+For example, the active robot status and the active work
+task in the lower section. Important information concerning
+the current task is colored red, e.g. the area to be greased.
+The programming mode is almost identically executed as in
+the previous research on user-centered design for intuitive
+robot programming. Only the menu has been placed on the
+left instead of on top, because there is already a menu bar
+on top. Basically, in the high ﬁdelity mockup, several pieces
+of information have been stored at each button to retrieve
+details on demand, e.g., about robot status, task status, and
+components to be inserted. Figure 16 shows a detail view
+of the robot status and a view of the robot programming
+mode.
+
+4.2 Results of the usability test with end
+users
+
+The results of the usability test were recorded in a table.
+The highest values were obtained by the interaction prin-
+ciples suitability for the task (M = 2.23; SD = 0.82) and
+suitability for learning (M = 2.11; SD = 1.01). Behind them
+are the principles self-descriptiveness (M = 2.00; SD = 0.81).
+Likewise, conformity with user expectations (M = 2.09; SD =
+0.79) produced a good result, although it has a slightly lower
+
+Figure 15: Second iteration of GUI design – the left view shows the greasing task of the servo motors, the right view shows the support by the robot
+when inserting the servo motors.
+
+208 —
+
+Figure 16: Second iteration of GUI design – the left view shows the robot status, the right view shows the programming mode.
+
+Figure 17: Result of the usability test and principles weighting.
+
+rating. The interaction principles error tolerance (M = 1.19;
+SD = 0.96) and suitability for individualization (M = 1.11;
+SD = 1.32) produced the lowest results. In the case of error
+tolerance, there are fewer positive evaluations because no
+real error messages or other problems with the system
+occurred in the mockup. In terms of suitability for individ-
+ualization, the mockup also did not place much emphasis
+on the customizability or editability of the system. This was
+not considered negative by the test persons, but rather neu-
+tral. The overall score of M = 1.8 (SD = 0.77) is relatively
+good. Regarding the importance of the principles for the use
+case, the principles self-descriptiveness (M = 2.06; SD = 1.18),
+suitability for learning (M = 1.88; SD = 1.15), conformity with
+user expectations (M = 1.81; SD = 1.11) and controllability
+(M = 1.81; SD = 1.33) are seen as particularly important.
+Error tolerance (M = 1.56; SD = 1.41) and suitability for the
+task (M = 1.5; SD = 1.32) are rated somewhat less impor-
+tant. The principle suitability for individualization (M = 0.63;
+SD = 1.50) appears to be rather unimportant. The high vari-
+ance for the factors can probably be inferred from the fact
+that certain factors were not assigned a high weighting in
+
+the design of the GUI (e.g. suitability for individualization).
+Likewise, the testers have different perceptions of the fac-
+tors. Since these are subjective judgments that are entered
+by the participants in the questionnaire but not reasoned,
+these questions remain unanswered. Figure 17 shows the
+result of the usability test and the weighting of the design
+principles.
+
+5 Discussion
+
+5.1 Interpretation of results
+
+The goal of this research is to develop a combination of
+methods for a user-centered design process – implemented
+as an interactive mockup – that considers situation aware-
+ness and usability in a mobile HRC at assembly work-
+places. The choice and combination of existing methods for
+user-centered design are enormously diverse and always
+context-dependent, and this research speciﬁes a combina-
+tion of methods for designing GUIs in this under-researched
+
+C. Colceriu et al.: User-centered design in mobile human-robot cooperation — 209
+
+ﬁeld. While there are a variety of related works, this work
+describes the approach of a design process in detail with
+exemplary methods. The process of user-centered design
+was conducted in two iterations, consisting of analysis,
+design, and evaluation in the ﬁrst iteration. In the second
+iteration it consists of design and evaluation. The iterative
+design process applied like for the mobile assistance sys-
+tem [22] has enabled fast feedback loops and insights. The
+control loop model for human-centered HRC [16] is also
+applicable to the context of mobile HRC, since the men-
+tioned components “human”, “robot” and “user-centered
+design process” ﬁt to this research. The model can be seen
+as equivalent to the iterative process. The categorization of
+the phases into analysis, design and evaluation compared
+to the research on user interfaces for HRC at production
+workplaces [19] was also used in this work and has shown
+to be reasonable. A wireframe developed in advance was
+used as the basis, which was designed with a focus on sit-
+uation awareness. To achieve a user analysis, two surveys
+were conducted in the ﬁrst step. The ﬁrst was a quantitative
+survey to query known and desired input modalities of the
+GUI. The second was a qualitative survey to identify rele-
+vant information about awareness and satisfaction of touch
+interfaces by the respective target group of assembly work-
+ers. The ﬁrst survey produced quite unambiguous results
+that touch interfaces are most likely to be imaginable. The
+subsequent qualitative questioning about touch interfaces
+only led to the fact that nearly all interviewees are aware of
+devices with touch interfaces and that the greatest satisfac-
+tion exists with smartphone apps. For the analysis phase, it
+is noticeable that none of the related works has performed
+a user analysis, though it has been shown in this research
+to be an important approach to understand users. In the
+second step, the design phase, an interactive mockup was
+developed. This research not only mentions the fact that ISO
+9241-110 has been applied like in related work about service
+robots [14, 15], but precisely names the principles applied
+and extends the application to include parts ISO 9241-112 and
+13, as recommended in ISO 9241-210. It has been shown that
+the principles are basically a good and important aid, which
+can also be transferred to the GUI for mobile HRC. The exam-
+ples in the standard were originally intended for the context
+of computer workstations, and this can often be read out.
+A certain amount of creativity and experience regarding
+usability is necessary to transfer the abstract formulations
+of the principles to the context of mobile HRC. After applying
+several parts, a redundancy is noticeable at some point,
+because several design principles lead to the same design
+feature. A scheme of which principles are redundant was
+not investigated. Future work can take up this aspect and
+
+investigate it systematically. By applying the design princi-
+ples from ISO 9241, a GUI has basically been designed that
+promotes usability. Situation awareness is not considered
+in the standard and could only be achieved through the pre-
+liminary work of the wireframe. The approach, consisting of
+Goal-Directed Task Analysis as well as design principles for
+situation awareness, is essential. Another evaluation with
+the interactive mockup was the heuristic evaluation accord-
+ing to Nielsen, carried out with usability experts. Com-
+pared to the generally held design principles, the heuris-
+tic evaluation was able to identify concise suggestions for
+improvement. It has proven to be an economical evalua-
+tion method like reviewed in the literature [23, 24]. With
+the interactive mockup, a measurement of situation aware-
+ness could be conducted, which on the one hand showed
+that the interface leads to high situation awareness, and
+on the other hand, suggestions for improvement could be
+collected from end users. The suggestions of the usability
+experts partly overlapped with the feedback from the end
+users during the evaluation for situation awareness. From
+the variety of methods to measure situational awareness
+[28–31], the SAGAT method was modiﬁed to include a 6-
+point Likert scale, which proved to be a valid approach. The
+ﬁrst iteration was completed with the evaluation phase to
+get early feedback that was implemented in a high ﬁdelity
+prototype.
+In the second iteration, ﬁndings and suggestions for
+improvement from the evaluations were implemented in
+the high ﬁdelity GUI design. Likewise, the mode for intuitive
+robot programming was integrated. The holistic approach
+consists of the joint assembly of components as well as the
+possibility to independently program new steps during the
+assembly. The mode for intuitive robot programming was
+indicated by means of an exemplary screen and was not
+evaluated further in the usability test, since extensive end-
+user tests had already been carried out in the preliminary
+study for intuitive robot programming [32]. It was only rel-
+evant that the test persons understand how to get into the
+programming mode, how it compares to the HRC working
+mode, and for what purpose there is a programming mode
+that workers can operate. The evaluation of the high ﬁdelity
+mockup was done by a usability test using the standard-
+ized questionnaire ISONORM 9241/110, which is based on
+the design guidelines of version 2006 of the corresponding
+standard, therefore this version of the standard was also
+used for the design. An application of the questionnaire
+System Usability Scale compared to the wheelchair robot
+GUI [17] and the mobile robot for elderly care [18] would
+be also an alternative in this work. However, the question-
+naire ISONORM 9241/110 asks exactly for the principles of
+
+210 —
+
+the applied standard. The taxonomy with the collection of
+usability methods [26, 27] was helpful to get an overview,
+but it is not immediately obvious which methods should
+be used for which context. This should be done intuitively
+because success of a method only becomes apparent during
+evaluation.
+To gain more insight into the conceptual design of
+the process itself, this can be described as follows. The
+design process was developed step by step related to the
+phases. The preliminary research [33] contained a Task
+Analysis (Goal-Directed Task Analysis and Physical Model)
+and design principles for situation awareness, where design
+and evaluation insights were used to develop an interactive
+mockup. The mockup from iteration 1 was the precondi-
+tion to measure situation awareness and evaluate usabil-
+ity. Therefore, information about the users was gathered,
+including their known and desired input modalities for
+devices. Following this, design principles for usability pro-
+vided by ISO 9241 were implemented, as they are one of
+the most prominent principles in this ﬁeld. Insights for
+usability and situation awareness were the outcomes of the
+evaluation, gained by the inspection method of heuristic
+evaluation and the situation awareness evaluation, which
+contained also constructive feedback from the workers.
+This has paved the way for a holistic design in iteration
+2, realized by the high ﬁdelity mockup, where also design
+and evaluation insights for intuitive robot programming
+were implemented. The mockup was subjected to a usability
+test with potential end users, requiring higher effort and
+involvement than inspection methods. Figure 18 shows the
+
+historical development of the GUI. On the left side the wire-
+frame design is shown, in the middle the interactive mockup
+and on the right side the high ﬁdelity mockup.
+The very good results of the usability test with end users
+indicate that the selected preceding process phases have led
+to an optimization of the user interface. It opens up that
+the application of the methods used here would also lead
+to a successful result if applied again in a similar context.
+This would provide generalizability. While several works on
+mobile HRC are technology oriented [11–13, 20], this work
+refers to a user-centered design and ﬁlls the research gap to
+identify methods along the entire design process that lead
+to optimized user interfaces.
+
+5.2 Limitations
+
+As mentioned before, the present work has an intuitive
+approach to design the GUI. It has produced satisfactory
+results. But it does not exclude whether there are more
+suitable methods for carrying out the design process. To
+explore the optimized approach, methods would have to be
+compared directly. Likewise, no other parts of DIN EN ISO
+9241 were applied, as recommended in DIN EN ISO 9241-210,
+because they would go beyond the scope of this work. What
+difference the design would make without design principles
+was not investigated. Usability experts who have experience
+in GUI design are basically familiar with the design prin-
+ciples of ISO 9241-110. The experiment would have to be
+conducted with people who have no experience in designing
+interfaces. When measuring situation awareness, despite
+
+Figure 18: Historical development of the GUI.
+
+C. Colceriu et al.: User-centered design in mobile human-robot cooperation — 211
+
+the very good results, several inﬂuencing factors may have
+caused the evaluation to be favored. For example, the ques-
+tions could be too similar to the terms on the GUI, e.g.
+“dosage”. The limitation to four tasks may have simpliﬁed
+the application and information absorption. The fact that
+the tester did not actually perform the task might have given
+him more thinking time and foresight. Further research can
+include these aspects.
+
+6 Conclusion and outlook
+
+In this article, an approach was described to develop a user-
+centered design of a GUI for mobile HRC that supports situ-
+ation awareness and promotes usability. The study was con-
+ducted in response to the current shortage of skilled work-
+ers in production and construction. The goal was to apply a
+combination of existing methods to a user-centered design
+process in order to obtain a GUI that supports workers in
+assembly tasks. This involved researching an overview and
+taxonomy of methods, as well as picking up methods from
+related, similar work and applying them to this context
+of HRC for an assembly workplace. The development was
+conducted in two iterations consisting of analysis, design,
+and evaluation phases. The designed mockups were evalu-
+ated through heuristic evaluation, situation awareness mea-
+surement and usability testing. The results indicate that the
+approach can lead to user-centered GUIs with high situation
+awareness and usability. As an outlook, the method combi-
+nation can be applied on similar use cases to prove general-
+izability. The scientiﬁc value is that the relatively new ﬁeld
+of mobile HRC in industry will ﬁnd more acceptance if the
+GUI is designed user-centered by consideration of situation
+awareness and usability. The research gap that has been
+ﬁlled in this work is the exploration of which combination
+of methods leads to satisfactory results in a user-centered
+design of a GUI for mobile HRC.
+
+Research ethics: Not applicable.
+Informed consent: Informed consent was obtained from all
+individuals included in this study, or their legal guardians or
+wards.
+
+responsibility for the entire content of this manuscript and
+approved its submission.
+
+est.
+Research funding:
+This
+research
+was
+supported
+by
+the Bavarian Research Foundation (BFS) in the project
+‘FORobotics’ (grant number: AZ1225-16).
+
+Data availability: The raw data can be obtained on request
+from the corresponding author.

@@ -1,0 +1,1137 @@
+Telemedicine in the age of the pandemics: The
+prospects of web-based remote patient
+monitoring systems for orthopaedic ambulatory
+care management in the developing economies
+
+Uchechukwu Solomon Onyeabor1
+, Wilfred Okwudili Okenwa2,
+Okechukwu Onwuasoigwe3, Omolade Ayoola Lasebikan4, Thorsten Schaaf5,
+Niels Pinkwart6 and Felix Balzer5
+
+Abstract
+
+Objective: The goal of this research was to demonstrate the efﬁcacy of telemedicine via design, implementation and evalu-
+ation of a web-based remote patient monitoring system (WB-RPMS) across the tertiary/university teaching hospitals in a
+developing country Nigeria, as a tool to continue to expand access to an affordable and resilient tertiary healthcare system
+through the challenging times of the COVID-19 pandemic or any future disruptions.
+
+Methods: This research employed an agile and human-centred design thinking philosophy, which saw the researchers iteratively
+collaborate with clinicians across the system development value chain. It also employed qualitative and quantitative research
+methods for new system evaluations. After the system’s development, a 20-patient sample was randomly selected from members
+of the National Youth Service Corp to evaluate the WB-RPMS Patient Portal for usability and user experience through a survey
+based on the system usability scale. Again, the COREQ standards for reporting research result were adopted for this study.
+
+Results: The evaluation of the WB-RPMS Patient Portal by a select patient sample showed that 95.0% of the respondents believed
+that they would like to use the system frequently. It was also discovered that 90.0% of all respondents also indicated that they found
+the Patient Portal to be simple; 85.0% of the respondents believed and indicated that the WB-RPMS Patient Portal was easy to use.
+
+Conclusions: The result of the usability evaluation of the developed WB-RPMS Patient Portal showed that it was well received by
+the select patient sample and by the clinicians who participated in the development process. In fact, the performance of the
+system shows that it has the potential to remotely support and sustain improved access to affordable healthcare for outpatients
+in developing countries even during times of uncertainties and disruptions as recently occasioned by COVID-19 pandemic.
+
+Keywords
+
+Patient Portal, pandemic, telemedicine, remote patient monitoring system, COVID-19, disruption, digital intervention, survey,
+usability evaluation
+
+Submission date: 2 September 2023; Acceptance date: 28 December 2023
+
+1Federal University Oye-Ekiti, Oye-Ekiti, Ekiti State, Nigeria
+2ESUT Teaching Hospital, Parklane, Enugu, Nigeria
+3University of Nigeria Teaching Hospital, Ituku-Ozalla, Enugu, Nigeria
+4National Orthopaedic Hospital Enugu, Enugu, Nigeria
+5Charité – Universitätsmedizin Berlin, Berlin, Germany
+6Humboldt-Universität zu Berlin, Berlin, Germany
+
+Uchechukwu Solomon Onyeabor, Department of Computer Science, Federal
+University Oye-Ekiti, Oye-Ekiti, Nigeria.
+
+Creative Commons NonCommercial-NoDerivs CC BY-NC-ND: This article is distributed under the terms of the Creative Commons Attribution-
+NoDerivs 4.0 License (https://creativecommons.org/licenses/by-nc-nd/4.0/) which permits any use, reproduction and distribution of the work as
+published without adaptation or alteration, provided the original work is attributed as speciﬁed on the SAGE and Open Access page (https://us.sagepub.com/
+en-us/nam/open-access-at-sage).
+
+Original Research
+
+Volume 10: 1–16
+© The Author(s) 2024
+Article reuse guidelines:
+sagepub.com/journals-permissions
+DOI: 10.1177/20552076241226964
+journals.sagepub.com/home/dhj
+
+Background
+
+There was a global disruption of healthcare delivery proto-
+cols due to the outbreak of COVID-19 pandemic.1 The
+impact which had remained
+devastating
+also halted
+several economic value chains and resulted in deaths. In
+Nigeria, the experience was not different. The COVID-19
+pandemic exposed the signiﬁcant deﬁciencies in the
+Nigerian health system and how fragile its essential health-
+care services (EHS) are when faced with sudden disrup-
+tions.2 This starkly revealed the need for a more resilient
+approach to ensuring that EHS continues to be provided
+even in times of major health crises. It is imperative that
+the Nigerian health system be strengthened, with the neces-
+sary resources and infrastructure in place, to be able to with-
+stand any future health shocks.2 This would ensure that the
+basic healthcare needs of the patient population are met
+without
+interruption,
+even
+in
+times
+of
+emergency.2
+
+Additionally, it could be suggested that the government
+consider the implementation of alternative strategies to
+guarantee the provision of EHS, such as utilising mobile
+health centres and telemedicine services.3,4 Such initiatives
+would help to bridge the gap between EHS provision in
+urban and rural areas and guarantee that the most vulnerable
+communities have access to the same quality of healthcare
+services. Ultimately, it was clear that the COVID-19 pan-
+demic had highlighted the urgent need for sustainable
+EHS provision in Nigeria to ensure better protection of
+the population in times of health crises.2
+
+On the impact of the COVID-19 pandemic on the out-
+patient clinics of some Nigerian tertiary/university teaching
+hospitals, the News Agency of Nigeria (NAN) released a
+report indicating that the COVID-19 pandemic had severely
+impacted outpatient clinics at Nigerian tertiary hospitals,
+including the University College Hospital, Ibadan.5 The
+closure of Medicine, Surgery and Children’s Outpatient
+Departments has left patients without access to medical
+care, potentially leading to delays in diagnosis, treatment
+and
+follow-up
+care.5
+This
+closure
+could
+potentially
+worsen medical conditions and even cause death.5
+
+Meanwhile, before COVID-19, these healthcare systems
+had hitherto been under the burden of cost-related chal-
+lenges, including the high cost of access to healthcare by
+patients6 and the high cost of healthcare service delivery
+by healthcare providers.7 These cost-related challenges
+often implied that healthcare providers were unable to
+afford the necessary infrastructure and facilities that could
+support improved access and accommodate a large popula-
+tion of patients seeking care.7 Again, this lack of resources
+to provide better working conditions can often be found
+prohibitive when trying to retain or employ sufﬁcient
+highly skilled clinical personnel to support healthcare
+service
+delivery
+across
+these
+economies,
+including
+Nigeria. This had resulted in signiﬁcant brain drain from
+the available healthcare workforce.8–10 This challenge can
+
+limit the amount of care available to those in need, and
+some may even be forced to go without treatment.
+Now, given that the outbreak of COVID-19 had drastic-
+ally changed the way healthcare was hitherto delivered, an
+alternative to physical attendance in the hospitals became
+necessary. In response, there was an unprecedented surge
+of interest in telemedicine as a panacea to sustain rapid
+expansion and sustained healthcare delivery, particularly
+for the outpatient population during and after the pan-
+demic.11 Telemedicine is rapidly evolving across the
+globe, but its adoption in developing and resource-
+constrained
+economies
+like
+Nigeria
+has
+been
+quite
+slow.12–14 The COVID-19 pandemic has further pushed
+for its wider adoption, as it has become a much safer alter-
+native with the social distancing measures enforced by the
+government and restrictions on hospital visits. This is espe-
+cially so in countries where there is a limited number of
+doctors or where healthcare infrastructure is inadequate.12
+
+Now, telemedicine is a part of telehealth, which uses
+digital tools to provide healthcare services over a distance.
+This type of technology can help reduce the need for phys-
+ical visits to the hospital while still providing excellent
+medical care. It can make it easier for people to access
+quality
+healthcare
+without
+the
+need
+for
+in-person
+appointments.14
+
+Now, as earlier stated in the research objective, this
+research project sought to design, implement and evaluate
+a
+web-based
+remote
+patient
+monitoring
+system
+(WB-RPMS) Patient Portal as a digital healthcare interven-
+tion project to enable outpatients of tertiary/university hos-
+pitals in developing and resource-constrained economies to
+remain connected to necessary medical care in the event of
+any pandemics or future disruptions. This project was
+believed to have potentials for signiﬁcant positive impact
+on the healthcare system in Nigeria, to make it more resili-
+ent and capable of responding to unexpected shocks or dis-
+turbances as recently occasioned by COVID-19. The
+researchers believed that by providing outpatients with
+remote access to necessary medical services, this approach
+would help mitigate some of the risks associated with
+pandemics or any other future disruptions and ultimately
+improve the quality of healthcare available in Nigeria.
+This project could also help reduce the ﬁnancial burden
+on outpatients by providing them with more affordable
+access to medical care, saving them time that could
+have been used for other ventures and saving them the
+cost of transportation for regular health checks. In add-
+ition, it could also help reduce the strain on healthcare
+workers, as they can use the system to remotely monitor
+and manage patients without needing to physically be
+present.
+And because the developed WB-RPMS Patient Portal
+can support remote clinician–patient engagement, it has
+the potential to help healthcare providers optimise the
+cost of healthcare administration. This is important for
+
+2
+
+healthcare providers in developing economies and Nigeria,
+as they do not always have to spend huge and scarce
+resources trying to expand their healthcare facilities to
+accommodate the increasing patient population. With the
+deployment of WB-RPMS Patient Portal, some of their ser-
+vices can now be moved online/remotely for outpatients on
+regular health checks, while those in critical condition who
+really need to see the doctor for physical examinations can
+now go to the physical clinic in the respective health facil-
+ity. This approach would help optimise space use. It can
+also help optimise clinical staff engagements, as the same
+clinician who saw patients physically in the hospital
+could still remotely review and monitor outpatient’s
+health status from the comfort of their convenient locations
+and times, thereby saving resources that could have been
+expended on new hires.
+Ultimately, this project could help bring greater stability,
+security and access to medical care for all individuals in
+Nigeria.
+
+Enabling environment and government policy
+initiatives that could support WB-RPMS Patient
+Portal
+
+When considering whether Nigeria has the necessary
+enabling policy environment to support a WB-RPMS
+via a patient portal, it is important to note that relevant
+policies are already in place. Moreover, conversations
+about digital health in developing countries, particularly
+Nigeria, are becoming increasingly popular due to the
+rapid spread of mobile phones and other devices among
+various sections of the population.15 It is strongly
+believed that these mobile technologies would be lever-
+aged by authorities towards the attainment of the
+Universal Health Coverage (UHC) and eventually be
+able to reach the ultimate sustainable development goals
+(SDGs) on health.15
+
+At this juncture, it is essential to note that, despite the
+potential that digital health intervention programmes and
+projects had in Nigeria’s healthcare system, the country
+had yet to take full advantage of the huge inherent oppor-
+tunities owing to various factors, which could include inad-
+equate resources, challenges due to healthcare governance
+structures, poor infrastructure and a lack of highly trained
+tech personnel to run such implementations. Again, there
+were challenges due to the high cost of implementation of
+such programmes vis-à-vis the limited funding available
+to
+countries
+in
+sub-Saharan
+Africa
+and
+Nigeria
+in
+particular.15
+
+Be that as it may, it is important to state that the Nigerian
+government has made signiﬁcant efforts towards creating
+an enabling environment to support digital health interven-
+tion programmes and projects across Nigerian healthcare
+institutions. For instance, WB-RPMS projects would sig-
+niﬁcantly beneﬁt from government policies on cloud
+
+technologies, national data regulations and the nation’s
+health ICT strategic framework, as discussed below.
+
+National Cloud Policy. The National Cloud Policy was
+created to encourage the use of cloud technology among
+government entities and among small to medium businesses
+in order to enhance their services and internal operations.16
+
+The implementation of this cloud policy is meant to help
+different parts of the government achieve proﬁciency in
+the implementation of cloud-based services. It was intended
+that all sectors of the economy would beneﬁt from this,
+including healthcare.16 The National Cloud Policy was
+again intended to provide make-up for government agen-
+cies struggling with infrastructure deﬁcits, which had ham-
+pered their full implementation of their digital initiatives.
+The cloud policy was also intended to provide an enabling
+environment for potential indigenous cloud service provi-
+ders in Nigeria.16 All of these beneﬁts of the cloud policy
+could signiﬁcantly provide the needed support to healthcare
+digital transformation initiatives based on cloud computing
+solutions, including the WB-RPMS via the patient portal.
+
+Nigeria Data Protection Regulation 2019. The Nigeria Data
+Protection Regulation 2019 was formulated by an approved
+agency of the Federal Government of Nigeria, the Nigeria
+Information Technology Agency (NITDA). The goals of
+the regulation were to uphold citizens’ rights to privacy
+of
+personal
+data,
+guarantee
+secure
+transactions
+that
+involve the exchanging of such information, protect per-
+sonal data and information from any unauthorised manipu-
+lation
+or
+alteration
+and
+ensure
+secure
+e-commerce
+operations in Nigeria as well as with other countries
+while following global standards.17
+
+National Health ICT Strategic Framework. The National
+Health ICT Strategic Framework, created by the govern-
+ment, is an essential document that aims to unify stake-
+holders in the healthcare industry to make the most of
+Information and Communication Technologies (ICTs)
+that are utilised in healthcare. The Framework provides
+a clear roadmap that outlines the key objectives and prior-
+ities of using ICTs in healthcare, with an overarching goal
+of achieving UHC.18 Again, the Framework is an essen-
+tial tool that guides policymakers, healthcare providers
+and other stakeholders in the industry to identify and pri-
+oritise areas where ICTs can be effectively utilised.18 It
+serves as a blueprint that outlines the steps required to
+implement new technologies, as well as to enhance exist-
+ing systems and infrastructure. The Framework also helps
+to identify the potential beneﬁts of using ICTs, such as
+improved patient outcomes, increased efﬁciency and
+reduced costs [ibid]. It also focuses on capacity building
+and training for healthcare providers and administrators
+to ensure that they can effectively leverage the beneﬁts
+of ICTs.18
+
+Onyeabor et al.
+3
+
+Overall, the trio of Nigeria National Cloud Policy,
+Nigeria Data Protection Regulation 2019 and National
+Health ICT Strategic Framework can effectively support
+the implementation of telemedicine in Nigeria. The
+National Cloud Policy, for instance, would provide a frame-
+work for the adoption of cloud computing in Nigeria.16 This
+policy can aid the implementation of telemedicine by pro-
+viding a secure and reliable platform for healthcare provi-
+ders to store and access patient data. The Nigeria Data
+Protection Regulation 2019, on the other hand, ensures
+that patient data are protected and secure, preventing unauthor-
+ised access and misuse.17 This regulation can help build trust
+between healthcare providers and patients, encouraging more
+people to adopt telemedicine. Furthermore, the National
+Health ICT Strategic Framework provides a roadmap for the
+adoption of ICT in the healthcare industry in Nigeria.18 This
+framework can aid the implementation of Telemedicine
+by providing guidelines for the development and deployment
+of telemedicine programmes and projects, including the
+WB-RPMS, which could allow patients to access healthcare
+services remotely, reducing the need for physical consultations
+improving access to healthcare services.
+
+Methods
+
+Research aim
+
+The aim of this research was to design, implement, test and
+demonstrate the efﬁcacy of a WB-RPM (via patient portals)
+across the tertiary/university teaching hospitals in a devel-
+oping country, Nigeria, as a veriﬁable tool to continue to
+expand access to affordable, resilient tertiary healthcare
+systems.
+
+The research design
+
+This project involved different research paradigms, like
+qualitative, quantitative and design research paradigms.
+Speciﬁcally, the researchers employed interviews and
+observations of existing healthcare protocols and workﬂow,
+and they also integrated the iterative agile and human-
+centred design thinking methods in order to avail them a
+hybrid system development life cycle that could guarantee
+a user-centred healthcare support system that satisﬁes
+end-user expectations. The three senior orthopaedic sur-
+geons provided the speciﬁcations for the remote patient
+monitoring and engagement module or portal. They also
+iteratively evaluated the improved prototypes until the
+ﬁnal module was ready. Issues about the safety of patient
+information were considered. Issues about online consult-
+ation payment by the patient were also considered. The clin-
+icians provided all the requirements to support their full
+expectations from a web-based patient portal that can guar-
+antee comprehensive remote patient monitoring and viable
+orthopaedic outpatient–clinician engagements. These senior
+
+orthopaedic chief consultant surgeons either headed or are
+heading the orthopaedic departments of either of the tertiary/
+university teaching hospitals studied: a federal university
+teaching hospital, a state university teaching hospital and a
+national orthopaedic hospital.
+After the system’s testing and implementation, it was
+evaluated for usability by a 20-patient sample representa-
+tive. This evaluation was achieved through a validated
+questionnaire that was based on the system usability scale
+(SUS).19–21 The choice of patient representatives was
+because it was not always easy to get the attention and
+consent of real patients to review and evaluate new digital
+healthcare systems given their (sometimes) very challen-
+ging health conditions, and the researchers wouldn’t want
+to appear insensitive to these realities. Again they were par-
+ticularly interested in patients who are computer literate or
+whose caregivers are computer literate and are willing to
+take responsibility for the system use. Then, the researchers
+reached a consensus that only being ill met the criteria for
+being considered a patient and anyone can be. So, they ran-
+domly selected a 20-patient sample (as patient representa-
+tives) from young university graduates who are also
+members of the National Youth Service Corps and who
+are also computer literates, thereby satisfying the eligibility
+criteria. The result was quantitatively evaluated using SPSS
+and Microsoft Excel for the dashboard.
+At this point, it is important to note that the COREQ
+standards were adopted while reporting this research.
+
+The research setting
+
+The implementation of the WB-RMPS Patient Portal was
+intended to support outpatient care management across
+the tertiary/university teaching hospitals in Nigeria. The
+researchers therefore selected the University of Nigeria
+Teaching Hospital (UNTH), the ESUT Teaching Hospital
+and a National Orthopaedic Hospital as the case study
+environments.
+Meanwhile, the UNTH is one of the foremost and oldest
+university teaching hospitals in Nigeria. The UNTH was
+established over 60 years ago and serves as the Teaching
+Hospital
+for
+the
+University
+of
+Nigeria
+College
+Of
+Medicine. The hospital was designated the World Health
+Organisation Centre for Innovation in Medical Education
+between 1991 and 2000. The UNTH was also designated
+a centre of excellence in cardiothoracic surgery by the
+Federal Government in 1986. The teaching hospital cur-
+rently hosts about nine training programmes and schools.
+It currently has 41 departments (with 3 outposts). The
+UNTH is currently over 500-bed-capacity.22
+
+On the other hand, the ESUT Teaching Hospital has a
+capacity of about 350–400 beds. Its history dates back to
+the 1930s, but it was made a state university teaching hos-
+pital in 2006 by then Governor Chimaroke Nnamani. The
+ESUT Teaching Hospital, a tertiary care provider, was
+
+4
+
+designed to provide specialists Medicare to the general
+public and also provide a training facility for the ESUT
+College of Medicine. The ESUT Teaching Hospital also
+runs other ancillary programmes like the School of
+Nursing and the School of Midwifery. As a tertiary care
+provider, ESUTH provides care services in general medi-
+cine, obstetrics, paediatrics and various branches of
+surgery, as well as other afﬁliate/support services such as
+radiological services, physiotherapeutic services, pharmacy
+and laboratory investigations. The ESUTH is also a referral
+centre for healthcare services.23
+
+The National Orthopaedic Hospital in Enugu, which was
+one of the research environments studied, was established
+in 1979 through an Act of the National Assembly. It was
+established to provide specialist tertiary care services in
+the areas of orthopaedic surgery, nursing services, resi-
+dency training, radiological services, dietetics and catering
+services, trauma surgery, burns and plastic surgery,
+pharmaceutical services, physiotherapy, anaesthesia, etc.
+The National Orthopaedic Hospital was established to
+serve one third (1/3) of Nigeria’s population residing in
+the Eastern and Southern parts of Nigeria. There are two
+others of this kind in other parts of Nigeria.24
+
+System interaction modelling using UML
+
+The patient would be able to accomplish the following
+functional operations, as illustrated in Figure 1 UML
+diagram.
+Figure 1 represents the patient and who is also at the
+centre of the WB-RPMS Patient Portal design. The use
+cases captured several potential functionalities that would
+enable the patient to fully engage with the doctor remotely.
+These were the products of the several interactions the
+researchers had with the orthopaedic doctors, who were
+also part of the research team. Important to note is also
+that one of the members of the research team was once an
+orthopaedic outpatient who suffered distal femoral fractures
+due to a car crash. He was presented at one of the hospitals
+under study, and the researchers found his experience
+helpful during this study. So, when the researchers inter-
+acted with the orthopaedic doctors on what they really
+want from the orthopaedic outpatients who were placed
+on regular health checks, they were detailed on their treat-
+ment protocols, and it was so good to know that this can
+be managed remotely if a robust remote patient monitoring
+support system is in place. To be speciﬁc, after a patient is
+discharged, they become an outpatient and are placed on
+regular health checks. They would be expected to come
+to the clinic from home to see the doctor on a regular
+basis. The doctors with whom the researchers interacted
+indicated that any orthopaedic outpatient could often be
+expected to return to the hospital with new clinical
+images based on X-rays, computed tomography (CT)
+scans, magnetic resonance imagings (MRIs) and other
+
+images and reports on a new clinic appointment date of,
+say, 2 months. The doctor reviews these images and the
+accompanying medical reports to ascertain the patient’s
+health progress. Afterwards, the patient could be asked to
+continue with current medication or new prescriptions
+could be made. A new lab or radiological request could
+be issued by the doctor pending future visits. Then, the
+doctor issues a new appointment date. It is important to
+note that before seeing the doctor at the hospital, the out-
+patient must have paid the day’s consultation fee. Now,
+based on these clinician expectations, the WB-RPMS
+Patient Portal has functionalities to enable patients to
+upload these images and reports remotely, pay for online
+consultations and access the doctor’s feedback. He could
+also request a new appointment on the WB-RPMS Patient
+Portal, view old and new lab and radiological uploads and
+view and even print his own clinical data documented by
+the physician according to dates of encounter.
+Figure 2 shows the order of the patient’s activities on the
+patient dashboard. The patient remains at the centre of the
+remote care delivery model. At the start of interaction
+with the Patient Portal, the patient enters his username
+and password. This is usually the hospital number and
+their private email, respectively. If these entries are
+correct, then the patient moves on to the next stage of
+user authentication, which generates an one-time password
+(OTP) and sends it to the patient’s mobile phone or email.
+This is intended to ensure that patients do not inadvertently
+expose their health information to unauthorised persons due
+to poor login credential management. If OTP is correct,
+patients would now have access to a wide range of
+options or menus to execute, like upload lab/radiological
+results and reports/images, view past vital signs, view the
+doctor’s clinical documentation by their dates, request an
+appointment to see the doctor, view the doctor’s feedback
+and even pay for an online consultation. Once he is done,
+these activities could be terminated through a logout
+operation.
+Now it is important to note that some of the goals of this
+research were to provide a platform that guarantees success-
+ful remote patient–doctor engagement, particularly during
+trying times as recently occasioned by the COVID-19 pan-
+demic, and also serve as a cost-saving measure for the care
+delivery providers and the patients alike by transferring
+their outpatient clinics for the digitally literate population
+online/remotely, thereby freeing up the usually over-
+crowded health facility for outpatients who are in critical
+shape and who really needed to see the doctor physically
+and those who are not computer literate. It was also
+expected that successful implementation of these features
+would also protect as many outpatients as possible from
+the risk of the COVID-19 pandemic, other health chal-
+lenges or any other future disruptions and further free up
+the health facility to ensure social distancing protocols are
+adequately observed.
+
+Onyeabor et al.
+5
+
+Now, when the above features on the activity diagram of
+Figure
+2
+were
+iteratively
+tested
+(on
+the
+functional
+WB-RPMS Patient Portal) by three orthopaedic doctors
+who were also part of the research team, they found the
+outcome of the evaluation to fulﬁl the above goals of the
+system design. These three doctors also participated at
+various stages of the system’s development. Again, these
+features were further tested by a select sample of 20
+patient representatives, and the results were discussed in
+the appropriate section below.
+Overall, it is important to state that outpatients on the
+WB-RPMS Patient Portal must have visited the hospital at
+least once when their biodata and other preliminary clinical
+documentation would have been performed by the clinicians.
+After this stage, they would become eligible for remote patient
+care, but this choice is voluntary for the outpatient, particularly
+based on the level of their digital literacy.
+
+System architecture
+
+When a patient uses their browser from the Client Tier to
+request clinical documentation from the Application Tier
+web server, the server will process this request and send
+it to the database server (Figure 3). After retrieving this
+information, it would then be visible on any device con-
+nected to the client web browser, such as laptops, desktops,
+tablets and smartphones. These movements of data ensure
+that patients are able to read doctor messages and view
+patient medical records, including clinical encounters with
+doctors. The patient is also able to upload medical updates,
+lab and radiological investigation reports, images, etc., for
+the orthopaedics. Now, it should be noted that the digital
+remote doctor–patient engagement support system is practic-
+ally non-existent across any of the tertiary/university teaching
+hospitals under study. The standard mode of healthcare
+
+Figure 1. Patient’s use case diagram of the WB-RPMS Patient Portal.
+
+6
+
+Figure 2. Patient’s activity diagram with WB-RPMS Patient Portal.
+
+Figure 3. Three-tier software architecture around which WB-RPMS Patient Portal module was built.
+
+Onyeabor et al.
+7
+
+delivery across these hospitals had been through physical
+attendance. Therefore, the adoption of this implementation
+(WB-RPMS Patient Portal), it is believed, would innovate out-
+patient healthcare delivery at each of the hospitals under study
+(provided all key factors like training and supporting infra-
+structure are in place).
+
+WB-RPMS Patient Portal interface and interaction
+design
+
+Figure 4 shows a wireframe of the Patient Portal on the
+remote patient monitoring system, where patients, upon
+login, could have access to a wide range of menu options
+
+Figure 4. Patient lab result upload interface design.
+
+8
+
+and functionalities to execute patient-centred operations.
+The interface in Figure 4 shows that patients, upon
+system implementation, could remotely upload up to three
+orthopaedic clinical images and accompanying reports,
+with which the doctor could monitor progress and send
+feedback as appropriate.
+
+Results
+
+The results of the WB-RPMS Patient Portal
+implementation and usability evaluation
+
+This section presents the outcomes of the WB-RPMS
+Patient Portal implementation and usability assessment con-
+ducted on a patient sample comprising of 20 members. This
+patient group was a representative of the intended user
+population. The survey utilised the SUS to evaluate usabil-
+ity. Now, it is important to note that the remote patient
+engagement and monitoring portal was designed for a spe-
+ciﬁc patient population that possesses technical/digital
+skills and is capable of assuming responsibility and taking
+precautionary measures to safeguard the privacy of their
+health information remotely, to the best of their abilities.
+The objective was to provide remote patient engagement
+and monitoring services to this group, thereby reducing
+the burden on healthcare facilities and making them access-
+ible only to patients who require critical care or physical
+examination by clinicians (Table 1).
+Further results (based on the practical evaluation of the
+Patient Portal) from the 20-patient sample evaluations can
+be found in Figure 5 and in Table 2, using the mean as a
+measure of central tendency to establish the overall position
+of the patients against each question of the survey based on
+the SUS. Now, using mean as a measure of central tendency
+to establish the overall position of stakeholders on each
+dimension of the SUS used for the Patient Portal module
+evaluation, Table 2 shows an overall mean value of 4.25,
+indicating that the patients strongly agree that they would
+like to use the Patient Portal frequently. Also, with a
+mean value of 4.20, the patients agreed that they found
+the new Patient Portal to be simple. More so, with a mean
+value of 4.10, the patients agreed that the new Patient
+Portal was easy to use. Further details can be found in
+Table 2. Meanwhile, the ranges of interpretation of the
+Mean Values of Table 2 can be found in Table 3.
+
+Table 1. Characteristics of the respondents.
+
+N
+%
+
+Total
+20
+100
+
+Gender
+
+Male
+11
+55%
+
+Female
+9
+45%
+
+Missing
+0
+0%
+
+Age ranges
+
+30 years or younger
+18
+90%
+
+>30 years and <40 years
+2
+10%
+
+Level of education
+
+Bachelor’s degree
+20
+100%
+
+How often do you use computer systems?
+
+Daily
+8
+40%
+
+A few times a week
+10
+50%
+
+A few times a month
+2
+10%
+
+A few times a year
+0
+0%
+
+How do you rate your computer skill on a scale of 1–5 where 1,
+very poor; 2, poor; 3, good; 4, very good; and 5, proﬁcient?
+
+1: Very poor
+0
+0%
+
+2: Poor
+0
+0%
+
+3: Good
+6
+30%
+
+4: Very good
+9
+45%
+
+5: Proﬁcient
+5
+25%
+
+Do you have any experience using electronic health record?
+
+No
+13
+65%
+
+Yes
+7
+35%
+
+Have you ever received any training on electronic health record?
+
+No
+13
+65%
+
+Yes
+7
+35%
+
+(continued)
+
+Table 1. Continued.
+
+Onyeabor et al.
+9
+
+On the other hand, just one patient ‘strongly dis-
+agreed’ with the question, ‘I think that I would like to
+use the electronic health record system frequently’. It is
+possible that the patient could have other reasons why
+he thinks he would not like to use the developed EHR
+system frequently, and this is difﬁcult to know, given
+that he agreed that the system was easy to use and that
+he strongly agreed to the fact that he could use the elec-
+tronic health record (EHR) system without the support of
+a technical person. Again, a patient strongly disagreed
+with the question: ‘I could use the electronic health
+record system without having to learn anything new’.
+Further investigation showed that the patient indicated
+that she had never had any training on the use of EHR.
+The same patient also indicated that she had not had any
+personal or private experience with the use of EHR. It is
+obvious that such a patient needs a signiﬁcant level of train-
+ing and exposure to the use of the EHR system.
+
+Result of WB-RPMS Patient Portal implementation
+
+As shown via the screenshot of the RPMS Patient Portal
+dashboard implementation on Figure 6, the patient is able
+to accomplish a lot as listed below (Patient use case of
+the WB-RPMS Patient Portal/dashboard section) and as
+
+proposed through the use case diagram of Figure 1 and
+activity diagram of Figure 2.
+
+Patient use case of the WB-RPMS Patient Portal/
+dashboard
+
+1. Patients would be able to upload lab and radiological
+results and images.
+2. Patient could view an appointment with the doctor.
+3. They could view their personal data.
+4. Patient could also view their past clinical encounter
+with the doctor.
+5. Patient could download their past clinical encounter
+with the doctor as a PDF ﬁle.
+6. Patient could view their own vital signs on the Patient
+Portal.
+7. Patient could view feedback messages from the doctor,
+as shown in Figure 7.
+8. Patient could view past lab and radiological results/
+images as shown in Figure 8.
+9. They would be able to pay for an online consultation,
+as shown in Figure 9.
+10. Patient could view appointments with the doctor,
+whether they have been approved or not.
+
+Figure 5. Percentages of patients’ overall usability evaluation of the WB-RPMS Patient Portal using the system usability scale.
+
+10
+
+11. Patient could view their own bill as uploaded by
+various departments.
+12. Patient could log out securely.
+
+Now shown above is an interface through which the patient
+could upload lab and radiological images and reports to the
+
+doctor. Given that these uploads are centred around ortho-
+paedic care, all associated images and reports, including
+X-rays, MRIs, ultrasounds, CT scans and other investiga-
+tive images, can be uploaded through this interface.
+Outpatient candidates can then come to the hospital when
+the doctor feels it is very necessary, saving time for the
+doctor to be able to see more critical patients; saving
+time, money and other risks for the patient; and helping
+the care facility to efﬁciently manage that existing space
+and expand access to health for those who are often
+turned back and requested to come on another date.
+
+Discussion
+
+This research developed a WB-RPMS via a patient portal to
+support remote outpatient care management at the tertiary/
+university teaching hospitals in Nigeria during and after
+the COVID-19 pandemic. The WB-RPMS Patient Portal
+was carefully developed to guarantee a high degree of
+usability amongst Nigerian clinical stakeholders, particu-
+larly at the tertiary level. Again, the performance of the
+system
+shown
+through
+the
+evaluation
+result
+clearly
+showed it was well received amongst the patient sample
+respondents. It is also important to note that telemedicine/
+telehealth are still underutilised in Nigeria at the moment.
+
+Table 2. Patientsusability evaluation of the WB-RPMS Patient Portal based on the system usability scale (number of respondents: 20
+patients).
+
+Table 3. The ﬁve-point scale interpretation (scoring range of Likert
+scale of the survey).
+
+Weight/
+Scale
+
+Mean
+Score
+Range
+Mean Rating/
+Interpretation
+Further
+Interpretation
+
+5
+4.21–5.00
+Strongly agree
+Very positive
+
+4
+3.41–4.20
+Agree
+Positive
+
+3
+2.61–3.40
+Neither agree nor
+disagree
+Moderate
+
+2
+1.81–2.60
+Disagree
+Negative
+
+1
+1.00–1.80
+Strongly disagree
+Very negative
+
+Source: Suebwongsuawan and Nomnian.25
+
+Onyeabor et al.
+11
+
+In fact, in the work of Egbewande et al.,14 which investigated
+the potential of telemedicine in Nigeria, their result concluded
+that the usage of telemedicine in Nigeria isn’t as widespread as
+it could be and that this was due to a range of issues, such as
+the lack of a policy governing virtual care, inadequate ﬁnan-
+cing, high costs for running virtual health services as well as
+technological and infrastructure problems. All these issues
+are hindering the potential of telemedicine to enhance health-
+care delivery, access and efﬁciency.
+Similarly, in the report of Ezeani et al.,26 it is not yet pos-
+sible to experience the thrilling story and the beneﬁt of
+
+telemedicine in Nigeria, as healthcare providers are still
+ﬁnding it difﬁcult to incorporate this technology as part of
+their healthcare delivery model. The overall goal of the
+WB-RPMS Patient Portal development approach was therefore
+to ensure that all care provider feature expectations are fully
+integrated into the system design and development; hence, clin-
+icians were part of the research and development team.
+A similar study by Olufunlayo et al.27 still showed that
+the overall level of digital maturity for telemedicine imple-
+mentation across government funded tertiary institutions in
+Nigeria was still at the beginner level.
+
+Figure 6. Patient dashboard on the Patient Portal showing the lab/radiological report and image upload.
+
+12
+
+Another key piece of research that captured the type of
+telemedicine that was available in Nigeria during the
+COVID-19 pandemic and its degree of use was reported
+by Olutayo et al..28 It showed that out of the 103 doctors
+
+who responded to the survey, 93.3% of them agreed that
+they used some form of telemedicine during the pandemic.
+Speciﬁcally, out of about 1078 patients that were attended
+to during the period, 358 were attended to via WhatsApp
+
+Figure 7. Patient’s view of feedback messages from the doctor.
+
+Figure 8. Anteroposterior X-ray view of the knee on the patient’s interface on the WB-RPMS.
+
+Onyeabor et al.
+13
+
+(33.2%), 278 via phone calls (25.8%), 238 via SMS
+(22.1%), 154 via email and 50 via video call (4.6).
+These approaches show that there was hardly a structured
+telemedicine app currently in place to support remote patient
+monitoring and management across most of the hospitals
+studied. On the contrary, WB-RPMS Patient Portal (when
+compared with existing implementations) appears to be a
+more structured and standard approach to express telemedi-
+cine and has the potential to expand and sustain access to
+healthcare even in challenging times of global and regional
+disruptions!
+
+Limitations of the study
+
+There were two signiﬁcant limitations to this study. Firstly,
+the approach used to evaluate each participant’s level of
+computer literacy through the administered survey was sub-
+jective. The results and feedback received from the partici-
+pants, though highly impressive, may not reﬂect exactly the
+very high level of digital literacy recorded as result. To
+address this issue, the researchers conﬁned the evaluation
+
+of the WB-RPMS Patient Portal to a patient-representative
+sample with potential for high digital literacy. Additionally,
+the respondents were diverse, representing different cul-
+tures and tribes in Nigeria, and were participating in the
+National Youth Service Corps scheme. However, the
+researchers recognise the need to adopt a more objective
+approach to digital/computer literacy evaluation in future
+studies.
+Another limitation was the inability to include real
+patients in the evaluation of the WB-RPMS Patient
+Portal. This was due to the fact that the patients who pre-
+sented themselves for outpatient clinics at these teaching
+hospitals were often visibly dealing with precarious health
+challenges, and it would appear insensitive to want to
+subject them to evaluation of a digital healthcare system.
+However, the researchers were able to mitigate this limita-
+tion by considering the fact that most individuals at some
+point in their lives would become patients and, therefore,
+any individual who meets other sample selection criteria
+could actually evaluate the WB-RPMS Patient Portal as a
+patient (representative).
+
+Figure 9. Patient’s Online Consultation Payment interface.
+
+14
+
+Conclusion
+
+Our investigation clearly demonstrates the efﬁcacy and pro-
+spects of telemedicine via a WB-RPMS as a veritable tool
+to support improved access to affordable healthcare in a
+developing country, Nigeria, particularly for orthopaedic
+outpatients during and after the pandemics. The results of
+the ﬁnal system evaluation showed that the system was
+well received among stakeholders. The researchers there-
+fore
+recommend
+that
+WB-RPMS
+Patient
+Portal
+be
+adopted for use across tertiary/university teaching hospitals
+in Nigeria to support and sustain improved affordable
+access to outpatient healthcare
+service delivery and
+management.
+
+Acknowledgements: This research had received huge support
+from clinical stakeholders across the teaching hospitals studied,
+and for this, the researchers are grateful.
+
+Availability of data and materials: The researchers had also
+made efforts to ensure the availability of the data generated
+during this research. Reasonable requests can be channelled
+through the corresponding author.
+
+Contributorship:
+U.S.O.
+oversaw
+the
+distribution
+of
+the
+questionnaires to the patient representatives and conducted data
+analysis. U.S.O. designed the interface and interaction of the
+WB-RPMS
+Patient
+Portal
+prototypes.
+U.S.O.
+was
+also
+responsible for writing up the manuscript and conducting data
+analysis. The very senior clinicians W.O.O., O.O. and O.A.L.
+provided
+most
+clinical
+requirements
+for
+the
+design
+of
+a
+collaborative WB-RPMS Patient Portal and reviewed iteratively
+all prototypes, making all suggestions, until a ﬁnal acceptable
+product was achieved, which they also approved. This project is
+part of a series of research projects in the area of health digital
+transformation in developing countries and is supervised by
+T.S., N.P. and F.B. All authors read and approved the manuscript.
+
+Declaration of conﬂicting interests: The author(s) declared no
+potential conﬂicts of interest with respect to the research,
+authorship and/or publication of this article.
+
+Ethical approval: The researchers, respectively, applied to the
+ethical committees of each of the tertiary hospitals, and approval
+was given and granted in writing. These three approvals from
+the three hospitals, respectively, enabled the researchers to have
+a wide range of access across various departments, units and
+stakeholders at the three care facilities.
+
+Funding: The author(s) received no ﬁnancial support for the
+research, authorship, and/or publication of this article.
+
+Guarantor: OUS.
+
+ORCID iD: Uchechukwu Solomon Onyeabor
+https://orcid.org/
+0009-0006-4409-7424

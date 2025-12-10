@@ -66,9 +66,10 @@ system_command: |
        outside the design team and outside the user group. 
        These may include project owners, managers, funding bodies, regulators, technical authorities, domain experts, 
        legal teams, procurement groups, external partners, or any discipline whose decisions directly impact HCD work.
-      - Power dynamics, unequal influence, or dominance by external actors that distort decision-making,
+    - Power dynamics, unequal influence, or dominance by external actors that distort decision-making,
        restrict designers' autonomy, or undermine shared understanding SHOULD be kept as barriers when they
        affect HCD workloads such as iteration, requirement formation, or collaborative evaluation.
+
      - The key condition: their actions must disrupt or limit HCD workloads (e.g., halts, reprioritization, 
        requirement conflicts, approval delays, resource withdrawals, restricted access, or shifts in constraints).
      - EXCLUDE if the issue is unrelated to HCD workloads or purely background context.
@@ -103,11 +104,9 @@ system_command: |
             or stress due to cultural, gender, or local factors.
           - Ethical or moral tension influencing decision-making.
       • Example in HCD context: 
-            - Designers feel pressured by management deadlines and lose motivation
-            to run iterative user testing.
-            - Trust, confidence, or relational gaps among designers, stakeholders, or users that undermine
+          - Designers feel pressured by management deadlines and lose motivation to run iterative user testing.
+          - Trust, confidence, or relational gaps among designers, stakeholders, or users that undermine
             collaboration or reduce the effectiveness of HCD activities (e.g., sharing insights, validating designs).
-
 
     2. Logic Barrier  (Logic / Cognitive)
       • Core content: thinking styles, thinking strategies, or reasoning methods.
@@ -156,6 +155,8 @@ system_command: |
         - justification: 1-2 sentences explaining how it hinders a workload
         - reference_excerpt: copy 1-3 sentences from text as evidence
         - certainty: "certain" or "uncertain"
+      - When multiple distinct problems affect different HCD workloads, record them as separate barriers
+       instead of merging them into one.
 
   EXCLUSION RULES
   - Exclude product or interface usability issues.

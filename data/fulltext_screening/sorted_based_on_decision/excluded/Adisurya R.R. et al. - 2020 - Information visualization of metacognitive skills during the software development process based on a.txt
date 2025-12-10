@@ -1,0 +1,391 @@
+Journal of Physics:
+Conference Series
+     
+
+PAPER • OPEN ACCESS
+
+Information visualization of metacognitive skills
+during the software development process based
+on an adapted engineering design metacognitive
+questionnaire
+
+To cite this article: R R Adisurya et al 2020 J. Phys.: Conf. Ser. 1566 012078
+
+ 
+
+View the article online for updates and enhancements.
+
+You may also like
+
+The influence of metacognition in
+mathematical problem solving
+L R Izzati and A Mahmudi
+
+-
+
+Exploration of Students’ Metacognitive
+Experience in Physics Classroom
+Jirutthitikan Pimvichai, Soonthareeya
+Sanium and Khajornsak Buaraphan
+
+-
+
+Identification of preservice biology
+teachers’ metacognitive awareness and
+metacognitive skills
+Astuti Muh. Amin and Romi Adiansyah
+
+-
+
+This content was downloaded from IP address 184.163.117.158 on 19/11/2025 at 16:53
+
+Content from this work may be used under the terms of the Creative Commons Attribution 3.0 licence. Any further distribution
+of this work must maintain attribution to the author(s) and the title of the work, journal citation and DOI.
+Published under licence by IOP Publishing Ltd
+
+1
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+Information visualization of metacognitive skills during the 
+software development process based on an adapted 
+engineering design metacognitive questionnaire    
+
+R R Adisurya1, H B Santoso1, S Fadhilah1 and O Lawanto2 
+
+1 Faculty of Computer Science, Universitas Indonesia, Depok, Indonesia 
+2 Department of Engineering Education, Utah State University, Logan, UT 84322, 
+United States 
+
+Abstract. In software development, either alone or in a team, there are many aspects that 
+determine the success in developing the software, including each developer’s skills. Studies 
+show that the application of metacognition can increase the effectiveness and efficiency of 
+software development. To measure a metacognition skill, there need to be a metacognition 
+measurement tools. One example of this measurement method is adapted engineering design 
+metacognitive questionnaire. However, the respondents feel that existing tools still have not 
+given them any benefits. This research is conducted to develop an information visualization 
+tools for the metacognition measurement from an adapted engineering design metacognitive 
+questionnaire. The research was performed using qualitative method adapted from the user-
+centered design approach, which is user requirement analysis, design alternatives, prototyping, 
+and evaluation. The finding suggests that with information visualization, the students as the 
+respondents feel the benefits of filling the EDMQ questionnaire. However, from the design 
+standpoint, there are still numerous things that can be improved to make the visualization more 
+informative. 
+
+Keywords: Adapted EDMQ, information visualization, metacognition, self-regulated learning, 
+usability testing, user-centered design 
+
+1. Introduction 
+In the age of technology, skills to develop software have become an important part of the computer 
+science students' curriculum. However, not all of the students have the same capabilities in absorbing 
+the knowledge given by the lecturer. Some people absorb knowledge faster than others, while others 
+need to take more time to get what the lecturers are saying. Some people can follow the lecturer's 
+lesson verbally, while others need visual aids in absorbing the lesson. This condition has caused 
+differences in approaches and methods used by someone or a group in solving the problem, such as 
+software engineering and development. 
+
+The software development process has several methods that can be used by the developers to 
+develop software, and these methods include Joint Application Design, Prototyping, Scrum, Waterfall, 
+and many others [1]. Each method has its weaknesses and strengths, and so do the approaches used by 
+the group of people developing the software. Not everyone will use the same approach, and a different
+
+2
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+approach can be used to get the same result. In other words, they can achieve the same goals using 
+different cognition processes. As a result, there are groups that are more efficient and effective than 
+others in achieving their goals, as proven in research which stated that choosing the correct strategy 
+can affect the effectiveness of a software development process [2], and choosing the correct design 
+strategy based on good design planning, minimum context change, and organized problem exploration 
+can make the software development process more effective [3]. 
+
+One of the proven methods of increasing the efficiency and effectiveness of software development 
+is by applying metacognition in the development life cycle. Research stated that metacognition is used 
+consciously or unconsciously in the software development process [4], and another one stated that 
+metacognition can reduce learning from trial and error [5]. However, then how do we know if 
+metacognition has affected the software development process? One way to know is by using the 
+Engineering Design Metacognitive Questionnaire (EDMQ), a set of questions designed to measure the 
+metacognitive skills of an individual in a group in a software development process [6]. Nonetheless, 
+there is a problem in using EDMQ. The students who filled the questionnaire felt like they did not gain 
+anything from filling the rather long questionnaire, as when they finished, they just got a thank you 
+and that is that. Only the administrator of the questionnaire got the data filled by the students.  
+
+This study aims to fix that problem by giving an information visualization of the result of the 
+EDMQ questionnaire that the students had filled before giving the students benefit in assessing their 
+progress. The participants of this research are limited to the students of the Faculty of Computer 
+Science, Universitas Indonesia.  
+
+The purpose of this study is to design information visualization of the EDMQ questionnaire that 
+can help students to gain benefit from filling it instead of just being given a thank you, and to assess 
+the usability evaluation of the information visualization tools. Therefore, this study addresses the 
+following research questions. 
+1. 
+What is a good design idea for information visualization tools for measuring metacognition 
+using the EDMQ questionnaire? 
+2. 
+How is the usability evaluation of the aforementioned information visualization tools? 
+
+2. Relevant Literature Review 
+
+2.1. Metacognition 
+Metacognition is the knowledge of someone's cognition process. It would not be wrong to say that 
+metacognition is thinking about thinking [7]. There is research that studied metacognition's relation to 
+GPA and grades [8]. Metacognition can also increase students' interest in online learning [9].  
+ 
+Metacognition can be measured with appropriate tools. Usually, the tools are made for a certain 
+kind of situation or measurement. Examples are Metacognitive Skills Inventory [10], the confidence-
+based nameless questionnaire [11], and the Engineering Design Metacognitive Questionnaire. 
+
+2.2. Engineering Design Metacognitive Questionnaire 
+Engineering Design Metacognitive Questionnaire is a set of questions designed to measure the 
+metacognitive skills of an individual in a group in the software development process. It combines the 
+concept of the five-stages prescriptive design model from Dym and Little [12] and Butler and Cartier's 
+self-regulated learning model [13], and the concept of team management.  
+ 
+The five-stages prescriptive design model consists of the problem definition, conceptual design, 
+preliminary design, detailed design, and communication design. Butler and Cartier’s self-regulated 
+learning model consists of task interpretation, planning strategies, cognitive action, monitoring and 
+fix-up strategies, and criteria of success. Each of the aspects is intermixed, creating a matrix of each 
+intermixed aspect.  EDMQ is developed in 2014 and can be adapted for several engineering design-
+based subjects. It has been used in previous research about metacognition in software engineering [4].
+
+3
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+2.3. Information Visualization 
+Information Visualization is an interdisciplinary field of study related to visual representations of 
+complex information to increase the level of understanding for the information given. It is based on 
+computer science, graphic, visual design, psychology, mathematics, and business. The goal of 
+information visualization is to use humans' visual system to capture the deep meaning behind abstract 
+information [14]. It transforms monotone and boring data into a more marketable product and better 
+user experience [15]. 
+ 
+One of the methods to transform data into a visual product has four phases [16]. The first phase is 
+raw data. The raw data are processed using the data transformation method, such as data mining. The 
+processed data result in the second phase is data tables. These data tables (or in another term, 
+information) are manipulated and transformed using several visual representation/mappings, and the 
+result in the third phase is visual structure. This visual structure is then transformed again into several 
+different views. Afterwards, these views are what the user/human sees [17]. 
+
+3. Methodology 
+This study uses qualitative approaches adapted from the user-centered design, which consists of 
+requirement gathering, analysis and designing alternatives, prototyping, and evaluation.  
+
+3.1. Participants 
+The participants were chosen from the Faculty of Computer Science of Universitas Indonesia, and 
+they fulfilled the requirements, which consist of having taken the Information System Development 
+Project course or Software Project course and having experienced filling the EDMQ questionnaire. 
+The number of participants chosen was 10 based on Nielsen's research about the optimum number of 
+participants for usability evaluation [18]. The ten participants chosen has similar characteristic as all of 
+them came from Faculty of Computer Science of Universitas Indonesia. All of them have experience 
+working in a software development project either alone or in a team. The difference between them is 
+their skills as some are better in one aspect such as coding while others are better in other aspects such 
+as management or design, but overall, everyone know at least a little skill in every stages of a software 
+development project as required by the faculty. Later, the ten participants will be divided into two 
+personas. The two personas represented those who understand the concept and benefits of 
+metacognition, and those who do not.  
+
+3.2. Data Collection Procedures 
+In this study, there were two interviews. In the first interview, participants were interviewed to gather 
+requirements and then after that in the second interview, they tested the prototype for usability 
+evaluation. For the first interview, a set of questions was designed to gather the participants' 
+requirements. It consisted of 20 questions divided into several categories of Exploration, Needs, Pain 
+Points, Gain, and Expectation. Each category has its use. Exploration is to explore the participants' 
+understanding of the topics being interviewed. Needs is to understand what is needed by the 
+participants. Pain Points is to understand what hardships felt by the participants. Gain is to understand 
+what the participants want to gain from the information visualization tools. Expectation is to 
+understand what the participants expect from the tools designed. 
+
+3.3. Data Analysis 
+The result of the first interview was used for analysis and designing the information visualization 
+tools. The analysis consists of creating personas, a user journey map, and an information architecture 
+to help the designing process. Those analyses were then used to design the information visualization. 
+After the design process was complete, then the usability evaluation was conducted with the second 
+interview. The conclusion was then inferred from the usability evaluation result.
+
+4
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+4. Findings 
+
+4.1. Addressing Research Question 1: Prototype Development of Information Visualization Tools for 
+the EDMQ Questionnaire. 
+The prototype was developed according to the result of the first interview’s analysis. From the analysis, 
+two personas representing the users were created, a user journey map to better explain what the user felt 
+was also created, and an information architecture picturing how the information visualization tools was 
+designed. Each of the stages drew inspiration from the result of the first interview. The two personas 
+represented those who understand the concept and benefits of metacognition (Persona 1) and those who 
+do not (Persona 2). The user journey map explained what the user felt when they filled the existing 
+questionnaire. The information architecture was made as the base for creating the prototype. After the 
+information architecture was designed, the next is the design of the information visualization tools. 
+
+ 
+ 
+
+Figure 1. High-fidelity mockup of the result of the 
+questionnaire page based on self-regulated learning 
+aspects against the five-stage prescriptive design model 
+ 
+The design of the information visualization used a spider chart/radar chart to help visualize more than 
+one aspect for a single subject. This is because the EDMQ Questionnaire is created using the 
+combination of the five-stage prescriptive design model’s concept and self-regulated learning model, 
+and both concepts and their combination have more than one aspect to explain clearly the level of 
+metacognition of an individual. The result can be seen from four different combinations. The first is 
+based on self-regulated learning aspects against the five-stage prescriptive design model. The second 
+is based on the five-stage prescriptive design model. The third is based on self-regulated learning 
+aspects against team management aspects. The last is based on team management aspects. figure 1 
+above is an example of the questionnaire result seen based on the five-stage prescriptive design model. 
+The five aspects are represented in the five corners of the spider chart/radar chart. Each green label can 
+be clicked to navigate to the individual aspect’s chart.  
+ 
+Each individual aspect chart displays a summary of the information about each aspect and a graph 
+comparing the team members of the questionnaire. The data for the team members were filled out in
+
+5
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+the personal data section earlier in the questionnaire so the tools can recognize if someone is from the 
+same team. The graph used to compare the result is a bar chart because it presents data in a 
+comparable way. The individual aspect comparison page can be seen in figure 2. 
+ 
+
+ 
+ 
+
+Figure 2. High-fidelity mockup of the individual aspect of the 
+result based on self-regulated learning aspects against the five-
+stage prescriptive model 
+
+4.2. Addressing Research Question 2: Usability Evaluation of the Prototype 
+When the design process was finished, the participants were asked to use the information visualization 
+tools prototype in the form of a clickable mockup for usability evaluation. Participants were given 
+three tasks and a scenario which consists of filling the questionnaire, seeing the result for an individual 
+score, and seeing the comparison between teammates. A pilot study was conducted to determine the 
+average estimated time, and this estimated time was used to measure the capabilities of the 
+participants. Those who finished the task under the estimated time were categorized as 'easy'. Those 
+who finished the task with slight difficulties or finished the task over the estimated were categorized as 
+having 'slight difficulties'. Those who finished the task over the estimated time and had slight 
+difficulties were categorized as having 'difficulties'. Those who could not finish the task were 
+categorized as 'very difficult’. The participants’ cursor movements and speech were recorded to make 
+the recapitulation process easier. The participants were also mapped to the persona to see if the 
+difference in persona is what caused the difference in the result. 
+ 
+After the usability evaluation was conducted to the 10 participants, the result is as presented in table 1. 
+ 
+
+Table 1. Result of usability evaluation of the information visualization tools prototype. 
+No 
+Respondent 
+Persona 
+Task 1 
+Task 2 
+Task 3 
+1 
+R1 
+P1 
+2 
+R2 
+P2 
+Slight Difficulty
+
+6
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+3 
+R3 
+P1 
+Slight Difficulty 
+4 
+R4 
+P2 
+Slight Difficulty 
+5 
+R5 
+P1 
+Slight Difficulty 
+6 
+R6 
+P2 
+7 
+R7 
+P2 
+8 
+R8 
+P2 
+Slight Difficulty 
+Slight Difficulty 
+9 
+R9 
+P1 
+10 
+R10 
+P1 
+Slight Difficulty 
+ 
+All respondents had no difficulties in completing Task 1, as everyone finished the task under the 
+estimated time. Different from Task 1, Task 2 had three people having slight difficulties, while Task 3 
+had four people having slight difficulties.  
+
+After everyone finished the task and scenario, there were questions and answers sessions for each 
+respondent to explain their impression and the difficulties that they faced when they tried the 
+prototype. They did like the ideas of information visualization. Visualizing the result of the 
+questionnaire was more preferred by the students than the current mechanism of filling the 
+questionnaire and getting nothing. However, they had several concerns regarding the prototype. In 
+Task 1, nobody had any comments. For Task 2, the difficulties they faced were that they were not 
+accustomed to gleaning information through a spider chart/radar chart and it took them time to 
+understand the charts presented. Some of the confusion was caused by the lack of information in the 
+page, they said. For Task 3, the difficulties they faced were that they did not realize that the buttons to 
+navigate to the desired page were in fact buttons so they missed them entirely. 
+
+The respondents with different mapped personas having the same difficulties mean that the 
+difficulties do not come from the difference in background but come from a mediocre design that does 
+not present compact information and understandable elements. 
+
+5. Conclusion 
+This study shows that the idea for visualizing the information of the EDMQ questionnaire is preferred 
+by the students than the current EDMQ questionnaire where students do not get any information out of 
+the questionnaire. They want to understand their metacognition level and visualizing the EDMQ 
+questionnaire is one way to get students interested in metacognition. However, the prototype 
+developed in this study still requires improvements that can be done such as presenting more compact 
+information and a more usable design. 
+ 
+This study has developed a design for the information visualization tools for the EDMQ 
+questionnaire. This study has also evaluated the usability of the developed design and presented the 
+result. This study only researched the usability of information visualization of the EDMQ 
+questionnaire from the students’ perspective. In the future, there needs to be research focusing on the 
+lecturers’ perspective as the one who conducts the questionnaire.

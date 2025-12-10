@@ -1,0 +1,811 @@
+Original Research Article
+
+MDM Policy & Practice
+2023, Vol. 8(1) 1–11
+ The Author(s) 2023
+Article reuse guidelines:
+sagepub.com/journals-permissions
+DOI: 10.1177/23814683231153378
+journals.sagepub.com/home/mpp
+Translating an Economic Analysis into a
+Tool for Public Health Resource Allocation
+in Cancer Survivorship
+
+Zachary Rivers
+, Joshua A. Roth
+, Winona Wright
+, Sun Hee Rim, Lisa C. Richardson,
+Cheryll C. Thomas, Julie S. Townsend, and Scott D. Ramsey
+
+Abstract
+Background. The complexity of decision science models may prevent their use to assist in decision making. User-centered
+design (UCD) principles provide an opportunity to engage end users in model development and refinement, potentially
+reducing complexity and increasing model utilization in a practical setting. We report our experiences with UCD to
+develop a modeling tool for cancer control planners evaluating cancer survivorship interventions. Design. Using UCD
+principles (described in the article), we developed a dynamic cohort model of cancer survivorship for individuals with
+female breast, colorectal, lung, and prostate cancer over 10 y. Parameters were obtained from the National Program of
+Cancer Registries and peer-reviewed literature, with model outcomes captured in quality-adjusted life-years and net
+monetary benefit. Prototyping and iteration were conducted with structured focus groups involving state cancer control
+planners and staff from the Centers for Disease Control and Prevention and the American Public Health Association.
+Results. Initial feedback highlighted model complexity and unclear purpose as barriers to end user uptake. Revisions
+addressed complexity by simplifying model input requirements, providing clear examples of input types, and reducing
+complex language. Wording was added to the results page to explain the interpretation of results. After these updates,
+feedback demonstrated that end users more clearly understood how to use and apply the model for cancer survivorship
+resource allocation tasks. Conclusions. A UCD approach identified challenges faced by end users in integrating a decision
+aid into their workflow. This approach created collaboration between modelers and end users, tailoring revisions to meet
+the needs of the users. Future models developed for individuals without a decision science background could leverage
+UCD to ensure the model meets the needs of the intended audience.
+
+Highlights
+
+
+Model complexity and unclear purpose are 2 barriers that prevent lay users from integrating decision science
+tools into their workflow.
+
+Modelers could integrate the user-centered design framework when developing a model for lay users to
+reduce complexity and ensure the model meets the needs of the users.
+
+Keywords
+cost-effectiveness, cancer survivorship, User Centered Design, resource allocation, decision model, willingness to pay,
+quality of life
+
+Date received: March 25, 2022; accepted: January 8, 2023
+
+This Creative Commons Non Commercial CC BY-NC: This article is distributed under the terms of the Creative Commons
+Attribution-NonCommercial 4.0 License (http://creativecommons.org/licenses/by-nc/4.0/) which permits non-commercial use,
+reproduction and distribution of the work without further permission provided the original work is attributed as specified on the SAGE and
+Open Access pages (https://us.sagepub.com/en-us/nam/open-access-at-sage).
+
+Zachary Rivers, Division of Public Health Sciences and Hutchinson
+Institute for Cancer Outcomes Research, Fred Hutchinson Cancer
+Center, 1100 Fairview Avenue N, Mail Stop M3-B232, Seattle, WA
+98109-9024, USA; (zrivers@fredhutch.org).
+
+The number of persons who have received a cancer
+diagnosis (cancer survivors) is rapidly increasing in the
+United States due to the growth in the number of older
+adults and improvements in screening, treatment, and
+supportive
+care.1,2
+Publicly
+funded
+cancer
+control
+programs
+are
+interested
+in
+using
+evidence-based
+approaches to support people who have survived cancer.3
+
+There is a need for quantitative tools to help decision
+makers select these approaches while operating within
+resource constraints. In a 2012 study, most state/Pacific
+Island/tribal/territorial-level
+cancer
+control
+program
+directors expressed a need for assistance in assessing and
+using evidence-based resources for this population.4 This
+survey also found that the cancer control planning
+directors
+felt
+that
+limited
+resources
+(e.g.,
+financial,
+evidence-based
+information,
+etc.)
+were
+a
+significant
+barrier to adopting evidence-based practices for their
+populations. A cost-effectiveness model framework may
+provide a quantitative tool to aid public health officials in
+resource allocation as well as in exploring the impact of
+programs for cancer survivors. Currently, there are no
+cost-benefit decision tools available to aid decision makers
+in resource allocation decisions and in understanding the
+impact (in terms of net monetary benefit) of doing a
+cancer survivorship intervention versus no intervention.
+In response to these needs, we used a multistep,
+audience-informed process using focus groups based on
+user-centered design to build a cost-effectiveness decision
+tool for decision makers and cancer control planners
+that target end users. User-centered design is a process
+that integrates end users throughout the design process
+to increase the usability of the final product.5 Focus
+
+groups allow model designers an opportunity to explore
+contextual factors and solicit feedback or ideas from
+users about a theme, concept, or product. This type of
+qualitative data collection has been used in market
+research and product development as well as the public
+health space.6,7 In the product development literature,
+focus groups are viewed as an approach that identifies
+issues that end-users experience when using the product.
+The authors spoke with partners from the American
+Public Health Association (APHA), Centers for Disease
+Control and Prevention (CDC), and a group of state-
+level cancer control planners to explore common chal-
+lenges that cancer control planners face in implementing
+evidence-based survivorship interventions and their per-
+spectives on the use of a cost-effectiveness tool. The
+objective of this article is to report on the user-centered
+design process and to offer lessons learned for future
+developers.
+
+Methods
+
+Overview
+
+We followed user-centered design principles (https://
+www.usability.gov/what-and-why/user-centered-design.ht
+ml) to construct this cost-effectiveness model as opposed
+to a noniterative, waterfall modeling approach, moving
+through the steps of ideation, prototyping, and iteration
+to arrive at a design solution (Figure 1).5 Ideation
+involved defining the model parameters with the model-
+ing team from Fred Hutchinson Cancer Center, APHA,
+and the CDC. This step also involved identifying the tar-
+get end users, the intended use, and overall goals of the
+model/tool. Prototyping included the process of building
+the model from a basic concept to a complete design.
+And the iteration stage was defined by usability testing
+with actual users and the continuous evaluation and
+improvement process. Prototyping and iteration occurred
+through focus groups, with the initial prototyping and
+iteration step engaging end users at the state cancer
+control level and the second iteration step engaging users
+at the national organization level.
+
+Ideation
+
+Model structure. We constructed a model in Microsoft
+Excel to simulate health outcomes and costs of a vari-
+ety of postcancer diagnosis survivorship interventions
+(e.g., smoking cessation, psychological counseling, cancer
+surveillance, dietary modifications, and physical activity),
+described in more detail in the Appendix. The model was
+designed to compare the impact of different cancer
+
+Division of Public Health Sciences and Hutchinson Institute for Cancer
+Outcomes Research, Fred Hutchinson Cancer Center, Seattle, WA, USA
+(ZR, WW, SR); Division of Cancer Prevention and Control, Centers for
+Disease Control and Prevention, Atlanta, GA, USA (SHR, LCR, CCT,
+JST); Director, Value and Evidence, Hematology and Biosimilars, Pfizer,
+New York, NY, USA (JAR). JAR is currently employed at Pfizer but was
+an associate professor at Fred Hutchinson Cancer Center when he made
+his contributions to this article. The authors declared no potential conflicts
+of interest with respect to the research, authorship, and/or publication of
+this article. The authors disclosed receipt of the following financial support
+for the research, authorship, and/or publication of this article: Financial
+support to the Fred Hutchinson Cancer Center for this study was provided
+by a subcontract from the American Public Health Association, which
+received support from the Centers for Disease Control and Prevention
+(CDC) through cooperative agreement 6NU38OT000294-01-02. The find-
+ings and conclusions in this article are those of the authors and do not
+necessarily represent the official position of the CDC. The following
+authors are employed by the CDC: Lisa Richardson, MD, MPH; Sun Hee
+Rim, PhD, MPH; Cheryll C. Thomas, MSPH; and Julie S. Townsend,
+MS. Use of trade names is for identification only and does not imply
+endorsement by the US Department of Health and Human Services.
+
+2
+
+survivorship interventions with the current standard of
+care to assess the value of implementing these interven-
+tions. Our decision model follows a dynamic cohort of
+cancer survivors diagnosed with female breast, colorectal,
+lung, or prostate cancer over a 10-y time horizon (2006–
+2016). These cancers were selected because they are the
+top 4 cancers, excluding skin cancer, occurring among
+men and women and accounting for approximately half
+of all new cancer cases per year.1 For this study, cancer
+survivors were defined as those alive 1 y after diagnosis
+and were assigned to a survivorship intervention or the
+status quo standard of care. The primary outcome com-
+pares the economic return of the survivorship interven-
+tion strategy (in net monetary benefit) versus the status
+quo care. The model takes the US national perspective,
+with options for state-based stratification, and spans a
+10-y time frame. We used a dynamic modeling approach,
+which identifies and models new cohorts of cancer survi-
+vors in each year of the model time horizon. The
+willingness-to-pay threshold was set at $100,000 per
+quality-adjusted life-year (QALY), as public health inter-
+ventions that cost less than $100,000 per QALY are gen-
+erally considered as cost-effective.8 Costs and QALYs
+are discounted at a 3% annual rate.
+Key model input parameters were derived from central
+cancer registries and peer-reviewed literature assessing the
+impact of various interventions.9–12 Input parameters are
+also customizable based on users’ expertise, experience,
+or specific program. State-level incidence and survival
+data were obtained from the CDC’s National Program of
+Cancer Registries (NPCR).1 Due to the granularity of
+survival data needed, proxy states were used for states
+where data were not available due to data use agreement,
+
+for
+example,
+Connecticut
+(proxy = Massachusetts),
+Hawaii (proxy = Florida), Indiana (proxy = Missouri),
+Iowa (proxy = Nebraska), Kansas (proxy = Nebraska),
+Minnesota (proxy = Wisconsin), New Mexico (proxy
+= Arizona), Nevada (proxy = Arizona), and South
+Dakota (proxy = North Dakota). For the states where
+NPCR data were not available, we assumed a similar
+annualized incidence and survival outcomes for neighbor-
+ing states with similar sociodemographic composition
+(indicated in parentheses).
+Survivorship interventions considered for this model
+were selected based on available literature and on poten-
+tial for high impact, uptake, or perceived need.13–26 The
+interventions include smoking cessation, psychological
+counseling, dietary changes, physical activity, and cancer
+surveillance.13–26 These interventions are described in the
+Appendix along with detailed discussions on other key
+cost and utility input parameters of the model including
+base annual health expenditure per patient, annual cost
+of the intervention per patient, change in survival for
+patients who received the intervention, base health state
+utility for cancer survivors, and impact of intervention
+on health state utility.
+Model outcomes included change in incident cancer
+cases, change in total and QALYs, change in direct mon-
+etary expenditure, and change in net monetary benefit.
+Each outcome was represented as the number of events
+or amount of money or life-years accrued under the stan-
+dard of care and intervention arms as well as the amount
+gained or lost when the intervention was implemented.
+QALYs were calculated by multiplying the total number
+of life-years accrued in each health state by their corre-
+sponding health-state utility value derived from the
+
+• Fred Hutchinson Cancer 
+Center, APHA, CDC
+• Model conceptualizaon and 
+buildout
+
+Ideaon
+
+Prototyping
+• Fred Hutchinson Cancer 
+Center, APHA, CDC
+• Reduce complexity
+• Introduce addional input and 
+results pages
+
+Iteraon
+
+Prototyping 2.0
+• Fred Hutchinson Cancer 
+Center, APHA, CDC
+• Incorporate changes
+• Produce user guide and training 
+support
+
+Design Soluon
+
+Figure 1 Feedback and revision framework. APHA, American Public Health Association; CDC, Centers for Disease Control
+and Prevention; Fred Hutchinson Cancer Center. Feedback and revision framework adapted from User-Centered Design Basics:
+Usability.gov (https://www.usability.gov/what-and-why/user-centered-design.html).
+
+3
+
+literature (details are described in the Appendix). Direct
+monetary expenditure was calculated as the annual
+amount spent on cancer and noncancer health care,
+increased or decreased by the cost and potential financial
+benefits of the intervention. Net monetary benefit was
+calculated by converting the QALYs accrued over the
+time horizon into a dollar amount using the willingness-
+to-pay threshold and incorporating the direct health care
+costs incurred over the time horizon into a final dollar
+amount. The model outcome can help decision makers
+in any US state or jurisdiction ascertain the net benefit
+(in terms of life-years, QALYs), net costs (direct mone-
+tary expenditures) and net monetary benefit of doing a
+cancer survivorship intervention versus no intervention
+over a 10-y time horizon.
+
+Design framework. The first version of the model’s user
+interface allowed maximum user customization of vari-
+ous inputs parameters (Figure 2). The input tab included
+options for user-directed assumptions about discounting
+and willingness-to-pay thresholds and granular custom
+inputs for each stage (local, regional, distant)27 of each
+cancer site (female breast, colorectal, lung, and prostate),
+for hazard ratios, health state utility changes, and medi-
+cal
+expenditures,
+resulting
+in
+18
+different
+user-
+customizable input values for each of the cancer sites.
+This level of customization was selected to allow end
+users to identify features they felt were important, as well
+as features that were unlikely to be used in day-to-day
+use. All model results were displayed on 1 tab/worksheet
+in a graphical and tabular format (Figure 3).
+
+Prototyping
+
+Participants and partners. State-level focus group parti-
+cipants (n = 7) were recruited through CDC’s National
+Comprehensive
+Cancer
+Control
+Program
+(NCCCP;
+group 1). Group 1 participants were identified from
+award recipients of CDC’s request for proposal on
+‘‘Increasing
+the
+Implementation
+of
+Evidence-Based
+Cancer Survivorship Interventions to Increase Quality
+and Duration of Life among Cancer Patients.’’28 These
+participants were chosen based on their leadership roles
+in the state’s comprehensive cancer control program and
+interests in implementing evidence-based cancer survi-
+vorship programs. Fred Hutchinson Cancer Research
+consented participants prior to the online focus group
+sessions. Participants from CDC (group 2) were recruited
+from among the author’s colleagues and had different
+
+academic
+disciplines
+and
+positions:
+epidemiologists,
+health services researchers, economists, program consul-
+tants, and public health analysts. This research was
+found to be exempt from Institutional Review Board
+review by Fred Hutchinson Cancer Center.
+
+Feedback solicitation. We engaged potential users in the
+prototyping and iteration portion of the design process
+(Figure 1). The first round of users (group 1) included
+the NCCCP participants. Prior to the first session, we
+provided participants with the questions listed in Table 1.
+During the first session, we presented the study objective,
+described the model inputs and outputs, and demon-
+strated how to use the model. Participants provided ver-
+bal feedback during the session on questions from the
+premeeting handout. Two members of the modeling team
+led these discussions, with a third member taking notes
+regarding feedback provided.
+After this session, we distributed the model and a user
+guide that contained specifics on how to navigate the
+model. Users were provided with questions focused on
+the model’s usefulness, accessibility, and time frame
+(Table 2). Users were given 2 wk to review the model
+and provide feedback to the modeling team.
+
+Iteration
+
+Feedback from each focus group session was discussed
+among the modeling team. Feedback was clustered into
+informal themes through a discussion process, identify-
+ing similar challenges and potential changes raised by
+each end user. Mock-up models were distributed among
+the modeling team in between each session, to illustrate
+multiple approaches addressing feedback from focus
+group participants (both group 1 and group 2). Final
+decisions for updated model designs were accepted based
+on consensus from most modeling team members.
+Updated models were distributed to state-level end users
+for a second wave of focus groups, with feedback being
+collected via unstructured email responses. Themes and
+improvements were identified from this feedback and
+used to produce another iteration of the model. This
+model was used to conduct focus group sessions with
+CDC NCCCP leadership (group 2). These focus groups
+followed a similar approach to the state-level groups,
+identifying themes and updating the model based on
+feedback received in the first group and validating the
+usefulness of the changes with the second group.
+
+4
+
+Results
+
+Participant Characteristics
+
+Group 1 participants were split into 2 different sessions,
+with the first session including 7 state-level participants,
+representative of 5 states (Indiana, Kansas, Michigan,
+South Dakota, and Washington). E-mail feedback was
+received from 7 individuals and 4 states. The second,
+follow-up session included 5 individuals from 3 states.
+States
+represented
+in
+the
+second
+session
+included
+Indiana, Kansas, and Michigan. Some states were lost to
+follow-up due to time constraints, changes in roles, and
+changes in availability. Participants were in many cases
+
+the state comprehensive cancer control (CCC) program’s
+director, program manager, or equivalent position. These
+individuals had a background in public health, program
+management, coordination, and evaluating or making
+decisions about cancer survivorship interventions.
+
+Participant Feedback
+
+Group 1 participants were interested in the information
+this decision-making tool could provide to inform pro-
+grams but felt this version was too technical and com-
+plex. Because of its complexity, state-level cancer control
+planners were uncertain of the benefits of using this
+
+Figure 2 Initial and revised user input. (A) initial: advanced user input – breast cancer and (B) revised: standard user input –
+breast cancer. This figure shows the user interface for only 1 of the cancer types for easier viewing. As noted in the article, the
+model contains separate input interfaces for each of the listed cancers.
+
+5
+
+model and did not feel comfortable using the model with-
+out assistance from someone with a background in health
+economics or epidemiology. Group 1 users had no eco-
+nomics background, and the language used was above
+general health literacy. Plain language for the model
+inputs and outputs throughout the model was encour-
+aged. These users expressed interest in selecting individ-
+ual cancer types, as funding agencies may be targeting
+survivors of specific disease types, rather than all cancer
+survivors. Overall, group 1 users expressed interest in
+using a pared-down and more accessible version of the
+model. Due to the limited funding for survivorship pro-
+grams, the participants noted that this tool could help
+programs be more effective in reaching more survivors in
+their respective jurisdictions. Table 3 illustrates how
+changes were made with respect to specific feedback.
+To address the feedback received, the model was
+revised. The revisions included creating a new user inter-
+face with 2 user input sections, 1 for the typical use case
+and 1 for users with advanced health economics training.
+
+The advanced user input section, seen in Figure 2,
+retained all functionality of the original model input
+page. The typical user section, shown in Figure 2, was
+created to reduce the complexity and depth of data
+knowledge required to operate the model. This input
+page integrated range-limited drop-down menus, rather
+than free-form input, with restrictions based on effect
+sizes seen in the literature. The ability to turn each cancer
+type on and off was added to allow users to focus on
+specific cancers. Each cancer type was split out into indi-
+vidual results pages. For ease of viewing, only 1 cancer
+site is shown in the figures presented in this article.
+Results were updated to return the total net monetary
+benefit and QALY gain for each cancer type, aggregating
+the impact of the intervention across local, regional, and
+distant stage to reduce granularity, as requested by the
+CCC program participants.
+The main difference between the standard (typical)
+user versus advanced user interface is the ability to exam-
+ine outcomes by cancer stage. The typical user interface
+
+Figure 3 (continued)
+
+6
+
+Figure 3 Initial and revised model output. (A) initial: advanced user output – breast cancer and (B) revised: standard user output –
+breast cancer. This figure shows the user interface for only 1 of the cancer types for easier viewing. As noted in the article, the
+model contains separate input interfaces for each of the listed cancers.
+
+7
+
+was designed based on feedback from high-level and
+mid-level decision makers/cancer control planners who
+were comfortable and preferred outcomes by cancer type
+overall. Since most interventions generally broadly target
+
+all cancer survivors, overall outcomes were most palata-
+ble and most appropriate for decision making. However,
+cancer stage–specific information was retained for the
+advanced user interface for situations in which interven-
+tions are needed for these subpopulations.
+After participants had dedicated time to test the first
+revision of the model, they expressed that the modifica-
+tions, specifically the Standard User versus Advanced
+User sheets, made the model easier to use overall and less
+intimidating to navigate. They had a better understand-
+ing on how to use and apply the model as a result of the
+newly incorporated guidance text. The group stated that
+the usefulness of the tool could come down to the clarity
+of the instructions in the model and the accompanying
+user guide.
+Feedback from group 2, the CDC reviewers, focused
+on accessible language and support within the model.
+Results were simplified to include a sentence that
+described what the findings meant for the population
+receiving the intervention (‘‘These results mean that for
+the [Insert State] population, this intervention generates
+[X] QALYs and a net monetary benefit of [Y] billion
+U.S. dollars’’). The introduction page was updated to
+integrate information from the user guide, including the
+benefits of using the model and explaining how to inter-
+pret the outcomes generated. The standard user input
+sheet was updated to include a reference input table from
+the user guide, as well as clearer language around the
+summary ranges for each required input value and defi-
+nitions of the input values.
+
+Discussion
+
+We adapted a population-level economic simulation
+model into a decision aid using an iterative, end-user
+focused model development approach. This process
+
+Table 1 Premeeting Focus Group Questions
+
+1.
+What type of survivorship interventions do you implement
+for cancer survivors?
+2.
+What are your goals and constraints when thinking about
+survivorship interventions? How do you prioritize given
+these constraints and goals?
+3.
+What other factors are you thinking about when making
+these decisions?
+
+Table 2 Postmeeting Questions
+
+I.
+Model usefulness
+
+What were your overall impressions?
+
+What would make the model more useful to you in
+your work?
+
+What was confusing?
+
+What would you like to see in the model that isn’t
+currently included?
+II.
+Accessibility
+
+What is the extent of your familiarity with the terms
+used?
+
+Did the language resonate with you?
+
+How user-friendly is the Excel format?
+
+What software or programs are you familiar with for
+modeling and decision analysis?
+III.
+Time frame
+
+What is the time frame in which you make decisions?
+
+Are you making cases for 10-y interventions?
+
+Model currently projects 10 y. What time frame of
+results would be useful to you?
+
+How would you use this model to make decisions about
+budgets and resource allocations?
+
+Table 3 Key Feedback and Updates
+
+Focus Group Feedback
+How the Model Was Modified
+
+Initial model interface is overly complex
+Addition of standard user input page
+Interest in selecting individual disease states,
+as funding agencies may be targeting
+survivors of specific disease types, rather
+than all cancer survivors
+
+Allow inputs for selected disease states and created
+separate output pages for each disease state
+
+Make language in the model and user guide
+more accessible
+Reworded model file, added definitions to introduction
+and input pages
+Most users will not open an attached user
+guide for instructions due to technology
+limitations
+
+Added instructions to model pages, as well as
+interpretations on result pages
+
+Confusion about sourcing and magnitude of
+model inputs
+Added reference table and input ranges to standard
+user input page
+
+8
+
+represents an intersection of the decision making and
+product development research spaces. Our article contri-
+butes to the literature in 2 important ways. First, to our
+knowledge, we have developed a novel cost-effectiveness
+model that takes into account national, population-
+based cancer registry data of US cancer survivors and
+follows a dynamic cohort over a 10-y time period,
+enabling the ability to compare various cancer survivor-
+ship interventions using economic outcomes of life-years
+and net monetary benefit. Second, we additionally
+describe how we modified an economic analysis to trans-
+late it into a decision aid for public health practitioners
+and cancer control planners. While it is likely that infor-
+mal
+user feedback
+has been
+used
+to
+refine
+cost-
+effectiveness models in the past, we believe this is the first
+article reporting how feedback was solicited and inte-
+grated into model development.
+Using cost-effectiveness analysis to inform medical
+decision making in the United States has been challen-
+ging. There are concerns regarding equity and equality as
+well as the ethics of reducing a human life to a dollar
+amount.10 There are also challenges related to the quality
+of the model, quality of the data, and assumptions made
+around input parameters that reflect uncertainty. These
+can lead to technical challenges and result in nuanced
+and complex models that can be hard to interpret, further
+limiting their utility to end users. The primary challenge
+we describe here is accessibility: getting the model to a
+state where persons who are trained in public health but
+not modeling and cost-effectiveness analysis can interact
+with a model in a way that allows thoughtful input of
+data and ease of interpretation of the results.
+Integrating potential end users (in our case, cancer
+control planners) into the model design and revision
+process highlighted themes to consider when developing
+future user-focused models with the goal of increasing
+user uptake. The first theme was interface complexity.
+The original model was visually ‘‘complex’’ with multiple
+input fields for each value for each disease stage and
+used health economic terminology, which was viewed as
+an additional complication. Although this level of detail
+is important from a scientific modeling standpoint, there
+can be challenges to adoption, implementation, and
+long-term sustainment of use. By adding a second input
+page with fewer fields and better explanations of possible
+input values, we were able to reduce complexity for
+cancer control planners while retaining the original input
+page for users who were comfortable with or needed the
+increased granularity.
+The second theme we identified was ease of use. In
+the original form of this model, there was a multipaged
+
+technical report and user guide that contained the exam-
+ple interventions, their data, and explanations for how to
+locate and input data for other interventions of interest.
+This report also contained information about the pur-
+pose of the model and how to interpret the results and
+integrate them into survivorship program design. Focus
+group participants identified that storing this informa-
+tion in a separate location from the model, requiring the
+users to either print a hard copy or toggle between the
+model and user guide on their screen, would serve as a
+significant barrier to use. When the information that
+focus group participants identified as necessary for
+model use was added directly into the model, they felt it
+improved the ease of use.
+The third theme identified was conceptual complexity.
+QALYs and net monetary benefit, outcomes in our
+model, were identified as confusing terms by nearly all
+participants, as was the use of health state utility values
+as an input. These terms are commonly used by research-
+ers in the health technology assessment space. However,
+given the breadth of information that cancer control
+planners are expected to integrate into practice, these
+terms may be perceived as technical jargon and become
+a barrier to adoption. By providing clear definitions of
+the terms embedded within the model, as well as example
+ranges for the values needed as inputs (identified from
+published literature), we were able to reduce the concep-
+tual complexity of the original model. The addition of an
+in-model interpretation guide increased understanding of
+results, reducing the complexity around using the model
+output to inform decision making.
+The themes of interface and conceptual complexity, as
+well as ease of use, create a distinction between cost-
+effectiveness models designed to answer a research ques-
+tion and models designed to be used in daily practice by
+decision makers. Research-focused models can contain
+significant complexity, documentation, and knowledge
+requirements, as it is likely that they will be used mainly
+by the developers to answer a specific question. Models
+that are intended as decision aids and designed to con-
+sider additional interventions beyond those used to
+develop the model may benefit from consultation with
+the end users. This consultation can focus on reducing
+complexity in model design and terminology, designing
+an interface and output that align with the user’s goals,
+and embedding necessary information within the model
+itself,
+rather
+than
+in
+a
+supplementary
+user
+guide.
+Challenges associated with terminology may be addressed
+by working with the end users to create agreed-upon
+definitions for complex terms and concepts that they feel
+would be easily understood by their peers.
+
+9
+
+There were limitations to this work; one of the most
+notable was the process used to construct the focus
+groups. While it is possible that the 5 states represented
+in our focus groups fully represent the opinions and
+goals of other US cancer control programs, there is the
+potential that other users will encounter additional chal-
+lenges or barriers that were not identified. In addition,
+these participants may be those who are most engaged
+and interested in using this modeling approach to select
+interventions, and other potential participants may not
+feel they have the capacity or knowledge necessary to use
+the model.
+An additional limitation is the lack of real-world
+follow-up for feedback on model comfort and use. In
+both focus group sessions, participants (who were largely
+selected for their ‘‘leadership’’ role) identified that they
+had been able to afford little time to explore the model,
+given competing priorities around public health needs.
+As the model design team was present for the focus
+group discussions and provided walkthroughs during the
+meetings, users may have only identified complexities in
+the scenarios presented by the facilitators and not identi-
+fied other complexities that would occur with routine
+real-world use. Our ability to conduct user-centered
+research may have also been hampered by the use of
+e-mail and video focus groups rather than in-person
+sessions at local and national meetings or from a series
+of in-depth interviews with each program where multiple
+participants could participate.
+Future modeling work for public health decision sup-
+port may integrate this iterative and multipartner engage-
+ment approach throughout the model development
+process. Public health decision makers are faced with
+complex decisions regarding the allocation of limited
+resources and drawing comparisons between evidence-
+based programming. Soliciting feedback from potential
+end users throughout the model design and refinement
+process allows the model to more accurately reflect their
+needs. This approach may also allow a better representa-
+tion of the real-world challenges associated with the deci-
+sion being modeled, improving the face validity of the
+scientific model.
+
+Conclusion
+
+This project provides a perspective on using focus group
+methodology to refine and disseminate a cost-effectiveness
+model to assist in selecting public health interventions.
+We view this approach as an opportunity to remove bar-
+riers for evidence-based program selections in public
+
+health interventions and as a step forward in translating
+cost-effectiveness modeling into real-world use.

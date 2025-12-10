@@ -1,0 +1,42 @@
+{
+  "file_name": "E and H - 2004 - Procuring a usable system using unemployed personas.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "A very tight schedule (eight weeks) forced the usability consultants to work at top speed with only two consultants, constraining time for research, iteration, and stakeholder involvement.",
+      "justification": "Limited time and staffing reduced the team's capacity to run thorough contextual interviews, support two full iterations, and allow slower, collaborative sensemaking, hindering integrate feedback & iteration and facilitate user involvement workloads.",
+      "reference_excerpt": "Therefore the UCD process could not take more than eight weeks. At the same time they wanted two iterations and a thorough interview phase. Hence, the schedule for the UCD process was very tight. However, the project was important and prestigious for the usability company and it was judged that we would be able to deliver on time by working with two consultants on top speed.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "The PPG participated only occasionally in hands-on activities and attendance at interviews and card-sorting was limited to one member to avoid disturbance, preventing deeper joint engagement.",
+      "justification": "Restricted stakeholder participation and limits on co-attendance constrained designers' ability to facilitate user involvement, to manage shared understanding with procurers, and to coordinate multidisciplinary collaboration throughout the research and design activities.",
+      "reference_excerpt": "Although they were active and engaged, the members of the PPG, on the other hand, only participated occasionally in the hands-on work, such as on an interview or in a design session and then got the results presented to them in a weekly workshop. In order to not interfere too much with the actual interviews only one member of the PPG was allowed to attend on each interview session.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "stakeholder",
+      "barrier_type": "knowledge",
+      "description": "The PPG had not specified organizational requirements to the same concreteness as user requirements and lacked the detailed competence to steer how those requirements should translate into design.",
+      "justification": "Ambiguous and under-specified organizational requirements (owned by stakeholders) left unresolved contradictions and prevented designers from confidently aligning design decisions with business goals, hindering manage user understanding and specify user requirements workloads.",
+      "reference_excerpt": "In retrospect it becomes clear that the halt was necessary not only for the PPG to understand the user requirements, but also to specify and secure the organizational requirements. The PPG had not been able to detail these to the level that the user requirements were specified. Since these were also “owned” primarily by the usability consultants the PPG experienced that the user requirements grew “too strong”.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "interaction",
+      "barrier_type": "emotional",
+      "description": "Power dynamics and perceived dominance of the usability company undermined the PPG's confidence and trust, prompting the procurement leader to halt the project so the group could regain understanding and ownership.",
+      "justification": "This relational and emotional breakdown between procurers and designers disrupted the pace of design and forced remediation workshops, impeding integrate feedback & iteration and coordination of the multidisciplinary team.",
+      "reference_excerpt": "We identified the organizational requirements first and they did not reach the same level of concretization as the users’ requirements. (…) and the usability company was in charge of developing the prototype and we got to review it in this kind of dialogue…. but then… the usability company got to strong somehow. The usability company was much more professional in some way – they had their methodology and they knew where to go and so forth.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

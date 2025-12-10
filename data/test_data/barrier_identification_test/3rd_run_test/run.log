@@ -1,0 +1,22 @@
+2025-12-09 07:07:25 | START | model=gpt-5-mini | prompt=hcd_barrier_extraction v1.2.1 | files=5
+2025-12-09 07:07:25 | [1/5] | START | E and H - 2004 - Procuring a usable system using unemployed personas.txt
+2025-12-09 07:07:25 | [1/5] | CALL  | sending to gpt-5-mini
+2025-12-09 07:08:05 | [1/5] | RECV  | 4383 chars in 39.45s
+2025-12-09 07:08:05 | [1/5] | SAVE  | E and H - 2004 - Procuring a usable system using unemployed personas.json
+2025-12-09 07:08:05 | [2/5] | START | Lehmann et al. - 2022 - Designing AINA Intercultural Human Centered Design of an AI based Application for Supporting the Dia.txt
+2025-12-09 07:08:05 | [2/5] | CALL  | sending to gpt-5-mini
+2025-12-09 07:08:54 | [2/5] | RECV  | 5640 chars in 49.18s
+2025-12-09 07:08:54 | [2/5] | SAVE  | Lehmann et al. - 2022 - Designing AINA Intercultural Human Centered Design of an AI based Application for Supporting the Dia.json
+2025-12-09 07:08:54 | [3/5] | START | Nystrom DT - 2018 - Methods for Patient Centered Interface Design of Test Result Display in Online Portals.txt
+2025-12-09 07:08:54 | [3/5] | CALL  | sending to gpt-5-mini
+2025-12-09 07:09:47 | [3/5] | RECV  | 4081 chars in 52.82s
+2025-12-09 07:09:47 | [3/5] | SAVE  | Nystrom DT - 2018 - Methods for Patient Centered Interface Design of Test Result Display in Online Portals.json
+2025-12-09 07:09:47 | [4/5] | START | Tran-Nguyen K - 2022 - Mobile App Prototype in Older Adults for Postfracture Acute Pain Management User Centered Design App.txt
+2025-12-09 07:09:47 | [4/5] | CALL  | sending to gpt-5-mini
+2025-12-09 07:10:24 | [4/5] | RECV  | 2860 chars in 36.61s
+2025-12-09 07:10:24 | [4/5] | SAVE  | Tran-Nguyen K - 2022 - Mobile App Prototype in Older Adults for Postfracture Acute Pain Management User Centered Design App.json
+2025-12-09 07:10:24 | [5/5] | START | Vilaro et al. - 2023 - Information Architects Using Community Engaged and Qualitative Methods to Design a Technology Based.txt
+2025-12-09 07:10:24 | [5/5] | CALL  | sending to gpt-5-mini
+2025-12-09 07:11:49 | [5/5] | RECV  | 3485 chars in 84.95s
+2025-12-09 07:11:49 | [5/5] | SAVE  | Vilaro et al. - 2023 - Information Architects Using Community Engaged and Qualitative Methods to Design a Technology Based.json
+2025-12-09 07:11:49 | DONE  | processed=5

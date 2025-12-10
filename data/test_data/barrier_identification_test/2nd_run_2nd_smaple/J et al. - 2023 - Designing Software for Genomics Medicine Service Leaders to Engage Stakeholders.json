@@ -1,0 +1,51 @@
+{
+  "file_name": "J et al. - 2023 - Designing Software for Genomics Medicine Service Leaders to Engage Stakeholders.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Designers faced difficulty ensuring accurate, up-to-date stakeholder metadata for the prototype's search functionality, because individuals change roles, departments, and expertise over time.",
+      "justification": "This data-maintenance constraint prevents designers from fully specifying user requirements and producing a reliable search/select feature for identifying GM service partners, hindering the ability to support user understanding and stakeholder identification.",
+      "reference_excerpt": "Feasibility to provide the most accurate and up-to-date information in requested areas, however, requires further investigation. Individuals, for example, may change career roles, employment, expertise, and location which can create challenges to maintaining such up-to-date information.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Unclear data access requirements and integration barriers to obtain local electronic health record (EHR) data and incorporate the PRECISE-Value model limited designers' ability to include institution-specific evidence in the workflow.",
+      "justification": "Lack of access to local data and uncertainty about data requirements hindered designers' ability to understand context of use, specify requirements for evidence features, and produce design solutions that integrate local quantitative evidence, blocking iteration on those features.",
+      "reference_excerpt": "Interviewees indicated a desire for summaries on drug-related problems derived from electronic health record data... More work is needed to understand data access requirements to incorporate such a tool into the user process.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "A small sample size (seven GM service leaders) limited the breadth of user insights available to the team.",
+      "justification": "This constraint reduced designers' ability to manage user understanding and to evaluate designs across diverse institutional contexts, potentially limiting the representativeness of design decisions and iteration priorities.",
+      "reference_excerpt": "First, we performed our analysis with a sample size of seven GM service leaders. While this is a small number, this is within a sample size that is common for qualitative, user experience, and participatory design research [26].",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "A substantial portion of collected synthesized comments were not relevant to the study's focal design considerations, creating noise in the data.",
+      "justification": "Having 39% of synthesized comments unrelated to the project focus increased the workload for analyzing and prioritizing feedback, hindering designers' ability to efficiently integrate feedback and iterate on prioritized design features.",
+      "reference_excerpt": "many of the synthesized comments were not relevant to the design considerations of focus in this work (39%, N=54).",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "Stakeholders found the prototype's 'endorsement' value unclear, creating ambiguity in how to interpret reviewer summaries.",
+      "justification": "This interactional misunderstanding hindered designers' ability to ensure the prototype supports holistic user experience and to reliably use stakeholder feedback for decision workflows, since ambiguous metrics reduce the usefulness of collected feedback.",
+      "reference_excerpt": "The one software workflow issue subtheme comment was about a lack of clarity on how to interpret 'endorsement' value!",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

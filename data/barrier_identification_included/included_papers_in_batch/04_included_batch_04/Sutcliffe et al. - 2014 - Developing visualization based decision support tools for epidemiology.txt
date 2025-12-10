@@ -1,0 +1,1428 @@
+Article
+
+Information Visualization
+2014, Vol 13(1) 3–17
+ The Author(s) 2012
+Reprints and permission:
+sagepub.co.uk/journalsPermissions.nav
+DOI: 10.1177/1473871612445832
+ivi.sagepub.com
+Developing visualization-based decision
+support tools for epidemiology
+
+Alistair Sutcliffe1, Oscar de Bruijn1, Sarah Thew2,
+Iain Buchan2, Paul Jarvis2, John McNaught3 and Rob Procter4
+
+Abstract
+The paper describes the application of user-centred design (UCD) methods to a case study of the develop-
+ment of visual decision support tools to support epidemiological research. Understanding the causes of obe-
+sity requires analysis of complex medical surveys and geographic information. Translating research on
+obesity into effective public health measures requires collaboration between medical researchers and public
+health analysts. The objective of this research is to develop software tools to support medical researchers
+and public health analysts in collaborative investigation of obesity in children. The UCD approach consisted of
+scenario-based design, storyboarding and prototyping to explore design options to meet the needs of public
+health analysts and academic researchers. An evaluation of the prototype was carried out to assess the
+extent to which the medical researcher model would support public health professionals in their analysis
+activities. The design and evaluation of the prototype are discussed. A visualization-based research and
+decision-support system was implemented leading to positive evaluation results from users.
+
+Keywords
+Human factors, visualization, decision support, user-centred design, maps
+
+Introduction
+
+Background
+
+This paper focuses on the experiences of applying
+user-centred design (UCD) methods to the ADVISES
+project, which is developing visualization tools to sup-
+port public health decision-making based on epide-
+miological data. In order to encourage epidemiologists
+to make more use of visualization tools, the project
+focused on understanding how epidemiologists make
+decisions using maps1 while exploring the statistical
+properties underlying the graphical representations.2
+
+Funded by the UK e-Science programme, which
+aimed to create new and more powerful infrastructure
+and tools for scientific research and decision support,3
+
+the objective of the ADVISES (ADaptive Visualization
+for E-Science) project was to develop collaborative
+systems
+for
+health
+informatics;
+specifically,
+to
+develop visualization tools to support public health
+
+decision-making based on epidemiological data. In
+this paper, we describe a decision-support tool with a
+web browser user interface that makes use of web ser-
+vices, that is computational services on a remote host
+that provide a uniform resource locater (URL)-
+accessed application programming interface (API) via
+a protocol such as RESTful.4
+
+1Manchester Business School, University of Manchester,
+Manchester, UK
+2Northwest Institute for BioHealth Informatics (NIBHI), School of
+Medicine, University of Manchester, Manchester, UK
+3National Centre for Text Mining, University of Manchester,
+Manchester, UK
+4Manchester e-Research Centre, School of Social Sciences,
+University of Manchester, Manchester, UK
+
+Alistair Sutcliffe, Manchester Business School, University of
+Manchester, Booth Street East, Manchester M15 6PB, UK.
+
+Obesity is rapidly becoming a dominant health con-
+cern in western countries.5–7 Effective intervention to
+reduce the inexorable rise in obesity requires epide-
+miological research to understand the causal factors
+behind the increase in this problem. Modelling epide-
+miology in the large to understand general causality
+needs to be coupled with analysis of local conditions,
+so targeted intervention can be planned by public
+health analysts and policy makers; consequently, solu-
+tions to the obesity problem involve collaborations
+between academic researchers in epidemiology, local
+health analysts, policy makers and clinicians.
+Improvements in data collection by organizations
+such as the UK National Health Service (NHS) and
+open access to government-curated data resources are
+encouraging the use of ‘data-driven’ approaches in epi-
+demiology; instead of forming hypotheses and then
+looking for confirmatory evidence, data are ‘mined’ for
+possible lines of enquiry.8 Epidemiologists are tackling
+ever more complex concepts of causality, often involv-
+ing diverse sets of factors. Also, the availability of geo-
+coded extracts of health records and health surveys is
+increasing. As spatial factors are related to many other
+determinants of health, there is a need for visualiza-
+tions to help epidemiologists explore concepts and
+data fully, blending abstract reasoning with systematic
+statistical processing.
+If it were to deliver usable tools, ADVISES had to
+satisfy the needs of two different user communities: aca-
+demic epidemiologists interested in causal analysis from
+epidemiological data and public health analysts whose
+concern was local policy decisions. Furthermore, as one
+of the fundamental aims of e-science is to improve
+research practices, a thorough understanding of users’
+requirements and their reaction to potential innovations
+was necessary. Consequently, we adapted UCD and
+requirements engineering techniques to investigate the
+users’ analytical process9,10 and to explore how new
+visualization tools might be used by academic epide-
+miologists as well as by public health professionals.
+The paper addresses two inter-related themes: first,
+user-centred
+requirements
+analysis
+for
+distributed
+Internet-based applications in health informatics, with
+a design exploration process for functional specifica-
+tion in transformative applications, i.e. where no a
+priori vision of the desired application exists. The sec-
+ond theme assesses the effectiveness of applying and
+integrating interactive visualization techniques from
+the human–computer interface (HCI) literature into a
+practical application.
+
+Related work
+
+At first sight, geographic information system (GIS)
+tools may appear suitable for visualizations to support
+
+epidemiological and public health research. There
+have been reports of the use of GIS tools within public
+health research and the potential of such visualizations
+to support epidemiological thinking11; however, sev-
+eral challenges and concerns remain. A review of GIS
+use by public health practitioners12 identified problems
+associated with accessing GIS tools, including expense
+and complexity, as well as technical problems such as
+software inaccuracies and difficulties in obtaining pre-
+cise local geographic data. Other concerns have been
+data confidentiality and risks of misinterpretation.13 A
+survey of user requirements for geospatial analysis in
+healthcare demonstrated the need for geographically
+based analysis, but also that map-based representa-
+tions needed to be integrated with other statistical
+analysis tools; furthermore, that commercial GIS
+applications did not address many requirements.14
+
+Although GISs have contributed to epidemiology, for
+instance for the characterization of populations, study
+of communicable disease and development of mod-
+els,15 the focus has been on descriptive rather than
+causal epidemiology. One of the few reports of devel-
+oping tools for geospatial analysis is the Pennsylvania
+Cancer Atlas, which integrated maps with graphs and
+statistical analysis tools for epidemiological investiga-
+tions of cancer.16 This application provided an inter-
+esting baseline for ADVISES development. User-
+centred approaches have been applied for developing
+multimedia health informatics applications,17 while
+websites to encourage weight loss and counteract obe-
+sity have used visualizations to persuade users.18
+
+Interactive visualizations for health and medical
+applications have been developed over several years by
+Shneiderman19 and others20 based on the alpha slider
+paradigm. This couples iterative querying of variable
+ranges by sliders with dynamically updated displays, so
+the effect of iterative, incremental querying is immedi-
+ately apparent in the visualization. This concept has
+been applied to a large range of problems involving
+temporal data analysis in the lifelines visualizations21
+
+including patients’ records. Interactive querying was
+augmented with functions to filter, align and rank dis-
+plays in the Lifelines-2 visualization,22 which was eval-
+uated with healthcare professionals to demonstrate
+effective support for discovering temporal patterns
+across multiple patient records. The Lifelines design
+has been developed with colour and shape–height cod-
+ing to display trends in medical data over time.23
+
+Similar timeline representations have been used to dis-
+play results from a restricted natural language query
+system for a patient health records application to
+enable the effect of updates and different types of
+information to be inspected,24 although this system
+did not use the close coupling of dynamic queries and
+display updates. Visualizations to represent results of
+
+4
+
+queries over several datasets have combined timeline-
+style displays with network representations, so relation-
+ships over several datasets can be discovered in biome-
+dical databases.25 These networked multiple displays,
+called semantic substrates by Shneiderman and Aris,26
+
+are based on an entity relationship model and encour-
+age model-based comprehension of the visualization.
+
+Method
+
+User-centred design
+
+We adapted scenario-based design27 and user-centred
+requirements engineering,28 both of which advocate
+the use of scenarios, storyboards and prototypes in
+iterative cycles of requirements elicitation, design
+exploration and user feedback to create the process.
+Scenario-based design (SBD) was chosen owing to the
+often volatile and complex requirements of e-science
+applications. As research practices often change as an
+investigation evolves, requirements can become mov-
+ing targets, which is particularly true in the rapidly
+developing field of biohealth informatics. SBD is well
+suited to such circumstances because its iterative
+approach facilitates collaborative design exploration
+
+between users and developers. The process is summar-
+ized in Figure 1.
+Twenty-one
+participants
+were
+involved
+in
+the
+requirements
+exploration
+and
+evaluation
+session
+(8 male, 13 female); representing two user groups:
+eight academic epidemiologists and 13 public health
+analysts who worked for Primary Care Trusts (PCTs;
+local organizational units in the UK NHS, consisting
+of one or more hospitals and associated healthcare ser-
+vices including local doctors (general practitioners)).
+Only one of the epidemiologists had any previous GIS
+experience. Most of the public health analysts made
+use of maps produced by colleagues with GIS training
+but only one analyst regularly made use of GIS tools.
+A ‘snowball’ approach to recruitment of academic epi-
+demiologists
+was
+used;
+initial
+participants
+were
+recruited via ADVISES team member contacts and
+each one was asked if he or she knew of other col-
+leagues who might make use of geographical informa-
+tion in his or her work. Health analysts were contacted
+via a local public health analysts networking group.
+Initial requirements elicitation involved only the
+academic users. Four unstructured interviews were
+conducted at the beginning of the project to gain
+background knowledge on working practices, user
+
+Prepare
+Storyboards
+
+Users
+
+Elicit
+scenarios
+
+Analyse
+expert
+Dialogue
+
+External
+agent
+
+Key
+
+Refine
+storyboards & 
+scenarios
+
+UI designs
+
+concepts
+
+Specify
+workflows
+
+Process
+
+sequence
+
+Specify
+Require
+ments
+
+Develop
+prototypes
+
+Evaluate
+prototypes
+
+User
+feedback
+
+Developers
+
+HCI principles
+& patterns 
+Information
+source
+
+Figure 1. Scenario-based design process, illustrated as a data flow diagram to show the sequence of activities in the
+design process.
+
+5
+
+preferences and domain norms. Interviews were con-
+ducted on site, allowing the epidemiologists to show
+us existing software they prefer to use, discuss their
+data management practices and allow us to view exam-
+ple datasets. Users were encouraged to talk aloud as
+they worked, prompted by questions from the analyst,
+to analyse workflows and the decision-making process
+in epidemiological research. These early interviews
+provided key insights into epidemiologists’ attitudes,
+which influenced the project direction:
+
+
+An early exploratory interview discussed the soft-
+ware tools used to carry out epidemiological
+research. A question about image and graph cre-
+ation software led to a discussion about epidemiol-
+ogists’ preference for numbers over images – they
+feel images can be ambiguous and open to inter-
+pretation, and prefer to see numbers in academic
+publications.
+
+Routine
+data
+collection
+and
+warehousing
+are
+becoming
+the
+norm
+within
+the
+NHS
+and
+Department of Health. The academic users had
+access to these data, and made use of them in
+hypothesis testing, but they were also interested in
+the idea of data-driven hypothesis generation and
+pattern identification.
+
+The academic epidemiologists were observed carry-
+ing out their research and in five weekly progress meet-
+ings. These observations helped to gather background
+knowledge, as well as understanding epidemiological
+language, research questions and workflows. A key
+orientation to explore requirements as research ques-
+tions was motivated by the Goals–Questions–Results
+method.29 Research questions elicited from academic
+users were used to create scenarios and use cases that
+envisioned a new system to support analysis, e.g.
+‘What are the characteristics of the GP (General
+Practitioners)-registered population in North West
+England?’ This scenario described how a user could
+explore a map of patients registered with PCTs in the
+North West, stratifying the population by location,
+gender and ethnicity. Scenarios were supplemented by
+analysis of the users’ language in interviews and meet-
+ings to develop an ontology describing the key compo-
+nents of epidemiological maps. Development of this
+ontology also informed the design of the query
+interface.
+Subsequently, interviews and workshops were held
+with both academic and health analyst users. Ten
+workshops were facilitated by the second author, seven
+with health analysts and three with academic users. A
+combination of scenarios, sketching and brainstorm-
+ing was used in the first workshops to generate design
+ideas. Scenarios, based on initial interviews, were used
+
+as ‘idea seeds’. For example, one scenario contained
+data that were too sparse to produce a statistically
+sound map so the data had to be aggregated into larger
+units. Storyboard sketches were prepared for each sce-
+nario; however, these were presented only after users
+had been given the opportunity to sketch ideas them-
+selves. In subsequent workshops more detailed story-
+boards and prototypes were presented, and discussed
+in ‘walkthroughs’ based on the scenarios. The analyst
+facilitated the walkthrough by explaining the opera-
+tional sequence then requesting feedback and sugges-
+tions for improvements from the users.
+
+Experience with user-centred design
+
+Preliminary analysis with academic epidemiologists
+created requirements for a system that supported
+querying datasets, statistical analyses of differences
+between populations and trends over time, which pro-
+duced displays of the retrieved results on maps and
+graphs with summaries of the statistical analyses. As
+the application had to serve two user communities, we
+investigated how the initial expert-orientated system
+might be used by analysts in the NHS, who had some
+appreciation of statistics but were not experts. The
+study aimed to find out how much of the functionality
+users were prepared to use if they did not have knowl-
+edge of the research-orientated workflows, familiar to
+the academic epidemiologists.
+The preliminary design used in paper prototyping is
+illustrated in Figure 2 (more detail on the prototypes
+can be viewed at www.youtube.com/watch?v=8EfSM9
+KG3Dg). This prototype was used in scenario walk-
+through sessions observing the users’ behaviour while
+they followed scenarios to answer relatively complex,
+realistic questions. The users were health analysts with
+varying degrees of experience. The requirements story-
+board walkthrough used several scenarios to assess
+health analyst users’ reactions to the prototype and,
+inter alia, the academic users’ mode of operation.
+Design of the scenarios was motivated by the need to
+encourage the users to explore functional requirements
+as well as investigating their domain-specific practices
+and workflows. For example, one scenario contained
+data that were too sparse to produce a statistically
+sound map so the data had to be aggregated into larger
+units. Another scenario asked users to interpret popu-
+lation densities in map regions according to the colour
+coding, in order to test awareness of the danger of
+drawing inferences from small samples. Areas that
+showed high levels of diabetes had very small popula-
+tions, making it impossible to confirm whether or not
+they were genuine hotspots.
+The workshops provided a good opportunity for
+both groups of users to articulate their processes and
+
+6
+
+Figure 2. Upper panel: paper prototype illustrating a map of a fictitious city including an apparent hotspot indicated by
+shading the distribution; lower panel: later concept demonstrator prototype, illustrating scripted query–results display
+sequences.
+
+7
+
+abstract concepts, and provided data for both develop-
+ment of an ontology and understanding of tacit work-
+flow processes, such as how the researchers make
+decisions about the reliability of a particular dataset.
+Scenarios facilitated exploring possible system designs
+as well as producing information on the users’ tasks
+and workflow. Several design representations were
+used, ranging from simple storyboards or paper proto-
+types, through scripted concept demonstrators to
+functional prototypes. Scripted concept demonstrators
+illustrated pre-set operational sequences within the
+look and feel of the prototype, although they were
+implemented
+as
+PowerPoint
+animations
+or
+in
+Macromedia Director. Prototypes were implemented
+in Microsoft Studio with Visual Basic. The various
+prototypes were used in combination with scenarios in
+task walkthroughs to explore how the software tool
+might support the steps in the user’s work.
+The users approved of the basic design concepts:
+multi-panel displays, query sliders coupled to dynami-
+cally updated displays and a high-level research ques-
+tion interface, rather than SQL-style queries. New
+requirements emerged for comparison between areas
+using two maps as well as complex association ques-
+tions between two or more variables, e.g. ‘What is the
+link between asthma and obesity?’ The health analysts
+used local geographic knowledge when interpreting
+maps and requested support for understanding the
+implications of local geography, for example adding
+overlays of the street network or adding point locations
+of schools or hospitals. However, these users’ actions
+did
+show
+potential
+errors
+in
+walkthroughs
+with
+expertise-probing scenarios. For example, the majority
+of users did not notice the data density problem asso-
+ciated with coloured regions; furthermore, only one
+user explored different boundary levels in order to
+examine the hotspot apparent on the map.
+The requirements analysis with academic epide-
+miologists and the investigations with health analysts
+were summarized in two workflows to reflect their
+respective practices (see Figure 3).
+Academic users progressed through cycles of check-
+ing and validation tasks to satisfy themselves that the
+patterns on map displays and accompanying statistical
+analysis would support valid conclusions, rather than
+being misled by hotspots in small areas, or by inap-
+propriate and sparse distributions. In contrast, health
+analysts had a much simpler workflow focused on
+inspection of results displayed on maps with limited
+use of statistical tests. They did not appear to be con-
+cerned with such validation steps; instead, they were
+more interested in exploring the implications of visible
+patterns on the map display.
+In summary, the results of the evaluation study
+pointed to three main conclusions:
+
+(i)
+Health
+analysts
+adopted
+different
+workflows
+from the academic epidemiologists. This reflects
+different research questions; for example, aca-
+demic epidemiologists are interested in finding
+general trends and causal influences between
+several variables, whereas the health analysts
+requested
+simpler,
+location-based
+questions
+reflecting their concerns with local health issues.
+(ii)
+Use of the statistics was often incomplete and
+sometimes even incorrect, depending on the
+level of statistical expertise. In particular, some
+health analyst users exhibited a ‘confirmation
+bias’, employing statistics that confirm rather
+than contradict their hypotheses. Some partici-
+pants did not engage in data analysis, assuming
+that the system would ‘know best’. As a result
+they could misinterpret data and draw incorrect
+conclusions (rationale gap).
+
+Q
+
+Academic Epidemiologist Workflow
+Academic Epidemiologist Workflow
+
+Select
+Dataset(s)
+
+Create
+Query
+
+Check
+Results
+Distribution
+
+Modify
+Ranges
+
+View
+Map
+Display
+
+Apply
+Statistical
+Tests
+
+Draw
+Conclusions
+Check
+Area
+Distributions
+Change
+Area
+Selections
+
+Health Analyst Workflow
+Health Analyst Workflow
+
+Select
+Dataset(s)
+
+Create
+Query
+
+Inspect
+Map
+Display
+
+Apply
+Statistical
+tests
+
+hotspots
+
+Conclusions
+
+Key
+
+Draw
+Conclusions
+
+Activity
+Sequence
+
+optional sequence
+
+Figure 3. Academic user and heath analyst workflows,
+illustrated as data flow diagrams to show major activities
+organized in a workflow sequence.
+
+8
+
+(iii)
+There was a need for more local geographical
+detail so that the health analysts could exploit
+their detailed local knowledge to interpret pat-
+terns apparent on the maps. For example, they
+were interested in plotting the locations of par-
+ticular services or amenities to see if these related
+to the occurrence or outcome of diseases.
+
+A statistics advisor component assisted health ana-
+lysts to query, evaluate and explore datasets, while a
+visualization expert component encoded the value
+ranges on map and graph displays to optimize pattern
+analysis. These advisors were motivated by the require-
+ment to caution against unsafe inferences being drawn
+from sparse or awkwardly distributed data in map dis-
+plays, and to save the users effort in choosing visual
+display coding. To bridge the rationale gap, we yoked
+the research questions and workflows to pre-set config-
+urations of displays. This design was also motivated by
+the display combination pattern, so users could view
+concurrent juxtaposed visualizations of maps and
+graphs, to encourage comprehension of the underlying
+data models.
+
+User interface design and implementation
+
+The workflows from the two user communities posed
+problems in how to allocate somewhat different sets of
+the requirements to each user community. Producing
+
+two versions of ADVISES would lead to maintenance
+concerns and incur the additional expense of duplicat-
+ing software processes. The solution adopted was to
+develop a layered architecture with a core functionality
+targeted at the health analyst users, with an outer layer
+of functionality for the academic users who required
+additional statistical analysis. Exposure of the func-
+tions was controlled by menu configuration on the user
+interface.
+Users form queries as high-level question types.
+Then, queries are elaborated by selecting one or more
+subject populations from the available datasets with
+variables such as age, gender, socio-demographics, life-
+style and medical history followed by the desired mea-
+sures, which are usually body mass index (BMI) and
+other obesity metrics. Queries are organized in menu-
+picking lists (see Figure 4), which can be combined
+with query-by-pointing to map areas and use of sliders
+to set value ranges; hence queries can be composed
+flexibly and iteratively. The location questions are ela-
+borated with specializations to create display overlays
+that support the health analysts’ desires to investigate
+local implications of hotspots, such as proximity to doc-
+tors’ surgeries, hospitals and schools.
+All queries can be constrained by map areas, and
+overlays selected for additional spatial data, e.g. point
+location of health centres or sports facilities. Query
+range sliders become active once the population and
+measures variables are selected (e.g. for age, the BMI
+
+1. Select Question Type
+2. Select Population Variables
+
+Comparison, Association
+Difference, Trend
+Location
+
+Gender
+Age (range)
+Socio-economic status
+Clinical history
+Occupation
+Physical attributes
+
+Body/Mass Index (BMI)
+Obesity
+
+Set  value range 
+Queries with sliders
+
+Change range splits
+by graph sliders
+
+3. Select Measures
+
+4. Choose area
+Constraint/ overlay
+
+key
+Area
+(Ward, SOA, Region)
+Proximity
+UI operation
+
+Associated 
+attributes
+
+Operational
+sequence
+
+Optional
+operation
+
+Figure 4. Query interface operational sequence. The sequence of user operations is shown by arrows with dotted arcs
+representing optional iterations in the sequence.
+
+9
+
+range). The display for the ‘check area density’ task in
+the current prototype is illustrated in Figure 5.
+The multi-panel display affords rapid data inspec-
+tion and exploration of epidemiology datasets, while
+colour and patterns in the charts indicate sparse and
+non-normal distributions when statistics analyses and
+other inferences may be invalid. Incremental analysis
+is supported by sliders for value-range queries, so ana-
+lysts can carry out sensitivity analysis by changing
+range values, e.g. inspect obesity by area by age.
+Range category histograms and descriptive statistics
+support the ‘check the data distribution’ task. Users
+can inspect the shape of the distribution and use skew
+and kurtosis metrics to check symmetry and normal-
+ity. They can segment a continuous distribution into
+discrete categories (e.g. extreme, high, medium or low
+BMI) using sliders to subdivide the range. This
+enables sensitivity analysis of range-category subdivi-
+sions to ensure that, for instance, distribution tails
+have sufficient data points for valid statistical analysis.
+Box-and-whisker plots30 are coupled to the map
+displays so the boxes represent distributions (means,
+confidence intervals) within map subareas. These
+plots support the ‘check area distributions’ task; for
+
+example, long and thin or short and fat boxes indicate
+sparse distributions with high standard deviations
+(long and thin) or high kurtosis (short and fat). The
+graphs and maps are coordinated and queryable sur-
+faces, so users can point and click on subareas of the
+map to express a location query. The multi-panel dis-
+play affords rapid data inspection and exploration of
+epidemiology datasets, while patterns in the charts
+indicate sparse and non-normal distributions when
+statistical analyses and other inferences may be invalid.
+
+Statistics advisor
+
+The aim of the statistics advisor is to warn health analyst
+users about sparse distributions where false inferences
+may be drawn from low numbers. However, there are
+occasions when looking at low numbers is unavoidable,
+for example when investigating a rare disease, so the
+advisors are configurable and can be turned off under
+user control. Some advice is given passively by high-
+lighting areas in the presentations that warrant atten-
+tion, with pop-ups to explain why attention is needed.
+A monitor alert function compares map area
+populations
+and
+densities
+(populations/area)
+and
+
+Figure 5. Prototype user interface showing the map–chart display combination for the ‘check area density’ task (For
+more detail see video demonstration at www.youtube.com/watch?v=RpMLGmQtRs4).
+
+10
+
+distribution statistics (standard deviation, skew, kurto-
+sis) to alert the user when any of these values exceeds
+a pre-set threshold. The figure or map area is high-
+lighted to warn the user. A pop-up containing the
+threshold value appears when the user’s mouse is
+placed over the figure/area. The alert reminds the user
+about properties of the underlying data distribution,
+and thus contributes to closing the rationale gap. As
+the validity of distribution depends on the nature of
+the dataset, the alert function is configurable so the
+rules can be edited to deal with general health (normal
+datasets) or rare events (disease epidemiology: non-
+normal datasets).
+
+Visualization advisor
+
+Design of the visualization advisor was motivated by
+the requirement to display more than one variable on a
+map. Visual coding requires psychological knowledge;
+however, the knowledge can be formalized so the
+expert advisor module automatically codes the range
+categories on the maps and graphs. Complex research
+questions may involve two or three variables, e.g.
+‘What is the distribution of type II diabetes and obesity
+for different levels of socio-economic deprivation in
+different areas of the North West health region?’ This
+association-location question implies visualization of
+the average density of diabetes patients and overweight
+people
+in
+each
+health
+district.
+Assuming
+range-
+category subdivisions by quintiles, the visual coding
+has to represent 5 3 3 coding combinations in any
+one area.
+HCI
+knowledge
+from
+the
+visualization
+litera-
+ture20,31,32 was applied to specification of an auto-
+mated visualization coding function. Shape and size
+was ruled out as this attribute was constrained by the
+map areas, e.g. different line sizes are not reliably dis-
+criminated and common area boundaries made this
+solution
+unworkable.
+Three-dimensional
+encoding
+(e.g. histogram bars on map areas) was avoided
+because of the occlusion problem, leaving colour and
+texture. Advice on colour coding favoured a single col-
+our saturation scale rather than rainbow spectrum
+codes.32 Guidance on texture coding was not so spe-
+cific, so we decided to use single texture density gradi-
+ents (e.g. dot stipples, bar density) rather than several
+different textures, to avoid imposing a learning burden
+on users.33 Two variables could be represented on one
+area, one by colour and the other by texture. As some
+colour–texture combinations produced discriminability
+problems, ends of the ranges could not be used; how-
+ever, this still left sufficient encodings to represent five
+or six range categories for each variable (see Figure 6).
+The visualization expert inspects metadata associ-
+ated with the dataset to determine whether the
+
+variable has a continuous distribution, is discrete or is
+an enumerated set. This indicates the number of cate-
+gories for each variable, so in the case of continuous
+distributions a default quintile range split is assumed.
+The visualization expert automatically selects the cod-
+ings, favouring colour if only one variable is displayed.
+When small map areas are present, a warning is given
+that discrimination of categories in small areas may
+not be reliable, as the texture gradients will not be easy
+to discriminate. Other elements of the design include
+an annotation tagger, which enables users to label and
+save results displays.
+
+Implementation
+
+The system was implemented in C# using MS
+Silverlight for graphics and animating map displays for
+trend questions so that successive displays gradually
+morphed into each other to enable users to see the
+trend change over time within different map areas. A
+distributed architecture was adopted and developed as
+a set of web services, with major class packages in the
+following functional areas:
+
+
+Dataset access: loads datasets from remote servers.
+
+Map display: loads shape files from the UK land
+registry
+server
+and
+displays
+maps
+using
+MS
+Charting libraries. Map displays can be overlaid so
+point data (e.g. location of health clinics, sports
+facilities) can be displayed at appropriate locations.
+
+Charts and statistics display: runs basic statistical
+analysis scripts (R script calls) then displays range
+split histograms, box-and-whisker plots, etc., using
+MS Charting.
+
+Dialogue management: handles the query interface,
+interactive query-by-pointing and sliders.
+
+Expert advisor: classes that implement the statistics
+and visualization experts, with dataset monitors to
+trigger advice.
+
+Map shape files, databases, query handling and sta-
+tistical analysis components were remote services;
+other components were client resident. However, it is
+worth noting that several functions were not imple-
+mented, in particular a set of configuration editors that
+would have made the ADVISES system into a porta-
+ble, flexible toolset that could be configured for differ-
+ent domains to support other scientific data-driven
+research
+requiring
+visualization,
+e.g.
+population
+dynamics researchers.
+
+Evaluation: prototypes and process
+
+The prototype was subject to three cycles of evaluation
+after
+the
+requirements
+exploration-design
+phase.
+
+11
+
+Round one was formative for usability debugging and
+design improvement while the second round was more
+summative in nature and captured users’ attitudes and
+satisfaction ratings for the prototype. In both rounds,
+users completed a representative set of tasks that
+enabled assessment of system performance. These
+tasks were to perform queries on epidemiology data-
+sets, display the results on maps and graphs then com-
+pare the geographic distribution of obesity in several
+healthcare areas. The latter task involved further inter-
+active query–display cycles using the sliders to perform
+a sensitivity analysis.
+During each round of the evaluation, all partici-
+pants (eight users: two academic epidemiologists and
+six health analysts) quickly and confidently created
+their first map and, without being asked to do so, went
+on to explore the map, looking at trends, subdividing
+data into smaller categories (e.g. males and females),
+switching between geographic boundaries, and then
+reviewing the associated statistics to help them under-
+stand the significance (or otherwise) of observed pat-
+terns. The users’ comments were coded as positive
+and negative and categorized as impressions, usability
+
+and attitude to future use, as illustrated in Table 1.
+The comments were very positive in both evaluations,
+although the total net positive comments were similar
+in both rounds. One reason for this was that users
+made different, new negative comments in round two
+after the problems perceived in round one had been
+fixed.
+Participants found the combination of geographic
+visualization and descriptive statistics powerful and
+easy to explore:
+
+I love stuff like this; it’s nice having the descriptive stats, when
+you put data into [commercial GIS package] it can be
+misleading.
+(Health analyst 3)
+
+It’s really easy to figure out; it’s at your fingertips.
+(Health analyst 4)
+
+After working through the set of tasks, users
+were asked about their experiences with the system.
+The majority felt that their experiences were positive,
+but
+some
+users
+felt
+that,
+although
+they
+had
+successfully created a map, the system was not
+welcoming:
+
+Figure 6. Visual encoding using red–green colour saturation and texture gradients.
+
+12
+
+It’s very blank and a bit unfriendly looking. Once the data is
+in it looks much better.
+(Health analyst 1)
+
+It’s not clear where to start; there should be a big ‘start here’ sign.
+(Health analyst 3)
+
+These comments led to additional design changes
+that were tested in the final prototype. The initial map
+design was evaluated, and the mixed reaction to the
+redesign led to additional changes, which were tested
+in the final round of evaluation. Thus, each round of
+the evaluation directly influenced the next iteration of
+design and development.
+In the final evaluation (four users: two health ana-
+lysts, two academic users) all tasks were completed
+successfully apart from minor difficulties in viewing
+statistics and adding point data on maps. The users’
+rating of the system on a range of qualities was highly
+positive; see Table 2.
+Comments were also positive apart from some diffi-
+culties relating to features added after round two
+(point data on maps) such as controls for turning the
+display of leisure facilities on and off, although users
+liked the effect:
+
+It’s useful, I’d use schools. I’d like bus routes too.
+
+It’d be useful to use this to look at hospital provision.
+(Health analyst 3, 6)
+
+Other comments were positive with suggestions for
+further improvements, demonstrating that develop-
+ment needs to be a continuous process:
+
+I enjoyed using the system; it’s useful, but it needs titles.
+
+I like having two maps side by side, the two colours and dots,
+it’s OK, but a bit crazy, like crazy ladybirds.
+
+I’d like to be able to hide the descriptive statistics so you can see
+the map bigger.
+
+I could use this in my job, but it’d be more useful if I could export
+the map as a jpeg. The map and legends, and the forest plot.
+(Health analyst 2, 4, 5, 6)
+
+The current state of ADVISES is that roll-out of
+the product version is currently under way in a pro-
+gramme managed by Northwest e-Health funded by
+the North West Development Agency to promote col-
+laboration between the University of Manchester and
+NHS Trusts in the North West of England. This ini-
+tiative provides evidence that our approach to user
+engagement is appropriate, as our users are prepared
+to sponsor the final development of the prototype; this
+involves re-engineering some of the code to increase
+robustness and reliability as well as implementing the
+code in the users’ software environment.
+Of the techniques we employed, the combination of
+storyboards, scenarios and prototypes integrated in a
+UCD
+cycle
+was
+the
+key
+to
+user
+engagement.
+Visualization of realistic design enables users to critique
+and contribute ideas in their own terms without having
+to understand software engineering notations. Our
+experience has been that even simple notations such as
+use cases present a barrier to understanding; further-
+more, abstract models are less meaningful for users.
+The second reflection is the importance of conversation
+and dialogue, especially when it is anchored in the user’s
+domain and language. Talking through and demonstrat-
+ing working practices are important motivators for end
+users. In workshops, conversations have the added
+advantage that users outnumber software professionals,
+
+Table 1. Summary of participants’ responses.
+
+Round one responses
+Round two responses
+
+Positive
+Negative
+Positive
+Negative
+
+First impressions of the system?
+5
+3
+6
+2
+System easy to understand?
+7
+1
+7
+1
+Enjoy using the system?
+8
+0
+8
+1
+Would you use the system in your job?
+7
+1
+5 (2 possibly)
+1
+Total net positive comments
+22
+23
+
+Interviews were transcribed and the participants’ answers coded as positive, negative or neutral. Total net positive comments were
+calculated by summing all positive comments, subtracting negative comments, and scoring ‘possible’ as 0.5 positive.
+
+Table 2. Users’ rating of system qualities in the final
+(round three) evaluation, where 1 = very poor and
+7 = ideal.
+
+Question
+Average rating
+
+Overall terrible/wonderful
+6
+Difficult/easy to understand
+5.7
+Frustrating/satisfying to use
+5.5
+Dull/stimulating
+6.5
+Rigid/flexible
+5.5
+Difficult/easy to navigate
+6
+
+13
+
+and hence have more chance to ‘own’ the dialogue and
+thus direct it towards their own goals.
+
+Discussion
+
+The contribution of ADVISES visualization design has
+been to explore multiple concurrent views of maps and
+graphs to provide flexible support for both health ana-
+lysts and academic epidemiologists. Multiple displays
+enable different users to scan the maps and graphs
+according to their needs, and hence different workflows
+can be accommodated without changing the display.
+Linking research questions to display templates sup-
+ports the users’ workflow more directly, by providing all
+the necessary information related to the question and
+users’ analysis tasks. Although concurrent multi-panel
+displays may appear to increase complexity, none of our
+users complained about the displays being too complex.
+While multiple concurrent visualizations are provided
+by GIS systems and commercial products which have
+evolved from Shneiderman’s research,19,34 our contribu-
+tion has been to integrate dynamic querying with GIS
+as well as introducing high-level ‘questions’ interfaces.
+The design has adapted design concepts in the Lifelines
+visualizations,21,35 and extended interactive visualization
+for spatial as well as temporal data analysis. Map visuali-
+zations with colour-coded maps and inter-variable rela-
+tional links similar to those of Shneiderman and Aris26
+
+have been developed for cancer research,36 although this
+application did not implement dynamic querying and
+colour coding was manual rather than automated as in
+ADVISES.
+Although the elements (graphics, maps, query sli-
+ders) of the ADVISES interface in isolation were not
+new, their integration in a practical solution was. The
+success of ADVISES in migrating towards a product,
+sponsored by the NHS user organization, demon-
+strates the effectiveness of our approach. ADVISES
+shared many design features with the Pennsylvania
+Cancer Atlas: both systems have map displays, tem-
+poral animations and multiple graphical displays;
+although only ADVISES implemented sliders for
+dynamic ‘what if?’ queries, and expert advisors are a
+testament to its HCI design heritage. However, the
+Cancer Atlas did have a population pyramid graph for
+epidemiology analysis, which appears to be an omis-
+sion from ADVISES. Bhowmick et al.16 report a set of
+design guidelines from their experience, including
+interactive queries and multiple displays. The conver-
+gence of the two systems may have been the conse-
+quence of a similar UCD process. The Pennsylvania
+Cancer Atlas team carried out three rounds of proto-
+typing and evaluation, although they did not report
+using storyboards or scenarios.
+
+The mix of designer-led initiative and responding to
+changes in user requirements worked well. The basic
+design paradigm of multiple displays and dynamically
+coupled queries and displays introduced research-
+inspired design into health informatics tools. These
+design concepts stimulated interest, and hence engage-
+ment, among the users. The expert advisor modules,
+which were a designer initiative in response to prob-
+lems discovered during the requirements analysis, were
+not seen as an imposition by the users, as they might
+have been; for instance, the statistics advisor might be
+viewed as criticizing users’ judgement. We attribute
+user acceptance of these ideas to the process of engage-
+ment where the problems and proposed solutions were
+discussed openly with the users and illustrated in story-
+boards and prototypes so that the design implications
+were explicit. On the user-led requirements side, sev-
+eral aspects of the design arose directly from users’
+suggestions: for example, the two maps comparative
+displays, changes to the forest plots, and functions for
+subdividing continuous distributions into range cate-
+gories. Iterative UCD made the changes in response to
+users’ requests visible in a short time period, which
+was a positive motivation for engagement. Design, or
+more realistically emergent transformation of working
+practices, evolved throughout the process as users
+responded to presentations of the tools, and tools and
+tasks co-evolved during the project.
+The design process we adopted was inspired by
+HCI patterns,37 for example the multi-panel display
+affords quick visual scanning, while the alpha slider
+yoked query and display is a well-known design in the
+visualization community. Clearly many visualization
+patterns could be articulated from knowledge pro-
+duced
+by
+the
+visualization
+research
+commu-
+nity;20,26,31,32,38 however, such knowledge does not
+appear to have been encapsulated in HCI patterns.
+One barrier may be the link between the problem con-
+text, usually expressed as tasks or scenario, and visua-
+lization design. One future area of work may be to
+generalize our experience by documenting concrete
+scenarios, more general queries intended to map to
+information search scenarios, and appropriate visuali-
+zation designs as patterns. Generic task and visualiza-
+tion
+design
+frameworks39,40
+could
+organize
+such
+patterns into a pattern language.
+The visualization tools we produced are not as gen-
+eric as automated visual user interface development
+tools; however, we believe the combination of high-
+level questions linked to appropriate display templates
+provided a generalizable approach to visualization
+design. Although the visualization design was not par-
+ticularly novel, the high-level query interface with
+question types such as ‘trend’, ‘association’ and ‘dif-
+ference’ was more innovative. Our implementation
+
+14
+
+linked to each question type with pre-set combinations
+of charts and maps, such as trend being linked to a
+series of maps for time-based queries. In future work
+we intend to adapt a more plan-based approach41 to
+dynamic configuration of visual displays linked to
+more flexible question types. Development of auto-
+matic visual coding of variables represents a modest
+advance in design of automated visualization tools,
+which could be extended to coding a wider range of
+data types. The visual coding using colour and texture
+has been explored by others,33,38 although texture was
+used to code separate categories rather than categories
+based on partitioning variable ranges. However, we
+believe that users should be able to maintain control
+over visualization design, so our approach has been to
+develop configurable tools rather than sophisticated
+layout planners.
+The user-centred approach adopted in ADVISES
+shared iterative cycles of storyboards, prototyping and
+user evaluation with the web application for obesity
+management reported by Stevens et al.,18 who note
+the importance of using early prototypes to clarify
+design ideas, while acknowledging the importance of
+experts in contributing to system models. We also
+found that the expert role was essential to ensure a sta-
+tistically correct analytic process. The combination of
+techniques in a user-centred approach combined with
+active user involvement also facilitated acceptance of
+new working practices, similar to the experience of
+Beuscart-Zephir et al.,17 in re-engineering workflows
+in a medication management application. We also con-
+cur with their findings that developers and human fac-
+tors experts need in-depth understanding of the
+domain to realize effective process redesign.
+Our users responded positively to their involvement
+in the design process; however, time was the main bar-
+rier to more in-depth participation. The academic
+users were busy but at least co-located in the univer-
+sity so arranging requirements analysis sessions was
+relatively easy. In contrast, access to the health analysts
+on various sites around Manchester was more difficult.
+The academic users were engaged in the design pro-
+cess more positively and articulated specific require-
+ments, such as the need for a ‘statistics advisor’
+function as well as design details concerning layout
+and format of graphical displays. Health analysts were
+less directly engaged and made fewer design sugges-
+tions, although they did contribute ideas for the map
+and graphical layouts. Generally, the health analysts
+preferred simpler user interfaces, whereas the aca-
+demic users wanted more functions and complexity.
+On reflection, the lower levels of participation of the
+health analysts may have been due to lower frequen-
+cies of visits and meetings, although there may also
+have been a reaction to the design ownership being
+
+perceived as being ‘too academic’. In future we recom-
+mend targeting designs on specific users rather than
+trying to adopt a ‘one size fits all’ solution.
+Our workshop-orientated approach, with a technique
+combination of storyboards, scenarios and prototypes,
+was successful; however, some key decisions, such as
+inclusion of the statistics advisor, reflected the interests
+of the academic users rather than the health analysts.
+Geographic and organizational separation of the two
+user groups led to a ‘two-track’ approach that militated
+against joint workshops and hence discussion to recon-
+cile divergent stakeholder
+views. The user-centred
+approach shared iterative cycles of storyboards, proto-
+typing and user evaluation with the web application for
+obesity management reported by Stevens et al.,18 who
+noted the importance of using early prototypes to clarify
+design ideas, while acknowledging the importance of
+experts in contributing to system models. We also found
+that the expert role was essential to ensure a statistically
+correct analytical process. The combination of tech-
+niques in a user-centred approach combined with active
+user involvement also facilitated acceptance of new
+working practices, similar to the experience of Beuscart-
+Zephir et al.17, in re-engineering workflows in a medica-
+tion management application. We also concur with their
+findings that developers and human factors experts
+need in-depth understanding of the domain to realise
+effective process redesign.
+The visualization design, while it satisfied the users,
+was not innovative and was disappointing for academic
+members of the design team who wanted to suggest
+more
+adventurous
+visualizations
+using
+three-
+dimensional and multiple-view design (e.g. refs 22, 23)
+and more complex query interfaces. More advanced
+visualizations were suggested and rapidly rejected by
+the academic epidemiologists, who had firm views that
+the visualization should be based on simple maps and
+charts. Although the designers were frustrated in their
+initial ambitions, the multi-panel, query slider proto-
+types were accepted as a considerable advance over the
+commercially available GIS packages with separate
+charts and maps. Our experience reflects the difficulty
+in transferring advanced visualization research into
+practice. One interpretation is that practical visualiza-
+tion design needs to be driven by thorough require-
+ments analysis and user participation, as exemplified by
+our approach; an alternative interpretation is that
+advanced visualization design needs to be introduced
+incrementally as users learn to exploit the potential of
+more advanced designs. Our experience also demon-
+strates that innovation in visualization design may con-
+flict with more conservative user preferences, raising an
+interesting question about how far designers should go
+in promoting their ideas on the one hand, or serving
+the interests of users on the other.
+
+15
+
+The vision of Internet-based e-health support tools
+we started with was tempered by the practical con-
+straints of implementing distributed services; however,
+we contend it was better to have succeeded in deliver-
+ing a more localized solution that was valued by stake-
+holders than a more ambitious, distributed solution
+that might have failed. Indeed, the track record of
+innovative solutions in e-science is uneven, with suc-
+cess in coordinated communities but failure in areas
+with divergent stakeholder interests.42 In our experi-
+ence, investing in user engagement paid off in accep-
+tance of a limited but effective solution, but scaling
+this approach to coordinate interests of multiple dis-
+tributed stakeholders is difficult. A common shared
+interest may be the prerequisite for success of multi-
+party Internet collaborative e-science.
+In future work we will extend the statistics advisor
+as a more proactive recommender system that suggests
+appropriate algorithms to complement statistical anal-
+ysis; for example, in spatial representation of disease
+data when questions of proximity, gradient over space
+and density are important, smoothing algorithms can
+be applied to mitigate problems of uneven spatial dis-
+tributions.43 LifeLine visualizations21,35 will be inte-
+grated with maps for trend questions and we intend to
+explore the use of maps with semantic substrate visua-
+lizations26 for more complicated associative queries
+and bridging the rationale gap. Contextual evaluations
+in users’ workplaces will explore the fit of the
+ADVISES architecture with the working practices of
+diverse stakeholders to deliver effective support for
+health informatics. We also intend to make the
+ADVISES tools a shared e-science resource so the abil-
+ities and insights of both health analysts and academic
+researchers in epidemiology can be combined to inves-
+tigate both country-wide and local perspectives on epi-
+demiological problems. This will require implementing
+configuration editors so end users can customize the
+tools for different databases, query terminology and
+layout of different combinations of (map, charts,
+tables, etc.) displays. Integration of such configuration
+tools presents a considerable future challenge to realize
+an end-user scientific visualization toolkit.

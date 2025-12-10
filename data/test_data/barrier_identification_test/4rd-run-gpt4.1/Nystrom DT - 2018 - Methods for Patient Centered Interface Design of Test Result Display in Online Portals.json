@@ -1,0 +1,15 @@
+{
+  "file_name": "Nystrom DT - 2018 - Methods for Patient Centered Interface Design of Test Result Display in Online Portals.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The design team used a semi-structured process without a strict schedule for testing and interface improvements, trading experimental rigor for speed.",
+      "justification": "This resource/process limitation hindered the ability to conduct systematic, rigorous evaluation and iteration, potentially affecting the integration of feedback and the thoroughness of design refinement.",
+      "reference_excerpt": "In the current study, we chose to implement a semi-structured design process that refrained from using a strict schedule to determine when to begin testing and making interface improvements during the design of the interface. This methodology increased the speed at which the interface could be produced at the cost of rigorous experimental design.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

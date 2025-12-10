@@ -1,0 +1,410 @@
+Caregiver and Health Care Provider Perspectives on Cloud-
+Based Shared Care Plans for Children With Medical Complexity
+
+Arti D. Desai, MD, MSPHa,b, Elizabeth A. Jacob-Files, MA, MPHb, Julia Wignall, MAb, Grace 
+Wangc, Wanda Pratt, PhDd, Rita Mangione-Smith, MD, MPHa,b, Maria T. Britto, MD, MPHe
+
+aDepartment of Pediatrics, University of Washington, Seattle, Washington
+
+bSeattle, Children’s Research, Institute, Seattle, Washington
+
+cUndergraduate Research Program, University of Washington, Seattle, Washington
+
+dDepartment of Biomedical and Health Informatics, The Information School
+
+eCincinnati Children’s Hospital Medical Center, Cincinnati, Ohio
+
+Abstract
+
+OBJECTIVES: Shared care plans play an essential role in coordinating care across health care 
+providers and settings for children with medical complexity (CMC). However, existing care plans 
+often lack shared ownership, are out-of-date, and lack universal accessibility. In this study, we 
+aimed to establish requirements for shared care plans to meet the information needs of caregivers 
+and providers and to mitigate current information barriers when caring for CMC.
+
+METHODS: We followed a user-centered design methodology and conducted in-depth 
+semistructured interviews with caregivers and providers of CMC who receive care at a tertiary care 
+children’s hospital. We applied inductive, thematic analysis to identify salient themes. Analysis 
+occurred concurrently with data collection; therefore, the interview guide was iteratively revised as 
+new questions and themes emerged.
+
+RESULTS: Interviews were conducted with 17 caregivers and 22 providers. On the basis of 
+participant perspectives, we identified 4 requirements for shared care plans that would help meet 
+information needs and mitigate current information barriers when caring for CMC. These 
+requirements included the following: (1) supporting the accessibility of care plans from multiple 
+locations (eg, cloud-based) and from multiple devices, with alert and search features; (2) ensuring 
+the organization is tailored to the specific user; (3) including collaborative functionality such as 
+real-time, multiuser content management and secure messaging; and (4) storing care plans on a 
+secure platform with caregiver-controlled permission settings.
+
+Address correspondence to Arti D. Desai, MD, MSPH, Department of Pediatrics, University of Washington, 2001 Eighth Ave, Suite 
+400, M/S CW8-5, PO Box 5371, Seattle, WA 98145-5005. arti.desai@seattlechildrens.org. 
+FINANCIAL DISCLOSURE: The authors have indicated they have no financial relationships relevant to this article to disclose.
+
+POTENTIAL CONFLICT OF INTEREST: The authors have indicated they have no potential conflicts of interest to disclose.
+Dr Desai conceptualized and designed the study, collected data, participated in data analysis, and drafted the initial manuscript;Ms 
+Jacob-Files and Ms Wignall collected data and participated in data analysis; Ms Wang participated in data analysis; Drs Pratt, 
+Mangione-Smith, and Britto participated in the design of the study; and all authors reviewed and revised the manuscript, approved the 
+final manuscript as submitted, and agree to be accountable for all aspects of the work
+
+HHS Public Access
+Author manuscript
+
+Published in final edited form as:
+Hosp Pediatr. 2018 July ; 8(7): 394–403. doi:10.1542/hpeds.2017-0242.
+
+CONCLUSIONS: Although further studies are needed to understand the optimal design and 
+implementation strategies, shared care plans that meet these specified requirements could mitigate 
+perceived information barriers and improve care for CMC.
+
+Care coordination is a critical function of high-quality health systems to meet the health 
+service and information needs of patients and families.1–3 This function is particularly 
+important for children with medical complexity (CMC), who on average receive care from 
+13 outpatient health care providers representing 6 distinct subspecialties.4 A central 
+component of care coordination is a multidisciplinary shared care plan.5–7 A care plan is a 
+single, comprehensive tool containing the child’s pertinent medical history, medication list, 
+appointments, goals of care, and action items that is developed in partnership with families 
+and providers.8 These care plans have the potential to strengthen family-provider 
+relationships, enhance communication, and improve child health outcomes.8 Furthermore, as 
+components of multifaceted interventions, care plans have been associated with high-quality 
+care experiences and improved patient-reported outcomes in pediatric and adult populations.
+9
+
+Care plans are typically in paper format and are created by using standardized templates, 
+taking the form of loose sheets of paper, notebooks, binders, or documents scanned into the 
+electronic medical record.8,10–12 Researchers in qualitative studies explored the use of care 
+plans by CMC families, and providers highlighted several limitations in their design and 
+implementation that impede routine use.10,11,13 These limitations include a lack of shared 
+ownership, difficulty modifying them in real time, and a lack of universal accessibility from 
+various devices. Cloud-based care plans (ie, care plans that are stored online and are 
+available to users on demand via the Internet) may provide an efficient platform to support 
+their adaptability and accessibility in real time.14–18 However, little is known in terms of 
+how families and providers perceive information sharing in the cloud and how they would 
+define a cloud-based platform. Furthermore, there is a paucity of evidence that demonstrates 
+how families and providers would initiate, review, update, and share these care plans across 
+settings to facilitate care coordination.17–21
+
+To provide such evidence, we used user-centered design as an innovative approach, both to 
+understand the optimal design and implementation strategies for shared care plans and to 
+ensure that they are consistent with the needs, constraints, and previous experiences of 
+relevant stakeholders.19,22–26 Through a user-centered design process, stakeholders are 
+actively engaged in iterative cycles of developing new technologies by doing the following: 
+(1) identifying their needs and establishing requirements for the technology, (2) developing 
+designs, (3) building interactive versions of the designs, and (4) evaluating designs.27 In this 
+study, we aimed to conduct the first step of the user-centered design process by 
+understanding the needs of caregivers (parents or legal guardians) and health care providers 
+who care for CMC and to establish requirements for shared care plans that would mitigate 
+current barriers to meeting these information needs.
+
+Desai et al.
+Page 2
+
+METHODS
+
+Study Design and Population
+
+Consistent with user-centered design methodology, we used pragmatic inquiry to meet the 
+study objectives. Pragmatic inquiry involves eliciting perspectives of diverse stakeholders on 
+the basis of real-world experiences to guide future interventions and action.28 Such an 
+approach is commonly used as the first step in the user-centered design process to identify 
+the needs and requirements of relevant stakeholders.
+
+We recruited English-speaking caregivers and providers of CMC 0 to 18 years of age who 
+were hospitalized at a tertiary care children’s hospital between March 2016 and November 
+2016. We identified CMC using a flag in the child’s medical record that is based on 
+predefined criteria developed by the institution. Trained research staff approached eligible 
+caregivers during the child’s hospitalization using a standardized recruitment protocol. We 
+recruited providers (eg, emergency department [ED] providers, primary care providers 
+[PCPs]) caring for CMC enrolled in the study using a standard e-mail template. We 
+intentionally did not interview individuals with expertise in clinical informatics or 
+information security at this stage because our aim in this study was to foster an open palate 
+of ideas to meet caregiver and provider needs, rather than understand the feasibility of these 
+ideas within current health information systems.
+
+We used purposive sampling, a qualitative strategy to recruit eligible participants on the 
+basis of their demographic characteristics to maximize participant diversity and the range of 
+perspectives. As data analysis progressed, we also used theoretical sampling to recruit 
+different types of providers (eg, subspecialists, nursing staff) as new questions or areas of 
+exploration emerged from the study findings.29 We recruited and enrolled caregivers and 
+providers until the research team deemed that a diverse array of perspectives was obtained, 
+and well-defined themes emerged from the analysis.
+
+Data Collection
+
+In-depth, semistructured interviews led by 1 of 3 research team members (A.D.D., E.A.J-F., 
+and J.W.) were conducted either in the child’s hospital room, child’s home, a private hospital 
+meeting room, provider’s office, or by telephone for participants who were not local at the 
+time of the interview. Interviews lasted ~1 hour, were audio recorded, and transcribed. We 
+used open-ended questions and probes to elicit caregiver and provider experiences with 
+current health information processes and their perspectives on existing care plans and cloud-
+based care plans (Supplemental Information). Participants were also asked to draw designs 
+of their recommendations for these care plans. We revised interview guides weekly as new 
+themes and areas of inquiry emerged from the data analysis. Participants completed a 
+demographic survey after the interview and were provided a $100 gift card.
+
+All study procedures were approved by the Seattle Children’s Hospital Institutional Review 
+Board.
+
+Desai et al.
+Page 3
+
+Data Analysis
+
+We used applied thematic analysis, a process that is used to identify the main ideas from 
+participant responses, combine similar ideas into themes, and organize these themes into 
+actionable strategies that may be useful for solving practical problems.30 To identify main 
+ideas from interview transcripts, 3 authors (A.D.D., E.A.J-F., and J.W.) first read each 
+transcript in its entirety to gain insights into broad concepts. Next, at least 1 of these authors 
+reread each transcript, highlighted excerpts, and applied codes to each idea in the excerpt. 
+Each transcript was then reviewed by at least 1 of the other authors, and additional codes 
+were applied to each excerpt if needed. During weekly meetings throughout the data 
+collection period, these 3 authors initially reviewed codes, resolved coding questions, and 
+developed a codebook. As interviews, analysis, and codebook development progressed, 
+weekly meetings were focused on combining codes into themes and organizing themes into 
+categories. Data analysis was facilitated by using Dedoose version 7.0.23 qualitative 
+software.31
+
+RESULTS
+
+Demographics
+
+The study sample consisted of 17 caregivers and 22 providers. In Table 1, we outline 
+demographic characteristics of the participants. Demographic characteristics of children are 
+presented in Supplemental Table 5.
+
+Overview of Study Findings
+
+We organized the themes we identified into 3 main categories: (1) information needs when 
+caring for CMC, (2) barriers to meeting these information needs in the current system, and 
+(3) requirements for care plans to meet the information needs of all stakeholders and to 
+mitigate barriers. Regarding information needs, caregivers and providers noted that 
+information should be centralized, timely, consistent, and helpful when caring for CMC 
+(Table 2). Participants also highlighted several barriers that currently exist to meeting these 
+needs (Table 2). On the basis of these perceived needs and barriers, we identified 4 
+requirements for care plans that could help to meet needs and mitigate barriers: accessible, 
+user-centered, collaborative, and secure. Each requirement is presented in more detail below, 
+with illustrative quotes used to highlight similarities and differences in perceptions between 
+caregivers and providers in Table 3.
+
+Requirement 1: Accessible
+
+Caregiver number 6 said: “If there’s a way to tie it all in with the computer system, where a 
+parent could say, ‘He’s got a care plan. He’s got a special pre-op protocol that needs to be 
+followed.’ They could go, ‘Look. You’ve got a red flag here.’ Quick. Boom. It pops up”
+
+A key requirement for care plans is ensuring quick accessibility wherever and whenever 
+users (ie, caregivers or providers) need it. For where they need it, participants were open to 
+accessing a care plan in the cloud because this would provide a single version of the care 
+plan that was available in a centralized location regardless of where the child was receiving 
+care (ie, a “universal porta” They suggested that a cloud-based care plan should be affiliated 
+
+Desai et al.
+Page 4
+
+with a hospital system (as opposed to a personal cloud-based health record) to enhance 
+trustworthiness of information within the care plan. Hospital providers (inpatient or ED) 
+strongly recommended that any care plan should be linked through the hospital electronic 
+health record (EHR) to find information in a timely manner; however, the document does not 
+need to “live” within the EHR. Participants also request that care plans be electronically 
+accessible on multiple devices (eg, computer, smartphone). This would mitigate barriers of 
+paper copies “getting lost in the shuffle.” For example, caregivers could share the care plan 
+through an app on their smartphone to avoid the frustration of repetitively sharing their 
+child’s health history. In addition, caregivers noted that care plans must have download and 
+print capabilities in case an Internet connection was unavailable or for users without 
+smartphones.
+
+For when they need it, providers recommended that care plans be available before any health 
+care encounter, so they would have time to familiarize themselves with the child’s unique 
+care needs to efficiently guide the encounter. This feature would alleviate the burden on 
+caregivers to be the “on-call historian.” Participants suggested that electronic alert features 
+could help meet this goal. For example, outpatient follow-up providers could receive an alert 
+when a discharge summary is available to prepare for the follow-up visit. Participants also 
+noted users should have customizable alert settings to avoid “alert fatigue.”
+
+Participants emphasized that information they would like to share or find “in the moment” 
+must be easily retrievable within the care plan. This requirement would alleviate the burden 
+on caregivers to remember all of their child’s health information and prevent providers from 
+having to “dig through” multiple folders or documents. Participants requested a robust 
+search function to help meet this goal. This would give users the “10 000 ft view” (eg, 
+problem list) and allow them to quickly find details regarding a particular event, action plan, 
+or medication change without having to open multiple programs, tabs, screens, or notes.
+
+Requirement 2: User-centered
+
+In the very front, executive summary, boom. That’s right here, and all this other 
+stuff is behind the scenes. If somebody needs that, which they do, it’s just not me, 
+they can have all that stuff. But what I need, when its emergent, is right here in 
+front of me…the three things I got to worry about…this kid is different from a 
+normal kid because of this, this, and this. –ED provider 3
+
+Participants noted that care plans should contain content relevant to their particular role, and 
+the content should be organized in a manner that addresses the user’s specific needs. This 
+requirement would enable users to quickly retrieve the information they need to efficiently 
+care for the child. The formatting adaptability of an electronic care plan would meet this 
+requirement, in which the interface would differ on the basis of the user’s role, although the 
+back-end data infrastructure would remain the same. In Fig 1, we present 2 examples of 
+content a caregiver and provider would prefer to have in a care plan and how they would 
+organize it. The content in Fig 1 was representative of the main areas discussed by the 
+majority of participants. Participants also discussed how they would prioritize different types 
+of content given time constraints and how they would use layers via hyperlinks or tabs to 
+access lower priority content.
+
+Desai et al.
+Page 5
+
+Requirement 3: Collaborative
+
+If there was truly a shared, live, active care plan, and all of the docs involved in his 
+care could contribute to a running care plan, that would be amazing. But it needs to 
+be easy for everyone to use because it takes time to do this kind of updating, time to 
+document what conversations happened and have it be accurate so that it’s useful. –
+Primary care provider 6
+
+We identified collaboration among care team members as a key requirement to generate and 
+maintain information within a care plan. Collaboration was perceived to promote 
+trustworthiness of the care plan because multiple care team members could provide content 
+related to their area of expertise and review the content for accuracy. Participants 
+emphasized that care plans stored in the cloud would make a collaborative model feasible 
+because multiple care team members could share the responsibility of routinely updating the 
+care plan in real time. Role clarity among care team members and effective communication 
+were identified as 2 key features of a collaborative model for care plans.
+
+To meet the need of having consistent information across care team members and settings, 
+we identified 3 key roles: a team leader, contributors, and the health information technology 
+(HIT) system (Table 4). For “team leader,” respondents expressed different opinions about 
+which care team member(s) should fulfill this role. However, there was a general consensus 
+that the team leader(s) should have expertise in complex care, understand the 10 000 ft view, 
+and have frequent interactions with the child. The team leader(s) should be clearly identified 
+at all times, and selecting the team leader should be a shared decision between caregivers 
+and providers based on the individual or team that best meets these characteristics. For the 
+role of contributors, caregivers and providers were unified in their perspective of which care 
+team members should fulfill this role because these would be individuals who “own” 
+specific aspects of the child’s care (eg, subspecialists, care coordinators, caregivers, etc). 
+Participants also highlighted that the HIT system serves an important role in maintaining an 
+updated and accurate care plan through seamless data transfer functionality (eg, auto-
+population) and user reminders to review or update information.
+
+A collaborative model for care plans also requires seamless communication between care 
+team members. Therefore, participants recommended that any care plan should contain a 
+secure messaging system to enable care team members to ask questions, clarify the rationale 
+behind decisions, or resolve conflicting information within the care plan. This could serve as 
+a “mini virtual care conference” in real time, which caregivers highlighted would help team 
+members “get on the same page” about their child’s evolving care plan. This would also 
+decrease the burden on caregivers to constantly relay information between providers and 
+allow interprovider conversations to occur at convenient times. For example, PCPs could 
+receive a message from the inpatient team about a discharged patient, rather than a receiving 
+a call in between scheduled patient visits. However, some participants noted that a 
+messaging system should not replace discussions for urgent matters or for complex issues 
+that need to occur by telephone. Finally, a conversation log would provide a historical record 
+if similar questions or clarifications surfaced in the future.
+
+Desai et al.
+Page 6
+
+Requirement 4: Secure
+
+They obviously want security, but ultimately what they want is good care for their 
+child, and if one had to be sacrificed, I think they would sacrifice security versus 
+the care and care coordination. –Subspecialist, provider 14
+
+The last requirement we identified for care plans was storing them on a secure electronic 
+platform with strict permission controls. Participants discussed the balance between 
+maximizing security and ease of access, with most respondents preferring easier access to 
+information rather than a time-intensive login process. Some trusted that any platform 
+developed by the health care system would have sufficient security (eg, Health Insurance 
+Portability and Accountability Act [HIPAA] compliance), assuming the development of 
+electronic care plans would follow similar security protocols as current EHRs. Participants 
+prioritized emergency care information accessibility over security because this information 
+should be readily available to emergency providers (eg, first responders, school nurses, ED 
+providers). Finally, participants felt having a tracking system of when and where users are 
+accessing care plans would be important to enhance accountability.
+
+Participants felt that caregivers should control permission settings in terms of who can view 
+and modify the care plan. Access could be granted to teams or institutions in which all 
+providers within that team and/or institution would have access to the care plan. However, 
+this should include an exception feature if caregivers want to exclude specific providers. 
+Caregivers also noted that permission controls should be specific to different sections of the 
+care plan based on the user’s relationship with the child. Additionally, different permission 
+settings could be set for the user’s ability to edit, comment, view, download, or share 
+information.
+
+DISCUSSION
+
+In this study, we describe how electronic care plans that are stored in the cloud may meet the 
+information needs of caregivers and providers who care for CMC and mitigate perceived 
+information barriers that exist in our current health information systems. Using a user-
+centered design approach, we identified 4 care plan requirements (accessible, user-centered, 
+collaborative, and secure) that can be met with a cloud-based solution. We synthesized 
+caregiver and provider recommendations into concrete actionable design features and 
+implementation strategies that may be tested in future phases of the user-centered design 
+process.
+
+With the findings in this study, we introduce the idea of a cloud-based solution to mitigate 
+barriers relating to lack of universal accessibility and information inconsistency across 
+multiple users and settings. These barriers have been noted in studies in which researchers 
+have examined the information needs of CMC, which suggest that a centralized, electronic 
+care plan may be beneficial.10,11,13,32 Given that most people are now connected to the 
+Internet via mobile phones, cloud-based care plans would enable users to access, share, and 
+update care plans instantaneously as needed.33 In a few studies, researchers have explored 
+the idea of Web-based care plans for specific pediatric populations and within specific care 
+settings.18,19,21 We add to this existing body of work by explicitly detailing requirements for 
+
+Desai et al.
+Page 7
+
+cloud-based care plans, such as having access via mobile devices, personal computers, and 
+through links in the EHR. Given functional limitations of existing EHRs, cloud-based care 
+plans may need to live outside of the EHR. It is suggested in our findings that health care 
+providers would be willing to access an external platform if the benefits of accessing it (eg, 
+content in a user-tailored format, efficient sharing of information across care team members) 
+outweigh the time required to access it (ie, simplified login process). We also add to the 
+existing body of work by identifying key roles for maintenance of a collaborative care plan.
+
+With this study, we generated ideas regarding how cloud-based, electronic care plans would 
+ideally be designed and implemented on the basis of the information needs of caregivers and 
+providers. However, we recognize that many constraints and challenges will need to be 
+overcome when translating their ideas into practice, which can be explored through future 
+phases of the user-centered design process. For example, usability testing will help to 
+identify whether team leaders are willing to take on the responsibility of overseeing the care 
+plan and which sections of the care plan contributors are realistically willing to update. 
+Involvement of a clinical informaticist in the design process will help to clarify which 
+information can be auto-populated from other sources, and security experts can help to guide 
+the optimal balance between accessibility and privacy. User-centered design methods allow 
+for iterative cycles of development and testing. Within these cycles, stakeholder needs, 
+requirements, and constraints are continually revisited; designs are revised on the basis of 
+usability testing; and implementation strategies are modified until these care plans are 
+proven to be effective tools for coordinating care and improving patient-and family-centered 
+outcomes.
+
+This study has some limitations. First, we interviewed only 1 individual within many of the 
+provider categories, thus limiting our ability to develop an in-depth understanding of 
+particular needs and requirements of different provider groups. However, such a strategy 
+satisfied our goal to explore common themes across a diverse set of providers. In future 
+phases of the user-centered design process, it will be beneficial to gain in-depth insights 
+from individual provider groups and ensure all stakeholders involved in caring for CMC are 
+well represented (eg, surgical subspecialists). Second, the caregivers we interviewed were all 
+English speaking, predominantly white, and reported high comfort levels with technology. 
+Future studies should explore the perspectives of caregivers with diverse racial and/or ethnic 
+backgrounds, limited English proficiency, and low self-reported technology capabilities to 
+understand their unique information needs and requirements for care plans. Third, we did 
+not explore the perspectives of patients with medical complexity directly; therefore, 
+researchers in future studies should explore these patients’ roles with respect to accessing 
+and updating content in their care plans. Finally, we did not conduct observations of how 
+information is currently shared or retrieved and how care plans are currently used. 
+Observations will be essential in future phases of the user-centered design process to 
+discover additional needs and requirements for shared care plans, given existing work-
+arounds that caregivers and providers use.
+
+Desai et al.
+Page 8
+
+CONCLUSIONS
+
+Cloud-based, electronic care plans have the potential to mitigate many of the barriers that 
+exist in our current health information systems. These care plans should be accessible 
+wherever and whenever the information is needed, user-centered in terms of content and 
+formatting, collaborative, and secure with strict permission controls. Future research is 
+needed to test various design and implementation strategies to meet these stated 
+requirements among diverse groups of stakeholders in real-world settings. Care plans that 
+meet these requirements have the potential to promote efficiency, enhance communication, 
+facilitate coordinated care, and improve health outcomes for CMC.

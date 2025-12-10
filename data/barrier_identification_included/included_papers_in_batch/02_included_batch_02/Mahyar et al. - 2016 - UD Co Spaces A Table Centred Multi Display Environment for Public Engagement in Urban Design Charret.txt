@@ -1,0 +1,1066 @@
+UD Co-Spaces: A Table-Centred Multi-Display Environment
+for Public Engagement in Urban Design Charrettes
+
+Narges Mahyar, Kelly J. Burke, Jialiang (Ernest) Xiang, Siyi (Cathy) Meng,
+Kellogg S. Booth, Cynthia L. Girling, and Ronald W. Kellett
+The University of British Columbia, Vancouver, BC V6T 1Z4, CANADA
+{nmayhar, jlxiang, mengxixi, ksbooth}@cs.ubc.ca,
+
+ABSTRACT
+UD Co-Spaces (Urban Design Collaborative Spaces) is an in-
+tegrated, tabletop-centered multi-display environment for en-
+gaging the public in the complex process of collaborative ur-
+ban design. We describe the iterative user-centered process
+that we followed over six years through a close interdisci-
+plinary collaboration involving experts in urban design and
+neighbourhood planning. Versions of UD Co-Spaces were
+deployed in ﬁve real-world charrettes (planning workshops)
+with 83 participants, a heuristic evaluation with three domain
+experts, and a qualitative laboratory study with 37 partici-
+pants. We reﬂect on our design decisions and how multi-
+display environments can engage a broad range of stake-
+holders in decision making and foster collaboration and co-
+creation within urban design. We examine the parallel use
+of different displays, each with tailored interactive visualiza-
+tions, and whether this affects what people can learn about the
+consequences of their choices for sustainable neighborhoods.
+We assess UD Co-Spaces using seven principles for collabo-
+rative urban design tools that we identiﬁed based on literature
+in urban design, CSCW, and public engagement.
+
+Author Keywords
+Charrette, collaboration, interaction design, interdisciplinary
+design, public engagement, sustainability, urban design,
+user-centered design, visualization
+
+ACM Classiﬁcation Keywords
+H.5.2-3. Information Interfaces and Presentation: User Inter-
+faces, Group and Organization Interfaces
+
+INTRODUCTION
+This application paper describes UD Co-Spaces (Urban De-
+sign Collaborative Spaces), an interactive multi-display col-
+laborative environment to support complex urban design ex-
+ercises. Urban design is the process of designing neighbour-
+hoods and larger urban areas. It typically focuses on the re-
+
+Permission to make digital or hard copies of all or part of this work for personal or
+classroom use is granted without fee provided that copies are not made or distributed
+for proﬁt or commercial advantage and that copies bear this notice and the full cita-
+tion on the ﬁrst page. Copyrights for components of this work owned by others than
+ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or re-
+publish, to post on servers or to redistribute to lists, requires prior speciﬁc permission
+and/or a fee. Request permissions from permissions@acm.org.
+ISS ’16, November 06-09, 2016, Niagara Falls, ON, Canada
+Copyright c⃝2016 ACM. ISBN 978-1-4503-4248-3/16/11...$15.00
+DOI: http://dx.doi.org/10.1145/2992154.2992163
+
+lationships of buildings, streets and public spaces to make
+urban areas functional, livable and sustainable.
+
+UD Co-Spaces is centered on a multi-user tabletop display
+that enables stakeholders to collaboratively design the fu-
+ture of a neighbourhood through direct multi-touch manipu-
+lation of planning options, interactively explore design alter-
+natives, and cross-check with sustainability indicators in real
+time during a session. It includes auxiliary wall displays and
+hand-held individual displays that extend the functionality of
+the tabletop to better support Arnstein’s notion of engagement
+for users [2]. The interdisciplinary project is a long-term col-
+laboration involving a team of human-computer interaction
+(HCI), computer-supported cooperative work (CSCW), urban
+design, and public engagement researchers.
+
+Deﬁnitions and terms. Our target application is urban de-
+sign charrettes (or simply charrettes), one common method
+for engaging the public in complex planning for urban design.
+Charrettes are intensive multi-day processes during which a
+team of professionals and a diverse set of community stake-
+holders create a holistic development plan through a series
+of iterative feedback loops [7, 9, 15]. Charrettes often utilise
+direct manipulation of physical representations of urban de-
+sign precedents or cases, such as buildings, streets, or parks.
+A case has information such as its footprint (for a building
+and its associated surroundings), height, volume, energy us-
+age, and other attributes. A pattern is a spatial layout of cases
+that constitutes a possible urban design. Increasingly, urban
+design considers sustainability and uses indicators such as
+building occupancy levels, commercial and residential capac-
+ities, density, dwelling types, energy usage, land use, jobs,
+transportation utilisation, walkability indices for neighbor-
+hoods, and other measures related to sustainability that help
+estimate the environmental and social consequences of a pro-
+posed urban design pattern. Indicators are calculated based
+on the spatial layout and attributes of an urban design pattern,
+often using heuristics derived from urban design models.
+
+In this paper, the term “design” is overloaded. It could mean
+designing urban environments or it could mean designing en-
+vironments to support urban design. We try to make clear
+which is meant each time we use the term, but usually we
+mean designing urban environments.
+
+Real-world application: the urban design charrette. Char-
+rettes have been characterised as “an impossible problem in
+an absurdly short time” where the constraints are an essential
+
+109
+
+characteristic of the process [7]. Charrette participants in-
+clude facilitators, design professionals (architects, urban de-
+signers), experts (planners, engineers, scientists), and public
+stakeholders who have a vested interest in the project. These
+are our users. In this process, participants explore multiple
+variables and possible solutions. Charrettes still rely heav-
+ily on “hand” drawings completed by design professionals.
+They often lack rigorous evaluation, particularly in real time.
+Where digital tools such as GIS mapping have been intro-
+duced, they remain expert driven so that non-expert partic-
+ipants remain passive consumers of information [5, 7, 15].
+A bottleneck in the adoption of these tools is that software
+developers are too far removed from the planning environ-
+ment [17], so they lack important contextual knowledge con-
+cerning the diverse interests that steer the interactions of
+growing numbers of stakeholders.
+We spent considerable
+time learning about existing charrette processes and work-
+ﬂows, and the shortcomings of current practice. Our research
+examines how surface interaction techniques on multiple in-
+terconnected displays can better support user engagement in
+complex processes of urban design during charrettes.
+
+Value hypothesis: surfaces promote engagement. Stake-
+holders with different knowledge, expertise, and objectives
+participate in public consultation phases of urban design. Our
+main goals are: (a) engaging different groups of stakehold-
+ers to actively interact with design options, (b) fostering col-
+laboration and co-creation of urban design through the use
+of touch-based interaction and surface technology, and (c)
+enabling stakeholders to understand consequences of their
+choices using simple visual encodings that connect sustain-
+ability indicators to urban form.
+
+Design process and principles: domain and user centered.
+System design choices for UD Co-Spaces were informed by
+various literature in CSCW, planning support systems, and
+public engagement. We followed an iterative user-centered
+process to identify appropriate surface-based interaction tools
+that promote common ground among stakeholders with vari-
+ous backgrounds and objectives. We examined how different
+display form factors might increase engagement with both the
+process and the group. Through our observations of the sys-
+tem in use, we considered which collaboration and visualiza-
+tion technologies enable stakeholders to interactively design
+solutions and better understand the consequences of their de-
+signs. Three major system iterations each added a new dis-
+play type to UD Co-Spaces to support collaboration and vi-
+sualization activities identiﬁed in formative evaluations.
+
+One challenge we faced was lack of design guidelines for
+charrettes that address engagement, collaboration, and other
+domain-speciﬁc requirements. Although our system design
+choices were informed by collocated collaborative visualiza-
+tion guidelines on tabletops [12, 20], we also reviewed lit-
+erature in urban design and public engagement and adopted
+principles from Arnstein [2], and Snyder [22] to the narrower
+challenge of building engaging Collaborative Planning Sup-
+port Systems (CPSS) for the urban design charrette process.
+
+Based on these principles and our own observations of UD
+Co-Spaces in use, we synthesised a set of seven principles for
+
+Figure 1. The third iteration of UD Co-Spaces, a multi-display collab-
+orative environment where multiple users can simultaneously interact
+with 2D maps on a tabletop, with 3D views on the wall, and with two
+applications on hand-held iPads.
+
+urban design charrettes: (1) engagement, (2) collaboration,
+(3) interactive visualization, (4) accessibility, (5) iteration,
+(6) understanding consequences, and (7) transparency. In
+our discussion we describe the principles and explain how
+the features in UD Co-Spaces work together to address them.
+
+Next best alternative: traditional planning systems. Col-
+laborative and visualization technology can play an impor-
+tant role in increasing public engagement in urban design, but
+few systems support the complexity and interactivity required
+for a truly collaborative decision-making process. Many cur-
+rent tools use powerful GIS-based visualizations, however,
+they are expert-intensive, non-collaborative, and rarely pro-
+vide real-time feedback because they require signiﬁcant effort
+to produce visual encodings of indicators.
+
+Contributions and overview of the paper. We describe UD
+Co-Spaces (Fig. 1) and the iterative user-centered design pro-
+cess we followed over six years in close collaboration with
+experts in urban design and neighbourhood planning. We re-
+ﬂect on system design decisions and how multi-display envi-
+ronments can engage a broad range of stakeholders in deci-
+sion making and foster collaboration and co-creation for ur-
+ban design. We examine the parallel use of different displays,
+each with tailored interactive visualizations, and whether this
+affects what people learn about the consequences of their
+choices for sustainable neighborhoods. Finally, we assess UD
+Co-Spaces using the seven design principles that we identi-
+ﬁed for collaborative urban design tools that target charrette-
+style processes.
+
+After summarizing prior research on the charrette process in
+urban design, planning support system software, interactive
+visualization and collaboration tools, multi-display environ-
+ments, and guidelines for assessing urban design tools and
+processes, we describe the iterative development of UD Co-
+Spaces and its deployment and evaluation through three pro-
+totypes. We conclude with a discussion of lessons learned
+and suggestions for future work to support the charrette pro-
+cess using the framework adapted from the literature.
+
+110
+
+RELATED WORK
+There is a rich body of research in CSCW and tabletop ap-
+plications for collocated collaboration, visual analytics, and
+decision making. We focus only on urban design tabletop ap-
+plications and charrette-style processes where the goals are
+to provide tools that help users understand the consequences
+of design choices and promote a sense of empowerment that
+encourages broad-based public engagement.
+
+Planning support systems. There are many digital Planning
+Support Systems (PSS) under development that are used to
+engage the public with long-range decision-making around
+climate change [6,8]. Built primarily upon GIS and decision-
+support tools, PSS are digital systems that integrate spatial
+and non-spatial analysis with simulation and visualization
+capacity speciﬁcally tailored to the needs and processes of
+planning-analysis, prediction and prescription [14]. Our goal
+is to address the challenge of public engagement identiﬁed by
+researchers [11] by providing comparative data about spatial
+scenarios that is accessible and understandable by the general
+public.
+
+Interactive visualization. Computers can provide visualiza-
+tion methods to increase understanding, actively engage with
+lay people, and expand the reach of public engagement pro-
+cesses. The Planning and Urban Design Standards [3] de-
+ﬁne visualization in this context as “the process of taking
+abstract ideas or data and translating them into easily under-
+stood or interpreted images to enhance planning, urban design
+and decision-making processes.” Visualization tools can dis-
+play urban forms in two and three dimensions with associated
+data: computerised versions of traditional maps, perspective
+drawings, and data plots [1].
+
+Most similar to our work are PSS tools that link and visu-
+alize complex information so non-professional stakeholders
+can better engage and understand long-range consequences
+of decisions.1 These PSS support 3D scenario development
+linked to preset planning parameters, source data customised
+to location and application, integration of spatial and non-
+spatial data, trial and error scenario testing, and plan revi-
+sion. However, many of these tools are suited only to a nar-
+row range of scale (spatial extent) and do not adjust well to
+other scales. For example, MetroQuest is well suited to study
+policy questions at the city or metropolitan scale, whereas
+CommunityViz is better suited to urban form scenarios at
+only the district scale [8].
+The level of expertise needed
+to use each system varies widely. Some are relatively user
+friendly, whereas others require signiﬁcant expertise [8]. For
+planners to engage and use PSS in their day-to-day work, the
+systems must be more ﬂexible and adaptable to different cir-
+cumstances, easier to learn, and better at providing interfaces
+for the public [14].
+
+Tabletop systems. There has been previous work on collab-
+orative tabletop systems for urban planning [4,10,13,17,23].
+Perhaps best known is URP, from the MIT Media Lab [23]. It
+is a workbench environment with a tangible user interface that
+
+1Examples of commercial tools include: Community Viz (place-
+ways.com/communityviz), INDEX (www.crit.com/sparc), Metro-
+Quest (metroquest.com), and UrbanSim (www.urbansim.org)
+
+allows urban planners to study how architectural structures
+will affect light, wind, and other factors that have an impact
+on urban design. The same group developed Luminous Ta-
+ble [13] to address limitations in URP. Luminous Table is an
+augmented or mixed reality system that blends digital table-
+top objects with physical objects integrating 2D drawings, 3D
+models, and computational simulations. Physical models of
+buildings can be placed on the table and they will be recog-
+nised by the system and then simulations calculate shadows
+and wind ﬂows that can be rendered on the table. A 2D draw-
+ing can be provided as a background image for the study area.
+
+Multi-display environments.
+Some research has utilised
+multiple displays used in conjunction with collaborative
+tabletops.
+For example, Wagner et al. [25] developed a
+mixed-reality system for urban planning using both tabletop
+and wall displays with physical objects on the table. The ob-
+jects are only used as tokens instead of being actual scale
+models of buildings as in Luminous Table [13]. However,
+the application is more a presentation tool for previously de-
+veloped urban designs, with little support for interactive de-
+sign. ETH’s ValueLab [10] is a collaborative environment
+that brings together large interactive displays and visualiza-
+tions to facilitate public participation in the planning of mega-
+cities (what ETH researchers refer to as “Future Cities”).
+GIS data and visualization software is used to simulate de-
+sign choices. ColorTable [17] is an interactive round table
+designed to facilitate communication between diverse stake-
+holders. It utilises a tangible user interface and tokens placed
+on the table to represent design elements, such as buildings
+or streets. It uses a physical map augmented with 2D images
+and 3D objects to lend the design area more realism. A per-
+spective view of the design is provided by a projected image
+on a wall display.
+
+Tangible vs. digital. Our goal is different from other systems.
+We target urban design activities and explicitly focus on user
+engagement, collaboration, and awareness of design conse-
+quences. The collaborative and interactive environments of
+ColorTable and Value Lab are the most similar to UD Co-
+Spaces in terms of their goals, which are focused on collab-
+oration and public participation. However, the system archi-
+tecture of each is quite different from that of UD Co-Spaces:
+Value Lab relies on GIS data and 3D animations for its vi-
+sualization needs, while ColorTable’s tangible user interface
+relies on physical tokens to represent design features. Evalua-
+tion of the ColorTable revealed “that participants had troubles
+following long workﬂows, organizing the number of objects,
+and interpreting which physical object is linked to which dig-
+ital counterpart in the case of large differences in size” [17].
+
+The obvious advantages of tangibility are, in our opinion, out-
+weighed by the overhead of providing physical artifacts ap-
+propriate to a range of urban settings. Our research provides
+a totally digital solution, with the possibility of supporting
+tangible objects in the future. UD Co-Spaces uses external
+systems as components to provide ﬂexibility and extensibility
+of geographic areas and building types for planning exercises.
+Neither Value Lab nor ColorTable incorporates hand-held de-
+vices; UD Co-Spaces is unique in this respect.
+
+111
+
+Principles for engagement in collaborative urban design.
+Planning support tools have a diverse range of objectives that
+have their own guidelines. Design charrettes are a speciﬁc
+type of collaboration with unique characteristics such as lim-
+ited time, multivariate data, multiple users with different lev-
+els of expertise, etc. These characteristics pose new chal-
+lenges for designing support tools for this domain space.
+
+While guidelines from collaborative visualization [12,20] ad-
+dress the use of collaborative technology and design of visu-
+alizations for multiple users, CPSS requires additional guide-
+lines speciﬁc to the domain and to the challenge of engaging
+various stakeholders in the design process. Engaging stake-
+holders with different backgrounds, expertise, and expecta-
+tions is a prominent challenge for design charrettes. Arn-
+stein’s widely adopted Ladder of Public Engagement [2]
+proposes an eight-level hierarchy of manipulation, therapy,
+informing, consultation, placation, partnership, delegated
+power, and citizen control to assess the degree of engagement
+in general settings.
+
+In the context of urban planning, Snyder [22] proposes a
+13-point “wish list” for urban design tools including inter-
+active and usable at multiple levels of expertise, accessible
+and affordable, adaptable and maintainable, having an open
+architecture, utilising high quality data, operating at local
+and regional scale, providing comprehensive coverage and
+integration of issues, supporting impact analysis including
+short-, medium- and long-term effects, engaging citizens and
+supporting face-to-face interactions, visual imagery, values,
+causes, and effects,
+promoting identiﬁcation of design op-
+tions, and regular monitoring and reporting. However, there
+are no speciﬁc guidelines in urban design that target all of the
+requirements for CPSS speciﬁc to design charrettes. Based on
+these principles, and our own observations of UD Co-Spaces
+in use, we synthesised a set of principles for urban design
+charrettes that we describe in the Discussion.
+
+ITERATIVE DEVELOPMENT OF UD Co-Spaces
+There were three major iterations of UD Co-Spaces, each
+adding a new display type to support collaboration and vi-
+sualization activities identiﬁed in formative evaluations. For
+each iteration we discuss key lessons learned during ﬁeld de-
+ployments that affect the ﬁnal system, including challenges
+and design rationale.
+
+Iteration 1: A multi-user, multi-touch tabletop. A proof-
+of-concept prototype on a SMART Technology Digital Vision
+Touch (DViT) tabletop (91.5cm x 74cm top surface, 65.4cm
+height, 57.2cm x 42.9cm screen with 1024x768 pixels) ran
+custom software developed entirely in C# using SMART’s
+Table SDK. The code base had 15 classes, 135 methods, and
+4795 lines of code.
+
+Cases and patterns. The tabletop’s horizontal form factor
+provides a natural collaborative platform where individuals
+can explore options in parallel by dragging cases from a side
+bar (Fig. 2A) along the edge of the display to locations on a
+2D map at the center of the display. The side bar has a full set
+of cases that are colour-coded according to building type and
+usage. Cases can be moved and rotated at any time. Tapping
+
+Figure 2. The ﬁrst iteration of UD Co-Spaces, where the center of the
+tabletop is a map view of the current pattern, with (A) a side bar dis-
+playing a list of available cases that can be dragged onto the map, (B) a
+bottom bar showing a list of saved patterns, and (C) a comparison of the
+current and saved patterns based on a ﬁxed set of indicators.
+
+on a case opens a pop-up window with detailed information
+(ﬂoor area, number of bedrooms, alternate views, etc.). The
+shared map in the center of the tabletop is the only place to
+create urban design solutions. This was done to encourage
+collaborative co-creation of urban designs.
+
+Understanding design consequences. Four summary charts
+provide quantitative visuals for key sustainability indicators
+in a reserved display area (Fig. 2C). These show target values
+(thresholds) so users can track how close they are to reach-
+ing their goals. Charts update automatically any time cases
+are added or removed. Users cannot interact with charts di-
+rectly, they only make changes and then see how the charts
+respond. Previous patterns can be recalled from the bottom
+bar (Fig. 2B) that serves as a primitive history mechanism.
+
+Challenges and lessons learned. The biggest problem with
+the initial prototype was limited screen real estate. Display
+size was not enough for robust design exercises. A lot of
+space was occupied by visualizations showing sustainability
+indicators that were considered too sophisticated for novice
+users. There was no 3D view in this version. The software
+was speciﬁc to a particular tabletop manufacturer. The back-
+ground map had to be provided as an image ﬁle. The need
+to manually prepare maps put constraints on how much they
+could be scaled and thus limited the areas for which urban
+design could be explored using the prototype.
+
+Iteration 2: Adding a wall display. We added an auxiliary
+wall display with a 3D aerial view and a custom-designed
+indicator dashboard (Fig. 3). Based on advice from domain
+experts, a simpler visual encoding using bar and donut charts
+(with simple infographics in the middle) to help users better
+understand the indicators was developed [24]. The natural
+up-down orientation of the 3D view and indicators was more
+appropriate for a vertical display. This freed up valuable real
+estate on the horizontal tabletop display, so it could be de-
+voted to the 2D map and case bar for interaction (Fig. 4). 3D
+viewing parameters such as viewing angle, zoom level, and
+
+112
+
+Figure 3. The auxiliary wall display in the second iteration of UD Co-
+Spaces, with a 3D view (top) and new visual encodings for sustainability
+indicators (bottom).
+
+elevation were dynamically controlled using a custom widget
+on the tabletop.
+
+Revised architecture with federated services. UD Co-Spaces
+integrates three independent applications: a 2D map server
+to replace manually loaded map images, live access to a
+database where cases can be obtained, and a third-party ren-
+derer to display urban design patterns in 3D with cases at their
+correct locations. Dashboards were implemented so they up-
+date their views when callbacks notify them that the pattern
+on the tabletop has changed. To provide compatibility with
+future technology, the software uses a layered approach that
+introduces abstractions for the 2D and 3D displays and for
+the case database. RabbitMQ provides a bulletin-board-style
+messaging layer in which requests are broadcast and listen-
+ers associated with each federated component provide asyn-
+chronous responses. The federated architecture proved fortu-
+itous when personal displays were added in the third iteration.
+
+Device and service abstractions. Bindings were written to
+support SMART Technologies, Microsoft Surface, and PQ
+Labs multi-touch surfaces for the 2D tabletop (each device
+has about four times the area of the initial prototype), Google
+Earth for 3D rendering, Google Map and Microsoft Bing for
+2D map content, and elementsDB, a database of cases devel-
+oped previously by the researchers. Trimble’s Sketchup was
+used to convert elementsDB case geometry into 2D images for
+the tabletop and 3D models that Google Earth’s API “inserts”
+at the appropriate locations and orientations for rendering by
+an Apache web server and display in a full-screen browser
+window on the wall.
+
+Indicators. A new custom-designed dashboard provides vi-
+sual encodings of key indicators that can have target values
+speciﬁed for “are we there yet?” interaction. These indicators
+can be used to determine near-optimal designs for a particular
+urban area.
+
+Deployment. The second iteration was tested in a series of 26
+workshop sessions with 44 citizens and planners in the British
+Columbia city of Revelstoke and 18 professionals in Vancou-
+ver. Sessions were video taped and data gathered through
+questionnaires and focus groups, yielding insights about the
+system design, collaborative interaction, engagement, and the
+value of immediate live feedback during the urban design pro-
+
+Figure 4. The touch-table interface in the second iteration of UD Co-
+Spaces, with a map of the study area in the center and a case bar along
+each edge of the display to allow individual exploration of options.
+
+cess. We received positive responses from stakeholders that
+UD Co-Spaces was fun, easy to understand and interact with,
+encouraging, and instructive about the consequences of deci-
+sions: participants’ feedback indicated that the system helped
+them see the impact of their designs, understand city planning
+and its complexity, and learn from each other. Those in the
+Revelstoke workshop remarked that the “tools were helpful
+in understanding some impacts of choices,” “I learned a lot
+from [a developer] and [a planner] about how developers and
+planners think,” it was “interesting to see everyone’s views,”
+“there are a lot of details to consider when doing urban plan-
+ning!” and the process helped “understand city planning and
+its ramiﬁcations.”
+
+Features that both professionals and the public liked were fast
+and early feedback, number and variety of alternatives, and
+visualization linked to the indicators. The system was well re-
+ceived by professional planners, even though we had thought
+it would be mainly of interest only to non-experts. The Van-
+couver ﬁeld trials involved six city planners and 12 other mu-
+nicipal staff in half-day design workshops. In follow-up inter-
+views, they reported that seeing 2D and 3D concurrently with
+“live” indicators, enabled them to effectively engage with
+non-planner colleagues to generate and evaluate numerous al-
+ternatives. All of them reported that it raised their conﬁdence
+about proposed solutions and they subsequently requested to
+use the tool set for additional work sessions.
+
+Challenges and lessons learned. Analysis of videos, ques-
+tionnaires and focus groups indicated some important limita-
+tions: lack of personal work spaces on the displays, difﬁculty
+interacting in parallel with the 3D view on the wall display,
+and low user engagement with sustainability indicators now
+that they were shown on the wall rather than at the center of
+attention on the tabletop. Adding indicators at the bottom of
+the wall display also created a display real estate problem: in-
+dicators took space on the wall that was supposed to be used
+for 3D. The set of indicators and target values were statically
+chosen; there was no opportunity to customise them for in-
+dividual use. Some participants commented that the tabletop
+was so engaging that they did not pay much attention to the
+indicators on the wall. We addressed these issues in the third
+iteration of the system by adding personal hand-held devices
+to control the 3D view and for viewing indicators, thus free-
+
+113
+
+Figure 5. A dashboard on the iPad shows visual feedback about sus-
+tainability indicators for the current design. The left side is a toolbox of
+colour-coded indicator categories, the right side is a canvas showing the
+selected indicators. Users drag indicators from the toolbar to the canvas
+and can select target thresholds for each indicator.
+
+ing up the wall display for 3D while also encouraging more
+interaction with the sustainability indicators.
+
+Iteration 3: Adding personal hand-held displays. Our cur-
+rent version of UD Co-Spaces is an integrated multi-display
+environment (Fig. 1) whose activities are anchored in a multi-
+touch tabletop workspace augmented with both large-screen
+wall displays for shared viewing and smaller hand-held dis-
+plays for individual access and customization.
+The feder-
+ated use of services abstracted into layers and the message
+paradigm to support asynchronous communication continues.
+We improved interaction with the 3D wall display and added
+new functionality for interacting with indicators by introduc-
+ing Apple iPad tablets that remotely manipulate the 3D view
+and conﬁgure and display personal indicator dashboards for
+parallel investigation of sustainability indicators. iPad appli-
+cations use WiFi to communicate with the server that man-
+ages the tabletop and 3D display through agents resident on
+the server that respond to task-speciﬁc RabbitMQ messages.
+
+iPad 3D view control. As in the second iteration, a direct
+manipulation multi-touch view controller on the tabletop ini-
+tially sets the location of a virtual camera and its direction of
+view and elevation relative to a “look-at” point in the urban
+design. A new custom remote control iPad app then allows
+pan and scroll of the look-at point by one-ﬁnger movement,
+camera distance and orientation by two-ﬁnger pinch-expand
+and twist gestures, and camera elevation by two-ﬁnger vir-
+tual sliding. Our assumption that ubiquitous experience with
+personal computers, hand-held smart phones, and tablets has
+created a level of sophistication in the general public that im-
+plies that gestures such as zoom and pinch will be familiar to
+many people was deﬁnitely borne out in our testing.
+
+iPad sustainability indicators. Dashboard indicators give vi-
+sual feedback about sustainability indicators for the current
+design. Indicators can be grouped to display related informa-
+tion. A dashboard is a collection of indicators. Dashboards
+can be displayed on the tabletop or on the wall or on the iPads.
+
+On iPads, indicators can be dragged from a toolbox (Fig. 5) to
+build custom dashboards that display the indicators that mat-
+ter most to users. We added a ﬁxed bar on the top of the iPad
+using one-ﬁfth of the display space to show default indicators
+that were most relevant to the design task. This was done for
+the lay people who were not necessarily familiar enough with
+the context of urban design to select the relevant indicators.
+The bar can be hidden if users need more space.
+
+As in the second iteration, indicators are updated automati-
+cally whenever a change takes place on the tabletop, so they
+always show current data to everyone. Indicators are drawn
+from computational models in the elementsDB urban design
+database. To encourage more interactivity and transparency
+about how indicators are set, users can select target thresholds
+for indicators using the iPad. This also allows facilitators to
+interactively guide sessions if they want to explore a variety
+of scenarios with different thresholds.
+
+Challenges and lessons learned. After deploying the third
+iteration we conducted formal and informal evaluations that
+we describe in the next section.
+
+EVALUATION
+UD Co-Spaces is intended to serve a large range of stake-
+holders. A primary concern is usability of UD Co-Spaces for
+different groups of stakeholders and to observe and analyze
+its effects on collaboration and engagement. All of our sys-
+tem design decisions and development processes were based
+on close collaboration with both academic and professional
+domain experts: urban planners in both Revelstoke and Van-
+couver, who used UD Co-Spaces in actual planning charrettes
+in the two cities, which served as ﬁeld trials for our system.
+
+An example of a low-level system design decision is when
+users control the 3D viewer from the tabletop. They need to
+hold a ﬁnger down on the table for 4 seconds to activate the
+3D viewer camera controller. When using an iPad to con-
+trol the 3D, they got confused about where the 3D camera is
+looking. We added an “eye” icon displayed at the center of
+the 2D tabletop to indicate that the camera for the 3D viewer
+is always looking at that point no matter how the viewing pa-
+rameters change. When users let go of their ﬁngers, the eye
+icon disappears automatically.
+
+We also took the opportunity during a demo of our system to
+28 high school students (two groups each of 14 girls) to test
+whether multiple users could smoothly use the iPads to con-
+trol the 3D view. Each demo took 45 minutes. During the
+demos we provided 10 minutes of introduction, then we ob-
+served the students working freely with ﬁve iPads to control
+the 3D view on the wall display. Most of the students quickly
+learned how to perform rudimentary actions, conﬁrming that
+(at least for younger stakeholders) almost-ubiquitous expo-
+sure to personal surface interaction can be assumed. In addi-
+tion to this and many other informal evaluations that are part
+of normal iterative system design, we conducted two formal
+evaluations.
+
+Heuristic Evaluation. A heuristic evaluation for both of the
+iPad applications was conducted with three experts in urban
+design and public engagement. We had one task for each
+
+114
+
+application (3D viewer and indicator dashboard), and gave
+each expert 20 minutes to try each feature. After each task, an
+expert provided verbal comments about each application and
+provided us with suggestions to improve them. Each expert
+was tested separately for about 60 minutes. All three experts
+said hand-held devices were valuable. After comparing 3D
+navigation on the tabletop to navigation using iPad, Expert 1
+stated that “iPad is easier to use for posture, it gives you better
+opportunity to ﬁnd the 3D view, and it is more comfortable
+because of the posture (standing up and looking at the wall
+display on the wall).” Expert 2 said “controlling 3D is more
+intuitive on the iPad than controlling the 3D from the table”
+but that while he was comfortable with both “as facilitator [I]
+would be more comfortable on the table where everyone can
+see the interactions, but iPad is easier to get into than the table
+itself.” Expert 1 said “gestures feel better on the iPad than the
+table, it takes some getting used to navigate on the table while
+looking up at the wall.” Expert 3 made similar comments.
+
+All three experts were also positive about how easy the in-
+dicators were to navigate and operate. Expert 1 mentioned
+“being able to modify the key/value pairs in the design task
+... to react to people’s interest is very important, being able to
+customise indicators for each group based on what they care
+[about] most is important.” Similarly, Expert 2 liked “the abil-
+ity to modify the indicators in accordance with the priorities
+of a group or a workshop.” Expert 3 said “the combination of
+numbers and visuals [and] infographics is great” to visually
+encode indicators.
+
+Formal user study. To evaluate the effect of UD Co-Spaces
+on engagement and collaboration, we conducted a user study
+comparing our current tool to the traditional paper map-based
+approach still widely in use. We recruited eight groups of 4-5
+participants, most of whom were students at our university.
+Each group had a mix of people from different backgrounds.
+In each group there was at least one person who was famil-
+iar with urban design. Due to space limitations, we focus on
+results related to the use of UD Co-Spaces. Our qualitative re-
+sults suggest that UD Co-Spaces promotes engagement, fos-
+ters collaboration, and helps users better learn about the con-
+sequences of their design choices compared to a traditional
+paper-based approach.
+
+In general, UD Co-Spaces provided a highly collaborative
+environment for participants. Participants often worked in
+parallel, breaking off into smaller groups of 2-3 to discuss
+design issues and options. While the paper condition had a
+lower learning threshold, overall the interaction style of UD
+Co-Spaces was not a deterrent; participants quickly learned
+how to manipulate the table and the iPads. Our observations
+of many interactions with the wall display in UD Co-Spaces
+suggest that the 3D view is integral for engagement with the
+design process because it allows participants to see an ap-
+proximate visualization of the neighbourhood as they design.
+We believe that UD Co-Spaces allowed participants to bet-
+ter understand how cases impacted the design by linking the
+information attached to each case to visual encodings of key
+sustainability indicators. Feedback from participants has cor-
+roborated the positive value of adding individual displays to
+
+engage people and allowing them to explore and customise
+data based on personal needs.
+
+DISCUSSION
+We adapted Arnstein’s ladder and Snyder’s principles to the
+narrower challenge of designing a CPSS targeted to the char-
+rette process. Based on these principles, urban design ex-
+perts’ feedback, and our own observations of UD Co-Spaces
+in use, we synthesised a set of seven principles for urban de-
+sign charrettes. We examine how UD Co-Spaces supports
+these principles using comments obtained from informants in
+our user studies.
+
+1.
+Engagement.
+Based on our observations, we believe
+support systems for charrettes need to engage users on an
+individual and a group level in order to capitalize on the
+diversity of stakeholders.
+Engagement primarily refers to
+users engaging with one another, but it can also refer to how
+users engage with the system as well. Therefore, the sys-
+tem should act as a common space that engages participants
+with each other while also engaging individuals in the design
+task through features that are innovative and easy to use and
+learn. Our study results show that using diverse displays, in-
+cluding the tabletop, the 3D wall display, and the hand-held
+devices, contributed to a highly engaging environment. Users
+interacted with various displays, which in turn resulted in in-
+creased interaction among the group members. As one par-
+ticipant stated, “The visual aspect of it is really engaging.
+You become kind of engrossed in it.
+I thought it worked
+really well in terms of getting people engaged in the actual
+process” (Revelstoke workshop). The collaborative tabletop
+was a space where multiple users could interact with the sys-
+tem simultaneously, allowing users to work individually or in
+groups, supporting engagement at both of these levels. Addi-
+tionally, the 2D and 3D visualizations with familiar, easy-to-
+use interaction techniques made the system relatively easy to
+learn in a short amount of time, which makes engaging with
+the system more likely.
+
+2. Collaboration. A main goal of design charrettes and our
+system is to foster collaboration through co-creation of de-
+signs [7,9]. In order to achieve this goal we deployed a multi-
+display, multi-user system that has a single solution space.
+Evaluation of previous iterations of our system indicated that
+the size of the design space mattered, and that limited space
+hampered collaboration by making the information difﬁcult
+to access and manage. Subsequent iterations of the system
+included a large wall-display and hand-held devices in order
+to mitigate the issue of limited real estate. Indicators were
+moved from the wall display to the hand-held devices to save
+space, which had the added beneﬁt of allowing individuals to
+customise indicators in which they were most interested.
+
+Tabletop. In line with previous research, we chose a table-
+top to provide a collaborative platform to encourage collab-
+oration [16,20]. There are other collaborative PSS tools that
+achieve collaboration through the use of tabletops [10,13,17].
+While we provided access to cases (building types) on each
+edge of the table to enable individual exploration, we delib-
+erately provided only one shared space for the ﬁnal solution
+
+115
+
+in the middle of the table to encourage collaboration and co-
+creation of design.
+
+Wall Display. Due to the spatial nature of urban forms, ex-
+tra display space is needed to show the 3D view of a neigh-
+bourhood. Our studies, as well as other relevant studies, sug-
+gest that augmenting the tabletop collaborative platform with
+a vertical 3D view is beneﬁcial. Therefore, we chose to dis-
+play a 3D rendering of the design on the wall because the ver-
+tical nature of urban form suggests that wall displays would
+be more appropriate [10, 17]. Our observations suggest that
+the 3D view plays an important role in the design process.
+
+Personal Displays.
+In the ﬁrst iteration, indicators were
+shown on the table. Feedback indicated that the real estate
+on the tabletop was needed for interaction with the design. In
+the second iteration we moved the indicators to the bottom of
+the wall display to free up valuable real-estate on the tabletop.
+While professionals actively referenced the real time feed-
+back of indicators, we observed that lay people did not inter-
+act much with the indicators. Indicators were far from reach,
+took up valuable space on the wall, and the choice of indica-
+tors was determined by the system. Therefore, we provided
+personal space through the addition of hand-held devices in
+the third iteration of UD Co-Spaces. This enabled individ-
+ual exploration and customization of the indicators dashboard
+(indicators can still be displayed on the wall or the tabletop
+if desired). We received positive feedback about adding per-
+sonal devices to improve interactions both with the wall and
+with the indicators. One participant said “I deﬁnitely really
+liked how everything was synced, specially with regards to
+the projection and the iPad and the table itself. Being able
+to rotate it so we could get a better view, and just being able
+to see everything unfold in real time” (Revelstoke workshop),
+which supports our decision to add hand-held devices to our
+system.
+
+3. Interactive visualizations. The use of interactive visual-
+izations in our system provided a number of beneﬁts for par-
+ticipants, who represented diverse stakeholders in the design
+process. In line with previous research [1], our ﬁndings in-
+dicate that the interactive visualizations we provided helped
+foster participant engagement in the design process. Addi-
+tionally, participants better understood the design process be-
+cause they could visually see how their design decisions im-
+pacted sustainability issues through the use of indicators that
+changed in real-time as they explored designs iteratively. Ac-
+cording to Salter and Campbell [19], “most true group in-
+teractions with the technology have been limited and remain
+somewhat reactive, rather than fully interactive.” Despite our
+visualizations being little more than a dashboard, with limited
+interactivity, user study participant stated that “each interac-
+tion, including touch, move cases, [and then] drag, drop, and
+manipulate them will make a big difference” and he added
+that “the different representations including map, 3D, indi-
+cators, and back and forth between those adds a richness to
+participants’ understanding.” We observed a lot more atten-
+tion being paid to the indicators in the third iteration.
+
+There were at least 1-2 people in each group who interacted
+throughout the session with the indicators and communicated
+
+to the rest of the group how indicators were changing as cases
+were added or deleted from the design space. In each group,
+there were signiﬁcant interactions with the wall display, with
+the 3D view providing important contextual information that
+helped participants make decisions about their designs. As
+one participant stated, “I think I like [the] combination of all
+of them together because I could see all the information on
+one wall, I could see the 3D view on one, I could manipulate
+the view on the table, and I could see all the changes on the
+tablet. So for me it was the combination” (Revelstoke work-
+shop).
+
+4.
+Accessibility.
+In order to encourage participation of
+stakeholders with different backgrounds, expertise, and of-
+ten different expectations, special attention is needed to make
+the system accessible and usable for different groups of
+users [9,22]. Speciﬁcally, the system should be easy to learn
+and use, with effective and efﬁcient work-spaces. It should
+provide numerous types of information including 2D maps,
+3D views, examples of cases, and data visualizations, as well
+as numeric data to reach people with different learning styles.
+
+To address users’ needs, we observed charrette participants
+and their various concerns and objectives. A simple cate-
+gorization of users in this context divides them into profes-
+sionals and the public (or lay people). For professional plan-
+ners, the ability to create and compare a diverse range of al-
+ternatives against indicators of performance is important. For
+public stakeholders the main considerations are increasing the
+level of engagement, understanding the process, social learn-
+ing, collaboration, and trust. Therefore, we used familiar vi-
+sualization and interaction techniques and put a lot of effort
+into making access equitable by providing for individual ex-
+ploration and input. We iteratively improved visualization
+and selected data representations for each display based on
+our evaluations. Our results suggest UD Co-Spaces might
+have a leveling effect on power and control. Based on ob-
+servations during the formal user study, we noticed that the
+case bar allowed participants better access to and understand-
+ing of the information attached to each case, which impacted
+overall design choices made collaboratively. In addition, par-
+ticipants seemed more democratic in what they contributed to
+the design, whereas in the paper condition we noticed more
+“gatekeeper” roles emerge where one participant acted as a
+dominant voice, to the point of removing cases without any
+discussion or debate.
+
+One participant in the user study said “We all subconsciously
+took on different roles in the project based on the areas that
+we felt more comfortable with ... [that] will deﬁnitely help in
+a real setting ... towards collaboration, ... we also learn from
+one another by being able to engage in real time with each
+other, with the knowledge that we brought to the table, and
+with the data that we were using” (Participant P13). Another
+said “Having this tabletop put every stakeholder involved so
+they can make changes themselves, see those changes right
+away, [which] promotes collaboration” (P15).
+
+5. Iteration. It is well-known that iteration in design is a
+valuable exercise that can contribute to a better ﬁnal design
+due to exploring many different alternatives [18, 27]. While
+
+116
+
+using traditional paper-based methods limits the chances that
+participants in a public workshop will explore lots of alterna-
+tives, digital tools provide opportunities to create and evalu-
+ate alternatives much faster. UD Co-Spaces supports multi-
+ple urban design iterations by providing fast and early feed-
+back through 3D views and sustainability indicators. As one
+planning student noted, “Having the tabletop in terms of its
+usability and our ability to go back and revise and edit ...
+was superior to paper in that format. Instead going back and
+then erasing and then redrawing it out again, especially if you
+need to actually draw it out instead of arranging it by paper
+blocks. Deﬁnitely being able to edit on the ﬂy and change on
+the ﬂy helped a lot” (P13). This was apparent even in rela-
+tively short user study sessions. “We learned everything we
+needed to know from the software within the time period, but
+... a longer workshop ... given different targets ... would just
+give more opportunity for more iterations of designs” (P11).
+
+6. Understanding Consequences. One high-level goal of
+design charrettes is helping stakeholders understand and as-
+sess the consequences of their designs and therefore make
+more informed decisions.
+However, in conventional ap-
+proaches this is a long and time-consuming process. Usually
+planners need to invite participants back for a second work-
+shop session after the analysis and visualizations are ready
+when they all discuss the consequences and possible changes
+necessary.
+
+UD Co-Spaces from the very ﬁrst iteration included a visual-
+ization of indicators, although many users did not really un-
+derstand the visualizations. In the second iteration we paid
+special attention to make them more accessible by different
+groups of users. Based on domain experts’ input, we used
+only donut charts with simple infographics in the middle and,
+when information was more appropriate for bar charts, we
+marked the target value on the bar as well as the current value
+to help see how close an urban design is to achieving its tar-
+get value. These dashboards were added and tested during
+the deployments. While professionals really appreciated the
+new dashboards, lay people again did not use them much.
+The reason was different this time: one participant reported
+“the tabletop was so engaging that I did not look up to check
+the [indicators]” and another said “I looked up only to check
+the 3D but I did not really pay attention to the [indicators]”
+(Revelstoke workshop).
+
+In the third iteration we enabled users to customise and get in-
+formation about the indicators on iPads, which helped users
+improve their urban designs and understand the consequences
+of the designs. Multiple features were considered helpful in
+understanding consequences. “Having [indicators] and hav-
+ing that in real time deﬁnitely helped me understand ... the
+role that each decision was having both [in] terms of den-
+sity [and] in terms of the lifestyle that was being lead to just
+through the indirect stats that we were getting. ... I deﬁnitely
+feel like that radically altered how we approached the project”
+and “the sync between all the devices [meant we were] able to
+make one change and then almost immediately see the impact
+that that change had both visually and statistically from the
+data ... the immediate interplay between the two” (P13). Sim-
+
+ilarly, each device brought a different understanding. “The
+iPad ...
+added an additional information source that gave
+me more context. [H]aving those different [indicators] that
+I could look at was really helpful to see, okay, what is the
+larger impact ... it was almost like stepping out and saying,
+okay, what did we actually do and what is the impact?” (P35).
+
+7. Transparency. In order to engage the public in urban
+design, gaining trust is absolutely necessary [21]. “People
+are suspicious of ‘blackbox’ computer-generated answers.
+Models and assumptions should be as transparent as pos-
+sible” [22]. UD Co-Spaces makes the process much more
+transparent by enabling users to customise indicators, set tar-
+gets, and directly interact with them. We believe that this
+transparency creates better opportunity for understanding the
+indicators and trusting the outcome at the end.
+
+“[Indicators] provide an orientation of what you’re trying to
+accomplish and making a connection to that. But, not to limit
+it just to those [indicators] is another consideration because
+you don’t want to go too far in one direction where you’re
+only considering active transit and commercial space because
+then you lose out on all the other [indicators]” (P36).
+
+There were also misgivings. “I think [the indicators are] a
+bunch of data that isn’t necessarily useful to the public if it’s
+not translated ... the indicators seemed very arbitrary” (P25).
+This suggests that true transparency may require much deeper
+explanation of how indicators are calculated and what they
+mean. One expert who saw value in our design pointed out
+the possible irony that municipal planning departments might
+not welcome our system: “one caveat about all of this is that
+cities are reluctant to use this tool, because it is very open.”
+
+CONCLUSION AND FUTURE WORK
+We designed, developed, and iteratively improved UD Co-
+Spaces to engage the public in participatory urban design.
+Evaluations showed that it strongly impacted engagement by
+providing a collaborative platform where multiple users could
+interact with 2D, 3D, and indicator visualizations in real time.
+We assessed UD Co-Spaces using seven design principles for
+supporting design charrettes that offer guidance for develop-
+ers of future systems. We suggest three areas for research.
+
+Street view, overlays, and more. UD Co-Spaces currently
+lacks a street-view on the wall display, information overlay
+layers on the tabletop, detailed information about existing
+buildings in the planning area, and rich interactive control
+over indicators by facilitators.
+
+More sophisticated interactive visualization.
+Visualiza-
+tions in UD Co-Spaces are still very basic and need improve-
+ment. Cases could give previews of indicator changes using
+feed-forward techniques such as “scented widgets” [26].
+
+History. UD Co-Spaces logs key iPad and tabletop events. A
+rudimentary history browser on the iPad can be used during
+or after a session to review the options that were explored.
+The log includes time of day, the tabletop group associated
+with an event (if multiple tabletops are in use), an optional
+event name, an extensible set of tags, and a snapshot of the
+design pattern at the time of the event. There are many ques-
+
+117
+
+tions still to explore, such as how to coordinate views when
+loading a pattern from the history to the table, how to inter-
+actively compare indicators across patterns, and how to best
+support browsing in the history. Our proof-of-concept history
+browser uses visual coding to identify events. We have not
+yet evaluated the coding. We suspect different history mech-
+anisms are needed for facilitators and the public because they
+have different mental models of urban design.

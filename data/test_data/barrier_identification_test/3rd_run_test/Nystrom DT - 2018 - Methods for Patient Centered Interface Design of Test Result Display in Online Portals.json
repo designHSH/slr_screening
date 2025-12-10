@@ -1,0 +1,51 @@
+{
+  "file_name": "Nystrom DT - 2018 - Methods for Patient Centered Interface Design of Test Result Display in Online Portals.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The user testing portion had a low sample size, limiting the strength and generalizability of evaluation findings.",
+      "justification": "A small participant pool constrained the team's ability to rigorously evaluate designs and derive robust insights, hindering the 'evaluate designs' and 'manage user understanding' workloads.",
+      "reference_excerpt": "Aside from a low sample size, the main limitation of the user testing portion of our evaluation is the lack of a homologous “stimuli” to test with participants.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The team used a semi-structured development process without a strict testing schedule, trading rigor for speed in producing the interface.",
+      "justification": "Avoiding a strict schedule reduced experimental rigor and made systematic iteration and controlled evaluation more difficult, impeding 'integrate feedback & iteration' and 'evaluate designs' workloads.",
+      "reference_excerpt": "In the current study, we chose to implement a semi-structured design process that refrained from using a strict schedule to determine when to begin testing and making interface improvements during the design of the interface. This methodology increased the speed at which the interface could be produced at the cost of rigorous experimental design.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Participant sampling was biased toward individuals with prior healthcare work experience (71%), reducing representativeness of typical patients.",
+      "justification": "A non-representative user sample limited designers' ability to develop and validate requirements that reflect the broader patient population, hindering 'manage user understanding' and 'specify user requirements'.",
+      "reference_excerpt": "An additional limitation that may affect the generalizability of the results of this study is the large percentage (71 percent) of patients who had history of working in health care prior to participating in this study.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "The study did not include (or identify) colorblind participants while employing red/green color schemes, limiting assessment of accessibility.",
+      "justification": "Lack of testing with color-vision-impaired users prevented designers from fully addressing the holistic experience and accessibility requirements, hindering 'address holistic experience' and 'evaluate designs'.",
+      "reference_excerpt": "In addition, the use of red/green color schemes for the design of our interface could potentially limit the ease of using this interface for colorblind patients. While to our knowledge none of the test subjects were red/green color blind, we should note that “color” was not the only indicator that subjects had available to help them understand the meaning of the graphs or displays.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The team did not assess the impact of non-linear scales introduced when equalizing visual ranges across biomarkers.",
+      "justification": "By not evaluating how the non-linear scales affected patient perceptions, designers missed an opportunity to validate a key design change, limiting 'evaluate designs' and 'understand context of use' workloads.",
+      "reference_excerpt": "We did not make any attempt to assess the impact of these non-linear scales on patient perceptions.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

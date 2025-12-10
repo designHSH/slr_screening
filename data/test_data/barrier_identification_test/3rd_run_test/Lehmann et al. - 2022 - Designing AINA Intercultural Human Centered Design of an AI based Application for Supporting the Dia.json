@@ -1,0 +1,69 @@
+{
+  "file_name": "Lehmann et al. - 2022 - Designing AINA Intercultural Human Centered Design of an AI based Application for Supporting the Dia.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The COVID-19 pandemic severely limited access to and communication with relevant user groups, reducing opportunities for in-person engagement and participant availability.",
+      "justification": "This resource constraint directly hindered the team's ability to facilitate user involvement and to manage a deep, evolving understanding of users (e.g., through longitudinal or on-site engagement), which affected user research and evaluation activities.",
+      "reference_excerpt": "Another constraint is the currently active COVID-19 pandemic, which leads to severe limitations in the availability and communication ability of the relevant user groups, especially in Africa.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "Intercontinental and intercultural communication between the German development team and on-site user groups posed challenges due to differences in culture and distance.",
+      "justification": "This interactional knowledge gap impeded managing user understanding and made it harder to plan and maintain valid participatory evaluation methods and accurate contextual inquiry across cultures.",
+      "reference_excerpt": "The particular challenge in this project is the intercontinental and intercultural communication with the user groups on-site since the development team consists of German physicians and computer scientists.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "Language limitations required the use of interpreters (French/Malagasy to English), reducing direct communication between designers and users.",
+      "justification": "Relying on interpreters limited designers' ability to capture nuanced user insights and hindered facilitation of user involvement and the fidelity of participatory evaluations.",
+      "reference_excerpt": "Interviews were conducted in English, French, and Malagasy. Interpreters translated from French to English or Malagasy to English when necessary.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "interaction",
+      "barrier_type": "emotional",
+      "description": "Socio-cultural power dynamics and hierarchies led some participant groups to withhold honest expression unless settings were adapted (e.g., gender-homogenized or smaller groups).",
+      "justification": "These trust and power issues restricted genuine user participation and expression, undermining the team's ability to facilitate user involvement and to obtain authentic user understanding needed for accurate requirement specification.",
+      "reference_excerpt": "Due to the cross-cultural characteristics of the region, a deliberate attempt for specific user groups was made to reduce the number of participants and homogenize by gender; otherwise, some of the evaluation participants may not express themselves honestly or at all.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The team was unable to conduct desired on-site observations because of the global COVID-19 pandemic.",
+      "justification": "Lack of on-site observation prevented designers from fully understanding the context of use and real-world workflows, constraining requirements elicitation and realistic evaluation of prototypes.",
+      "reference_excerpt": "Since user behavior plays a crucial role in any technology, we wished to conduct additional on-site observations during the analysis and evaluation phases. Unfortunately, this was not possible due to the global COVID-19 pandemic.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Stable IT infrastructure and Internet connectivity were only partially available in primary health care facilities, limiting how the system could be used and tested in situ.",
+      "justification": "Limited connectivity constrained realistic evaluation and understanding of the context of use (e.g., offline behavior, upload workflows), and restricted designers' ability to evaluate prototypes under true operating conditions.",
+      "reference_excerpt": "Stable IT infrastructure was only partially present in primary health care facilities. After Marie has finished her work, she stays at the Community Health Center for a while to upload the pictures taken that day via the AINA application since she does not have an Internet connection at home.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 7,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Application of AI/medical device guidelines to the documentation kept technical terminology, which users found difficult to understand.",
+      "justification": "Regulatory-driven or guideline-driven documentation requirements limited designers' ability to simplify language for users, hindering efforts to address holistic user experience and manage user understanding during iteration.",
+      "reference_excerpt": "Unfortunately, the revision of the manual, based on AI guidelines for medical devices, did not reduce the number of technical terms used, so all users commented negatively on this.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

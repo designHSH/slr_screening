@@ -1,0 +1,60 @@
+{
+  "file_name": "Poot et al. - 2023 - The Design of a Persuasive Game to Motivate People with Asthma in Adherence to Their Maintenance Med.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Small and non-representative participant samples limited the designers' ability to capture diverse user needs and perspectives.",
+      "justification": "Limited and skewed sampling constrained the team's ability to manage user understanding and to specify user requirements that generalize beyond the study subgroup, undermining design decisions and evaluation coverage.",
+      "reference_excerpt": "First, the relatively young participants could have limited the representa­tiveness of our findings and the applicability of the Ademgenoot concept. Second, the small number of participants per design phase may have an influence on the study findings.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Short trial duration and incomplete component testing prevented assessment of long-term use and full functionality of the design.",
+      "justification": "The five-day testing period and the fact that not all game components were tested limited the designers' ability to evaluate designs, integrate long-term feedback, and iterate toward a production-ready solution.",
+      "reference_excerpt": "the formative evaluation of Ademgenoot may also present some limitations as not all components of the Ademgenoot game were tested. Finally, the limited duration of the testing period (ie, five days) calls for caution in drawing conclusions regarding long-term usage.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Budget-driven use of a low-fidelity WhatsApp prototype limited the realism of the prototype and constrained testing of a fully functional product.",
+      "justification": "Relying on WhatsApp as a low-cost proxy for the app constrained the team's ability to produce and evaluate full design solutions and realistic interactions, limiting iterative refinement and assessment of technical features.",
+      "reference_excerpt": "Improvements were made to the paper prototype, which was then translated to a WhatsApp prototype. The evaluation of Ademgenoot through WhatsApp prototype testing provided a low-cost and efficient way to assess people’s perceived impact on medication adherence and motivation. However, further research should focus on a real-world evaluation of Ademgenoot as a fully functional prototype...",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Researcher presence and interference may have altered participant behavior during testing, biasing formative evaluation findings.",
+      "justification": "Observer effects reduced the designers' ability to obtain authentic user behaviour data during evaluation, hindering accurate assessment and subsequent iteration of the design.",
+      "reference_excerpt": "interference by the researcher may have led to changes in behavior (ie, improved medication adherence) due to the individual being observed.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Commercial and device-vendor constraints (e.g., Symbicort SMART business models) complicated the commercial feasibility of integrating the design with existing inhaler ecosystems.",
+      "justification": "Unclear commercial alignment with smart inhaler developers limited designers' ability to specify feasible technical requirements and coordinate multidisciplinary implementation with industry partners.",
+      "reference_excerpt": "However, as some patients receive Symbicort as Symbicort Maintenance and Reliever Therapy (SMART), the commercial feasibility (ie, complementing business strategies) may be less clearly defined.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Limited real-world adoption of electronic dose monitors (EMDs) and requirements for system integration impeded practical implementation and large-scale evaluation.",
+      "justification": "Because EMDs are not widely implemented and require evidence, integration with health records, and solutions for disengagement, designers faced external ecosystem barriers that constrained studying context-of-use and piloting the intervention in routine care.",
+      "reference_excerpt": "Despite its potential, EMDs have not yet been implemented on a large scale in practice due to, amongst others, the need for evidence on long-term effectiveness and disengagement challenges with existing apps. This requires EMD programs to be compatible with existing inhalers preferably integrated within existing electronic health records.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

@@ -1,0 +1,312 @@
+A Randomized Trial Comparing Classical Participatory Design to 
+VandAID, an Interactive Crowdsourcing Platform
+
+K.R. Dufendach,
+Cincinnati Children’s Hospital Medical Center
+
+S. Koch,
+Karolinska Institutet
+
+K.M. Unertl, and
+Vanderbilt University Medical Center
+
+C.U. Lehmann
+Vanderbilt University Medical Center
+
+Abstract
+
+Background—Early involvement of stakeholders in the design of medical software is 
+particularly important due to the need to incorporate complex knowledge and actions associated 
+with clinical work. Standard user-centered design methods include focus groups and participatory 
+design sessions with individual stakeholders, which generally limit user involvement to a small 
+number of individuals due to the significant time investments from designers and end users.
+
+Objectives—The goal of this project was to reduce the effort for end users to participate in co-
+design of a software user interface by developing an interactive web-based crowdsourcing 
+platform.
+
+Methods—In a randomized trial, we compared a new web-based crowdsourcing platform to 
+standard participatory design sessions. We developed an interactive, modular platform that allows 
+responsive remote customization and design feedback on a visual user interface based on user 
+preferences. The responsive canvas is a dynamic HTML template that responds in real time to user 
+preference selections. Upon completion, the design team can view the user’s interface creations 
+through an administrator portal and download the structured selections through a REDCap 
+interface.
+
+Results—We have created a software platform that allows users to customize a user interface and 
+see the results of that customization in real time, receiving immediate feedback on the impact of 
+their design choices. Neonatal clinicians used the new platform to successfully design and 
+
+Cincinnati, OH 45229-3026, kevin.dufendach@cchmc.org, Phone: 513.636.7018, Mobile: 616.481.5089, Fax: 513.636.2056. 
+Human Subject Protection
+This study was approved by the investigational review board of Vanderbilt University Medical Center (study ID 160124) and followed 
+procedures in compliance with the ethical standards of the responsible committee on human experimentation and with the World 
+Medical Association Declaration of Helsinki on Ethical Principles for Medical Research Involving Human Subjects.
+
+HHS Public Access
+Author manuscript
+
+Published in final edited form as:
+Methods Inf Med. 2017 October 26; 56(5): 344–349. doi:10.3414/ME16-01-0098.
+
+customize a neonatal handoff tool. They received no specific instruction and yet were able to use 
+the software easily and reported high usability.
+
+Conclusions—VandAID, a new web-based crowdsourcing platform, can involve multiple users 
+in user-centered design simultaneously and provides means of obtaining design feedback remotely. 
+The software can provide design feedback at any stage in the design process, but it will be of 
+greatest utility for specifying user requirements and evaluating iterative designs with multiple 
+options.
+
+Keywords
+
+computers; informatics; human factors and engineering; human-computer interface
+
+Introduction
+
+One of the goals of the 2009 Health Information Technology for Economic and Clinical 
+Health (HITECH) Act was to improve the safety of medical care through the investment in 
+electronic health record systems. However, safety results vary significantly between specific 
+systems and locations.[1] E-iatrogenesis — the unintended negative consequences of 
+implementing health information technology — had been described as early as 2007.[2] If 
+not implemented carefully, unintended consequences of automation can contribute tomedical 
+errors.[3] By applying human factors principles into the design of medical software alerts, 
+Russ et al. demonstrated improved usability and decreased prescribing errors in a simulated 
+crossover trial.[4]
+
+Despite advances in existing technology, clinician dissatisfaction with Electronic Health 
+Records (EHR) increased from 24% in 2010 to 39% in 2012.[5] A significant proportion of 
+end user dissatisfaction in healthcare systems is attributable to poorly designed interfaces 
+unresponsive to user workflows and needs. Change management knowledge mandates that 
+end users must be included in the design process and that “workflow and information needs 
+of end users must be studied and analyzed, and the effect of the new intervention must be 
+modeled on workflow, new work demands, interruption of other tasks, and local culture and 
+conditions.”[6] Development of health information technology software requires 
+establishment of common ground between design and the clinical work that needs to be 
+performed.[7] Medical software design requires input from real users, who “alone have the 
+relevant knowledge and understanding of the actions, and the consequences, of their work.”
+[7]
+
+User-centered software design seeks to involve end users throughout the design process to 
+create a product that better matches the user’s expectations and experience. Developing 
+software based on the user’s needs and requirements (for example, by including all data 
+elements required by a user to complete a task on the screen), allows the software to better 
+match the end user’s optimal workflow as opposed to forcing users to change their behavior 
+to accommodate the product’s design (like having to interrupt the task and search for the 
+required information elsewhere only to come back to complete the task).[8]
+
+Dufendach et al.
+Page 2
+
+Current EHR certification requirements from the Office of the National Coordinator for 
+Health Information Technology require EHR vendors to attest to implementing user-
+centered design practices in the creation of their software products.[9] However, a study 
+examining the user-centered design processes of eleven EHR vendors from February to 
+August 2013 found a wide range of user-centered design practices ranging from full in-depth 
+contextual analysis to simply providing methods of receiving requests and feedback from 
+users.[10] Despite variance from robust to basic user-centered design strategies, all EHR 
+software designers indicated that they felt user-centered design to be important and wished 
+they had more resources to pursue it further. Yet, a recent examination of usability practices 
+of 50 top electronic health record vendors found that fewer than half used the recommended 
+15 participants in usability testing, and only 8 of those used at least 15 individuals with a 
+clinical background.[11]
+
+Basic user-centered design employs interviews and surveys, but these techniques can prove 
+inadequate, as most users neither know their own requirements nor can they articulate them 
+in ways computable to the design team.[7; 12] Involving users in cooperative design or 
+guided user-driven innovation allows end users to become a source of innovation in the 
+design process, but such methods have limitations due to the time and expertise demanded 
+on both designers and end users, alike. Due to these demands, end user involvement is often 
+limited to just a small number of stakeholders, which may not encapsulate the complexity in 
+healthcare information technology systems, which often involve multiple stakeholders in 
+varying contexts of use.[13]
+
+Objectives
+
+The goal of this project was to reduce the effort for end users to participate in co-design of a 
+software user interface by developing an interactive web-based crowdsourcing platform.
+
+Methods
+
+We developed VandAID (Vanderbilt Active Interface Design), an interactive web-based 
+platform that allows responsive remote customization and feedback of a visual user interface 
+(Figure 1). Users can express their preferences in the software’s dynamic canvas, where the 
+user interface is built and modified by the user. This canvas responds to settings and 
+preferences from a toolbox available to users.
+
+The platform is written as a single page application using hypertext markup language 
+(HTML) and JavaScript with the AngularJS 1.5.x framework.[14] AngularJS facilitates data 
+binding between HTML elements and settings stored in the JavaScript data model.
+
+Canvas
+
+With the creation of any user interface, a design team must decide which data elements to 
+display and how to present them in regards to color, font, location on the screen, and other 
+design choices. With VandAID, the dynamic canvas allows the design team to test different 
+display options by letting the users select the ones that best match their expectations and 
+
+Dufendach et al.
+Page 3
+
+workflow. The canvas responds dynamically to the selections and preferences made by 
+users, giving them direct feedback on the results of their decisions.
+
+The dynamic canvas itself is an HTML document that leverages the power and 
+customizability of HTML 5 and JavaScript. Any graphics, formatting, and even scripts that 
+can be included in a web page can be built directly into the dynamic canvas. This makes this 
+platform ideal for designing custom HTML-based software, such as might be done in 
+creating a SMART (Substitutable Medical Apps, Reusable Technologies) on FHIR (Fast 
+Healthcare Interoperability Resource) application that can be embedded into an EHR.[15–
+17]
+
+Preferences Pane
+
+The preferences pane provides a toolbox from which the user builds the application by first 
+selecting which elements should appear on the canvas and then setting specific element 
+option fields, such as whether out of range values should be bold or how numerical data 
+should be displayed (Figure 2). The option fields are based on standard survey questions 
+such as multiple choice, checkbox, yes-no, text, and other options. The toolbox supports 
+advanced survey options like branching logic, which allows irrelevant options to be hidden 
+until needed.
+
+The canvas responds to the user’s selections and preferences by accessing the values of the 
+preference fields through interfacing with a JavaScript field manager. Although any 
+JavaScript can be used to access the field values, this platform is optimized to use AngularJS 
+directives that allow direct manipulation of the HTML document object model (DOM) based 
+on the values of fields.
+
+Integration with REDCap
+
+By representing each design option as a standard survey field, the VandAID platform is able 
+to interface directly with the powerful REDCap survey and database software.[18] Using the 
+secure REDCap API, the platform can import data collection instrument fields directly into 
+the software for use in the preferences pane and then save each user’s selections as a unique 
+submission in the project. REDCap can also be used to create automated email invitations to 
+users. This can allow anonymous feedback submission on the interface being designed as 
+well as end user voting on preferred interface settings. The REDCap integration also 
+provides designers with a secure, centralized location to store user submissions and to export 
+the raw data for statistical analyses.
+
+Evaluation Interface—In addition to performing statistical analyses on the raw data, 
+administrators from the design team can also use the evaluation interface to view each 
+individual submission. This view is built directly into the VandAID platform itself and 
+allows designers to jump between the various submissions to see the design product from 
+each end user.
+
+Comparison of Classical Participatory Design with the VandAID Platform—We 
+compared the new VandAID platform to classical participatory design (PD) through a 
+
+Dufendach et al.
+Page 4
+
+parallel randomized controlled trial of neonatal intensive care clinicians. Our initial test case 
+for this platform seeks to establish the list and formatting necessary to create an effective 
+neonatal patient list for use in a handoff between neonatal clinicians.
+
+Eligible neonatal clinicians for the study included all neonatal attendings, fellows, and nurse 
+practitioners at Vanderbilt University Medical Center, excepting the two individuals who 
+participated in creation of the VandAID software platform itself. We invited all eligible 
+clinicians to provide feedback on a neonatal handoff tool. Of those who expressed interest, 
+two from each professional group were randomly selected, using R software, to participate 
+in one-on-one PD sessions.[19] Invitations and reminders were sent using REDCap.
+
+One-on-one PD sessions were conducted directly by the first author. Participants were given 
+the opportunity to design a neonatal handoff tool using pens, paper, sticky notes, scissors, 
+and other materials. They were also given a prompt of pre-enumerated potential items, 
+which were the same items available to the VandAID group. Each session was video 
+recorded and then transcribed for further evaluation. All creations were collected by the 
+design team at the conclusion of the session.
+
+All remaining clinicians were sent email invitations with an individualized link to provide 
+design feedback on a neonatal handoff tool using the VandAID software. The VandAID 
+version allowed users to weigh the benefits of adding more information with the space 
+required to present that information. VandAID additionally allowed users to customize the 
+presentation of the data, such as by indicating whether out of range labs should appear in 
+bold and if new labs should appear in italics.
+
+Following each PD or VandAID session, users provided feedback on the usability of the 
+specific user-centered design method by completing a standardized system usability scale 
+survey.[20; 21]
+
+Results
+
+We successfully created a software platform that allows users to customize a user interface 
+and see the results of that customization in real time, receiving immediate feedback on the 
+impact of their choices. We invited all 67 eligible neonatal clinicians to participate in the 
+randomized trial. Of these, 42 expressed interest and were randomized. All 6 randomized to 
+PD completed the sessions, and 29 used the VandAID platform to design and customize a 
+neonatal handoff tool (Figure 3).
+
+Several similarities existed between the items selected with VandAID and the PD sessions 
+(Figure 4). All individuals requested a to-do list. The patient name was forced to be included 
+with the VandAID software, although users could choose how it should appear. Nearly all 
+requested the patient’s location, age and weight information, ventilation settings, and a 
+medication list. No individual requested detailed vital signs. Of note, only 63% of 
+individuals selected the medical record number to appear, which could be considered an 
+important safety concern.
+
+Dufendach et al.
+Page 5
+
+When contrasting the PD sessions with the VandAID designs, we observed differences 
+between the two groups in the items included. Only one of the PD users included the care 
+team name, and only one included a plan by system, both of which were included in over 
+half of the VandAID software designs in which it could be selected as an option. PD 
+participants also generally did not comment on item formatting, such as bold or italicized 
+data, although one individual did volunteer that they would like to have resuscitation status 
+bold if not “full code.” Most PD participants also required prompting from the facilitator 
+specify how laboratory values should appear, whether in a table or in a stick figure diagram. 
+Many VandAID participants left additional free text comments with additional ideas and 
+options not presented in the specific example, some of which had also been enumerated in 
+PD sessions.
+
+Time spent creating a handoff design was significantly shorter for VandAID users with a 
+mean of 9.6 minutes per user (median 9, 95% confidence interval 7.4–11.8 minutes) 
+compared with the PD sessions, which lasted a mean of 26.3 minutes (median 27.5, 95% 
+confidence interval 20.3–32.3 minutes). Results of the system usability scale survey for 
+VandAID users gave a mean of 84.3 (95% CI 80.2–88.4), which places it in the 96th 
+percentile for usability with this standardized survey. For comparison, the PD sessions 
+achieved a mean 75.4 (75th percentile), but also had a very large confidence interval (95% CI 
+52.3–98.5).[20; 21] Other than a short prompt at the top of the canvas pointing them to the 
+left-sided toolbox and the save and submit button, users received no instruction on using the 
+tool itself, and at no time did any of the clinicians contact a research team member to request 
+additional instruction on using the tool.
+
+Source Code
+
+The source code for this initial use case project is available at https://github.com/
+KevinDufendach/vandaid-nicuhandoff.
+
+Conclusions
+
+This study compared two user-centered design methods to help design a neonatal handoff 
+tool, classical one-on-one PD sessions and VandAID, a new web-based crowdsourcing 
+platform. Both methods provided important information, and they proved complementary to 
+each other. VandAID prompted users with examples of possible data elements, which may 
+have allowed users to better weigh the value of displaying certain elements. Compared to the 
+PD session, the use of the VandAID tool was significantly faster and less onerous to 
+providers and researchers while yielding similar results.
+
+Part of the success of the initial use of VandAID may be attributable to the fact that the lead 
+designer of the software (KRD) is a neonatologist and thus a domain subject expert, leading 
+to user-driven innovation. Identification of items for the toolbox and design of the example 
+items was enhanced by having the expertise of an informatics-trained user. Lacking such a 
+dual perspective would likely have required earlier PD sessions or other user-centered 
+techniques.
+
+Dufendach et al.
+Page 6
+
+Our new design platform provides a means of crowdsourcing electronic health record design 
+from multiple users remotely and asynchronously. The versatility of the interactive canvas 
+means that interface designers can use this process at multiple steps throughout the design 
+cycle as the product moves from rough sketches to high fidelity prototypes and ultimately to 
+a fully functional release candidate. An initial canvas may have little more than plain text or 
+hand drawings, while a design in its later stages may be a fully functional SMART on FHIR 
+application that draws data from a live EHR. Using REDCap functionalities, this tool could 
+be used to incorporate input from much larger groups, including external sites.
+
+Involving stakeholders at the start of the design process has been shown to improve end user 
+satisfaction and efficiency by matching the final product to the user’s workflow. This new 
+design platform adds another low-cost tool that can complement other user-centered design 
+methods and facilitate involvement of multiple users throughout the design process.

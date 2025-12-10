@@ -1,0 +1,24 @@
+{
+  "file_name": "Chacon-Cifuentes et al. - 2020 - Interdisciplinary Approach of the Design Process for the Application of New Materials in Wheelchair.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Designers had to build the first functional prototype in aluminum rather than the target magnesium alloy because aluminum was easier to access locally.",
+      "justification": "This resource constraint prevented designers from producing and testing prototypes in the intended material, hindering the production of design solutions and the evaluation/iteration of material-specific behaviors and requirements.",
+      "reference_excerpt": "The first functional prototype is being manufactured in aluminum alloy, due to its ease of access in the local context. This prototype will be used to develop technical and usability tests.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "team",
+      "barrier_type": "resource",
+      "description": "Surface treatment and powder metallurgy processes were developed in parallel subprojects and will only be integrated into the design when those manufacturing processes are scaled.",
+      "justification": "The dependence on separate, not-yet-scaled subprojects delayed integration of manufacturing methods, hindering coordination across disciplines and preventing timely production and evaluation of prototypes using the intended processes.",
+      "reference_excerpt": "On the other hand, the processes for the treatment of the surfaces and the formation of pieces by powder metallurgy, were developed by materials engineers in parallel subprojects. The results of these subprojects will be integrated into the design process when said manufacturing processes are scaled for their application in the magnesium prototype.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

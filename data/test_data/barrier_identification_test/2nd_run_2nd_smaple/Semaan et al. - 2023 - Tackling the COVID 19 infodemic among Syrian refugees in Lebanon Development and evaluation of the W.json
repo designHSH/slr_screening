@@ -1,0 +1,78 @@
+{
+  "file_name": "Semaan et al. - 2023 - Tackling the COVID 19 infodemic among Syrian refugees in Lebanon Development and evaluation of the W.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "COVID-19 lockdowns and quarantine forced the needs assessment to be conducted remotely over WhatsApp, limiting in-person fieldwork.",
+      "justification": "Remote-only data collection constrained designers' ability to study the context of use and to manage deep, evolving user understanding through direct observation and richer interviews.",
+      "reference_excerpt": "Given the limitations due to the lockdowns and quarantine imposed by the government in 2020 and to ensure safety, the MPH students conducted the needs assessment through informal interviews over mobile phones (WhatsApp) while participants were at home.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "interaction",
+      "barrier_type": "emotional",
+      "description": "Refugees were mobile, hard-to-reach, and avoided registration due to fear of discrimination or deportation, reducing direct access for recruitment.",
+      "justification": "Trust and access problems hindered designers' ability to facilitate user involvement and to recruit a diverse sample for needs assessment and testing, limiting user understanding and iteration opportunities.",
+      "reference_excerpt": "Another limitation was working with a very mobile and hard-to-reach population (i.e., Syrian refugees living in urban settings) has always been challenging. These refugees avoid being registered with the UNHCR or local municipalities to avoid discrimination or the risk of being deported to Syria.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The sample was drawn from a single suburb and a convenience/partner-based recruitment, yielding a participant group that was unusually interested and possibly more literate than the broader refugee population.",
+      "justification": "Limited, localized sampling constrained designers' ability to manage comprehensive user understanding and to understand varied contexts of use, reducing the representativeness needed to specify user requirements and evaluate broader acceptability.",
+      "reference_excerpt": "First, the users who participated in this project were from one suburb of the capital city. They were highly interested in contributing to the project so that they might have different views and experiences than refugees living in smaller urban areas.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "team",
+      "barrier_type": "skill",
+      "description": "Qualitative data collection and analysis were limited: the interview guide was not pilot tested, interviews were not recorded, and notes were combined without coding.",
+      "justification": "These methodological shortcomings reduced the team's ability to manage user understanding and to integrate feedback rigorously, impairing translating insights into reliable design requirements and evaluation evidence.",
+      "reference_excerpt": "The interview guide was approved by the HEI research team but was not pilot tested. The interviews were not recorded, and students took notes without collecting personal identifiers. All four students combined their notes to summarize findings and organize them without coding around the themes...",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Interactive features desired by users (e.g., chat/menu) required WhatsApp Business API access or an open service and additional funding, which were not available.",
+      "justification": "Platform-imposed feature restrictions and lack of funding prevented designers from implementing bidirectional interaction, constraining ability to address holistic experience and integrate user feedback into the service.",
+      "reference_excerpt": "These are features available in the WhatsApp for Business, not for closed user groups. Therefore, we considered transforming the service into an open group service, but more funding would be needed for such development.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "WhatsApp's maximum number of users in a closed group limited the scale of dissemination and reach of the intervention.",
+      "justification": "The platform's group size cap constrained designers' ability to scale the solution and to plan broader user engagement or evaluation across larger populations, affecting coordination of user involvement and evaluation reach.",
+      "reference_excerpt": "A technical limitation that needs to be considered is the maximum number of users allowed in a closed WhatsApp group. While WhatsApp has recently increased this number from 512 to 1,024, it still limits the reach of WhatsApp-based communication interventions targeting larger groups, possibly millions of individuals.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 7,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Twitter API rate limits required the team to develop a modified scraper and to circumvent API restrictions via web scraping automation.",
+      "justification": "External platform API restrictions imposed technical workarounds that increased development complexity and resource burden, impeding rapid prototyping and automation of information retrieval needed for the tool.",
+      "reference_excerpt": "Considering that Twitter API allows only 180 requests every 15 min, a modiﬁed TwitterScraper was developed. ... Our scraper circumvented Twitter API restrictions by directly collecting all query information using web scraping automation.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 8,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Automatic translation and TTS required manual adjustments (adding Arabic accents and phonetic signs) to ensure correct pronunciation.",
+      "justification": "The need for manual editing increased operator workload and reduced automation efficiency, constraining production and regular dissemination of audio messages and slowing iteration on message formats.",
+      "reference_excerpt": "The team added Arabic accents and phonetic signs to the text translated via Google to ensure correct pronunciation in the TTS service.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

@@ -1,0 +1,24 @@
+{
+  "file_name": "Tran-Nguyen K - 2022 - Mobile App Prototype in Older Adults for Postfracture Acute Pain Management User Centered Design App.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Remote-only study procedures due to COVID-19 restrictions limited the ability to test the prototype on actual smartphones, potentially missing real-world usability issues.",
+      "justification": "This resource constraint hindered the designers' ability to evaluate designs in the real context of use, as usability testing was restricted to desktop emulators rather than mobile devices.",
+      "reference_excerpt": "First, our studies were conducted remotely owing to the COVID-19 pandemic restrictions, which may have affected the participants’ interactions with the prototype. We used only an emulator on a desktop computer to test our medium-fidelity mHealth prototype; thus, it is possible that some usability problems were not detected. In the future, the prototype should be tested on a smartphone to approximate real use conditions.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Participant recruitment was limited to individuals with higher technological literacy due to the requirement for Zoom access, potentially biasing user feedback and limiting the diversity of user needs captured.",
+      "justification": "This recruitment constraint impeded the designers' ability to manage user understanding and specify user requirements representative of the broader target population, especially those with low technological literacy.",
+      "reference_excerpt": "Third, the protocol for the usability tests required participants to have access to Zoom. Consequently, these participants likely had higher technological literacy than those who would never have used videoconferencing tools. In the future, this app should be evaluated by participants with low technological literacy, and the design should be modified accordingly.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

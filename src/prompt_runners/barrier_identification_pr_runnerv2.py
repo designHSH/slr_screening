@@ -7,7 +7,7 @@ Workflow:
 1. Loads environment variables from `.env` (expects OPENAI_API_KEY).
 2. Parses the YAML prompt (system + user commands, model config, metadata).
 3. Iterates through all `.txt` files in the input directory.
-4. Sends each file’s text to the specified model (e.g., gpt-5-mini).
+4. Sends each file’s text to the specified model (e.g., gpt-4.1).
 5. Saves the model’s JSON output with the same base name in the output folder.
 6. Ensures the "file_name" field appears first in each JSON output.
 7. Logs progress, timing, and errors to `run.log` inside the output folder.
@@ -62,7 +62,7 @@ class PromptRunner:
             version=version,
             system_command=system_command,
             user_command=user_command,
-            model=cfg.get("model", "gpt-5-mini"),
+            model=cfg.get("model", "gpt-4.1"),
             top_p=cfg.get("top_p"),
         )
 
@@ -178,8 +178,8 @@ def main(prompt_yaml: Path, input_dir: Path, output_dir: Path):
 if __name__ == "__main__":
     # === EDIT THESE THREE PATHS ===
     PROMPT_YAML_PATH = Path(r"prompt\barrier_identification_pr.yaml")
-    INPUT_DIR = Path(r"data\test_data\barrier_identification_test\1st_run\input_sample")
-    OUTPUT_DIR = Path(r"data\test_data\barrier_identification_test\2nd_run\first_sample")
+    INPUT_DIR = Path(r"data\test_data\barrier_identification_test\2nd_run\input_2nd")
+    OUTPUT_DIR = Path(r"data\test_data\barrier_identification_test\2nd_run_2nd_smaple")
     # ==============================
 
     main(PROMPT_YAML_PATH, INPUT_DIR, OUTPUT_DIR)

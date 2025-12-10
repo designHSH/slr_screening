@@ -1,0 +1,42 @@
+{
+  "file_name": "Vilaro et al. - 2023 - Information Architects Using Community Engaged and Qualitative Methods to Design a Technology Based.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Early development emphasis on dietary intake reporting led to omission of colorectal cancer (CRC) screening content in initial prototypes.",
+      "justification": "This prioritization constrained the team's ability to address the holistic experience and specify user requirements for CRC screening information, hindering refinement of content and iterative updates to meet user needs.",
+      "reference_excerpt": "Due to the extensive focus on nutrition reporting early on, scripted content in the initial prototypes omitted important details about CRC screening.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Implementing an interactive feedback mechanism ('Ask ALEX') raised unresolved legal, privacy, and scope issues (e.g., clarifying that the team cannot provide medical advice, level of privacy, and whether connecting users to local resources is in-scope).",
+      "justification": "These external/organizational constraints limit the team's ability to implement and operate a user feedback loop, impeding facilitation of user involvement and integration of user feedback into iterative design.",
+      "reference_excerpt": "While a feedback mechanism of this kind may present barriers that still need to be addressed as the prototype progresses (eg, making it clear that the team cannot provide medical advice, being explicit about the level of privacy, deciding if connecting participants to local resources is within the scope of the project)...",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The study design did not assess engaging with the website prior to or simultaneously with the VHA interaction.",
+      "justification": "This methodological constraint prevented the researchers from evaluating alternative interaction flows and fully studying context of use and how synchronous or prior website access affects comprehension and behavior, limiting evaluation and iteration workloads.",
+      "reference_excerpt": "Finally, participants are given an option to access additional content after the VHA interaction, however, the current design does not assess engaging with a website prior to or simultaneously with a VHA, as such content will continue to be adapted as we learn more about how adults interact developed cancer prevention materials.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The VHA prototype did not include subtitles, limiting accessibility in the current version.",
+      "justification": "Lack of subtitles constrained the team's ability to address holistic user experience and accessibility needs during testing, potentially excluding users who require captions and limiting inclusive evaluation and iteration.",
+      "reference_excerpt": "Did not have subtitles in the VHA prototype however, based on previous work in this area and in accordance with ADA guidelines, we plan to build and test a final version with subtitles to enhance accessibility",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

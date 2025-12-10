@@ -1,0 +1,2359 @@
+Page 1 of 64
+https://docs.google.com/forms/d/e/1FAIpQLSfZBSUp1bwOc_Oimq…S&formkey=dGlKd2Z2Q1lNSGQ0THl1azM5MS1aWWc6MA&rm=full#gid=0
+
+CONSORT-EHEALTH (V 1.6.1) -
+Submission/Publication Form
+
+The CONSORT-EHEALTH checklist is intended for authors of randomized trials evaluating 
+web-based and Internet-based applications/interventions, including mobile interventions, 
+electronic games (incl multiplayer games), social media, certain telehealth applications, 
+and other interactive and/or networked electronic applications. Some of the items (e.g. 
+all subitems under item 5 - description of the intervention) may also be applicable for 
+other study designs.
+
+The goal of the CONSORT EHEALTH checklist and guideline is to be 
+a) a guide for reporting for authors of RCTs, 
+b) to form a basis for appraisal of an ehealth trial (in terms of validity)
+
+CONSORT-EHEALTH items/subitems are MANDATORY reporting items for studies 
+published in the Journal of Medical Internet Research and other journals / scientiPc 
+societies endorsing the checklist.
+
+Items numbered 1., 2., 3., 4a., 4b etc are original CONSORT or CONSORT-NPT (non-
+pharmacologic treatment) items. 
+Items with Roman numerals (i., ii, iii, iv etc.) are CONSORT-EHEALTH 
+extensions/clariPcations.
+
+As the CONSORT-EHEALTH checklist is still considered in a formative stage, we would 
+ask that you also RATE ON A SCALE OF 1-5 how important/useful you feel each item is 
+FOR THE PURPOSE OF THE CHECKLIST and reporting guideline (optional).
+
+Mandatory reporting items are marked with a red *. 
+In the textboxes, either copy & paste the relevant sections from your manuscript into this 
+form - please include any quotes from your manuscript in QUOTATION MARKS, 
+or answer directly by providing additional information not in the manuscript, or 
+elaborating on why the item was not relevant for this study. 
+
+YOUR ANSWERS WILL BE PUBLISHED AS  A SUPPLEMENTARY FILE TO YOUR 
+PUBLICATION IN JMIR AND ARE CONSIDERED PART OF YOUR PUBLICATION (IF 
+ACCEPTED). 
+Please Pll in these questions diligently. Information will not be copyedited, so please use 
+proper spelling and grammar, use correct capitalization, and avoid abbreviations.
+
+DO NOT FORGET TO SAVE AS PDF _AND_ CLICK THE SUBMIT BUTTON SO YOUR 
+ANSWERS ARE IN OUR DATABASE !!!
+
+Page 2 of 64
+https://docs.google.com/forms/d/e/1FAIpQLSfZBSUp1bwOc_Oimq…S&formkey=dGlKd2Z2Q1lNSGQ0THl1azM5MS1aWWc6MA&rm=full#gid=0
+
+Citation Suggestion (if you append the pdf as Appendix we suggest to cite this paper in 
+the caption):
+Eysenbach G, CONSORT-EHEALTH Group
+CONSORT-EHEALTH: Improving and Standardizing Evaluation Reports of Web-based and 
+Mobile Health Interventions
+J Med Internet Res 2011;13(4):e126
+URL: http://www.jmir.org/2011/4/e126/
+doi: 10.2196/jmir.1923
+PMID: 22209829
+
+Sign in to Google to save your progress. Learn more
+
+* Required
+
+Your name *
+
+First Last
+
+Shobhana Nagraj
+
+Primary Aﬃliation (short), City, Country *
+
+University of Toronto, Toronto, Canada
+
+University of Oxford
+
+Your e-mail address *
+
+Page 3 of 64
+https://docs.google.com/forms/d/e/1FAIpQLSfZBSUp1bwOc_Oimq…S&formkey=dGlKd2Z2Q1lNSGQ0THl1azM5MS1aWWc6MA&rm=full#gid=0
+
+Title of your manuscript *
+
+Provide the (draft) title of your manuscript.
+
+SMARThealth Pregnancy: A pilot cluster randomised trial in rural India to assess the 
+feasibility and acceptability of a complex intervention using mobile clinical decision support 
+for community health workers to screen, refer and counsel pregnant women at high risk of 
+future cardiometabolic disorders
+
+Name of your App/Software/Intervention *
+
+If there is a short and a long/alternate name, write the short name Prst and add the long
+name in brackets.
+
+SMARThealth Pregnancy
+
+Evaluated Version (if any)
+
+e.g. "V1",  "Release 2017-03-01", "Version 2.0.27913"
+
+Your answer
+
+Language(s) *
+
+What language is the intervention/app in? If multiple languages are available, separate
+by comma (e.g. "English, French")
+
+English
+
+Page 4 of 64
+https://docs.google.com/forms/d/e/1FAIpQLSfZBSUp1bwOc_Oimq…S&formkey=dGlKd2Z2Q1lNSGQ0THl1azM5MS1aWWc6MA&rm=full#gid=0
+
+access is free and open
+
+access only for special usergroups, not open
+
+access is open to everyone, but requires payment/subscription/in-app purchases
+
+app/intervention no longer accessible
+
+Other:
+
+URL of your Intervention Website or App
+
+e.g. a direct link to the mobile app on app in appstore (itunes, Google Play), or URL of the
+website. If the intervention is a DVD or hardware, you can also link to an Amazon page.
+
+https://www.georgeinstitute.org.uk/projects/smarthealth-pregnancy-improving-womens-life-l
+
+URL of an image/screenshot (optional)
+
+Your answer
+
+Accessibility *
+
+Can an enduser access the intervention presently?
+
+Primary Medical Indication/Disease/Condition *
+
+e.g. "Stress", "Diabetes", or dePne the target group in brackets after the condition, e.g.
+"Autism (Parents of children with)", "Alzheimers (Informal Caregivers of)"
+
+High-Risk Pregnancies
+
+Page 5 of 64
+https://docs.google.com/forms/d/e/1FAIpQLSfZBSUp1bwOc_Oimq…S&formkey=dGlKd2Z2Q1lNSGQ0THl1azM5MS1aWWc6MA&rm=full#gid=0
+
+Approximately Daily
+
+Approximately Weekly
+
+Approximately Monthly
+
+Approximately Yearly
+
+"as needed"
+
+Other:
+
+Primary Outcomes measured in trial *
+
+comma-separated list of primary outcomes reported in the trial
+
+Feasibility and Acceptability of intervention
+
+Secondary/other outcomes
+
+Are there any other outcomes the intervention is expected to affect?
+
+Prevalence of anaemia, hypertensive disorders and gestational diabetes in pregnancy, 
+fidelity to intervention practices. 
+
+Recommended "Dose" *
+
+What do the instructions for users say on how often the app should be used?
+
+Last trimester of Pregnancy, week 1 and week 6 postpartum.
+
+Page 6 of 64
+https://docs.google.com/forms/d/e/1FAIpQLSfZBSUp1bwOc_Oimq…S&formkey=dGlKd2Z2Q1lNSGQ0THl1azM5MS1aWWc6MA&rm=full#gid=0
+
+unknown / not evaluated
+
+0-10%
+
+11-20%
+
+21-30%
+
+31-40%
+
+41-50%
+
+51-60%
+
+61-70%
+
+71%-80%
+
+81-90%
+
+91-100%
+
+Other:
+
+Approx. Percentage of Users (starters) still using the app as recommended after
+
+3 months
+
+*
+
+Not used after pilot study completed.
+
+Page 7 of 64
+https://docs.google.com/forms/d/e/1FAIpQLSfZBSUp1bwOc_Oimq…S&formkey=dGlKd2Z2Q1lNSGQ0THl1azM5MS1aWWc6MA&rm=full#gid=0
+
+yes: all primary outcomes were signiPcantly better in intervention group vs control
+
+partly: SOME primary outcomes were signiPcantly better in intervention group vs
+control
+
+no statistically signiPcant difference between control and intervention
+
+potentially harmful: control was signiPcantly better than intervention in one or
+more outcomes
+
+inconclusive: more research is needed
+
+Other:
+
+not submitted yet - in early draft status
+
+not submitted yet - in late draft status, just before submission
+
+submitted to a journal but not reviewed yet
+
+submitted to a journal and after receiving initial reviewer comments
+
+submitted to a journal and accepted, but not published yet
+
+published
+
+Other:
+
+Overall, was the app/intervention effective? *
+
+The intervention was feasible and acceptable for community health w
+
+Article Preparation Status/Stage *
+
+At which stage in your article preparation are you currently (at the time you Pll in this
+form)
+
+Page 8 of 64
+https://docs.google.com/forms/d/e/1FAIpQLSfZBSUp1bwOc_Oimq…S&formkey=dGlKd2Z2Q1lNSGQ0THl1azM5MS1aWWc6MA&rm=full#gid=0
+
+not submitted yet / unclear where I will submit this
+
+Journal of Medical Internet Research (JMIR)
+
+JMIR mHealth and UHealth
+
+JMIR Serious Games
+
+JMIR Mental Health
+
+JMIR Public Health
+
+JMIR Formative Research
+
+Other JMIR sister journal
+
+Other:
+
+Pilot/feasibility
+
+Fully powered
+
+Journal *
+
+ If you already know where you will submit this paper (or if it is already submitted),
+please provide the journal name (if it is not JMIR, provide the journal name under "other")
+
+Is this a full powered effectiveness trial or a pilot/feasibility trial? *
+
+Page 9 of 64
+https://docs.google.com/forms/d/e/1FAIpQLSfZBSUp1bwOc_Oimq…S&formkey=dGlKd2Z2Q1lNSGQ0THl1azM5MS1aWWc6MA&rm=full#gid=0
+
+no ms number (yet) / not (yet) submitted to / published in JMIR
+
+Other:
+
+TITLE AND ABSTRACT
+
+1a) TITLE: Identiﬁcation as a randomized trial in the title
+
+yes
+
+Other:
+
+Manuscript tracking number *
+
+If this is a JMIR submission, please provide the manuscript tracking number under
+"other" (The ms tracking number can be found in the submission acknowledgement
+email, or when you login as author in JMIR. If the paper is already published in JMIR, then
+the ms tracking number is the four-digit number at the end of the DOI, to be found at the
+bottom of each published article in JMIR)
+
+1a) Does your paper address CONSORT item 1a? *
+
+I.e does the title contain the phrase "Randomized Controlled Trial"? (if not, explain the
+reason under "other")
+
+Page 10 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+1
+2
+3
+4
+5
+
+essential
+
+1a-i) Identify the mode of delivery in the title
+
+Identify the mode of delivery. Preferably use “web-based” and/or “mobile” and/or
+“electronic game” in the title. Avoid ambiguous terms like “online”, “virtual”, “interactive”.
+Use “Internet-based” only if Intervention includes non-web-based Internet components
+(e.g. email), use “computer-based” or “electronic” only if orine products are used. Use
+“virtual” only in the context of “virtual reality” (3-D worlds). Use “online” only in the
+context of “online support groups”. Complement or substitute product names with
+broader terms for the class of products (such as “mobile” or “smart phone” instead of
+“iphone”), especially if the application runs on different platforms.
+
+Clear selection
+
+Does your paper address subitem 1a-i? *
+
+Copy and paste relevant sections from manuscript title (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+mobile clinical decision support
+
+1a-ii) Non-web-based components or important co-interventions in title
+
+Mention non-web-based components or important co-interventions in title, if any (e.g.,
+“with telephone support”).
+
+Clear selection
+
+Page 11 of 64
+https://docs.google.com/forms/d/e/1FAIpQLSfZBSUp1bwOc_Oimq…S&formkey=dGlKd2Z2Q1lNSGQ0THl1azM5MS1aWWc6MA&rm=full#gid=0
+
+1
+2
+3
+4
+5
+
+essential
+
+Does your paper address subitem 1a-ii?
+
+Copy and paste relevant sections from manuscript title (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+targeted education and training
+
+1a-iii) Primary condition or target group in the title
+
+Mention primary condition or target group in the title, if any (e.g., “for children with Type I
+Diabetes”) Example: A Web-based and Mobile Intervention with Telephone Support for
+Children with Type I Diabetes: Randomized Controlled Trial
+
+Clear selection
+
+Does your paper address subitem 1a-iii? *
+
+Copy and paste relevant sections from manuscript title (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+We developed and evaluated a complex intervention (SMARThealth Pregnancy) using mobile 
+clinical decision support for Community Health Workers (CHWs) to screen, refer and 
+counsel pregnant women at high risk of future CMDs.
+
+Page 12 of 64
+
+1b) ABSTRACT: Structured summary of trial design, methods, results, and
+
+conclusions
+NPT extension: Description of experimental treatment, comparator, care providers, 
+centers, and blinding status.
+
+1
+2
+3
+4
+5
+
+essential
+
+1b-i) Key features/functionalities/components of the intervention and comparator
+in the METHODS section of the ABSTRACT
+
+Mention key features/functionalities/components of the intervention and comparator in
+the abstract. If possible, also mention theories and principles used for designing the site.
+Keep in mind the needs of systematic reviewers and indexers by including important
+synonyms. (Note: Only report in the abstract what the main paper is reporting. If this
+information is missing from the main body of text, consider adding it)
+
+Clear selection
+
+Does your paper address subitem 1b-i? *
+
+Copy and paste relevant sections from the manuscript abstract (include quotes in
+quotation marks "like this"  to indicate direct quotes from your manuscript), or elaborate
+on this item by providing additional information not in the ms, or briesy explain why the
+item is not applicable/relevant for your study
+
+Intervention (SMARThealth Pregnancy) and control (enhanced standard care)
+
+Page 13 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+1b-ii) Level of human involvement in the METHODS section of the ABSTRACT
+
+Clarify the level of human involvement in the abstract, e.g., use phrases like “fully
+automated” vs. “therapist/nurse/care provider/physician-assisted” (mention number and
+expertise of providers involved, if any). (Note: Only report in the abstract what the main
+paper is reporting. If this information is missing from the main body of text, consider
+adding it)
+
+Clear selection
+
+Does your paper address subitem 1b-ii?
+
+Copy and paste relevant sections from the manuscript abstract (include quotes in
+quotation marks "like this"  to indicate direct quotes from your manuscript), or elaborate
+on this item by providing additional information not in the ms, or briesy explain why the
+item is not applicable/relevant for your study
+
+Two hundred pregnant women, equally randomised to intervention (n=100) and control 
+(enhanced standard care, n=100), were recruited within 5 months across all study sites, with 
+minimal loss to follow-up (2%) at 6 weeks postpartum. A total of 4 primary care doctors and 
+54 CHWs in the intervention clusters, took part in the study.
+
+Page 14 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+1b-iii) Open vs. closed, web-based (self-assessment) vs. face-to-face assessments
+in the METHODS section of the ABSTRACT
+
+Mention how participants were recruited (online vs. orine), e.g., from an open access
+website or from a clinic or a closed online user group (closed usergroup trial), and clarify
+if this was a purely web-based trial, or there were face-to-face components (as part of
+the intervention or for assessment).  Clearly say if outcomes were self-assessed through
+questionnaires (as common in web-based trials). Note: In traditional orine trials, an
+open trial (open-label trial) is a type of clinical trial in which both the researchers and
+participants know which treatment is being administered. To avoid confusion, use
+“blinded” or “unblinded” to indicated the level of blinding instead of “open”, as “open” in
+web-based trials usually refers to “open access” (i.e. participants can self-enrol). (Note:
+Only report in the abstract what the main paper is reporting. If this information is missing
+from the main body of text, consider adding it)
+
+Clear selection
+
+Does your paper address subitem 1b-iii?
+
+Copy and paste relevant sections from the manuscript abstract (include quotes in
+quotation marks "like this"  to indicate direct quotes from your manuscript), or elaborate
+on this item by providing additional information not in the ms, or briesy explain why the
+item is not applicable/relevant for your study
+
+We piloted the intervention in a prospective, unblinded cluster randomised controlled trial 
+(cRCT), embedding a qualitative sub-study, with the primary objectives of assessing the 
+intervention’s feasibility and acceptability.
+
+Page 15 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+1b-iv) RESULTS section in abstract must contain use data
+
+Report number of participants enrolled/assessed in each group, the use/uptake of the
+intervention (e.g., attrition/adherence metrics, use over time, number of logins etc.), in
+addition to primary/secondary outcomes. (Note: Only report in the abstract what the
+main paper is reporting. If this information is missing from the main body of text,
+consider adding it)
+
+Clear selection
+
+Does your paper address subitem 1b-iv?
+
+Copy and paste relevant sections from the manuscript abstract (include quotes in
+quotation marks "like this"  to indicate direct quotes from your manuscript), or elaborate
+on this item by providing additional information not in the ms, or briesy explain why the
+item is not applicable/relevant for your study
+
+Two hundred pregnant women, equally randomised to intervention (n=100) and control 
+(enhanced standard care, n=100), were recruited within 5 months across all study sites, with 
+minimal loss to follow-up (2%) at 6 weeks postpartum
+
+Page 16 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+INTRODUCTION
+
+2a) In INTRODUCTION: Scientiﬁc background and explanation of rationale
+
+1b-v) CONCLUSIONS/DISCUSSION in abstract for negative trials
+
+Conclusions/Discussions in abstract for negative trials: Discuss the primary outcome - if
+the trial is negative (primary outcome not changed), and the intervention was not used,
+discuss whether negative results are attributable to lack of uptake and discuss reasons.
+(Note: Only report in the abstract what the main paper is reporting. If this information is
+missing from the main body of text, consider adding it)
+
+Clear selection
+
+Does your paper address subitem 1b-v?
+
+Copy and paste relevant sections from the manuscript abstract (include quotes in
+quotation marks "like this"  to indicate direct quotes from your manuscript), or elaborate
+on this item by providing additional information not in the ms, or briesy explain why the
+item is not applicable/relevant for your study
+
+SMARThealth Pregnancy is feasible and acceptable for CHWs to screen, refer and counsel 
+pregnant women at high risk of future CMDs.
+
+Page 17 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+2a-i) Problem and the type of system/solution
+
+Describe the problem and the type of system/solution that is object of the study:
+intended as stand-alone intervention vs. incorporated in broader health care program?
+Intended for a particular patient population? Goals of the intervention, e.g., being more
+cost-effective to other interventions, replace or complement other solutions? (Note:
+Details about the intervention are provided in “Methods” under 5)
+
+Clear selection
+
+Does your paper address subitem 2a-i? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+We, therefore, developed a complex intervention, SMARThealth Pregnancy, including mobile 
+clinical decision support for CHWs to screen, refer and counsel women with high-risk 
+conditions that placed them and their baby, at immediate risk during pregnancy, and at 
+future risk of CMDs.
+
+Page 18 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+2b) In INTRODUCTION: Speciﬁc objectives or hypotheses
+
+2a-ii) Scientiﬁc background, rationale: What is known about the (type of) system
+
+ScientiPc background, rationale: What is known about the (type of) system that is the
+object of the study (be sure to discuss the use of similar systems for other
+conditions/diagnoses, if appropiate), motivation for the study, i.e. what are the reasons
+for and what is the context for this speciPc study, from which stakeholder viewpoint is
+the study performed, potential impact of Pndings [2]. Briesy justify the choice of the
+comparator.
+
+Clear selection
+
+Does your paper address subitem 2a-ii? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+Pregnancy-related conditions including Hypertensive Disorders of Pregnancy (HDP) and 
+Gestational Diabetes Mellitus (GDM) are independent risk factors for future cardiometabolic 
+disorders (CMDs), including Type 2 Diabetes Mellitus (T2DM) and CVD.
+
+Page 19 of 64
+
+METHODS
+
+3a) Description of trial design (such as parallel, factorial) including allocation ratio
+
+3b) Important changes to methods after trial commencement (such as eligibility
+
+criteria), with reasons
+
+Does your paper address CONSORT subitem 2b? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+The primary objectives of the pilot cRCT were to assess the feasibility of recruiting Primary 
+Health Centre (PHC) clusters and participants, to ascertain retention rates at 6 weeks 
+postpartum, and to assess acceptability of the intervention to CHWs and pregnant women.
+
+Does your paper address CONSORT subitem 3a? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+We conducted a prospective, parallel, unblinded cRCT with 1:1 allocation in Jhajjar, Haryana, 
+and Guntur, Andhra Pradesh (ClinicalTrials.gov (NCT03968952)
+
+Page 20 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+4a) Eligibility criteria for participants
+
+Does your paper address CONSORT subitem 3b? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+There were no changes to methods after trial commencement.
+
+3b-i) Bug ﬁxes, Downtimes, Content Changes
+
+Bug Pxes, Downtimes, Content Changes: ehealth systems are often dynamic systems. A
+description of changes to methods therefore also includes important changes made on
+the intervention or comparator during the trial (e.g., major bug Pxes or changes in the
+functionality or content) (5-iii) and other “unexpected events” that may have insuenced
+study design such as staff changes, system failures/downtimes, etc. [2].
+
+Clear selection
+
+Does your paper address subitem 3b-i?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+There were no changes to methods although enplane data collection was not fully 
+completed due to the Covid-19 pandemic. This did not affect primary outcomes.
+
+Page 21 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+Does your paper address CONSORT subitem 4a? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+Healthcare professionals were eligible if they were willing and able to give informed consent 
+for participation in the study and were either: a primary care doctor or a CHW (ASHA or 
+ANM) working within the participating districts.  Pregnant women were eligible if they were 
+willing and able to give informed consent for participation in the study and were aged >18 
+years, living in the villages affiliated to the PHCs, and in their third trimester of pregnancy 
+(between 28 to 36 weeks’ pregnant).  
+
+4a-i) Computer / Internet literacy
+
+Computer / Internet literacy is often an implicit “de facto” eligibility criterion - this should
+be explicitly clariPed.
+
+Clear selection
+
+Does your paper address subitem 4a-i?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+The intervention was co-designed with end users and so no problems with digital literacy.
+
+Page 22 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+4a-ii) Open vs. closed, web-based vs. face-to-face assessments:
+
+Open vs. closed, web-based vs. face-to-face assessments: Mention how participants
+were recruited (online vs. orine), e.g., from an open access website or from a clinic, and
+clarify if this was a purely web-based trial, or there were face-to-face components (as
+part of the intervention or for assessment), i.e., to what degree got the study team to
+know the participant. In online-only trials, clarify if participants were quasi-anonymous
+and whether having multiple identities was possible or whether technical or logistical
+measures (e.g., cookies, email conPrmation, phone calls) were used to detect/prevent
+these.
+
+Clear selection
+
+Does your paper address subitem 4a-ii? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+Recruitment was conducted face-to-face for all study participants.
+
+Page 23 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+4b) Settings and locations where the data were collected
+
+4a-iii) Information giving during recruitment
+
+Information given during recruitment. Specify how participants were briefed for
+recruitment and in the informed consent procedures (e.g., publish the informed consent
+documentation as appendix, see also item X26), as this information may have an effect
+on user self-selection, user expectation and may also bias results.
+
+Clear selection
+
+Does your paper address subitem 4a-iii?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+Written informed consent was obtained from all study participants in their local language.  
+
+Does your paper address CONSORT subitem 4b? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+We worked in two diverse districts of rural India - the Jhajjar district, Haryana, and the 
+Guntur district, Andhra Pradesh.
+
+Page 24 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+1
+2
+3
+4
+5
+
+essential
+
+4b-i) Report if outcomes were (self-)assessed through online questionnaires
+
+Clearly report if outcomes were (self-)assessed through online questionnaires (as
+common in web-based trials) or otherwise.
+
+Clear selection
+
+Does your paper address subitem 4b-i? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+Outcomes were assessed through quantitative data collection and a qualitative study 
+
+4b-ii) Report how institutional aﬃliations are displayed
+
+Report how institutional azliations are displayed to potential participants [on ehealth
+media], as azliations with prestigious hospitals or universities may affect volunteer
+rates, use, and reactions with regards to an intervention.(Not a required item – describe
+only if this may bias results)
+
+Clear selection
+
+Page 25 of 64
+
+5) The interventions for each group with suﬃcient details to allow replication,
+
+including how and when they were actually administered
+
+1
+2
+3
+4
+5
+
+essential
+
+Does your paper address subitem 4b-ii?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+Affiliations were not displayed to participants. 
+
+5-i) Mention names, credential, aﬃliations of the developers, sponsors, and owners
+
+Mention names, credential, azliations of the developers, sponsors, and owners [6] (if
+authors/evaluators are owners or developer of the software, this needs to be declared in
+a “Consict of interest” section or mentioned elsewhere in the manuscript).
+
+Clear selection
+
+Does your paper address subitem 5-i?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+The authors' details are all outlined in affiliations.
+
+Page 26 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+1
+2
+3
+4
+5
+
+essential
+
+5-ii) Describe the history/development process
+
+Describe the history/development process of the application and previous formative
+evaluations (e.g., focus groups, usability testing), as these will have an impact on
+adoption/use rates and help with interpreting results.
+
+Clear selection
+
+Does your paper address subitem 5-ii?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+SMARThealth Pregnancy was co-designed with key stakeholders, including ASHAs, ANMs 
+and primary care doctors, using the COM-B model and behaviour change wheel [16–18], and 
+embedded a total of 15 behaviour change techniques [18,19].  
+
+5-iii) Revisions and updating
+
+Revisions and updating. Clearly mention the date and/or version number of the
+application/intervention (and comparator, if applicable) evaluated, or describe whether
+the intervention underwent major changes during the evaluation process, or whether the
+development and/or content was “frozen” during the trial. Describe dynamic components
+such as news feeds or changing content which may have an impact on the replicability
+of the intervention (for unexpected events see item 3b).
+
+Clear selection
+
+Page 27 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+Does your paper address subitem 5-iii?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+The application did not undergo changes during the evaluation process. 
+
+5-iv) Quality assurance methods
+
+Provide information on quality assurance methods to ensure accuracy and quality of
+information provided [1], if applicable.
+
+Clear selection
+
+Does your paper address subitem 5-iv?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+Stage 1 involved training CHWs over 2.5 days (5 x 3-hour sessions), followed by ‘hand-
+holding’ in the field by a member of the field team, with a one-day refresher session a month 
+later.
+
+Page 28 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+5-v) Ensure replicability by publishing the source code, and/or providing
+screenshots/screen-capture video, and/or providing ﬂowcharts of the algorithms
+
+used
+
+Ensure replicability by publishing the source code, and/or providing screenshots/screen-
+capture video, and/or providing sowcharts of the algorithms used. Replicability (i.e.,
+other researchers should in principle be able to replicate the study) is a hallmark of
+scientiPc reporting.
+
+Clear selection
+
+Does your paper address subitem 5-v?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+We have not published the development of algorithms here due to limitations in word count 
+but have referenced these in the text.
+
+Page 29 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+1
+2
+3
+4
+5
+
+essential
+
+5-vi) Digital preservation
+
+Digital preservation: Provide the URL of the application, but as the intervention is likely to
+change or disappear over the course of the years; also make sure the intervention is
+archived (Internet Archive, webcitation.org, and/or publishing the source code or
+screenshots/videos alongside the article). As pages behind login screens cannot be
+archived, consider creating demo pages which are accessible without login.
+
+Clear selection
+
+Does your paper address subitem 5-vi?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+The intervention is currently being used in a larger trial. 
+
+5-vii) Access
+
+Access: Describe how participants accessed the application, in what setting/context, if
+they had to pay (or were paid) or not, whether they had to be a member of speciPc group.
+If known, describe how participants obtained “access to the platform and Internet” [1].
+To ensure access for editors/reviewers/readers, consider to provide a “backdoor” login
+account or demo mode for reviewers/readers to explore the application (also important
+for archiving purposes, see vi).
+
+Clear selection
+
+Page 30 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+Does your paper address subitem 5-vii? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+The participants in the intervention group received the intervention. 
+
+5-viii) Mode of delivery, features/functionalities/components of the intervention
+
+and comparator, and the theoretical framework
+
+Describe mode of delivery, features/functionalities/components of the intervention and
+comparator, and the theoretical framework [6] used to design them (instructional
+strategy [1], behaviour change techniques, persuasive features, etc., see e.g., [7, 8] for
+terminology). This includes an in-depth description of the content (including where it is
+coming from and who developed it) [1],” whether [and how] it is tailored to individual
+circumstances and allows users to track their progress and receive feedback” [6]. This
+also includes a description of communication delivery channels and – if computer-
+mediated communication is a component – whether communication was synchronous
+or asynchronous [6]. It also includes information on presentation strategies [1], including
+page design principles, average amount of text on pages, presence of hyperlinks to other
+resources, etc. [1].
+
+Clear selection
+
+Page 31 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+Does your paper address subitem 5-viii? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+SMARThealth Pregnancy was co-designed with key stakeholders, including ASHAs, ANMs 
+and primary care doctors, using the COM-B model and behaviour change wheel [16–18], and 
+embedded a total of 15 behaviour change techniques [18,19]
+
+5-ix) Describe use parameters
+
+Describe use parameters (e.g., intended “doses” and optimal timing for use). Clarify what
+instructions or recommendations were given to the user, e.g., regarding timing,
+frequency, heaviness of use, if any, or was the intervention used ad libitum.
+
+Clear selection
+
+Does your paper address subitem 5-ix?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+CHW home visits occurred at three time points during the antenatal and postnatal periods. 
+One visit in the last trimester of pregnancy, to detect any high-risk women before delivery, 
+one in the first week postpartum to identify early complications after childbirth, and one at 6 
+weeks postpartum to identify women with ongoing risk. By engaging women with the health 
+system during antenatal care, we aimed to provide continuity of care through their life 
+course.
+
+Page 32 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+5-x) Clarify the level of human involvement
+
+Clarify the level of human involvement (care providers or health professionals, also
+technical assistance) in the e-intervention or as co-intervention (detail number and
+expertise of professionals involved, if any, as well as “type of assistance offered, the
+timing and frequency of the support, how it is initiated, and the medium by which the
+assistance is delivered”. It may be necessary to distinguish between the level of human
+involvement required for the trial, and the level of human involvement required for a
+routine application outside of a RCT setting (discuss under item 21 – generalizability).
+
+Clear selection
+
+Does your paper address subitem 5-x?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+All the PHC leads who were approached to participate in the study agreed to be involved, 
+with four primary care doctors, 10 ANMs and 44 ASHAs at the intervention clusters involved 
+in the study.  The time to recruit the target of 50 pregnant women at each PHC cluster (total 
+= 200) ranged from 50 – 128 days, with a recruitment rate of between 10- 17 pregnant 
+women (in their third trimester of pregnancy), per month.
+
+Page 33 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+1
+2
+3
+4
+5
+
+essential
+
+5-xi) Report any prompts/reminders used
+
+Report any prompts/reminders used: Clarify if there were prompts (letters, emails, phone
+calls, SMS) to use the application, what triggered them, frequency etc. It may be
+necessary to distinguish between the level of prompts/reminders required for the trial,
+and the level of prompts/reminders for a routine application outside of a RCT setting
+(discuss under item 21 – generalizability).
+
+Clear selection
+
+Does your paper address subitem 5-xi? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+No prompts reminders were used. A traffic light system was used and is described. 
+
+5-xii) Describe any co-interventions (incl. training/support)
+
+Describe any co-interventions (incl. training/support): Clearly state any interventions that
+are provided in addition to the targeted eHealth intervention, as ehealth intervention may
+not be designed as stand-alone intervention. This includes training sessions and support
+[1]. It may be necessary to distinguish between the level of training required for the trial,
+and the level of training for a routine application outside of a RCT setting (discuss under
+item 21 – generalizability.
+
+Clear selection
+
+Page 34 of 64
+
+6a) Completely deﬁned pre-speciﬁed primary and secondary outcome measures,
+
+including how and when they were assessed
+
+Does your paper address subitem 5-xii? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+The targeted education and training component built upon the existing curriculum and 
+training for CHWs on high-risk pregnancies, and covered the three priority areas of anaemia 
+in pregnancy, HDP and GDM in greater depth.  
+
+Does your paper address CONSORT subitem 6a? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+The primary objectives of the pilot cRCT were to assess the feasibility of recruiting Primary 
+Health Centre (PHC) clusters and participants, to ascertain retention rates at 6 weeks 
+postpartum, and to assess acceptability of the intervention to CHWs and pregnant women. 
+Secondary objectives were to: (i) ascertain baseline prevalence rates of moderate/severe 
+anaemia, HDP and GDM amongst pregnant women; (ii) evaluate the extent to which the 
+intervention practices were delivered as planned by CHWs (intervention fidelity), and;  (iii) 
+collect clinical outcome data (mean blood pressure (BP) and haemoglobin (Hb) levels) at 6 
+weeks postpartum to inform a sample size calculation and intraclass correlation coefficient 
+(ICC) required for a larger cRCT.
+
+Page 35 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+1
+2
+3
+4
+5
+
+essential
+
+6a-i) Online questionnaires: describe if they were validated for online use and apply
+
+CHERRIES items to describe how the questionnaires were designed/deployed
+
+If outcomes were obtained through online questionnaires, describe if they were validated
+for online use and apply CHERRIES items to describe how the questionnaires were
+designed/deployed [9].
+
+Clear selection
+
+Does your paper address subitem 6a-i?
+
+Copy and paste relevant sections from manuscript text
+
+This is not applicable for our study. 
+
+6a-ii) Describe whether and how “use” (including intensity of use/dosage) was
+deﬁned/measured/monitored
+
+Describe whether and how “use” (including intensity of use/dosage) was
+dePned/measured/monitored (logins, logPle analysis, etc.). Use/adoption metrics are
+important process outcomes that should be reported in any ehealth trial.
+
+Clear selection
+
+Page 36 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+6b) Any changes to trial outcomes after the trial commenced, with reasons
+
+Does your paper address subitem 6a-ii?
+
+Copy and paste relevant sections from manuscript text
+
+These were not applicable for our study.
+
+6a-iii) Describe whether, how, and when qualitative feedback from participants was
+
+obtained
+
+Describe whether, how, and when qualitative feedback from participants was obtained
+(e.g., through emails, feedback forms, interviews, focus groups).
+
+Clear selection
+
+Does your paper address subitem 6a-iii?
+
+Copy and paste relevant sections from manuscript text
+
+To explore the acceptability of the intervention to CHWs and pregnant women, we 
+conducted a qualitative sub-study to understand the mechanisms of impact, and explore the 
+factors influencing the implementation and integration of the intervention into the daily work 
+of CHWs.
+
+Page 37 of 64
+
+7a) How sample size was determined
+NPT: When applicable, details of whether and how the clustering by care provides or 
+centers was addressed
+
+1
+2
+3
+4
+5
+
+essential
+
+Does your paper address CONSORT subitem 6b? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+These were not applicable for our study.
+
+7a-i) Describe whether and how expected attrition was taken into account when
+calculating the sample size
+
+Describe whether and how expected attrition was taken into account when calculating
+the sample size.
+
+Clear selection
+
+Does your paper address subitem 7a-i?
+
+Copy and paste relevant sections from manuscript title (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+The sample size of 200 pregnant women was chosen for the pilot study following 
+discussion with a senior statistician (LB) at The George Institute for Global Health and 
+based on published guidance relating to pilot studies [24–26]
+
+Page 38 of 64
+
+7b) When applicable, explanation of any interim analyses and stopping guidelines
+
+8a) Method used to generate the random allocation sequence
+NPT: When applicable, how care providers were allocated to each trial group
+
+8b) Type of randomisation; details of any restriction (such as blocking and block
+
+size)
+
+Does your paper address CONSORT subitem 7b? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+This was not applicable for our study.
+
+Does your paper address CONSORT subitem 8a? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+A random number generator was used by an independent, blinded statistician (LB) to 
+randomise one PHC in each state to the SMARThealth Pregnancy intervention and one to 
+the control group (enhanced standard care).
+
+Page 39 of 64
+
+9) Mechanism used to implement the random allocation sequence (such as
+
+sequentially numbered containers), describing any steps taken to conceal the
+
+sequence until interventions were assigned
+
+10) Who generated the random allocation sequence, who enrolled participants, and
+
+who assigned participants to interventions
+
+Does your paper address CONSORT subitem 8b? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+This was not applicable for our study.
+
+Does your paper address CONSORT subitem 9? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+This was not applicable for our study.
+
+Page 40 of 64
+
+11a) If done, who was blinded after assignment to interventions (for example,
+
+participants, care providers, those assessing outcomes) and how
+NPT: Whether or not administering co-interventions were blinded to group assignment
+
+1
+2
+3
+4
+5
+
+essential
+
+Does your paper address CONSORT subitem 10? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+An independent, blinded statistician (LB) 
+
+11a-i) Specify who was blinded, and who wasn’t
+
+Specify who was blinded, and who wasn’t. Usually, in web-based trials it is not possible
+to blind the participants [1, 3] (this should be clearly acknowledged), but it may be
+possible to blind outcome assessors, those doing data analysis or those administering
+co-interventions (if any).
+
+Clear selection
+
+Does your paper address subitem 11a-i? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+An independent, blinded statistician (LB) at the George Institute for Global Health
+
+Page 41 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+11b) If relevant, description of the similarity of interventions
+(this item is usually not relevant for ehealth trials as it refers to similarity of a placebo or 
+sham intervention to a active medication/intervention)
+
+11a-ii) Discuss e.g., whether participants knew which intervention was the
+
+“intervention of interest” and which one was the “comparator”
+
+Informed consent procedures (4a-ii) can create biases and certain expectations -
+discuss e.g., whether participants knew which intervention was the “intervention of
+interest” and which one was the “comparator”.
+
+Clear selection
+
+Does your paper address subitem 11a-ii?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+Participants were not blinded to the intervention. 
+
+Does your paper address CONSORT subitem 11b? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+This was not applicable.
+
+Page 42 of 64
+
+12a) Statistical methods used to compare groups for primary and secondary
+
+outcomes
+NPT: When applicable, details of whether and how the clustering by care providers or 
+centers was addressed
+
+1
+2
+3
+4
+5
+
+essential
+
+Does your paper address CONSORT subitem 12a? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+This was not applicable. 
+
+12a-i) Imputation techniques to deal with attrition / missing values
+
+Imputation techniques to deal with attrition / missing values: Not all participants will use
+the intervention/comparator as intended and attrition is typically high in ehealth trials.
+Specify how participants who did not use the application or dropped out from the trial
+were treated in the statistical analysis (a complete case analysis is strongly discouraged,
+and simple imputation techniques such as LOCF may also be problematic [4]).
+
+Clear selection
+
+Page 43 of 64
+
+12b) Methods for additional analyses, such as subgroup analyses and adjusted
+analyses
+
+X26) REB/IRB Approval and Ethical Considerations [recommended as subheading
+under "Methods"] (not a CONSORT item)
+
+1
+2
+3
+4
+5
+
+essential
+
+Does your paper address subitem 12a-i? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+This was not applicable. 
+
+Does your paper address CONSORT subitem 12b? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+This was not applicable. 
+
+X26-i) Comment on ethics committee approval
+
+Clear selection
+
+Page 44 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+Does your paper address subitem X26-i?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+Ethical approval was obtained from the Oxford Tropical Research Ethics Committee 
+(OxTREC reference: 22-19) and the George Institute India Ethics Committee (Reference: 
+010/2019), with trial oversight by a steering committee.  
+
+x26-ii) Outline informed consent procedures
+
+Outline informed consent procedures e.g., if consent was obtained orine or online
+(how? Checkbox, etc.?), and what information was provided (see 4a-ii). See [6] for some
+items to be included in informed consent documents.
+
+Clear selection
+
+Does your paper address subitem X26-ii?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+Written informed consent was obtained at the cluster level from the PHC administrative lead 
+prior to randomisation. Those eligible were recruited during ANC visits by a field team 
+member trained in taking informed consent.  Written informed consent was obtained from 
+all study participants in their local language.
+
+Page 45 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+RESULTS
+
+13a) For each group, the numbers of participants who were randomly assigned,
+
+received intended treatment, and were analysed for the primary outcome
+NPT: The number of care providers or centers performing the intervention in each group 
+and the number of patients treated by each care provider in each center
+
+X26-iii) Safety and security procedures
+
+Safety and security procedures, incl. privacy considerations, and any steps taken to
+reduce the likelihood or detection of harm (e.g., education and training, availability of a
+hotline)
+
+Clear selection
+
+Does your paper address subitem X26-iii?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+This was not applicable.
+
+Page 46 of 64
+
+13b) For each group, losses and exclusions after randomisation, together with
+
+reasons
+
+1
+2
+3
+4
+5
+
+essential
+
+Does your paper address CONSORT subitem 13a? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+This is outlined in a Consort flow diagram in the paper.
+
+Does your paper address CONSORT subitem 13b? (NOTE: Preferably, this is
+
+shown in a CONSORT ﬂow diagram)
+
+*
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+This is outlined in a Consort flow diagram in the paper.
+
+13b-i) Attrition diagram
+
+Strongly recommended: An attrition diagram (e.g., proportion of participants still logging
+in or using the intervention/comparator in each group plotted over time, similar to a
+survival curve) or other Pgures or tables demonstrating usage/dose/engagement.
+
+Clear selection
+
+Page 47 of 64
+
+14a) Dates deﬁning the periods of recruitment and follow-up
+
+1
+2
+3
+4
+5
+
+essential
+
+Does your paper address subitem 13b-i?
+
+Copy and paste relevant sections from the manuscript or cite the Pgure number if
+applicable (include quotes in quotation marks "like this"  to indicate direct quotes from
+your manuscript), or elaborate on this item by providing additional information not in the
+ms, or briesy explain why the item is not applicable/relevant for your study
+
+This is outlined in a Consort flow diagram in the paper and here: Four women (2.0%) in the 
+control group were lost to follow-up (two at each study site). All these women moved out of 
+the area to their mother’s village postpartum. In the intervention group, there was no loss to 
+follow-up. 
+
+Does your paper address CONSORT subitem 14a? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+The study took place between October 2019 and December 2020
+
+14a-i) Indicate if critical “secular events” fell into the study period
+
+Indicate if critical “secular events” fell into the study period, e.g., signiPcant changes in
+Internet resources available or “changes in computer hardware or Internet delivery
+resources”
+
+Clear selection
+
+Page 48 of 64
+
+14b) Why the trial ended or was stopped (early)
+
+15) A table showing baseline demographic and clinical characteristics for each
+
+group
+NPT: When applicable, a description of care providers (case volume, qualiPcation, 
+expertise, etc.) and centers (volume) in each group
+
+Does your paper address subitem 14a-i?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+Although the pilot study started in October 2019, i.e. before the global COVID-19 pandemic, 
+the whole of India locked down for 2 months from March 24th, 2020.  
+
+Does your paper address CONSORT subitem 14b? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+This was not applicable.
+
+Page 49 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+16) For each group, number of participants (denominator) included in each
+
+analysis and whether the analysis was by original assigned groups
+
+Does your paper address CONSORT subitem 15? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+Please see Table 2 in the main text
+
+15-i) Report demographics associated with digital divide issues
+
+In ehealth trials it is particularly important to report demographics associated with digital
+divide issues, such as age, education, gender, social-economic status,
+computer/Internet/ehealth literacy of the participants, if known.
+
+Clear selection
+
+Does your paper address subitem 15-i? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+Please see Table 2 in the main text
+
+Page 50 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+1
+2
+3
+4
+5
+
+essential
+
+16-i) Report multiple “denominators” and provide deﬁnitions
+
+Report multiple “denominators” and provide dePnitions: Report N’s (and effect sizes)
+“across a range of study participation [and use] thresholds” [1], e.g., N exposed, N
+consented, N used more than x times, N used more than y weeks, N participants “used”
+the intervention/comparator at speciPc pre-dePned time points of interest (in absolute
+and relative numbers per group). Always clearly dePne “use” of the intervention.
+
+Clear selection
+
+Does your paper address subitem 16-i? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+This is outlined in Table 2 in the main text. 
+
+16-ii) Primary analysis should be intent-to-treat
+
+Primary analysis should be intent-to-treat, secondary analyses could include comparing
+only “users”, with the appropriate caveats that this is no longer a randomized sample
+(see 18-i).
+
+Clear selection
+
+Page 51 of 64
+
+17a) For each primary and secondary outcome, results for each group, and the
+
+estimated effect size and its precision (such as 95% conﬁdence interval)
+
+Does your paper address subitem 16-ii?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+This was not applicable for our study.
+
+Does your paper address CONSORT subitem 17a? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+This was not applicable for our study.
+
+Page 52 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+17b) For binary outcomes, presentation of both absolute and relative effect sizes is
+
+recommended
+
+17a-i) Presentation of process outcomes such as metrics of use and intensity of
+
+use
+
+In addition to primary/secondary (clinical) outcomes, the presentation of process
+outcomes such as metrics of use and intensity of use (dose, exposure) and their
+operational dePnitions is critical. This does not only refer to metrics of attrition (13-b)
+(often a binary variable), but also to more continuous exposure metrics such as “average
+session length”. These must be accompanied by a technical description how a metric
+like a “session” is dePned (e.g., timeout after idle time) [1] (report under item 6a).
+
+Clear selection
+
+Does your paper address subitem 17a-i?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+This was not applicable for our study.
+
+Page 53 of 64
+
+18) Results of any other analyses performed, including subgroup analyses and
+adjusted analyses, distinguishing pre-speciﬁed from exploratory
+
+1
+2
+3
+4
+5
+
+essential
+
+Does your paper address CONSORT subitem 17b? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+Our primary outcomes were feasibility including recruitment & retention rates and 
+acceptability. 
+
+Does your paper address CONSORT subitem 18? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+This was not applicable for our study.
+
+18-i) Subgroup analysis of comparing only users
+
+A subgroup analysis of comparing only users is not uncommon in ehealth trials, but if
+done, it must be stressed that this is a self-selected sample and no longer an unbiased
+sample from a randomized trial (see 16-iii).
+
+Clear selection
+
+Page 54 of 64
+
+19) All important harms or unintended effects in each group
+(for speciPc guidance see CONSORT for harms)
+
+1
+2
+3
+4
+5
+
+essential
+
+Does your paper address subitem 18-i?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+This was not applicable for our study.
+
+Does your paper address CONSORT subitem 19? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+There were no unintended harms. 
+
+19-i) Include privacy breaches, technical problems
+
+Include privacy breaches, technical problems. This does not only include physical “harm”
+to participants, but also incidents such as perceived or real privacy breaches [1],
+technical problems, and other unexpected/unintended incidents. “Unintended effects”
+also includes unintended positive effects [2].
+
+Clear selection
+
+Page 55 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+DISCUSSION
+
+Does your paper address subitem 19-i?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+This was not applicable for our study.
+
+19-ii) Include qualitative feedback from participants or observations from
+
+staff/researchers
+
+Include qualitative feedback from participants or observations from staff/researchers, if
+available, on strengths and shortcomings of the application, especially if they point to
+unintended/unexpected effects or uses. This includes (if available) reasons for why
+people did or did not use the application as intended by the developers.
+
+Clear selection
+
+Does your paper address subitem 19-ii?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+A total of 61 participants including CHWs (n=56) and pregnant/postpartum women (n=5) 
+took part in five FGDs and seven IDIs. CHWs were able to understand the value of the 
+intervention practices in relation to previous ways of working.
+
+Page 56 of 64
+
+22) Interpretation consistent with results, balancing beneﬁts and harms, and
+
+considering other relevant evidence
+NPT: In addition, take into account the choice of the comparator, lack of or partial 
+blinding, and unequal expertise of care providers or centers in each group
+
+1
+2
+3
+4
+5
+
+essential
+
+22-i) Restate study questions and summarize the answers suggested by the data,
+
+starting with primary outcomes and process outcomes (use)
+
+Restate study questions and summarize the answers suggested by the data, starting
+with primary outcomes and process outcomes (use).
+
+Clear selection
+
+Does your paper address subitem 22-i? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+Our pilot study has demonstrated that recruitment and retention of PHCs and participants to 
+the SMARThealth Pregnancy intervention is feasible ahead of a larger clinical trial and the 
+intervention was acceptable to end-users.
+
+Page 57 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+20) Trial limitations, addressing sources of potential bias, imprecision, and, if
+
+relevant, multiplicity of analyses
+
+1
+2
+3
+4
+5
+
+essential
+
+22-ii) Highlight unanswered new questions, suggest future research
+
+Highlight unanswered new questions, suggest future research.
+
+Clear selection
+
+Does your paper address subitem 22-ii?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+We have mentioned that clinical effectiveness will be addressed in a definitive trial. 
+
+20-i) Typical limitations in ehealth trials
+
+Typical limitations in ehealth trials: Participants in ehealth trials are rarely blinded.
+Ehealth trials often look at a multiplicity of outcomes, increasing risk for a Type I error.
+Discuss biases due to non-use of the intervention/usability issues, biases through
+informed consent procedures, unexpected events.
+
+Clear selection
+
+Page 58 of 64
+
+21) Generalisability (external validity, applicability) of the trial ﬁndings
+NPT: External validity of the trial Pndings according to the intervention, comparators, 
+patients, and care providers or centers involved in the trial
+
+1
+2
+3
+4
+5
+
+essential
+
+Does your paper address subitem 20-i? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+There is a limitations section in our manuscript. 
+
+21-i) Generalizability to other populations
+
+Generalizability to other populations: In particular, discuss generalizability to a general
+Internet population, outside of a RCT setting, and general patient population, including
+applicability of the study results for other organizations
+
+Clear selection
+
+Does your paper address subitem 21-i?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+This is not applicable for this study.
+
+Page 59 of 64
+
+1
+2
+3
+4
+5
+
+essential
+
+OTHER INFORMATION
+
+23) Registration number and name of trial registry
+
+21-ii) Discuss if there were elements in the RCT that would be different in a routine
+
+application setting
+
+Discuss if there were elements in the RCT that would be different in a routine application
+setting (e.g., prompts/reminders, more human involvement, training sessions or other
+co-interventions) and what impact the omission of these elements could have on use,
+adoption, or outcomes if the intervention is applied outside of a RCT setting.
+
+Clear selection
+
+Does your paper address subitem 21-ii?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+The study took place in a "real-world" setting.
+
+Page 60 of 64
+
+24) Where the full trial protocol can be accessed, if available
+
+25) Sources of funding and other support (such as supply of drugs), role of funders
+
+Does your paper address CONSORT subitem 23? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+ClinicalTrials.gov (NCT03968952)
+
+Does your paper address CONSORT subitem 24? *
+
+Cite a Multimedia Appendix, other reference, or copy and paste relevant sections from
+the manuscript (include quotes in quotation marks "like this"  to indicate direct quotes
+from your manuscript), or elaborate on this item by providing additional information not
+in the ms, or briesy explain why the item is not applicable/relevant for your study
+
+Nagraj S, Kennedy SH, Jha V, et al. SMARThealth Pregnancy: Feasibility and Acceptability of 
+a Complex Intervention for High-Risk Pregnant Women in Rural India: Protocol for a Pilot 
+Cluster Randomised Controlled Trial. Front Glob Womens Health 2021;2. 
+doi:10.3389/fgwh.2021.620759
+
+Does your paper address CONSORT subitem 25? *
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+SN was supported by an MRC Clinical Research Training Fellowship (MR/R017182/1).
+
+Page 61 of 64
+
+X27) Conﬂicts of Interest (not a CONSORT item)
+
+1
+2
+3
+4
+5
+
+essential
+
+About the CONSORT EHEALTH checklist
+
+X27-i) State the relation of the study team towards the system being evaluated
+
+In addition to the usual declaration of interests (Pnancial or otherwise), also state the
+relation of the study team towards the system being evaluated, i.e., state if the
+authors/evaluators are distinct from or identical with the developers/sponsors of the
+intervention.
+
+Clear selection
+
+Does your paper address subitem X27-i?
+
+Copy and paste relevant sections from the manuscript (include quotes in quotation
+marks "like this"  to indicate direct quotes from your manuscript), or elaborate on this
+item by providing additional information not in the ms, or briesy explain why the item is
+not applicable/relevant for your study
+
+The study team were part off the team that developed the SMARThealth Pregnancy 
+intervention.
+
+Page 62 of 64
+
+yes, major changes
+
+yes, minor changes
+
+no
+
+yes
+
+no
+
+Other:
+
+As a result of using this checklist, did you make changes in your manuscript? *
+
+What were the most important changes you made as a result of using this
+
+checklist?
+
+Added in detail relating to the funding, consent and abstract. 
+
+How much time did you spend on going through the checklist INCLUDING making
+changes in your manuscript
+
+*
+
+This took approximately 2 hours
+
+As a result of using this checklist, do you think your manuscript has improved? *
+
+Page 63 of 64
+
+yes
+
+no
+
+Other:
+
+STOP - Save this form as PDF before you click submit
+To generate a record that you Plled in this form, we recommend to generate a PDF of this 
+page (on a Mac, simply select "print" and then select "print as PDF") before you submit it. 
+
+When you submit your (revised) paper to JMIR, please upload the PDF as supplementary 
+Ple. 
+
+Don't worry if some text in the textboxes is cut off, as we still have the complete 
+information in our database. Thank you!
+
+Final step: Click submit !
+Click submit so we have your answers in our database! 
+
+Never submit passwords through Google Forms.
+
+This content is neither created nor endorsed by Google. Report Abuse - Terms of Service - Privacy Policy
+
+Would you like to become involved in the CONSORT EHEALTH group?
+
+This would involve for example becoming involved in participating in a workshop and
+writing an "Explanation and Elaboration" document
+
+Clear selection
+
+Any other comments or questions on CONSORT EHEALTH
+
+Your answer
+
+Submit
+Clear form
+
+Page 64 of 64
+
+ Forms

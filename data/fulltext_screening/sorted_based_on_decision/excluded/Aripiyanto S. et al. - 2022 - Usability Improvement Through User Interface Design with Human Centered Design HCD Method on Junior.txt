@@ -1,0 +1,996 @@
+Usability Improvement Through User Interface 
+Design with Human Centered Design (HCD) 
+Method on Junior High School Websites
+
+ 
+Saepul Aripiyanto 
+Faculty of Science and Technology State 
+Islamic University Syarif Hidayatullah 
+Jakarta, Indonesia 
+
+Siti Ummi Masruroh 
+Faculty of Science and Technology State 
+Islamic University Syarif Hidayatullah 
+Jakarta, Indonesia 
+
+Muhamad Azhari 
+Faculty of Science and Technology State 
+Islamic University Syarif Hidayatullah 
+Jakarta, Indonesia 
+
+Dewi Khairani 
+Faculty of Science and Technology State 
+Islamic University Syarif Hidayatullah 
+Jakarta, Indonesia 
+
+Riana Munawarohman 
+Faculty of Science and Technology State 
+Islamic University Syarif Hidayatullah 
+Jakarta, Indonesia 
+
+Husni Teja Sukmana 
+Faculty of Science and Technology State 
+Islamic University Syarif Hidayatullah 
+Jakarta, Indonesia 
+
+Abstract— Menes Mathla'ul Anwar Central Junior High 
+School is one of the schools that is trying to take advantage of 
+technology in the world of education by having a profile 
+website that is used for school purposes. Based on observations 
+and interviews, the school still feels dissatisfied with the User 
+Interface and User Experience of the existing website due to 
+poor navigation naming and some things that still do not meet 
+the needs of the school. In the initial design evaluation using 
+the System Usability Scale (SUS) method, it shows that the 
+Menes Mathla'ul Anwar Central Junior High School website 
+has an average usability score of 35.42 with an acceptance rate 
+that is in the not acceptable category. This study intends to 
+evaluate usability and provide user interface recommendations 
+in the form of a prototype on the Menes Mathla'ul Anwar 
+Central Junior High School website. Data collection begins 
+with an observation then a literature study, and interviews. For 
+the design, Human Centered Design (HCD) is used, which 
+consists of four stages of the Problem, namely analysis of the 
+context of use, analysis of user needs, making of solution 
+designs, and evaluation of solution designs. The results of the 
+evaluation of the solution design using the Heuristic Evaluation 
+(HE) and System Usability Scale (SUS) methods indicate that 
+the designed solution design is considered good enough and 
+users can interact effectively and easily. The HE method shows 
+that the solution design only has 4 problems, 3 of which fall 
+into the low-priority category, and 1 of them falls into the 
+category that does not affect the user. Meanwhile, in the SUS 
+method, the average score for the website design solution 
+usability is 70,93 with the acceptance rate in the acceptable 
+category 
+
+Keywords— User Interface, User Experience, Human 
+Centered Design, Heuristic Evaluation, System Usability Scale. 
+
+ 
+
+I. INTRODUCTION 
+
+The widespread use of technology in everyday life makes 
+the relationship between humans and technology very close. 
+This makes the interaction of humans and technology 
+important and must be considered to increase the ease of 
+using technology. This is discussed in the scientific field, 
+namely Human and Computer Interaction (HCI) [1] 
+
+The problem that exists on the Menes Mathla'ul Anwar 
+Central Junior High School website at this time is in the user 
+interface design, especially in the content and navigation 
+sections that are not appropriate so users will find it difficult 
+to find information quickly. In addition, the school also 
+
+expects changes to the New Student Admission registration 
+feature so that it can adapt to the needs of the school. 
+
+One of the other factors that make a website have good 
+usability is the user interface (UI). UI is an important thing in 
+a website because it is the link between the system and the 
+user. In making the UI of a website, it must be done as well 
+as possible because this will create user perceptions in using 
+a website. User interface design must also pay attention to 
+ease of use so that it can be accepted by users. In addition, a 
+UI design that is less attractive, difficult to understand, and 
+causes boredom, can make a website fail and If a user gets a 
+website with a bad UX, it will be easier to switch to another 
+website or stop using it [2] 
+
+II. LITERATURE REVIEW 
+
+A. User Interface 
+The user interface is the part of the software and 
+hardware that ensures how humans interact with the device, 
+and how the information displayed can be easily understood 
+by the user. User interfaces that fall into the good category 
+are interfaces that can provide comfort and convenience to 
+users in accessing any information contained in the software 
+so that the objectives of the software can be achieved [3] 
+
+B. User Experience 
+ 
+User experience is a person's impression and response to 
+the use of a product, system, or service that includes all 
+human aspects such as emotions, beliefs, tendencies, 
+impressions, physical responses, psychological responses, 
+behavior, and achievements that occur before, during, and 
+after the use of a product, system, or service [4] 
+
+C. Human – Centered Design 
+ 
+The Human-Centered Design method consists of four 
+stages. The first stage is an analysis of the context of use 
+which aims to create a description of the context of the use of 
+the system which includes a list of users and stakeholders, 
+user characteristics, user goals and tasks, and the system 
+environment. The second stage is a needs analysis to create a 
+description of the needs of users and stakeholders related to 
+the system's user interface. The third stage is making a user 
+interface design by considering the context of use and system 
+requirements. The last stage is design evaluation to 
+determine the usability value of the design that has been 
+made. The human-centered Design method has the principle 
+of process customization, namely the stages can be 
+
+2022 Seventh International Conference on Informatics and Computing (ICIC) | 979-8-3503-4571-1/22/$31.00 ©2022 IEEE | DOI: 10.1109/ICIC56845.2022.10006921
+
+determined, adjusted, and implemented based on the needs of 
+the organization or project [5] 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 1. Step of Human – Centered Design (HCD) 
+
+D. Usability Testing 
+Usability testing is defined as an assessment of the ability 
+of a system, product, or service that is used or utilized by 
+certain users to achieve the expected goals by assessing 
+effectiveness, efficiency, and satisfaction in the context of 
+expected use [4]. Quality in use refers to the extent to which 
+a product or service meets the needs and expectations of its 
+users when it is used in the intended context of use. It is 
+important because it determines the extent to which a product 
+or service is able to deliver value to its users.[11]. 
+
+E. Heuristic Evaluation (HE) 
+Heuristics are general guidelines or principles that can be 
+used as a reference in making design decisions and can be 
+used to criticize decisions that have been made. In compiling 
+a critique of a system, a series of heuristics are relatively 
+simple and general. Expert evaluators in this method will 
+independently criticize a system to find potential problems 
+with usability [6] 
+
+F. System Usability Scale 
+System usability scale (SUS) is a method of analyzing or 
+testing usability by involving end users or end users in the 
+process [7][13]. The system usability scale has the 
+characteristics that SUS consists of ten questions, so it is 
+relatively fast and easy for respondents to complete, SUS 
+uses technology agnostic, which means it can be widely used 
+and evaluates almost all types of interfaces, including 
+websites, smartphones, interactive voice responses, systems 
+(touch-tone and speech), TV, etc. The results of the SUS 
+questionnaire are single scores, ranging from a score of 0 to 
+100, and are relatively easy to understand by various 
+disciplines, both individuals and groups [8][12] 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 2. Score of System usability scale (SUS) 
+
+ 
+Based on fig.2 In interpreting the results of the SUS 
+score, five ways can be used, namely based on the 
+
+comparison interpretation of percentile rank, rank, trait, 
+level acceptance and NPS of the SUS score itself [9] 
+
+III. METHODOLOGY 
+
+A. Data Collecting Method 
+1) 
+Interview 
+In this study, interviews were conducted with the 
+school, namely teachers and students, and parents. The 
+location of the interview will adjust to the agreement 
+between the author and the respondent which will be 
+carried out in June 2022. The interview questions cover 
+several things, namely the identity of the user, the 
+purpose and tasks of using the website, the system used 
+by the user, the difficulty of the user in using the website 
+in the initial design, and suggestions. to design a solution. 
+The interview participants were 6 people consisting of 2 
+teachers (IT teacher and principal), 2 students, and 2 
+parents from  Mathla'ul Anwar Central Junior High 
+School Menes. This number refers to Thomas (2020) and 
+Nielsen (2012) that conducting interviews with 5 users 
+will provide a sufficient understanding of the user's 
+feelings regarding the research topic. 
+ 
+2) 
+Observation 
+Observation is an empirical scientific activity that 
+is based on field facts and texts, through the experience 
+of the five senses without using any manipulation. 
+Before the research is carried out, first observation will 
+be made on the Menes Mathla'ul Anwar Central Junior 
+High 
+School 
+website 
+by 
+opening 
+the 
+https://mtsmacenter.sch.id/ page. 
+ 
+3) 
+Questionnaire 
+The questionnaire includes questions related to self-
+identity, experience in using the website, and expectations 
+regarding website design. For questions about the 
+experience of using the website, the author uses the System 
+Usability Scale (SUS) which consists of 10 questions. SUS 
+was chosen because it has different characteristics from 
+other questionnaires, namely that it has been validated and 
+tested for reliability even with a small sample value. System 
+Usability Scale (SUS) by considering time, cost, and a small 
+sample still provide adequate results. 
+
+The SUS questionnaire that has been compiled in the 
+form of a Google Form is then distributed online to 
+respondents with the criteria described above. The author 
+targets the number of respondents to be more than 30 
+respondents. This number refers to research by Roscoe in 
+Sugiyono (2013) that the appropriate sample size in the 
+study is between 30 to 500[10]. The purpose of distributing 
+the questionnaire is to determine the level of satisfaction 
+with using Menes Mathla'ul Anwar Central Junior High 
+School website 
+
+4) 
+Literature Review 
+A literature study is conducted to gather information 
+relevant to the topic or problem to be studied. A literature 
+study was conducted on matters related to and needed to 
+evaluate and design the interface of the Menes Mathla'ul 
+Anwar Central Junior High School website from national 
+journal and international journals. 
+
+B. Development Method 
+The cycle that is owned by Human Centered Design can 
+be seen in the ISO 9241-210 Human Centered Design For 
+Interactive System model which consists of several steps as 
+follows 
+
+1) 
+Usage Context Analysis 
+this stage, the authors conducted interviews with website 
+users and stakeholders to find out a description of the use of 
+the website and generate a persona. Later, the personas from 
+this stage will be used as a solid foundation in the evaluation 
+and solution design stages 
+ 
+2) 
+Initial Design Evaluation 
+
+At this stage, the authors evaluate usability to measure 
+the level of user satisfaction with the System Usability Scale 
+(SUS) method. In practice, the author will distribute 
+questionnaires to several respondents then the results of the 
+evaluation will be used as the basis for making solution 
+designs and also comparative analysis with the results of the 
+solution design evaluation. 
+ 
+3) 
+User Requirement Analysis 
+ this stage, the authors collect data related to the 
+requirement for solution design. The results of the initial 
+design evaluation can assist in the discovery of various 
+usability problems in the initial design and the need for 
+design solutions. Researchers will conduct interviews with 
+several participants who have been recruited for an 
+evaluation of the initial design that has been carried out 
+previously. The interview method used is a semi-structured 
+interview. In the interview, the author will ask about the 
+obstacles in using the website, usability problems related to 
+the website's user interface, and suggestions from 
+respondents in designing solutions 
+ 
+4) 
+Solution Design Making 
+
+At this stage, the researcher will design a user interface 
+solution for the Menes Mathla'ul Anwar Central Junior High 
+School website. The design of the solution refers to the 
+results of the initial design evaluation, namely the identified 
+usability problems so that they can determine the things that 
+need to be improved. Solution design is also made based on 
+the description of user requirements. 
+ 
+5) 
+Solution Design Evaluation 
+ this stage, the author evaluates the the Menes Mathla'ul 
+Anwar Central Junior High School website to determine the 
+level of usability through the design of the solution that has 
+been made. The evaluation was carried out using two 
+methods, Heuristic Evaluation and System Usability Scale 
+(SUS)  
+ 
+6) 
+Comparative Analysis of Initial Design Evaluation 
+Results with Solution Design Evaluation Results 
+ 
+At this stage, the results of the initial design evaluation 
+and the results of the solution design evaluation will be 
+presented together. The data obtained from the results of the 
+
+initial design evaluation and solution design evaluation will 
+be analyzed and explained about the differences each other 
+
+IV. ANALYSIS AND DESIGN 
+
+A. Usage Context Analysis 
+ 
+1) 
+I Identification of Users and Stakeholders 
+User and stakeholder identification aims to find out who 
+are the users and stakeholders of the Menes Mathla'ul 
+Anwar Central Junior High School website. The list of users 
+and stakeholders is obtained from the results of discussions 
+with the IT teacher who is responsible for managing the 
+website 
+
+TABLE I.  
+JUNIOR HIGH SCHOOL WEBSITE  USERS 
+
+TABLE II.  
+STAKEHOLDER WEBSITE JUNIOR HIGH SCHOOL 
+
+B. Initial Design Evaluation 
+This evaluation was conducted to measure the usability 
+value of the initial design (existing application) on the 
+aspect of user satisfaction with the System Usability Scale 
+(SUS) method. After the evaluation is complete, the 
+researcher hopes to obtain data on usability problems that 
+existed in the initial design and obtain feedback related to 
+the initial design of Menes Mathla'ul Anwar Central Junior 
+High School website user interface from evaluation 
+participants. In this evaluation, the Authors gave a 
+questionnaire to 30 respondents. This number was sufficient 
+for the author's target, which refers to the research 
+suggestion by Roscoe in Sugiyono (2013). 
+
+C. User Requirement Analysis 
+
+1) 
+Requirement Spesification 
+Based on the results of interviews and information about 
+the constraints felt by respondents when using the website, 
+the authors conclude that stakeholders and website users 
+want a website that is informative with an attractive design 
+so that it will provide comfort to users. In addition, users 
+also expect a website with a good layout and grouping of 
+functions so that users can easily find the information they 
+want. The choice of colours and icons on the website also 
+plays an important role in enhancing the identity of the 
+school website so that users will be able to assess the 
+characteristics of the school's colours and characters. 
+
+2) 
+Persona Creation 
+The purpose of creating personas is to provide Authors with 
+an 
+overview 
+for 
+design 
+materials 
+regarding 
+the 
+characteristics of system users, user goals, and their needs 
+
+Fig. 3. User Persona’s 
+
+Based on Figure 3, the persona contains user 
+demographic data, goals to be achieved by the user, user 
+needs, user brief profile, and system environment. 
+
+D. Solution Design Making 
+
+1) 
+Wireframe 
+ 
+A wireframe is the framework of the web page to be 
+built. Wireframes can make it easier for designers to 
+describe their ideas regarding the placement of various 
+elements that will be displayed on web pages, and for 
+making wireframes in this study using the Balsamiq 
+Mockup Application. 
+
+ 
+Fig. 4. Home Wireframe 
+
+Based on Figure 4, the Home Page is the first page that 
+appears when a user opens this website. On this page there 
+
+are school cover photos, information on the number of 
+students, teachers, and alumni, the latest news, and some 
+testimonials. On the home page there are also buttons that 
+can direct users to other pages such as about us, New 
+Student Admission, News, Explore, and Contact Prototype 
+
+This stage is the design stage of the Menes Mathla'ul Anwar 
+Central Junior High School website design solution in the 
+form of a High Fidelity Prototype 
+
+ 
+
+Fig. 5. Home Prototype 
+
+V. RESULTS 
+
+A. Initial Design Evaluation 
+At this stage, we evaluate the initial design (existing 
+application) using System Usability Scale (SUS). Based on 
+table III, the SUS evaluation conducted on 30 respondents 
+for the Menes Mathla'ul Anwar Central Junior High School 
+website found an average score of 35.42 with the acceptance 
+rate being in the not acceptable category or it can be said to 
+be unsatisfactory in their opinion  
+
+ 
+
+Fig. 6. SUS Score on  Initial Design 
+
+ 
+
+ 
+
+ 
+
+ 
+
+TABLE III.  
+SUS SCORE TEST RESULTS ON THE INITIAL 
+DESIGN. 
+
+ 
+
+B. Evaluation of Solution Design 
+
+1) 
+Heuristic Evaluation 
+
+TABLE IV.  
+HEURISTIC EVALUATION RESULTS 
+
+ 
+Based on table IV, it is known that there are 3 
+problems that have a severity value of 2 where these 
+problems are included in minor usability problems that need 
+to be fixed but with low priority. Then there is 1 problem 
+that has a severity value of 1.66 where this problem is 
+included in the Cosmetic Problem. From the evaluation 
+results above, it was found that the suggestions given by 3 
+evaluators have been summarized in the following table. 
+
+TABLE V.  
+FINDINGS OF EVALUATOR PROBLEMS 
+
+ 
+
+Based on table V , it is shown that the solution design only 
+has 4 problems that fall into the category of Consistency and 
+standards, Helping users recognize, diagnose, and recover 
+from errors, Recognition rather than recall, Help, and 
+documentation. 3 of these problems fall into the low-priority 
+category, and 1 of them falls into the category of not 
+affecting users too much so that repairs are not needed if the 
+time they have is limited. 
+
+ 
+
+2) 
+System Usability Scale 
+ 
+In the Solution Design Evaluation using SUS, the author 
+gives the same questions to respondents as in the initial 
+design evaluation using System Usability Scale (SUS). 
+
+TABLE VI.  
+SUS SCORE TEST RESULTS ON SOLUTION DESIGN 
+
+Respondents 
+Questions 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10 
+Scores 
+R1 
+4 
+3 
+3 
+2 
+4 
+1 
+4 
+3 
+4 
+2 
+38 
+R2 
+3 
+2 
+4 
+3 
+4 
+1 
+4 
+2 
+4 
+1 
+70 
+R3 
+3 
+3 
+4 
+3 
+4 
+2 
+5 
+2 
+3 
+2 
+75 
+R4 
+4 
+3 
+4 
+1 
+5 
+2 
+4 
+1 
+4 
+2 
+68 
+R5 
+3 
+3 
+4 
+1 
+3 
+1 
+3 
+1 
+4 
+2 
+80 
+R6 
+4 
+1 
+4 
+1 
+4 
+3 
+3 
+1 
+4 
+2 
+73 
+R7 
+4 
+1 
+4 
+2 
+3 
+3 
+3 
+3 
+4 
+3 
+78 
+R8 
+4 
+2 
+4 
+2 
+3 
+2 
+4 
+3 
+4 
+3 
+65 
+R9 
+5 
+3 
+3 
+3 
+3 
+3 
+4 
+2 
+3 
+3 
+68 
+R10 
+5 
+3 
+3 
+2 
+4 
+3 
+4 
+1 
+3 
+1 
+60 
+R11 
+4 
+1 
+4 
+2 
+4 
+2 
+4 
+2 
+4 
+1 
+73 
+R12 
+4 
+1 
+4 
+2 
+3 
+1 
+4 
+1 
+4 
+1 
+80 
+R13 
+5 
+3 
+4 
+2 
+4 
+1 
+5 
+1 
+3 
+2 
+83 
+R14 
+4 
+3 
+4 
+1 
+3 
+2 
+4 
+3 
+3 
+1 
+80 
+R15 
+4 
+2 
+4 
+1 
+3 
+2 
+4 
+2 
+4 
+3 
+70 
+R16 
+3 
+2 
+4 
+1 
+4 
+3 
+4 
+1 
+3 
+3 
+73 
+R17 
+3 
+3 
+4 
+2 
+5 
+1 
+3 
+1 
+3 
+1 
+70 
+R18 
+4 
+2 
+4 
+2 
+4 
+1 
+3 
+2 
+3 
+1 
+75 
+R19 
+3 
+3 
+4 
+3 
+4 
+1 
+4 
+2 
+3 
+2 
+75 
+R20 
+4 
+1 
+3 
+3 
+3 
+2 
+4 
+3 
+4 
+2 
+68 
+R21 
+5 
+1 
+3 
+3 
+4 
+2 
+5 
+1 
+5 
+3 
+68 
+R22 
+5 
+3 
+3 
+3 
+4 
+2 
+4 
+1 
+5 
+1 
+80 
+R23 
+4 
+2 
+4 
+3 
+4 
+3 
+4 
+3 
+4 
+2 
+78 
+R24 
+3 
+3 
+5 
+2 
+4 
+1 
+4 
+3 
+4 
+2 
+68 
+R25 
+4 
+3 
+4 
+2 
+4 
+1 
+4 
+2 
+4 
+2 
+73 
+R26 
+4 
+2 
+4 
+1 
+3 
+2 
+4 
+2 
+4 
+2 
+75 
+R27 
+3 
+1 
+3 
+2 
+3 
+3 
+4 
+2 
+4 
+1 
+75 
+R28 
+3 
+2 
+3 
+2 
+4 
+2 
+3 
+2 
+3 
+2 
+70 
+R29 
+3 
+3 
+4 
+2 
+4 
+3 
+3 
+2 
+3 
+3 
+65 
+R30 
+3 
+3 
+4 
+3 
+4 
+3 
+3 
+1 
+4 
+2 
+60 
+Total 
+2128 
+SUS Score 
+70,93 
+ 
+
+Based on Table VI, the results of the usability 
+evaluation using the System Usability Scale (SUS) 
+questionnaire to 30 respondents for the website design 
+solution for Menes Mathla'ul Anwar Central Junior High 
+School found an average score of 70,93 with the acceptance 
+rate in the acceptable category. The grading scale is in the C 
+category and the adjective rating is in the good category 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 7. SUS Score on Solution Design 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+C. Comparative Analysis of Initial Design Evaluation 
+Results with Solution Design Evaluation Results 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Fig. 8. Comparison Graph of SUS Scores on Initial Design and Solution 
+design 
+
+Figure 8 is a graph of the SUS questionnaire as a 
+result of the comparison between the SUS average score in 
+the initial design and the SUS average score in the solution 
+design. In the evaluation of the initial design evaluation, the 
+Menes Mathla'ul Anwar Central Junior High School website 
+found an average score of 35.42 with the acceptance rate 
+being in the not acceptable category or it can be said to be 
+unsatisfactory in the opinion. The grading scale is in the F 
+category and the adjective rating is in the poor category. 
+While in the final evaluation or the results of improving the 
+user interface design of the Menes Mathla'ul Anwar Central 
+Junior High School website using the Human Centered 
+Design (HCD) method found an average score of 70,93 with 
+the acceptance rate in the acceptable category or its can be 
+said to be satisfactory in the opinion. The grading scale is in 
+the C category and the adjective rating is in a good category. 
+
+ 
+
+VI. CONCLUSIONS AND SUGGESTIONS 
+
+A. Conclusions 
+ 
+Research using the Human Centered Design (HCD) 
+method succeeded in creating a more attractive UI and UX 
+than the previous website. Then by using usability testing, 
+System Usability Scale (SUS) in the initial design and the 
+solution design, we can find out the gap. In the initial design 
+SUS with a score of 35.42 with an acceptance rate of Not 
+Acceptable and the design solution being 71 which means 
+the level of acceptance is Acceptable 
+
+B. Suggestions 
+
+For Usability testing, other methods can be added, for 
+example, Single Easy Quation (SEQ) or User Experience 
+Questioner (UEQ), then also for Heuristic Evaluation can be 
+implemented in the initial design evaluation. And the last 
+suggestion is that after the UI and UX are formed, it can be 
+developed into an application that can be accessed directly 
+by the user

@@ -1,0 +1,42 @@
+{
+  "file_name": "Lu et al. - 2009 - Improvement of a computer based surveyor training tool using a user centered approach.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "knowledge",
+      "description": "User-provided requirements were based on users' experiences and required further verification and elaboration before they could be translated into concrete design principles.",
+      "justification": "This knowledge-gap hindered the designers' ability to specify user requirements and to manage and maintain a validated, evolving understanding of users needed for subsequent design and iteration.",
+      "reference_excerpt": "Since these requirements were provided only by users from their experiences, they need to be further verified and elaborated to become concrete design principles.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Paper-based (low-fidelity) prototypes were suitable only for qualitative evaluation and lacked sufficient detail to support quantitative decisions.",
+      "justification": "The limited fidelity of paper prototypes constrained the designers' ability to evaluate designs rigorously and to integrate quantitative feedback into iterative refinements.",
+      "reference_excerpt": "We also found, however, that paper-based prototypes may only be suitable for qualitative evaluations. They are lack sufficient detail to support quantitative decisions.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "High-fidelity prototypes were relatively costly to develop, creating a resource burden on the development process.",
+      "justification": "The cost and effort required to produce high-fidelity prototypes limited the designers' capacity to produce and iterate detailed implementations for evaluation, affecting production of design solutions and evaluation workloads.",
+      "reference_excerpt": "Unlike paper-based prototypes, it is relatively costly to develop high-fidelity prototypes. We suggest developers start from one high-fidelity prototype and revise it recursively based on the results of usability tests.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "designer",
+      "barrier_type": "knowledge",
+      "description": "The original system (SimuSurvey R0) had been developed without user-centered design, and users were not involved during its initial development, which led to reported problems in real use.",
+      "justification": "Absence of UCD practices impaired earlier designers' ability to manage user understanding and facilitate user involvement, requiring later redevelopment efforts to recover missing requirements and usability understanding.",
+      "reference_excerpt": "Because SimuSurvey R0 was not developed with UCD and the users were not involved during the development processes, several problems have been reported when the tool was applied in actual surveying classes [11].",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

@@ -1,0 +1,648 @@
+Implementing a Hospital Call Center Service for
+Mental Health in Uganda: A Qualitative Formative
+
+Study
+
+ Johnblack K Kabukye, Rosemary Namagembe, Juliet Nakku, Vincent Kiberu,
+
+Marie Sjölinder, Susanne Nilsson, Caroline Wamala-Larsson
+
+Submitted to: JMIR Human Factors
+
+on: October 25, 2023
+
+Disclaimer: © The authors. All rights reserved. This is a privileged document currently under peer-review/community
+review. Authors have provided JMIR Publications with an exclusive license to publish this preprint on it's website for
+review purposes only. While the final peer-reviewed paper may be licensed under a CC BY license on publication, at this
+stage authors and publisher expressively prohibit redistribution of this draft paper other than for review purposes.
+
+Table of Contents
+
+Original Manuscript ....................................................................................................................................................................... 5
+Supplementary Files ..................................................................................................................................................................... 28
+
+Figures ......................................................................................................................................................................................... 29
+
+Figure 1 ...................................................................................................................................................................................... 30
+Figure 2 ...................................................................................................................................................................................... 31
+Multimedia Appendixes ................................................................................................................................................................. 32
+
+Multimedia Appendix 1 .................................................................................................................................................................. 33
+
+Implementing a Hospital Call Center Service for Mental Health in Uganda:
+A Qualitative Formative Study
+
+Johnblack K Kabukye1, 2 MBChB, MSc, PhD; Rosemary Namagembe3 BSN; Juliet Nakku4 MBChB, MMed; Vincent
+Kiberu5 PhD; Marie Sjölinder6 PhD; Susanne Nilsson7 PhD; Caroline Wamala-Larsson1 PhD
+
+1SPIDER - The Swedish Program for ICT in Developing Regions Department of Computer and Systems Sciences Stockholm University
+Stockholm SE
+2Uganda Cancer Institute Kampala UG
+3Hutchinson Centre Research Institute of Uganda Uganda Cancer Institute Kampala UG
+4Butabika National Referral and Teaching Mental Hospital Kampala UG
+5School of Public Health Makerere University Kampala UG
+6RISE - Research Institutes of Sweden Kista SE
+7Unit for Integrated Product Development and Design Department of Machine Design KTH Royal Institute of Technology Stockholm SE
+
+Johnblack K Kabukye MBChB, MSc, PhD
+SPIDER - The Swedish Program for ICT in Developing Regions
+Department of Computer and Systems Sciences
+Stockholm University
+Borgarfjordsgatan 12 (NOD Building)
+PO Box 7003 Kista
+Stockholm
+SE
+
+Abstract
+
+Background: Mental health conditions are a significant public health problem globally, responsible for over 8 million deaths per
+year. They also lead to lost productivity, exacerbate physical illness, and people with mental health problems suffer stigma and
+human rights violations. Uganda, like many low- and middle-income countries (LMICs), faces a massive treatment gap for
+mental health conditions, and numerous sociocultural challenges exacerbate the burden of mental health conditions.
+
+Objective: To describe the development and formative evaluation of a digital health intervention for improving access to mental
+healthcare in Uganda.
+
+Methods: This was a qualitative study employing principles of user-centered design and design science research. Stakeholders,
+including patients, caregivers, mental healthcare providers, and implementation experts (N=65), participated in focus group
+discussions in which we explored participants’ experience of mental illness and mental healthcare, experience with digital
+interventions, and opinions about a proposed digital mental health service. Data was analyzed using the consolidated framework
+for implementation research to derive requirements for the digital solution, which was iteratively co-created with users.
+
+Results: Several challenges were identified, including a severe shortage of mental health facilities, unmet mental health
+information needs, heavy burden of caregiving, financial challenges, stigma, and negative beliefs related to mental health.
+Participants’ enthusiasm about digital solutions as feasible, acceptable and convenient for accessing mental health services was
+also revealed, along with recommendations to make the service user-friendly, affordable, available 24/7, and to ensure
+anonymity. A hospital call center service was developed to provide mental health information and advice in two languages
+through interactive voice response and live calls with healthcare professionals and peer support workers (recovering patients).
+Early implementation results indicate positive user feedback, with callers appreciating the inclusion of peer support workers who
+share their personal recovery journeys. However, some recommendations from participants (e.g., adding video calls options)
+could not be accommodated due to resource limitations or technical feasibility, and it is not possible to address individualized
+clinical questions such as prescriptions.
+
+Conclusions: This study demonstrates a systematic and theory-driven approach for developing contextually appropriate digital
+solutions for improving mental healthcare in Uganda and similar contexts. The positive reception of the implemented service
+underscores its potential impact. Future research should address the identified limitations, and evaluate clinical outcomes of long-
+
+term adoption.
+
+(JMIR Preprints 25/10/2023:53976)
+DOI: https://doi.org/10.2196/preprints.53976
+
+Preprint Settings
+
+1) Would you like to publish your submitted manuscript as preprint?
+
+Please make my preprint PDF available to anyone at any time (recommended).
+Please make my preprint PDF available only to logged-in users; I understand that my title and abstract will remain visible to all users.
+Only make the preprint title and abstract visible.
+No, I do not wish to publish my submitted manuscript as a preprint.
+2) If accepted for publication in a JMIR journal, would you like the PDF to be visible to the public?
+
+Yes, please make my accepted manuscript PDF available to anyone at any time (Recommended). 
+Yes, but please make my accepted manuscript PDF available only to logged-in users; I understand that the title and abstract will remain v
+Yes, but only make the title and abstract visible (see Important note, above). I understand that if I later pay to participate in  <a href="http
+
+Original Manuscript
+
+Implementing a Hospital Call Center Service for Mental Health in Uganda: A Qualitative Formative
+Study
+
+Johnblack K. Kabukye, Rosemary Namagembe, Juliet Nakku, Vincent Kiberu, Marie Sjölinder,
+Sussanne Nilsson, Caroline Wamala Larsson.
+
+Abstract
+Background: Mental health conditions are a significant public health problem globally, responsible
+for over 8 million deaths per year. They also lead to lost productivity, exacerbate physical illness, and
+are associated with stigma and human rights violations. Uganda, like many low- and middle-income
+countries (LMICs), faces a massive treatment gap for mental health conditions, and numerous
+sociocultural challenges exacerbate the burden of mental health conditions.
+Objective: To describe the development and formative evaluation of a digital health intervention for
+improving access to mental healthcare in Uganda.
+
+Methods:  This  qualitative  study  employed  user-centered  design  and  design  science  research
+principles.  Stakeholders,  including  patients,  caregivers,  mental  healthcare  providers,  and
+implementation experts (N=65), participated in focus group discussions in which we explored
+participants’  experience  of  mental  illness  and  mental  healthcare,  experience  with  digital
+interventions, and opinions about a proposed digital mental health service. Data was analyzed using
+the consolidated framework for implementation research to derive requirements for the digital
+solution, which was iteratively co-created with users and piloted.
+
+Results: Several challenges were identified, including a severe shortage of mental health facilities,
+unmet mental health information needs, heavy burden of caregiving, financial challenges, stigma,
+and negative beliefs related to mental health. Participants’ enthusiasm about digital solutions as
+feasible, acceptable and convenient for accessing mental health services was also revealed, along
+with recommendations to make the service user-friendly, affordable, available 24/7, and to ensure
+anonymity. A hospital call center service was developed to provide mental health information and
+advice in two languages through interactive voice response (IVR) and live calls with healthcare
+professionals and peer support workers (recovering patients). In the four months after go-live, 456
+calls, from 236 unique numbers, were made to the system. Eighty calls stopped at the IVR, 99 went
+to voicemails (out-of-office hours), 231 calls were answered by call agents, and 22 were not
+answered. User feedback was positive, with callers appreciating the inclusion of peer support
+workers who share their recovery journeys. However, some participant recommendations (e.g.,
+adding video call options) or individualized needs (e.g., prescriptions) could not be accommodated
+due to resource limitations or technical feasibility.
+
+Conclusion:  This  study  demonstrates  a  systematic  and  theory-driven  approach  to  developing
+contextually appropriate digital solutions for improving mental healthcare in Uganda and similar
+contexts. The positive reception of the implemented service underscores its potential impact. Future
+research should address the identified limitations, and evaluate clinical outcomes of long-term
+adoption.
+
+1. Introduction
+
+Mental health conditions are an important public health issue globally, responsible for over 8 million
+deaths per year  1–5. Three million people die annually from the harmful use of alcohol, and one
+person dies every 40 seconds by suicide 1,2. An estimated 970.1 million people (12.6% of the global
+population) experience some form of mental health problem 4. Mental health conditions account for
+5% of the global disability-adjusted life years and 12-20% of years lived with disability 4,6. People
+with mental health conditions, on average, die 20 years prematurely 4,6 both due to mental as well as
+physical illness, because mental health conditions are a risk factor for, or can complicate physical
+illnesses, including physical injury and road traffic accidents, HIV/AIDS, cardiovascular diseases,
+and cancer 5,7. People with mental health conditions also experience severe human rights violations,
+stigma, discrimination, abuse, and generally poor socio-economic status 5,7–9.
+
+Unfortunately, over 75% of people with mental health problems do not have access to the care they
+need 1–3. This is especially true for Uganda10,11 and similar low and middle-income countries (LMICs)
+where the treatment gap for mental disorders reaches 90% 12–14. It is estimated that the ratio of mental
+health workers to population is 200 times smaller in LMICs compared to high-income countries 3. In
+LMICs, mental health is under-prioritized in the face of other competing public health challenges
+such as HIV/AIDS, tuberculosis, malaria, and maternal and child health. Uganda, for example,
+spends 9.8% of its gross domestic product on healthcare, but under 1% of this goes towards mental
+healthcare  10,11. Consequently, Uganda suffers from a shortage of mental health care facilities and
+professionals and poor and inconsistent access to medication and related mental health services 11. In
+addition, most of the health workforce is limited to urban areas, yet over 80% of the population lives
+in rural areas, thus geographically isolated from even the limited care available. Other important
+challenges facing mental health in Uganda include social norms 15, beliefs (such as witchcraft), lack
+of awareness of mental health disorders  8,11,16, pervasive stigma, and socio-political conflicts  17,18.
+These result in an increase in the incidence of mental health problems but also lead to many people
+with mental health problems not seeking care and going undiagnosed.
+
+To address some of the challenges above and improve access to mental health services in Uganda, we
+implemented the project  digitalizing mental healthcare and access in Uganda (DiMHA). In this
+project, we followed a user-centered design and co-creation process to set up a hospital call center
+service to provide mental health information and advice to patients, caregivers, and the general
+public. The objective of this paper is to describe the development and formative evaluation of this
+mental health call center service.
+
+2. Methods and Results
+
+2.1. Study design
+Ethical approval for the research study was obtained from Makerere University School of Public
+Health research ethics committee (#SPH-2021-153) and the Uganda National Council of Science and
+Technology (#HS1868ES). All participants provided written informed consent before participating in
+the study activities.
+
+We conducted a qualitative case study employing principles of user-centered design (UCD) 19–22 and
+design science research 23,24. UCD focuses on understanding and prioritizing the needs, preferences,
+and behavior of end users of a product throughout its development life cycle. UCD, therefore, calls
+for iterative and collaborative engagement of users to ensure high usability and utility of the product.
+Design science research (DSR) is a structured approach to creating and evaluating innovative
+solutions or artifacts, where the design process is treated as research that contributes to knowledge
+for improving the functional performance of artifacts. The steps involved in DSR mirror UCD, and
+
+include the following: (i) identifying the problem and motivation (understanding user experiences
+and context of use), (ii) defining the objective of the solution (specifying the requirements), (iii)
+designing and development of (often novel) solutions using participatory or co-creation processes,
+and (iv) demonstration and evaluation to validate against requirements, assess usability, and long-
+term adoption. These steps help identify facilitators and barriers of adoption so that they can be
+addressed early on in the project life cycle, allow user engagement and facilitate buy-in, ensure that
+the product fits the context of use and purpose, and has good usability 25,26 and clinical utility 27.
+
+In the following sections, we describe each of the above four steps. Note that there was overlap and
+iterations over the steps as per UCD best practice. To ease readability, we report the procedure and
+results from each step. Thereafter, we provide a general discussion and conclusion.
+
+2.2. Step 1: understanding user experiences and context to identify the problem(s)
+
+2.2.1. Participants and recruitment
+The participants included adults (18 years or older), patients recovering from mental disorders,
+caregivers of such patients, peer support workers (PSW), mental healthcare providers, and persons
+involved  in  the  implementation  of  call  centers  for  telecoms  or  other  healthcare  centers.  The
+healthcare providers, patients and caregivers, and PSWs were recruited from Butabika National
+Mental Referral Hospital in Kampala, Uganda, which is also the site of implementation. Sampling
+was purposive to include different cadres and expertise of providers (informed by the 3rd author, who
+is the head of Butabika Hospital) and to represent different mental health conditions, levels of
+education, and socio-economic status of patients and caregivers, so as to get diversity of experiences
+and views. The investigators (JKK, JN, and VMK) physically approached the healthcare providers at
+Butabika Hospital, explained the project's purpose and the research activities involved (including
+participation  in  multiple  group  discussions  and  workshops), and  obtained  consent  from  those
+interested. These healthcare providers then reached out to patients under their care, caregivers, and
+PSWs, provided them with information about the study, and invited those interested for consent by
+the  investigators, who explained the  participants’ rights  and voluntary nature  of participation.
+Participants in the last stakeholder category were recruited through the network of the first author
+working in the digital health field in Uganda.
+
+2.2.2. Data collection
+We conducted semi-structured focus group discussions (FGDs) in which we explored participants’
+experience of mental illness and mental healthcare in Uganda (including unmet information and
+supportive care needs), experience with call center services from the commercial service sector or
+other digital healthcare services, and opinions about a proposed digital mental health service (i.e.,
+feasibility, appropriateness, expected benefits or recommendations for successful implementation).
+The FGD guide is shown in Table 1. There was flexibility in the order of the probes to allow free
+flow of ideas, with additional probes for clarification added by moderators as issues of interest arose.
+Also, certain issues or probes were discussed in detail, paraphrased, or left out as appropriate
+depending on relevance to the session participant, or if such a topic had been sufficiently explored in
+the prior sessions.
+
+Table 1: Focus group discussion guide.
+
+The sessions were conducted in English and Luganda (the lingua franca in Uganda) as appropriate
+for the participant category. Additionally, we held male-only and female-only FGD sessions for
+patients  to  reduce  the  possibility  that  some  participants  would  overshadow  others  during the
+discussion, but other sessions were mixed to ensure rich discussions since diverse viewpoints from
+the different participants inspire others and spur discussion (see Table 2). The first and fourth authors
+(JKK and VMK) were the moderators, while the second author (RN) was a notetaker. The sessions
+were audio recorded and afterward transcribed by the second author, who also translated the Luganda
+ones into English for analysis. The FGDs took place in November 2021.
+
+We drew on the consolidated framework for implementation research (CFIR)  28 to inform data
+collection (and analysis; see section 2.2.3 below). The CFIR is a “meta-theoretical framework”
+developed  by  consolidating  several  implementation  science  theories  into  one  comprehensive
+taxonomy of clearly defined, non-overlapping constructs related to disseminating and implementing
+evidence-based interventions. These constructs fall into five domains: (i) the individuals affected or
+involved in the implementation, (ii) the innovation (intervention), (iii) the inner setting (organization)
+where the innovation is implemented, (iv) the outer setting (wider societal context), and (v) the
+process of implementation. The CFIR is one of the most widely used theoretical frameworks to
+identify implementation barriers and facilitators (i.e., a determinant framework) 29–33. Following a
+literature review and feedback from researchers who have used the CFIR 31, a recent update, dubbed
+“CFIR 2.0”, has been made, in addition to a CFIR outcomes addendum  34. These updates have
+provided further clarification between constructs, including, for example, a distinction between
+“implementation determinants,” which relate to the context, versus “innovation determinants,” which
+have to do with the characteristics of the innovation (e.g., ease of use, relative advantage, cost, and
+efficacy  of  a  technology).  The  implementation  and  innovation  determinants  inform  the
+implementation process (needs assessment, user engagement, tailoring to user needs, incentives,
+marketing, etc), and through the antecedent assessments (tension or readiness for change, feasibility,
+
+acceptability, appropriateness, etc) moderate the anticipated and actual implementation outcomes.
+The updates to the CFIR make it also useful for informing the design, implementation and evaluation
+of innovations (i.e. a process and evaluation framework) 32,33. Figure 1 shows an adaptation of the
+CFIR and its recent updates as used in this study.
+
+Figure 1: The consolidated framework for implementation research (CFIR) used in the study.
+Adapted from 28,31,34
+
+2.2.3. Data analysis
+A directed (deductive) content analysis approach  35 was used. We began with a rapid qualitative
+
+analysis 36–38 of the FGDs in order to quickly identify the requirements and other insights needed to
+inform initial iterations of system development (see Step 2 below). Rapid qualitative analysis is
+aimed at getting actionable and targeted insights in a timely manner and is suitable for studies such
+as this one, where there is a need to refine and adapt an intervention or program, as opposed to
+developing new theories. A deductive approach is taken, employing existing theories or frameworks
+(in  our  case,  the  CFIR)  to  summarize  the  qualitative  data  into,  for  example,  intervention
+characteristics or barriers and facilitators. In rapid qualitative research, data collection and analysis
+occur concurrently and iteratively, with findings from one phase informing the next iteration. The
+analysis is done not on the transcripts but on summaries or notes taken during the FGDs or the audio
+recordings. In addition, multiple data collection methods are used to triangulate findings (e.g., FGDs,
+field observations, debriefing  and reflections  by the research  team  or other  stakeholders, and
+literature review). In our study, the rapid analysis was done by the first 4 authors (JKK, RN, JN, and
+VMK) and involved note-taking during FGDs and discussion and summarization of insights after
+each session. When necessary, listening to recordings was done, e.g., for the researcher who was not
+present in the session before they contributed to the analysis, or for validating the summaries. We
+summarized the findings into an initial list of mental health information topics to be covered by our
+system and design considerations (system requirements) based on the experiences and expectations
+of users, as well as contextual constraints.
+
+Later, a traditional qualitative analysis was done 36–38. The first and second authors (JKK and  RN)
+independently read one of the seven transcripts and extracted meaningful units or statements, and
+coded them into themes related to the research objectives and the CFIR as described above. They
+then met to discuss and refine the coding before independently coding the remaining transcripts.
+Three more meetings were held to compare and refine the coding, after which the findings were
+shared with all the authors for discussion and interpretation. We focused on saliency 39 rather than
+frequency of issues and codes, such that even if an issue was mentioned once or by one participant
+category, we coded it as long as it related to the research question and CFIR constructs. As such, we
+did not count or rank the codes and themes. Basic office software was used for coding and
+summarizing the qualitative data.
+
+2.2.4. Results
+
+2.2.4.1.
+Participants and FGD sessions
+We conducted 7 FGDs, each with 8-10 participants, for a total of 65 participants. The participants
+were fairly balanced by sex (35 females and 30 males), and their ages ranged from 21 to 64 years,
+with a median of 40 years. Each session lasted approximately one and half hours. Table 2 shows the
+details of the FGD sessions.
+
+Table 2: Details of focus group discussion sessions
+
+2.2.4.2.
+Findings from the FGDs
+Table 3 shows the qualitative findings, including the CFIR domains, constructs, themes, and their
+explanation. Appendix 1 contains the illustrative quotes.
+
+Thirty-nine  themes  emerged  across  twenty  CFIR  constructs  in  all  the  five  domains  and  the
+antecedent assessments. The themes recurred across the participant groups, supporting their validity
+(Appendix 1 shows quotes from different participants under each theme and domain). The themes
+under the individuals domain highlight several challenges that people with mental health conditions
+in Uganda face, including the limited number of mental healthcare facilities, long distances to care,
+lack of mental health information, stigma against patients with mental health problems and their
+families, financial challenges, and unmet psychosocial needs. The themes also cover contextual
+issues that explain these challenges. These include issues about the nature of mental illness (chronic
+and with a high burden of caregiving); organizational issues (inner setting), such as under-staffing of
+mental health facilities and frequent medication stockouts; and societal issues (outer setting), such as
+beliefs and cultural norms (e.g., belief in witchcraft) which influence how people understand mental
+health problems and how they seek care. Themes under the domain innovation determinants covered
+participants’ perception or expected benefit from the proposed mental health call center service,
+including affordability, familiarity with similar services and the technology (ubiquitous access to
+mobile phones), convenience, time and cost saving, and anonymity offered by telephone services
+which  protect  users  from  the  stigma.  Finally,  themes  in  the  implementation  process domain
+encompassed mostly participants’ recommendations or strategies for successful implementation, such
+as  linkage  with  other  stakeholders  involved  in  mental  healthcare,  marketing  of  the  service
+(sensitization), training and supervision of staff for quality control, and the need to maintain the
+human touch rather than attempting to digitalize or automate mental healthcare delivery. These
+findings  suggested  the  feasibility,  acceptability,  and  appropriateness  of  the  proposed  solution
+(antecedent assessments).
+
+There were also several insights or implicit findings not mentioned by the FGD participants but
+inferred from observations and the research team’s understanding of the context. These are relevant
+for the implementation and can be mapped to CFIR constructs. For example, there has been an
+increase in the adoption of telemedicine in Uganda, especially following the COVID-19 outbreak,
+which has given credibility to such innovations and can explain the general enthusiasm shown by the
+participants (CFIR construct “evidence base” in innovation determinants). In fact, the participants in
+
+the implementers’ category were themselves involved in implementing call centers for HIV/AIDS,
+private telemedicine clinics, and mental health NGOs and were aware of the growing scientific
+evidence globally that supports digital health. COVID-19 is also an example of “critical incidents”
+that can disrupt (or encourage) implementation and/or delivery of innovations  (outer  setting),
+according to CFIR 2.0. Other issues included the external project grant (construct: “Financing”),
+Uganda government’s positive digital transformation strategies and policies (construct: “External
+pressure”), and Butabika hospital’s position as a national referral that is supposed to be exemplary
+(construct: “Performance measurement pressure”).
+
+Table 3: Summary of qualitative findings coded according to the consolidated framework for
+implementation research (CFIR).
+
+2.3. Step 2: Specifying the requirements of the system
+
+2.3.1. Procedure and Team
+Requirements were specified basing on the understanding of the users’ needs, challenges, and
+contextual constraints from the FGDs. The development team consisted of the first three authors (a
+medical doctor and digital health expert, a research nurse, and a senior consultant psychiatrist,
+respectively), as well as a psychologist, a psychiatric nurse, and an IT professional specializing in
+telephone systems. The first two authors and the IT professional have previously worked together to
+set up a similar system at the Uganda Cancer Institute 40 from which they also drew insights. The
+team held eight online meetings from December 2021 to March 2022 to iteratively discuss the
+system features, content (mental health information), and set up considerations. We started with the
+initial list from the rapid qualitative analysis (see section 2.2.3 above) which we refined to remove
+conflicting requirements  or those that  are not  feasible  due to available resources  (e.g.,  video
+telemedicine). We also agreed on the priority the features and mental health information topics.
+
+2.3.2. Results
+Table 3 lists the high-level requirements and how they were addressed in the system design and
+implementation. Key of these requirements are that the system or the intervention provides correct
+mental health information and psychosocial support, in a culturally sensitive and non-stigmatizing
+manner, and in multiple languages. In addition, the system should be easy to use (navigate), should
+be accessible 24/7, should be affordable (free) to users, there should be no long queues, and it should
+fit within the workflow of the staff and not increase their workload. Finally, it should ensure privacy
+and confidentiality to users’ information and risks of harm to users should be minimized through
+quality control measures, training, and professionalism of staff.
+
+Table 3: Requirements and how they are addressed by the system and/or its set up.
+
+2.4. Step 3: Design and development of the system
+
+2.4.1. Procedure and Team
+We designed and developed a telephone system for providing mental health information and advice
+to callers as per the requirements (see Table 3). The system consists of three complimentary
+components or features; an interactive voice response (IVR), live calls, and voicemail. The IVR is
+the first component that users interact with, and since it is automated, it is available 24/7. It contains
+mental  health  information  in  audio  format  in  English  and  Luganda.  Callers  get  navigation
+instructions and choose from a menu of topics in a self-service manner by pressing the corresponding
+keys on their phones (e.g. “Thank you for calling Butabika Hospital. Please choose your preferred
+language. For English, press 1, Bw’oba oyagala kuwuliriza mu Luganda, nyiga 2”). Figure 2 shows
+the IVR flow and topics covered.
+
+From the IVR, callers can choose to speak directly (live call) with an agent, for example to ask seek
+more clarification on information in the IVR or ask information that is not covered by the IVR. If it
+
+is during office hours, the system connects the caller to the agent. We had a total of eight agents
+comprising of two PSWs, a psychologist, two psychiatric clinical officers, and three psychiatric
+nurses. The staff do not sit in a physical call center; rather, they are accessible via dedicated mobile
+phones. All their phones are dialed concurrently (“ring all” strategy) and whoever picks first
+responds to the caller. Outside working hours, callers are instructed by the system to leave a
+voicemail and the call agents returns the calls the next day; this is only possible from a soft-phone on
+a computer within the hospital since the caller’s number is hidden on the agents’ mobile phones for
+privacy reasons. All agents were encouraged to respond to the calls immediately, and a schedule was
+created for responding to voicemails. The psychologist provided supervision to the agents and
+handled  any  difficult  cases  which  the  agents  were  encourage  to  report  or  escalate  whenever
+necessary.
+
+Development  of  the  system  began  by  developing  IVR  content  (mental  health  messages  and
+navigation instructions), which was done concurrently with the requirements specification process
+described above. The team iteratively wrote the script for mental health messages basing on their
+clinical expertise, reviewed the Luganda translation, and discussed the IVR menu options and caller-
+system interaction basing on requirements and insights from prior work. We limited the IVR options
+to a manageable number and organized the information in a logical order, i.e., from general
+information (overview of mental illnesses) to specific (e.g., individual illness such as anxiety or
+depression). Attention was paid to ease of language (e.g., description of concepts or illnesses in
+addition to naming them, and reduction in use of medical jargon), tone (calm, empathic and non-
+judgmental), and cultural appropriateness (e.g., acknowledging the role of faith and alternative
+medicine). The  developed  content was  recorded  in a professional audio recording  studio and
+deployed in private branch exchange (PBX) software by the IT professional and the first author.
+
+2.4.2. Results
+The telephone system was implemented using Asterisk, an open-source private branch exchange
+(PBX) software. It was deployed on a simple server (Intel Core i5 2.6GHz, 8GB RAM, 1TB Hard
+disk) at Butabika hospital, and connected to a local mobile telecom provider via session initiation
+protocol (SIP) with 12 trunks. The calls to the system are reverse-billed, therefore are free to the
+callers.
+
+In sum, we developed a total of 22 messages, 14 of which are on mental health or other practical
+information needs elicited from the participants, i.e. overview of what mental illnesses are, the
+causes, signs and symptoms, the common mental illnesses in Uganda, assessment and management
+of mental illness, and how to navigate the healthcare system. The remaining 8 messages contained
+navigation instructions or feedback to user (welcome message, language selection, disclaimer and
+warning in case of emergency, the different menu options, invalid selection, replaying a message,
+returning to main menu, and voicemail instructions). The messages were then translated to Luganda
+for a total of 44 messages. Figure 2 shows the topics addressed by the IVR messages (without some
+of the navigation messages).
+
+Figure 2: Mental health information topics and how they are accessed in the IVR.
+
+2.5. Step 4: Demonstration and evaluation
+
+2.5.1. Procedure and participants
+Following deployment, we held a one-day workshop with the PSWs, nurses, and psychiatric clinical
+officers (n=10) who had participated in the FGDs to test the system, get feedback about the IVR
+content, and identify and correct any system malfunctions or errors (e.g., if there were language mix
+up or a wrong response for a particular IVR option chosen by the caller).
+We held a second workshop to train the call agents on workflows, software system and on phone
+etiquettes and how to communicate with persons with mental health problems. We also discussed
+operational issues, e.g., definition of office hours when live calls should be allowed, and schedules
+for returning voicemails and evaluation survey.
+
+The system was advertised via the hospital website and social media channels, posters in the
+hospital, and through personal contacts of the staff and participants. After go live, we continued to
+supervise the call agents, and held regular review meetings in which we listened to recorded calls
+and critiqued the conversations, and offered support to the call agents (especially the PSW) in case of
+difficult calls, and collected feedback on usability and user perception of utility of the service.
+
+2.5.2. Results
+No major problems were found during the testing workshops, but participants reported that the
+workshops helped them better understand the service from practically trying it out. They showed
+enthusiasm for their roles as call agents and became ambassadors who advertised the service to
+patients and their social networks. Schedules were also drawn for returning calls and office hours
+
+defined which were then programmed into the PBX, sending calls outside these hours to voicemail.
+The system went live in August 2021. Detailed results from a survey of the callers and analysis of the
+usage patterns will be reported in a separate manuscript (under preparation), but here, we summarize
+observations from the first four months of operation.
+
+From August to December 2022, 456 calls, from 236 unique numbers (average of 4 calls per day),
+were made to the system, i.e., reaching at least the IVR (automated) component. Of these, 99
+(21.7%) calls were made during out-of-office hours for the call agents, so they went to voicemail and
+were called back within the following days. Of the remaining 357 calls made during office hours, 80
+(22.4%) calls stopped at the IVR, while 231 (64.7%) proceeded to speak to a live agent. (Note that
+the percentages do not add up to 100% because some callers made multiple calls, utilizing the IVR or
+leaving a voicemail, and later called and spoke to a live agent). Twenty-two calls (6.2%) were never
+answered by the call agents. On average, live calls were answered within 11 seconds, and their
+average length was 3.5 minutes.
+
+Callers come from all parts of the country (as far as 8 hours by road from Butabika Hospital),
+although the majority were from the central region (within one hour’s distance from Butabika
+Hospital). They included caregivers seeking advice about relatives who are showing symptoms of
+mental illnesses or those already undergoing care, mental health patients who are relatively stable
+and are seeking advice about medication or return dates, and others such as clinicians from other
+health facilities, journalists and government officials who wanted more information about the call
+center system or the mental healthcare services offered at Butabika hospital.  Calls about patients
+who had “escaped” from the hospital, were also common, often made by concerned community
+members  near  the  hospital  who  come  across  a  person  with  mental  illness  wondering  in  the
+community. Generally, the service has been received positively. Callers were especially happy with
+the PSW who shared their personal journeys with mental illnesses and recovery, and this encouraged
+them to overcome the stigma and negativity they had about mental healthcare services. The PSWs
+also reported positive experiences, stating that working as call agents and helping others gave them a
+sense of purpose and brought order and calmness.
+
+A key challenge was callers who required specific and individualized information which the call
+agents did not have at hand and could not be pre-recorded in the IVR. Such information included
+requests for prescriptions, questions on stocks of certain medications, availability and cost of certain
+tests and procedures, or about the condition of a relative who is admitted in the hospital.
+
+2.6. Reflexivity
+The members of the research team involved in data collection and analysis (FGDs, workshops, and
+analysis meetings) are intimately familiar with the local context and understand participants’ realities
+(including participants’ access and use of mobile phones and the internet) since they come from the
+same  region  of  the  country  and speak  the  local  language  (Luganda).  This  made  it  easier  to
+communicate with the participants (even for sessions that were held in Luganda), and to understand
+and relate to the ideas or issues they raised. To reduce potential undue coercion, the clinicians
+involved in the care of the participants (patients and PSWs) did not participate in the FGDs sessions
+but participated in data analysis and interpretation. These clinicians were especially important in
+ensuring that the rest of the research team members were aware of assumptions and potential
+prejudices, for example, with regards to beliefs in witchcraft as a cause for mental illnesses or in
+faith-healing,  common  among  those  with  low  education  status.  Clinicians  working  in  mental
+healthcare in this  context  frequently encounter  such beliefs  and appreciate  the  importance of
+respecting them, which was also useful for informing how we crafted the mental health messages in
+the system. Moreover, three of the research team members were from a different, high-income
+
+country, and brought in different perspectives, which helped us question our interpretations and
+assumptions.
+
+3. Discussion
+
+3.1. Principal findings
+This paper describes the development and implementation of a digital health intervention aimed at
+improving mental healthcare in Uganda. Employing principles of user-centered design  19–22 and
+design science research 23,24., we systematically engaged stakeholders, collected data on target users’
+experiences of mental healthcare, their opinions and recommendations about the proposed mental
+health telephone service, and contextual issues that could influence implementation. We used the
+CFIR, an established implementation science meta-framework 28–33, to collection and analysis of this
+data, derive system requirements, and then iteratively co-created and tested the system.
+
+We identified several challenges faced by patients with mental health problems and their caregivers
+in Uganda, and peculiarities about the organization and the wider societal context which supported
+the proposed innovation. These challenges included the severe shortage of mental health workers and
+services, lack of awareness, negative beliefs and norms, stigma, huge burden of caregiving, and
+financial challenges. At the same time, there is a general trend towards digitalization of healthcare to
+improve patient experience and efficiency of healthcare, and participants were enthusiastic about our
+proposed call center because they are familiar with the technology, considered it feasible, affordable,
+convenient  and  efficient  way  to  get  mental  health  services  without  being  stigmatized.  The
+participants also gave several recommendations on how to successfully implement the intervention,
+for example by making calls toll free, ensuring 24/7 availability, providing mental health information
+in multiple languages, using technologies or channels that are appropriate to the context (telephone
+calls and IVR), sufficient staffing to reducing call waiting times, sensitizing people about the service,
+and training and supervision of the call agents to ensure quality service. Early evaluation of the
+intervention shows that clients are very positive about the service, particularly with the use of PSWs
+(recovering patients) who share their lived experience with others.
+
+3.2. Comparison to prior work
+Prior research has demonstrated value of mHealth in addressing some of the healthcare challenges in
+Uganda and similar contexts elsewhere. Systematic reviews on mHealth in general 41–47 or on specific
+clinical domains such as HIV/AIDS  47–49 and palliative care  50 have highlighted improvement of
+healthcare  coordination  and communication  between  patients  and  healthcare  providers, patient
+adherence to treatment and reduction of loss  to follow up, patient engagement and self-care,
+facilitation of community-based care, and improving access to care for rural or geographically
+isolated  populations.  Advantages  such  as  ubiquity  of  mobile  technology,  affordability  and
+acceptability by patients and health workers, interactivity and personalization, and saving of time and
+cost of traveling to health facilities, have been cited. Examples of prior studies on mHealth in
+Uganda include use of IVR, SMS and phone calls to support management of HIV/AIDS 51,52 and
+tuberculosis  53, use  of IVR  to  address  barriers  to  fistula  care  in  Uganda  54,  SMS  for  stroke
+rehabilitation 55 and IVR for provision of cancer awareness and advice 40. There is also a commercial
+digital health company that has operated different mHealth services in Uganda for about 10 years 56.
+Unfortunately, the use of mHealth in mental health in Uganda and Africa in general is limited 8,57,58.
+This is likely due to the general underfunding of mental healthcare services 10–14. Available research
+on mHealth in mental health is mostly from developed countries  59–63, with many interventions
+utilizing the internet and smartphone apps, which might not be accessible or affordable in Uganda or
+other LMICs. Interventions that utilize basic phone features such as SMS, IVR, and voice calls are
+more appropriate in LMICs as they overcome infrastructural limitations. Such interventions are also
+relevant for low-income and migrant communities in developed countries since these populations
+
+face low digital health literacy and language barriers 64–67.
+
+In the previous project led by the first author for the provision of cancer information  40, similar
+findings in terms of challenges faced by patients, requirements and recommendations for the system,
+and generally positive reception after implementation were reported. The cancer awareness system
+mainly used the IVR feature with pre-recorded information, with the option to speak to a live agent
+added as an emergency due to COVID-19 outbreak. The agents were healthcare workers (nurses and
+doctors)  who, due to travel  restrictions,  had been freed to handle  phone calls.  While callers
+appreciated this feature, it is otherwise untannable given the limited number of health workers. In the
+current  project,  PSWs  helped  to  address  the  shortage  of  healthcare  professionals.  A  large
+multinational research study from Uganda and elsewhere has demonstrated the positive benefits of
+using PSWs, both for their own recovery and for the healthcare system  68–70. Our current project
+builds onto this prior work to innovatively and efficiently put this under-utilized resource to use
+through digital health.
+
+3.3. Strengths and limitations of the study
+A strength of this study is the strong theoretical underpinning. Implementation studies have been
+faulted in the past for not being theory-driven which undermines the adoption of digital technologies
+32. The UCD and DSR approach used informed a systematic co-creation process of intervention
+development  with  user  participation,  while  the  CFIR  allowed  comprehensive  review  of  user,
+technological and contextual issues to inform system requirements. Even so, we could not consider
+all the requirements or recommendations by the participants when designing the system because of
+resource limitations or contradictions. For example, some participants recommended adding video
+calling features to the system to enhance interaction and assessment of affect. Other participants had
+concerns about continuity of care which indeed is difficult to achieve with the current call center
+system that lacks electronic medical records or mechanisms to ensure callers are directed to agents
+they have interacted with before. However, adding such features would make the system complex,
+expensive, and inaccessible to some such as those that mentioned inability to work with smartphones
+or have connectivity problems. Still, the insights from this comprehensive assessment can inform
+future, incremental iterations of the system during scale-up.
+
+4. Conclusion 
+
+Participants were enthusiastic about the proposed call center because they were familiar with the
+technology, considered it feasible, affordable, convenient and efficient way to get mental health
+services without being stigmatized. The system provided mental health information and linkage to
+healthcare providers and peer support workers. The information in audio format made it accessible
+even to the illiterate users, and the automated IVR allowed 24/7 access while reducing the pressure
+on the healthcare workforce. Translation to English and Luganda, the two most spoken languages in
+Uganda, increased reach, as did the reverse-billing (no cost to the caller) and use of basic telephone
+calls as the channel of access since many Ugandans still do not have affordable and reliable internet
+access.
+
+5. Recommendations.
+In this study, people with mental illness, caregivers, and health care providers deemed a telephone-
+based mental health care service useful and necessary to increase access to mental health information
+and care and reduce stigma towards people with mental health problems. This positive view needs to
+be harnessed to scale up digitalization of mental health care including providing therapy and
+establishing it in other mental health care settings in line with the current Ugandan digitalization
+policy and the 3rd National Development Plan (NDP III). This method of mental health care may be
+
+replicable and scalable in other LMICs with mental health care system and personnel challenges like
+Uganda. Further research is needed to evaluate long-term adoption, patterns of utilization, and
+impact on clinical outcomes.
+
+Funding:
+This  project  was  funded  by  Digital  Futures  https://www.digitalfutures.kth.se/,  a  research
+collaboration  between  KTH  Royal  Institute  of  Technology,  Stockholm  University,  and  RISE
+Research Institutes of Sweden. Funders had no influence in the conduct of the research study.

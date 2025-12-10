@@ -1,0 +1,60 @@
+{
+  "file_name": "E and H - 2004 - Procuring a usable system using unemployed personas.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "A very tight project schedule forced the usability consultants to compress user research, design and iteration into an eight-week period and work at top speed with only two consultants.",
+      "justification": "The severe time constraint limited the team's ability to run planned iterations, thorough interviews, and evaluation cycles, hindering integration of feedback & iteration and evaluation workloads.",
+      "reference_excerpt": "The project group had worked for five months nailing down the organizational requirements and their time was running out. ... Therefore the UCD process could not take more than eight weeks. ... it was judged that we would be able to deliver on time by working with two consultants on top speed.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "PPG members were restricted in hands-on participation (only one member allowed to attend each interview or exercise) and consultants worked off-site, limiting stakeholder engagement.",
+      "justification": "These constraints reduced meaningful stakeholder involvement and shared first-hand insight, impeding manage user understanding, facilitate user involvement, and coordination between designers and procurers.",
+      "reference_excerpt": "In order to not interfere too much with the actual interviews only one member of the PPG was allowed to attend on each interview session. ... they comment that they should have participated more in the activities and that all work should have been done in their offices, instead of having the usability consultants work in their own office.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "stakeholder",
+      "barrier_type": "knowledge",
+      "description": "The project's organizational requirements were abstract, contradictory, and not specified to the same level as the user requirements, and the PPG failed to detail them when asked.",
+      "justification": "Because organizational requirements were not sufficiently concretized by the procuring stakeholders, designers could not reliably align or justify design decisions, hindering specification of requirements and integration of user and business perspectives.",
+      "reference_excerpt": "We identified the organizational requirements first and they did not reach the same level of concretization as the users’ requirements. ... The PPG had not been able to detail these to the level that the user requirements were specified.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "interaction",
+      "barrier_type": "emotional",
+      "description": "A perceived power imbalance emerged because the usability company led the process strongly with their methodology, which made PPG members feel that the consultants had become 'too strong'.",
+      "justification": "This trust and power dynamic caused the PPG to lose confidence in participating and ultimately halt the project, disrupting iteration and coordination across the multidisciplinary team and stopping planned design progress.",
+      "reference_excerpt": "…but then… the usability company got to strong somehow. The usability company was much more professional in some way – they had their methodology and they knew where to go and so forth. But we, who sat with the organizational requirements, ... we were not as good at steering, so to speak.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Planned user evaluation activities were curtailed: only one of two planned card-sorting exercises was performed and some user categories were omitted from the respondent selection.",
+      "justification": "Limiting or missing planned user studies reduced the designers' ability to fully understand segmentation and validate the information architecture, hindering understanding context of use and evaluation of designs.",
+      "reference_excerpt": "Card-sorting exercises were planned with the two most important user groups, but only one could be performed. ... When the personas were discussed the PPG noticed that two categories of users seemed to be missing. The selection of respondents had not included these user groups.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "PPG members had varying and limited experience with design concepts, requiring designers to explain basic concepts during workshops.",
+      "justification": "Low design literacy among stakeholders increased the need for designers to spend time on explanation rather than advancing design decisions, hindering coordination of the multidisciplinary team and efficient integration of feedback.",
+      "reference_excerpt": "Since the members had varying experiences of working with design the discussion was not always smooth and concepts such as navigation levels had got to be explained.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

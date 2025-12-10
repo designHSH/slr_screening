@@ -1,0 +1,535 @@
+OPEN LETTER
+
+   Challenges and opportunities in evaluating 
+
+programmes incorporating human-centred design: lessons 
+
+learnt from the evaluation of Adolescents 360
+
+[version 2; peer review: 3 approved]
+
+Aoife M. Doyle
+1, Emma Mulhern2, James Rosen3, Gabrielle Appleford
+2, 
+Christina Atchison1, Christian Bottomley1, James R. Hargreaves1, 
+Michelle Weinberger
+3
+
+1London School of Hygiene & Tropical Medicine, London, WC1E7HT, UK 
+2Itad Ltd, Hove, BN31RE, UK 
+3Avenir Health, Washington, DC 20012, USA 
+
+First published: 24 May 2019, 3:1472  
+https://doi.org/10.12688/gatesopenres.12998.1
+
+Latest published: 25 Sep 2019, 3:1472  
+https://doi.org/10.12688/gatesopenres.12998.2
+
+v2
+
+ 
+Abstract 
+Adolescents 360 (A360) is a four-year initiative (2016–2020) to increase 
+15-19-year-old girls’ use of modern contraception in Nigeria, Ethiopia 
+and Tanzania. The innovative A360 approach is led by human-centred 
+design (HCD), combined with social marketing, developmental 
+neuroscience, public health, sociocultural anthropology and youth 
+engagement ‘lenses’, and aims to create context-specific, youth-driven 
+solutions that respond to the needs of adolescent girls. The A360 
+external evaluation includes a process evaluation, quasi-experimental 
+outcome evaluation, and a cost-effectiveness study. We reflect on 
+evaluation opportunities and challenges associated with measuring 
+the application and impact of this novel HCD-led design approach. 
+For the process evaluation, participant observations were key to 
+capturing the depth of the fast-paced, highly-iterative HCD process, 
+and to understand decision-making within the design process. The 
+evaluation team had to be flexible and align closely with the work plan 
+of the implementers. The HCD process meant that key information 
+such as intervention components, settings, and eligible populations 
+were unclear and changed over outcome evaluation and cost-
+effectiveness protocol development. This resulted in a more time-
+consuming and resource-intensive study design process. As much 
+time and resources went into the creation of a new design approach, 
+separating one-off “creation” costs versus those costs associated with 
+actually implementing the programme was challenging. Opportunities 
+included the potential to inform programmatic decision-making in 
+real-time to ensure that interventions adequately met the 
+contextualized needs in targeted areas. 
+Robust evaluation of interventions designed using HCD, a promising 
+
+Open Peer Review
+
+Approval Status  
+ 
+ 
+
+1
+2
+3
+
+version 2
+
+(revision)
+
+25 Sep 2019
+
+view
+
+version 1
+
+24 May 2019
+view
+view
+view
+
+Isaac Holeman
+, Medic Mobile, Seattle, 
+
+USA 
+
+University of Washington, Seattle, USA
+
+1. 
+
+Melissa Gilliam, University of Chicago, 
+
+Chicago, USA
+
+2. 
+
+Kristien Michielsen, Ghent University, 
+
+Ghent, Belgium
+
+3. 
+
+Any reports and responses or comments on the 
+
+article can be found at the end of the article.
+
+ 
+
+Page 1 of 24
+
+Author roles: Doyle AM: Conceptualization, Investigation, Methodology, Writing – Original Draft Preparation; Mulhern E: 
+Conceptualization, Investigation, Methodology, Writing – Review & Editing; Rosen J: Conceptualization, Investigation, Methodology, 
+Writing – Review & Editing; Appleford G: Conceptualization, Investigation, Methodology, Writing – Review & Editing; Atchison C: 
+Conceptualization, Investigation, Methodology, Writing – Review & Editing; Bottomley C: Conceptualization, Methodology, Writing – 
+Review & Editing; Hargreaves JR: Conceptualization, Methodology, Writing – Review & Editing; Weinberger M: Conceptualization, 
+Investigation, Methodology, Writing – Review & Editing
+
+Grant information: This study was supported by the Bill & Melinda Gates Foundation (OPP1134172) and the Children’s Investment Fund 
+Foundation. 
+The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+
+Copyright: © 2019 Doyle AM et al. This is an open access article distributed under the terms of the Creative Commons Attribution 
+License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.
+
+How to cite this article: Doyle AM, Mulhern E, Rosen J et al. Challenges and opportunities in evaluating programmes incorporating 
+human-centred design: lessons learnt from the evaluation of Adolescents 360 [version 2; peer review: 3 approved] Gates Open 
+Research 2019, 3:1472 https://doi.org/10.12688/gatesopenres.12998.2
+
+First published: 24 May 2019, 3:1472 https://doi.org/10.12688/gatesopenres.12998.1 
+
+and increasingly popular approach, is warranted yet challenging. 
+Future HCD-based initiatives should consider a phased evaluation, 
+focusing initially on programme theory refinement and process 
+evaluation, and then, when the intervention program details are 
+clearer, following with outcome evaluation and cost-effectiveness 
+analysis. A phased approach would delay the availability of evaluation 
+findings but would allow for a more appropriate and tailored 
+evaluation design.
+
+Keywords 
+Human-Centered Design, User-centered Design, Design Thinking, 
+Evaluation, Adolescents, Contraception, Africa
+
+ 
+
+This article is included in the International 
+
+Conference on Family Planning gateway.
+
+ 
+
+Page 2 of 24
+
+Amendments from Version 1
+
+This version was revised following helpful comments from the 
+reviewers. Most of the changes were minor edits to improve the 
+clarity of the text and the terminology used. We have also added 
+some additional text to the lessons learnt section to highlight 
+the importance of anticipating and mitigating against potential 
+challenges associated with interdisciplinary research.
+
+Any further responses from the reviewers can be found at the 
+end of the article
+
+REVISED
+
+Rationale
+In the field of public health, human-centred design (HCD), 
+also known as design thinking, is increasingly being used dur-
+ing intervention development, and sometimes implementation, 
+to design innovative solutions to complex problems1. HCD is a 
+creative approach to programme design that focuses on building 
+empathy with the population of interest, and generating and itera-
+tively testing many potential solutions to complex problems. The 
+approach has a high tolerance for both ambiguity and failure1–3. 
+HCD shares some characteristics with other methods used to 
+design programmes such as traditional socio-behavioural research 
+but tends to be more ‘nimble/flexible/iterative’ and less protocol 
+driven4.
+
+Intervention evaluation is an essential component of public health 
+research and programming, and detailed guidance on evaluation 
+approaches and methodologies exist5,6. However, the iterative 
+and flexible nature of HCD potentially poses some unique chal-
+lenges for evaluation1,3,7 and examples of evaluations of HCD 
+public health interventions have so far been limited7,8. There 
+are some parallels between evaluations of HCD interventions and 
+evaluations of interventions incorporating adaptive management 
+or quality improvement where the intervention can also change 
+over time9–14. Also, programmatic interventions, as opposed to 
+researcher-led interventions, often involve an element of flex-
+ibility in intervention implementation, as implementers strive 
+to develop more context appropriate interventions, and respond 
+to programmatic targets. In such interventions, the location and 
+timing of intervention implementation is guided primarily by 
+programme targets or local government priorities, and less so 
+by a need to maximise the quality of evidence of impact15,16. 
+Despite some overlap with other evaluation scenarios, we have 
+identified some unique challenges to the evaluation of HCD-led 
+interventions.
+
+Purpose of the letter
+In this letter we discuss the evaluation opportunities and chal-
+lenges identified during the ongoing A360 evaluation and make 
+recommendations for future evaluations of programmes designed 
+using HCD.
+
+Adolescents 360
+The intervention that is under evaluation is Adolescents 360 
+(A360), a multi-country initiative which aims to increase the vol-
+untary use of modern contraceptives among adolescent girls aged 
+15–19 years. The A360 initiative is led by Population Services 
+International (PSI) in collaboration with the Society for Family 
+
+Health (SFH) in Nigeria, design partner IDEO.org, and the 
+Centre for the Developing Adolescent at the University of 
+California, collectively referred to here as the ‘implementers’. The 
+implementers were all involved in the design process. PSI and 
+SFH are responsible for the larger scale operationalising of the 
+designed interventions. A360 is co-funded by the Bill & 
+Melinda Gates  Foundation and the Children’s Investment Fund 
+Foundation.
+
+A360 set out to take a transdisciplinary approach to interven-
+tion development which involves the different discipline ‘lenses’ 
+working jointly to create new innovations that integrate and move 
+beyond discipline-specific approaches to address a common 
+problem (Figure 1).
+
+A360 aims to create context-specific, youth-driven solutions 
+that respond to the needs of young people. Through an iterative 
+design process, unique solutions were created in each of the 
+A360 countries. In Ethiopia, Smart Start uses financial planning 
+as an entry point to discuss contraception with newly married 
+couples17. In southern Nigeria, 9JA girls provides physical 
+safe spaces (branded spaces in public health clinics) for unmar-
+ried girls18, and in northern Nigeria, Matasa Matan Arewa 
+targets married girls and their husbands with counselling and 
+contraceptive services using maternal and child health as an 
+entry point19. In Tanzania ‘Kuwa Mjanja’ (be smart) delivers life 
+and entrepreneurial skills training alongside opt-out counsel-
+ling sessions and on-site contraceptive service provision to both 
+married and unmarried adolescent girls20.
+
+External evaluation
+The independent external evaluation aims to understand whether 
+the A360 approach leads to improved reproductive health 
+
+Figure 1. The A360 approach.
+
+Page 3 of 24
+
+outcomes; generate evidence about A360’s cost-effectiveness 
+in relation to other programming approaches; and capture how 
+A360 is implemented in different contexts, and the experience 
+of the participating young people and communities. It has four 
+components (Figure 2)21:
+
+1.   Outcome evaluation which has a quasi-experimental 
+
+design with before-after cross-sectional surveys in all 
+four settings (Oromia, Ethiopia; Mwanza, Tanzania; 
+Ogun and Nasarawa, Nigeria) and a comparison group in 
+the two Nigerian settings22.
+
+2.   Process 
+evaluation 
+incorporating 
+both 
+traditional 
+qualitative 
+methodologies 
+and 
+youth 
+participatory 
+research23.
+
+3.   Costing study to understand the drivers of cost and a more 
+
+extensive cost-effectiveness study within the outcome 
+evaluation study geographies.
+
+4.   Engagement and research uptake.
+
+HCD process and timeline
+HCD takes a phased approach to intervention development. In 
+the ‘inspiration phase’ the designers immerse themselves with 
+girls and their  influencers to understand the issues. In the idea-
+tion phase they attempt to make sense of what has been learnt, 
+identify opportunities for design and conduct an iterative cycle 
+of prototyping of possible solutions and strategies. The most 
+
+promising prototypes are then piloted. In the case of A360, 
+implementation at scale involved a further ‘optimisation’ period 
+where the selected solutions were further modified to max-
+imise scalability and affordability. In A360, the inspiration 
+and ideation phases took place over approximately 12 months 
+(Sept 16–Aug 17) with piloting for a further 3–4 months 
+(September–December 17). Optimisation and scale-up started 
+towards the end of 2017/early 2018. Among other things, the 
+length of the intervention design period presented some challenges 
+for the evaluation, which we explore in the sections that follow.
+
+Outcome evaluation
+The outcome evaluation aimed to measure the impact of 
+A360 on the voluntary use of modern contraceptives among 
+adolescent girls aged 15–19 years in the study geographies. 
+The outcome evaluation was designed when the implementers 
+were at the ‘inspiration phase’ with final study protocols sub-
+mitted for ethical approval when prototyping was still ongoing 
+and before the intervention had been finalised (Figure 3). This 
+outcome evaluation timeline was necessary in order to conduct 
+baseline surveys in 2017 prior to scale-up of the finalised inter-
+ventions in the four study settings. The implications of the con-
+current intervention development and evaluation design were 
+that key pieces of information about the intervention compo-
+nents and the theory of change were unclear and changed over 
+the protocol development period. Detailed information on the 
+
+Figure 2. A360 multi-component external evaluation.
+
+Page 4 of 24
+
+intervention were needed to inform the setting for baseline sur-
+veys and the kinds of questions to be asked during the surveys. 
+The outcome evaluation study design was finalised before the 
+interventions themselves so there remained a risk that the evalua-
+tion was not optimal.
+
+A key consideration for the baseline survey design was who 
+would be targeted with the A360 intervention in terms of geo-
+graphical location and demographic characteristics. Early on in 
+the intervention design process it became clear that A360 would 
+be targeted towards only married or unmarried adolescent girls 
+in some locations though uncertainty remained through early 
+phases of the design process. For example, in Northern Nigeria, 
+the outcome evaluation focused on married adolescent girls as the 
+initial intention of A360 was to target only those who were mar-
+ried, however, 9ja Girls, the intervention that was designed in 
+Southern Nigeria to target unmarried adolescent girls, was even-
+tually also implemented in Northern Nigeria. In Ethiopia, initial 
+HCD insights pointed towards a focus on unmarried adoles-
+cents in school but other programming pressures including donor 
+preferences led to a later shift in focus to married rural women. 
+The outcome evaluation was designed to target all married 
+15–19-year-old girls, but the final intervention focused on ‘newly 
+married’ adolescent girls. While some change in target population 
+might be expected with non-HCD programmatic interventions, 
+the HCD process provided the implementers with more freedom 
+and confidence to make additional changes. It was challeng-
+ing to determine the geographies that would receive A360 as 
+the implementers were in the middle of an intense phase of 
+solution prototyping and were not yet thinking about larger scale 
+implementation of A360.
+
+The level of implementation of the intervention was also rele-
+vant for study design, e.g. would A360 be implemented at health 
+facilities, in schools or in the community? Given the uncer-
+tainty as to how A360 would be implemented, we opted for a 
+
+community-based survey, which turned out to be appropriate 
+for the final A360 interventions. However, if A360 had been 
+implemented primarily in health facilities or schools then 
+evaluating the intervention at the broader community level might 
+not have been the most efficient study design.
+
+The uncertainties in key study design parameters meant that 
+we had to develop multiple study design scenarios which 
+were repeatedly revised as new information came to light. For 
+example, initially the intervention was to have distinct imple-
+mentation phases as it was rolled out across Nigeria and we 
+explored the idea of conducting a stepped-wedge trial. Following 
+further discussions with the implementers, it became clear that 
+there was no certainty that roll-out would be in a phased manner 
+as they did not know yet what the intervention would comprise. 
+In Tanzania, we explored whether a regression discontinuity 
+design might be possible if the intervention were implemented 
+in one or several of the existing demographic surveillance 
+sites, however, given the uncertainty around the nature of the 
+intervention, the implementers were reluctant to commit to imple-
+menting in those areas. This prolonged study design process 
+entailed some added costs and was at times frustrating for 
+all involved.
+
+Process evaluation
+The process evaluation was aligned to the HCD-driven phases 
+of the design process for A360 and had the primary objective 
+of presenting a descriptive and analytical account of how the 
+implementation of A360 has played out in relation to its Theory 
+of Change23. The process evaluation attempted to understand 
+both the intervention development process and intervention 
+implementation. During intervention development the process 
+evaluation team faced challenges as the fast-paced, highly itera-
+tive HCD process meant that the ‘design energy’ i.e. how deci-
+sions were made at key points in the design process, often went 
+undocumented4. This challenge was also noted in another 
+
+Figure 3. Timeline of A360 intervention development and implementation and the external evaluation.
+
+Page 5 of 24
+
+evaluation of a HCD design process8. As a result, the process 
+evaluation team needed to be flexible in order to align closely with 
+the work plan of the implementers and methodologies such as 
+direct participant observation  were key to capturing the depth 
+of the HCD process.
+
+The potential for research fatigue was observed among target 
+community members as their views were solicited by both 
+the implementers designing the intervention and the process 
+evaluation team interested in understanding the HCD process 
+from the participants’ point of view. The process evaluation 
+team, therefore, needed to balance the importance of capturing 
+the views of community members with the potential for research 
+fatigue.
+
+During the design of the process evaluation, the intention was that 
+the findings would feed into and inform the intervention design 
+at key moments. However, there was limited uptake of process 
+evaluation findings by implementers. For example, the process 
+evaluation highlighted the need for the programme to do more 
+to address broader community and social norms, but this finding 
+had a limited impact on intervention design. Poor uptake of 
+findings was partly a result of the fast-paced nature of A360 
+and the resultant demands on the implementers’ time which did 
+not allow them sufficient time to pause and reflect on the proc-
+ess evaluation findings. Country implementing teams differed 
+in how they engaged with external recommendations, with some 
+teams receptive and willing to listen and adjust, while others were 
+more protective of their ‘solutions’. Uptake of the process evalua-
+tion findings improved when the evaluation team introduced par-
+ticipatory action research activities which focused on operational 
+questions  that were important for the country teams (e.g. health 
+care provider attitudes in Ethiopia24 and Nigeria25).
+
+Cost-effectiveness evaluation
+The cost-effectiveness study faced similar challenges as the out-
+come evaluation in terms of complicated and delayed develop-
+ment of the cost-effectiveness study protocols. Although all 
+costing exercises face some unknowns about the intervention to 
+be costed, the flexible and iterative HCD process increased the 
+number of unknowns. Furthermore, because proponents hypoth-
+esized that it was the design process itself that would be the 
+key factor in producing an effective (and cost-effective) inter-
+vention, an important challenge was both measuring the total 
+design cost and isolating the cost of HCD specifically as HCD 
+activities of the design process were tightly intertwined with the 
+other A360 ‘lenses’. In addition, because A360 was creating a 
+new trans-disciplinary approach,  there was also interest in sepa-
+rating out the costs associated  with the ‘creation’ of the A360 
+approach from the costs associated with implementing and scal-
+ing A360 in countries. Interviews were held with interven-
+tion staff in order to get a sense of the distribution of activities 
+(and associated costs) across the study ‘lenses’ and between efforts 
+to create versus implement A360. The implementing agencies 
+planned continuous changes or tweaks to the intervention once it 
+was up and running and so more frequent cost data draws were 
+required during the scale-up period to capture how those changes 
+might affect the  “production process” and associated costs. 
+
+Lessons learnt
+Robust evaluation of a new and promising approach such as 
+HCD is warranted yet challenging. At the start of the programme, 
+there was a clear methodologic gap between the evaluation team 
+who had a background in public health and the social sciences, 
+and the design team at IDEO who were leading the HCD proc-
+ess. However, PSI and the other implementers, who were work-
+ing closely with IDEO, also had a background in public health 
+and the social sciences and helped bridge this gap. Also, the 
+evaluation team had been thoroughly briefed about the HCD 
+methodologies that would be used but they had only limited 
+practical 
+experience 
+evaluating 
+programmes 
+incorporating 
+human-centered design. 
+
+Some of the challenges faced are not unique to interventions 
+designed with HCD and will be recognisable by those who have 
+conducted interdisciplinary research and/or led evaluations of 
+programmatic interventions. In comparison to research-led stud-
+ies, evaluation of programmatic interventions is associated with 
+a reduced level of control and increased uncertainty. A chal-
+lenge for evaluators is to find ways to deal with this uncertainty 
+while still retaining scientific rigor. An additional long-standing 
+challenge, not specific to HCD, is to convince implementers 
+that rigorous evaluation, while at times intrusive, will improve 
+programme design and implementation.
+
+We have the following recommendations for others who would 
+like to evaluate programmes incorporating HCD:
+
+1.   Evaluators and implementers/designers should take time 
+
+to familiarise themselves with the methodologies used by 
+the different disciplines and have open discussions about 
+the potential challenges of interdisciplinary research, 
+and how they will be addressed/mitigated against.
+
+2.   Implementers should allow adequate time to participate 
+
+in the process evaluation, as well as work with the 
+process evaluation team to ensure that findings are timed 
+to feed into key decisions.
+
+3.   The process evaluation team should maximise secondary 
+
+analysis of data collected by the implementers, and 
+joint data collection could be considered where addi-
+tional data collection is needed and participant research 
+fatigue is anticipated.
+
+4.   Like HCD, an iterative and adaptive process evaluation 
+
+approach is required. In A360, the process evaluation 
+paused after the pilot phase and our team worked with 
+the A360 implementers and donors to develop evalua-
+tion questions that reflected the solutions that were being 
+developed, reflecting an iterated A360 Theory of Change.
+
+5.   Methodologies such as participant action research may 
+
+identify process evaluation questions that are more rel-
+evant for the implementers. For the evaluators direct 
+observations can be instrumental to capturing the fast-
+paced, highly-iterative HCD process, and to understand 
+the ‘design energy’ i.e. how decisions were made at key 
+points in the design process.
+
+Page 6 of 24

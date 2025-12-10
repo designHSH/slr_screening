@@ -9,12 +9,12 @@ from openai import OpenAI
 
 class PromptRunnerText:
     """
-    Executes structured YAML-based prompts on text files using GPT models (e.g., gpt-5-mini).
+    Executes structured YAML-based prompts on text files using GPT models (e.g., gpt-4.1).
     Reads .txt input files, injects content into the user_command ({{paper_text}}),
     and outputs aggregated results as a single CSV file.
     """
 
-    def __init__(self, prompt_path: str, model: str = "gpt-5-mini"):
+    def __init__(self, prompt_path: str, model: str = "gpt-4.1"):
         load_dotenv()
         self.prompt_cfg = self._load_prompt(prompt_path)
         self.model = model
@@ -111,7 +111,7 @@ if __name__ == "__main__":
     prompt_file = Path(r"prompt\full_text_screening_pr_v012.yaml")
     output_csv_path = Path(r"data\fulltext_screening\ft_screening_result\07_ft_scr_gpt5mini_pr_v012_b07.csv")
 
-    runner = PromptRunnerText(prompt_file, model="gpt-5-mini")
+    runner = PromptRunnerText(prompt_file, model="gpt-4.1")
 
     text_files = list(input_folder.glob("*.txt"))
     if not text_files:

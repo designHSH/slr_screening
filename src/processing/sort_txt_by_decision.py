@@ -1,3 +1,18 @@
+"""
+Sort TXT files into included/excluded folders using a CSV of screening decisions.
+
+How to run (no prompts):
+    python src/processing/sort_txt_by_decision.py <decisions.csv> <txt_dir> [out_dir] [filename_col] [decision_col]
+    - decisions.csv: CSV with filenames and include/exclude decisions
+    - txt_dir: folder containing the source .txt files
+    - out_dir (optional): destination base; defaults to <txt_dir>/sorted_txt
+    - filename_col/decision_col (optional): column names; auto-detected if omitted
+
+If you omit CLI args, the script will prompt interactively. You can set the DEFAULT_* values
+below to prefill those prompts for quick runs in VS Code or notebooks.
+Outputs: copies of .txt files in included/ and excluded/, plus copy_log.csv and report.txt.
+"""
+
 from pathlib import Path
 import sys
 import re

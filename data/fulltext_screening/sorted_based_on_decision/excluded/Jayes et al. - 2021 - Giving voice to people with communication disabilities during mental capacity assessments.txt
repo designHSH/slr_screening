@@ -1,0 +1,1381 @@
+INT J LANG COMMUN DISORD, JANUARY/FEBRUARY 2021,
+
+VOL. 56, NO. 1, 90–101
+
+Research Report
+
+Giving voice to people with communication disabilities during mental ca-
+pacity assessments
+
+Mark Jayes†
+, Rebecca Palmer‡
+and Pamela Enderby‡
+
+†Department of Health Professions, Manchester Metropolitan University, Manchester, UK
+‡School of Health and Related Research, University of Shefﬁeld, Shefﬁeld, UK
+
+(Received June 2020; accepted October 2020)
+
+Abstract
+Background: Healthcare professionals without specialist training in communication disorders may not know how
+to identify and support patients with communication disabilities during mental capacity assessments. To meet
+this need, a novel communication screening tool was developed and tested as part of a mental capacity assessment
+support toolkit.
+Aims: To provide an initial evaluation of the communication screening tool’s usability, interrater reliability and
+criterion validity.
+Methods & Procedures: A prototype communication screening tool was developed iteratively using co-production
+and user-centred design principles. A mixed-methods case series design was used to explore how multidisciplinary
+healthcare professionals used the tool to test patients in acute hospital and intermediate care settings. Usability data
+were collected in an electronic survey and from a documentary analysis. Screening test outcomes obtained by pairs
+of professionals were compared to measure the tool’s interrater reliability. Outcomes obtained by professionals
+were compared with the outcomes of a speech and language therapist’s communication assessment to measure
+criterion validity. Quantitative data were analysed using frequency counts and inferential statistics. Qualitative
+data were analysed using framework analysis.
+Outcomes & Results: A total of 21 professionals, including physicians, nurses, occupational therapists, physiother-
+apists, and speech and language therapists, and 17 patients with diagnoses of stroke or cognitive impairment took
+part. Professionals reported they found the tool easy to use, useful and that its use increased their understanding
+of communication support methods and the speech and language therapist role in relation to mental capacity as-
+sessment. However, not all used it consistently or accurately. Professionals reported they chose not to use the tool
+when they perceived patients’ communication to be intact. Four of eight patients with a diagnosis of dementia
+or memory impairment, who professionals elected not to screen, were found to have signiﬁcant communication
+needs. Screening outcome data for nine patients suggest the tool’s interrater reliability is currently moderate, whilst
+its criterion validity is poor.
+Conclusions & Implications: This study highlights that non-speech and language therapist health professionals have
+difﬁculty identifying and screening for communication difﬁculties. This conﬁrms existing evidence that people
+with communication disabilities may not receive the decision-making support they require during mental capacity
+assessments when speech and language therapists are not involved. Greater understanding of health professionals’
+thought processes regarding communication is required to further develop this unique communication screening
+tool so that it can effectively enable healthcare professionals to identify and use communicative adaptations to
+support decision-making.
+
+Keywords: aphasia, assessment, brain injury, cognition, dementia, speech and language therapy.
+
+What this paper adds
+
+What is already known on this subject
+
+• Limited previous research suggests that assessing the mental capacity of people with communication dis-
+
+abilities is complex. Practice needs to be improved to ensure this group is adequately supported to make
+decisions, in line with legal requirements.
+
+Address correspondence to: Mark Jayes, Faculty of Health, Psychology and Social Care, Manchester Metropolitan University, Brooks Building,
+
+This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction
+in any medium, provided the original work is properly cited.
+
+International Journal of Language & Communication Disorders
+ISSN 1368-2822 print/ISSN 1460-6984 online © 2020 The Authors. International Journal of Language & Communication Disorders published by John Wiley & Sons Ltd on behalf
+
+of Royal College of Speech and Language Therapists
+
+DOI: 10.1111/1460-6984.12585
+
+91
+
+What this paper adds to existing knowledge
+• This paper describes the development and testing of a novel communication screening tool for use by
+healthcare professionals preparing to undertake mental capacity assessments. It increases our understand-
+ing of how healthcare professionals without specialist training understand communication disability and
+the role of the speech and language therapist in relation to mental capacity assessment.
+
+What are the potential or actual clinical implications of this work?
+• Healthcare professionals without specialist training require support to understand and respond to the
+needs of people with communication disabilities during mental capacity assessments. With further devel-
+opment and testing, in response to initial evaluation, this novel communication screening tool may be
+able to provide this support.
+
+Introduction
+
+Approximately 2 million people in the UK are esti-
+mated to lack mental capacity to make certain decisions
+(SCIE 2016). Within England and Wales, the Men-
+tal Capacity Act (MCA) (OPSI 2005) requires health
+and social care professionals to provide decision-making
+support and complete a mental capacity assessment
+whenever they have reason to believe a person aged
+16 years or above may have difﬁculty making an in-
+formed decision. This can include difﬁculties under-
+standing and using decision-related information as a re-
+sult of communication disability.
+The process of assessing mental capacity becomes
+more complex when it involves people with commu-
+nication disabilities. The MCA deﬁnes incapacity as
+the inability to make a time-speciﬁc decision due to an
+impairment or disturbance in the functioning of the
+mind or brain (OPSI 2005:2.1). The MCA functional
+test of decision-making requires an assessor to establish
+whether a person is able to understand, retain, and
+use or weigh relevant information in order to make a
+decision and then communicate a choice (OPSI 2005:
+3.1). These decision-making abilities and the ability to
+demonstrate them during a mental capacity assessment
+are predicated on the ability to communicate. Capacity
+assessments tend to be completed in clinical interviews
+in which assessors provide information about decisions
+and test decision-making abilities using spoken lan-
+guage (Emmett et al. 2013). People who have aphasia,
+developmental or cognitive–communication disorders
+may have difﬁculty understanding spoken explanations
+during capacity assessments; they may also ﬁnd it difﬁ-
+cult to express what they understand about the decision
+and which decision option they prefer (Suleman and
+Hopper 2015). People who have dysarthria may experi-
+ence similar challenges expressing their understanding
+and preferences (Zuscak et al. 2016).
+There is a risk that these types of communication
+difﬁculty may mask the true nature of an individual’s
+decision-making ability (Ferguson et al. 2010). Pro-
+fessionals without experience of working with people
+
+with communication difﬁculties may make erroneous
+judgements about these people’s mental capacity, based
+on inaccurate perceptions of their communication abil-
+ities, or they may conﬂate impaired communication
+with impaired decision-making capacity (McCormick
+et al. 2017, Jayes et al. 2019). As a result, profession-
+als may unintentionally deprive people with commu-
+nication disabilities of opportunities to make informed
+decisions (autonomously or with support), or may
+ask this group to make decisions that are uninformed
+and therefore incapacitous (Carling-Rowland et al.
+2014).
+To mediate this risk, the MCA requires health
+and social care professionals to provide individualized
+support to people to maximize their decision-making
+capacity. For individuals with communication disabil-
+ities, this includes making adjustments to the way that
+information about decisions is provided and to the way
+that mental capacity is assessed, to ensure that these
+processes are more accessible. Professionals without
+expertise in working with people with communication
+disabilities ﬁnd it difﬁcult to accurately identify and
+support communication needs (Cameron et al. 2018,
+Carragher et al. 2020). In contrast, speech and language
+therapists (SLTs), who are trained to assess, diagnose
+and treat communication disorders, are ideally placed
+to lead or support capacity assessments for people
+with communication disabilities (Zuscak et al. 2016,
+Volkmer 2016).
+The SLT role in mental capacity assessment is pro-
+moted by UK practice guidance (DCA 2007, 4.42,
+NICE 2018, 1.4.17). Despite this, professionals from
+other disciplines do not always seek specialist support
+from SLTs during mental capacity assessments (Jayes
+et al. 2019). A number of reasons may account for this
+lack of SLT involvement. Other disciplines may not al-
+ways recognize the need for communication support
+or understand the role that SLTs can play during ca-
+pacity assessments (McCormick et al. 2017). Even if
+they do understand the SLT role, they may perceive
+that SLT services have insufﬁcient resources to provide
+
+92
+Mark Jayes et al.
+
+this type of support, especially in settings where there is
+a high demand for dysphagia assessment and manage-
+ment (Jayes et al. 2017).
+The Mental Capacity Assessment Support Toolkit
+(MCAST) is a set of practical resources developed by
+the ﬁrst author to support professionals to complete
+mental capacity assessments in line with legal require-
+ments (Jayes et al. 2015). The MCAST aims to identify
+the speciﬁc needs of people with communication dis-
+abilities during mental capacity assessments. It includes
+a communication screening tool, designed to enable
+professionals without any prior experience of commu-
+nication disorders to identify a person’s communication
+needs and determine how to support these needs during
+a capacity assessment.
+The rationale for developing a communication
+screening tool and its content and design speciﬁca-
+tion were identiﬁed from the results of a literature re-
+view of current mental capacity assessment practice in
+health and social care (Jayes et al. 2019) and a qualita-
+tive exploration of healthcare professionals’ experience
+of mental capacity assessment (Jayes et al. 2017). These
+sources of evidence suggested that the quality of mental
+capacity assessments would be improved if assessors had
+a means of collecting dependable information about pa-
+tients’ sensory and communicative abilities and needs,
+and methods to support these needs, before assessing
+their mental capacity.
+Healthcare professionals in the qualitative study
+(Jayes et al. 2017) suggested that, in their experience,
+only limited speech and language therapy resources are
+available in healthcare settings for the assessment and
+management of communication disorders. These par-
+ticipants indicated that a potential method to address
+this would be to develop a simple method for multidis-
+ciplinary staff to use in order to differentiate patients
+with different severities of communication difﬁculty
+and how to support them during capacity assessments.
+They suggested that patients with mild communica-
+tion difﬁculties could be supported without referral to
+speech and language therapy using a limited number
+of speciﬁed communication strategies, whilst patients
+with moderate and severe difﬁculties should be referred
+to speech and language therapy, for specialist support.
+Participants identiﬁed that they would particularly
+welcome support to work more effectively with patients
+with diagnoses of stroke and/or cognitive impairment.
+A communication screening tool was designed to
+meet this need. Traditional screening tools provide a
+means of rapidly testing speciﬁc abilities, in order to
+identify whether an individual has a particular impair-
+ment, and may lead to the decision to refer to a special-
+ist or for further assessment. The MCAST communica-
+tion screening tool is novel because it is designed to en-
+able professionals to identify a patient’s communication
+
+difﬁculties as well as provide a range of communication
+strategies that could be used to support the patient in
+speciﬁc ways during the capacity assessment. A similar
+tool has been developed and tested for use in research
+contexts; the Consent Support Tool (Palmer and Jayes
+2016) was developed to enable researchers to identify
+how to support potential participants with communi-
+cation disabilities to understand information and make
+decisions during the informed consent process.
+The MCAST communication screening tool was
+developed iteratively according to user-centred design
+(UCD) principles (Rekha Devi et al. 2012) and co-
+production techniques (Needham and Carr 2009).
+Healthcare professionals, service users and their family
+members, and experts in UCD and communication
+assessment worked collaboratively to design and review
+successive iterations. During this process, healthcare
+professionals emphasized that the tool should be quick
+and easy to use without the need for additional materi-
+als or signiﬁcant training. The design of the prototype
+screening tool as a four-page paper proforma (see the
+appendix in the supplemental data online) was ﬁnalized
+during an experiential workshop in which healthcare
+staff used the tool to test people with communication
+difﬁculties.
+The prototype includes individual subtests that tar-
+get the speciﬁc communicative abilities that patients
+need to use in order to demonstrate intact decision-
+making capacity, for example, the ability to provide a
+reliable ‘yes/no’ response; to understand spoken lan-
+guage at a certain level; and to use spoken language to
+express opinions and choices. These subtests were de-
+signed to be used with patients with both acquired and
+progressive communication disorders. The subtests are
+not scored but include speciﬁc instructions to enable a
+professional to use a patient’s performance on the sub-
+test to identify if they require communication support
+and the nature of that support. The screening tool pro-
+vides three possible outcomes based on the performance
+of an individual patient on speciﬁc subtests:
+
+• The patient does not have any communica-
+tion difﬁculties. The professional should continue
+with the mental capacity assessment as planned
+but avoid use of any specialist language.
+• The patient has difﬁculty understanding com-
+plex spoken information. The professional should
+complete further subtests to establish whether the
+patient’s difﬁculties can be supported using spec-
+iﬁed strategies.
+• The patient is unable to provide a reliable
+‘yes/no’ response or to understand simple spo-
+ken information. The professional should refer
+to speech and language therapy for specialist sup-
+port. Simple spoken information in this context is
+
+93
+
+conceptualized as a sentence containing up to
+three information-carrying words (ICWs); these
+are words that need to be understood in order to
+understand the meaning of a sentence (Knowles
+and Masidlover 1982).
+
+In addition to these main outcomes, the tool directs
+the professional to use several strategies if they identify
+that a patient has difﬁculty using spoken language to
+express themselves or understand others: (1) support-
+ing the patient to use speech intelligibility strategies,
+if indicated; (2) completing further subtests to inves-
+tigate whether the professional and the patient could
+use alternative or augmentative communication meth-
+ods (e.g., writing questions and responses or pointing to
+photographic images representing aspects of common
+patient decisions); and (3) referring to speech and lan-
+guage therapy for specialist support. These communi-
+cation strategies are shown in section 1 on page 2 of
+the screening tool (see the appendix in the supplemen-
+tal data online).
+The feasibility of using a prototype version of the
+MCAST in acute hospital and intermediate care set-
+tings was investigated (Jayes et al. 2020). Part of this in-
+vestigation involved an exploration of how profession-
+als from different disciplines used the communication
+screening tool. This paper presents the ﬁndings of initial
+testing of the communication screening tool’s usability,
+reliability and validity.
+
+Methods
+
+The MCAST feasibility study (Jayes et al. 2020)
+used a mixed-methods convergence triangulation de-
+sign (Creswell and Plano Clark 2017) informed by a
+subtle realist epistemology (Mays and Pope 2000). The
+communication screening tool was tested using a case
+series design. The study took place within two acute
+hospitals and four care homes providing intermediate
+care services in a large city in England. Ethical approval
+was obtained from the Bradford Leeds NHS Research
+Ethics Committee (15/YH/0468).
+
+Participant recruitment
+
+Healthcare professionals were recruited purposively
+from a range of disciplines typically involved in men-
+tal capacity assessment: liaison psychiatrists, nurses, oc-
+cupational therapists, physicians, physiotherapists, psy-
+chologists, SLTs and social workers. The study was
+advertised via the healthcare trust’s electronic staff
+newsletter, and managers for each discipline were asked
+to cascade a recruitment advertisement via email to their
+colleagues. Professionals were invited to contact the ﬁrst
+author for further information or if they wished to par-
+
+ticipate. All professional participants were given written
+information about the study and provided written in-
+formed consent.
+Professional participants identiﬁed patients with a
+diagnosis of stroke and/or cognitive impairment who
+required a mental capacity assessment. Patients were
+excluded if they had visual difﬁculties that prevented
+them from seeing the communication screen materi-
+als or if they required information to be presented in
+languages other than English. The ﬁrst author (a qual-
+iﬁed SLT) visited patients identiﬁed by professionals
+and gave them a participant information sheet that had
+been adapted using inclusive communication principles
+(Palmer and Jayes 2016). The ﬁrst author then used a
+range of supportive communication strategies tailored
+to each patient’s individual needs to help them to un-
+derstand the information. The ﬁrst author revisited pa-
+tients at least 24 hours later to ask if they wished to take
+part. If a patient wished to take part, the ﬁrst author
+took written informed consent using an adapted con-
+sent form. Where indicated, the ﬁrst author completed
+a mental capacity assessment to determine if patients
+were able to give informed consent to participate. When
+a patient was not able to give informed consent, but ap-
+peared willing to participate, the ﬁrst author invited the
+patient’s family member to complete a consultee decla-
+ration (OPSI 2005) to conﬁrm they were satisﬁed that
+their relative wished to participate.
+
+Data collection procedure
+
+Professionals were encouraged to use the screening tool
+as part of their preparation for any mental capacity
+assessment they needed to complete during their usual
+clinical practice over a 6-month data collection pe-
+riod. These screening tests were not observed by the
+researchers.
+
+Assessment of usability
+
+At the end of the 6-month data collection period, pro-
+fessional participants were invited to complete an elec-
+tronic questionnaire anonymously. This measure in-
+cluded questions relating to participants’ perceptions of
+the screening tool’s frequency of use, ease of use and
+usefulness. It was developed using SurveyMonkey soft-
+ware and included rating scales, multiple-choice and
+open questions. In addition, the ﬁrst author collected
+MCAST documentation completed by professionals,
+including communication screening tool proformas, to
+inform assessment of how the tool was used.
+
+Assessment of reliability
+
+We measured interrater reliability: the extent to which
+the tool provides stable outcomes when used by
+
+94
+Mark Jayes et al.
+
+different people. Whenever a professional (participant
+A) used the screening tool to test a patient, another pro-
+fessional (participant B) working in the same clinical lo-
+cation was asked to use the tool to complete a second,
+independent screening test within 48 hours. This pe-
+riod was selected to ensure that the two screening tests
+took place contemporaneously, but with sufﬁcient time
+to enable patients to rest between tests and for profes-
+sionals to be able to complete the tests. Professionals
+were instructed to review a patient’s medical notes be-
+fore completing the second test in order to identify and
+record any medical events that may cause the patient’s
+communication or cognitive abilities to ﬂuctuate (e.g.,
+a urinary tract infection or neurological event). This
+information was considered when comparing the out-
+comes of the two screening tests. The results of the two
+screening tests (i.e., categorical outcomes 1, 2 or 3 as
+deﬁned above in the introduction) were compared in
+order to measure the tool’s interrater reliability. As men-
+tal capacity can ﬂuctuate and its assessment is deﬁned
+legally as time speciﬁc (OPSI 2005), we decided not to
+measure intra-rater reliability: the extent to which the
+tool provides stable outcomes when used by the same
+person at different points in time. We were also con-
+cerned that it would overburden patients if we asked
+them to undergo an additional screening test within the
+same 48-hour period.
+
+Assessment of validity
+
+We measured criterion validity, the level of agreement
+observed between outcomes obtained using the com-
+munication screening tool and those obtained using an
+external criterion variable (Franzen 1989). As existing
+validated communication screening tools do not mea-
+sure the same outcomes as this novel tool (i.e., they
+do not test the ability to use compensatory strategies),
+a communication assessment completed by an SLT
+(the ﬁrst author) was used as the criterion variable.
+This assessment included use of the Frenchay Aphasia
+Screening Test (FAST) (Enderby et al. 2012) as a
+consistent assessment framework. FAST test items were
+supplemented with a ‘yes/no’ reliability subtest and a
+photograph recognition subtest in order to generate
+the same types of outcomes as the novel screening tool.
+These subtests contained the same number of test items
+and represented a similar level of difﬁculty to the sub-
+tests used in the MCAST screening tool. This enabled
+the ﬁrst author to assign the same three categorical out-
+comes to his communication assessments (outcomes 1,
+2 or 3) as are provided by the MCAST screening tool.
+The outcomes of professional participant A’s screening
+test and the ﬁrst author’s communication assessment
+were compared in order to measure the tool’s criterion
+validity.
+
+We aimed to counterbalance the order of the two
+screening tests and the ﬁrst author’s assessment over a
+48-hour period, to control for learning effects and to
+ensure patients received contemporaneous testing but
+were not overburdened. All professional participants
+and the ﬁrst author remained blinded to the outcomes
+of previous testing in order to reduce bias.
+
+Data analysis
+
+Usability
+
+Quantitative data from the online questionnaire were
+inputted into Microsoft Excel ﬁles and analysed using
+frequency counts and descriptive statistics. Qualitative
+data were transcribed verbatim into Microsoft Word
+ﬁles. Word ﬁles were imported into QSR NVivo 9
+software. Data were analysed thematically using a
+framework approach (Ritchie and Spencer 1994). This
+involved an iterative, ﬁve-stage process of data famil-
+iarization, identiﬁcation of the thematic framework,
+indexing, charting, and mapping and interpretation;
+themes were generated deductively from the research
+objectives and inductively from open data coding.
+The ﬁrst author also completed an analysis of all
+completed MCAST documentation. This included an
+examination of professionals’ documentation of deci-
+sions about whether to use the screening tool, if profes-
+sionals completed the subtests that were indicated for
+individual patients (on the basis of their performance
+on earlier subtests), and whether professionals used rec-
+ommended communication strategies during the subse-
+quent mental capacity assessments.
+If a professional participant decided not to use
+the communication screening tool to test a patient,
+quantitative and qualitative data from the ﬁrst author’s
+communication assessment were examined to establish
+whether the patient had any communication needs. A
+frequency count was used to describe instances when
+professional participants did not use the screening tool,
+but the patient did have communication needs.
+
+Reliability and validity
+
+The ﬁrst author examined each completed communi-
+cation screening test proforma and used the patient’s
+documented performance on the ‘yes/no’ response re-
+liability and spoken comprehension subtests to assign
+one of the three categorical outcomes (1, 2 or 3). These
+categorical data were inputted into SPSS (IBM, 2015,
+v23.0) ﬁles for statistical analysis. Data collected by pro-
+fessional participants (A and B) were compared using a
+Fleiss’s Kappa statistic (Fleiss 1971) in order to evaluate
+the tool’s interrater reliability. Data obtained by profes-
+sional participant A and the ﬁrst author were compared
+
+95
+
+Table 1. Individual professional participant characteristics
+
+Participant
+identiﬁer
+Professional role
+Clinical setting
+
+E001
+OT
+Acute hospital
+E003
+SLT
+Acute hospital
+E004
+SLT
+Acute hospital
+E005
+OT
+Acute hospital
+E006
+OT
+Acute hospital
+E007
+Consultant neurologist
+Acute hospital and
+
+community services
+E008
+Discharge planning nurse
+Acute hospital
+E009
+SLT
+Acute hospital
+E010
+OT
+Acute hospital
+E011
+OT
+Acute hospital
+E013
+SLT
+Intermediate care
+E014
+Physiotherapist
+Intermediate care
+E015
+OT
+Intermediate care
+E016
+OT
+Intermediate care
+E017
+OT
+Intermediate care
+E018
+Physiotherapist
+Intermediate care
+E020
+OT
+Intermediate care
+E021
+Consultant physician
+Acute hospital
+E022
+Specialist registrar
+Acute hospital
+E023
+SLT
+Intermediate care
+E024
+OT
+Intermediate care
+
+Note: OT, occupational therapist; SLT, speech and language therapist.
+
+using a Fleiss’s Kappa statistic to measure the tool’s cri-
+terion validity.
+
+Results
+
+Participant characteristics
+
+A total of 21 professional participants (20 females and
+one male) were recruited to the MCAST feasibility
+study. Individual participant characteristics are shown
+in table 1. The sample included ﬁve different profes-
+sional groups: physicians (n = 3), nurses (n = 1), occu-
+pational therapists (n = 10), physiotherapists (n = 2)
+and SLTs (n = 5). Participants worked in different set-
+tings across acute hospitals and intermediate care. They
+had between 3 and 24 years of experience of working in
+healthcare. Not all participants used the screening tool
+during the study.
+
+A total of 17 patients (nine males and eight females)
+were recruited to the MCAST feasibility study. Partici-
+pant characteristics are presented in table 2. Participants
+were between 48 and 93 years of age. Six individuals
+had a new diagnosis of stroke and another participant
+had a stroke previously. A total of 10 participants had
+conditions associated with cognitive difﬁculties: sub-
+arachnoid haemorrhage (n = 3); diagnosed/suspected
+dementia (n = 6); and chronic memory impairment
+(n = 1). Patients were recruited from different clini-
+cal settings: acute and intermediate care stroke services
+
+(n = 6); a sub-acute neuro-rehabilitation ward (n = 3);
+and an acute hospital dementia unit (n = 2).
+
+Communication screening tool usability
+
+Data relating to use of the screening tool are displayed
+in table 2. Table 2 groups data for patients who were
+tested using the screening tool and those who were not.
+Nine of the 17 patient participants recruited to the
+MCAST study were tested by pairs of professional par-
+ticipants using the communication screening tool. The
+screening tests completed by professional participants
+(A) (n = 7) indicated that four of these nine patients
+had communication needs and three required referral
+to speech and language therapy for specialist support
+for the capacity assessment. An analysis of completed
+MCAST documentation indicated that for three of
+these four patients, professional participants (A) went
+on to seek or provide the type of communication sup-
+port indicated by the screening tool: two patients (P04,
+P15) received support from an SLT and the other (P08)
+was supported by the professional participant using
+communication strategies. The other patient (P14), a
+woman with global aphasia, was not referred to an SLT
+as indicated as being required by the screening tool.
+The documentary analysis suggested that eight profes-
+sionals (roles A and B) did not follow all instructions
+accurately. For example, several professionals completed
+subtests that were not indicated for individual patients.
+
+Professionals chose not to test eight patients using
+the screening tool. An analysis of completed MCAST
+proformas suggested that professionals were aware of
+the ﬁndings of recent communication assessments by
+SLTs for three of these patients (P06, P12, P13) and
+used these ﬁndings to plan the capacity assessment
+(i.e., use of the screening tool was not indicated). The
+ﬁrst author’s communication assessment suggested that
+four of the remaining ﬁve patients had communica-
+tion needs and would have beneﬁted from referral to
+an SLT. These patients (P07, P09, P10, P16) had a his-
+tory of memory impairment or a diagnosis of demen-
+tia. Analysis of completed MCAST documentation in-
+dicated that these patients did not receive communica-
+tion support during their mental capacity assessments.
+All were found to lack the capacity to make a decision
+relating to their place of residence.
+
+Survey data
+
+A total of 15 professionals responded to questions
+about the screening tool on the online survey. All 15
+respondents indicated that they found the screening
+tool easy to use and useful. Their qualitative responses
+suggested they valued the clarity of the tool’s instruc-
+tions and layout. One participant commented that
+
+96
+Mark Jayes et al.
+
+Table 2. Individual patient participant characteristics and screening test outcome data
+
+Patient
+participant
+identiﬁer
+Age (years) Diagnosis
+Outcome of communication screening
+
+a
+
+Communication
+support during capacity
+
+assessment
+Comments
+
+Professional A
+Professional B
+First author
+Indicated?
+Received?
+
+P01
+91
+Stroke
+1
+1
+3
+Yes
+No
+P01 was previously assessed by an
+
+SLT on this admission. The
+SLT did not provide support
+for capacity assessment.
+P03
+82
+Delirium, ?existing
+
+dementia
+
+1
+2
+3
+Yes
+No
+None
+
+P04
+52
+Sub-arachnoid
+
+haemorrhage
+
+3
+2
+1
+No
+Yes
+P04 developed a urinary infection
+
+within the 48-hour testing
+period. Professional A (E004,
+an SLT) provided
+communication support for
+capacity assessment.
+P05
+86
+Delirium, ?existing
+
+dementia
+
+1
+1
+3
+Yes
+No
+None
+
+P08
+82
+Subdural
+
+haematoma,
+previous stroke
+
+2
+1
+3
+Yes
+Yes
+Consistent with screening tool
+
+outcome, professional A
+(E015) provided
+communication support for
+capacity assessment. First
+author’s assessment showed the
+referral to the SLT was
+indicated.
+P11
+55
+
+Stroke/schizophrenia
+
+1
+1
+2
+Yes
+No
+None
+
+P14
+67
+Stroke
+3
+3
+3
+Yes
+No
+Inconsistent with screening tool
+
+outcome, professional A
+(E021) did not refer to the
+SLT. P14 presented with global
+aphasia.
+P15
+73
+Dementia
+3
+3
+3
+Yes
+Yes
+Consistent with screening tool
+
+outcome, Professional A
+(E020) referred to the SLT who
+provided communication
+support for capacity
+assessment.
+P17
+73
+Dementia
+1
+1
+3
+Yes
+No
+None
+P02
+73
+Sub-arachnoid
+
+haemorrhage
+
+Not tested
+1
+No
+No
+None
+
+P06
+48
+Sub-arachnoid
+
+haemorrhage
+
+Not tested
+3
+Yes
+Yes
+Patient already known to the SLT
+
+who provided communication
+support for capacity
+assessment.
+P07
+92
+Chronic memory
+
+impairment
+
+Not tested
+3
+Yes
+No
+None
+
+P09
+93
+Dementia
+Not tested
+3
+Yes
+No
+None
+P10
+88
+Dementia
+Not tested
+3
+Yes
+No
+None
+P12
+76
+Stroke
+Not tested
+1
+No
+No
+Patient previously assessed by an
+
+SLT on this admission.
+P13
+70
+Stroke/space
+
+occupying lesion
+
+Not tested
+3
+Yes
+Yes
+Patient already known to the SLT
+
+who provided communication
+support for capacity
+assessment.
+P16
+92
+Stroke, chronic
+
+memory
+impairment
+
+Not tested
+3
+Yes
+Yes
+Patient already known to the SLT
+
+who provided communication
+support for capacity
+assessment.
+
+Notes: aOutcome of communication screening corresponds to the approach the Mental Capacity Assessment Support Toolkit (MCAST) screening tool or the ﬁrst author’s commu-
+nication assessment indicated should be adopted during the capacity assessment, based on the patient’s performance on the ‘yes/no’ response reliability and spoken comprehension
+subtests: (1) avoid using any specialist language to explain information during the capacity assessment; (2) use speciﬁed communication strategies during the capacity assessment; and
+(3) refer to an SLT for specialist communication assessment before the capacity assessment.
+
+97
+
+Table 3. Individual patient participant ‘yes/no’ reliability and spoken comprehension subtest outcome data
+
+Patient
+participant
+identiﬁer
+
+‘Yes/no’ response reliability subtest outcome (screening
+
+tool section 2)
+
+Spoken comprehension subtest outcome (screening tool
+
+section 3)
+
+Professional A
+Professional B
+First author
+Professional A
+Professional B
+First author
+
+P01
+6/6
+6/6
+6/6
+Complex
+
+command
+
+a
+Complex
+
+command
+
+<3 ICW
+
+b
+
+P05
+6/6
+6/6
+6/6
+Complex
+
+command
+
+Complex
+
+command
+
+<3 ICW
+
+P11
+6/6
+6/6
+6/6
+Complex
+
+command
+
+Complex
+
+command
+
+3 ICW
+
+P14
+<6/6
+<6/6
+<6/6
+<3 ICW
+Not tested
+
+c
+<3 ICW
+P15
+<6/6
+<6/6
+<6/6
+<3 ICW
+<3 ICW
+<3 ICW
+P17
+6/6
+6/6
+6/6
+Complex
+
+command
+
+Complex
+
+command
+
+<3 ICW
+
+P03
+6/6
+6/6
+6/6
+Complex
+
+command
+
+3 ICW
+<3 ICW
+
+P04
+6/6
+6/6
+6/6
+<3 ICW
+3 ICW
+Complex
+
+command
+P08
+6/6
+6/6
+6/6
+3 ICW
+Complex
+
+command
+
+<3 ICW
+
+Notes: aRefers to the fact that the patient demonstrated the ability to understand a complex spoken command.
+bNumber of information-carrying words (ICW): the number of words that need to be understood in order to understand the meaning of a sentence.
+cThe spoken comprehension subtest did not need to be completed if the patient scored <6/6 on the ‘yes/no’ response reliability subtest.
+
+the tool was a ‘Logical, step by step, clearly explained
+sequence of assessments’. Another reported that the
+tool was ‘Clearly set out for people without a back-
+ground in speech/language’. Participants’ responses
+suggested they thought the screening tool helped them
+to provide communication support and consider the
+SLT role during capacity assessments in ways they had
+not previously: ‘It made me think of strategies that I
+wouldn’t have considered such as using the photographs
+to explain key pieces of information’; and ‘it allowed
+me to think again about speech and language therapy
+and calling upon them for skilled support more than I
+think I have done in the past’. The majority of profes-
+sionals (14/15) reported that they felt conﬁdent about
+the tool’s outcomes. The other respondent reported
+that they would welcome opportunities to observe an
+SLT using the screening tool to gain conﬁdence in
+using it.
+
+Three of the 15 survey respondents reported they
+felt they did not need to use the screening tool, either
+because they were already aware of a patient’s commu-
+nication needs and knew how to support these (n = 2),
+or because ‘the patient didn’t appear to have any com-
+munication difﬁculties’ (n = 1). The ﬁrst author’s doc-
+umentary analysis and ﬁeld notes suggested that other
+professionals chose not to use the screening tool be-
+cause they did not identify any communication difﬁ-
+culties when they engaged patients in conversation; for
+example, one professional reported they did not use the
+screening tool because the patient was ‘able to verbalise’,
+without making reference to the patient’s ability to un-
+derstand spoken language.
+
+Interrater reliability
+
+Table 2 shows that participants A (n = 7) and B (n =
+8) obtained the same overall screening test outcomes for
+six of the nine patients. Statistical analysis using a Fleiss
+kappa statistic (k = 0.432, 95% CI = [−0.053, 0.917])
+suggests that this corresponds to a ‘moderate’ level of
+agreement using the framework proposed by Landis and
+Koch (1977).
+
+Table 3 presents outcomes for individual partici-
+pants on the ‘yes/no’ response reliability and spoken
+comprehension subtests (screening tool sections 2 and
+3, respectively). These are the outcomes that profession-
+als use to determine the overall screening test outcome
+for each participant. Table 3 groups data for patients for
+whom professional participants A and B and/or the ﬁrst
+author obtained consistent outcomes and for patients
+for whom consistent outcomes were not obtained. Pro-
+fessionals A and B recorded the same outcomes for each
+of the nine patients on the ‘yes/no’ response reliability
+subtest. Professionals A and B obtained consistent out-
+comes for ﬁve of eight patients (P01, P05, P11, P15,
+P17) on the spoken comprehension subtest (note that
+data for participant P14 were not included in this anal-
+ysis because professional participant B discontinued the
+screening test without administering the spoken com-
+prehension subtest).
+
+Criterion validity
+
+Table 2 shows that professional participant A (n = 7)
+and the ﬁrst author obtained the same overall screening
+
+98
+Mark Jayes et al.
+
+test outcome for two of the nine patients. These two pa-
+tients presented with severe communication difﬁculties;
+one (P14) was globally aphasic following a stroke whilst
+the other (P15) had severe cognitive–communication
+difﬁculties associated with dementia. The Fleiss kappa
+statistic (k = −0.370, 95% CI = [−0.882, 0.144]) sug-
+gests a ‘poor’ level of agreement between professional
+participant A and the ﬁrst author.
+Table 3 shows that the ﬁrst author and professional
+A participants obtained consistent outcomes on the
+‘yes/no’ response reliability subtest for each of the nine
+patients. In contrast, they obtained consistent outcomes
+for only two patients (P14, P15) on the spoken compre-
+hension subtest.
+
+Discussion
+
+This study explored use of the MCAST communica-
+tion screening tool in practice. This novel tool was de-
+veloped to support multidisciplinary healthcare profes-
+sionals to identify and meet the needs of patients with
+communication difﬁculties during mental capacity as-
+sessments. This study investigated the screening tool’s
+usability, reliability and validity.
+Most participants reported they found the commu-
+nication screening tool useful and easy to use. How-
+ever, our ﬁndings suggest that professionals are likely
+to need greater support to understand when and how
+to use it accurately. Several professionals indicated that
+they elected not to use the screening tool because they
+judged the patient’s communication skills to be intact
+when they engaged them in conversation. In each case,
+the patient had a diagnosis of dementia or a history of
+memory impairment. These professionals may not be
+aware that these patients’ communication difﬁculties,
+particularly language comprehension, may be masked
+in conversation and that support from an SLT might be
+indicated and of beneﬁt.
+Four patients who were not tested using the screen-
+ing tool were judged by the ﬁrst author (an SLT) as
+likely to beneﬁt from communication support during
+their capacity assessment. This demonstrates that com-
+munication ability cannot be judged reliably through
+conversation and use of conversation to indicate need
+for a communication screening test is not adequate. In
+addition, we observed that one professional did not fol-
+low the screening tool’s recommendation to refer a pa-
+tient with global aphasia to an SLT for support. In each
+of these ﬁve cases, the patient was found to lack the ca-
+pacity to make a decision about where they would like
+to live on leaving the healthcare setting. It is possible
+that the provision of communication support may have
+changed the outcomes of these capacity assessments or,
+at least, have enabled each patient’s wishes and prefer-
+ences regarding the decision to have been identiﬁed and
+
+represented during the subsequent process of best in-
+terests decision-making. Mental capacity legislation re-
+quires health and social care staff to provide this type of
+decision-making support (OPSI 2005).
+Our data suggest that the screening tool’s crite-
+rion validity and interrater reliability are not robust.
+This means that we cannot be conﬁdent at present that
+the tool provides accurate and consistent information
+about whether patients need communication support
+and what form this support should take. This initial
+evaluation suggests that the interrater reliability of the
+screening tool appears to be moderate whilst its crite-
+rion validity is poor. It also suggests that the ‘yes/no’
+response reliability subtest (section 2) has superior crite-
+rion validity and interrater reliability compared with the
+spoken comprehension subtest (section 3). The psycho-
+metric properties of the screening tool’s subtest items
+need to be optimized before the tool can be used in
+practice.
+
+Implications for practice
+
+Our data suggest that professionals who are not SLTs
+make invalid assumptions about patients’ communica-
+tion abilities based on perceptions of their ability to
+engage in conversation. This provides a challenge to
+promoting widespread use of a communication screen-
+ing tool in preparation for mental capacity assessments.
+The data also indicate that some professionals are likely
+to need additional support to use a communication
+screening tool and implement its recommendations ac-
+curately.
+Our ﬁndings suggest that some healthcare profes-
+sionals lack awareness of the communication difﬁculties
+associated with dementia. Previous research has found
+that other disciplines may not recognize the value
+of SLT interventions for communication difﬁculties
+associated with dementia (Paul and Mehrhoff 2015).
+Therefore, it appears that more needs to be done to pro-
+mote the SLT role in supporting the communication
+needs of people living with dementia. SLTs working in
+the clinical locations where the current study took place
+did provide communication interventions for people
+living with dementia. However, in some locations in the
+UK, National Health Service SLT services for people
+living with dementia are not commissioned to provide
+intervention for communication disorders (Volkmer
+et al. 2018). This raises the question of whether it
+would be ethical to use a screening tool that identiﬁes
+the need for communication support from an SLT in
+settings where this service was not available. However,
+use of the MCAST communication screening tool in
+this situation could enable professionals to identify
+when they could use strategies to support patients with
+
+99
+
+milder needs; its ﬁndings might also be used to inform
+a business case for additional SLT resources.
+Our ﬁndings complement existing evidence (Mc-
+Cormick et al. 2017) that other healthcare disciplines
+may not understand or recognize the role that SLTs can
+play in mental capacity assessments. We propose that
+professionals need more support to understand the re-
+lationship between communication disability and men-
+tal capacity and the role that SLTs can play in facili-
+tating decision-making. Although currently limited, re-
+search evidence suggests that communication training
+for mental capacity assessors can improve the accuracy
+of capacity assessment outcomes. In a Canadian study
+(Carling-Rowland et al. 2014), social workers were bet-
+ter able to support communication and reliably assess
+decision-making for people with aphasia after they had
+received training in communication facilitation by an
+SLT.
+
+Limitations and suggestions for further research
+
+Although the online survey collected data anonymously,
+we recognize that professionals’ responses may have
+been inﬂuenced by social desirability bias (King and
+Bruner 2000). An important limitation of our evalu-
+ation of reliability and validity is that we confounded
+measurement of the screening tool’s psychometrics with
+measurement of how professionals used it in practice.
+Although we did not observe professionals using the
+tool, our documentary analysis suggests that some in-
+dividuals did not adhere to all of its administration in-
+structions. This may have affected the outcomes they
+obtained. In addition, we were unable to counterbal-
+ance the order in which patients were tested by profes-
+sional participants A and B and the ﬁrst author, due to
+practical constraints. Furthermore, not all patients were
+tested within a 48-hour period, which meant that pa-
+tients’ communication skills may have varied between
+tests. In this study we elected not to investigate intra-
+rater reliability because we did not wish to overburden
+patient participants with an additional screening test
+within the same 48-hour period. Finally, we were only
+able to collect validity and reliability data for nine pa-
+tients. This small sample size is likely to have affected
+the precision of the statistics calculated. For these rea-
+sons, we cannot be sure that our data provide a true
+representation of the tool’s psychometric properties.
+However, the data do help us to identify ways
+to develop and test the tool in order to establish its
+psychometric properties and improve the accuracy
+of its use. We propose to investigate convergent and
+divergent validity for each subtest, by comparing out-
+comes obtained using the tool with those obtained
+using established language assessment tools. We will
+also evaluate both inter- and intra-rater reliability with
+
+a separate cohort of patients, to reduce participant bur-
+den. Following this, it will be important to ensure the
+tool can be used accurately and reliably. Ethnographic
+methods could be used to investigate how different
+professionals use the tool and to identify how this
+affects its outcomes; this might generate data relating to
+how to support professionals to adhere more closely to
+the tool’s administration instructions. These data could
+inform the design of additional written guidance in the
+toolkit or training relating to how the communication
+screening tool should be administered.
+Professionals involved in co-designing the screening
+tool stated that they wished to be able to use it with-
+out undergoing signiﬁcant training, as this would be
+impractical in busy healthcare settings. However, given
+the outcomes of this initial study, further development
+and research need to include consideration of how best
+to implement efﬁcient training about when and how to
+use the tool to reliably identify communication needs.
+Participants in our study did not always recognize when
+to use the tool to screen patients. This suggests that
+training should include information about the types of
+health conditions that may cause communication difﬁ-
+culties and the types of patients who may beneﬁt from
+communication support; training should also provide
+opportunities for professionals to learn about the nature
+of different communication disorders and types of com-
+munication support, as recommended by best practice
+statements (e.g., NICE 2018). This could be offered
+in conjunction with purchase of the tool or consid-
+ered within interprofessional healthcare graduate train-
+ing programmes. Furthermore, it may be beneﬁcial to
+create a training video that includes demonstrations of
+people using the tool and highlights examples of accu-
+rate and inaccurate administration to improve its use.
+Alternatively, or additionally, it may be possible to cre-
+ate a digital version of the MCAST that standardizes ad-
+ministration of the screening tool across patients. When
+the screening tool’s psychometrics have been established
+and its use optimized, it will be necessary to investigate
+whether professionals are able to use the screening tool
+results to implement strategies that are effective in sup-
+porting patients with milder communication difﬁculties
+during mental capacity assessments.
+
+Conclusions
+
+The study provides conﬁrmatory evidence that non-
+SLT health professionals have difﬁculty identifying and
+screening for communication difﬁculties. As a result,
+they may not support patients with communication
+needs themselves or refer to SLTs for specialist input.
+Although a legal requirement, this study highlights that
+people with communication disabilities may not re-
+ceive the support they need during mental capacity
+
+100
+Mark Jayes et al.
+
+assessments. We suggest this may happen more often
+for patients living with dementia. However, profession-
+als who used the tool in this study reported it was use-
+ful, easy to use and helped them to gain an increased
+understanding of communication support methods and
+the role of the SLT during mental capacity assessments.
+Greater understanding of health professionals’ thought
+processes regarding communication is required to fur-
+ther develop this unique communication screening tool
+so that it can effectively enable healthcare professionals
+to identify and support patients with communication
+needs during mental capacity assessments.

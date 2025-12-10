@@ -1,0 +1,1783 @@
+My Health Coach: Community members’
+perspectives on a mobile health tool for adults
+with fetal alcohol spectrum disorders
+
+Emily L Speybroeck1,2
+, Christie Petrenko1,2
+, Cristiano Tapparello1
+,
+Katrina Grifﬁn3, Emily Hargrove3, Myles Himmelreich3, Anique Lutke3,
+CJ Lutke3, Maggie May3, Shuo Zhang4, Janna Looney1,
+Carson Kautz-Turnbull1,2 and Madeline N Rockhold1,2
+
+Abstract
+
+Objectives: Fetal alcohol spectrum disorders (FASD) affect the health and development of people across the lifespan. Adults
+with FASD experience signiﬁcant barriers to care. Accessible and scalable solutions are needed. In partnership with mem-
+bers of the International Adult Leadership Collaborative of FASD Changemakers, an international group of adults with FASD,
+we developed a mobile health (mHealth) application based on self-determination theory (SDT), called “My Health Coach,” to
+promote self-management and health advocacy.
+
+Methods: This project follows an established user-centered design approach to app development and evaluation, allowing
+for feedback loops promoting iterative change. Research staff and ALC members co-led online focus groups (n = 26) and an
+online follow-up survey (n = 26) with adults with FASD to elicit feedback on completed design prototypes. Focus group tran-
+scriptions and surveys underwent systemic thematic and theoretical framework analysis.
+
+Results: Analyses show overall positive impressions of the My Health Coach app. Participants were enthusiastic about the
+proposed features and tools the app will provide. Discussions and free responses revealed SDT constructs (autonomy, com-
+petence, relatedness) are a strong ﬁt with participants’ perceived outcomes shared in their evaluation of the prototype.
+Interesting recommendations were made for additional features that would further promote SDT constructs.
+
+Conclusions: This project demonstrates advantages of community-engaged partnerships in FASD research. Adults with FASD
+have a strong interest in scalable mHealth tools and described the acceptability of our initial design. App features and tools
+promoted SDT constructs.
+
+Keywords
+
+Fetal alcohol spectrum disorders, FASD, adults, mobile health tools, mHealth, community engaged partnerships
+
+Submission date: 27 November 2023; Acceptance date: 9 May 2024
+
+Introduction
+
+Prenatal alcohol exposure (PAE) can affect the developing
+brain and other organ systems, which can result in a set of
+developmental disabilities termed fetal alcohol spectrum
+disorders (FASD).1 FASD are prevalent disabilities, affect-
+ing about 1.1% to 5% of children in the United States.2
+
+Diagnostic criteria for FASD involve details regarding
+prenatal alcohol exposure, characteristic facial features,
+growth patterns, neurological differences (e.g. microcephaly,
+
+1Department of Psychology, University of Rochester, Rochester, NY, USA
+2Mt. Hope Family Center, Rochester, NY, USA
+3The International Adult Leadership Collaborative of the FASD
+Changemakers, USA
+4University of Miami, Coral Gables, FL, USA
+
+Christie Petrenko, Mt. Hope Family Center, University of Rochester, 187
+Edinburgh St, Rochester, NY 14608, USA.
+
+Creative Commons Non Commercial CC BY-NC: This article is distributed under the terms of the Creative Commons Attribution-NonCommercial
+4.0 License (https://creativecommons.org/licenses/by-nc/4.0/) which permits non-commercial use, reproduction and distribution of the work
+without further permission provided the original work is attributed as speciﬁed on the SAGE and Open Access page (https://us.sagepub.com/en-us/nam/
+open-access-at-sage).
+
+Original Research Article
+
+Volume 10: 1–18
+© The Author(s) 2024
+Article reuse guidelines:
+sagepub.com/journals-permissions
+DOI: 10.1177/20552076241261458
+journals.sagepub.com/home/dhj
+
+seizures, structural brain differences), and neurobehavioral
+functioning.1 Speciﬁc diagnoses on the fetal alcohol spec-
+trum, such as fetal alcohol syndrome, partial fetal alcohol
+syndrome, and alcohol-related neurodevelopmental dis-
+order, depend on which characteristic features are present.
+Although FASD have been primarily studied in children,
+it is well established that they are life-long conditions that
+impact multiple domains of functioning.3 Adults with
+FASD often require a higher level of supports to participate
+in home, community, occupational, and social settings.4
+
+Despite the high prevalence, most people with FASD do
+not receive appropriate diagnoses or services. Research has
+documented that 80% or more of people with FASD go
+undiagnosed.5 Barriers to appropriate services stem in part
+from sparse research literature and lack of systematic pro-
+vider training.6,7 Furthermore, there is limited, largely deﬁcit-
+focused, and stigmatizing information available online.7,8
+
+Despite fetal alcohol syndrome being recognized in the
+United States since 1973,9 there remains many unknowns
+about how PAE affects individuals in adulthood or through-
+out the aging process. The adult literature on FASD is
+limited and the average age in most adult studies is 25
+years (for a review, see Ref.3). Longitudinal studies docu-
+ment that facial characteristics and growth delays, when
+present, can diminish over time for some individuals;
+however, neurobehavioral impairments appear to persist
+over the life course. This limited body of research3 docu-
+ments difﬁculties with attention, learning and memory,
+planning, task efﬁciency, and analyzing social situations.
+Adults with FASD feel less conﬁdent coping with their
+environment and display higher levels of self-reported
+behavior problems and mental health conditions.10 Likely
+a result of many of these neurobehavioral challenges,
+adults with FASD have lower adaptive functioning and
+many require a moderate to high level of supports from
+others. Emerging research is also documenting important
+strengths in individuals with FASD including social rela-
+tionships and prosocial behaviors, speciﬁc talents and pas-
+sions, and resilience.11–13
+
+Adults with FASD have played an active role in adding
+to this limited body of work and bringing attention to these
+important issues, especially physical health and quality of
+life indicators in FASD. Speciﬁcally, several leaders in
+the FASD community have come together, establishing
+a
+group
+called
+the
+International
+Adult
+Leadership
+Collaborative (ALC) of the FASD Changemakers. The
+ALC established a central organizing theme of “Nothing
+About Us Without Us” for adult programming at the
+International Conference on FASD held annually in
+Vancouver, BC. They also developed two surveys about
+physical health symptoms and quality of life for adults
+with FASD, respectively. Each survey elicited responses
+from over 500 of their peers. The ﬁrst survey’s results
+were presented at the 2017 International FASD Conference
+in Vancouver14 and were recently published.15
+
+The ALC’s survey ﬁndings revealed that compared to
+the general population, adults with FASD have elevated
+rates of autoimmune disorders, cardiovascular disease, dia-
+betes, thyroid disorders, digestive disorders, and mental
+health problems, among others.15 The ALC also spoke
+about the trials and tribulations of managing their health
+conditions. They described experiences with health provi-
+ders who did not take reported symptoms seriously and
+their wide-ranging difﬁculties in self-advocacy. They also
+highlighted problems for some adults with FASD in under-
+standing and following a medication regimen and other
+treatment advice. This arose from a mismatch between
+how information was presented and the constraints of
+their individually variable neurobehavioral impairments.
+This dearth of research, coupled with FASD often being
+missed or misdiagnosed,5 means it is extremely difﬁcult for
+adults to obtain effective supports and services.4 Systematic
+reviews of FASD intervention research16 have identiﬁed
+only two studies with adults, both involving case manage-
+ment approaches targeting parenting outcomes.17,18 Thus,
+no research-backed interventions exist for the many phys-
+ical and mental health challenges reported by the ALC in
+their seminal research. Further, there are major barriers to
+accessing existing services and supports in the community
+including but not limited to: individual- and family-level
+barriers such as limited ﬁnancial resources and inability to
+access childcare; lack of FASD-informed community provi-
+ders; FASD not being a qualifying diagnosis in existing
+systems of care; and stigma.6,19 Additional barriers exist
+for accessing FASD-informed resources online: much of
+what can be found online about FASD is contradictory,
+unveriﬁable, and even frightening. Information is often stig-
+matizing and not written at an appropriate literacy level.
+Suggestions and research are deﬁcit-focused rather than
+strengths-based.8 Scalable, strengths-based, and evidence-
+backed solutions are needed.
+Increasingly, technology is being harnessed to support or
+deliver care for physical and mental health problems across
+the lifespan and has signiﬁcant potential to increase access
+to FASD-informed resources and care.20,21 The use of
+mobile health (mHealth) technologies has bourgeoned
+since the emergence of app stores in 2008.22 mHealth has
+many advantages, including increasing healthcare capacity,
+providing patient access to tailored and immediate support,
+reducing stigma in accessing care, and improving cost-
+effectiveness.23 Unfortunately, very few apps undergo
+any type of rigorous evaluation.24 Additionally, very few
+studies have examined the efﬁcacy of mHealth interven-
+tions for people with developmental disabilities, despite
+the higher prevalence of co-occurring conditions in this
+population.25 Recent studies have shown that people with
+developmental disabilities have rates of smartphone owner-
+ship and usage in line with those of the overall population.26
+
+Given high rates of health disparities and universal access to
+smartphones, adults with developmental disabilities are
+
+2
+
+good candidates for mHealth interventions. mHealth apps
+also have the potential to increase independence in the self-
+management of important activities of daily living, which is
+a salient goal for many adults with developmental
+disabilities.
+
+My Health Coach: a novel mHealth app for adults
+with FASD
+
+Our mHealth app, My Health Coach, is being developed
+through
+a
+partnership
+between
+researchers
+at
+the
+University of Rochester (UR) and the ALC. This app is
+being designed to offer adults with FASD evidence-based
+education about their condition and tools to promote their
+own
+self-management
+and
+health
+advocacy
+goals.
+Members of the ALC have served as an advisory board,
+co-developed the app prototype, and co-led the conduction
+of the presented research. Partnering with the ALC to
+develop and conduct the research is an important strength
+of this study. Gathering community input is crucial when
+developing new treatments and supports for a given condi-
+tion.27 Additionally, partnering with identiﬁed leaders in
+the community helps to shape the research questions and
+guides data collection and interpretation, which enriches
+the quality of the data and ensures the right questions are
+being asked.
+My Health Coach is a just-in-time adaptive intervention
+(JITAI) for adults with FASD. JITAIs aim to provide the
+right type and amount of support when the user is most
+receptive.28 Receptivity to a given intervention varies by
+intrinsic (e.g. age, personality characteristics) and context-
+ual (e.g. time of delivery, location, and activity of the
+
+person) factors.29 Tailoring delivery of the intervention to
+times when a person is most ready to receive it increases
+engagement and reduces intervention fatigue.28
+
+My Health Coach is informed by self-determination
+theory (SDT). SDT highlights the importance of autonomy,
+competence, and relatedness for an individual’s well-being
+and health.30 According to SDT, all people have a need to
+regulate their own experiences, feel able to do things well,
+and feel socially connected.31 The degree to which any of
+these psychological needs are unsupported or thwarted
+will have a detrimental impact on wellness in that setting.
+In accordance with the three core psychological needs of
+SDT, the My Health Coach app aims to help adults with
+FASD feel more competent, in control, and connected
+with others.
+Following a user-centered design approach,32 the UR
+research team and ALC discussed initial design ideas, and
+an initial design prototype was created in Adobe XD33
+
+(see Figure 1). Consistent with ﬁndings from prior research
+on mHealth features for people with developmental disabil-
+ities,34,35 the prototype was designed to feel familiar and
+easy to navigate for adults with FASD. After installing
+the app, users will be able to select and customize their
+“health coach,” which will be a chatbot they interact with
+via text or voice messages. Prior mHealth studies using
+chatbot-driven interventions have evidenced health beneﬁts
+including reduced psychological stress and promotion of
+positive health behaviors.24,36 The health coach interface
+will resemble using a typical messaging app, which is
+familiar to most adults with developmental disabilities.26
+
+Interaction can be initiated by the health coach chatbot or
+the user. By default, the health coach chatbot will initiate
+
+Figure 1. My Health Coach app prototype. From left to right: avatar customization, daily check-in, tracker tool, an daily messages.
+
+Speybroeck et al.
+3
+
+a brief “daily check-in” with the user each day (one JITAI
+decision point used in My Health Coach). This will provide
+active assessment for tailoring variables, which will deter-
+mine
+whether
+speciﬁc
+intervention
+options
+will
+be
+deployed. The initial design prototype capitalizes on well-
+established techniques to promote behavior change when
+the user is receptive. For example, these techniques may
+include brief psychoeducation, goal setting, consideration
+of an alternate reframed interpretation, activity scheduling,
+and ideas for relaxation and stress reduction, among others.
+Several speciﬁc tools and features to support these techni-
+ques can be seen in Figure 1.
+
+The current study
+
+The current study represents a critical foundational step of
+our user-centered design approach. Gathering community
+member input early and iteratively throughout the develop-
+ment process helps to facilitate the acceptability and utility
+of the app.27,37 After development of the prototype, we con-
+ducted focus groups and surveys to elicit broader feedback
+from adults with FASD. Our aims for these focus groups
+and surveys were: solicitate in-depth qualitative feedback
+on app prototype and recommendations for additional fea-
+tures and ascertain broader quantitative input on key fea-
+tures and themes raised during focus groups, respectively.
+
+Methods
+
+Study design
+
+Qualitative methods are widely accepted as an integral
+component of the development process of mHealth
+apps.27 The current study utilized QUAL + quan sequential
+mixed methods design.38 Mixed methods purposes were tri-
+angulation, complementarity, development, and initiation.
+The methodological orientation underpinning this study
+was content analysis. The qualitative phase of the current
+study included focus group methods to gather key input
+from adults with FASD, eliciting in-depth feedback about
+the design and proposed components of the My Health
+Coach app. Following review of focus group data, the
+development team and the ALC developed a survey to
+gain additional input on key themes and ideas raised
+during focus groups. The interactive design prototype was
+shown to focus group and survey participants to help
+inform reﬁnements to the design and functionalities to the
+app prior to programming.
+
+Inclusion and exclusion criteria
+
+To be eligible for the study, participants needed to be an
+adult (18+) with known PAE or diagnosis of FASD (self-
+report), and have conversational ﬂuency in English.
+Participation in a focus group was dependent upon
+
+eligibility,
+complete
+responses
+to
+the
+demographic
+surveys, and scheduling availability for the planned focus
+groups. Participation in the follow-up survey was depend-
+ent upon eligibility, complete responses to the demographic
+surveys, and complete responses to the study survey. Those
+who indicated they were younger than 18-years old, did not
+have known PAE or an FASD diagnosis, were unable to
+attend a scheduled focus group or had missing or incom-
+plete survey responses were excluded from the study.
+
+Recruitment
+
+As the app is intended for adults with FASD worldwide,
+perspectives were elicited from participants in various
+countries. Adults for both the focus groups and follow-up
+survey were recruited by leveraging various networks of
+the UR research team and ALC. Study advertisements
+were posted to UR research team members and ALC’s
+social media accounts. Recruitment materials were also
+shared with team members’ networks and other known
+FASD organizations, who distributed them among their
+contacts via email, social media, newsletters, or in-person.
+In general, authors did not have prior existing relationships
+with participants, however, some ALC members did know
+a few speciﬁc participants through interactions in other set-
+tings (e.g. online support forums).
+Interested adults were directed to the study’s Consent
+and Screening Module link on REDCap, hosted at the
+UR.39,40 All participants reviewed the Study Information
+Sheet, including members of the ALC, to understand the
+risks and beneﬁts of participating in the study. They also
+answered questions about the Study Information Sheet to
+ensure understanding and were given the opportunity to
+contact study staff with questions. Participants then pro-
+vided consent. A “Notiﬁcation of Collection and Use of
+Personal Data” was also included in the REDCap Screening
+Modules immediately after the Study Information Sheet to
+inform all participants from the European Union or the
+United Kingdom about compliance with General Data
+Protection Regulation requirements. Written permission was
+obtained for any participants who had a legal guardian. For
+those adults who indicated they had a legal guardian, the
+research team contacted the person to review the permission
+form and obtain the needed signature through REDCap’s
+eConsent functionalities.
+
+Procedures
+
+Focus groups. The data collection team included six ALC
+members, a doctoral-level researcher with 20 years of
+experience with FASD (second author), a project coordin-
+ator with 4 years of experience with FASD, two full-time
+research assistants with 2 years of experience with FASD
+(ﬁrst and tenth authors), and an undergraduate research
+assistant. The majority of the data collection team identiﬁed
+
+4
+
+as female, with one member identifying as male. Focus
+groups were co-led by members of the ALC (fourth, ﬁfth,
+sixth, seventh, eighth, and nineth authors) and a research
+team member. Co-leadership by ALC members was
+crucial, given the project’s emphasis on self-advocacy,
+strengths,
+and
+empowerment
+of
+adults
+with
+FASD.
+Research team members managed the audio recorder,
+took notes during discussions, addressed logistical concerns
+or questions, and helped keep the discussion on topic.
+Focus groups were conducted online using a HIPAA-
+compliant Zoom platform. Seven focus groups were con-
+ducted in total and lasted about 90 minutes on average.
+Each focus group session began with an introduction
+from the study’s principal investigator (second author), a
+statement about the purpose of the focus group, and a list
+of group rules and expectations. Participants were explicitly
+encouraged to share concerns or negative feedback during
+focus groups to reduce positive response bias. If there
+were more than four participants present, participants
+were evenly divided and sent into Zoom breakout rooms
+to allow for maximum participation. Each breakout room
+had at least one ALC member and one research staff.
+Next, the research team showed participants the interactive
+initial app design prototype using Adobe XD.33 Following a
+semi-structured interview guide (see Table 1), ALC
+members elicited participant discussion feature by feature.
+The interview guide was co-developed by the ALC and the
+research team, with careful attention to language. Requests
+for additional targets for future app development were also
+solicited. The ﬁrst author transcribed focus group recordings
+verbatim which were checked for accuracy by the tenth
+author. After the seventh focus group was conducted, the
+team discussed data saturation and decided sufﬁcient input
+had been gathered through this method.
+
+Follow-up survey. After completion of the focus groups and
+initial data analysis, a survey was developed to solicit add-
+itional feedback and allow another avenue for participants
+to give feedback. The survey was administered online
+using
+REDCap.39,40
+After
+completing
+a
+demographic
+survey, participants watched a short introduction video of
+the ALC and research team, which stated the purpose of
+the survey, showed the initial customization and chatbot fea-
+tures to help orient the participant to the app, and asked par-
+ticipants to continue with the survey to provide feedback and
+recommendations. Participants were then shown short video
+walk-throughs of the initial prototype feature by feature
+using Adobe XD.33 They were asked if they liked or disliked
+the feature and why and given space to provide recommen-
+dations (see Supplementary materials for questioning route).
+
+Data analysis
+
+Focus groups. The data analysis team was overseen by the
+second author and qualitative analysis was conducted by
+
+the ﬁrst, tenth, and eleventh authors. The group consisted
+of two bachelor-level full-time research assistants, with
+one holding a master’s degree (both participated in data col-
+lection) and an undergraduate research assistant who did
+not participate in data collection. Before coding, all had
+undergone training on qualitative coding administered by
+the lab principal investigator (second author). Data and
+codes were managed using Dedoose.41
+
+Data were analyzed thematically to understand partici-
+pants’ perspectives on the initial app design and functional-
+ities to identify patterns or themes within the data.42,43
+
+Consistent
+with
+the
+approach
+advocated
+by
+Miles,
+Huberman, and Saldana,43 coders ﬁrst familiarized them-
+selves with the data, iteratively reviewing each transcript
+and independently assigning initial codes (“ﬁrst-level”
+coding). The following a priori coding methods were
+selected based on similar prior studies:32 structural,
+values, and evaluation coding. The team then came together
+and discussed, operationalized, and reﬁned each code.
+Transcripts were then re-coded, and codes were reﬁned
+through further discussion and consensus, as needed.
+
+Follow-up survey. Consistent with the focus group analysis,
+the ﬁrst, tenth, and eleventh authors examined and coded
+free-response sections of the survey. Free-response sections
+were analyzed thematically using the established codebook
+from the focus group data. Codes from the focus groups ﬁt
+well with survey responses. There was a 15% increase in
+“ﬁrst-level” codes to capture new ideas from survey respon-
+dents. These codes were added to capture topics that focus
+groups either did not cover or did not cover in-depth due to
+time restraints, including perceived motivations and bar-
+riers to using the app and feedback on the proposed logo.
+
+Integrative analysis. Consistent with our approach in prior
+studies,25 the coding team then generated “second-level
+codes,” which considered categories or deeper meaning
+among ﬁrst-level codes of focus group and survey data.43
+
+During this process, coders examined interrelationships
+and networks among codes and built a preliminary thematic
+framework. Participant and group “ﬁt” with the framework
+were also assessed, with conﬁrmatory and disconﬁrmatory
+evidence for the model examined. Although additional
+codes were added in coding survey data, the overall struc-
+ture of second-level coding did not generally differ
+among focus group and survey participants.
+After the research team systematically coded the data
+from focus group and survey responses, the ﬁrst (UR
+researcher) and ninth (ALC member) authors created a
+document and complementary video with preliminary ana-
+lysis. This document was sent to focus group and survey
+participants as a member check. Member checking involves
+sending a summary of ﬁndings to participants to review and
+provide comments if they like.44,45 This gave the partici-
+pants an opportunity to conﬁrm results and/or give
+
+Speybroeck et al.
+5
+
+Table 1. Focus group interview guide.
+
+Initial open-ended question
+Follow-up questions (asked as needed)
+
+Health Coach and Avatar Customization
+
+Do you like that you can customize both your health coach
+and avatar? Why?
+• Would you take anything away about customizing?
+• Would you add anything about customizing?
+• Was the process of customizing clear and understandable?
+
+Name Customization
+
+Do you like that the app uses your name in its questions
+and responses? Why?
+• Do you like that the app gives you answers to use as a response? Why?
+
+App Video
+
+Do you like that there will be a video explaining the app?
+Why?
+• Is there a different way you would like to learn about app features, such
+as notiﬁcations or pop-ups?
+
+Strengths Assessment
+
+Do you like that the app will do a strengths assessment?
+Why?
+• Would you personally take the strengths assessment quiz?
+• What would you do with the results of the strengths assessment?
+
+Daily Check-in
+
+Do you like the daily check-in? Why?
+• Would you complete the daily check-in?
+• Are there any questions you would take out of the daily check-in?
+• Is there anything else you think the daily check-in should ask?
+• Do you like the icons next to the responses? Why?
+• Do you like that you can type in your own emotion? Why?
+• Do you like that the app will suggest tools based on your responses?
+Why?
+• Would you prefer the daily check-in to happen in the morning, afternoon,
+or night? Why?
+• Do you think it would take you 3–5 minutes to complete?
+• Is 3–5 minutes too long?
+
+Breathing Tool
+
+Do you like that the app will provide a breathing tool?
+Why?
+• Do you think the breathing tool would be helpful? Why?
+• Can you see yourself using the breathing tool?
+• Would you use it when the app suggested, or would you seek it out
+yourself?
+• What would stop you from using the tool?
+• What would motivate you to use the tool?
+
+10-minute break
+
+Appointment Reminder Tool
+
+Do you like that the app will provide an appointment
+reminder tool? Why?
+• Would you use this tool?
+• Do you like the provided responses, or would you rather type in your own
+responses?
+• Do you like how the app has a calendar of all your doctor appointments?
+Why?
+
+(continued)
+
+6
+
+additional feedback via email. Participants who replied
+indicated results were a good ﬁt with their experience and
+provided no further feedback or changes.
+Lastly, following “second-level” pattern coding, a
+deeper analysis revealed that SDT constructs (autonomy,
+competency, relatedness) provided a strong organizing
+framework to conceptualize the data. The team then
+applied an SDT lens through which to analyze and interpret
+participants’ comments and feedback about app features
+and
+functionalities,
+values
+and
+beliefs
+pertaining
+to
+mHealth interventions for adults with FASD, and motiva-
+tions and barriers to using the app. Participant and group
+“ﬁt” with the constructs were assessed with conﬁrmatory
+and disconﬁrmatory evidence for the model examined.
+
+Results
+
+Sample demographics
+
+Table 2 provides the participant demographics of the focus
+groups and the follow-up survey. A total of 26 adults
+
+participated in one of the seven offered focus groups
+(FGP). A total of 26 adults completed the online follow-up
+survey (SP). Two participants who participated in a focus
+group also completed a follow-up survey. Due to the
+online nature of the study, we do not know how many par-
+ticipants decided not to participate in the study.
+
+Global impressions
+
+Overall, focus group and survey participants were enthusi-
+astic about the app design. They often spoke about why
+they liked certain features, stating they viewed them as
+meeting a need they have. Participants made majority posi-
+tive remarks on app features and provided very few nega-
+tive valence comments about the initial design prototype
+(see Figures 2 and 3). Negative comments were more fre-
+quent from survey participants; comments were often due
+to misunderstandings or questions that were similarly
+raised and resolved live during focus groups.
+When applying an SDT lens, participants’ responses to
+app
+features
+and
+functionalities
+can
+be
+categorized
+
+Table 1. Continued.
+
+Initial open-ended question
+Follow-up questions (asked as needed)
+
+• Is there anything else you would like the chatbot to ask you about your
+doctors’ appointments?
+
+Tracker Tool
+
+Do you like the tracker tool? Why?
+• Do you like the provided responses?
+• Would you use the trackers?
+• Do you like that the app will prompt you to complete a task, such as take
+your medication? Why?
+• Is there anything missing from the tracker tool that you would like to
+add?
+
+Library
+
+Do you like that the app will have a library? Why?
+• What would like to see in the library section?
+
+Daily Messages
+
+Do you like that the app will send you a daily message?
+Why?
+• Do you like the subject “FASD fact”?
+• Do you like the subject “reminder of strengths”?
+• Do you like the subject “inspiration”?
+• Do you like the subject “mantra”?
+• Do you like the subject “strategy”?
+• Is there another subject you think should be added?
+
+Miscellaneous
+
+• What would motivate you to use the app?
+• What barriers do you see to using the app?
+• Does it look easy to use?
+• Do you like the color scheme?
+
+• What type of information would you want to learn in this app?
+• Are there other ideas you have to make the app better?
+
+Speybroeck et al.
+7
+
+Table 2. Sample demographics.
+
+Focus groups
+Follow-up survey
+
+N
+%
+N
+%
+
+Gender
+
+Female
+13
+50%
+16
+61%
+
+Male
+11
+42%
+6
+23%
+
+Transgender
+2
+7%
+3
+11%
+
+Other
+0
+–
+1
+3%
+
+Agea,b
+
+Mean (SD)
+26.17
+(8.33)
+31.16
+(12.79)
+
+Range
+18–55
+18–59
+
+Race
+
+Native American, Alaska Native, First Nation, Australian Aboriginal, or other Indigenous
+group
+4
+15%
+5
+19%
+
+Asian
+0
+–
+1
+3%
+
+Native Hawaiian or other Paciﬁc Islander
+0
+–
+0
+–
+
+Black or African American
+8
+30%
+1
+3%
+
+White (not a visible minority)
+9
+34%
+14
+54%
+
+More than one race
+3
+11%
+2
+7%
+
+Unknown
+0
+–
+1
+3%
+
+Choose not to answer
+2
+7%
+2
+7%
+
+Ethnicity
+
+Hispanic or Latino/a
+2
+7%
+3
+11%
+
+Not Hispanic or Latino/a
+17
+65%
+14
+54%
+
+Unknown
+3
+11%
+6
+23%
+
+Choose not to answer
+2
+7%
+3
+11%
+
+Country
+
+United States of America
+17
+65%
+16
+61%
+
+Canada
+5
+19%
+6
+23%
+
+United Kingdom
+4
+15%
+2
+7%
+
+(continued)
+
+8
+
+according to the theory’s three constructs of competency,
+autonomy, and relatedness. Comments and feedback
+about the app pertained to the promotion of these constructs
+in users’ anticipated experience engaging with the app and
+perceived outcomes of using the app to meet users’ health
+and self-advocacy goals.
+
+Global impressions supporting competency. Promotion of
+competency, or “the basic need to feel effectance and
+mastery”31 was seen both with regard to users’ anticipated
+experience engaging with the app (i.e. the app is easy to
+use) and with regard to their perceived outcomes from
+using the app (i.e. the app will help them to effectively
+manage their condition).
+Relating to anticipated user experience, 88% (n = 23) of
+survey participants answered the app looked easy to use.
+Participants in both focus groups and survey formats
+expected the app to ﬁt a wide range of needs, allowing
+users along the FASD spectrum to engage with the app.
+They emphasized that every individual with FASD is
+affected differently and liked how the app provides differ-
+ent levels of support that the user can opt into or out of
+using. Participants speciﬁcally spoke about the provided
+responses options (i.e. yes; no; ask again later), information
+presented in different formats (i.e. written, pictorial,
+auditory), and the “stop-and-come-back” feature. For
+example, one participant stated: “I think it’s fairly easy to
+use. Not too much information but enough information to
+get the point across and to help you out” [FGP052].
+Relating to perceived outcomes from using the app, par-
+ticipants
+were
+enthusiastic
+about
+the
+app
+providing
+
+supportive tools and information for condition manage-
+ment. Every tool shown received responses from partici-
+pants about its usefulness in supporting their speciﬁc
+needs. Perceived competency in condition management
+was the most cited motivation for app use among both
+focus group and survey participants. For example,
+
+I like the appointment tracker because I think it is a really
+fantastic and useful tool for those people…with fetal
+alcohol spectrum disorder as we forget things due to our
+condition. I think it’s really helpful that it can remind you
+of speciﬁc things dates and times…The things that would
+motivate me most, to use [the app] would be that I suffer
+with fetal alcohol syndrome myself, I also think that it
+would be beneﬁcial to me as it’s like your own health
+coach sat right in front of you but it’s on a screen instead.
+And I think it’s a really fabulous idea [SP033].
+
+Global
+impressions
+supporting
+autonomy. Promotion of
+autonomy, or “the need to self-regulate one’s experiences
+and actions”,31 was seen with anticipated user experience
+engaging with the app (i.e. customization options) and per-
+ceived outcomes from using the app (i.e. accurately record-
+ing information through provided choices)
+Relating to anticipated user experience, many partici-
+pants were enthusiastic about the personalization features
+within the app. Participants were positive about the ability
+to customize their health coach, personal avatar, name,
+and notiﬁcation amounts and types (i.e. vibration, noises,
+text, etc.). They stated the personalization choices made
+them feel “like [they] own the app” [FGP057], and “at
+
+Table 2. Continued.
+
+Focus groups
+Follow-up survey
+
+N
+%
+N
+%
+
+Germany
+0
+–
+1
+3%
+
+Netherlands
+0
+–
+1
+3%
+
+Legal Guardian
+
+Yes
+2
+7%
+3
+11%
+
+Smartphone
+
+Yes
+26
+100%
+26
+100%
+
+iOS
+11
+42%
+9
+35%
+
+Android
+15
+58%
+17
+65%
+
+aFocus group: Two participants chose not to answer.
+bFollow-up survey: One participant chose not to answer.
+
+Speybroeck et al.
+9
+
+home
+with
+[the
+app]”
+[FGP056],
+among
+others.
+Personalization options were stated as a key motivation
+for app engagement.
+Relating to perceived outcomes from using the app, par-
+ticipants were enthusiastic about the choices in the provided
+response options. Not only did they say it made the app
+seem easy to use (as stated above), but they also liked
+how they had many different options to choose from to
+accurately record things such as mood, physical health
+symptoms, sleep, etc. Additionally, participants also liked
+that they were able to add their own response if desired:
+“So, that choice, that option, of typing in what I’m feeling
+is very useful—I like it” [FGP059].
+
+Global impressions supporting relatedness. Lastly, the pro-
+motion of relatedness, or “feeling socially connected,” or
+a sense of “belonging”31 was seen with anticipated user
+experience engaging with the app (i.e. reduce isolation)
+and perceived outcomes from using the app (providing self-
+advocacy tools).
+Relating to anticipated user experience, participants
+noted that the app would reduce the feeling of isolation
+via the chatbot. For example, in one focus group, partici-
+pants conversed: “Exactly yeah, you feel like you’re actu-
+ally talking to someone and someone’s actually there to
+be like, ‘hey how are you this morning?’” [FGP041]
+“Like they actually care, and they actually want to listen”
+[FGP030]. Others also felt the chatbot would be a part of
+
+their support network: “I think it’s going to be good for a
+lot of people with disabilities as well because they have
+that person there and they’re able to ofﬂoad and tell them
+anything and they won’t judge you, they won’t be nasty to
+you, they’re there for you” [FGP045].
+Relating to perceived outcomes from using the app, par-
+ticipants were enthusiastic about the self-advocacy tools the
+app provided, stating they would aid in better connection
+with their support networks. For example, “The research
+sources may help to improve your credibility which is some-
+thing I always seem to lack when talking to physicians”
+[SP005].
+
+Individual components
+
+Participants’ responses to individual components were
+positive across both focus groups and the survey (see
+Table 3) and showcased how the app promoted compe-
+tency, autonomy, and relatedness. Participants also pro-
+vided recommendations
+for app features
+and future
+directions.
+
+Avatar and name customization. Focus group participants
+were overall positive about the avatar and name customiza-
+tion feature. Both perceived promotion of autonomy and
+relatedness were present in participants’ responses, empha-
+sizing the personalization opportunities and choices in cre-
+ating a name and avatar would make them feel comfortable
+
+Figure 2. Total positive and negative valence comments from focus groups.
+aN = 26.
+bCoded focus group responses and discussions.
+
+10
+
+when using the app. Participants also noted that personal-
+ization options such as these were a motivation to use the
+app: “I like [customizing the avatar because] it makes it
+your own. And it’s not just some random avatar that the
+app picks; you can actually make it your own style and to
+ﬁt your personality” [FGP009].
+While overall acceptable to participants, there were con-
+cerns the customization options would be too overwhelm-
+ing
+for
+some
+people
+with
+FASD.
+One
+participant
+recommended having a pre-made avatar option to meet
+this need. Others recommended adding more customization
+options, including clothing, hats, eye color, and skin color
+as pictures (instead of words) to be more inclusive.
+Lastly, participants wanted the opportunity to name their
+health coach. There were no negative comments or recom-
+mendations about the name customization. Survey partici-
+pants
+were
+not
+asked
+about
+the
+avatar
+or
+name
+customization features, but one survey participant used
+the free-response section to say they liked the avatar cus-
+tomization feature.
+
+App video. Participants overall were positive about the app
+orientation video, stating the video was “great” [FGP057],
+“a really good idea” [FGP053], and the video “makes the
+app very user friendly” [FGP058]. Discussions and recom-
+mendations showcased perceived promotion of competency
+through the app being easy to use and meeting a wide range
+of needs. Participants also liked the use of visuals.
+
+When asked how long they thought the video should be,
+responses
+varied;
+participants
+suggested
+5–10-second
+demonstrations or anywhere from 30 seconds to 3
+minutes in length. All respondents emphasized the need
+for the video to be short and engaging.
+Recommendations for the video included adding cap-
+tions to the video, as well as providing written instructions,
+overlays, a demonstration feature, and a “frequently asked
+questions” page or picture guide. Survey participants
+were not asked about the app orientation video and no com-
+ments were made in the free response sections.
+
+Daily check-in through chatbot. Participants were very
+enthusiastic about the daily check-in, which garnered the
+most positive valence across focus groups. Among survey
+responses, 92% (n = 24) of participants stated they liked
+the daily check-in. Representative quotes across data collec-
+tion formats include: “I love it” [FGP044], “[the] daily
+check-in is awesome” [FGP057], “it will be helpful to
+start the day” [SP049], and “I like it because it makes
+you do a body check” [SP024]. Perceived promotion of
+all three SDT constructs were seen in the participants’
+responses to the daily check-in feature.
+Relating to competency, participants thought the daily
+check-in looked easy to use, and liked how it took place
+in the chatbot. Participants also noted they liked how the
+app would send prompts to complete the check-in. Next,
+participants also stated the daily check-in was a supportive
+
+Figure 3. Positive and negative responses and valence comments from survey.
+aN = 26.
+bResponses from “Do you like {insert feature}?” and coded free response sections.
+
+Speybroeck et al.
+11
+
+tool for condition management. Many liked how the
+check-in will record and remember answers to which
+users could reference, for example a survey participant
+stated in responses to “Why do you like the daily
+check-in?”: “It will keep track of things for me” [SP039].
+They were also enthusiastic about the app recommending
+other tools based on the user’s responses. Participants
+stated the daily check-in was a tool to help meet their
+needs. Additionally, participants mentioned they liked the
+daily check-in’s positive activity question: “I loved that it
+seemed to remember the things that you did…the day
+before, like to spark that positivity of like you had that
+awesome thing happen, what are you going to do today?
+And I love that. I love that so much” [FGP041].
+Relating to autonomy, participants stated they liked that
+the daily check-in not only provided responses to each
+question in text and picture format but also that there was
+an option to add their own responses as well, for
+example, “Being able to, yeah, write out your own
+responses, compared to just having speciﬁc things picked
+for you, once again, it’s personalization like I love, love
+that aspect of this” [FGP041].
+Lastly, regarding relatedness, participants spoke to how
+the daily check-in would reduce isolation, as it felt like
+texting with a real person. They also noted it could be
+used as a tool to help better connect with their support net-
+works by using the recorded answers.
+There was only one negative evaluation of the daily
+check-in, which focused on the ability of the user to add
+their own response to a question. The participant thought
+this option may be overwhelming for some users and sug-
+gested it be removed.
+There were numerous recommendations for the daily
+check-in. Many of these recommendations pertained to
+the app’s time estimate for how long it would take a user
+to complete the daily check-in, with some suggesting the
+time
+estimate
+was
+inaccurate
+or
+not
+necessary.
+Participants also suggested that users be able to customize
+when and the number of prompts the user receives to com-
+plete the daily check-in. Other recommendations included
+being able to edit or add to responses throughout the day
+or being able to pick more than one provided response to
+each question. Additionally, participants recommended
+having an overview page of answers or an end-of-the-day
+recap. Participants also wanted more in-depth responses
+to answers, such as advice or suggesting tools within the
+app. Lastly, another participant suggested design changes
+such as different colors or having more fun or engaging
+responses such as gifs or pictures.
+
+Daily messages. Participants were overall enthusiastic about
+the daily message feature, which were once-a-day pop-up
+notiﬁcations. Among survey participants, 88% (n = 23)
+said they liked the daily message feature. Participants
+across data collection formats especially liked the messages
+
+that were positive afﬁrmations and FASD facts. They felt
+the daily messages would promote competency as they
+would include reminders to use the app. This would help
+with memory challenges.
+There were two negative evaluations centered around
+“the nuisance of receiving messages every day” [FGP059].
+Some concerns were raised about discretion, as some partici-
+pants did not want the daily message notiﬁcations to mention
+FASD in case someone saw their phone’s locked home
+screen (where the messages would appear).
+The most common recommendations were having
+access to past messages, the ability to customize the topic
+and number of daily messages received and including mes-
+sages about new FASD research and news.
+
+Tools and assessments
+
+Participants were asked about the tools and assessments
+available in the app, including the strengths assessment,
+breathing tool, appointment reminder tool, and tracker
+tool. Both focus group and survey participants were gener-
+ally positive and enthusiastic about these tools. Speciﬁc
+evaluations and recommendations are below.
+
+Strengths assessment. Participants spoke about how the
+strengths assessment would promote competency and
+relatedness, as they felt it would provide information
+about themselves and could be used as a self-advocacy
+tool to help better connect with others. For example, “I
+think it’s a very good idea because some people, well, or
+myself, don’t know my strengths. And if the ask[ed] me
+then I’ll know. So, it’s good that they have the questions”
+[FGP038].
+Negative feedback on the strengths assessment centered
+around the volume of questions, with concerns about it
+being
+too
+overwhelming.
+Recommendations
+for
+this
+feature were to assess for weaknesses as well as strengths.
+Survey participants were not asked about the strength’s
+assessment and no comments were made in the free
+response sections.
+
+Breathing tool. Both focus group and survey participants
+felt the breathing tool would promote competency with
+their condition management. Among survey participants,
+81%
+(n = 21)
+stated
+they
+liked
+the
+breathing
+tool.
+Speciﬁcally, participants liked that the feature was support-
+ive, relaxing/destressing, and would aid in improving their
+mental health. For example, “I could always use help
+breathing. It looks pretty, which will also help calm me”
+[SP010]. Participants were enthusiastic about the app
+recommending the breathing tool based on daily check-in
+responses.
+The majority of negative feedback centered around not
+liking the tool due to personal preference and the frequency
+of prompts to use the tool.
+
+12
+
+There were many recommendations for the breathing
+tool, such as adding music, meditation or mindfulness fea-
+tures, guided breathing exercises rather than just an image,
+videos, and an LED light component. Participants noted the
+ability to choose what types of grounding or relaxation tools
+offered was important, touching on autonomy for the users
+and meeting different needs.
+
+Appointment reminder tool. Focus group and survey partici-
+pants felt this tool would increase competency in condition
+management as it would help them to remember their
+appointments and promote autonomy through the ability
+to personalize the tool. Among survey participants, 92%
+(n = 24) answered they liked the appointment reminder
+tool. For example, one focus group participant stated:
+
+Because I’m a forgetter. I always forget. Someone has to
+remind me. Like the day of, they’ll be like you have an appoint-
+ment and I’m shocked I’m like I never knew this, no one ever
+told me. So basically, it’ll be very helpful to get a notiﬁcation
+and let me know because I forget all the time [FGP038].
+
+There was one negative comment about the tool; one par-
+ticipant did not think it would work for them because of pre-
+vious experience using a similar reminder app. Despite this,
+they believed it would work for other users.
+Recommendations for this feature included the ability to
+ask for location and link to Google Maps, reminders of what
+to bring to the appointment, a color-coded calendar for dif-
+ferent appointment types, the ability to add appointments
+manually, conﬁrmation messages, personalization of the
+number of reminders sent for each appointment, and a
+pre-check-in before the appointment.
+
+Tracker tool. Participants felt this tool would promote their
+competency in memory and other challenges, as well as
+their autonomy in being able to personalize this tool.
+Among survey participants 96% (n = 25) answered they
+liked the tracker tool. Participants across both data collec-
+tion formats liked that the app would have premade track-
+ers, such as a medication tracker, as well as the ability to
+customize new trackers. For example,
+
+Especially when I saw, like, the eating reminder thing, I’m
+like yes, I have a major problem with that. My brain
+somehow just can’t link to my gut half the time throughout
+the day. So, I literally don’t even feel hungry and it’s so bad,
+you know, the time will pass by and by like 7 o’clock I’m
+like, I didn’t eat anything today. It’s really bad…I deﬁnitely
+like that feature, for sure, with the access of tracking stuff
+and like reminders [FGP012].
+
+There were no negative evaluations of the tracker tool.
+Recommendations for the tracker tool included specifying
+which medication was taken on an overview page and the
+
+ability to backlog medications that were taken but not
+logged. They also suggested the ability to log a task as com-
+plete manually rather than just through the chatbot, and an
+overview page of all trackers. Participants also recommended
+different types of premade trackers that the app could offer,
+including a checklist option, walking, mileage for driving,
+birthdays, menstruation, paying bills, water intake, walking
+the dog, expenses, drug use, calorie intake, self-time, brushing
+teeth, and budgeting for medications.
+
+Library. Focus group and survey participants were overall
+enthusiastic about the library feature, stating perceived pro-
+motion of competency by providing information about
+FASD, and autonomy and relatedness by providing self-
+advocacy tools to help better connect with their support
+network. Among survey participants, 92% (n = 24) stated
+they liked the library feature. They noted it would meet
+the need for evidence-based information about their condi-
+tion for themselves and for others. For example,
+
+I’m actually weeping while I listened to the video. It’s a big
+deal to have access to information and tools to help me
+educate my doctors. It’s been so frustrating (gaslighting,
+really) to not have the medical community understand the
+holistic impact of FASD. THANK YOU!! [SP010]
+
+There were no negative evaluations of the library feature.
+Recommendations for the library included ways to share
+PDFs, such as through messaging apps such as WhatsApp,
+and factsheets geared toward other groups such as law
+enforcement. Participants also recommended different fact-
+sheet topics such as information about healthy foods and
+medication. They also recommended the app have motiv-
+ational videos. Lastly, others suggested having a factsheet
+with the user’s daily check-in responses to give to their
+healthcare providers.
+
+Logo. Participants in the follow-up survey were asked about
+the logo: 77% (n = 20) of participants indicated they liked
+the logo. In the free-response section, participants noted
+that the logo was simple, inclusive, and colorful. They
+also stated the logo seemed supportive of people with
+FASD. Six participants stated they did not like the logo,
+noting it was generic and wanted it to center more around
+FASD, and felt it should include more colors.
+
+Potential barriers to app use. One common barrier reported
+was the app sending too many notiﬁcations. Participants
+also identiﬁed the app may be overwhelming for some
+people with FASD, speciﬁcally the amount of text and
+the number of choices and free response sections. Others
+thought the app may be too time-consuming or they may
+forget to use it. For example, “It might work but it would
+just take a lot of work for me to get used to it and every-
+thing” [FGP052].
+
+Speybroeck et al.
+13
+
+Motivations for app use. The most mentioned motivator was
+the customization aspect of the app and the number of
+choices the app provided. For example,
+
+If you get to choose your own thing that makes it a little more
+fun. You know? More like not just, okay this is another thing
+trying to help me whoop-di-do, it’s like oh, I get to create my
+own thing and it’s more exciting and more engaging and
+maybe make people want to use it more [FGP009].
+
+Participants also cited condition management and receiving
+reminders to use the app as motivators. Others mentioned
+speciﬁc app features, speciﬁcally the daily check-in, daily
+messages, strengths assessment, appointment tool, and
+tracker tool. Participants also noted the app being free to
+use, ad-free, and secure as motivators. Lastly, participants
+recommended additional app capabilities that would motiv-
+ate them to use the app, such as a forum or gamiﬁcation.
+
+Additional recommendations. Participants in focus groups
+and surveys gave in-depth recommendations for app fea-
+tures and future capabilities. These recommendations are
+organized into four categories: accessibility, accountability,
+expanding app features, and app design. These recommen-
+dations are summarized in Table 3.
+
+Discussion
+
+Consistent with our user-centered design approach,32 the
+purpose of this study was to gather community member
+input to inform the design and development of an
+mHealth app for adults with FASD. This project is a part-
+nership between the University of Rochester and identiﬁed
+leaders in the FASD community, known as the International
+Adult Leadership Collaborative (ALC). Focus group and
+survey results from adults with FASD documented high
+acceptability of the initial design and proposed functional-
+ities of the My Health Coach app. Participants thought
+the app would be helpful and beneﬁcial to their health
+and self-advocacy goals. Data analyses found participants
+perceived the app to meet important needs that align well
+with the three basic psychological needs posited by SDT
+(competency, autonomy, relatedness), which is consistent
+with the theoretical framework informing app development.
+Several valuable recommendations for additional features
+were offered to guide subsequent development of the My
+Health Coach app.
+FASD affect the health and development of people
+across the lifespan;3 however, there are minimal services
+and support for adults with FASD.46 The current project
+aims to meet this need in a systematic way. A scoping
+review by Quan et al. (2019) identiﬁed six themes that
+should be considered when creating community-based
+interventions for adults with FASD. These themes include
+functional context, individualized support, education for
+service
+providers,
+structure
+and
+routine,
+utilizing
+a
+strengths-based
+approach,
+and
+environmental
+adapta-
+tions.46 Participants in the current study emphasized many
+of these same themes in their evaluation of the My Health
+Coach app. For example, participants felt the app will
+provide users with functional context. This functional
+context aids with life skills, such as condition and stress
+management,
+as
+well
+as
+accessing
+healthcare.
+Participants stated the app will also provide individualized
+and FASD-informed support. The app is being designed
+by a team who has a strong understanding of FASD (a
+clinical psychologist with 20 years’ experience and the
+ALC who has living experience). The app will provide
+structure and routine for the users, as they will be
+prompted to complete tasks at the same time each day.
+Furthermore, the app will be strengths-based, not only
+with a strengths assessment but also as the ALC developed
+and ensured all features and language to be strengths-
+based. Lastly, environmental adaptations, such as the use
+of visuals and provided responses, were taken into consid-
+eration while creating this app. The format will look famil-
+iar for users who have used smartphones and is being
+created to be easy to navigate.
+As is documented in quantitative studies, many adults
+with FASD face challenges with attention, learning and
+memory, planning, task efﬁciency, and analyzing social
+
+Table 3. Recommendations for app features and future capabilities.
+
+Type of
+recommendation
+Recommendation
+
+Accessibility
+• Dark/light mode option for sensory
+needs
+• Speech-to-text and text-to-speech
+tools
+• Large text option
+
+Accountability
+• Timer/time management tools
+• Features that are shareable with
+support network
+• Personalized notiﬁcation types such
+as auditory or vibrations
+• Persistent banners/notiﬁcations
+• Emergency contacts
+
+Expanding app
+features
+• Connect to wearables such as an
+Apple Watch
+• Dashboard/usage overview page
+• Forum
+• Journal feature
+• More in-depth chatbot responses/
+explanations
+
+App design
+• More modern interface
+• Pick own color scheme
+• Gamiﬁcation
+
+14
+
+situations.3 Participants’ responses to app features and func-
+tionalities mentioned the above difﬁculties as challenges
+they face in their everyday lives. In doing so, they stated
+the app could help mitigate or provide support to meet
+these challenges. Memory speciﬁcally was mentioned in
+all focus groups and in many survey responses as a chal-
+lenge that the app will help with by providing prompts
+and reminders, as well as recording different information
+inputted by users.
+Increasingly, technology is being harnessed to support or
+deliver interventions for physical and mental health pro-
+blems across the lifespan.20 Unfortunately, very few
+mHealth apps undergo any type of rigorous evaluation. A
+recent meta-analysis completed by Yang et al. (2019) iden-
+tiﬁed 64 studies that evaluated mHealth interventions tar-
+geting ﬁve main topics including mental health, nutrition
+and weight status, physical activity, health-related quality
+of life and well-being, and chronic disease management.
+Furthermore, very few studies have examined the efﬁcacy
+of mHealth interventions for people with developmental
+disabilities, despite the high prevalence of co-occurring
+conditions in these populations.47 Recent studies have
+shown that people with developmental disabilities have
+similar rates of smartphone ownership and usage as in the
+general population.26 Of the 64 mHealth interventions ana-
+lyzed by Yang et al. (2019), none focused on people with
+developmental disabilities. The few published studies
+testing mHealth interventions for people with developmen-
+tal disabilities either did not meet the rigorous design
+requirements (randomized control trial; RCT) for the
+meta-analysis or have been published subsequently. The
+most well-studied mHealth intervention for people with dis-
+abilities is the “interactive mobile health and rehabilitation
+(iMHere)” app, which was ﬁrst tested with adults with spina
+biﬁda and spinal cord injuries. Results from two small trials
+documented improved self-management abilities across
+participants.48,49 This mHealth intervention has been subse-
+quently adapted and expanded to be more broadly appropri-
+ate for people with chronic conditions and disabilities.
+Initial usability and feasibility tests suggested promise
+and larger tests are under way.50 These ﬁndings suggest
+promise for future development of mHealth apps for
+people with developmental disabilities.
+
+Strengths
+
+There are several important strengths of this study. First,
+partnering with identiﬁed community leaders helped deter-
+mine relevant app functionalities and design features,
+ensured the questions asked were understandable and
+strengths-based,
+and
+reduced
+stigma.
+Co-conducting
+research with the ALC also enriched the quality of the
+data collected and increased comfort for our participants.
+Another strength was the gathering of feedback in multiple
+formats. By offering participants the opportunity to respond
+
+live in focus groups, or more privately in the survey or by
+email, phone, or private Zoom call during member check-
+ing, we broadened accessibility to people along the FASD
+spectrum. Furthermore, the participant pool was quite
+diverse. This study gathered input from participants from
+ﬁve countries. Diverse races, ethnicities, and genders
+were represented (see Table 2). Users with both Android
+and iOS operating systems participated. Lastly, our devel-
+opment process for the app is a systematic approach that
+builds on prior experience developing apps for caregivers
+raising children with FASD.25,32 The current study repre-
+sents the early and iterative gathering of key community
+member feedback to inform the development and evalu-
+ation process, design of the content, and user interface.
+Focus group and survey data also facilitated acceptability
+and utility of the intervention. Building on previous work
+on the beneﬁts of community-engaged research, involving
+key community members enhances developers’ under-
+standing of the needs and challenges of adults with FASD
+and practical strategies to help mitigate them.51
+
+Limitations
+
+Limitations of our study included data collection methods for
+the follow-up survey. Feedback from a few participants sug-
+gested that the consent documents may have been a barrier
+due to the amount of text that was necessary to read. In
+future studies, we plan to include video versions for partici-
+pants who prefer audio and visual formats opposed to text.
+Furthermore, while there were efforts made to increase
+comfort and accessibility to people across the fetal alcohol
+spectrum (such as working with the advisory board and offer-
+ing multiple feedback channels), this study is likely missing
+voices that either were not comfortable with these channels,
+had scheduling problems, or needed different supports to par-
+ticipate. This was especially salient with the Consent and
+Screening forms for the study.
+
+Next steps and implications for future research
+
+Consistent
+with
+our
+systematic
+user-centered
+design
+approach, we will use these ﬁndings to inform development
+of an initial app prototype. We will then conduct an initial
+feasibility pilot study to assess the feasibility and accept-
+ability of the app with users to inform a larger-scale RCT.
+For example, this feasibility trial will test using video
+format for consent documents, determining appropriate lit-
+eracy level for measure items, and understanding ease of
+installation of the app for adults with FASD. Establishing
+feasibility on a smaller scale increases likelihood of a suc-
+cessful RCT.
+This study has the potential for a signiﬁcant public
+health impact in multiple ﬁelds. There are limited resources
+and interventions for adults with FASD. The My Health
+Coach app has great potential to be a scalable and evidence-
+
+Speybroeck et al.
+15
+
+based solution to this need. Additionally, relatively few
+mHealth apps have undergone rigorous evaluation,52 with
+even fewer made and tested for people with developmental
+disabilities.47
+
+Conclusions
+
+Through focus group and survey methods, our study found
+the proposed mHealth intervention to be highly acceptable
+to adults with FASD. Participants made a vast majority of
+positive valence comments about the proposed features
+and gave constructive feedback with suggestions on how
+to continue to reﬁne and improve the app. Participants’
+comments aligned with SDT, shown through comments
+about how the app could help them feel more competent,
+in control, and connected with others. This project is one
+of the only studies in the ﬁeld of mHealth interventions to
+undergo rigorous evaluation, and to have been made and
+tested for people with developmental disabilities. Findings
+from this study may inform app development for other
+related disabilities and conditions. This project also show-
+cases the value and necessity of partnering with community
+members throughout the development process.
+
+Acknowledgements: The authors would like to thank Alicia
+Roth and Brittany Grund who assisted with the focus groups
+and additional staff at Mt. Hope Family Center for their support
+throughout the project. They would also like to thank Jan Lutke
+for her support of the ALC members. The authors appreciate all
+the participants and their support networks who made time in
+their busy schedules to participate in this study. This research
+would not have been possible without their valuable insights.
+
+Contributorship: All authors contributed to the preparation of this
+study. CLMP conceived of the study, oversaw the study team, led
+app content development, obtained necessary approvals, and
+manuscript revision. ES was involved in content development,
+created
+interactive
+prototype,
+implemented
+the
+study,
+led
+recruitment,
+scheduling,
+focus
+group
+structuring,
+survey
+logistics, co-led focus groups, and led coding team, analysis
+team, and manuscript preparation and revision. CT was involved
+in the conception of the study, content development, led
+technological
+development,
+and
+manuscript
+revision.
+ALC
+members (KG, EH, MH, AL, CL, MM) were involved in
+content development, co-led focus groups, co-developed survey,
+and manuscript revision. SZ co-led focus groups and was
+involved
+in
+coding
+and
+analysis
+team
+and
+manuscript
+preparation and revision. JL was involved in coding and
+analysis team and manuscript preparation and revision. CKT and
+MR were involved in analysis and manuscript revision. All
+authors reviewed and edited the manuscript and approved the
+ﬁnal version of the manuscript.
+
+Declaration of conﬂicting interests: The authors declared no
+potential conﬂicts of interest with respect to the research,
+authorship, and/or publication of this article.
+
+Ethical approval: All study procedures were approved by
+the University Institutional Review Board (Focus Group:
+STUDY00004616, Survey: STUDY00007156)
+
+Funding: The authors disclosed receipt of the following ﬁnancial
+support for the research, authorship, and/or publication of this
+article: This research was supported by the National Institute
+of Health under Award #UH2AA029050. The content is solely
+the responsibility of the authors and does not necessarily
+represent the ofﬁcial views of the National Institute of Health.
+This work was done in conjunction with the Collaborative
+Initiative on Fetal Alcohol Spectrum Disorders (CIFASD,
+https://doi.org/10.5967/ntw9-h991), which is funded from the
+National
+Institute
+on
+Alcohol
+Abuse
+and
+Alcoholism
+(NIAAA). Additional information about CIFASD, including
+information describing available data, can be found on www.
+cifasd.org. We also appreciate the help from FASD United.
+The authors appreciate the CIFASD contributors who assisted
+in recruitment, as well as FASD United.
+
+Guarantor: CLMP.
+
+ORCID iDs: Emily L Speybroeck
+https://orcid.org/0009-0008-
+2506-8534
+Christie Petrenko
+https://orcid.org/0000-0003-2091-3686
+Cristiano Tapparello
+https://orcid.org/0000-0002-8016-8676
+Madeline N Rockhold
+https://orcid.org/0000-0002-1698-2702
+
+Supplemental material: Supplemental material for this article is
+available online.

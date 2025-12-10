@@ -1,0 +1,798 @@
+An interactive modeling tool for projecting the health and direct
+medical cost impact of changes in the sexually transmitted diseases
+prevention program budgets
+Martin, E. G., Ansari, B., Gift, T. L., Johnson, B. L., Collins, D., Williams, A. M., & Chesson, H. W. (2024). An
+interactive modeling tool for projecting the health and direct medical cost impact of changes in the sexually
+transmitted diseases prevention program budgets. Journal of Public Health Management and Practice, 30(2),
+221-230. https://doi.org/10.1097/PHH.0000000000001868
+
+Published in:
+Journal of Public Health Management and Practice
+
+Document Version:
+Publisher's PDF, also known as Version of record
+
+Queen's University Belfast - Research Portal:
+Link to publication record in Queen's University Belfast Research Portal
+
+Publisher rights
+© 2024 The Authors.
+This open access manuscript is distributed under a Creative Commons Attribution-NonCommercial-NoDerivs License
+(https://creativecommons.org/licenses/by-nc-nd/4.0/), which permits distribution and reproduction for non-commercial purposes, provided the
+author and source are cited.
+
+General rights
+Copyright for the publications made accessible via the Queen's University Belfast Research Portal is retained by the author(s) and / or other
+copyright owners and it is a condition of accessing these publications that users recognise and abide by the legal requirements associated
+with these rights.
+
+Take down policy
+The Research Portal is Queen's institutional repository that provides access to Queen's research output. Every effort has been made to
+ensure that content in the Research Portal does not infringe any person's rights, or applicable UK laws. If you discover content in the
+Research Portal that you believe breaches copyright or violates any law, please contact openaccess@qub.ac.uk.
+
+Open Access
+This research has been made openly available by Queen's academics and its Open Research team.  We would love to hear how access to
+this research benefits you. – Share your feedback with us: http://go.qub.ac.uk/oa-feedback
+
+Download date:14. Oct. 2025
+
+Practice Full Report
+
+An Interactive Modeling Tool for Projecting the Health
+and Direct Medical Cost Impact of Changes in the
+Sexually Transmitted Diseases Prevention Program
+Budgets
+
+Erika G. Martin, PhD, MPH; Bahareh Ansari, PhD, MA; Thomas L. Gift, PhD; Britney L. Johnson, MPH;
+Dayne Collins; Austin M. Williams, PhD; Harrell W. Chesson, PhD
+
+ABSTRACT
+Context: Estimating the return on investment for public health services, tailored to the state level, is critical for demonstrat-
+ing their value and making resource allocation decisions. However, many health departments have limited staff capacity
+and expertise to conduct economic analyses in-house.
+Program: We developed a user-friendly, interactive Excel-based spreadsheet model that health departments can use to
+estimate the impact of increases or decreases in sexually transmitted infection (STI) prevention funding on the incidence
+and direct medical costs of chlamydia, gonorrhea, syphilis, and STI-attributable HIV infections. Users tailor results to their
+jurisdictions by entering the size of their population served; the number of annual STI diagnoses; their prior annual funding
+amount; and their anticipated new funding amount. The interface was developed using human-centered design principles,
+including focus groups with 15 model users to collect feedback on an earlier model version and a usability study on the
+prototype with 6 model users to finalize the interface.
+Implementation: The STI Prevention Allocation Consequences Estimator (“SPACE Monkey 2.0”) model will be publicly
+available as a free downloadable tool.
+Evaluation: In the usability testing of the prototype, participants provided overall positive feedback. They appreciated the
+clear interpretations, outcomes expressed as direct medical costs, functionalities to interact with the output and copy
+charts into external applications, visualization designs, and accessible information about the model’s assumptions and
+limitations. Participants provided positive responses to a 10-item usability evaluation survey regarding their experiences
+with the prototype.
+Discussion: Modeling tools that synthesize literature-based estimates and are developed with human-centered design
+principles have the potential to make evidence-based estimates of budget changes widely accessible to health departments.
+
+KEY WORDS: decision modeling, economic models, human-centered design, sexually transmitted diseases,
+sexually transmitted infections
+
+Author Affiliations: Rockefeller College of Public Affairs and Policy, University
+at Albany, State University of New York, Albany, New York (Dr Martin);
+Department of Organization, Work, and Leadership, Queen’s Business School,
+Queen’s University Belfast, Belfast, United Kingdom (Dr Ansari); Division of
+STD Prevention, National Center for HIV, Viral Hepatitis, STD, and TB
+Prevention (Drs Gift, Williams, and Chesson and Mr Collins), and Division of
+Workforce Development, National Center for State, Tribal, Local, and Territorial
+Public Health Infrastructure and Workforce (Ms Johnson), Centers for Disease
+Control and Prevention, Atlanta, Georgia.
+
+The authors sincerely thank the focus group and usability testing participants
+for their generous time and careful reflections on how we could improve the
+models. Gregory Felzien provided helpful feedback on an early draft.
+
+This work was supported by the Centers for Disease Control and
+Prevention/National Center for HIV, Viral Hepatitis, STD, and TB Prevention
+Epidemiological and Economic Modeling Agreement (no. 5U38PS004650).
+The findings and conclusions are solely the responsibility of the authors and
+
+do not necessarily represent the official position of the Centers for Disease
+Control and Prevention or the Department of Health and Human Services.
+
+The authors declare they have no conflicts of interest.
+
+Supplemental digital content is available for this article. Direct URL citations
+appear in the printed text and are provided in the HTML and PDF versions of
+this article on the journal’s Web site (http:// www.JPHMP.com).
+
+Written work prepared by employees of the Federal Government as part of
+their official duties is, under the U.S. Copyright Act, a “work of the United
+States Government” for which copyright protection under Title 17 of the
+United States Code is not available. As such, copyright does not extend to the
+contributions of employees of the Federal Government.
+
+Correspondence: Erika G. Martin, PhD, MPH, Rockefeller College of Public
+Affairs and Policy, University at Albany, State University of New York, 1400
+Washington Ave, Milne 300E, Albany, NY 12222 (emartin@albany.edu).
+
+DOI: 10.1097/PHH.0000000000001868
+
+March/April 2024 • Volume 30, Number 2
+www.JPHMP.com
+221
+
+222
+R
+
+We used a human-centered design process—a devel-
+opment approach that incorporates users throughout
+the project to ensure the product is tailored to their
+needs14-16—to understand the health department orga-
+nizational context, elicit requirements of STI program
+staff, design an interface and model structure that
+would meet their needs and technical skills, and eval-
+uate the prototype model’s usability.
+
+Methods
+
+Overview
+
+The Centers for Disease Control and Prevention
+(CDC) previously developed the STI Prevention Al-
+location Consequences Estimator model (“SPACE
+Monkey 1.0”) to help health departments estimate the
+effect of changes in their STI prevention budgets on di-
+rect medical costs and infections averted.17,18 (Authors
+T.L.G. and H.W.C. were lead authors on SPACE Mon-
+key 1.0.) Since SPACE Monkey 1.0’s release in 2017,
+
+there has been updated scientific literature on the
+relationships between state-level STI prevention fund-
+ing and reported chlamydia and gonorrhea diagnosis
+rates4 and the lifetime medical cost of STIs and HIV
+infection.10-13 In addition to updating the scientific evi-
+dence underlying the model parameters, we improved
+the model’s usability to enhance use by health de-
+partments. Although SPACE Monkey 1.0 was shared
+with 5 users (representatives from 4 jurisdictions and
+1 national organization) for early feedback prior to
+release, we identified an opportunity to engage more
+users throughout the model development process.
+We revised the model in 3 steps. First, we conducted
+focus groups with 15 national, state, and local public
+health professionals regarding their experiences with
+SPACE Monkey 1.0. Second, we developed SPACE
+Monkey 2.0, incorporating updated literature-based
+parameters (the impact of STI prevention funding
+changes on reported infections, the probability of an
+STI-attributable HIV infection per STI infection, and
+the lifetime costs per HIV and STI infection), a new
+model structure to generate confidence intervals, and
+other enhancements addressing focus group feedback.
+Third, we conducted usability testing on the SPACE
+Monkey 2.0 prototype with 6 state and local public
+health professionals. Their feedback was integrated
+into the final model design.
+The University at Albany Office of Regulatory Re-
+search and Compliance and human subjects officials
+at the CDC determined that this project did not meet
+the regulatory definition of human subjects research.
+
+Prior to model development, user feedback was so-
+licited on SPACE Monkey 1.0 and another STI cost
+model not described here. The 15 participants com-
+prised STI program experts from 8 state health de-
+partments, 5 local health departments, and 2 national
+organizations. Although the model is most suitable
+for federally funded jurisdictions, we included local
+and national representatives because the other STI
+cost model developed in parallel is appropriate for
+both state and local jurisdictions; furthermore, we
+envisioned that local and national audiences would
+find the model useful for demonstrating the value
+of STI prevention funding more generally. A conve-
+nience sample of participants from state and local
+STI programs was recruited through an e-mail to
+the CDC’s Strengthening STD Prevention and Con-
+trol for Health Departments (STD PCHD) program
+Listserv, which included STD PCHD principal inves-
+tigators, program directors, program managers, and
+surveillance coordinators. We did not impose eligibil-
+ity criteria beyond working in a health department
+
+March/April 2024 • Volume 30, Number 2
+www.JPHMP.com
+223
+
+because we hoped to recruit users with varying tech-
+nical skills, past model experiences, and perspectives.
+State and local participants were from diverse regions
+and settings including large and small health depart-
+ments in California (1 state, 1 local), Florida (1 state,
+1 local), Idaho (1 state), Maryland (1 local), Min-
+nesota (1 state), Missouri (1 local), Ohio (1 state),
+Oregon (1 local), Pennsylvania (1 state), Rhode Island
+(1 state), and Vermont (1 state). In addition, we in-
+cluded 1 representative each from the Association of
+State and Territorial Health Officials and the National
+Association of County and City Health Officials to
+elicit broader perspectives on how the model could be
+used by different jurisdictions.
+For state and local participants, focus groups com-
+prised 2 or 3 participants, with separate focus groups
+for state and local respondents (3 state focus groups
+and 2 local focus groups). We intentionally organized
+small groups, rather than a typical focus group size,
+to improve participants’ comfort with sharing ideas,
+a relevant consideration, given the COVID-19–related
+“Zoom fatigue” at the time of data collection (April
+and May 2022). Where possible, we organized focus
+groups by jurisdictions’ Census population size. The
+2 national representatives were interviewed individ-
+ually due to scheduling difficulties. Data collection
+occurred virtually by authors B.A. and E.G.M. and
+lasted up to 90 minutes. We took detailed notes, rather
+than recording the focus sessions, to help participants
+provide candid feedback. Prior to the session, par-
+ticipants completed a set of tasks with the SPACE
+Monkey 1.0 model to ensure a common experi-
+ence interacting with the model. The guided exercise
+(see Supplemental Digital Content Appendix 1, avail-
+able at http://links.lww.com/JPHMP/B281) directed
+participants to enter model inputs and review their re-
+sults. Participants answered questions regarding their
+user experience, the relevance of results to their infor-
+mation needs, the model assumptions, how they could
+use the model in their own work, and other desired
+model enhancements.
+The focus groups covered the following topics: par-
+ticipants’ prior familiarity with and use of SPACE
+Monkey 1.0, usability problems encountered during
+their guided exercise and desired usability enhance-
+ments, whether the model sufficiently captures the STI
+program environment, how participants envisioned
+using the model, and other suggestions (see Supple-
+mental Digital Content Appendix 1, available at http:
+//links.lww.com/JPHMP/B281).
+Data from participants’ guided exercises and fo-
+cus group discussions were synthesized by B.A. and
+E.G.M.for themes,such as specific usability problems,
+desired usability enhancements, and required updates
+to the model’s underlying assumptions.
+
+SPACE Monkey 2.0 development
+
+After the focus groups, we developed a new Excel-
+based model that incorporated the general approach
+from SPACE Monkey 1.0, with numerous modifica-
+tions to incorporate updated scientific literature and
+feedback from the public health professionals. These
+are described in the “Results” section.
+
+Usability testing on SPACE Monkey 2.0
+
+After revising the model to reflect updated scientific
+literature and user feedback, we conducted usability
+testing with 6 state and local public health profes-
+sionals who represented model users. All participants
+were STI program subject matter experts. We re-
+cruited participants with varying Excel skills, prior
+familiarity with the model, and geographic location
+(Georgia, Ohio, Pennsylvania, Rhode Island, South
+Carolina, and Vermont). We invited 3 participants
+from the focus groups who expressed an interest in
+pilot-testing the prototype and 3 additional individu-
+als in our professional network who were interested in
+the model but had not previously interacted with it. In
+describing their experience with Excel, 4 participants
+self-identified as having a basic familiarity with Excel,
+1 reporting using Excel regularly for work tasks (eg,
+developing budget spreadsheets or basic data analy-
+sis), and 1 reporting completing advanced work in
+Excel (eg, creating pivot tables, using array formulas,
+or creating advanced data visualizations).
+The usability testing occurred as one-on-one virtual
+meetings with B.A. (additionally, E.G.M. attended 2
+sessions), lasting 60 to 90 minutes. Participants re-
+ceived a usability exercise (see Supplemental Digital
+Content Appendix 1, available at http://links.lww.
+com/JPHMP/B281) and the prototype model via e-
+mail. During the session, participants completed a set
+of tasks including exploring the spreadsheet model,
+entering inputs, generating output, and exporting a
+chart into another application. While working on
+the tasks, they shared their screens to allow us to
+see how they were navigating the spreadsheets and
+were prompted to verbalize their thoughts using a
+think-aloud approach.19,20(p365) The usability sessions
+ended with an open discussion of participants’ ex-
+periences and suggestions. Participants additionally
+completed a short 10-question online survey regard-
+ing their user experience, derived from a common
+usability evaluation instrument.21
+
+Meeting notes and observations from the usability
+testing sessions were synthesized by B.A. for themes.
+Usability problems (eg, bugs and cosmetic issues) were
+addressed iteratively after each usability session, with
+subsequent usability study participants working with
+
+224
+
+Most focus group participants reported awareness of
+the model, although there was limited prior use. The
+most common anticipated use case was generating
+findings for advocacy and education. Examples of po-
+tential model use were demonstrating the economic
+value of STI programs to executive leadership, pro-
+viding justification for STI program revenue in budget
+proposals to state legislators, making a business case
+for continued investment in the disease intervention
+specialist (DIS) workforce, and motivating internal
+and external audiences about “the impact of our
+work.” Participants at all levels (national, state, and
+local) expressed enthusiasm about using the model.
+Although the SPACE Monkey 1.0 model was per-
+ceived as easy to use, participants had suggestions for
+improving the user interface and underlying model
+assumptions. Major usability recommendations in-
+cluded making it easier to compare results of different
+analyses, including confidence intervals on the same
+page as the main results, adding a functionality to
+print input and output screens for meeting handouts,
+adding visualizations, simplifying the interface to a
+single screen rather than multiple tabs of user-defined
+inputs, and revising the interpretation guide for
+improved clarity. Participants desired clearer informa-
+tion about model assumptions and the calculations to
+understand the spreadsheet and describe it to external
+audiences. Ideally, such information would be in-
+cluded in the model rather than a separate user guide
+or scientific manuscript. Most participants preferred
+retaining the format as a downloadable Excel-based
+application rather than revising the model to be an
+interactive Web-based tool. Because it is a common
+software, users can save versions with their inputs for
+documentation, it can be used offline, and it would
+not elicit concerns about the privacy and storage of
+data entered in an online platform.
+Participants expressed some concerns about SPACE
+Monkey 1.0’s underlying conceptual model, which
+incorporated 2 methods to estimate program im-
+pact: a “historical formula approach” and a “DIS
+approach.” The “historical formula approach” used
+findings from a study that assessed the relationship be-
+tween state-level gonorrhea case rates and federal STI
+funding allocations from 1981 to 1998.5 The “DIS ap-
+proach” used findings from a study that measured the
+
+association between DIS partner notification and gon-
+orrhea case rates in New York State excluding New
+York City from 1992 to 2002.22 Participants noted
+several critiques: (1) the studies used to inform both
+approaches were published in the mid-2000s and per-
+ceived to be outdated; (2) the “DIS approach”had less
+face validity due to interstate variation in DIS staff
+structures, salaries, and activities; and (3) it was dif-
+ficult for many state-level public health professionals
+to quantify the number of DISs and their salaries be-
+cause many DISs are not state employees and their job
+responsibilities vary.
+
+For the updated SPACE Monkey 2.0 model, to ad-
+dress focus group participants’ concerns about the
+validity of the “DIS approach” and the difficulty
+of quantifying DIS staff and salaries, we relied ex-
+clusively on the “historical formula approach.” In
+response to participants’ concerns about outdated
+data, the updated “historical formula approach” was
+informed by a recent analysis of the impact of STI
+prevention funding on reported chlamydia and gon-
+orrhea rates through 2016.4 (SPACE Monkey 1.0’s
+historical allocations approach cited an older analy-
+sis of data through 1998, published in 2005.5) The
+study underlying our model has been incorporated
+into other modeling analyses of the impact of STI
+prevention funding.23
+
+The updated SPACE Monkey 2.0 model calcu-
+lates the impact of a permanent, one-time change
+in their STI prevention budget over 10 years using
+the following steps and base case values from the
+Table. The 10-year time frame reflects the number of
+years over which the number of infections averted (or
+additional infections) is calculated. The direct medi-
+cal costs saved (or additional medical costs) are the
+discounted, lifetime direct medical costs of these in-
+fections, regardless of when their costs are incurred.
+
+1. Users enter information on their jurisdiction’s
+number of reported cases, population size, prior
+funding amount, and anticipated future funding
+(as a one-time change).
+2. The
+jurisdiction’s
+reported
+and
+unreported
+chlamydia, gonorrhea, and syphilis infections
+are estimated by multiplying the user-defined
+reported cases by an adjustment factor (ratio
+of the estimated incident infections nationally24
+
+divided by reported infections nationally25).
+3. The anticipated rate of chlamydia, gonorrhea,
+and syphilis infections under the new funding
+amount is calculated on the basis of extrapo-
+lated results from the Williams et al4 historical
+formula analysis to estimate the impact of a
+
+March/April 2024 • Volume 30, Number 2
+www.JPHMP.com
+225
+
+TABLE
+SPACE Monkey 2.0 Model Parameters
+
+Parameter
+Base Case Value
+Low-Impact
+Scenarioa
+High-Impact
+Scenarioa
+
+Chlamydia: Estimated number of incident
+infections, nationally 201824,b
+3 983 000
+3 401 000
+4 719 000
+
+Reported number of chlamydia cases, 201825,b
+1 758 668
+Not varied
+Not varied
+Gonorrhea: Estimated number of incident
+infections, nationally 201824
+1 568 000
+1 236 000
+2 107 000
+
+Reported number of gonorrhea cases, nationally
+201825
+583 405
+Not varied
+Not varied
+
+P&S Syphilis: Estimated number of incident
+infections, nationally 201824,b,c
+146 000
+108 000
+197 000
+
+Reported number of P&S syphilis cases, nationally
+201825,c
+35 063
+Not varied
+Not varied
+
+Probability of STI-attributable HIV infection, per
+chlamydial infection10
+.00022
+.000022
+.000418
+
+Probability of STI-attributable HIV infection, per
+gonococcal infection10
+.00022
+.000022
+.000418
+
+Probability of STI-attributable HIV infection, per
+syphilitic infection10
+.00462
+.000462
+.008778
+
+Average lifetime direct medical cost per chlamydial
+infection11,d,e
+$190
+$100
+$340
+
+Average lifetime direct medical cost per
+gonococcal infection11,d,e
+$190
+$80
+$380
+
+Average lifetime direct medical cost per syphilitic
+infection12,d
+$1 300
+$800
+$2 070
+
+Average lifetime direct medical cost per HIV
+infection13,d,f
+$461 000
+$358 000
+$537 000
+
+Impact of funding on incidence rate, chlamydia4,g,h
+−0.179
+0
+−0.348
+Impact of funding on incidence rate, gonorrhea4,g
+−0.313
+−0.081
+−0.486
+Impact of funding on incidence rate, syphilis4,g,i
+−0.313
+−0.081
+−0.486
+
+Abbreviations: P&S syphilis, primary and secondary syphilis; STI, sexually transmitted infection.
+aFor inputs, values correspond to the reported 95% confidence intervals from the original source unless otherwise noted. We use the terms “low-impact scenario” and “high-
+impact scenario” rather than lower and upper bound because the 3 parameters for the impact of funding on the 3 bacterial STIs are reversed, with lower numerical values
+representing a greater improvement.
+bThe reference study provided interquartile ranges (25th and 75th percentiles); the ranges we applied reflect unpublished approximations of the 95% confidence intervals
+(2.5th and 97.5th percentiles) obtained from the authors.
+cWe used P&S syphilis to be consistent with the user input for the number of P&S syphilis cases. This parameter is used as a denominator for calculating the jurisdiction’s
+share of nationally reported cases, which is then assumed to be the same as the jurisdiction’s share of estimated national syphilis incidence.24
+
+dCosts were converted to 2022 US dollars using the medical care component of the consumer price index. Costs reflect direct medical costs only, from the health system
+perspective, which includes all direct medical costs without regard to who incurs these costs. The lifetime direct medical cost estimates include the possibility of incurring
+direct medical costs of sequelae (eg, pelvic inflammatory disease in women due to chlamydial or gonococcal infection; see the source publications referenced earlier for
+details). Other types of costs besides direct medical costs (eg, productivity losses due to morbidity and mortality, the value of a statistical life lost, and intangible costs of pain
+and suffering) were not included.
+eThe authors reported costs separately for men and women. We created a weighted average for the full population by applying the number of estimated incident infections
+nationally.24
+
+fThe base value is the mean of the authors’ reported base value. The ranges are the mean results from the authors’ least and most favorable scenarios.
+gSee Supplemental Digital Content Appendix 2 (available at http:// links.lww.com/ JPHMP/ B282) for the calculations from Williams et al4 to develop the model parameters.
+The values were inflation-adjusted using the general all-item consumer price index.
+hIn the source study, the cumulative effect of STI prevention funding was significant at the P < .10 level for chlamydia and at the P < .05 level for gonorrhea. Accordingly,
+the 95% confidence interval for the cumulative impact of funding on chlamydia overlapped 0. For the low-impact scenario for chlamydia, we set the funding impact value to
+0, thereby assuming that in the worst-case scenario, increased STI prevention funding would have no effect rather than to worsen outcomes.
+iSyphilis was not included in the analysis by Williams et al.4 We assumed the effect of funding on gonorrhea could be used as approximation for the effect of funding on
+syphilis.
+
+226
+
+Confidence intervals were generated on the ba-
+sis of the “high-impact scenario” and “low-impact
+scenario” values for parameters in the Table. The
+estimated impact of STI funding changes is more pro-
+nounced when applying the “high-impact scenario”
+funding parameter values and less pronounced when
+applying the “low-impact scenario” parameter val-
+ues. See Supplemental Digital Content Appendix 2
+(available at http://links.lww.com/JPHMP/B282) for
+additional details including confidence interval calcu-
+lations and comparison of results between the SPACE
+Monkey 1.0 and 2.0 models.
+
+SPACE Monkey 2.0 user interface
+
+Feedback from the focus groups was incorporated
+into the final model design. A colorful landing page
+
+provides information on the model’s purpose and
+troubleshooting tips for common downloading errors
+(Figure 1). We retained the SPACE Monkey 1.0 logo
+for consistent branding with the original tool.
+After hitting the “Click to Begin!” button, users are
+directed to the main user interface (Figure 2). To ad-
+dress participants’ desires for a simpler interface, we
+included all required inputs and outputs on the same
+page. This allows users to enter their inputs on the left
+(“Program inputs”) and immediately see the changes
+in the main output tables. The output tables include
+dynamic text interpretations that automatically ad-
+just as the user input values change. The output
+tables have embedded conditional coding so that out-
+comes of funding increases are labeled as “infections
+averted” and “costs saved” and outcomes of funding
+decreases are labeled as “additional infections” and
+“additional costs.”A button at the bottom of the page
+allows users to print the screen as a handout. For this
+main page, we decided to present a 3-year impact as
+the default because it was the most consistent with
+the original historical formula analysis that estimated
+impact4 and a common time horizon for presenting
+budget analyses to policymakers. All cells on the main
+page of the Excel spreadsheet are locked except for the
+user inputs to avoid accidental manipulations of the
+pivot table and automated text interpretation.
+The “Advanced Options” button directs users to
+the subsequent screen with more detailed output and
+charts (Figure 3). Consistent with the prior screens, we
+used the Viridis color palette,26 which is visually ap-
+pealing, colorblindness compliant, and can be printed
+in grayscale. On this screen, users can adjust the time
+frame (from 1 to 10 years). For each infection, there
+is a table and chart displaying infections averted and
+direct medical costs saved (for budget increases) or ad-
+ditional infections and additional direct medical costs
+(for budget decreases). The pivot tables and pivot
+charts have a dynamic feature based on Excel’s Slicer
+tool that allow users to quickly change the number of
+years included in their display. This sheet is unlocked
+so that users can copy and paste tables and charts to
+different applications.
+We also incorporated users’ requests for clear ex-
+planations of the model. A “Model Overview” tab
+(not shown) provides users with a nontechnical de-
+scription of the model including a short summary
+that users can adapt, an overview of the calculations,
+key assumptions and limitations, and references. A
+“Model Parameters”tab provides all values, citations,
+and other notes for each parameter listed in the Table.
+
+Usability evaluation of SPACE Monkey 2.0
+
+Overall, participants provided positive feedback dur-
+ing the usability testing. They found the model to be
+
+March/April 2024 • Volume 30, Number 2
+www.JPHMP.com
+227
+
+FIGURE 1 SPACE Monkey 2.0 Landing Pagea
+
+Abbreviation: STI, sexually transmitted infection.
+aUpon opening the Excel model, users see this greeting page with an overview of the model and troubleshooting instructions for common problems
+with the download.
+
+easy to navigate and perceived that it was suitable
+for their intended use. They expressed appreciation
+for multiple functionalities that we added to the up-
+dated model: dynamic charts and tables that could
+be manipulated and copied into external applications,
+detailed yearly output broken down by infection, clear
+text for the model overview and interpretation, and
+having confidence intervals.
+Several usability problems emerged during the eval-
+uation, including model bugs, issues with enabling
+macros,accidental deletion of charts in the “Advanced
+Options” page, occasional confusion on interpreta-
+tion, and not reviewing the instructions. To address
+these issues, we resolved the bugs, added instructions
+for enabling macros, added cautionary notes in the
+“Advanced Options” page to warn users about delet-
+ing charts, added “i”icons (“information”) to prompt
+users to click on the boxes for pop-up explanations of
+the program inputs (see Figure 2, top left section), re-
+vised the instructions to be in bright yellow arrows
+
+with smaller snippets of text to catch model users’
+attention, added new charts and tables, and edited
+instructions.
+Participants’ responses to the usability survey
+(Figure 4) mirrored their positive comments during
+the usability evaluation sessions. Participants had gen-
+eral agreement with statements such as “I would like
+to use this system frequently” and “I thought the sys-
+tem was easy to use” and general disagreement with
+statements such as “I thought there was too much in-
+consistency in this system” and “I found the system
+very cumbersome to use.”
+
+Discussion
+
+Through our human-centered design process, our re-
+vised SPACE Monkey 2.0 model incorporates updated
+scientific literature and has a customized interface and
+functionalities to meet end users’ information needs
+and technical skills. We plan to post the model to a
+
+228
+
+aThe program inputs are based on a hypothetical jurisdiction, for illustration purposes. The “i” icons prompt users to click on the relevant cells for a
+pop-up box describing the inputs in more detail. The interpretation text is dynamic, with the numbers changing based on the user-defined scenario.
+If users model a scenario of an annual funding decrease, the display automatically changes to show findings in terms of “additional infections” and
+“additional costs,” and the interpretation text automatically adjusts to discuss a “decrease” in annual funding. Users can click on the “Print” button to
+create a PDF or hard copy printout of the page. The “Advanced Options” button takes users to a different page where they can view additional tables
+and charts. The colorful arrows on the right provide snippets of instructions to catch the users’ eye and make explanations easier to follow.
+
+FIGURE 3 Advanced Options Pagea
+
+Abbreviation: STI, sexually transmitted infection
+aUsers can scroll down to see additional charts for gonorrhea, syphilis, STI-attributable HIV infections, and total STI infections excluding HIV infection.
+Users can modify the time frame for the number of years over which the number of infections averted (or additional infections) is calculated by entering
+a different number from 1 to 10 in the box on the top left. Users can change the years highlighted in the filter tool (bottom left) to change the data points
+displayed on the table and chart. All tables and charts can be copied and pasted into an external application such as PowerPoint.
+
+March/April 2024 • Volume 30, Number 2
+www.JPHMP.com
+229
+
+FIGURE 4 Usability Testing Survey Resultsa
+
+aN = 6 participants.
+
+public Web site for free download and implement a
+comprehensive dissemination campaign to promote
+the model. This campaign will include videos and
+digital presentations to train users and promote use,
+webinars to diverse audiences in collaboration with
+professional organizations, and targeted outreach to
+end users who we hope can become champions to
+encourage use among their peers.
+SPACE Monkey 2.0 has several limitations. First, it
+cannot be used for outcomes other than chlamydia,
+gonorrhea, syphilis, or STI-attributable HIV infec-
+tions. Second, it does not calculate the impact of
+funding on congenital syphilis because those infec-
+tions were not in the scope of the statistical analysis4
+
+that was the basis for the model. Third, the model
+includes only direct medical costs (eg, productivity
+and other types of costs are excluded) and the esti-
+mated costs saved or averted are not disaggregated
+by payer (eg, costs saved by a county health depart-
+ment vs health insurance). Fourth, the model is most
+suitable for small to medium relative changes in an-
+nual program funding (less than $2 per capita) to
+federally funded jurisdictions. Fifth, the historical al-
+locations study on which SPACE Monkey 2.0 was
+based4 provided gonorrhea- and chlamydia-specific
+estimates of the impact of STI funding but did not
+provide syphilis-specific estimates. We assumed that
+the relative impact of changes in funding would be
+the same for syphilis as for gonorrhea. Sixth, the
+underlying data series from the historical alloca-
+tions study4 ends in 2016; the model would need
+to be updated in the future as new data become
+
+available. In addition, although the underlying his-
+torical allocations study4 controlled for a range of
+state-level characteristics, SPACE Monkey 2.0 does
+not allow users to include jurisdiction-specific char-
+acteristics such as sociodemographics or the number
+of providers per capita. Finally, it does not account for
+differential performance of STI prevention programs.
+
+230
+
+11. Kumar S, Chesson HW, Spicknall IH, Kreisel KM, Gift TL. The
+estimated lifetime medical cost of chlamydia, gonorrhea, and tri-
+chomoniasis in the United States. Sex Transm Dis. 2021;48(4):238-
+246.
+12. Chesson HW, Peterman TA. The estimated lifetime medical cost of
+syphilis in the United States. Sex Transm Dis. 2021;48(4):253-259.
+13. Bingham A, Shrestha RK, Khurana N, Jacobson EU, Farnham PG.
+Estimated lifetime HIV-related medical costs in the United States.
+Sex Transm Dis. 2021;48(4):299-304.
+14. Ansari B, Martin EG. Integrating human-centered design in public
+health data dashboards: lessons from the development of a data
+dashboard of sexually transmitted infections in New York State
+[published online ahead of print June 18, 2023]. J Am Med Inf
+Assoc. doi:10.1093/jamia/ocad102.
+15. Norman D. The Design of Everyday Things. Rev ed. New York, NY:
+Basic Books; 2013.
+16. Lloyd D, Dykes J. Human-centered approaches in geovisualization
+design: investigating multiple methods through a long-term case
+study. IEEE Trans Vis Comput Graph. 2011;17:2498-2507.
+17. Centers for Disease Control and Prevention. SPACE Monkey
+1.0. https://www.cdc.gov/std/program/spacemonkey/default.htm.
+Published February 3, 2020. Accessed June 10, 2023.
+18. Chesson HW, Ludovic JA, Berruti AA, Gift TL. Methods for sexually
+transmitted disease prevention programs to estimate the health
+and medical cost impact of changes in their budget. Sex Transm
+Dis. 2018;45(1):2-7.
+19. Jaspers MWM, Steen T, van den Bos C, Geenen M. The think
+aloud method: a guide to user interface design. Int J Med Inf. 2004;
+73(11/12):781-795.
+20. Preece J, Rogers Y, Sharp H. Interaction Design: Beyond Human-
+Computer Interaction. New York, NY: John Wiley & Sons; 2002.
+21. Brooke J. SUS: a “quick and dirty” usability scale. In: Usability
+Evaluation in Industry. 1st ed. London, CRC Press; 1996:189-194.
+22. Du P, Coles FB, Gerber T, McNutt LA. Effects of partner notification
+on reducing gonorrhea incidence rate. Sex Transm Dis. 2007;34(4):
+189-194.
+23. Aslam MV, Chesson HW. The estimated impact of implementing
+a funding allocation formula on the number of gonorrhea cases in
+the United States, 2014 to 2018. Sex Transm Dis. 2021;48(9):663-
+669.
+24. Kreisel KM, Spicknall IH, Gargano JW, et al. Sexually transmitted
+infections among US women and men: prevalence and incidence
+estimates, 2018. Sex Transm Dis. 2021;48(4):208-214.
+25. Centers for Disease Control and Prevention. Sexually transmit-
+ted disease surveillance 2018. https://www.cdc.gov/std/stats18.
+Published 2021. Accessed March 15, 2021.
+26. Voss M. Viridis color palette. https://rpubs.com/mjvoss/psc_viridis.
+Published August 9, 2021. Accessed March 9, 2023.

@@ -1,0 +1,15 @@
+{
+  "file_name": "Preuhs et al. - 2022 - A Tailored Web Based Video Intervention ParentCoach to Support Parents With Children With Sleeping P.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Recruitment produced a convenience sample heavily skewed toward higher-educated, Dutch participants, limiting designers' access to and understanding of lower-SES and low-health-literacy users.",
+      "justification": "This sampling limitation constrained the team's ability to manage user understanding, facilitate representative user involvement, and evaluate the prototype's fit for vulnerable groups and different contexts of use, requiring an extra low-literacy testing step.",
+      "reference_excerpt": "Most participants were higher educated (21/26, 81%) and had a Dutch background (23/26, 88%). A final evaluation was aimed at also assessing a fit with people with lower health literacy skills given that the convenience sample did particularly comprise people with higher education.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

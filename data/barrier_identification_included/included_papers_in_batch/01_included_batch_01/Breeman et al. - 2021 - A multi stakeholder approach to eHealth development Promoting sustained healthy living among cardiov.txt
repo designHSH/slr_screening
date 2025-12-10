@@ -1,0 +1,991 @@
+Available online 13 December 2020
+1386-5056/© 2020 The Author(s). Published by Elsevier B.V. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+
+A multi-stakeholder approach to eHealth development: Promoting 
+sustained healthy living among cardiovascular patients 
+
+Linda D. Breeman a, Mike Keesman a, Douwe E. Atsma b, Niels H. Chavannes c, 
+Veronica Janssen a,b, Lisette van Gemert-Pijnen d, Hareld Kemps e,f, Wessel Kraaij g, 
+Fabienne Rauwers a, Thomas Reijnders a, Wilma Scholte op Reimer h,i, Jobke Wentzel d, 
+Roderik A. Kraaijenhagen j,k, Andrea W.M. Evers a,l,*, on behalf of the BENEFIT consortium 
+
+a Health, Medical, and Neuropsychology Unit, Leiden University, The Netherlands 
+b Department of Cardiology, Leiden University Medical Center, The Netherlands 
+c Department of Public Health and Primary Care, Leiden University Medical Center, The Netherlands 
+d Centre for eHealth and Wellbeing Research, Department of Psychology, Health and Technology, University of Twente, the Netherlands 
+e Department of Cardiology, M´axima Medical Center Veldhoven, The Netherlands 
+f Department of Industrial Design, Eindhoven University of Technology, The Netherlands 
+g Leiden Institute for Advanced Computer Science, Leiden University, The Netherlands 
+h Department of Cardiology, Academic Medical Center, The Netherlands 
+i Faculty of Health, Amsterdam University of Applied Sciences, The Netherlands 
+j Vital10, Amsterdam, The Netherlands 
+k NDDO Institute for Prevention and Early Diagnostics (NIPED), Amsterdam, The Netherlands 
+l Healthy Society, Medial Delta, Leiden University, TU Delft, Erasmus University, The Netherlands   
+
+A R T I C L E  I N F O   
+
+Keywords: 
+eHealth 
+User-centered design 
+Cardiovascular disease 
+Health behavior 
+Lifestyle 
+Mobile application 
+
+A B S T R A C T   
+
+Background: Healthy living is key in the prevention and rehabilitation of cardiovascular disease (CVD). Yet, 
+supporting and maintaining a healthy lifestyle is exceptionally difficult and people differ in their needs regarding 
+optimal support for healthy lifestyle interventions. 
+Objective: The goals of this study were threefold: to uncover stakeholders’ needs and preferences, to translate 
+these to core values, and develop eHealth technology based on these core values. Our primary research question 
+is: What type of eHealth application to support healthy living among people with (a high risk of) CVD would 
+provide the greatest benefit for all stakeholders? 
+Methods: User-centered design principles from the CeHRes roadmap for eHealth development were followed to 
+guide the uncovering of important stakeholder values. Data were synthesized from various qualitative studies (i. 
+e., literature studies, interviews, think-aloud sessions, focus groups) and usability tests (i.e., heuristic evaluation, 
+cognitive walkthrough, think aloud study). We also developed an innovative application evaluation tool to 
+perform a competitor analysis on 33 eHealth applications. Finally, to make sure to take into account all end-users 
+needs and preferences in eHealth technology development, we created personas and a customer journey. 
+Results: We uncovered 10 universal values to which eHealth-based initiatives to support healthy living in the 
+context of CVD prevention and rehabilitation should adhere to (e.g., providing social support, stimulating 
+intrinsic motivation, offering continuity of care). These values were translated to 14 desired core attributes and 
+then prototype designs. Interestingly, we found that the primary attribute of good eHealth technology was not a 
+single intervention principle, but rather that the technology should be in the form of a digital platform 
+disseminating various interventions, i.e., a ‘one-stop-shop’. 
+
+Abbreviations: CVD, cardiovascular disease; BCTs, behavioral change techniques; PHA, Personal Health Application. 
+* Corresponding author at: Leiden University, Faculty of Social and Behavioural Sciences, Department of Health, Medical and Neuropsychology, Pieter de la Court 
+Building, P.O. box 9555, 2300 RB Leiden, The Netherlands. 
+E-mail addresses: L.D.Breeman@fsw.leidenuniv.nl (L.D. Breeman), M.Keesman@fsw.leidenuniv.nl (M. Keesman), D.E.Atsma@lumc.nl (D.E. Atsma), N.H. 
+
+(H. Kemps), W.Kraaij@liacs.leidenuniv.nl (W. Kraaij), F.Rauwers@BB.leidenuniv.nl (F. Rauwers), T.Reijnders@fsw.leidenuniv.nl (T. Reijnders), w.j. 
+scholteopreimer@amsterdamumc.nl (W. Scholte op Reimer), M.J.Wentzel@utwente.nl (J. Wentzel), Roderik.Kraaijenhagen@cardiovitaal.nl (R.A. Kraaijenhagen), 
+A.Evers@fsw.leidenuniv.nl (A.W.M. Evers).  
+
+Contents lists available at ScienceDirect 
+
+International Journal of Medical Informatics 
+
+journal homepage: www.elsevier.com/locate/ijmedinf 
+
+https://doi.org/10.1016/j.ijmedinf.2020.104364 
+Received 10 July 2020; Received in revised form 7 December 2020; Accepted 8 December 2020
+
+2
+
+Conclusion: Various stakeholders in the field of cardiovascular prevention and rehabilitation may benefit most 
+from utilizing one personalized eHealth platform that integrates a variety of evidence-based interventions, rather 
+than a new tool. Instead of a one-size-fits-all approach, this digital platform should aid the matchmaking between 
+patients and specific interventions based on personal characteristics and preferences.   
+
+1. Introduction 
+
+Cardiovascular disease (CVD) reduces quality of life, accounts for 45 
+% of all deaths in Europe, and annually costs €211 billion in productivity 
+losses and healthcare provision [1]. In Europe alone, 85 million people 
+live with CVD [1]. On the upside, modifying behavioral risk factors such 
+as smoking, unhealthy diet, physical inactivity, stress and lack of sleep 
+strongly improves prognosis of CVD [1,2]. However, initiating and 
+maintaining a healthy lifestyle is exceptionally difficult with many 
+people relapsing into old habits [2,3]. Over the past years, various 
+technological solutions have become available to provide support any­
+where and at any time [4,5], in addition to face-to-face counseling [6] 
+and lifestyle modification programs [7]. Unfortunately, in eHealth 
+development, the technology is all too often developed first, and content 
+and context of use is only considered afterwards [8,9]. This leads to 
+technological solutions that are not intuitive for its users ̶ and thereby 
+frustrating and time consuming ̶ resulting in less effective interventions, 
+uptake problems and costly developmental processes [8–10]. Thus, 
+already in the early development phase, researchers should focus on 
+stakeholder acceptance and engagement to ensure a good fit with user 
+needs and preferences [11,12]. The CeHRes roadmap provides a 
+guideline for eHealth development, implementation and evaluation, and 
+emphasizes stakeholder involvement [10]. According to this guideline, 
+technology design is always intertwined with business modeling in such 
+a way that design choices influence technology implementation, tech­
+nology acceptance, and sustainable use. Therefore, throughout the 
+development and implementation phases, the various needs, preferences 
+and abilities of stakeholders (including end-users) need to be weighed 
+and balanced. 
+
+1.1. The current paper 
+
+The research described in this paper had three aims: First, guided by 
+the notion of value-based healthcare [13], to explore various stake­
+holders’ (i.e., patients, healthcare professionals, eHealth developers) 
+needs and preferences concerning eHealth usage. Second, to translate 
+these needs and preferences to a set of core stakeholder values. Three, 
+iteratively design and evaluate eHealth technology to support healthy 
+living based on these core values and insights from scientific research. In 
+the current paper, we describe all steps taken during the research and 
+development processes and summarize various research activities to 
+answer the question “What type of eHealth technology to support healthy 
+living among people with CVD would provide the greatest benefit for all 
+stakeholders?”. 
+
+2. Methods 
+
+2.1. Stakeholder consortium and core team 
+
+We followed the widely used CeHRes roadmap for eHealth devel­
+opment and founded the nationwide BENEFIT-for-all consortium, con­
+sisting of academic research centers, cardiac rehabilitation centers, a 
+patient federation for people with CVD, and eHealth entrepreneurs [14]. 
+In addition, the multidisciplinary core research and development team 
+included clinically and/or research oriented professionals and entre­
+preneurs (e.g. psychologists, physicians, cardiologists, internists, IT 
+specialist) of all career levels (PhD students to full professors) with ac­
+ademic and/or clinical expertise in health and medical psychology, 
+behavior change techniques, and user-centered design principles. This 
+
+study has been approved by the Psychology Research Ethics Committee 
+(registration number 2020-04-14-A.W.M.Evers-V2-2271) and the BMS 
+Ethics Committee (registration number BCE18142). 
+
+2.2. Research approach and iterative development 
+
+We followed the iterative approach to eHealth development as pro­
+posed in the CeHRes roadmap. With an iterative approach, results and 
+data-analysis procedures are intertwined. 
+
+2.2.1. Phase 1: contextual inquiry 
+Goal of this phase was to gather information from stakeholders and 
+the context in which the technology will be implemented, to identify 
+important values and requirements to which eHealth technology to 
+support healthy living in the context of CVD prevention and rehabili­
+tation should adhere to (i.e., ‘co-creation phase’). Activities included 
+examining existing knowledge, conducting a series of stakeholder in­
+terviews, and conducting a competitor review. 
+
+2.2.1.1. Existing knowledge. To learn more about developing effective 
+eHealth interventions to promote lifestyle changes, literature was 
+examined concerning the following topics: 1. General mechanisms 
+important in supporting a healthy lifestyle (e.g., literature regarding 
+behavioral change techniques (BCTs) such as the ‘Integrated Behavior 
+Change Model’) [15,16]. 2. Characteristics of existing eHealth applica­
+tions that support a healthy lifestyle, determinants of adherence to these 
+applications and their effectiveness (e.g., literature regarding Persuasive 
+System Design) [17,18]. 3. Conditions under which rewards contribute 
+to adherence and effectiveness of eHealth interventions (e.g., literature 
+regarding intrinsic and extrinsic incentives) [19–21]. 
+
+2.2.1.2. Stakeholder activities. We recruited participants from various 
+backgrounds, differing in needs and (technological) abilities. All par­
+ticipants were fully disclosed on the purpose of the studies before the 
+start of each study. All qualitative data were analyzed with a content 
+analysis approach [22], where the interpretation depends merely on the 
+data and not on theoretical or technological models. As such, transcripts 
+of the interviews were coded and clustered into meaningful themes. In 
+total, six stakeholder activities were performed: 1. An interview study 
+with 10 CVD patients to identify important aspects of lifestyle change for 
+which patients may need support, their self-management skills and 
+needs, and how their healthcare could be improved by eHealth tech­
+nology [23]. 2. The same 10 patients participated in a usability test of a 
+beta version of an eHealth application, in order to assess how such an 
+application is used by this population, as well as identifying re­
+quirements for supporting and motivating chronically ill patients in 
+self-care management and program adherence [23]. 3. An interview 
+study with 16 healthcare professionals involved or specialized in the 
+prevention and rehabilitation of CVD (i.e., CVD nurse practitioners, 
+physician-scientists, physical therapists, and a lifestyle coach, physician 
+assistant, general practitioner, psychologist and neurologist) to uncover 
+professionals’ needs regarding helping patients achieve a healthy life­
+style, their perspective regarding patients’ support needs, the use of 
+eHealth, and its implementation in routine care. 4. A focus group with 
+10 stakeholders (e.g., patients with a history of CVD, patient represen­
+tatives, a general practitioner, the CEO of a healthy eating initiative), to 
+discuss the biggest barriers and potential game-changers to support 
+healthy living among people with CVD. 5. Interviews with 6 
+
+3
+
+representatives of CVD healthcare facilities (e.g., hospital, cardiac 
+rehabilitation center, general practice) to discuss their needs when 
+supporting a healthy lifestyle in their patients, their current use of 
+eHealth, and what - to them - would constitute a successful eHealth 
+application. 6. Discussions with commercial eHealth developers con­
+cerning their needs when developing commercially viable eHealth 
+interventions. 
+
+2.2.1.3. Competitor review. Much can be learned from studying other 
+eHealth applications. Therefore, members of the core research team 
+were asked to list the, to them, best-known eHealth applications for 
+healthy living for the following lifestyle domains; physical activity, 
+smoking cessation, alcohol reduction, healthy dieting, stress reduction, 
+and sleep improvement. In addition, per lifestyle domain, the two most 
+popular applications in the Google Play Store were selected (October 
+2018) resulting in a list of 33 eHealth applications. A new application 
+evaluation tool (see Appendix A) was designed by combining elements 
+from the following instruments: 1. Dutch Municipal Medical and Health 
+Care Service app checker “GGD” [24], 2. Mobile App Rating Scale 
+“MARS” [25] and 3. Dutch Medical App Checker “MAC” [26]. Our newly 
+developed evaluation tool was innovative in the sense that it provided 
+the possibility to evaluate eHealth applications according to function­
+ality, aesthetics, presentation of information, engagement, custom­
+ization, and reliability, combined with the evaluation of fundamental 
+BCTs (i.e., goal setting, action planning, monitoring behavior, feedback 
+on progress, goal revision) to assess their potential quality and effec­
+tiveness [27]. For one week, each app was used on a daily basis by two 
+nursing 
+students 
+(out 
+of 
+six 
+students 
+total) 
+specialized 
+in 
+technology-based healthcare, who then evaluated these applications. 
+
+2.2.2. Phase 2: value specification 
+Based on the contextual inquiry, the aim of this phase was to identify 
+how most value could be created for all stakeholders. This was done by 
+synthesizing all findings (i.e., eHealth technology values and re­
+quirements) from all research activities and then translating these values 
+and requirements into desired core attributes of the technology. Activ­
+ities in this phase included data synthesis, creation of ‘personas’, 
+developing a customer journey, and validation of findings with 
+stakeholders. 
+
+2.2.2.1. Data synthesis. Data from the previous research activities were 
+synthesized to uncover how most value could be added ̶ within the 
+possibilities of the project ̶ to support healthy living in the context of 
+cardiovascular prevention and rehabilitation by use of eHealth tech­
+nology. During a research team meeting, a list of core values, derived 
+from the various stakeholders interviews, and insights from the 
+competitor and literature review, was drafted. 
+
+2.2.2.2. Personas and customer journey. A user-centered design method 
+that makes sure to take into account all end-users is creating ‘personas’ 
+[28–30]. Each persona (i.e., user archetype) represents a target group 
+and consists of a description of the future user. Based on multiple 
+guidelines [30,31] we created personas from a holistic viewpoint, and 
+defined relevant characteristics for our population, such as de­
+mographics (e.g., age, sex), medical and psychological profile (e.g., 
+health status, motivation), abilities (e.g., lifestyle, technology use), and 
+needs (e.g., autonomy, simplicity). These characteristics were mapped 
+on different user profiles and after refinement of characteristics, eight 
+personas were developed (see Appendix B). Taking into account these 
+personas with their respective characteristics, core values were 
+
+Fig. 1. BENEFIT Customer Journey.  
+
+4
+
+translated to eHealth requirements. To provide the technology devel­
+opment team with an overview of the purpose of each eHealth 
+requirement, core values and requirements were logically structured 
+and a customer journey was created, i.e. a potential scenario of the 
+context and use of the technology (see Fig. 1). The customer journey 
+describes one end-user’s process and experiences with the intervention 
+trajectory as a whole. Although all personas are expected to follow the 
+same core activities in the customer journey (e.g. filling out lifestyle 
+questionnaires, measuring blood pressure values), frequency of use, 
+goals, interactions with healthcare professionals, resulting emotions and 
+(health) behaviors are expected to differ between personas. 
+
+2.2.2.3. Validation. Stakeholder values as derived from the data syn­
+thesis were thoroughly discussed until consensus was reached. First 
+during a stakeholder committee meeting consisting of potential end- 
+users and a representative of the Dutch Cardiac Patient Association (N 
+= 4) and second, during a meeting with all BENEFIT consortium mem­
+bers; ranging from researchers in the field of health psychology and 
+eHealth to private parties in eHealth, nurses, cardiologists, game de­
+signers, and an economist (N = 34). 
+
+2.2.3. Phase 3: iterative prototype design and evaluation 
+The goal of this phase was to use the identified core attributes to 
+iteratively design prototype applications and testing these prototypes 
+with intended end-users and other stakeholders (i.e., ‘agile development 
+phase’). Thus, the core research and development team continuously 
+collaborated together in iteratively creating and improving the 
+eHealth’s technology content and design. Together, they translated each 
+of the core attributes into tangible prototype designs, while also creating 
+the underlying data architecture and functional requirements (e.g., 
+registration process, user login, safe data storage, and smooth exchange 
+of healthcare information). 
+During this iterative process, four more activities were undertaken to 
+evaluate and further improve the technology. 1. A clickable demo of the 
+application was evaluated using a cognitive walkthrough, based on 
+three scenarios of how end-users would use the technology [32]. The 
+evaluation was conducted by experts in persuasive health technology (N 
+= 6) who provided advice regarding persuasive design elements. 2. A 
+heuristic (i.e., expert) evaluation was conducted among the core 
+research team (N = 7) to assess functionality, aesthetics, engagement, 
+BCTs, and potential bugs in the system. 3. To improve future uptake, the 
+technology was tested among patients who currently participate in (N =
+5) and recently completed (N = 8) cardiac rehabilitation. Patients 
+received prototypes of a ‘very brief advice’ (i.e., an information-based 
+intervention delivered by health professionals aimed to entice patients 
+to improve their lifestyle using the application) [33] and responded to 
+questions concerning when and how they would like to be approached to 
+use the application. 4. A ‘think aloud study’ [34] was conducted with the 
+same patients currently participating in cardiac rehabilitation (N = 5). 
+Patients were provided with a clickable demo of the technology and 
+asked to use it so as to suit their own needs. During usage, they were 
+asked to speak out loud about what they saw, what they did within the 
+application, and why. Based on all feedback, the technology was further 
+refined and beta-tested. 
+
+3. Results 
+
+With all research activities performed, we achieved the three goals of 
+this study: to uncover stakeholders’ needs and preferences, to translate 
+these to core values, and develop eHealth technology based on these 
+core values. Thus, it was also possible to answer our research question 
+‘What type of eHealth technology to support healthy living among people with 
+CVD would provide the greatest benefit for all stakeholders?’ The data 
+synthesis yielded a long list of needs and preferences from the various 
+stakeholder activities. During the validation phase, consensus was 
+
+reached regarding 10 core values for eHealth development based on 
+these stakeholders needs, preferences and abilities. Next, information on 
+core values, insights from scientific studies regarding BCT principles, 
+insights from persuasive system design, and insights from the competitor 
+analysis, were used to translate the 10 core values into 14 core attributes 
+for eHealth development (please see Table 1 for an overview of all core 
+values and attributes and Appendix C for screenshots and information on 
+integration of core attributes). We will now elaborate more on these core 
+values and according attributes. 
+Values 1−2: Patients indicated that to support sustained healthy 
+living, interventions should become and remain accessible, irrespective 
+of current point of care (e.g. primary, secondary, tertiary care). An 
+eHealth application can provide in this, for example, by offering a per­
+sonal membership independent of a specific healthcare provider. In 
+addition, many healthcare professionals indicated that providing sup­
+port for healthy living was mostly a peripheral activity for them, and 
+although healthcare professionals expressed the wish to receive an 
+overview of eHealth applications to promote healthy living, they neither 
+have time nor receive reimbursements to keep track of current de­
+velopments. Since a shift in healthcare professionals’ work towards 
+prevention and lifestyle management are not foreseen in the near future, 
+support may best be (partly) outsourced to external parties and in­
+terventions. Then, support should focus on easing referral to the right 
+interventions to increase patient enrollment, engagement and decrease 
+drop-out. Also, new eHealth technology will only be used on a large 
+scale if it automatically exchanges data with the current Health Infor­
+mation System (e.g., information on smoking status or blood pressure), 
+to avoid producing ‘double’ administrative work for healthcare pro­
+fessionals. From these values and the insights from the competitor 
+analysis that there already is an abundance of eHealth applications to 
+support healthy living, we reached the conclusion that creating a new 
+eHealth application incorporating similar BCTs may be of little value for 
+people with CVD. For healthcare professionals, the development of new 
+applications is also difficult to keep track of. For entrepreneurs, eHealth 
+development is a competitive market. From their perspective, applica­
+tions have a need for more users, especially users who use the applica­
+tion for an extended period of time. Thus, the crucial lesson here was 
+that value for stakeholders would not be created by reinventing the 
+wheel (i.e., developing yet another application aimed at inspiring 
+behavior change). Rather, there was more need for one central Personal 
+Health Application (PHA), i.e., the connective tissue that brings together 
+various (evidence-based) lifestyle modification programs, apps and de­
+vices from various providers in one central place. Such a ‘one-stop-shop’ 
+or ecosystem for healthy living would make it possible to match lifestyle 
+interventions to the right users based on end-users’ needs and prefer­
+ences, thereby stimulating engagement and active use. 
+Value 3: Patients with CVD are put off by being treated as a patient or 
+number and luckily eHealth offers possibilities for a personalized 
+approach. In addition, whether a person will benefit from a specific 
+intervention depends both on the intervention’s characteristics (e.g. 
+group vs individual, phone-counselling vs smartphone application) and 
+the person’s characteristics (e.g. literacy, motivation, amount of time 
+available). The intervention should thus be tailored to the end-user as 
+much as possible. 
+Value 4−5: Both patients and healthcare professionals indicated the 
+importance of autonomy support and providing means for patients to 
+stay healthy, feel safe, and help prevent new CVD incidences. This can be 
+accomplished among others by: 1. Increasing intervention effectiveness. 
+Scientific literature on goal setting and self-control theory suggest that 
+there are key components such as goal setting, action planning, health 
+and behavior monitoring, feedback on progress, and goal revision, that a 
+health intervention needs to bring forth actual behavior change 
+[35–39]. From the competitor analysis, it became clear that many 
+eHealth interventions already incorporated (some) of these components. 
+These components were further supported by stakeholder interviews. 
+For example, goal setting was valued by patients as a way to strengthen 
+
+5
+
+Table 1 
+Core values and according core attributes for eHealth development.  
+
+# 
+Core values 
+Source 
+Rationale 
+# 
+Core attributes 
+
+1 
+Providing 
+continuous 
+care 
+
+•patients 
+Interventions 
+should become 
+and remain 
+accessible, 
+irrespective of 
+current point of 
+care. 
+
+1 
+
+Ecosystem for 
+healthy living: 
+An integral 
+Personal Health 
+Platform (PHA) 
+that provides 
+access to a 
+variety of 
+(evidence- 
+based) 
+interventions, 
+independent of 
+care provider 
+(design slide 2*) 
+
+2 
+
+Reduce 
+burden on 
+healthcare 
+professionals 
+
+•healthcare 
+professionals 
+
+Support for 
+professionals 
+should focus on 
+easing referral 
+to the right 
+interventions to 
+increase patient 
+enrollment, 
+engagement 
+and decrease 
+drop-out. 
+The technology 
+should 
+automatically 
+exchange data 
+with current 
+Health 
+Information 
+Systems to 
+avoid producing 
+‘double’ 
+administrative 
+work for 
+healthcare 
+professionals. 
+
+2 
+
+Automatic 
+exchange of 
+data between 
+Health 
+Information 
+Systems and 
+interventions 
+(design slide 
+3−4*) 
+
+3 
+
+Providing a 
+human- 
+centered 
+approach 
+
+•patients 
+
+The 
+intervention 
+should be 
+tailored to 
+personal 
+characteristics 
+as much as 
+possible. 
+
+3 
+
+Personalization 
+and human 
+centered 
+approach 
+(design slide 
+5−6*) 
+
+4 
+Supporting 
+the patients’ 
+autonomy 
+
+•patients 
+•healthcare 
+professionals 
+
+Increasing 
+intervention 
+effectiveness. 
+The scientific 
+literature on 
+goal setting and 
+self-control 
+theory suggest 
+that there are 
+key components 
+a health 
+intervention 
+needs to bring 
+forth actual 
+behavior 
+change. 
+
+4 
+
+Incorporating 
+the following 
+key 
+components: 
+goal setting, 
+action planning, 
+monitoring 
+health and 
+behavior, 
+feedback on 
+progress, and 
+goal revision 
+(design slide 
+7−8*) 
+
+5 
+
+Providing 
+means for 
+patients to 
+stay healthy, 
+feel safe, and 
+help prevent 
+new CVD 
+incidences 
+
+•patients 
+•healthcare 
+professionals 
+
+Increasing 
+motivation. The 
+scientific 
+literature on 
+motivation 
+suggests that 
+providing 
+external 
+contingencies 
+can help 
+improve short- 
+term motivation 
+for behaviors 
+that are not 
+inherently 
+interesting. 
+
+5 
+Reward 
+program 
+(design slide 9*) 
+
+6 
+Praise messages 
+(design slide 10 
+*) 
+
+Increasing 
+program 
+7  
+
+Table 1 (continued) 
+
+# 
+Core values 
+Source 
+Rationale 
+# 
+Core attributes 
+
+adherence. To 
+promote 
+program 
+adherence, it 
+may help to 
+send reminder 
+messages for 
+unperformed 
+tasks not 
+inherently 
+interesting. 
+
+Reminder 
+messages 
+(design slide 11 
+*) 
+
+Providing 
+education and 
+skills training. To 
+live healthily, 
+people need 
+more than the 
+right mindset, 
+they need the 
+skills to do so. 
+
+8 
+Education and 
+skills training 
+(design slide 
+12−15*) 
+
+6 
+
+Inclusion of 
+patients’ 
+social 
+environment, 
+improving 
+social support 
+
+•patients 
+
+It is important 
+to include the 
+social 
+environment in 
+healthy living 
+initiatives. 
+
+9 
+
+Involving social 
+environment to 
+maintain health 
+goal or outcome 
+(design slide 16 
+*) 
+It is important 
+to highlight 
+healthy 
+initiatives in the 
+patients’ 
+environment 
+that may 
+increase a 
+healthy 
+behavior 
+change. 
+
+10 
+
+Ecosystem of 
+healthy living: 
+Salience of 
+healthy living 
+initiatives in the 
+environment 
+(design slide 17 
+*) 
+
+7 
+Simplicity 
+and guidance 
+•patients 
+
+The usability 
+and 
+attractiveness of 
+eHealth 
+technology can 
+be increased by 
+design 
+simplicity and 
+design 
+strategies. 
+
+11 
+
+Tunneling: 
+guidance 
+through a 
+digital coach 
+(design slide 18 
+*) 
+
+12 
+
+Simulation: 
+modeling the 
+right behavior 
+(design slide 19 
+*) 
+
+8 
+Personal 
+contact 
+
+•patients 
+•healthcare 
+professionals 
+
+To increase 
+therapeutic 
+alliance and 
+adherence, 
+personal 
+contact through 
+eHealth may be 
+less 
+burdensome 
+and flexible 
+than face-to- 
+face contact. 
+
+13 
+
+Chat, phone, 
+and/or video 
+counselling 
+(design slide 20 
+*) 
+
+9 
+Trustworthy 
+•eHealth 
+developers 
+
+The use of 
+eHealth can be 
+supported by 
+increasing its 
+surface 
+credibility and 
+perception of 
+trustworthiness. 
+
+14 
+
+Cues of 
+trustworthiness 
+(design slide 21 
+*) 
+
+10 
+Financially 
+self- 
+supporting 
+
+•eHealth 
+developers 
+
+The eHealth 
+application 
+should be 
+financially self- 
+supporting.  
+
+N/A  
+
+* For the design templates of core attributes, see Appendix C. 
+
+6
+
+their autonomy and to help remind them of their ultimate goal (e.g., to 
+see the grandkids grow up), thereby increasing motivation and main­
+tenance of health outcomes. Also, health monitoring (i.e., providing the 
+means for taking objective measures) and progress monitoring (e.g., by 
+means of activity tracker) was valued by patients to meet their need to 
+feel safe. 2. Increasing motivation. Scientific literature on motivation 
+suggests that providing rewards can help improve short-term motivation 
+for behaviors that are not inherently interesting (e.g. taking the stairs, 
+eating a carrot) [19,40,41]. However, providing praise and rewards in 
+eHealth interventions is only effective when the program requires active 
+engagement from users (e.g. goal setting, coaching), rather than being a 
+passive intervention. 3. Increasing program adherence. To promote 
+program adherence, it may help to send reminder messages for unper­
+formed tasks not inherently interesting. 4. Providing education and 
+skills training. To live healthily, people need more than the right 
+mindset (e.g., motivation for healthy diet), they need the skills to do so. 
+Value 6: Patients indicated the importance of the social environment 
+in initiating and maintaining health behaviors and their preference for 
+the inclusion of their social environment in their healthy living initia­
+tives. Also, stimuli in the environment can induce distress or cravings, 
+which may in turn elicit unhealthy behaviors. It is thus important to also 
+highlight healthy initiatives in the patients’ environment that may in­
+crease a healthy behavior change. 
+Value 7: Patients value simplicity and guidance. The platform should 
+therefore have a coaching and support system to help coordinate each 
+patient’s journey and monitor patients’ progress. In addition, the us­
+ability and attractiveness of eHealth technology can be increased by 
+design simplicity and design strategies such as reduction (e.g., clear 
+design, not providing too much information), tunneling (e.g., guiding 
+the user with a digital coach), and simulation (e.g., modeling the right 
+behavior). 
+Value 8: A strong preference was indicated by both patients and 
+healthcare professionals for personal contact to increase therapeutic 
+alliance and adherence. Chat, phone or video counselling may be less 
+burdensome than face-to-face contact, as it is flexible, requires no travel 
+time for the patient, and less office space is required for professionals. 
+Value 9−10: Two core values were deducted from input by eHealth 
+developers, being the trustworthiness of the application and the fact that 
+the technology should be financially self-supporting in order to remain 
+accessible for all end-users. This last value requires a successful business 
+model. 
+
+4. Discussion 
+
+A user-centered and iterative design approach was undertaken to 
+uncover what type of eHealth application to support healthy living 
+among people with CVD would provide the greatest benefit for all 
+stakeholders. Insights from a wide range of stakeholders (i.e., CVD pa­
+tients, nurses, medical specialists, patient representatives, eHealth en­
+trepreneurs) and scientific researchers were incorporated from the 
+conception stage to final design. In line with other research, it became 
+clear that our various stakeholders had both overlapping and unique 
+needs and preferences [42]. For example, unique for healthcare pro­
+fessionals was the need that eHealth technology should help reduce their 
+(administrative) workload and increase patient contact, while patients 
+indicated a need for a more human-centered approach and more con­
+tinuity in care. Although a reduced workload for professionals may seem 
+contradictory with more patient contact, the overlapping value here is 
+that both these stakeholders find personal contact important. Although 
+challenging [42,43], connecting stakeholder needs to scientific evidence 
+concerning BCT principles, insights from persuasive system design and 
+feasibility considerations to compose a list of stakeholders’ core values 
+and according core technology attributes may be essential to stimulate 
+the required behavior change [8,10,42,44]. Similar approaches have 
+been described previously [44,45], stressing the need to create an 
+overview of the various needs and preferences of stakeholders involved. 
+
+One of the main results from the various studies is that providing a 
+one-stop-shop PHA for lifestyle interventions may be key to support 
+healthy living in the context of cardiovascular prevention and rehabil­
+itation. A PHA would form the connective tissue that brings together 
+various (evidence-based) lifestyle modification programs, apps and de­
+vices in one central place. This enables tailoring interventions to pa­
+tient’s needs and preferences and thus a personal approach which is in 
+line with values such as personalized and participatory care, also put 
+forward in the notion of P4 medicine [46]. The solution to create an 
+ecosystem for healthy living is not unique. For example, an ecosystem 
+(referred to here as ‘toolkit’) in the field of infection prevention and 
+antimicrobial stewardship was put forward because of the complex sit­
+uation calling for tailored interventions that utilize the same over­
+arching infrastructure [45]. Also, a health services ecosystem has also 
+been implemented in Trento (Italy), to take advantage of modern 
+technology to enable various stakeholders to exchange intervention re­
+sources and patient monitoring with the goal to produce mutual benefits 
+for all [47]. Collaboration is indeed vital, also because different in­
+terventions may support one another as they focus on interrelating as­
+pects of healthy living. For example, a smoking cessation program may 
+indicate that their users could benefit from healthy eating support, as 
+weight-gain is a primary reason for relapse after smoking cessation [48]. 
+For CVD patients, it makes sense to offer the eHealth technology the 
+moment they are highly motivated to make (lasting) behavioral 
+changes, which is usually soon after a CVD event. This is why we choose 
+to introduce the PHA during cardiac rehabilitation, which additionally 
+provides the opportunity to help and train patients in eHealth usage and 
+involve the patients’ social network to improve motivation for sustained 
+behavior change. During cardiac rehabilitation, the PHA’s focus should 
+be on self-management, yet providing support and personal contact if 
+needed, to bridge the gap between care and prevention. 
+
+4.1. Strengths and limitations 
+
+Strengths of this study are the value-based research and user- 
+centered design principles that formed the basis for the eHealth tech­
+nology development from the very beginning of the project, the 
+involvement of a large variety of stakeholders, and the numerous studies 
+undertaken to distill eHealth technology values and requirements. This 
+study also had limitations. First, the number of participants of some 
+studies was relatively small. Yet, the iterative nature of the develop­
+mental process prescribed stopping participant inclusion when no new 
+information came forward and studies were partly repeated when 
+testing the redesign. According to Barnum [49] even only five partici­
+pants per study may be enough when there is close cooperation between 
+research and development team, the results are clearly communicated 
+and when the results are used for diagnostic purposes. Second, it may be 
+noted that more healthcare professionals were interviewed than pa­
+tients, but this is mostly because we included a wide range of healthcare 
+professionals such as nurses, general practitioners, cardiologists, life­
+style coaches, etc. In addition, user involvement is still ongoing. As the 
+prototype and incorporated health interventions keep evolving, it is 
+important to continuously evaluate these changes against stakeholder 
+values by performing usability tests to maintain a good connection with 
+stakeholders and to ensure true user-centered development [50]. 
+Finally, the developed personas that were needed to work out the 
+eHealth requirements and customer journey were mostly based on 
+stakeholder interviews. Now that the PHA is ready for use in cardiac 
+rehabilitation, persona validation will be the next step. 
+
+4.2. Conclusion 
+
+This research project shows that stakeholder involvement in eHealth 
+development is crucial from the conception stage onwards. When pa­
+tients, healthcare professionals and entrepreneurs gain from an eHealth 
+product to support healthy living, the likelihood of development, 
+
+7
+
+implementation, use, and user-engagement is increased, ensuring a 
+‘benefit for all’. 
+Summary table. 
+What was already known on this topic: 
+
+• Maintaining a healthy lifestyle is exceptionally difficult and in­
+
+dividuals differ in their needs and preferences regarding optimal 
+support for healthy lifestyle interventions.  
+• eHealth technology can provide support for healthy living anywhere, 
+at any time, and tailored to individual needs. 
+• Stakeholder involvement is key in the design of new eHealth appli­
+
+cations to ensure technology uptake and acceptance by end-users and 
+user engagement. 
+
+What this study added to our knowledge:  
+
+• Development of eHealth technology may benefit from integrating 
+multiple stakeholders’ needs and preferences with insights from 
+scientific evidence and taking into account design elements such as 
+functionality, aesthetics and engagement. 
+• Stakeholders in the field of cardiovascular prevention and rehabili­
+
+tation may benefit most from a personalized digital platform that 
+integrates a variety of evidence-based (eHealth) interventions.  
+• This eHealth platform should aid the matchmaking between end- 
+users and specific interventions based on personal characteristics 
+and preferences. 
+
+;1; 
+
+MK, VJ, RK, and AWME contributed to the conception and design of 
+the work. MK, JW, and RK contributed to the acquisition and/or analysis 
+of the data and all listed authors were involved in the interpretation of 
+the data. LDB and MK drafted the initial version of the manuscript and 
+all provided critical feedback to revise and improve the manuscript. 
+Finally, all authors gave their final approval of this version’s manuscript 
+to be submitted an agree to be accountable for all aspects of work 
+ensuring integrity and accuracy. 
+
+Declaration of Competing Interest 
+
+Roderik Kraaijenhagen is the executive director and cofounder of 
+Vital10 where the eHealth platform is being developed. All other au­
+thors declare no conflict of interest.

@@ -1,0 +1,1009 @@
+A Mobile, Electronic Health Record-Connected
+Application for Managing Team Workﬂows in
+Inpatient Care
+
+Jacqueline M. Soegaard Ballester1
+Geoffrey D. Bass2
+Richard Urbani3
+Glenn Fala3
+Rutvij Patel3
+
+Damien Leri4
+Jackson M. Steinkamp5
+Joshua L. Denson6
+Roy Rosin4,7
+Srinath Adusumalli8
+
+Clarence William Hanson9,10
+Ross Koppel7,11,12,13
+Subha Airan-Javia14,15
+
+1Division of General Surgery, Department of Surgery, Hospital of the
+University of Pennsylvania, Philadelphia, Pennsylvania, United
+States
+2Division of Pulmonary, Allergy, and Critical Care Medicine,
+Department of Medicine, Perelman School of Medicine at the
+University of Pennsylvania, Philadelphia, Pennsylvania, United
+States
+3Department of Information Services, Penn Medicine, Philadelphia,
+Pennsylvania, United States
+4Center for Healthcare Innovation, Penn Medicine, Philadelphia,
+Pennsylvania, United States
+5Department of Medicine, Perelman School of Medicine at the
+University of Pennsylvania, Philadelphia, Pennsylvania, United
+States
+6Section of Pulmonary Diseases, Critical Care, and Environmental
+Medicine, Tulane University School of Medicine, New Orleans,
+Louisiana, United States
+7Leonard Davis Institute of Health Economics, University of
+Pennsylvania, Philadelphia, Pennsylvania, United States
+8Division of Cardiovascular Medicine, Department of Medicine,
+Perelman School of Medicine at the University of Pennsylvania,
+Philadelphia, Pennsylvania, United States
+
+Appl Clin Inform 2021;12:1120–1134.
+
+Address for correspondence Subha Airan-Javia, MD, 3400 Spruce St,
+5037 Maloney Building, Philadelphia, PA 19104, United States
+(e-mail: subha.airan@pennmedicine.upenn.edu).
+
+9Department of Anesthesiology and Critical Care, Perelman School
+of Medicine at the University of Pennsylvania, Philadelphia,
+Pennsylvania, United States
+10Ofﬁce of the Chief Medical Information Ofﬁcer, Penn Medicine,
+Philadelphia, Pennsylvania, United States
+11Institute of Biomedical Informatics, Perelman School of Medicine,
+University of Pennsylvania, Philadelphia, Pennsylvania, United States
+12Department of Sociology, School of Arts and Sciences, University
+of Pennsylvania, Philadelphia, Pennsylvania, United States
+13Department of Biomedical informatics, University of Buffalo
+(SUNY), Buffalo, New York, United States
+14Section of Hospital Medicine, Department of Medicine, Perelman
+School of Medicine at the University of Pennsylvania, Philadelphia,
+Pennsylvania, United States
+15Founder/CEO, CareAlign, Philadelphia, Pennsylvania, United States
+
+Keywords
+►mobile application
+►workﬂows
+►user-centered design
+►handoffs
+
+Abstract
+Background
+Clinical workﬂows require the ability to synthesize and act on existing
+and emerging patient information. While offering multiple beneﬁts, in many circum-
+stances electronic health records (EHRs) do not adequately support these needs.
+Objectives
+We sought to design, build, and implement an EHR-connected rounding
+and handoff tool with real-time data that supports care plan organization and team-
+based care. This article ﬁrst describes our process, from ideation and development
+through implementation; and second, the research ﬁndings of objective use, efﬁcacy,
+and efﬁciency, along with qualitative assessments of user experience.
+Methods
+Guided by user-centered design and Agile development methodologies,
+our interdisciplinary team designed and built Carelign as a responsive web application,
+accessible from any mobile or desktop device, that gathers and integrates data from a
+
+received
+April 27, 2021
+accepted
+October 11, 2021
+
+DOI https://doi.org/
+10.1055/s-0041-1740256.
+ISSN 1869-0327.
+
+This is an open access article published by Thieme under the terms of the
+
+Creative Commons Attribution-NonDerivative-NonCommercial-License,
+
+permitting copying and reproduction so long as the original work is given
+
+appropriate credit. Contents may not be used for commercial purposes, or
+
+adapted, remixed, transformed or built upon. (https://creativecommons.org/
+
+licenses/by-nc-nd/4.0/)
+Georg Thieme Verlag KG, Rüdigerstraße 14, 70469 Stuttgart,
+Germany
+
+Research Article
+
+THIEME
+1120
+
+Article published online: 2021-12-22
+
+Background and Signiﬁcance
+
+Over 96% of U.S. hospitals utilize an electronic health record
+(EHR).1 EHRs have undoubtedly improved the accessibility
+and searchability of patient records.2 However, most EHRs
+still replicate the structure of paper charts, with information
+siloed into hundreds of separate tabs and notes.2–4 Despite
+growing medical complexity, increasing medical error,5 and
+distribution of care across multiple teams or clinicians
+resulting in frequent transitions of care,5–7 the structure of
+EHRs often fails to support clinician needs, particularly when
+working in teams.
+The result is a clunky and often frustrating experience for
+clinicians, associated with increasing time in the electronic
+chart,
+confusion,
+preventable
+errors,
+and
+clinician
+burnout.8–21 Clinicians must cope with EHRs that are difﬁ-
+cult to navigate and contain large amounts of duplicated,
+scattered, conﬂicting, and erroneous information.15 Further,
+many EHRs are poorly matched to clinicians’ operational
+models for care delivery.22 Static documentation within
+EHRs often lags behind care plans that evolve throughout
+the day. Despite the collaborative nature of modern inpatient
+and outpatient medicine, EHRs seldom include a centralized
+workspace. Instead, documentation and task management
+workﬂows are conﬁned to separate note and communication
+interfaces for each clinician, team, or discipline.23
+
+Enterprises with large workforces provide teams with
+digital project management tools for coordinating processes
+across individuals.24 Since EHRs do not provide these collabo-
+rative workspaces, clinicians instead rely on paper-based
+workarounds—index cards, rounding or handoff list printouts,
+and sticky notes.3,25–27Tobettersupportclinicians,healthcare
+similarly needs a workﬂow-oriented resource for organizing
+the complexities of patient care—arguably one of the most
+intricate and high-stakes processes of any industry.28
+
+Objective
+
+With improving clinician workﬂows as our priority, we
+initially planned to create a digital handoff tool to replace
+
+printed documents. However, user inquiries revealed that
+shift-to-shift handoff was only one of many workﬂows
+needing better support. Other identiﬁed vulnerabilities in-
+cluded: effective visualizations of laboratory and other
+structured data, collaborative task management, and tran-
+sitions of care both within a team (e.g., night coverage) and
+across teams (e.g., intensive care unit to ward).29–31 Learning
+from prior examples of institutional systems designed to
+improve
+clinicians’
+interactions
+with
+EHR
+functionali-
+ties,32–37 we recognized opportunities to leverage recent
+advances—mobile technology, facile web application inter-
+faces, and data interoperability38—in the creation of a home-
+grown
+EHR-adjunct
+that
+provides
+a
+modern
+digital
+experience.
+We therefore broadened our scope, aiming to develop a
+comprehensive digital workﬂow application that would
+provide quick access to real-time clinical data and a team-
+based care planning workspace that would support handoff,
+task-management, and other processes. Key requirements
+included full mobile functionality,39 collaborative access
+within and between interdisciplinary teams, and the ability
+to customize views of data for different user workﬂows.
+Rather than the static snapshot captured on list printouts,
+which become outdated within hours of printing,40 we
+wanted our tool to be a dynamic, live view of the patient’s
+state. By designing an application to support evolving team
+workﬂows, we hoped to increase transparency between
+clinicians, improve communication, and reduce errors.27,41
+
+This article describes our process, from ideation and devel-
+opment through implementation, and the research ﬁndings
+of objective use, efﬁcacy, and efﬁciency, along with qualita-
+tive assessments of user experiences.
+
+Methods
+
+Setting
+We developed our application at Penn Medicine, a quaterna-
+ry academic health system, as a collaboration between our
+Ofﬁce of the Chief Medical Information Ofﬁcer, Information
+Systems Department, and Center for Healthcare Innovation.
+
+health care institution’s information systems. Implementation and iterative improve-
+ments spanned January to July 2016. We assessed acceptance via usage metrics, user
+observations, time–motion studies, and user surveys.
+Results
+By July 2016, Carelign was implemented on 152 of 169 total inpatient
+services across three hospitals stafﬁng 1,616 hospital beds. Acceptance was near-
+immediate: in July 2016, 3,275 average unique weekly users generated 26,981 average
+weekly access sessions; these metrics remained steady over the following 4 years. In
+2016 and 2018 surveys, users positively rated Carelign’s workﬂow integration, support
+of clinical activities, and overall impact on work life.
+Conclusion
+User-focused design, multidisciplinary development teams, and rapid
+iteration enabled creation, adoption, and sustained use of a patient-centered digital
+workﬂow tool that supports diverse users’ and teams’ evolving care plan organization
+needs.
+
+1121
+
+It was implemented at our three downtown Philadelphia
+hospitals. In ﬁscal year 2016, clinicians at these three hos-
+pitals cared for 71,633 adult admissions across 1,659 li-
+censed
+beds.
+When
+implemented
+(2016),
+Sunrise
+(Allscripts Healthcare Solutions Inc., Chicago, Illinois, United
+States) was the inpatient EHR, and Epic (Epic Systems
+Corporation, Verona, Wisconsin, United States) was the
+outpatient EHR. Within a year of implementation, we tran-
+sitioned to using Epic as the integrated inpatient and outpa-
+tient EHR.
+
+Development Methodology
+Our design process involved clinicians from multiple special-
+ties and clinical application engineers from our Information
+Services Department. We employed user-centered design
+and Agile development methodologies,42 eschewing pre-
+existing design assumptions to work instead from user input
+to optimize utility, usability, and satisfaction.43 We incorpo-
+rated team science and handoff best practices.44,45
+
+We ﬁrst created mockups of user interfaces with focus
+groups from different disciplines and training levels (9 physi-
+cians, 2 medical students, 1 nurse, 1 social worker, and 1 user
+experience designer). Initial front-end prototypes were ad-
+justed iteratively using a staging database to input testing
+data. Once the interface achieved high levels of intuitiveness
+and usability based on qualitative feedback from further
+focus group sessions with >60 clinicians, we built the back-
+end database and the application services layer that connects
+the two. Because our application would introduce modiﬁed
+or novel workﬂows, we focused on initially releasing a
+clinically suitable minimal viable product. This approach
+maximized our ability to gather early user feedback to guide
+the evolution of future versions and feature enhancements.43
+
+Development of these iterative improvements continued
+well past implementation.
+
+Application Description
+We designed our application, Carelign, to have two main
+feature sets: an integrated clinical data visualization dash-
+board and a collaborative care planning workspace that
+supports task management and transitions in care. It was
+built as a responsive web application with an Angular front-
+end user interface and a Microsoft SQL server cluster
+database. The user interface connects to its database and
+to our organization’s many other clinical information sys-
+tems using application program interfaces, HL7 messages,
+direct database queries, and web services (►Supplementary
+Appendix S1, available in the online version).38 Our decision
+to build the application alongside (rather than within) the
+main EHR was largely motivated by our requirement of
+supporting a mobile, paperless handoff and rounding work-
+ﬂow. This was not possible within our EHR at the time
+(Allscripts) nor within the EHR our health system planned
+to implement shortly thereafter (Epic). Moreover, our team
+needed a platform that enabled rapid development with
+frequent iterations, which is often not feasible in a large,
+foundational application such as the EHR of a large health
+system.
+
+Interoperable Data Visualization
+We created Carelign as an interoperable, EHR-agnostic ap-
+plication. Prior to Carelign, our health system’s providers
+used multiple software interfaces, including a homegrown
+web portal, to access clinical information on a single patient.
+In Carelign, EHR-generated discrete data along with user-
+generated, semi-structured textual information are repre-
+sented in one mobile-optimized display, with elements that
+can be collapsed, tagged, reorganized, and otherwise manip-
+ulated for operational efﬁciency (►Fig. 1). By providing
+clinicians with access to this information in real time at
+the point of care, we aimed to obviate the need to print static
+rounding lists and transcribe data onto them. However, given
+the diverse preferences and workﬂows of different provider
+groups, we preserved the ability to generate patient list
+printouts.
+
+Dynamic, Collaborative Care Plan
+Carelign addresses the duplicative processes of writing and
+updating daily progress notes, rounding lists, handoffs, and
+discharge documentation, by providing a dynamic, problem-
+based care plan that can be applied to all four activities.
+Instead of boxes for free-text narrative information, Carelign
+utilizes semi-structured elements for user-generated prob-
+lems with their associated plan and task items. These ele-
+ments can be tagged and reorganized into different views to
+ﬁt different workﬂows (►Fig. 2). Active plan and task
+elements can be exported from the care plan into the
+progress note. Older information or completed tasks can be
+archived for future reference. This enables streamlining the
+handoff and daily progress note without having to delete and
+lose this information.
+Additionally, plan elements can be tagged in other ways:
+as anticipatory guidance for covering providers, as related to
+discharge for interdisciplinary planning, or simply as “im-
+portant.” They can also be reorganized into different views at
+the patient level for speciﬁc workﬂows, including rounding,
+cross-covering, and discharge planning. Carelign provides
+extensive functionality for list-based management of patient
+and team tasks with views supporting daily task manage-
+ment of the primary team, the cross-covering team, consult-
+ing teams, and discharge planners.
+
+Additional Features and Speciﬁcations
+
+Mobile-Friendly Web Application
+To best support clinical workﬂows, users require access to
+the application from any platform and location—hospital
+computers, workstations on wheels, personal laptops, smart-
+phones, or tablets. We therefore developed Carelign as a
+responsive web application (can be accessed via any web
+browser) rather than a native application (must be down-
+loaded from mobile application stores). The responsive web
+format allowed us to keep the development process device-
+and operating system-agnostic. It also enabled us to push
+feature updates without relying on users to download them.
+This was important given our frequent version updates
+incorporating user feedback.
+
+1122
+
+Security and Authentication
+Carelign’s program architecture complies with health sys-
+tem, state, and national security statutes regardless of plat-
+form used or site of access. To access Carelign, authorized
+users must use existing institutional login credentials and
+permissions on devices connected to our health system’s
+secure network—on-site via the hospitals’ Wi-Fi network or
+remotely via a virtual private network. Carelign also times
+out after a period of user inactivity. Finally, no patient data
+are cached or saved locally on user devices to safeguard
+against data breaches resulting from lost, stolen, or shared
+devices.
+
+Implementation
+We developed Carelign in two phases. We ﬁrst built the data
+integration portion of the application with a read-only view
+of the EHR’s handoff documents in 2014, and later replaced
+that prior handoff with Carelign’s collaborative care plan and
+task management platform in 2015. After prototype revi-
+sions based on initial user feedback, we implemented the full
+version over 6 months in 2016.
+The implementation team consisted of two to three part-
+time clinical members for training and support and two to
+four part-time developers for building new features, address-
+ing bugs and issues, and technical support. We identiﬁed
+superusers and clinical users, transferred data from the
+previous handoff to Carelign, and assisted with workﬂow
+
+optimization. Users were trained via informational ﬂyers and
+videos sent prior to transitioning as well as shoulder-to-
+shoulder support from Carelign team members on the day of
+transition.
+To provide ongoing user support, our user-interface de-
+sign included a prominent in-application feedback button
+that enabled users to submit issue reports, provide feedback,
+or request new features. This generated an email with user
+comments, contact information, and supplemental metadata
+sent to development and clinical implementation team
+members. After implementation, we transitioned applica-
+tion support to our health system’s general information
+services help desk, with supplementary email feedback
+also sent to Carelign clinical champions.
+
+Usage Measurements and User Perceptions
+Automated in-application audit logs tracked usage data,
+generating anonymized weekly and monthly reports on
+user access and intra-application actions.46 Using time–
+motion observations during our initial phase of implemen-
+tation (2014), we measured the impact of Carelign on team
+behavior during rounds as compared with teams not yet
+using the application. We observed how often real-time data
+were accessed when discussing patients. Additionally, using
+stopwatches, we measured login times for Carelign as com-
+pared with the EHR on different devices including smart-
+phones (Carelign only), desktops, and mobile workstations.
+
+Fig. 1 Optimized for mobile and desktop viewing. Carelign adapts to device form-factor while maintaining intuitive displays of data and care
+plan information.
+
+1123
+
+We conducted two user surveys in September 2016 and
+April 2018 to understand users’ perceptions of the application
+and its impact on clinical care (►Supplementary Appendix S2,
+available in the online version). These surveys were conducted
+using Qualtrics software (Qualtrics, Provo, Utah) and were each
+open to responses for 4 weeks. The ﬁrst was distributed via
+institutional email to all hospital clinical staff, while the second
+was shared with users via a survey link on the application login
+page. This project was reviewed and categorized as quality
+improvement by the University of Pennsylvania’s Institutional
+Review Board and was therefore exempt from approval.
+
+Results
+
+Adoption and Usage
+By July 2016, Carelign was fully implemented as the health
+system’s standardized handoff and digital workﬂow tool on
+
+152 of 169 possible primary inpatient services at the three
+hospitals. Nonadopting services either preferred to use a
+formatted word document or very rarely had inpatients. By
+July 2020, seven of the remaining services independently
+adopted the tool. Since then, clinician adoption has contin-
+ued to grow, with a 41% increase in average weekly login
+sessions by 2020 (►Table 1 and ►Fig. 3). Adoption was noted
+both among users who directly relied on the application for
+their daily workﬂows (e.g., physician trainees and advanced
+practice providers [APPs]) and those for whom use of the
+application was supplemental (e.g., attending physicians,
+nurses, pharmacists, etc.). In July 2020, 52% of 3,738 unique
+users were nurses, 11% were APPs, 20% were physician
+trainees, 6% were attending physicians, and 11% were other
+clinical users (e.g., pharmacists, therapists, and social work-
+ers). Similar ratios were previously observed in 2016
+(►Table 1 and ►Fig. 3). In contrast, mode of access—via
+
+Fig. 2 The Carelign care plan. Carelign utilizes modular, semi-structured elements for user-generated problems and the plan elements and tasks
+contained within them.
+
+1124
+
+the EHR, desktop browser, or mobile device—shifted be-
+tween 2016 and 2020, with users increasingly accessing
+the application from within the EHR (►Table 1 and ►Fig. 4).
+Through the in-application feedback mechanism, users
+generated over 1,150 feedback communications during the
+ﬁrst 10 months after implementation. Users described this
+feature as an easy avenue for addressing concerns that
+helped
+them
+feel
+supported
+during
+and
+after
+implementation.
+
+Functions and Efﬁciencies
+
+Functions Used and Frequencies
+As evidenced by observations of teams rounding and by in-
+application usage patterns, clinicians incorporated real-time
+clinical data access via Carelign into their clinical workﬂows.
+Users accessed objective clinical data (e.g., vitals, laborato-
+ries, medications, imaging studies, and encounters) an aver-
+age of 116,223 times per week (July 2016). The most
+frequently viewed data sections were vitals and laboratory
+results. In-application audit logs demonstrated that users
+frequently interacted with the problem lists by adding,
+changing, deleting, reordering, and viewing problems. Task
+items within problems were viewed, edited, created, com-
+pleted, or deleted on average 302,678 times per week
+(July 2016) (►Table 1 and ►Fig. 5). Carelign imports care
+
+team assignments and contact information, facilitating com-
+munication between clinicians. Weekly average counts of
+instances of contact information viewed or calls generated
+from within Carelign were 8,648 in July 2016 (►Table 1
+and ►Fig. 5).
+
+Efﬁciencies
+During the 2014 initial implementation, time–motion obser-
+vations of teams using Carelign (n ¼ 14) versus those not yet
+using it (n ¼ 10) demonstrated that teams using Carelign on
+rounds accessed real-time data on average 50% more often
+(168 vs. 79 times, respectively, with 12.0 vs. 7.9 times per
+team per rounds, respectively). Although they searched for
+data more often, Carelign users spent 25% less overall time
+logging into devices (41.11 total minutes/2.94 minutes per
+rounds vs. 39.55 total minutes/3.9 minutes per rounds, re-
+spectively). This was supported by tests showing that logging
+into and accessing Carelign on a mobile device was 22 times
+faster than logging into the EHR on a desktop computer (on
+average, 2.4 and 52.8 seconds, respectively, across n ¼ 39
+observations).
+
+Acceptance and Satisfaction
+In September 2016, 760 Carelign users from multiple dis-
+ciplines and specialties replied to our user experience survey
+(►Table 2). Their responses indicated that Carelign was used
+
+Table 1 Carelign usage data
+
+Abbreviation: EHR, electronic health record.
+Note: Physician trainees had the most average login weekly sessions (16,818), followed by nurses and advanced practice providers (combined totals
+14,617). These numbers increased from 2016 to 2020 (►Fig. 3).
+
+1125
+
+in various clinical settings and during various clinical activi-
+ties. Physician trainees, APPs, and nurses all reported using it
+to support transitions in care more than 50% of the time;
+notably, 97% of ﬁrst-year residents used it at these times.
+When asked how long it took to learn to use the application
+well enough to accomplish typical daily work, 28% of users
+took less than 1 day, 41% took 2 to 3 days, 21% took 4 to 7 days,
+
+and 10% took longer. Most respondents rated Carelign as
+having a favorable impact on clinical care (►Fig. 6).
+In April 2018, we conducted a second survey of Carelign
+users with three questions about efﬁciency and efﬁcacy. Of
+226 respondents, 81% said it would take them more time to
+perform their clinical duties without Carelign, 75% felt that it
+had helped them prevent a medical error, and 80% felt that
+
+Fig. 3 Usage over time. Panel (A) shows total unique weekly users over time and panel (B) shows total unique weekly sessions over time, both
+broken down by user discipline. Note that users and sessions decreased each year in December, likely due to reduced elective admissions around
+United States holidays. Likewise, users and sessions decreased from March to May 2020 given efforts to decrease nonessential inpatient
+admissions during the COVID-19 pandemic. Note: Due to an error in data collection, login sessions for the following date range were omitted from
+panel (B): 11/19/2017–1/20/2018.
+
+1126
+
+they would like to have it available as a tool if they moved to a
+different institution.
+
+Discussion
+
+In health care’s rapidly changing and increasingly complex
+environment, clinicians need health information technology
+solutions designed to facilitate their workﬂows and care-deliv-
+ery tasks in an accessible, team-based, and intuitive fashion.36
+
+Such a tool should emulate intuitive dashboards, with displays
+of current data coexisting with the most up-to-date plans. It
+should support transitions in care and provide a uniform view
+for collaboration amongst multidisciplinary providers while
+remaining ﬂexible enough to support their differing workﬂows.
+Finally, it should be easily accessible across platforms and
+settings: from within any EHR or other clinical information
+system, from computer workstations, from mobile devices, and
+from home while on call.25
+
+To address this need, we built and implemented a novel
+clinical workﬂow application to improve data visualization
+and facilitate clinical workﬂow. Following a user-centered
+design strategy, our data demonstrate rapid adoption and
+sustained usage following implementation within a large
+academic hospital system. Users report they were able to
+quickly learn to use the application, that it increased
+the safety and quality of their handoffs, and that it improved
+their
+work experience. Having mobile access to data
+increased the frequency with which teams accessed data
+on rounds, while requiring less login time. Our evaluation
+ﬁnds that intuitively designed mobile tools—built with best
+principles of Agile methodology and a user-centered, prob-
+lem-focused approach—can be successfully incorporated
+into clinicians’ daily workﬂow with rapid adoption and,
+importantly, user satisfaction.39
+
+While our initial aim was to create a tool that supported
+transitions of care, our contextual inquiry led us to more
+broadly redesign and rethink communication workﬂows. We
+therefore shifted our objective to providing a work- and
+think-space that enables teams to cohesively create and
+manage care plans in ways similar to project management
+software. Carelign now serves as a collaborative and unifying
+platform with shared information and task lists for all
+clinicians caring for the patient, beyond just the primary
+team. Its value is supported by the over 285,000 task man-
+agement actions performed weekly within Carelign in 2020.
+Use of Carelign increased over the course of our study, even
+after the health system’s implementation of a system-wide
+integrated EHR. Clinical groups quickly began to envision
+new uses and even structure quality improvement projects
+around the application.47,48
+
+Most modern EHRs fail to provide functionalities for
+collaborative, continuous plan updates and task manage-
+ment. Consequently, much of clinicians’ minute-to-minute
+notations are performed outside of the EHR, often lost on
+paper.3,25 Rather than mirroring pre-existing static paper
+workﬂows in a digital format, our challenge was to create a
+system that leveraged the full capabilities of digital tech-
+nology and mobile devices. We attempted to match physi-
+cians’ mental models more closely by designing Carelign to
+support updating the care plan more easily and frequently
+than is currently practical with daily progress notes. Doing
+so then helps the care plan record keep pace with patients’
+evolving conditions. This centralized care plan information
+can then serve multiple purposes across intersecting
+communication and documentation workﬂows. It can
+populate rounding lists and handoffs, generate progress
+notes, and ultimately become a draft for the discharge
+summary.
+
+Fig. 4
+Access method over time. Most users access Carelign by launching it from within the electronic health record.
+
+1127
+
+We did encounter challenges to implementing our appli-
+cation, including availability of mobile devices for users and
+mobile device battery depletion. While Wi-Fi and cellular
+network coverage within clinical areas was adequate, the use
+of Carelign on mobile devices while en route to see patients
+revealed uneven coverage in nonclinical areas (e.g., hallways,
+staircases, and elevators). This recognition prompted efforts
+
+to improve network coverage to support such ambulatory
+use. Replacing paper lists with a mobile tool in some cases led
+to a workﬂow mismatch when users needed to reference
+their lists on their mobile device during a simultaneous
+phone call. This was not an issue when using Carelign with
+a desktop workstation or workstation on wheels. However,
+when relying only on a mobile device, this occasionally
+
+Fig. 5
+Communication and task management. Panel (A) shows the number of times per week that users used Carelign to view care team
+information or generate phone calls from within Carelign. This decreased since the implementation of EpicCare Inpatient in 2017 but has
+remained steady since. Panel (B) shows the number of times per week that users added or edited tasks within Carelign. These numbers have
+remained steady since implementation (except for the months corresponding to the ﬁrst Spring 2020 surge of the COVID-19 pandemic). Note:
+Due to errors in data collection, login sessions for the following date range were omitted from panel (A) (05/24/2016–06/04/2016, 09/10/2017–11/04/
+2017, 12/17/2017–12/23/2017, and 01/13/2019–04/13/2019) and panel (B) (05/24/2016–06/04/2016, 12/17/2017–12/23/2017, and 01/13/2019–
+04/13/2019).
+
+1128
+
+required a workaround such as using a landline or head-
+phones for the phone call, or alternatively keeping a list
+printout as a backup reference. Indeed, while some services
+have eliminated printed lists from their workﬂow (e.g., most
+medicine resident services), others continue to carry list
+printouts that they rely on to varying degrees (e.g., attending,
+APP, and surgical resident services).
+Finally, the design and evolution of our application
+beneﬁted greatly from constant user feedback. During pilot
+phases, application feedback was provided via an external
+electronic survey. This was poorly utilized and posed
+
+Table 2 Responses to 2016 user experience survey
+
+(Continued)
+
+Note: Out of 760 total survey respondents, the number of respondents
+to each individual question is listed.
+aReﬂects the number of respondents selecting each answer option.
+bDenotes the percent of total respondents selecting each option. In the
+case of “select all that apply” questions, the aggregate number of
+responses may exceed the number of respondents.
+
+1129
+
+challenges to timely responses for our development team.
+We therefore transitioned to an in-application feedback
+mechanism. This proved a more streamlined method for
+users to contact our team and was highly utilized. Key factors
+for success of this feedback mechanism were: (1) easy access
+for users within the application, (2) inclusion of user contact
+information and application metadata, (3) timely responses
+to user issues and suggestions (within 24 hours if not sooner
+for urgent issues), and (4) incorporation of ideas into the
+application when appropriate.
+
+Conclusion
+
+Employing user-centered design and Agile development
+methodologies, we created an application to facilitate clini-
+cal users’ evolving needs and workﬂows. We demonstrate
+that an EHR-connected data visualization and handoff tool
+that supports team-based care planning can be readily
+adopted and incorporated into clinical processes. Clinicians
+reported that accessing integrated patient information using
+Carelign led to improvements in their workﬂows and expe-
+rience. An intuitive interface enabled implementation with
+minimal support and training—a departure from many
+health information technology implementations. Continued
+studies of EHR-connected applications are needed to en-
+hance clinician workﬂow and improve interactions and
+experience with EHRs.
+
+Clinical Relevance Statement
+
+Clinical teams require adequate support for their care coor-
+dination and organization workﬂows. Focusing on user
+needs, we designed an EHR-connected data visualization
+and handoff tool to provide an integrated work- and think-
+space for providers. Ongoing use and activity in the applica-
+tion highlight how Carelign offers necessary and desired
+support for clinical workﬂows in ways otherwise unmet
+despite a fully integrated EHR.
+
+Multiple Choice Questions
+
+1. Your hospital identiﬁes a safety event in which an immu-
+nocompromised patient with recent history of resistant E.
+coli bacteremia was not started on sufﬁciently broad
+antibiotics when she developed a fever overnight. Appro-
+priate antibiotics were not instituted until the error was
+identiﬁed 18 hours later. During root cause analysis, your
+team identiﬁes that the patient’s progress notes made
+clear that the patient should be started on vancomycin,
+imipenem, and amikacin in the setting of a new fever;
+however, the written handoff did not include this infor-
+mation. Which of the following systems would be most
+likely to prevent this error?
+a. Instituting a policy in which all febrile, immunocom-
+promised patients are immediately transferred to the
+intensive care unit.
+b. An easily accessible documentation template for fever
+in immunocompromised patients.
+c. Educating providers about the importance of situation-
+al awareness in the written handoff.
+d. Populating the progress note and written handoff from
+a single source of truth.
+
+Correct Answer: The correct answer is option d. In
+addition to writing and updating admission notes, prog-
+ress notes, and discharge summaries, front line clinicians
+(FLCs) must also update plans of care and problem lists in
+their handoffs. Often, these documents do not communi-
+cate with each other, forcing FLCs to maintain each
+document independently. As length of stay for an individ-
+ual patient and team census/workload increases, progress
+notes and handoffs are known to drift away from each
+other in content and decrease in overall quality.49 In the
+absence of links from information in the EHR to elements
+of the written handoff, inconsistencies are known to occur
+for the list of problems, code status, medications, and
+allergies.26,40,50
+In
+this
+scenario,
+the
+key
+piece
+of
+
+Fig. 6 User perceptions of Carelign on 2016 Survey. Out of 760 user respondents, 598 responded to statements assessing their opinions on the
+impact of Carelign on different aspects of their workﬂow efﬁciency, effectiveness, and satisfaction. Users rated their agreement with the seven
+statements on a 5-point Likert scale.
+
+1130
+
+information that was lost between documents (a contin-
+gency plan in case this patient developed a fever) is
+unlikely to be captured discretely in the EHR. Thus, a
+uniﬁed documentation system that populates both the
+progress note and the written handoff from a single
+source of truth would most likely have avoided this error
+since the FLC would only have had to make an update in
+one location instead of two.
+Instituting a policy requiring transfer of febrile, immu-
+nocompromised patients to the intensive care unit would
+have introduced another handoff and required substantial
+time to accomplish. The intensive care unit clinicians
+would still have needed to have read the most recent
+progress note in addition to any transfer notes or the
+handoff to have caught this mistake, which may not be
+part of their workﬂow. Thus, this approach is not likely to
+prevent this error in addition to leading to many poten-
+tially unnecessary intensive care unit admissions.
+While a documentation template for fever in immuno-
+compromised patients can provide guidance to FLCs to
+include explicit fever plans, the problem in this case is not
+that the patient had no fever plan. Rather, this patient’s
+individualized fever plan was not copied over from the
+progress note to the handoff. Thus, a documentation
+template alone would probably not have prevented this
+error. While it is certainly important to educate providers
+about the importance of situational awareness in the
+written handoff, high census, individual patient complex-
+ity, and increased length of stay make it increasingly
+difﬁcult for FLCs to keep all inpatient documents updated
+and high quality. Thus, education alone is unlikely to
+prevent the error seen in this patient without technologi-
+cal solutions that streamline workﬂow and decrease the
+documentation burden.50
+
+2. A health care organization aims to increase the number of
+problems added to the problem list in the inpatient
+setting. Which of the following inpatient documentation
+strategies is most likely to increase frustration with the
+EHR and decreased clinician satisfaction?
+a. Force clinicians to enter each problem on the problem
+list before being able to document the plan related to
+that problem.
+b. Institute educational sessions for all clinicians empha-
+sizing the importance of the problem list for quality
+improvement, research, and billing.
+c. Audit inpatient progress notes weekly and contact
+clinicians about possible missed problems that should
+be added to the problem list.
+d. Audit inpatient progress notes and problem lists and let
+clinicians know where they rank in terms of problem
+list completeness compared with their peers.
+
+Correct Answer: The correct answer is option a. In addi-
+tion to simplifying administrative efforts, quality im-
+provement,
+and
+billing,
+accurate
+problem
+list
+documentation improves patient outcomes.51 However,
+because problem list entry is often not a part of the
+
+standard workﬂow of front-line clinicians, problem list
+completeness and accuracy are often poor. Forcing clini-
+cians to enter a problem on the problem list before being
+able to document a plan for that problem, mandatory
+problem-oriented charting may in fact be the most effec-
+tive method for achieving a more complete problem list52;
+however, this forced departure from workﬂow to com-
+plete a task that does not feedback to an improvement in
+clinical workﬂow is certain to lead to increase frustration
+and burnout. Clinical informaticists should be aware that
+such rigid structures and forcing functions may aggravate
+clinicians due to limited expressivity.53,54
+
+Auditing inpatient progress notes to contact clinicians
+about possible missed problems and gap reporting
+improves problem list usage but may have less impact.
+Auditing inpatient progress notes to notify clinicians
+where they rank against their peers would be similarly
+resource-intensive though the benchmarking between
+colleagues may drive internal desires to improve.
+Educational sessions may help produce an organizational
+culture that expects problem list completeness and would
+most certainly be better tolerated than mandatory prob-
+lem list completion.
+
+3. A research team is working to understand the causes of
+medical errors overnight and wants to understand the
+relationship between contingency plans made by the
+daytime clinical team and overnight clinical decisions.
+In which inpatient document should overnight contin-
+gency plans be found to minimize communication errors?
+a. Progress note.
+b. Problem list.
+c. To-do list.
+d. Handoff.
+
+Correct Answer: Option d is the correct answer. Front-
+line clinicians in the inpatient setting are responsible for
+multiple clinical documents for each admitted patient.
+These documents contain information with different
+goals and audiences. Of the choices listed, the primary
+goal of the handoff for each patient is to communicate
+between daytime and overnight/weekend providers so
+that the oncoming provider can accomplish the necessary
+tasks and make appropriate clinical decisions as problems
+arise. The IPASS method for handoffs has shown decreased
+medical errors associated with communication between
+providers and includes an assessment of illness severity,
+patient summary, action items, situational awareness/
+contingency planning, and synthesis by the receiver.55
+
+Thus, the handoff would be the most appropriate place
+to ﬁnd information on contingency plans.
+The intended audience for the progress note is wider
+and includes not only other clinicians caring for the
+patient but also billers and regulatory agencies, leading
+to additional included information. Thus, while the prog-
+ress note often contains much of the same information as
+a handoff, it is often more difﬁcult to ﬁnd key information
+on task management and situational awareness that is of
+
+1131
+
+extra importance to a cross-covering provider. The key
+function of the problem list is to allow any provider to
+immediately make medical decisions in context for a
+particular patient.56 In addition, it provides structured
+data that can drive clinical decision support, quality
+improvement initiatives, research, and billing. While it
+is often incorporated into a handoff and plans about each
+problem may include contingency plans, the problem list
+itself generally does not contain a dedicated section for
+contingency planning where cross-covering providers can
+look. The to-do list is also often incorporated into a
+handoff and contains discrete action items that should
+be completed in a timely manner. It is not intended to help
+cross-covering providers make medical decisions in case
+of a change in clinical status.
+
+4. A residency program is trying to increase the workﬂow of
+bringing residents “back to the bedside” to improve their
+teaching environment, their clinical experience, and qual-
+ity of care. The program leadership has asked medical
+teams to round in the room with the patient, discuss their
+plan with participation from the patient, and perform
+teaching there as well. Despite multiple efforts to imple-
+ment this new workﬂow, they have not had good success
+with adoption.
+Which of the following factors has had the most nega-
+tive impact on this effort, leading to poor adoption of the
+initiative?
+a. The residents are not interested in teaching; they are
+too busy because their patient loads are increasing.
+b. There are no computers in the hospital rooms, therefore
+the residents feel they are unable to get enough work
+done if they spend their whole morning rounding
+without access to the EHR.
+c. The patients have stated they prefer not to be involved
+in the conversation as it increases their stress levels.
+d. Program leadership has not spent enough time teach-
+ing the residents how to do bedside rounds.
+
+Correct Answer: Option b is the correct answer. As we
+have learned in recent studies,12 clinicians are spending
+more and more time in front of a computer to be able to
+complete the required work to care for patients. Time–
+motion studies have shown that clinicians are spending
+approximately 50% of their time in front of the EHR or on
+other tasks at a desk and approximately 27% on direct
+patient care. In an environment where clinician work is so
+heavily dependent on access to the EHR, there is a growing
+need for mobile access to the EHR or at the very least
+access to the EHR at the bedside if we want to encourage
+bringing clinicians back to the bedside.
+
+Application conception, design, or development: Soegaard,
+Urbani, Fala, Patel, Leri, Rosin, Hanson, and Airan-Javia.
+Application implementation: Soegaard, Bass, Urbani, Patel,
+Leri, and Airan-Javia. Acquisition of data: Urbani, Patel, and
+Airan-Javia. Analysis or interpretation of data: Soegaard,
+Urbani, Koppel, and Airan-Javia. Drafting of manuscript:
+
+Soegaard, Steinkamp, Denson, Koppel, and Airan-Javia.
+Critical revision of the manuscript for important intellectu-
+al content: Soegaard, Bass, Urbani, Fala, Patel, Leri, Stein-
+kamp, Denson, Rosin, Adusumalli, Hanson, Koppel, and
+Airan-Javia. Executive, administrative, technical, or mate-
+rial support: Urbani, Fala, Patel, Rosin, and Hanson. Study
+supervision: Airan-Javia.
+
+Protection of Human and Animal Subjects
+No human or animal subjects were directly involved in
+this project. This project was reviewed and categorized as
+quality improvement by the University of Pennsylvania
+Institutional Review Board and was therefore exempt
+from approval.
+
+Conﬂict of Interest
+The
+application
+described
+in
+this
+manuscript
+was
+designed, developed, and implemented by an internal
+group of clinicians and clinical application developers at
+Penn Medicine. There were no outside funds used to
+design, build, implement, or study the application as
+described in this manuscript. In 2018—after the design,
+development, and implementation of this application
+described in the manuscript—the project leader and the
+last author of the paper, Dr. Subha Airan-Javia, and the
+Penn Center for Innovation launched a start-up company
+to bring the application into other health systems (TrekIT
+Health Inc. d/b/a CareAlign). Both Dr. Airan-Javia and the
+Board of Trustees of the University of Pennsylvania own
+equity in the company and receive royalty payments on an
+annual basis from sales of the company. Dr. Airan-Javia is a
+full-time salaried employee and CEO of the company, as
+well as a member of the Board of Directors. No other
+authors have any involvement in this company, ﬁnancial
+or otherwise. The other authors declare that they have no
+conﬂicts of interest related to this work. Dr. Airan-Javia
+reports no salary from TrekIT Health Inc. during the
+conduct of the study; but as stated above, has received
+salary from TrekIT Health Inc. outside the submitted work.
