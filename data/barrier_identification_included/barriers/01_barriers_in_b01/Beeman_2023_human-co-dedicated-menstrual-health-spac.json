@@ -1,0 +1,105 @@
+{
+  "file_name": "Beeman_2023_human-co-dedicated-menstrual-health-spac.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "COVID-19 restrictions on gatherings prevented the team from running planned community events that would have facilitated participatory co-design and education activities.",
+      "justification": "This limitation directly hindered the designers' ability to facilitate user involvement and iterate on interventions that relied on group engagement (e.g., the monthly storytelling event), reducing opportunities for feedback and co-creation.",
+      "reference_excerpt": "Ultimately, we were not able to take this idea forward due to emerging COVID-19 restrictions limiting community gatherings at that time.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Withdrawal of humanitarian organizations and disrupted NGO pad distribution created an unstable supply chain for sanitary products within the settlement.",
+      "justification": "This external supply disruption constrained designers' ability to evaluate and specify feasible, sustainable product solutions (e.g., LaunchPad business model) and to understand the context of use for menstrual products.",
+      "reference_excerpt": "The supply chain of sanitary pads into the settlement has been severely disrupted with the withdrawal of humanitarian organizations due to the COVID-19 pandemic.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Securing construction materials and formal approval for land from government and humanitarian actors could take six months or longer, delaying larger-scale construction ideas.",
+      "justification": "Lengthy approval and procurement processes by external stakeholders impeded designers' ability to produce and pilot larger infrastructure solutions (the Cocoon Maxi), affecting feasibility assessments and iteration timelines.",
+      "reference_excerpt": "However, in speaking with community stakeholders, we learned that securing construction materials and approval for the land from the government and humanitarian actors could take six months or longer.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Heavy rains and poor road quality delayed material delivery and construction work during the pilot.",
+      "justification": "Environmental and logistical constraints slowed implementation and prototyping timelines, directly impeding designers' ability to produce design solutions and iterate within the planned schedule.",
+      "reference_excerpt": "Heavy rains in the settlement delayed work, as the settlement’s roads are of poor quality, and vehicles run the risk of getting stuck when they flood. This led to a delay in material delivery.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Logistical and financial challenges prevented installing an incinerator at every Mini site despite user preference for on-site disposal.",
+      "justification": "Resource and cost constraints limited designers' ability to address a critical user requirement (at-source disposal), thereby constraining the holistic experience and preventing full alignment of the solution with user needs.",
+      "reference_excerpt": "Many participants requested an incinerator be attached to each Mini, though this posed logistical and financial challenges. Two incinerators were therefore constructed alongside one Mini structure in either village to reduce travel time to existing incinerators.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Limited time and resources produced a short three-month pilot and constrained sample size and sampling methods.",
+      "justification": "Time and resource shortages hindered designers' ability to conduct longer-term evaluation and to gather representative data, restricting the evaluation workload and the capacity to assess sustained use and long-term outcomes.",
+      "reference_excerpt": "The Mini users recruited for this study were chosen from a convenience sample, and the sample size was limited by available resources and time constraints. ...pilot data collection was conducted only over a short three-month period...",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 7,
+      "actor": "interaction",
+      "barrier_type": "emotional",
+      "description": "Familiarity between Kuja Kuja interviewers (community members) and participants may have introduced social desirability bias into data collection.",
+      "justification": "This interactional trust/familiarity risked biasing responses and thus hindered the designers' ability to reliably manage user understanding and synthesize accurate insights for design decisions.",
+      "reference_excerpt": "Kuja Kuja staff, who are members of the Bidi Bidi community, recruited participants, conducted interviews, and transcribed answers into English. Though the familiarity between interviewers and participants likely provided a more comfortable atmosphere for interviews, we recognize that it may have also introduced social desirability bias into the study.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 8,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Many Mini users lacked basic menstrual health supplies, but providing these supplies was out of the financial scope of the study, limiting full functionality of the intervention.",
+      "justification": "Financial constraints prevented designers from supplying soap, buckets, and pads that users requested, limiting the designers' ability to deliver a holistic solution and to evaluate real-world usability and uptake under fully supported conditions.",
+      "reference_excerpt": "While providing MH supplies was out of the financial scope of this study, future projects may benefit from including these commodities.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 9,
+      "actor": "designer",
+      "barrier_type": "knowledge",
+      "description": "The settlement's existing infrastructure means findings may not generalize to more emergent humanitarian settings, limiting external applicability.",
+      "justification": "This contextual limitation constrained designers' ability to specify user requirements and plan scalable adaptations for different contexts, affecting future design and implementation work.",
+      "reference_excerpt": "Finally, the Bidi Bidi Settlement is well-established and has some pre-existing infrastructure; therefore, our study findings and implementation strategy may not be generalizable to other humanitarian settings that are more emergent.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 10,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Some co-design ideas required ongoing compensation and sensitization (e.g., for parents and husbands) to secure community participation, representing recurring resource needs.",
+      "justification": "The team's recognition that events would need continuous investment limited their ability to implement certain participatory activities, constraining facilitation of user involvement and long-term engagement.",
+      "reference_excerpt": "Furthermore, such an event would require an ongoing investment in both compensation for attendance and sensitization efforts with parents and husbands of participants to garner full community support.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 11,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Insufficient water access and drying spaces in the settlement undermined the viability of reusable-pad interventions.",
+      "justification": "Operational context limitations (lack of water/drying) prevented designers from advancing the LaunchPad prototype to pilot, constraining production of a sustainable solution and evaluation of that concept.",
+      "reference_excerpt": "Girls were concerned about maintaining their reusable pads without regular access to water and spaces for drying. Furthermore, because of fluctuations in pad distribution by NGOs, the supply and demand of pads remain inconsistent in the settlement, which could compromise the business model of uninterrupted sales.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

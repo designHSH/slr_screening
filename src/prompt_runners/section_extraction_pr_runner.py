@@ -3,6 +3,7 @@ import os
 from dotenv import load_dotenv
 from pathlib import Path
 from openai import OpenAI
+from datetime import datetime
 
 # Load environment variables (including OPENAI_API_KEY)
 load_dotenv()
@@ -41,6 +42,17 @@ class PromptRunner:
         return response.choices[0].message.content.strip()
 
 
+def log_processing_event(output_dir: Path, file_name: str, prompt_version: str, model: str):
+    """Append a processing event entry to a log file in the output directory."""
+    output_dir = Path(output_dir)
+    os.makedirs(output_dir, exist_ok=True)
+    log_path = output_dir / "processing_log.txt"
+    timestamp = datetime.now().isoformat()
+    entry = f"{timestamp}\tfile={file_name}\tprompt_version={prompt_version}\tmodel={model}\n"
+    with open(log_path, "a", encoding="utf-8") as log_file:
+        log_file.write(entry)
+
+
 def clean_paper_text(prompt_yaml: str, input_path: str, output_dir: str = None):
     """Clean a single paper text file and save output."""
     runner = PromptRunner(prompt_yaml)
@@ -59,6 +71,9 @@ def clean_paper_text(prompt_yaml: str, input_path: str, output_dir: str = None):
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(cleaned_text)
+
+    prompt_version = runner.prompt_cfg.get("revision") or runner.prompt_cfg.get("version", "unknown")
+    log_processing_event(output_path.parent, input_file.name, prompt_version, runner.model)
 
     print(f"✅ Cleaned text saved to: {output_path}")
     return cleaned_text
@@ -87,7 +102,7 @@ if __name__ == "__main__":
     python src/prompt_runner_cleaner.py
     """
     prompt_yaml = r"prompt\section_exctraction_pr.yaml"
-    input_folder = r"data\test_data\sorted_by_decision\included"
-    output_folder = r"data\test_data\included_section_extraction"
+    input_folder = r"data\barrier_identification_included\included_papers_in_batch\missing_files_batch_04"
+    output_folder = r"data\barrier_identification_included\cleaned_included_papers\04_incl_cleaned_b_04"
 
     batch_clean_papers(prompt_yaml, input_folder, output_folder)

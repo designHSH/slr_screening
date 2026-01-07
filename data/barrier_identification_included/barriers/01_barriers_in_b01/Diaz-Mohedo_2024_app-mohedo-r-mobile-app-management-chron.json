@@ -1,0 +1,24 @@
+{
+  "file_name": "Diaz-Mohedo_2024_app-mohedo-r-mobile-app-management-chron.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "team",
+      "barrier_type": "resource",
+      "description": "User testing revealed that some images took excessive time to identify, forcing the team to run an additional intermediate study to classify image difficulty levels, adding unplanned workload and time to the development process.",
+      "justification": "Requiring an extra empirical study constrained the team's ability to iteratively refine content and slowed integration of user feedback, hindering the workloads of integrate feedback & iteration, evaluate designs, and produce design solutions (content).",
+      "reference_excerpt": "it was observed that the user required an excessive amount of time to identify certain images, which made us consider the need to classify such content by difficulty levels and, therefore, to include an intermediate study in the development process, which is detailed below.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "team",
+      "barrier_type": "knowledge",
+      "description": "A subset of images could not be unambiguously assigned to a difficulty level using the chosen quantitative criteria, so researchers resorted to consensual, subjective allocation rather than objective methods.",
+      "justification": "Lack of objective classification metrics or tools limited the team's ability to specify clear content requirements and produce reproducible design decisions for the image set, hindering the workloads of specify user requirements and produce design solutions (content classification).",
+      "reference_excerpt": "A small number of the images generated and analyzed did not meet the two criteria of a certain level; that is, by LFJT Accuracy they belong to one level, and by mean RT they belong to the other. After conducting a subsequent study of the characteristics of the images of each level, the researchers decided, after some consensual rounds ... their ultimate allocation to their corresponding level.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

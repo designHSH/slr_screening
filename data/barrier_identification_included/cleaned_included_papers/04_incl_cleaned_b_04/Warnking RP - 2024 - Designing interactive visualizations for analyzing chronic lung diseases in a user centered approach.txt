@@ -1,0 +1,515 @@
+Research and Applications
+
+Designing interactive visualizations for analyzing chronic 
+lung diseases in a user-centered approach
+
+Rene Pascal Warnking 
+, MSc1,2,, Jan Scheer 
+, MSc2, Franziska Becker 
+, MSc3,  
+Fabian Siegel 
+, PhD1, Frederik Trinkmann 
+, PhD1,4, Till Nagel 
+, PhD2 
+
+1Department of Biomedical Informatics at the Center for Preventive Medicine and Digital Health, Medical Faculty Mannheim, Heidelberg 
+University, 68167 Mannheim, Germany, 2Human Data Interaction Lab, Mannheim University of Applied Sciences, 68163 Mannheim, Germany, 
+3Institute for Visualization and Interactive Systems (VIS), University of Stuttgart, 70569 Stuttgart, Germany, 4Department of Pneumology and 
+Critical Care Medicine, Thoraxklinik, University of Heidelberg, Translational Lung Research Center Heidelberg (TLRC), German Center for 
+Lung Research (DZL), 69126 Heidelberg, Germany
+Corresponding author: Rene Pascal Warnking, MSc, Department of Biomedical Informatics at the Center for Preventive Medicine and Digital Health, 
+Medical Faculty Mannheim, Heidelberg University, Theodor-Kutzer-Ufer 1-3, 68167 Mannheim, Germany (Rene.Warnking@medma.uni-heidelberg.de)
+
+Materials and methods
+
+This section describes both the design process and evaluation 
+of our developed visual analytics system that aims to improve 
+patient care and reduce the workload practitioners face in 
+clinical settings.
+
+System design
+We employed a user-centered design (UCD) approach29 to 
+understand and incorporate physicians’ needs into the design 
+process, as is common for problem-driven visualization 
+research that supports domain experts. During collaboration, 
+practitioners provide the necessary insight into domain prob­
+lems and workflows that visualization experts can translate 
+into appropriate designs for visualizations and interactions. 
+To start off, we performed a requirement analysis in a collab­
+orative workshop. Taking the workshop results as our foun­
+dation, we developed a prototype system that integrates 
+feedback from regular expert consultations.
+
+Expert workshop
+In collaboration with 5 pneumologists and 2 visualization 
+experts, we collected requirements and common tasks in a 
+2-hour workshop. The workshop was conducted remotely as 
+a video conference due to the Coronavirus pandemic and 
+
+used a whiteboard system to allow participants to collabo­
+rate. After introducing the interface, we employed a step-by- 
+step workflow. First, the domain experts were tasked with 
+filling out post-it notes that describe common tasks and rou­
+tinely asked questions that arise in their day-to-day working 
+activities. To aid participants during this process, we pro­
+vided 3 guiding questions:
+
+ What do you want to know? 
+ What do you want to do? 
+ What do you want to see? 
+
+Participants organized the resulting post-it notes into 3 cat­
+egories: patient care, research, or both (see Figure 2). Each 
+expert had to vote for the most relevant notes based on their 
+experience and needs. Afterwards, 2 groups with 1 visualiza­
+tion expert each were formed, which then chose 2 of the high­
+est voted notes and fitting data from available real-world 
+datasets. Finally, the groups co-created visualization drafts 
+based on their chosen data that should help to answer ques­
+tions or perform tasks from the selected notes.
+
+Design goals and tasks
+Based on the results from the workshop, we formulated 6 
+high-level design goals and identified 4 tasks oriented 
+towards patient care that served as a guideline throughout 
+the implementation process of our system.
+
+DG-1: Show up-to-date information about the patient 
+(age, gender, height, weight);
+
+DG-2: Provide an overview of all performed lung function 
+exams over time;
+
+DG-3: Provide an overview of all lung function parameters 
+over time;
+
+DG-4: Visualize the progression of each lung function 
+parameter and enable inspection of details;
+
+DG-5: Visualize reversibility testing results for each lung 
+function parameter to assess effectiveness;
+
+DG-6: Visualize laboratory results over the time span of all 
+lung function exams.
+
+T1: Analyze the long-term progression of a disease;
+T2: Provide a quick medical report for each lung function 
+exam;
+
+T3: Identify severe or problematic lung function 
+parameters;
+
+T4: Assess effectiveness of reversibility tests.
+
+Data description
+Data for our application were fetched from a clinical data 
+warehouse (CDW) in Mannheim. The CDW contains pre- 
+processed data and staged source databases from the clinical 
+source systems CLINICAL WIN DATA (lung function test results) 
+and IMED (laboratory information system). The lung function 
+dataset was extracted from the staged source databases and 
+additional data items from other tables of the healthcare 
+information system. For the extraction, we set up an SQL 
+query with the constraints described in Table 1.
+
+The resulting dataset comprises 160 columns and contains 
+all lung function parameters, including pre- and post- 
+broncholytic value pairs. The initial prototype was made to 
+accommodate up to 10 exams per patient, based on expert 
+advice and data from the warehouse. For our system, we 
+selected laboratory data and the most important parameters 
+of 4 different groups based on expert feedback, which are 
+listed in Table 2. Severity classes for the different parameters 
+are based on established rules that can be found here: http:// 
+lungenfunktion.eu/index.htm.
+
+Visual analytics system
+As a foundation for our system, we created several sketches 
+using the workshop results and our design goals. By fre­
+quently discussing our ideas with 1 physician, we were able 
+to refine them to fit users’ needs. The final draft was imple­
+mented as an interactive prototype and presented to work­
+shop participants and additional experts to collect more 
+feedback. Since usability has a high priority, we built a web- 
+based system, which increases the application’s mobility and 
+removes the need for software installations—both of which 
+were voiced as desirable features. In the backend, we opted 
+for a python based flask server that uses SQL to fetch data, 
+which is loaded, cleaned, and aggregated using pandas.30 To 
+create the different visualizations, we use Altair,31 which is 
+based on Vega Lite.32 Its simplicity allows for rapid prototyp­
+ing to quickly test and modify design ideas. For the first pro­
+totype, we prioritized those features over the adaptability of 
+low-level libraries like D3.33 The complete system consists of 
+
+multiple connected components that allow users to interpret 
+and analyze medical exams and lung function parameters 
+over time. Figure 3 shows an exemplary screenshot of our 
+prototype, and the following paragraphs give in-depth 
+descriptions 
+of 
+its 
+different 
+components 
+and 
+their 
+functionalities.
+
+Patient details
+At the top of the page, a header lets users select a patient and 
+see related information about them (DG-1). Patient selection 
+is performed using a dropdown widget and the patient infor­
+mation, such as age and gender, is displayed right next to the 
+dropdown (see Figure 3A).
+
+Overview charts
+In accordance with DG-3, the overview charts provide a 
+holistic view of all available measurements. The measure­
+ments are visualized as small multiples34 in the form of area 
+charts (see Figure 3B). Due to their small size, all measure­
+ments can be seen at a glance. Since no specific values can be 
+read from these charts, the last measured value is displayed as 
+text next to each chart.
+
+Timeline
+To provide information about the temporal dimension of the 
+data and related medical records (DG-2, T2), we created a 
+timeline component with a grey circle for each performed 
+lung function exam (see Figure 3C). Hovering over a circle 
+shows the text of the medical report findings in a tooltip.
+
+Parameter charts
+In line with design objectives DG-4, DG-6, and task T1, the 
+main component displays a line chart for each selected 
+parameter (see Figure 3D). The charts are arranged vertically 
+and show the complete progression of a parameter over time. 
+Data points are displayed as colored circles connected by a 
+line. Different measurements can be analyzed in detail 
+through interactions like zooming and panning. All line 
+charts are grouped into category sections, ranging from spiro­
+metry to blood gas values and laboratory data (see Table 2). 
+In case multiple data points are associated with one exam, 
+the displayed circle represents the last value (for example 
+after bronchodilation). To view detailed information, users 
+can hover over a data point which yields the absolute value 
+and, if available, the percentage of the recommended value in 
+a tooltip. Parameters that have associated severity categories 
+have the background of their line chart color-coded to show 
+
+the varying categories (eg, reduced, normal, and elevated) 
+based on established classifications (see Figure 3F).
+
+Slope charts
+The final component focuses on reversibility tests. An exam can 
+contain 2 values, for example before (pre) and after (post) 
+administration of a medication. Since the parameter chart only 
+presents the post value, but does not visualize changes between 
+values associated with an exam, slope charts were added (DG- 
+5, T4). They are positioned on the right side of their respective 
+parameter chart and allow users to inspect and analyze the 
+changes resulting from a treatment (see Figure 3E). While a sin­
+gle slope chart represents the bronchospasmolytic test at the 
+given date, multiple slope charts let experts examine the results 
+over time. Each chart directly encodes the relative improvement 
+or deterioration through the angle between the pre- and post- 
+value circles, which are connected with a line. Circle colors indi­
+cate the measured severity using the same color scale as before 
+and border styles are varied to distinguish the pre (dashed) and 
+post (solid) values. As a response to T3 and based on published 
+medical guidelines, we chose to include an additional visual 
+indicator for the FEV1 and FVCex parameters, an angled arrow 
+allows for quick identification of broncholysis success. 
+
+Additionally, the slope charts support 2 hover interactions: 
+Hovering over the slope chart background shows a tooltip that 
+displays the value difference between before and after broncho­
+dilation. Hovering over a circle shows details for the measured 
+parameter in a tooltip.
+
+Evaluation
+We conducted a formative study using expert interviews to eval­
+uate the usability of our developed prototype. To that end, we 
+remotely interviewed 4 male pneumologists who work at differ­
+ent hospitals across Germany via Zoom. Each session lasted 30 
+minutes, was recorded on video and employed the think-aloud 
+method35 to collect participants’ thoughts. This approach 
+removed the need for travel, which would have severely compli­
+cated finding participants. Questions for the interview were 
+designed in collaboration with an expert for the assessment of 
+lung function data, who also provided correct answers for each 
+question. Our aim was to test common scenarios that might 
+arise during the day-to-day working activities of our target 
+group. The same expert also took part in the selection process 
+of the patient data used for the evaluation. All final questions 
+and answers were additionally validated by a second expert.
+
+Study procedure
+At the start of each session, the interviewer introduced the 
+study and demonstrated the main features of the prototype, 
+after which participants familiarized themselves with the 
+application on their own. Next, participants had to complete 
+2 tasks, with a different dataset for both, consisting of 6 ques­
+tions each. In the first task, these questions had low to 
+medium difficulty while the second task also included high 
+difficulty questions. Lastly, there was room for feedback and 
+participants were asked to fill out the system usability score 
+(SUS)36 questionnaire.
+
+To curate data for the study, a domain expert selected dif­
+ferent data for each task from a set of real-world patient 
+records, all of which represent typical cases but with different 
+characteristics. Before importing the data into our system, 
+records were anonymized to maintain patient privacy. In col­
+laboration with said expert, a question catalog was designed 
+which closely mimics tasks that practitioners encounter in 
+their everyday working activities. Each question was assigned 
+a difficulty label, a degree of importance and a solution— 
+example questions can be found in Table 3 while the com­
+plete catalog is available as supplementary material. Another 
+domain expert reviewed the question catalog to affirm both 
+its relevance and validity. Moreover, an external usability 
+expert reviewed and approved our proposed study procedure. 
+After all of the interviews were conducted, the recordings 
+were manually transcribed and analyzed in-depth by one of 
+the authors, eg, looking for common remarks and grouping 
+them by content. One interview (P4) was discarded due to 
+technical problems with the recording.
+
+Results
+
+All interviews were analyzed for usability feedback and par­
+ticipants’ answers to the 12 task questions were compared to 
+the solutions proposed by experts. In the following, we give a 
+detailed account of our analysis results.
+
+Evaluation results
+Analysis of the interview recordings showed that participants 
+largely gave valid answers that either matched experts’ 
+expectation or were open for debate. All participants came to 
+the same conclusion for 9 out of 12 questions and only 
+expressed minor differences for the high difficulty questions 
+that required interpretation. Overall feedback was mostly 
+positive, with participants emphasizing the easy comparison 
+between exams and the fast access to data. This is well- 
+illustrated by a comment participant P3 made: “For the tool 
+itself, I find it relatively clear at first glance to see the value 
+progression over time. This is (. . .) actually made quite clear 
+by the curve (. . .) with the color coding.” Two participants 
+explicitly mentioned the time-oriented design as a useful fea­
+ture, whereas a third participant favorably noted the practi­
+cality for everyday life. Moreover, the scores from the SUS 
+
+questionnaires indicate that participants found the system 
+usable, with 3 out of 4 participants rating it with high values 
+over 85 (P1: 87.5, P3: 92.5, P41: 95) and 1 participant rating 
+it slightly below 80 (P2: 77.5).
+
+With regard to limitations, multiple opportunities for 
+improvements were mentioned or could be extracted from 
+the recordings. These were categorized by topic and are 
+described in the following paragraphs, supplemented by 
+related quotes from participants.
+
+I1: Identifying the date of a measurement
+Even though the visualization always displays a time-axis, 
+some users struggled to identify the date of a data point on 
+several occasions. This led to redundant interactions with the 
+visualization and made comparing multiple data points with 
+a specific date more difficult, since only 1 tooltip is visible at 
+a time when hovering.
+
+Participant P3 remark: “(. . .) sometimes I needed to take a 
+look, where exactly which date can be found, (. . .)”
+
+Original: “(. . .) ich musste immer so‘n bisschen gucken, wo 
+genau welches Datum jetzt ist, (. . .)”
+
+I2: Overview chart usage
+While the overview charts are very prominent in the applica­
+tion, they were barely used by participants, if at all. This 
+could be related to the questions we asked, since none of 
+them specifically targeted the use of this component.
+
+Participant P2 remark: “And secondly I was not sure, for 
+what exactly the curves at the top—in this case the number 
+0.45 FEV1—how it is correlated to the measurements.”
+
+Original: “Und als zweites mir war nicht ganz klar, wof€ur 
+diese Kurven hier oben—also was die Ziffer 0.45 FEV1—in 
+welcher Korrelation die hier zu den Messwerten steht.”
+
+I3: High need for vertical space
+Due to the parameter charts being stacked vertically and the 
+large amount of information being displayed, it was not 
+always possible to see a specific pair of charts at the same 
+time. Therefore, users were required to scroll the page, which 
+made it more difficult to compare values or connect 
+information.
+
+Participant P1 remark: “(. . .) now I need to shortly try to 
+get both on one page (. . .)”
+
+Original: “(. . .) jetzt muss ich einmal ganz kurz ein bis­
+schen hier beides auf eine Seite kriegen (. . .)”
+
+I4: Data-dependent horizontal width
+Another issue was the variable width, which depended on the 
+number of exams contained in the datasets. Since each exam 
+creates an associated slope chart with a fixed size that is dis­
+played next to the parameter chart, the needed width depends 
+on the number of exams. The visualization may therefore not 
+
+fill the complete width or may not fit without horizontal 
+scrolling. Both conditions are inconvenient and can make 
+comparison cumbersome.
+
+Design improvements
+We re-evaluated several design choices and devised multiple 
+improvements in order to address issues found during the 
+evaluation. These improvements required a technological 
+reorientation, as Altair was not capable of the functionalities 
+our improvements required. As a consequence, we switched 
+to D3 for the implementation of the visualization frontend.  
+Figure 4 shows an exemplary view of the improved system. In 
+the following, we describe the most important changes and 
+how they relate to the issues identified in the previous 
+subsection.
+
+Timeline and parameter charts
+The timeline is now displayed as a sticky header (see  
+Figure 4A), resulting in a fixed point when searching for a 
+related date (I1). In addition, clicking on a data point in a line 
+chart permanently marks it as selected, visually indicated by 
+increasing its radius across all charts. Hovering over any data 
+point in the timeline displays a dashed indicator line in all 
+parameter charts (see Figure 4C). Finally, the timeline is 
+synchronized with the parameter charts’ zoom transform.
+
+Overview charts
+We opted to move this component from the top to the left of 
+the application as a sticky sidebar with a fixed width to con­
+serve vertical space (I3). In addition, we gave these charts 
+
+new functionalities (I2). Clicking on any of the charts allows 
+users to toggle between showing or hiding the associated 
+parameter chart (see Figure 4B). Furthermore, users can now 
+reorder the parameter charts by dragging the corresponding 
+overview chart to a different position. These changes let users 
+control which data is shown at which location in the applica­
+tion, making direct comparison easy and letting them hide 
+unneeded data. If a data point is clicked on or hovered over 
+in a line chart, the related values are displayed above each 
+overview chart and corresponding circles are increased in 
+size.
+
+Slope charts
+To address issue I4 and improve the usability of the slope 
+charts, we explored several new approaches to visualize the 
+reversibility testing results. The new options we considered in 
+more detail were layering and repositioning.
+
+Layering incorporates the data directly into the line 
+chart, similar to candlestick charts. This removes the slope 
+charts altogether, resulting in a more compact visualization, 
+but also creates overdraw and visual clutter. For example, 
+minor changes might not be visible due to overdraw, which 
+can result in misinterpretation by the user. Figure 5 
+illustrates different variations that we considered for this 
+approach.
+
+The second option was to reposition the slope charts above 
+each parameter chart, which allows the latter to occupy more 
+screen width. Furthermore, it connects each slope chart 
+directly to its corresponding time point, displaying it at a sim­
+ilar horizontal position. This approach was initially discarded 
+
+due to limitations of the Altair framework and concerns 
+regarding overdraw between charts. Switching to D3 solved 
+both problems and allowed for displacement of the slope 
+charts in a force-directed manner. Each slope chart is first 
+positioned at the exact horizontal location of its related data 
+point. Then, a force-directed simulation is run, similar to a 
+force-directed graph layout.37 Neighboring slope charts repel 
+each other, while being pulled towards their correct horizon­
+tal position. In this manner, the charts deviate as little as pos­
+sible from their original position but also avoid overlap, as 
+illustrated in Figure 6. To emphasize its exact point in time, 
+each chart is connected to its related data point using a trian­
+gular indicator that points to the correct horizontal position. 
+When users zoom or pan in the parameter charts, the system 
+adjusts the positions of all slope charts and re-runs the simu­
+lation. After exploring both options, we settled on reposition­
+ing the slope charts, since it does not drastically modify the 
+line charts and more directly addresses participants’ critiques. 
+While this choice increases the need for vertical space, this is 
+counteracted by allowing users to hide the slope charts on 
+demand.
+
+Discussion
+
+Practitioners could comfortably use our prototype to solve 
+tasks of varying difficulty, which were designed to closely 
+resemble their day-to-day working activities related to lung 
+function data. They generally liked the system and had little 
+trouble navigating it, even with limited training. However, 
+participants’ interactions with the system uncovered some 
+
+usability and utility issues that we addressed in an improved 
+iteration of our prototype. Most notably, the overview 
+charts were repurposed to give users more freedom in 
+arranging visualizations in the application. Additionally, the 
+slope charts were repositioned to strengthen the connection 
+to their related exam. Several modification were made to 
+improve the general layout and space requirements. How 
+these changes affect user experience needs to be investigated 
+in more detail in future work. Such an evaluation could also 
+provide the opportunity to test our system against standard 
+tools currently employed by practitioners or to investigate 
+the different slope chart designs. The user-centered design 
+approach we employed helped us create a system that 
+addresses users’ real needs and could be used in other con­
+texts where required knowledge is distributed across differ­
+ent experts. Finally, we can envision more usage scenarios 
+for our application, eg, to communicate findings to patients 
+directly or to help medical students learn about lung func­
+tion data analysis.
+
+Conclusion
+
+Collaborating with medical practitioners, we designed and 
+implemented an interactive visualization system that supports 
+medical experts who analyze lung function data across multi­
+ple medical exams. We employ connected line charts and 
+incorporate domain knowledge in the form of parameter- 
+dependent severity categories, offering a cohesive and inte­
+grated view of the patient’s disease progression.
+
+Our formative study showed that the system provides easy 
+access to relevant data and that it supports temporal data 
+analysis, which could help practitioners in their day-to-day 
+work activities. Participants of the study liked using our sys­
+tem and correctly answered domain-relevant questions with 
+varying levels of difficulty. The study results additionally 
+uncovered several areas for improvement, such as inconven­
+ient interactions for the comparison of lung function parame­
+ters that are far apart in the layout. Consequently, we 
+redesigned several components to give users greater flexibil­
+ity, thereby making comparisons effortless. Based on these 
+overall encouraging results, we aim to evaluate our rede­
+signed system to study its effectiveness in greater detail and 
+compare it to existing approaches employed by medical 
+practitioners.
+
+The authors confirm contribution to the paper as follows: (i) 
+Study and workshop conception and design: Jan Scheer, 
+Frederik Trinkmann, Till Nagel; (ii) Provision of study and 
+workshop materials: Frederik Trinkmann, Fabian Siegel, Jan 
+Scheer, Till Nagel; (iii) Study and workshop execution and 
+analysis: Rene Pascal Warnking, Jan Scheer, Till Nagel; (iv) 
+
+Software design and implementation: Rene Pascal Warnking, 
+Jan Scheer, Till Nagel, Franziska Becker; (v) Draft manu­
+script preparation: Rene Pascal Warnking, Jan Scheer, Till 
+Nagel, Franziska Becker; (vi) Administrative support: Fabian 
+Siegel, Till Nagel. All authors reviewed the results and 
+approved the final version of the manuscript.

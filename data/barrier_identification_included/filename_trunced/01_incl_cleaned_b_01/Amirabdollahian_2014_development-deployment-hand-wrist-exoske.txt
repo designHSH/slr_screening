@@ -1,0 +1,467 @@
+Design, development and deployment of a hand/wrist
+exoskeleton for home-based rehabilitation after
+stroke - SCRIPT project
+F. Amirabdollahian†,∗, S. Ates‡, A. Basteris†,
+A. Cesario§, J. Buurke¶, H. Hermens¶, D. Hofs¶,
+E. Johansson∥, G. Mountain††, N. Nasr††,
+S. Nijenhuis¶, G. Prange¶, N. Rahman†, P. Sale§,
+F. Sch¨atzlein††, B. van Schooten¶ and A. Stienen‡
+
+†University of Hertfordshire, United Kingdom
+‡University of Twente, the Netherlands
+§San Raffaele Pisana, Italy
+¶Roessingh Research and Development, the Netherlands
+∥User Interface Design, Germany
+††University of Shefﬁeld, Shefﬁeld, UK
+
+(Accepted July 29, 2014. First published online: September 23, 2014)
+
+2. Design Methodology
+We employed an interdisciplinary research design to co-design and evaluate the SCRIPT system with
+people with stroke, carers and stroke professionals in three clinical sites in the United Kingdom (UK),
+the Netherlands (NL) and Italy (IT). The user-driven system development framework comprises of
+two main phases. In phase 1, we engaged with potential users of the SCRIPT system to create a clear
+picture of the target users and the context in which the system intends to operate. The aim of this
+phase was to provide the technology developers with a detailed knowledge of the diversity of users
+of the system. A mix of health and social sciences and design methods were used to collect data in
+this phase including focus groups, in-depth interviews and cultural probes.33
+
+The ﬁndings of the focus groups, which showed participants’ general attitude and feelings toward
+technology, were further explored and reﬁned by conducting in-depth interviews and cultural probing
+during two successive home visits (Fig. 1). Cultural probe materials such as diaries and photography
+activities gave us an opportunity to observe participants’ behaviours between two home visits whilst
+the outcome of the probing was used to prompt participants during the interviews. The ﬁndings of
+this phase were summed up to create a collection of persona-based scenarios34 as representatives of a
+range of users and their social and personal contexts, their experiences of stroke and technology use,
+
+1334
+
+Fig. 1. (Colour online) Home visits with cultural probes and in-depth interviews.
+
+their needs, activities and goals. These user models served to identify user requirements and informed
+design of the iterative prototyping.
+In phase 2, the resulting prototypes were evaluated across three clinical sites using participatory
+formative evaluation methods such as cognitive walkthrough and cooperative evaluation.35 Different
+components of the SCRIPT system including the orthosis, user interface and games were tested
+out with the members of the steering group committees. In addition, the system was evaluated in
+participants’ homes in which people with stroke and their carers were encouraged to think aloud
+while trying out the system in order to identify main usability problems. The identiﬁed problems
+were summarised and fed back into the process of design to improve the next iteration of the system.
+The resulting prototypes are tested, redesigned and developed in iterative cycles.
+
+3. Hardware, Software and System Architecture
+
+3.1. Mechatronic device
+SCRIPT Prototype 1 (SP1) is a wrist, hand and ﬁnger orthosis that assists individuals after stroke that
+suffer from impairments caused by spasticity and abnormal synergies (Fig. 2). These impairments
+are characterised in the wrist and hand by excessive involuntary ﬂexion torques that prevent the hand
+to be used for many to most activities in daily life. The SP1 can passively offset these undesired
+torques, but it cannot actively generate or control movements. The user needs to use voluntary muscle
+activation to perform movements and thus needs to have some residual muscle control to successfully
+use the device. A passive actuation mechanism is chosen so that devices are inherently safe and can
+be integrated into home-use easier.
+The hardware components of the SP1 are:
+
+• Physical interfaces to the user: forearm shell, hand plate, and digit caps with Velcro straps. These
+physical interfaces are the only components of the SP1 that come in contact with the user.
+• Wrist-torque transfer mechanism: double parallelogram between forearm shell and hand plate that
+allows wrist ﬂexion-extension but blocks all other wrist rotations.
+• Torque-generation mechanisms: digit leaf springs and adjustable tension cords.
+• Device controller: micro-controller board that reads the sensors and converts these readings to
+physiological relevant parameters and transfers them to the main unit. Arm support: commercially
+acquired arm support (Saebo MAS) that supports the arm against gravity to enable arm movements
+in individuals after stroke.
+• State sensors: integrated measurements units (IMUs) with which the forearm posture can be
+estimated.
+
+The SP1 physically interfaces with the forearm, hand and ﬁngers of the users using respectively a
+forearm shell, a hand plate and individual digit caps. To guarantee safe and comfortable interaction, it
+
+1335
+
+Fig. 2. (Colour online) SCRIPT Prototype 1. From left to right: blue digit caps, steel leaf springs, black
+ﬁnger tension cords, red/white/black bending sensor, blue hand plate, black tension-cord stops, metal wrist-
+torque transmission, black wrist tension cords, blue forearm cuff. The thumb cap, leaf spring, tension cord and
+additional rotation joint are visible below the wrist joint. All the sensors are connected to the computer interface
+via electric sensor wires.
+
+uses commercially available physical interfaces with a proven track record from Saebo Inc. (Charlotte,
+NC, USA). The Saebo forearm shells, hand plates and caps are available in multiple sizes and for
+both left and right hands, that are needed to custom ﬁt the SP1 to a wide range of body dimensions.
+The SP1 applies the external extension torques on the ﬁngers via passive leaf springs and elastic
+tension cords. The leaf springs allow the extension force to be applied perpendicular to the ﬁngertip
+for most of the range of motion, but cannot be directly attached to the ﬁnger due to the misaligned
+digit axes of the ﬁnger and the device. The leaf spring has cord guides through which the tension cord
+is routed and is covered in a shrink-wrap to protect the patients against its sharp edges. The tension
+cord is used to give the ﬁnger freedom of movement relative to the leaf springs. The cord is also used
+to adjust the amount of support by tensioning it more or less using the tension-cord stops on the top
+of the hand plate.
+The force generation and application mechanisms for the thumb are identical to the ones for the
+ﬁngers. To allow additional freedom of movement in the thumb needed for thumb opposition, the
+thumb mechanisms has an additional rotational degree of freedom that coincides with the wrist axis,
+with any misalignment being allowed for by the ﬂexibility of the tension cords.
+The wrist mechanism uses a double parallelogram between forearm shell and hand plate that allows
+wrist ﬂexion-extension but blocks all other wrist rotations. The double parallelogram is needed to
+prevent misalignment between human and device axes and makes the device comfortable to use.
+Through the parallelogram, the rotation of the hand around the wrist ﬂexion-extension axis of the
+wrist is transferred to the parallelogram clamp at the forearm. There this rotation is actuated using an
+elastic tension cord. The tension in the cord can be adjusted using the cord stops at the elbow end of
+the forearm shell.
+The external extension force in the digits and the wrist can be adjusted by tensioning the elastic
+cords. The digits and the wrist have a single tension cord each, and each cord has multiple knots on
+it. These knots can be clamped in the cord stops on the device and tensioning the cord will produce
+more external extension force. The user is instructed to change the tension based on his impairment
+and his therapy progress via the physical therapist and the graphical user interface.
+The SP1 closely follows the contours of the human body. Most components stay within a volume
+less than 30 mm away from the body. The wrist parallelogram, needed to allow wrist ﬂexion/extension,
+
+1336
+
+requires 75 mm from the body at maximum wrist extension. The device is not overly disruptive when
+used as a therapy tool, but it is too bulky to be a permanent aid for daily use.
+To improve patient comfort, all sharp edges of the devices are either sanded down or covered using
+protective material such as plastic shrink wrappers. All electrical components (sensors and wirings)
+are covered using cable sleeves.
+The SP1 is equipped with sensors to measure the joint rotations and the applied external extension
+torques. On the digits this is realised by measuring the deﬂection of the leaf spring using ﬂexible
+bending sensors. This deﬂection can be converted to both an angular deﬂection of the digit and
+the applied extension force using the known stiffness properties of the leaf spring. The integrated
+bending sensors in the leaf springs at the ﬁngers are good enough to differentiate between different
+grasps,36 and can detect small changes of motion, but are only able to resolve between large absolute
+angle deviations of roughly 20 degrees.37 These limitation are caused not by the mechanism itself,
+but by the type of bending sensor used: the ﬂexible resistance-based sensors suffer from natural
+decay in step response that makes it hard to get accurate absolute values from the sensors. In the
+wrist, the ﬂexion-extension axis rotation is measured using a potentiometer at the forearm link of the
+parallelogram.
+Finally, the hand position in global space is approximated using the UM6 ultra-miniature orientation
+sensor (Integrated Measurement Unit) from CH Robotics placed on the forearm that uses rate gyros,
+accelerometers, magnetic sensors, and an onboard 32-bit ARM Cortex processor to compute sensor
+orientation. The orientation and acceleration of the forearm are used for the estimation of slow and
+fast movements and movement directions.
+In order to extract MCP, PIP, and DIP rotations from a single measurement with the help of one
+bending sensor, a simple angle estimation algorithm is derived. Each ﬂex sensor provides one bending
+angle reading to each individual ﬁnger. In order to extract each digits angular position (MCP, PIP,
+DIP rotations) from one sensor reading, some assumptions have to be made. It is assumed that there
+is no dead zone with the ﬂex sensors and rotation of each phalanx is linear and covers the full range of
+motion except the distal phalanx. Finger caps overlap distal phalanx and middle phalanx at the same
+time and limit the range of motion of distal phalanx drastically. Abduction and adduction movements
+are neglected, as well. In addition, a simple initialisation/calibration procedure is required to measure
+the maximum and minimum sensor values. A similar approach can be easily applied to thumb and
+wrist.
+The bending sensors at the leaf springs and the potentiometer at the wrist mechanisms are sampled
+using the analog-digital converters in the Arduino Nano microprocessor board. The Arduino passes
+on the sampled values to the main PC using a Universal Serial Bus (USB) connection. The IMU is
+connected to a serial-to-usb converter and again connected to the main PC using a USB connection.
+For both, custom Windows 7 drivers were written to make the signals available to the connected
+software.
+
+3.2. User interfaces
+The interface of the SCRIPT system consists of two separate parts: a user interface (UI) for the
+patient (Patient UI) and a UI for the health care professionals (HCP UI). Two separate concepts were
+developed since the parts are targeted for different user groups, performing different tasks. Also the
+choice of the platform required a different design, as the Patient UI is based on a touch screen and
+the HCP UI is controlled with keyboard and mouse using a conventional display.
+
+3.3. User interface for the health care professional
+An important screen for the HCP UI is the patient overview (Fig. 3), which is presented directly
+after login. The table lists all patients, and presents an overview of the current state of the patients’
+training:
+
+• Patient’s name, age and week of therapy
+• The development of the game scores, using simple colour coding (red, yellow, green)
+• Patient’s own rating of current condition, using a simple colour coding and smileys
+• The latest training session
+• The total length of this week’s training sessions
+• New messages received from the patient
+
+1337
+
+Fig. 3. (Colour online) Health care professionals’ user interface - patient overview screen.
+
+In this overview the therapist can immediately recognise patients that need further care, e.g. due
+to a patent’s negative condition rating. A double-click on a cell will lead the HCP directly to the
+corresponding page, where he has access to detailed information and functionalities. To work with a
+patient, the HCP UI consists of four main areas:
+
+1. Messages: The message area allows the therapist to exchange text or audio messages with the
+patients.
+2. Progress: The progress area consists of several pages with different charts, e.g. active range of
+motion (aROM) in-Game (Fig. 4), aROM during Calibration, Move Count, Training Duration,
+Training Session and Game Score. This area provides the therapist with a detailed feedback on the
+progress of the patient, using visualisations.
+3. Games: The games area contains the basic functionality for the therapy with SCRIPT. In this
+area the therapist assigns games to the patients and adapts the difﬁculty level of the game. The
+difﬁculty set here relates to selection of game levels requiring more difﬁcult to achieve gestures,
+for example game difﬁculty increases when lateral movement of the arm are added to the ﬂexion
+and extension of the hand. This follows a system similar to Gentile’s taxonomy of motor skills
+where Stationary actions are classiﬁed as simplest skills while In Motion functions are thought to
+require more complex skills.38
+
+4. Condition: The content and design of the “condition” area is currently under progress, In this area
+the therapist will receive feedback on the status of the patient (presented on the left hand side of
+Fig. 4) in terms of affected side and diagnosis as well as other performance metrics allowing them
+to set the therapy plan with these considerations.
+
+3.4. User interface for the patient
+To ensure consistency between the Patient and HCP UI, the same design concept was applied to
+both interfaces. Also, the areas in the patient UI are mainly the same as in the HCP UI, but with
+
+1338
+
+Fig. 4. (Colour online) Patient progress shown in aROM tab highlighting changes in active range of motion
+during game play.
+
+Fig. 5. (Colour online) Progress screen highlighting progress across the 6 weeks of study.
+
+relevant content important to patients. A requirement for the Patient UI was to offer quick access
+to the recommended games and to be experienced as “easy to use” by the patients. Due to these
+requirements, the UI provides direct access to the games on the home screen after login. Patient UI
+consists of three main areas:
+
+1. Progress: In this section (Fig. 5) the patient can check the training progress, e.g. game scores and
+training duration. Scientiﬁc statistics like the aROM are not needed for the patient. Design of the
+charts is adapted to the target users and target system, by reducing the amount of information
+
+1339
+
+Fig. 6. (Colour online) Tele-robotic support platform and its components. The platform comprises of the blue
+components.
+
+and increasing the size of the interaction elements. Motivational messages are displayed within
+and after the games, to motivate the patients to continue with the training. Example messages are
+“Maybe you can come back for more practice soon?”, “Target time has been accomplished”, “You
+have just ﬁnished training for N minutes”, “N minutes more to reach your target this week”.
+2. The patient can choose between different games, assigned by the therapist. For each game, detailed
+information on how to play the game is available to the patient.
+3. Messages: As for the HCP UI, the patient can exchange textual or audio messages with the therapist.
+The patient enters the message using a touch screen keyboard.
+
+3.5. Tele-robotic support platform
+The tele-robotic support platform concerns the implementation of remote access to the patient’s
+system. This enables HCPs to create and change exercise plans during the therapy, to check on
+the patient data and progress, and communicate with the patient. The platform consists of three
+components: a replicated database, a HCP webportal, and a decision support system. See Fig. 6.
+The patient’s computer communicates with a central server through a replicated database. On
+the central server there is a webportal and a decision support system. HCPs can access the data
+through the webportal. Authentication for both patients and HCPs is performed through a regular
+username-password combination. All network communication is secured through SSL.
+
+3.5.1. Database (remote management interface). Communication between the patient computer and
+the central system proceeds entirely through a replicated database, implemented in MySQL. The
+database is accessed locally through an XML-RPC API. When a new patient system is deployed,
+as 9 prototype systems are re-used, the replication process wipes any old data and loads essential
+data like the patient’s information and the initial exercise plans from the central server. From then
+on, the patient system can function autonomously, but will sync data when an Internet connection
+is available. It replicates only the data belonging to that patient, so that privacy of other patients is
+ensured. The local database also has a development mode, which allows functioning without a central
+server altogether.
+
+3.6. Adaptive and therapeutic human-robot interaction
+An important goal of the project is its focus on adaptive and therapeutic human robot interaction
+(THRI). The objective here is to cater for inter-individual differences sensed in interaction. To
+make this possible, a dedicated component is placed in the software architecture (see Fig. 8), which
+constitutes a middleware between the orthosis and the games. Indeed, the THRI processes the signal
+generated from the device and delivers to the games information about movement’s performance of
+the subject. Such information can be of analog type, as angular or positional coordinate of a joint,
+or discrete, as the message that a speciﬁc pattern of movement (gesture) has just been performed.
+Gestures currently available relate to hand state (open, close or in a grasping position), or the wrist
+(extended, ﬂexed, prone or supine). Also, we included the recognition of gross arm movements
+
+1340
+
+Fig. 7. (Colour online) Three prototype exercise games, top: Sea Shell; bottom left: Super Crocco; bottom right:
+Labyrinth.
+
+(antero-posterior and lateral displacement of the hand) as those normally performed during activities
+of daily living by using accelerometers on the forearm part of the arm-cuff.
+These movements are matched with actions within the games that are intended for providing
+therapeutic exercise. Three games were designed and tested within years 1 and 2 of the project: “Sea
+Shell”, “Super Crocco” and “Labyrinth” as shown in Fig. 7.
+In the Sea Shell game, the patient operates a shell by his/her hand in order to catch ﬁshes. In
+the Super Crocco game, in addition to grasping, wrist ﬂexion and extension are performed to avoid
+obstacles, and lateral movements of the hand to move the character on the screen. The Labyrinth
+game offers, in addition to this, training of forearm prone/supination and antero-posterior movements
+of the hand.
+One of the major challenges in performing gesture recognition with stroke survivors is the inter-
+individual variability in motor symptoms. For instance, while normative data about range of motion
+(ROM) for the upper limb joints is available for healthy subjects,39,40 each patient constitutes a per
+se case. Considering this, we developed a calibration procedure which measures range of motion and
+duration of movements.41 In a preliminary analysis of the data from seven subjects, we showed that
+such a procedure was effective in 85% of the attempts (1044 out of 1229 tests) with durations differing
+across movements of up to 30 s for hand opening.42 This procedure, potentially exploitable for other
+various movement signals, is run ahead of any practice sessions for the movements which will be
+required within the game. In this way, the gesture recognition is tailored on the individual patient
+
+1341
+
+capabilities. For instance, wrist extension is marked by reaching the 90% of the ROM measured
+during the calibration. This approach has been effective for all the 23 patients included. In total, the
+calibration procedure has been successful in 88% of the attempts (3791 out of 4298). Considering as
+an instance wrist ﬂexion/extension, median values ranged across subjects from 0.4 to approximately
+135 degrees (97% of the device ROM). Overall, considering all subjects involved in the study, the
+gesture recognition has identiﬁed 558449 movements.
+Another requirement for the therapeutic human robot interaction is to be adaptive. In the domain of
+rehabilitation robotics, a fundamental principle is that the robot should “assist-as-needed”.43 However,
+the passive device does not allow any automatic regulation of the physical support provided, which
+is set by the therapist. Hence, the THRI further modulates the task difﬁculty using the speed of the
+game to prolong interaction time.
+At the beginning, movements are required at a speed matching the time measured during the
+calibration. At the end of each movement, patient’s performance is assessed by considering whether
+he/she is lagging or leading with respect to a model-generated movement proﬁle44 which matches their
+own movements in terms of amplitude and duration. The lag/lead score is the fraction of trajectory
+in which the subject was anticipating the reference trajectory. The speed of the game is then rescaled
+based on the last 10 lag/lead scores, in order to make the exercise nor too challenging nor too easy,
+according to the challenge point framework.45 Future development will include the support for the
+active-actuated device to allow for changing assistance/resistance, recognition of functional type of
+gestures and an alternative method to estimate the subject’s contribution to movement, based on the
+energy ﬂow between the patient and the device.
+
+3.7. Architecture
+The system has a wide range of software which needs to meet very different requirements, such
+as distributed fault-tolerant communication, real-time control and monitoring of the devices and an
+intuitive, responsive, and graphically rich therapeutic user-interface. The system adopts a modular
+component-based architecture, as shown in Fig. 8, which supports software that is scalable, reusable,
+lightweight, dynamically reconﬁgurable and portable between platforms. The architecture allows
+ﬂexibility in terms of choice of operating system, programming languages, tools and libraries. The
+architecture is open and ﬂexible, but at the same time clearly deﬁnes the interfaces, which facilitate
+distributed system development with periodic integration cycles.
+The patient’s system runs on Microsoft Windows 7 Professional, as this meets the needs of being
+responsive to user actions, while at the same time providing a rich graphical interface and simplifying
+the design and development of software. Windows 7 also provides a rich set of communications
+and data storage mechanisms. It does not offer deterministic timings, but experimental results have
+shown that, coupled with a multi-core PC and sufﬁcient memory, it is adequate for the performance
+requirements of SCRIPT. The therapist’s system can run on Windows and Linux systems.
+Software components are implemented as independent co-operating processes, using a variety of
+programming languages and tools, such as MySQL, Apache, C++, Python, PHP, Java, Javascript and
+JMonkey. The SCRIPT project uses Google Protocol Buffers to deﬁne and manipulate message data
+sent using stream and datagram sockets between software components on the patient PC. Protocol
+Buffers provide a ﬂexible, efﬁcient and automated mechanism for serialising structured data in C++,
+Java and Python. Using protocol buffer is lighter weight than manipulating XML data structures and
+allows changes to message data structures without breaking existing code. Communication between
+the patient PC and the remote server is via XML-RPC.
+
+4. Experimental Validaiton
+Although it is assumed that patients will practice independently when provided with the opportunity,
+this is a highly relevant question when deploying a technology-supported system for training of the
+arm and hand in the home setting. Therefore, this is one of the main issues addressed during evaluation
+and impact assessment of the SCRIPT system.
+
+4.1. Feasibility evaluation
+Besides Formative Evaluation (FE) focussing on user-engagement in design and system development
+to enhance the acceptability and usability of the system, the clinical study design applied in this
+
+1342
+
+Fig. 8. (Colour online) SCRIPT System Architecture, low-level system components include actuator (R), sensors
+on the orthosis (S1) and external sensors (SN).
+
+project (Summative Evaluation (SE)) involves evaluation of the SCRIPT system in a situation where
+treatment protocols haven’t been ﬁxed or personally supervised. On the contrary, except for the
+recommendation to practice 30 min per day for 6 days a week, participating chronic stroke patients
+are left entirely free in their choice on when and for how long they want to practice with the SCRIPT
+system during the 6 weeks deployment at their home. During these 6 weeks, patients are remotely
+supervised on their progress by a healthcare professional (HCP) through the HCP portal. The progress
+in terms of game scores serves as the basis for the HCP to select appropriate exercises targeting e.g.,
+wrist ﬂexion/extension movements combined with grasping/hand opening gestures. This decision is
+reﬁned, if needed, during short weekly home visits by the HCP to check on the patient.
+The summative evaluation assesses feasibility of the self-administered telerobotic devices on
+several levels across three European-wide user-evaluation centres (University of Shefﬁeld in the
+United Kingdom, San Raffaele S.p.A. in Italy, Roessingh Research and Development in the
+Netherlands), which allows validation of effectiveness of the SCRIPT system. In terms of user
+acceptance, actual amount of use, usability and patient’s motivation are examined during and after
+the use period.
+
+4.2. Results
+To date, 23 of the intended 30 chronic stroke patients have been included (see Table 1), who had to
+be between 6 and 60 months post-stroke and display at least 15◦of active elbow ﬂexion and a quarter
+range of active ﬁnger ﬂexion. Of these, data for 12 patients is available from baseline and post-training
+evaluations, conducted 1 week before and then after the 6-week training period. Seven male and ﬁve
+female chronic stroke patients were included, with mean age of 54 years (± 12 years) and mean time
+post stroke of 11 months (± 6 months). The group involved 25% mildly, 25% moderately and 50%
+severely affected stroke patients, based on a categorisation of initial Fugl-Meyer (FM) score.46
+
+Among the ﬁrst 12 patients were two dropouts, because of their inability to work with the SCRIPT
+system due to technical problems, or no desire to work with the SCRIPT system anymore. The
+preliminary ﬁndings of the ongoing study suggest that deployment of self-administered training is
+feasible, as reﬂected in actual use of the system by the majority of the patients, as monitored in terms
+of training duration. The actual amount of training, measured using system logs created during game
+play, was on average 94.4 (±43.6) minutes/week across the ﬁrst 10 patients (ranging from 34 to
+
+1343
+
+Table I. Subject characteristics and outcomes before and after training.
+
+Characteristics and outcomes
+Mean (±SD)
+Range
+
+Gender (male/female)*
+7/5
+Stroke severity (mild/moderate/severe)*
+3/3/6
+Age (years)
+54 (±12)
+32–69
+Time post stroke (months)
+11 (±6)
+6–26
+Training duration (minutes per week)
+94.4 (±43.6)
+34–166
+System Usability Scale (0–100%)
+69.3 (±20.0)
+38–100
+
+∗absolute numbers
+
+166 min per week between patients), which comes down to an average of 14 min of self-administered
+training each day for 6 weeks. The group average of the System Usability Scale was 69.3 (±20.0),
+indicating that usability of the SCRIPT system is promising, with a good chance of acceptance in
+the ﬁeld.47 This further supports the feasibility of the SCRIPT system to be used independently for
+training at home so far.
+
+5. Discussion
+The present ﬁndings suggest that independent home-based training with the SCRIPT system is
+feasible. Patients are choosing to exercise by themselves for about 15 min a day for 6 weeks on
+average. It has to be noted that this is without external motivation such as ﬁxed appointments
+with healthcare professionals for online remote supervision during exercise, which distinguishes the
+SCRIPT application from recent telerehabilitation approaches in stroke.48 Moreover, this type of
+training so far shows potential to enhance sensorimotor function of the affected arm. Due to large
+variations observed across patients, speciﬁc attention needs to be paid to relations between outcome
+measures and patient characteristics on an individual basis (as illustrated in Figure) in ongoing work.
+However, the present research is the ﬁrst exploration of independent arm/hand training at home
+using a physical hand/wrist orthosis combined with remote monitoring (telerehabilitation). Ongoing
+analysis of the clinical outcomes, as well as the amount of use, intensity of training, usability and user
+acceptance of the complete sample allows for a comprehensive analysis of relations between these
+characteristics. Early results from these evaluations are presented in a subsequent paper showing
+larger variations amongst patients concerning clinical gains when using the SCRIPT system.49 With
+such information, the group of patients that might beneﬁt most from this type of intervention may be
+identiﬁed. One particular question of interest concerns the relation between the amount of use and
+clinical changes, to explore whether patients will actually use a telerehabilitation system provided to
+them and whether more use will actually result in larger clinical gains. This will inform our future
+developments.
+
+6. Conclusions and Future Work
+The design, development and deployment of a home-based rehabilitation device for mediating
+repetitive exercise via a passive-actuated hand/wrist exoskeleton device was presented here. Aspects
+highlighted included the importance of user-centred design and inclusion of potential users as co-
+developers and co-designers. This was made possible by employing multiple phases of interaction
+during the design cycles. A critical step here was to start with understanding the potential users and
+their diversity using in-depth interviews and cultural probes. These culminated in system requirements
+that were used for developing the prototype system. The prototype was then assessed against those
+user requirements using formative evaluation cycles often consisting of focus groups and steering
+group meetings.
+This manuscript highlights different aspects of development, ranging from the hardware including
+the mechatronic device, to software components such as patient and health care professional user
+interfaces.The objective of this evaluation was to assess the feasibility of a home-based rehabilitation
+device. Although early, preliminary results obtained from 12 patients that participated in this
+evaluation phase indicate supportive evidence for feasibility of such devices for home use.
+
+1344
+
+Future work focuses on active-tuning of the amount of assistance provided to the hand and wrist,
+while providing an additional six exercise games with a more versatile set of gestures incorporated
+within the new games. This is to enhance the functional and goal-oriented nature of the exercises.
+Also, the decision support system under development will provide a chance to assist in monitoring
+patients’ remotely using performance benchmarks and by detecting sudden and slow changes in
+progress. A second summative evaluation phase is planned to test the resulting system.

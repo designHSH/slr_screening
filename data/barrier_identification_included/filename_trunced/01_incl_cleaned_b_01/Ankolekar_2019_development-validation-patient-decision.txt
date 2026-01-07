@@ -1,0 +1,511 @@
+Development and validation of a patient
+decision aid for prostate Cancer therapy:
+from paternalistic towards participative
+shared decision making
+
+Anshu Ankolekar1, Ben G. L. Vanneste1, Esther Bloemen-van Gurp2,3, Joep G. van Roermund4,
+Evert J. van Limbergen1, Kees van de Beek4, Tom Marcelissen4, Victor Zambon5, Matthias Oelke4,6, Andre Dekker1,
+Cheryl Roumen1, Philippe Lambin7, Adriana Berlanga1 and Rianne Fijten1*
+
+Methods
+Participants
+In order to develop a fully validated, freely accessible,
+web-based PDA for PCa patients with information on
+four common and generally accepted PCa treatments
+(surgery, brachytherapy, external radiation, and active
+surveillance), we recruited four user groups:
+
+1. Clinicians specializing in all four treatment areas: 4
+radiation oncologists, 8 urologists, 2 oncology
+nurses and 8 general practitioners (GPs).
+2. Nineteen former PCa patients who had fully
+undergone one of the four treatments.
+3. Four usability evaluators with experience in web
+design, usability engineering and user experience,
+selected from the Information and Computer
+Science Department of Utrecht University. The
+evaluators had no clinical background.
+4. Eleven healthy volunteers with varying educational
+backgrounds and familiarity with technology,
+representing the typically elderly target population
+of PCa patients [18].
+
+The Internal Review Board (IRB) of Maastro Clinic
+reviewed and approved this study, and written informed
+consent was obtained from all respondents.
+
+Development process
+The development process was based on a combination
+of the International Patient Decision Aid Standards
+(IPDAS) [19] and principles of user-centered design [17].
+As recommended in IPDAS guidelines, we conducted
+interviews with clinicians and patients to determine in-
+formational/decision needs. Based on the feedback from
+the user groups, we developed, tested and revised proto-
+types of the PDA over successive rounds. To this end,
+we used several interviewing and prototyping methods
+to test the validity and usability of the prototypes, as de-
+scribed below and in Fig. 1.
+
+Rounds 1–4
+In the first four rounds, we performed semi-structured
+interviews and usability surveys in Dutch with patients
+and clinicians.
+
+Semi-structured interviews
+Semi-structured interviews were performed to assess the
+type and amount of information needed for decision-
+making. The interviews included the following themes:
+current
+information provision, the deliberation and
+decision-making process, patient preferences, and the
+potential for decision support.
+Each interview lasted between 30 and 60 min and
+was audio-recorded, transcribed, and returned to the
+respondents for review. After approval, each transcript
+was analyzed by means of open coding and axial cod-
+ing [20]. During open coding, a transcript would be
+divided into text fragments and each fragment would
+be assigned one or more keywords based on its con-
+tent. In the subsequent axial coding, the open codes
+were grouped according to their theme. The final
+analysis resulted in a list of the most common themes
+and factors relevant for patients when seeking infor-
+mation and making treatment decisions.
+
+Usability survey
+The respondent was then invited to complete an online
+20-item evaluation survey in Dutch based on the unified
+theory of acceptance and use of technology (UTAUT)
+[21] in which they scored the comprehensibility and us-
+ability of the prototype on a 5-point Likert scale. The
+survey ended with five open questions asking the re-
+spondents to mention positive and negative features of
+the current prototype and suggestions for improvement.
+The feedback was used to make incremental adjustments
+to the prototype in each round. Although not all users
+filled in the surveys (entirely), we had enough informa-
+tion to improve the existing prototype.
+
+Round 5
+While previous rounds focused on both PDA content
+and usability with clinicians and patients who had
+undergone treatment, in Round 5 we focused purely on
+testing
+usability
+and
+acceptability
+with
+non-clinical
+respondents.
+
+Heuristic evaluation
+Four usability experts evaluated Prototype 4 based on
+three sets of heuristics and guidelines: general heuristics,
+readability heuristics, and health-specific usability guide-
+lines. General heuristics measured
+features such as
+consistency, informative feedback, appropriate use of error
+messages, and language use [22, 23]. They then used read-
+ability heuristics covering topics such as typeface, text size,
+colors and size and style of icons and buttons [24]. Finally,
+health-specific
+usability
+guidelines
+were
+based
+on
+evidence-based research on health literacy [25]. Their
+feedback was consolidated into a list of the main usability
+problems and recommendations, on the basis of which a
+
+revised version of the prototype (Prototype 5) was
+developed.
+
+Preference testing between final two prototypes
+Finally, Prototypes 4 and 5 were tested with two groups of
+5 and 6 healthy volunteers, respectively, meant to be rep-
+resentative of the target population of PCa patients in
+terms of age and education level. Volunteers tested the
+prototypes by means of a think aloud session with the de-
+velopers. The System Usability Scale (SUS) questionnaire
+was used to determine the usability of the PDA [26]. The
+final PDA was based on the strengths of both prototypes.
+
+Results
+Clinicians, (former) patients and volunteers were re-
+cruited to evaluate the decision aid at different stages in
+the developmental process. A total of 22 clinicians were
+consulted, consisting of radiation oncologists, general
+practitioners, nurses and urologists (Fig. 2). Their ex-
+perience and age ranged from older highly experienced
+staff to younger health care professionals with 2–5 years
+of experience. Most were familiar with SDM and had
+basic experience with PDAs. An additional 19 patients
+and 11 healthy volunteers were consulted. The former
+patients had received one of the four possible treatment
+options, which were evenly distributed among the group.
+The age of patients ranged from 53 to 88 years, with a
+median age of 73. The ages of the healthy volunteers
+ranged from 50 to 90 years, of which 50% were in the
+age range 60–69 years. Patients and volunteers were
+from varying educational backgrounds with an approxi-
+mately even split between highly educated and minim-
+ally educated. This helped to ensure that the content
+was easy to understand for users from all backgrounds.
+
+Round 1
+Clinicians (four radiation oncologists, two urologists and
+two oncology nurses) mentioned that patients would re-
+quire a wide range of information to make a well-
+informed treatment decision, based on most frequently
+asked questions, which included: anatomy, treatment op-
+tions, complications per treatment in the short- and
+long-term and chances of complete cure for each treat-
+ment. Additionally, they considered it important to
+structure a PDA in such a way that important informa-
+tion cannot be missed, such as presenting the informa-
+tion in a series of windows that must be clicked through.
+Information provision would ideally consist of simple
+jargon-free language and diagrams and videos.
+The clinicians then evaluated the initial draft (Fig. 3)
+which was based on a literature review and clinical
+experience.
+The usability survey revealed that clinicians were satis-
+fied with the content and ease of use of the initial draft
+
+(Additional file 1: Figure S1), but were concerned about
+a potential increase in consultation time as a conse-
+quence of discussing the patient’s preferences more thor-
+oughly due to the PDA (Fig. 4).
+Based on this feedback, the first prototype was devel-
+oped containing the following sections: (i) a patient pro-
+file page in which the patient selects their progression
+risk level (low, medium, or high); (ii) information about
+each treatment option based on the risk level selected
+
+(for instance, a high risk patient would see information
+about surgery and radiotherapy whereas a low risk pa-
+tient would see information about all four treatments);
+(iii) a series of questions to test their understanding of
+the presented information and a summary of the results;
+(iv) a series of questions to identify priorities and prefer-
+ences; (v) a series of questions to identify the least pref-
+erable treatment; (vi) a printable summary of the
+priorities, preferences and answers to the knowledge
+
+quiz, and a bar chart displaying the most suitable treat-
+ment based on the patient’s responses.
+
+Round 2
+Ten former patients who had undergone radiotherapy
+were consulted to evaluate prototype 1. The majority
+(80%) was receptive to using a PDA and felt it would
+help patients learn more about their condition and ask
+more focused questions in consultations. The most im-
+portant factors for decision-making among our respon-
+dents was the quality of life after treatment, side effects
+of the treatment, and the logistical aspects (such as the
+frequency and duration of hospital visits).
+The results of the usability survey indicated that the
+patients
+were
+overall
+satisfied
+with
+the
+prototype
+(Additional file 2: Figure S2) but felt that the navigation
+did not feel intuitive (Fig. 5). On average patients graded
+the PDA with an 8.46/10 and needed 43 min to complete
+the full PDA (this refers to time taken during prototype
+testing, which included the patient pausing to give feed-
+back to the interviewer. Time taken during non-test set-
+tings averaged between 25 and 30 min).
+Based on these comments, prototype 2 was created
+with the addition of: (i) an overview of the pros and cons
+of all four treatments; (ii) non-clinical questions to the
+preferences questionnaire.
+
+Round 3
+Urologists and patients who had undergone surgery or
+active surveillance evaluated prototype 2. The urologists
+expressed concerns about the difficulties patients have in
+understanding and remembering clinical information
+and jargon such as PSA values, Gleason score and
+TNM-staging. They suggested adding animations to
+explaining certain treatment procedures. Their reported
+satisfaction with the PDA was generally neutral and
+many believed that the PDA would increase patient
+knowledge and involvement in the decision-making
+process (Additional file 3: Figure S3). However, only 50%
+would recommend the PDA and 83% were not satisfied
+with how the PDA worked and the information that was
+presented (Fig. 6). On the other hand, patients felt that
+aspects of treatment such as side effects and the treat-
+ment trajectory were not adequately covered in the
+
+consultations. Still, the majority was positive about the
+comprehensibility and usability of the prototype (Add-
+itional file 4: Figure S4). In fact, they scored the PDA
+with an 8.56 on a scale of 1–10 and required an average
+of 54 min to complete the PDA. Additionally, patients
+were overall more satisfied with the PDA than the clini-
+cians (Fig. 6).
+Based on this input, prototype 3 was developed, in
+which (i) the profile section was simplified by removing
+jargon; (ii) videos were added for each treatment proced-
+ure; (iii) a statement was added to emphasize that the
+treatment options all yield similar survival chances.
+
+Round 4
+Eight GPs were interviewed on patients’ decisional
+needs and to evaluate prototype 3. They observed
+that patients generally chose aggressive treatments
+such as surgery hoping to eradicate the tumor com-
+pletely, without considering the impact of the side ef-
+fects, and were heavily influenced by experiences of
+former patients and friends and the opinion of the
+urologist treating them.
+Of the 8 GPs, 5 filled in the usability survey and
+were generally satisfied with the prototype (usability,
+navigation, content and potential to support SDM;
+Additional file 5: Figure S5) but felt that its use
+would not reduce the consultation time (Fig. 7).
+In response to this feedback, the following changes
+were made in prototype 4: (i) the bar chart showing the
+treatment recommendation was replaced with an over-
+view of all treatment options and their relative import-
+ance to the patient; (ii) questions regarding side effects
+were clarified to improve understanding.
+
+Round 5
+Usability experts heuristically evaluated prototype 4 and
+revealed problems regarding navigation, visual presenta-
+tion and readability. For instance, navigation inconsist-
+encies could lead users to miss information without
+realizing it. Additionally, they advised against visually
+distracting elements such as bright colors, background
+images, and cluttered text with small font sizes. These
+issues were incorporated into Prototype 5 and both pro-
+totypes (4 and 5) were presented to volunteers for
+testing.
+SUS scores for Prototypes 4 and 5 were 79 (standard
+deviation = 10.09) and 84.6 (standard deviation = 18.4)
+respectively, however a t-test revealed that the difference
+was not statistically significant. 78% of volunteers pre-
+ferred the closed navigation structure of Prototype 5.
+There was little consensus regarding layout, with an
+even split in preference between Prototype 4 and 5.
+Overall, the participants preferred the simpler visuals of
+Prototype 5.
+
+Final PDA design
+Based on the results of the interviews and usability
+feedback, the final version of the PDA in Dutch language,
+which is freely available on https://beslissamen.nl/, con-
+tains seven sections:
+
+1. Introduction, where a 2-min video introduces the
+purpose of the PDA and its contents.
+2. Personal treatment options, where patients provide
+personal information (e.g. name, date of birth,
+disease characteristics) on which the information
+provision is risk-stratified. For instance, a low risk
+patient will see information about brachytherapy (as
+displayed in Fig. 8A).
+3. A side-by-side comparison of the relevant pros and
+cons of the applicable treatment options.
+4. A knowledge quiz consisting of 10 true/false
+questions to help patients assess whether they have
+understood the provided information sufficiently.
+5. A questionnaire containing 16 questions to clarify a
+patient’s preferences and priorities regarding
+treatment experience, quality of life, and
+uncertainty (Fig. 8B).
+6. Questions relating to treatment experiences to
+indicate the least desirable option.
+7. A summary of the patient’s preferences and
+priorities in relation to each treatment option,
+including the option to print the summary and a
+selection of questions and notes, which can be used
+during the next consultation.
+
+Discussion
+Based on IPDAS guidelines and a user-centered de-
+sign framework, we developed a freely accessible web-
+based PDA for PCa in Dutch. Clinicians, patients,
+volunteers and usability experts were consulted to
+provide feedback on the content of the PDA and
+evaluate its usability at every stage of development.
+Patients stressed the importance of specific details of
+each procedure, such as short- and long-term side ef-
+fects, post-treatment care and (side-by-side) pros and
+cons of each treatment. On the other hand, clinicians
+mentioned the importance of clinically relevant infor-
+mation. Our findings are consistent with previous
+findings that clinicians and patients evaluate treat-
+ment options differently: clinicians tend to focus on
+clinical outcomes, whereas patients also consider how
+the treatment will affect their (quality of) life on the
+short- and long-term [27]. To consolidate these differ-
+ent views, a common platform is needed to make an
+informed decision based on both perspectives. During
+the development of our PDA, this meant moving the
+focus away from clinical aspects of the disease and
+toward its effect on the patient’s daily life.
+
+The main concern among clinicians was that a PDA
+would increase the consultation time, which has been
+cited as one of the major barriers in the implementation
+of SDM and PDAs [28, 29]. Although our PDA is
+intended to be used at home by the patient rather than
+in the clinical setting, thus not directly interfering with
+consultation times, the aim is to inform patients well
+enough that they can engage with clinicians to thor-
+oughly discuss their treatment options. Naturally, this
+may lead to longer consultation times. There is incon-
+clusive evidence on the effect of PDAs on consultation
+length; some studies found that consultations are on
+average longer while others found reduced times, with
+the median change being an increase of 2.6 min [5].
+Prior findings also suggest that the initial costs of using
+a PDA might be offset if it results in the patient being
+better informed during the consultation, particularly if it
+results in a reduction in overtreatment [30]. Neverthe-
+less, clinicians’ views about PDAs adding to their work-
+flows remain a valid concern.
+One possible solution is to present the PDA output in
+a format which supports the shared decision talk. For in-
+stance, in our PDA the patient’s answers are summarized
+in a printable tabular format: all relevant treatment
+options and their side effects are shown with dots repre-
+senting their relative impact on the patient’s life. For in-
+stance,
+a
+strong
+preference
+for
+avoiding
+erection
+problems is indicated with three dots whereas if the pa-
+tient is not concerned about long hospital stays this is
+indicated with one dot. The patient and clinician can see
+then see his preferences at a glance and zero in on the
+most important concerns, thus going through the con-
+sultation more efficiently.
+Another concern expressed by clinicians was that the
+advanced age of most PCa patients may hamper their
+use of web-based PDAs. A systematic review of PDA ef-
+fectiveness in elderly populations concludes that elderly
+patients who use PDAs display better knowledge and
+risk perception and lower decisional conflict [31]. The
+reviewers concede however that little attention has been
+paid to this topic in the literature and that few PDAs are
+specifically designed for elderly patients. Moreover, there
+is little guidance on how to adapt PDAs for an older
+audience, leading the reviewers to emphasize the import-
+ance of proper design and testing. Visual support in the
+form of diagrams [32] and animations [33] is considered
+particularly beneficial. The involvement of elderly pa-
+tients under user-centered design may be a crucial step
+in understanding how to present complex clinical infor-
+mation to an older audience.
+Our process brought to light some of the strengths
+and pitfalls of user-centered design. The iterative model
+may make it easier for developers to adapt data gather-
+ing and testing methods from initial rounds to new
+
+treatment information and make incremental changes as
+required. However, one of the drawbacks is that involv-
+ing a wide group of stakeholders in an iterative process
+can make the development process long, complicated
+and costly. Our development process spanned over two
+years and involved 58 participants, resulting in > 100 h
+of interview material and feedback that needed to be
+processed,
+analyzed
+and
+incorporated
+in
+successive
+rounds. Although it is beneficial to the quality of the
+content and usability, developers should take into ac-
+count the resources required to create a high quality
+PDA.
+Additionally, engaging many different users provides a
+variety of perspectives, but can pose a larger challenge
+to integrate these diverse views and find a consensus,
+
+particularly in the area of usability testing. For instance,
+some participants found the PDA’s closed navigation es-
+sential to guide the user through the process while
+others felt it was too restrictive. Incorporating these
+varying perspectives and preferences may not be feasible,
+so at times developers may need to consult evidence-
+based
+guidelines
+or
+establish
+consensus
+through
+methods such as focus groups or a Delphi study [34].
+Aside from development, it is crucial to ensure that
+maintenance is provided both technologically and sci-
+entifically. For instance, making tablet-ready applica-
+tions is becoming a necessity as more users are
+transitioning from laptops and desktop computers to
+tablets and smartphones for their daily browsing [35].
+Additionally, (prostate) cancer treatment is a rapidly
+
+developing field with the emergence of new modal-
+ities like proton therapy. It is important to ensure
+that a PDA stays up-to-date on current developments
+and new therapies, which requires developers and cli-
+nicians to collaborate continuously. Therefore, it may
+be valuable to establish a governance structure within
+the hospital for maintaining the PDA and collecting
+and analyzing data about its effectiveness to be shared
+with clinicians and the wider medical community to
+create awareness.
+Future work may explore more detailed value clari-
+fication methodologies [36] to identify additional fac-
+tors
+that
+influence
+the
+use
+of
+PDAs
+in
+clinical
+practice. Additionally, translations to other languages
+would greatly benefit the non-Dutch patient popula-
+tion inside and outside the Netherlands. Furthermore,
+a key future step will be the personalization of our
+PDA by incorporating data from prediction models
+(www.predictcancer.org) for survival, toxicity or side
+effects to encourage further personalized shared deci-
+sion making [6, 37]. Data from individual hospitals
+could be incorporated as well to tailor the PDA to a
+specific hospital and create ownership. It is important
+to note that tools such as these would likely require
+certification such as CE marking [38].
+Our process and the resulting PDA is currently vali-
+dated in a clinical trial (NCT03278197, ProDecA, Evalu-
+ation of a Web-based Decision Aid Tool for PCa
+Patients), where the effect of the PDA in clinical practice
+will be evaluated. We expect to observe improvements
+in patient knowledge and the SDM process and a de-
+crease in decisional conflict.
+
+Conclusions
+In this study we followed a user-centered design process
+to develop a web-based PDA for PCa patients. The devel-
+opment process spanned five rounds over a period of two
+years and involved both former PCa patients and health-
+care professionals. This process resulted in a PDA that
+meets the standards of both clinicians and patients by pre-
+senting balanced information about the four available
+treatment options and by providing a platform for patients
+to explore their personal preferences and priorities.

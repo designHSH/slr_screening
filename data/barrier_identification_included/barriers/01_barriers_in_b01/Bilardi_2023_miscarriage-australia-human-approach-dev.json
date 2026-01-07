@@ -1,0 +1,42 @@
+{
+  "file_name": "Bilardi_2023_miscarriage-australia-human-approach-dev.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "The choice of an online website platform was decided before the study began, constraining exploration of alternative platforms or delivery modes.",
+      "justification": "Pre-specifying the platform limited designers' ability to investigate different formats or channels with users, hindering their work to manage user understanding, specify user requirements, and produce potentially more appropriate design solutions.",
+      "reference_excerpt": "Another potential limitation of the study from a human centered or user centered design perspective is the type of online platform to meet users’ needs (a website) was already specified prior to the study commencing.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "User research and usability testing lacked representation from key groups (LGBTIQA+, culturally and linguistically diverse people, and male partners).",
+      "justification": "Insufficient representation constrained the designers' ability to develop a comprehensive, evolving understanding of diverse user needs and to facilitate involvement and iteration for those groups, limiting specification of inclusive requirements and evaluation validity.",
+      "reference_excerpt": "One of the major limitations of the study was the lack of user research around the needs of those with limited representation including LGBTIQA+ people and those with broader culturally and linguistically diverse backgrounds.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Eligibility criteria required good English and access to a computer with Zoom, excluding those without such access or literacy.",
+      "justification": "These recruitment constraints prevented designers from involving and understanding users without English proficiency or internet/computer access, limiting the scope of user research and the applicability of design and evaluation for those populations.",
+      "reference_excerpt": "To be eligible to participate in the usability testing, participants had to reside in Australia, have been affected by miscarriage (women, partners or family members), have a good understanding of English, have access to a computer with Zoom conferencing capabilities and be willing for the interview to be recorded for the purpose of transcribing the audio component at a later time.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Low turnout for usability testing reduced the number of participants from 27 interested individuals to only eight who completed testing.",
+      "justification": "High nonresponse and inability to schedule interested participants constrained designers' capacity to evaluate designs with a broader sample, limiting iterative testing, discovery of usability issues, and confidence in saturation across user groups.",
+      "reference_excerpt": "In total, 27 people completed an expression of interest form online. Of the 27 women, eight participated across the two rounds of testing... The remaining 19 women either did not respond to further communication about the testing session or were unable to attend the scheduled session times.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

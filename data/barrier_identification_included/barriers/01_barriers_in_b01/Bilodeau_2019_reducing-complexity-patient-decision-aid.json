@@ -1,0 +1,105 @@
+{
+  "file_name": "Bilodeau_2019_reducing-complexity-patient-decision-aid.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "A revised layout was added late in the process and the team could not test that new layout with users.",
+      "justification": "This prevented designers from evaluating whether the layout changes improved comprehension or navigation, hindering the 'evaluate designs' and 'integrate feedback & iteration' workloads.",
+      "reference_excerpt": "In the last version (Supplementary file #2), these features were emphasised even more by isolating them on a separate cover page, but we could not test this new layout as it was added in the last version.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Pictograms were added only partially and inconsistently and the final pictogram set had not been evaluated with users.",
+      "justification": "This limited the team's ability to iteratively refine visual design elements and assess whether pictograms supported navigation and comprehension (evaluate designs; integrate feedback).",
+      "reference_excerpt": "These generated positive comments, but we did not use them systematically, nor consistently, and some participants found them unclear. In the last DBox template that has not yet been evaluated (Supplementary file #2), we systematically added pictograms specially designed by a graphic designer to illustrate ...",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The need for the DBox to remain usable in black-and-white prevented implementing a more intuitive color-coded GRADE representation.",
+      "justification": "This format constraint blocked a straightforward visual solution to improve clarity of evidence quality, hindering the team's ability to address comprehension issues (produce design solutions; evaluate designs).",
+      "reference_excerpt": "One participant suggested using green, yellow and red instead of the ‘+’ for a more intuitive representation of the quality of the evidence. This idea was not implemented because the DBox needed to be usable in a black and white version.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Researchers did not have access to participants' medical records and had to rely on the moderator's qualitative classification of dementia severity.",
+      "justification": "Lack of clinical records limited the team's objective understanding of users' clinical context, constraining the 'understand context of use' and 'manage user understanding' workloads.",
+      "reference_excerpt": "We did not have access to their medical records, but the moderator—a registered nurse—qualitatively classified the severity of their dementia as moderate (n=9), severe (n=9) or very severe (n=5).",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Navigation to access the glossary was challenging in the printable DBox format.",
+      "justification": "Difficulty accessing definitions impeded designers' ability to ensure clarity of content for users, limiting the 'address holistic experience' and 'understand context of use' workloads and preventing effective iteration on glossary presentation.",
+      "reference_excerpt": "The glossary proved essential for patient decision aids targeting older adults with dementia and their caregivers, but navigation to access it was a challenge.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Designers avoided using icon arrays because the DBox was designed as a printable PDF and icon arrays would lengthen the document.",
+      "justification": "The printable format constraint prevented adoption of a risk-communication format that might have improved comprehension, hindering 'produce design solutions' and 'evaluate designs' workloads.",
+      "reference_excerpt": "However, we did not use icon arrays, to avoid lengthening the DBox, which we designed as a printable pdf.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 7,
+      "actor": "designer",
+      "barrier_type": "emotional",
+      "description": "Some topics elicited strong emotional responses that were impossible to foresee and that lengthened the design process.",
+      "justification": "Unpredictable emotional reactions required additional iterations and tailoring, constraining the team's ability to plan and execute timely iterative testing (integrate feedback & iteration; manage user understanding).",
+      "reference_excerpt": "Some topics may also elicit a very strong emotional response, which might be impossible to foresee and may lengthen the design process.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 8,
+      "actor": "interaction",
+      "barrier_type": "emotional",
+      "description": "Presence of caregivers during sessions reduced spontaneity of both caregivers and patients, potentially biasing feedback.",
+      "justification": "Dyad dynamics and caregiver dominance limited the research team's ability to facilitate authentic user involvement and collect unfiltered user input, hindering 'facilitate user involvement' and 'manage user understanding'.",
+      "reference_excerpt": "However, caregivers may have been less spontaneous in some of their opinions because of the presence of the person in their care, and this could have influenced our conclusions. The presence of caregivers may also have caused some of the seniors with dementia to be less spontaneous, particularly if their caregivers played a dominant role in the dyad.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 9,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "Some participants considered evidence, GRADE ratings and benefit/harm probabilities to be irrelevant and designers found no strategy in the template to address this belief.",
+      "justification": "Users' misunderstanding or dismissal of evidence undermined designers' ability to manage user understanding and to specify content requirements that would both inform and engage users, limiting iteration effectiveness.",
+      "reference_excerpt": "On the other hand, participants found some parts to be of little relevance, use or interest. A number of caregivers mentioned that the DBox was of no use to patients who could not participate in the decision-making process because of cognitive decline. ... Anyway, I mean this page, to be practical—page 4—the harms, I would take it out altogether. I would leave it up to the clinicians to read that. We have no use for the studies that’ve been done. (Caregiver #9, DBox #1) No strategy was found to address this in the DBox template.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 10,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Wording used to express priorities required several rounds of revision before arriving at acceptable phrasing.",
+      "justification": "Repeated rewording increased the number of evaluation cycles and consumed design resources, hindering 'specify user requirements' and 'integrate feedback & iteration' workloads.",
+      "reference_excerpt": "The wording used to express priorities required several rounds before we were able to arrive at the best expression, which suggests that the list of priorities would benefit from the input from a patient/caregiver expert panel.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 11,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "One DBox (power of attorney) required major content additions between rounds, which temporarily lowered user satisfaction until further redesign in a subsequent round.",
+      "justification": "Topic-specific complexity forced substantial late-stage revisions and extra testing rounds, limiting efficiency of iteration and delaying stabilization of the template (integrate feedback & iteration; evaluate designs).",
+      "reference_excerpt": "In the current study, the DBox on the power of attorney required adding much information on the various legal options in the second round, generating lower scores before the table comparing the various options and their features were incorporated in the third round.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

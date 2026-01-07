@@ -1,0 +1,175 @@
+Design of an Integrative System
+for Conﬁgurable Exergames Targeting
+the Senior Population
+
+Teresa Paulino1,2, John Muñoz1,2(&), Sergi Bermudez1,2,
+and Mónica S. Cameirão1,2
+
+1 Faculdade de Ciências Exatas e da Engenharia, Universidade da Madeira,
+Campus Universitário da Penteada, 9020-105 Funchal, Portugal
+{teresa.paulino,john.cardona,sergi.bermudez,
+
+2 Madeira Interactive Technologies Institute, Universidade da Madeira,
+Polo Cientíﬁco e Tecnológico da Madeira,
+ﬂoor -2, Caminho da Penteada, 9020-105 Funchal, Portugal
+
+2
+Procedure
+
+Our methodology is structured in stages using techniques commonly found in the ﬁelds
+of systems engineering, human computer interaction, and action research. The output
+of each stage served as input for the subsequent ones (Fig. 1). The following sub-
+sections describe the steps carried out along the system design process.
+
+2.1
+Requirements Engineering
+
+Literature supports that requirements engineering (RE) is a crucial step on the devel-
+opment cycle of a software system [6, 7], which helps to understand the user needs and
+therefore, assisting on designing a system towards its effectiveness.
+
+Fig. 1. Diagram showing the different design processes and participants involved.
+
+288
+
+2.1.1
+Interviews with Health Professionals
+For requirements elicitation we have chosen a conversational method, under the form
+of semi-structured interviews. 12 participants were invited to collaborate in the initial
+process of requirements elicitation: 5 physiotherapists, 2 occupational therapists, and 5
+physical training instructors, with average age of 28.9 ± 5.4, and 5.6 ± 4.7 years of
+professional experience. Interviews were carefully planned to cover most of the topics
+that could help understanding the needs of the professionals. Questions included cat-
+egories such as: (i) knowledge and opinions about similar systems, (ii) positive and
+negative aspects about these type of interactive systems, (iii) daily practices in terms of
+rehabilitation therapies and exercise prescription, (iv) expectations of the integration of
+this system including data visualization, technical assistance, concerns, and constraints.
+Qualitative data was collected under the form of written notes and audio ﬁles recorded
+along the interviews. Raw data was coded using the qualitive data analysis tool
+MAXQDA1, resulting in 349 distinct codes with 994 records in all ﬁles. A code could
+correspond to a feature, a suggestion, a concrete answer, or even an insight that could
+be a suitable candidate for a requirement of the integrative system.
+
+2.1.2
+Requirements Prioritization
+Requirements prioritization assists in making the right decisions when choosing the
+most important features to implement on a system [8]. From the data obtained on the
+previous step, a data cleaning step was manually performed merging similar codes and
+removing the ones which corresponded to suggestions and opinions that were not
+considered requirements for the proposed system due to their high diversity. A ﬁnal list
+of 110 requirements was then shared with 6 exergaming researchers which evaluated
+each requirement with an eleven-point Likert scale considering two perspectives: (i) its
+cruciality for the system, meaning: “does this system work without this functionality?”;
+and (ii) its importance to fulﬁl the objectives of the system. The requirements were then
+ranked according to 3 results: the evaluation from the cruciality perspective (the mean
+of all participants), the percentage of interviewees that mentioned each speciﬁc
+requirement, and the evaluation from the importance perspective. The top ﬁve
+requirements are presented in (Table 1).
+
+Table 1. Top-ﬁve requirements obtained from the prioritization step.
+
+1 MAXQDA: Qualitative Data Analysis Software (https://www.maxqda.com/).
+
+Design of an Integrative System
+289
+
+2.2
+Software Design
+
+We followed an Object-Oriented design approach using UML notation while applying
+universal principles of software engineering [9]. The software design process started by
+creating the use cases based on the requirements list. Functional requirements were
+adapted and rephrased to represent atomic actions which users can perform with the
+system. Three main actors were identiﬁed: (i) professionals - the person in charge of
+prescribing activities, (ii) end-users - seniors who will play the exergames, and
+(iii) administrator - someone with full access to the system, mainly technicians or
+researchers. Use cases were crucial to the next steps, which assisted in identifying the
+main entities and their relationships, enabling the creation of diagrams such as high-
+level classes, activity, and architecture diagrams. User, session, plan, game, assessment,
+exercise, music, are some examples of entities identiﬁed along the software design
+process.
+
+2.3
+Human-Computer Interaction
+
+In parallel with the software design process, a low-ﬁdelity paper prototype was built to
+assist in the design of the software diagrams. This helped in visualizing the possible
+interaction ﬂows with the users. Health and sports professionals participated in the
+validation of the initial designs, allowing the identiﬁcation of possible preferences of
+interaction with the UI. For this, two traditional techniques were chosen and iterated:
+card sorting and paper prototype tests, which are described in the following
+subsections.
+
+2.3.1
+Card Sorting
+Card sorting is a technique that assists understanding how information should be
+organized in the UI. Open card sorting sessions avoid biasing the participants by
+enabling them to group and label their own categories [10]. Four open card sorting
+sessions were performed with 2 sports trainers and 2 occupational therapists, who also
+participated in the requirements elicitation process. 51 topics were chosen, which
+corresponded to functionalities of the system, or actions that the user can perform with
+the system (e.g. “Create session”, “Create training plan”, “Deﬁne frequency”, etc.).
+Each session was video recorded, and the participants were asked to think aloud while
+they were organizing the topics (Fig. 2).
+
+Fig. 2. Participants organizing topics along the card sorting sessions.
+
+290
+
+All participants organized cards in a sequential manner. Some of the new topics that
+participants created have already been considered on the prototype, other topics were
+used as inputs for modiﬁcations of the current prototype. For instance, the possibility to
+edit a training plan, duplicate a session, or creating experimental sessions without being
+associated with any user, are functions that were not considered before. Despite each user
+have labeled groups in a distinct manner, we observed a pattern in organizing by: “User
+and assessments”, “Training plan”, “Sessions and games”, and “Settings and help”.
+
+2.3.2
+Paper Prototype Evaluation
+A paper prototype was built with sticky paper enabling interchanging elements during
+the prototyping and testing, where the features emerging from the card sorting sessions
+were considered. The low-ﬁdelity prototype consisted of a mix of hand-written text and
+drawings, with printed elements, mostly icons, to evaluate how intuitive they could be
+if applied in the ﬁnal UI. Two participants that participated in the previous design
+processes (one from each ﬁeld: sports and health), were invited and asked to accom-
+plish two tasks and to think aloud while they were performing the actions. Each session
+lasted about 30 min. Participants managed to successfully accomplish both tasks faster
+than expected. Overall, the steps were intuitively performed without the need of much
+support. Some modiﬁcations emerged to integrate in the ﬁnal UI, such as: (i) recom-
+mendation of assessments after creating a new end-user, (ii) availability of an history of
+the settings previously chosen when creating or editing a plan, session, or activity, and
+(iii) automatic saving of data, without the need of having a save button.
+
+3
+Discussion and Future Work
+
+The purpose of this work was to design an integrative exergaming system involving the
+main interactors with the UI, the health professionals. From the requirements elicitation
+process, we found it sometimes hard to differentiate the exergames from the integrative
+system. Speciﬁcally, participants tended to always answer considering the effectiveness
+and concerns of the exergames. However, in the later steps such as card sorting or the
+paper prototype evaluations, the image of the system and its speciﬁc functionalities
+became much clearer. As an insight from the paper prototype evaluations, we identiﬁed
+that there were too many options present on the system. A better approach would have
+been to start with a very simple interface with the basic functionalities and iteratively
+increment it along with the needs of the professionals. By involving the health pro-
+fessionals in the design process, we acknowledge that participants felt empowered by
+taking part of the various stages, and that they understood the importance and impact of
+their decisions on the envisioned system. As future steps, after implementing the digital
+interface with basic functionalities and navigation, we will run a usability test, which
+will serve as a basis for future implementations towards the deployment of a functional
+integrative system.
+
+Design of an Integrative System
+291
+
+4
+Conclusion
+
+In this paper we presented the steps carried out to design an integrative system for
+Exergaming targeting the senior population combining human-centered and software
+engineer methods. We took advantage of techniques such as semi-structured inter-
+views, card sorting, and paper prototyping to involve the main interactors of the
+envisioned system in the design process which allowed to design with the consideration
+of their preferences and needs. We believe that the performed steps are fundamental for
+the future adoption of the proposed system.

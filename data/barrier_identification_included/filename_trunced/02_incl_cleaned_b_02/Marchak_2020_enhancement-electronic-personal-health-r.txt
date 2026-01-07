@@ -1,0 +1,447 @@
+ORIGINAL ARTICLE
+
+User-centered design and enhancement of an electronic personal
+health record to support survivors of pediatric cancers
+
+Jordan Gilleland Marchak1,2
+& Brooke Cherven1,2 & Rebecca Williamson Lewis1 & Paula Edwards3 &
+Lillian R. Meacham1,2 & Michael Palgon3 & Cam Escoffery4 & Ann C. Mertens1,2
+
+Received: 22 August 2019 /Accepted: 20 November 2019
+# Springer-Verlag GmbH Germany, part of Springer Nature 2019
+
+Methods
+
+UCD methods were utilized to inform the initial PHR design
+(needs assessment) and iterative enhancements (usability eval-
+uations) to the PHR. Table 1 provides an overview of the UCD
+methods used at each stage for each of the stakeholders.
+Figure 1 illustrates the system development timeline and out-
+lines the stage in the implementation process in which each
+method was used. Our needs assessment was conducted over a
+2-year period in conjunction with PHR Design, Build, and
+Testing. The PHR was then implemented in two phases:
+Version 1.0 Provider Portal (year 3; launched September
+2009) provides a virtual library of educational material and
+links to reputable informational resources for providers.
+Version 2.0 Patient & Family Portal (year 4; launched
+September 2010) provides patient and family education, links
+to resources, and a PHR with secure data storing and sharing
+functionality. Version 2.0 PHR leveraged SQL Server AES-
+256 encryption to securely store patient data in the database,
+and Secure Sockets Layer (SSL) to securely transmit patient
+data between the web server and the web browser. Version 2.0
+also included enhancements to the Provider portal by adding
+features to support data sharing, allowing patients to share
+their SurvivorLink PHR with the providers of their choice.
+Following the launch of the Provider and Patient and Family
+portals, iterative enhancements have been performed on an
+ongoing basis to Evaluate and Enhance the system in re-
+sponse to usability evaluations (years 5–10).
+
+Needs assessment
+
+Input from stakeholders was solicited through interviews and
+focus groups to understand the needs of potential users as well
+as the contexts in which they would use a PHR to enable
+ongoing care of pediatric cancer survivors. Researchers with
+expertise in qualitative analysis (BOC and PE) reviewed tran-
+scripts and/or audio recordings and engaged in memoing to
+inform site development and revisions in real time. Data col-
+lection was discontinued once the research team believed data
+saturation had been achieved (e.g., development questions
+were answered with no new information was being obtained
+from stakeholders). Transcripts and field notes were re-
+analyzed using inductive thematic analysis methods for the
+purposes of the current publication. Members of the research
+team (BOC and JGM) read transcripts and field notes, devel-
+oped open codes, and generated additional memos.
+Subthemes and themes related to system requirements were
+reviewed, defined, named, and discussed amongst the re-
+search team.
+
+Patient and parent focus groups Parents of pediatric cancer
+survivors and young adult survivors (aged 18–21 years) were
+recruited to share their thoughts on the needs and requirements
+of an electronic PHR. Recruitment of actively engaged parents
+and young survivors took place through two pediatric cancer
+survivor clinics and local community organizations serving
+children and adolescents with cancer. The convenience sam-
+ple of participants resulted in two parent focus groups (N = 11)
+and one young adult focus group (N = 2); a third young adult
+completed a structured interview. The focus groups lasted
+60 min and were conducted by a health informatics engineer
+(PE) and an epidemiologist with expertise in qualitative data
+collection (AM). Focus groups and structured interview were
+audio-recorded, transcribed, and followed a semi-structured
+outline of questions designed to elicit feedback from partici-
+pants. Transcripts from parents and young adults were used to
+guide the development of the Patient & Family Portal.
+
+Provider structured interviews To incorporate the perspective
+of healthcare providers on the development of SurvivorLink,
+we conducted structured interviews with 14 physicians includ-
+ing pediatricians, primary care providers (PCPs), and subspe-
+cialists [4]. Interviews were conducted via telephone using a
+structured interview guide consisting of 12 multiple choice
+and open-ended questions. Interviews were conducted by a
+health informatics engineer (PE). Detailed field notes were
+taken during each interview and summarized to guide devel-
+opment of the Provider Portal.
+
+Usability evaluations
+
+Think aloud protocol Following the launch of the Patient &
+Family Portal, usability evaluations were conducted to solicit
+feedback on the site and assess user workflow using a Think
+Aloud protocol [31, 32]. In these evaluations, participants
+were directed to complete a set of six predetermined tasks to
+store healthcare data in the PHR (Register for SurvivorLink
+account, Confirm registration via email verification, Set up
+Health Record within SurvivorLink) and share health infor-
+mation (Select Survivor Clinic, Submit Medical Record
+Release, Share Health Record) via the PHR. Per the “Think
+Aloud” protocol, the participants verbally shared their thought
+processes while exploring each section of the website and
+completing the six tasks. Given that three to four participants
+typically maximize costs-to-benefits in usability testing [33],
+we recruited N = 4 participants from a pediatric cancer survi-
+vor clinic to complete “Think Aloud” protocols. Two young
+adult survivors and two parents of child survivors who were
+new to the SurvivorLink website completed evaluations with a
+health informatics engineer (PE) in a private room in the clin-
+ic. The interviewer recorded written notes of all comments
+made by users and any observed problems with system func-
+tionality and ease of use to inform site improvements.
+
+College health provider focus groups When survivors are ag-
+ing out of the pediatric system (typically between ages 18 and
+25), many go to college where they see a college health pro-
+vider to meet their primary care needs. In 2012, the
+SurvivorLink team established a network of university
+healthcare providers from six universities [34] to serve as pro-
+vider stakeholders for young adult primary care. In order to
+facilitate collaborative design with these stakeholders span-
+ning a wide geographical distance, we conducted a 1-h
+phone-based focus group followed by a 3-month asynchro-
+nous, online focus group where weekly questions about
+SurvivorLink features/content were posted. A research nurse
+(BOC) and a physician researcher (LRM) moderated the focus
+groups to gather provider input on potential site enhancements
+to increase the perceived usefulness and ease of use of
+SurvivorLink (e.g., “What are some of the barriers to using
+SurvivorLink at your site?”, “What new features and functions
+would make SurvivorLink more useful to adult providers?”).
+A total of seven PCPs and family practice providers who were
+familiar with SurvivorLink and engaged with the young adult
+survivor population participated in our focus groups either by
+phone (n = 6 from 4 universities) and/or online (n = 6 from 5
+universities). Detailed notes of the focus group were taken and
+the online group responses were summarized for major
+themes and site enhancement suggestions.
+
+Results
+
+Needs assessment: stakeholder focus groups
+and structured interviews
+
+Survivors, parents, and providers identified several needs for
+functionality and educational components necessary for
+SurvivorLink to be useful. Although no participants had prior
+experience with a PHR, the idea of a secure website where
+they could store and share key health documents appealed to
+all groups: “I think that [website] would give her more ammu-
+nition to be an advocate for herself because she would have
+something to take with her and show them. So absolutely I
+think it would be a great resource” (parent). Specific require-
+ments for the SurvivorLink system identified in the needs
+assessment focus groups and structured interviews included
+(1) educational needs for learning about the lifelong
+healthcare recommended for survivors of childhood cancer
+(learn), (2) secure storage needs for electronically compiling
+SCPs and other healthcare records to direct and document
+long-term follow-up care (store), and (3) communication
+needs to allow survivors to share health documents with pri-
+mary and specialty healthcare providers (share). These major
+themes, “learn,” “store,” and “share,” were adopted as over-
+arching missions and functions for SurvivorLink. Within these
+themes, subthemes emerged from the different participant
+groups (Table 2).
+
+Learn. Both patients and parents identified the need for
+education about survivorship from a trustworthy source.
+Providers valued educational resources for the website
+that could easily be verified as being from credible
+sources. Multiple PCPs and non-oncology specialists
+discussed the challenge of staying up to date with pediat-
+ric cancer therapy and its impact on long-term health.
+Many voiced needs for brief, well-organized, educational
+information to inform patient care in a fast-paced clinical
+setting. Given stakeholders’ expressed needs for trusted
+sources of information, we developed ‘Quick Facts’ in-
+formation sheets for providers to provide a quick over-
+view and references for clinical topics, as well as a
+Resources pages for all users with links to credible infor-
+mation on survivorship, childhood cancer, support & ad-
+vocacy, and survivor care.
+Store. When asked about privacy and security, parents
+voiced stronger concerns and hesitations than young
+adults. Parents worried more about storing health records
+online and cited apprehensions about insurance compa-
+nies or other entities accessing their child’s health records
+and potential negative ramifications from a privacy
+breach. Interestingly, some parents suggested receiving
+an emailed copy of their child’s record or storage on
+electronic disk, without hesitation about the security of
+email or physical storage/viewing of electronic files from
+disk or email. The young adults did voice some concerns
+about security, but overall appeared more comfortable
+with the idea of storing health information online, provid-
+ed it was confidential, secure, and they could control who
+could view their records.
+Share. Young adults discussed the benefits of their pro-
+viders having access to health records, especially in an
+emergency situation. Providers frequently stressed the
+importance of information sharing with oncologists and
+survivor specialists. A common topic of discussion
+among parents and providers was the importance of the
+availability of survivorship care plans to guide surveil-
+lance for late effects of therapy. Providers were enthusi-
+astic about having access to patient records to ensure
+quality survivor healthcare, while parents were eager to
+have a resource that would allow their survivors to share
+these records with providers outside of oncology to pro-
+mote individualized, risk-based surveillance for late ef-
+fects of treatment after leaving the pediatric oncology
+care setting. To address privacy and security concerns,
+user control of who can see or add to survivors’ online
+health records became a core guiding principle for design
+of the sharing functionality. We also included an access
+log so that users can see who viewed and downloaded
+information (and when) from their online charts.
+
+Usability evaluation: barriers to use and site
+enhancements
+
+During the Think Aloud usability evaluations, all participants
+indicated they perceived value in the concept of a PHR.
+However, participants encountered several barriers while
+attempting to complete the six tasks required for secure health
+document storing and health record sharing on the
+SurvivorLink website (Table 3). All four participants were
+able to register initially for a SurvivorLink account without
+assistance (task 1), but two of the four users required
+prompting to login to their email to verify their account (task
+2) prior to proceeding. Following completion of email verifi-
+cation, two out of four users were unsure of next steps to log in
+and create their health record (task 3) and required guidance
+by the interviewer. Three out of four users were able to find
+and select the clinic on where the survivor receives care (task
+4) without help. Two out of four users completed the electron-
+ic medical record release to allow their clinics to upload doc-
+ument on their behalf (task 5), while only one user shared their
+record with a medical provider without help (task 6). No user
+was able to complete all six tasks without assistance.
+Based on the barriers to task completion identified in the
+evaluations, several key enhancements to improve the
+website’s usability were made. A summary of the patient iden-
+tified barriers and recommendations from the usability evalu-
+ations and subsequent site enhancements to improve per-
+ceived ease of use and perceived usefulness are listed in
+Table 4. One key enhancement to improve usability included
+the development of a health record “wizard,” as well as a new
+streamlined registration process. We created a “wizard” to
+streamline and assist users in setting up their personal chart
+and sharing it with their Survivor Clinic and other Providers
+(tasks 3–6: Set up Health Record within SurvivorLink, Select
+Survivor Clinic where patient receives care, Submit Medical
+Record Release to allow clinic to upload health documents on
+patient’s behalf, Share Health Record with selected medical
+providers). Following implementation of the registration wiz-
+ard, health document uploading and storage increased by 24%
+among PHR users [35].
+The college health provider focus groups’ feedback fo-
+cused on improving the perceived ease of use and usefulness
+from the provider perspective. These suggestions along with
+others outlined in Table 4 were integrated into the website.
+Two of these updates focused on improving the perceived
+usefulness of SurvivorLink included provider upload func-
+tionality and development of a provider directory. Providers
+emphasized the importance of the PHR being dynamic and
+including up-to-date critical health information for individual
+survivors. Since not all providers participate in health infor-
+mation exchanges (HIE), this means automatically loading
+important data from provider EHRs was not available at this
+time. Thus, they suggested that any provider whom a survivor
+grants access to their chart should be able to upload a health
+document to the survivor’s health record. Thus, this feature
+was added. Providers highlighted that survivors face chal-
+lenges finding primary and specialty providers who are famil-
+iar with survivorship. To address this, they suggested adding a
+provider directory on the website that could be used by both
+survivors and by providers looking to refer their survivor pa-
+tients. Therefore, we added a directory of registered providers
+to the website which is searchable by provider specialty, loca-
+tion, and/or adult versus pediatric practices..
+Feedback from providers, patients, and parents highlights
+an important design trade-off in PHRs: usability vs. privacy/
+security [36]. The following suggestions offered by stake-
+holders would likely increase users’ efficiency and/or satisfac-
+tion with the PHR, but were not made as they would also
+introduce critical security threats and liabilities to the
+SurvivorLink system. For example, healthcare providers
+voiced a desire to be able to search for a patient to request
+access rather than wait for a patient to invite them to view
+records. However, this search function is not possible under
+current HIPAA privacy regulations, which require consent for
+disclosure of protected health information (PHI). It would also
+conflict with SurvivorLink’s guiding principle to ensure
+survivors’ control over who have access to their information.
+Additionally, young adult survivor and parent users expressed
+frustration at needing to verify their email address following
+registration, but before creating their health records. While
+removing email verification would have streamlined the initial
+log-on process for users, it is fundamental to electronic infor-
+mation security. Lastly, providers requested that the share fea-
+ture enables survivors to share their health record with entire
+clinics instead of only individual, registered providers. This
+would support the scenario where a nurse or other clinic staff
+needed to look at information in the PHR prior to a patient
+visit. While HIPAA presents challenges to implementing this
+feature, we are currently developing a HIPAA-compliant clin-
+ical portal (Fig. 1, year 10) for secure data exchange with
+entire clinics and exploring options for HIE-enabled sharing.
+In order to share health information with an entire clinic via
+SurvivorLink, a survivor will have to request and provide
+HIPAA-compliant consent to share with the clinic and the
+clinic will have to have executed HIPAA-compliant business
+associate agreements (BAA) with SurvivorLink. We are also
+investigating options to connect SurvivorLink to existing local
+HIE so that information sharing with the clinic could be ac-
+complished with patient permission based on the data sharing
+agreements and mechanisms of the HIE.
+
+Discussion
+
+SurvivorLink is the only patient-controlled PHR designed
+specifically to enable young adult survivors of childhood can-
+cer and parents of survivors < 18 years of age to store their
+SCP and other important health documents and share these
+health documents with their various healthcare providers, re-
+gardless of where they practice. The work described here dem-
+onstrates how UCD methods can be iteratively employed to
+incorporate the user’s voice in the development and enhance-
+ment of a PHR in order to improve its usability and utility, thus
+removing barriers to adoption. Our initial assessments of
+adoption among potential users showed a 23.7% (N = 148/
+624) uptake of SurvivorLink among survivors or parent
+proxies who attended survivor clinic at our institution during
+an 18-month observational study period [37]. While many
+tethered institutional and managed care-driven patient portals
+exist, SurvivorLink remains unique as an untethered, patient-
+controlled system designed with the specific needs of survi-
+vors of childhood cancer and the providers who care for them
+in mind.
+For patients to adopt and use a PHR, they must see the
+value and benefit it provides to them. Many pediatric cancer
+survivors receive care from a variety of providers and subspe-
+cialists who manage their health information within
+institution-specific health record systems. Similar to an ex-
+ploratory study of PHRs conducted by Sharp et al. [38], par-
+ents and survivors participating in our needs assessment
+expressed the need for a PHR that would store their health
+information across institutions. This would help them manage
+and communicate their complex health histories and needs to
+their providers who often operate in different institutions (on
+different EHRs and tethered PHRs). Continuous survivor care
+across the lifespan often necessitates transitions, from pediat-
+ric to adult-centered, from cancer center care back to primary
+care, and/or at times of survivors’ relocation to a new geo-
+graphical area [39–41]. Previous work indicates the usefulness
+of SurvivorLink during these transitions in care [37]. Having
+on-demand access to their health information via a PHR al-
+lows survivors to provide their comprehensive health history
+to any healthcare provider and advocate for quality lifelong
+survivor care.
+Previous studies have found that patient feedback on
+perceived ease of use is not only feasible to obtain but also
+often feasible to implement within the given technological
+infrastructure [42, 43]. With respect to SurvivorLink’s ini-
+tial ease of use, the usability evaluations conducted identi-
+fied several disjointed steps that were required to create a
+health record following registration. Subsequent redesign
+and implementation of the health record wizard on
+SurvivorLink to address this issue were directly related to
+improving successful use of the PHR among survivors and
+parents, with users being almost four times as likely to
+store and upload a health document after the launch of
+the wizard (OR = 3.9, 95%CI 1.9–8.3) [35]. As technology
+evolves quickly, successful PHR design must be an itera-
+tive process that elicits and responds to patient and provid-
+er feedback using UCD methods to evaluate and improve
+ease of use over time.
+
+Limitations and future directions
+
+The goal of our system development process was to in-
+form design and enhancements specific to our site. As
+such, there are limitations to the study which may impact
+the generalizability of the findings beyond our PHR sys-
+tem. Interviews and focus groups were conducted by the
+research team to solicit open-ended opinions from a con-
+venient sample of survivor stakeholders, and it is possible
+participants’ affinity for the institution that developed
+SurvivorLink may have positively biased participant re-
+sponses. Limited demographic information was collected;
+however, many participants self-reported their diagnoses
+during focus group discussions which included leukemia,
+lymphoma, sarcomas, and brain tumors. Thus, we felt
+confident our stakeholder sample was sufficient to capture
+the variability of the cancer experience as it relates to
+diagnosis. Our analyses of our qualitative data were con-
+ducted manually using both transcripts and field notes,
+and we did not seek calculate intercoder reliability as we
+were not seeking to apply our needs assessment findings
+beyond the development of our PHR. Additionally, our
+needs assessment and usability evaluations were conduct-
+ed with stakeholders in the geographical area served by
+our institution in the southeast United States, and these
+groups may not be representative of all potential users.
+With these limitations, there may be concerns about the
+utilization of SurvivorLink beyond the current institution.
+However, there are currently over 1350 registered users on
+SurvivorLink and there have been visitors to the site from
+all 50 states and 119 countries.
+Given this strong interest, a research study is currently un-
+derway to disseminate SurvivorLink to other pediatric cancer
+centers nationally to learn about clinical adoption and imple-
+mentation of the tool and assess its effects on patient activa-
+tion, self-efficacy, and return for follow-up survivor care
+visits. Process evaluation from the national sample of partici-
+pations can yield more feedback for tailored changes to
+SurvivorLink. Other future directions include working with
+local healthcare systems and HIEs to examine the feasibility
+and usefulness of automating transfer of survivor health
+information from providers’ EHRs into SurvivorLink to re-
+duce the effort by both providers and patients to load infor-
+mation and increase the completeness of information provided
+via SurvivorLink.
+
+Conclusion
+
+This study demonstrates that UCD methods are important
+tools to evaluate and enhance PHRs to meet evolving needs
+and ensure their usefulness and ease of use over time. While
+young adult survivors, parents of child survivors, and pro-
+viders’ perspectives differed slightly in their needs, all groups
+informed the core missions and functions of SurvivorLink:
+Learn, Store, Share. Based on the input from these stakeholder
+groups, SurvivorLink was designed to support survivors in
+owning and sharing their health information with providers
+at any healthcare system. Through SurvivorLink, survivors
+have the ability to create and self-manage a dynamic longitu-
+dinal health record to use throughout their lifetime. As tech-
+nology advances, there will be a need for continued iterative
+evaluation and evolution of this website in order to continue to
+meet the dynamic needs of the growing childhood cancer
+survivor population.

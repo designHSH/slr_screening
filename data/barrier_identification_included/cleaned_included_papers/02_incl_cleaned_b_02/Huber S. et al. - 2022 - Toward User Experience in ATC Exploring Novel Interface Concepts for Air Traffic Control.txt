@@ -1,0 +1,866 @@
+Toward User Experience in ATC:
+Exploring Novel Interface Concepts
+for Air Traffic Control
+
+Stephan Huber1,*, Johanna Gramlich1, Selina Pauli1,
+Simon Mundschenk1, Eliana Haugg2 and Tobias Grundgeiger1
+
+1Psychological Ergonomics, University of Würzburg, 97070 Würzburg, Germany
+2Research & Development, Deutsche Flugsicherung GmbH, 63225 Langen, Germany
+
+As part of a larger project, we followed a contextual design
+(Holtzblatt and Beyer, 2016) process in ATC. In this work,
+we focused on designing and evaluating new interaction tech-
+niques for future ATC systems. We strived to develop a design,
+based on controllers’ psychological needs and experiences in
+the context of their work. We developed a unified view on
+air traffic with three different prototypes, a mouse interface,
+a flight-dial and tangible models. We formatively evaluated
+those prototypes with air traffic controllers to explore, how
+different interaction techniques can support their work. Dur-
+ing this process, we aimed to understand ATC as a holistic
+experience and to design for positive UX beyond mere task
+fulfillment and efficiency. We rounded off the design process
+with a summative evaluation, to test the UX of our prototypes
+against the system currently in use. The aim of the study was
+to identify which aspects of UX improved as a result of the
+novel interaction concepts. Quantifying aspects of UX beyond
+usability (Gürlük et al., 2014) is a novel contribution in the
+context of ATC. Finally, we discussed our quantitative findings,
+as well as insights and implications for the future workplace
+in ATC.
+
+2.
+DESIGN PROCESS
+
+Using the models and diagrams created by Huber et al. (2020),
+we conducted two wall walk workshops (Holtzblatt and Beyer,
+2016) with a total of 15 team members to generate key insights
+and design ideas. All team members had backgrounds in
+human-computer-interaction, psychology, design or informa-
+tion technology, and all but two were involved in data collection
+or had worked in the field of air traffic management.
+
+2.1.
+User needs
+
+The qualitative data obtained during the contextual inquiries
+included insights regarding organization, strategies, inter-
+action, communication and life after work. Below, we list
+the selection of top user needs for approach controllers—
+the essence of our ethnographical work—that we considered
+during prototyping and will refer to in the following sections.
+Of course, these user needs are in addition to the workplace
+priorities safety, structure, and efficiency:
+
+1. Controllers value the direct, objective feedback repre-
+sented by separation between aircraft on the final.
+2. Controllers approach similar situations differently, that
+is, their individual style varies.
+3. Controllers want to be able to customize their worksta-
+tion and interface.
+4. Controllers want input devices to be compatible with one
+other.
+5. Controllers need information grouped in context when it
+is required at the same time.
+6. Controllers want a system that can be handled directly
+and intuitively without workarounds.
+7. Controllers want to set markers and vectors as visual aids.
+8. Controllers need support but no replacement for their
+skill and experience.
+9. Controllers need strategies to stay focused at quiet night
+shifts.
+
+2.2.
+Ideation and visioning
+
+After the wall walks, we conducted three visioning workshops
+as described by Holtzblatt and Beyer (2016) and iteratively
+created different visions. To ensure a shared perspective on
+user data during these workshops, every team member must
+have participated in the wall walk. Visions may build on each
+other and cover several user needs. While visioning is a creative
+process that may include aspects that go beyond user data, we
+evaluated all visions based on their conformity with user needs.
+Building a final interface covering all needs is very visionary.
+Instead, we aimed at rethinking the entire workstation, rather
+
+than one screen that needs to fit in the existing workstation. The
+objective was to envision an interface that addresses several
+user needs without opposing others. In the present paper, we
+focus on the vision one-face-to-the-ATC, because it reoccurred
+in all workshops and was central in four visions.
+
+One-face-to-the-ATC describes one unified interface that
+allows the controller to work on all of their tasks in one
+place. The one-face-to-the-ATC vision served as the general
+framework for the specific interaction concepts because the
+distinction between the radar display and the digital flight
+strip display, and the general interaction concept of the current
+workstation are no longer part of the envisioned workstation.
+Within one-face-to-the-ATC vision, we came up with three
+different interaction interfaces, which we describe in detail
+in the next section: the mouse interface, the flight-dial and
+tangible models.
+
+3.
+INTERFACE AND INTERACTION CONCEPTS
+
+ATC is a visual domain with the ‘radar’ display currently
+used to supervise movements of aircraft at its center (Fig. 1b).
+To increase acceptance of our prototypes, we kept the visual
+representation of air traffic as the core element and prototyped
+three different concepts to interact with the traffic. The graphic
+user interfaces of all three prototypes follow the vision one-
+face-to-the-ATC. In contrast to the strip system, controllers
+can perform all interactions directly on the radar screen of the
+prototypes (Fig. 2, UN4–6). This reduces the need to divide
+attention between monitors on desk level, on eye level and
+above (Fig. 1), and allows controllers to focus their attention
+on the radar picture at all times (UN1) while reducing so-called
+head down time (i.e. the time in which the controller is not
+looking at the radar screen to observe the air traffic).
+
+Controllers can document new clearances directly in the
+label. In detail, the label displays two rows with aircraft related
+data (Fig. 3) and one row with context sensitive suggestions for
+upcoming clearances (UN8). On the right side of the screen, we
+left space for controllers to configure their preferred constella-
+tion of information (UN3). Based on data from the contextual
+inquiry, we assumed that controllers still required weather
+information and an image of the situation on the ground to
+pursue their tasks efficiently. To limit the permanently present
+information inside the label, we added a representation of a
+traditional flight strip in the bottom right corner of the screen
+(Fig. 2d). In the following sections, we will explain the charac-
+teristic interactions for each of the three interaction concepts.
+
+3.1.
+Mouse interface
+
+The mouse interface is designed to be intuitive to use (UN6) for
+people with prior experience of desktop computer setups. All
+actions can be performed one handed with the mouse, allowing
+the controllers to permanently hold the push-to-talk button of
+the radio unit in the other hand (UN4). The mouse enables
+
+controllers to manipulate clearances directly in the labels of the
+aircraft (UN5, Fig. 3). When hovering over values in the third
+row with the cursor, controllers can increment or decrement
+suggested values via scrolling and can confirm a selection
+by clicking (UN8). Confirmed values are underlined to show
+they have been cleared. After giving an aircraft clearance for
+the localizer or ILS, controllers can directly document this by
+toggling the state of icons in the label. Distance vectors between
+aircraft (UN7) are displayed by click-and-hold while drawing
+a box around the aircraft of interest. We implemented the
+mouse interface with the rapid prototyping software Axure RP9
+(http://www.axure.com). The setup during user tests consisted
+of a 24′′ screen and a wireless three-key mouse. The prototype
+ran in a full screen browser (https://www.mozilla.org/) with
+disabled smooth scrolling.
+
+3.2.
+Flight dial
+
+The idea of using a dial emerged from the controllers’ needs
+of a system that is intuitive to use, without any workarounds
+(UN6) and offers consistent input methods (UN4). Navigating
+through menus by rotating and clicking a dial is not a novel
+approach. For instance, car manufacturers (Spreng, 2002) use
+a dial as an input device to navigate their infotainment system.
+Potential advantages of the flight-dial include being able to
+quickly navigate menus through haptic feedback and muscle
+memory (MacLean, 2000) and a minimized occlusion problem
+(Bachl et al., 2010) opposed to the mouse cursor. The dial
+allows the precise selection of neighboring values but causes
+increased physical effort when scrolling over large distances.
+Therefore, we tried to avoid rotations over 90 degrees in either
+direction by suggesting realistic values for upcoming clear-
+ances. Furthermore, the flight-dial interface is designed to be
+
+used with both hands. While one hand always stays on the dial
+(Fig. 2), the other hand (which also holds the radio push-to-
+talk- button) selects aircraft via touch. We deliberately decided
+to use the touchscreen solely for selecting aircraft and pressing
+on-screen buttons and not for entering and confirming single
+values via touch. The touch interaction should not be utilized
+for extremely fine or accurate inputs in order to decrease
+erroneous data entry in this safety-critical domain (Fitts, 1954).
+
+Controllers can select an aircraft directly by touching its rep-
+resentation on the screen. Alternatively, they can use the dial to
+scroll through all aircraft assigned to them using a cursor in the
+form of a blue border around the aircraft’s head symbol. Navi-
+gating within an aircraft label is solely conducted using the dial.
+Controllers can scroll through the suggested clearances and
+click to select a specific type of clearance (e.g. altitude). Con-
+trollers can then optionally manipulate the suggested values by
+rotating the dial in either direction and clicking the dial once
+more to confirm the adjusted values. Further features, like the
+aircraft to aircraft vectors (i.e. a line connecting aircraft indicat-
+ing the distance between them), are available in a semicircular
+context menu that can be accessed by selecting an aircraft
+and turning the dial counterclockwise (Fig. 4). The setup con-
+sisted of Microsoft’s Surface Dial (https://microsoft.com/en-
+us/p/surface-dial/925r551sktgn) and a 27′′ display with touch
+functionality. From analog to the mouse interface, we built
+the interface using the rapid prototyping software Axure RP9.
+For a video of the interaction with the flight dial, see the
+supplementary online material, FlightDial.mp4.
+
+3.3.
+Tangible models
+
+Because paper strips have been replaced by the paperless strip
+system, tangible elements are missing in ATC workspaces
+(Huber et al., 2020). According to Hornecker (2005) tangible
+interaction allows for bodily interaction with physical objects
+
+embedded in a spatial context while connecting the physi-
+cal and the virtual world. Our user research indicated the
+controllers’ need for direct input options and simple interac-
+tions and feedback. Therefore, we developed various tangible
+models, which are abstract representations of aircraft and allow
+for direct (UN1) interaction that has the potential to be intuitive
+(UN6) through their adapted familiarity of an actual aircraft
+that can be physically moved (Israel et al., 2009). Selecting
+a tangible model that best suits the controllers’ ergonomic
+needs additionally offers adjustability of the workspace (UN3).
+The tangible models represent aircraft in a playful way, which
+encourage the controllers to engage with the system in shifts
+with low traffic (UN9). Based on insights from contextual
+inquiries, we started building tangible models with modeling
+material on a low fidelity level, to generate multiple ideas
+for different tasks that can easily be modified or combined.
+From the variety of models, we selected four shapes (Fig. 5)
+that offered ergonomic forms to support multiple interaction
+opportunities (UN2 and UN3), such as turning, tilting and
+moving, which are based on current behavior or language
+
+in the context of ATC and therefore familiar to controllers
+(UN6). To increase fidelity, we iterated the designs using a 3D
+printer with a flexible filament (PolyFlex TPU95, 1.75 mm),
+which made the models slightly elastic. The models’ elasticity
+offered passive haptic feedback and facilitated squeezing as an
+additional form of interaction.
+
+We assigned specific interactions with the tangible models
+to four basic tasks, which controllers frequently execute: (a)
+identifying an aircraft and changing its (b) flight level/altitude,
+(c) speed, or (d) heading (see Fig. 6). We designed the tangible
+props to encourage controllers to discuss about (i) how they
+would use them to interact with flight data; (ii) share their
+thoughts about size, material, and shape; and (iii) consider
+the advantages and disadvantages of tangible models as a new
+interaction technique in ATC. As additional stimulus material,
+we produced a short video containing exemplary linkages
+between interactions and tasks, together with visual anima-
+tions (see supplementary online material, Tangibles.mp4). The
+design process of the tangible models is reported in more detail
+in (Gramlich et al., 2022).
+
+4.
+FORMATIVE EVALUATION
+
+For a formative evaluation of the prototypes, we acquired 24
+approach controllers from a control center of a larger European
+air traffic service provider. All participants provided informed
+and written consent. Participation in our evaluation took place
+during regular work time, and no additional incentives were
+offered. Sessions lasted approximately 1–1.5 hours, and each
+participant had the opportunity to test all three prototypes.
+
+The mouse interface required only a short explanation before
+testing. Because the dial is a novel interaction concept, we
+showed a short video that explained the prototype’s interac-
+tions to participants, prior to a free exploration phase (see
+supplementary online material, FlightDial.mp4). To test the
+prototypes, we asked the participants to explore the interface
+independently while simultaneously thinking aloud as to their
+opinion of the prototype and its interaction with the flight data.
+Subsequently, we asked more specific questions in relation to
+individual features.
+
+The tests with the tangibles were more explorative than those
+with the mouse and flight dial. First, we asked the controllers to
+choose a favorite model and show us their ideas for interaction,
+then we showed the controllers the aforementioned basic tasks.
+Second, we asked the controllers to perform our proposed
+interactions and review the visual animations of how virtual
+values change on a graphical user interface, in response to
+interactions with the tangibles. Third, we showed the con-
+trollers a short demonstration of how the tangible model could
+autonomously move on the touch screen and asked if they
+preferred an interface on which every aircraft is represented
+by one tangible model, or if they liked to keep one model
+in their hand and move the model manually on the interface.
+
+We first tested our initial designs with 13 controllers, iterated
+the design of all prototypes (which we explain in more detail
+in the next section) and returned to the control center for a
+second round of user tests. In the second session, 11 controllers,
+who did not participate in the first round, tested all three
+prototypes.
+
+4.1.
+Findings in relation to one-face-to-the-ATC
+
+Based on the suggestions from our first user sample, we added
+weather data and a webcam image of the runway to the right
+panel and removed the visual representation of the flight strip.
+Controllers no longer needed the strip, as long as all crucial
+information was displayed and could be manipulated inside the
+label (Controller 23, C21, C20, C19, C17, C16 and C13).
+
+We identified two groups of controllers with opposing pref-
+erences regarding the label. One group requested a reduced
+label, where they could, for example, ‘directly manipulate
+values in the upper line’ (C24) and had ‘minimalistic labels
+of other aircraft’ that are not within their responsibility (C13).
+The other group appreciated the availability of detailed visual
+information inside the label and assistive systems. To fulfill
+both needs, we decided to implement an extended label, which
+holds further information and allows interactions for each
+aircraft (Fig. 3) but is only displayed for the aircraft in focus
+(i.e. selected with the dial or tangible, or hovered with the
+mouse cursor). The extended labels include information that
+had formerly been present in the flight strip or broadcasted
+by aircraft via so-called mode S. Mode S displays the actual
+instrument adjustments made by the pilot, such as flight level
+or speed. Mode S data enable the controller to see the changes
+made by a pilot and are frequently used by approach con-
+trollers in their current system. In the second design itera-
+tion, we added the aircraft type, expected runway, as well as
+weather information and atmospheric pressure to the extended
+label.
+
+Finally, controllers appreciated the effort to display distance
+vectors between aircraft. Seven controllers even suggested
+spanning vectors by drawing a line from one target to another
+because this interaction is more direct (C23, C16–21).
+
+4.2.
+Findings in relation to mouse interaction
+
+Controllers considered the scrolling interaction to adjust values
+as intuitive (C20 and C3) or quickly became accustomed to
+scrolling (C23). C12 liked the suggestion of common clear-
+ances, and C19 even claimed that with the mouse interaction
+he ‘could handle much more traffic than usual’. Furthermore,
+controllers preferred single clicks for defaults, such as sending
+an aircraft to the next controller (C22 and C3) or holding (C4).
+To interact even more efficiently, certain controllers envisioned
+shortcuts. For the future, C4 imagined just pushing a fourth
+mouse button to confirm all suggested values and sending them
+to the aircraft via so-called data link communications (Bone
+
+and Long, 2016). Data link is a text-based system to transmit
+information directly to the aircraft’s cockpit, which therefore
+eliminates the need for a physical switch to engage radio com-
+munication (Gürlük et al., 2014). C22 and C20 realized that
+scrolling might take too long when suggested values needed
+much adjustment. C14 and C20 reminded us that the actual
+work takes place in the controller’s head, and they, therefore,
+‘want to spend as little time as possible on input’ (C20)—
+‘except when our workload would be relieved by dropping the
+radio communication’ (C14).
+
+4.3.
+Findings in relation to the flight dial
+
+The majority of controllers intuitively understood the operation
+with the dial. Notably controllers appreciated the documenta-
+tion of individual values with the dial (C24 and C21) and its
+haptic feedback (C13). The greatest criticism concerned the
+‘long distances’ that have to be covered with the dial (C21,
+C19 and C14). Scrolling to specific values and confirming
+them, as well as leaving the context menu to select aircraft
+via the dial (C16), involved too many rotations. Therefore, we
+implemented a button to the right of the label (Fig. 3) to confirm
+all adjusted and suggested values in the second iteration. To
+select individual aircraft, most controllers preferred the touch
+screen, because it is ‘more efficient’ especially in ‘high traffic
+situations’ (C17 and C18). In the second evaluation session,
+the values were sufficiently realistic for the controllers to
+accept the new interface and they provided advice in relation
+to fine tuning of its interaction performance. C19, C18 and
+C17 mentioned that the ILS clearance usually follows a certain
+heading clearance. Therefore, we implemented an ILS button
+(Fig. 3), which provides a context sensitive shortcut to the ILS
+and reduces the scrolling distance.
+
+4.4.
+Findings in relation to the tangible models
+
+Regarding the shape of the models, the majority of controllers
+in the first session preferred larger models—‘the larger
+the easier’ (C11)—especially for the whale and flatterer
+(Fig. 5c and d, respectively). Therefore, we increased the size
+of the models significantly and printed larger 3D versions
+for the second user test, in which all controllers preferred
+the larger versions (Fig. 5e). In the first iteration, 7 out of 13
+controllers had favored the shape of the flatterer, because of its
+ergonomic grip and resemblance of a computer mouse. There
+were different opinions as to whether the models should be
+usable in all directions or have a unique orientation. In addition,
+many controllers suggested customizable models with different
+sizes and shapes.
+
+The controllers agreed that several models moving across
+the screen were too confusing, too ‘playful’ and, therefore,
+unnecessary. They agreed to hold the models in their hand
+while working and to place them in the appropriate position,
+when needed. Another suggestion was to redundantly display
+
+the interface on a large screen for observation and a small
+screen for manipulation, as already tested in a study by
+Alonso et al. (2007). For this type of interaction, the tangible
+should be easy to hold without effort, especially over longer
+periods. Furthermore, the participants preferred a solid
+standing tangible with a rough surface for a better grip. The
+controllers requested ergonomic shapes that clearly signaled
+their affordance in terms of interaction.
+
+In terms of advantages and disadvantages, the participants
+had different opinions. C24 claimed to ‘work faster with
+tangible models’, because ‘all interactions can be performed
+with one input device’. C10 added that tangible models ‘allow
+multiple inputs and can replace the step of opening a menu’,
+whereas C8 expected only ‘limited time saving’ while working,
+by comparison with other input devices. C10 in contrast
+assumed inputs, such as speed or flight level to be ‘insanely
+fast’. The majority expected to work faster with tangible
+models.
+
+The controllers disagreed about the balance between fun
+while working and ease of use. C10 noted that controllers ‘need
+to get used to’ the model interaction because they are ‘new
+and small’, and C20 was afraid to cover too much screen and
+thus miss important information. This showed that the size
+of the models is a critical component, because they cannot
+be too small for interaction but might hide important infor-
+mation if they are too big. The majority could not imagine
+working without a pen for its crucial function of facilitating
+handwriting but liked the innovative models and enjoyed using
+them.
+
+C8 stated that everyone could handle the tangible models
+because they offered an ‘intuitive approach’. Even C6, who
+generally disliked the tangible models, considered the haptic
+feedback a good idea. On the other hand, many controllers
+raised concerns about the precision of use. C2 suspected that
+working with the models would not pose a problem with a
+little practice. C17 even claimed to be able to ‘work blind’
+with the tangibles and that ‘stressful situations would not be a
+problem either’. Despite an intuitive use of the tangible models,
+the majority had concerns about the required precision and
+dexterity. C19 remarked that using the models feels ‘buggy’
+and C18 worried about ‘missing dexterity’.
+
+The controllers had different ideas about the performance
+of basic interactions with the models. The following list (for
+a visual representation see Fig. 6) summarizes the interactions
+that controllers mentioned several times in relation to the
+typical approach tasks:
+
+• Identify aircraft by touching the interface (especially the
+label) with the model
+• Document a new heading by rotating the model
+• Document a lower flight level by tilting the model for-
+ward or pushing it down
+• Document a slower speed by sliding the model against
+the flight direction or tilting it backward
+
+5.
+SUMMATIVE EVALUATION
+
+Following the formative evaluations, we iterated the proto-
+types and conducted a summative evaluation. The aim of the
+summative evaluation was to test whether the prototypes that
+emerged from the design process provided a better UX in
+a standard scenario than the controllers’ current system. For
+better comparability, we reduced the prototypes to minimalistic
+default settings without visual aids or assistive systems that
+only few controllers would activate.
+
+5.1.
+Method
+
+5.1.1. Participants
+To find a large effect (repeated-measure ANOVA, Cohen’s
+f = 0.5, α = 0.05 and β = 0.85), we would have needed at least
+14 participants (G∗Power; Faul et al., 2007). However, because
+controllers are a scarce user group, we were limited to a sample
+of N = 12 participants for this study. All experienced approach
+controllers were male and participated during their shift. Three
+of them had not been in touch with the research project before.
+All participants provided informed consent.
+
+5.1.2. Design
+The experiment used a within-subjects design with the con-
+ditions mouse, tangible, dial and current workstation (CW).
+Because we had only access to a limited number of participants,
+half of the controllers completed the conditions in the order
+mouse > tangible > dial > CW and the other half experienced
+the reverse order. In the conditions mouse, tangible, and dial
+the controllers engaged with the respective prototype until the
+scenario was completed. In the CW condition, we asked partic-
+ipants to recall the current system they work with every day.
+
+As dependent variables, we measured UX with the short ver-
+sion of the User Experience Questionnaire (UEQ-S; Schrepp
+et al., 2017) and the motivational orientation with the Hedonic
+and Eudaimonic Motives for Activities (HEMA; Huta, 2016).
+Additionally, we used the scales for competency and autonomy
+from Sheldon’s psychological need inventory (Sheldon et al.,
+2001), which we considered most appropriate for the domain
+of ATC. All scales describe aspects of UX and therefore,
+higher ratings on the scales indicate higher UX. Since our
+designs aimed at improving UX for ATC, we expected the novel
+prototypes to produce higher ratings on all scales compared to
+the CW.
+
+5.1.3. Material
+We set up two workstations with the prototypes in a large
+conference room. The flight dial prototype ran on a 27′′ touch-
+screen and could be operated by both touch and the dial, as
+described in section 3.2. The mouse prototype was presented
+on a standard 24′′ desktop monitor and could be operated with
+a three-button wireless mouse. To avoid lag in a live Wizard-
+of-Oz performance, we pre-recorded a video with the tangible
+
+prototype displaying all necessary interactions to complete the
+scenario. We presented the video on the monitor together with
+the flatterer as a physical prop.
+
+5.1.4. Tasks
+To experience all prototypes in a realistic traffic scenario, we
+presented three aircraft that were already in the controller’s
+area of responsibility and currently lined up on the so-called
+‘downwind’, that is, moving in parallel but in the opposite
+direction to the final approach. In this situation, the feeder
+needs to reduce speed and altitude, turn each aircraft onto the
+final and establish them on the ILS before handing them over
+to the tower control. In detail, the minimal clearances required
+until the first aircraft could be handed over to the tower control
+to land on runway 26R were as follows:
+
+• Identify all aircraft (i.e. acknowledge responsibility)
+• Ask aircraft to descend to 4000 ft
+• Reduce aircraft speed to 200 knots or less
+• Adjust aircraft heading first to 170
+• Then adjust aircraft heading to 230 or 240 and clear them
+for the ILS
+
+Before conducting the study, we validated the traffic scenario
+with one air traffic controller who did not participate in the
+evaluation.
+
+5.1.5. Procedure
+Upon arrival in the conference room, we explained to the
+controllers the general scope of the research project and what
+was expected from them in the study. After they signed the
+consent form, we explained the layout of the labels in all
+prototypes.
+
+First, for each of the three conditions that involved novel
+prototypes, we explained the controllers the features of the
+interaction concept and the limitations of the prototype (e.g.
+our prototypes focused on the interaction concept, rather than
+the realistic aircraft behavior, therefore, aircraft did not fly a
+smooth curve when turning but after a five second delay, turned
+at the instructed angle). We asked controllers to try the features
+as we explained them.
+
+Second, when the controllers had no further questions, we
+asked controllers to follow the scenario of guiding all aircraft
+toward the final until at least one aircraft was established on
+the ILS and handed over to the tower controller. In the tangible
+condition, we instructed controllers to watch the video until the
+end and then skip between the scenes in the video that they
+wished to see again until they entirely understood the prototype
+and were able to operate it. We encouraged the controllers to
+mimic the clearly depicted interactions in the video with the
+tangible prop provided.
+
+Third, after the controllers completed the scenario and com-
+municated that they had finished exploring the features, we
+asked them to complete a questionnaire. We instructed the
+
+controllers to think of the holistic interaction with the respective
+prototype or the CW when answering the questionnaire, such
+as the input and output opportunities and how these felt, rather
+than minor details such as the font or colors. For the CW
+condition, we instructed participants to recall the interaction
+with their current system before filling in the questionnaire.
+The participants had a schematic picture (Fig. 1) as memory
+aid, while recalling the interaction. Additionally, the evaluation
+took place between their shifts, so their memory was fresh.
+We invited controllers to comment on the prototypes when
+appropriate during the experiment.
+
+6.
+RESULTS
+
+We calculated repeated-measure ANOVAs of each dependent
+variable with planned contrasts between each prototype and
+the CW. We summarize the results below and provide a visual
+representation of the results in Fig. 7. The complete descriptive
+and inferential statistical results are provided in the appendix,
+Table 1.
+
+Despite the small sample of N = 12 controllers, there were no
+outliers with z > 3. Data met the assumption of sphericity on all
+but the eudaimonia scale, for which we used the Greenhouse–
+Geisser correction. Based on a Shapiro–Wilk test, the data were
+normally distributed except for the differences in the compe-
+tence scale between the CW and the dial (P < 0.001), and the
+CW and the mouse (P = 0.018). However, non-parametrical
+tests led to the same results regarding statistical significance
+as the parametrical tests; therefore, we present parametrical
+results for reasons of consistency with all other data. Due to
+the scarcity of our user group, we had to conduct our summative
+evaluation with fewer participants than the conservative power
+analysis suggested. Following this limitation of feasibility to
+sample size (Caine, 2016) that only allowed for an underpow-
+ered study, we focus on effect sizes rather than p-values. We
+considered ηp
+2 > .14 to indicate large effects.
+The repeated-measure ANOVAs with contrasts indicated
+that all three prototypes had higher overall UEQ-S scores than
+the CW. This is mainly due to the high values on the hedonic
+sub-scale because, on the pragmatic sub-scale, the controllers
+only rated the mouse prototype significantly higher than the
+CW. Similarly, the hedonic scale of the HEMA showed a sig-
+nificant large difference between each prototype and the CW.
+Neither the eudemonia scale of the HEMA nor the autonomy
+scale for needs indicated any significant differences. Against
+our hypothesis, the data indicated that the CW gives controllers
+a greater satisfaction in terms of their psychological need for
+competence than the tangible prototype.
+
+7.
+DISCUSSION
+
+As hypothesized, the summative evaluation revealed that UX is
+higher with the novel prototypes than with the CW currently in
+use. The mouse interface surpassed all other interfaces descrip-
+
+tively on the pragmatic scale. However, the medium effect
+size (ηp
+2 = .101, see supplementary Table 1) between dial and
+CW signals that also the dial interface has pragmatic potential.
+Especially the more original interaction concepts, such as the
+dial and tangible models had descriptively high values on
+the hedonic subscale of the UEQ-S that can be considered
+excellent, compared to international benchmarks (Hinderks et
+al., 2018). In the UEQ-S, the hedonic quality consists of the
+aspects of stimulation and novelty (Schrepp et al., 2017). Using
+unfamiliar interaction concepts in a prototype, the controllers
+merely experienced explains part of the perceived novelty of the
+dial and tangibles. However, the hedonic motives scale, which
+does not explicitly contain novelty but is based on ‘seeking
+pleasure and comfort’ (Huta and Ryan, 2010), shows a similar
+pattern to the UEQ-S hedonic subscale. Together with the
+benchmark ranking of the UEQ-S, we therefore conclude that
+all three prototypes truly created a more pleasurable, stimulat-
+ing experience that exceeded the novelty of the interaction.
+
+On the scale for eudaimonic orientation, there was no
+significant main effect or contrasts; however, the difference
+between the dial and the CW can be considered as a large
+effect (ηp
+2 = .163, see supplement Table 1). This is particularly
+interesting, because the concept of eudaimonia is associated
+
+with long-term importance (Mekler and Hornbæk, 2016). Post-
+hoc, we wondered how the entirely novel prototypes, only
+seen once before by some controllers, could surpass the CW
+used to solve standard and non-standard situations on a daily
+basis. One possible explanation is that the task itself sparks
+meaning, and the ability to directly manipulate data associated
+with the task, increased the ratings of eudaimonia. This is
+supported by significant correlations of the eudaimonic motive
+with the pragmatic experience of the UEQ-S for the mouse
+interface (r = 0.84, P < 0.001), the dial (r = 0.76, P = 0.005)
+and the tangibles (r = 0.58, P = 0.046). This correlation and
+interpretation are in line with Mekler and Hornbæk (2016)
+who suggested that the high pragmatic quality of technology
+facilitated users’ striving toward personal goods. The lack of
+correlation between the eudaimonic motive and the pragmatic
+experience for the CW (r = 0.25, P = 0.43) indicates that
+controllers’ eudaimonic motives for the system with which they
+are already familiar, involve more factors than pragmatic UX.
+
+Additionally, in our data the overall ratings for eudaimonia
+and hedonia are comparatively high, with descriptive statistics
+for eudaimonia being above the scores published by Mekler and
+Hornbæk (2016) and hedonia below their scores. Our data do
+not support the idea of Grundgeiger et al. (2020), who argued
+
+that eudaimonic motives and related needs such as competence
+and autonomy may be more important than hedonia in safety-
+critical domains. One reason for the unexpected results of
+the eudaimonic motives scale is a potential confound between
+conditions. While measuring eudaimonia on the state-level in
+all four conditions (Huta and Waterman, 2014), the period
+of time in the three prototype conditions was limited to the
+short interaction experience, whereas there was no limitation
+for the period of time in which controllers reminisced on CW
+experiences.
+
+The controllers rating of satisfied need for competence when
+using the novel prototypes, was lower than with the CW. How-
+ever, data from the contextual inquiry indicates that controllers
+needed time and training to achieve today’s levels of speed
+and proficiency (Huber et al., 2020). Controllers in our study
+had not used the prototypes in their final layout before the
+summative evaluation. Dulchinos (2018) showed that few hours
+of training with a new system can suffice for controllers to
+perceive their performance as higher than with the old system.
+
+We asked controllers for their experience when interacting
+with the system, but we cannot distinguish from our data
+to what degree the new visualizations influenced controllers’
+rating. However, due to the safety and efficiency focus of
+controllers’ training, we would argue that the interactions had
+a larger influence on their satisfaction than visual esthetics of
+the interface. This aspect needs to be covered in future work.
+
+9.
+LIMITATIONS
+
+There are several limitations to our work. First, we need to point
+out that the contextual inquiry in the initial underlying user
+research (Huber et al., 2020) as well as our formative evalu-
+
+ations, focused on approach controllers in the feeder position
+and their co-workers. This limits the generalizability of result-
+ing data for controllers in other positions. We concentrated
+on the interaction with the system by an individual controller
+during the design process. We suspect that our interaction
+concepts can also support the collaborative work of controllers
+with colleagues and pilots. However, we have not explicitly
+designed and tested collaborative work scenarios, which should
+be addressed in future work.
+
+Second, the current workstation under study also poses limi-
+tations. For legal reasons, controllers are currently obliged to
+document every instruction to the pilot. This documentation
+involves additional interaction beyond the task itself. Despite
+limitations to our design decisions, we decided to include this
+requirement in our design process to achieve better acceptance
+during the user tests. Furthermore, we designed ambidextrous
+interactions even though today, approach controllers need to
+operate the radio with one hand. If this constraint does not cease
+to exist with the introduction of data link communications in
+the approach position, the input devices will be limited to one-
+handed use or will require alternatives, such as a foot pedal,
+a transmission button embedded in the primary interaction
+device, or an always-on microphone to replace the separate
+handheld push-to-talk button.
+
+Third, our summative evaluation focused on quantifying UX.
+All reported and discussed cues on how the prototypes perform
+in terms of efficiency, are based on controllers’ qualitative
+assessments. Future work needs to investigate whether the
+new concepts allow for safe and efficient operation and still
+hold up UX over time. Unlike analyses regarding the trade-off
+between efficiency and thoroughness (Takagi and Nakanishi,
+2020) or safety (Karikawa et al., 2014), the UX of controllers
+operating a system cannot easily be determined for each single
+interaction or decision. Instead, more holistic measures for UX
+over a task sequence or an entire shift should be compared
+to cumulated operationalizations of safety and efficiency. The
+increased pressure in a full-scale high-fidelity simulation may
+decrease hedonic qualities of use.
+
+Fourth, even though the selected use cases could be managed
+with all systems, the interactivity of prototypes in the study
+varied. For the tangible prototype, air traffic controllers did not
+experience the interaction in the summative evaluation but held
+a tangible prop to perform actions while watching the video.
+However, controllers had experienced the tangible interaction
+in the formative evaluations. Possible implementations of the
+prototype in future work may be possible using magnetic bits
+for near-surface interaction (Liang et al., 2013) and deformable
+interfaces (Rossmy, 2020). When exploring prototypes with
+higher fidelity, safety aspects such as the detectability of system
+status and systems’ behavior in the case of failure require
+consideration.
+
+Fifth, we grounded the summative evaluation of interac-
+tion concepts exclusively on success cases and controllers’
+most frequent interactions. Their current workstations obvi-
+
+ously exceed this minimalistic feature set for the price of
+less simplicity in the user interface. Hence, the controllers’
+recollection of the additional functionality and complexity of
+their current workstation may have caused an underestimation
+of UX. The next step would be to embed the interactions in
+an interface encompassing the features and information that
+facilitate controllers to deal with different situations instead
+of just the most frequent sequences. When envisioning these
+interfaces, safety assurance should play a major role. Safety
+criteria need to be derived to define what is considered safe
+in relation to the changed interface. This will allow to define
+safety objectives and to assess in simulation studies whether
+these safety objectives are satisfied.
+
+Sixth, this work is based on insights from contextual
+inquiries and follows the entire contextual design process as
+suggested by Holtzblatt and Beyer (2016). We acknowledge
+that other experience-centered design processes exist, such as
+the experience categories method proposed by Zeiner et al.
+(2018) or methods based on activity theory (Savioja et al.,
+2014; Roto et al., 2017). In future work, alternative methods
+may reveal the whole spectrum of UX in ATC to broaden
+designers’ understanding of controllers’ experiences.
+
+10.
+CONCLUSION
+
+In this work, we applied a user-centered design process to
+the context of ATC to improve controllers’ UX. We extracted
+controllers’ key user needs regarding interaction and developed
+a unified view of the ATC workplace with three prototypes,
+each using a different input method and interaction concept.
+Apart from proposing three interaction concepts, the main
+contribution of this work is to quantify UX dimensions in
+the context of ATC. In a summative evaluation, all prototypes
+surpassed the existing system in terms of hedonic quality,
+and single prototypes indicated higher values for eudaimonic
+motives or pragmatic experiences. The great leap in UX can
+encourage designers in other safety-critical domains to think
+beyond safety and efficiency.
+
+Despite the varying degree of novelty among the mouse,
+dial and tangibles, we were able to derive general implications
+concerning the design of future ATC systems from qualitative
+data, gathered in user tests. Insights include recommendations
+on using a minimalistic design and facilitating efficient interac-
+tions, as well as customizable interface elements. These find-
+ings can be applied in future ATC interface design, regardless of
+implemented interaction technology. Thereby we investigated
+the holistic interaction experience—determining the role of
+visual esthetics in ATC interface design is up for future work.
+We contributed three exemplary interaction concepts, catering
+for user needs and positive experiences. However, a shift in
+future design projects in safety-critical environments, such as
+ATC is necessary to think beyond developing prototypes specif-
+ically for safety and efficiency. Consequently, when putting UX
+first in early design stages, subsequent safety impact analyses
+
+are necessary to ensure the novel interface will promote the
+workplace priorities, safety, structure and efficiency instead of
+causing a tradeoff between positive experiences and safety.
+
+In addition, we suggest designing for meaningful interac-
+tions and experiences of familiarity, trust, engagement and joy.
+This could be achieved, for instance with an interaction device
+that combines the precision and hedonic aspects of the dial with
+the increased degrees of freedom of the mouse. Future work
+needs to investigate, how engaging interfaces maintaining vig-
+ilance in periods of low activity and efficient interfaces during
+high traffic situations can be molded within a single system.

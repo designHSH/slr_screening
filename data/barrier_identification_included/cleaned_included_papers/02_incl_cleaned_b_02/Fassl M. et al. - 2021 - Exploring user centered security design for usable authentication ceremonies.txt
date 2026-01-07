@@ -1,0 +1,1108 @@
+Exploring User-Centered Security Design for Usable 
+Authentication Ceremonies 
+
+Matthias Fassl 
+Lea Gröber 
+Katharina Krombholz 
+
+CISPA Helmholtz Center for 
+CISPA Helmholtz Center for 
+CISPA Helmholtz Center for 
+Information Security 
+Information Security 
+Information Security 
+Saarland University 
+Saarland University 
+
+1 INTRODUCTION 
+
+We applied a four-stage User-Centered Design process: (1) fve 
+collaborative design workshops with ten potential users to gather 
+ideas and drawings that refect users’ perceptions of authentication 
+ceremonies and trust establishment, (2) a security evaluation that 
+narrowed the design space, (3) an iterative storyboard prototyp-
+ing approach with 18 participants to improve usability and collect 
+participants’ preliminary security perceptions, and (4) an online 
+evaluation of the prototypes on Amazon MTurk with N = 131 
+participants. 
+The evaluation indicated that exposure to the combination lock 
+prototype improved participants’ understanding of the security ben-
+efits concerning diferent types of attackers (compared to Signal’s 
+current ceremony). This understanding of security benefts likely 
+afects the frequency with which users will conduct authentication 
+ceremonies. Our design approach did not seem to improve other 
+factors, such as usability and user experience. Since these factors 
+are equally important for building authentication ceremonies that 
+people will use, we suggest designers apply complementary de-
+sign approaches to improve them. We report the methodological 
+lessons that we learned from exploring user-centered and partici-
+patory techniques for security design. We are confdent that our 
+exploratory contribution sparks an interdisciplinary discourse on 
+when and how to consider prospective users throughout the design 
+process of security technology. 
+
+3 DESIGN METHOD 
+
+User-Centered Design involves users at every step of the design 
+process and focuses on their goals and requirements. Usually, this 
+process is iterative in nature and driven by evaluation. We chose 
+our process with two main goals in mind: (1) exploring the design 
+space from the users’ perspective – including a security evaluation 
+of the specifc suggestions and extracting general themes about 
+authentication from the qualitative data; (2) comparing the most 
+promising of the candidates with an existing authentication cer­
+emony – necessarily these candidates need to be feshed out and 
+developed further for a meaningful comparison. Users are the main 
+focus of our research, but they are neither security nor UX experts 
+– we do not expect them to design usable and secure ceremonies 
+on their own. Security experts are necessary to contextualize par­
+ticipants’ conceptual ideas and match them to existing security 
+mechanisms. UX experts are indispensable to designing usable in­
+teractions with great security experience. Above considerations 
+and our comprehensive literature survey resulted in a four-stage 
+design process as presented in Figure 1: 
+
+(1) Collaborative Design Workshops. We start by collecting users’ 
+ideas about how authentication should work including their 
+goals and requirements. We apply a participatory design 
+approach by conducting collaborative design workshops. 
+Participatory design considers the users’ cooperation with 
+designers as a possibility to bridge the gap between the users’ 
+tacit knowledge, i.e., knowledge that is hard to communicate, 
+and the designers’ abstract and analytic knowledge [38]. 
+We structured these workshops similar to the participatory 
+design studies by Weber et al. [45] and Gorski et al. [20]: 
+
+(1) participants reported about their experience with secure 
+messengers, (2) we created a shared language about MitM 
+attacks and authentication, and (3) participants designed and 
+discussed conceptual authentication ceremonies. Section 4 
+provides a detailed description of the collaborative design 
+workshops. 
+(2) Narrowing Down the Design Space. The design workshops 
+resulted in a design space with many creative conceptual 
+ideas. We conducted a security evaluation to narrow this 
+design space to feasible ideas. We selected concepts that users 
+mentioned commonly and perceived as secure. If possible, 
+we matched those concepts with security mechanisms that 
+actualized the concepts’ perceived security. We removed 
+concepts that participants mentioned rarely and concepts 
+without matching security mechanisms. Section 5 provides 
+a detailed description. 
+(3) Iterative Storyboard Prototyping. After selecting viable con-
+cepts, we design prototypes based on them. We refne and 
+evaluate these prototypes with users in an iterative pro-
+cess. We apply prototyping techniques because they can also 
+be used to analyze the work process of prospective users 
+and simulate possible future work [8]. For each concept, 
+we sketched all possible states of the user interface, which 
+resulted in a storyboard. We presented these storyboard pro-
+totypes to potential users and asked them to describe the 
+concepts behind them and estimate the prototypes’ secu-
+rity benefts. Then, we encouraged them to redesign the 
+storyboards using pen and paper. After two iterations, we 
+presented the storyboards and the feedback we received to 
+a UX expert with several years of experience and improved 
+them accordingly. Section 6 provides a detailed description 
+of the iterative storyboard prototyping. 
+(4) Evaluation. After concluding the iterative development of 
+prototypes, we evaluate the prototypes’ secure experience 
+and usability with prospective users. In a between-subjects 
+online study, we evaluate the three resulting prototypes 
+against a storyboard prototype of Signal’s authentication 
+ceremony. We recruit participants on Amazon MTurk and 
+randomly assign conditions. Afterward, they respond to a 
+questionnaire about the prototypes’ usability, user experi-
+ence, perceived security, and protection against diferent 
+threats. Section 7 provides a detailed description of the eval-
+uation. 
+
+Security requirements. The purpose of authentication ceremonies 
+is to mitigate MitM attacks. To do this securely, the conversation 
+partners have to compare the key material they use. The conver­
+sation is secure if all conversation partners agree on the correct 
+key material. Comparing key material is possible in three ways: (1) 
+out-of-band, (2) in-band, and (3) using zero-knowledge proofs. 
+
+For the frst kind of comparison, the conversation partners have 
+to meet, which requires planning for potential future security re­
+quirements. The second and third types of comparison allow an in­
+the-moment approach to security. In our study, we did not prescribe 
+any method of application in order to not restrict the intuitions of 
+our participants.
+
+Ethical considerations. For all three parts of this work, we col­
+lected basic demographic data but no personally identifable in­
+formation. For the workshop, we collected the participants’ email 
+addresses to organize the workshops and communicate the results. 
+These were stored separately from the study data. All participants 
+were informed about the purpose and procedure of the study. Before 
+the workshop, we asked all participants to sign a consent form; for 
+the iterative storyboard prototyping, we asked for verbal consent. 
+The online study had a consent form on the frst page, including 
+all necessary information on data collection and processing. We 
+compensated all participants for their time. Our university’s ethical 
+review board (ERB) approved the study. 
+
+4 COLLABORATIVE DESIGN WORKSHOPS 
+
+We conducted workshops to collect the prospective users’ ideas 
+of authentication ceremonies, e.g., how they imagined the process 
+and what motivation they need to complete it. Similar to Weber et 
+al. [45] we divided each workshop into three phases: (1) discussion 
+of experiences with secure messaging, (2) creating a shared lan­
+guage for basic security concepts, and (3) prototyping conceptual 
+ceremonies. In the frst phase we asked all participants about their 
+common messenger usage. Additionally, we encouraged partici­
+pants to report negative and positive experiences with these tools. 
+The goal of this phase was to acquaint the participants with each 
+other and to identify general challenges with secure messaging. 
+
+During the second phase, we presented a slide show (included 
+in the supplementary material) explaining end-to-end encryption, 
+threat models, and MitM attacks to create a common base of knowl­
+edge and to establish a common language among the participants. 
+In the last phase, we asked the participants to provide prototypes 
+of conceptual authentication ceremonies and to explain their ideas 
+verbally and through drawings. In the beginning of this prototyping 
+phase, we asked the participants to provide suggestions on how to 
+ensure that they are communicating with the intended person if 
+
+they could meet in person only once or not at all. Later on, we asked 
+them how they establish trust in the ofine world, and if and how 
+those strategies could be translated to electronic communication. 
+After about an hour we debriefed the participants and discussed 
+remaining open questions. 
+
+Analysis. We collected diferent types of data: a set of drawings 
+of conceptual prototypes, audio recordings, and our written notes. 
+Two independent coders traversed the notes and corresponding 
+drawings to systematically assign codes, a process known as open 
+coding. We used the audio recordings to clarify misleading notes 
+or drawings, which were difcult to understand. The resulting 
+inter-coder agreement (Krippendorf’s α = 0.69 for the experience 
+reports and α = 0.67 for the prototypes) allows us to draw tentative 
+conclusions from the data. We grouped the resulting codes into 
+categories to identify the most common concepts for authentication 
+ceremonies among our participants. The full protocol and codebook 
+is presented in the supplementary material. Since the workshops 
+were conducted in a diferent language the researchers translated 
+the codebook, quotes, and the shown drawings. 
+
+Pilot study. We conducted a pilot study consisting of three ses­
+sions with one participant each. Contrary to the rest of the study, 
+the participants had basic knowledge about cryptography. Since 
+those participants came up with rather unusual prototypes for au­
+thentication ceremonies, we assumed that the procedure would also 
+work for other participants. Based on the pilot study we concluded 
+that the notion of trust needs to be well-defned when asking par­
+ticipants how they would establish trust. Therefore, we decided to 
+add two ofine trust scenarios to our study design: (1) meeting a 
+previously unknown bank advisor, and (2) handing over a package 
+that was accepted for an unknown neighbour. 
+
+Recruitment and participants. We conducted fve sessions with 
+two participants each. We invited interested users who used secure 
+messaging applications, who described themselves as having a lay 
+person’s understanding of cryptography, and who did not have con­
+crete threat models in mind. We deliberately excluded participants 
+with either a background in cryptography, or with concrete threat 
+models. Both types of participants will already know about authen­
+tication ceremonies and have preconceived notions on how they 
+should work – which would narrow their design space. We created 
+a dedicated website to inform about the study and advertised it 
+via email, Facebook, and Twitter. Additionally, we used snowball 
+recruitment to quickly fnd interested and qualifed participants. 
+We compensated them for their time with food and non-alcoholic 
+drinks during the sessions, and by ofering future security advice 
+(which one participant accepted). 
+
+All ten participants either graduated from a university or were 
+currently attending one. Four participants received some kind of 
+training related to computer science, but had no further knowl­
+edge in security or cryptography. Seven participants were female 
+and three were male. The average age was 28.2 (min=22, max=35, 
+sd=4.76). The participants self-reported their knowledge on cryp­
+tography and IP networks on a scale from one (“very little”) to 
+six (“very much”). The participants rated their knowledge about 
+cryptography (m=2, sd=1.3) as well as IP networks (m=2, sd=1.6) as
+
+low. This refects that our target population should only have a lay 
+person’s understanding of cryptography. 
+
+4.1 Results 
+
+In the following, we present the experience reports, the most com­
+mon conceptual prototypes that came up during the workshops, and 
+the priorities and expectations that participants explicitly named. 
+
+Experience reports. At the beginning of each session, participants 
+reported on their experience with secure instant messengers. Con­
+venience was the participants prime reason to praise messengers, 
+e.g. Telegram and WhatsApp have large user base and work on all 
+platforms. Peer pressure is an important reason for choosing mes­
+sengers: “If I have a close friend who insists on only using WhatsApp 
+and I really want to communicate with him, then I am forced to use 
+WhatsApp, even if I don’t want to – otherwise I have no way of com­
+municating with that friend”. Features were equally important for 
+users, e.g., participants liked Telegram for its sticker packages. All 
+participants expressed annoyance about the diversity of apps and 
+lacking inter-operability. Some participants criticized messengers 
+that require a phone number. Signal but also to a lesser degree 
+Telegram were criticized for their lacking quality of service. Many 
+participants did not trust WhatsApp and Facebook Messenger be­
+cause of Facebook’s bad privacy reputation. Interestingly, usability 
+did not seem to be a major concern for our participants. Participants 
+were mostly unaware of authentication ceremonies’ existence. The 
+few aware participants perceived them as confusing rather than 
+helpful: “I don’t really understand how it [WhatsApp encryption] 
+works, because it says encryption is used, but when you access the 
+contact data, you can encrypt it again with some kind of code, so I 
+don’t get that. [...] and you have to be in the same place to do that, 
+that’s very bothersome.” 
+
+Trust establishment. The participants proposed numerous ways 
+of authentication in electronic communication and provided 20 con­
+ceptual prototypes. We categorized the concepts into six methods of 
+establishing trust: (1) shared knowledge: comparing knowledge that 
+is only known to the conversation partners, (2) picture-based: show­
+ing pictures or videos of conversation partners, (3) social: asking 
+friends or trusted contacts if they have authenticated the conver­
+sation partner, (4) institutional: trusting institutions to correctly 
+authenticate people, (5) habituation: building up trust in the iden­
+tity of the conversation partner over long periods of time, and (6) 
+measurement-based: using technological measurements to test if 
+the conversation could currently be under attack. Fifteen of the 
+suggested prototypes were from the frst three categories, which 
+suggests that these come more intuitively to mind than others. The 
+other three categories of trust establishment were not as popular 
+and only had one or two suggestions each. 
+
+Shared Knowledge: Nine out of ten participants proposed an 
+identifcation method based on shared knowledge immediately after 
+we confronted them with the possibility of communicating with an 
+intruder. The three most common concepts were: (1) exchanging 
+a password used for accessing conversation, (2) agreeing on code 
+words and communicating using Spy Speak (a common TV trope), 
+and (3) asking personal questions that only the other could answer. 
+They reported high confdence in these methods, since they assume 
+
+that only their conversation partner knows the agreed code words 
+or can answer the personal questions. 
+
+Picture-based: Six participants suggested a picture-based authen­
+tication of conversation partners and three of them provided a 
+conceptual prototype for this method. Participants suggesting this 
+were quite confdent that they were talking to the right person 
+afterwards, since they usually knew the face of their communi­
+cation partners. However, most of them noticed that an attacker 
+could spoof pictures. Therefore, the resulting trust would increase 
+if senders could prove that the pictures are recent or if real-time 
+communication, i.e. a video-chat, is used. 
+
+Social: All participants reported everyday life situations in which 
+they receive information about identities and trust from their social 
+contacts, but most were uncertain how this process of establishing 
+social trust could be translated to electronic communication. The 
+three participants who provided a conceptual prototype for social 
+authentication wanted the messaging client to automatically estab­
+lish which of their contacts is trusted by one or more friends. The 
+participants reported that the resulting trust from social authentica­
+tion would be medium to low, suggesting that social authentication 
+can only be part of a more extensive authentication concept and 
+that trust transitivity highly depends on the friend who verifed 
+the contact. 
+
+Institutional: During the discussion about establishing trust in 
+the ofine world, fve participants mentioned that they would ask 
+for some form of institutional identifcation card. Two other partic­
+ipants said that in business scenarios they would check the name 
+tag of their conversation partner to establish the person’s name and 
+their afliation. This form of trust is based on the issuing organiza­
+tion: if a bank or a government vouches for someones identity, the 
+trust in the organization is transferred to the person in question. 
+However, none of the participants had a suggestion on how to trans­
+late this form of trust establishment to electronic communication, 
+which means that we did not receive a conceptual prototype for 
+this form of trust. 
+
+Habituation: Ofine relationships with neighbors, colleagues, 
+and even bank employees indicate that some kind of trust can 
+be built up over time. Almost all participants said that this is not 
+a fool-proof way of establishing trust, but that they nonetheless 
+depended on this method in some ways. Participants usually agreed 
+that this method could be useful in electronic communication as 
+well. They said that time builds valid identities because information 
+collected over time can be matched with information from other 
+sources. Measuring this trust involves either counting the number 
+of messages between conversation partners or measuring the time 
+since the last key change. 
+
+Measurement-based: Even participants who are reluctant to con­
+duct authentication ceremonies with every contact might still want 
+to verify the communication security in more sensitive circum­
+stances. Testing based trust establishment refects this belief and 
+ofers diferent ways to test the communication channel for eaves­
+droppers. Approaches to testing-based trust were mostly technol­
+ogy based, one included meeting up and comparing the received 
+messages in order to reveal if any manipulations took place, and 
+another checked the quality of transmission.
+
+Drawings. In the following, we present three conceptual proto­
+types based on most frequent coding categories. We translated the 
+participants’ pen and paper drawings to English. 
+
+Figure 2 shows a prototype based on shared knowledge. Two com­
+municating partners meet in person and exchange a passphrase, 
+which one of them uses to upload a document afterwards. Only the 
+person who knows the passphrase word can download the docu­
+ment at a later point in time. As the code word is negotiated ofine, 
+attackers do not know the passphrase, assuming security proper­
+ties are resistant to guessing. Figure 3 shows the corresponding 
+UI, a conversation that is inaccessible until the password has been 
+entered without exceeding the limit of guesses. 
+
+Picture-based authentication ceremonies assume that seeing the 
+actual person invokes trust in the person’s identity. A major prob­
+lem with this approach is spoofng. As a mitigation strategy one 
+participant proposed to request images showing the communication 
+partner performing a specifed task. Figure 4 on this page shows 
+an example of such a task used as an encryption code. However, 
+the participant who designed this method was not fully convinced 
+about the resistance to image manipulations. 
+
+All workshop participants preferred automatic to manual social 
+authentication, but had difculties drawing an automatic process. 
+Most of them focused on the visualization of trust levels in the UI. 
+Figure 5 in the Appendix shows the use of color codes correspond­
+ing to the trust status associated with a particular contact. Green 
+
+was used for trusted friends, yellow for contacts that have been 
+authenticated by trusted friends, and red was used for all other 
+contacts. The designer emphasized that a trust network should be 
+shallow, i.e. trust information should always come from a trusted 
+friend. Multiple layers of trust inheritance are confusing for users 
+and reduce the confdence in the result. The proposed trust level 
+for “vouched for by a trusted friend” was suggested as medium to 
+high, which seems promising for a method without required user 
+interaction. 
+
+5 NARROWING DOWN THE DESIGN SPACE 
+
+The collaborative design workshop resulted in 20 conceptual de­
+signs and qualitative data about diferent authentication schemes 
+in the ofline and online world. One of the authors, a security and 
+privacy professional with experience in the industry (2 years) and 
+academia (2 years), narrowed down this design space based on the 
+following criteria: (1) How common is the suggestion? and (2) Is it 
+possible to actualize the perceived security of the concept design? 
+The frst criterion assumes that suggestions are common because 
+many people understand them intuitively, making them valuable as 
+an authentication ceremony for the general population. The second 
+criterion combines the users’ tacit knowledge about authentica­
+tion with the researcher’s experience with security and privacy 
+technology. We excluded conceptual designs which the security 
+professional could not match to appropriate security mechanisms. 
+In the following, we present the three chosen conceptual designs 
+with corresponding threat models and security mechanisms.
+
+Shared knowledge → Combination lock. The most common con­
+cept design is based on shared knowledge. In those designs, partici­
+pants suggested sharing a code word or a passphrase which is then 
+used to control access to the conversation. There are two kinds 
+of threats against this kind of authentication: (1) attackers guess 
+a weak password, or (2) attackers intercept the password while 
+users exchange it. As a countermeasure, this concept suggests pass­
+words and not allow users to exchange the password in-band. The 
+Socialist-Millionaire-Protocol (SMP) which is currently used by the 
+Of-the-Record protocol [2] can be used to implement this concept. 
+It is an online protocol that provides a zero-knowledge proof that 
+both parties possess the same secret without actually disclosing any 
+information about the secret. As Alexander et al. [2] mentioned, 
+even secrets with a very low entropy are secure against ofine 
+dictionary or brute-force attack. Boudot et al. [6] provides a full 
+security analysis. Based on this scheme we propose a prototype 
+utilising the concept of combination locks, where all conversation 
+participants have to set their combination lock to the shared secret 
+before they can join the conversation. We continue to develop this 
+proposal using iterative storyboard prototyping in the next section. 
+
+Picture-based → Selfes. Several participants mentioned that 
+sending each other pictures of themselves establishes trust in the 
+conversation partner’s identity. Since the pictures are transmitted 
+in-band, a targeted attacker could manipulate the pictures in real-
+time or use past pictures for authentication. However, the concept 
+would provide security against simple large-scale attacks such as 
+the crackdown on IronChat by the Dutch Police in 2018 [19]. This 
+method encodes information about key fngerprints into gestures. 
+Therefore, recipients of those pictures verify not only the identity 
+of the person they are talking to, but also that a person uses the 
+same key material as them. Adoption of this authentication method 
+could be negatively impacted if users need to compare more than 
+fve pictures. Assuming a gesture alphabet of size 32, it is possible to 
+compare 15 to 30 bit of the key material using this approach. Based 
+on this scheme we propose a prototype utilising the concept of 
+selfes, where conversation participants have to provide a series of 
+selfes to others to authenticate themselves. We continue to develop 
+this proposal using iterative storyboard prototyping in the next 
+section. 
+
+Institutional → ID cards. Most participants were familiar with 
+ID cards as a way to authenticate other people. The process of 
+showing each other an ID card is well-established in the ofline 
+world and we consider this mode of authentication well-aligned 
+with common approaches to key authentication. Messengers that 
+implement this need to provide a user interface that mimics an 
+ID card that users can show each other. Since users have to meet 
+in person to check their ID cards (simulated in the UI), attackers 
+cannot infuence the authentication process as long as the devices 
+are not compromised. The security is based on key verifcation, 
+which works by comparing the encryption keys of the conversation 
+partners over a secure channel. This is achieved by integrating a QR 
+code of the key fngerprint into the simulated ID card (refer to (c) 
+in Figure 6). In this case, they meet in person and the compare keys 
+automatically as suggested by Tan et al. [39]. Based on this scheme 
+we propose a prototype utilising the concept of ID cards, where 
+conversation participants have to verify the others’ simulated ID 
+
+card in the messaging app. We continue to develop this proposal 
+using iterative storyboard prototyping in the next section. 
+
+6 ITERATIVE STORYBOARD PROTOTYPING 
+
+Narrowing down the design space resulted in three design concepts 
+with corresponding threat models and security mechanisms. We 
+developed detailed storyboard prototypes for each of them using 
+Sketch, a vector graphics editor that supports user interface pro­
+totyping. Each storyboard starts in an unauthenticated state and 
+ends in an authenticated state. Each state of the user interface, i.e. 
+changes after each tap, is included as its own still image in these 
+storyboards. 
+
+We used an iterative approach with alternating feld-work and 
+revision of the prototypes. During the feld-work, we explained a 
+scenario to the participant and conducted a walk-through of the 
+storyboard prototype. For each element of the storyboard we asked 
+the participants to describe what they see and what they would 
+do next. We noted hesitation and obvious confusion as an implicit 
+feedback in the feld notes and asked the participants explicitly 
+about it afterwards. After the walk-through, we asked questions to 
+explore the participants’ understanding of the prototype. We asked 
+them (1) how they would describe the authentication process to a 
+friend, (2) to describe how the process afects the security of the 
+conversation, (3) to rate trust in the additional security on a 10­
+point Likert scale. After refecting on the security of the process we 
+encouraged all participants to redesign all storyboard prototypes, 
+we emphasized that they could change the design, the phrasing, the 
+order of the screens, or add additional screens. Participants marked 
+their suggested changes directly on the printed storyboard proto­
+types. We noted all answers in the corresponding feld notes. Since 
+the prototyping sessions were conducted in a diferent language 
+the researchers translated the feld notes and the prototype anno­
+tations prior to the analysis. We used an online survey to collect 
+demographics (age, gender, study program, type of occupation, and 
+responses to the afnity for technology interaction (ATI) scale [16]). 
+
+We extracted misconceptions, most frequently made suggestions, 
+and improvements without negative side-efects from the resulting 
+feedback. We used those suggestions and adapted the storyboard 
+prototypes accordingly. After we improved all storyboard proto­
+types we recruited new participants in the feld and started a new 
+iteration of the prototyping approach. 
+
+Recruitment and participants. Two members of our department’s 
+administrative staf participated in a pilot-study. Their results are 
+included in the fnal result as no changes were made, except for 
+minor adjustments in the feld notes template. We recruited partici­
+pants around our university’s main plaza. All participants provided 
+verbal consent. We compensated them for their time with a candy 
+bar. N = 18 people provided feedback in the storyboard prototyping 
+process. The participants’ age was between 17 and 50 (m=26.545, 
+sd=9.136), 33.3% of them were women and 66.6% of them were 
+men. About a third (27.3%) of the participants were not studying or 
+declined to answer the question about their feld. Only one partici­
+pant studied a STEM program. One third of the participants were 
+students, a third was employed, 26.7% were out of work, and one 
+participant was self-employed. The average ATI score was 4.128
+
+(sd=0.763), which indicates an afnity for technology interaction 
+slightly above the average population score (3.5 [16]). 
+
+6.1 Results 
+
+Perceived security and trust. Since authentication ceremonies of­
+ten need the cooperation of two users it is necessary that users are 
+able to describe ceremonies in simple terms. The majority (13) of 
+participants provided short and functional descriptions, the others 
+either responded with step-by-step explanations (4) or an explana­
+tion why they would not use such a ceremony (1). Eleven partici­
+pants said that the ceremony had a positive efect on security, four 
+did not know, two thought it would impact security negatively, and 
+one would not use such a ceremony. To quantify the perceived secu­
+rity we asked participants to rate the increased security on a scale 
+from 1 to 10. The selfes based prototype received the highest aver­
+age score of 7.08, the combination lock and the ID card prototype 
+received a lower but similar score (6.08 and 6.2). When we asked 
+about the participants’ reasons for their assessment, some described 
+the strengths of an approach “being hard and time-consuming to 
+fake the process” (P10) or remained cautious “one can never be 
+entirely sure”. 
+
+User-reported usability issues. The participants’ feedback con­
+tained two categories of problems: (1) they wanted either more 
+information, or (2) they wanted to improve the user interface fow. 
+In the frst category, the warning message that notifes them was the 
+most common topic. Participants wanted to change its placement, 
+color, the information contained, or the kind of buttons included 
+in it. Another major concern was the kind of visualisation of a 
+successful authentication: participants suggested diferent colors, 
+symbols, or obvious messages to do that. In the second category, the 
+user interface fow, participants wanted to simplify and streamline 
+the ceremonies. Their suggestions were concerned with reducing 
+the amount of actions they had to do manually. Additionally, they 
+wanted more information on their progress and wanted to change 
+the visible buttons to make it easier for them to navigate through 
+the ceremonies. Two participants also wanted to change input felds, 
+because they felt more comfortable with pin entry pads than with 
+number wheels. 
+
+Social and cultural issues. For the authentication prototype based 
+on personal pictures, we selected an alphabet of 32 gestures. We 
+selected gestures that are easy to do with one hand, that are easy to 
+recognize, and that do not have any negative political or insulting 
+meanings. However, during the storyboard prototyping iterations 
+we found that our curated list still contains gestures with negative 
+meaning depending on cultural context. 
+
+6.2 UX Expert Feedback 
+
+Asking potential users to give design feedback is helpful because it 
+gives them a concrete method to describe what they understand, 
+what aspects irritated them, and how they would resolve those prob­
+lems. In most cases, we cannot implement the participants’ design 
+suggestions without further consideration. After a total of N = 18 
+participants and two iterations of storyboard prototyping, we did 
+not encounter any new types of problems or design suggestions 
+from our participants. We involved a UX expert to help us improve 
+
+the user interface design further. The UX expert that we recruited 
+from our institution has several years of experience in UX design 
+for diferent research facilities. In the frst meeting, we presented 
+and explained the storyboard prototypes, provided information 
+about the design process, and discussed the feedback we received 
+from the participants. After the meeting, the UX expert annotated 
+all storyboard prototypes in detail and gave suggestions for im­
+provements. In the second meeting, we discussed the annotated 
+storyboard prototypes and resolved misunderstandings. 
+
+The UX expert gave feedback on the design of the authentica­
+tion ceremonies themselves, as well as the motivational cues in the 
+messenger’s interface. Regarding the authentication ceremonies, 
+we implemented the following suggestions: a radical reduction of 
+text on each screen, reduction of visual noise in the interface, con­
+sistent placement of icons, and communicating only one aspect 
+per screen with consistent use of progress visualization. They also 
+suggested using imagery and animations to communicate that se­
+curity “happens” in the background, similar to the approach by 
+Distler et al.[13]. However, we did not implement this suggestion 
+since we could not decide on ftting imagery and our paper-based 
+prototyping approach does not work well with animations. 
+
+The UX expert also provided feedback on the motivational cues 
+in the messenger’s interface that lead up to the authentication cer­
+emony. We implemented their suggestion to visualize the security 
+status before and after security actions in a consistent manner. Ad­
+ditionally, we discussed several issues with the security warning 
+message. The UX expert suggested avoiding the advertisement­
+banner efect by integrating the warning into the conversation 
+itself. The messenger could force users to pay attention to the warn­
+ing by requiring interaction, such as a slider or a fnger tap, to 
+access information. While we did not implement these suggested 
+changes to the warning message, we consider them an interesting 
+future research direction. 
+
+At the end of the second meeting, the UX expert suggested 
+several sources of design inspiration, helpful books, and design 
+tools that could help in the future. Figure 6 shows impressions of 
+the three resulting prototypes. 
+
+7 EVALUATION 
+
+During the collaborative design workshops, we found that (1) par­
+ticipants who understood the purpose and consequence of the 
+ceremony were willing to invest an additional efort for some of 
+their contacts, and (2) some participants felt reassured about the 
+security if they were able to participate in the security process. 
+Therefore, a good authentication ceremony provides users with an 
+intuition about the security it provides in diferent situations, and 
+also increases the users’ perceived security. 
+
+Procedure. We conducted a between-subjects online survey (N = 
+131) on Amazon MTurk and randomly assigned participants to one 
+of four conditions. The four conditions include the three devel­
+oped prototypes and Signal’s current authentication ceremony in 
+the same presentation format and design language as the other 
+prototypes. All click-through prototypes are provided in the sup­
+plementary material. 
+
+At the start of the survey, we presented the same messaging­
+related scenario to all participants. This scenario introduces a threat
+
+model: the potential risk of losing one’s job if the messages are in­
+tercepted or sent to the wrong person – this was chosen since (a) it 
+could have serious consequences, (b) it is a common enough situ­
+ation s.t. participants are able to immerse themselves into it. The 
+scenario also introduces the notion of an authentication ceremony 
+and links the participants to a randomly assigned condition. Each 
+of the four conditions shows a storyboard of an authentication cer­
+emony. Participants may click anywhere to receive an indication of 
+the clickable features in each still image. After the participants com­
+plete the authentication ceremony, we link them to the evaluation 
+survey. The survey covers the following four quantitative measures: 
+(1) SUS (10 items): evaluation the prototypes’ usability using the 
+Systems Usability Scale (SUS), (2) UEQ-S (8 items): evaluation of the 
+prototypes’ user experience using the User Experience Question­
+naire (UEQ-S), (3) Perceived Security (1 item): participants’ rating of 
+their conversation’s general security after completing the ceremony 
+[7-point Likert scale], and (4) Threat Models (5 items): participants’ 
+rating of security that their ceremony provides against fve attack­
+ers with diferent capabilities [7-point Likert scale] (detailed items 
+in the supplementary material). Even though users’ perceptions on 
+security or the threat models are not necessarily accurate, they will 
+afect how often and for which purpose they will use authentica­
+tion ceremonies. We also collected qualitative information on (1) 
+the participants’ reasons for their perceived security, and (2) the 
+participants’ contacts they would consider authenticating in the 
+future. Additionally, we asked for information on messengers used, 
+whether they have seen an authentication ceremony before, and 
+if they would conduct an authentication ceremony in the future. 
+To show the validity of our sample, we also measured the afnity 
+for technology interaction (ATI) scale. The full questionnaire is 
+included in the supplementary material. 
+
+Analysis. We hypothesized that participants who experience one 
+of the three developed prototypes will have an increased perception 
+
+of security and an improved understanding of the type of threat 
+models they protect against – when compared to Signal’s current 
+authentication ceremony. 
+
+We use a MANOVA to measure the global efects of the choice 
+of prototypes on the four outcome measures (SUS, UEQ-S, Perceived 
+security, and Threat Models). We apply separate univariate analyses 
+to measure the efect of the prototypes on each of the outcome 
+measures. In case of a signifcant statistical efect on the outcome 
+measures, we use pairwise planned contrasts between the developed 
+prototypes and the control group to understand which prototypes 
+is responsible for this efect. The required sample size for a medium 
+efect size of f 2(V ) = 0.625 and a power = 0.95 is 144 participants, 
+which was our lower bound recruitment goal. We used open coding 
+to analyse the free text responses to the qualitative questions. One 
+researcher coded all answers, thereby creating the initial codebook 
+consisting of 15 codes. A diferent researcher used this codebook 
+to code all answers independently. This resulted in an inter-rater 
+agreement of Cohen’s κ = 0.69, which is a satisfactory agreement. 
+
+Recruitment and participants. We conducted a pilot test with 
+two participants to refne our survey and to determine participant 
+compensation based on completion time (10 resp. 15 minutes). We 
+implemented their minor suggestions for improvements in the fnal 
+version of the study. 
+
+For the fnal study, we recruited participants on Amazon MTurk. 
+We required a 99% approval rate for past assignments. We paid each 
+participant USD 2.50 which results in a USD 10 per hour wage. We 
+received a total of 217 completed questionnaires. 82 participants 
+were already familiar with one of the study’s conditions, because 
+they had seen Signal’s authentication ceremony before. Four partic­
+ipants failed the two Likert scale attention check questions (taken 
+from Huang et al. [24]). After removing them, our fnal dataset con­
+sists of N = 131. The participants’ average age was 30.58 (sd = 8.10). 
+About two-thirds (63%) of them were men, about one-third (36%)
+
+were women, and one person (1%) was non-binary. The majority 
+(66%) of participants had a college degree, 12% had a vocational 
+degree, 19% completed high-school, and 3% did not complete high­
+school or preferred not to say. The average ATI score (3.58) is near 
+the expected average of 3.5 [16]. Participants reported using on 
+average 2.48 (sd = 1.24) messengers (most commonly WhatsApp, 
+iMessage, and Telegram). 12.97% of them would authenticate most 
+or all of their contacts. The rest would authenticate on average 5.16 
+(sd = 2.94) of their contacts. The supplementary material includes 
+a table with all collected demographic information. 
+
+7.1 Results 
+
+Participants experience one of the prototypes (Combination Lock, 
+Selfes, ID Cards) or the reference prototype modeled after Signal’s 
+ceremony. Each of the four groups had 28 to 38 participants. The 
+average afnity for technology interaction (ATI) in each group was 
+similar and ranged from 3.53 to 3.67, whereby 3.5 is the expected 
+average [16]. 
+
+Quantitative responses. Participants evaluated the prototype’s 
+usability (SUS) and user experience (UEQ-S). The prototypes’ SUS 
+scores ranged from 50.07 to 55.93. SUS scores above 71 are con­
+sidered acceptable and scores below 51.7 are considered unaccept­
+able [5, 33]. The prototypes’ UEQ-S scores ranged from 1.12 to 1.42. 
+Values range from -3 (horribly bad) to +3 (extremely good), whereby 
+results above +0.8 indicate a positive evaluation. 
+
+To understand the participants’ perceptions of the prototypes’ 
+security benefts we asked them to rate their perceived security 
+on a 7-point Likert scale, and rate (again on a 7-point Likert scale) 
+the respective ceremony’s efectiveness against fve specifc threat 
+models. The prototypes’ perceived security ranged from 4.92 to 5.60. 
+The participants’ rating of security against the fve threat models 
+ranged from 4.24 to 4.81, whereby a rating of 7 indicates conf­
+dent and correct evaluation of security in all cases. The calculated 
+Cronbach’s alpha for these fve threat models items is ρT = 0.83 
+which indicates good (0.8 < ρT < 0.9) internal consistency. Table 1 
+provides an overview of the resulting measurements. 
+
+Statistical tests. Using Roy’s largest root, there was a signifcant 
+global efect of the experienced authentication ceremony on the 
+outcome measures, θ = 0.09, F (4, 126) = 2.702, p = .03, ηp2 = 
+.07891. 
+
+To fnd out which of the four outcome measures (SUS, UEQ­
+S, Perceived Security, and Threat Models) is afected by the difer­
+ent authentication ceremonies we ran separate one-way ANOVAs 
+on them. After applying Holm-Bonferroni correction, these sep­
+arate univariate analyses revealed a marginally signifcant efect 
+on the outcome measure Threat Models, F (3, 127) = 3.48, p = .07, 
+ηp2 = .07591. Table 2 shows the results of separate ANOVAs for all 
+outcome measures. 
+
+We used planned contrasts (with a separate linear regression 
+model) between the diferent ceremonies to fnd out which of the 
+ceremonies afected the outcome measure Threat Models. These 
+planned contrasts with Signal’s authentication ceremony revealed 
+that (a) the combination lock ceremony signifcantly improved 
+
+the outcome measure Threat Models, t(127) = 1.982, p = .049 
+(one-tailed), and (2) that the selfes-based ceremony signifcantly 
+worsened the outcome measure Threat Models, t(127) = −2.194, 
+p = .03. Table 3 shows the result of all planned contrasts on the 
+outcome measure Threat Models. 
+
+Qualitative responses. We asked all participants to provide a rea­
+son for their perceived security rating. The responses to the combi­
+nation lock-based prototype included rather detailed explanations, 
+many of them stating that the security of the conversation is based 
+on the knowledge of the access code: “Only the person with the code 
+can access the conversation.” (P75). One participant thought 4-digits 
+might be too short for security and another one thought about the 
+difculties to distribute the shared knowledge in a secure manner. 
+Participants who saw the selfes-based prototype felt reassured by 
+the pictures of the communication partners, but commonly had 
+a problem to connect this with confdentiality: “I can understand 
+the confrmation of the person on the other end. I can see how the 
+ceremony confrms the party you are communicating with. I have 
+trouble understanding how the data is further secured in the space 
+in between.” (P85) The ID card based prototype resulted in mis­
+conceptions about the security implications of the authentication 
+ceremony. Participants assumed that it could be stolen or copied, 
+contrary to the technical reality. 
+
+Necessary additional interactions conveyed a feeling of improved 
+security. Several participants connected the action of scanning QR 
+codes with added security: “Due to the double QR code verifcation 
+(the two participating phones mutually scanning each other)” (P25). 
+However, since one participant mentioned that scanning a QR code 
+does nothing for security, this reasoning is potentially shaped by 
+prior experience or knowledge. Many participants also explained 
+why they did not fully trust the authentication ceremony: “However, 
+I do know that there will be that small section of individuals that would 
+still be able to hack this system if they really wanted to.” (P81) Some of 
+those participants described threat models (such as a conversation 
+partner forwarding information) and others just overestimated the 
+capabilities of attackers. 
+
+8 LIMITATIONS 
+
+We recruited participants for our collaborative design workshops and 
+iterative storyboard prototyping sessions in stable, economically 
+rich countries of the global north. This population faces few threats 
+in their daily life – which infuences the resulting prototypes. These 
+participants were also not security or design experts, and we did not 
+expect them to come up with technical secure concepts. Instead, we 
+explicitly included security and design experts in our design method. 
+However, users are experts when it comes to their perceptions, 
+values, intentions, and mental models – and User-Centered Design 
+can help to incorporate this expertise into designs that work for 
+users, not against them. 
+
+Many authentication ceremonies require in-person meetings 
+even though users’ need for additional security arises in the mo­
+ment. Ensuring secure conversations requires planning these in­
+person meetings ahead of time, which might decrease the usefulness 
+of the authentication ceremony to regular users. We did not pre­
+scribe one type of ceremony, since we did not want to restrict the 
+participants’ intuitions. Qualitative results (in Section 4 and 7) sug­
+gest that in-person meetings build trust in the security mechanism. 
+
+Collaborative design workshop participants need a grasp of the 
+security issues in order to suggest solutions. We used a slide show 
+(included in the supplementary material) to explain these issues in 
+high-level terms to them. The resulting prototypes did not include 
+these explanations, since (a) we cannot expect users to read them 
+(outside of a lab environment), and (b) the user experience should 
+communicate the prototypes’ security implications. 
+
+Our evaluation used a scripted online experience instead of a 
+lab study. Previous work [3, 7] found that remote asynchronous 
+usability testing discovers fewer usability issues than lab testing, 
+which is ofset by easier participant recruitment. However, our main 
+concern is not usability testing but rather the users’ comprehension 
+of the ceremonies’ security implications. Encouragingly, Wu et 
+al. [46] used a similar approach to evaluate their authentication 
+ceremony designs. We assume that the efects found in a scripted 
+online experience should be even more pronounced in a real-world 
+scenario. 
+
+9 DISCUSSION 
+
+9.1 Methodological Lessons We Learned about 
+User-Centered Security Design 
+
+We explored how user-centered and participatory design techniques 
+can be applied to a well-studied security problem. From this explo­
+ration, we learned how some aspects worked out better than we 
+expected and which aspects we would have approached diferently 
+in hindsight. 
+
+Framing of the design problem afects the entire design process. 
+The framing of the initial design problem impacts the entire design 
+process and its outcomes. It specifes which strategies and which 
+kinds of solutions are suitable for the problem at hand – and who 
+should contribute in which manner they are allowed to contribute. 
+Hence, this framing should be chosen carefully and explicitly. 
+
+We based our design problem entirely on previous research on 
+authentication ceremonies in secure instant messaging. This was 
+possible since this niche-problem has already been studied exten­
+sively and the continuing issues are well-documented. This is a 
+valid and common approach in research, however, it also means 
+that assumptions from previous research also infuenced our work. 
+A diferent approach of framing a design problem in secure in­
+stant messaging could have involved asking participants with an 
+increased reliance on security (e.g. activists, members of oppressed 
+minorities, health-care workers, sex-workers, ...) about their day­
+to-day uncertainties and fears about secure communication. 
+
+Explicit choice of participants is necessary. Working with a uni­
+versal defnition of an unmarked user has been a problem in the 
+frst wave of HCI [9]. Similarly, it is a commonly observed issue in 
+User-Centered Design that designers tend to imagine users that are 
+similar to themselves [10, 30]. This erases the challenges of groups 
+that are unlike the involved designers, and reinforce the societal 
+power hierarchy. 
+
+To avoid unmarked users in design studies for security, we sug­
+gest keeping the following groups in mind: afected users, idealistic 
+users, and non-users. Ermoshina et al. [15] diferentiated between 
+users with specifc and concrete threat models, who were conse­
+quently invested in learning and using security tools, and users 
+with very abstract threat models who had an interest in security 
+tools but used them more for emotional and idealistic reasons than 
+fearing concrete negative efects. Since the security and useful­
+ness of some security tools rely on the number of total users, it is 
+equally important to focus on the attitudes and requirements of 
+non-users [35]. All three groups need to be involved to build widely­
+deployed security mechanisms that provide meaningful security 
+against various kinds of users’ threat models. 
+
+In our design process, we did not focus on users with specifc 
+threat models in mind, instead, our recruitment eforts yielded 
+mostly idealistic users with rather abstract threat models. In hind­
+sight, this allowed us to focus more on user comprehension and 
+motivational aspects – assuming that afected users are usually 
+motivated and more concerned with issues of usability. Our choice 
+of participants also enabled us to fnd social and cultural aspects 
+to the design of authentication ceremonies: (1) that requesting an 
+authentication might seem like a sign of distrust in the conversation 
+partner, (2) that they might feel pressured to provide a reason for 
+their authentication request, or (3) that they might be expected to 
+explain how the ceremony works when they actually do not know. 
+One participant of the iterative storyboard prototyping sessions did 
+not like the concept of the selfes-based prototype. They thought 
+that sending selfes of themselves comes across as narcissistic or 
+that some of the gestures are inappropriate depending on the cul­
+tural context. Even though our selection of participants worked 
+out well in our case, we would approach the question of suitable 
+participants with more care in future design studies.
+
+Clear expectations from participants’ involvement in the security 
+design process. In the beginning, we did not have a clear expectation 
+of our participants’ conceptual designs – misleading us about the 
+work that would still remain in subsequent design stages. This early 
+learning experience led us to include an explicit security evaluation 
+and feedback from a UX expert into the design process. 
+
+Designers need to have clear expectations of which expertise 
+participants can bring to the design process. They account from 
+their lived experience to inform the design process about prob­
+lems with existing approaches, current workarounds, and the users’ 
+threat models. Participants can also provide intuitions about secu­
+rity procedures they would expect to see or that they would fnd 
+especially convincing. Our collaborative design workshops provide 
+evidence for that, seeing that the resulting prototypes are novel 
+and engaging. Additionally, participants can provide insights on 
+secure experiences after they experience them. This works either 
+by using traditional interview techniques or redesigning the low­
+fdelity prototypes themselves. The latter approach is especially 
+useful when participants have difculties expressing their desired 
+changes verbally. 
+
+However, we need to stress again that participants cannot pro­
+vide expertise on security, usability, or user experience design. The 
+results from our collaborative design workshops included several 
+designs that were not secure and very hard to implement securely 
+at all. Consequently, expertise in these areas has to come from other 
+involved parties. 
+
+Focus on qualitative evaluation in the prototyping phase. As Green­
+berg et al. [21] noted that HCI papers tend to quantitatively evaluate 
+early designs even when a qualitative approach would be more ap­
+propriate. Throughout our design process, we observed that the 
+qualitative, rather than the quantitative, evaluation of our proto­
+types provided more thorough and actionable information about 
+their underlying issues and benefts. A particularly relevant exam­
+ple is the participants’ mental association of the user experience 
+with the achieved levels of security. While we could tell from quanti­
+tative measures that participants believed in a prototype’s security, 
+we required qualitative data to understand the reasons for these 
+beliefs. These reasons were sometimes unintended, unexpected, 
+and consequently, insightful. In the future, we would focus more on 
+qualitative evaluations of our early designs instead of comparing 
+prototypes quantitatively early on. 
+
+9.2 Outcomes from our Endeavour to Design 
+Appropriate Authentication Ceremonies 
+
+Unexpected fndings regarding our resulting prototypes. In hind­
+sight, two unexpected fndings add necessary context to the result­
+ing prototypes and their evaluation results: (1) Qualitative results 
+suggest that participants strongly associate the act of scanning 
+QR codes with security – which means that QR codes potentially 
+evoke a perception of security even without understanding the 
+security mechanism itself. This association would have infuenced 
+the evaluation of the ID card prototype and Signal’s current cer­
+emony. (2) Reviewing the documentation from the collaborative 
+design workshops, we note that participants either understood 
+MitM attacks as an impersonation attack or an interception attack 
+– both interpretations are incomplete but correct. Consequently, we 
+
+received some suggestions that protect against impersonationand 
+others that protect against interception. Qualitative results indicate 
+that participants exposed to the selfes or the ID card prototypes 
+were confdent about their contact’s identity but unsure how the 
+procedure protects against interception – even though it techni­
+cally would. In contrast, participants that used the combination lock 
+prototype understood how it provides security even though some 
+thought 4-digit combinations were insufcient. 
+
+The iterative storyboard prototyping uncovered that adapting 
+the messengers’ UI fow (details are in the supplementary material) 
+can provide security guarantees. The combination lock prototype 
+locks users out of a conversation until they have entered the correct 
+access code. This design choice was consistent with the workshop 
+participants’ conceptual ideas. Since users in these scenarios are 
+required to authenticate, the transmission of unauthenticated mes­
+sages indicates an ongoing MitM attack. Such a guarantee based 
+on messengers’ UI fow is a clear improvement over the state-of­
+the-art. 
+
+Increasing adoption rates. The comparative evaluation of our 
+prototypes did not fnd improved usability or user experience. How­
+ever, both are prerequisites for increased adoption rates. We found 
+three diferent explanations for this, each leading to another rem­
+edy. Our prototypes could have improved the usability and user 
+experience in minor ways not detectable with our study’s num­
+ber of participants. Such potential minor improvements could be 
+found with more participants. It is also possible that our online 
+user experience does not compare well to the physical counter­
+part. Repeating the evaluation with high-fdelity Android-based 
+prototypes could provide more meaningful results for these two 
+measures since the experience would resemble real-world circum­
+stances. We also consider the possibility that our comparatively 
+short user-centered design process might not be suited for gaining 
+usability improvements. Other complementary design approaches, 
+such as activity-centered design, could be applicable and improve 
+usability and user experience. 
+
+A broad social acceptance of authentication ceremonies is nec­
+essary to increase adoption rates. Social acceptance might be an 
+issue for our prototype based on sending selfes that show specifc 
+gestures. Sending pictures containing silly gestures or even selfes 
+to contacts might be inappropriate depending on the cultural and 
+social contexts. Hence, business-related authentication will require 
+diferent kinds of pictures than authentication amongst relatives 
+and friends. 
+
+Aspects such as discoverability, motivation, and nudges were 
+not our primary research goals. Nevertheless, they are crucial as­
+pects of increasing adoption rates. Users could either plan their 
+security ahead, regardless of their immediate requirements or they 
+(unexpectedly) require increased security in the moment of use. 
+Users that employ the frst approach have a security motivation 
+but might need reminders at convenient times (motivation and 
+context-sensitive nudges). The second approach requires an un­
+derstanding of the available security mechanisms and that users 
+fnd and use these mechanisms in an appropriate time-frame (un­
+derstanding, discoverability, and usability). Most authentication 
+ceremonies rely on a planned security approach because they often 
+rely on in-person meetings. However, ceremonies need to support
+
+both approaches to be useful in more situations and for more types 
+of users. 
+
+Our results in the context of related work. When Vaziripour et 
+al. [44] let their study participants authenticate their communica­
+tion partners without telling them about authentication ceremonies, 
+they used several techniques that also came up during our collab­
+orative design workshops. Namely, send pictures, recognize video, 
+recognize voice, and shared knowledge. This overlap of techniques 
+suggests that these social approaches to authentication might gen­
+eralize to a larger population – a fnding that could inform future 
+authentication ceremonies. 
+
+Necessary additional interactions in the form of authentication 
+ceremonies boosted some of the participants’ perceived security. 
+Fully automatic authentication (e.g., with CONIKS [29]) would 
+make these ceremonies superfuous, thereby reducing the perceived 
+security for this population. However, most participants stated that 
+they would only authenticate friends, partners, and family – making 
+automatic approaches useful for other contacts. 
+
+10 CONCLUSION 
+
+Authentication ceremonies in secure instant messaging are a well­
+researched security problem [22, 37, 39, 41–44, 46]. A few diferent 
+approaches (applying either systems design or activity-centered 
+design) have been explored to improve their usability and adoption 
+rate. Our user-centered design approach is based on the assump­
+tion that fundamental improvements of these ceremonies require 
+rethinking the entire design from the user’s perspective. We used 
+a four-stage design process including collaborative design work­
+shops, selecting viable candidates, iterative storyboard prototyping, 
+and a mixed-methods online evaluation. Even though the quantita­
+tive comparison of our prototypes did not reveal usability or user 
+experience improvements, we found that one of our prototypes 
+increases the users’ comprehension of the ceremonies’ security 
+benefts. 
+
+We also learned several important lessons from applying user­
+centered design to security problems: (1) Participants have impor­
+tant participatory roles in the security design processes. Mainly 
+framing the design problem regarding threat models and social 
+aspects, informing designers and security experts about their intu­
+itions on convincing secure experiences, and improving prototypes 
+with their iterative feedback; (2) The choice of participants needs to 
+be explicit and consistent. The constructed notion of the “universal 
+user” could be combated by,e.g., diferentiating users according to 
+the details of their threat models (concrete – abstract), or by their 
+current (non-)use of security features; and (3) Focusing on qualita­
+tive evaluations is necessary to understand if participants correctly 
+associate the user experience with the achieved security levels.

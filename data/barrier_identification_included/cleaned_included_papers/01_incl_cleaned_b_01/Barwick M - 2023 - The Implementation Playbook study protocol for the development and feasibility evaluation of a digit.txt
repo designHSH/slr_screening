@@ -1,0 +1,555 @@
+Barwick et al. 
+Implementation Science Communications            (2023) 4:21  
+https://doi.org/10.1186/s43058-023-00402-w
+
+STUDY PROTOCOL
+
+The Implementation Playbook: study 
+protocol for the development and feasibility 
+evaluation of a digital tool for effective 
+implementation of evidence‑based innovations
+
+Melanie Barwick1,2,3,4*   , Jacquie Brown5, Kadia Petricca1, Bonnie Stevens1,6, Byron J. Powell7,8,9, 
+Alexia Jaouich10, Jill Shakespeare11 and Emily Seto3,12 
+
+Methods
+Design and objectives
+The study integrates implementation science, digital 
+design and development, and health services research 
+and employs a theory-driven multiple case study design 
+[65] with convergent, explanatory mixed methods [66]. 
+Quantitative data on the use of the tool will be integrated 
+with qualitative data on how it was experienced, its use-
+fulness, barriers and facilitators to its use, and desired 
+features and functions for the next iteration. User-cen-
+tred design principles (i.e. design that is concise, clear, 
+and consistent and provides the user with autonomy) will 
+guide the design and development of the digital tool [67]. 
+We will then explore the tool’s feasibility for supporting 
+EBI implementation in six organizations.
+Development of the Playbook will occur in two phases: 
+Phase 1: design, user testing, and development of an 
+MVP, and Phase 2: feasibility testing of the MVP in six 
+healthcare organizations (Table 1). We describe the spe-
+cific objectives associated with each phase below.
+
+Phase 1: Development and usability testing of the Playbook
+
+Objective 1: MVP co‑design and development  Successful 
+digital tool design requires a user-centred process from 
+concept through to design, development, quality testing, 
+implementation, and adoption, and frequently fails when 
+
+established practices are not used [68]. eHealth technolo-
+gies designed and developed based on assumptions about 
+end-user motivations, goals and needs are often less 
+effective than those that engage end-users throughout 
+the process [68]. To optimize the relevance of the Play-
+book, we will employ a ‘user-centric’ approach in which 
+end-users are central to the design process at each design 
+phase and will allow for iterative modifications on con-
+tent and functionality that meet user needs best. A ‘user-
+centric’ approach is paramount for user engagement with 
+the tool and its effectiveness [68]. Collaborators, Pivot 
+Design Group, were selected from three vendor bids to 
+lead the design and development work.
+
+The design phase will use discovery phase outputs on 
+personas to sketch, ideate, visualize, and prototype the 
+concept into life. First, we will outline the information 
+architecture and sitemap from user personas, beginning 
+with a series of task flows. Each task flow, or user flow, 
+will be refined to outline the basic user experience and 
+further flesh out the interaction design, from sketches 
+through to wireframes, that outline the priority of infor-
+mation, content hierarchy and key content formats. 
+Wireframes strategically filter the content in a format 
+that considers how users interact with the content on 
+the screen (no visual design, only black and white “blue-
+prints” at this point). Next, we will create a mood board 
+that captures the overall look and feel of the visual user 
+interface and iterate through graphic layouts to come to 
+a design that suits users’ priorities and contexts. All team 
+members and collaborators will be involved and influ-
+ence this process through discussion meetings guided by 
+Pivot Design Group, which will seek end-user input on 
+tool functionality, task flows, and visual display.
+
+Objective 2: Usability testing  We will develop a click-
+through static prototype for one round of controlled 
+usability testing to validate certain functions and task 
+flows before designing the entire visual user interface; 
+Pivot Design Group will lead this work. We will recruit 
+8–10 participants with varied gender perspectives and 
+
+Table 1  Organization sampling characteristics
+
+Site
+Organization type
+Innovation delivery mode
+Type of implementation support
+
+1
+Community Child & Youth Mental Health
+In-person
+Playbook alone
+
+2
+Adult Mental Health & Addictions
+In-person
+Playbook alone
+
+3
+Child, Youth and Adult Mental Health & Addictions
+In-person
+Playbook + facilitation
+
+4
+Health/Quaternary Care Hospital
+In-person
+Playbook alone
+
+5
+Health/Centre for Digital Therapeutics
+eHealth technology
+Playbook alone
+
+6
+Community Child & Youth Mental Health
+eHealth technology
+Playbook + facilitation
+
+implementation experience to undergo a 45–60-min 
+guided user testing process to test key features of the 
+Playbook, including navigation and flow, functionalities 
+(i.e. adding an activity or task), readability and accessibil-
+ity. This number of participants allows for the saturation 
+of trends across users with varied implementation experi-
+ences. We will recruit usability participants from our net-
+work via email, and their participation will be consented 
+by Pivot Design Group, who will conduct the testing. 
+Data will be collected for development purposes only and 
+shared with the research team in aggregate. Questions 
+asked will centre on accessibility and usability using a 
+Think Aloud technique, where the participant verbalizes 
+their thoughts and asks questions while they review the 
+MVP [69]. Pivot Design Group will incorporate usability 
+test results into a final round of wireframes and develop 
+the final MVP for feasibility testing in Phase 2.
+
+Phase 2: Feasibility testing of the Playbook
+
+Sampling  The unit of analysis is the implementing 
+organization. We sent an email invitation to six organi-
+zations in our network to test the feasibility of the Play-
+book by using it to implement an EBI of their choice from 
+the start of implementation (see Table 1). Six organiza-
+tions provide a suitable sample for achieving saturation 
+in the check-in meetings [70]. We used maximum vari-
+ation purposive sampling [71, 72], widely used in quali-
+tative implementation research, to identify information-
+rich cases based on organization type (i.e. health, mental 
+health, child/youth, adult) and two additional character-
+istics for context variability: EBI delivery mode (i.e. the 
+EBI is delivered in-person or via eHealth technology); 
+and type of implementation support (i.e. Playbook only, 
+Playbook + purveyor or intermediary support). The type 
+of implementation facilitation is an important context 
+to test because it is a form of support used in practice. 
+We imagine the Playbook could enhance how purveyors 
+and intermediary organizations provide facilitation and 
+create efficiencies for optimal implementation. We then 
+solicited interest and participation from organizations 
+that met these criteria within our network. The organiza-
+tions we approached were known to the research team. 
+The implementing organizations will form implemen-
+tation teams to include ~3-5 staff with requisite skills 
+to inform the implementation of the target EBI in their 
+setting (e.g. knowledge of the EBI to be implemented, 
+organizational workflows and clinical processes, and 
+implementation process) [73]. We expect to engage with 
+approximately 18–30 individuals in total.
+
+Objective 1: Exploring current approaches to imple‑
+mentation  A baseline implementation survey will be 
+shared for completion by the implementation team lead 
+at each of the six implementing organizations to cap-
+ture current approaches to implementation. In addition, 
+a demographic survey administered to all participating 
+implementation team members will collect demographic 
+information on gender, age, implementation experience, 
+and employment history. We will use REDCap electronic 
+data capture tools hosted at Yale University [74, 75] to 
+administer all measures and present data descriptively to 
+depict team demographics and established implementa-
+tion procedures across organizations.
+
+Objective 2: Feasibility testing of the Playbook  Target 
+EBIs. Before the Playbook launch, participating organi-
+zations will identify the EBI they have chosen to imple-
+ment. The two intermediary organizations will identify 
+the organizations and EBIs they will support and will be 
+at liberty to support them as needed. We will intention-
+ally provide minimal direction regarding the nature of 
+the target EBIs since it is not yet known for what types of 
+innovations it will be useful. We suspect that, at a mini-
+mum, EBIs must be complex enough (i.e. include mul-
+tiple core components, not plug-and-play) to require a 
+detailed implementation process. Multiple core compo-
+nents require explicit exploration of how they align with 
+the implementing organization’s functions and struc-
+tures. The target EBI must be supported by evidence and 
+ready for implementation, and could be a practice, pro-
+gram, intervention, or initiative; delivered in person or 
+via eHealth technology and targeted to adults or children.
+
+Access to the Playbook. The implementation team lead 
+at each of the six implementing organizations will be 
+invited by email to access and register their project with 
+the tool housed on a protected cloud-based server. All 
+Playbook users will also receive a short (2-min) promo-
+tional video to engage, motivate and highlight Playbook 
+functionalities and relative advantage. The video is not 
+for training purposes since our premise is that built-in 
+facilitation will be sufficient to enable self-directed use of 
+the tool. All implementation leads will invite their team 
+members to join their registered project space (e.g. cre-
+ate a login to interact with their team members on the 
+tool). Two organizations in the Playbook + facilitation 
+condition will share Playbook access with the intermedi-
+ary or purveyor organization providing implementation 
+support. Four sites in the Playbook-only condition will 
+proceed without external implementation facilitation. 
+All organizations can request technological assistance, 
+and any requests for implementation facilitation from the 
+Playbook-only sites will be addressed and documented in
+
+logged field notes. We will redirect technical issues and 
+bugs to Pivot Design Group.
+
+Data collection. Implementation is a varied and dynamic 
+process, and measuring user experience in the moment 
+is important. We selected 3-month check-in intervals 
+to allow organizations to advance through implemen-
+tation activities while balancing our need to monitor 
+how the implementation is proceeding and minimize 
+meeting burden. We will use the Microsoft Teams vide-
+oconference platform for check-in meetings with each 
+implementation team, lasting approximately 60 min 
+and conducted by MB and KP, both female investigators 
+with doctoral training in psychology and health services 
+research. Field notes captured in real-time using Micro-
+soft Teams transcription and audio recording features 
+will support rigour. This rapid analysis method is effective 
+[76] and does not require costly and timely transcription. 
+Once participant consents are secured, we will distribute 
+the baseline implementation process survey for com-
+pletion by the team lead in advance of the first check-in 
+meeting. We will also distribute the demographic surveys 
+for completion by each team member. These data will 
+capture each organization’s prior implementation expe-
+rience and approach. In addition, an adapted Organiza-
+tional Readiness for Implementing Change questionnaire 
+(ORIC) [77] will be administered to all implementation 
+team members via REDCap during the baseline meeting 
+to assess readiness to use the Playbook tool.
+
+We will elicit how users are progressing with their imple-
+mentation using the Playbook, which features are helpful, 
+and any implementation needs not adequately addressed 
+by the tool at quarterly check-in meetings. Probes [78] 
+will identify usability issues in using the Playbook, 
+including (1) description of the issue (i.e. how it fell short 
+of meeting user needs and the consequences); (2) severity 
+(i.e. how problematic the issue was ranging from 0 [“cata-
+strophic or dangerous”] to 4 [“subtle problem”], adapted 
+from Lyon et  al. [79] and Dumas and Redish [80]; (3) 
+scope (i.e. # of tasks affected by the issue); and (4) level 
+of complexity (i.e. how simple the issue was to address 
+[low, medium, high]). We will allow time at each check-
+in meeting for organizations to raise issues, ask ques-
+tions and share comments. For the two organizations in 
+the Playbook + facilitation condition, we will probe how 
+they used support from the intermediary or purveyor 
+organization. We will track emergent problems or que-
+ries with the tool via a built-in feedback button and ana-
+lyse issue type, severity, and scope. Technical bugs will 
+be addressed immediately by Pivot Design Group. Meet-
+ing transcripts will be shared with each implementation 
+
+team and with intermediary organizations for comment 
+or correction.
+
+Implementation team members will also individually 
+complete an adapted System Usability Scale question-
+naire (SUS) [81] at each check-in meeting via REDCap. 
+The SUS provides a reliable tool for measuring usabil-
+ity and consists of a 10-item questionnaire with five 
+response options, from strongly agree to strongly disa-
+gree. SUS has become an industry standard because it 
+is a straightforward scale to administer to participants, 
+can be used on small sample sizes with reliable results, is 
+valid and can effectively differentiate between usable and 
+unusable systems [82, 83].
+
+Quarterly meetings will also be held with the two imple-
+mentation support organizations to learn how they 
+integrate the tool into their facilitation process. Data 
+captured in MS Team transcription will be coded for pro-
+cedural changes, barriers and facilitators, and tool advan-
+tages and disadvantages.
+
+Metrics from the Playbook content management software 
+and Google Analytics will capture how users progressed 
+through the tool’s steps and activities and how long they 
+took to do so (time/efficiency). Metrics will include (1) 
+Duration—time taken for completion of implementation 
+phases (efficiency); (2) Adherence to the implementation 
+steps and activities over time (i.e. did they complete Play-
+book activities and follow steps as intended as evidenced 
+by user inputs within the tool); and (3) Final Stage—the 
+furthest phase achieved in the implementation process. 
+In addition, key implementation activities built into each 
+implementation phase will provide milestone anchors 
+for tracking user progression through implementation. 
+Implementation cost-tracking will be added as a function 
+in the following tool iteration (version 2.0).
+
+The final month-24 check-in (or earlier, if implementa-
+tion is attained) will involve two one-hour meetings per 
+organization, scheduled within a month of each other. 
+One meeting will follow the usual check-in protocol, and 
+a second meeting will explore determinant factors that 
+hindered or facilitated Playbook use; this will occur via 
+team interviews informed by the updated Consolidated 
+Framework for Implementation Research (CFIR2.0) [42, 
+84]. CFIR provides a taxonomy of operationally defined 
+constructs associated with effective implementation, 
+empirically derived from 19 theoretical frameworks, and 
+organized into five domains: characteristics of the inter-
+vention (the Playbook), the inner setting, the outer set-
+ting, characteristics of individuals, and the process. The 
+tool is adaptable for qualitative data collection (CFIRg​
+
+uide.​com), and we will include all domains and factors. 
+We will follow a modified rapid analysis (RA) approach 
+that combines data collection and coding. The RA 
+approach is an alternative to in-depth analysis of inter-
+view data that yields valid findings consistent with in-
+depth analysis, with the added advantage of being less 
+resource-intensive and faster [76].
+
+CFIR interviews will be conducted by two CFIR-trained 
+research analysts with each implementation team using 
+MS Teams’ transcription and audio-recording features. 
+We will interview each organization’s implementa-
+tion team as a group unless individual interviews are 
+requested; this may occur if implementation teams 
+include members with a varying role hierarchy, which 
+may influence one’s intention to speak freely without fear 
+of repercussion. Organizations will be reminded that the 
+study focus is on the Playbook tool and its usefulness and 
+feasibility rather than on their implementation perfor-
+mance. One analyst will facilitate the interview while a 
+second analyst captures field notes directly onto a tem-
+plated form that maps to CFIR domains and factors in the 
+order presented in the interview protocol. CFIR has been 
+extensively studied in various contexts [85–88], including 
+the study of eHealth technology implementation [89]. In 
+our experience, interviews with all 39 constructs can be 
+conducted in 60 min [86–88]. Given limited evidence of 
+constructs that may be more salient across contexts, we 
+will include them all.
+
+A final check-in meeting will also be conducted with the 
+intermediary organizations to assess their overall experi-
+ences providing implementation facilitation alongside the 
+Playbook. We intend to learn how the Playbook may be 
+used as an adjunct tool to streamline their workflows and 
+processes.
+
+User input will include free-form content entered into 
+the digital tool by the users as they work through the 
+activities. For example, users are asked to discuss and 
+describe how well the EBI fits with their current services, 
+priorities, workflows, supports, community, and organi-
+zational values. User input at registration (first use) will 
+include descriptive project details (i.e. target EBI, imple-
+mentation timeline, funding, and team members). Links 
+to resources and tools accessed by users will be tracked 
+throughout. Back-end data will capture timestamped 
+milestones and pathway progression as users work 
+through the implementation phases and tasks.
+
+Analysis  With a convergent design, we can integrate 
+qualitative data (check-in notes, CFIR interviews, free-
+form user input) with quantitative data (tool metrics on 
+
+use, ORIC, SUS) to develop a picture of the tool’s fea-
+sibility within different contexts. Both data types will 
+be collected concurrently, apart from CFIR interviews, 
+which we will administer at the end of implementation 
+or 24 months. We will use visual joint display methods 
+to depict user implementation experience with the tool 
+[90]. Data integration will create a solid foundation for 
+drawing conclusions about the tool’s usability, feasibility, 
+and usefulness. In addition, this integration will lead to 
+recommendations for improving the tool’s acceptability, 
+feasibility, and effectiveness. Qualitative data analysis will 
+allow us to explore user experience and tool functionality, 
+how users progressed, implementation needs not ade-
+quately addressed, and barriers and facilitators to its use, 
+which can inform subsequent revisions and user support 
+before further testing. Reporting of qualitative results 
+will follow the COREQ criteria [91].
+
+Qualitative. Two research trainees will verify the field-
+notes from the ~48 check-in meetings (~8 per site over 
+24 months) collected in the MS Teams meeting tran-
+scripts and import data into MAXQDA 2022 [92]. The 
+number and type of usability issues identified will be 
+reported by organization and time point. The type of 
+usability issue will be coded using a consensus coding 
+approach and framework adapted by Lyon et al. [79] from 
+cognitive walkthrough methods [93]. We will code issues 
+associated with the user (i.e. the user has insufficient 
+information to complete a task); hidden information (i.e. 
+the user has insufficient information about what to do); 
+sequencing or timing (i.e. difficulty with sequencing or 
+time); feedback (i.e. unclear indications about what user 
+is doing/needs to do); and cognitive or social (i.e. exces-
+sive demands placed on user’s cognitive resources or 
+social interactions). Usability issue classification is criti-
+cal because it facilitates data interpretation and provides 
+more direct links between usability problems and Play-
+book redesign solutions.
+
+Analysis of CFIR group interviews (n=8) will follow the 
+modified RA approach [76]. Data captured on a tem-
+plated summary table will be synthesized into summary 
+memos by organization, including for the two intermedi-
+ary organizations. Valence and strength will then be rated 
+for each factor. The valence component of a rating (+/−) 
+is determined by the influence the factor has on the pro-
+cess of using the tool to implement the innovation. The 
+level of agreement among participants, the language, and 
+the use of concrete examples determines rating strength 
+(0, 1, 2). Two analysts are required for data collection 
+and analysis: one conducts the interview, and the second 
+takes notes in the CFIR data table during the interview. 
+The interviewer reviews the coded template against the
+
+audiotape to ensure accuracy; they do not code indepen-
+dently of one another, but both analysts provide an inde-
+pendent valence rating and discuss differences to arrive 
+at a consensus.
+
+User free-form input will be captured per organization 
+from the tool back-end and entered into MAXQDA soft-
+ware [92]. Two analysts will code these data indepen-
+dently with a coding tree aligned with the core elements 
+(factors, strategies, process, equity considerations) and 
+activities. Coding of emergent usability issues from these 
+data will occur as above. Target EBI, initiating implemen-
+tation context, team member demographics, and baseline 
+implementation survey will be reported descriptively and 
+inform data interpretation.
+
+Quantitative. Ratings for both ORIC and SUS question-
+naires use a 5-point Likert-type scale (1 = extremely 
+disagree, 5 = extremely agree). They will be reported 
+descriptively (range, mean, SD) by organization and 
+usability issues (QUAL), adherence to core elements 
+(QUANT), and final phase achieved (QUANT). SUS rat-
+ings will be analysed within organizations for changes 
+across time intervals. Tool metrics will capture activ-
+ity duration (dates of first and last activities completed 
+within each phase to ascertain the number of implemen-
+tation days), adherence (# and order of activities com-
+pleted within a phase), and final phase achieved for each 
+organization. These data will be explored against quali-
+tative usability data between and within sites using joint 
+display methods.
+
+Gender-based analysis. Gender is important in decision-
+making, stakeholder engagement, communication, and 
+preferences for EBI adoption [94]. Implementation may 
+operate differently within and across genders under vari-
+ous circumstances [95] and requires decision-making 
+that may shape what is implemented, how, and why. For 
+example, leadership traits among leaders of different 
+genders can influence the outcome of decision-making 
+processes that are key to implementation. Gender may 
+also affect how individuals use digital tools and eHealth 
+innovations [96]. We will attempt to balance gender in 
+the composition of our knowledge user group involved 
+in tool development among usability testing participants 
+and implementation teams. The analysis will be guided 
+by a realist approach to discover what works, for whom, 
+in what circumstances, and why. While we cannot con-
+trol the gender composition within organization imple-
+mentation teams, we will explore differences in our data.
+
+Limitations. The Implementation Playbook has tre-
+mendous potential for impact due to its disruptive [97] 
+
+capability (i.e. creating a resource or market where none 
+existed), generic applicability and scalability. No existing 
+technology does what the Playbook is designed to do.
+
+Nevertheless, disruptive technologies bring inherent 
+risks because they involve a new way of doing things. 
+There is a risk that new technology can take years or fail 
+to be adopted. Users of the Playbook may need help to 
+follow all the steps and work through the activities, or 
+they might prefer to implement with in-person external 
+facilitation. Some organizations are more risk-averse and 
+adopt an innovation only after seeing how it performs 
+for others. Over time, we can leverage early adopters by 
+highlighting the Playbook’s usability, feasibility, relative 
+advantage, positive peer pressure and tension for change 
+and by showcasing the experiences of champion users.
+
+Discussion
+Poor implementation, regardless of intervention effec-
+tiveness, is costly and wasteful. To this end, we aim to 
+produce a pragmatic solution that challenges the status 
+quo in how organizations use or fail to use implementa-
+tion science to inform their EBI implementation. This 
+paper describes the protocol for a multi-phased research 
+study to develop and test a digital tool to support the 
+effective implementation of evidence-based innovations 
+in various healthcare organizations and for various EBIs. 
+We will produce a first-in-kind tool and learn whether it 
+can feasibly be used to support implementation. We will 
+identify what revisions may be needed and whether the 
+tool can be used autonomously (without external facili-
+tation), in different healthcare contexts, as an adjunct to 
+external facilitation and with different EBIs. This work 
+will inform the next iteration of the tool and preparation 
+for an effectiveness study.
+We hope to demonstrate that the Playbook enables 
+self-directed implementation independent of costly 
+external facilitation. We also intend for the tool to be 
+universally useful in any healthcare context and for any 
+type of EBI due to the universality of core elements 
+from implementation science (i.e. implementation 
+team, process, factors, strategies, and outcomes). The 
+universality of these core implementation elements is 
+analogous to the Plan Do Study Act model that guides 
+quality improvement across contexts. The core ele-
+ments stem from published work about process [98], 
+determinant factors [42], strategies [44], implemen-
+tation outcomes [45], and equity considerations [99] 
+These core elements have guided our facilitation work 
+in varying contexts (i.e. MB and JB have used the core 
+components to guide implementation for >50 teams 
+in international implementation initiatives). Tailoring
+
+these core elements to organizational context occurs in 
+how users apply them in their planning and execution. 
+The proposed tool is innovative and potentially disrup-
+tive; to our knowledge, there is no existing tool that 
+integrates multiple implementation core components 
+to facilitate EBI implementation across organizations 
+and types of innovation.

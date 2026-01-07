@@ -1,0 +1,188 @@
+Annotator-Centered Design: Towards a Tool for Sentiment 
+and Emotion Annotation 
+
+Thomas Schmidt, Marco Jakob and Christian Wolff1 
+
+2 
+Approach 
+
+User-centered design describes a multistep iterative process to design more user-friendly 
+products [Vr02]. Some of the main features of user-centered design that we want to 
+integrate in our design approach, the annotator-centered design, are:  
+
+(1) The acquisition of requirements and feedback of potential user groups in early stag-
+es of development and throughout the process. Though annotation tools also have an 
+administrative context, we regard potential annotators as the main user group.  
+
+(2) The iterative aspect of user-centered design: We want to evaluate our solutions as 
+early as possible with potential annotators, adjust the tool and reevaluate it, thus cre-
+ating a constant development cycle.  
+
+(3) Methods from usability engineering to gather feedback and to evaluate the tool:  
+prototype mock-ups, questionnaires, interviews, contextual inquiries and focus 
+groups. Finally, we want to add another feature to the user-centered design approach 
+that is more specific to the research task in annotation projects in DH, thus renaming 
+the process annotator-centered design.  
+
+78 Thomas Schmidt, Marco Jakob, Christian Wolff
+
+(4) We want to use results of the iterative process like feedback and evaluation results 
+not only on tool improvement but also for possible improvements of annotation 
+schemes, manuals, guidelines and the overall theoretical foundation of the annota-
+tion concept. 
+
+We have employed the annotator-centered design process for the development of the 
+annotation tool SentiAnno. Our goal is to acquire a corpus for sentiment and emotion 
+analysis in dramatic texts, a research area that has gained a lot of attention in the DH in 
+recent years [Mo11, NB13, SB18, SBW19], for evaluation and machine learning pur-
+poses. We are focused on sentiment and emotion annotation for German dramatic plays 
+by Gotthold Ephraim Lessing. In the following, we will describe our first studies inte-
+grating methods of the annotator-centered design approach. 
+
+For the start of our project, we conducted a small-scale sentiment and emotion annota-
+tion study with six annotators of differing expertise (cf. [SBD18] for more information 
+about this study). Annotators had to annotate the speeches (single utterances of a charac-
+ter) of plays by Lessing. For our pilot studies, we used Microsoft Word as annotation 
+tool. We presented the speeches and annotators had to mark the annotation in cells of 
+tables following each speech. 
+
+To gather first feedback by annotators, they had to complete a questionnaire about the 
+challenges and difficulties of the annotation and reported about the time needed for the 
+annotation. While reports about major problems with the tool were rare, we gathered a 
+lot of feedback about problems with the annotation scheme and manual, which we had 
+derived from similar annotation projects in the context of product and movie reviews. 
+Based on the feedback we adjusted the annotation scheme, simplified it and allowed 
+annotators to mark what the reference of a specific sentiment is. Furthermore, annotators 
+reported that they were oftentimes very unsure about annotations what also hindered 
+their annotation flow. Therefore, in our future scheme we also integrated the possibility 
+to mark the certainty of an annotation. 
+
+We conducted another annotation study (this time with students of German literary stud-
+ies) with the adjusted annotation scheme and a more precise manual (for more infor-
+mation about this study cf. [Sc19]). Once again, annotators had to complete a question-
+naire. Furthermore, we also conducted a focus group with the annotators after the anno-
+tation process, a method well known in usability engineering, allowing us to get into 
+more personal interaction with annotators. Results of this study showed that the annota-
+tion of certainty facilitated the process a lot since now annotators did not feel frustrated 
+if they were unsure about an annotation but could simply mark their uncertainty. How-
+ever, while agreement levels were higher than in the first study (mostly due to the more 
+precise manual and simplified annotation) the reported difficulty with various aspects 
+like language remained. Furthermore, critique concerning Microsoft Word was expressed 
+since it does not look motivating and oftentimes annotators simply forgot to annotate 
+speeches. It was at this point that we shifted our focus more towards tool development.  
+
+To start the development process, we first conducted two contextual inquiries with pre-
+
+Annotator-Centered Design: Towards a Tool for Sentiment and Emotion Annotation 79
+
+vious annotators. A contextual inquiry is also an established method in usability engi-
+neering. The idea is to observe the users during their everyday practice with a tool, in our 
+case while performing regular annotations. We also instructed the annotator to “think 
+aloud” to gather more information about what they are doing and why. We were able to 
+acquire enough feedback and ideas to develop a first prototype. Before starting the real 
+implementation, we first developed mock-ups via the mock-up-tool Pencil2 and dis-
+cussed these mock ups with the previous mentioned annotators of the contextual inquiry. 
+Based on this feedback, we adjusted our mock-ups and developed our first prototype of 
+SentiAnno, a tool specifically designed for structured sentiment and emotion annotation 
+of text. We will refer to the feedback and data we gathered from annotators in section 3 
+to illustrate design decisions concerning the prototype. 
+
+3 
+Prototype 
+
+In the following section, we describe the current state of the prototype, focusing espe-
+cially on features that were designed based on feedback and results employing the anno-
+tator centered-design process. Therefore, there is a lot of additional functionality we do 
+not outline in detail like import/export-functions and other administrator-specific func-
+tions. SentiAnno is currently a web-based annotation tool working with TEI-annotated 
+XML files. 
+
+One of the first design decisions we made was concerned with the annotation scheme: 
+As seen in section 2, this scheme is still under development and constantly changing. 
+Therefore, the administrator is capable to design various types of annotation schemes 
+with various scales (figure 1). Furthermore, annotators informed us that they had diffi-
+culties assigning sentiment and emotion classes as nominal selections. Thus, we inte-
+grated the possibility to define sliders on which annotators can make more vague selec-
+tions. Sliders are rather uncommon in regular annotation tools but have been proven 
+helpful for our annotators in making very uncertain vague annotations. Additionally, we 
+also implemented the possibility to make annotations via open text fields, which allows 
+the annotator to give more precise feedback or report problems when necessary. 
+
+                                                          
+2 https://pencil.evolus.vn/ (note: all URLs mentioned in this article were last visited June 20, 2019) 
+
+80 Thomas Schmidt, Marco Jakob, Christian Wolff
+
+Fig. 1: Different styles for annotation schemes. 
+
+Figure 2 shows the overall view during the annotation process.  
+
+ 
+
+Fig. 2: Annotation view. 
+
+Annotators can click on a speech to annotate this speech. On the left side as well as on 
+the upper screen annotators are informed about their progression. On the left side the 
+structural units of the play are filled out with green color the further an annotator pro-
+gresses. Being informed about the progression is one of the main requirements reported 
+by annotators during our pilot studies. Speeches that are already annotated are marked in 
+a brighter background than speeches that still must be annotated. The currently selected 
+speech is illustrated in bold font. All these features help the annotator to know where 
+they are and what is left to do. On the left side, annotators can also use the structural 
+progress information to jump from unit to unit e.g. jumping to the last act or a specific 
+
+Annotator-Centered Design: Towards a Tool for Sentiment and Emotion Annotation 81
+
+scene. On the right side, annotators can use functions to zoom into the text or filter the 
+speeches e.g. filtering speeches that have already been annotated. Annotators recom-
+mended this feature, so they do not accidently miss out annotations. Annotators can also 
+skip speeches for later time via this function. Summing up, annotators have now the 
+freedom to do the annotations in the order they prefer. 
+
+When starting the annotation of a speech a new window appears where annotators can 
+perform the annotation according to the previously defined scheme (figure 3). 
+
+ 
+
+Fig. 3: Selecting an annotation. 
+
+One feedback we also address is that annotators wanted to always see the speech when 
+choosing the annotations. This was not always possible using Microsoft Word. There-
+fore, if annotators move the mouse away from the annotation scheme, the scheme be-
+comes transparent displaying the speech again. Furthermore, annotators do not have to 
+leave the annotation screen to select the next speech but can simply jump to the next 
+speech with a button press thus the annotation flow is only interrupted if wanted and 
+annotators can work much faster. 
+
+One of the major issues reported especially when dealing with non-experts (i.e., annota-
+tors with no background in German literary studies) were problems concerning the un-
+derstanding of the language. Therefore, we implemented a function to right click on a 
+word to receive information about the meaning of the word and possible synonyms. This 
+function is implemented by including a thesaurus. For example, in figure 4 you see what 
+annotators receive when right clicking on the word “Putz” (an old German word for 
+appearance, “Aufmachung”): 
+
+82 Thomas Schmidt, Marco Jakob, Christian Wolff
+
+Fig. 4: Similar terms for the word “Putz”. 
+
+Since SentiAnno is designed as a web-based tool, annotators certainly can also look for 
+such information on the web. However, we think it is better for the annotation workflow 
+to stay in the annotation tool. The prototype is available online.3 
+
+4 
+Future Work 
+
+We are currently planning to continue the annotator-centered design approach. We start-
+ed first evaluations of our tool via usability studies comparing the performance, usability 
+and user experience systematically to other standard annotation tools. Based on this 
+feedback, we want to continue to improve our tool according to the requirements of 
+annotators. We also plan more large-scale annotation studies implementing methods like 
+diary studies to gather feedback about the annotation process and tool when used for 
+longer phases. We were able to prove the benefit of the annotator-centered design ap-
+proach concerning the tool design but also the annotation scheme and the theoretical 
+foundations, which are still developing. Overall, these improvements will facilitate the 
+gathering of well-annotated corpora enabling advancements in the research area of sen-
+timent analysis in literary texts much faster. We hope that our work motivates other 
+developers to integrate similar ideas to improve the usability and user experience of tools 
+in DH.

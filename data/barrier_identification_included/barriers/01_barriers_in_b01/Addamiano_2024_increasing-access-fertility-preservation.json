@@ -1,0 +1,24 @@
+{
+  "file_name": "Addamiano_2024_increasing-access-fertility-preservation.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "knowledge",
+      "description": "Existing informational brochures had not been previously evaluated and lacked prior feedback from patients and healthcare professionals, leaving gaps in designers' evidence about acceptability and usability.",
+      "justification": "This knowledge gap limits the designers' ability to manage user understanding, specify user requirements, and to plan effective evaluation and iteration of the materials before wider implementation.",
+      "reference_excerpt": "The effectiveness of the brochures created so far has not been tested, and there is no hindsight or feedback from patients or healthcare professionals regarding their acceptability, usability and usefulness.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Regional variation in the number of cancer centers creates the need for specific regional coordination for data collection, adding logistical complexity for the research team.",
+      "justification": "This operational constraint hampers designers' ability to understand context of use and to facilitate consistent participant recruitment and data collection across sites, which can impede evaluation and iteration workloads.",
+      "reference_excerpt": "The number of cancers centers varies by region, requiring specific regional coordination for data collection.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

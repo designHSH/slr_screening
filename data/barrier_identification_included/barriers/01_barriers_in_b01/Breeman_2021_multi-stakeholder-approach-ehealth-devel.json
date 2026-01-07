@@ -1,0 +1,42 @@
+{
+  "file_name": "Breeman_2021_multi-stakeholder-approach-ehealth-devel.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The number of participants in some studies was relatively small, limiting the breadth of empirical input available to the design team.",
+      "justification": "Small sample sizes constrain designers' ability to manage user understanding and understand the context of use because fewer participant perspectives reduce the diversity and confidence of user insights used to specify requirements and inform iteration.",
+      "reference_excerpt": "First, the number of participants of some studies was relatively small.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "More healthcare professionals than patients were interviewed, producing an imbalance in stakeholder input.",
+      "justification": "This sampling imbalance limits designers' capacity to accurately manage user understanding and specify user requirements for patients, because patient perspectives were underrepresented relative to professional viewpoints during synthesis and value specification.",
+      "reference_excerpt": "Second, it may be noted that more healthcare professionals were interviewed than patients, but this is mostly because we included a wide range of healthcare professionals such as nurses, general practitioners, cardiologists, lifestyle coaches, etc.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Healthcare professionals reported they neither have time nor receive reimbursements to keep track of current eHealth developments, making engagement burdensome.",
+      "justification": "Limited time and lack of reimbursement among external stakeholders hinder designers' ability to facilitate user involvement and coordinate with clinical stakeholders, reducing opportunities for iterative feedback and validation within routine care settings.",
+      "reference_excerpt": "healthcare professionals expressed the wish to receive an overview of eHealth applications to promote healthy living, they neither have time nor receive reimbursements to keep track of current developments.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "designer",
+      "barrier_type": "knowledge",
+      "description": "Personas used to derive requirements were not yet validated and remain to be confirmed in practice.",
+      "justification": "Unvalidated personas represent a lack of validated user knowledge, constraining designers' ability to specify user requirements and confidently produce design solutions and evaluate whether prototypes match real user archetypes.",
+      "reference_excerpt": "Finally, the developed personas that were needed to work out the eHealth requirements and customer journey were mostly based on stakeholder interviews. Now that the PHA is ready for use in cardiac rehabilitation, persona validation will be the next step.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

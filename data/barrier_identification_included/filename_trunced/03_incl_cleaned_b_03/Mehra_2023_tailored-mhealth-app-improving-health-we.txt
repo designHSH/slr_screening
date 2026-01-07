@@ -1,0 +1,691 @@
+Original Paper
+
+A Tailored mHealth App for Improving Health and Well-Being
+Behavioral Transformation in UK Police Workers: Usability Testing
+via a Mixed Methods Study
+
+Richa Mehra1, BPT, PGDHHM, MSc; Andy Pulman2, MA, PhD; Huseyin Dogan1, BSc (Hons), PG Cert, EngD, MSc;
+Jane Murphy2, BSc (Hons), PhD; Fiona Bitters3, BSc (Hons), MSt
+
+1Bournemouth University, Faculty of Science and Technology, Bournemouth, United Kingdom
+2Bournemouth University, Faculty of Health and Social Sciences, Bournemouth, United Kingdom
+3Hampshire Constabulary, Southampton, United Kingdom
+
+Andy Pulman, MA, PhD
+Bournemouth University, Faculty of Health and Social Sciences
+Bournemouth Gateway Building
+Lansdowne Campus, St. Pauls Lane, Bournemouth
+Bournemouth, BH8 8GP
+United Kingdom
+Phone: 44 1202 961047
+
+Methods
+
+Preliminary Design Cycle
+
+Preparatory work coincided with the first period of the UK
+lockdown for COVID-19. Web-based surveys were used to
+
+gather feedback and information from the user base. Survey
+data were gathered from 213 participants of the UK
+commissioning 
+force 
+[15]. 
+Data 
+highlighted 
+that 
+a
+multifunctional tool would be more beneficial than focusing on
+a single element. Key features and 4 domains were identified
+for initial app coverage. In order of importance—prioritized by
+participant response—these were: food and diet (76/213, 35.6%),
+activity (68/213, 31.9%), sleep (27/213, 12.6%), and fluid intake
+(27/213, 12.6%). Participants also identified a need for the new
+app to consider that a user was on shift—this is important
+because many issues and problems with elements of their health
+and well-being involved shift work. For example, shift work
+and fatigue have been shown to interfere with sleep and impair
+cognitive function [16,17].
+
+Secondary Design Cycle
+
+Initial requirements were categorized using the MoSCoW (Must
+Have, Should Have, Could Have, Won’t Have) framework [18],
+with findings from the web-based questionnaire and client
+meetings informing initial draft requirements. Paper designs
+were sketched leading to the creation of low-fidelity wireframes
+[15]. These were shown to the client for feedback before
+high-fidelity designs were created. These were then shown to
+interviewees during semistructured interviews (n=10), to gather
+feedback about requirements and preferences for the app. On
+the basis of their feedback, the second set of design prototypes
+was created. A good mental health section was added as the
+fifth domain, including the ability to complete an optional mood
+diary and track and set alcohol goals. Given the emerging
+evidence about the impacts of COVID-19 on police staff’s
+mental well-being before [10,19] and during the pandemic
+[13,14], the suggested expansion to incorporate a section
+regarding mental health and well-being seemed to be a valuable
+addition, especially in light of potential challenges broaching
+these topics within a culture where discussing mental health
+difficulties have sometimes been viewed as an undesirable
+discussion topic [20]. Considerations and concerns of financial
+nature [21-23] inspired the inclusion of the sixth domain, to
+cover holistic wellness. It was highlighted that information
+regarding financial planning, pension policies, and budget and
+saving advice would be helpful and give control to those who
+were nearing retirement. Overall wellness is something achieved
+by taking care of mental, physical, and financial well-being.
+The suggestion to include financial well-being was incorporated
+late into the second development cycle.
+
+Testing Version
+
+Further development using the revised high-fidelity designs as
+an initial foundation was undertaken with an external developer
+to produce a prototype for pilot testing. The app—created in
+Android and Apple iPhone Operating System—was developed
+using an agile approach. Coding was conducted between October
+2021 and April 2022. Several revised versions were developed
+to include all MoSCoW requirements identified as “must” and
+
+JMIR Hum Factors 2023 | vol. 10 | e42912 | p. 2
+
+“should” have [18]. The process of developing the app to this
+point was highly iterative and agile.
+
+Study Design
+
+The purpose of this study was to create a health and well-being
+app for police officers and staff, which considered the unique
+requirements of the users throughout the designing, building,
+prototyping, and testing stages and helped the researchers
+understand the users and their requirements. The study involved
+quantitative approaches (demographic web-based survey
+questions and the System Usability Scale [SUS] [24]) and
+qualitative approaches (open web-based survey questions and
+semistructured interviews). We used a human-centered approach
+to optimize the understanding and accommodate the perspectives
+of potential users [25]. The methods chosen were considered
+with the participants in mind—those that could be completed
+in 1 session, where time could be set aside when they were free.
+The methods used in this study acknowledged and catered to
+the logistical and operational pressures that the participants
+might be under, while allowing them to provide the project team
+with detailed feedback.
+
+Participants, Recruitment, and Consent
+
+Participants were recruited via a gatekeeper from the
+commissioning client. The gatekeeper’s role was to initiate
+
+communication between the researcher and police officers and
+staff who wished to participate—via distribution of study
+literature—without compromising anonymity or affecting the
+veracity of web-based responses. Participation was voluntary,
+and participants remained anonymous to both the gatekeeper
+and the organization. Consent for completing the web-based
+survey was requested before allowing participants to proceed.
+Before each interview began, the researcher answered any
+questions they had, checked if they were willing to be audio
+recorded, and explained the consent process before recording
+began.
+
+Procedures and Measures
+
+This study involved unsupervised usability testing of a prototype
+app by members of the commissioning client using their
+smartphones. The version of the app supplied for testing
+contained draft versions of all 6 sectional domains previously
+identified—food and diet, activity, sleep, fluid intake, good
+mental health, and financial well-being—accessible from the
+home screen (Figure 1). An additional feature provided the
+opportunity to add forthcoming shift pattern details to the app,
+which could then be cross-referenced with other parts of the
+app. The testing version concentrated on implementing basic
+operational functionality, which could then be expanded or
+altered as required based on user feedback.
+
+Figure 1. Screenshot of home screen.
+
+JMIR Hum Factors 2023 | vol. 10 | e42912 | p. 3
+
+Initially, an email was sent to police officers and staff describing
+the study and asking about their interest. After completing a
+preregistration application for screening purposes, participants
+were emailed a link to allow them to download the trial app. A
+task guide was also sent, giving them 10 days of time for testing.
+The guide suggested task scenarios of different complexity
+levels and covered the core functionalities of the app: shift
+manager, fluid intake, sleep, mood diary, alcohol consumption
+tracker, financial well-being, and activity. Participants were
+then asked to complete a web-based questionnaire after 10 days
+of testing. Demographic details, information about use of the
+app, likes and dislikes, and feedback about specific features
+were collected through open-ended questions. The questionnaire
+was completed by 48 participants.
+
+A subsample of participants (9/48, 19%) who provided consent
+to a follow-up telephone interview via a questionnaire subsection
+were interviewed after they had completed the given tasks.
+Topic guides were used for the semistructured interviews, to
+ensure that areas of interest (such as aspects related to delivery
+mode and format) were covered, while still allowing flexibility.
+Participants were asked several follow-up questions about the
+content, design, and functionalities of the app and to rate their
+experience. Throughout the session, the interviewer encouraged
+the participants to speak aloud about their actions, which helped
+to understand the emotions of the user while using the
+functionalities of the app. They were encouraged to share the
+issues faced while performing a task or give suggestions for
+improving the design. Interviews were audio recorded and
+transcribed verbatim. Notetaking was also used to collect data
+during the usability sessions.
+
+Sample Size
+
+As the intended audience for the final product was a UK police
+force, the work force value supplied by the client organization
+was rounded to the nearest 1000 and used to calculate an ideal
+sample size. The value used for the work force was 5000 [26].
+The actual number of participants was 48, which was above the
+lower threshold for an acceptable number for the sample size.
+With this number of participants and the estimated population
+size, there is a 95% confidence level, with a final margin of
+error of 14%. This sample size was considered to be adequate
+because of restrictions in accessing participants—for
+downloading and testing the app, completing the survey, and
+possibly participating in an interview—owing to logistical and
+operational pressures.
+
+Analysis
+
+Recordings were transcribed and thematically analyzed using
+a deductive approach that focused on the domains covered in
+the topic guide (focusing on design, functionalities, and content).
+A generic qualitative approach to thematic analysis was used
+[27], with interresearcher interpretation.
+
+Ethics Approval
+
+Ethics approval was obtained from Bournemouth University
+(39100).
+
+Results
+
+Participant Characteristics
+
+We recruited 33% (16/48) male and 67% (32/48) female
+participants. The “other” or “prefer not to say” option was also
+included within the survey question—no responses were
+received. (Table 1).
+
+JMIR Hum Factors 2023 | vol. 10 | e42912 | p. 4
+
+Table 1. Self-reported descriptions about participants (N=48).
+
+Participants
+Characteristic
+
+Sex, n (%)
+
+16 (33)
+Male
+
+32 (67)
+Female
+
+Age group (years), n (%)
+
+0 (0)
+<18
+
+4 (8)
+18-30
+
+20 (42)
+31-40
+
+15 (31)
+41-50
+
+8 (17)
+51-60
+
+1 (2)
+61-70
+
+0 (0)
+>70
+
+Job role, n (%)
+
+20 (42)
+Police officer
+
+28 (58)
+Police worker
+
+Shift worker, n (%)
+
+40 (83)
+Yes
+
+8 (17)
+No
+
+System Usability Scale
+
+73.8 (30-100)
+Score, median (range)
+
+70.9 (14.1; 66.9-74.9)
+Score, mean (SD; 95% CI)
+
+Adjective rating (Sauro-Lewis), n (%)
+
+11 (23)
+A or A+
+
+13 (27)
+B
+
+12 (25)
+C
+
+5 (10)
+D
+
+7 (15)
+E
+
+Summary Statistics for the SUS
+
+Summary statistics for the SUS scores are presented in Table
+1. Frequencies of ratings for each of the 10 SUS items are shown
+in Figure 2. Overall, the median SUS score for the toolkit was
+73.8 and the mean was 70.9 (SD 14.1; range 30-100; 95% CI
+66.9-74.9). This equates to an adjective rating of “OK” [24] and
+a “C” (41st to 59th percentile range) on the Sauro-Lewis curved
+
+grading scale [28]. Most participants (23/48, 48%) thought they
+“would like to use this toolkit frequently” (the version of the
+prototype they tested; SUS question 1). Most (40/48, 83%)
+considered the toolkit “easy to use” (SUS question 3), with 88%
+(42/48) believing that most people would “learn to use it
+quickly” (SUS question 7). More than half (28/48, 58%)
+considered the toolkit’s functionality to be well integrated (SUS
+question 5).
+
+JMIR Hum Factors 2023 | vol. 10 | e42912 | p. 5
+
+Figure 2. Frequency of responses for the System Usability Scale items.
+
+App Feedback—Domains
+
+Feedback from survey data and interviews—encompassing
+themes of design, functionality, and content—was organized
+into the previously mapped areas of the app. Suggestions made
+for additional functionality were considered and included any
+relevant feedback elicited during interviews.
+
+Food and Diet
+
+Police personnel wanted to have a tracker on the app to monitor
+the food that they consumed daily. Most of the users interviewed
+(6/9, 67%) found the supporting information under this section
+to be quite relevant and informative. During interviews, 22%
+(2/9) of the participants mentioned that they liked the detailed
+information provided about immunity support:
+
+One really good to see the immunity support page.not a lot of
+people know how different foods can affect you and stuff.
+[Participant 527]
+
+Additional suggestions were the ability to view a summary of
+how changing shifts could affect healthy food consumption.
+
+Activity
+
+The activity section (Figure 3) is currently incomplete without
+a fully developed tracker, and information provision is not going
+
+to help in maintaining good fitness levels in isolation. However,
+most participants (7/9, 78%) thought that the information
+provided was relevant, helpful, and comprehensive. They
+especially mentioned that “Cycle2Work”—a UK government
+tax exemption scheme, introduced to promote healthy journeys
+to work—and other sections were good to have on an app as
+they enabled easy access to all the required wellness material
+from home. Older participants appreciated the information
+displayed on posters and found it easy to read. During
+interviews, participants also mentioned that they would like to
+track all the physical activities they were doing, including
+linking the app to their step counter:
+
+Ability to linking with step counter. Idea is to have
+everything at one place. [Participant 517]
+
+Another suggestion was the ability to share information within
+teams to act as a motivator:
+
+It definitely doesn’t need to rival Strava or
+MyFitnessPal to be useful but in the activity section
+a means of tracking exercise [only basic - not pace,
+incline etc] to perhaps make teams or share stats
+within or across shifts. To set up a Contact
+Management leader board of which shift is taking the
+most steps for example. [Participant 617]
+
+JMIR Hum Factors 2023 | vol. 10 | e42912 | p. 6
+
+Figure 3. Screenshot of activity section.
+
+Fluid Intake
+
+Feedback regarding the fluid intake section (Figure 4) included
+the calendar feature associated with the trackers not working
+properly to input fluid and alcohol; it displayed units of fluid
+or alcohol drunk on the current day, even if the entry was made
+for previous days. Overall, 22% (2/9) of the interviewed
+participants did not find the fluid tracker to be user-friendly and
+requested a more detailed help section to guide the user through
+this section. Participants wanted to have reminders set for fluid
+intake and record old entries for those that might have been
+
+missed. However, catch-up cards (refer to the App
+Feedback—Other Features section) that give reminders to drink
+water should ideally direct users immediately to the fluid intake
+tracker for a smooth transition. During interviews, 44% (4/9)
+of the participants mentioned the desirability of viewing a
+summary:
+
+So you were making entries every day, but if one day
+if you would like to see the pattern of your fluid intake,
+you should get the kind of graph or some. [Participant
+527]
+
+JMIR Hum Factors 2023 | vol. 10 | e42912 | p. 7
+
+Figure 4. Screenshot of fluid intake section.
+
+Sleep
+
+Interviewed participants (8/9, 89%) described the information
+provided about sleep as useful and quite vast. There were some
+comments about the consistent formatting of the content, and
+users gave their preference in the web-based survey to style as
+type 1, which was not only easy on the eyes but also more
+user-friendly.
+
+During interviews, 56% (5/9) of the participants recommended
+having the ability to log sleep:
+
+...Load loads of nice information. Yeah, but it would
+have been nice to have been able to have as a log.
+[Participant 530]
+
+Good Mental Health
+
+Alcohol tracker, mood diary, employee assistance information,
+and recognizing stress were some of the features that the
+participants tested. Only some could test all the subsections
+during the testing period. Regarding the alcohol tracker, some
+participants (2/9, 22%) did not expect this tracker to be located
+under this section. For them, it made more sense if it was moved
+to the fluid intake section. The tracker offers the ability to track
+how many units of alcohol a user has drunk that day, and in
+addition to this feature, interviewed participants (4/9, 44%)
+wanted to see an overall summary in relation to their shift, to
+understand the alcohol consumption and success in meeting the
+goal.
+
+The interviewed participants (4/9, 44%) appreciated the National
+Health Service (NHS) information on feelings and symptoms
+that can be common with mental health concerns, linked from
+within the app to recognize the level of stress [29], because for
+some job roles that required working on the front line, operating
+at unsocial hours and occasionally experiencing traumatic events
+increased stress levels. Low mood is an indicator of poor mental
+health [30], and it is possible to track and compare with the
+previous days using this feature. Participants mentioned that
+the mood diary was something they would like to use in the
+future, as it helped to track changes in mood daily and compare
+them with previous days. It was viewed by some as being
+extremely important to keep checking this aspect of their health:
+
+And you can kind of almost pull off reports. Maybe
+it’s a PDF report or something that shows that
+actually they may be able to identify that on those two
+days after a set of three lates. They’re moods quite
+low or their fluid intake’s really bad or do you know
+what I mean? So that people may utilize the app
+more... [Participant 532]
+However, there was also some apprehension noted in using the
+mood diary. Concerns were whether the data might be monitored
+by senior management and that they might be viewed differently
+as a result.
+
+JMIR Hum Factors 2023 | vol. 10 | e42912 | p. 8
+
+Financial Well-Being
+
+Participants liked the amount and types of information included
+in this section:
+
+I there was some really useful stuff on there that was
+sort of flicking through with them, particularly around
+sort of the money saving. I read a lot about the police
+mutual bit and that was really good. And again gave
+me more stuff to think about and it’s got all the links
+for stuff that I use anyway, like the HPL bit and the
+blue Light card section and all that sort of stuff.
+[Participant 517]
+Having all the information easily available on the app was
+appreciated. Participants wanted to see the search function when
+the reading list was long and screen scrolling was required.
+
+App Feedback—Other Features
+
+Dashboard and Visualization
+
+Survey respondents (27/48, 56%) appreciated the clean look of
+the app and the fact that the home page was divided into
+subheadings, which not only eased navigation but also made it
+easy to use:
+
+...Layout was quite visually appealing so the
+subheadings. So, you kind of, you knew what you were
+gonna get when you went into those subheadings,
+
+they were specific, they weren’t vague. [Participant
+523]
+They emphasized that they would like to see the summary
+dashboard in a graphical form for each domain in correlation
+with the shifts attended. It is always helpful to see the progress
+made to maintain the motivation levels high, which is crucial
+during self-monitoring.
+
+Shift Manager
+
+The shift manager (Figure 5) received positive feedback. A few
+different iterations were trialed to make this feature more
+user-friendly. The most common officer and staff shifts were
+made available to users, so that they could choose the one that
+suited their pattern best. In addition, the user can make
+modifications and customize the shift patterns if there were any
+last-minute changes.
+
+However, there were some challenges. Some participants (18/48,
+38%) suggested that the ability to view and edit the entire pattern
+of the shift in one go would save them manual input time. They
+also suggested replicating the edited pattern for future use:
+
+I couldn’t figure out a way to put in like a six week
+shift pattern and then repeat it. I could only figure
+out how to do it manually day by day. you could do
+like a six week Pan and start it on a specific date and
+then it repeats itself, then obviously I could do it that
+way and it’ll be a lot easier. [Participant 517]
+
+Figure 5. Screenshot of shift manager section.
+
+JMIR Hum Factors 2023 | vol. 10 | e42912 | p. 9
+
+Goal Setting and Catch-Up Cards
+
+Participants mentioned that the goal-setting feature was useful
+when using it within the fluid intake section. There were
+suggestions to include this feature in other domains.
+
+In the test version, a new functionality—catch-up cards (Figure
+6)—was introduced in association with shift management
+improvements. These cards help to remind the users about
+certain tasks and popped up based on the shift chosen.
+
+Participants wanted to use catch-up cards as reminders to meet
+the set goals. The ability to change the frequency of catch-up
+cards on an individual basis was something that participants
+wanted to see in a future release. To have prompts to make
+increments in their goals was another area identified in which
+the app could be improved. In addition, if the cards were linked
+to trackers, they could work as reminders to drink more water
+or perform some more exercise.
+
+Figure 6. Screenshot of catch-up card - wellbeing walks.
+
+Some would have liked to see the catch-up cards made more
+interactive, to increase the usability of the cards. In the survey
+data, 33% (16/48) of the participants could not test this
+functionality because they were not able to locate it within the
+app once these were missed as notifications. Users were not
+able to search for them again if the cards for that day had already
+been opened and seen once.
+
+Many participants (16/48, 33%) could not understand the timing
+pattern of the card—at what time of the day cards
+appeared—and were unable to find the cards later in the app.
+Notifications were designed to appear 1 hour before the end of
+a scheduled shift and at 5 PM on a rest day. Currently, the cards
+are populated to enable appropriate notifications for the shift.
+For example, during a night shift, it might be focused on sleep,
+hydration, and relaxation. On a rest day, it might be focused on
+financial savings and family activity ideas.
+
+Discussion
+
+Principal Findings
+
+Overview
+
+To meet the study objectives, where possible, user suggestions
+were implemented for improvements during the development
+process. The current app is designed to focus on the individual
+domains that comprise overall wellness—physical, mental, and
+financial well-being—of police personnel. Consideration of the
+shifts undertaken was at its center, as shift work patterns make
+tracking more difficult for this profession. Overall, feedback
+about the app was positive based on the SUS score received.
+Users particularly liked the shift manager, mood diary, trackers
+to log fluid intake and alcohol consumption, and the relevant
+supporting information made available for easy access.
+Approximately half (24/48, 50%) of the users thought that the
+app was easy to use, and this was considered to be the main
+reason for liking the app. However, there are still various
+improvements that need to be actioned. Some of these are
+improvements in shift manager, giving the ability to create
+bespoke shift patterns, functioning of the calendar feature of
+the existing trackers, and display of information to make it easy
+on the eye. Moreover, there are additional requests by
+participants to add new features to the app such as trackers to
+record activity and food intake and reminders to prompt them
+regarding fluid intake, sleep, and taking rest breaks.
+
+Limitations
+
+Although the authors believe that the results from this study
+can be generalized to other police forces across the country, we
+acknowledge that there is a limitation of only accessing data
+from a subsection of 1 regional UK police force, which might
+have inherent organizational biases toward health and
+well-being. However, this approach can be expanded to cover
+more regions in due course. Regarding bias with purposeful
+sampling—where the belief is that qualitative research should
+be describing the medium or the norm—the point to underline
+is that new phenomena are being described; therefore, we needed
+to purposively select the best examples of what we were
+interested in. This gave us the clearest cases with the least
+“noise” or extraneous errors and allowed for the identification
+of characteristics and boundaries [55]. A further limitation of
+the study was the greater number of responses from women
+(32/48, 67%) than those from men when compared with regional
+UK police workforce numbers as of March 2022, which noted
+that the gender split was 48% women and 52% men [56].
+
+Future Studies
+
+The wellness app for the commissioning force has now been
+subsequently soft launched with funding for the bespoke pattern
+design agreed upon. The findings from this study are being
+shared with the developers to analyze the possibilities of
+implementing them in the next release of the app and have the
+improved version of the app trialed before its final launch for
+a wide police population.
+
+Organizational Support
+
+In addition to a well-designed mobile app, suitable scaffolded
+organizational support implemented alongside the eventual
+release of the app, together with an evaluation of how the app
+is being used, offers the best chance of producing positive
+results. This could include encouraging the use of more
+
+JMIR Hum Factors 2023 | vol. 10 | e42912 | p. 13
+
+health-oriented leadership—a style of leadership associated
+with more well-being and low levels of burnout, depression,
+and physical complaints among police officers [57].
+
+Voice Integration
+
+Emergent technological enhancements (such as Google Voice
+and Google Assistant) offer opportunities for improved
+personalized eHealth solutions [58] and increased engagement
+[59] and adherence [60]. In the area of nutrition, projects are
+already being conducted, such as the design, development, and
+evaluation of an Alexa Skill on food and nutrition management
+for native American patients with diabetes [61]. Similarly,
+regarding fitness, TandemTrack combines a mobile app and an
+Alexa skill to support exercise regimens, data capture, feedback,
+and reminders [62]. Members of this team have previously
+explored the tentative use of voice-activated speakers or
+assistants such as Google’s Assistant or Amazon’s Alexa to
+enable the input of information via voice rather than keyboard
+[63], which might also assist in making this type of innovation
+quick to use and therefore more user-friendly.
+
+Investigating Other ESP Pathways
+
+These unique issues, the continuing long-term effects of the
+pandemic on employee health and well-being, and the
+highlighted gaps in solutions available at present are not only
+applicable to police staff and officers but also to other
+ESP—such as firefighters [64,65], paramedics [66,67], and
+health care professionals [68,69]—and other shift workers.
+Therefore, the project team is seeking further funding, to explore
+the development and expansion of this approach to health and
+well-being issues in other sectors, in addition to the police.
+
+Conclusions
+
+This study highlights the importance of coparticipation with
+officers and staff across the entire development cycle, to
+coproduce a human-centered design methodology to enable the
+development of a considered and user-centered solution. It
+demonstrates the need for producing a multifunctional tool
+rather than focusing purely on an individual element for this
+user group. It also highlights how linking and being able to track
+optional, personalized elements of health data against each other,
+cross-referenced to individual shift patterns, might help to
+inform and provide users with a chance for reflection and
+therefore influence behavior change.

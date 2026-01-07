@@ -1,0 +1,60 @@
+{
+  "file_name": "Ballester_2021_mobile-electronic-health-record-connecte.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Limitations of the incumbent and planned EHRs prevented building the mobile, paperless workflow inside the EHR and forced the team to develop an external, interoperable application.",
+      "justification": "EHR platform constraints limited the designers' ability to produce and iterate design solutions within the primary clinical system, hindering rapid development, integration, and evaluation workflows.",
+      "reference_excerpt": "Our decision to build the application alongside (rather than within) the main EHR was largely motivated by our requirement of supporting a mobile, paperless handoff and rounding workflow. This was not possible within our EHR at the time (Allscripts) nor within the EHR our health system planned to implement shortly thereafter (Epic). Moreover, our team needed a platform that enabled rapid development with frequent iterations, which is often not feasible in a large, foundational application such as the EHR of a large health system.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "An external electronic survey used during pilot phases was poorly utilized and created challenges for the development team to respond in a timely manner.",
+      "justification": "Poor uptake of the initial feedback channel hindered the designers' ability to manage user understanding and integrate feedback and iteration rapidly, prompting a change in feedback mechanisms.",
+      "reference_excerpt": "During pilot phases, application feedback was provided via an external electronic survey. This was poorly utilized and posed challenges to timely responses for our development team.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Limited availability of mobile devices, battery depletion, and uneven Wi‑Fi/cellular coverage in nonclinical areas constrained real-world mobile use.",
+      "justification": "Infrastructure and device resource limitations restricted designers' ability to study and support the intended mobile context of use and to evaluate designs under realistic conditions.",
+      "reference_excerpt": "We did encounter challenges to implementing our application, including availability of mobile devices for users and mobile device battery depletion. While Wi-Fi and cellular network coverage within clinical areas was adequate, the use of Carelign on mobile devices while en route to see patients revealed uneven coverage in nonclinical areas (e.g., hallways, staircases, and elevators).",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Replacing paper lists with a mobile tool led to workflow mismatches when clinicians needed to reference lists during concurrent phone calls, forcing workarounds and continued reliance on printouts for some services.",
+      "justification": "This interactional/workflow constraint prevented designers from fully addressing the holistic experience and from achieving a complete transition to mobile workflows, limiting iterative refinement and adoption testing of pure mobile scenarios.",
+      "reference_excerpt": "Replacing paper lists with a mobile tool in some cases led to a workflow mismatch when users needed to reference their lists on their mobile device during a simultaneous phone call. However, when relying only on a mobile device, this occasionally required a workaround such as using a landline or headphones for the phone call, or alternatively keeping a list printout as a backup reference.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The implementation team had only two to three part-time clinical members and two to four part-time developers, limiting staffing capacity for training, support, and ongoing development.",
+      "justification": "Limited personnel resources constrained the designers' ability to facilitate user involvement, provide continuous support, and rapidly implement iterative improvements and evaluations.",
+      "reference_excerpt": "The implementation team consisted of two to three part-time clinical members for training and support and two to four part-time developers for building new features, addressing bugs and issues, and technical support.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Errors and omissions in data collection led to missing usage metrics for specific date ranges, undermining complete measurement of adoption and usage.",
+      "justification": "Data collection errors impeded the designers' and researchers' ability to evaluate designs and measure usage reliably, limiting evidence for iterative decision-making and assessment.",
+      "reference_excerpt": "Note: Due to an error in data collection, login sessions for the following date range were omitted from panel (B): 11/19/2017–1/20/2018.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

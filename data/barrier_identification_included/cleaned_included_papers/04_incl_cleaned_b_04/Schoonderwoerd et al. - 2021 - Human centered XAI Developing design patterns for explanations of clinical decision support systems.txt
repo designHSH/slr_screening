@@ -1,0 +1,856 @@
+Human-centered XAI: Developing design patterns for explanations of 
+clinical decision support systems 
+
+Tjeerd A.J. Schoonderwoerd a, Wiard Jorritsma a, Mark A. Neerincx *,a,b, Karel van den Bosch a 
+
+a TNO, Soesterberg, Kampweg 55, the Netherlands 
+b Technical University of Delft, Delft, Mekelweg 5, the Netherlands   
+
+1. Introduction 
+
+Much of the research on eXplainable Artificial Intelligence (XAI) has centered on providing transparency of 
+machine learning models. More recently, the focus on human-centered approaches to XAI has increased. Yet, 
+there is a lack of practical methods and examples on the integration of human factors into the development 
+processes of AI-generated explanations that humans prove to uptake for better performance. This paper presents 
+a case study of an application of a human-centered design approach for AI-generated explanations. The approach 
+consists of three components: Domain analysis to define the concept & context of explanations, Requirements 
+elicitation & assessment to derive the use cases & explanation requirements, and the consequential Multi-modal 
+interaction design & evaluation to create a library of design patterns for explanations. In a case study, we adopt 
+the DoReMi-approach to design explanations for a Clinical Decision Support System (CDSS) for child health. In 
+the requirements elicitation & assessment, a user study with experienced paediatricians uncovered what ex­
+planations the CDSS should provide. In the interaction design & evaluation, a second user study tested the 
+consequential interaction design patterns. This case study provided a first set of user requirements and design 
+patterns for an explainable decision support system in medical diagnosis, showing how to involve expert end 
+users in the development process and how to develop, more or less, generic solutions for general design problems 
+in XAI.   
+
+3. Domain analysis of clinical decision-making 
+
+The main goal of the domain analysis is to determine if and why 
+explanations are required within the context of use, and what 
+
+3.1. Context description 
+
+The purpose of decision-support systems is to enable users to make 
+better informed decisions by collecting, analyzing, structuring, and 
+presenting information relevant to the decision-making process. By 
+facilitating clinical decision-making of a clinician at the point in time 
+that these decisions are made, clinical decision-support systems should 
+reduce medical errors and improve patient care (Berner and La Lande, 
+2007; Kawamoto et al., 2005). By using machine learning to find sta­
+tistical patterns in large amounts of patient data, such systems can also 
+provide accurate advice regarding the diagnosis of individual patients 
+(Friedman et al., 1999; Hunt et al., 1998; Ozaydin et al., 2016). A key 
+requirement for the successful adoption of CDSSs into clinical practice is 
+that such systems can explain their advised diagnoses to clinicians, as 
+this allows clinicians to understand the system, and to build confidence 
+in the performance of the system (e.g., Guida et al., 1997; Ye and 
+Johnson, 1995). Moreover, the system could support clinicians in their 
+
+communication to a patient by producing explanations that are tailored 
+to the patient. So far, clinicians have generally shown low acceptance of 
+CDSSs, which is mainly attributed to the inability of such systems to 
+provide understandable and meaningful explanations (Berner and La 
+Lande, 2007; Holst et al., 2000; Kawamoto et al., 2005). As a result, 
+clinicians do not develop an adequate level of trust in the system (i.e., 
+calibrated trust (de Visser et al., 2019)). 
+
+3.2. Concept for explanations 
+
+We consulted the literature on explanations within the medical 
+domain in order to identify the typical information that is mentioned in 
+explanations of medical diagnoses (e.g., Bussone et al., 2015; Kono­
+nenko, 2001; Wang et al., 2019; Xie et al., 2019. It is important to realize 
+that the diagnostic process is context-dependent and involves analysis of 
+large amounts of data. Clinicians often cross-validate relevant patient 
+information, in order to maintain high sensitivity (i.e., correctly diag­
+nosing patients with their disease) and specificity (i.e., correctly diag­
+nosing healthy patients as having no disease) in their decision-making. 
+Therefore, clinicians can be supported by information that helps them to 
+remain prudent in their decision-making, such as supportive- and 
+counter-evidence, a comparison of the current case with similar cases, or 
+evidence for potential differential diagnoses. Table 1 shows the 20 in­
+formation elements that we abstracted from the literature, and which 
+
+could potentially support clinicians in evaluating hypotheses concerning 
+clinical diagnoses. We categorized these information elements based on 
+characteristics of explanations that have been identified in the social 
+sciences (Hilton, 1990; Miller, 2018): information that is contrastive 
+(element 7 and 8), counterfactual (9, 10), example/case-based (11–14, 
+19), or involves certainty (15 and 16). Moreover, element 5 and 6 refer 
+to supportive and counter-evidence respectively, element 17 and 18 
+refer to the input data that are used by the system, and element 1–4 
+consist of descriptive information about the diagnosis. Element 20 
+concerns the performance history of the system. The choice of categories 
+was validated with a number of XAI-experts (colleagues), who 
+confirmed that the categories corresponded to those typically used in 
+XAI, and that the information elements were categorized sensibly. 
+
+4. Requirements elicitation and assessment for explanations 
+from a CDSS 
+
+The goal in this part of the DoReMi-approach is to determine what 
+kind of explanations the CDSS should be able to provide to clinicians, 
+and to identify potential contextual dependencies for explanations by 
+CDSSs. To achieve this goal, we conducted a user study among paedia­
+tricians that consists of two parts. We first developed a questionnaire 
+that contained the information elements that we identified in the 
+domain analysis. In collaboration with an experienced clinician, we also 
+constructed a realistic use case of a child patient. In the first part of the 
+user study, we investigated the contextual dependencies of explanations, 
+by presenting clinicians with the use case, and asking them to indicate 
+
+the importance of each information element in their own explanations 
+within multiple hypothetical social situations. In the second part of the 
+study, we investigated requirements for the explanations from the sys­
+tem by sequentially presenting clinicians with two hypothetical system 
+outputs based on the use case (i.e., a positive and negative diagnosis), 
+and by asking them to indicate what questions they want to ask the 
+system. 
+
+4.1. Methods 
+
+4.1.1. Participants 
+A total of six paediatricians (all native Dutch speakers) were con­
+tacted via an e-mail in which we generally introduced our research 
+context and requested their participation in our study. All clinicians 
+were experienced in diagnostic decision-making (M = 18.6 years 
+working experience as clinician, SD = 9.8 years). The paediatricians 
+were working at different health centres in the same region in the 
+Netherlands. Overall, participants indicated that they were slightly 
+familiar with artificial intelligence in general, and not at all familiar 
+with clinical decision support systems. Clinicians received a small 
+monetary reward as token of appreciation to fill in a questionnaire, 
+which on average took 50 minutes to complete. 
+
+4.1.2. Materials 
+Use case User requirements are best discovered when presenting 
+users with a particular context for which they can express their needs 
+(Doshi-Velez and Kim, 2017; Maguire and Bevan, 2002). Therefore, we 
+
+collaborated with an experienced paediatrician in order to develop a 
+fictitious use case that contains sufficient detail that allows making and 
+explaining a diagnosis. The fictitious patient in the use case is a 7-year 
+old girl called Miriam, who shows symptoms of Attention Deficit/­
+Hyperactivity Disorder (ADHD). Although paediatricians do not make a 
+
+definitive diagnosis, they do engage in a diagnostic process in which 
+they identify potential problems and indicate the medical diagnosis that 
+is likely (i.e., a pre-diagnosis). Based on this pre-diagnosis, they can refer 
+a child to a specialist such as a mental healthcare professional. The use 
+case was carefully constructed to ensure a sufficient level of realism and 
+
+adequate alignment with current work processes. Although the case 
+points to ADHD as primary diagnosis, it also leaves some room for dis­
+cussion. The use case consists of four datasources: one short textual 
+report, and three completed Likert-scale questionnaires. The report 
+consist of a description of a fictitious conversation with Miriam and her 
+mother in which relevant observations are mentioned (e.g., ‘Miriam 
+never finishes her work’). In addition to this textual report, we also 
+presented filled-in versions of two types of questionnaires that are 
+typically administered when a behavior disorder is suspected in a child: 
+The Strengths and Difficulties Questionnaire (SDQ), which is a brief 
+survey aimed at capturing emotional and behavioral problems in chil­
+dren, and the ADHD Questionnaire (AVL), which is used to identify 
+behavioral symptoms of ADHD. The SDQ contains 25 items which are 
+scored on a scale of 1 (not true) to 3 (true), for example: ’The child takes 
+into account the feelings of others’. The AVL contains 18 items that are 
+scored on a scale of 1 (never) to 5 (very often), for example: ’The child is 
+easily distracted’. Our use case contains one SDQ, filled in by the mother 
+of Miriam, and two AVLs that are filled in by the mother and the teacher. 
+Social contexts Table 2 lists the seven social conditions in which we 
+investigated information requirements for explanations. We came up 
+with these social situations by considering the outcomes of the domain 
+analysis. We verified the validity of our identified situations with the 
+same expert that helped us to develop the use case. In situation 1a-1c, 
+clinicians explained their diagnosis to a colleague who is either 
+
+impartial, agreeing (i.e., also diagnosing ADHD), or disagreeing (i.e., no 
+abnormality) with the diagnosis of the clinician. In situation 2a and 2b, 
+the mother of the child-patient requests an explanation of the diagnosis 
+with which she either agrees or disagrees. In our use case, we chose to 
+include the parent of the patient, because diagnoses of child-patients are 
+often communicated to parents or caretakers, and not directly to the 
+patient itself. In situation 3a and 3b, the clinician assumed the role of 
+explainee and indicated what information they find important to receive 
+from a CDSS in case it provides a diagnosis that is either congruent (3a, 
+ADHD) or incongruent (3b, no abnormality) with the diagnosis of the 
+clinician. 
+Questionnaire and interview We chose to use a questionnaire followed 
+by a short, unstructured interview in order to investigate what infor­
+mation clinicians would like to receive from a decision support system, 
+and how the content of explanations depends upon the social context in 
+which they are provided. To mitigate the risk of overlooking relevant 
+information, we adopted both open and closed questions to enable cli­
+nicians to indicate their information preferences. While there are 
+numerous methods to elicit requirements (e.g., interviews or focus 
+groups), we chose to use a questionnaire as the main method. The main 
+reason for this choice is that a questionnaire enables structured collec­
+tion and comparison of answers. Based on the literature, we already 
+developed a fairly extensive overview of concrete information elements 
+that are potentially relevant within the context of clinical decision- 
+
+support. The goal in this stage of DoReMi is to verify and validate 
+whether these elements are indeed relevant for clinicians, and to un­
+derstand why. A questionnaire is a structured way of quantifying the 
+importance of each element for different kind of contexts. Moreover, this 
+approach allows comparison of answers across domains. In order to 
+improve our understanding of why certain information is relevant, we 
+also had a short unstructured interview session with the group of cli­
+nicians, in which we asked about their attitude towards AI-support of 
+medical diagnosis, whether they wanted to elaborate on some of their 
+answers, and whether they had any additional remarks. 
+The questionnaire consisted of two parts. In the first part, we asked 
+clinicians to make a diagnosis based on the use case, and to indicate 
+what information they have used in their decision-making. Then, we 
+sequentially introduced participants to the social situations, for which 
+they were asked to indicate the importance of the information elements 
+from Table 1 that they could use in their own explanation. We created 
+brief introductions for each social situation. Situations 1a-2b each 
+started with a description of the explainee (e.g., whether this is a 
+colleague or the mother of the patient, and whether they agree or 
+disagree with the diagnosis). We also included a short explanation of the 
+diagnosis by the colleague, in which information was mentioned that 
+was taken into account in the decision-making by the colleague (e.g., 
+’Miriam is easily distracted and quickly loses the main thread during a 
+conversation... Although she shows no signs of over-activity, I think 
+
+there are sufficient indicators of ADHD.’). The importance of each in­
+formation element in each situation was rated on a five-point Likert- 
+scale with the following levels: (1) not at all important, (2) not impor­
+tant, (3) somewhat important, (4) important, and (5) very important. 
+We also included an open question in each situation, which asks clini­
+cians to indicate any additional information elements that they can think 
+of. 
+In the second part, we introduced clinicians with a fictitious clinical 
+decision support system. We wrote an introduction including a general 
+description of its purpose and operation (i.e., finding likely diagnoses for 
+a particular case, by running the case through a model that was con­
+structed by learning from large amounts of patient data), its potential 
+supportive functionalities, its limitations caused by its dependence on 
+registered data, and its performance (i.e., the system works well in 
+many, but not all cases). Situation 3a and 3b consisted of the system 
+suggesting the diagnosis ADHD or no abnormality respectively, for 
+which no explanation is provided. In both situations, we presented the 
+list with information elements, including the two system-specific ele­
+ments (19 and 20). We rewrote each element into a question (e.g., ’How 
+certain is the system of this diagnosis?’), in order to enable clinicians to 
+indicate how important they think it is to be able to ask each question to 
+the system within each situation. Additionally, we included an open 
+question about whether clinicians suspect changes in the importance 
+ratings when imagining that they have been working with the system for 
+
+some time and have learned that most of its advice is correct. 
+
+4.1.3. Procedure 
+We invited the paediatricians to a central health centre, where we 
+booked a conference room to conduct the study. The first author was 
+present to provide a short verbal introduction to the research, and to 
+answer any questions during the completion of the questionnaire. 
+Although participants were present in the same room, no communica­
+tion was allowed between them. Prior to filling out the questionnaire, 
+participants were presented with a general introduction of the study, in 
+which it was made clear how their data would be used, and that the 
+study was evaluated on ethics and quality by an internal review com­
+mittee at our research institute. After signing the informed consent, we 
+presented the questionnaire, followed by the short interview. After­
+wards, paediatricians were thanked for their participation and received 
+their reward. 
+
+4.1.4. Data analysis 
+Because of the exploratory nature of our study, we did not perform 
+inferential statistical analysis on the data. Instead, we investigated the 
+quantitative and qualitative data from the clinicians in order to find 
+
+interesting trends. In addition, we determined the median importance 
+rating for each information element, and the minima and maxima in 
+order to obtain an indication of between-subjects variability. Unfortu­
+nately, it appeared that one participant did not fill out six questionnaire 
+items, and another participant did not fill out four items, leading to ten 
+information elements with four ratings instead of five. The median 
+importance ratings and their variability were compared between the 
+information elements and the situations. The first two authors analyzed 
+the qualitative data to aid the interpretation of these comparisons. We 
+used an open coding scheme in which we independently evaluated the 
+answers and wrote down any interesting remarks. We then discussed our 
+findings. 
+
+4.2. Results 
+
+4.2.1. Part 1: providing explanations in different social contexts 
+All six clinicians diagnosed Miriam with ADHD, indicating that the 
+information in the use case provides sufficient reason to designate this 
+diagnosis as being most likely. In their explanations, all participants 
+mention similar factors that are indicative of this diagnosis (e.g., low 
+attention span, restless, learning difficulties). Some also mention more 
+
+general characteristics that they took into account, such as the perceived 
+impact of the behavior of Miriam at school and at home, and the stable 
+relationship with her mother. 
+
+Fig. 3 shows the median, minimum, and maximum importance rat­
+ings of the 18 information elements in all five social situations. In gen­
+eral, median importance ratings were high for all information elements 
+in all social situations. However, some scores also varied heavily across 
+participants, as depicted by the error bars in Fig. 3. There are some el­
+ements that clinicians unanimously rated as (very) important (scores of 
+4 or 5) in at least one situation, which are elements 1 (in all situations), 2 
+(only in both disagreeing situations), 3 (only in explanations to the 
+parent of the patient), 5 (in all situations, except in case of the dis­
+agreeing colleague), 7 (only when informing a colleague, or in case of an 
+agreeing colleague), and 15 (only in case of a disagreeing parent of the 
+patient). There are also elements that unanimously received relatively 
+lower values (maximum of 3) for some situations: element 3 and 4 (only 
+when informing a colleague, or when the colleague agrees), 10 (only in 
+case a colleague agrees), 12 (only when explaining to a parent of the 
+patient), and 14 (only in case the parent agrees). Note that for some 
+elements, the majority of clinicians provided low ratings (median values 
+lower than 3), while only one clinician provided a higher rating (as 
+indicated by the maximum value). Inspection of the data revealed that it 
+was not a single clinician who consequently gave either high or low 
+ratings, which indicated that participants are rather pronounced about 
+the importance of items. 
+For situation 1c (in which a colleague-clinician disagrees with the 
+diagnosis that is made by the participant), two clinicians also indicated 
+(in the free-text entry box) high importance of mentioning the negative 
+consequences of not diagnosing Miriam, given her behavioral problems. 
+
+4.2.2. Part 2: receiving explanations from a CDSS 
+
+Fig. 4 shows the median, minimum, and maximum importance rat­
+ings of the 20 information elements, given the context in which the 
+system provides a diagnosis that is either equal to that of the clinician (i. 
+e., situation 3a), or differs (i.e., situation 3b). Overall, median impor­
+tance ratings are high, with the exception of elements 3, 4, 9, 13, and 17, 
+which have median values of 3 (somewhat important) or lower in situ­
+ation 3a and/or 3b. However, every element received a rating of 5 
+(highly important) from at least one clinician. There are seven elements 
+that most clinicians rated with a 5 and all other clinicians with a 4 
+(important) in both situations. These are elements 1, 5, 6, 7, 15, 16, and 
+20, all of which have median values of 5. There are two elements that 
+received lower ratings from all clinicians (i.e., maximum value of 3 or 
+lower), which are element 4 (but only in case the clinician does not agree 
+with the diagnosis of the system), and element 13 (but only when the 
+clinician does agree with the system). For other elements, the minimum 
+and maximum ratings are more varied between individuals. 
+Apart from the importance ratings, clinicians also indicated whether 
+they still would want to receive the same information in an explanation 
+of the CDSS, when imagining that they have been working for some time 
+with the system. Unanimously, clinicians predict this information to be 
+different (i.e., they all responded with ’No’). They all provided the 
+reason that they are likely to get familiar with the decision-making of the 
+system over time, thereby requiring less extensive explanations. More­
+over, they stated that some information is likely to remain important 
+over time (supporting- and counter evidence, and certainty of the 
+diagnosis), while other information is likely to become less important 
+(what information is used to make this diagnosis, and the diagnosis in 
+similar cases). 
+
+4.2.3. Interview with clinicians 
+All six clinicians shared a very positive attitude towards the use of a 
+CDSS to aid their decision-making, saying that they could ’certainly see 
+how such a system could be beneficial in diagnosing’ and that they 
+valued the information that was provided by the system. In particular, 
+they valued the opportunity to be able to explore the case in more detail, 
+by being able to compare supporting and contradicting information for 
+multiple diagnoses. Multiple clinicians also explicitly mentioned that 
+the explanations help them to better evaluate the different diagnoses 
+that are conceivable given the patient’s complaints. 
+
+4.3. Discussion 
+
+The goal of our first study was to obtain insight into the kind of in­
+formation that clinicians find important to be part of an explanation of a 
+diagnosis. We explored whether the information needs differ depending 
+on various social contexts. Furthermore, we explored what explanations 
+clinicians want to receive from a system that supports diagnostic 
+decision-making. We first discuss the results on explanations as provided 
+by clinicians (part 1), and then on explanations from a CDSS (part 2). 
+
+4.3.1. Explanations from clinicians 
+Considering the results as a whole, there are three outcomes that 
+immediately stand out: (1) importance ratings for most information el­
+ements are high, (2) there is a relatively large variation in individual 
+scores, while (3) scores for most information elements only show subtle 
+differences between the five situations. Given that we carefully 
+
+constructed the list of information that is often used in clinical decision- 
+making, it is not surprising that overall, clinicians rate this information 
+as being important or highly important (i.e., 78% of all median values 
+are above 3). The exhaustiveness of the list is also evident by the fact 
+that nearly none of the clinicians mentioned additional information. 
+Across all social situations, clinicians consider it highly important to 
+mention the information that is used to make a diagnosis (for example, 
+data from questionnaires and physiological measurements), and the 
+information that supports the diagnosis (for example, the prosocial-, 
+attention-, and behavioral scale scores on the intake questionnaires) in 
+their explanations. This information can be considered to be the primary 
+evidence for their decision. Interestingly, there is no information that is 
+unanimously evaluated by clinicians as being less important. 
+While the overall median importance ratings for the information 
+elements are high, there are large differences in some scores between 
+clinicians. This indicates that they have personal preferences concerning 
+the information that they provide in their diagnosis. For example, while 
+one clinician highly values counterfactual explanations (e.g., I think it is 
+ADHD and not ASD, because Miriam is described as social, but is also 
+very easily distracted) across all situations (median of scores is 4 across 
+elements 9 and 10), another clinician attributes much less importance to 
+this information (median of 2). While these differences might be 
+somewhat strengthened by potential contrast effects (Sherif et al., 
+1958), it still shows that there are individual preferences for particular 
+information elements, which is an interesting result. 
+We observed only small variations in scores when comparing the 
+importance of information elements across different social situations. 
+
+This suggests that, overall, clinicians only subtly adapt their explana­
+tions to the social situation in which they need to be used. When we 
+consider the results in more detail, it appears that clinicians find it more 
+important to include general information, such as a description and the 
+prevalence of the condition, in an explanation to a parent of the patient 
+instead of a colleague, while explaining how the patient’s case relates to 
+other, similar cases is less important. Furthermore, mentioning alter­
+native diagnoses for the current case is most important when explaining 
+to a colleague. 
+Mentioning how certain the clinician is of the diagnosis is most 
+important when explaining to a parent of the patient who disagrees with 
+the diagnosis, while comparing its case with that of a typical case is least 
+important when explaining to a parent who agrees. These results are in 
+line with the patient-centered approach of communication within 
+healthcare (Baker, 2001), which is aimed at facilitating understanding 
+of the diagnosis in patients and their relatives, and individualism (i.e., 
+treating patients as individuals instead of one of many that received the 
+same diagnosis). 
+Lastly, clinicians also find it highly important to mention the rele­
+vance of the information for their diagnosis when the explainee (either a 
+parent of the patient or a colleague) believes there is no abnormality. 
+This result indicates the importance of the sensitivity/specificity 
+trade-off in clinical diagnosing (Berner and La Lande, 2007; Kawamoto 
+et al., 2005). That is, while clinicians try to mitigate the amount of false 
+positive diagnoses, they are also careful to avoid false negatives. This is 
+confirmed by the free-text answers of two clinicians, who explicitly state 
+the high importance of mentioning the negative consequences of not 
+diagnosing Miriam, given her behavioral problems. 
+
+4.3.2. Explanations from a CDSS 
+First of all, clinicians unanimously indicated that they find it highly 
+
+important to know about the information that the system used to make 
+the diagnosis (element 1). This indicates that clinicians do indeed 
+require an explanation that accompanies the diagnosis that is suggested 
+by a CDSS. As in the results of part 1, the overall importance ratings of 
+information elements are high (i.e., 80% of median values are above 3, 
+and all elements were rated as highly important by at least one partic­
+ipant). Moreover, once again there are relatively large variations in in­
+dividual scores. This suggests that not all clinicians want to receive the 
+same explanations from a CDSS, which argues for personalization based 
+on their information preferences. However, the fact that many infor­
+mation elements are important according to clinicians does not mean 
+that it is wise to present all this information in an explanation at once. 
+That is, explanations that are too detailed may lead to over-reliance on 
+the system, (Bussone et al., 2015; de Visser et al., 2019), causing clini­
+cians to adopt decisions of the system without careful consideration (i.e., 
+inadequate use). 
+Another finding is that the information preferences of clinicians do 
+not seem to be dependent upon whether they agree with the system’s 
+advice. Regardless of whether they agree with the system, clinicians 
+unanimously find it (highly) important to receive an explanation that 
+contains: (1) the information that the system used to make the diagnosis, 
+(2) supporting and contradicting information (e.g., ADHD is suggested, 
+and the patient scores high on questionnaire items measuring attention 
+deficiencies, but low on items measuring hyperactivity), (3) how certain 
+the system is of the diagnosis, (4) the information that would increase 
+the certainty (e.g., items that measure impulsivity are important pre­
+dictors for ADHD, but are missing in the current case), (5) other di­
+agnoses that are conceivable, and (6) the performance of the system for 
+other, similar cases. These results are highly similar to those of the first 
+part in which clinicians assessed the importance of information in 
+explanations that they provide. In both cases, clinicians find it important to 
+
+indicate the information that is used in the decision-making process, the 
+supporting information, other likely diagnoses, and the certainty with 
+which they make the diagnosis. Interestingly, information that contra­
+dicts the diagnosis, and information that would increase the certainty of 
+the diagnosis that is made, is considered more important by clinicians in 
+explanations from CDSSs. That is, while not all clinicians find it 
+important to mention contradicting information in explanations to 
+others, all clinicians want to receive this information as part of the 
+explanation from the system. These results reveal a particular attention 
+of clinicians to information that enables them to obtain a reliable, ac­
+curate, and substantiated picture of all possible diagnoses given the 
+information in the case. This is confirmed by their additional remarks 
+during the interview, in which they indicate that they value the system 
+mostly because it enables them to be more critical, which is also found 
+by Wang and colleagues (Wang et al., 2019). That is, regardless of 
+whether they agree with the system, clinicians mostly want to use the 
+system to better interpret the information in the patient’s case, by 
+evaluating the evidence for and against the hypothesized diagnosis, 
+other likely diagnoses (i.e., contrastive explanations), and the system’s 
+certainty and performance. 
+Lastly, clinicians unanimously expected that their information pref­
+erences for explanations of the system will change over time, as they build up experience with its advice and explanations. That is, they 
+expect their understanding of the system to increase over time, causing 
+
+them to be needing less extensive explanations. More specifically, cli­
+nicians stated that supporting- and counter evidence, and the certainty 
+of the system will likely remain important in explanations, while in­
+formation that is used to make the diagnosis, and the diagnosis in similar 
+cases is likely to become less important over time. It might be interesting 
+to further investigate this result in a longitudinal study in which users 
+work with the system and its explanations for longer periods of time. 
+
+5. Multi-modal interaction design and evaluation of 
+explanations from CDSS 
+
+In this part of the DoReMi-method, the goal is to discover how the 
+information that is generated by an XAI system can be effectively 
+communicated to the user. To investigate this, we first created UI design 
+patterns for explanations on the basis of the results that were obtained in 
+the first user study. Because we did not find clear contextual de­
+pendencies for explanations, and all clinicians found most information 
+elements important or highly important, we decided to develop UI 
+design patterns for all elements. The steps in the design process for each 
+pattern were: (1) specify the explanation design problem (based on the 
+user study), (2) specify the information elements that are relevant for the 
+design solution, (3) consult XAI literature and AI-experts to identify 
+techniques that can obtain the information from the system, (4) consult 
+design experts to specify how this information can be presented in an 
+
+understandable manner, (5) create a concept-interface based on the 
+pattern, (6) refine the concept based on internal discussions with AI and 
+interaction design experts. 
+After creating the patterns and user interfaces that contained ex­
+planations of a diagnosis based on the use case from the first user study, 
+we conducted a second user study in which clinicians evaluated the 
+designs. In the following sections, we describe how we created the UI 
+design patterns, and how the user study was set up. 
+
+5.1. UI design patterns for explanations by a CDSS 
+
+We developed design patterns for all information elements from 
+Table 1, which we contextualized by using the information in the use 
+case from the first study. Some information elements were combined 
+into a single pattern, because it would be illogical or impossible to 
+separate them. Table 3 shows the distribution of information elements 
+over the twelve UI design patterns that we created. Initial designs were 
+made by author 2 based on his personal interaction design knowledge 
+and experience and examples from the XAI literature. The designs were 
+then iteratively refined based on reviews with the other authors, and AI 
+experts and interaction design experts from our organisation. 
+
+Tables 4 −7 show the most interesting design patterns (i.e., the ones 
+containing non-trivial design choices). All other patterns can be found in 
+Appendix A. Each pattern includes a problem description (i.e., the user 
+needs to know X), a UI design example that illustrates the solution, and a 
+rationale for why this is a good solution to the problem (only included 
+for non-trivial design choices). In the rationale, we also discuss the XAI 
+methods that can be used to extract the information for the UI designs. 
+
+5.2. Methods 
+
+5.2.1. Participants 
+The same six paediatricians from the first study also participated in 
+this second user study. Participants were once again recruited via an e- 
+mail, in which we explained the general purpose of the second study and 
+requested their participation. Clinicians received a box of chocolate 
+bonbons as token of appreciation. 
+
+5.2.2. Materials 
+Questionnaire We based the questionnaire items for the second study 
+on questions that have been identified by Hoffman and colleagues 
+(Hoffman et al., 2018) as capable of measuring subjective accounts of 
+understanding and trust in users of XAI systems. More specifically, we 
+used three questions from the scale that measures explanation satisfac­
+tion in users (see Hoffman et al., 2018 for the full survey). Although this 
+scale contains a total of eight items, we only chose questions that 
+directly relate to understanding and trust, as our goal was to let clini­
+cians evaluate the interfaces in terms of these concepts. We added three 
+other questions in order to measure the importance of each explanation 
+component (i.e., the information element(s) presented in one UI), un­
+derstandability of the UI, and the extent to which clinicians think that 
+the UI improves the decision-making process. This brought the total 
+number of items in the questionnaire to six, all of which were presented 
+for each explanation-component:  
+
+• This explanation-component is important.  
+• This explanation-component is understandable.  
+• From the explanation-component, I understand how the system works. 
+(taken from Hoffman et al., 2018)  
+• This explanation-component lets me judge when I should trust and not 
+trust the system. (taken from Hoffman et al., 2018)  
+• This explanation-component improves my decision-making process.  
+• This explanation-component shows me how accurate the system is. (taken 
+from Hoffman et al., 2018) 
+
+We measured importance in order to find out whether the ratings are 
+
+congruent with those obtained in the first study. Low consistency can 
+mean that the communicated information by the interface differs from 
+that which the interface is designed to communicate, in which case it is 
+essential to determine what causes this difference. For example, it could 
+be that the information in the interface is difficult to comprehend for 
+users, which impedes being able to assess its importance. Therefore, we 
+also included understandability of the interface as questionnaire item. 
+Another desirable characteristic of explanations by a system is that 
+they enable users to improve their understanding of the system (Hoff­
+man et al., 2018; Miller, 2018). That is, the information should provide 
+an accurate representation of the capabilities of the system and should 
+be carefully designed in order to reduce the risk of developing misun­
+derstanding (especially in high-risk domains such as healthcare), in 
+order to facilitate adequate use of the system. To the same end, expla­
+nation interfaces should also enable users to develop a level of trust in 
+the system that accurately reflects the system’s performance (de Visser 
+et al., 2019), for example by including information that enables 
+assessment of the system’s accuracy. 
+The main goal of a decision-support system is to support decision- 
+making. Therefore, we also included the question about whether clini­
+cians feel like the explanations in the interface are able to improve their 
+decision-making process. Of course, ultimately we want to obtain 
+objective results on all six topics that were included in the questionnaire, 
+but this requires users to work with the system and gain experience with 
+its explanations for a longer period of time. However, in this part of the 
+design process of explanations, it is valuable to obtain subjective mea­
+surements to have an indication about the effectivity of the explanation 
+interfaces, and to learn how users value the presentation of information 
+(i.e., the face validity of the design patterns). 
+The full questionnaire consisted of the 12 interface designs, which 
+were subsequently presented on the left page of a brochure-style 
+booklet. On each right page, the six questionnaire items to evaluate 
+the interface on the left were presented. This method of presenting 
+enabled participants to see the interface while providing answers to the 
+questions. All items were rated on a five-point Likert-scale. The first item 
+was rated on the same levels as in study 1: (1) not at all important, (2) 
+not important, (3) somewhat important, (4) important and (5) very 
+important. All other items were rated on the following levels: (1) 
+strongly disagree, (2) disagree, (3) neutral, (4) agree, (5) strongly agree. 
+In addition to the closed questions, we included an open question at the 
+end of the questionnaire in which we asked whether there is any addi­
+tional information that participants would like to receive. 
+
+5.2.3. Procedure 
+The study was once more conducted in a conference room at a local 
+health centre. The first author was present to introduce the study and to 
+answer any questions of the paediatricians. Prior to filling out the 
+questionnaire, participants read about the introduction of the study, and 
+were once again presented with the use case of the 7-year old called 
+Miriam. Then, we subsequently presented the 12 user interfaces and the 
+six questions. 
+
+5.2.4. Data analysis 
+For each UI, we determined the median, minimum, and maximum of 
+ratings on all questionnaire items separately. We evaluated the 12 user 
+interfaces on these measures. The consistency of individual importance 
+ratings between study 1 and 2 was determined by calculating the mean 
+difference between importance ratings of each interface and the average 
+importance of the corresponding information elements (see Table 3) in 
+situation 3a (system agrees) from the first study. Moreover, the first two 
+authors analyzed the qualitative data from the last question from the 
+questionnaire in order to evaluate whether participants had any addi­
+tions to the information in the interfaces. 
+
+5.3. Results 
+
+Fig. 5 shows the results on all questionnaire items for each user 
+interface. Scores on the items are quite consistent between participants, 
+as most scores differ by 1 or 2 points (on a 5-point Likert-scale). Overall, 
+scores on all six items are high (82% of medians per interface are above 
+3). Moreover, as in study 1, there are many relatively high minimum 
+values (i.e., 4 or 5) and no relatively low maximum values (i.e., 1 or 2), 
+which indicates that, overall, participants gave high ratings. First of all, 
+importance ratings are high for all interfaces, especially for UI 12, which 
+clinicians unanimously rated with either 4 (important) or 5 (highly 
+important). Interestingly, there is relatively strong consistency between 
+individual importance ratings in study 1 and study 2 (mean difference 
+between scores for each participant = 0.85, standard deviation = 0.64). 
+Moreover, importance ratings for information pertaining to the certainty 
+(UI 3) and performance (UI 12) of the system were rated with 4 or 5 by 
+almost all clinicians in both studies. 
+The median score on understandability was 4 or higher for all in­
+terfaces, although there were two clinicians who did not find interface 8 
+and 12 understandable, respectively. For interfaces 4, 6, and 10, all 
+clinicians (strongly) agreed with the statement concerning the ability of 
+the interface to facilitate system understanding. On average, ratings on 
+the ability of the interfaces to enable clinicians to judge the level of trust 
+in the system were slightly lower, with interface 1 receiving the lowest 
+ratings (median of 2, maximum of 3), and interface 10 and 12 receiving 
+the highest ratings (median of 4, maximum of 5). With respect to the 
+ability of the interface to improve decision-making, interface 1 received 
+lowest ratings, while only interface 10 received unanimously high rat­
+ings of 4. Lastly, interface 12 was rated by all clinicians to best enable 
+them to assess the system’s accuracy, while interface 1 and 2 received 
+the lowest scores. 
+Apart from the ratings on the 5-point Likert-scale, participants 
+unanimously indicated that there was no additional information that 
+they would like to receive on top of the information that is presented in 
+the user interfaces. 
+
+5.4. Discussion 
+
+In this study, clinicians evaluated interface designs for separate 
+components of explanations of diagnoses from a CDSS. More specif­
+ically, they indicated the importance of the information that the in­
+terfaces present, and their level of agreement with statements regarding 
+the understandability of the interfaces, their ability to enable clinicians 
+to understand how the system works, to judge when they should (not) 
+trust the system, to improve the decision-making, and to learn how ac­
+curate the system is. Interestingly, the within-subjects consistency in 
+importance ratings between study 1 and 2 for each information element 
+is high, which implies that the interface designs are able to communicate 
+the information that they are intended to communicate. 
+Moreover, there is likely to be an interaction between importance 
+and understandability of the interface, as understanding the information 
+that is presented is a prerequisite for being able to assess its importance. 
+In this study, nearly all clinicians agreed or agreed strongly with the 
+statement about understandability of each interface. However, there 
+was one clinician who did not find UI 8, which enables making and 
+evaluating counterfactual statements about patient information, un­
+derstandable. Another clinician did not find UI 12, presenting a 
+confusion-matrix that indicates the system’s performance, understand­
+able. Although most clinicians indicated to understand all interfaces, the 
+fact that some did not underlines the importance of proper training with 
+the system. That is, all end users should have a similar level of under­
+standing about the system’s functionalities and their potential useful­
+ness, in order to enable similarly adequate use of the system. User 
+interfaces should thus be designed in such a way that the information 
+that they present is understandable, while also supporting learning 
+about the system. It is therefore also interesting to know what interfaces 
+
+can increase system understanding. For most of the interfaces that we 
+designed, clinicians felt that it increases their understanding of the 
+system, especially the information concerning supporting and contra­
+dicting factors (UI 4), differential diagnoses (UI 6), and the partial de­
+pendency plots that enable case-based reasoning (UI 10). Lowest ratings 
+were provided for interface 1, which contained a description of the 
+diagnosis, and 3, in which the certainty of the system was expressed in 
+natural language, which can be expected as this kind of information tells 
+little about how the system works. 
+Next is the ability of the interfaces to enable users to obtain an 
+appropriate level of trust in the system. The results of our study show 
+that merely providing the system output along with a description of the 
+diagnosis was judged as being least informative about the trustworthi­
+ness of the system’s advice. This is understandable, as this information 
+does not enable users to learn about the reasoning behind the advice, 
+which is why explanations are required. The interface that shows the 
+system’s performance was rated as being most helpful to assess the 
+trustworthiness of the system. This is line with previous research in 
+which performance was found to be the most powerful predictor of 
+human trust in a system (see Hancock et al., 2011 for a meta-analysis). 
+Overall, the statement regarding trust in the system received the most 
+neutral scores, which indicates that clinicians are most indifferent about 
+this item. This could indicate that clinicians have difficulty evaluating 
+this characteristic of the interface, which emphasizes the importance of 
+an objective evaluation of trust (e.g., by measuring reliance). This 
+finding is also congruent with the notion that trust in AI systems is not 
+solely based on explanations of outputs, but also on the performance and 
+attributes (e.g., adaptability and personality) of the system (Hancock 
+et al., 2011). 
+Overall, clinicians were positive about the contribution of the in­
+formation that is presented in the interfaces to their decision making, 
+except for general information about the diagnosis, for which most cli­
+nicians were neutral (and one even strongly disagreed). Moreover, 
+participants unanimously agreed that case-based information contain­
+ing the typical case of a patient with the diagnosis that is suggested, and 
+its relation to the current case would improve their decision-making. 
+Lastly, most UI design patterns are judged by clinicians as enabling 
+them to assess the accuracy of the system, which is important to be able 
+to determine how reliable the output of the system is. On average, in­
+formation about the diagnosis, the information that is used in the 
+decision-making, and the certainty of the system inform clinicians the 
+least about the system’s accuracy. Not surprisingly, interface 12, which 
+contains the confusion-matrix that shows the sensitivity and specificity 
+of the system for all or a selected amount of cases that received the same 
+diagnosis was judged as providing the most information about the sys­
+tem’s accuracy. 
+
+6. General discussion 
+
+We described the DoReMi-approach for the development of XAI, in 
+which end users are actively and repeatedly involved in order to develop 
+fit-for-purpose explanations. While the user is central to the approach, 
+the design of explanations that are adequate for use in a particular 
+context requires collaboration of a multi-disciplinary research and 
+development team from the start. That is, the method includes activities 
+that cover multiple areas of expertise: research and development of XAI 
+methods, interactions with domain experts, design and execution of 
+human factors research, and design of interaction between user and XAI. 
+Thus, successful development of XAI requires a team that consists of end 
+users, and experts on AI, human factors, and (human-computer) inter­
+action design. 
+By collaborating in a multi-disciplinary fashion, we applied the 
+DoReMi-approach to investigate explanations for clinical decision sup­
+port in the domain of child health. This provided us with the desired 
+design specifications (see Fig. 1): a description of the context of use, a 
+suitable use case to investigate and evaluate explanations, explanation 
+
+requirements from clinicians, and ultimately a first set of UI design 
+patterns for explanations. The DoReMi-practice enabled us to efficiently 
+obtain these first design specifications by involving a relatively low 
+number of end users and by using reusable questionnaires. Note that the 
+results of DoReMi should be refined and evaluated further through their 
+use by other XAI researchers and developers. 
+The DoReMi-approach is intended to be used right from the start of 
+XAI development, in order to find out what content and what form is 
+suitable for explanations within the context(s) in which the system will 
+operate. The main purpose of explanations is ultimately to enable users 
+to learn about the system (Lombrozo, 2006; Williams et al., 2013), so 
+that they understand how the system works and are able to predict when 
+and to what extent its output can be trusted, which facilitates adequate 
+use of the system (Hoffman et al., 2018). These effects of explanations 
+can be estimated, but not determined with subjective evaluations. 
+Instead, they require objective measurements within the context of use. 
+Therefore, the first activity after obtaining all outcomes from the 
+DoReMi-method is to build a prototype of the XAI system based on these 
+findings, and to have users interact with the system in the context of use 
+(which may be simulated for high-risk domains) in order to measure 
+their behavior. By combining subjective (e.g., Hoffman et al., 2018) with 
+objective (e.g., Samek et al., 2017) measurements, it can be established 
+what the effects of explanations are on users’ understanding of, trust in, 
+and reliance on the system. This can also provide more insight into how 
+and when the explanations are used by the user. For example, it could 
+reveal context-dependencies that were not discovered during domain 
+analysis or requirements elicitation, and it also provides opportunity to 
+investigate the requirements and effects of explanations over time. 
+Additionally, potential (undesirable) side-effects can also be revealed, 
+such as the effect of the amount of detail in explanations on the degree of 
+reliance on the system (Bussone et al., 2015). 
+
+7. Conclusion 
+
+This paper presented the application of a human-centered design 
+approach for eXplanations of Artificial Intelligence (XAI) as a practice 
+for user requirements analysis and deriving corresponding reusable 
+design solutions. It distinguishes three components: Domain analysis to 
+define the concept & context of explanations, Requirements elicitation & 
+assessment to derive the use cases & explanation requirements, and the 
+consequential Multi-modal interaction design & evaluation to create a 
+library of design patterns for explanations. This DoReMi-approach pro­
+vided the first set of user requirements and UI design patterns for an 
+explainable decision support system in child health, showing how to 
+involve expert end users in the development process, and how to derive, 
+more or less generic solutions for general design problems in XAI from 
+the domain & requirements analysis and current interaction design 
+knowledge. Whereas current XAI-studies mainly focus on single purpose 
+explanations (most often transparency) and natural-language explana­
+tion formats (Nunes and Jannach, 2017), the DoReMi-approach pro­
+vided a richer XAI design space with (1) a (first) set of user requirements 
+for explanations that service the different user goals, and (2) a (first) set 
+of reusable design patterns for multi-modal explanatory user interfaces. 
+The evaluations with clinicians showed that they really need expla­
+nations of the AI-output, particularly to help mitigate false positive di­
+agnoses, while avoiding false negatives. Such explanations support the 
+required critical attitude, reducing the risk of over-reliance. All clini­
+cians who participated in the study indicated that the explanations of the 
+different design patterns are important and understandable, supporting 
+trust-calibration and decision-making. The set of UI design patterns 
+seem to cover all relevant information elements to be included in the 
+different explanations. There were some individual differences in the 
+rating of the explanations that point to the need for personalization. 
+Currently, the explanations and design patterns are being integrated 
+in a CDSS prototype, and will be further tested on their understand­
+ability, trust development and decision-making performance. This study 
+
+will entail different sessions to study learning, trust development and 
+performance change over time. To extend the scope and test the 
+genericity of the explanation design patterns, the development and 
+evaluation will include different types of use cases (e.g., child mental 
+health, adult diabetes management) and users (e.g. clinicians and 
+patients).

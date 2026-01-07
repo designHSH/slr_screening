@@ -1,0 +1,69 @@
+{
+  "file_name": "Connelly_2012_offline-mobile-nutrition-monitoring-inte.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "interaction",
+      "barrier_type": "emotional",
+      "description": "Many low-literacy patients refused to participate in tasks that required reading (including literacy tests), preventing direct measurement of literacy and forcing researchers to rely on a proxy measure.",
+      "justification": "This interactional reluctance limited the team's ability to manage user understanding and to specify accurate user requirements based on measured literacy levels.",
+      "reference_excerpt": "Many low-literacy patients refuse to participate in any study that requires reading (including taking a literacy test), because they lose standing with their peers. Thus, we used education levels as a proxy for literacy.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Difficulty obtaining actual consumption levels and incomplete recording by subjects meant researchers lacked reliable ground-truth data on what subjects actually consumed.",
+      "justification": "Lack of accurate consumption measurements prevented the team from fully evaluating compliance and the effectiveness of the design, hindering the 'evaluate designs' and 'manage user understanding' workloads.",
+      "reference_excerpt": "One limitation of the study was that given the difficulty in obtaining actual consumption levels, we do not know how compliant subjects were in monitoring. Interdialytic weight gain values do tell us subjects only recorded 56% of the fluid they consumed.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The barcode scanner technology (Socket SDIO In-Hand Scan Card) frequently failed: subjects could not successfully scan items the majority of attempts.",
+      "justification": "High scanner failure rates limited the team's ability to evaluate and rely on scanning as an input mechanism, constraining user testing, iteration, and the specification of usable input methods.",
+      "reference_excerpt": "Subjects could not successfully scan an item 87.9% of the time they attempted to do so. Only four subjects successfully scanned an item on their own.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "interaction",
+      "barrier_type": "emotional",
+      "description": "Some subjects did not take the device outside the home or use it in front of strangers, indicating stigma or privacy concerns around using the PDA publicly.",
+      "justification": "This user reluctance impeded the designers' ability to study context of use and to facilitate naturalistic user involvement and evaluation of the system outside the dialysis unit.",
+      "reference_excerpt": "Some subjects did not take DIMA out of the home and/or did not use DIMA in front of strangers.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The PDA's limited screen size prevented displaying feedback for all monitored nutrients on every screen.",
+      "justification": "This hardware constraint forced trade-offs in information presentation and hindered the designers' ability to address the holistic experience and fully specify feedback requirements.",
+      "reference_excerpt": "DIMA could not include feedback for all six items on every screen because of the limited screen size. Instead, DIMA has a feedback bar at the bottom of the build-a-meal screen that provides the user with the ability to see their consumption levels for the most critical nutrients at a glance—fluid, sodium, and potassium.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Loss of devices during the study caused incomplete interaction logs for at least one subject.",
+      "justification": "Data loss reduced the completeness of usage data, hindering evaluation of the design and interpretation of user behavior during iteration and assessment activities.",
+      "reference_excerpt": "Unfortunately, subject 17 lost his PDA during the study, and so we only have a partially complete interaction log for that subject.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 7,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Socioeconomic costs (data plan expense) and privacy concerns among subjects limited options for synchronizing the app with remote records or using phone-based data plans.",
+      "justification": "External cost and privacy constraints prevented designers from adopting certain technical implementations (eg, remote synchronization) and affected planning for future platform choices, constraining specification and operationalization of system features.",
+      "reference_excerpt": "the necessary data plan is currently too costly for many subjects with low-socioeconomic status, and subjects may not want to share the information with providers.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

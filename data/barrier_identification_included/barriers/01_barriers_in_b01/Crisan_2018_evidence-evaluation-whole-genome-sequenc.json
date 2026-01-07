@@ -1,0 +1,69 @@
+{
+  "file_name": "Crisan_2018_evidence-evaluation-whole-genome-sequenc.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Participant recruitment relied on convenience and snowball sampling within the authors' networks, limiting diversity and the team's ability to generalize findings or capture varied user contexts.",
+      "justification": "This sampling constraint reduced the designers' ability to manage user understanding and to understand contexts of use broadly, constraining specification of user requirements and reducing confidence in evaluation results' generalizability.",
+      "reference_excerpt": "our participants were identified through convenience and snowball sampling within the authors’ networks, and thus are likely to be more experienced with the clinical application of microbial genomics.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "knowledge",
+      "description": "The team lacked a priori knowledge of effect sizes for their design-choice questions, making formal sample size calculations impractical.",
+      "justification": "This methodological uncertainty hindered the designers' capacity to plan rigorous evaluation (Evaluate designs) and to power quantitative comparisons, limiting the strength of inferences drawn from participant preference data.",
+      "reference_excerpt": "we did not have a priori knowledge of the effect sizes (i.e., extent of preferential difference for each type of question) in the Design Choice Questionnaire, making sample size calculations challenging.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Stakeholders reported that laboratory reports are delivered via diverse media (PDFs in EHRs, faxes, physical mail), requiring the redesigned report to be legible in black-and-white and ruling out interactive or color-dependent designs.",
+      "justification": "These external delivery and format constraints limited the designers' ability to produce certain design solutions (Produce design solutions) and constrained choices around interactivity and use of color, affecting how the team structured and emphasized information.",
+      "reference_excerpt": "experts indicated that laboratory reports were delivered using a variety of formats, including PDFs appended to electronic health records, faxes, or physical mail. This created design constraints at the outset of the project—our redesigned report needed to be legible no matter the medium, ruling out online interactivity, and needed to be black and white.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "Many participants reported low confidence interpreting several WGS-related data types, indicating limited user familiarity with genomic outputs.",
+      "justification": "Users' limited domain knowledge constrained designers' ability to facilitate user involvement and to rely on participants for valid evaluation feedback (Manage user understanding; Evaluate designs), requiring the team to adapt designs and add educational/interpretive elements.",
+      "reference_excerpt": "most participants only felt somewhat confident, or not confident at all, interpreting the other data types (Table S3).",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "Clinicians and non-clinicians disagreed on the level of detail and types of genomic information to include, producing divergent preferences for report content and presentation.",
+      "justification": "Conflicting stakeholder preferences impeded integration of feedback and iteration as designers had to reconcile opposing needs (Integrate feedback & iteration; Specify user requirements), ultimately defaulting to clinician preferences in some cases.",
+      "reference_excerpt": "experts had differing perceptions of data types and desired level of detail between clinicians and non-clinicians, perhaps reflecting the clinicians’ procedural need for rapid interpretation.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Key external data resources were unavailable or difficult to obtain (e.g., prior patient test results; final mutation catalog), preventing inclusion or testing of certain design elements.",
+      "justification": "Limited access to upstream data sources constrained the designers' ability to specify requirements and to evaluate representations that depended on those data (Understand context of use; Evaluate designs), delaying or preventing testing of some elements.",
+      "reference_excerpt": "prior test results from a patient were deemed important; however, the earlier expert consults indicated that such data was difficult to obtain and unlikely to be included in future reports. ... we did not test any design elements displaying the strength of the association between the mutation and the resistance phenotype; however, we will add this to a future version of the report pending receipt of the final mutation catalog from the ReSeqTB Consortium.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 7,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Technical limitations of downstream systems (EHRs, photocopying) threatened the fidelity of emphasis features (bolding/shading), constraining how emphasis could be used in designs.",
+      "justification": "Concerns that emphasis styling might not transfer correctly limited designers' choices for information emphasis, affecting Produce design solutions and Evaluate designs across real-world media.",
+      "reference_excerpt": "some reported concerns as to whether such emphasis was possible with current electronic health records, including \"[bolding or shading] may not transfer correctly\" and \"shaded [text] won’t photocopy well.\"",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

@@ -5,8 +5,8 @@ from pathlib import Path
 # -----------------------------
 # Configuration
 # -----------------------------
-INPUT_DIR = Path(r"data\test_data\barrier_identification_test\2nd_run_2nd_smaple")
-OUTPUT_CSV = INPUT_DIR / "barriers_merged_2nd_run_2nd_smaple.csv"
+INPUT_DIR = Path(r"data\barrier_identification_included\barriers\01_barriers_in_b01")
+OUTPUT_CSV = INPUT_DIR / "b01_barriers.csv"
 
 # -----------------------------
 # CSV column structure

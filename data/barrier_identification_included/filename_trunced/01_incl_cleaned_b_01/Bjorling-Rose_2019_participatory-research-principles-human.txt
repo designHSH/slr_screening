@@ -1,0 +1,386 @@
+Participatory Research Principles in Human-Centered
+Design: Engaging Teens in the Co-Design of
+a Social Robot
+
+Elin A. Björling 1,*
+and Emma Rose 2
+
+1
+Department of Human Centered Design & Engineering, University of Washington, Seattle, WA 98195, USA
+2
+School of Interdisciplinary Arts and Sciences, University of Washington Tacoma, Tacoma, WA 98402, USA;
+
+*
+
+Received: 20 December 2018; Accepted: 29 January 2019; Published: 10 February 2019
+
+3. Participatory Method Cases
+
+The following method cases illustrate our use of participatory design in the wild. Within our
+methods, we carried out our research to ensure ethical, meaningful, and rigorous interactions. Methods
+were constructed with the contextual environment in mind, and thus allowed for ﬂexibility to “iterate
+on the ﬂy” when necessary in the ﬁeld. Our methods were also focused on keeping teens central to the
+process. This does not just mean capturing data as teens engage as participants in the research, but also
+engaging teens as actors and operators in conducting the method itself. Whenever possible, researchers
+took the role of instigator and facilitator, but allowed teens to play all roles during interaction, as is
+illustrated below. Through the development and implementation of this research, a set of research
+principles emerged that now guide our work.
+
+3.1. Methods Case 1: Design Sessions with Teens—Envisioning Robots
+
+Unlike other robot projects that begin with working prototypes or existing robots, our approach
+(similar to [71]) was to start from the very beginning and ask teens to envision their idea of what a social
+robot to address teen stress would look like. Therefore, we engaged teens in a series of design sessions
+to envision robots through sketching, storyboarding, and scenario writing in the ideation stage.
+
+3.1.1. Ideation and Iteration
+
+To explore possible ideas for a robot design, we engaged participants in a drawing activity that
+acted as a modiﬁed form of the future workshop [73] from participatory design. The goal of the activity
+was to have students envision what a robot, which was designed speciﬁcally for their school, might
+look like. Participants were given a blank piece of paper and asked to draw an image of a robot.
+After drawing the image, participants were then asked to share their drawing with the rest of a group
+of teens and describe their robot. The drawings and articulated rationale for the design were then
+
+collected and analyzed to inform the robot EMAR’s design requirements, principles, and rationale.
+For example, almost all teens’ robot designs illustrated the robot as a helper, supporting students at
+school and in ways students felt were appropriate.
+Beyond these early sessions, each subsequent interaction with groups of teens have included
+some form of ideation. After a prototype was developed, teens helped to ideate and iterate on a
+rendered robot face. In an effort to give teens control over the robot appearance, we developed an easy
+to use, web-based face editor, that allowed teens to customize a face given a particular context or role.
+See Figure 2A for an example. Later in the project, as we began to develop the functionality of EMAR,
+we engaged teens in ideation and iteration of the user-interface (UI) design to ensure teens felt the
+navigation and interaction was feasible.
+
+3.1.2. Collaborative Storyboarding
+
+To further understand appropriate behaviors of a social robot for teens, we asked pairs of teens to
+storyboard a scenario in which a robot is interacting with a student in their school. In user experience
+design, professionals use a variety of visual tools and techniques for storytelling [74] including
+sketching and using storyboards [75] and comics [76]. These techniques are ways to envision and
+communicate designs and ideas for a broader audience. After participants completed their drawings,
+they were asked to articulate to the larger group what the robot was doing and why. This exercise
+was designed to invite teens to consider the speciﬁc context and constraints of their own schools and
+how an imagined robot might exist in this speciﬁc environment. By making it a collaborative method,
+we increased engagement by adding a social component. In addition, the collaboration allowed
+for interesting discussion during design, and thereby rich qualitative data. For example, during
+storyboarding, teens often discussed the roles of their robots, the acceptable robot behaviors, as well as
+ways in which they felt the robots could be helpful to teens. Some teens even began the process of
+problem-solving real world barriers, such as how the robot could navigate crowded hallways and
+manage communication during group interactions. During storyboarding, all conversations among
+pairs were captured as data in addition to the storyboard data itself.
+
+3.1.3. Outcomes
+
+The methods for design sessions with teens maintain our participatory research principles of
+keeping teens central to the process, maintaining contextual validity in both content and environment,
+and by creating activities that are engaging and active for teens. The rich data that emerged during
+these activities are often qualitative in nature and extremely valuable to inform the design of the robot.
+
+3.2. Methods Case 2: Social Robot Design Challenge
+
+Within human-centered design, it is common to include people in design through research
+methods and evaluation of products [77]. In a participatory approach, end users are engaged
+
+meaningfully throughout the design process by having a metaphorical seat at the design table and
+working closely on the initial ideas and vision for a product or system. To engage teens as meaningful
+collaborators in the design process, we developed a novel approach for engaging them in a participatory
+way in the form of a Social Robot Design Challenge.
+
+3.2.1. The Robot Competition, a Familiar Genre
+
+Robot competition, where robotics teams work on a mechanical prototype and then present
+the prototypes in a competition designed to highlight their mechanical properties and functionality,
+are common in the United States at the university [78] and high school levels [79]. Participating in such
+a robotics challenge has a variety of beneﬁts including increasing learning about robotics and positive
+attitudes toward robotics and engineering [80] as well as toward science in general [81]. Given these
+beneﬁts and the familiar genre, we created a similar design challenge. Ours was unique because it
+focused on the use case of a social robot to help teens with stress. Engaging teens in the process of
+designing the robots informed the design requirements for Project EMAR. Further, because school
+is the place where teens spend a considerable amount of their time and is often a main source of
+stress, having teens working on design ideas while at school helped inform that their designs were
+ecologically sound, informed by their environment, and take into account the unique constraints of
+each school environment.
+
+3.2.2. Participatory Design at Scale
+
+A limitation of participatory design is that is it can be time intensive and often only involve a
+small group of people in the design process [60]. From previous research [82], we knew that each
+school environment and community is unique and therefore may have different requirements for a
+social robot. To strive for a variety of schools in our region, we recruited broadly and partnered with
+seven urban high schools spanning two cities. We recruited schools to gain a range of representation
+based on demographics, location, and interests. Each school hosted our research team for multiple
+visits where we mentored teens in the human-centered design process. Our protocol for working with
+teens was designed to be ﬂexible to accommodate each school’s interests and availability. In some
+schools, we visited classes and worked directly with teachers and their students. In others, we engaged
+with teens after school with extra-curricular clubs.
+
+3.2.3. Providing a Foundation of Human-Centered Design
+
+Visits to each school were structured around the ﬁve stages of human-centered design: research,
+ideation, prototyping, testing and iteration. During each stage, we presented short explanatory videos
+about human-centered design [83] that had been speciﬁcally designed for teens [84] and a series of
+relevant exercises to scaffold the material. While the information in each lesson was similar, the content
+was geared and adapted for the individual group based on collaboration with teachers and advisers
+and the teens themselves.
+In the research stage, teens were asked to gain a better understanding about teens and stress
+through a variety of activities in the human-centered design process. Different groups of teens chose
+to enact different research methods, including interviewing their peers, conducting surveys of their
+peers either on paper or online, or interviewing experts at their schools such as advisers or counselors.
+Some groups collected feedback from peers by posting a board where teens could contribute their
+ideas anonymously about what calmed them and what stressed them out.
+During the ideation stage, teens brought back ideas from the research and in conversation with
+their own personal reﬂections on stress, brainstormed different ideas for what a social robot would
+do, what features it would have, what some of the constraints are related to robots in their particular
+school. To capture their ideas, they created sketches, storyboards, and scenarios. See Figure 3.
+
+In the prototyping stage, teens spent time creating physical prototypes from a variety of materials
+including cardboard, soft materials, hardware, paper, and so on. In this phase, teens worked to
+approximate both the design and the functionality of their robot ideas. They discussed interfaces,
+how the robot would received information and communicate. They approximated mobility through
+the use of wheels, created mock ups of interfaces including using white boards for screens.
+During testing, teens invited their peers to interact with their robots. To explore the robot
+functionality, the teens controlled their robotic prototypes by using Wizard of Oz methods [46–48],
+and informal usability testing [85,86], and also solicited feedback and opinions form their peers through
+group discussion. As a result, the groups of teens iterated on their designs based on the feedback from
+peers, at times modifying ideas and others adding new features.
+
+3.2.4. Showcasing the Teen’s Prototypes
+
+As a culminating event for the social robot design challenge, we invited the schools who had
+created robots to attend a Social Robot Design Challenge Showcase, which was hosted on our
+university’s campus and was open to the public. Six of the seven participating schools attended and
+each team presented their robot designs to a team of experts in social robotics, including researchers
+from academia and industry. Each team presented their design that included a description of the
+features of their robots and a rationale for why they designed the robot the way they did (Figure 4).
+They also prepared and screened a presentation video that documented their design and rationale.
+Each team answered questions from the expert judges, other teens, and the general public.
+
+3.2.5. Outcomes
+
+The goal of The Social Robot Design Challenge was to invite teens to be the designers and
+co-creators of social robots. This method case had positive outcomes for both the participants and
+our research project. The schools, teens, and teachers who participated in the challenge mentioned
+that, overall, it had been a positive learning experience for the students who participated. Each school
+voiced interest in being engaged in future challenges. For our research team, the designs that the teens
+created and their rationale for their design decisions continue to be a signiﬁcant source of information
+for our project informing key features of Project EMAR. For example, a theme that crossed all the robots
+designed by teens was the concept of reciprocity, meaning that teens expected the robot to provide
+support, comfort, or distraction during an interaction. The prototypes created by teens provided
+insight into how they anticipate the robot to look, act, and even feel.
+The success of the Social Robot Design Challenge and the richness of the data collected can be
+attributed to several of our decisions in how to implement the method. First, creating actual designs
+placed the teens in the role of key contributors and designers. While we as researchers provided
+support to teens to teach them about human-centered designs, they ultimately decided what features
+to incorporate, how the robots should look and act, and how to make iterations and changes based
+on feedback from their peers. Respecting teens’ perspectives and honoring their expertise about their
+lives ensures the designs are an authentic interpretation of teens’ needs, rather than assumptions from
+adult designers. Second, conducting this research within the school environment, rather than in a lab
+or at our University, provided contextual validity in which teens took into account the constraints
+and the experience around them, rather for designing in the abstract. Third, conducting this research
+across seven different school settings, required us to bring a ﬂexible approach to the design challenge.
+We gave teens similar tools, experiences, and instruction, but encouraged each school and group of
+teens to participate in a way that would encourage their unique perspectives and contexts to inform
+the design experience. In this way, we were able to provide similar materials to each school, but in
+a way that was ﬂexible and adaptable to enable each team to follow their own path and develop a
+design that was suitable for their community.
+
+3.3. Methods Case 3: Wizards, Witnesses and Collaborators
+
+Beliefs and speculation about robots do not always inform behavior. In addition, studies utilizing
+simple images or videos of robots capture the signiﬁcant effect of robot embodied presence that occurs
+when interacting with a physically present robot [87–89]. Therefore, interaction studies, with physically
+embodied, and present robots, are ideal to capture valid teen-robot interactions. In our interaction
+studies, we also utilize the social nature of teens in order to increase engagement. The use of theatrical
+role play as a participatory method has been shown successful even with vulnerable teens [90,91].
+Therefore, to make a teen–robot interaction study more realistic, we crafted a role play scenario [92] in
+which teens would tell their story of stress to the robot.
+
+3.4. Script Writing
+
+Wanting to keep our role-play scenario realistic, but reduce the pressure on teens to perform or
+share personal data in front of their peers, we gave them the option to read a stress story script, which
+we crafted based upon qualitative data from teens about their stressors. However, the ﬁrst time we
+presented this script, a few teens immediately commented in writing on the script that they found this
+script was “insulting” and “fake.” Although based in teen data, our script did not meet the teens’ need
+for an authentic story during role play and interaction. This sparked the idea to have teens craft the
+scripts themselves in order to create an more authentic interaction with the robot. We asked teens in
+groups of two, to craft a story of stress that they or a friend had experienced. We invited them to to
+write the story as they would to share with someone else. The teens (n = 39) crafted their stories and
+we chose three diverse options (one about a physical injury, one about applying to colleges, and one
+
+about a problem with a teacher) to use in future interaction studies. Given that trust is an important
+principle in participatory research, we responded immediately to iterate upon our original scripts,
+to ensure teens felt the interaction was more authentic and true to their experience.
+
+3.4.1. Teleoperation of Robotic Devices
+
+Teleoperation is commonly done by researchers during HRI [93–95]. The deception of participants
+is also common [46–48], in the Wizard of Oz technique (e.g. [46]) which involves controlling a
+robotic device from behind a screen or barrier to create the illusion of autonomous robot functions
+and capabilities. When working with teens, authenticity is important and a key component to trust,
+therefore we did not use deception in any capacity. Instead, we exposed all of the workings of our robot
+prototypes to teens as part of our introduction to the project. This educational outreach ideally builds
+robotics literacy while inviting trust and transparency with our participants. After understanding the
+devices and how they are operated, we then engaged in the teens in our HRI studies, often including
+the operation of the robot.
+For example, in order to better understand the importance of movement and voice in teen–robot
+interactions, we conducted a study of two distinct robot prototypes. One was Blossom, a soft bodied,
+ﬂexible robot with a crocheted outer shell [96] (Figure 5, left). Blossom was teleoperated using a
+smartphone as a gyroscope by a teen. The second prototype was Teen-Health-Bot [pseudonym]
+Version 4, a soft, but boxy robot with a rendered face on a tablet and a belly tablet displaying text
+(Figure 5, right). V4 also uses a robotic voice to communicate. Teens operated each devices in response
+to a prompt to express empathy toward a teen sharing a stressful experience. Using the stress story
+scripts written previously by teens, one teen read the script, while the operator (using only movement,
+or typing a verbal response) responded. In addition to the script reader and the teleoperator, two other
+teens acted as witnesses to the interaction. All teens then responded to a brief survey about how they
+rated the robot’s response to the teen and how they felt operating the robotic device.
+
+In addition to the script reader and the teleoperator, the teen witnesses in the process are important
+in two ways. First, they add the social context that will inevitably be part of the environment in which
+the robot will eventually live. Teens will be interacting with the robot while other teens are nearby,
+in a public space such as a hallway, or lunchroom. Thus, piloting this more social interaction early on in
+the robot design is important. Second, as witnesses, the teens can observe the full interaction, not being
+caught up in the script reading activity or the teleoperation, and therefore can focus on the interaction
+itself and provide valuable, observational input. In addition to the survey information, after engaging
+in the activity, teens also debriefed in a group interview about how they felt about the robot and this
+type of interaction. This qualitative, contextual data, post-interaction has provided valuable input
+informing our design of EMAR, but also insights into how teens feel about robot interaction.
+
+3.4.2. Teleoperation and Collaboration in Virtual Reality
+
+Exploring robot interactions in the wild can be cumbersome and costly. In addition, exploring
+design embodiment and a wide range of interaction behaviors is greatly limited by real world
+
+materials and expense. Therefore, we found that, as a platform, virtual reality (VR) provides a
+solution to rapid, collaborative prototyping not only for robot form factors and behaviors, but to pilot
+human–robot interactions as well, all while maintaining contextual validity through an immersive
+“school” environment. VR also provides a unique opportunity to immerse teens into what feel like
+contextually appropriate settings for teen–robot interactions (classroom, lunchroom, and hallways),
+thereby avoiding the pitfalls of a lab setting studies. In addition, by designing a virtual reality platform
+to elicit collaboration and conversation, our pilot HRI studies in VR allow for easy and natural
+conversation, and, thus, data collection.
+Our exploration of VR began during discussions of appropriate robot size and behavior related
+to teen preference and in terms of durability for a public high school setting. VR allowed us to begin
+exploring size and behavior prototypes, prior to costly building in the physical world. However,
+as we began to design a collaborative VR game for teens, we quickly recognized the huge potential
+for VR to provide: (1) rich research data through conversation; (2) unconstrained co-design sessions;
+and (3) unique opportunities for teens to explore HRI.
+In user research, often the think-aloud protocol [97] is a technique to understand a the experience
+of a user as they go about a task. We wanted to understand choice and decision-making as teens
+selected and assembled robots, knowing that talking aloud is not comfortable for teens (from previous
+ﬁeld work). Therefore, we created a collaborative game that required talking between teens in order to
+succeed. To do this, we developed an asymmetric VR game design [98], meaning one player is outside
+of VR, operating a computer with a headset and microphone, allowing them to connect to the other
+player who is inside immersive VR. Together, the teens collaborated (each had different abilities) to
+agree upon and assemble a robot together. Once assembled, the teens were invited to engage in an
+interaction with the newly developed robot. The outside player could teleoperate the robot while
+interacting with the in-VR teen, providing rich interaction data. Like all of our interaction studies,
+We conducted these VR robot interaction sessions at school by setting up VR equipment in libraries and
+classrooms. Teens engaged easily and eagerly with the VR platform and reported that they found both
+the internal and external roles fun. Most importantly, we were able to capture valuable data, through
+gameplay recordings about how teens collaborate as well as insights into the teens’ perceptions of
+robot roles and behaviors. See Figure 6 for examples of the teen’s sketches and gameplay.
+
+3.4.3. Outcomes
+
+From the use of methods designed to engage teens as actors, including teleoperators, in human–
+robot interaction, we maintained our participatory research principle of engagement, keeping teens
+central to the process. By designing the VR environment in a school setting and by conducting the VR
+interaction at a school, allowed us to maintain the contextual validity in both content and environment.
+The rich data that emerged during these activities are often qualitative in nature, but extremely valuable
+to inform the design of the robot EMAR, not to mention to better understand the needs and beliefs of
+our population of teens.
+
+4. Discussion
+
+Utilizing participatory methods in the wild to engage teens in the co-design of a social robot has
+been both productive for the project and imperative for creating meaningful long term relationships
+with our teen participants. By conducting studies in the wild, we captured interaction data that were
+contextually appropriate and valid to further inform the design of the the robot EMAR. In addition,
+by being fully transparent in our methods, we worked to maintain trust and engagement with our
+vulnerable and often skeptical users—teens. By engaging in these methods over time, we established
+trust with our participants and their communities. Based on the three methods cases described in
+the previous section, we reﬂected on our approach to develop a set of research principles that guide
+our efforts to engage vulnerable populations in the participatory design of social robots. While these
+principles speciﬁcally guided our approach, we believe they may be applicable to other design projects
+and research domains.
+
+4.1. Participatory Research Principles
+
+The following participatory research principles were developed based on reﬂection of our past
+three years of working with teens. These principles are evident in the three methods cases presented
+and continue to guide our work with teens.
+
+1.
+Contextual Validity: All research and design is conducted in the wild where the eventual robot
+will reside.
+2.
+Participant-Centered: All of our methods allow for teens to be the experts in their own lives,
+and the voices to articulate their own needs. The research teams preferences, or personal
+experience, never overrides the data we gather from teens.
+3.
+Collaboration: Engaging teens in collaborative tasks by working in pairs or groups leads to rich
+and powerful data, while supporting their desire to be social. Whenever possible, we invite teens
+to work in pairs or groups rather than individually.
+4.
+Engaging and Active: All of our methods are engaging and allow for teens to be active participants.
+Teens are the actors as well as participants in the research, and, when possible, they are the only
+actors engaging in the process.
+5.
+Researcher Flexibility: Given that research takes place in the wild, methods must be ﬂexible to
+accommodate the many unexpected variables and situations that occur in the school environment.
+6.
+Trust and Transparency: Each research or design activity is constructed in such a way that
+researchers are fully transparent about the agenda, research questions, and goals. Deception is
+never used in design or research activities. The use of confederates (actors posing as participants)
+or typical Wizard of Oz methods (the illusion of an autonomous robot that is actually being
+operated in real time) are never used with teens.
+
+4.2. Designing for Trust
+
+As mentioned in the Introduction, many of the common research methods in human-robot
+interaction include deception. However, working with a vulnerable population requires trust and
+authenticity in order to maintain community relationships. Therefore, deception could be destructive
+in participatory research. Fortunately, the methodology behind participatory research encompasses
+the necessity of trust [99,100]. Although there are important ethical discussions regarding the use of
+deception in social robotics research [101] even in studies of children [55], it is necessary to move from
+discussion to application. For this reason, we believe utilizing a participatory approach, along with
+speciﬁc research principles guided by creating trust, is essential to not only ethical engagement, but also
+rich, contextual data from participants.
+
+5. Challenges and Limitations
+
+While the methods employed in this project have helped our team develop and articulate
+these guiding principles that are providing beneﬁts for the project and our research participants,
+these methods and associated principles have challenges and limitation associated with them. First,
+as is often true in participatory research, the process of creating relationships with stakeholders and
+users can be time consuming. Second, conducting studies in the wild provides huge beneﬁts for
+contextual validity, but also allows for an unlimited number of uncontrollable situations. Maintaining
+ﬂexibility within design can be helpful, but even then there is still potential for studies to fail in the
+wild. Finally, although often much appreciated, communicating and disseminating new, participatory
+iterations of commonly used methods to an engineering community can be difﬁcult and time intensive.
+
+6. Conclusions
+
+As interest in human–robot interactions increases, paying attention to how and why researchers
+are choosing methods is integral to determining the validity of that data. The choice of methods
+informs the rigor of the process, but the application of these methods must include meaningful and
+ethical engagement for participants. Thoughtful attention to methods is especially crucial for work
+with teens who are a unique and vulnerable population.
+Developing and articulating these participatory research principles beneﬁts our research project
+and also our participants. The principles have emerged over three years of research and now guide
+our decisions and directions in ongoing efforts. Having the principles clearly articulated helps
+communicate to new research team members and our stakeholders how and why we conduct our
+participatory research in the way that we do. It also acts as a guideline for developing new research
+activities or engaging new partners. Further, having a clear set of guidelines helps our team articulate
+our approach and its rationale to participants to more fully engage them in the reasons and purpose of
+our research.
+These guidelines provide our team with conﬁdence that we are engaging teens in a thoughtful,
+ethical, and appropriate way. The approaches help gather data that are useful, meaningful and
+valid given the contextual validity inherent in these participatory methods. Given the vastness of
+potential human–robot interaction studies, we advocate that participatory methods be used, especially
+with vulnerable populations. In addition, we recommend that research teams may beneﬁt from the
+development of their own set of participatory research principles that maintain consistency within
+their research and provide an ethical and transparent rationale for the research.

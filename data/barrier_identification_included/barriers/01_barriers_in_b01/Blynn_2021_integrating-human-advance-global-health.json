@@ -1,0 +1,78 @@
+{
+  "file_name": "Blynn_2021_integrating-human-advance-global-health.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Research ethics board (IRB) requirements and timelines constrained the iterative, discovery-driven research methods designers rely on.",
+      "justification": "Requiring pre-specified methods, larger sample sizes, and submission many months in advance prevented designers from adapting inquiry during fieldwork, hindering managing user understanding, iterative learning, and studying context of use.",
+      "reference_excerpt": "Initial IRB feedback stated that A360 did not have an adequate sample size and had to change the wording of questions and limit their methods to a specific set of 9 approaches. The requirement to submit the design research plan 6 to 9 months in advance of project launch also limited the design team’s ability to adapt their methods as needed throughout the process.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Funder-imposed short timelines and fixed budget allocations limited the time and flexibility needed for HCD’s iterative prototyping and co-creation.",
+      "justification": "Donor preferences for short-term results and initial allocation of short timelines prevented adequate iteration and pivoting, impeding integration of feedback & iteration, coordination with stakeholders, and implementation of refined solutions.",
+      "reference_excerpt": "While the donor originally allocated funding for an 8-month timeline, the project ultimately took 24 months for several reasons... once the timeline began to get delayed, amendments to the pre-defined project plan and budget took additional time. ... funders preferred shorter-term TA projects and near-term results, while governments wanted several years of TA.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "Lack of mutual understanding and experience with HCD between the design team and implementing partners created confusion about roles and ways of working.",
+      "justification": "The need to orient partners unfamiliar with HCD disrupted collaboration, undermining the designers’ ability to coordinate multidisciplinary teams, facilitate stakeholder involvement, and sustain aligned processes during implementation.",
+      "reference_excerpt": "In Reimagining TA, no such start-up phase was built in for Sonder and JSI to align on process and approach. The design team had to orient the JSI team to the HCD methodology and approach while simultaneously kicking off activities in-country... This created confusion, mutual questioning of the project approach, and a lack of clarity around roles and responsibilities.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Insufficient or superficial government buy-in and inconsistent stakeholder attendance limited true co-creation and local ownership.",
+      "justification": "Governments accepting initiatives without deep engagement or competing priorities reduced stakeholder participation and commitment, hindering designers’ ability to facilitate user involvement, integrate feedback, and ensure sustainable implementation.",
+      "reference_excerpt": "Given the limited timeline for securing government buy-in, the government accepted the initiative without full awareness of and commitment to the level of engagement needed for a true co-creation process... In Nigeria, inconsistent stakeholder engagement in the workshops resulted in fragmented insights and low commitment to the process and the solutions.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Procurement realities of government/U.S. government supply chains constrained the ability to translate prototypes into scalable program materials.",
+      "justification": "Requirements for competitive contracting and specific procurement mechanisms impeded transitioning prototypes to implementation, limiting the designers’ ability to produce and deploy design solutions at scale.",
+      "reference_excerpt": "The prototypes of the V starter kits and distribution plans developed in South Africa were not automatically transferable to a new context given the procurement realities of supplying large, U.S. government-funded programs. Ultimately, implementing V in Zimbabwe required procurement through an existing U.S. government supply chain mechanism... which required a competitive contracting process.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Project timelines and budgets did not allow time or resources to build HCD capacity among in-country partners.",
+      "justification": "Without dedicated time and funding for capacity building, designers could not embed design skills in partners, which hindered sustaining adaptive management, continuing iteration, and implementing solutions after core design support ended.",
+      "reference_excerpt": "For Reimagining TA, given timeline and budget constraints, there was no time to build the HCD skills of in-country co-creation team members. Therefore, the solutions identified have not been implemented systematically.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 7,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Practical and cost constraints prevented launching an independent impact evaluation for V, limiting rigorous assessment of design-led outcomes.",
+      "justification": "Challenges in identifying a sufficiently rigorous methodology at feasible cost blocked designers from conducting an impact evaluation, hindering their ability to evaluate designs and generate evidence to persuade stakeholders to adopt HCD approaches.",
+      "reference_excerpt": "For V, an independent impact evaluation failed to launch due to challenges in identifying a sufficiently rigorous methodology at a feasible cost. The evaluation of V in Zimbabwe was therefore designed to leverage existing, routine program monitoring systems.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 8,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The COVID-19 pandemic paused implementation activities, interrupting planned testing and scaling of HCD solutions.",
+      "justification": "Pandemic-related pauses prevented timely prototyping, testing, and iteration, directly constraining designers’ ability to integrate feedback, evaluate solutions, and sustain momentum toward implementation.",
+      "reference_excerpt": "In 2019, USAID engaged the Engage Design consortium... to adapt V for program implementation. Due to COVID-19, implementation was paused but has recently resumed, with results expected in late 2021.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

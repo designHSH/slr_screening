@@ -1,0 +1,1069 @@
+User-centered design and evaluation of a next
+generation ﬁxed-split ergonomic keyboard
+
+Hugh E. McLoonea,∗, Melissa Jacobsonb, Chau Heggc and Peter W. Johnsonc
+
+aMicrosoft Corporation, Redmond, WA, USA
+b56seven8 design, Seattle, WA, USA
+cUniversity of Washington, Seattle, WA, USA
+
+Received 23 June 2009
+
+Accepted 17 August 2009
+
+2. Methods (Phase I)
+
+2.1. Participants
+
+All participants were recruited through Microsoft’s
+Central Usability database and volunteered to partici-
+pate in usability research. To be eligible, participants
+had to use a ﬁxed-split ergonomickeyboard– any brand
+or manufacturer – as their primary keyboard for work
+and/or personal use, self-reported personal computer
+of at least 10 hours per week, and not be Microsoft
+employees. The participants were not screened for past
+or present hand-related injury or pain. They gave their
+consent to participate and received aMicrosoft software
+gratuity (value: $20 to $600) in exchange for their par-
+ticipation. Studies followed Microsoft’s standard orga-
+
+nizational procedures for usability testing with human
+subjects.
+In the ﬁrst usability experiment, thirteen ﬁxed-split
+keyboard users (7 men, 6 women) with an average age
+of 38 years (range 18 to 56 years) who were all right
+hand dominant participated in the study. Three of the
+thirteen participants had previously used a ﬁxed-split
+keyboard yet used primarily a straight keyboard at the
+time of the experiment. In the second experiment, re-
+cruiting criteria was tightened to ensure only current
+ﬁxed-split keyboard users attended. In the ﬁrst exper-
+iment, hand size was not measured. In the second ex-
+periment, a different set of thirteen ﬁxed-split keyboard
+users (7 men, 6 women) with an average age of 47 years
+(range 25 to 60 years) who were also all right hand
+dominant participated in the study. The second group
+had six “large” hands (deﬁned as hand length of 50th
+percentile adult U.S. male or larger: ⩾189 mm); four
+“medium” hands (between 50th percentile U.S. adult
+male and 50th percentile U.S. adult female: 174 to 189
+
+448
+
+mm); and three “small” hands (50th percentile adult
+U.S. female or smaller: ⩽174 mm)] [15].
+
+2.2. Experimental set-up
+
+For both experiments, the usability lab consisted of a
+height adjustable table and chair with a one-way view-
+ing mirror to an observation room. The workstation
+was set up according to the participant’s stature and
+comfort level. Participants adjusted the chair to have
+their feet ﬂat on the ﬂoor and thighs parallel to the ﬂoor.
+Then, the table was adjusted so the home row of the
+keyboard was elbow height. A computer display was
+present and the top of screen was positioned at eye lev-
+el roughly arms length away; however, since the key-
+board models were not functional, the display was for
+reference only.
+
+2.3. Lateral inclination angles and key layouts
+
+The keyboard models with new lateral inclinations
+and key layouts were machined, solid-block, high-
+density foam with key caps glued to their surface and
+thus were not mechanically or electrically functional.
+Each keyboard was ﬂat (slope of 0◦) and had a built in
+wrist rest. The wrist rest height was in line with the
+base height of the ﬁrst row of keys of the keyboard.
+In the ﬁrst experiment, models of keyboards with
+three lateral inclination angles: 8◦(current, bench-
+mark), 10◦, and 12◦were presented randomly. And,
+across the three lateral inclinations, two different types
+of key layouts were presented. First, participants were
+presented models with keys in a straight row alignment
+with raised peripheral keys that were moved upward in
+vertical plane to match the plane of keyboard case-top
+(Fig. 2, top-right; Fig. 3, left). Then, they were shown
+three models that repositioned peripheral keys vertical-
+ly upward and horizontally inward in a “gull-wing” de-
+sign where the same peripheral keys were repositioned
+in both vertical and horizontal planes (Fig. 2, top-right;
+Fig. 3, right). Both of the new key layouts repositioned
+the key cap surfaces on the right side (i.e., =, ], “, ?,
+Backspace, \, Enter, Shift, and Ctrl) and on the left
+side (i.e., ∼, Tab, Caps Lock, Shift, and Ctrl). Given
+the asymmetry of the keys on each side of the open-
+ing angle, two columns of peripheral key surfaces were
+repositioned on the right side whereas only one column
+was repositioned on left side. If they had not already
+mentioned it, participants were asked if they noticed a
+difference between the two key layouts. Then, the two
+key layout arrangements were pointed out and placed
+
+in front of the participants. They were asked to rank
+the ﬁrst and second choice for key layout as well as rate
+acceptability.
+The second experiment evaluated three additional
+lateral inclination angles (while conﬁrming presenta-
+tion of “gull-wing” key layout with its upward and in-
+ward peripheral keys). In this second study, a different
+set of participants evaluated the same 8◦, 10◦, and 12◦
+
+lateral inclination models and additional models with
+lateral inclinations of 14◦, 16◦, and 18◦. All models
+evaluated had the gull-wing design, which was identi-
+ﬁed as the preferred key layout in the ﬁrst experiment.
+For both experiments, participants were asked to
+simulate typing at each keyboard model for approxi-
+mately 5 minutes or until they were certain of their eval-
+uation. They were instructed to verbally express any
+thoughts and/or feelings that they had about the model
+when typing. At the end of the testing, the models were
+placed in front of the participants and they were asked
+to rank order their preference for key layout (experi-
+ment #1) and lateral inclination angles (experiment #
+1 and experiment #2) as well as whether they thought
+each respective model was acceptable or not.
+
+2.4. Wrist rest heights
+
+Many conventional and ﬁxed-split keyboards presen-
+tly available have wrist rests to provide a gradual tran-
+sition from the front edge of the keyboard to the desk
+surface. This portion of the experiment was designed
+to evaluate an array of wrist rest heights to deter-
+mine whether there was an optimal or preferred height.
+A mechanically-functional, straight keyboard in the
+neutral (0◦) slope position was retroﬁtted so different
+height wrist rests could be installed for the heights of in-
+terest from 0 to 28 mm (Microsoft Wireless MultiMedia
+Keyboard v1, Redmond, WA). In the ﬁrst experiment,
+thirteen participants evaluated ﬁve wrist rest heights:
+0 mm (current wrist rest/benchmark) and 7 mm,14 mm,
+21 mm, and 28 mm taller than the benchmark. In the
+second experiment, a different group of thirteen partici-
+pants repeated the testing with a reﬁnement of the wrist
+rest heights which included the 0 mm, 7 mm, 10 mm,
+and 14 mm. Identical to the lateral inclination testing,
+participants were asked to simulate typing a standard
+text passage as well as their name, home address, fa-
+vorite movie, and any other words of their choosing
+on each keyboard (about 3 to 5 minutes at each key-
+board) and verbally express any thoughts and/or feel-
+ings they had about the model when typing. After test-
+ing each wrist rest height, participants were asked to
+rate each height’s acceptability and rank order the wrist
+rest heights from most to least preferred.
+
+449
+
+Table 1
+Tallies (modes for each angle in bold) and means of participants’ rank
+order preferences and the acceptability proportions for the lateral
+inclination angles tested (n = 13)
+
+Lateral inclination angle
+Rank
+8◦
+10◦
+12◦
+14◦
+16◦
+18◦
+
+1st
+0
+1
+1
+5
+4
+2
+2nd
+1
+1
+2
+5
+3
+1
+3rd
+1
+3
+2
+1
+2
+4
+4th
+0
+3
+6
+2
+2
+0
+5th
+3
+5
+1
+0
+2
+2
+6th
+8
+0
+1
+0
+0
+4
+Average Rank∗
+5.2
+3.8
+3.5
+2.0
+2.6
+3.8
+% Acceptable
+77%
+85%
+92%
+100%
+77%
+46%
+
+∗Average rank is calculated where “1” is counted for each ﬁrst place
+rank, “2” for each second place rank, and so on to “6” for each last,
+sixth place rank and these values are summed and then divided by
+number of participants. Lower average ranks are “better.”
+
+2.5. Keyboard slopes
+
+For the keyboardslope testing in the ﬁrst experiment,
+the thirteen participants randomly evaluated a keyboard
+prototype with negative (−7◦); neutral (0◦) and posi-
+tive slope (7◦) settings. The prototype was built using
+a mechanically-functional, ﬁxed-split keyboard (Mi-
+crosoft Wireless Natural MultiMedia Keyboard v1.0,
+Redmond, WA) with rear lift-legs installed on the front
+underside of the keyboard to offer a new negative slope
+setting. Identical to the other testing, participants were
+asked to simulate typing at each keyboard for about
+three to ﬁve minutes and verbally express any thoughts
+and/or feelings they had about each slope condition
+when typing. At the end of the testing, the participants
+were then asked to rate the acceptability of each slope
+setting and then rank the ﬁrst, second, and third most
+preferred slopes. Keyboard slope was not evaluated in
+the second experiment.
+
+3. Results (Phase I)
+
+3.1. Lateral inclination angles and key layouts
+
+In the ﬁrst experiment, all lateral inclination angles
+tested were deemed acceptable (70% or more of the
+participants stating they would buy a keyboard with
+the lateral inclination they just tested). The 12◦lat-
+eral inclination was most preferred, followed by 10◦,
+and the 8◦lateral inclination was the least preferred.
+The 8◦lateral inclination is the current tenting angle
+on most commercially available, ﬁxed-split keyboards.
+Because the optimum, upper limit lateral inclination
+angle may not have been identiﬁed, in experiment #2
+
+Table 2
+Tallies (modes for each height in bold) and means of participants’
+rank order preferences and the acceptability proportions for the wrist-
+rest heights tested (n = 13)
+
+Wrist rest height
+Rank
+0 mm
+7 mm
+10 mm
+14 mm
+1st
+3
+4
+5
+1
+2nd
+1
+5
+4
+2
+3rd
+5
+2
+3
+3
+4th
+4
+1
+1
+7
+Average Rank∗
+2.8
+2.0
+2.0
+3.2
+% Acceptable
+62%
+92%
+77%
+38%
+
+∗Lower average ranks are “better.”
+
+in addition to the 8◦, 10◦, and 12◦lateral inclinations,
+additional lateral inclinations of 14◦, 16◦and 18◦were
+also tested. As shown in Table 1, participants again
+showed a preference for steeper lateral inclination an-
+gles with 14◦being the most preferred, followed by
+16◦as the second choice, and 12◦as the third choice.
+The lateral inclination angles of 8◦and 10◦were also
+acceptable, but 18◦was deemed unacceptable.
+Participants understood and appreciated the postural
+beneﬁts of a steeper lateral inclination angle.
+They
+said that the acceptable models felt good with their
+wrists in a comfortable or natural posture and that their
+hands felt more relaxed. The results indicated that it
+was acceptableto increase lateral inclination angles and
+build a new keyboard with a lateral inclination angle
+between 12◦and 16◦.
+Participants liked the new gull-wing design with the
+peripheral keys turned upwards and inwards.
+They
+preferred it to models with the peripherals keys only
+turned upward. With the new gull-wing key layout,
+participantsstated thatthey felttheperipheralkeyswere
+easier to reach and that the keys seemed right where
+they belonged, matching the contour of the ﬁngers of
+the hand.
+
+3.2. Wrist rest heights
+
+In the ﬁrst experiment, the wrist rest heights of 0 mm
+and 7 mm had acceptability ratings of 100%, while the
+14 mm height was rated marginally acceptable (69%),
+and the 21 mm and 28 mm wrist rest heights were just
+too tall (acceptability ratings of only 8%). Because the
+ﬁrst set of wrist rest height gradations were so large,
+to more precisely determine the preferred height, the
+second experiment evaluated wrist rest heights of0 mm,
+7 mm, 10 mm, and 14 mm.
+As shown in Table 2,
+participants rated the wrist rest heights of 7 mm and
+10 mm as most favorable, the 0 mm height acceptable,
+and the 14 mm height unacceptable. With the higher
+
+450
+
+wrist rests, the participants stated that the wrist rests
+put their wrists in a ﬂatter angle, their wrists felt more
+relaxed, and their ﬁngers were more comfortable on the
+keys. Participants indicated that the two tallest wrist
+rest heights physically interfered with the use of space
+bar.
+The results indicated that it was acceptable to
+increase wrist rest heights up to 10 mm.
+
+3.3. Keyboard slopes
+
+In experiment #1, participants were evenly split on
+preference for the three keyboard slopes: one-third
+each preferred the negative, ﬂat, and positive slopes.
+For those participants who liked the negative slope,
+they said their wrists might not get as tired during pro-
+longed periods of typing. As a result, it appeared that
+providing a keyboard which could be conﬁgured into
+any of the three slope settings would be desirable.
+
+4. Methods (Phase II)
+
+4.1. Keyboards
+
+A functional prototype was specially constructed
+with a 14◦lateral inclination angle, gull-wing key sur-
+faces, legs in front and back to offer 3 keyboard slopes
+(negative −7◦; ﬂat 0◦; positive +7◦), and had remov-
+able wrist rests so the keyboard could be conﬁgured to
+have wrist rest heights of 0 mm, 7 mm, and 10 mm. Be-
+sides testing and evaluating the new keyboard features,
+the prototypewas also compared to a benchmark, ﬁxed-
+split keyboard with 8◦lateral inclination and bench-
+mark keycap surfaces(MicrosoftWirelessNaturalMul-
+tiMedia Keyboard v1.0, Redmond, WA) and a conven-
+tional, straight keyboard (P/N 04N454; Dell Computer,
+Round Rock, TX). The brand logos were removed or
+hidden on each keyboard. Each participant evaluated
+every test condition.
+
+4.2. Participants
+
+A separate group of thirteen current ﬁxed-split er-
+gonomic keyboard users (8 males, 5 females) – differ-
+ent from the users in the prior usability experiments –
+participated in this study. The group had four “large”
+hands, six “medium” hands, and three “small” hands.
+As with the previous two experiments, participants
+were recruited through Microsoft’s Central Usability
+database and received a Microsoft software gratuity in
+exchange for their participation. The mean age of the
+
+participants was 37 years old (range 23 to 54 years) and
+all participants were touch typists with a self-reported
+typing speed of at least 40 words per minute. All proce-
+dures were approved by the University of Washington’s
+Human Subject Committee.
+
+4.3. Experimental set-up
+
+The workstation was set up according to the partic-
+ipant’s stature and comfort preferences. Participants
+adjusted the chair so their thighs were parallel to the
+seat pan, feet ﬂat and ﬁrmly supported by the ﬂoor,
+and chair back rest adjusted to ﬁrmly support the back.
+After the participants were comfortable with their chair
+settings, participants were instructed to comfortably
+rest their upper arms at their sides, form roughly a 90
+degree angle at the elbow, and the table height was ad-
+justed to be 2.5 centimeters below elbow height. This
+ensured that participants were comfortably seated with
+their shoulders relaxed and typed with their wrists in a
+relatively neutral ﬂexion/extension position. After the
+initial setting, participants were allowed to make slight
+adjustments for comfort.
+
+4.4. Wrist and forearm postures
+
+As shown in Fig. 4, a combined goniometer and
+inclinometer system was used to measure wrist and
+forearm posture respectively. Bi-axial electrogoniome-
+ters (SG-65; Biometrics, Gwent, UK) were used to
+measure wrist ﬂexion/extension and radial/ulnar devi-
+ation. A small, customized, light-weight (11 grams)
+inclinometer (FAS-G; Microstrain, Inc; Williston, VT)
+was attached to the distal end-block of the electrogo-
+niometer to measure forearm pronation. When rotated
+through 360◦of movement, the maximum error in an-
+gle measurement of the inclinometers was no greater
+than 2.3◦[7]. Participants were prepared for instru-
+mentation by cleaning the back of the hand, wrist and
+forearm with alcohol. After the alcohol dried, a line
+was drawn from the third metacarpal on the back of the
+hand down the centerline of the long axis of the fore-
+arm. Using double-sided tape, the combined goniome-
+ter and inclinometer systems were then placed on the
+lines, with the ﬂexible wire between the goniometer
+end-blocks centered over the wrist crease. The instru-
+mentation was then connected to a portable 8-channel
+logger (ME-6000-P8; Mega Electronics; Kupio Fin-
+land) and the subsequent data were collected and stored
+at 100 Hz in the compact ﬂash memory card of the
+logger.
+
+451
+
+Fig. 4. Side and top view of laboratory set-up showing participant
+instrumented with combined goniometer/ inclinometer systems while
+working with the new prototype keyboard.
+
+To calibrate the goniometers, participants pronat-
+ed their hands and forearms to 90◦(hands parallel
+to the work surface) and were asked to position their
+hands and wrists in a neutral ﬂexion/extension and ra-
+dial/ulnar deviation position three times. Neutral wrist
+and forearm (pronation) postures were deﬁned using
+the methods prescribed by the American Academy of
+Orthopedic Surgeons [4]. Neutral radial/ulnar devia-
+tion was the position where the third metacarpal was
+in line with the long axis of the forearm. Neutral ﬂex-
+ion/extension was the position where the plane formed
+by the back of the hand was in line with the dorsal
+surface of the forearm. Neutral hand/forearm prona-
+tion (0◦) was the position where the hand was upright
+(thumb pointing up) and in the handshake position, 90◦
+
+pronation was the position where the hand was ﬂat and
+parallel to the work surface. To calibrate the inclinome-
+ters, the participants were asked to move their hands
+from ﬂat and parallel to the work surface (90◦prona-
+tion) to the handshake position (0◦pronation) three
+times. The average of the three calibration positions
+determined the neutral postures for the wrists and fore-
+arms.
+
+4.5. Typing performance
+
+The testing of the various keyboard conﬁgurations
+was randomized. When the ﬁrst keyboard conﬁgura-
+
+tion was tested, participants were asked to place the
+keyboard in front of them in the position that felt most
+comfortable for typing. Then, the horizontal and ver-
+tical location of the keyboard spacebar was marked on
+the table and all subsequent keyboards were placed so
+the space bar was in the same location. As shown in
+Fig. 4, the prototype tested was a fully functional key-
+board. The prototype could accommodate wrists rests
+of different heights (0 mm, 7 mm, and 10 mm) and the
+legs could be adjusted to put the prototype in negative
+(−7◦), ﬂat (0◦) or positive slope settings (7◦).
+To measure typing performance, a program called
+Typing Tutor Deluxe was used (Version 6.0; COKeM
+International Ltd.; Plymouth, MN, USA). Using sim-
+ple English text from a novel, the typing program dis-
+played the text participants were supposed to type, and
+a second window immediately below, displayed the ac-
+tual text typed by the participants underlining mistyped
+words. Prior to the actual keyboard testing, partici-
+pants spent two minutes typing using a conventional,
+straight keyboard in order to become familiar with the
+display and operation of the typing program. Since
+adapting to a new keyboard can take anywhere from a
+few minutes to days depending on the design [13], a
+choice was made to not allow any practice with the var-
+ious keyboard designs and randomized keyboard order.
+Each keyboard conﬁguration was tested for a period of
+ﬁve minutes and over that ﬁve minute period the typing
+software automatically calculated the average typing
+speed in words per minute and typing accuracy, deﬁned
+as the percentage of words correctly typed. During
+the actual keyboard testing, participants were asked to
+balance typing speed and accuracy.
+
+4.6. Subjective keyboard preferences
+
+In addition, after using each keyboard conﬁguration,
+participants answered a series of 7-point Likert ques-
+tions (1 = Strongly Disagree and 7 = strongly agree)
+assessing desirability (see Table 4). Participants were
+asked to rank the keyboards from most preferred to least
+preferred and to give their reasons for their rankings.
+
+4.7. Data analysis
+
+The goniometer and inclinometer data were ana-
+lyzed using an interactive data analysis programwritten
+in Labview. Mean radial/ulnar, ﬂexion/extension and
+pronation/supination angles were calculated for each
+keyboard conﬁguration tested. The typing speed, typ-
+ing accuracy, and desirability data were also tabulated
+
+452
+
+Table 3
+Mean ± SE posture (n = 11) and performance measures (n = 13) for the various keyboard conﬁgurations tested. For the performance measures,
+typing speed was measured in words per minute (wpm) and accuracy was the percentage of words correctly typed. Lateral inclination angle was
+tested with 0 mm wrist rest and the zero slope setting. Wrist rest height was tested with the 14◦lateral inclination prototype keyboard and the
+zero slope setting. Slope was tested with the 14◦lateral inclination prototype keyboard and the 0 mm wrist rest height
+
+Posture
+Performance
+Variable
+Condition
+Extension
+Ulnar deviation
+Pronation
+Speed (wpm)
+Accuracy (%)
+Lateral
+Inclination Angle
+8 degrees (Benchmark Ergonomic
+Keyboard)
+30.6 ± 3.0
+4.0 ± 1.4
+56.9a ± 1.5
+46.5 ± 5.3
+92.0% ± 1.5
+
+14 degrees (Prototype)
+30.6 ± 2.8
+3.4 ± 1.2
+52.0b ± 1.4
+41.8 ± 4.3
+84.4% ± 3.4
+Wrist Rest Height
+(using prototype)
+0 mm (Benchmark)
+30.6a ± 2.8
+3.4a ± 1.2
+52.0a ± 1.4
+41.8 ± 4.3
+84.4%a ± 3.4
+
++7 mm
+26.1b ± 3.2
+4.5a ± 1.2
+49.4b ± 1.4
+44.6 ± 4.7
+88.4% ± 2.6
++10 mm
+19.8c ± 2.9
+7.1b ± 1.1
+48.1b ± 1.7
+43.3 ± 5.0
+90.0%b ± 2.2
+Slope (using
+prototype)
+Negative (−7◦)
+19.8a ± 2.9
+8.7a ± 1.6
+47.8a ± 1.5
+45.1 ± 5.1
+88.8% ± 2.4
+
+Flat (0◦)
+30.6b ± 2.8
+3.4b ± 1.2
+52.0b ± 1.4
+41.8 ± 4.3
+84.4% ± 3.4
+Positive (+7◦)
+34.8c ± 3.3
+2.4b ± 1.3
+51.4b ± 1.8
+44.4 ± 5.0
+87.2% ± 4.9
+Keyboard
+Conventional Keyboard (0◦Later-
+al Inclination, No Wrist Rest, 0◦
+
+Slope)
+
+32.1a ± 3.7
+10.9a ± 1.9
+65.2a ± 2.0
+47.6 ± 5.9
+85.6% ± 4.5
+
+Benchmark Ergonomic Keyboard
+(8◦Lateral Inclination, 0 mm Wrist
+Rest, 0◦Slope)
+
+30.6a ± 3.0
+4.0b ± 1.4
+56.9b ± 1.5
+46.5 ± 5.3
+92.0% ± 1.5
+
+Prototype (14◦Lateral inclination,
+Gull-Wing Key Layout, 7 mm Wrist
+Rest, 0◦Slope)
+
+26.1b ± 3.2
+4.5b ± 1.2
+49.4c ± 1.4
+44.5 ± 4.7
+88.4% ± 2.6
+
+∗For a given variable, values in the same column with the different superscripts are signiﬁcantly different (p < 0.05).
+
+for each keyboard conﬁguration. With the exception of
+the Likert scale data which were analyzed using Fried-
+man’s test, all data were analyzed using repeated mea-
+sures analysis of variance (RANOVA) methods with
+JMP statistical analysis software (Version 5.1; SAS
+Institute; Cary, SC). Signiﬁcance was accepted when
+probabilities were below 0.05.
+
+5. Results (Phase II)
+
+5.1. Lateral inclination angles
+
+As shown in Table 3, when compared to the 8◦lat-
+eral inclination, which is the current industry standard,
+the prototype keyboard with the 14◦lateral inclination
+reduced pronation by 5◦(p < 0.01) with no signiﬁcant
+effect on extension (p = 0.91) or ulnar deviation (p =
+0.54). Participants typed ﬁve words per minute slower
+with the 14◦lateral inclination keyboard (p = 0.10)
+and accuracy decreased by 8% (p = 0.18); yet, both
+of these differences did not reach signiﬁcance. There
+were no self-reported fatigue perception differences in
+the hands, wrists, forearms and shoulders between lat-
+eral inclination angles.
+
+5.2. Wrist rest heights
+
+Wrist rest height affected posture (Table 3) as both
+wrist extension (p < 0.01) and forearm pronation (p <
+0.01) decreased as the wrist rest height increased; how-
+ever, ulnar deviation increased (p < 0.01) with increas-
+ing wrist rest height. The performance data indicated
+that wrist rest height did not affect typing speed (p =
+0.20) but appeared to have an inﬂuence on typing ac-
+curacy (p = 0.07); typing accuracy increased as wrist
+rest height increased (Table 3). Finally, there were no
+signiﬁcant differences in the self-reported hand, wrist,
+forearm, or shoulder fatigue perceptions between the
+three wrist rest heights.
+
+5.3. Keyboard slopes
+
+As shown in Table 3, when comparing the three dif-
+ferent keyboard slopes, the negative slope setting re-
+duced wrist extension (p < 0.01) and forearm prona-
+tion (p < 0.01); however, these postural improvements
+were at the expense of increasing ulnar deviation (p <
+0.01). There was also a difference in typing speed be-
+tween the three different keyboard slopes (p = 0.05),
+but no signiﬁcant differences in typing accuracy (p =
+0.34). Typing speed and accuracy was highest with the
+negative slope.
+
+453
+
+5.4. Subjective keyboard preferences
+
+Table 4 shows the desirability ratings collected im-
+mediately after participants tested each keyboard type
+and conﬁguration. In general,the benchmark ergonom-
+ic keyboardhad the highest scores, followed by the pro-
+totype keyboard with the 14◦lateral inclination, 7 mm
+high wrist rest and neutral slope setting. The 10 mm
+wrist rests did not receive favorable ratings when cou-
+pled with the positive and negative slope settings and
+in general the positive slope setting was preferred over
+the negative slope setting. At the end of the testing,
+after subjects had used all keyboards, participants were
+asked to rank all keyboards side-by-side from most to
+least preferable. When asked to rank all the keyboards,
+10 out of 13 participants ranked the prototype as their
+ﬁrst choice.
+
+5.5. Keyboard comparisons
+
+As shown in the bottom of Table 3, when comparing
+conventional, straight keyboard; benchmark ergonom-
+ic keyboard; and the preferred embodiment for the pro-
+totype keyboard (14◦lateral inclination, 7 mm wrist
+rest, neutral slope), there were signiﬁcant differences
+in pronation (p < 0.01), extension (p < 0.01), and ul-
+nar deviation (p < 0.01). Relative to the benchmark
+ergonomic keyboard, the preferred embodiment of the
+concept keyboard reduced pronation by 7.5◦and wrist
+extension by 4.5◦; however, no signiﬁcant difference
+was observed with ulnar deviation. Finally, there were
+no signiﬁcant differences in typing speed (p = 0.34) or
+accuracy (p = 0.30) across the keyboards.
+
+6. Discussion
+
+The user-centered product design approach applied
+in this study presented a case-study of iterative-
+evaluative testing with representative users and a sys-
+tematic presentation of design variables. The two itera-
+tive usability-design studies used a series of 22 models
+to test the variables of interest. The ﬁrst study demon-
+strated that participants stated that the new “gull-wing”
+key design was favorable and that they preferred a
+greater lateral inclination of the two alphanumeric key-
+board halves. The second study indicated that partici-
+pants favored a 14 lateral inclination, the “gull-wing”
+key design, and a 7 or 10 mm taller wrist rest. Then, a
+third experiment with functional prototypes objectively
+measured arm-wrist postures, typing performance, and
+
+subjective preferences. The results of the third study
+conﬁrmed many of the subjective observations identi-
+ﬁed in the earlier iterative usability-design experiments,
+primarily that the 7mm high wrist rest and 14 ◦lateral
+inclination was preferred and improved postures while
+not signiﬁcantly altering typing performance. The re-
+sult of this research was the ﬁnal design, development,
+and production of a next generation ﬁxed-split key-
+board (Fig. 5). This keyboard was manufactured with
+a 14◦lateral inclination; gull-wing key layout; inte-
+grated, 7 mm padded wrist rest; and user-conﬁgurable
+negative, ﬂat, and positive slopes.
+
+6.1. Postures
+
+Objectively, the new geometries of the next gener-
+ation ﬁxed-split keyboard were designed to improved
+wrist and forearm postures relative to its predecessor
+(Fig. 1). With the steeper 14◦lateral inclination and
+built-in, taller wrist rest, these new keyboards should
+roughly reduce pronation by 7.5◦and wrist extension
+by 4.5◦relative to the prior design.
+No effect was
+observed on ulnar deviation except when the negative
+slope setting is used. The negative slope reduced exten-
+sion and pronation at the expense of slightly increasing
+ulnar deviation.
+
+6.2. Performance
+
+Given the changes in geometries, the design goal for
+the new ﬁxed-split keyboard was to maintain current
+typing speeds and error rates. Some learning with the
+prototype keyboards would be expected as the touch-
+typists adjusted to the slightly different positioning of
+the keys. Previous research demonstrates that learning
+to type on a new ergonomic keyboard from a straight
+keyboard can take anywhere from 30 minutes up to 2
+to 3 weeks [17]. Even though they were experienced
+ﬁxed-split keyboard users, the participants in the third
+experiment had to “learn on the ﬂy” and only typed
+on the each of the prototype design embodiments for a
+period of 5 minutes each. So, it is not unexpected to
+see slight decrements in typing performance with the
+prototype keyboard.
+
+6.3. Preferences
+
+Based on preferences,thewristrestheightcould have
+been increased up to 10 mm; however, the objective
+data showed that this 10 mm wrist rest height was not
+as functional in the positive and negative slope settings.
+
+454
+
+Table 4
+
+The mean ± SE Likert responses from the participants for the production and prototype keyboards tested, 1 = strongly disagree and 7 = strongly agree. (n = 13) The keyboard
+with a 0◦lateral inclination, 0 mm wrist rest and ﬂat slope conﬁguration was a conventional keyboard and the keyboard with a 8◦lateral inclination, 0 mm wrist rest and neutral
+slope was a Micorosoft Natural Keyboard
+
+Production keyboards
+Prototypes
+
+Lateral inclination angle
+0◦
+8◦
+14◦
+14◦
+14◦
+14◦
+14◦
+14◦
+14◦
+
+Wrist rest height
+0 mm
+0mm
+0 mm
+7 mm
+10 mm
+0 mm
+10 mm
+0 mm
+10 mm
+Slope
+Flat
+Flat
+Flat
+Flat
+Flat
+Negative
+Negative
+Positive
+Positive
+P-value
+
+This keyboard was easy to use.
+4.5 ± 0.5
+5.1 ± 0.5
+4.2 ± 0.4
+4.6 ± 0.4
+4.0 ± 0.6
+4.1 ± 0.4
+3.4 ± 0.5
+4.8 ± 0.3
+4.1 ± 0.4
+0.13
+
+This keyboard feels comfort-
+able for my hands and wrists
+while typing.
+
+3.0 ± 0.4a
+5.3 ± 0.4b
+4.5 ± 0.5a,b
+4.6 ± 0.4a,b
+4.2 ± 0.5a,b
+3.7 ± 0.4a,b
+3.0 ± 0.5a,b
+4.2 ± 0.5a,b
+3.9 ± 0.4a,b
+0.03
+
+This keyboard feels comfort-
+able for my arms and shoulders
+while typing.
+
+3.0 ± 0.5a
+5.2 ± 0.4b
+4.7 ± 0.4a,b
+4.5 ± 0.3a,b
+4.2 ± 0.4a,b
+4.0 ± 0.5a,b
+3.2 ± 0.5a,b
+4.4 ± 0.4a,b
+4.0 ± 0.5a,b
+0.05
+
+I like using this keyboard.
+3.1 ± 0.6a
+5.2 ± 0.5b
+3.9 ± 0.5a,b
+4.3 ± 0.5a,b
+3.6 ± 0.6a,b
+3.5 ± 0.5a,b
+2.7 ± 0.5a
+4.3 ± 0.5a,b
+3.6 ± 0.5a,b
+0.02
+
+I like the overall feel of this key-
+board when typing.
+3.0 ± 0.6a
+5.1 ± 0.4b
+3.9 ± 0.4a,b
+4.7 ± 0.5a,b
+3.5 ± 0.6a,b
+3.6 ± 0.5a,b
+3.2 ± 0.5a,b
+4.2 ± 0.5a,b
+3.7 ± 0.4a,b
+0.04
+
+This keyboard would be bene-
+ﬁcial to me.
+3.2 ± 0.6a
+5.1 ± 0.4b
+3.9 ± 0.5a,b
+4.7 ± 0.5a,b
+3.5 ± 0.6a,b
+3.5 ± 0.4a,b
+2.8 ± 0.5a,b
+4.3 ± 0.5a,b
+3.6 ± 0.5a,b
+0.03
+
+Average Score
+3.3
+5.2
+4.2
+4.6
+3.8
+3.7
+3.0
+4.4
+3.8
+
+∗Values in the same row with the different superscripts are signiﬁcantly different (p < 0.05).
+
+455
+
+Fig. 5. Top and side view of the ﬁnal design for next generation ergonomic keyboard. Final keyboard was manufactured with a lateral inclination
+of 14◦, a padded wrist rest which was 7mm higher than previous designs, a gull-wing key layout, and user conﬁgurable into three slopes: negative,
+neutral, and positive. The side view shows the keyboard with the front support installed to create the negative slope conﬁguration. This keyboard
+is produced, marketed and sold as the Microsoft Natural Ergonomic Keyboard 4000.
+
+As a result, the ﬁnal design choice incorporated a 7 mm
+higher wrist rest.
+When ascertaining keyboard preference based on
+ease of use, comfort, feel, and satisfaction just after
+use, the benchmark,ﬁxed-split keyboardwas preferred.
+However, when asked to rank order the keyboards at
+the end of the study after using all keyboards, 10 out of
+13 participants preferred the geometries of the proto-
+type keyboard over the existing geometry of the bench-
+mark, ﬁxed-split keyboard. Participants had a stronger
+preference and appreciation for the 12◦and 14◦lateral
+inclinations compared to the other lateral inclinations
+tested between 8◦to 18◦. Even small- and medium-
+hand size persons appreciated the steeper 14◦lateral
+inclination compared to the 12◦lateral inclination.
+Given that people tend to prefer what is familiar to
+them, it is not surprising that the representative partic-
+ipants of current ﬁxed-split ergonomic keyboards rat-
+ed the benchmark, ﬁxed-split keyboard more highly on
+subjective scales for ease of use, comfort, and satisfac-
+tion relative to the new prototype. While very effort
+was made to craft the functional prototype to sound
+and feel just like a production keyboard, it did not
+have the quality of typing experience that was present
+on the marketplace benchmarks. What is encouraging
+about the experimental results was – when forced to
+choose between keyboards – participants preferred the
+new prototype in spite of these issues with lack of fa-
+miliarity and lower quality relative to production-level
+benchmarks. Combining the results of the three ex-
+periments, compared to the baseline ﬁxed-split design,
+32 of 36 (88%) of participants preferred the new “gull-
+wing” design with unique presentation of key caps and
+a steeper lateral inclination angle.
+
+6.4. Limitations
+
+This study did ﬁnd signiﬁcant differences in postu-
+ral measures and keyboard preferences after short-term
+
+use in lab a setting. In addition, typing performance
+with the prototypes was slightly below the performance
+measures with the commercially manufactured bench-
+mark. It is uncertain whether these differences would
+be present after longer-term use or change over time
+as participants get used to new, unfamiliar keyboards.
+In the future, longer-term studies would be beneﬁcial
+to measure beyond these potentially short-term effects
+and better document the longer term postural and per-
+formance changes, if any. In addition, this study used
+a posture driven approach and there are other objec-
+tive measures of biomechanics including measuring the
+forces applied to the keyboard while typing and mea-
+suring muscle activity with electromyography. There
+is a tradeoff between instrumenting the subject to col-
+lect objective exposure data and the limitations put on
+the subject due to all the wires and instrumentation.
+Posture was measured because it was a direct, well-
+documented, quick to analyze, and easy to interpret ob-
+jective measure. Additionally, it is not certain whether
+these relatively short-term postural improvementsmea-
+sured with our prototypes would, over the long-term,
+reduce a computer operator’s chances of developing a
+computer-related upper extremity disorder. However,
+ﬁxed-split keyboards have been shown to reduce mus-
+cle strain [16], improve the health of those persons with
+hand pain [17], and reduce the incidence of new mus-
+culoskeletal disorders among an asymptomatic popu-
+lation after extended use [12]. One ﬁnal concern may
+be the relatively small number of participants included
+in our study. Prior human factors and usability stud-
+ies have shown that, if there are differences in where
+the product differences are large, these differences can
+be readily identiﬁed with small sample sizes [19,20].
+This was the case in the present study: the differences
+between many of conditions evaluated were large and
+readily detected with our sample size and statistical
+methods. However, studies on larger samples of partic-
+
+456
+
+ipants may be merited to ensure the representativeness
+of this study’s results.
+
+7. Conclusions
+
+The user-centered, iterative-evaluative product de-
+sign research created innovation for an existing product
+where there had been a decade of little-to-no change
+in design. Basic research inspired the creation of new
+models representing new ways of thinking about how
+to improve the ﬁxed-split keyboard design. The steeper
+lateral inclination angle of 14◦further reduced wrist
+pronation. The gull-wing key layout was designed to
+better match ﬁnger strike angles and to reduce reach
+distances to the peripheral keys. The taller wrist rest
+and a negative keyboard slope further reduced wrist ex-
+tension. Performance, comfort, and desirability were
+the metrics for success in this study. This study demon-
+strates how the systematic evaluation of non-functional
+and fully-functional prototypes, for a relatively brief
+periods, with a relatively small number of participants,
+can be used to identify preferred design embodiments.

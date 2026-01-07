@@ -1,0 +1,1080 @@
+Kongjit et al. 
+BMC Medical Informatics and Decision Making          (2022) 22:202  
+https://doi.org/10.1186/s12911-022-01944-0
+
+RESEARCH
+
+Mobile health application for Thai women: 
+investigation and model
+
+Chalermpon Kongjit1*, Acrapol Nimmolrat1 and Achara Khamaksorn2 
+
+Methods
+Experimental sample
+The participants in this study were divided into two 
+groups: general target users and IT experts. Random 
+sampling was used to recruit 30 Thai females aged 
+between 18 and 43. Purposive sampling was used to 
+recruit thirteen IT experts with more than 2  years of 
+experience in Chiang Mai Province.
+Please note that it is assumed that the age ranges cho-
+sen in this study represent women of various generations, 
+including young adults (18–22), adults (23–27), working-
+age adults (28–32 and 33–37) and older (38 and up).
+Note that this research focuses only on problems 
+related to usability and development, not medical bene-
+fits. However, a health response team of qualified doctors 
+carried out the research.
+The study participants were purposely separated 
+into five age ranges, as shown in Table 3. The respond-
+ents’ IT literacy skills were self-determined. Their ability 
+depended on the duration they had been using smart-
+phones. Due to the limited number of participants, not 
+all had a medical need for m-health technology. The find-
+ings indicated limitations in the mobile development 
+experience of some of the IT experts in this study.
+
+Experimental framework
+A series of design processes and methodologies were 
+used to produce an m-health application that could sup-
+port women’s health, thereby achieving the research 
+objective. A UCD was implemented to identify prob-
+lems and design appropriate functions, content, and a 
+graphical user interface. The conceptual framework of 
+the research is depicted in Fig. 1. The framework consists 
+of four phases, namely: the specification of the context 
+of use, specification of the requirements, production of 
+design solutions to meet those requirements, and a pro-
+totype evaluation.
+
+Context of use specification
+In this phase, the research focuses on a deep understand-
+ing of the user needs and the problems related to the 
+usability of existing m-health applications. Keywords 
+were used to classify the existing applications in the Thai 
+language, such as: “women’s period, women’s self-assess-
+ment, women and mothers, women’s medicine, women’s 
+personal medical record, women’s weight control, wom-
+en’s organs, etc.”
+Of the 156 apps associated with women’s health sup-
+porting the Thai language, only 50 were used in this 
+study. They were selected after considering the following:
+
+•	 Aim of development (related to women’s health).
+•	 Review scores (more than 4-star rating).
+•	 Application type (the main features of apps associ-
+ated with women).
+•	 Cost (free or not more than 5 USD).
+•	 Connection type (online request or standalone).
+
+Table 3  Demographics of samples (n = 30)
+
+Points
+Characteristic
+Percentage 
+(n)
+
+Age ranges
+18–22
+26
+8
+
+23–27
+20
+6
+
+28–32
+16
+5
+
+33–37
+23
+7
+
+38 up
+13
+4
+
+IT literacy skill
+Beginner smartphone user
+(experience of using a smart-
+phone < 1 year)
+
+20
+6
+
+Intermediate smartphone user
+(experience of using a smart-
+phone > 1 year)
+
+66
+20
+
+High level smartphone user
+(experience of using a smart-
+phone > 2 years)
+
+13
+4
+
+In the questionnaire survey stage, prospective partici-
+pants were sent an invitation letter (via email). A consent 
+form was also attached to ensure participant permis-
+sion for their data to be used in this online research. 
+After character analysis, 30 general users were given 
+10–20 min to test each of the 50 apps over a period of 
+30 days. Note that devices were not supplied, and con-
+nection costs were not supported in this research. Users 
+had to install the apps on their own mobile devices.
+A single focus-group was arranged with the general 
+users, and content analysis was used to count the fre-
+quency of respondents’ feedback. These users were then 
+randomly separated by name into three groups (10 users 
+per group). Thirty-minute interviews were conducted via 
+Zoom to collect and categorise different problem-related 
+
+data from each group. General questions for the focus 
+group interviews were:
+
+(1)	 What were your reasons for selecting this applica-
+tion?
+(2)	 What points did you consider?
+(3)	 What problems did you find when you trialled the 
+application?
+(4)	 What points would encourage you to use a particu-
+lar application?
+(5)	 What was your experience with the apps’ interface, 
+function and usability?
+
+This study was conducted solely online. Video record-
+ing was not permitted in this research due to ethical 
+reasons. However, four staff took notes of respondents’ 
+
+Fig. 1  Conceptual framework and research methodology
+
+answers during the focus group. Note that a health 
+response team consisting of four qualified doctors con-
+ducted the entire process.
+The next step involved analysing the collected data 
+related to the app’s graphical design and functionality, 
+focusing on two points. The first was the specific prob-
+lems users encountered when interacting with the apps, 
+and the second was the reason for their positive impres-
+sion of some of them. The feedback was then analysed 
+and classified to build a taxonomy of the problems and 
+the main reasons for their app choice.
+
+Specification requirements
+In this phase, thirteen IT experts were recruited to share 
+their ideas and provide additional feedback to highlight 
+further problems. They were asked to consider the char-
+acteristics of the apps corresponding to those in the 
+previous phase. The characterisation points were sum-
+marised in a questionnaire. Each question was designed 
+to determine the core characteristics of a good m-health 
+application and prioritise the reasons for that determi-
+nation. A numerical scale from one to five was used to 
+quantify qualitative feedback on the design to indicate 
+the IT experts’ perception of the app’s development 
+(Table 7).
+
+Requirement design solutions
+A prototype application was constructed from the find-
+ings in the earlier phases of the study and was piloted on 
+Android’s operating system (OS) platform. The prototype 
+contained a list of the contents, features and functions of 
+the graphic user interface and its universal design based 
+on a summary of the experts’ suggestions and the existing 
+taxonomy of the users’ requests. It was developed using 
+the MockingBot program.
+
+Prototype evaluation
+Individual users were sent the link via ‘Line’ (a popular 
+social app in Thailand) to access the first version of the 
+prototype app for installation and evaluation on their 
+devices. They were asked to test it for 30 min and then 
+provide feedback in a questionnaire. Heuristic principles 
+[37, 42] were adapted and applied to test the app’s usabil-
+ity. The evaluation criteria contained in the questionnaire 
+were a modified version of the core usability test criteria 
+of [53] and are shown in Table 8.
+In the first round of testing, the scores from the ques-
+tionnaire were analysed to summarise users’ feedback 
+and a t-test statistical analysis was applied to compare 
+the average scores. The prototype was then refined based 
+on the specific points raised in these findings. This pro-
+cess was repeated for the revised prototype, and again 
+the data derived was analysed. Meanwhile, the IT experts 
+
+were interviewed to re-check the application’s perfor-
+mance after the modifications (Table 7).
+
+Results
+Results context of use specification results
+The first phase aimed to clearly understand the problems 
+women encountered when using m-health applications 
+and their goal of using them. As mentioned earlier, the 
+initial search yielded 156 applications, 50 of which were 
+selected for a review by general users. The main features 
+of the chosen applications are shown in Table  4. There 
+were 11 categories, which included women’s anatomy, 
+women’s content, comfort, disease and medicine. Appli-
+cations with these specific characteristics were chosen 
+to acquire an insight into the graphical user interface of 
+existing healthcare apps.
+The frequent use of colour in the apps’ interface was 
+also analysed, and the results are shown in Table  5. 
+Note that colour use is one of the points of considera-
+tion for comfort. Colours can be customised to suit the 
+user’s comfort level and directly relate to the user inter-
+face. The five* colours most frequently used were white, 
+black, pink, blue and green. Therefore, these colours were 
+incorporated into the prototype’s UI design.
+Most of the issues cited in the general users’ reviews 
+are shown in Table 6, which contains the group feedback, 
+frequency of answers, number of apps and types of prob-
+lems. The results of the focus group interviews are classi-
+fied by the most frequent answers (qualitative data). The 
+issues were divided into three types: usability, user inter-
+face and functionality. For instance, in 35 of 50 apps, the 
+users initially did not know how to start using the app (24 
+of 30 found this). Indeed, more user interface issues (6) 
+were found than usability (3) and functionality (3) issues, 
+
+Table 4  Main features of apps associated with women in the 
+Google Play store (n = 50)
+
+Type of application
+Percentage (n)
+
+1. Female anatomy
+18
+9
+
+2. Women’s content
+14
+7
+
+3. Consolation
+12
+6
+
+4. Disease and medicine
+14
+7
+
+5. Blood pressure
+12
+6
+
+6. Mother
+6
+3
+
+7. Eyesight and vision
+6
+3
+
+8. Herbs Medication
+6
+3
+
+9. Mood assessment
+4
+2
+
+10.Teeth
+4
+2
+
+11.Weight control
+2
+1
+
+12. Hearing
+2
+1
+
+which indicated that existing healthcare applications 
+tend to lack an acceptable user interface.
+A process taxonomy of each type of problem was con-
+structed based on the above feedback. According to 
+Fig. 2, three aspects of these apps were found to be spe-
+cifically problematic: usability, UI and functionality. The 
+causes of these problems were identified for later correc-
+tion in the new app. Examples of user interface-related 
+issues were “Some user interfaces are not suitable for 
+users”, “The user interface design is not compatible with 
+all users”, “I don’t know how to use the application”, “The 
+app’s functions are difficult”, “I don’t know the meaning 
+of the signs or buttons”, “When I clicked, the application 
+didn’t show any results”, and “It was hard to understand 
+some of the functions.”
+To fulfil the research objective, it is necessary to under-
+stand why users had a positive impression of some apps 
+and not of others. The reasons for this are shown in Fig. 3 
+
+and ranked one to four based on high-to-low frequency. 
+It can be seen that the main reasons users had a positive 
+impression of some apps were that they were easy to use, 
+practical, familiar and easy to read. The taxonomy results 
+were used to identify design points for the prototype app 
+in this study.
+
+Specification of requirements
+The results of the first round of statements designed 
+to collect data from the 13 experts are summarised in 
+Table 7. Points that they considered most significant for 
+developing a health app for women were prioritised.
+These qualitative comments helped define the char-
+acteristics of the application and were converted into 
+quantitative results using a zero to five rating scale. The 
+statements were based on the classification of m-health 
+apps’ evaluation criteria, focusing on usability, function-
+ality and design (graphical user interface) [54, 55].
+The average scores in response to statements 1, 3, 4 and 
+6 were high (> 4.5) and reasonably homogenous (10 of the 
+13 experts gave a score of 5). Therefore, from the experts’ 
+perspective, the key points of statements 3, 4, 1 and 6 
+should be prioritised when considering the characteris-
+tics of a women’s ideal health app. This enabled some cor-
+rections to be made to the design of the prototype app.
+The methodology used to design the women’s health 
+application in this study is shown in Table 7. The taxon-
+omy of the graphical user interface design shown in Fig. 4 
+was based on Nielsen’s [25] ten general principles and 
+Shneiderman et  al.’s [56] eight golden rules. It includes 
+(1) the eight golden rules of interface design, (2) evalua-
+tion of user categories, (3) prioritisation of tasks, and (4) 
+choice of interaction pattern.
+
+Table 5  Frequency of colour used in women’s apps in the 
+Google Play store (n = 50)
+
+Most frequently-used colour
+Percentage (n)
+
+1. White
+23
+35
+
+2. Black
+16
+24
+
+3. Pink
+16
+25
+
+4. Blue
+12
+18
+
+5. Green
+8
+13
+
+6. Red
+6
+10
+
+7. Light blue
+5
+8
+
+8. Grey
+2
+4
+
+9. Purple
+3
+5
+
+10. Brown
+2
+3
+
+11. etc.
+3
+5
+
+Table 6  Most frequent answers from focus group questioning (lower end cut off at 10)
+
+*Consideration priority level
+
+Most frequent group answers
+Frequency of answers 
+(n = 30)
+Number of applications found 
+(average)
+Type of problem
+
+User did not know how to start using the app
+24*1
+35*1
+Usability
+
+Difficult to understand some icons or menus
+20*2
+30*2
+User interface
+
+Words or explanations were hard to understand
+18*3
+25
+User interface
+
+Difficult to read text due to small size
+16
+26
+User interface
+
+Too many unused functions
+15
+27*3
+Functionality
+
+Too difficult to understand for use
+14
+22
+Functionality
+
+Many fields had to be input into the application
+14
+26
+User interface
+
+Could not find the ‘return to menu’ button
+13
+18
+User interface
+
+Background colours did not suit the app contents
+12
+27*3
+User interface
+
+The application was inappropriate for use
+12
+13
+Usability
+
+App did not fit my size mobile device (impractical)
+11
+13
+Usability
+
+Some functions were unnecessary
+10
+17
+Functionality
+
+Page 9 of 20
+	
+
+The taxonomy of the universal design of the graphical 
+user interface illustrated in Fig. 5 was based on the users’ 
+problems and the IT experts’ suggestions. It consists of 
+(1) design for women and (2) the components of a uni-
+versal design.
+
+This design uses universal design principles for women 
+to increase its usability. Since female users are different 
+from men, using appropriate colours, textures, interac-
+tion, and refinement reinforce their emotional satisfaction. 
+Hence, the findings in this phase were used to develop the 
+
+Fig. 2  Process taxonomy summary of problems with existing women’s m-health apps
+
+Fig. 3  Taxonomy: reasons for selecting applications
+
+Page 10 of 20
+
+app prototype with women’s anatomy or women’s content 
+in mind. The frequency of colour use, application prob-
+lems, design taxonomy, end-users’ and IT experts’ sugges-
+tions were considered in the next phase.
+
+Production of required design solutions
+Since the results of the previous phase enabled the devel-
+oper to understand the required characteristics of the 
+UI, a prototype application with female-related content 
+
+was developed and written for the Android OS platform 
+using the MockingBot program. The design of this pro-
+totype (as shown in Table 8) contained the following five 
+essential functions: a period calendar, self-assessment, 
+personal notes, counselling, and notification reminders.
+Screenshots of each function are shown in Fig.  6, 
+together with the main menu and user information. The 
+five colours most used in the existing apps chosen by Thai 
+
+Fig. 4  Taxonomy of graphical user interface design for women
+
+Table 7  Summary of IT experts’ comments in round 1
+
+*Level of priority
+
+Statements
+Experts’ scores
+AVG
+SD
+
+5
+4
+3 2 1
+
+1. Women’s health applications should be easy to use and customise
+10
+2 –
+1
+–
+4.615*3 0.869
+
+2. Women’s health applications should be designed by understanding users based on their experience
+3 10 –
+–
+–
+4
+0.438
+
+3. Women’s health applications should contain consistent functions
+10
+3 –
+–
+–
+4.769*1 0.438
+
+4. Women’s health applications should contain necessary functions with practical use
+10
+2 1
+–
+–
+4.692*2 0.630
+
+5. Women’s health applications should contain an image as a universal symbol, readable text size, and icons or 
+menus that make them easier to understand
+9
+1 2
+1
+–
+4.384
+1.043
+
+6. Women’s health applications should contain appropriate colours and elements and clearly visible content spaces 11 1
+1
+–
+–
+4.769*1 0.599
+
+Page 11 of 20
+	
+
+women were used for this prototype to attract Thai female 
+users and enhance their acceptance of the new app.
+In fact, Thai users’ choice of colours was found to be 
+different from those preferred by foreigners [57]. Based 
+on the frequency of colours in the apps associated with 
+women in the Google Play store (as shown in Table 5), 
+Thai users favoured lighter tones and a mixture of con-
+trasting colours. Therefore, this information was used 
+to establish a strategic colour design throughout the 
+new application.
+
+Prototype evaluation
+The first prototype was evaluated through a question-
+naire completed by end-users and IT experts. After the 
+
+prototype was released and pilot-tested, responses were 
+categorised into three dimensions: users’ requirements, 
+application functionality and graphical user interface. 
+The criteria for the evaluation, which were modified 
+from those of [51], are shown in Table  9. The users’ 
+feedback results, separated by age and IT literacy skills, 
+are shown in Fig. 7A, B. The average scores and stand-
+ard deviation of each question in both groups are pre-
+sented in Fig. 8. The difference between the groups was 
+determined by the P value when P < 0.05.
+As shown in Fig.  7A, older users gave lower scores 
+than younger ones. The lowest score was given to Q5 
+regarding the interface elements. Users commented they 
+found it hard to use the functions due to the menu size, 
+
+Fig. 5  Taxonomy of universal design principles
+
+Table 8  Analysis of the feminine functions of the prototype app
+
+Function
+Aim
+
+Period calendar
+This function is used to calculate upcoming period dates and fertile windows
+
+Self-assessment
+This function is used to record body temperature, weight and height. The data is visualised by plotting it on a graph 
+combined with the period calendar
+
+Personal note
+This function is used to record features such as period symptoms, daily notes and other information not included in the 
+self-assessment function
+
+Counselling
+This function provides a counselling feature that involves chatting with doctors
+
+Reminders and notifications This function provides reminders and push-notifications for the next period, fertile window and stage of pregnancy. Users 
+can enable and disable notifications for each event
+
+Page 12 of 20
+
+unclear icons, inappropriate colours and font size. On 
+the other hand, users with a high level of IT skills gave 
+the app higher scores than beginners (Fig. 7B). The lat-
+ter were found to be older users. Hence, users’ IT back-
+ground appears to be a significant factor in assessing the 
+app’s performance, especially for those unfamiliar with 
+m-health applications. The results of each criterion were 
+assessed and compared between the expert and end-user 
+groups, as shown in Fig. 8.
+
+The following observations were made from the first 
+round of the evaluation;
+
+(1)	 Q1 and Q2 were given a high score by both end-
+users and experts, with sample comments like “I am 
+very new to m-health apps, but this one is easy to 
+navigate”, “It is easy to enter text or numbers”, and 
+“The screen is appealing to women”. These results 
+indicated that the prototype application was per-
+
+Fig. 6  Graphical user interface and usability design for developing the prototype app
+
+Page 13 of 20
+	
+
+ceived to be a design that meets users’ requirements 
+in terms of practical use and simplicity. There was 
+no difference between the two groups, with P > 0.05.
+
+(2)	 Q3 was given a high score by both end-users and 
+experts, with sample comments like “The results of 
+the period calculator are accurate”, “I appreciate the 
+self-assessment result of tracking periods”, and “The 
+reminder of an upcoming period is very useful and 
+accurate”. These results indicated that the prototype 
+application is accurate and reliable. There was no 
+difference between the two groups, with P > 0.05.
+(3)	 Q6 was given a high score by both end-users and 
+experts, with sample comments like “The app’s con-
+tent on the screen fits my phone” and “The applica-
+tion has a simple and friendly writing style, making 
+it easily readable”. These results indicated that the 
+prototype app’s screen size was appropriate and 
+clearly visible. There was no difference between the 
+two groups, with P > 0.05.
+(4)	 Q1, Q2, Q3, and Q6 were given higher scores than 
+Q4 and Q5. Points with an average score of nearly 
+4.0 needed to be improved. These were related to 
+incompatibility between the functions and interface 
+elements, such as the size of menus, size and posi-
+tioning of icons, colours and font sizes.
+
+Table 9  Evaluation criteria
+
+Questions
+Evaluation criteria
+
+App user’s requirements (usability)
+
+Q1
+1. Practical and understandable 
+when used
+
+Q2
+2. Simple design
+
+Use of app’s functionality
+
+Q3
+3. Provides accurate and reliable 
+results
+
+Q4
+4. Compatibility between core 
+features and user interface
+
+Graphical user interface
+
+Q5
+5. Consistent pattern of menus, 
+icons, colours and fonts
+
+Q6
+6. Appropriate screen size and 
+clearly visible
+
+Fig. 7  Average scores of each question with end-users separated by age range (A) or IT literacy skills (B)
+
+Page 14 of 20
+
+(5)	 Both end-users and experts gave Q4 a low score. 
+The experts perceived that the core features were 
+inappropriate for functionality, noting that “The 
+function is not practical for the calculation of users’ 
+information” and “The function has no clear pur-
+pose, which confuses users”. It was noted that the 
+average score of all users was P = 0.057 the first 
+time and P = 0.061 the second time.
+(6)	 Both end-users and experts gave Q5 a low score. 
+The experts perceived that the menus’ size and 
+positioning of icons, colours, and font sizes were 
+inconsistent. They commented that the standard 
+button size was too small and suggested increasing 
+it and removing the menu explanation. It was noted 
+that the average score of all users was P = 0.048 the 
+first time and P = 0.055 the second time.
+(7)	 The results of the statistical analysis demonstrated 
+that the only significant difference between the end-
+users and IT experts was related to Q5 (P = 0.048). 
+The end-users liked this pattern more than the 
+experts did. This indicated that the latter perceived 
+that the menus, icons, colours and font size on the 
+graphical user interface of the prototype needed to 
+be improved to enhance users’ experience.
+
+The core features of the UI of the prototype app were 
+improved based on these findings by altering the menu, 
+font and icon sizes, repositioning the icons and chang-
+ing colours to achieve greater usage efficiency and user 
+acceptance. The revised version also had the menu 
+explanation removed to reduce the screen size. Some 
+of the instant comments were “the menus are too small; 
+increase the size but consider the proportion of the 
+screen”, “The menu explanation reduces the space on the 
+screen. Replace it with signs or symbols”, “increase the 
+
+task screen”, “increase the font size”, and “Change signs 
+and symbols to make them easier to understand”.
+The universal symbol for communication was also 
+changed to increase users’ perception, and the majority 
+of the text displayed was fixed by increasing font size. In 
+addition, inadequate command elements, such as interac-
+tive buttons, labels and text in textboxes, were corrected 
+to enhance users’ experience. The screenshot results are 
+shown in Fig. 9.
+In the second round of evaluation, the lower scores and 
+comparison of the average scores were used to consider 
+which points needed correction in the second prototype.
+The average score of Q4 and Q5 was observed to have 
+increased to P = 0.061 and P = 0.055, respectively, in 
+the second round. This indicated that these improve-
+ments had met the criteria of the corrected points, and 
+the trend of the users’ feedback scores was similar. Inter-
+estingly, the average Q1, Q2, Q3, and Q6 scores also 
+increased, indicating that improving the app’s function-
+ality had also increased users’ satisfaction. There was no 
+difference between the two groups, with a P value of 0.05.
+The functionality and graphical user interface were the 
+factors that had most affected users’ satisfaction. Some of 
+the sample comments were, “I prefer the new main but-
+tons more than the previous version because they are 
+more visible and they look nice”, “The counselling chan-
+nel and graphical elements are more helpful with the 
+addition of the list of doctors and their profiles”, “The 
+chat box can be better operated with fingers”, and “I can 
+edit my information better”. These comments indicated 
+that the revised version had increased the efficiency of 
+the app’s usage and users’ satisfaction.
+Furthermore, since the comparison did not indicate a 
+significant difference between end-users and IT experts, 
+the new version appeared to meet the needs of both 
+groups.
+
+Fig. 8  Average scores based on t-test statistical analysis
+
+Page 15 of 20
+	
+
+Fig. 9  Before and after corrections
+
+Page 16 of 20
+
+The evaluation was based on Lewis’s evaluation crite-
+ria with a focus on users’ requirements, the application’s 
+functionality and the graphical user interface.
+The results of the second round evaluation by the 
+13 IT experts were assessed in an interview based on a 
+modified version of the questions in Table 7 to determine 
+whether or not the application met their expectations. As 
+can be seen from Table 10, the majority of their primary 
+concerns had been addressed.
+
+Discussion
+Although many m-health applications have been devel-
+oped for commercial purposes, few were developed 
+based on evidential research or research studies. Most of 
+the existing apps were found to have unnecessary func-
+tions and inappropriate graphical user interfaces that 
+annoy users and reduce their usability [26, 27, 58, 59].
+An iterative process of continuous testing and refining 
+has been found to solve many problems in the healthcare 
+realm. Yet, many of these m-health applications have not 
+undergone repeated testing to ensure they meet their 
+objective. This includes m-health apps that, despite being 
+purported to be for women, are ignorant of individual 
+users’ needs and lack user customisation and functional 
+tasks and content.
+According to empirical literature [26, 27], user inter-
+face, functions, and usability are the main factors that still 
+challenge designers and developers of m-health appli-
+cations. Although they are commonly used worldwide, 
+most high-performance health apps are based on the 
+English language, making them useless for non-English 
+speakers or those with a low level of IT literacy. Hence, 
+
+there is a need to research and develop local m-health 
+apps for women in their own language.
+Therefore, to fit the context of Thai healthcare, a modi-
+fied design framework was produced in this research for 
+developing an app to solve problems related to the user 
+interface, functionality and usability. The design frame-
+work of the app was based on a UCD process [29], an 
+appropriate development methodology previously used 
+to develop several m-health applications [32, 60].
+An iterative process with a user-centred design was uti-
+lised in this study to tackle the critical challenges before 
+presenting a final prototype app to users for testing. In 
+addition, the results of interviewing IT experts indicated 
+that the most significant features of the app were usabil-
+ity, functionality and UI design [55]. Functionality was 
+evidently more important than other aspects from an IT 
+perspective. Therefore, close attention was paid to func-
+tionality design, usability and UI (in that order of prior-
+ity) when developing the new app [27, 56].
+However, it was found from the results of the focus 
+group interview that usability was the main issue for end-
+users, rather than the UI and functionality. According to 
+user feedback in similar investigations, the most signifi-
+cant problematic features of currently women’s m-health 
+apps are the frequency of colour use, interface elements 
+and functionality [57, 59]. Asian users enjoy an abun-
+dantly colourful user interface with cartoonish animation 
+elements, while Europeans prefer information to be pre-
+sented in an organised clinical way [30, 31].
+The women’s m-health application prototype was 
+designed and analysed based on taxonomies of UI design 
+and universal design principles. An analysis of the app’s 
+essential functions was made from the perspective of 
+
+Table 10  Summary of results of experts’ evaluation in the second round
+
+*Primary concern rating
+
+Questions
+Expert scores rating
+AVG
+SD
+
+5
+4
+3
+2
+1
+
+1. This women’s health application provides high usability, being easy to use and customise.
+Do IT experts agree with this point?
+11
+2
+0
+–
+–
+4.846*1
+0.376
+
+2. This women’s health application is clearly understandable based on users’ experience.
+Do IT experts agree with this point?
+10
+3
+0
+–
+–
+4.769*2
+0.439
+
+3. This women’s health application contains consistent functions.
+Do IT experts agree with this point?
+7
+6
+0
+–
+–
+4.538*3
+0.519
+
+4. This women’s health application provides the necessary functions and is practical to use.
+Do IT experts agree with this point?
+4
+9
+0
+–
+–
+4.308
+0.480
+
+5. The universal symbol image, size of text, and icons or menus make it easier to understand 
+this women’s health application.
+Do IT experts agree with this point?
+
+7
+4
+2
+–
+–
+4.385
+0.768
+
+6. This women’s health application uses appropriate colours and elements, and content spaces 
+are clearly visible.
+Do IT experts agree with this point?
+
+10
+3
+0
+–
+–
+4.769*2
+0.439
+
+Page 17 of 20
+	
+
+both end-users and IT experts by comparing the average 
+score of a t-test statistical analysis of the two groups. In 
+the first round of the evaluation related to usability, there 
+was no difference between the two groups’ average func-
+tionality scores, with a P value of 0.05. In contrast, the 
+two groups’ average scores for UI design were different in 
+terms of the consistent pattern of menus, icons, colours 
+and fonts, with a P value of 0.048. Therefore, the perspec-
+tives of the two groups were inconsistent.
+Several researchers [61–64] mention that UCD frame-
+works have been developed to create m-health apps 
+because the involvement of end-users in the develop-
+ment process is beneficial for a clear understanding of 
+their needs. Hence, a revised prototype app was pro-
+duced with improvements based on feedback from the 
+first round of testing.
+Feedback from the second testing round indicated that 
+end-users and IT experts were satisfied with the correc-
+tions in the revised version. The inconsistent perspectives 
+of the two groups had been rectified, and their average 
+score was similar, with a P value of 0.05. Therefore, the 
+two groups’ evaluation of the prototype was the same, 
+indicating the research hypothesis was accepted.
+Since the graphical user interface and usability were 
+found to have a more negative effect on most users than 
+the app’s functionality, this process facilitated the crea-
+tion of an effective m-health application that responds to 
+women’s needs.
+The last result of the IT experts’ evaluation in the sec-
+ond round of testing indicated that the most significant 
+factor had changed due to reacting to the end-users’ 
+problems and lack of design [22, 23]. The IT experts 
+agreed that usability must be prioritised when developing 
+the app, and the user interface and functionality design 
+should be the second and third priorities, respectively 
+[20, 21, 23, 24].
+Therefore, by focussing on the application’s functional 
+performance rather than other points, the IT experts 
+miscalculated the design priority in this study due to 
+their different perspective. As a result, the app’s functions 
+might not have performed well for end-users, especially 
+Thai women with low levels of IT literacy. As mentioned 
+earlier, the use of the system is directly related to end-
+users’ IT skills. An application is unlikely to be popular 
+with older groups if it is highly functional but ignores the 
+significance of clear usability. Hence, Usability Design is 
+the first factor that needs to be considered, together with 
+the user interface and functionality, when designing an 
+application for older women.
+Lastly, many researchers [57, 65, 66] who have stud-
+ied the influence of colour over the years have found 
+that men and women prefer significantly different 
+
+colours. Therefore, it is necessary to use a strategic col-
+our design when developing an m-health application for 
+Thai women. The women surveyed in this study favoured 
+colours such as pink, which is strongly associated with 
+youthful femininity and white, which is related to purity 
+and innocence [67, 68]. However, there was an interesting 
+difference between the choice of colours of Thai users and 
+foreigners. Based on the frequency of colour use, lighter 
+tones and a mixture of colours between dark and light 
+tones are generally favoured by women [69]. Curiously, 
+black is preferred to pink, blue, and green in applications 
+for Thai women, despite not being a universally-loved 
+colour by most females. This indicates that app colour 
+customisation can be used to put users at ease.
+It was also found that some designs are unsuitable for 
+Thai users. For instance, while most users could easily 
+identify the exit labels in the first version of the proto-
+type, Thai users did not understand the icons. Therefore, 
+functionality is not likely to encourage Thai users to use 
+an app they consider difficult to use.
+
+Conclusion
+An examination of the m-health apps for women cur-
+rently available for Thai women confirmed the need to 
+design and develop a more efficient application. The 
+research questions were answered, as shown below.
+Firstly, three main problems related to the usability, UI 
+and functionality of current m-health apps were high-
+lighted in a trial by Thai women. It was also found that 
+functionality alone cannot encourage Thai women to use 
+an app they consider awkward to use.
+Secondly, end-users with different levels of IT literacy 
+confirmed that usability, rather than the perfect amount 
+of functions, was the most significant element encourag-
+ing them to use a women’s m-health application. The user 
+interface was the second most significant element.
+Thirdly, it was found that IT experts’ perspective of 
+developing a women’s m-health application was different 
+to that of end-users. The application’s functionality was 
+the most significant factor for IT experts, rather than the 
+usability and UI.
+Lastly, it was evident from the research that the joint 
+involvement of end-users and IT experts is essential to 
+enable developers to analyse, prioritise and establish 
+an effective strategy for developing an m-health app for 
+Thai women. Obviously, there is no perfect way to design 
+such an application. However, the application designed 
+and developed in this research is based on a systematic 
+method and conceptual framework and illustrates that 
+an efficient m-health application for Thai women is pos-
+sible. By using a strategy based on User-Centred Design,
+
+Page 18 of 20
+
+extracting knowledge from IT experts and consulting 
+end-users to determine problems, it can be done.
+
+Limitations
+Four limitations are notable in this research. First, the 
+study sample was restricted to a single group of end-
+users (educated women who use smartphones and live in 
+Chiang Mai); this limited the number of end-users and IT 
+experts available.
+Second, due to the limited number of participants 
+mentioned above, it could be said that the test evalua-
+tion criteria were modified to recruit sufficient research 
+participants (e.g. The number of questions was reduced). 
+This leads to the conclusion that the number of partici-
+pants is insufficient to represent all Thai women.
+Thirdly, due to the specific design of this prototype for 
+basic menstrual tracking, there are limitations in its use 
+by pre-menopausal adolescents and post-menopausal 
+adults. Therefore, future research could develop and ana-
+lyse a health application for older women.
+Lastly, two iterations to improve the application design 
+are insufficient to revise the application prototype ade-
+quately. A third session of product testing and revision 
+would be advantageous.

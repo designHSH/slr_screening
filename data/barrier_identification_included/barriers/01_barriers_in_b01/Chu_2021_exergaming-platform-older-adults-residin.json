@@ -1,0 +1,69 @@
+{
+  "file_name": "Chu_2021_exergaming-platform-older-adults-residin.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Participant availability and scheduling conflicts reduced attendance across iterative testing rounds, limiting consistent user involvement.",
+      "justification": "Irregular attendance and postponed/cancelled sessions prevented designers from conducting repeated evaluations with the same users, hindering facilitate user involvement and integrate feedback & iteration workloads.",
+      "reference_excerpt": "Not all individuals participated in all rounds of testing for reasons related to doctor or dentist appointments, day trips, and availability of the residents. Consistent with other studies [62], we also experienced user testing sessions being postponed or canceled if the resident was ill or had a medical appointment and scheduled for other activities, and residents often felt too lethargic to engage in PA after lunch;",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Residents' multiple physical, sensory, and cognitive impairments complicated recruitment, retention, and data collection activities.",
+      "justification": "Health, sensory, and cognitive limitations among participants constrained the team's ability to manage user understanding, evaluate designs, and retain participants for iterative testing sessions.",
+      "reference_excerpt": "Residents had multiple physical, sensory, and cognitive impairments. ... symptoms, including fatigue and hearing or visual impairments, which can severely impact all aspects of the research, especially recruitment, retention, and data collection [58].",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "A relatively small sample drawn from only two nursing homes limited the study's breadth and the designers' ability to generalize findings.",
+      "justification": "Limited sample size and sites constrained the designers' ability to manage user understanding across diverse contexts and to confidently specify user requirements for broader deployments.",
+      "reference_excerpt": "First, the study sample included a relatively small number of participants and included 2 mid- to large-sized nursing homes in Canada, which may impact the generalizability of the results to other contexts.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Technical development was time-consuming and relied on fragile hardware (single Arduino), slowing iteration and upgrades.",
+      "justification": "Long programming times and fragile hardware limited the team's capacity to rapidly produce and refine design solutions and to iterate prototypes efficiently.",
+      "reference_excerpt": "From a development perspective, the programming of the games was time consuming, and we found the single Arduino was fragile and hard to upgrade.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "interaction",
+      "barrier_type": "emotional",
+      "description": "Having a member of the research team conduct some interviews may have inhibited participants from voicing negative feedback.",
+      "justification": "Social desirability and reluctance to criticize the team reduced the accuracy of user feedback, hindering manage user understanding and integrate feedback & iteration activities.",
+      "reference_excerpt": "Second, the interviewer for some of the interviews was a member of the research team, which may have prevented participants from sharing negative opinions that criticized the exergame.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Operational and acquisition costs in LTC settings limited the feasibility of technology adoption and broader deployments.",
+      "justification": "Financial constraints and funding models restricted the designers' ability to plan for real-world implementation, scale testing, and to make design trade-offs informed by acquisition realities, affecting produce design solutions and evaluate designs in practice.",
+      "reference_excerpt": "The primary barrier to the acquisition of new technology in LTC home adoption is cost. All the staff stakeholders identified cost as a barrier and explained how available funds were influenced by different variables, including home fundraising efforts, the annual funding envelope to support activities, and whether the payment model for the technology was an outright cost or a subscription-based service requiring ongoing payments.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 7,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Limited physical space in LTC homes and staff heavy workloads required designs to be lightweight, compact, and quick to set up.",
+      "justification": "Spatial constraints and staff time pressures forced design trade-offs and constrained prototype form factors, hindering the designers' ability to explore alternative solutions and address holistic experience and produce design solutions workloads.",
+      "reference_excerpt": "In addition, the lack of physical space was identified as an issue, so new interventions need to be adaptable to fit different-sized common areas and activity rooms. Staff also emphasized the need for the exergame design to be lightweight, compact, and quick to set up because of the heavy workloads.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

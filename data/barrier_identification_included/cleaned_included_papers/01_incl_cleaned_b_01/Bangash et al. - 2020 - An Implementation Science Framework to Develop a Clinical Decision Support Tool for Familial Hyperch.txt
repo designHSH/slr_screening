@@ -1,0 +1,296 @@
+2. Materials and Methods
+
+This study was considered exempt by the Mayo Clinic Institutional Review Board and was
+conducted between November 2018 and October 2019.
+
+2.1. Participants and Recruitment
+
+The target sample size for the qualitative interviews and usability testing was ~8–10 participants
+based on evidence from usability studies, which indicates that up to 80–85% of usability issues can
+be identiﬁed by the ﬁrst eight participants [23,24]. To achieve the target sample size, we conducted
+purposive sampling with the following inclusion criteria: (i) staﬀphysicians at the Mayo Clinic campus
+in Rochester, Minnesota; (ii) from primary care including the departments of family medicine and
+community internal medicine as well as specialty ﬁelds such as cardiology and vascular medicine;
+and (iii) with previous experience using institutional CDS tools. Physicians were contacted by templated
+emails that contained invitations to participate in the interviews and to avoid potential coercion; they
+were not contacted by a supervisor.
+
+2.2. Physician Interviews and Usability Testing
+
+Interviews with physicians were conducted from November 2018 to February 2019.
+Qualitative methodologies and a user-centered design process were applied within a type 1
+eﬀectiveness-implementation hybrid framework [24–29].
+Semi-structured qualitative interviews
+and usability testing sessions were conducted to obtain physician perspectives on two EHR-based CDS
+prototypes. The ﬁrst prototype was a best practice alert (BPA)—A clinical reminder with evidence-based
+management guidelines that would passively display to providers (requiring them to click on the alert
+
+to open it) at the point-of-care. The second prototype was an asynchronous in-basket alert—A type of
+inbox message that contained patient laboratory data and would be visible to providers upon logging
+into the EHR. Both CDS formats (BPA and in-basket) were linked to an automated detection algorithm
+in the EHR that identiﬁed individuals as ‘possible FH’ cases, deﬁned as LDL-C ≥190 mg/dL in the
+absence of secondary causes of hypercholesterolemia. Both CDS formats were presented during each
+interview and the “Think Aloud” usability technique was applied; physicians were asked to talk out
+loud and verbalize their thoughts while interacting with the CDS prototypes [30–32]. Four rounds of
+physician interviews and usability testing were conducted—new physicians, without prior exposure
+to the CDS tool, participated in each round and their feedback informed CDS prototyping and iterative
+reﬁnements in subsequent rounds.
+Interviews and usability testing were conducted by research study team members, including a
+physician, a qualitative researcher, a user experience/user interface expert and a research program
+coordinator. Each interview lasted one hour, was audio recorded and transcribed. Participants were
+given lunch during the interview and received a USD 100 honorarium. A semi-structured interview
+guide was developed and tested in a ‘mock’ interview to ensure that the questions were comprehensive
+(see Supplementary ﬁle Methods S1). The results from the mock interview were not included in the
+thematic analysis.
+
+2.3. Implementation Survey
+
+Following each interview, physicians were asked to complete a twenty ﬁve-question
+implementation survey to elicit multi-level contextual factors that could inﬂuence CDS implementation
+in clinical practice (see Supplementary ﬁle Methods S2). Modiﬁed from Weiner et al., twelve survey
+questions assessed three implementation outcome measures: Acceptability of Intervention Measure
+(AIM), Intervention Appropriateness Measure (IAM) and Feasibility of Intervention Measure (FAM) [33].
+The remaining thirteen survey questions were modiﬁed from the Consolidated Framework for
+Implementation Research (CFIR) [34,35].
+
+2.4. Deployment of CDS in Silent Mode
+
+Both the BPA and in-basket CDS formats were deployed in ‘silent mode’ across all Mayo Clinic
+sites, including the Mayo Clinic Health System (MCHS) for a three-month period (July 2019 to October
+2019). The silent mode setting would trigger the CDS alert in the EHR for providers in primary care,
+general internal medicine and cardiovascular medicine; however the alert was set to not display for
+providers, triggering only in the EHR background. The goal of deploying in silent mode was to gather
+initial metrics on the triggering of CDS at diﬀerent sites and use these metrics as a measure of the
+burden of ‘possible FH’. Each alert was cued by a diﬀerent action; the BPA ﬁred when a patient’s EHR
+was opened, while the in-basket ﬁred when results of a newly ordered lipid were placed in the EHR.
+
+2.5. Data Analysis
+
+The Framework Method was applied to transcript coding [36,37]. An inductive approach was
+used to generate themes from the transcribed data through open coding of transcripts. An initial
+codebook was developed by two qualitative researchers (HB and LP) who independently coded
+two transcripts line-by-line and then read each transcript in a group setting to reach a consensus on
+applied codes and ensure inter-rater reliability. After the codebook was established, the remaining
+transcripts were coded independently by two research team members and any inconsistencies in
+assigned codes were resolved through group discussion at bi-weekly meetings. All transcribed
+data were imported into ‘Reframer’—A qualitative research software tool (Optimal Workshop 2015,
+Wellington, New Zealand)—And each code was built into the tool as a ‘tag’ that could be applied
+to multiple observations. Survey responses of primary care physicians (PCPs) and specialists were
+compared using Wilcoxon rank-sum test to identify the median score, interquartile range (IQR) and any
+
+statistically signiﬁcant (p < 0.05) diﬀerences in the responses between PCPs and specialists. Descriptive
+data, including frequency of responses, were also noted.
+
+3. Results
+
+Thirteen physicians from primary care and cardiovascular medicine were recruited to the study and
+gave informed consent prior to participation in the qualitative interviews and usability testing—seven
+were primary care physicians (PCPs) and six were specialist physicians.
+Participants included
+physicians in leadership roles and those serving on institutional committees. Participant demographic
+characteristics are summarized in Table 1.
+
+3.1. Physician Interview Findings
+
+Analysis of the physician interview transcripts identiﬁed ﬁve key themes and eleven subthemes
+along with representative quotes (Table 2).
+
+3.1.1. Understanding and Awareness of FH
+
+This theme encompassed physicians’ current awareness and knowledge of FH and their perceived
+role in the detection and management of FH patients.
+
+1.
+Subtheme: Physicians awareness of FH Amongst both PCPs and specialists, there was a lack of
+FH awareness—physicians did not always distinguish between hypercholesterolemia of a genetic
+etiology versus hypercholesterolemia due to other causes. In some instances, both were perceived
+as being similar and requiring similar management.
+
+2.
+Subtheme: Physicians perceived scope of work PCPs and specialists agreed that all physicians
+were responsible for diagnosing FH; however, they diﬀered in their views on who was responsible
+for the management of FH patients. Some physicians preferred to manage FH patients themselves,
+while others preferred referral to a specialist.
+
+3.1.2. Clinical Workﬂow
+
+Clinical workflow aimed to understand physician workflows in primary care and specialty settings
+and gain insights into the next steps physicians were likely to take after a patient had been diagnosed
+with FH.
+
+1.
+Subtheme: Diagnosis in workﬂow Determining how physicians established a diagnosis in
+workﬂow centered on understanding when tasks such as ordering laboratory tests and reviewing
+results were performed. Physicians identiﬁed CDS alert relevance as being based on both
+encounter type and patient type. PCPs with high patient volumes were likely to have limited
+time to review alerts.
+
+2.
+Subtheme: Next steps for physicians For a patient with suspected FH, the next steps for physicians
+included prescribing medication, counseling on lifestyle changes, ordering tests and ruling out
+secondary causes of hypercholesterolemia. Most physicians were willing to refer patients to the
+institutional FH Clinic if this was the appropriate next step in management.
+
+3.1.3. Physician Preferences and Value of CDS Tools
+
+This theme encompassed physician perspectives on CDS tools and whether these tools impacted
+provider cognitive burden and time. Physicians also gave insights into their perceived value of the
+institutional FH Clinic.
+
+1.
+Subtheme: CDS tool preferences Most physicians had previously used one or more CDS tools
+and viewed them positively. However, a physician’s personal style or prior knowledge of a
+patient was likely to inﬂuence their decision on whether or not to use a speciﬁc CDS tool. With
+a relatively recent transition to a new EHR system at the time of interviews, some physicians
+continued to face challenges in interacting with the new EHR and highlighted the need to ﬁnd
+more eﬃcient ways to carry out routine tasks.
+
+2.
+Subtheme: Cognitive load A common feedback from all physicians was that the increasing
+number of CDS alerts and in-basket messages were contributing to rising levels of alert fatigue
+and information overload, subsequently resulting in CDS alerts being ignored or bypassed.
+
+3.
+Subtheme: Value of FH Clinic referral to physicians Physicians agreed that having the option
+to refer patients with ‘possible FH’ to the institutional FH Clinic was likely going to reduce
+their cognitive burden and would be useful for complex cases such as those where: (a) goal
+LDL-cholesterol was not being attained on maximum statin therapy; (b) a patient had statin
+intolerance or (c) cases where genetic testing was warranted.
+
+3.1.4. Perspectives on Patient Needs and Values
+
+Physicians highlighted the importance of engaging with patients through digital tools and also
+shared their insights on the value of the institutional FH Clinic to both patients and their at-risk
+family members.
+
+1.
+Subtheme: Patient engagement through the use of digital tools Physicians indicated that there
+was a need for patient education materials that could be printed and attached to messages
+as well as videos that could be shared directly through the institutional patient portal. Most
+physicians agreed that there was value in shared decision-making tools such as patient decision
+aids, especially if these were available on the internet and easily accessible. Physicians also
+highlighted the importance of being able to share the computer screen displaying the decision aid
+with patients, so as to engage them during clinical encounters.
+
+2.
+Subtheme: Value of FH Clinic referral to patients Physicians highlighted that the value of a referral
+to the institutional FH Clinic for patients and their family members centered on: (a) obtaining
+
+access to resources available speciﬁcally in the FH Clinic; (b) cascade testing of family members;
+(c) receiving access to new medications such as PCSK9 inhibitors and (d) facilitating appointment
+scheduling for genetic testing.
+
+3.1.5. Dissemination and Implementation
+
+This theme encompassed multi-level barriers and facilitators that could potentially impact the
+adoption of CDS in clinical practice.
+
+1.
+Subtheme:
+Facilitators to Dissemination and Implementation Physicians suggested that
+departmental meetings, conferences, grand rounds as well as newsletters could be used to
+promote awareness of the CDS tool and facilitate its uptake in practice. They also highlighted the
+need to obtain support from institutional champions, opinion leaders, early adopters and others
+likely to inﬂuence the attitudes and behaviors of providers.
+
+2.
+Subtheme: Barriers to Dissemination and Implementation The main barriers identiﬁed by
+physicians that were likely going to impact utilization of the CDS tool in practice included
+use of pre-existing CDS tools that may prevent adoption of new tools, limited time in patient
+encounters to view and act upon CDS alerts and lack of institutional guidance and education on
+new CDS availability.
+
+3.2. Usability Recommendations
+
+The usability testing of both CDS prototypes led to physician feedback that broadly fell into one
+of four recommendation categories summarized in Table 3.
+
+3.3. Implementation Survey Results
+
+The majority of PCPs and specialists responded positively to questions that assessed
+implementation outcome measures; 84.6% (n = 11) of physicians indicated that they liked the tool and
+it seemed easy to use (Table 4). Similarly, positive responses were noted for questions pertaining to
+the CFIR constructs; 84.6% (n = 11) of physicians indicated that the CDS tool would improve early
+diagnosis of patients with FH, while 92.3% (n = 12) of physicians agreed that the CDS tool would
+help them identify, refer or manage FH patients. However, in response to the statement ‘this tool
+will not increase the time needed with a patient’, 69.2% (n = 9) of physicians were either neutral
+or negative in their response. Overall, there was agreement in responses between both PCPs and
+specialists (see Supplementary Table S1).
+
+3.4. Silent Mode Metrics
+
+The rapid prototyping of the BPA and in-basket continued until no new physician feedback was
+obtained from three consecutive interviews and thematic saturation was attained. The ﬁnal BPA and
+in-basket were then deployed in the EHR in ‘silent mode’ for gathering initial metrics (Figure 1). During
+a three-month period, the BPA triggered 5415 times for 1440 unique patients, while the in-basket
+triggered 953 times for 924 unique patients at the three major Mayo Clinic sites and the MCHS.
+
+4. Discussion
+
+The dearth of usable and relevant digital tools is a major hurdle to the implementation of genomic
+medicine [7,38]. In this report, we describe the creation of a genomic CDS tool for FH, using an
+implementation science framework aimed at evaluating CDS eﬀectiveness and gaining early insights
+into clinical implementation through physician feedback. The relatively high prevalence but yet low
+awareness and detection of FH motivated the development of a CDS tool for FH. The work described
+herein could inform the creation of CDS tools for other genomic disorders in diverse settings.
+The introduction of EHRs has been associated with increased provider cognitive load, reduced
+professional satisfaction and increased rates of burnout [39,40]. To address these concerns, the Oﬃce of
+the National Coordinator for Health Information Technology (HIT) proposed aligning EHRs and tools
+with clinical workﬂows, improving user interfaces to increase eﬃciency and implementing health IT
+based on stakeholder engagement [41]. This includes the creation of well-designed, usable CDS tools
+that can ﬁll gaps in knowledge and provide guideline-based recommendations at the point-of-care.
+We conducted qualitative interviews and usability testing with both PCPs and specialists; PCPs
+are often the ﬁrst line of contact for most patients in the community setting, especially for needs such
+as the evaluation of lipids. They are also more likely to treat multiple family members and thus can
+play a pivotal role in increasing FH detection and screening within a community. However, physicians
+identiﬁed a number of barriers that were likely to reduce CDS utilization in clinical practice—the
+most common barrier being the increasing cognitive burden on providers due to EHR complexity
+and limited time during clinical encounters. These ﬁndings are supported by previous studies that
+examined barriers to CDS implementation [9,42,43].
+To promote CDS adoption in clinical practice, physician feedback emphasized the need to deploy
+passive alerts that would be less disruptive to workﬂows. They also highlighted that in-basket message
+alerts should be linked to new lipid panel reports to simplify workﬂows. Physicians recommended
+shortening and reorganizing the alert content for clarity and embedding a link to an order set speciﬁc
+for FH so as to reduce the number of clicks. Physicians also recommended including a link to
+AskMayoExpert, a Mayo Clinic knowledge resource with a topic module dedicated to FH that provides
+information on clinical presentation, diagnostic criteria and management [44]. AskMayoExpert also
+has links to additional knowledge modules, thereby enabling providers to access a number of relevant
+topics without workﬂow disruption [45].
+Another important insight was that concurrent to the development of a CDS tool, an attempt
+should be made to increase awareness of the tool, provide education on how to use it and obtain
+support from institutional leadership. This feedback led to eﬀorts to increase FH awareness amongst
+providers and highlight the CDS tool for FH at the Mayo Clinic Rochester campus. Rapid review
+pocket cards, which gave an overview of FH, were developed and distributed to PCPs and specialists.
+Several grand rounds were conducted across the institution by FH physician experts to disseminate
+knowledge and highlight the available CDS tool.
+The implementation survey provided physician perspectives on contextual variables that were
+likely to inﬂuence CDS adoption in clinical practice. Most physicians indicated a receptive attitude
+towards CDS integration. The only survey item where the majority of the physicians gave either a
+neutral response or disagreed was regarding the CDS tool ‘not’ increasing time spent with a patient.
+This response reiterated the need for CDS to be designed to increase eﬃciency and not add to
+provider burden.
+A relatively large number of both BPA and in-basket alerts ﬁred during silent-mode deployment,
+indicating a high burden of ‘possible FH’. This suggests a potentially large impact of CDS deployment
+on health outcomes. Currently, both alerts remain deployed in silent mode and will be further
+evaluated in a clinical trial to assess the eﬀect of the CDS on outcomes such as changes in patient
+management post-deployment.
+A limitation of our study is that interviews were limited to physicians; the input of nurse
+practitioners, physician assistants, and residents in training may have relevance for clinical
+implementation of CDS tools in diﬀering clinical workﬂows. Additionally, inherent EHR limitations
+prevented some physician feedback from being implemented in the ﬁnal CDS tools that were deployed
+in the EHR. The number of physicians recruited for the study was modest; however, evidence from
+usability studies indicates that such a number is adequate for developing and establishing the tool and
+to initiate the application of the tool in clinical practice [23,24]. After initial implementation of the CDS
+tool, metrics for its use, including the utilization of the FH order set and AskMayoExpert knowledge
+resource will be evaluated to determine need for reﬁnements and modiﬁcations. Such modiﬁcations,
+based on the pilot implementation, could further improve the FH CDS tool for use at the point-of-care.
+
+5. Conclusions
+
+Employing an implementation science framework with qualitative interviews and usability testing,
+physician feedback was obtained to guide the development of a CDS tool for FH and integrate it with
+the EHR for providers in primary care and cardiovascular medicine. A relatively large number of
+alerts ﬁred during CDS deployment in silent mode, indicating a high burden of ‘possible FH’ and the
+potential for CDS to increase the point-of-care detection of FH. The process described here, along with
+the physician feedback obtained, can inform the creation of CDS tools for genomic disorders at other
+institutions and health systems.

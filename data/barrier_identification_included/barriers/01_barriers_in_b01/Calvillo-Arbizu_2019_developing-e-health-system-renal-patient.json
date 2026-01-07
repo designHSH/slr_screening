@@ -1,0 +1,42 @@
+{
+  "file_name": "Calvillo-Arbizu_2019_developing-e-health-system-renal-patient.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "team",
+      "barrier_type": "resource",
+      "description": "Working with a multidisciplinary team increased process complexity and slowed system development because the team needed to reach a common understanding.",
+      "justification": "This organizational/time constraint hindered the designers' ability to coordinate a multidisciplinary team and slowed integration of feedback and iterative development cycles.",
+      "reference_excerpt": "As drawback, user involvement in all the development stages of an e-health system increases the complexity of the process. Working with a multidisciplinary team inevitably slows down system development due to the necessity of reaching a common understanding.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "stakeholder",
+      "barrier_type": "emotional",
+      "description": "User contributions were often dismissed during the implementation process by stakeholders, causing misalignment between the system and healthcare delivery.",
+      "justification": "This attitudinal barrier from implementers prevented designers from ensuring that user input was integrated into implementation, undermining the ability to integrate feedback and address the holistic user experience.",
+      "reference_excerpt": "User involvement in design and evaluation stages is common in the health domain, but user contributions are often dismissed in the implementation process what results in systems facing user refusal since they are not aligned enough to the healthcare delivery or present a limited usability.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "Participants' low confidence and hesitancy to use the app without help limited independent user testing and required hands-on demonstrations by the research team.",
+      "justification": "This interactional issue impeded facilitation of user involvement and evaluation activities because designers had to modify testing procedures (practical showing) rather than observe unaided use, reducing the validity and ease of iterative evaluation.",
+      "reference_excerpt": "Would you know use AppNephro without prior help? Yes: 25% No: 0% I don’t know: 75% Since the previous survey concluded that the participants showed hesitant to test AppNephro without help, this stage began by performing a practical showing.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Reconciling diverse user desires with technological possibilities imposed limits on the cost-efficiency of the product, constraining design choices.",
+      "justification": "These cost and technology constraints limited designers' ability to iterate freely, specify and implement extensive user requirements, and produce solutions that satisfy all stakeholder groups.",
+      "reference_excerpt": "A further issue is the continuous reconciliation between desires, preferences and needs of different kind of users and technology that imposes limits on the cost-efficiency of the product. Involving users requires to agree on every decision on system development by establishing balances among user needs and desires, technology possibilities and costs.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

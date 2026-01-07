@@ -1,0 +1,1454 @@
+User-centered Design in Time and 
+Resource-limited Settings: Enhancing the 
+Usability of 'Hearing for Life' (HeLe) Device
+
+Roy O. Dahildahil, MSc,1 Iris Thiele Isip-Tan, MD, MSc,2 Portia Grace F. Marcelo, MD, MPH2 and Lorelie C. Grepo, MSc3
+
+1Medical Informatics Unit, College of Medicine, University of the Philippines Manila
+2College of Medicine, University of the Philippines Manila
+3University of the Philippines Diliman
+
+Methods
+
+This research is a descriptive study using mixed methods. 
+It involved three phases: 1) User Profiling, which involved 
+administering questionnaires, 2) Inspiration Phase, which 
+involved workflow analysis, participant observation, focus 
+group discussion, and expert interview; and 3) Ideation Phase, 
+which involved design and testing of prototypes. 
+The self-administered questionnaire was adopted 
+from Venkatesh and was pre-tested to nurses and a doctor 
+from a different RHU before data collection to ensure 
+understandability and clarity of the data gathering tool. This 
+questionnaire was used to obtain demographic data such as 
+age, sex, educational attainment, medical experiences, list of 
+ICTs owned at home or work, level of ICT use by describing 
+how often do they use certain ICTs, and their attitudes 
+towards ICT use where they are asked if they agree or not 
+agree on ICTs relative advantage, compatibility, complexity 
+among others.14 It was self-administered considering the 
+time and availability of the HCWs. Cronbach's Alpha was 
+processed using Cronbach Alpha (v1.0.5) in Free Statistics 
+Software (v1.2.1).15 Site visits were conducted to document 
+RHU workflow and interaction of the users to available 
+technologies. The user profile provided insight whether 
+certain demographics prefer particular requirements. 
+In the inspiration phase, card-sorting activity, adapted 
+from IDEO.org, was used as a priming activity to make the 
+health workers more comfortable in the discussion.9 List of 
+words were written on the cards and the users were asked 
+to arrange them in order of priority based on how they 
+understood each word. The words used in the activity were: 
+Training, Instructions, User-friendly, Simplicity, Accuracy, 
+Understandability, Feedback, Readability, Speed, Security, 
+Error-detection, Privacy, Consistency, Durability, Brightness, 
+and Color. There were no correct or wrong answers in 
+arranging the cards, what mattered was how the participants 
+explained how the cards were sorted.
+Guided discussions were then conducted to elicit 
+requirements. Requirements were ranked using the MoSCoW 
+(Must, Should, Could, and Won’t Have) prioritization matrix.9 
+‘Must Haves' are the important and vital requirements that 
+
+41
+
+the HeLe device must have; ‘Should Haves’ are important 
+requirements but not vital; ‘Could haves’ are wanted or 
+desirable but not important; and 'Won’t have this time’ are 
+requirements that are not important and not vital. Technical 
+specifications from an audiologist in the regional hospital 
+in Iloilo also helped ensure the requirements and execution 
+of the HeLe device are aligned with their clinical practice 
+guidelines. 
+Insights gathered from the user profile and inspiration 
+phase guided the design prototypes for the ideation phase. 
+In the ideation phase, three low-fidelity prototypes, in the 
+form of paper drawings and cut-outs, were shown to the 
+HCWs. They walked through each of the pages and were 
+asked to comment or suggest in terms of design, content, 
+or function, which of the designs were preferred and not 
+preferred. They were also asked the level of priority of each 
+requirement. Frequently requested must-have and should-
+have features were noted and translated to design solutions. 
+After incorporating the feedback, it was rendered to a mobile 
+version mock-up (medium fidelity prototype) and deployed 
+in a mobile tablet with dimensions almost similar to the 
+HeLe device's. Adobe XD version 17.0.12.11, a free Adobe 
+software, was used to develop the mock-ups. This software 
+was used as it is free and readily available. 
+A task list was prepared to ensure the users will cover 
+all steps. Successful tasks, failed tasks, common errors, and 
+feedback by the users were documented and analyzed. 
+After completing the task lists, System Usability Scale were 
+administered to gauge the system's usability level.
+Six rural health units (RHU) involved in the HeLe 
+research program were purposively selected for the study. 
+Three HeLe target sites in Iloilo (Igbaras, Tigbauan, and 
+Tubungan); and three non-HeLe target (Miagao, San 
+Joaquin, Guimbal) were selected. The non-HeLe target sites 
+were purposively selected as they are in close proximity tof 
+the three target sites and belong to the same district. Thirty 
+participants, i.e., five (5) RHU health workers led by their 
+Municipal Health Officer (MHO) per RHU, were recruited in 
+the study. The other four HCWs were selected by the MHOs 
+based on availability and role in the RHUs. This satisfies the 
+sample size recommendations for the different phases of 
+the research in conducting user research methods striking a 
+balance between rigor and practicality.16 Sample size should 
+be 12-20 participants for user research methods, 15 to 30 
+participants for card sorting activity, 4 to 12 participants for 
+focus group discussion. Furthermore, it satisfies Faulkner et 
+al.'s recommendation suggesting that 15 people theoretically 
+provide the best possibility of detecting user interface 
+design problems with an average of 97% while limiting the 
+number of resources required.16 In addition, an audiologist 
+from the government Regional Hospital was interviewed 
+to get technical input on the functional requirements of an 
+innovative NHS device. These were reviewed and matched 
+with the user requirements identified by the representative 
+users.
+
+This study protocol was reviewed and approved by 
+the Research Ethics Board (REB) of the University of the 
+Philippines Manila. 
+
+Results
+
+Application of UCD in the HeLe UI design
+
+Phase I. User and Rural Health Unit Profile
+Generally, the selected RHUs have access to electricity, 
+internet connectivity, and mobile data but with weak 
+connections in sites relatively farther from the city. The 
+RHUs have at least one desktop and laptop computer; all 
+are EMR-enabled. Four of six RHUs have lying-in clinics 
+but only two that are actively providing birthing services and 
+screening for genetic metabolic anomalies among newborns. 
+The other two sites were under renovation and did not attend 
+to parturient mothers at the time of this study. Notably, none 
+of the six sites screens newborns for hearing problems using 
+a hearing screening device. The medical doctors described 
+their newborn hearing screening method as the "Baah test", 
+where they would produce the "Baah" sound to the newborn 
+to elicit a reflexive response and determine if there is a 
+hearing problem. 
+There were 30 respondents composed of six (6) medical 
+doctors, eight (8) nurses, and 16 midwives (Table 1). The 
+average age of participants was 43.8 (±10.1) years old, with 
+a range of 25 years old to 63 years old. More than half of the 
+participants are in the older population and above 46 years 
+old. Years of medical service range from less than a year to 33 
+years; the majority have worked for more than 20 years. (Three 
+of these 30 health workers dropped out of the two-month 
+long UCD process when they resigned from the RHU within 
+the duration of this study. Hence, the change of 'respondents' 
+data reported for subsequent questions.) 
+
+ICT Ownership and Use
+Most of the participants have access to desktop and 
+laptop computers at work in almost the same proportion (22 
+or 73.3% and 23 or 76.7%, respectively) (Table 2). All doctors 
+have access to laptops both at work and at home. Among 
+all respondents, desktop and laptop computers were reported 
+to be used almost every time (x̅ =3.57 and 3.90, respectively). 
+Noteworthy is that even with the passage of the law requiring 
+hearing screening among all newborns, the health workers in 
+these Rural Health Units reported never using any newborn 
+hearing screening device nor having access to it at work. 
+HCWs strongly agree that using ICT has a relative 
+advantage (Table 3) and has the highest score among 
+purported benefits of ICT listed in the survey (with a mean 
+score of 4.30; the highest mean score is 5.0). Similarly, 
+participants agree, especially the doctors (score of 4.67), that 
+ICT enhances their job effectiveness and improves the quality 
+of medical work (Table 3, RA2). Furthermore, they also agree 
+
+42
+
+that ICT is entirely compatible with their current situation 
+(Table 3, CT8). 
+Complexity had the lowest score among all components, 
+wherein using ICT does not require much mental effort 
+garnering the lowest score (mean score of 2.90). Trial-ability 
+and observability scored 3.71 and 3.78, respectively. These 
+translate to respondents having equivocal views about these 
+characteristics of ICT innovations.
+
+Inspiration Phase
+
+User Requirements
+There were 27 user requirements elicited from the focus 
+group discussions in the six sites (Table 4). These were ranked 
+based on the MoSCoW prioritization matrix and categorized 
+according to design, function, or content. The most requested 
+requirements for a telemedicine device that the users cited 
+include accuracy, durability, instructions, feedback, and should 
+be easy to understand. Accuracy was defined by the users as 
+the ability of the device to give correct results especially since 
+they are dealing with lives of the newborn, and erroneous 
+results could lead to detrimental effects in the long run. 
+Durability referred to the ability of the device to withstand 
+continued use. One participant said, “it’s nice and all, but 
+what would I do with it if it gets damaged easily”, pertaining 
+to durability. Feedback was understood as the ability of the 
+users to send comments or suggestions to the institution who 
+developed the device. Finally, easy to understand meant the 
+users should be able to easily know how to operate the device.
+Training, instructions, and user-friendliness were also 
+listed at the top of the list during the card sorting activity. 
+They explained that it is vital for them to know how to 
+use the device through proper training and instructions. 
+Furthermore, one participant mentioned that one of the 
+possible reasons technology is not successful in their RHU 
+is because their previous experience with other medical 
+devices was not user-friendly. Five respondents (n=5) across 
+six sites reported that they would use the device if it were 
+user-friendly especially since most of them in the RHU are 
+
+Table 2.	ICT Ownership and Level of Use of the Study Participants
+
+Desktop
+0
+22
+3
+5
+25
+3.57
+Almost Every time
+Laptop
+4
+8
+15
+2
+28
+3.90
+Almost Every time
+Laptop (Touch)
+3
+4
+5
+18
+12
+2.74
+Occasional
+Basic Mobile
+12
+1
+5
+12
+18
+3.24
+Occasional 
+Mobile Phone (Touch)
+14
+0
+15
+1
+29
+4.79
+Every time
+Tablet (Touch)
+8
+4
+4
+14
+16
+2.84
+Occasional
+Digital Camera
+5
+3
+3
+19
+11
+2.58
+Rarely
+Internet
+1
+6
+17
+6
+24
+4.10
+Almost Every time
+PDA
+2
+3
+1
+24
+6
+2.14
+Rarely
+NHS Test
+0
+0
+0
+30
+0
+1.58
+Never
+
+Legend: 1.00 – Never; 2 – Rarely; 3 – Occasional; 4 – Almost Every time; 5 – Every time; Cronbach Alpha = 0.83; H – Home, W – Work, N – None
+H – Home Only; W – Work Only; B – Both Home and Work; N – None; T- Either Home/ Work
+
+Table 1.	User Profile of the Study Participants from the Six 
+Municipalities in Iloilo (n=30)
+
+Profession
+Midwife
+16
+(53.3)
+Nurse
+8
+(26.7)
+Doctor
+6
+(20.0)
+Total
+30
+(100.0)
+
+Educational Attainment 
+
+College
+24
+(80)
+Post-graduate
+6
+(20)
+Total
+30
+(100.0) 
+
+Age (years)
+25 and below
+1
+(3.3)
+26-35
+8
+(26.7)
+36-45
+5
+(16.7)
+46-55
+14
+(46.7)
+Above 55
+2
+(6.7)
+Total
+30
+(100.0)
+Mean
+43.8 
+(± 10.1)
+
+Monthly Income (Php)
+No data
+3
+(10.0)
+<10,000
+1
+(3.3)
+10,001 - 15,000
+11
+(36.7)
+15,001 - 20,000
+6
+(20.0)
+20,001 - 25,000
+3
+(10.0)
+>25,000
+6
+(20.0)
+Total
+30
+(100.0)
+Mean
+25,661.96 (± 21,207.23)
+
+Medical Experience (years)
+5 and below
+4
+(13.3)
+6 to 10
+7
+(23.3)
+11 to 15
+7
+(23.3)
+16 to 20
+4
+(13.3)
+Above 20
+8
+(26.7)
+Total
+30
+(100.0)
+Mean
+14.9
+(± 8.18)
+
+43
+
+not technologically adept. They do not have someone to ask 
+how to use any medical device. 
+The card sorting activity also helped the users explain 
+features that are important to them. One participant 
+mentioned that, "Accuracy is important, especially from our 
+experience before. The device did not give accurate results, and 
+since then, we questioned the credibility of the device and ended 
+up not using it". One suggested a way to ensure this is to have 
+regular device calibration. 
+Durability was a significant consideration because of 
+their experience with the previous technology that broke 
+quickly. It was also suggested to have service centers near the 
+region to promptly repair devices when damaged. Meanwhile, 
+instructions are required by the health workers since not 
+everyone was trained to use the HeLe device. Apart from 
+instructions, quick access to a manual in the device and a hard 
+copy should be made available. The feedback requirement was 
+elaborated as the: 1) confirmation that the device received 
+their action (i.e., vibrate, sound); and 2) prompt or warning 
+sign when they are doing the wrong thing or pushing the 
+
+wrong button. They also want to add prompts when the device 
+remains idle for a particular time, which might signify that 
+the health worker is struggling with what to do next. Another 
+must-have requirement mentioned is that it should be easy to 
+understand, such as in smartphones which entails minimal to 
+no training to use. The device can also be easily understood by 
+making the content and steps very straightforward. 
+Noteworthy, they require the device to have print 
+functionality in all sites. They justified that printed results are 
+still significant even if the Department of Health (DOH) 
+pushes for paperless systems. They still need to attach 
+printouts of test results in medical records, or printed copies 
+are required when referring the patient to the hospital or any 
+referral facility. 
+Feedback from the low fidelity prototyping affirmed the 
+critical requirements discussed by the user from focus group 
+discussions. In four of the six RHUs, the group preferred 
+the third prototype that focused on simplicity since it is 
+straightforward to understand. There were only a few steps to 
+perform the intended action, and it was easy to understand. 
+
+Table 3.	The Attitude of Participants towards ICT (Adopted from UTAUT Questionnaire – 5 Point Likert Scale)
+
+Relative Advantage
+4.54
+4.18
+4.35
+4.30
+RA1. Using ICT enables me to accomplish a medical task more quickly
+4.50
+4.25
+4.38
+4.33
+RA2. Using ICT improves the quality of medical work I do
+4.67
+4.25
+4.25
+4.33
+RA3. Using ICT makes me do my medical work easily
+4.60
+4.25
+4.38
+4.34
+RA4. Using ICT makes me improve my job performance
+4.50
+4.13
+4.38
+4.27
+RA5. Using ICT enhances my effectiveness in my job
+4.67
+4.25
+4.50
+4.40
+RA6. Using ICT gives me greater control over my work
+4.33
+3.94
+4.25
+4.10
+
+Compatibility 
+4.67
+3.96
+4.38
+4.22
+CT7. Using ICT increases my work productivity
+4.67
+4.13
+4.50
+4.33
+CT8. Using ICT is entirely compatible with my current situation
+4.67
+3.80
+4.25
+4.10
+
+Complexity
+3.83
+3.37
+3.71
+3.56
+CX9. I think the ICT I used fits well with the way I like to work
+4.83
+3.87
+4.38
+4.21
+CX10. Using ICT fits nicely into my work style
+4.50
+3.53
+4.13
+3.90
+CX11. I believe that using ICT is not complicated3
+3.33
+3.06
+3.50
+3.23
+CX12. Using ICT does not require a lot of mental effort3
+2.67
+3.00
+2.86
+2.90
+
+Trial-ability
+3.75
+3.69
+3.75
+3.71
+T13. Using ICT is not often frustrating1
+3.67
+3.31
+3.63
+3.47
+T14. I believe that it is easy to make ICT do what I want it to do
+3.83
+3.88
+4.00
+3.90
+T15. Learning to operate ICT is easier for me
+3.83
+3.63
+3.63
+3.67
+T16. I have had a great deal of opportunities to try ICT applications
+3.67
+3.93
+3.75
+3.82
+
+Observability
+3.73
+3.81
+3.75
+3.78
+O17. I know where I can go to try out ICT satisfactorily
+4.00
+3.44
+3.63
+3.60
+O18. I always try out ICT applications before using it
+4.00
+4.07
+3.63
+3.93
+O19. I use ICT on a trial basis enough to see what it could do
+3.80
+3.87
+3.63
+3.79
+O20. I do not have to take very much effort to try out ICT
+3.17
+3.25
+3.63
+3.33
+O21. I have seen what other hospital staff do with ICTs
+3.83
+4.00
+4.00
+3.97
+O22. In the hospital, I see ICT being used for many tasks
+3.83
+4.06
+4.25
+4.07
+O23. ICT is very visible in the hospital where I work
+3.50
+3.87
+3.63
+3.72
+O24. It is easy to observe people using ICT in the hospital
+3.67
+3.94
+3.63
+3.80
+
+1 Cronbach alpha = 0.8488
+2 Legend: 1.00-1.80 – Strongly Disagree; 1.81-2.60 – Disagree; 2.61-3.40 – Neither; 3.41-4.20 – Agree; 4.21-5.00 – Strongly Agree. 
+3 Questions were negatively phrased, and the results were processed inversely
+
+44
+
+One participant emphasized regarding having instructions 
+in place stating that, "Design three is easy to understand, but it 
+would be better if there are instructions or warning, especially if 
+you are doing it wrong." In three sites, users emphasized the 
+importance of instruction present in prototype 2, but with a 
+certain simplicity level similar to prototype 3. 
+
+Technical Inputs from Clinical Audiologist
+In a separate session, a clinical audiologist in the 
+Regional Hospital in Iloilo was interviewed to get technical 
+specifications in the HeLe device. The clinical audiologist 
+is a health care professional that can competently perform 
+audiologic evaluation and audiologic habilitation. In terms 
+of design, the clinical audiologist highly recommended a 
+user-friendly and easy-to-understand UI considering the age 
+group of health workers in the RHU. It was also observed 
+that RHU staff are no longer open to learning complicated 
+
+things or are often afraid to handle a device. Moreover, text 
+size and buttons should be large enough to be readable, and 
+instructions to perform the required task should be minimal 
+and not text-heavy. Based on these inputs, the prototype 
+was designed with readable font styles, larger buttons, and 
+instructions composed of fewer steps.
+Regarding content, the clinical audiologist suggested 
+using the standard terms for the results, i.e., "Pass" and 
+"Refer." These are the standard terms in their practice 
+described in the Newborn Hearing Screening Manual 
+as most hearing devices are just screening tools and need 
+referral for further confirmation. Moreover, the patient data 
+to be collected should be based on the requirements specified 
+in the Newborn Hearing Screening Manual and reports to 
+claim payment for rendering the Newborn Care Package 
+of the PhilHealth. A copy of the forms were obtained and 
+adapted in the print-out interface. Also, following the manual 
+
+Table 4.	List of User Requirements and design solutions taken (n=27)
+
+1.	 Accuracy
+M, S
+F
+Added "Maintenance Check" or "Diagnostic Check" function; Visual prompts to 
+remind of monthly/ regular maintenance or diagnostics and month last checked; 
+Suggest to NTHC regular calibration or testing of the device
+
+2.	 Durability
+M, W
+F
+Endorsed to NTHC
+
+3.	 Instructions
+M, S
+D, C
+Instructions and a manual were added in the design
+
+4.	 Feedback to confirm correct action
+M, S, W 
+D, C, F
+Visual prompts / Feedback; Show progress of test
+
+5.	 Error-detection
+M, S
+D, C, F
+Visual prompt / Feedback; Instructions how to correct the action
+Inactive buttons
+
+6.	 Simple and easy to understand
+M, S
+D, C
+Use of simple and straightforward terms
+
+7.	 Security of data
+M
+F
+Added sync function to EMR; Suggest to NTHC easier method to back up EMR data
+
+8.	 Training
+M, S
+C, F
+Suggest to NTHC; Manual readily available in device; Accessible video instructions
+
+9.	 Complete functionality
+M
+F, C
+Incorporated Technical Expert inputs (e.g., content, workflow); 
+Incorporated standard DOH/ PhilHealth forms
+
+10.	Interpret results for the users
+M
+F, C
+Incorporated in the design: "Pass" or "Refer"
+
+11.	Portability
+M, W
+F
+Endorsed to NTHC
+
+12.	Print-function
+M
+F
+Added print function button; Suggest to NTHC
+
+13.	Privacy and Confidentiality
+M
+D, F
+Sign in and sign out; Suggest to auto sign out during idle time
+
+14.	User-friendly
+S
+D, C, F
+Simple and straightforward
+
+15.	Stand-alone 
+S
+F
+Endorse to NTHC; Placeholder for sync data
+
+16.	Speed
+S
+F
+Endorse to NTHC
+
+17.	Visual Aesthetics (i.e., colorful)
+W
+D
+Documented for future iterations
+
+18.	 Brightness
+W
+D
+Added function to adjust brightness and other device settings
+
+19.	Cost-effective
+W
+F
+Documented for future iterations; Suggest to NTHC
+
+20.	Readable font
+M, W
+D
+Use of larger fonts for important information
+
+21.	Access to maintenance
+M
+N/A
+Suggest to NTHC
+
+22.	Able to connect to internet
+M, W
+F
+Device is already wifi ready
+
+23.	No recurring data
+M
+C
+Auto complete for data already gathered
+
+24.	Not electric dependent
+M, S, W
+F
+Suggest to NTHC
+
+25.	Responsive to touch
+M
+F
+Suggest to NTHC
+
+26.	Interoperable
+W
+F
+Documented for future iterations; Suggest to NTHC
+
+27.	Messenger function
+W
+F
+Documented for future iterations; Suggest to NTHC
+
+Legend: M – Must Have; S – Should have; W – Could-have or wont-have; F – Function; D – Design, C – Content, N/A – Not applicable
+
+45
+
+and audiologist’s recommendation, the design reinforced the 
+users to test thrice for “refer” results. 
+For specific functions, the clinical audiologist emphasized 
+accuracy. The device should be "unquestionably accurate." 
+It will defeat the purpose of everything if the device is 
+not accurate. In addition, the workflow on the Manual of 
+Procedures for Newborn Hearing Screening Program should 
+integrate into the UI design to guide the HCWs to follow 
+specific required steps. Printing of the referral form, patient 
+
+registry forms, and results form with the device ID should 
+also be added as these are needed for PhilHealth to reimburse 
+the RHU for the NHS test. 
+
+Ideation Phase 
+
+Low Fidelity Prototype 
+Three design paper sketches were prepared and presented 
+to the study participants to maximize the site visits (Figure 3). 
+
+B.	Prototype 2 – Instructions Requirement
+
+Figure 3.	 Sample low-fidelity prototype.
+
+C. Prototype 3 – Simple Requirement
+
+A.	Protype 1 – Training Requirement
+
+46
+
+All prototypes shared a common workflow and pages to 
+perform the newborn hearing screening procedures, as follows: 
+1.	
+Sign in page – This serves as the home page and user 
+authentication page.
+2.	
+List of patients – This page is where the user can see 
+all patients in queue and select which patient to test 
+for NHS. Each prototype contained varying layout 
+of the list and content being displayed.
+3.	
+Newborn hearing screening – This page is where 
+the user can perform the actual test. 
+4.	
+Referral or Printing of the results – This page is 
+where users can review the results for referral or 
+printing. A test case for newborns with hearing 
+problem was used for all prototypes. 
+
+Each design prototype has a distinct feature highlighting 
+the different requirements from ideation phase. The first 
+prototype focused more on the training requirement (Figure 
+3A). Prior to signing in, the interface contains reference 
+materials and video resources how to use the device. In-
+app video instructions on how to place the device to the 
+newborn and help button were made very visible across the 
+interface. This attempted to address the need for the user to 
+be trained on how to use the device before actually using 
+it. The second prototype attempted to address the in-app 
+instruction requirement (Figure 3B). This was achieved by 
+providing visual prompts and feedbacks in every page in the 
+application. A pop-up instructions were shown for each step 
+to guide the user what to do. The third prototype highlighted 
+simplicity (Figure 3C). There were no instructions or visual 
+prompts. Other information and buttons were removed. And 
+the screen has a consistent and default sections all throughout 
+the steps.
+The participants were asked to choose among the 
+prototypes and to pinpoint specific features they wanted to 
+be improved. Feedback on the prototypes was integrated to 
+the Medium Fidelity Prototype. 
+
+Medium Fidelity Prototype
+The medium fidelity prototype (Figure 4) was developed 
+using Adobe XD version 17.0.12.11, a free Adobe software 
+to show detailed graphics, placeholders, and actions of the 
+corresponding buttons and functions. This prototype was 
+presented on a tablet device with almost similar dimension 
+to the actual HeLe device used.
+Subsequently, a Concurrent Think-Aloud (CTA) activity 
+was used where the participants narrate or verbalize their 
+thoughts while interacting with the HeLe UI in the tablet. 
+The activity allowed the researcher to understand what 
+the users were thinking about and how the users behaved 
+with the proposed design, and in the process continuously 
+identify additional problems, and requirements in terms of 
+design, content, and function that had not been detected 
+in the inspiration phase or in the low-fidelity prototype 
+testing. List of tasks to accomplish were provided to ensure 
+
+all functions are covered. The tasks emphasized four major 
+activities: 1) Sign in, 2) Select Patient, 3) Perform Test (left 
+ear and right ear), 4) Submit results. Specific details on how 
+and where to perform the tasks were not included. Common 
+user errors and problems with the design such as the font 
+styles, button sizes, etc. were documented. The average time 
+elapsed was also computed and described. Activities with 
+relatively low effectiveness (accomplished) and efficiency 
+(time elapsed) scores were investigated. All responses from 
+the evaluation of low-fidelity and medium-fidelity prototypes 
+were extracted, and patterns were identified, meaningfully 
+interpreted, and translated to design, content, or functional 
+requirements. 
+
+System Usability Testing 
+Self-administered System Usability Scale (SUS) 
+questionnaire were distributed to the participants immediately 
+after the CTA to assess the medium-fidelity prototype. The 
+SUS is a simple, ten-item Likert scale measuring subjective 
+assessments of parameters of usability. SUS score is calculated 
+by summing the score contributions from each item (ranges 
+from 0 to 4). The score contribution for items in odd numbers 
+is the scale position minus 1. For items in even numbers on 
+the other hand, is 5 minus the scale position. Then multiply 
+the sum by 2.5 to get the overall value. SUS scores range 
+from 0 to 100. This study followed Bangor et al., category 
+and set 60 (marginally unacceptable) as a cut-off score.17 
+The score of the Medium Fidelity Prototype obtained from 
+27 respondents was 81.94 (±14.60). This is interpreted as 
+acceptable, meaning most will likely not have usability 
+problems and merit no further iterations.17 The lowest score 
+obtained was 57.5 given by two midwives while the highest 
+score was 100 from three doctors, one nurse, and one midwife. 
+The average time elapsed to finish all the NHS tasks 
+was 173.19 (±54.43) seconds, or 2 minutes and 53 seconds 
+(Table 5). 
+The activity on the patient list page was relatively fast. 
+Twenty-six (26) out of 27 performed the task correctly without 
+external help from the researcher. The users greatly appreciated 
+the search button. They specifically requested this function 
+when the Low Fidelity Prototype was being discussed. In the 
+medium fidelity prototype design phase, the search buttons 
+were just placeholders and not yet functional.
+The users took most of their time on the NHS perform 
+test page, 80.44 seconds (±26.49) as this page involves several 
+steps in order to complete. Most users had difficulty signing 
+into the device; 10 succeeded only after several trials and 
+errors. HCWs spent an average of 80.44 (±26.49) seconds 
+to finish the activity. However, two health workers took more 
+time than others because they got confused about starting 
+the test and which step to do first. Nevertheless, 21 health 
+workers completed the task without help from the researcher. 
+Six users appreciated the instructions and carefully 
+read them as a guide. Two other health workers thought the 
+instructions were buttons to tap.
+
+47
+
+Figure 4.	 Medium fidelity prototypes of the HeLe user interface.
+
+A. Sign-in Page
+
+C. NHS Begin Test Page
+
+E. Summary Results Page
+
+B. Patient List Page
+
+D. NHS – Results Page
+
+F. Print Results Page
+
+48
+
+Discussion
+
+Lessons from RHU and User Profile
+The user profile of the RHU (53.3% Females, 46.7% 
+belonging to 46-55 years old) reflected the typical age and 
+gender distribution in most RHUs in the Philippines. The 
+individual characteristics are important to note as this could 
+be potential moderators of adoption.14 For older adults, 
+according to Berkowsky et al., their self-assessed abilities on 
+computer or internet skills could be a predictor for adoption.18 
+The majority of the older health workers expressed their 
+disinterest, thinking it is complicated and younger health 
+workers are there to operate the medical devices.18 This might 
+not necessarily reflect sentiments of all older population 
+as the sample size is limited. However, the participant 
+observation suggests that younger health workers primarily 
+handle tasks involving computers or other technology-based 
+activities. This supports SAQ suggesting that most HCW 
+perceived technology as always complex. Using ICT does 
+not require mental health effort (2.90) scored the lowest. 
+Participants, especially those from older population, claim 
+they are already too 'non-techie' and old to understand or 
+learn to understand new technology. Ironically, these same 
+
+HCWs also reported having access and using other forms 
+of ICTs (i.e., smartphones, computers) in their daily lives.
+Examined further, HCWs complained that as much 
+as they wanted to use technologies, they perceived EMR 
+as additional work. They have to do both the electronic and 
+manual encoding in documenting patient information and 
+preparing and submitting aggregated reports, respectively. 
+Berkowsky et al. support this, suggesting that older adults' 
+confidence in learning the technology and the perceived value 
+and impact on the quality of life were the strongest predictors 
+of a willingness to adopt a technology.18
+
+Understanding the fears and concerns of HCWs through 
+user profiling is as critical as developing the ICT itself. HCWs 
+have different fears and perceptions about technology that 
+could be addressed with adequate education and support. 
+
+Inspiration phase
+The Card Sorting Activity helped initiate the conversation 
+with the users. The list of words allowed the users to verbalize 
+what they wanted in the device and how much they value 
+each requirement. The activity somehow provided them the 
+concepts to describe the design, content, and functions they 
+want in the user interface. It enabled discussions to flesh out 
+their attitudes, desires, and fears interacting with technology. 
+Further, the activity is easily understood by both the research 
+participants and researchers, easy to prepare, and affordable, 
+thus accessible to those in low-resource settings.19
+
+Focus group discussion had been an efficient way to 
+extract information and understand the design creativity, 
+desired and actual user experience, and usability of the Low 
+and Medium Fidelity Prototypes. It was also ideal in order not 
+to disrupt their work in the RHU. The choice was found to be 
+beneficial to the data collection. Getting similar sentiments 
+from colleagues helped them articulate their feedback on 
+the technology. 
+But as recommended by the Interaction Design 
+Foundation, the user interviews or focus group discussions 
+were treated as contextual. Sometimes it is not what the 
+people say they will do, and people may have memory issues 
+and thus could not recall details as clearly.19 The interviews 
+can serve as a starting point to examine the users' problems, 
+fears, goals, user experiences, the usability of the product, 
+etc. They were rarely used to solely achieve a finished output. 
+Users, after all, are not designers, but they can at least 
+probably suggest design ideas. 
+Usability in this paper is defined as how well users can 
+use the technology to achieve a defined goal effectively, 
+efficiently, and satisfactorily. This is important even more 
+in medical devices where the life and/or quality of life of a 
+patient is on the line. 
+MoSCoW prioritization matrix was helpful as it 
+made clear to the HCWs that some conditions may not be 
+incorporated in the design, considering there are limitations 
+in terms of time and budget. The matrix allowed discussing 
+among themselves what they felt were critical and needed by 
+
+Table 5.	Summary of Task Accomplished and Time Elapsed
+
+1. Sign in Page
+- Tap username input field
+- Tap keyboard
+- Tap password input field
+- Tap keyboard
+- Tap sign in
+
+50%
+100%
+10
+17
+
+28.52 (±13.19)
+34.9 (±15.47)*
+24.76 (±10.37)*
+p-value: .026‡
+
+2. Select Patient
+- Tap patient “Cardo Dalisay”
+50%
+100%
+1
+26
+
+9.93 (±15.22)
+79
+7.27 (±6.55)
+p-value: .026‡
+
+3. Perform test
+- Tap "Left" button to start test
+- Tap Okay to confirm test
+- Tap again "Left button"
+- Tap "right" button
+- Tap "test” again (2 of 3)
+- Tap "test” again (3 of 3)
+- Tap submit
+
+50%
+100%
+6
+21
+
+80.44 (±26.49)
+95.33 (±27.74)
+76.19 (±25.19)
+p-value: .60‡
+
+4. Print / Submit Results
+- Scroll to check results
+- Tap Print
+- Review result' s print preview
+- Tap print
+- Tap done
+- Tap log out
+
+50%
+100%
+8
+19
+
+54.30 (±24.30)
+57.50 (±26.33)
+52.95 (±24.02)
+p-value: .089‡
+
+Total Elapsed
+ 173.19 (±54.43)
+
+†	0% – Fails to complete the task correctly, gives up, or succeeds only 
+with an assist from the moderator; 50% – succeeds, but in a round- 
+about way, making errors, needing to back track or using on-line help; 
+100% – succeeds quickly, following the route the designers intended.
+
+‡	alpha at .05
+
+49
+
+their RHU. Inputs from a clinical audiologist were beneficial, 
+especially in the process and content, as most of the HCW 
+in the SAQs results have no access to NHS devices. This 
+could also be done after designing the prototypes by letting 
+the experts walk through the prototype and looking for issues 
+with the design, accessibility, and usability of the product.19
+
+User Requirements
+The series of participatory methods and structured 
+procedures surfaced a total of twenty-seven user requirements. 
+Apart from prioritization, these requirements were classified 
+according to design, content, and functional condition. 
+
+Design
+Nine of the 27 user requirements raised during the 
+FGDs are design-related (Table 4) and it reflected the 
+fundamental concepts of Norman, specifically affordance, 
+constraints, signifier, and feedback.3 A good device user 
+interface could reduce or eliminate use-related hazards that 
+could compromise medical care, increase correct use and 
+user actions, minimize user frustration and irritation, and 
+facilitate technology acceptance and utilization.4 
+According to Norman, affordance refers to the 
+relationship between a physical object and a person, the 
+relationship between the properties of an object, and how 
+the thing could be used.3 It was observed during the CTA 
+when users easily associated the icon's help, settings, and exits 
+to their potential use. Affordance was also articulated in the 
+results when a participant suggested using the tabular format 
+for the patient queue to "resemble their existing EMR" since 
+they are more accustomed to that type of presentation. 
+Constraints, which refer to cues limiting possible 
+actions, were found helpful in ensuring they do the tasks. 
+In the Low Fidelity Prototype, the health workers preferred 
+the prototype that disabled buttons to proceed to submission 
+unless all steps had been conducted thoroughly. 
+Signifiers were incorporated in the design in the visual 
+prompts, color codes, shapes, and font styles. Its purpose is 
+to guide the users on what to do in the particular page or 
+perform their intended tasks. Instructions were also a form 
+of a signifier, although a more deliberate one.20 This was 
+requested by the users in case they forgot what to do on a 
+specific page. For example in the case of the two HCWs 
+who were confused on how to start the test, a signifier in 
+a form of an instruction would be helpful to prompt them 
+what they should do next. It assured them that they were 
+using the device correctly and improved their willingness to 
+use it. As emphasized by Berkowsky et al., a users' lack of 
+confidence in using the device could be a barrier in technology 
+adoption.18 Having these layers of safety nets for the users 
+convinced, even the older HCWs, that they can use the 
+device. However, it should be noted that these instructions 
+should not be obscuring nor cause further confusion on how 
+to interact with the device. Use of different colors or opacity 
+for the instructions could reduce this confusion. 
+
+Signifiers were also used to incorporate the suggestion of 
+the clinical expert in conducting NHS. Signifiers in the form 
+of three colored dots were displayed on the testing page to 
+inform the users to re-test three times the patients who were 
+reported to have a hearing problem. While signifiers were 
+beneficial, it was also important to test them to ensure they 
+are intuitive and useful to the users. Similar to the different 
+layouts, shapes, and visual presentation of the information 
+tested during the paper prototype testing, signifiers if resource 
+permits should also be meticulously tested to enhance 
+usability of the device. 
+Finally, another recurring requirement for the HCWs 
+is to have feedback (i.e., sounds, visual cues, vibrations) to 
+notify the users that they are doing the tasks correctly. During 
+the Think Aloud activity, one participant religiously read 
+everything that flashed on the screen. He also appreciated 
+that the device displayed 'checking nodes' and 'testing' upon 
+pressing the test button. Participant was relieved that the 
+device received the action and indicated the need to wait 
+while the test was ongoing. Feedback was significant so that 
+the users would know that the device acknowledges the users' 
+action (e.g., they triggered the start of the test) and need to 
+wait for the test to be completed.
+User interface design also involves making the interface 
+visually appealing, influencing proper use, reducing error, 
+and improving the user's willingness to use the device. 
+
+Content
+Nine of the 27 user requirements were content-related. 
+The content should have all the essential data based on 
+national or international standards, instructions, and even 
+content related to decision support. 
+Preparing and submitting reports to different government 
+offices during the inspiration phase is a recurring concern for 
+HCW. It entailed additional work for the HCWs, especially 
+since various offices require differently formatted yet similar 
+reports. HCWs wanted to be assured that the data gathered 
+in the device were complete data sets needed to submit 
+information to the DOH. Input from the clinical expert 
+regarding the essential data by the national government 
+helped in completing this requirement. 
+All this content had to be organized and displayed in 
+a not confusing or overwhelming manner. The Interaction 
+Design Foundation (IDF) emphasized find-ability to be 
+an essential concept to ensure a good user experience. 
+This refers to the idea that "the product and the content 
+within them should be easy to locate or find".19 Different 
+font styles, text boxes, and other visual elements aided the 
+users in locating only the needed content for the specific 
+task. This aligned with Wong’s study that recommends 
+the reduction of "visual clutter" to not compete with users' 
+limited attention. Further, Wong emphasized the need to 
+limit only to necessary components for the current tasks to 
+provide clear, visible, and unambiguous means of navigating 
+or understanding the content.21
+
+50
+
+But clarity does not mean empty UI. Alexander and 
+Staggers contradict that it is more optimal to have dense 
+screens that include all pertinent information to minimize 
+unnecessary movements between screens to search for 
+information.22 FGDs, prototype testing, and participant 
+observations helped strike a balance between complete and 
+precise by understanding how the health workers make their 
+decisions and the information necessary displayed on every 
+screen or in a particular task. 
+Having all the contents needed is not enough; how it 
+will be presented and when it should be displayed should also 
+be considered. 
+
+Function
+Twenty (20) of the 27 requirements were function-
+related. There were common themes in the operations 
+requested by the health workers across all sites. Mostly these 
+were accuracy, durability, built-in instructions, ready-to-use, 
+security, confidentiality, and the print function.
+This study elucidated the importance given by HCWs 
+for the credibility of the device they are using. During the 
+FGDs, they emphasize that the accuracy of the information 
+must be, by no exception, accurate. They also noted the need 
+for the device to be built to last. The machine needed to 
+remain stable even after several uses, especially in isolated 
+communities, to access service centers, and communicate with 
+the project proponent. This is especially cited since RHUs 
+serve geographically isolated communities, to access service 
+centers, and communicate with the research proponents for 
+device repair is cumbersome. Credibility influences good user 
+experience, according to IDF. This involves the ability of the 
+user to trust in the product provided, not only that it does the 
+job it is supposed to do, but also that it will last for a reasonable 
+amount of time and the information provided with it is accurate 
+and fit-for-purpose" 19 This study found similar findings and 
+reported them as the top requirement.
+Functions related to training and ease of learning the 
+device were also a primary must-have requirement by the 
+HCWs. Since most health workers expressed that they are not 
+adept with technology, they want the HeLe device to be easily 
+understood and not require too much mental effort to use it, 
+on top of the demands of everyday work. This relates to what 
+Berkowsky said in the earlier discussion that confidence to use 
+predicts the willingness to use technology.18 HCWs explained 
+that having these instructions are significant considering the 
+fast turn-over rate of HCWs, especially among the younger 
+ones. However, on-site or regional training events are costly 
+and require the HCW to leave the RHU for a certain period, 
+which in turn slows down health care services. Moreover, 
+when HCWs trained on the technology leave the RHU, the 
+knowledge leaves with them. Typically, instructions are not 
+being cascaded to the remaining HCWs. In-app instructions 
+and quick access to a guide on using the device or software 
+are standard features in most commercial devices or digital 
+phone applications. This feature might be helpful to HCWs.
+
+Another requirement elicited is having a print function 
+in the device, requested by almost all sites. Health workers 
+explained that although the government's thrust is to use an 
+EMR, they still need to have printed results to refer patients 
+until the promised service delivery network is well established. 
+It is a vital health service to screen newborns for hearing 
+problems. Understanding this is important to ensure that the 
+technology to be introduced is aligned with their workflow. 
+With this requirement, we could infer that compatibility 
+and facilitating conditions, described by Venkatesh in 
+UTAUT, should be considered in designing the technology. 
+The UTAUT underscores the importance of compatibility 
+of the device with service delivery to facilitate technology 
+adoption.14 Facilitating conditions means that the intro-
+duction of the innovation should consider availability of 
+resources (i.e., equipment, infrastructure, etc.) of the target 
+user and if they are capable of implementing it. These are 
+often missed when developers do not profile their target 
+recipients. One participant articulated it further being a 
+recipient of many projects in the past stating "these projects 
+and policies imposed by national government have failed 
+because they never consider the conditions in the grassroots. 
+For example, electricity, which is necessary for their EMR, 
+was erratic in the locale".
+Fleshing out all these requirements at the beginning of the 
+design and development allows more room to accommodate 
+the requirements with lesser resource implications.
+
+Lessons during the ideation phase
+Paper prototypes were useful, economical, and easy to 
+revise on the spot. IDEO and Smaradottir also describe this 
+as an efficient way to describe suggestions for functionality 
+and user interface.19,23 Moreover, providing several compa-
+rative designs during the Low Fidelity Prototype FGD 
+helped elicit what the users want and do not want in a user 
+interface. It also helped narrow down design choices on 
+specific interfaces that appeared to be problematic for the 
+users. This also lowered the costs and number of interviews as 
+they were already presented with options they could choose 
+from. The FGD lowered the costs in requirements gathering 
+and efficiently gathered collective views on the UI. During 
+the presentation of the prototypes and interview after that, 
+the users checked whether their needs were met. They highly 
+appreciated that they were consulted as to what should be in 
+the device and be part of creating the software. They also took 
+pride when the specified requirements were incorporated 
+into the prototypes. It made them more interested in 
+being involved and giving inputs knowing their feedback 
+could be included in the output. 
+
+System Usability 
+System usability and user evaluation are essential 
+steps before deploying technology on a wider scale. In this 
+step, developers could infer how the users would behave 
+with the proposed design in the actual situation i.e., issues, 
+
+51
+
+recurring errors, and additional requirements could already be 
+documented for future interface improvements.20 The repeated 
+erroneous actions should hint the designers to develop design 
+solutions to avoid these mistakes and ensure that the users 
+perform the task correctly.3
+
+Results of the SUS for the medium-fidelity prototype 
+developed from this study point out that user find the 
+interface usable and acceptable. With an SUS score of 81.94, 
+it is beyond the threshold of 60 points and achieved a higher 
+SUS score than reported by Custodio (68 points) in 20182. 
+This study’s output is successful in improving the usability 
+of the user interface design of HeLe device.
+
+Conclusion 
+
+Developing a promising health technology requires a 
+thorough analysis of the users' context, needs, and preferences 
+for health ICT to be seamlessly and sustainably incorporated 
+in care delivery. In the development cycle, the User-Centered 
+Design approach actively involves end-users in each step, 
+allowing them to bring suggestions and opinions on design 
+and functionality. User acceptance has been one of the 
+significant barriers to the deployment of health projects, 
+mainly because relevant user preferences and usability issues 
+have not been considered.
+This study supports several prior research of Rothgangel 
+et al. and Bath in demonstrating the worth of UCD in 
+developing health ICT.12, 24 However, there is limited research 
+in the Philippines that describes the end users' systematic 
+involvement in the design of new technology, especially in 
+health care. This study documents best practices and lessons 
+learned in applying UCD methodology in design and 
+development. 
+Different participatory methods and structured 
+procedures (i.e., card sorting, MoSCoW matrix, CTA) were 
+applied to help elicit and prioritize user requirements and 
+feedback from the users. 
+The UCD methodology is undoubtedly time-consuming, 
+but in the long run, can be cost-effective. It reduces major 
+revisions or potential overhaul of the technology in the late 
+stage. In essence, paper prototyping has been an efficient 
+way to present and gather suggestions on designing the 
+user interface. This could also be quickly revised on-ground, 
+compared to an already developed device, to accommodate 
+the demands and changes by the users. Digital mock-ups also 
+require little to no coding and computer skills, and can be 
+designed and redesigned faster than the actual product. The 
+process was a crucial step that has resulted in a high degree 
+of user acceptance of the Medium Fidelity Prototype among 
+the target primary care health workers. Government research 
+investments intended to democratize access to essential 
+newborn hearing screening must successfully define what is 
+user-friendly. 
+The most common considerations in user interface 
+design are the presence of signifiers, constraints, feedback, and 
+
+the organization of the information that should confirm what 
+they are accustomed to. Users prefer that they understand 
+what to do on a specific page at a glance (i.e. fonts, signifiers, 
+instructions), be prevented from making errors (constraints 
+and feedback), and can be alerted and allow to correct their 
+mistakes (error-tolerance and education). 
+In general, the users believed that the design was easy 
+to use and understand. They described the design as very 
+user-friendly, simple, and straightforward to the desired 
+action. The tabular format of the patient list, with emphasis 
+on the pertinent information, was also preferred by the users 
+as it enabled getting the patient details quickly. They again 
+emphasized during the interview sessions that instructions 
+helped them throughout the process, together with the visual 
+prompts where the device can detect if they are doing the task 
+wrong. The visual prompts also provided instructions on how 
+to correct the wrong action which was very helpful according 
+to them. Moreover, it was preferred that the instructions can 
+be enabled or disabled depending on who is using the device. 
+They believe that it was an important feature for the majority 
+of the health workers who are not technologically adept, but 
+would be a nuisance for those who are already accustomed 
+with the technology.
+Finally, they believe that the current design already 
+allowed them to perform the intended function of testing 
+the device. They also appreciated that the device follows the 
+specific guidelines in testing newborn hearing screening. 
+Most of the users are contented with the prototype of the 
+UI and that there were no other crucial requirements that 
+needs to be added.
+This study documents practices and lessons learned in 
+applying UCD methodology in design and development that 
+have been demonstrated to improve usability of the UI design. 
+The experience, tools, and lessons in the UCD methodology 
+applied in HeLe prototypes can guide future research and 
+eventually better understand ways to develop user-friendly 
+telemedicine devices for the Philippines and also for other 
+resource-limited environments. The reported findings and 
+lessons learned might interest researchers, software, and 
+hardware designers immediately. Health workers who will 
+be at the user-end of innovations, program managers, chief 
+executives, and policy makers can also consider these findings 
+within their own spheres of influence, contributing to the 
+future's desired innovative ICT-based health care system.
+
+Recommendations
+Due to resource constraints, the study's sample size is 
+small and insufficient to illustrate the presence or absence of 
+causal relationships on explored variables. It was limited to the 
+application of UCD to HeLe interface. The Implementation 
+Phase of the UCD methodology was not done. The usability 
+testing is also limited to user feedback and does not provide 
+sufficient insight to predict utilization or acceptance of the 
+actual HeLe device. Nevertheless, this Medium Fidelity 
+Prototype and other lessons from this UCD methodology 
+
+52
+
+are endorsed to the HeLe research team for use in the next 
+stages of the investigational device development. 
+With enough budget and human resources, the research 
+could be continued up to a high-fidelity or final prototype 
+for testing. Future research could also assess the utilization 
+and adoption of the device developed using this design 
+methodology. A controlled trial could also be conducted to 
+allow for a more direct comparison of the interface before and 
+after the implementation of UCD methodologies.

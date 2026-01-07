@@ -1,0 +1,51 @@
+{
+  "file_name": "Anraad_2024_promoting-informed-decision-making-about.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The COVID-19 pandemic and social-distancing measures prevented Centering Pregnancy (CP) group-care from taking place, blocking inclusion of CP in the large-scale trial.",
+      "justification": "This external constraint directly hindered the designers' ability to evaluate the CP intervention in a planned large-scale trial, impeding the 'evaluate designs' workload and limiting real-world testing and iteration.",
+      "reference_excerpt": "However, due to the COVID-19 pandemic and the associated social-distancing measured in place at the time of the data collection, CP group-care could not safely take place and could therefore not be included in the large-scale trial.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "CP care was only offered in a limited number of clinics, preventing random assignment of midwifery clinics to CP or control conditions.",
+      "justification": "This operational constraint limited the designers' ability to use the intended semi-randomized design for evaluation, constraining the 'evaluate designs' workload and robust testing of the CP intervention.",
+      "reference_excerpt": "We planned to use a semi-randomized design because participating midwifery clinics could not be randomly assigned to the CP or control condition, as CP care is only offered in a limited number of clinics.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The development pre-tests used small sample sizes that were insufficient to evaluate effectiveness or support broad generalizability of findings.",
+      "justification": "Small sample sizes constrained the designers' ability to generalize user insights and to robustly assess intervention outcomes, limiting the 'manage user understanding' and 'evaluate designs' workloads.",
+      "reference_excerpt": "The small sample sizes in this study do not serve to evaluate the effectiveness of the intervention. They merely served to improve the intervention during the development process.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "stakeholder",
+      "barrier_type": "emotional",
+      "description": "Midwives' personal attitudes toward vaccination vary and some who are critical may be less inclined to follow the training.",
+      "justification": "Because midwives are key facilitators of CP, their attitudes and potential reluctance to adopt training can undermine implementation fidelity and the designers' ability to facilitate user involvement and coordinate multidisciplinary delivery.",
+      "reference_excerpt": "Midwives play an important role as facilitators in the CP intervention. ... midwives who are critical of vaccination may be less inclined to follow the training.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Reaching at-risk populations (low health literacy and low SES) with online interventions is more challenging.",
+      "justification": "This limitation impeded the designers' ability to ensure inclusive user involvement and manage understanding for all target subgroups, affecting 'manage user understanding' and 'facilitate user involvement' workloads and motivating the parallel development of a non-online CP intervention.",
+      "reference_excerpt": "However, even though online interventions can be effective, the reach of at-risk populations (i.e., those with low (health) literacy and socio-economic status) is more challenging (23, 24).",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

@@ -1,0 +1,42 @@
+{
+  "file_name": "Curtis_2023_envisioning-visibility-discreet-wearable.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The study had a relatively small sample size and was conducted in a limited Western, densely populated context, restricting the breadth of user evidence available to the research team.",
+      "justification": "This resource limitation constrained the designers' ability to manage user understanding and to understand varied contexts of use, reducing confidence in requirements and limiting evaluation generalisability for iterative design work.",
+      "reference_excerpt": "In terms of limitations, the work reflects a relatively small sample size and limited context – therefore results should be interpreted on the basis of a Western context and densely populated region with good public infrastructure.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Wide variation in participants' technology literacy and unequal access to personal technology complicated participant engagement and the representativeness of feedback.",
+      "justification": "Differences in technology familiarity and access hindered facilitation of user involvement and the team's ability to specify consistent user requirements and evaluate prototypes across the target population.",
+      "reference_excerpt": "Amongst the small group, there was a wide spread in terms of technology literacy – all owned a smartphone – yet some participants were more comfortable with technology than others.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "team",
+      "barrier_type": "skill",
+      "description": "Qualitative coding was initially carried out by a single author before group refinement, creating a risk of individual bias in analysis.",
+      "justification": "Relying on one analyst initially could limit the designers' ability to accurately manage user understanding and integrate feedback into iterative design decisions, affecting the validity of thematic findings used to drive requirements and prototypes.",
+      "reference_excerpt": "In line with Braun and Clarke’s original interpretation, the coding process was initially carried out by solely the first author13 [8, 9, 74]. Following this, all the authors met and collectively refined and discussed the themes together to mitigate individual bias.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "User-testing and iterative feedback for prototypes were conducted with small, limited specialist groups (e.g., only two SLTs for one prototype and five specialists for another).",
+      "justification": "These small testing rounds constrained the team's capacity to thoroughly evaluate designs and iterate based on diverse user and stakeholder feedback, limiting confidence in design refinements and broader applicability.",
+      "reference_excerpt": "a final version of the prototype underwent a small round of user-testing with the two SLTs ... the prototype was iterated on the basis of further suggestions and feedback from user-testing of the prototype with 5 specialists from the centre.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

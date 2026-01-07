@@ -1,0 +1,42 @@
+{
+  "file_name": "Costa_2015_lessons-learned-developing-educational-s.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Time and budget constraints caused the team to avoid resource-intensive methods (field studies and interviews), limiting deep contextual user research.",
+      "justification": "This resource limitation prevented designers from performing the 'understand context of use' and 'manage user understanding' workloads because they explicitly chose less time-consuming methods over in-depth user research.",
+      "reference_excerpt": "Thus, being associated to the time and budget allotted for the project, demotivating factors [30] and knowing restrictions, the most relevant methods, \"Field studies\" and \"Interviews with users\" require a long time for its implementation and commonly greater investment [31], we opted to choose methods to balance these two factors.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "team",
+      "barrier_type": "emotional",
+      "description": "Differences in attitudes among multidisciplinary team members and communication failures created weaknesses during development.",
+      "justification": "Interpersonal and attitudinal issues disrupted coordination of the multidisciplinary team and hindered collaboration needed to integrate feedback, iterate, and maintain shared user understanding.",
+      "reference_excerpt": "In this line, it is considered that the diversity of skills/roles of the various elements of the multidisciplinary team may also have created weaknesses throughout the development process. These difficulties have focused primarily at the level of the difference in attitudes of the team members, as well as communication failures.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Conflicting expectations between the commissioning company (seeking reduced costs) and external developers (seeking to maximize collaboration) created misaligned incentives.",
+      "justification": "These stakeholder-driven cost and scope pressures constrained designers' ability to balance product quality, design time, and development costs, thereby limiting iteration, holistic experience work, and producing optimal design solutions.",
+      "reference_excerpt": "Working in multidisciplinary teams can create different involvements. For example, the company that developed the Courseware Sere, the Ludomedia, you want it to have reduced development costs. On the other hand, an external developer might want to make the most of their collaboration.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "team",
+      "barrier_type": "resource",
+      "description": "There was no designated 'facilitator of User Centered Design' within the team to mediate between users and technical members.",
+      "justification": "The absence of a dedicated facilitator limited the team's capacity to coordinate user involvement, ensure user perspectives were integrated across disciplines, and sustain iterative evaluation and feedback loops.",
+      "reference_excerpt": "In an upcoming project, an important factor would be to ensure that as one of the team members, were given the responsibility/role of \"facilitator of User Centered Design\" in the development process. The facilitator of User Centered Design mediates the relationship between users and the elements of the multidisciplinary team and should have a multidisciplinary background (for example, see how users interact with educational software and understand the context of use) [20].",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

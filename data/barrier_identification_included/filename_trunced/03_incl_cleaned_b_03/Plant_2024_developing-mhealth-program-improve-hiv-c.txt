@@ -1,0 +1,749 @@
+Developing an mHealth program to improve 
+HIV care continuum outcomes among young 
+Black gay and bisexual men
+
+Aaron Plant1*, Paul Sparks1, Deborah Neffa Creech1, Ta’Jalik Morgan1, Jeffrey D. Klausner2, 
+Cornelis Rietmeijer3 and Jorge A. Montoya1 
+
+Methods
+Inspiration for AMP
+The concept for Amp emerged from a series of infor-
+mal conversations between our team and HIV linkage 
+and retention staff from a large HIV service organiza-
+tion in Los Angeles, CA, beginning in 2015. These staff 
+expressed a need for programs to better engage gay 
+and bisexual men living with HIV in care, to keep them 
+retained in care, and to help them achieve viral sup-
+pression. We had additional conversations with staff 
+at HIV service organizations in San Francisco, CA, Los 
+Angeles, CA, and Huntsville, AL, in 2018. Organiza-
+tion staff suggested a program that could function as 
+both a stand-alone intervention for people living with 
+HIV and something that could be integrated into their
+
+organization’s HIV testing, linkage, and retention work-
+flow to improve HIV care continuum outcomes.
+From 2016–2018, we held individual and group dis-
+cussions with 16 young gay and bisexual men who were 
+diverse in age and race/ethnicity to assess their needs 
+with regard to HIV care and to investigate potential solu-
+tions. These conversations revealed that despite the avail-
+ability of highly effective treatment, an HIV diagnosis 
+remained devastating. Many expressed feeling isolated 
+after their diagnosis and overwhelmed with the infor-
+mation they were provided to manage their condition. 
+When discussing possible solutions with these men, we 
+developed the initial concept of an mHealth program 
+(e.g., mobile website or app) that could include content 
+(e.g., personal narrative videos and articles), tools, and a 
+community of peers to holistically support people living 
+with HIV. In 2018, we received funding to use HCD to 
+fully develop the concept. We decided to focus the pro-
+gram on YBGBM due to the HIV care continuum dispar-
+ities experienced by this group.
+HCD is an approach to creating programs or products 
+that requires a deep understanding and intensive involve-
+ment of stakeholders to ensure that programs meet the 
+needs of the intended users [54, 55]. This process has 
+been used to create innovative and culturally appropri-
+ate programs [56] that are high in satisfaction, usability, 
+
+and effectiveness [57] among intended audiences. The 
+mixed methods approach described below follows the 
+stages of HCD developed by the design firm IDEO [55]. 
+This approach is highly iterative, enabling continuous 
+improvement throughout the development process, and 
+refinement even after the program is launched.
+
+Stage 1: ideation
+The first stage of the HCD process was intended to build 
+upon the initial concept and to generate a large number 
+of ideas for the functions, features, and design character-
+istics of the program. We conducted focus groups with 
+YBGBM and key informant interviews with HIV service 
+providers in several U.S. cities to gain a better under-
+standing of the needs of intended users and organizations 
+that would implement the program. Interview and focus 
+group data were analyzed for themes, which were used to 
+develop prototype features in the subsequent stages.
+
+Focus groups
+From March–April 2019, we conducted six in-person 
+focus groups with a total of 50 YBGBM, ranging from 
+18–30 years old (see Table 1). Focus group participants 
+were recruited through our team’s network of contacts. 
+Groups were held at HIV service organizations or com-
+munity spaces in Alabama (Huntsville) and California 
+
+(San Francisco, Los Angeles, and Oakland). Participants 
+gave written consent and received a $100 incentive for 
+a 90-min group. We developed a semi-structured dis-
+cussion guide to investigate the experiences of YBGBM 
+living with HIV, specifically barriers and facilitators to 
+HIV care continuum outcomes. During the discussion, 
+we asked for feedback on The Body, an HIV website to 
+which patients are often referred for HIV information. 
+We showed participants two sections, the home page 
+and the newly diagnosed section, and asked what they 
+thought of this website, if it seemed helpful, and how it 
+could be improved, if at all. We then showed four exist-
+ing videos available online (two of young men living with 
+HIV and two of HIV providers) to assess preferences for 
+video content. Finally, we read a description of our ini-
+tial program concept and solicited feedback both gener-
+ally and on specific content topics, tools, and features. 
+Focus groups were audio recorded and professionally 
+transcribed.
+
+Key informant interviews
+In July 2019, we conducted 12 key informant interviews 
+in person or by telephone with HIV service providers at 
+five different organizations in Alabama (Huntsville), Lou-
+isiana (New Orleans), Texas (Dallas), and California (Los 
+Angeles and Riverside; see Table 1). Providers gave either 
+written or verbal consent and received a $75 incentive for 
+a 60-min interview. All worked at HIV service organiza-
+tions that provide case management and linkage to care 
+to YBGBM, and 10 worked at organizations that also 
+offer HIV treatment. We interviewed providers from dif-
+ferent levels within the organization, including executive, 
+senior, and frontline staff. We developed a semi-struc-
+tured interview guide to solicit both general and specific 
+input on program content, tools, and features that could 
+be useful to YBGBM living with HIV and that would help 
+staff to better support clients along the HIV care contin-
+uum. Provider interviews were audio recorded and pro-
+fessionally transcribed.
+
+Stage 2: rapid prototyping
+Rapid prototyping is a methodology used in HCD that 
+involves the iterative testing and refining of low-fidelity 
+prototypes to efficiently optimize program elements. 
+YBGBM and providers were recruited for rapid pro-
+totyping through our team’s HIV service organization 
+contacts. Rapid prototyping sessions were carried out 
+over two days each in California (Los Angeles), Ala-
+bama (Huntsville), and Mississippi (Jackson), with 
+a total of 31 YBGBM ages 20–30 and 12 HIV ser-
+vice providers (see Table  1). Sessions took place from 
+
+August–September 2019. Each session was conducted 
+in-person with individual participants by one of three 
+study staff. Participants provided written informed con-
+sent and received a $100 incentive for a 60-min session.
+During these sessions, low-fidelity hand-drawn and 
+digital prototypes were used to gather participants’ input 
+on: the user interface; content, tools, and resources to 
+be included in the program; how YBGBM might want 
+to interact in a community of peers; ways to maximize 
+program engagement; and whether the program should 
+include an app, mobile website, or both. At the end of 
+each day of prototyping, responses were integrated into 
+revised prototypes and tested again the next day.
+Prior to the rapid prototyping, we produced 13 videos 
+on eight topics based on needs expressed by YBGBM 
+participants and providers in the ideation stage. We 
+varied the settings (a person’s home or a film studio), 
+speakers (YBGBM or HIV clinician), and video char-
+acteristics (e.g., subject looking directly into the cam-
+era or off camera, and heavy or light editing) in order 
+to give participants the opportunity to provide feed-
+back on both video content and style. Each participant 
+was shown at least two videos, and videos were evenly 
+divided between participants.
+
+Stage 3: user feedback
+Online survey
+An online survey was conducted from September–
+October 2019 to gather detailed feedback on the range 
+of program features that had been developed and 
+refined in stages 1 and 2 and to assess the generaliz-
+ability of those findings. The survey instrument was 
+designed to capture preferences for content topics, 
+tools, features, and resources, as well as to assess the 
+acceptability, feasibility, and usefulness of the concept 
+among a national sample of YBGBM living with HIV, 
+ages 18–29 (n = 200; see Table 2). This sample size was 
+sufficient given the intention was for descriptive pur-
+poses rather than statistical analysis. The survey began 
+with questions designed to screen out participants 
+who did not meet these inclusion criteria. Survey par-
+ticipants were recruited through our team’s network 
+of HIV service organization contacts and through paid 
+advertisements on geo-spatial networking apps and 
+social media platforms. The survey took an average of 
+20 min to complete. Duplicate responses (e.g., consecu-
+tive surveys from the same IP address or similar email 
+addresses) and responses completed in under six min-
+utes (deemed too fast given the survey length) were 
+excluded from analysis. Participants provided consent 
+online before taking the survey and received a $20 
+incentive.
+
+Usability testing of the functional prototype
+Using data from stages 1 and 2 and the online survey, we 
+worked with a website developer to create a working digi-
+tal prototype of the app. The objective of the online usa-
+bility testing was to identify potential functionality issues 
+and use the findings to maximize program acceptability 
+and effectiveness. Participants were sent a link to the 
+prototype and asked to view it on their smartphone. The 
+prototype included the proposed topics, tools, and videos 
+developed in stage 2, but was designed in grayscale with-
+out any branding or images. This approach allowed us to 
+test usability of the interface without distracting users 
+with design elements.
+Usability testing participants (n = 21; see Table 1) were 
+recruited through our team’s network of HIV service 
+providers and from the online survey, with participants 
+contacted in the order in which they completed the sur-
+vey. Usability testing sessions were conducted in October 
+2021, with study team members observing participants 
+interacting with the prototype over Zoom. During the 
+session, participants were presented with several tasks 
+related to finding information, tools, or resources on the 
+prototype (e.g., “find and use the medication reminder” 
+or “find a video about disclosing HIV status to sex part-
+ners”). Participants were also asked open-ended ques-
+tions about topics, community features, tools, and 
+resources; ease and predicted frequency with which 
+they would use the app; and whether most of the con-
+tent should be video- or text-based. Finally, each partici-
+pant orally completed the System Usability Scale, or SUS 
+[58], a reliable tool for measuring usability comprised of 
+10 questions with five response options, from “strongly 
+agree” to “strongly disagree.” Each testing session lasted 
+approximately one hour. Participants provided verbal 
+consent and received a $100 incentive.
+
+Analyses
+Stage 1 focus group and interview transcripts were 
+coded using deductive and inductive approaches by two 
+of the team members experienced with qualitative data 
+analysis. They developed codes based on the interview 
+and discussion guides and added codes as they emerged 
+from the data. Transcripts were coded to identify themes 
+relevant to developing the app and its components 
+
+(e.g., content, tools, community features, and resources). 
+In stage 2, written notes of participants’ feedback dur-
+ing rapid prototyping sessions were entered into a digital 
+spreadsheet after each session and were categorized into 
+prototype elements that received positive feedback and 
+those needing improvement. In stage 3, survey data and 
+the SUS results were assessed using descriptive statistics 
+(e.g., frequencies) in SPSS v.26. During usability test-
+ing of the functional prototype, task completion times 
+were captured by the interviewer using a timer and 
+were used to calculate mean and range values. Qualita-
+tive responses were analyzed for common themes with 
+regard to satisfaction with content, tools, usability, and 
+likely uptake of the program.
+
+Results
+Stage 1: ideation
+Seven main themes emerged from the focus groups and 
+interviews. Sample quotes for each theme can be found 
+in Table 3.
+
+Learning about HIV after a new diagnosis is overwhelming, 
+and available online resources do not meet the needs 
+of YBGBM
+Many focus group participants described being devas-
+tated after receiving their HIV diagnosis (e.g., feeling iso-
+lated, depressed, and afraid of dying and social rejection). 
+Participants also reported having many questions about 
+living with HIV (e.g., effects of HIV and medications on 
+long-term health, and transmission to partners). Many 
+participants felt overwhelmed with receiving so much 
+information about HIV from their providers right after 
+their diagnosis.
+Participants reported seeking HIV information 
+online, often even years after their diagnosis. Sev-
+eral participants stated that it was difficult to find 
+trustworthy and accurate information. When partici-
+pants were shown The Body website, many felt it was 
+too text-heavy and visually busy to easily find needed 
+information.
+Most interviewed HIV service providers said that they 
+wanted a medically accurate, easy-to-navigate infor-
+mational website to offer clients, but that they were not 
+aware of such a resource. Few providers reported refer-
+ring clients to websites or apps, other than several who 
+recommend apps specifically for medication adherence. 
+Providers said that clients receive HIV information, 
+including written materials, during the first clinic visit 
+after their diagnosis. However, many providers said cli-
+ents struggle with important concepts related to living 
+with HIV (e.g., CD4 count and viral load) and would ben-
+efit from ongoing education.
+
+Participants expressed a desire for video‑based content 
+and programs
+YBGBM participants and HIV service providers felt that 
+the new program should include videos of both people 
+living with HIV and experts. Participants and providers 
+said that program videos (and the content overall) should 
+be informational and motivational, should feel authen-
+tic as opposed to overly polished, and should include a 
+diversity of stories (e.g., people at different stages of liv-
+ing with HIV, and stories of challenges and successes). 
+Some YBGBM and providers felt that the content should 
+be delivered through both text and video, as people learn 
+in different ways.
+When participants were shown sample video testimo-
+nials of other young men living with HIV they responded 
+very favorably; many said that seeing peers speak openly 
+about their HIV status and sexual orientation was moti-
+vating and empowering. Some providers felt that includ-
+ing videos of peers navigating challenges related to living 
+with HIV could increase YBGBM’s self-efficacy related 
+to care continuum outcomes and help them build skills 
+to stay healthy (e.g., videos could show YBGBM discuss-
+ing their strategies for taking medication and staying in 
+care). They also thought that the program could reduce 
+fears and offer hope by showing people thriving while liv-
+ing with HIV.
+
+YBGBM need more support related to disclosure and stigma, 
+which can impact their HIV care outcomes
+Numerous YBGBM participants across groups described 
+the impact that disclosure issues and HIV stigma have 
+had on their lives. Some YBGBM reported positive 
+experiences with disclosure, describing telling others as 
+cathartic and facilitating social support. However, many 
+shared fears or negative stories of disclosing their HIV 
+status, with some experiencing stigma from friends, 
+partners, and family members, which added to feelings 
+of isolation. YBGBM participants also said HIV stigma 
+within the gay community (e.g., on dating apps) exac-
+erbated challenges with finding partners and establish-
+ing romantic relationships. Both YBGBM and providers 
+talked about stigma being related to fear and misinfor-
+mation about HIV transmission (e.g., family members 
+believing that HIV can be transmitted from hugging or 
+sharing dishes). Several providers suggested that the pro-
+gram provide accurate information to family members 
+to reduce this stigma and demonstrate how to support a 
+loved one living with HIV.
+YBGBM participants and providers mentioned dis-
+closure issues and stigma as barriers to accessing HIV 
+care, to medication adherence, and to staying in care. 
+For instance, some YBGBM reported missing medical
+
+appointments due to fears of being seen at a clinic or 
+missing medication doses because they did not want 
+to take the pills in front of others. Both providers and 
+YBGBM participants suggested that the program include 
+videos with examples for when and how to disclose their 
+status. Further, participants and providers emphasized 
+that the program should address confidentiality concerns 
+(e.g., HIV should not be in the program name).
+
+YBGBM would benefit from opportunities to learn and get 
+support from others living with HIV
+Most YBGBM participants said that they rarely discuss 
+HIV with anyone, even with others whom they know are 
+living with HIV. However, participants in all groups dis-
+cussed the value of getting support and information from 
+other people living with HIV. Providers also emphasized 
+the importance of spaces where people living with HIV 
+can support one another in a safe environment. Both 
+YBGBM and providers responded enthusiastically to the 
+idea of building a community of people living with HIV 
+where they can share their experiences (e.g., through cre-
+ating a profile, direct messaging, or posting on a forum) 
+as part of the program. Some providers also suggested 
+that the program could include trained peer mentors liv-
+ing with HIV who can answer questions and provide sup-
+port and resources.
+
+A holistic approach would be most useful for people living 
+with HIV and for service organizations
+Participants across focus groups wanted a wide range 
+of content about living with HIV, including informa-
+tion about medical treatment, disclosure, sex and rela-
+tionships, nutrition and exercise, mental health, and 
+resources. Participants explained that having holistic 
+content would be most beneficial, as information needs 
+
+vary from person to person and also change over time 
+(e.g., right after a diagnosis versus several years later). 
+All HIV providers felt the program should include con-
+tent, tools, and resources on a wide range of issues that 
+affect well-being and HIV care outcomes of YBGBM 
+(e.g., unaddressed mental health issues, disclosure, 
+stigma, substance use, HIV misinformation, medication 
+adherence, awareness of available resources, and medical 
+distrust). Providers felt that a “one stop shop” approach 
+would make the program more acceptable, engaging, and 
+useful to both YBGBM and to HIV organizations.
+
+YBGBM want an HIV program that is not exclusively focused 
+on them
+The majority of YBGBM participants felt that the pro-
+gram’s videos and community should represent people 
+living with HIV of diverse races/ethnicities, gender iden-
+tities, sexual orientations, and experiences. Many par-
+ticipants said that they would not relate to a program 
+that was only for Black men living with HIV, or they felt 
+that this would be stigmatizing (as a program for only 
+YBGBM would suggest that they are the primary group 
+affected by HIV). Others felt that a diverse community of 
+people living with HIV should be included yet the expe-
+riences of young people of color should be emphasized. 
+Very few participants felt that the program should only 
+be for YBGBM.
+
+Digital programs can help HIV providers and their 
+organizations reach HIV care continuum outcome goals
+All HIV service providers interviewed felt that an 
+mHealth program could help them to support their 
+clients through linkage, treatment initiation, adher-
+ence, retention, and viral suppression. Providers men-
+tioned several features that could be useful, including a 
+
+messaging platform that could be used by case managers, 
+clinic appointment and medication reminders, and a way 
+to track CD4/viral load test results. Providers at organi-
+zations that already offer some of these features (e.g., a 
+messaging system) thought that an mHealth program 
+could be very useful for other components (e.g., videos 
+addressing HIV stigma, HIV education, and a commu-
+nity for people living with HIV). Providers suggested that 
+the program could be offered to clients as soon as they 
+receive a diagnosis in order to provide social support and 
+encourage linkage during that critical time. All providers 
+said that their staff are open to using technology and that 
+the proposed mHealth program could be feasibly inte-
+grated into their workflow.
+
+Stage 2: rapid prototyping
+Insights from the focus groups and interviews were 
+incorporated into the development of a series of proto-
+types covering potential content topics, sample videos, 
+tools, and resources (See Table 4 for ways that findings 
+from each stage of research were used to improve the 
+program).
+
+Content
+When presented with a list of program topics and sub-
+topics, participants expressed that the proposed content 
+was comprehensive and that it would appeal to people 
+at different stages of living with HIV. When asked which 
+topics would be most helpful to them personally, par-
+ticipants offered a range of responses, which supported 
+findings from stage 1 that having holistic content would 
+engage a broader audience. All participants emphasized 
+the value of information specifically for individuals newly 
+diagnosed with HIV and said that content should empha-
+size that people can lead a long, healthy life with HIV. 
+Specific topics that participants found helpful included: 
+U = U (Undetectable = Untransmittable); that people liv-
+ing with HIV can have a fulfilling love life and sex life; 
+mental health (e.g., addressing depression and anxiety, 
+and dealing with trauma and stress); maintaining overall 
+health (e.g., diet and exercise, preventing sexually trans-
+mitted infections, and managing substance use); under-
+standing medications and their side effects; and examples 
+of how to disclose their HIV status to partners, family, 
+and friends.
+Nearly all participants supported the idea of delivering 
+most of the content through videos featuring individu-
+als living with HIV and experts. The majority preferred 
+video over text-based content or desired a combination of 
+video and text. Similar to focus group participants, pro-
+totyping participants expressed the desire for videos fea-
+turing diverse people living with HIV. Participants also 
+liked the idea of featuring videos of doctors, mental health 
+
+specialists, and case managers from the organization 
+where they receive their HIV care. Participants suggested 
+several ways to keep them engaged with the program, such 
+as incorporating motivational content (e.g., daily affirma-
+tions and tips), regularly updating the program with new 
+videos, sending notifications about new content (via app 
+notifications or text messages), the ability to post their own 
+content, and having a way to save and share content.
+Participants responded favorably to the 13 sample 
+videos we created and found the people in the videos to 
+be relatable and authentic. Most considered the video 
+lengths (ranging from 1.5 min to 4.5 min) to be appro-
+priate. Notably, some participants who did not favor a 
+particular video indicated they would simply switch to 
+another video rather than discontinue using the pro-
+gram. We tested versions of these videos where the sub-
+ject did or did not speak directly into the camera, with 
+participants overwhelmingly preferring the former.
+
+Tools
+Proposed tools, including adherence and appointment 
+reminders, viral load and CD4 trackers, a tool to meet 
+health and personal goals, and a notepad to write ques-
+tions for providers received highly favorable feedback. 
+Some participants expressed the desire to interact with 
+mentors or case managers through the program. Oth-
+ers suggested customizability or the inclusion of games. 
+While some participants said they might not use every 
+tool, they felt that including a range of tools was needed 
+to meet the diverse needs of people living with HIV.
+
+Community
+Participants strongly advocated for having various ways 
+to interact with other people living with HIV, including 
+creating a profile, direct messaging, and responding to 
+questions on a forum. They expressed a desire to share 
+information and offer help to others, and they empha-
+sized the potential for such a community to reduce 
+stigma and isolation, and facilitate the exchange of useful 
+information, strategies, and support. Some participants 
+stressed the importance of mechanisms to address online 
+bullying and proposed rules for community engage-
+ment, such as prohibiting trolling and having methods 
+for removing users who breach community guidelines. 
+One participant recommended creating online support 
+groups centered around specific topics.
+
+Resources
+Most participants felt the resources proposed, which 
+included HIV care and treatment, mental health, hous-
+ing, food assistance, career, legal, and education were 
+comprehensive and useful. Participants emphasized the 
+need to understand the full range of available resources
+
+and to provide instructions and support for accessing 
+them. Several participants suggested including hotlines 
+as additional resources.
+
+Rapid prototyping with providers
+Providers reacted enthusiastically to the prototypes and 
+felt that the mHealth program would help improve HIV 
+care continuum outcomes. They felt it would provide 
+their clients with an efficient means of engagement and 
+support, as well as enhance the provision of medically 
+accurate information. Some providers proposed intro-
+ducing the app to newly diagnosed clients on their first 
+visit to support linkage into care and treatment initia-
+tion. One provider noted that newly diagnosed people 
+are often overwhelmed with information, which makes 
+
+it difficult to retain. This provider felt the program 
+would allow clients to access important information 
+when they are ready to receive it. Providers also sug-
+gested potential improvements, such as renaming spe-
+cific topics and including a feedback mechanism so 
+clients could suggest service improvements for their 
+organization. One provider early in stage 2 suggested 
+developing a dashboard to enable staff to support cli-
+ents as they use the app (e.g., a tool to message clients 
+and suggest specific content or tools to assist them with 
+specific challenges). This idea was tested with all sub-
+sequent providers and they were all very supportive 
+of this feature. All providers considered the mHealth 
+program to be feasible for implementation within their 
+organization Table 4.
+
+Stage 3: user feedback
+Online survey
+Results from the online survey among YBGBM nation-
+wide echoed the findings from stages 1 and 2 (See 
+Table 5). For instance, a high percentage of respondents 
+indicated that: including topics such as mental health 
+(92%), recent diagnosis (91%), and sex and relationships 
+(86.5%) is “very important”; having a community of 
+young men living with HIV to communicate and share 
+experiences with through the program would be “very 
+helpful” (77%); and the program’s community should not 
+be exclusive to YBGBM living with HIV (90%).
+A large majority of respondents agreed that the pro-
+gram concept was appealing (91.5%) and that it would 
+be “very helpful” for both people recently diagnosed 
+with HIV (90.5%) and those who have had HIV for two 
+or more years (76%). Most respondents said the pro-
+gram should include both a mobile app and a website 
+(53.5%), followed by an app only (41.5%) or mobile web-
+site only/other (5%). All participants said that they would 
+use the program. When asked how often they thought 
+they would use the program, 35.5% of respondents said 
+they would use it at least once a day, and 82.5% said they 
+would use it at least once a week.
+Respondents reported the proposed tools and resources 
+would be useful and helpful, in particular the CD4/viral 
+load tracker and adherence tool (81.5% and 75%, respec-
+tively, would “definitely” use these). Over 60% said they 
+would “definitely” use a series of proposed community 
+features (e.g., message forum, virtual support groups, 
+and direct messages). Respondents indicated that the fol-
+lowing would motivate them to continue using the app: 
+interacting with other people living with HIV in the app 
+community (83.5%); regularly adding new videos of 
+people living with HIV telling their stories (73.5%) and of 
+experts (72.5%); and the resources (73%) and tools (65.5%) 
+on the app.
+
+Usability testing of the functional prototype
+Most usability testing participants completed their tasks 
+on the working web-based prototype quickly, with many 
+completing them within a few seconds (see Table 6 for 
+average task completion times), indicating that the pro-
+gram prototype was intuitive and easy to navigate. The 
+prototype scored a 95.7 out of 100 on the SUS, indicat-
+ing very high usability [58]. When presented with lists of 
+tools (e.g., medication reminder, CD4/viral load tracker, 
+and provider messaging), resources (e.g., mental health 
+and support, housing, substance use treatment, and job 
+and career), and community features (e.g., virtual support 
+groups, ability to message mentors and other users, and 
+ability to post videos or photos) that the program would 
+include, participants shared that the content and features 
+
+included the most important things that a person living 
+with HIV would need. All participants said that they had 
+never seen a website or app with our proposed program’s 
+comprehensive content and tools. Nearly all favored hav-
+ing program content that is mostly video-based versus 
+text-based. All participants said they would use the pro-
+gram, though with varying frequency—some would use it 
+daily and others weekly or monthly.
+
+Discussion
+This study details the use of HCD to create Amp (Fig. 1), a 
+holistic mobile app created to improve the health and well-
+being of YBGBM living with HIV. Insights gathered across 
+three stages of research—ideation, rapid prototyping, and 
+user feedback—were iteratively incorporated to develop 
+a program prototype that received high acceptability 
+and usability ratings. HCD is a comprehensive approach 
+that has been increasingly utilized in the development of 
+mHealth programs [54, 59]. As demonstrated in this 
+study, HCD is an approach that can yield high usabil-
+ity, feasibility, acceptability, and potential uptake from 
+end users. The use of HCD in this study, which included 
+engaging YBGBM living with HIV and HIV service pro-
+viders as co-creators, resulted in a desirable program 
+with a combination of content, tools, and resources 
+that participants had not previously seen all in the 
+same place. Further, the Amp concept was described by 
+providers as promising for engaging YBGBM living 
+with HIV across the care continuum, which is impera-
+tive to reducing HIV-related transmission, morbidity, 
+and mortality [4, 5, 7].
+Findings from our HCD research reinforced those 
+identified in prior research regarding the needs of 
+people living with HIV, including: social support [60], 
+adherence support [53], HIV knowledge [61], programs 
+to address stigma and discrimination [6, 11, 25, 62], and 
+the general demand for more holistic approaches to HIV 
+care [30, 31, 53]. Amp includes content, tools, and fea-
+tures to address all of these needs. Amp offers several 
+alternatives to the ways that YBGBM living with HIV 
+usually receive support—including community features 
+that allow users to create a profile, communicate with 
+peers via forums and direct messaging, professionally 
+produced video narratives, trained mentors who can 
+be messaged on-demand, and a range of tools to sup-
+port medication adherence, retention in care, and viral 
+suppression. This wide variety of tools and resources is 
+designed to meet the needs of YBGBM where they are, 
+and as their needs change over time. Further, HIV ser-
+vice providers were very enthusiastic about using Amp 
+within their organization, to improve their services 
+and help clients reach their HIV care continuum goals. 
+While several existing mHealth HIV care continuum
+
+interventions take a comprehensive approach [63], Amp 
+is unique with regard to the holistic range of tools and 
+content, and in its extensive use of custom-created per-
+sonal narrative video content.
+Our study has strengths stemming from the mixed 
+methods approach it utilized. Intensive involvement of 
+program end users and stakeholders is fundamental to 
+designing interventions using HCD. During every stage 
+of our research, we collected data from geographically 
+diverse groups of YBGBM and providers, validating and 
+triangulating findings at each stage. This is likely the rea-
+son that Amp was so well received in the final user feed-
+back stage.
+While this study outlines a design process that was 
+effective, there are several limitations to our findings 
+
+that should be noted. Recruiting a sample of 200 HIV 
+positive YBGBM for participation in a survey is logisti-
+cally challenging, and it was not possible to ensure that 
+this sample is representative of the broader population. 
+Thus, our survey findings may not be generalizable to all 
+YBGBM living with HIV in the U.S. Similarly, relying on 
+our professional network of HIV service providers for 
+much of the recruitment may have introduced some bias, 
+especially as this meant that most YBGBM participants 
+were linked to care. We attempted to mitigate this poten-
+tial bias by working with multiple HIV service providers 
+from diverse organizations who had direct connections 
+to local populations, as well as by recruiting from a geo-
+graphically diverse sample of YBGBM in stage 3, mostly 
+via geospatial apps. Survey findings mirrored findings 
+
+from other stages, which suggests that responses from 
+stages 1 and 2 were minimally biased by our recruitment 
+methods. Further, we administered the SUS verbally with 
+usability testing participants over Zoom, which is dif-
+ferent from the typical questionnaire-based approach. 
+While we requested that participants give honest feed-
+back in order to facilitate improvements to the app, it is 
+possible that this approach resulted in response bias.
+The results of these activities have led to the produc-
+tion of Amp, a mobile app that has the content, tools, 
+community, and resources identified as important among 
+YBGBM and HIV service providers in our HCD pro-
+cess. At the time of writing, the Amp mobile app is being 
+developed with Phase II funding through a Small Busi-
+ness Innovation Research Grant provided by the National 
+
+Institutes on Minority Health and Health Disparities. 
+Amp will be evaluated in a nationwide randomized con-
+trolled trial in 2024, which will test the effectiveness of 
+the application on knowledge, social support, linkage to 
+care, medication adherence, retention in care, viral sup-
+pression, mental health, and HIV related stigma among 
+a relatively large sample of YBGBM living with HIV. Our 
+team plans to disseminate Amp to organizations nation-
+wide, including HIV service organizations, public health 
+departments, and community organizations. Ideally, Amp 
+will be offered to people immediately after an HIV diag-
+nosis as well as to existing clients who are living with HIV.
+This study adds to the limited research on using HCD 
+to develop HIV mHealth programs. The evaluation study 
+will be among the first randomized controlled studies of 
+
+an HIV intervention developed with HCD. Although we 
+attribute the early signs that Amp will be feasible, accept-
+able, usable, and effective to the HCD process through 
+which it was developed, further research is needed 
+to understand the impact of HCD relative to other 
+approaches. Future studies could also investigate using 
+HCD to create mHealth self-management programs for 
+other chronic illnesses.
+
+Conclusions
+We used HCD in a highly collaborative, multi-stage pro-
+cess to develop an innovative mobile app that holistically 
+addresses multiple health and wellness needs identified 
+by YBGBM and HIV service providers. Each stage of the 
+process identified barriers and facilitators to program 
+uptake, with findings used to make the app more useful 
+and engaging. These results support prior studies finding 
+that intensive involvement of end users and stakeholders 
+using HCD can yield innovative, acceptable, and culturally-
+appropriate programs.
+
+Abbreviations
+YBGBM	
+Young Black gay and bisexual men
+MSM	
+Men who have sex with men
+HCD	
+Human-centered design
+CD4	
+CD4 T lymphocytes; CD4 cells or T-cells
+SUS	
+System usability scale

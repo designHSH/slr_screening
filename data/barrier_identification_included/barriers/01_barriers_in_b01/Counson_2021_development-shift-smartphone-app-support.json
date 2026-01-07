@@ -1,0 +1,42 @@
+{
+  "file_name": "Counson_2021_development-shift-smartphone-app-support.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "The 30-day challenge format (rigid, day-by-day delivery with fixed order and no skipping) failed to engage junior physicians in practice, leading to early discontinuation of use.",
+      "justification": "This interactional problem limited designers' ability to facilitate user involvement and to evaluate and iterate on content because users disengaged quickly, reducing opportunities for meaningful feedback and testing of the intended delivery model.",
+      "reference_excerpt": "Inspection of app use data revealed that discontinuation of the 30-day challenge tended to appear around day 5... With the 30-day challenge format, users were unable to skip challenge topics or change the order of challenges, possibly facilitating the discontinuation of app use.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Junior physicians were time-poor and perceived the app as 'another chore' amid long working hours, which reduced their willingness to engage with the prototype.",
+      "justification": "Users' limited time availability is an environmental/resource constraint that hindered designers' ability to facilitate user involvement, understand real-world use patterns, and obtain sufficient engagement data for iteration and evaluation.",
+      "reference_excerpt": "The main app use barrier reported by the participants was that the app would feel like another chore when participants were already time-poor and working long hours.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "Informational sessions were underutilized, possibly because they had less-prominent positioning within the app, reducing exposure and uptake of those contents.",
+      "justification": "This design/positioning issue impeded designers' ability to address the holistic experience and to evaluate the usefulness of informational content, limiting their capacity to refine content placement and access based on user behavior.",
+      "reference_excerpt": "In addition, informational sessions were underutilized in comparison to challenge content, possibly due to their less-prominent positioning within the app.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "designer",
+      "barrier_type": "knowledge",
+      "description": "The team initially planned to adapt the evidence-based HeadGear 30-day challenge format for junior physicians, but modifying a delivery format from one population to another proved not always successful.",
+      "justification": "This planning-level assumption about transferability constrained designers' ability to specify appropriate user requirements and produce effective design solutions for the new population, necessitating substantial redesign after pilot data showed poor engagement.",
+      "reference_excerpt": "Hence, one option available to our team was to utilize the 30-day challenge format of the evidence-based HeadGear app and to modify the clinical content to meet the needs of junior physicians... simply modifying the modes of content delivery (ie, 30-day challenge structure) from one evidence-based app to suit another working population is not always successful.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

@@ -1,0 +1,285 @@
+2025-12-11 08:56:34 | START | model=gpt-5-mini | prompt=hcd_barrier_extraction v1.2.1 | files=71
+2025-12-11 08:56:34 | [1/71] | START | Addamiano_2024_increasing-access-fertility-preservation.txt
+2025-12-11 08:56:34 | [1/71] | CALL  | sending to gpt-5-mini
+2025-12-11 08:57:09 | [1/71] | RECV  | 1655 chars in 34.79s
+2025-12-11 08:57:09 | [1/71] | SAVE  | Addamiano_2024_increasing-access-fertility-preservation.json
+2025-12-11 08:57:09 | [2/71] | START | Amirabdollahian_2014_development-deployment-hand-wrist-exoske.txt
+2025-12-11 08:57:09 | [2/71] | CALL  | sending to gpt-5-mini
+2025-12-11 08:57:56 | [2/71] | RECV  | 4648 chars in 47.38s
+2025-12-11 08:57:56 | [2/71] | SAVE  | Amirabdollahian_2014_development-deployment-hand-wrist-exoske.json
+2025-12-11 08:57:56 | [3/71] | START | Amos-Lawson_2017_portable-fire-extinguisher.txt
+2025-12-11 08:57:56 | [3/71] | CALL  | sending to gpt-5-mini
+2025-12-11 08:58:24 | [3/71] | RECV  | 3099 chars in 27.85s
+2025-12-11 08:58:24 | [3/71] | SAVE  | Amos-Lawson_2017_portable-fire-extinguisher.json
+2025-12-11 08:58:24 | [4/71] | START | Andersson_2021_human-adapt-supply-chains-digital-soluti.txt
+2025-12-11 08:58:24 | [4/71] | CALL  | sending to gpt-5-mini
+2025-12-11 08:59:11 | [4/71] | RECV  | 4202 chars in 47.24s
+2025-12-11 08:59:11 | [4/71] | SAVE  | Andersson_2021_human-adapt-supply-chains-digital-soluti.json
+2025-12-11 08:59:11 | [5/71] | START | Ankolekar_2019_development-validation-patient-decision.txt
+2025-12-11 08:59:11 | [5/71] | CALL  | sending to gpt-5-mini
+2025-12-11 08:59:47 | [5/71] | RECV  | 3748 chars in 35.32s
+2025-12-11 08:59:47 | [5/71] | SAVE  | Ankolekar_2019_development-validation-patient-decision.json
+2025-12-11 08:59:47 | [6/71] | START | Anraad_2024_promoting-informed-decision-making-about.txt
+2025-12-11 08:59:47 | [6/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:00:24 | [6/71] | RECV  | 3966 chars in 37.33s
+2025-12-11 09:00:24 | [6/71] | SAVE  | Anraad_2024_promoting-informed-decision-making-about.json
+2025-12-11 09:00:24 | [7/71] | START | Ansari-Martin_2024_integrating-human-public-health-data-das.txt
+2025-12-11 09:00:24 | [7/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:01:16 | [7/71] | RECV  | 5166 chars in 51.52s
+2025-12-11 09:01:16 | [7/71] | SAVE  | Ansari-Martin_2024_integrating-human-public-health-data-das.json
+2025-12-11 09:01:16 | [8/71] | START | Arigo_2022_development-initial-testing-personalized.txt
+2025-12-11 09:01:16 | [8/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:02:02 | [8/71] | RECV  | 6054 chars in 46.12s
+2025-12-11 09:02:02 | [8/71] | SAVE  | Arigo_2022_development-initial-testing-personalized.json
+2025-12-11 09:02:02 | [9/71] | START | Arrivillaga_2020_innovative-prototypes-cervical-cancer-pr.txt
+2025-12-11 09:02:02 | [9/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:03:00 | [9/71] | RECV  | 4960 chars in 58.01s
+2025-12-11 09:03:00 | [9/71] | SAVE  | Arrivillaga_2020_innovative-prototypes-cervical-cancer-pr.json
+2025-12-11 09:03:00 | [10/71] | START | Asadipour_2020_technology-aided-multi-modal-training-ap.txt
+2025-12-11 09:03:00 | [10/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:03:54 | [10/71] | RECV  | 6820 chars in 54.36s
+2025-12-11 09:03:54 | [10/71] | SAVE  | Asadipour_2020_technology-aided-multi-modal-training-ap.json
+2025-12-11 09:03:54 | [11/71] | START | Azad_2024_developing-multimedia-patient-reported-o.txt
+2025-12-11 09:03:54 | [11/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:04:43 | [11/71] | RECV  | 3253 chars in 48.38s
+2025-12-11 09:04:43 | [11/71] | SAVE  | Azad_2024_developing-multimedia-patient-reported-o.json
+2025-12-11 09:04:43 | [12/71] | START | Baca_2007_ezhpc-adopting-program-wide-approach-ezh.txt
+2025-12-11 09:04:43 | [12/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:05:14 | [12/71] | RECV  | 1680 chars in 31.12s
+2025-12-11 09:05:14 | [12/71] | SAVE  | Baca_2007_ezhpc-adopting-program-wide-approach-ezh.json
+2025-12-11 09:05:14 | [13/71] | START | Bairagi-Mahajani_2021_redesigning-walker-elderly.txt
+2025-12-11 09:05:14 | [13/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:05:24 | [13/71] | RECV  | 82 chars in 10.06s
+2025-12-11 09:05:24 | [13/71] | SAVE  | Bairagi-Mahajani_2021_redesigning-walker-elderly.json
+2025-12-11 09:05:24 | [14/71] | START | Ballester_2021_mobile-electronic-health-record-connecte.txt
+2025-12-11 09:05:24 | [14/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:06:21 | [14/71] | RECV  | 5486 chars in 56.35s
+2025-12-11 09:06:21 | [14/71] | SAVE  | Ballester_2021_mobile-electronic-health-record-connecte.json
+2025-12-11 09:06:21 | [15/71] | START | Bangash_2020_implementation-science-framework-develop.txt
+2025-12-11 09:06:21 | [15/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:06:47 | [15/71] | RECV  | 1636 chars in 26.42s
+2025-12-11 09:06:47 | [15/71] | SAVE  | Bangash_2020_implementation-science-framework-develop.json
+2025-12-11 09:06:47 | [16/71] | START | Bangash_2022_web-tool-fh-family-share-increase-uptake.txt
+2025-12-11 09:06:47 | [16/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:07:25 | [16/71] | RECV  | 2741 chars in 38.37s
+2025-12-11 09:07:25 | [16/71] | SAVE  | Bangash_2022_web-tool-fh-family-share-increase-uptake.json
+2025-12-11 09:07:25 | [17/71] | START | Bangerter_2022_hybrid-method-healthcare-delivery-resear.txt
+2025-12-11 09:07:25 | [17/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:08:07 | [17/71] | RECV  | 3303 chars in 41.59s
+2025-12-11 09:08:07 | [17/71] | SAVE  | Bangerter_2022_hybrid-method-healthcare-delivery-resear.json
+2025-12-11 09:08:07 | [18/71] | START | Barr_2021_audio-personal-health-library-clinic-vis.txt
+2025-12-11 09:08:07 | [18/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:09:04 | [18/71] | RECV  | 5043 chars in 57.16s
+2025-12-11 09:09:04 | [18/71] | SAVE  | Barr_2021_audio-personal-health-library-clinic-vis.json
+2025-12-11 09:09:04 | [19/71] | START | Barwick_2023_implementation-playbook-study-protocol-d.txt
+2025-12-11 09:09:04 | [19/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:09:52 | [19/71] | RECV  | 2069 chars in 47.26s
+2025-12-11 09:09:52 | [19/71] | SAVE  | Barwick_2023_implementation-playbook-study-protocol-d.json
+2025-12-11 09:09:52 | [20/71] | START | Beeman_2023_human-co-dedicated-menstrual-health-spac.txt
+2025-12-11 09:09:52 | [20/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:11:12 | [20/71] | RECV  | 8811 chars in 80.56s
+2025-12-11 09:11:12 | [20/71] | SAVE  | Beeman_2023_human-co-dedicated-menstrual-health-spac.json
+2025-12-11 09:11:12 | [21/71] | START | Belden_2019_designing-medication-timeline-patients-p.txt
+2025-12-11 09:11:12 | [21/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:12:04 | [21/71] | RECV  | 3073 chars in 51.35s
+2025-12-11 09:12:04 | [21/71] | SAVE  | Belden_2019_designing-medication-timeline-patients-p.json
+2025-12-11 09:12:04 | [22/71] | START | Bernard_2015_visinfo-digital-library-system-time-seri.txt
+2025-12-11 09:12:04 | [22/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:13:57 | [22/71] | RECV  | 6446 chars in 113.71s
+2025-12-11 09:13:57 | [22/71] | SAVE  | Bernard_2015_visinfo-digital-library-system-time-seri.json
+2025-12-11 09:13:57 | [23/71] | START | Beutter_2023_development-mobile-app-assess-quality-li.txt
+2025-12-11 09:13:57 | [23/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:15:42 | [23/71] | RECV  | 4823 chars in 104.35s
+2025-12-11 09:15:42 | [23/71] | SAVE  | Beutter_2023_development-mobile-app-assess-quality-li.json
+2025-12-11 09:15:42 | [24/71] | START | Bilardi_2023_miscarriage-australia-human-approach-dev.txt
+2025-12-11 09:15:42 | [24/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:16:42 | [24/71] | RECV  | 3627 chars in 60.13s
+2025-12-11 09:16:42 | [24/71] | SAVE  | Bilardi_2023_miscarriage-australia-human-approach-dev.json
+2025-12-11 09:16:42 | [25/71] | START | Bilodeau_2019_reducing-complexity-patient-decision-aid.txt
+2025-12-11 09:16:42 | [25/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:18:09 | [25/71] | RECV  | 8874 chars in 87.40s
+2025-12-11 09:18:09 | [25/71] | SAVE  | Bilodeau_2019_reducing-complexity-patient-decision-aid.json
+2025-12-11 09:18:09 | [26/71] | START | Bjorling-Rose_2019_participatory-research-principles-human.txt
+2025-12-11 09:18:09 | [26/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:18:38 | [26/71] | RECV  | 3361 chars in 28.89s
+2025-12-11 09:18:38 | [26/71] | SAVE  | Bjorling-Rose_2019_participatory-research-principles-human.json
+2025-12-11 09:18:38 | [27/71] | START | Bjorling_2019_thought-disposal-co-designing-virtual-in.txt
+2025-12-11 09:18:38 | [27/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:19:09 | [27/71] | RECV  | 2413 chars in 30.72s
+2025-12-11 09:19:09 | [27/71] | SAVE  | Bjorling_2019_thought-disposal-co-designing-virtual-in.json
+2025-12-11 09:19:09 | [28/71] | START | Block_2024_closed-loop-falls-monitoring-prevention.txt
+2025-12-11 09:19:09 | [28/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:19:49 | [28/71] | RECV  | 4432 chars in 39.91s
+2025-12-11 09:19:49 | [28/71] | SAVE  | Block_2024_closed-loop-falls-monitoring-prevention.json
+2025-12-11 09:19:49 | [29/71] | START | Blynn_2021_integrating-human-advance-global-health.txt
+2025-12-11 09:19:49 | [29/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:20:46 | [29/71] | RECV  | 7264 chars in 56.52s
+2025-12-11 09:20:46 | [29/71] | SAVE  | Blynn_2021_integrating-human-advance-global-health.json
+2025-12-11 09:20:46 | [30/71] | START | Boehmer_2016_meaningful-conversations-living-treating.txt
+2025-12-11 09:20:46 | [30/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:21:31 | [30/71] | RECV  | 4418 chars in 45.61s
+2025-12-11 09:21:31 | [30/71] | SAVE  | Boehmer_2016_meaningful-conversations-living-treating.json
+2025-12-11 09:21:31 | [31/71] | START | Bogza_2020_evaluation-web-decision-aid-older-adults.txt
+2025-12-11 09:21:31 | [31/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:22:09 | [31/71] | RECV  | 3307 chars in 37.34s
+2025-12-11 09:22:09 | [31/71] | SAVE  | Bogza_2020_evaluation-web-decision-aid-older-adults.json
+2025-12-11 09:22:09 | [32/71] | START | Bonet-Olivencia_2023_diabetes-self-management-tool-underserve.txt
+2025-12-11 09:22:09 | [32/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:22:44 | [32/71] | RECV  | 3186 chars in 35.16s
+2025-12-11 09:22:44 | [32/71] | SAVE  | Bonet-Olivencia_2023_diabetes-self-management-tool-underserve.json
+2025-12-11 09:22:44 | [33/71] | START | Borosund_2018_stress-management-app-intervention-cance.txt
+2025-12-11 09:22:44 | [33/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:23:20 | [33/71] | RECV  | 3254 chars in 36.18s
+2025-12-11 09:23:20 | [33/71] | SAVE  | Borosund_2018_stress-management-app-intervention-cance.json
+2025-12-11 09:23:20 | [34/71] | START | Borosund_2023_digital-cognitive-behavioral-mindfulness.txt
+2025-12-11 09:23:20 | [34/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:24:10 | [34/71] | RECV  | 3345 chars in 50.20s
+2025-12-11 09:24:10 | [34/71] | SAVE  | Borosund_2023_digital-cognitive-behavioral-mindfulness.json
+2025-12-11 09:24:10 | [35/71] | START | Breeman_2021_multi-stakeholder-approach-ehealth-devel.txt
+2025-12-11 09:24:10 | [35/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:24:54 | [35/71] | RECV  | 3188 chars in 43.18s
+2025-12-11 09:24:54 | [35/71] | SAVE  | Breeman_2021_multi-stakeholder-approach-ehealth-devel.json
+2025-12-11 09:24:54 | [36/71] | START | Buck_2023_development-bolster-mhealth-intervention.txt
+2025-12-11 09:24:54 | [36/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:26:07 | [36/71] | RECV  | 5071 chars in 72.99s
+2025-12-11 09:26:07 | [36/71] | SAVE  | Buck_2023_development-bolster-mhealth-intervention.json
+2025-12-11 09:26:07 | [37/71] | START | Burchert_2019_app-adaptation-low-intensity-e-mental-he.txt
+2025-12-11 09:26:07 | [37/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:27:08 | [37/71] | RECV  | 4737 chars in 61.44s
+2025-12-11 09:27:08 | [37/71] | SAVE  | Burchert_2019_app-adaptation-low-intensity-e-mental-he.json
+2025-12-11 09:27:08 | [38/71] | START | Cafazzo_2012_mhealth-app-self-management-adolescent-t.txt
+2025-12-11 09:27:08 | [38/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:27:58 | [38/71] | RECV  | 3720 chars in 49.54s
+2025-12-11 09:27:58 | [38/71] | SAVE  | Cafazzo_2012_mhealth-app-self-management-adolescent-t.json
+2025-12-11 09:27:58 | [39/71] | START | Cai_2017_developing-evaluating-jiapp-acceptabilit.txt
+2025-12-11 09:27:58 | [39/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:28:37 | [39/71] | RECV  | 3419 chars in 38.99s
+2025-12-11 09:28:37 | [39/71] | SAVE  | Cai_2017_developing-evaluating-jiapp-acceptabilit.json
+2025-12-11 09:28:37 | [40/71] | START | Calvillo-Arbizu_2019_developing-e-health-system-renal-patient.txt
+2025-12-11 09:28:37 | [40/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:29:29 | [40/71] | RECV  | 3505 chars in 52.19s
+2025-12-11 09:29:29 | [40/71] | SAVE  | Calvillo-Arbizu_2019_developing-e-health-system-renal-patient.json
+2025-12-11 09:29:29 | [41/71] | START | Carayon_2022_human-team-health-it-pediatric-trauma-ca.txt
+2025-12-11 09:29:29 | [41/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:30:51 | [41/71] | RECV  | 4458 chars in 82.14s
+2025-12-11 09:30:51 | [41/71] | SAVE  | Carayon_2022_human-team-health-it-pediatric-trauma-ca.json
+2025-12-11 09:30:51 | [42/71] | START | Catalani_2014_clinical-decision-support-system-integra.txt
+2025-12-11 09:30:51 | [42/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:31:47 | [42/71] | RECV  | 4923 chars in 55.47s
+2025-12-11 09:31:47 | [42/71] | SAVE  | Catalani_2014_clinical-decision-support-system-integra.json
+2025-12-11 09:31:47 | [43/71] | START | Chacon-Cifuentes_2020_interdisciplinary-approach-process-appli.txt
+2025-12-11 09:31:47 | [43/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:32:11 | [43/71] | RECV  | 2253 chars in 24.60s
+2025-12-11 09:32:11 | [43/71] | SAVE  | Chacon-Cifuentes_2020_interdisciplinary-approach-process-appli.json
+2025-12-11 09:32:11 | [44/71] | START | Chartomatsidis-Goumopoulos_2020_development-evaluation-motion-exercise-g.txt
+2025-12-11 09:32:12 | [44/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:33:03 | [44/71] | RECV  | 5166 chars in 51.73s
+2025-12-11 09:33:03 | [44/71] | SAVE  | Chartomatsidis-Goumopoulos_2020_development-evaluation-motion-exercise-g.json
+2025-12-11 09:33:03 | [45/71] | START | Chatterjee_2022_prohealth-ecoach-development-ecoach-app.txt
+2025-12-11 09:33:03 | [45/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:33:55 | [45/71] | RECV  | 4731 chars in 51.46s
+2025-12-11 09:33:55 | [45/71] | SAVE  | Chatterjee_2022_prohealth-ecoach-development-ecoach-app.json
+2025-12-11 09:33:55 | [46/71] | START | Chen_2021_intelligent-individualized-cardiovascula.txt
+2025-12-11 09:33:55 | [46/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:34:35 | [46/71] | RECV  | 3391 chars in 40.25s
+2025-12-11 09:34:35 | [46/71] | SAVE  | Chen_2021_intelligent-individualized-cardiovascula.json
+2025-12-11 09:34:35 | [47/71] | START | Chen_2024_mytrack-plus-human-mhealth-app-support-l.txt
+2025-12-11 09:34:35 | [47/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:35:42 | [47/71] | RECV  | 6053 chars in 67.01s
+2025-12-11 09:35:42 | [47/71] | SAVE  | Chen_2024_mytrack-plus-human-mhealth-app-support-l.json
+2025-12-11 09:35:42 | [48/71] | START | Chu_2021_exergaming-platform-older-adults-residin.txt
+2025-12-11 09:35:42 | [48/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:36:42 | [48/71] | RECV  | 5836 chars in 60.12s
+2025-12-11 09:36:42 | [48/71] | SAVE  | Chu_2021_exergaming-platform-older-adults-residin.json
+2025-12-11 09:36:42 | [49/71] | START | Clack_2019_participatory-visual-cues-isolation-prec.txt
+2025-12-11 09:36:42 | [49/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:37:27 | [49/71] | RECV  | 2361 chars in 44.54s
+2025-12-11 09:37:27 | [49/71] | SAVE  | Clack_2019_participatory-visual-cues-isolation-prec.json
+2025-12-11 09:37:27 | [50/71] | START | Coffen-Burke_2023_designing-software-genomics-medicine-ser.txt
+2025-12-11 09:37:27 | [50/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:38:18 | [50/71] | RECV  | 4638 chars in 50.96s
+2025-12-11 09:38:18 | [50/71] | SAVE  | Coffen-Burke_2023_designing-software-genomics-medicine-ser.json
+2025-12-11 09:38:18 | [51/71] | START | Connelly_2012_offline-mobile-nutrition-monitoring-inte.txt
+2025-12-11 09:38:18 | [51/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:39:07 | [51/71] | RECV  | 5398 chars in 49.36s
+2025-12-11 09:39:07 | [51/71] | SAVE  | Connelly_2012_offline-mobile-nutrition-monitoring-inte.json
+2025-12-11 09:39:07 | [52/71] | START | Cornet_2020_untold-stories-mobile-health-practical-c.txt
+2025-12-11 09:39:07 | [52/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:40:11 | [52/71] | RECV  | 11345 chars in 63.72s
+2025-12-11 09:40:11 | [52/71] | SAVE  | Cornet_2020_untold-stories-mobile-health-practical-c.json
+2025-12-11 09:40:11 | [53/71] | START | Costa_2015_lessons-learned-developing-educational-s.txt
+2025-12-11 09:40:11 | [53/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:41:03 | [53/71] | RECV  | 3803 chars in 51.42s
+2025-12-11 09:41:03 | [53/71] | SAVE  | Costa_2015_lessons-learned-developing-educational-s.json
+2025-12-11 09:41:03 | [54/71] | START | Coulter_2021_generating-intervention-concepts-reducin.txt
+2025-12-11 09:41:03 | [54/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:42:03 | [54/71] | RECV  | 4446 chars in 60.62s
+2025-12-11 09:42:03 | [54/71] | SAVE  | Coulter_2021_generating-intervention-concepts-reducin.json
+2025-12-11 09:42:03 | [55/71] | START | Counson_2021_development-shift-smartphone-app-support.txt
+2025-12-11 09:42:03 | [55/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:43:11 | [55/71] | RECV  | 3566 chars in 68.01s
+2025-12-11 09:43:11 | [55/71] | SAVE  | Counson_2021_development-shift-smartphone-app-support.json
+2025-12-11 09:43:11 | [56/71] | START | Crisan_2018_evidence-evaluation-whole-genome-sequenc.txt
+2025-12-11 09:43:11 | [56/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:43:56 | [56/71] | RECV  | 6352 chars in 44.57s
+2025-12-11 09:43:56 | [56/71] | SAVE  | Crisan_2018_evidence-evaluation-whole-genome-sequenc.json
+2025-12-11 09:43:56 | [57/71] | START | Cristancho-Lacroix_2014_web-program-informal-caregivers-persons.txt
+2025-12-11 09:43:56 | [57/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:44:56 | [57/71] | RECV  | 6957 chars in 59.95s
+2025-12-11 09:44:56 | [57/71] | SAVE  | Cristancho-Lacroix_2014_web-program-informal-caregivers-persons.json
+2025-12-11 09:44:56 | [58/71] | START | Curtis_2023_envisioning-visibility-discreet-wearable.txt
+2025-12-11 09:44:56 | [58/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:45:51 | [58/71] | RECV  | 3448 chars in 55.12s
+2025-12-11 09:45:51 | [58/71] | SAVE  | Curtis_2023_envisioning-visibility-discreet-wearable.json
+2025-12-11 09:45:51 | [59/71] | START | Cutting_2016_multi-gene-sequencing-panel-reports-clin.txt
+2025-12-11 09:45:51 | [59/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:46:25 | [59/71] | RECV  | 2979 chars in 33.40s
+2025-12-11 09:46:25 | [59/71] | SAVE  | Cutting_2016_multi-gene-sequencing-panel-reports-clin.json
+2025-12-11 09:46:25 | [60/71] | START | Dahildahil_2023_time-resource-limited-settings-enhancing.txt
+2025-12-11 09:46:25 | [60/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:47:28 | [60/71] | RECV  | 4126 chars in 62.98s
+2025-12-11 09:47:28 | [60/71] | SAVE  | Dahildahil_2023_time-resource-limited-settings-enhancing.json
+2025-12-11 09:47:28 | [61/71] | START | Danitz_2019_when-meets-implementation-science-integr.txt
+2025-12-11 09:47:28 | [61/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:48:23 | [61/71] | RECV  | 5426 chars in 55.79s
+2025-12-11 09:48:23 | [61/71] | SAVE  | Danitz_2019_when-meets-implementation-science-integr.json
+2025-12-11 09:48:24 | [62/71] | START | Deliv_2023_development-video-evidence-synthesis-kno.txt
+2025-12-11 09:48:24 | [62/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:49:05 | [62/71] | RECV  | 4674 chars in 41.52s
+2025-12-11 09:49:05 | [62/71] | SAVE  | Deliv_2023_development-video-evidence-synthesis-kno.json
+2025-12-11 09:49:05 | [63/71] | START | Derksen_2021_mobile-health-smoking-cessation-among-di.txt
+2025-12-11 09:49:05 | [63/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:49:51 | [63/71] | RECV  | 3839 chars in 46.31s
+2025-12-11 09:49:51 | [63/71] | SAVE  | Derksen_2021_mobile-health-smoking-cessation-among-di.json
+2025-12-11 09:49:51 | [64/71] | START | Desai_2021_novel-patient-values-tab-electronic-heal.txt
+2025-12-11 09:49:51 | [64/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:51:04 | [64/71] | RECV  | 4500 chars in 72.82s
+2025-12-11 09:51:04 | [64/71] | SAVE  | Desai_2021_novel-patient-values-tab-electronic-heal.json
+2025-12-11 09:51:04 | [65/71] | START | Diaz-Mohedo_2024_app-mohedo-r-mobile-app-management-chron.txt
+2025-12-11 09:51:04 | [65/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:51:40 | [65/71] | RECV  | 2207 chars in 35.90s
+2025-12-11 09:51:40 | [65/71] | SAVE  | Diaz-Mohedo_2024_app-mohedo-r-mobile-app-management-chron.json
+2025-12-11 09:51:40 | [66/71] | START | Dijkstra_2018_development-ehome-mobile-instrument-repo.txt
+2025-12-11 09:51:40 | [66/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:52:20 | [66/71] | RECV  | 3589 chars in 40.00s
+2025-12-11 09:52:20 | [66/71] | SAVE  | Dijkstra_2018_development-ehome-mobile-instrument-repo.json
+2025-12-11 09:52:20 | [67/71] | START | Dirin_2015_context-aware-nurse-assistant-cana-finni.txt
+2025-12-11 09:52:20 | [67/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:53:11 | [67/71] | RECV  | 3202 chars in 50.87s
+2025-12-11 09:53:11 | [67/71] | SAVE  | Dirin_2015_context-aware-nurse-assistant-cana-finni.json
+2025-12-11 09:53:11 | [68/71] | START | Dixit_2020_rapid-development-visualization-dashboar.txt
+2025-12-11 09:53:11 | [68/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:54:08 | [68/71] | RECV  | 3487 chars in 56.17s
+2025-12-11 09:54:08 | [68/71] | SAVE  | Dixit_2020_rapid-development-visualization-dashboar.json
+2025-12-11 09:54:08 | [69/71] | START | Doering_2015_evaluation-mobile-shopping-robot.txt
+2025-12-11 09:54:08 | [69/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:55:05 | [69/71] | RECV  | 6490 chars in 57.52s
+2025-12-11 09:55:05 | [69/71] | SAVE  | Doering_2015_evaluation-mobile-shopping-robot.json
+2025-12-11 09:55:05 | [70/71] | START | Doyle_2021_digital-platform-support-self-management.txt
+2025-12-11 09:55:05 | [70/71] | CALL  | sending to gpt-5-mini
+2025-12-11 09:56:07 | [70/71] | RECV  | 5008 chars in 61.33s
+2025-12-11 09:56:07 | [70/71] | SAVE  | Doyle_2021_digital-platform-support-self-management.json
+2025-12-11 09:56:07 | [71/71] | START | rename_log.txt
+2025-12-11 09:56:07 | [71/71] | ERROR | rename_log.txt | FileNotFoundError: [Errno 2] No such file or directory: 'data\\barrier_identification_included\\filename_trunced\\01_incl_cleaned_b_01\\rename_log.txt'
+2025-12-11 09:56:07 | [71/71] | SAVE  | fallback -> rename_log.json
+2025-12-11 09:56:07 | DONE  | processed=71

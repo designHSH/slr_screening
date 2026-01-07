@@ -1,0 +1,60 @@
+{
+  "file_name": "Arigo_2022_development-initial-testing-personalized.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "team",
+      "barrier_type": "knowledge",
+      "description": "Behavioral and computer science team members had gaps in shared domain knowledge and assumptions, leaving important navigation rules and edge cases unspecified.",
+      "justification": "This lack of shared technical and domain knowledge hindered coordination of the multidisciplinary team and prevented complete specification of user requirements, forcing later rework and limiting efficient iteration and integration of feedback.",
+      "reference_excerpt": "potentially important navigation rules were left unspecified (ie, use of the web browser’s back button, entry of spaces, or nonlanguage text as open-ended responses). These and similar oversights may be owing to behavioral scientists’ implicit assumptions and lack of familiarity with the problems that such errors can cause, and thus, failing to specify all desired rules ahead of time.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "team",
+      "barrier_type": "knowledge",
+      "description": "Key technical specification steps were skipped during the build (eg, tagging peer profiles with age indicators and preventing nonlanguage responses), and were postponed as substantial revisions.",
+      "justification": "Omitting these specification details directly impeded the team's ability to produce correct design solutions and to fully evaluate the prototype with intended data structures, delaying iteration and subsequent user testing.",
+      "reference_excerpt": "The application specifications did not include procedures for preventing nonlanguage text responses to the open-ended questions. In contrast, the peer profiles were intended to be tagged with age indicators (similar to peer images), but this step was skipped in the build process... As the latter two issues were deemed substantial revisions, they were noted and postponed until a future round of substantive updates.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Lengthy and complex IRB and institutional permission processes (including server-hosting permissions) delayed development and testing.",
+      "justification": "Regulatory and institutional constraints consumed time and required additional communication, which hindered the team's ability to iterate quickly, schedule testing, and maintain momentum for user-centered activities.",
+      "reference_excerpt": "we encountered difficulties regarding questions about permissions for server housing and IRB questions about the collection of protected health information via the new web application. The process of effectively communicating this to the IRB and securing permission to house the web application on a commercial server was lengthy and involved. This was one of the several delays in the large process of web application development and testing that contributed to the extension of the project time line.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Limited financial and personnel resources for formative-stage work constrained activities such as recording interviews, multiple raters, and more robust evaluation procedures.",
+      "justification": "Resource scarcity prevented the team from implementing stronger evaluation practices and from protecting team members' time, thereby limiting the rigor of data collection, the ability to triangulate findings, and the quality of user understanding.",
+      "reference_excerpt": "In future studies, it would be ideal to record interviews and have multiple raters use a standard set of guidelines. However, it is important to note that these procedures may not be possible at formative study stages owing to limited financial support to protect team members’ time for such activities. Relative to the resources available for later stages of the process... research funding for the formative stages of tool development is often much more modest.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "All participant interviews and feedback sessions were conducted by the principal investigator, raising risks of social desirability and confirmation bias.",
+      "justification": "Centralizing data collection in one investigator—driven by available resources and staffing choices—limited the team's ability to manage user understanding objectively and reduced methodological rigor during evaluation.",
+      "reference_excerpt": "All data collection processes and feedback sessions with women in midlife were conducted by the first author (DA), who is the principal investigator of the project. Knowing that they were speaking to the project director may have heightened the participants’ social desirability or self-presentation behaviors. The first author’s direct involvement can also enable confirmation bias regarding the conclusions drawn.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The COVID-19 pandemic redirected investigator time and priorities, causing additional delays in development and testing.",
+      "justification": "This external disruption reduced available staff time and slowed iteration and coordination, constraining the team's ability to conduct planned user-centered activities and maintain the development timeline.",
+      "reference_excerpt": "The onset of the COVID-19 pandemic was the cause of another delay, as part of the investigators’ research time was redirected to other professional and personal responsibilities.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

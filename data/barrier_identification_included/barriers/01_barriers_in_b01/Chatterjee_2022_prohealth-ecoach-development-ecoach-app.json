@@ -1,0 +1,60 @@
+{
+  "file_name": "Chatterjee_2022_prohealth-ecoach-development-ecoach-app.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The team did not perform usability testing of the prototype, preventing completion of formal evaluation activities.",
+      "justification": "Not having conducted usability (heuristic) testing directly prevents designers from performing the 'evaluate designs' workload and from integrating empirical feedback into further iterations.",
+      "reference_excerpt": "First, we have presented the design and development of an eCoach prototype (i.e., ProHealth eCoach) for activity coaching. However, we have not performed its usability testing for the heuristic evaluation of the eCoach prototype.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Technical and logistical constraints (poor internet connectivity, BLE battery life, budget and time limitations) limited the study's ability to conduct and scale HCD activities.",
+      "justification": "These resource constraints hinder facilitating user involvement (remote workshops and data uploads), understanding context of use (reliable continuous monitoring), and evaluating prototypes in realistic settings.",
+      "reference_excerpt": "Fourth, constraints, such as poor internet connectivity, battery lifetime due to BLE and background processing, budget, time plan, technological limitations should be overcome.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The chosen medical-grade activity sensor (MOX2–5) cannot classify certain activities (cycling, swimming, rowing, skiing), forcing manual questionnaire reporting.",
+      "justification": "This technological limitation increased reliance on self-report questionnaires and limited designers' ability to fully understand context of use and collect objective activity data, complicating specification of requirements and evaluation.",
+      "reference_excerpt": "The current version of the MOX2–5 activity sensor is not suitable for classifying activities into the following detailed activity classes: cycling, swimming, rowing, and skiing. Therefore, the participants must report them manually as questionnaire data in the latest version of the eCoach app.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Vendor/manufacturer variability and opaque changes in consumer device algorithms make consumer wearables unreliable for long-term clinical trials.",
+      "justification": "External stakeholder practices (device manufacturers changing algorithms/sensors) limit designers' ability to select stable sensing platforms and thus hinder specifying robust data requirements and planning longitudinal evaluations.",
+      "reference_excerpt": "Furthermore, it is never known when the manufacturer replaces the algorithms or sensors in the device, so it is tricky to do clinical trials with such devices (over longer durations).",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The study did not evaluate the credibility, reliability, or effectiveness of the recommendation generation and its presentation.",
+      "justification": "Without assessing recommendation credibility and effectiveness, designers cannot complete evaluation and iteration workloads needed to refine recommendation logic, visualization, and persuasive strategies.",
+      "reference_excerpt": "Third, this study has not evaluated recommendation generation’s credibility, reliability, and effectiveness and its presentation (direct and indirect) towards motivational, behavioral change.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Integration, scalability, and validation in relevant/operational environments have not been performed, leaving the prototype untested at higher readiness levels.",
+      "justification": "Lack of integration and scalability testing prevents designers from evaluating the system in realistic contexts of use, hindering evaluation, iteration, and readiness for broader deployment.",
+      "reference_excerpt": "We have designed and developed an initial version of the eCoach prototype; however, integration and scalability testing must be performed in the production environment.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

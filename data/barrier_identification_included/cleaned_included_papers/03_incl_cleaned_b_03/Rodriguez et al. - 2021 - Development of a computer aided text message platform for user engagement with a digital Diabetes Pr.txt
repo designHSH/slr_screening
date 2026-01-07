@@ -1,0 +1,323 @@
+Case Report
+
+Development of a computer-aided text message platform
+for user engagement with a digital Diabetes Prevention
+Program: a case study
+
+Danissa V. Rodriguez
+1, Katharine Lawrence
+1, Son Luu1, Jonathan L. Yu1,
+Dawn M. Feldthouse
+2, Javier Gonzalez2, and Devin Mann1,2
+
+1Department of Population Health, NYU Grossman School of Medicine, New York, New York, USA and 2Medical Center Informa-
+tion Technology, NYU Langone Health, New York, New York, USA
+
+Received 28 January 2021; Revised 3 September 2021; Editorial Decision 6 September 2021; Accepted 9 September 2021
+
+PAMS STUDY OVERVIEW AND RESEARCH
+DESIGN STRATEGY
+
+The PAMS intervention was designed and developed as part of a fed-
+erally funded multiphase research project assessing the impact of
+targeted engagement interventions on adherence to dDPP.19 In Phase
+1 of the study, which resulted on the development of PAMS, we uti-
+lized a user-centered design (UCD) approach to identify the core fea-
+tures of the engagement system—including its technical build,
+message content, message cadence, and delivery mode—design the
+intervention, and test the early prototypes. Phase 2 deploys a single-
+armed pilot among patients with prediabetes to assess the prelimi-
+nary effectiveness of the intervention and refine the tool. In Phase 3,
+a randomized controlled trial (RCT) evaluates the impact of the in-
+tervention tool plus the dDPP platform versus the dDPP platform
+alone on health outcomes (eg, weight, BMI, hemoglobin A1c) and
+engagement in dDPP.19 Institutional Review Board (IRB) approval
+was obtained for each phase of the research. This paper focuses on
+Phase 1 of the study and its implication in the development of
+PAMS.
+
+PAMS TECHNICAL DEVELOPMENT
+
+The technical development of PAMS follows an agile software de-
+velopment approach based on an incremental process where feature-
+based builds are delivered in iterative cycles of 2 weeks (sprints).
+Each iterative cycle consists of requirement planning, design, devel-
+opment, and testing of a specific set of functional features, making
+sure each subsequent iterations incorporates improvements based on
+user feedback.
+To develop and evaluate PAMS in clinical context, we partnered
+with Noom, a prominent commercially available dDPP mobile ap-
+plication (“app”) that provides the evidence-based CDC-based dia-
+betes prevention curriculum through tailored lesson plans, tracking
+features (eg, meals, exercise and physical activity, and weight), and
+virtual group and individual coaching support. The Noom curricu-
+lum is derived from the DPP, which itself represents an amalgam-
+ation of behavior change strategies designed to promote behavior
+modifications to improve self-management of diabetes risk factors.31
+
+Rationale for “in-house” PAMS build
+Prior to the decision to build PAMS, a Request for Information was
+issued to 5 different vendors with experience in establishing commu-
+nication with patients via mobile devices, including short message
+
+service (SMS) and graphics intercharge format (Gif). Vendor
+responses were evaluated based upon various criteria with 4 of criti-
+cal importance; enterprise architecture integration; alignment with
+IT infrastructure and strategy; scalability; and robust customer suc-
+cess support. Based on the evaluation criteria, very few vendors met
+requirements at a desired cost. Potential outcomes of PAMS devel-
+opment may include unique components and innovative applica-
+tions that could expand our research beyond supporting dDPP, to
+explore potential solutions in other healthcare problem areas. As a
+result, the decision was to build PAMS in-house to achieve the most
+cost-effective solution with more control and flexibility for customi-
+zation to support specific research objectives. At a minimum, for the
+initial phase of the study with a limited number of patient partici-
+pants, it was within our internal capability to build PAMS that will
+meet all early-stage requirements. Yet, gaining a good understanding
+of existing vendors’ capabilities at this time can help inform our de-
+cision in the future as research priorities and technical requirements
+for PAMS evolve over time.
+
+PAMS content and features development
+The core components of PAMS were identified, prototyped, and
+evaluated among key stakeholders through a series of semistructured
+group and individual interviews, design thinking workshops, and
+user testing sessions during Phase 1 of the study. Stakeholders in-
+cluded patients with prediabetes, primary care providers (PCPs),
+health technologists, behavioral change theorists, and product devel-
+opers and coaches. Table 1 outlines the various data collection
+methodologies, insights, and core PAMS features and requirements.
+To develop the language and content of the PAMS system as
+well as initial PAMS features to be transformed in technical require-
+ments, we applied the “double diamond” framework from Design
+Thinking to drive the theory and empirically driven development of
+our intervention35 (see Figure 2). Key features of the double dia-
+
+mond method include both divergent (eg, discover, develop) and
+convergent (eg, define, deliver) stages of intervention development
+and iteration. In divergent stages, message content was creatively ex-
+plored and developed among various stakeholders (eg, patients, pro-
+viders, content experts), using strategies such as content workshops,
+personas, and brainstorming sessions. In convergent stages, mes-
+sages were reviewed by content and theory experts (eg, dDPP
+coaches, behavior change theorists), refined, and compared to rele-
+vant behavior change theories and techniques.
+From this work, a complete library of theoretically and empiri-
+cally derived messages was developed. Messages were periodically
+reviewed by stakeholders and tested in near-live and live environ-
+ments for feedback, which were used to refine and add messaging
+content. Sample messages and their associated behavior change de-
+terminant20 grouping, and technique20 are shown in Table 2.
+
+PAMS technical requirements
+Following the data collection period, a set of user requirements were
+written to guide the development of PAMs and then refined to iden-
+tify the “minimum viable product” (MVP) that was developed,
+piloted, and further refined.30,36 The initial requirements document
+was divided into small portions and deliverables of the system were
+presented periodically for further revisions and to address possible
+changes as agile development suggests.37 Main requirements involve
+the capacity to query, store, and safely manipulate patients’ data;
+calculate engagement levels; categorize patients’ according to en-
+gagement level; read, store, and manipulate a behavioral science-
+based message pool; send personalized messages based on patients’
+engagement, and generate a reporting dashboard for providers. As
+part of the requirements, high-security data manipulation standards
+need to be applied. All data consumed and generated by PAMS need
+to be strictly documented, organized, and stored for future evalua-
+tion. PAMS would also be able to provide necessary data to
+
+researchers on the effect of messages in achieving engagement for
+further analysis. Message content was developed based upon
+insights from user research activities and refined based upon clinical
+content experts to achieve engagement.
+
+PAMS architectural design
+Internal PAMS functionality includes data collection, data analysis,
+message selection, and message delivery processes. PAMS has a
+modular design where each module is independent and governs a
+specific activity or functionality within the system. Figure 3 illus-
+trates PAMS architectural design. The blue-highlighted area in the
+figure represents PAMS itself, to include the associated modules, we
+
+use symbols. Components outside the blue-highlighted area are ex-
+ternal systems and operations that interact with PAMS. These in-
+clude external applications and research activities that produce data
+to support PAMS’ functionalities or utilize data coming from
+PAMS. Arrows in the figure show directions of data flows.
+The patient registration module checks the Noom application
+programming interface (API) to verify if our patients have registered
+to the dDPP vendor and updates patients’ information in RedCap.
+The Noom data processor module, which is triggered weekly,
+queries raw data from the dDPP vendor (Noom), processes it, and
+extracts meaningful information such as achieved values for exer-
+cise, meals, group activities, messages, and weight. The engagement
+calculator receives preprocessed data from the Noom data processor
+
+module and it uses 3 different algorithms to generate an engagement
+score. This engagement score or adherence value is consumed by the
+message selector module which governs categorizing patients
+according to different engagement level categories/trends such as
+newly low, newly high, persistent high, and persistent low engager,
+and selects the message to be sent based on the patient’s recent
+trends and phase of the user journey. This module provides data to
+the patient outreach which is in charge of preparing the text content
+to be passed to Twilio (eg, the SMS gateway) API. Incoming mes-
+sages are managed by the patient outreach module. PAMS has a cal-
+endar
+feature
+called
+PAMS
+schedule
+which
+sends
+messages
+according to defined time rules such as birthdays, 1 week after the
+start of the program, 3 months into the program, and so on, to com-
+plement user engagement. PAMS has a number of databases for
+storing data consumed and produced by the modules. Databases
+store the message pools, patient engagement data, and a registry of
+
+messages sent and received. PAMS has a researcher dashboard that
+enables monitoring of the participants’ journey, retrieval, and analy-
+sis of data, as well as idea generation for optimizations to PAMS.
+As part of the PAMS and EHR integration, the Epic provider
+dashboard allows PCPs to follow the diabetes prevention journey,
+evaluate the impact of messages on engagement levels, and make de-
+cision about new strategies to help patients meet their goals. This
+dashboard is embedded into the Epic platform to facilitate accessi-
+bility, and it supports provider–patient communication. Provider
+dashboard design is the result of an interview process to better serve
+provider’s needs.
+
+PAMS technical build
+Amazon web services (AWS) were utilized for the development of
+PAMS.38 With our microservice approach design using an event-
+
+driven model,39–40 the main components of PAMS are AWS Lambda
+functions which are triggered by different events such as updates to
+S3 buckets, modifications on DynamoDB tables, or CloudWatch
+events. The versatility of Lambda functions allows for collaboration
+among developers. Since all the microservices communicate using
+events, they are fully functional as a module, and they abstract pro-
+gramming languages intercommunication and data transferring.
+Most of the Lambda functions were developed using Python or Scala
+programming languages. Lambda functions produce and consume
+events that allow the total integration of the system. Lambdas read
+and write in our databases to manipulate and update data. External
+interactions of PAMS use API calls, which secure effective data
+transfer.
+
+PAMS automation
+The initial stage of the study involved highly manual processes illus-
+trated in Figure 4. Given all the required tools, it takes approxi-
+mately 50 min for a research staff to perform all data handling steps
+and execute SMS triggering for each of the patients on a weekly ba-
+sis. With 9 initial study subjects enrolled to support early-stage de-
+velopment, manual processing of user data was manageable;
+however, as the number of participants increases, manual processing
+would quickly become unsustainable. Study documentation has also
+shown instances of human errors. PAMS went through rigorous test-
+ing to ensure zero errors and system bugs while automating all the
+features in Figure 4.
+Another important factor that makes the automation capability
+of PAMS promising is the ability to access patient engagement infor-
+mation, which typically is not readily available. PAMS abstracts the
+implementation of features in Figure 4 and presents an integrated
+dashboard in Epic with the relevant information for PCPs such as
+engagement data including health outcomes, patient’s category, and
+messages sent. Providers can then provide support tailored to each
+patient’s behavior change journey, enabled by auto-triggered SMS
+capability. PAMS has the potential to allow for providing additional
+support outside of in-person visits, without significant time commit-
+ment from PCPs. This potential has been uncovered from user re-
+search insights that identified an opportunity to incorporate dDPP
+workflows into existing provider workflows as a way to operation-
+alize this protocol. This has been achieved through the development
+and integration of dDPP tools within the EHR system. Such time-
+consuming manual activities would incur significantly high cost
+when considering tailored care for a large patient base developing
+
+healthy self-care behaviors. Due to PCP time constraints, manual
+manipulation of patient data is not feasible and PAMS provides a
+time-friendly, promising, and effective solution.
+
+DISCUSSION
+
+Current status and future directions
+Currently, the first version of PAMS has been deployed into produc-
+tion status; PAMS 1.0 includes the MVP. A second phase of develop-
+ment is planned for refining PAMS features and expanding its
+functionality, which will be deployed in the single-arm pilot (Phase
+2) of the study. Further iterations based on learning from Phase 2
+will be incorporated into the final product, to be deployed in the
+RCT (Phase 3). Additional features and functionality of PAMS iden-
+tified to be potentially deployed in future phases include flexible
+rules for triggering messages, a smart chatbot, an improved provider
+dashboard, and increasing capacity for individual message content
+and delivery personalization.
+Further future development includes a more intelligent approach
+utilizing machine learning (ML) for providing the smart-driven se-
+lection criterion for messages to dynamically address patients’ needs
+and find better engagement results is also planned for development
+during Phase 3.41–43 The goal for PAMS 2.0 is to incorporate ML to
+select the messages that positively impacted some patients and iden-
+tify the common characteristic to extend findings to new patients.
+The ML classifier is planned to be trained with features such as mes-
+sages score given by patients from 1 to 5 where 5 represent the high-
+est positive feedback, message impact in the patient engagement
+represented by the engagement trend followed by the text, and data
+patient demographics data (legal sex, race, employment status, age).
+Data related to message scores will be used for the ML classifier and
+are currently being collected as part of PAMS 1.0. Finally, Phase 2
+and 3 will focus on the implementation of the PAMS intervention,
+with a focus on implementation outcomes (eg, acceptability, sustain-
+ability, cost),44 as well as access, equity, and inclusion.
+
+Technical challenges and limitations
+During the development of PAMS, some technical difficulties and
+limitations were encountered. High data security standards were
+enforced, which introduced challenges with some AWS features and
+interoperability across platforms. Some inbound requests and data
+transfers were blocked by the firewall as an attempt to secure data,
+challenging the Twilio-AWS connection for the reception of the in-
+
+coming messages and the AWS-Epic integration for the secure de-
+ployment of the provider dashboard; protected health information
+(PHI) data were also carefully handle to overcome enforced AWS se-
+curity standards such as the restriction of storing sensitive data on
+dynamo databases or s3 buckets; and times delays in updating builds
+that are dependent on third parties such as with Epic. Our develop-
+ment team worked diligently to overcome these challenges and pre-
+sent alternative solutions to achieve the desired results while
+maintaining data integrity such as allowing AWS to securely check
+external API instead of allowing inbound call, securing PHI data in
+RedCap, and actively working with third party teams. PAMS is the
+result of an ongoing study aiming to design a platform that
+addresses user feedback and learnings, frequent changes challenged
+the efficiency of our small development team, but PAMS modular
+design facilitated the delivery of the system on time.
+
+CONCLUSION
+
+PAMS is an innovative message platform developed using UCD and
+agile methodologies to provide a user-friendly and effective mecha-
+nism to address challenges with engaging patients with a digital dia-
+betes prevention platform and healthy behavior change. Integrating
+evidence-based behavior change theories for the prevention of dis-
+ease with UCD strategies and novel digital technology development
+systems can facilitate the development of dynamic, usable, and effec-
+tive digital health tools. PAMS is built to be applicable to a variety
+of dDPP platforms and EHR partners, and meets with strict data se-
+curity and PHI standards, and has potential applications to a
+broader spectrum of healthcare conditions and technology interven-
+tions. The design of PAMS encourages scalability of the system and
+the easy integration of further modules and iterations as part of on-
+going research, which allows for continued iteration and innovation
+with an eye toward maximizing effectiveness and use while minimiz-
+ing disruptions to patient experience or care. Future versions of
+PAMS will involve the inclusion of ML and refined features of
+PAMS 1.0, as well as more general research to explore continuous
+personalization of the patient experience, its integration with other
+digital health tools, and its impact on patient outcomes.

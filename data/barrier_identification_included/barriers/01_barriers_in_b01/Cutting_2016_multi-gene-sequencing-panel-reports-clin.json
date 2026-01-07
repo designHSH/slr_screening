@@ -1,0 +1,33 @@
+{
+  "file_name": "Cutting_2016_multi-gene-sequencing-panel-reports-clin.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Designers were unable to test interactive navigation of the GMA because task walkthroughs did not involve a working prototype, limiting hands-on usability evaluation.",
+      "justification": "This resource limitation prevented designers from performing evaluation workloads (testing interactive prototypes with users) and constrained their ability to integrate feedback and iterate based on actual user interactions.",
+      "reference_excerpt": "While actual navigation of the GMA software interface could not be tested during our task walkthroughs, participants still proposed several areas to improve (Table 5).",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Broader system and organizational constraints (laboratory–EHR communication and incorrect notification of care team members) could not be solved within the project scope, limiting design solutions.",
+      "justification": "These external system and scope constraints hindered designers' ability to understand the full context of use and to specify actionable requirements or implement design changes that would address end-to-end workflows.",
+      "reference_excerpt": "Some challenges brought up in phase 1 focus groups could not be addressed directly in the design of the GMA. For example, a clear need identified by participants was to improve the communication between laboratory systems and the EHR. Focus group participants also reported that some processes for notifying clinicians of genetic test results do not notify the correct members of the care team in the TPP project. In both instances, solutions for these needs were beyond the scope of this project.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "The study focused on single-point delivery scenarios and did not explore mechanisms for updating interpretations over time, limiting consideration of longitudinal reporting needs.",
+      "justification": "This scope/resource limitation prevented designers from addressing holistic experience and requirements related to evolving genetic information, constraining their ability to design notification and update workflows and to manage user understanding over time.",
+      "reference_excerpt": "The scenarios we present in this work, however, were for the delivery of results at one point in time, and do not explore potential changes to interpretations over time. Complementing that work would be research to better understand approaches to notify clinicians of updates to GS findings and interpretations.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

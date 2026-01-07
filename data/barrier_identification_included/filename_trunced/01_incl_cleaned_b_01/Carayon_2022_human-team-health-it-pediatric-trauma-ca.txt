@@ -1,0 +1,374 @@
+Human-Centered Design of Team Health IT for Pediatric Trauma 
+Care Transitions
+
+Pascale Carayon1,2, Bat-Zion Hose1,2,3, Abigail Wooldridge4, Thomas B. Brazelton III5,6, 
+Shannon M. Dean7, Ben L. Eithun5, Michelle M. Kelly5,6, Jonathan E. Kohler8, Joshua 
+Ross5,6,9, Deborah A. Rusy5,10, Peter L.T. Hoonakker2
+
+1Department of Industrial and Systems Engineering, University of Wisconsin-Madison
+
+2Wisconsin Institute for Healthcare Systems Engineering, University of Wisconsin-Madison
+
+3Department of Anesthesiology and Critical Care at the Perelman School of Medicine, University 
+of Pennsylvania
+
+4Department of Industrial and Enterprise Systems Engineering, University of Illinois at Urbana-
+Champaign
+
+5American Family Children’s Hospital, UW Health
+
+6Department of Pediatrics, University of Wisconsin School of Medicine and Public Health
+
+7Department of Pediatric Medicine, St Jude’s Hospital
+
+8Department of Surgery, UC Davis Children’s Hospital
+
+9Department of Emergency Medicine, University of Wisconsin School of Medicine and Public 
+Health
+
+10Department of Anesthesiology, University of Wisconsin School of Medicine and Public Health
+
+Objective: To describe the HCD process used to develop a usable team health IT (T3 or 
+Teamwork Transition Technology) that provides cognitive support to pediatric trauma care teams 
+during care transitions from the emergency department to the operating room and the pediatric 
+intensive care unit.
+
+Methods: The HCD process included seven steps in three phases of analysis, design activities 
+and feedback.
+
+Results: The HCD process involved multiple perspectives and clinical roles that were engaged 
+in inter-related activities, leading to design requirements, i.e., goals for the technology, a set of 47 
+information elements, and a list of HFE design principles applied to T3. Results of the evaluation 
+showed a high usability score for T3.
+
+Conclusions: HFE can be integrated in the HCD process through a range of methods and design 
+principles. That design process can produce a usable technology that provides cognitive support to 
+a large diverse team involved in pediatric trauma care transitions. Future research should continue 
+to focus on HFE-based design of team health IT.
+
+3. Methods
+
+Table 1 provides an overview of the HCD steps and their main outcomes. HFE researchers 
+organized the HCD process with the help of a design team that included seven clinicians 
+who represented multiple perspectives involved in pediatric trauma care: emergency 
+medicine, surgery, anesthesia, intensive care medicine, nursing & trauma management, 
+hospitalist, and medical informatics.
+
+3.1. Step 1 – SEIPS Analysis of Pediatric Trauma Care Transitions
+
+Using the SEIPS (Systems Engineering Initiative for Patient Safety) model [24, 25] and 
+process modeling [26], we analyzed data on pediatric trauma care transitions between the 
+ED, OR and PICU [20] and data from the pediatric trauma registry to characterize the 
+complexity of these transitions [16]. The extensive analysis of work system barriers and 
+facilitators is reported in a separate publication [20] and shows that the dimension of ‘team 
+cognition’ was most frequently cited by the interviewees. The main decision of Step 1 
+was the focus on sociotechnical solutions to support team cognition of distributed pediatric 
+trauma care teams who manage children during ED-OR-PICU care transitions.
+
+3.2. Step 2 – Identification of Sociotechnical Solutions
+
+Using interview data from Step 1, we identified sociotechnical solutions to support team 
+cognition. Based on the SEIPS analysis, the list of sociotechnical solutions, and literature 
+on integrated displays for health care teams [11, 27], the design team decided to develop a 
+patient status board to support team cognition during ED-OR-PICU transitions.
+
+3.3. Step 3 – Collaborative Design Sessions
+
+The collaborative design process consisted of 4 design sessions with the 7 clinicians of the 
+design team (Table 2). A core group of 4 HFE researchers prepared and facilitated the design 
+sessions; 2 additional HFE students helped when necessary. When designing a team health 
+IT, a challenge is to decide which information elements to display on the technology to 
+provide cognitive support to the entire team. Therefore, we organized the design sessions 
+to facilitate this decision-making, e.g. using a survey of the design team on information 
+elements. The iterative collaborative design produced about 20 different versions of T3. At 
+the end of each design session, we administered a survey to get just-in-time feedback from 
+the design team about the quality of the design sessions.
+
+3.4. Step 4 – Individual Feedback from Clinicians
+
+During the collaborative design sessions (step 3), we produced multiple version of T3, 
+including a mock-up in Adobe InDesign that was evaluated in Step 4. In collaboration with 
+the clinicians on the design team, we developed a clinical scenario to show how T3 would 
+evolve over the course of the scenario. The scenario was integrated in the collection of data 
+
+on usability of T3 and qualitative comments on the cognitive support offered by T3 and 
+its impact on patient safety. Four clinicians from the design team who represented medical 
+perspectives from the ED, OR and PICU participated in this step. We used the SUS (System 
+Usability Scale) [28] to gather quantitative usability data. The SUS is a reliable tool for 
+measuring usability of products and services. It consists of 10 questions with a response 
+scale from 1–5 that can be recoded into a usability scale from 0 (low usability) to 100 (high 
+usability).
+
+3.5. Step 5 – Input from Nursing Leadership
+
+We gathered input on T3 from hospital nursing leadership in two meetings. The first 
+meeting occurred between design sessions 3 and 4; nursing leaders reviewed a version of 
+the T3 mock-up and provided feedback. They suggested a few design changes, including 
+displaying weight in kilogram and providing additional information on blood products. We 
+also discussed the impact of T3 on patient safety as nursing leaders expressed concern 
+about the accuracy of the displayed information on T3. This led us to add a step in the 
+HCD process and conduct a patient safety analysis (step 6). At the second meeting, nursing 
+leaders reviewed the evaluation plan and suggested to add surgical technicians to the sample 
+for Step 7.
+
+3.6. Step 6 – Patient Safety Analysis
+
+We conducted a proactive risk assessment (PRA) of T3, which is described in a separate 
+publication [18]. We first identified vulnerabilities of T3 that could lead to patient 
+safety problems. Then, through a voting process, we focused on three vulnerabilities 
+with the highest patient safety consequences and discussed possible solutions. The main 
+vulnerabilities were related to (1) reliability of information displayed on T3, (2) unidentified 
+patients appearing younger, and (3) visibility of protected health information.
+
+3.7. Step 7 – Evaluation of Mock-up of T3
+
+We conducted a scenario-based evaluation of the T3 mock-up with 36 participants. Details 
+on the methodology are reported in Hoonakker et al. [19]. We used the SUS [28] to evaluate 
+T3 usability, which had a Cronbach alpha score of 0.90.
+
+3.8. Overall HCD Process for T3
+
+The entire HCD process was spread over 30 months (Figure 2). As described in Table 1, it 
+included diverse inter-related activities in seven distinct steps. The first two steps of analysis 
+produced data that were used in subsequent steps of design activities and feedback. Steps 
+3–7 helped to define the T3 design requirements and produce the final mock-up of T3.
+
+4. Results
+
+4.1 Feedback on Design Sessions
+
+The feedback survey after each of the design sessions showed that, on a scale from 1 (poor) 
+to 5 (excellent), the four co-design sessions were rated between 4 and 5. On a scale from 
+1 (not useful) to 5 (very useful), the sessions were rated between 4 and 5. Qualitative 
+
+comments highlighted the importance of “multidisciplinary input from several different 
+services involved in trauma” and the consideration of different perspectives. Challenges 
+included time constraints as meetings were scheduled for only 1 hour and not all clinicians 
+could fully participate in all design sessions.
+
+4.2. Design Goals for T3
+
+An outcome of Steps 1 and 2 of the HCD process was the agreement on developing a 
+technology for care team members involved in ED-OR-PICU transitions. The design team 
+identified that the main goal of T3 was to support team cognition and shared mental models 
+in these transitions for pediatric trauma patients [20]. During the collaborative design of Step 
+3, the design team iteratively developed the following specific design goals of T3:
+
+1.
+to provide timely, up-to-date summary of information about patient status to 
+distributed care team members during patient transition from ED to OR and 
+PICU.
+
+2.
+to support communication, coordination and anticipation between sending (ED) 
+and receiving (OR, PICU) units, such as when the OR or PICU is ready to 
+receive the patient, if the patient is still in the ED, and what medications need to 
+be prepared.
+
+3.
+to help identify care team members involved in the ED to OR and PICU 
+transitions.
+
+4.3. Information Elements on T3
+
+A challenge of the HCD process was deciding which information elements to include on 
+T3, especially given the various users and roles with different information needs. Decisions 
+about which information elements to include on T3 were made by the design team during 
+the four collaborative design sessions (step 3). This was an iterative process with multiple 
+activities, such as voting on information elements during the first design session and 
+discussing results of the survey on information elements during the third design session 
+(see Table 2). The final version of T3 (see Figure 3), which was evaluated in Step 7, includes 
+47 information elements in 10 categories (see Appendix for the complete list of information 
+elements):
+
+1.
+patient information
+
+2.
+information about what happened prior to admission
+
+3.
+information on the patient family or caregiver
+
+4.
+time elapsed since the injury and in the ED
+
+5.
+current status of the patient
+
+6.
+information on the mannequin
+
+7.
+information on the timeline: e.g. start and stop times of CPR, vital signs
+
+8.
+members of the care team
+
+9.
+status of the transition to OR
+
+10.
+status of the transition to PICU.
+
+4.4. HFE Design Principles for T3
+
+A key output of the HCD process was a list of HFE principles that were applied to T3. The 
+HFE design principles emerged iteratively with input from clinicians involved in pediatric 
+trauma care transitions (steps 1, 2, 4 and 6), collaborative design (step 3), and hospital 
+leadership meetings (step 5). Because the goal of T3 was to support team cognition during 
+care transitions, a major design principle was situation awareness. The structure of T3 was, 
+therefore, organized around three panels of (1) what happened to the child and background 
+information (left panel), (2) current status (middle panel), and (3) next steps of transition 
+to the OR, PICU or floor (right panel), as well as a timeline in the bottom part. Because 
+HFE researchers organized the HCD process, they used their expertise and knowledge of the 
+literature to also provide input to the design process and the list of HFE design principles. 
+For instance, we integrated several usability heuristics [29, 30] in the design of T3 such as 
+consistency and minimization of workload. Safety is another important usability heuristic, 
+which was also emphasized by nursing leaders (step 5) and included in the list of design 
+principles. The design principles for T3 addressed all three domains of cognitive, physical 
+and organizational HFE (see Table 4).
+
+4.5. Usability Evaluation
+
+Usability of T3 was first evaluated in individual feedback sessions with 4 clinicians (step 
+4). The SUS scores varied from 60 to 98 with a mean of 85 and a standard deviation of 
+14. When asked to describe three things they liked about T3, clinicians mentioned that 
+T3 displayed a lot of well-organized information that showed trends and provided timely 
+updates on the patient status in a single display. Two of the four clinicians mentioned that 
+some text boxes had a lot of information, e.g. detailed information on individual physicians. 
+This feedback was used to revise the T3 mock-up.
+
+Table 5 provides information on participants in the second usability evaluation conducted 
+in Step 7. Most were positive about T3 (Figure 4). The overall mean SUS score for T3 was 
+74.4, which is above the cut-off score for “good” (71.4) but below excellent (85.5) [31].
+
+5. Discussion
+
+This study shows how an HCD process can produce a usable health IT (T3 or Teamwork 
+Transition Technology) for multiple team members involved in pediatric trauma care 
+transitions. We provided a detailed description of the HCD process, which is rarely done 
+especially for the design of team health IT. The HCD process unfolded over 30 months with 
+activities aimed at analyzing pediatric trauma care transitions, co-designing the technology 
+with clinicians, and gathering and integrating feedback from multiple stakeholders. The 
+seven steps of the HCD process led to the creation of a technology mock-up with high 
+usability.
+
+5.1 Participation of Multiple Perspectives via Multiple Methods
+
+Designing team health IT can be particularly challenging because team members have 
+different information needs. In this study, we paid particular attention to the systematic 
+integration of multiple perspectives in the design process. This was accomplished with both 
+direct and indirect user participation in all phases of the HCD process (i.e., analysis, design 
+and feedback), using multiple methods.
+
+User participation in an HCD process for technology design can take different forms, such 
+as direct participation in decision-making for technology design and indirect participation 
+via data collection [32]. While users of T3 were involved directly in the technology design 
+process as seven clinicians participated in the design team and made decisions about the 
+design of T3, others were involved indirectly in multiple stages of the HCD process. For 
+instance, in Step 1, we interviewed 18 clinicians involved in the ED-OR-PICU pediatric 
+trauma care transitions; interview data were used to define the goals of T3. Users were 
+also involved in the patient safety analysis of Step 6 and the evaluation of the T3 mock-
+up in Step 7. Involving all groups of users along with other stakeholders (e.g. nursing 
+leadership, trauma management) is critical for developing a usable technology [33], but 
+can be challenging. For instance, in Step 3 of collaborative design, not all clinicians 
+were able to participate in all design sessions; this is a major challenge for participatory 
+methods in health care as clinicians are busy with clinical responsibilities. This calls for the 
+development of efficient design methods [34]. Because not all groups of users were directly 
+involved in the design of T3, it is possible that important input may have been missed. While 
+we found a high usability score for T3 in Step 7, a few survey respondents provided negative 
+feedback. For instance, 23% of survey respondents either disagree (6%) or neither agree or 
+disagree (17%) with the statement on overall satisfaction with T3. In informal debriefings 
+after the usability evaluation, some participants indicated that T3 may not be useful in the 
+trauma bay, in particular if the trauma chief says things out loud and help everyone maintain 
+a shared mental model. Other negative feedback related to the issue of information accuracy, 
+which was also identified in the patient safety analysis of Step 6. These issues are important 
+to address in the next phase of design and implementation of T3.
+
+The participatory HCD process integrated multiple perspectives through multiple methods 
+and mechanisms: interviews (steps 1 and 2), design sessions (step 3), individual feedback 
+(steps 4, 5 and 7) and a structured PRA or proactive risk analysis (step 6). This variety of 
+participatory approaches ensured that multiple perspectives provided input in all stages of 
+the HCD process. In particular, the co-design sessions (step 3) allowed for collaboration 
+among different clinical roles; therefore, facilitating the emergence and integration of 
+multiple perspectives through discussion, confrontation and convergence [35].
+
+5.2 Integrating HFE in Team Health IT Design
+
+Our study showed how HFE can be integrated into the process of team health IT design, i.e., 
+through the use of HFE methods and the application of HFE design principles. Our HCD 
+process included the following HFE methods: SEIPS analysis (step 1), co-design sessions 
+(step 3), feedback and usability evaluation of T3 mock-ups (steps 4 and 7), and proactive 
+risk analysis (step 6). Experts recommend the use of multiple and mixed HFE methods, in 
+
+particular in health IT design [36, 37]. Both quantitative and qualitative data are needed 
+to develop a usable technology [38]. In our study, we collected both quantitative survey 
+data (i.e. SUS or System Usability Scale [28]) and qualitative interview data in Steps 4 
+(individual feedback from 4 clinicians) and 7 (scenario-based evaluation of T3 mock-up with 
+36 clinicians).
+
+The HFE discipline has developed a large compendium of “principles” [39], in particular 
+for designing usable technologies. In the cognitive HFE domain, design principles include 
+usability heuristics [29, 40]. In the physical HFE domain, design of technologies tackles 
+visual access and physical dimensions. In the organizational HFE domain, technologies 
+need to fit with organizational and team processes. In this study, we produced HFE 
+design principles for T3 (see Table 4), which cover the domains of cognitive (i.e. situation 
+awareness, visual support, information integration and interpretation, minimization of 
+workload), physical (i.e. physical and visual access) and organizational (i.e. consistency and 
+safety) HFE. These design principles emerged with input from clinicians and nursing leaders 
+and integrated expertise of the HFE researchers. Because HFE researchers were actively 
+involved in the HCD process, they provided an important perspective as well as knowledge 
+of HFE design. The list of design principles in Table 4 may be applicable to other team 
+health IT, e.g. integrated displays and status boards.
+
+5.3 Adaptability of HCD Process
+
+We adapted the HCD process from the ISO [21], which has similarities with the process 
+Schiro et al. [12] applied to design a pediatric ED patient prioritization tool. We conducted 
+a SEIPS analysis of care transitions, similar to the work system analysis of Schiro and 
+colleagues. Another similarity was the evaluation stage; we conducted an evaluation of 
+the T3 mock-up and Schiro et al. conducted user testing of their mock-up and prototype. 
+Our HCD process was based on the co-design model [35], which included a series of four 
+collaborative design sessions in which clinicians were directly involved in designing the 
+team health IT. Schiro et al. presented their mock-up to a multidisciplinary focus group for 
+feedback and design suggestions, which is more closely aligned with a user-centered design 
+process and indirect participation [22].
+
+Feedback in HCD is critical. Similar to Schiro et al. [12], our HCD process included 
+multiple feedback loops, in particular between Steps 3 to 7 in the phases of design activities 
+and feedback (Figure 1). For instance, 4 clinicians provided feedback on an early mock-up 
+of T3 (step 4), which was discussed in a design session (step 3) and led to revisions to the 
+design. Iterative feedback is important as many different opinions and perspectives need to 
+be assessed and integrated during the design process.
+
+The HCD process itself is adaptable and may change over time. We adapted the HCD 
+process as we gathered input, in particular from nursing leadership (step 5). We conducted 
+the proactive risk analysis (step 6) after nursing leaders expressed concern about the safety 
+of T3, which could provide wrong or delayed information. Safety was one of the HFE 
+design principles of T3 (see Table 4). This analysis will be particularly important in the 
+implementation of T3: issues of where the data come from will need to be addressed. In 
+a separate analysis, we found that about 90% of the information elements on T3 could be 
+
+found in the EHR; the proactive risk analysis brought up the important issue of reliability of 
+and timely access to information in the EHR.
+
+5.4 Limitations
+
+Our study provides detailed information on an HCD process; however, we did not compare 
+our process and its outcome to a non-HCD process or to another form of HCD. Such 
+comparative studies could be useful, but may be difficult to practically conduct. Our study 
+adds to the literature on the benefits of HCD and integration of HFE methods and design 
+principles. Finally, because we developed and evaluated a technology mock-up, we do not 
+have information on the actual use of the technology. Evaluation after implementation is 
+critical to fully assess the fit of the technology in the entire work system and workflow.
+
+6. Conclusion
+
+We showed how an HCD process integrated multiple HFE methods, applied design 
+principles in the cognitive, physical and organizational HFE domains, and produced a 
+usable team health IT. Integrating multiple perspectives in the design process is particularly 
+important as T3, or Teamwork Transition Technology, aims to support the work of a large, 
+distributed team involved in pediatric trauma care transitions. Future research should focus 
+on the design of team health IT as patient care is increasingly performed by fluid teams that 
+are often distributed spatially, organizationally and temporally.

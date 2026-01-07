@@ -1,0 +1,274 @@
+Exploring the Needs and Preferences of Autistic
+Users in Extended Reality: A Participatory
+and Human-Centered Approach
+
+Jie Lu(B)
+and Matthew Schmidt
+
+University of Florida, Gainesville, FL 32601, USA
+
+3
+Project Description
+
+Project PHoENIX (Participatory, Human-centered, Equitable, Neurodiverse, Inclusive,
+eXtended Reality) was initiated to solicit voices of the autistic community in terms of
+needs and preferences regarding the use of VR, with a focus on autistic adolescents
+who are transitioning from secondary education into adult life. In particular, we were
+interested in the types of reality that autistic people have used or plan to use, the reasons
+for their use, and how they wish to use it more. The project was conducted in a developed
+VR environment by inviting the target population, as well as other stakeholders such
+as their parents and caregivers, to experience this desktop-based VR and participate in
+designed activities. The VR environment was designed with user-centered methods (i.e.,
+empathy interview, empathy mapping, personas).
+Project PHoENIX consists of three individual spaces, namely, the Training Space,
+Gallery 1 VR for Autism, and Gallery 2 Social VR Tools. Each space has its unique
+features and objectives and is designed with a number of interactive activities. For
+example, the Training Space is designed to train users in navigating a desktop-based
+virtual environment. A variety of activities were designed to teach and reinforce the skills
+needed in the rest of the spaces. Gallery 1 is designed as a virtual museum addressing
+multiple aspects of VR, from its general use to speciﬁc use (for autistic people), from
+lab to the real world, and from the past to the future. It also includes a 360-degree video
+that demonstrates how to navigate to a bus stop from a speciﬁc location on a university
+campus. In Gallery 2, we present users with a variety of social VR software developed
+by different companies. Participants are able to learn about features and affordances of
+each social VR tool and then rate them on a scale of one star to three stars, designed as a
+drag-and-drop activity. Both gallery spaces have a designated area for group discussion.
+
+4
+Methods
+
+4.1
+Design Approach
+
+Co-design and participatory design are a widely applied user-centered innovation
+methodologies that values the involvement of end users and associated stakeholders
+in the design process [27]. In Project PHoENIX, a range of user experience design
+methods such as design thinking methods were used to ensure the participation of end
+users as well as stakeholders, and to gather information about participants’ prior experi-
+ences in research studies and with VR technology. In the following, we provide a brief
+introduction to the design thinking methods and discuss their beneﬁts.
+
+Design Thinking Methods. User experience design research and methodologies high-
+light the users. To approach potential target users, we applied widely used design thinking
+
+methods, including a three-stage process of empathy interviews, empathy mapping, and
+persona development. Empathy interviews [28] are one-on-one conversations that help
+designers understand how potential users feel about the central problem and how they
+might perceive designed solutions. Unlike other types of interviews, empathy interviews
+aim to promote empathy and require interviewers to immerse, observe, and engage dur-
+ing the interviews [28]. To systematically extract information from empathy interviews,
+we generate empathy maps by categorizing interview notes based on what interviewees
+say, do, think, and feel. Empathy maps help designers understand the interviewee’s
+emotions and experiences, which are priorities of Project PHoENIX. Empathy maps
+are particularly informative in creating user personas, which are ﬁctional archetypes of
+users who might use the designed technology within their speciﬁc usage context. Each
+persona represents a ﬁctional user who shares the same or similar characteristics as a
+group of learners. Personas guide and inform design decisions and help examine them.
+To this end, personas should be updated if learner needs and challenges change. Taken
+together, we used empathy methods to learn what is important to autistic people, to
+reveal emotional and perhaps tacit insights, to explore behaviors, needs, and challenges,
+and ultimately to develop a deep understanding of their daily lived experiences [29, 30].
+
+Four autistic participants were invited to participate in the empathy interviews, result-
+ing in the development of four user personas. These participants were invited back to
+review the personas and to share their thoughts and opinions on colors, themes, objects,
+etc. of the design of any VR space. Information collected from the second round of
+interviews resulted in the development of two gallery spaces (Fig. 1). Additionally, a
+Training Space (Fig. 2) was developed to help participants navigate the VR space and
+complete interactive tasks.
+
+Fig. 1. An overview of the initial design of Gallery 1.
+
+142
+J. Lu and M. Schmidt
+
+Fig. 2. An overview of the Training Space.
+
+4.2
+Phase I Usability Testing
+
+To assess the usability and user experience of the spaces, we recruited ﬁve autistic people
+who had not participated in previous studies. Each participant completed two usability
+sessions on different days. In Session 1, each participant evaluated the Training Space
+and Gallery 1, while only Gallery 2 was evaluated on the second session. Each session
+was facilitated by a trained researcher under the supervision of a university professor
+and lasted about an hour. The facilitator adhered to a pre-developed protocol throughout
+each session, and at least two observers were present to take ﬁeld notes. Participants
+were asked to think out loud in all testing sessions, which were recorded with video and
+audio with their consent.
+Instruments used in this phase include the Computer System Usability Question-
+naire (CSUQ) [31], a self-developed social validity questionnaire, and four open-ended
+questions. The CSUQ is a standardized self-reported questionnaire designed to assess
+the perceived usability of a given software, project, or application [31]. Speciﬁcally,
+it evaluates a given technology along four factors, namely, overall, system usefulness,
+informationquality,andinterfacequality.Thesocialvalidityquestionnairewasinternally
+developed by the lead researcher and reviewed by experts for content validity, aiming to
+assess the research procedures, goals, and participants’ experience. As a critical concept
+in the ﬁeld of applied behavior analysis [32], social validity tends to be overlooked in
+research that involved autistic people. This could potentially affect the effectiveness of
+evidence-based intervention [33], including applications used for autism research.
+The three instruments were input in a Qualtrics survey distributed to participants at
+the end of Session 2. Participants’ responses were exported from Qualtrics and imported
+into spreadsheet software for analysis. Following guidelines by [34], CSUQ data were
+analyzed by ﬁrst calculating individual scores and then averaging them across all items.
+Additionally, data were analyzed along the reported factor structure [34]. Data from the
+social validity questionnaire were quantitatively analyzed by computing the mean score
+of all individuals across all items. Video recordings from each session were processed
+
+143
+
+(Fig. 3) and analyzed using a coding scheme adapted from [35]. Finally, content analysis
+was conducted on responses from the four open-ended questions.
+
+Fig. 3. A screenshot that illustrates how videos were combined, synchronized, and closed-
+captioned for video analysis.
+
+4.3
+Phase II Pilot Testing
+
+In order to assess the feasibility of conducting research studies within Project PHoENIX
+the VR environments, a pilot testing was carried out with a focus group of four autistic
+participants. All participants were invited to campus. Upon arrival, they were ﬁrst greeted
+by the research team in the research lab, and then placed in four different rooms. Note that
+all participants had completed the training prior to the pilot testing session. Participants
+completed Gallery 1 and Gallery 2 as a group within one day with multiple breaks.
+Research procedures, instruments, and data analysis techniques used in this phase were
+identical to those used in Phase I.
+
+5
+Results
+
+5.1
+Design Revisions
+
+Design revisions were iteratively and instantly implemented between sessions in the
+two phases. The most salient change was the structure of Gallery 1 and Gallery 2.
+Initially, an open-space structure with an un-curated experience was employed, allowing
+participants to visit any station in any order at any time before being called to gather
+in the gathering area. However, after the ﬁrst two usability testing sessions in Phase I,
+participants experienced technical issues, such as slow loading speed, blurry graphics,
+
+144
+J. Lu and M. Schmidt
+
+and delayed motion responses. After an investigation into such issues, it was discovered
+that these issues could be due to the participants’ internet, device models, and the fact
+that our designed spaces contained too many three-dimensional objects. Given the lack
+of control over participants’ devices or internet, the design team opted to reduce the size
+of each gallery by breaking the entire space with four stations into smaller spaces, all of
+which were still connected to the gallery using a directory map (Fig. 4).
+
+Fig. 4. An overview of the ﬁnal design of Gallery 1 (left) and Gallery 2 (right).
+
+5.2
+Qualitative Results of Phase I and Phase II
+
+In Phase I, a spreadsheet was used to record usability issues identiﬁed by observers or
+directly captured by participants during the testing sessions, with severity levels noted
+[37]. A total of 58 usability problems were identiﬁed, of which 52 were resolved (Fig. 5).
+Of the remaining six unresolved issues, three were not considered usability issues and
+the rest were related to cosmetic preferences, which varied by participant. In Phase II,
+no usability issues were identiﬁed by observers or participants.
+The four open-ended questions asked participants to provide feedback on what they
+liked the best, what they liked the least, what they would change, and any additional com-
+ments (optional). Participants generally appreciated the atmosphere in all three spaces
+and described it as “nice and calming”. Acknowledgement of the contents presented
+in the stations was observed, as multiple participants indicated they enjoyed “learning
+about different VR technologies and how they might be applied to autism research”, and
+“seeing the different programs”. Such perspectives aligned exceptionally well with our
+design intentions, which were drawn from the empathy interviews and personas in terms
+of autistic users’ preferences and needs.
+In this phase, participants’ responses to the question regarding what they liked the
+least and what they would change emphasized technical difﬁculties encountered during
+the testing sessions, such as “The volume needs a toggle”, “The rating system was a bit
+difﬁcult to use”, and “Improve the drag and drop of the rating system”. All of these issues
+were addressed by the research team before Phase II. Responses to these two questions
+after Phase II Pilot Testing were far less critical, with some participants indicating that
+
+145
+
+Fig. 5. Total number of usability issues identiﬁed and resolved, stratiﬁed by priority.
+
+they were “not sure” or providing comments unrelated to the VR environment or research
+procedures, such as a lunch order.
+Results from the video analysis in both phases support the quantitative ﬁndings
+and were consistent with responses from the open-ended questions. In Phase I, fewer
+usability problems and more recognition of the design were identiﬁed by participants
+as the study progressed. In Phase II, the primary focus was on examining the feasibility
+of Project PHoENIX and its potential to scale for use in an authentic research context.
+The nature of the user experience was broadly exposed as participants initiated and
+engaged in a variety of conversations around VR for autistic people (“It’s nice to know
+we’re being thought of”). The usefulness and relevance of the program were highlighted
+throughout both phases. For instance, three participants took turns sharing their personal
+experiences on social anxiety at a station in Gallery 1, “What VR helps with is that it’s
+not a place where people would be watching you speciﬁcally, because you can mess up
+all you want in VR”, “There won’t be consequences if they mess up in VR”, “It would
+have really helped me out”, etc.
+
+5.3
+Quantitative Results of Phase I and Phase II
+
+In Phase I, the mean CSUQ score for overall performance of PHoENIX was 1.98 (sd =
+0.53), indicating an above average performance according to the benchmarks established
+by [31]. It is important to note that the CSUQ scale was designed using a 7-point Likert
+scale ranging from strongly agree to strongly disagree, where a smaller rating repre-
+sents better performance. To obtain a more concrete understanding of how PHoENIX
+performed, we converted the traditional score from the historical 7-point scale to a 0–
+100-point scale to use the Curved Grading Scale (CGS) [31], which has been shown as
+valid and reliable convention method [31]. A mean score of 81.79 was obtained, falling
+within the 90–95 percentile range on the CGS, indicating acceptable usability between
+
+146
+J. Lu and M. Schmidt
+
+“Good” and “Excellent” [31]. The analysis of the usability of PHoENIX’s VR envi-
+ronments along the reported factor structure showed that Project PHoENIX performed
+above average on every factor. Additionally, the mean score across all eight items in the
+social validity questionnaire was 5.88 (sd = 0.98), indicating acceptable and appropriate
+research goals and procedures perceived by autistic users.
+In Phase II, the mean CSUQ score of PHoENIX was 1.45 (sd = 0.57), demonstrating
+an above average performance. Moreover, the usability of PHoENIX’s VR environments
+improved on every factor, with scores lower than those obtained in Phase I and below the
+benchmarks. The mean social validity score was 6.94 (sd = 0.13), which also improved
+compared to the average score of social validity in Phase I. To assess the continuous
+improvement of the overall usability and social validity of PHoENIX, we compared
+results across two phases in Table 1. The iterations of PHoENIX resulted in an increase
+over 10 points (normalized scores) in CSUQ from Phase I to Phase II, resulting in “best
+imaginable” usability [31]. The social validity score increased by over 1 point, indicating
+an improvement in research procedures and more positive perceptions of the research
+goals [36] by autistic participants.
+
+Table 1. Comparison of results from two stages of usability testing.
+
+6
+Discussion
+
+The present study aimed to solicit voices of the autistic community in terms of needs
+and preferences regarding the use of VR. To achieve this goal, we utilized a participa-
+tory design approach along with a range of user-centered learning experience design
+methods (e.g., empathy interviews, personas) to co-develop an inclusive VR technology
+with autistic participants that caters to their needs and preferences. Participation of autis-
+tic people throughout the entire process of design, development, implementation, and
+evaluation was integral to ensuring that project PHoENIX fulﬁlled its intended purpose.
+Speciﬁcally, the design decisions, including colors, themes, and objects used in the ﬁnal
+version, were directly informed by participants’ inputs. Furthermore, the speciﬁc content
+of the VR application was developed by considering the features that autistic users were
+seeking to help them with autism.
+A formative evaluation of the project was performed across two phases in multi-
+ple sessions, with ﬁndings from such sessions being used to iteratively improve the
+overall design of the VR environments. Speciﬁcally, the use of multiple usability eval-
+uation methods, such as think-aloud protocol and self-reported questionnaires, resulted
+in multiple sources of qualitative and quantitative data, ensuring the validity and reli-
+ability of the ﬁndings. In this study, data sources include video recordings of each
+
+147
+
+testing session, individual responses to open-ended questions, and individual responses
+to questionnaires.
+Taken together, our qualitative and quantitative ﬁndings suggest that Project
+PHoENIX achieves high system usability, fulﬁlls satisfactory user experience, and is
+relevant for autistic stakeholders. The rigorous formative evaluation demonstrates an
+example of how researchers and practitioners can assess educational technologies to
+ensure stakeholders’ voices are heard. Our approach to co-design and participatory
+design underscores the mission of Project PHoENIX and takes the initiative towards
+promoting a more inclusive future for research in this area.

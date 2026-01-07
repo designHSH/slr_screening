@@ -1,0 +1,51 @@
+{
+  "file_name": "Amirabdollahian_2014_development-deployment-hand-wrist-exoske.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The bending (flex) sensors used on the leaf springs could not provide accurate absolute angle measurements and could only resolve large angle deviations (~20°), limiting precise motion sensing.",
+      "justification": "Limited sensor fidelity constrained the team's ability to accurately measure fine finger joint rotations and therefore impeded understanding of real movement context and reliable evaluation of gesture-based interactions during design iterations.",
+      "reference_excerpt": "The integrated bending sensors in the leaf springs at the ﬁngers are good enough to differentiate between different grasps,36 and can detect small changes of motion, but are only able to resolve between large absolute angle deviations of roughly 20 degrees.37 These limitation are caused not by the mechanism itself, but by the type of bending sensor used: the ﬂexible resistance-based sensors suffer from natural decay in step response that makes it hard to get accurate absolute values from the sensors.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The passive-actuated orthosis design could not automatically regulate physical assistance, so the system could not implement true 'assist-as-needed' adaptive support.",
+      "justification": "This hardware constraint forced designers to adopt a software workaround (modulating game speed) rather than implement automatic assistance, limiting their ability to realize therapeutic interaction requirements and to prototype the intended adaptive assistance functionality.",
+      "reference_excerpt": "However, the passive device does not allow any automatic regulation of the physical support provided, which is set by the therapist. Hence, the THRI further modulates the task difﬁculty using the speed of the game to prolong interaction time.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "High inter-individual variability in motor symptoms among stroke survivors made gesture recognition and calibration challenging.",
+      "justification": "User heterogeneity constrained the researchers' ability to generalise gesture recognition models and complicated calibration and evaluation workflows, hindering management of user understanding and reliable evaluation across diverse users.",
+      "reference_excerpt": "One of the major challenges in performing gesture recognition with stroke survivors is the inter-individual variability in motor symptoms. For instance, while normative data about range of motion (ROM) for the upper limb joints is available for healthy subjects,39,40 each patient constitutes a per se case.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "The calibration procedure did not succeed in all attempts (only ~85–88% success), and calibration durations varied substantially across movements.",
+      "justification": "Incomplete and time-varying calibration reduced the reliability of gesture detection and therefore limited formative and summative evaluation activities as well as iterative refinement of the THRI and UI based on consistent measurement.",
+      "reference_excerpt": "In a preliminary analysis of the data from seven subjects, we showed that such a procedure was effective in 85% of the attempts (1044 out of 1229 tests) with durations differing across movements of up to 30 s for hand opening.42 ... In total, the calibration procedure has been successful in 88% of the attempts (3791 out of 4298).",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Participant dropouts occurred because users were unable to work with the system due to technical problems or loss of desire to continue.",
+      "justification": "These dropouts directly impeded the researchers' ability to conduct summative evaluation and gather sufficient user data, constraining evaluation workloads and user involvement activities.",
+      "reference_excerpt": "Among the ﬁrst 12 patients were two dropouts, because of their inability to work with the SCRIPT system due to technical problems, or no desire to work with the SCRIPT system anymore.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

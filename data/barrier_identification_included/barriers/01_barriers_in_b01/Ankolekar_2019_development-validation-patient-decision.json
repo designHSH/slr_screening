@@ -1,0 +1,42 @@
+{
+  "file_name": "Ankolekar_2019_development-validation-patient-decision.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The development generated a large volume of qualitative data over a long timeline, imposing heavy analytic and incorporation work on developers.",
+      "justification": "Processing, analyzing and incorporating >100 hours of interview material over two years directly increased workload and slowed the team's ability to integrate feedback and iterate prototypes, hindering manage user understanding and integrate feedback & iteration workloads.",
+      "reference_excerpt": "The development process spanned over two years and involved 58 participants, resulting in > 100 h of interview material and feedback that needed to be processed, analyzed and incorporated in successive rounds.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "Diverse and conflicting preferences among stakeholders and users made it difficult to reconcile views and reach consensus on design decisions.",
+      "justification": "Conflicting feedback (e.g., some users preferring closed navigation while others found it restrictive) impeded the team's ability to specify user requirements and integrate feedback across rounds, limiting iteration and evaluation decisions.",
+      "reference_excerpt": "Additionally, engaging many different users provides a variety of perspectives, but can pose a larger challenge to integrate these diverse views and find a consensus, particularly in the area of usability testing. For instance, some participants found the PDA’s closed navigation essential to guide the user through the process while others felt it was too restrictive.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "knowledge",
+      "description": "There was limited guidance on how to adapt decision aids for elderly users, leaving designers without clear evidence-based methods for this target group.",
+      "justification": "A lack of established guidance on designing for older audiences constrained the team's ability to fully understand the context of use and specify appropriate requirements for usability and accessibility for elderly patients.",
+      "reference_excerpt": "Moreover, there is little guidance on how to adapt PDAs for an older audience, leading the reviewers to emphasize the importance of proper design and testing. Visual support in the form of diagrams and animations is considered particularly beneficial.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "No established governance or maintenance structure existed to keep the PDA technologically and scientifically up-to-date, requiring ongoing collaboration that was not yet organized.",
+      "justification": "The absence of a governance structure and agreed maintenance responsibilities limits the designers' ability to sustain iterative updates, coordinate multidisciplinary actors, and manage evolving user understanding over time.",
+      "reference_excerpt": "It is important to ensure that a PDA stays up-to-date on current developments and new therapies, which requires developers and clinicians to collaborate continuously. Therefore, it may be valuable to establish a governance structure within the hospital for maintaining the PDA and collecting and analyzing data about its effectiveness to be shared with clinicians and the wider medical community to create awareness.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

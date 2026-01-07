@@ -1,0 +1,481 @@
+User-centered design of a scalable, electronic health
+record-integrated remote symptom monitoring interven-
+tion for patients with asthma and providers in primary
+care
+
+Robert S. Rudin
+1, Sofia Perez,2 Jorge A. Rodriguez
+,2,3 Jessica Sousa,1 Savanna
+Plombon,2 Adriana Arcia
+,4 Dinah Foer,3,5 David W. Bates,2,3 and Anuj K. Dalal,2,3
+
+1Health Care Division, RAND Corporation, Boston, Massachusetts, USA, 2Division of General Internal Medicine, Brigham and
+Women’s Hospital, Boston, Massachusetts, USA, 3Harvard Medical School, Boston, Massachusetts, USA, 4School of Nursing,
+Columbia University School of Nursing, New York, New York, USA, and 5Division of General Internal Medicine and Division of Al-
+lergy and Clinical Immunology, Brigham and Women’s Hospital, Boston, Massachusetts, USA
+
+Received 7 April 2021; Revised 6 July 2021; Editorial Decision 7 July 2021; Accepted 13 July 2021
+
+MATERIALS AND METHODS
+
+Overview and framework
+To elicit user requirements for the intervention, we conducted a sec-
+ondary analysis of interview transcripts from our prior feasibility
+study. We then employed user-centered design (UCD) methods: de-
+sign sessions, surveys, stakeholder meetings, and iterative prototyp-
+ing.37,38 To ensure the user requirements could be supported by the
+technology, we sought to determine EHR integration requirements
+as part of the design process. We developed the patient-facing mo-
+bile app and clinician dashboard while planning to integrate the
+technology with our institution’s EHR (Epic Systems, Inc.).
+To ensure scalability, we used the Non-Adoption, Abandon-
+ment, Scale-up, Spread, and Sustainability (NASSS) framework to
+formulate pertinent research questions.21 NASSS is an evidence-
+based framework specifically designed to go beyond adoption to in-
+clude scale, spread, and sustainability of health technology innova-
+tions. Empirical application of NASSS shows that innovations with
+more complexity are less likely to be mainstreamed.39 We therefore
+used NASSS to anticipate potential complexities, and identify the
+simplest, and thus, most scalable, requirements along each dimen-
+
+2434
+
+sion and at each stage of our UCD process (Table 1) and analysis
+(Table 3). We designed the intervention with the NASSS framework
+in mind from the beginning and used it throughout.
+
+Setting and participants
+Our study was approved by the Institutional Review Boards of Mass
+General Brigham (MGB) and the RAND Corporation and was per-
+formed between January 2019 and November 2020. The study was
+conducted at 5 primary care clinics affiliated with Brigham Health,
+an academic health system in Boston, Massachusetts. All clinics
+were members of the Primary Care Practice-Based Research Net-
+work and used a single EHR (Epic Systems, Inc.). Clinics ranged in
+number of physicians (8 to 37 per clinic), physician clinical effort
+(part-time vs full-time), patient populations (majority Spanish vs
+English-speaking), and clinic type (teaching vs non-teaching).
+
+Data collection and analysis
+As part of our UCD process, we elicited patient and provider
+requirements sequentially using the 3 methods described below. Be-
+cause the requirements for each user type and for EHR integration
+were interdependent, we considered all of them during each stage of
+data collection and analysis.
+
+Secondary analysis of exit interviews from prior feasibility study
+At the conclusion of the prior feasibility study, we conducted inter-
+views with participating patients and providers about their experi-
+ence with the intervention.26,27 For the current study, we re-
+reviewed transcripts of these interviews to identify new technical
+requirements and user interface enhancements that would improve
+upon the original intervention and would be appropriate for primary
+care. Two research team members independently reviewed tran-
+script excerpts to identify new and relevant features. From these
+data, we assembled a preliminary list of user requirements. We then
+assessed each requirement based on the interview data and NASSS
+domains for inclusion in subsequent design sessions.
+
+Design sessions and stakeholder meetings
+We conducted a series of in-person design sessions with patients and
+providers. We aimed to recruit a diverse range of patients and pro-
+viders in terms of age, gender, race, and ethnicity. One or 2 research
+team members conducted each design session, lasting approximately
+60 minutes for patients and 30–60 minutes for providers. All design
+sessions were audio-recorded. Participants were shown wireframes
+developed using an app prototyping tool (Fluid UI) for user interface
+design40 and were encouraged to “think aloud” to describe their
+reactions to questions about each app feature.41 We alternated de-
+sign sessions with patients and providers to ensure we reconciled
+both perspectives. For Spanish-speaking patient participants, 1 or 2
+native Spanish speakers conducted the design sessions. We aimed to
+keep the reading level for the patient participants at the 6th grade
+level and assessed patients’ comprehension during design sessions.
+We gathered additional input through informal meetings with clinic
+medical directors, nurses, and 2 nurses in system leadership posi-
+tions. Provider design sessions and meetings with clinic medical
+directors included questions about workflow and EHR integration.
+We met weekly with a user-experience expert to advise on interface
+considerations. We continued recruiting until we no longer identi-
+fied any new requirements for features those users considered to be
+critical (saturation).
+
+Audio recordings were independently reviewed by 2 research
+team members. We used conventional content analysis methods to
+identify user reactions which fell into the following categories: spe-
+cific functionality, usability issues, and suggestions for changes to
+app wording, functionality, or workflow.42 After the team members
+reviewed the recordings, they recorded a bulleted list of findings
+within each of these categories in Microsoft Word documents, dis-
+cussed and resolved any differences considering relevant NASSS
+domains, and applied changes to the wireframes for future design
+sessions.
+
+PCP survey
+To quantify the scope and prevalence of the broad range of preferen-
+ces identified in PCP design sessions, we developed a survey for
+PCPs who treat asthma patients from the 5 study clinics. We drafted
+survey items based on findings from the design sessions and refined
+the items through cognitive testing with 3 practicing PCPs. Survey
+question topics included preferences for reminders that PROs were
+available in the EHR, graphical presentation of PROs, and antici-
+pated benefits of the intervention. We distributed the survey using
+REDCap.40 PCPs were offered a $25 gift card upon completion. We
+calculated aggregate results of discrete items. For open-ended ques-
+tions, 2 research team members independently reviewed and coded
+all responses into 2 categories: provider notification of asthma data
+within workflows and visual display of asthma data. The research
+team members then discussed each response individually and se-
+lected representative quotes that explained quantitative survey find-
+ings.
+
+Software development, enterprise data service
+provisioning, and EHR app user interface integration
+We used an agile software development approach to translate user
+interface and EHR integration requirements that emerged from our
+UCD process to ensure that our application would be delivered
+within the constraints of our study period and MGB’s emerging gov-
+ernance process for digital health.43 We met regularly with our app
+developer (First Line Software, Inc.) and MGB’s EHR governance
+teams to determine the most feasible strategies for implementing our
+technical and functional requirements. We identified key EHR appli-
+cation programming interfaces (APIs) that were required to pull cer-
+tain data elements into the application; initiated the enterprise data
+service provisioning process for requesting APIs; identified graphical
+user-interface constraints for provider access to third-party applica-
+tions via the EHR; and finally, iteratively refined the user interface,
+developed using React Native, an open-source mobile application
+framework.44 To ensure security of the protected health information
+(PHI) collected by the app, the application was hosted inside the
+health system’s firewall on a secure server and underwent a rigorous
+security review as required by our institution’s Research Information
+Security Office.
+
+RESULTS
+
+We analyzed 26 exit interview transcripts (21 patients, 5 providers)
+from our prior feasibility study, conducted 21 new design sessions
+(15 patients, 6 providers), and analyzed results of 55 survey
+responses from 78 PCP (71% response rate), all of whom were
+physicians. The demographic characteristics of these participants
+are summarized in Table 2. Prior feasibility demographic data was
+reported previously.26
+
+2435
+
+Patient-facing, PCP-facing, and nursing-facing requirements in-
+formed by the corresponding NASSS domain(s) are described in Ta-
+ble 3. Given the interdependencies and interactions among the 3
+types of users, requirements based on each user’s experience were
+reconciled with the perspectives of other users. For example,
+requirements for patient-facing components were identified based
+on input not only from patients but also from PCPs and nurses. We
+note divergences in requirements within and among the 3 user
+groups (eg, different preferences among PCPs regarding PRO dis-
+plays). Specific EHR integration requirements (eg, EHR inbox mes-
+saging), were necessary to support certain critical user requirements
+(eg, callback requests routed to a triage nurse). Many of the require-
+ments were determined by a combination of results from the prior
+study, design sessions, and survey results.
+
+Patient-facing requirements
+Results from the UCD process and application of NASSS translated
+into requirements for the patient-facing app, which were largely
+consistent for English and Spanish-speaking patients. Feasibility test
+data and design sessions suggested strong user support for adminis-
+tering the questionnaires on a weekly basis with 48-hour deadlines
+(eg, “I think it’s great that you give that amount of time. I just did it,
+because once it pops up, I just do it just to get it off my. . . to do list.”
+[Test Patient exit interview]). However, for patients with well-
+controlled asthma over several weeks or months, feasibility test and
+design session participants suggested that completing all 5 questions
+was too burdensome. Consequently, we designed a modification to
+allow patients without symptoms during the preceding week to com-
+plete a single question, addressing whether patients had any relevant
+symptoms, instead of the entire 5-item PRO questionnaire. An affir-
+mative response prompted the 5-item PRO questionnaire (Figure 1).
+Patients participating in design sessions viewed this feature favor-
+ably: “I like the option of putting ‘no’ and then you’re not going to
+answer all these other questions.” (Design Patient)
+Secondary analysis of our prior feasibility study data demonstrated
+support for an app feature allowing patients to request callbacks for
+deteriorating PROs: “I would always answer ‘yes’ [when the app
+prompted me to request a call] . .. after a couple of hours, someone
+from the staff would call me to see how I was doing and if I needed to
+go in to see the doctor” (Test Patient exit interview). However, the
+“mandatory callback” feature, in which patients with poor asthma
+control are automatically called by a nurse, were perceived as too bur-
+densome to nurses and low-value by patients: “it was just annoying,
+because I’m dealing with asthma. .. I’m going to call my doctor. I
+don’t want you [the app] to call my doctor for me” (Test Patient exit
+interview). Specifically, patients and the nurse participant from our
+prior feasibility study suggested removing the mandatory callback re-
+quirement and only including the optional feature which allowed
+patients to decline to request a callback. Therefore, we removed this
+feature and did not assess it further in design sessions.
+Other patient-facing requirements included: ability to record
+notes (prior feasibility study test patients, design sessions); triggers
+and peak flow measurements to engage some patients with poor
+asthma control (prior feasibility study test patients, design sessions);
+previsit reminders to discuss asthma data with providers at upcom-
+ing clinic visits (design sessions); and educational information—vid-
+eos, brief tips about asthma, and general medical care (design
+sessions). The latter requirement was also reflected in feedback dur-
+ing design sessions from PCPs who supported empowering patients
+through education, which could then be reinforced during clinic vis-
+
+its. PCPs provided guidance on high priority education topics for
+patients to view on the app, including how to use an inhaler and
+how to distinguish rescue from controller inhalers. Two Spanish-
+speaking patients in our design sessions requested that the app of-
+fered faster response times for requested calls. One suggested allow-
+ing the app user to enter a level of urgency for the call. However,
+this request could not be reconciled with existing clinics workflows
+for responding to patient queries.
+
+PCP-facing requirements
+We identified 2 PCP-facing requirements from design sessions and
+the PCP survey (Tables 3 and 4). The first requirement was a dash-
+board containing patients’ asthma data that would be accessible
+with minimal effort from the patient’s chart in the EHR. An interac-
+
+2437
+
+tive graphical display of PRO data (Figure 2) was iteratively devel-
+oped with input from PCPs. In this display, survey responses were
+almost evenly divided regarding preferences for whether higher
+numbers of the graph should mean better asthma control (47%, eg,
+“I’m trained to think about asthma in terms of ACT scores, so to me
+a higher number is better”), or worse asthma control (40%, eg, “I
+usually think about asthma control in terms of how frequent and se-
+vere are symptoms–so the higher [the score] ¼ red ¼ bad–fits my
+general mindset”).
+
+Design sessions with providers yielded several enhancements to
+the PRO dashboard: an auto-generated text summary of the
+patient’s recent asthma data that could be incorporated into notes,
+and point-of-care access to evidence-based guidelines for asthma
+management (a statement summarizing asthma control goals and a
+link to more detailed guidance—the statement was developed by a
+pulmonologist with expertise in asthma from our institution and in-
+corporated guidelines from the National Heart, Lung, and Blood In-
+stitute, the Global Initiative for Asthma, and recent asthma
+
+2438
+
+literature). In free-text comments and in the design session, PCPs
+suggested additional types of EHR data that could be incorporated
+into the display to make it more useful (eg, current asthma medica-
+tions and refill data, recent ED visits or hospitalizations, name of
+asthma specialist treating patient). However, other respondents pre-
+ferred to access these data through current EHR locations (eg, “I
+don’t need other data. I have a routine for following/checking other
+data that works for me.”)
+The second requirement was previsit reminders: all 6 PCPs in de-
+sign sessions endorsed the idea of having the app remind patients to
+
+bring their phones and medications to their visits. Of the 55 pro-
+viders who responded to the survey, 53 (96%) wanted to be
+reminded to check the PROs. Of other options offered, 35 (64%)
+PCPs preferred to receive an EHR inbox message as a previsit re-
+minder; 23 (42%) preferred in-person reminders from a nurse or
+medical assistant; and 17 (31%) wanted to receive a clinical decision
+support alert (ie, “Best Practice Alert”) during the encounter. In
+written survey comments, 3 PCPs suggested adding the reminder in
+the “huddle note” (ie, a short note within the daily clinic schedule
+view in the EHR).
+
+Nurse-facing requirements
+We identified 2 requirements for nurses to be able to feasibly re-
+spond to callback requests in their existing workflows. First, nurses
+in all 5 clinics required all patient callback requests to be sent in the
+form of EHR inbox messages to the individual nurse or nurse pool
+assigned to the requesting patient and affiliated with the clinic. Be-
+cause nurses’ workflows were centered around responding to EHR
+inbox messages, nurse managers suggested that other methods for
+
+delivering the requests (eg, email) would not be reliable. Nurses
+requested that these messages include the patient’s responses to the
+recent questionnaire, directions for how to access the asthma data
+within Epic, and other key information to assist with prioritizing the
+callback request (eg, if they had already called the clinic about their
+asthma).
+Second, nurse leaders suggested that a prespecified nurse-driven
+clinical protocol designed specifically for asthma would be most ef-
+
+2440
+
+fective for triaging callback requests. Otherwise, nurses would de-
+fault to referring patient-reported issues they identify to the PCP
+rather than addressing these issues themselves, creating an inefficient
+workflow.
+
+EHR integration requirements
+We identified 3 EHR integration requirements (Figure 3). First,
+PCPs indicated that the asthma PRO dashboard must be easily ac-
+cessible from patients’ charts before or during a visit. To address
+this, we were required to register the third-party application as an
+“extension.” The PRO dashboard could then be added to the main
+navigation bar for all PCP users, and individual PCP users also had
+the option of customizing their patient chart view to include the
+PRO dashboard as a default tab (Figure 2). When selected, the PRO
+dashboard application reads credentials of the current PCP user (eg,
+username) and selected patient (eg, MRN) from the EHR, rendering
+the appropriate patient’s dashboard in context of the current PCP
+user and selected patient. The PRO dashboard automatically
+authenticates the current PCP user using our institution’s Single
+Sign-On (SSO) process, thereby eliminating a second login step.
+Second, a data services API was required to send EHR inbox
+notifications to nurses and PCPs for patient callback requests and
+previsit reminders, respectively. Since a standards-based API that
+supports EHR inbox messaging did not exist, we used a custom API
+
+built by our institution that allows a third-party app to send an
+EHR inbox message to any specified EHR user or pool of users.
+Third, to send previsit tips to patients and reminders to PCPs, the
+application required access to visit schedules and the identity of the
+PCP. While visits schedules and PCP identity could be accessed via
+Fast
+Health
+Interoperability
+Resources
+(FHIR)
+APIs
+(“Appointment” and “Care Team” resources, respectively), we ini-
+tially decided to use our institution’s custom APIs (given our soft-
+ware
+vendor’s
+experience)
+while
+exploring
+the
+feasibility
+of
+transitioning to FHIR APIs supported by US Core profiles as part of
+our scale and spread efforts.
+
+DISCUSSION
+
+Using the NASSS framework to guide our UCD process, we identi-
+fied user and EHR integration requirements for the design of a scal-
+able, remote symptom monitoring intervention for primary care.
+Patient-facing requirements included allowing patients with no ac-
+tive symptoms to answer only 1 item per week instead of 5; allowing
+patients to view educational videos and enter notes, triggers, and
+peak flows; and sending relevant visit-related tips to encourage the
+patient to discuss their asthma with their PCPs. PCP-facing require-
+ments included allowing the dashboard to be viewed in the EHR
+with 1 click from the patient’s chart and sending the PCP an EHR
+
+2441
+
+inbox message preceding patient visits. Nurse-facing requirements
+included receiving requests for callbacks via EHR inbox message,
+and a clinical triage protocol for handling such calls. While we were
+able to integrate the application’s PRO dashboard into our institu-
+tion’s EHR for clinician access, requirements for sending EHR inbox
+messages could not be addressed with current open standards, re-
+quiring us to use our institution’s previously developed custom APIs.
+By applying research methods in each NASSS domain, we were
+able to identify requirements that would be pertinent to the potential
+broad use of our original intervention for asthma in a primary care
+setting once adapted. We were able to reconcile requirements eli-
+cited from English- and Spanish-speaking patients, PCPs, and
+nurses. Inconsistencies in PCP preferences may reflect variations in
+PCP workflows identified in prior studies.45,46 Several preference
+variations could be addressed through configuration options. For
+example, most PCPs preferred receiving an EHR inbox message re-
+minder regarding available asthma data, while others preferred an
+alert or to be told by clinic staff. “Alert fatigue” may be the reason
+most prefer not to receive an alert.47–50 PCPs differed regarding the
+dashboard’s purpose, whether to solely display asthma PROs or to
+serve as a comprehensive dashboard for all asthma-related data in
+the EHR. While clinicians may distrust data sourced from third
+party apps, this may become less of a problem as these users become
+accustomed to integrated apps. The most striking variation we
+found was divergent preferences among PCPs for the direction of
+better or worse asthma control on the dashboard, suggesting the
+need for more standardized presentations to enable consistent com-
+munication among patients and providers.51–54
+
+Our study addresses a notable gap in prior literature by identify-
+ing requirements for a scalable digital remote monitoring interven-
+tion for adult asthma patients that may have relevance to other
+clinical domains. As care is increasingly delivered remotely, which
+has accelerated due to the COVID-19 pandemic, such requirements
+are likely to become more important.9 By applying NASSS frame-
+work
+domains—especially
+technology,
+value
+proposition,
+and
+adopter systems for patients and providers—we were able to priori-
+tize scalability throughout our requirements elicitation process. Our
+effort is distinct from other reported efforts at developing clinically
+integrated remote monitoring interventions, which lack prioritiza-
+tion of requirements,55 require additional clinical staff, such as care
+managers, to monitor data,56 or require a device (eg, for measuring
+inhaler usage).57 These alternate approaches may encounter scalabil-
+ity issues, such as extra complexity due to prioritizing less important
+requirements, or costs challenges for using devices where they aren’t
+necessary. Furthermore, we provide new knowledge regarding how
+a third-party application can be integrated into an EHR with pa-
+tient- and provider-facing components to enable the use of PROs for
+between-visit monitoring, complementing our previous work in the
+hospital setting.6,58–61 Even with recent advances, FHIR standards
+could not address all of our requirements for this application, sug-
+gesting a need for additional standards, specifically for sending mes-
+sages to EHR inboxes.
+
+Limitations
+Our study has several limitations. First, our remote monitoring in-
+tervention is restricted to a single condition. Additional UCD is re-
+quired to understand requirements for other medical conditions (eg,
+mental health, rheumatological diseases). Second, clinical users were
+affiliated with 1 academic health center that used a single EHR
+(Epic Systems, Inc.). Requirements may vary for other health sys-
+
+2442
+
+tems and EHR vendors. As described in the NASSS framework,
+organizations with lower capacity to innovate may have more com-
+plex requirements. Also, organizations without a clearly defined
+governance process for integrating third party apps into the EHR
+will likely encounter challenges. Third, our app is dependent on
+smartphone ownership and use by patients. Although a growing ma-
+jority of patients have smartphones, some may have difficulty using
+them (though many may have a caregiver who uses a smart-
+phone).7,62–64 Fourth, the PRO data was stored in the app server
+and not written back to the EHR database. However, institutions
+are currently considering how to integrate and utilize high-value pa-
+tient-generated data into the EHR.65 Finally, EHR functionality and
+clinician use of EHRs are evolving. As PRO functionality within na-
+tive EHRs is increasingly adopted, user requirements for clinicians’
+engagement with these data may change, and future validation and
+replication of our findings is necessary.
+
+CONCLUSION
+
+We determined user and EHR integration requirements for a clini-
+cally integrated remote symptom monitoring intervention for
+asthma using PROs. The requirements reflect the NASSS framework
+and are designed to scale across primary care. This study demon-
+strates how third-party apps can be used for PRO-based between-
+visit monitoring in a real-world clinical setting with the goal of max-
+imizing use, usability, and scalability in parallel with native EHR
+functionality and patient portal offerings.6,58–61,66–68 We identified
+gaps in current technical and graphical standards that would facili-
+tate spread of this intervention. Although we focused exclusively on
+asthma, these findings may generalize to other chronic conditions
+that benefit from routine symptom monitoring using standardized
+PROs, such as rheumatologic disease, mental health illness, and irri-
+table bowel disease.69 Similar requirements elicitation approaches
+also have the potential to develop scalable interventions for moni-
+toring overall health of patients with multiple chronic conditions,
+such as captured by global health PROs which measure general
+physical, mental, and social health.70–73 With further testing, itera-
+tive development, and continued attention to scalability, the rapidly
+evolving efforts of digital remote monitoring between visits may be
+achievable at the population level for patients with chronic condi-
+tions.

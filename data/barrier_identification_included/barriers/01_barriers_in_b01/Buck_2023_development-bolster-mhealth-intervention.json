@@ -1,0 +1,51 @@
+{
+  "file_name": "Buck_2023_development-bolster-mhealth-intervention.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Predefined project goals constrained design scope by requiring Bolster to be a self-guided mobile intervention, limiting the incorporation of features that required clinical or synchronous social support.",
+      "justification": "These a priori constraints imposed by the project limited the team's ability to translate user feedback into certain design solutions (eg, expert Q&A or peer forums), hindering the workloads of specifying user requirements and producing design solutions that users requested.",
+      "reference_excerpt": "Design objectives for Bolster were constrained to some extent by predefined project goals. Bolster was a priori proposed as a self-guided mobile intervention. Thus, caregiver feedback related to intervention features that could require clinical support (eg, an expert question-and-answer feature) or social features (eg, peer forums) was incorporated into Bolster in a manner consistent with these a priori constraints (eg, providing clinician videos rather than synchronous communication and links to support websites rather than the development of new tools).",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Recruitment primarily via internet channels produced a sample likely predisposed to digital tools and drawn from small groups, limiting representativeness.",
+      "justification": "This recruitment strategy constrained the team's ability to manage user understanding and to study the full context of use across diverse caregiver populations, reducing confidence in requirements and generalizability of findings.",
+      "reference_excerpt": "First, our user-centered development process was meant to solicit detailed guidance from caregivers with lived experience; study conclusions are drawn from small samples and may not generalize to all members of this population. Furthermore, given the fact that recruitment occurred primarily on the internet, participants may be drawn from a population that is already predisposed to digital tools.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The field trial was brief (1 week) and included study-team outreach to encourage use, which likely altered natural usage patterns.",
+      "justification": "These trial conditions limited the team's ability to evaluate the intervention under real-world deployment, hindering the workload of evaluating designs and integrating realistic user feedback for iteration and longer-term use planning.",
+      "reference_excerpt": "Third, field trial results may speak primarily to caregiver experiences during a test period rather than the real-world deployment of Bolster. Participants were likely motivated to provide helpful feedback, and this likely affected their frequency of use of the intervention, particularly given the fact that the field trial lasted just 1 week. Interactions with the study team also likely encouraged use. This is particularly the case given the fact that participants received outreach to ensure that the app was functioning.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "There were no additional contacts with participants for repeat interviews or feedback on findings after initial sessions.",
+      "justification": "Lack of follow-up contact prevented iterative engagement with participants, constraining the team's ability to integrate feedback and perform iterative cycles of refinement based on longitudinal user input.",
+      "reference_excerpt": "Participants were compensated with US $75 gift cards for their time. There were no additional contacts with participants for repeat interviews or feedback on findings.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "knowledge",
+      "description": "Baseline ceiling effects on the illness-knowledge measure (KAST) limited sensitivity to detect changes in knowledge.",
+      "justification": "This measurement limitation constrained the designers' and researchers' ability to evaluate intervention effects on illness knowledge, hindering the evaluation workload and interpretation of whether design changes achieved knowledge-related targets.",
+      "reference_excerpt": "Notably, illness knowledge scores seemed to be affected by ceiling effects because many participants received a high score on the KAST at baseline (mean 16.72 correct out of 20 compared with psychometric work on the initial development of the KAST [49] suggesting typical average scores among family members of 10.9 out of 20 or among lay community members of 9.3 out of 20).",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

@@ -1,0 +1,33 @@
+{
+  "file_name": "Bjorling_2019_thought-disposal-co-designing-virtual-in.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Direct input (writing) in VR proved technically difficult, forcing the team to redesign the interaction to avoid in-VR text entry. This constraint required changing prototype mechanics and interaction metaphors.",
+      "justification": "The difficulty with writing in VR impeded the team's ability to produce and iterate on design solutions and prototypes, affecting 'produce design solutions' and 'integrate feedback & iteration' workloads.",
+      "reference_excerpt": "Immediately we learned that writing in VR was a complicated task, leading us to the design of a tree of negative thoughts from which teens could collect leaves and burn them in a nearby fire.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The study had a small sample of teen participants and the team was unable to test for effectiveness. This limited sample constrained their capacity to evaluate intervention outcomes.",
+      "justification": "A small participant sample and inability to test effectiveness directly limited the designers' ability to evaluate designs and manage evolving user understanding through longitudinal testing, hindering 'evaluate designs' and 'manage user understanding' workloads.",
+      "reference_excerpt": "Our current work was limited due to our small sample of teens and our inability to test for effectiveness.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "No prior immersive implementations of a visual analog scale existed, requiring the team to develop a new in-VR measurement tool. The novelty increased design and development burden for assessment.",
+      "justification": "Lack of existing immersive VAS tools constrained the designers' ability to evaluate and measure user states reliably within VR, hindering the 'evaluate designs' and 'specify user requirements' workloads.",
+      "reference_excerpt": "While some recent work [19] has explored multiple-choice style questionnaires in VR, no immersive tools has been developed using visual analog scale.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

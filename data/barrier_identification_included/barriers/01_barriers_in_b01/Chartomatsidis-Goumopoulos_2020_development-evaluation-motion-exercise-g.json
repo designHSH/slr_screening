@@ -1,0 +1,51 @@
+{
+  "file_name": "Chartomatsidis-Goumopoulos_2020_development-evaluation-motion-exercise-g.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Variation in how seniors execute gestures and differences in body types forced designers to collect more training samples than initially planned.",
+      "justification": "This increased data-collection burden and constrained the designers' ability to train reliable activity-recognition models, hindering the operational workloads of understanding context of use and producing/evaluating design solutions.",
+      "reference_excerpt": "During the training process one issue that required attention was the fact that users cannot execute the movements the same way. Moreover, the body type of each user was an issue that had to be resolved. For instance, some users are taller than others thus, the system would not have been able to identify the gestures and motions if it would have been trained based on a single person.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "knowledge",
+      "description": "Existing literature guidance (three training users) proved insufficient for elderly participants, requiring empirical reassessment of sample-size needs.",
+      "justification": "Relying on literature thresholds that did not transfer to this elderly population limited planners' ability to specify adequate training requirements and manage user-understanding and training procedures for the sensor algorithm.",
+      "reference_excerpt": "Literature research indicated that the accepted number of people required in situations like this was three in order to cover all body types regarding weight and height. However, after testing that threshold using the live testing option provided by sensor’s SDK, it was noticed that system’s confidence level was below average.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "skill",
+      "description": "Modeling the walking motion as a continuous gesture produced ambiguous stage transitions that the system misrecognized, forcing the team to abandon the initial approach and reclassify the motion as discrete.",
+      "justification": "This technical and modeling difficulty impeded the designers' ability to evaluate and iterate on interaction mechanics, constraining the integration of feedback and the production of robust gesture-detection solutions.",
+      "reference_excerpt": "After testing the above scenario, cases were noticed where the system could not recognize the gesture correctly. Specifically, after the end of stage 2 and just before the start of stage 3, the user has both legs on the ground the same as at the end of the gesture which resulted some times in a conflict state, where the system would falsely consider that the motion was completed after stage 2 and right before stage 3. The result of this was for the player to stop moving from time to time which had a negative effect on the overall game experience. Thus, it was decided to reject this approach and classify this motion as discrete and use the same training technique as for the leaning gesture.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Seniors required expert instruction and domain support (physiotherapist/researcher presence) to use the system effectively during evaluation.",
+      "justification": "Needing expert facilitation increased the resource and coordination burden on designers and limited independent user participation, hindering the workload of facilitating user involvement and conducting evaluations.",
+      "reference_excerpt": "The evaluation of the game tool took place at the Elderly Protection Center in the city of Ptolemaida, Greece. ... during the whole process a physiotherapist was present for domain-specific support and a researcher for administration and technical support. As for the data from the effort expectancy category show that seniors didn’t find the system hard to use but only after they got the appropriate instructions from an expert since they didn’t have the knowledge to use the system from the beginning.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The study had a limited number of participants and a short evaluation timeframe, constraining the strength and generalizability of results.",
+      "justification": "Small sample size and short duration limited the designers' ability to perform robust evaluations and iterative refinements based on longer-term user data, hindering evaluation and managing evolving user understanding.",
+      "reference_excerpt": "Limitations of the current study are acknowledged. The limited number of participants and the short evaluation timeframe prevent the justification of more sound results.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

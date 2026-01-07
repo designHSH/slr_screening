@@ -1,0 +1,597 @@
+Upgrading physical activity counselling in primary
+care in the Netherlands
+
+Renée Verwey1,2,*, Sanne van der Weegen1, Marieke Spreeuwenberg1,
+Huibert Tange3, Trudy van der Weijden3, and Luc de Witte1,2
+
+1Department of Health Services Research (HSR), School for Public Health and Primary Care (CAPHRI),
+Faculty of Health Medicine and Life Sciences, Maastricht University, Maastricht, The Netherlands,
+2Research Centre for Technology in Care, Zuyd University of Applied Sciences, Heerlen, The Netherlands,
+and 3Department of General Practice (HAG), School for Public Health and Primary Care (CAPHRI), Faculty
+of Health Medicine and Life Sciences, Maastricht University, Maastricht, The Netherlands
+
+METHODS
+
+Approach
+The project focused on patients with chronic obstructive
+pulmonary disease (COPD) or type 2 diabetes and their
+care providers in primary care. A user-centred design pro-
+cess (Figure 1) was followed to elicit the requirements of
+the counselling protocol and the tool. Two patient repre-
+sentatives, from the Netherlands Asthma Foundation and
+the Dutch Diabetes Association, participated in the research
+group to provide feedback on every development stage.
+This group consisted of researchers with expertise in nurs-
+ing, movement science, psychology, family medicine and
+implementation science.
+The arrows in Figure 1 indicate that the development
+was an iterative process. This paper reports the results
+from phase A (Stages 1–3), in which the objective was
+to establish a counselling protocol named the Self-
+management Support Programme (SSP), based on current
+insights from the literature, preferences of users and com-
+ments from experts. Simultaneously in collecting the user
+requirements for the SSP also the user requirements for the
+tool were collected (van der Weegen et al., 2010).
+
+Recruitment and respondents
+Sixteen care providers, representing all the involved disci-
+plines working in primary care and treating patients with
+
+345
+
+COPD and/or type 2 diabetes, 15 patients and 12 experts
+were recruited by a snowball sampling approach through
+the network of researchers and the patient representatives.
+
+Data collection and analysis
+The user requirements for the SSP were collected over
+three stages, from November 2010 until December
+2011. Various qualitative methods of data collection
+were used (Figure 1).
+
+Stage 1
+Stage 1 started with a literature review to identify the users
+and their context, resulting in a user and context descrip-
+tion. Users were projected into the Five A’s model and its
+contextual restraints were identiﬁed. Based on care stan-
+dards for COPD and type 2 diabetes care, a use case was
+written by the researchers, and this document was veriﬁed
+by the patient representatives and by two physicians and a
+nurse practitioner. The use case consisted of a description of
+patients, healthcare providers and assumptions about care
+as usual, plus the basic ideas of the technology, followed by
+a narrative story of the course of all consultations in which
+all elements of the Five A’s model were incorporated, in-
+cluding fragments of the conversation between a patient
+who started to use the tool and his practice nurse and GP.
+
+Stage 2
+During Stage 2, the care providers were interviewed
+about the use case in two rounds (Polit and Beck,
+2008). In the ﬁrst round we interviewed a cross section
+
+of professionals involved in the care for COPD and
+type 2 diabetes patients, in the second round only those
+responsible for self-management support. In the ﬁrst
+round, 11 care providers were interviewed with open
+questions. In the second round, ﬁve practice nurses
+were interviewed with more speciﬁc questions that
+emerged from the open interviews (Table 1, interview
+questions) and photos of a prototype of the tool were
+shown to them. The user requirements for the SSP were
+completed with results from interviews with 15 patients
+with COPD or type 2 diabetes. Interviews were audio-
+taped and transcribed. Open coding was applied to the
+ﬁrst four interviews by two reviewers separately (R.V.,
+S.v.d.W.), using the QSR NVivo 2 software package.
+Differences were discussed and revised based on mutual
+agreement, and a coding scheme was determined. The re-
+maining interviews were coded accordingly and analysed
+following a directed content analysis method (Hsieh and
+Shannon, 2005). As a next step, the results of the inter-
+views were discussed in the research team together with
+the patient representatives and with the technical team.
+Decisions about the issues were made based on progres-
+sive insight and in mutual consensus. Based on the results
+of the interviews and the minutes of these meetings the
+global use case was speciﬁed.
+
+Stage 3
+During Stage 3, the speciﬁc elaboration of the Five A’s
+model towards physical activity promotion was used to
+
+Fig. 1: The It’s LiFe! User Centred Design process.
+
+346
+
+write detailed instructions for practice nurses per consult-
+ation (Peterson, 2007; Meriwether et al., 2008), and the
+counselling techniques were speciﬁed according to the be-
+haviour change techniques as deﬁned in the taxonomy of
+
+Abraham and Michie (Abraham and Michie, 2008).
+Subsequently, 12 experts with a wide range of expertise
+were asked for their opinion about this draft SSP
+(Table 2). This detailed counselling protocol, with a
+
+Table 1: Interview questions
+
+Stage 2: Interview topics ﬁrst round
+What does it mean: maintaining a healthy lifestyle (physical activity) while suffering from type 2 diabetes or from COPD?
+What does “care as usual” for people with type 2 DM or COPD look like in this region of the Netherlands and what new
+developments could interact with the project?
+How do careproviders support self-management of patients with DM type 2 or COPD concerning physical activity, which disciplines
+are involved in this process and how do they cooperate with each other?
+What is the opinion of careproviders towards the main aspects of the Self-management Support Program: motivational interviewing,
+risk assessment and goal setting?
+What is the general attitude of careproviders to using technology in health care and what are their ideas about using technology to
+support self-management in maintaining a healthy lifestyle?
+How do careproviders deﬁne their role when using such technology?
+What is the opinion of careproviders towards the global use case?
+
+Interview topics second round
+What is the opinion of practice nurses towards the speciﬁed use case?
+Which speciﬁc patient characteristics should be taken into account when developing the SSP and which patients could beneﬁt most
+from this way of supporting self-management using the intended technology?
+What is the usual content and duration of the consultations and how could the practice nurse give more attention towards supporting
+the physical activity of patients?
+What is the opinion of practice nurses about applying behavior change techniques such as risk assessment and motivational
+interviewing?
+How would practice nurses like to use the technology and what is their opinion about giving feedback in between consultations?
+What enhancing and constraining factors do practice nurses foresee when implementing this program?
+
+Stage 3: Questions to the experts
+What is your opinion about:
+• The self-management support programme?
+• The developed technology, the It’s LiFe! tool?
+• The combination of both?
+Are speciﬁc aspects with regard to exercise of patients with type 2 diabetes and COPD taken into account?
+What do you think of the description of the current demand and supply of care for those patients? Do you have any suggestions for
+additions or improvements that may affect the application of the intervention?
+Is becoming more physically active optimally supported with this intervention in the two groups? Do you have any ideas for additions
+or improvements?
+Is self-management optimally supported by the target groups? Do you have any ideas for additions or improvements?
+The consultations follow a certain approach, called the Five A model. What is your opinion about this model? Do you ﬁnd this model
+suitable for this situation?
+The intervention includes several behaviour modiﬁcation techniques. What is your opinion? Are those applicable in this context? Is it
+possible to integrate these techniques in the consultations?
+The intervention will be carried out by the practice nurse. What do you think of that choice? Do you consider practice nurses capable
+to perform this after the described introduction of the intervention?
+The intervention includes some (extra) consultations with the practice nurse. What do you think of that? Is this enough or too much?
+Is this feasible?
+In some cases, the consultation approach will also be performed during the regular consultations, which than will take 10 min longer.
+Is this feasible? Is this desirable?
+What do you think of the period (6 months) and the distribution of the consultations over this period?
+What is your opinion about the way the intervention will be introduced to the practice nurses? Do you recommend speciﬁc attention
+to certain aspects?
+
+347
+
+description of the activities of the patient and the practice
+nurse, instructions for the course of the consultations and
+a theoretical underpinning of the main issues, was the
+input for the experts’ consultation. It was commented
+upon by a group of 12 experts during face-to-face and tele-
+phone consultations and mail correspondence. Using open
+
+questions their opinion was asked about the aim of the
+protocol, the number and content of consultations needed,
+the counselling techniques and about the introduction of
+the protocol to practice nurses (Table 1, interview ques-
+tions). Expert consultations were audiotaped and summar-
+ized and a member check was carried out, by asking the
+
+Table 2: Characteristics of the respondents
+
+Care providers
+
+Overall (n = 16)
+First round (n = 11)
+Second round (n = 5)
+
+Stage 2. Interviews
+Profession
+Number
+Number
+Number
+Practice Nurse (PN)
+7
+2
+5
+Diabetes Nurse (DN)
+2
+2
+0
+Pulmonary Nurse (PN)
+2
+2
+0
+General Practitioner (GP)
+3
+3
+0
+Physiotherapist (PT)
+2
+2
+0
+Age
+Years
+42 (26–58)
+42 (26–58)
+42 (29–53)
+Sex
+Number
+Number
+Number
+Male
+4
+4
+0
+Female
+12
+7
+5
+Treating patients with
+Number
+Number
+Number
+COPD
+6
+6
+0
+DM
+4
+2
+2
+Both
+6
+3
+3
+
+Patients
+
+Overall (n = 15)
+First round (n = 8)
+Second round (n = 7)
+
+Diagnosed with
+Number
+Number
+Number
+COPD
+7
+4
+3
+DM
+8
+4
+4
+Age
+Years
+62 (46–76)
+63 (55–76)
+62 (46–72)
+Sex
+Number
+Number
+Number
+Male
+6
+4
+2
+Female
+9
+4
+5
+
+Stage 3. Expert consultation
+Experts
+
+Expertise
+Number (n12)
+
+Movement science, physical activity
+3
+Primary care
+2
+Health education and promotion and use of e-health
+2
+Medical specialists in COPD and diabetic care
+2
+Self-management
+1
+Motivational interviewing
+1
+Goal setting
+1
+
+348
+
+experts if they agreed upon this summary. Subsequently the
+results of the expert consultations were discussed in the re-
+search team together with the patient representatives. Based
+on the consultations of the experts and the minutes of this
+meeting, the counselling protocol was then adjusted into a
+ﬁnal version, which is presented in this paper.
+
+RESULTS
+
+The results are reported based on the successive steps
+which were taken during the stages.
+
+Stage 1: the global use case
+The practice nurse, in collaboration with the GP, identiﬁes
+patients who could beneﬁt from increased physical activ-
+ity. These patients are invited for an extra consultation to
+assess their physical activity and their motivation to
+change, to inform them about the risks of a sedentary life-
+style and to provide them with the tool. In the following 3
+months, another four consultations take place to support
+patients with setting concrete personal activity goals, and
+giving feedback on the physical activity results, which are
+accessible to the practice nurse via a secured website.
+
+Stage 2: a detailed use case based on interviews
+with care providers
+The characteristics of the interviewees are summarized in
+Table 2. The mean age of the professional respondents was
+42, most were female and 10 out of 16 treated both COPD
+and diabetes patients. The results of the interviews were di-
+vided into three themes: care as usual, the SSP and the com-
+bination of the tool with the SSP. The subjects which were
+discussed more often (main issues) are summarized in Table 3.
+
+Care as usual
+Barriers for paying attention to physical activity during
+regular consultations are co-morbidity or other limitations
+of patients, and the assumption of the respondents that
+nowadays the patient decides on the topics of the consult-
+ation. Many patients do not perceive physical activity as
+an important issue and tend to overestimate their own
+physical activity.
+Respondents agreed that the standard for healthy exer-
+cise (30 min moderate intensity per day, 5 days per week)
+is an unrealistic goal for most patients, and nobody uses a
+standardized assessment for physical activity.
+According to the respondents, people with COPD
+(GOLD 1 and 2) experience a low disease burden. They
+adapt unnoticed to their declining physical condition
+and often perceive that they are doing pretty well. This
+group could beneﬁt most from an active lifestyle.
+Exacerbations and related hospitalizations are viewed as
+trigger points to start a lifestyle intervention.
+
+The SSP
+Respondents all agreed that the SSP should focus on pa-
+tients at an early stage of the disease, before the emergence
+of potential co-morbidity. They indicated that giving the
+practice nurse a central role in the SSP is right, although
+the physiotherapists had doubts about their ability to ad-
+equately assess the physical activity level. The majority
+saw only a role for the physiotherapist in the case of severe
+breathing problems of COPD patients. Also, the role of the
+GP in lifestyle counselling was regarded as limited.
+
+It is the task of the practice nurse, she is much better than
+me at doing that; by the way, she has time for it.
+(GP, aged 51, interview 9)
+
+Motivational interviewing is considered a positive way of
+approaching people with chronic diseases and this tech-
+nique is often used. But respondents differed in deﬁning
+this technique.
+
+The patient sets the agenda of the consultation.
+(PN, aged 57, interview 1)
+I search for intrinsic motivation, tickle them: ‘Are you real-
+ly feeling OK?’
+(GP, aged 42, interview 11)
+
+Most of the respondents were sceptical about the effects of
+risk communication. Comments were that it is counter-
+productive, that there are often too few clinical data avail-
+able to clearly outline certain risk factors and that talking
+about risks frightens people.
+Although all respondents were positive about self-
+management support, some suggested that there is a cat-
+egory of patients who do not take responsibility for self-
+management, but simply ask for clear directives. Overall,
+however, giving straight advice is not seen as the best way
+of supporting patients. Respondents indicated that collab-
+orative goal setting is an essential part of counselling.
+Most respondents were generally positive about the use
+case, but they indicated that three or four extra consulta-
+tions were far too many. Furthermore, a few practice
+nurses were not enthusiastic at all about the focus on phys-
+ical activity.
+
+It is the responsibility of the patient to see to it that he or
+she gets enough exercise. That is not my responsibility; I
+have more than enough other tasks to do.
+(DN, aged 34, interview 10)
+
+Application of the tool within the SSP
+Most respondents liked the idea that using the tool would
+give both patient and practice nurse the ability to monitor
+physical activity levels.
+
+349
+
+With this tool I can give these patients something tangible
+to help them improve their daily activity levels.
+(PN, aged 47, interview 12)
+
+They saw the added value compared with self-reported
+activity, but practice nurses had doubts about giving
+feedback in between consultations. Furthermore, they ar-
+gued that the tool was probably more suitable for young-
+er patients who are used to mobile technology. The most
+important arguments against the SSP were a lack of time
+and money. Respondents indicated that the programme
+should be reimbursed by insurance companies, and al-
+most every practice nurse complained about a heavy
+caseload.
+As a next step, the use case was speciﬁed and adjusted by
+
+• adding a standardized questionnaire to assess the level
+of physical activity of patients;
+
+• specifying risk communication through an information
+chart with both the advantages of an active lifestyle
+and the disadvantages of a sedentary lifestyle;
+
+• reducing the number of visits; and
+
+• providing the patients with interactive sessions via the
+tool instead of a real consultation, to inform them
+about the pros and cons of physical activity, conﬁ-
+dence, behaviour change strategies, self-efﬁcacy, family
+and peer inﬂuences, enjoyment, activity choices and
+environmental inﬂuences related to physical activity
+(based on the PACE) (Calfas et al., 1997).
+
+Stage 3: towards a ‘draft SSP’
+Experts were, to a large extent, positive about the draft
+SSP and the focus on stimulating physical activity in
+daily life. Two experts emphasized the growing evidence
+about the negative effects of long unbroken periods of
+inactivity, which is also mentioned in the literature
+(Yates et al., 2011). Comments were most critical about
+the feasibility of the extra consultations, and the expertise
+of practice nurses to apply motivational interviewing.
+Another comment was that the programme was too direct-
+ive and therefore not really supporting self-management
+and not focusing on patients’ own needs and choices.
+Given the feedback, the SSP was adjusted on the following
+points by
+
+• giving more attention towards personal abilities of pa-
+tients and the need to avoid periods of continuous
+inactivity;
+
+• giving more clarity about the motivational interview-
+ing technique and mainly focusing on patients who
+are in the contemplation and preparation stages of
+
+change of the transtheoretical model of behaviour
+change (Prochaska et al., 1994);
+
+• extending
+the
+programme
+over
+a
+period
+of
+6 months (so that more than one regular consultation
+is included);
+
+• providing the patient with a leaﬂet with local facilities
+for physical exercise;
+
+• giving the programme more ﬂexibility (number and
+timing of consultations) to follow the needs and prefer-
+ences of the patients and
+
+• supporting the patient with automatic feedback via the
+tool so that the practice nurse can focus on giving per-
+sonal feedback during consultations.
+
+The end result: a SSP
+The end result of Stage 3 of the requirements analysis is
+summarized in the column ‘Final SSP’ in Table 3. The
+combination of the programme with the tool is depicted
+in Figure 2.
+The aim of the SSP is to increase physical activity in
+daily living and to prevent longer periods of continuous
+inactivity. The programme is characterized by collabor-
+ation between patient and practice nurse. It is a patient or-
+iented, ﬂexible way to support self-management of all
+COPD and type 2 diabetes patients who are willing to
+change their lifestyle. During a maximum of one to three
+extra consultations spread over a period of at least 6
+months, the practice nurse performs an assessment of
+the patient’s activity pattern using a self-assessment ques-
+tionnaire, supported by information from a baseline meas-
+urement and a diary supplied by the tool. The nurse
+provides information about the risks of a sedentary life-
+style and the beneﬁts of physical activity on disease prog-
+nosis, using an information card. In collaboration with the
+patient, an activity goal in minutes per day is set, based on
+personal abilities. Both the practice nurse and interactive
+sessions supplied by the tool facilitate the patient in writ-
+ing a plan on how to become more physically active. The
+patient receives a list of local exercise opportunities.
+Feedback on physical activity performance is given by
+the practice nurse during consultations, while the tool
+gives automatic feedback on this performance in between.
+
+DISCUSSION
+
+We hypothesized that stimulating physical activity of
+chronically ill patients in primary care could be improved
+by using a physical activity counselling protocol together
+with a monitoring and feedback tool. Practice nurses are
+well aware of the need to stimulate physical activity,
+but the necessary attention is lacking. It is expected
+
+351
+
+that through the integration of the monitoring and feed-
+back tool in primary care, practice nurses will be more
+focused on exercise promotion. The tool is equipped
+with automated feedback based on predeﬁned and perso-
+nalized activity goals. Further investigation should reveal
+information about the best balance between this form of
+feedback and the feedback given during consultations.
+It remains a challenge to inform patients about the risk
+of a sedentary lifestyle in such a way that patients take re-
+sponsibility for this behaviour change. Success will largely
+depend on the personal circumstances of patients; their
+lifestyles are inﬂuenced by their culture and social status
+and their understandings of physical exercise and how
+they associate this with health issues (Perrin et al.,
+2002). Furthermore, success will also depend on the com-
+petences of practice nurses in performing the counselling
+techniques. This is why the SSP gives directives about
+the number and content of the consultations. If the SSP
+succeeds in bringing about change, it is expected that
+this will be sustained in the long term, because chronically
+
+ill patients usually have a long-term relationship with their
+practice nurse.
+Different opinions were expressed about monitoring
+physical activity results in between planned consultations,
+notwithstanding the fact that the technology supports this.
+Unfortunately, lifestyle counselling for chronically ill pa-
+tients in the Netherlands is organized and reimbursed
+based on regular scheduled consultations, not yet on sup-
+porting self-management by continuous monitoring con-
+ditions in collaboration with patients (Wagner et al.,
+2001).
+Some methodological limitations should be considered
+when interpreting the ﬁndings of the study. The purpose-
+ful recruitment of respondents ensures internal validity,
+but the external validity is threatened because respondents
+who participated had an innovative attitude towards tech-
+nology. However, the expert consultation was undertaken
+to enhance the external validity. A strength of the study
+is that from the start of the development, future users
+were involved in deﬁning the requirements for the SSP
+
+Fig. 2: The ﬁnal SSP combined with the use of the tool.
+
+352
+
+(van Gemert-Pijnen et al., 2011). The circumstances of use
+with respect to the target group and its integration into the
+management process were investigated in a profound way
+by collecting user requirements from both patient and care
+provider’s perspective. This was achieved through an it-
+erative development process characterized by ﬁnding a
+match between evidence-based healthcare on the one
+hand and practical and affordable care on the other. The
+feasibility of the SSP will be tested in a pilot study in two
+general practices followed by a randomized controlled
+trial to test the effects of its use.

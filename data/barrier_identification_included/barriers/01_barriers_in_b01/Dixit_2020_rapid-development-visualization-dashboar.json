@@ -1,0 +1,42 @@
+{
+  "file_name": "Dixit_2020_rapid-development-visualization-dashboar.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Urgent timeline and need for same-day visualizations forced a lightweight user-centered design approach rather than a rigorous UCD process.",
+      "justification": "Time pressure prevented thorough user research, deeper iteration cycles, and rigorous synthesis, hindering management of user understanding, facilitation of user involvement, and integration of feedback and iteration.",
+      "reference_excerpt": "Because of the urgent need for visualizations, a rapid process of development and user feedback from domain experts and/or end users was developed. A rigorous user-centered design approach is not possible when the goal is to produce same day data visualizations.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Poor vendor interoperability and lack of standard APIs/data formats required manual and semi-automated data extraction with ongoing quality issues.",
+      "justification": "Unreliable and heterogeneous data feeds constrained designers' ability to understand the context of use, produce accurate dashboards, stabilize metrics, and perform iterative evaluation and refinement.",
+      "reference_excerpt": "As neither vendor fully supported industry-standard application programming interfaces nor a common data format, data were retrieved from their proprietary data platforms using semi-automated scripts and ingested into structured relational database tables. We also faced several challenges, including interoperability, poor vendor data standards, and challenges accessing real-time data.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "skill",
+      "description": "No formal interrater reliability was used when synthesizing interview content, indicating a methodological rigor gap in qualitative synthesis.",
+      "justification": "This lack of methodological rigor likely reduced consistency and trustworthiness of user insights, hindering the team's ability to manage user understanding and reliably specify user requirements.",
+      "reference_excerpt": "Limitations to our approach include: no formal interrater reliability when synthesizing interview content, no design for different devices (eg, mobile phones, tablets, etc), and no consideration for users with disabilities.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Dashboards were not designed for different devices or for users with disabilities, and were not distributed to frontline clinical staff.",
+      "justification": "Omitting device-specific designs, accessibility considerations, and frontline clinical users prevented addressing the holistic experience and limited facilitation of broader user involvement and requirement specification for those audiences.",
+      "reference_excerpt": "Limitations to our approach include: no formal interrater reliability when synthesizing interview content, no design for different devices (eg, mobile phones, tablets, etc), and no consideration for users with disabilities. These dashboards were not distributed to frontline clinical staff.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

@@ -1,0 +1,418 @@
+User-centered design of multi-gene sequencing panel reports for 
+clinicians
+
+Elizabeth Cuttinga, Meghan Bancheroa, Amber L. Beitelsheesa, James J. Ciminob, 
+Guilherme Del Fiolc, Ayse P. Gursesi,j,k, Mark A. Hoffmand,e, Linda Jo Bone Jenga,m, 
+Kensaku Kawamotoc, Mark Kelemenf, Harold Alan Pincusg, Alan R. Shuldinera, Marc S. 
+Williamsh, Toni I. Pollina, and Casey Lynnette Overbya,i,l,*
+
+3. Materials and Methods
+
+3.1. Recruitment Approach
+
+Our two-phase study was conducted within a focus group setting. We sent emails to 
+individuals influenced by the two precision medicine projects at the University of Maryland 
+School of Medicine. These included 14 TPP/PDMP research team members (clinical 
+research coordinators, genetic counselors, laboratory professionals), 17 PDMP clinicians 
+(endocrinology fellows, nurse practitioners, diabetes educators), and 34 TPP clinicians 
+(cardiology fellows, nurse practitioners, clinical pharmacists). The email was sent with an 
+information sheet describing the goals of the project. Two weeks later, a second email was 
+sent to the same pool of potential participants asking for their participation again. A third 
+email was sent out to interested participants to schedule a focus group. Interested 
+participants were contacted a fourth and final time to confirm the date and time of the focus 
+group. A $100 gift card was given to participants. Participants in phase 2 were recruited in 
+the same fashion and from the same pool of PDMP and TPP clinicians as in phase 1. Those 
+who participated in phase 1 were allowed to participate in phase 2. This study was reviewed 
+and judged by the University of Maryland Institutional Review board (IRB) as non-human 
+subjects research (HP-00061346). At the start of each focus group, participants were given a 
+participant information sheet. This sheet captured the participant's involvement in TPP and 
+PDMP projects, years of experience in their profession, gender, and their choice to be 
+contacted, or not, for future focus groups.
+
+3.2. Phase 1 Data Collection and Analysis
+
+In phase 1, three focus groups were conducted in order to examine existing and anticipated 
+genetic testing processes among two precision medicine projects (TPP and PDMP). Our 
+focus group protocol was organized into three topics about genetic test results: laboratory 
+documentation of genetic test results, making genetic test results available to view in the 
+
+EHR, and notifying the clinician about genetic test results. For each topic, open-ended 
+questions (e.g., “what is your overall opinion of how genetic test results should be 
+documented by the testing lab?”) elicited general information followed by more specific 
+questions and probes (e.g., “what kinds of information do you think should or shouldn't be in 
+the report?” “when would you want to access information you just mentioned?”). A 
+moderator and note taker were present at all focus groups, each of which lasted 90–120 min. 
+Focus group discussions regarding PDMP were modified to cover laboratory test processes 
+more generally given that data collection occurred prior to the start of genetic testing for that 
+project. Sessions were audio recorded, transcribed, and analyzed with the aid of Dedoose, a 
+qualitative research analysis software [28].
+
+Two coders (EC, CO) mapped statements made by study participants to terminology 
+common to user experience and design, and to organizational and business process modeling 
+heuristics. Our assessment of user experience in phase 1 was focused on usability 
+(effectiveness, efficiency and satisfaction) and design (missing functionality, problems and 
+proposed solutions, and desired features). Similar to another study of the usability of clinical 
+systems [29], we also captured ‘positive’ and ‘negative’ quotes. Positive quotes allowed us 
+to identify features that satisfied the needs of clinicians and negative quotes allowed us to 
+identify possible features to improve the use clinical systems for genetic testing processes. 
+Mappings of statements to usability codes facilitated determining perceived issues with the 
+use of current clinical systems for genetic testing processes and proposed solutions 
+acceptable by a range of stakeholders to address those issues. Mappings of statements to 
+organizational and business process modeling heuristics facilitated determining existing and 
+anticipated genetic testing processes for documenting, viewing, and notifying individuals 
+about genetic test results (Appendix B).
+
+We completed two analyses of data collected in phase 1. First, we analyzed the data to 
+understand genetic testing processes of TPP specifically. Findings from that analysis is 
+described elsewhere [30] and is summarized in the following section. Second, we analyzed 
+phase 1 data in order to define scenarios and GMA design requirements. Methods and 
+results from that analysis are described in this manuscript.
+
+3.2.1. Summary of Methods and Findings from Previous Work Analyzing 
+Translational Pharmacogenetics Program Genetic Testing Processes—The 
+coding team analyzed data from two focus groups (TPP/PDMP research team members and 
+TPP-related clinicians) in order to document TPP genetic testing processes at the time, and 
+to propose more streamlined processes enabled by technology. With information gained 
+from focus groups, we documented TPP genetic testing processes using a Business Process 
+Model and Notation (BPMN) model [30]. We also performed member checking to verify the 
+accuracy of our model. In summary, findings indicated a reliance on TPP research team 
+members to complete tasks that were labor-intensive and potentially error-prone. Findings 
+also indicated insufficient support and resources to assist clinicians in treatment decisions 
+with the lab report alone. At the time, important information for making treatment decisions 
+were provided by the TPP research team in the form of a letter, separate from the lab report 
+itself. Specific recommendations to enhance TPP genetic testing processes included 
+reducing the reliance on the TPP research team by establishing a Laboratory Information 
+
+Management System (LIMS) for genetic test results that is capable of communicating with 
+the EHR, and the implementation of clinical decision support (CDS). CDS implementation 
+could also provide a mechanism to improve access to information for clinicians to make 
+treatment decisions.
+
+3.2.2. Assessing Desired Characteristics for Precision Medicine Scenarios 
+and Genomic Medicine Assistant Design—We drew from data collected for two 
+focus groups (TPP-related clinicians and PDMP-related clinicians) to provide evidence for 
+scenario and software design choices. Scenarios were designed to be relevant to TPP and 
+PDMP projects and validated with project advisory committee members. Committee 
+members consisted of experts in clinical genomics, clinical vocabulary standards and clinical 
+decision support implementation in commercial EHRs (Appendix A). After scenario 
+validation, we designed project-specific “storybook packets” that included two scenarios, 
+each of which had associated tasks for accessing GS reports, mockups of those reports and 
+information resources viewed using GMA. Those notification methods found to be 
+acceptable by phase 1 study participants were described in both storybook packets. One 
+team member (EC) proposed initial GMA design mockups informed by participant 
+recommendations from phase 1 focus groups, the literature describing laboratory report 
+design principles [31], and model laboratory reports. The packets underwent multiple rounds 
+revision based upon feedback from the project team prior to finalizing.
+
+3.3. Phase 2 Data Collection and Analysis
+
+In phase 2, a modified task-centered system design (TCSD) protocol was applied in a focus 
+group setting in order to gather feedback from clinicians on a proposed design of the GMA 
+software. Traditional TCSD involves four main phases: (a) identification of tasks, (b) user-
+centered requirements analysis, (c) design through use of scenarios or storybooks, and (d) 
+evaluation of design using walkthrough analyses [32]. In this study we leverage our 
+understanding of preferences for genetic testing processes from phase 1 analyses in order to 
+complete TCSD phases a–c. TPP and PDMP clinicians were each asked to complete task 
+walkthroughs involving two clinical scenarios where GS was performed (see Appendix A 
+for “Scenarios relevant to the Translational Pharmacogenomics Project” and for “Scenarios 
+relevant to the Personalized Diabetes Medicine Program”).
+
+3.3.1. Administering Storybook Packets for Task Walkthroughs With clinicians
+—In phase 2, storybook packets were administered to study participants within a focus 
+group setting. A moderator and note taker were present at both focus groups, each of which 
+lasted 90– 120 min. Focus groups were split into two parts, with no discussion during the 
+first part of the study. Participants were first asked to spend 15–20 min reviewing and 
+writing down comments or questions about each task/screen presented in the storybook 
+packet. For the second part, the moderator led a discussion of each task as a group. The 
+moderator facilitated discussion through the use of probes (e.g., “Is this alert message 
+informative?”) corresponding to each task (e.g., “Clinician views alert message”). Sessions 
+were audio recorded, transcribed, and analyzed with the aid of Dedoose, qualitative research 
+analysis software [28].
+
+3.3.2. Analysis of Clinician Perceptions of Tasks and Screen Mockups—Two 
+coders (EC, MB) mapped statements made by study participants to terminology common to 
+user experience and design, processes for viewing and using the GMA, characteristics of the 
+GMA design (see Appendix C. Genomic Medicine Assistant Demo Multi-Gene Panel 
+Laboratory Reports), and roles for different stakeholders (e.g., patient, lab professional, 
+ordering physician, genetic counselor). Our assessment of user experience was broader in 
+phase 1 than in phase 2 with the addition of codes for content and usefulness added to our 
+codebook. Codes for usability and design remained. Codes for organizational and business 
+processes from phase 1 were replaced by a single code to capture processes for viewing and 
+using the GMA. Mappings of statements to codes facilitated identifying preferences for and 
+issues with proposed design features and areas for which there was agreement or 
+disagreement among focus group participants.
+
+3.3.3. Analysis to Characterize Study Participant Views Using System 
+Usability Scale Survey—In order to characterize the views of our study participants, we 
+used the System Usability Scale (SUS) survey [33]. The SUS has become a standard of 
+usability measurement [34]. While other usability evaluation surveys exist [35,36], the SUS 
+is among the most broadly used and has a number of advantages including its ease of use 
+with only 10 items rated on a 5-point scale; its comprehensibility given a resultant score 
+ranging from 0 to 100; and it is “technology agnostic” [33,37]. Participants are asked to 
+score each item on a scale of one to five that range from Strongly Disagree to Strongly 
+Agree. Scores were interpreted and analyzed using Sauro's method (30). For each odd 
+numbered item, one was subtracted from the user response. For each even numbered item, 
+the user response was subtracted from five. Each user's responses were added up and 
+multiplied by 2.5 to convert the range of values to 0–100. A score of 68 is an average 
+usability score. A score above 68 would be considered above average, a score below 68 is 
+considered below average. Scores were then converted to their percentile rank [33].
+
+4. Results
+
+4.1. Study Population
+
+Phase 1 focus groups (three totals) were conducted between December 2014 and February 
+2015. Phase 2 focus groups with clinicians (two totals) were conducted in May 2015 at 
+UMMC. Each focus group had a total of four participants (Table 1). With the exception of 
+one focus group conducted during phase 1 with TPP/PDMP research team members, all 
+focus groups included 1–2 nurse practitioners and 1–3 physicians. 6 clinicians (nurse 
+practitioners and physicians) participated in both phases 1 and 2.
+
+4.2. Phase 1 Results: Validated Scenarios and Proposed Software Design
+
+The phase 1 analysis uncovered several desired characteristics for scenarios and for the 
+design of software to support processes for documenting, viewing, and being notified of 
+genetic and laboratory test results.
+
+4.2.1. Feedback From Clinicians Informing Genomic Medicine Assistant 
+design—Preferences for documenting and viewing genetic test results informed the design 
+
+of the GMA software. Specific clinical preferences for report documentation included 
+embedding recommendations for the course of treatment based on the patient's results. This 
+design choice was based primarily upon discussions occurring in the TPP focus group 
+session. The goal for this would be to reduce the number of steps required for clinicians to 
+review recommendations for using test results. At the time, recommendations were provided 
+to clinicians primarily within a letter sent by the study team.
+
+TPP and PDMP clinicians had similar preferences for viewing test results. Given that 
+multiple variants in a single gene or multiple genes may be presented in a single report, 
+participants expressed a desire for data to be organized by degree of urgency and clinical 
+significance. We proposed addressing this issue by proposing the use of a multiple tabs to 
+separate essential and nonessential information in the proposed software design. We also 
+incorporated a specific recommendation of the TPP clinicians to use to allow for quick 
+review of the report (e.g., use of the color red to indicate high urgency).
+
+Decisions regarding the organization of content were also informed by model laboratory 
+reports and recommendations from the literature [31]. Many features are generalizable 
+across scenarios and are described in Table 3. Potentially generalizable content and content 
+sections are also illustrated in Fig. 1. Given differences in the availability of information 
+resources, the inclusion or exclusion of infobuttons varied slightly between scenarios.
+
+Focus group participants also reported need for sufficient information to help non-specialist 
+clinicians explain test results to their patients. TPP clinicians expressed that the information 
+in current reports was insufficient and that links to external information resources would be 
+beneficial in their decision-making. PDMP clinicians liked the idea of providing ready 
+access to electronic resources with GS reports, with a preference for familiar and trusted 
+resources such as UpToDate® (www.uptodate.com). They made specific suggestions for 
+access to general information about monogenic diabetes and the ability to print patient-
+targeted information. These preferences were incorporated in our choice of information 
+resources, organization of content, and incorporating support for print and email capabilities 
+into a proposed software design. Other features incorporated into the GMA design included 
+proposed access to web-based resources using infobuttons and an inbox of all reports 
+available within the GMA.
+
+4.2.2. Validated Scenarios and Proposed Tasks for Reviewing The genomic 
+Medicine Assistant Design—Notification preferences informed the design of our 
+scenarios. Study participants indicated a need for improved mechanisms of being notified of 
+GS and laboratory results. Epic® Systems (Verona, WI) alert and reminder capabilities in 
+particular were discussed during focus group sessions. Both TPP and PDMP recommended 
+considering alert messages in the EHR as a preferred mechanism to notify and deliver GS 
+reports. One suggestion brought up in the TPP focus group specifically was to consider Epic 
+InBasket messaging. EHR alert and reminder mechanisms (Epic Best Practice Alert [BPA] 
+and InBasket messages) were therefore incorporated into scenarios as two proposed 
+mechanisms for notifying clinicians of GS reports. The BPA provides an interruptive form of 
+clinical decision support notification, while the InBasket provides a more passive form of 
+
+notification where new messages are indicated on a sidebar as the number of new messages 
+that have been received.
+
+Scenarios are summarized in Table 2. Notification occurred when a clinician opened the 
+patient chart and methods of notification included Epic BPA and InBasket messages. Both 
+contained summary information about GS results and a link to view the report in the GMA. 
+In order to assess both types of notification approaches, the first scenario presented to 
+cardiology and endocrinology clinicians used BPAs, while the second scenario contained an 
+InBasket message.
+
+Tasks outlined for the scenarios involved a user viewing an EHR alert or reminder message, 
+clicking on a link within that message to access the GMA software, then viewing the GMA 
+inbox containing the status of all ordered GS tests and reports. The user opens the pre-
+selected GS report and is brought to a lab report Results Tab that contains patient 
+demographic data, the result, clinical significance, and recommendations. The Results Tab 
+page also contains infobuttons that link to resources such as OMIM® [47], GeneReviews® 
+
+[49], ClinVar [48], supporting literature, and a patient resource. The user then clicks the Test 
+Information tab, which contains test limitations and other information. See Fig. 1 for an 
+example of the Results Tab of the report.
+
+4.3. Phase 2 Results: Clinician Perceptions of Tasks and Screen Mockups
+
+Two main themes came out of the phase 2 focus group analysis. First, there were differing 
+opinions about proposed notification methods. Second, there were user-specific needs for 
+information and consultation (Table 4).
+
+For both of the EHR alert and reminder notification methods we explored, participants 
+expressed concerns about the frequency of being notified of GS reports (Table 4). For BPAs 
+specifically, the potential for a high frequency of pop-up BPA alerts was a concern. 
+Participants agreed that the way the GMA Genetic Test Report tab was structured to provide 
+optional access to information resources along with concise information summaries could 
+help to overcome issues with alert fatigue (or desensitization to frequent alerts) [38]. Which 
+methods of notification were preferred also depended on the scenario. For example, TPP 
+clinician participants preferred both methods of notification for the pharmacogenomic 
+sequencing panel report SCN5A result scenario, where as they preferred only one method of 
+notification for the CYP2C19 result scenario. Study participants also noted that the preferred 
+method of notification might depend on familiarity with the scenario for using GS results.
+
+User-specific needs for information and consultation became evident from comments about 
+clinicians' familiarity with scenarios, comfort with using GS results and the GMA to make 
+clinical decisions, and preferences for referral processes (Table 4). Participants explained 
+that confidence with using the GMA to make clinical decisions and their preferred referral 
+processes may differ for a non-specialized primary care provider (PCP) who may be 
+unfamiliar with the GMA and/or GS results. Many participants agreed that they would seek 
+consultation from a genetics or pharmacogenetics specialist after viewing the GS report.
+
+4.4. Phase 2 Results: Design Revision Recommendations and Perceptions of Usability
+
+Study participants offered recommendations to improve the navigation of the software to be 
+more intuitive and the content more easily and quickly understood (Table 5). These included 
+specific content improvements such as more clearly defining certain phenotypes. One 
+important recommendation was to add a resource to view evidence summaries regarding the 
+clinical utility of the data such as supporting clinical trials. Participants also perceived the 
+GMA design to be usable with scores ranging from 72.5 to 95 out of 100 on the SUS Survey. 
+These scores representing the perceptions of our study participants, indicated an above 
+average usability score of the GMA.
+
+5. Discussion
+
+We have proposed a design for the Genomic Medicine Assistant (GMA) software for 
+generating a report from GS data and provide resources to orient clinicians when viewing 
+and interpreting results. In phase 1 of our study, focus group participants offered insights 
+into the complex reporting process of genetic test results within two precision medicine 
+programs (TPP and PDMP). Key areas of improvement were identified and considered when 
+defining scenarios and design features for the GMA. In phase 2 we assessed the GMA soft-
+ware design by conducting focus groups and task walkthroughs with clinical end-users 
+(physicians and nurse practitioners). Major findings we identified were the existence of (a) 
+differing opinions regarding preferred methods of notification and (b) user-specific needs for 
+information and consultation.
+
+Familiarity with a technology can assist with its integration into everyday routines. To 
+bolster clinician familiarity with information provided in the GMA, clinician training and 
+educational programs may be effective. For example, one study piloted a “Genome Report” 
+containing whole genome sequencing results with non-geneticist physicians. They found 
+that users viewed the report initially as daunting, but noted that as they became more 
+familiar with the report, they would be able to better manage subsequent reports [39]. In our 
+study, while familiarity with genetic test results differed between clinicians involved in our 
+two precision medicine programs, there were common preferences for information. For 
+example, regardless of previous experience and education about GS described in our 
+scenarios, many participants agreed that they would likely seek consultation from a genetics 
+or pharmacogenetics specialist after viewing the test report.
+
+In addition, participants made several recommendations to improve the proposed design of 
+the GMA that can serve as design principles for other pursuing similar efforts. Focus group 
+participants reported a desire for information to support more in depth understanding of GS 
+results. Addressing this desire would need to be considered with care given findings from 
+others that using too much bioinformatics or genetics jargon causes confusion [21]. In 
+addition, while actual navigation of the GMA software interface could not be tested during 
+our task walkthroughs, participants still proposed several areas to improve (Table 5).
+
+Toward improving the likelihood of successful integration with busy healthcare 
+environments, we employed user-centered design approaches to understand genetic testing 
+workflow processes and design preferences in order to understand points where technology 
+
+could help support those processes (see “Summary of Findings from Analyzing 
+Translational Pharmacogenetics Program Genetic Testing Processes” and [30]) and to 
+provide evidence for scenario and software design choices. We found that the documentation 
+of GS results by multiple individuals, at different points in the testing process, and into 
+independent locations can potentially lead to the incorrect communication of a result. We 
+therefore proposed mechanisms for clinical decision support notification in our scenarios 
+and proposed design features for documenting and viewing GS reports with potential to 
+mitigate some of those issues. Overall the proposed scenarios (Table 2) and GMA design 
+features (Table 3) were well accepted by our study participants. Preferences for notification 
+by EHR alerts or reminders, however, may depend in part on familiarity with GS results and 
+urgency of the scenarios. For example, for GS results that cardiology participants' were less 
+familiar with, they preferred both BPA and InBasket notifications. With CYP2C19 test 
+results, for which they were more familiar, the cardiology participants' preferred InBasket 
+notifications.
+
+5.1. Limitations and Future Directions
+
+We employed a user-centered design approach with the aim of designing software that fits 
+within current ways of working (i.e., GS reporting processes that are similar to current 
+laboratory test delivery processes). There are some processes for GS reporting, however, that 
+are distinct from other types of laboratory tests such as the need to support mechanisms for 
+continually updating and improving genetic information. Our proposed design feature to 
+embed within GS reports links to external references and to continually updated genomic 
+knowledge bases such as ClinVar [40] would partially supports such mechanisms. The 
+scenarios we present in this work, however, were for the delivery of results at one point in 
+time, and do not explore potential changes to interpretations over time. One technology 
+exploring mechanisms to provide updated interpretations of GS results is GeneInsight, 
+whose processes have been shown to greatly improve the probability that users receive 
+updated variant information [41]. Complementing that work would be research to better 
+understand approaches to notify clinicians of updates to GS findings and interpretations. 
+There is potential to draw from approaches in human factors engineering to analyze complex 
+work systems [42,43]. Approaches in contextual inquiry in particular may be used in order 
+to design technology to support current work systems, or to design new ways of working 
+that are well supported by technology [44].
+
+Another area for further exploration is scenarios for the return of incidental findings 
+unrelated to the indication for testing. This work explored a scenario related to TPP project 
+for the return of a potential incidental finding upon ordering a pharmacogenomic sequencing 
+panel test for another purpose. Of note is that the scenario was highly exploratory and not 
+based on current standards of care. While others are exploring similar scenarios for returning 
+GS results with healthy individuals [9], current practice recommendations do not support GS 
+for that purpose [45].
+
+Some challenges brought up in phase 1 focus groups could not be addressed directly in the 
+design of the GMA. For example, a clear need identified by participants was to improve the 
+communication between laboratory systems and the EHR. Focus group participants also 
+
+reported that some processes for notifying clinicians of genetic test results do not notify the 
+correct members of the care team of an available test result in the TPP project [30]. In both 
+instances, solutions for these needs were beyond the scope of this project. These are however 
+broader implementation challenges that will be addressed in the respective TPP and PDMP 
+projects.
+
+While our prototype can provide a starting point for exploring scenarios for the reporting of 
+multi-gene sequencing test results, further research is needed to determine applicability to 
+other scenarios and healthcare organizations. Future studies would benefit from gathering 
+feedback on multiple design concepts in order identify the best solution for different 
+environments. In addition, usability studies where individuals are able to interact directly 
+with a prototype system may help users' understanding of the GMA application.
+
+Furthermore, mechanisms to improve the communication between laboratories and 
+clinicians will be important. As we found in our assessment of TPP genetic testing 
+processes, laboratory processes for preparing the report are vital for the delivery of results. 
+The communication between clinicians and laboratories becomes increasingly complex 
+when GS is involved. Multiple factors now play a part in this communication and should be 
+considered when building such a connection. These include informed consent, quality of 
+testing, regulations of the testing laboratory, and most importantly, interpretation of results 
+[46]. While the GMA provides a framework for delivering reports to clinicians, laboratory 
+and genetics professionals will continue to guide the development of content for inclusion of 
+GS reports and the identification of appropriate timing for delivering reports to clinicians.
+
+In addition to these findings, study participants perceived the GMA design to be usable and 
+offered numerous design and content recommendations to further improve its look and feel 
+(Table 5). Participant preferences for information resources and organization of content from 
+the first phase of the study were incorporated in the prototype software design presented 
+during the second phase. Above average perceptions of usability were therefore 
+unsurprising. Overall design principles resulting from our study can be incorporated into 
+software applications that support the delivery of GS reports.
+
+6. Conclusion
+
+We employed a user-centered software design approach in a focus group setting in order to 
+facilitate gathering rich contextual information from a diverse group of stakeholders 
+potentially impacted by the delivery of multi-gene sequencing panel (GS) reports relevant to 
+two precision medicine programs at the University of Maryland Medical Center. Our 
+evaluation of the genetic testing processes facilitated identifying preferred mechanisms for 
+clinicians to be notified of results and preferred information resources to support interpreting 
+results. Notification by EHR alerts and reminders were explored within scenarios for 
+ordering and delivering GS reports. Preferences for notification, information and 
+consultation from genetics specialists appeared to depend upon previous experience and 
+education about the GS described in scenarios. Despite familiarity with some aspects of the 
+scenarios, many of our participants agreed that they would likely seek consultation from a 
+genetics specialist after viewing GS reports. Findings illustrate a need to support customized 
+
+notification approaches, user-specific information, and access to genetics specialists with GS 
+reports. Design principles from this work can be incorporated into software applications that 
+deliver GS reports. Our user-centered approach to conduct this assessment and the specific 
+input we received from clinicians may also be relevant to others working on similar projects.

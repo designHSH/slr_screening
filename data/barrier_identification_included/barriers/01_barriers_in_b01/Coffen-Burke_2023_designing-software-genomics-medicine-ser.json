@@ -1,0 +1,51 @@
+{
+  "file_name": "Coffen-Burke_2023_designing-software-genomics-medicine-ser.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The study used a very small sample (seven GM service leaders), limiting the breadth of user data available to the design team.",
+      "justification": "Limited participant availability constrained the team's ability to evaluate designs and to manage a deep, generalizable understanding of end users, hindering evaluation and user-understanding workloads.",
+      "reference_excerpt": "First, we performed our analysis with a sample size of seven GM service leaders. While this is a small number, this is within ai sample size that is common for qualitative, user experience, and participatory design research [26].",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "knowledge",
+      "description": "The team was unable to study the relationship between stakeholder engagement and organizational readiness for adopting GM services, creating an empirical knowledge gap.",
+      "justification": "This lack of evidence prevented designers from fully understanding the context of use and from specifying user requirements that link stakeholder engagement to successful implementation, limiting requirements formation and contextual understanding.",
+      "reference_excerpt": "Third, we were unable to study the relationship between stakeholder engagement and organizational readiness for a GM service or genetic test offering. The relationship between stakeholder engagement and quality improvement projects is supported by empirical findings of others [27], but more work remains to empirically study this relationship with GM services specifically.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Unclear or constrained access to local data (e.g., electronic health record summaries and PRECISE-Value model inputs) limited the ability to include institution-specific evidence in the prototype.",
+      "justification": "Data access requirements outside the design team prevented designers from integrating local evidence and analytic tools into the user flow, hindering the ability to specify requirements, produce more complete prototypes, and meaningfully evaluate designs with realistic data.",
+      "reference_excerpt": "Feedback also indicated a need to improve our initial design so that the submissions made by stakeholders are more clearly summarized, and so that local evidence can be included in a report along with the stakeholder review summary. More work is needed to understand data access requirements to incorporate such a tool into the user process.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Maintaining accurate, up-to-date directory information about potential stakeholders (credentials, roles, prior engagement) is challenging because individuals change roles and affiliations.",
+      "justification": "This external data-maintenance constraint limits the designers' ability to implement and validate the prototype's stakeholder search and selection functionality, hindering understanding of users and the ability to facilitate stakeholder involvement reliably.",
+      "reference_excerpt": "Feasibility to provide the most accurate and up-to-date information in requested areas, however, requires further investigation. Individuals, for example, may change career roles, employment, expertise, and location which can create challenges to maintaining such up-to-date information.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "A substantial portion of collected synthesized comments (39%, N=54) were not relevant to the study's focal design considerations, producing noisy or low-priority feedback.",
+      "justification": "Irrelevant or off-target user feedback reduced the efficiency and focus of the team's analysis and slowed integration of actionable user input, hindering the integrate-feedback & iteration and evaluation workloads.",
+      "reference_excerpt": "Second, many of the synthesized comments were not relevant to the design considerations of focus in this work (39%, N=54). Other synthesized comments will be used to identify lower-priority design improvements.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

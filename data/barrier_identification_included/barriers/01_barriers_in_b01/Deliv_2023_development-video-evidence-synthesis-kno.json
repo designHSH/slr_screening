@@ -1,0 +1,51 @@
+{
+  "file_name": "Deliv_2023_development-video-evidence-synthesis-kno.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Severe time and budget constraints (8 weeks and €2000) limited the team's ability to run further iterations, conduct additional user-testing cycles, and outsource specialist expertise.",
+      "justification": "These resource limits constrained the team's ability to integrate feedback and iterate further, produce higher-fidelity design solutions, and evaluate alternative prototypes with broader samples.",
+      "reference_excerpt": "Resource-use for the project was minimal, as this was conducted over 8 weeks as an undergraduate summer student project supported by Evidence Synthesis Ireland for €2000. ... our limited time and resources hindered our ability to outsource expertise (e.g., the hiring of a digital media company ...).",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Time restraints led the team to have researchers, rather than members of the public, determine the initial key messages, making the approach not fully user-centred.",
+      "justification": "This decision limited the team's ability to manage user understanding from the outset and to facilitate early user involvement in specifying requirements, constraining downstream iteration and alignment with public perspectives.",
+      "reference_excerpt": "However, our use of researchers to determine the initial key messages of the resource meant that our approach was not fully 'user-centred'. Given ... our time restraints, we felt it a necessary pragmatic starting point for those identifying the initial key messages to have a solid understanding of evidence synthesis.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "interaction",
+      "barrier_type": "emotional",
+      "description": "Use of convenience sampling resulted in some public participants being known to lead authors and possibly feeling pressure not to be critical, reducing candour of feedback.",
+      "justification": "This interactional pressure impeded honest user involvement and the validity of evaluative feedback, thereby weakening designers' ability to accurately understand users and integrate authentic critiques into iteration.",
+      "reference_excerpt": "A limitation of our approach is the use of convenience sampling. This meant that some of the members of the public involved were known to the lead authors (CD and ET), and therefore may have felt some degree of pressure not to be too critical of the resource for fear of offending.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "A short recruitment timeframe and difficulties recruiting minors (due to requirement for parent/guardian consent) reduced the diversity and completeness of the participant sample.",
+      "justification": "Limited recruitment time and barriers to enrolling minors constrained the team's ability to facilitate broad user involvement and to manage a deep, representative understanding of users across age groups and contexts of use.",
+      "reference_excerpt": "The timeframe of the recruitment for participants was one week. ... we were successful in recruiting one male and female participant from each age category except in the <18 years category where one male was recruited, due to the fact that minors are more difficult to recruit given the necessity of parent/guardian consent.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "knowledge",
+      "description": "There is limited evidence-based guidance on optimal video duration for educational KT resources, creating uncertainty for designers when specifying length requirements.",
+      "justification": "This knowledge gap constrained the team's ability to define and justify specific user requirements (optimal duration) and to evaluate trade-offs between brevity and comprehensiveness during design decisions.",
+      "reference_excerpt": "There is limited evidence-based definitive guidance on determining the optimal duration of videos such as ours, with much variability reported in the literature. ... We aimed to keep our video as brief as possible with an absolute cut-off of 4 min, and frequently revisited the issue of length with all stakeholders involved.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

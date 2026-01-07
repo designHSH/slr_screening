@@ -1,0 +1,51 @@
+{
+  "file_name": "Ansari-Martin_2024_integrating-human-public-health-data-das.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Public health staff were extremely busy during the COVID-19 pandemic, forcing the team to abandon traditional, resource-intensive HCD methods and adopt pragmatic alternatives (e.g., reviewing existing dashboards, virtual meetings).",
+      "justification": "Limited availability of stakeholder staff constrained the designers' ability to conduct contextual inquiry and extended domain workshops, hindering the workloads of managing user understanding, facilitating user involvement, and understanding context of use.",
+      "reference_excerpt": "First, traditional human-centered design methods were modified to be more pragmatic, which was critical during the COVID-19 pandemic ... when public health staff were incredibly busy. The pragmatic modifications included learning from existing data dashboards instead of starting from scratch and conducting virtual meetings instead of observing user behavior in their workplace.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Sensitive data and confidential workspaces prevented the research team from gaining security clearances to observe users in their workplace.",
+      "justification": "Restricted access to users' workplace interactions directly prevented contextual inquiry, reducing designers' ability to understand the real context of use and gather rich, in-situ user insights needed for specifying requirements and producing solutions.",
+      "reference_excerpt": "Both were impractical in our context, between staff being diverted to the COVID-19 response (thereby severely constraining their time) and staff working in confidential spaces due to the sensitive data (thereby making it difficult for a researcher team to gain security clearances to observe workflows directly).",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Conducting virtual meetings limited the types of observational data the team could collect (for example, eye movements and facial expressions).",
+      "justification": "The loss of rich observational cues hindered the designers' ability to fully evaluate user interactions and read nonverbal signals during usability testing, constraining the evaluation and manage user understanding workloads and limiting fidelity of feedback for iteration.",
+      "reference_excerpt": "Our virtual meetings in Steps 3 and 4 may have been limited compared to the traditional methods because the data collection was not in the users’ work environment, and we could not collect some potentially useful data such as eye movements or facial expressions.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "Participant recruitment relied on practitioners already closely connected to the AIDS Institute who were knowledgeable about STIs but had limited prior experience with data dashboards, and evaluators/participants may not reflect all stakeholder opinions.",
+      "justification": "This sampling approach limited the diversity and representativeness of user perspectives available to designers, constraining their ability to manage user understanding, specify requirements for different user types, and ensure designs meet needs of all stakeholder groups.",
+      "reference_excerpt": "we recruited participants from practitioners who already had close relationships with the AIDS Institute as community-based public health champions... these participants were knowledgeable about STIs but most of them had little previous experience with data dashboards... although the evaluators and participants comprised diverse groups, their opinions may not reflect all stakeholders’ opinions.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "State government 'executive clearance' requirements mandated that the final dashboard be hosted on an external organization's website and that each website update be reviewed before public release.",
+      "justification": "This external governance and approval constraint limited designers' deployment options and could slow or complicate iterative releases and rapid integration of feedback, thereby hindering integrate feedback & iteration and coordination with stakeholders.",
+      "reference_excerpt": "Another finding was that the final data dashboard would need to be hosted on an external organization’s website due to state government agency “executive clearance” requirements that each website update be reviewed and approved before release to the public.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

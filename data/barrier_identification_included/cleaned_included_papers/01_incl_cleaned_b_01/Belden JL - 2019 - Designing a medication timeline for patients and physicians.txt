@@ -1,0 +1,770 @@
+Research and Applications
+
+Designing a medication timeline for patients and
+physicians
+
+Jeffery L Belden,1,2 Pete Wegier,1,3,4,5 Jennifer Patel,6 Andrew Hutson,7
+
+Catherine Plaisant,8 Joi L Moore,2,9 Nathan J Lowrance,9 Suzanne A Boren,2,10
+
+and Richelle J Koopman1
+
+1Department of Family and Community Medicine, School of Medicine, University of Missouri, Columbia, Missouri, USA, 2MU Infor-
+matics Institute, University of Missouri, Columbia, Missouri, USA, 3Temmy Latner Centre for Palliative Care, Sinai Health System,
+Toronto, Ontario, Canada, 4Lunenfeld-Tanenbaum Research Institute, Sinai Health System, Toronto, Ontario, Canada, 5Department
+of Family & Community Medicine, University of Toronto, Toronto, Ontario, Canada, 6GoInvo, Boston, Massachusetts, USA, 7De-
+partment of Health Sciences, School of Health Professions, University of Missouri, Columbia, Missouri, USA, 8Human Computer
+Interaction Laboratory, Institute for Advanced Computer Studies, University of Maryland, College Park, Maryland, USA, 9The
+School of Information Science and Learning Technologies, College of Education, University of Missouri, Columbia, Missouri, USA,
+and 10Department of Health Management and Informatics, School of Medicine, University of Missouri, Columbia, Missouri, USA
+
+(beldenj@health.missouri.edu)
+
+Received 18 April 2018; Revised 14 September 2018; Editorial Decision 14 October 2018; Accepted 17 October 2018
+
+ITERATIVE DESIGN PROCESS
+
+Materials and methods
+Our overall approach to participatory design was inspired by the de-
+sign study methodology described by Sedlmair:12 “We define a de-
+sign study as a project in which visualization researchers analyze a
+specific real-world problem faced by domain experts, design a visu-
+alization system that supports solving this problem, validate the de-
+sign,
+and
+reflect
+about
+lessons
+learned
+in
+order
+to
+refine
+visualization design guidelines.” We identified physician and pa-
+tient/caregiver information needs for comprehending historical med-
+ication use patterns (“What happened before?”) while managing
+chronic disease in the ambulatory setting for an individual patient
+with multiple morbidities and multiple medications. Common infor-
+mation needs include needing to know all medications used cur-
+rently, when and why dose changes occurred, and how changes
+related to one another (eg, starting one drug because another was
+stopped). There is also a need to make cross-categorical compari-
+sons with other health data, including blood pressure, weight, and
+pertinent lab results. A timeline visualization is not suitable for all
+clinical tasks, and completely different tasks performed by physician
+or patient/caregivers might require alternative information displays.
+For instance, compared to mere review of a medication list, prescrib-
+ing activities require the additional knowledge of medication quan-
+tity, number of refills, remaining time available on the previous
+prescription, identification of the prescriber, the selected pharmacy,
+identification of potential interactions, and formulary coverage
+details.
+
+Identifying user needs
+From primary care physician members of our team, we identified
+key user needs in reviewing and understanding complex medication
+histories when caring for a patient with complex chronic diseases.
+Physicians (and other prescribing provider users) need the following
+information: medication names, strength, average total daily dose,
+dosing instructions, start-stop dates for any dose change, reasons for
+making those changes, quick comparison with other concurrent
+drugs, and comparison to related lab results and vital signs (blood
+pressure and weight) that affect or can be affected by the medication
+in question. These data allow physicians to accomplish the kinds of
+tasks listed in Table 1.
+
+In 2012 and 2013, we reviewed 12 EHR products in general re-
+lease ranging from large to small at the annual international HIMSS
+conference trade show floor, assessing the capability for displaying
+multiple years of medication history on a single screen and for mak-
+ing cross-categorical temporal connections of data. We asked each
+vendor to display a medication timeline view (if they had one) and
+the table view of the medication list that could show past medica-
+tions. None allowed a historical overview of all medications in a sin-
+gle view
+or information display. None used
+graphical
+data
+visualization features.
+In many EHRs, these information needs are currently address-
+able only by scouring the content of past physician notes, or by dig-
+ging through tabular views of many rows of medications past and
+present (filterable to hide or reveal medications no longer actively
+used by the patient). These puzzle pieces of information are
+
+96
+
+scattered among different areas of the EHR, making these existing
+methods time consuming, frustrating, and error prone. They can
+strain working memory by separating content within a page or be-
+tween pages, which can cause a heavy cognitive load when making
+comparisons with interrelated data (ie, prescriptions, dosage, and
+dates) and associated data (such as lab results and weight). Time-
+consuming tasks may produce no results because they can be unsuc-
+cessful, aborted, or not even attempted due to difficulties with col-
+lecting the data for decision making.
+
+Reviewing history of timelines
+Graphical timelines are well suited to this set of user needs. One of
+the earliest timelines in print was Joseph Priestley’s timeline display
+of “A New Chart of History” in 1769, listing events in 106 separate
+locations.13 In the 1980s, data visualization enjoyed an increase in
+popularity. In the 90s, different ways of visualizing medical informa-
+tion were introduced, including the timeline, the most popular of
+which was LifeLines.14,15 LifeLines incorporated a large variety of
+medical information into an interactive display with several novel
+features, including 1) a personal history overview on a single screen,
+2) direct access to all detailed information from the overview with 1
+or 2 clicks of the mouse, and 3) critical information or alerts visible
+at the overview level. Since then, visualization technologies have in-
+corporated many new features, but the medication timeline using
+multiple bars has been seemingly unchanged.
+Data visualization techniques have evolved over the past few
+decades with the user in mind. Visualization techniques reduce cog-
+nitive computation and reduce the amount of information needed to
+be searched before drawing conclusions,16 and medical experts pre-
+fer graphical representations over data tables when searching for
+trends.17 Early techniques incorporated methods to denote specific
+events, using various symbols to denote simple and complex events,
+intervals of time, and overlapping events.18 Others utilized such
+techniques for medical information timelines to emphasize the most
+recent data while maintaining a visual history of the data.19
+
+Several designs were introduced in the early 2000s using Shnei-
+derman’s “overview first, zoom and filter, then details on demand”
+mantra.20 Another popular feature was the colored bar to denote ex-
+tended events, initially introduced as a feature of Patient History in
+Pocket (PHiP), a medical history visualization software.21 A more
+recent software development, Medical Information Visual Assistant
+(MIVA), allows users to customize their experience with drag and
+
+drop menus to highlight the features they are interested in
+viewing.22
+
+LifeLines is interactive, displaying only the medication start
+dates on the broad overview (Figure 1A), but continuous colored
+bar graphs upon zooming for details, with dispensing events and
+expected duration of the medication prescription (Figure 1B).14
+
+Alonso et al. evaluated Lifelines in a juvenile justice setting, compar-
+ing timeline view to tabular view for responding to 31 detailed ques-
+tions regarding youths’ personal history with the juvenile system.
+The timeline excelled for interval comparisons and making interca-
+tegorical connections, while the tabular view excelled at finding ex-
+act dates.23
+
+Iterating the baseline timeline model
+The LifeLines model has several features that support our design
+aims. These include an overview of all medications in a single view
+for any time interval; high information density; rapid visual compar-
+isons using pre-attentive attributes (color, size, shape, orientation,
+motion); and the ability to display multiple medication variables at
+once: duration (length), daily dose amount (color and intensity),
+doses per day (symbol encoding), and incomplete adherence (gaps in
+line). The medication timeline concept is well adapted to displaying
+associated data (lab results, vital signs such as blood pressure and
+weight, and key incidents such as hospitalization or surgical proce-
+dures) in adjacent timeline or graphical views or added as annota-
+tions. The LifeLines concept has been incorporated into several
+operational systems.24
+
+Belden has created various pencil sketch versions as early as
+2010 exploring alternative design patterns with high information
+density incorporating height to represent dosage strength (Figure 2),
+color, line weight, and line style (single, double, triple, dashed, etc.)
+to represent daily dosing instructions. These sketches explored alter-
+native display methods for renewal and dispensing events and adher-
+ence gaps. Pencil sketches allow rapid iteration at low cost and
+embrace frequent failure as a strategy for succeeding sooner.25 For
+example, early on, we opted in favor of using a fixed height bar with
+color distinctions to represent dosage as opposed to using variable
+height bars to convey medication dosage. Using variable height for
+dosage required more vertical space than uniform width bars. Using
+fixed height bars could employ black as a maximum dose (black is
+readily recognized as “maximum gray”), whereas a maximum
+height was not readily discernable. Recognizing dosage maximum
+quickly helps to prompt physicians to add an additional medication.
+
+Engagement of stakeholder workshop members
+This medication timeline prototype effort was part of a larger 5-
+domain effort for a clinically inspired design guide for EHR vendors.
+To seek engagement from the EHR vendor community, we met with
+the Electronic Health Records Association Clinician Experience
+Workgroup to assure that our effort would address their commercial
+needs to improve the clinician experience. We engaged 10 health IT
+vendor workshop participants with product development experience
+representing both large and small health IT organizations, distrib-
+uted over 3 on-site workshops. Participant breakout group design
+sketches and design requirements were subject to design critiques
+and multi-voting to develop consensus. We held a kickoff workshop
+with our vendor participants, and subsequent weekly calls with the
+core author team, with more frequent iteration between the profes-
+sional design team and the project leader. Starting with preliminary
+design
+concepts,
+this
+team
+expanded
+the
+design,
+explored
+
+Table 1. Medication history review tasks for care of chronic disease
+
+Task
+EHR current state
+
+Identifying current prescription on a
+medication history
+Easy
+
+Identifying past prescriptions on a medi-
+cation history
+Can be done with 1 or
+more steps currently
+Identifying the length of time a medica-
+tion has been prescribed
+Difficult in list view; can
+be searched in some
+EHRs
+Identifying new prescriptions in a given
+time interval
+Cumbersome
+
+Identifying a dosage change in a given
+time interval
+Cumbersome
+
+Making intercategorical comparisons of
+medication changes with other data
+categories (blood pressure, weight, lab
+results)
+
+Available in only 1 EHR
+in mobile (tablet)
+product
+
+97
+
+alternatives, and specified detailed sketches and feature lists for a
+working medication timeline prototype intended to be open-source
+for HIT developers to use and adapt. We modernized the look of
+LifeLines with inspiration from the design language of the flight
+search tool, Hipmunk.com.26 Given our budget and time con-
+straints, we prioritized a set of minimal features for our interactive
+timeline prototype and rendered the backlog content as supplemen-
+tal static illustrations of additional feature designs.
+
+Advisory panel
+We convened an advisory panel of 12 subject matter experts in
+human factors, pharmacology, medicine, and nursing to solicit
+their critical review and user feedback, incorporating the feed-
+back into iterative design revisions. This feedback was collected
+using a combination of written submissions, a survey with a
+small number of respondents (5), and 2 group conference calls
+with written field notes. The conference call moderator asked the
+participants to address the overall e-book product and respond
+to a series of prompts about the content and the design frame-
+work. The medication timeline was among several content
+topics. There was unanimous consensus between the vendor and
+advisory panel clinician participants about the content of the
+medication timeline display.
+
+RESULTS
+
+Using an iterative design process, our team arrived at a final proto-
+type (Figure 3), available online at inspiredEHRs.org/timeline.27
+
+The features are detailed in Table 2, along with the associated prin-
+ciples that support the design.
+
+Harkening to the data visualization mantra of Shneiderman of
+“overview first, zoom and filter, then details on demand,” we
+wanted to harness the power of information visualization to provide
+a chronological overview of the medication history, to enable zoom-
+ing, sorting, and filtering the list, and to enable clicking a medication
+bar graph to reveal further details on demand.32
+
+Backlog features
+In addition to the features included in our online final product, we
+identified a set of backlog features and concepts that could not read-
+ily be incorporated into the interactive prototype. We have clarified
+most of the interaction design of these backlog features. The follow-
+ing section presents the backlog features and their respective visual
+mockups.
+Clicking or tapping expands the row/bar, displaying additional
+details, including dosing details and dates and reasons for medica-
+tion changes (Figure 4).
+
+Figure 1. LifeLines medication timeline (1A) overview and (1B) details.
+
+98
+
+Figure 2. Failing rapidly with pencil sketches. See “Bad idea” in left panel.
+
+Figure 3. Medication timeline prototype screenshot – annotated.
+
+99
+
+Selecting a diagnosis in the problem list highlights corresponding
+medications
+in
+the
+timeline.
+In
+Figure
+5,
+the
+diagnosis
+of
+“hypertension” is selected in the problem list, and 3 medications for
+hypertension are highlighted in an accent color, teal. This is called
+“brushing and linking” in the data visualization discipline.33 Associ-
+ating the readily available “therapeutic class” for a medication will
+not be as effective as using the clinician-assigned diagnosis. “The
+physician and patient need to know why this medication has been
+prescribed for this particular patient. Knowing that a drug is a beta-
+blocker (the therapeutic class) is not sufficient, because a beta-
+blocker might be used for any of these diagnoses: hypertension, an-
+gina, coronary artery disease, atrial fibrillation, supraventricular
+arrhythmias, tremor, migraine, and portal hypertension. The thera-
+peutic class will often be meaningless to the patient.”31
+
+We included a static mini-timeline in our interactive table view
+of the medication list, available at http://inspiredehrs.org/medica-
+tion-list/, and shown in Figure 6. This interactive table view allows
+sorting by key columns, and filtering using the search field.
+
+Additional sketches in the Appendix show less refined concepts
+for additional display details or use cases.
+Zooming shows increasing granularity, which could display
+medication adherence gaps, refill events, and under-dosing if
+
+corresponding patient adherence data and pharmacy dispensing data
+were reliably available, sketched in Appendix Figures A1 and A2.
+One example of quantitative measures of medication adherence is
+medication possession ratio (MPR).34
+
+Projecting the timeline into the near future allows display of
+planned complex care transitions where several medication changes
+occur in a relatively short time interval. One example of such a com-
+plex care transition is the peri-procedural period where medications
+may be paused, used in reduced doses for a limited time, tapering
+(up or down) schedules are employed, or new temporary medica-
+tions added (Appendix Figure A3).
+
+We chose to display medication dosage as color intensity in a
+uniform height horizontal bar graph, but alternative displays are
+possible. An alternative timeline using height of the horizontal bar
+to convey dose strength is shown in Appendix Figure A4. It also dis-
+plays examples of adherence gaps, partial adherence, taking more than
+the
+prescribed
+amount, and
+predicted
+duration
+of
+the
+prescription.
+
+EVALUATION OF PROTOTYPE
+
+Methods
+Using group email solicitation, we recruited 23 physicians who prac-
+tice in the ambulatory clinics of University of Missouri Health Care.
+We sampled for heterogeneity in gender, years since residency grad-
+uation, and years using EHRs. Family medicine attending physicians
+formed the sample majority; smaller numbers of internal medicine
+attending physicians also participated.
+The survey used multiple choice questions, asking participants to
+select the best possible answer (or answers). Qualtrics recorded the
+initiation time, time to first click, the time to last click, time to sub-
+mit, and responses for each survey question. Task time was mea-
+sured using the “time to submit,” the time between when a task was
+initiated and when the participant submitted a response. Task cor-
+rectness was determined based on the comparison of the pre-
+determined response and the participant response.
+To derive the questions for the survey, we began by identifying
+common ambulatory clinical scenarios in the management of hyper-
+tension, and which included a need to reference the prior medication
+history in the EHR. We reasoned that clinical scenarios would rely
+too much on the participants’ medical knowledge and experience,
+and thus might confound the analysis of results. Therefore, we de-
+rived discrete, fundamental tasks from these common patient sce-
+narios.
+All data were identical across each visualization—the only differ-
+ence was in the presentation of the data (table vs. timeline formats).
+All medications had the same start date, end date, and dosage his-
+tory. All medications were sorted by descending, alpha-numeric or-
+der. Participants were randomly assigned to either the table or
+timeline formats (resulting in uneven Ns for each item). See
+Appendix Figures 6 and 7.
+
+Results
+The survey was activated a total of 35 times. Of those activations,
+24 participants completed the demographics survey questions
+(Table 3). Of those participants, one participant dropped out and
+for that participant, no responses were collected across any item.
+Of the remaining 23 participants, 2 participants dropped out at
+Item 5, and no responses were collected. One response to Item 1 was
+intentionally removed because the response time was 71035 seconds
+
+Table 2. Features of interactive medication timeline and their asso-
+ciated human factors and design principles
+
+Number
+Feature
+Principles and Rationale
+
+1
+Display overview of all medi-
+cations for selected time on
+a single screen without
+scrolling.
+
+•
+Achieve spatial contiguity
+and reduce demands on
+working memory.28
+
+•
+Allow quick visual
+queries.29
+
+•
+High information density
+for complex patients.
+2
+Default interval is 2 years.
+During ambulatory care visits
+for chronic disease, pro-
+viders need >12-month
+history.
+3
+Medication names display on
+both left and right sides of
+the view area, making it
+easier to identify the name
+for an associated row.
+
+Gestalt principles of proxim-
+ity and alignment.30
+
+4
+Right-hand drug name panel
+also serves as the time
+scrubber, dynamically
+updating drug and dose
+as the user moves the
+scrubber.
+
+System shows state
+dynamically.29
+
+5
+Use monochrome grayscale
+bar graph, where black
+represents maximum daily
+dose for a given clinical in-
+dication (diagnosis). Gray
+is less, lighter is lower.
+
+Intensity corresponds to
+dosage strength.
+
+6
+Longitudinal bar graphs dis-
+play start-stop-change
+dates, dose intensity, and
+gaps in continuity.
+
+Pre-attentive attributes
+(color, shape, length) allow
+rapid visual processing of
+medication dosing and du-
+ration.31
+
+7
+Change the displayed time in-
+terval (zoom in or out)
+with range selector.
+
+Overview ﬁrst, zoom and
+ﬁlter, then details on
+demand.32
+
+100
+
+Figure 4. Medication timeline showing drug details and user comment for selected row.
+
+Figure 5. Brushing with color. Selecting a diagnosis from a list highlights the associated medications in a distinct color, as in right-hand panel.
+
+101
+
+(19.76 hours), 256 times greater than the next longest response
+time. The participant’s remaining item responses did not produce a
+noticeable outlier; and including or excluding these responses did
+not change the outcome significance of the study. Therefore, the
+remaining responses from this participant were included in the final
+model. Determining a successful response required the participant to
+answer the whole question correctly, and partial credit was not ap-
+plied (Table 4).
+
+Discussion
+We expected that the data visualization timeline view would have
+been more accurate than the traditional medication history view.
+We found that physician accuracy increased across all 5 tasks, with
+especially large increases in performance in tasks 2 and 3. The low
+performance in task 5 suggests that some common medication-
+related EHR tasks may be so difficult that specific design considera-
+tions must be made for them to improve performance.
+The timeline performed faster in 4 out of 5 tasks but did not
+reach
+statistical
+significance.
+Since
+these
+observations
+were
+
+Figure 6. Static mini-timeline (next to last column) in the Interactive Table view of the medication list.
+
+Table 3. Demographic characteristics
+
+Characteristic (N ¼ 23)
+N (%)
+
+Gender
+Male
+12 (52%)
+Female
+11 (48%)
+Age group
+24–34 years old
+6 (26%)
+35–44 years old
+4 (17%)
+45–54 years old
+5 (22%)
+55–64 years old
+7 (30%)
+65–74 years old
+1 (4%)
+Computer skill
+Beginner
+1 (4%)
+Intermediate
+18 (78%)
+Expert
+4 (17%)
+Years of experience as a healthcare provider
+0–5 years
+6 (26%)
+6–10 years
+3 (13%)
+11–20 years
+3 (13%)
+21 years or more
+11 (48%)
+
+102
+
+performed in remote unsupervised testing, they may not be reflective
+of real-world usage.
+Data visualization tools such as the medication timeline can take
+advantage of the power and speed of the human brain’s visual proc-
+essing system. Features such as preattentive attributes including color,
+size, shape, and proximity allow users to quickly spot treatment
+changes such as medication dose changes, and to perceive gaps such
+as medication adherence gaps. Data visualization also allows interac-
+tivity and cross-category comparisons. These kinds of more complex
+tasks can be expected to be much faster with data visualization meth-
+ods than with existing EHR user experiences. With the interactivity
+of data visualizations, a user can drill-in to explore any area of inter-
+est such as an individual medication event or a transition in medica-
+tion doses. Being able to visually explore cross-category relationships
+such as those between a medication change and other data such as lab
+results or vital sign (blood pressure and weight) changes allows users
+to postulate causative correlations between these categories. Visually
+correlating a change in lab results after a medication change should
+be much easier than with current EHR display methods.
+
+GENERAL DISCUSSION
+
+Our goal was to produce a prototype example allowing physicians
+to understand a patient’s complex medication list history in a single
+graphical view, thus reducing time, effort, and cognitive load while
+improving task speed and accuracy, thus enhancing safety. The time-
+line was intended for rapid learning and shared use by patient and
+physician, so visual simplicity was paramount. We limited the scope
+to the ambulatory primary care setting of patients with multi-
+morbidity chronic conditions.
+
+The primary audience for our demonstration prototype is the
+community of health IT developer teams, offering clinically inspired
+design examples, with participation from stakeholders from that
+community. Their participation helped root our design recommen-
+dations in the reality of the commercial development environment
+and marketplace. From personal communications, we are aware of
+a handful of vendors who have since pursued or are pursuing medi-
+cation timeline functionality.
+The interactive prototype is released for use free of charge, and
+the code for the prototypes is made available at https://github.com/
+goinvo/EHR/tree/master/timeline under the Apache 2.0 open-source
+license. Our accompanying online guide, “Inspired EHRs: Designing
+for Clinicians,” explains the human factors science and information
+design principles incorporated into this model.
+There are limitations to this design project. Evaluation of this
+timeline was completed using expert reviews from a group of clini-
+cians (physicians, nurses, pharmacists), human factors researchers,
+usability practitioners, and volunteers from the EHR vendor com-
+munity. Our pilot study was performed unsupervised, remotely, and
+had a small number of participants with weak statistical power. Fur-
+ther research is needed to show whether this prototype performs bet-
+ter than existing medication historical information displays. We
+learned from implementation efforts at 1 EHR vendor and 1 client
+organization that there is inconsistent and limited prescription dis-
+pense and adherence data being exchanged or available currently.
+The transmission of e-prescription details is inconsistent across com-
+mercial EHR and pharmacy software products, thus limiting the
+consistent display of prescription instruction detail. Prescribers may
+write imprecise or non-standard dosing instructions, depending on
+the flexibility of the prescribing software. When the data are
+
+Table 4. Task accuracy and task time of table compared to timeline
+
+Task
+
+Table
+Timeline
+Table
+Timeline
+
+N
+Answered
+correctly
+N
+Answered
+correctly
+Mean
+difference
+Mean Time in
+seconds (SD)
+Mean Time
+in seconds (SD)
+Mean time
+difference
+
+1. Identifying current prescription on a medication
+history
+8
+50%
+14
+64%
+þ14%
+44 (22)
+69 (37)
+þ25
+
+“Based on the visualization provided, please identify
+which of the following is not a currently prescribed
+medication.”
+2. Identifying past prescription on a medication history
+12
+17%
+11
+91%
+þ74%
+68 (22)
+50 (17)
+18
+“Based on the visualization provided, please check
+all past prescriptions. Our deﬁnition of ‘past pre-
+scriptions’ includes only medication prescribed AND
+not currently in use.”
+3. Identify the length of time a medication has been pre-
+scribed
+9
+44%
+14
+93%
+þ49%
+22 (8)
+16 (6)
+6
+
+“Based on the visualization provided, how many
+years has Alendronate been prescribed to the
+patient?”
+4. Identify new prescriptions in a given time interval
+10
+50%
+13
+62%
+þ12%
+65 (24)
+30 (12)
+35
+“Based on the visualization, select all new medica-
+tions from the list below prescribed between 2012
+and 2013. New medications are all medications with
+no record of any previous prescription to the
+patient.”
+5. Identify a dosage change in a given time interval
+10
+0%
+11
+18%
+þ18%
+36 (18)
+30 (8)
+6
+“Based on the visualization, identify all medications
+with a dosage change between 2013 and 2014.”
+
+Mean time difference is calculated as timeline minus table value.
+
+103
+
+exchanged from EHR to e-prescribing hub to pharmacy software, or
+make the return trip for a renewal request, the data may undergo
+transformation that introduces new ambiguity. What started the
+journey as discrete data elements, “lisinopril 10 mg; oral tablet; 1
+tablet; 1 time a day,” may get transformed to unstructured text,
+“lisinopril 10 mg; ‘TAKE ONE TABLET DAILY BY MOUTH.’”
+Parsing the mixture of data formats to create a precise timeline dis-
+play can be technically daunting.
+Future efforts should include commercial production of medica-
+tion timelines with our proposed features included or excluded
+based on the workflow it is intended for. Changing the zoom level
+could change the level of detail displayed, making it easier to show
+more details as focus narrows, removing some details or features,
+adding others, and thus maintaining a clean and balanced design.
+Additional features could include cross-category comparisons if dis-
+played inline or adjacent to time-based displays of other clinical infor-
+mation such as lab results, blood pressure, and weight, thus allowing
+quick, mental connections to relevant data with much less cognitive
+effort. Our prototype makes use of different shades of gray to convey
+dose strengths, but other techniques are worth considering and
+researching to validate speed, accuracy, and clarity of prescription
+and adherence data. Different considerations must be made when de-
+signing for the various tasks a provider performs at any given time.
+Whether this tool can thrive in the commercial HIT marketplace
+remains to be seen. The SMART (Substitutable Medical Apps and
+Reusable Technology) project (https://smarthealthit.org) harnesses
+the FHIR (Fast Healthcare Interoperability Resources) from HL7 to
+create open solutions and tools for innovators to build applications
+that can connect to systems using the FHIR platform. Using this
+platform or FHIR standards, non-commercial or commercial devel-
+opers could create a medication timeline app that could be deployed
+across any compatible EHR.
+
+CONCLUSION
+
+We have presented a design aimed at improving physician under-
+standing of a patient’s complex medication history, using a visual-
+ized medication timeline. The design was produced via iterative,
+rapid prototyping, with consistent feedback from several stake-
+holder groups. We believe that such a design would reduce the tem-
+poral and cognitive load placed on physicians when evaluating a
+patient’s medication history, leading to improved and safer care.

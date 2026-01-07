@@ -1,0 +1,470 @@
+Title: 
+
+User-centred design for developing e-Health system for renal patients at home 
+
+(AppNephro) 
+
+Authors:   
+
+Jorge Calvillo-Arbizu1,2, Laura M. Roa-Romero1,2, Miguel A. Estudillo-Valderrama1, 
+
+Mercedes Salgueira-Lazo2,3, Nuria Aresté Fosalba3, Nieves L. del-Castillo-Rodríguez4, 
+
+Fayna González-Cabrera5, Silvia Marrero-Robayna5, Virginia López-de-la-Manzana6, 
+
+Isabel Román-Martínez1,7    
+
+1. Grupo de Ingeniería Biomédica, Universidad de Sevilla, Sevilla, 41092, Spain  
+
+2. Centro de Investigación Biomédica en Red en Bioingeniería, Biomateriales y 
+
+Nanomedicina (CIBER-BBN), Spain 
+
+3. Servicio de Nefrología. Hospital Universitario Virgen Macarena. Sevilla, Spain. 
+
+4. Servicio de Nefrologia. Hospital Universitario Nuestra Señora de Candelaria. Santa 
+
+Cruz de Tenerife, Spain. 
+
+5. Servicio de Nefrología. Hospital Universitario Doctor Negrín. Las Palmas de Gran 
+
+Canaria, Spain. 
+
+6. Servicio de Nefrología. Hospital Clínico San Carlos. Madrid, Spain. 
+
+7. Departamento de Telemática, Universidad de Sevilla, Spain. 
+
+2. Materials and methods 
+
+2.1. Study case: e-Health system for renal patients at home 
+
+The system e-Nefro is the result of a multicentre research project between the University of 
+
+Sevilla and five Spanish hospitals. Its objective is easing the monitoring of renal patients at 
+
+home through an e-Health system adaptable to different kind of users and scenarios [18]. 
+
+One of the first activities was the specification of the target audiences (by adopting the code of 
+
+practice of ISO/IEC 30071-1 [19]), including disabled and older users alongside non-disabled 
+
+users. For the analysis of user accessibility needs of the target audiences in appropriate contexts 
+
+of use, semi-structured interviews with nephrologists were performed. In addition, patients and 
+
+caregivers were consulted through specific questionnaires to understand their experiences in the 
+
+hospitals. Several accessibility standards were analysed for extracting design requirements of 
+
+user interfaces for people with limitations. For example, the standard ISO 29138 [20] on needs
+
+of users with disabilities, the Spanish standard UNE 139803 [21] for accessible web content 
+
+(inspired by the Web Content Accessibility Guidelines, WCAG 2.0 [22]) and the standard ISO 
+
+9241 [23][24] for tactile devices.  
+
+A methodological approach based on user centred design [25] and agile development process 
+
+practices was adopted [26]. Involvement of users in all stages of design and development eases 
+
+the product final to be flexible enough to adapt itself to the needs, uses, and preferences of each 
+
+user no matter his/her characteristics (i.e., accessibility). A continuous evaluation based on user 
+
+during design and development stages were also included. 
+
+3. Results 
+
+3.1. User identification and requirements 
+
+Fig. 1 shows target audiences identified. Although patient and clinician are the main end-users 
+
+of any e-Health system, formal/informal caregiver and nurse may also play relevant roles in 
+
+remote healthcare, and their requirements must to be considered. Furthermore, technology 
+
+literacy and access may influence the deployment of solutions and acceptance by patients and 
+
+caregivers. So, individuals should be divided in digital and non-digital sub-populations. 
+
+Semi-structured interviews and questionnaires were performed to health professionals, patients 
+
+and caregivers with the objective of understanding their real needs and translating them to 
+
+requirements [18]. Table 1 shows technological specifications and initial requirements extracted 
+
+from users to design the e-Health system. Besides requirements of each kind of end-user, any 
+
+user may present impairments and disabilities that hinder the effective usability of non-adapted 
+
+technology systems. Thus, accessibility requirements must be considered in parallel for any 
+
+kind of user, and the standards referred above are a good starting point. In addition, standards 
+
+ease the extension and translation of the final product to other scenarios and countries.  
+
+Requirements served for the conception of an initial system design and the development of a 
+
+low-fidelity prototype (by adopting an iterative process of design and incremental development 
+
+based on periodic revisions). User validation of this prototype allowed assessing usability and 
+
+functionality of the system e-Nefro, and several issues raised in this stage.
+
+Fig. 1. Target audience of the system e-Nefro and developed modules devoted to each group 
+
+Two main usability issues of the low-fidelity prototype made hard the completion of tasks (such 
+
+as access to monitoring records or introduce measures of physiological variables) and 
+
+discouraged to any user: an abrupt learning curve and an excessive navigation across different 
+
+screens to exploit system functionality. Both patients and professionals unanimously 
+
+emphasized the need of simplifying the navigation through the system and making it as intuitive 
+
+as possible. Furthermore, most patients and clinicians were interested in being provided with a 
+
+mobile app devoted to the system e-Nefro as alternative access method.  
+
+This identification of requirements led to new development iterations, resulting in a high-level 
+
+prototype of the e-Nefro system consisting in six modules (Fig. 1): (1) web and (2) mobile app 
+
+for digital patients/caregivers (i.e., AppNephro), (3) access module based on interactive voice 
+
+response (IVR) for non-digital patients/caregivers, (4) web and (5) mobile app for clinicians, 
+
+and (6) web for nurses. All modules work together to provide a shared service. Thus, no matter
+
+what module is used to access to the system or to store/retrieve information since data of 
+
+patients and care plans is stored in a shared database.   
+
+Table 1. Initial user requirements and technological specifications 
+
+3.2. The system e-Nefro: e-Health system adapted to users and contexts of use 
+
+A. e-Nefro for digital patients/caregivers 
+
+Digital patients and caregivers can access the system e-Nefro through a web application or an 
+
+Android-based app (AppNephro). Both channels allow a patient (or his/her caregiver) to check 
+
+pending activities on his/her treatment plan (i.e., medication intake, vital signs measurement, 
+
+medical appointments…) and to introduce information about its performance. In addition, 
+
+he/she can inform about risk events or contact his/her health carer. The web access provides a 
+
+friendly interface with some elements that ease navigation (Fig. 2). For example, when the 
+
+patient logs in his/her pending activities are showed at the entrance screen with no need to 
+
+search for them. Furthermore, the side agenda allows consulting activities to perform in 
+
+previous and future days, shows next medical encounters, and warns if any monitoring data has 
+
+not been introduced in previous days.
+
+Fig. 2. Screen for the follow-up of patient’s care plan 
+
+The mobile access is provided by the AppNephro, an Android-based application where 
+
+accessibility and usability are addressed through the inclusion of the following capabilities: (1) 
+
+interface customization regarding user needs; (2) remote change of accessibility settings by an 
+
+administrator, if user needs help; and (3) the possibility of making calls and managing contact 
+
+list in an accessible environment. Fig. 3 shows various screenshots of the AppNephro. This has 
+
+several configuration options to customize the interface to user preferences and limitations. 
+
+Accessibility options chosen are stored in the application and automatically incorporated into 
+
+the interface during the execution of patient’s care plan. 
+
+ 
+
+Fig. 3. Screenshots of AppNephro (left to right: setting menu, home screen, and temperature input)
+
+AppNephro validation was carried out iteratively and consisted of two parts: accessibility test 
+
+and usability test. The former focused on evaluating the customization options, and the latter 
+
+sought to assess the ease of use and performance of the care plan, once AppNephro was 
+
+configured according to user preferences. A controlled sample of users was involved in the 
+
+preliminary assessment, covering different ages, vision and hearing limitations, and 
+
+technological skills (Table 2). The realization of these tests was repeated during the design and 
+
+implementation of AppNephro until at least 75% of average rating in both phases, resulting in 
+
+the first prototype of AppNephro shown in Fig. 3. The most relevant findings obtained during 
+
+the validation process are described below. 
+
+Table 2. Characteristics of participants in assessment tests 
+
+Man 
+70 
+Visual 
+Low 
+
+Woman 
+66 
+Visual and Auditory 
+Null 
+
+Man 
+61 
+Visual 
+Medium-Low 
+
+Woman 
+55 
+Visual, difficulties of understanding 
+Low-Null 
+
+Firstly, a practical presentation was performed for each participant in the test of how to adjust 
+
+the application to suit his/her personal preferences, and how to access to general functionalities 
+
+of the phone (e.g. making calls or managing contacts). Then the participant was asked to 
+
+undertake by itself a number of configuration changes such as changing the orientation of the 
+
+screen, adjusting text size or selecting colours.  
+
+After performing these tasks, participants completed an evaluation questionnaire including 
+
+questions pondering both simplicity of use as impressions of users in its management. The result 
+
+of this first test was successful, and the consensus was unanimous in assessing the accessibility 
+
+of the application (Table 3). These results are consistent with the design methodology adopted 
+
+that conforms international standards of e-accessibility, actively involved users in the process of 
+
+design and development, as well as specifying the accessibility requirements the application. 
+
+Table 3. Sample of questionnaire of AppNephro customization assessment
+
+Do you consider it is easy to… 
+
+…modify customizable settings? 
+
+ 
+
+Yes (75%) 
+
+ 
+
+No (0%) 
+
+ 
+
+Only a few (25%) 
+
+… make calls? 
+Yes (100%) 
+No (0%) 
+I don’t know (0%) 
+
+… see, add, edit or delete contacts? 
+Yes (100%) 
+No (0%) 
+I don’t know (0%) 
+
+… initiate the care plan? 
+Yes (100%) 
+No (0%) 
+I don’t know (0%) 
+
+In general, do you consider the smart device is easy 
+
+to use? 
+
+Very easy (75%) 
+Easy (25%) 
+
+Would you know use AppNephro without prior help? 
+Yes: 25% 
+No: 0% 
+I don’t know: 75% 
+
+Do you consider AppNephro is accessible for people 
+
+with limitations? 
+
+Yes:100% 
+No: 0% 
+I don’t know: 0% 
+
+A second validation stage took place on the same sample of users and was based on 
+
+accessibility settings made in the previous step. However, it is worthy to mention that the 
+
+configuration may be performed remotely by the administrator, for greater patient comfort. 
+
+Since the previous survey concluded that the participants showed hesitant to test AppNephro 
+
+without help, this stage began by performing a practical showing. Thus, it was explained how to 
+
+enter the physiological parameters requested by the care plan and symptoms. Then the 
+
+participants were required to perform the following tasks: launching the app, registering a set of 
+
+physiological variables, introducing symptom "fever", and finally making a video call.  
+
+After completion of the tests, participants performed a more extensive questionnaire, addressing 
+
+the most relevant elements of the application relating to the care plan. The results were positive, 
+
+with an acceptance rate above 90%, but all participants were opposed to replace face medical 
+
+consultations by the application. This confirms the suitability of harmonizing m-Health 
+
+solutions as AppNephro with standard medical practices in order to complement healthcare 
+
+delivery.  
+
+B. e-Nefro for non-digital patients/caregivers 
+
+Patients with low technology literacy or access, low economic level, or living in remote 
+
+geographic areas are often excluded as potential recipient of brand new healthcare approaches 
+
+based on technology. Non-digital end-users should be considered as a population with specific
+
+requirements. Furthermore, chronic kidney disease has a high incidence on older and diabetic 
+
+populations, what are often technology reluctant audiences. 
+
+The system e-Nefro provides an access module for patients based on telephone network. 
+
+Patients or caregivers introduce monitoring data through the telephone where the only interface 
+
+is the physical keyboard. A system of Interactive Voice Response (IVR) guides users through 
+
+the process. The IVR system can receive a call and interacting with the patient through voice 
+
+recordings and the recognition of simple responses, such as "yes", " no" or other. It is an 
+
+automated interactive response system, aimed at delivering or capturing information through the 
+
+telephone, allowing access to information services, purchase, reservations and other operations, 
+
+including its use in health services [27][28]. Fig. 4 shows the architecture of the IVR module. A 
+
+calendar submodule allows to recover appointments and reminders for the patient from e-Nefro 
+
+and transform them into voice to call the patient when the programmed date comes.  
+
+ 
+Fig. 4. Architecture of the e-Nefro IVR module for non-digital patients and caregivers 
+
+C. e-Nefro for health professionals 
+
+Clinicians can access the system e-Nefro through the main web application or an Android-based 
+
+app. The web application is analogous to patients’ but with different functionality. Clinicians
+
+can modify the care plan of patients, monitor their evolution and contact them. In the validation 
+
+stage, health professionals stated out the simplicity of this prototype to create registers into the 
+
+patient’s care plan and to access to planned encounters. The medical encounter screen includes 
+
+accesses to all the information that can be of interest in the encounter such as the patient’s care 
+
+plan, clinical registries, incidences, and personal message exchanged between the patient and 
+
+the professional (Fig. 5).  
+
+ 
+Fig. 5. Medical encounter screen in the e-Nefro web application 
+
+Information generated during the medical encounter can be included in three different fields: 
+
+one shared with the patient (who can consult it afterwards to clear the conclusions of the 
+
+encounter and indications of his/her clinicians), one for the clinicians’ observations (with access 
+
+limited to medical doctors), and another one for collecting nurses’ observations (that can be 
+
+checked by any health professional).  The mobile app for clinicians was developed to serve as 
+
+complementary access methods for the remote follow-up by professionals (Fig. 6).  
+
+Finally, nurses are provided with a web application with limited functionality. They can make 
+
+appointments, review monitoring data of patients and contact them, meanwhile the modification 
+
+of the patient care plan and generation of reports are out of their scope.
+
+Fig. 1. Screenshots of e-Nefro app for clinicians (left to right: main menu, patient menu, and patient data) 
+
+4. Discussion 
+
+User involvement in design and evaluation stages is common in the health domain, but user 
+
+contributions are often dismissed in the implementation process what results in systems facing 
+
+user refusal since they are not aligned enough to the healthcare delivery or present a limited 
+
+usability. Furthermore, most e-Health systems are used by different kind of users with separate 
+
+needs and/or roles (e.g., nurses and clinicians or patients and caregivers) what leads to the 
+
+imperative of considering their requirements separately.  
+
+As drawback, user involvement in all the development stages of an e-health system increases 
+
+the complexity of the process. Working with a multidisciplinary team inevitably slows down 
+
+system development due to the necessity of reaching a common understanding. A further issue 
+
+is the continuous reconciliation between desires, preferences and needs of different kind of users 
+
+and technology that imposes limits on the cost-efficiency of the product. Involving users 
+
+requires to agree on every decision on system development by establishing balances among user 
+
+needs and desires, technology possibilities and costs. Meanwhile avoiding users in such 
+
+technological decisions results in increasing the refusal rate of the final product, involving them 
+
+requires an additional effort to close them to technology reality. 
+
+Currently, the system e-Nefro has been deployed in five Spanish hospitals to perform a pilot in 
+
+real settings. The objective of this pilot is evaluating how an e-health system for remote
+
+monitoring of renal patients at home can increase the quality of life and commodity of patients 
+
+meanwhile reduce costs for displacements and hospital stays.   
+
+5. Conclusions 
+
+There is an increasing understanding of the relevance of adopting user-centred design and 
+
+development techniques in the health sector. However, users are often assumed to be a 
+
+homogeneous group with the same set of requirements. In this work, the study case of an e-
+
+Health system for renal patients at home has been presented, where users are categorized in four 
+
+different groups (i.e., digital patients/caregivers, non-digital patients/caregivers, clinicians and 
+
+nurse). User requirements of each group have been analysed and different modules have been 
+
+developed to coping with them, resulting in a multi-faceted e-Health system currently in 
+
+piloting. Identification and continuous involvement of users allow their needs to be properly 
+
+understood and addressed by technology, raising user acceptance of the final product.

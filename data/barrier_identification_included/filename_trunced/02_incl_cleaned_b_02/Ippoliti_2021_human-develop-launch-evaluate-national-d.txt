@@ -1,0 +1,1087 @@
+FIELD ACTION REPORT
+
+Using Human-Centered Design to Develop, Launch, and
+Evaluate a National Digital Health Platform to Improve
+Reproductive Health for Rwandan Youth
+
+Nicole Ippoliti,a Mireille Sekamana,a Laura Baringer,a Rebecca Hopea
+
+DESIGNING FOR DIGITAL WITH
+YOUTH
+Between 2016 and 2019, CyberRwanda was devel-
+oped using a youth-driven and youth-led design
+process with 1,074 Rwandan youth, caregivers,
+teachers, health care providers, and government sta-
+keholders (Figure).
+The platform’s intended outcomes for adoles-
+cents aged 12–19 years were to:
+
+1.
+Improve knowledge: Help adolescents gain
+employment skills, set future goals, and learn
+about FP/RH in a private, safe space
+
+2.
+Improve access: Support adolescents’ ability
+to access FP/RH products and services by
+strengthening linkages to services
+
+3.
+Improve quality: Improve providers’ knowl-
+edge on FP/RH and address provider bias to
+improve service quality for youth
+
+We describe the methods used to design
+CyberRwanda
+and
+the
+populations
+engaged
+
+throughout the phases of design research, proto-
+typing of initial and refined concepts, product and
+content development, pilot, and adaptive imple-
+mentation and evaluation. Throughout the design
+and implementation process from 2016 to 2021,
+our team moved from youth-centered design to
+youth-driven, to a youth-led approach today
+(Table 1 provides definitions of terms), where
+youth members of the team led decision making
+on intervention design. This transition from youth-
+centered to youth-driven and youth-led approaches
+was supported through dedicated training of youth
+members in the following: how to conduct each
+phase of the HCD process, conducting user experi-
+ence testing of digital prototypes, and ensuring the
+safeguarding and protection of youth participants.
+Additionally, all staff members (youth and adult)
+were trained in youth-driven or youth-led design
+principles. This includes how to recognize and ad-
+dress the power imbalances that exist between adult
+and youth team members and how to create
+
+FIGURE. Overview of Phases of HCD Phases, Data Collection Objectives, and Methods Throughout the Design, Pilot, and
+Implementation of the CyberRwanda Project
+
+Abbreviations: HCD, human-centered design; RCT, randomized controlled trial.
+
+Throughout the
+design and
+implementation
+process, our team
+moved from
+youth-centered
+design, to youth-
+driven, to a youth-
+led approach.
+
+S247
+
+opportunities for youth members to lead activities
+and/or cofacilitate with appropriate support and
+guidance.
+
+Design Research
+Design research is the primary stage in the HCD
+process that leverages qualitative and observa-
+tional data to understand human behavior, latent
+needs, and the environmental factors or social
+norms that might contribute to the design of an in-
+tervention. The team began the design research
+phase (Table 2) with the key question of how to
+leverage technology to address 2 pressing and
+inextricably linked issues facing young people:
+teen
+pregnancy
+and
+unemployment,
+with
+young people as the primary users. This phase
+consisted of interactive codesign workshops,
+focus group discussions, and in-depth inter-
+views with young people, health care providers
+in both public and private facilities and phar-
+macies,
+parents,
+government
+officials,
+and
+other critical stakeholders. Interviews were
+
+conducted by Rwandan youth designers, in
+Kinyarwanda with simultaneous English trans-
+lation. During the HCD process, participants
+were purposely sampled in 8 districts (Gasabo,
+Nyarugenge, Kicukiro, Nyagatare, Ruhango,
+Huye, Musanze, Rwamagana) in
+rural, urban,
+and peri-urban contexts, to ensure diverse represen-
+tation regarding socioeconomic status, gender,
+age, educational status, and social vulnerabilities
+(participants included former sex workers, insecure-
+ly housed youth, and domestic workers). A literature
+and policy review and landscape analysis of existing
+digital and youth-centered programs was also con-
+ducted to ensure that CyberRwanda’s focus was
+non-duplicative and aligned with national priorities.
+The design research phase enabled the team to
+rapidly assess the desirability of a digital interven-
+tion and potential barriers to access for urban/
+peri-urban youth. It also revealed young peoples’
+and providers’ beliefs and behavioral drivers and
+barriers as they related to FP/RH. Journey map-
+ping was used to understand topics and themes
+
+TABLE 2. Selected Design Research Methods Used for CyberRwanda
+
+a Personas are adapted from World Health Organization (WHO). Digital Implementation Investment Guide (DIIG): Integrating Digital Interventions Into Health
+Programmes. WHO; 2020. https://apps.who.int/iris/rest/bitstreams/1303132/retrieve.
+
+In the design
+research phase,
+journey mapping
+was used to
+understand topics
+and themes that
+youth found most
+interesting.
+
+S248
+
+that youth found most interesting (Table 2).
+Young people mapped their various life goals and
+important milestones and by when they hoped to
+achieve them. The youth then listed resources and
+information they would need to achieve those
+goals at the desired age. This process provided im-
+portant insights into a young person’s lived reali-
+ty; mapping their everyday experiences, goals,
+motivations, and challenges enabled the design
+team to develop prototypes that integrated content
+and features that ultimately resonated with what
+young people found to be desirable and inspiration-
+al. Research with parents, teachers, and health care
+providers revealed how to develop prototypes that
+would be socially accepted and aligned with national
+priorities, revealed appropriate “entry points” when
+discussing sensitive topics, and unearthed pharma-
+cists as potential secondary users.
+
+Prototyping
+Using the learnings from the design research phase,
+multiple rough prototypes were tested with young
+people and pharmacists. Rough prototypes are
+
+quick, tangible, low-fidelity versions of a product or
+intervention used to gather rapid user feedback on
+the design, content, delivery channel, and experi-
+ence. Table 3 shows selected methods used to share
+prototypes with participants and the methods of eli-
+citing feedback. These rough prototypes not only en-
+abled the team to test and iterate on ideas quickly
+and cheaply but also signaled to young people and
+pharmacists that they could provide honest feed-
+back, even if it meant dramatically changing the ap-
+proach. When refined and polished prototypes are
+presented, participants are more likely to hold back
+critical feedback if they believe much of the design is
+already fixed.22
+
+Prototyping was conducted in 2 phases to en-
+able the team to iterate ideas and develop increas-
+ingly high-fidelity prototypes based on learnings
+from the previous phase. Prototypes were tested
+and assessed based on predefined criteria that
+included desirability for participants, cultural ac-
+ceptability, and feasibility. We used research ques-
+tions to assess these factors during the prototyping
+phase and the subsequent ways in which they
+
+Rough prototype of Shop interface. © 2018 Caroline Wong/YLabs
+
+S249
+
+informed pivot points for the intervention de-
+sign (Box 1).
+
+Product and Content Development Through
+User Testing
+Building on lessons from the previous stages of
+work, the team proceeded to develop the final
+digital intervention design. Although at this stage
+the intervention was more fully refined, addi-
+tional testing and iteration with young people
+and pharmacists were conducted during all stages
+of content development, web application user
+experience design, service design development,
+and visual design. Product refinement and testing
+during this phase enabled the team to improve
+user
+experience
+and
+identify
+any
+potential
+
+barriers to use through testing the web app flow
+and function, brand, look and feel.
+To develop the narrative and factual content in
+preparation for the RCT, a team comprised a nar-
+rative content writer, social norm and FP experts,
+and a behavioral scientist mapped the behavioral
+outcomes to the theory of planned behavior. The
+team determined how best to communicate key
+messages throughout the content based on an in-
+tervention mapping protocol for integrating theo-
+ry and evidence-based behavior change methods
+into an intervention.23
+
+Pilot
+In preparation for the RCT launch across 60 schools
+and 75 pharmacies in 8 districts, an 8-week pilot
+
+TABLE 3. Prototyping Methods Used to Develop CyberRwanda
+
+Methods of sharing prototypes used
+Description
+
+Paper prototyping: used to develop the initial design platform
+and subsequent iterations, content, and marketing materials
+(content, UI/UX, social media marketing strategy, promotional
+materials)
+
+Paper and cardboard prototypes are used or co-created to create a quick but
+interactive physical representation of the product or experience.
+
+Role play: Used in prototyping the end-to-end ordering
+experience
+Participants are assigned certain scenarios and roles to help designers under-
+stand the interactions through observing the improvised scenario-specific
+performances.
+
+Storyboarding: Used in prototyping workshops with pharma-
+cists to walk through the potential value of the platform and pain
+points
+
+Drawings or images displayed in sequence for pre-visualizing a new experience
+or service (e.g., a clinic visit).
+
+Low- and high-fidelity interactive prototyping/digital prototyp-
+ing: Used in the final stages of prototyping of the digital
+platform
+
+Participants interact with an interactive prototype that has the look and feel of
+the final product.
+
+“Wizard of Oz”: used to test a motorcycle taxi delivery service
+prototype
+Participants interact with a digital product that appears to be computer-driven,
+when in fact responses are human-controlled. This method may intersect with
+others listed here.
+
+Methods of eliciting feedback and preferences
+Purpose
+
+Ideation and co-creation: used to design and iterate on the cast
+of CyberRwanda webcomic characters, as well as developing
+storyline and content)
+
+Participants generate entirely or partly new ideas for prototypes to test based on
+a design brief.
+
+Elicitation: commonly used at the end of a prototyping session
+after showing multiple concepts
+Asking the participants directly what improvements can be made to the proto-
+types to better reflect their needs and desires, what they prefer, and why.
+
+Ranking: used to rank preferred channels of communication for
+young people to inform CyberRwanda marketing (e.g., posters,
+radio ads/shows, referral cards, and SMS alerts)
+
+Participants vote and/or rank their preferred prototypes and top concerns.
+
+Pre-/post-survey: this was used to evaluate knowledge im-
+provement after interacting with an early prototype
+Use surveys to evaluate change in specific indicators pre- and post-interaction
+with prototypes. The level of rigor may vary depending on the needs and the
+phase of the project. In early stages when testing low-fidelity, “rough” proto-
+types, these may help in rapidly deciding on prototype selection, but the sam-
+ple size may not be powered appropriately. During the pilot, and
+implementation, and sometimes for live prototyping, an adequately powered
+sample is used.
+
+S250
+
+was conducted to finalize service design and imple-
+mentation models, baseline data collection tools,
+and training. The pilot, conducted across 4 schools,
+1 youth center, and 8 pharmacies, enabled the
+team to test every component of the web app
+and implementation models before a large-scale
+launch. Through post-pilot in-depth interviews
+and focus groups with 158 stakeholders and stu-
+dents, data from Google Analytics, and pilot base-
+line test data, the team gained critical learning and
+iterated appropriately. Learning from the pilot in-
+formed the need to provide more intervention
+touch points for pharmacists and pharmacy staff as
+primary users, to increase the number of tablets
+provided at each school, to refine the school re-
+cruitment and sensitization strategy, and to im-
+prove the user experience of the shop and the site
+as a whole (outlined in the Results section).
+
+Adaptive Implementation and Evaluation
+CyberRwanda is entering into a 2-year implemen-
+tation and evaluation phase, in which the same
+HCD methodology used to design CyberRwanda
+will be applied as the team iterates the design of
+the web app and adds features and content. This
+will include working with young people to devel-
+op all new narrative content and validating it be-
+fore it is finalized, analyzing data generated by
+Google Analytics to understand which pages and
+content young people respond to the most, con-
+ducting focus group discussions with youth and
+teachers on additional topics and features that
+are needed, and working with parents and other
+stakeholders to support usage of CyberRwanda in
+schools and at home. From 2018 to now, the team
+continues to use HCD to iterate, test, and evolve
+CyberRwanda’s
+product
+and
+implementation
+
+BOX 1. Research Questions Used to Develop Prototypes of CyberRwanda
+
+Do the themes and tone of the educational content resonate with young people?
+Our initial prototypes for youth and providers included a virtual nurse/educator that answered questions through real-life stories.
+Through prototyping this idea with young people, they shared a preference for combining information about future planning and em-
+ployment with the health-focused content. Parents, who reported concerns about their children being exposed to the often-taboo topic of
+family planning (FP)/reproductive health (RH), responded positively to prototypes presenting CyberRwanda as a guide to future health
+success, integrating employment-related content. Therefore, the final CyberRwanda curriculum was changed to reflect these prefer-
+ences. The content on CyberRwanda today contains RH and FP content but also integrates other key aspects that young people care
+about, such as finding a job, goal setting, and economic empowerment. The content role models conversations between young people
+and parents, between parents, and between young people and providers and provides examples of how to navigate conversations on
+sensitive topics.
+
+How do we ensure accessibility and affordability through the delivery of the CyberRwanda program via various
+digital channels (i.e., SMS, native app, etc.)?
+Via focus groups and interviews, the team carefully mapped young people’s access to and use of different digital delivery channels such
+as personal or shared mobile devices and use of different social media and printed media channels. Through this research and low-
+fidelity prototyping (Table 3), youth expressed that they rarely download native apps and had concerns about the costs of data and
+memory use associated with using a native app. Furthermore, young people shared that they were using computer labs at the youth
+center to look for jobs and access information through online resources. They wanted CyberRwanda to be among the resources they
+could easily access using those computers. Therefore, the team pivoted the design to a web app that could be more readily accessed
+on any phone, tablet, or computer. This finding also expanded the implementation model to focus on loading CyberRwanda on tablets
+in youth centers along with schools. However, some schools and youth centers are in areas where Internet connectivity is not reliable,
+which delays the loading of content for users. As a backup, the team also developed a native app that is installed on tablets at schools
+and youth centers. With the native app, the youth at the schools and youth centers can access CyberRwanda content offline without
+needing to rely on the Internet.
+
+What would encourage young people to provide accurate information when accessing over-the-counter contraceptive
+methods?
+During design research, pharmacists expressed concerns about young people not honestly answering medically relevant questions when aiming to
+purchase contraceptive products. Young people were concerned about their privacy when requesting services in front of other customers. Youth
+reported pretending to purchase products for someone else to avoid judgment and potentially uncomfortable questions. In turn, pharmacy staff
+had concerns that young people were purchasing products without the necessary information to use them safely.
+Initial prototypes were developed to explore how privacy might be improved in pharmacy settings. Initially, a “screener” survey prototype was
+explored. Upon arrival, the pharmacy staff directed young people to a paper survey including all medically relevant questions. Young people
+were concerned that other customers would be able to view private details while they were completing the form. Using the learnings from this
+prototype, the shop portion of the CyberRwanda platform now includes an online questionnaire with medically relevant questions that the user
+completes before purchasing a product. Depending on their answers, the platform allows them to proceed with the order or suggests a better
+alternative.
+
+S251
+
+model, with the participation of an additional 400
+stakeholders.
+Throughout the design and adaptive imple-
+mentation process, the team prioritized several spe-
+cial considerations when applying HCD approaches
+to designing with youth (Box 2).
+
+RESULTS
+From 2016 to the present, more than 1,000 Rwandan
+youth, caregivers, teachers, health care providers,
+and government stakeholders have been en-
+gaged
+in
+the
+design
+and
+evolution
+of
+CyberRwanda to answer the question, “How
+might we leverage technology to address teen
+pregnancy and unemployment among urban
+youth?” The HCD process resulted in a digital
+behavior change intervention designed with 2
+main users in mind: urban and peri-urban
+young people and pharmacy staff (nurses and
+head pharmacists).
+
+For young people, the web and future native
+app includes 3 sections:
+
+1.
+Stories. Interactive behavior change web-
+comic series, with stories featuring a cast of
+characters designed with young people.
+
+2.
+Learn. A robust library of young people’s pri-
+ority questions, with more than 200 (and
+growing) frequently asked questions and a di-
+rectory to help youth locate both public and
+private health care facilities and pharmacies
+in their area.
+
+3.
+Shop. Young people can discreetly and pri-
+vately order, purchase, and pick up certain
+pharmaceuticals and other health products at
+the CyberRwanda pharmacy of their choice.
+Location and pricing are transparent on the
+site.
+
+CyberRwanda will be available to participating
+schools and youth centers where the intervention
+
+CyberRwanda web app loaded on a tablet. © 2020 Oscar Muhire/AfricaMile
+
+The HCD process
+resulted in a
+digital behavior
+change
+intervention
+designed with
+2 main users in
+mind: urban and
+peri-urban young
+people and
+pharmacy staff.
+
+S252
+
+is made available on online tablets. Youth may also
+access CyberRwanda on their personal devices and
+school computers, where available.
+For pharmacy staff, CyberRwanda is building a
+network of private pharmacies to support the provi-
+sion of high-quality, youth-friendly care. Pharmacies
+who join this network have access to:
+
+
+Training: In-person and virtual training to
+CyberRwanda pharmacy staff. The 1-day in-
+person training for either the staff nurse or phar-
+macists covers key topics such as youth-friendly
+service provision, FP methods, and how to use
+the CyberRwanda platform and pharmacy por-
+tal. Providers who attend the CyberRwanda
+training will receive continuing professional de-
+velopment credits through accreditation by the
+National Pharmacy Council. A more condensed
+accredited version of the training is available vir-
+tually for all other pharmacy staff.
+
+
+Portal: Pharmacies access the online Cyber
+Rwanda pharmacy portal that enables them to
+add and update health products and pricing
+online as part of the Shop. When youth order
+products from the pharmacy of their choice,
+pharmacy staff can build relationships with
+young people in their communities.
+
+
+Additional support: The CyberRwanda team
+provides weekly support to pharmacies to en-
+sure that they can use the portal and receive
+orders and to identify additional training areas
+and needs.
+
+Implementation will be accompanied by a
+2-year impact evaluation, consisting of a 3-arm
+RCT in schools, serial cross-sectional study in
+youth centers, qualitative studies, and a cost-
+effectiveness evaluation across 60 schools and
+9 youth centers in 8 districts in Rwanda (sample
+at baseline n=6,082; 2,953 male; 3,129 female).6
+
+The 3 arms of the RCT are: (1) “self-service” mod-
+el: schools will be provided with tablets, a hotspot,
+and trained school ambassadors who promote
+CyberRwanda; (2) “facilitated” model: schools
+receive the same as the self-service model, plus
+structured activities held in a CyberRwanda club,
+where trained peers support youth to explore
+CyberRwanda content in a group setting with dis-
+cussion and reflection; (3) control: schools without
+any form of the intervention. In addition to being
+implemented in the schools participating in the RCT,
+the self-service model will also be implemented in
+9district-levelyouthcentersand4 pilot schools,total-
+ing an additional 13 implementation sites.
+
+Table 4 shows key findings during the design
+process and the resulting major changes that
+were made to the intervention design. Using HCD
+as an end-to-end approach resulted in several crit-
+ical process learnings that were foundational to
+the
+eventual
+design
+and
+implementation
+of
+CyberRwanda.
+
+Expanding the Audience of Focus
+CyberRwanda’s original demographic focused on
+adolescent girls. However, design research sessions
+
+BOX 2. Methods Used to Safely Design With Youth
+
+Training youth designers. Using a predominantly youth-led or youth-driven approach (Table 1), young Rwandans were trained as youth
+researchers to conduct human-centered design (HCD) sessions and most sessions, including user testing and development of all content, were
+led by youth. Trained youth designers were compensated in line with national salary benchmarks and not expected to volunteer their services for
+free.
+
+Creating safe spaces. The design team used multiple techniques to support the development of a safe space for youth to engage by incorpo-
+rating principles of trauma-informed care and led icebreaker activities designed to address the inherent power differential between researcher
+and participants. Less taboo topics were leveraged as “gateway” activities, and the team took steps to ensure that the session was valuable to youth
+by providing activities of interest and use to them (such as follow-up question and answer sessions). All young people were compensated for their
+time and participation.
+
+Ensuring comprehensive safeguarding protocols. Several precautions were taken to ensure that child and youth safeguarding mea-
+sures were in place. All staff were background checked and trained on child protection and safeguarding and followed robust child protection
+policies. Staff never conducted sessions alone with young people.
+
+Conducting comprehensive risk mitigation assessments. Sensitivities and stigma surrounding reproductive health means prototyping
+with youth could potentially pose a social or safeguarding risk to them. Risk analysis and mitigation planning were conducted before prototyping,
+and prototypes were also tested with parents, teachers, and community leaders for acceptability and to help inform risk estimation before the pilot.
+
+Ensuring ethical use of participant images and data. All young people provided written consent or assent with adult consent for their
+participation in the HCD process. Images were only taken and/or used with written consent from the young person. No images of youths aged
+younger than 18 years were used in program materials.
+
+S253
+
+revealed that young men had limited knowl-
+edge about FP/RH and had few trusted sources
+of information on the topic, though they were
+often the most influential driver of girls’ FP de-
+cision making. Young men lacked the confi-
+dence to access condoms and shared the same
+
+concerns about privacy when seeking care at a
+clinic. Based on these insights, the project team
+expanded the project scope to include informa-
+tion, topics, webcomic characters, and delivery
+channels that appealed to young men as well as
+girls.
+
+TABLE 4. Key Findings and Iterations to Intervention Design of CyberRwanda
+
+Key Finding
+Iteration to Intervention Design
+
+Supply-side barriers to quality care
+
+Youth often saw health care providers as “gatekeepers” to acces-
+sing methods and were afraid about the questions they might be
+asked at health care facilities
+
+We pivoted the platform away from simply linking to clinics to providing
+direct-to-consumer products and information directly in the hands of youth
+to reduce barriers associated with gatekeeping. Medically relevant screen-
+ing is conducted at point of order to minimize bias-related barriers to FP/RH
+care and expedite the interaction between provider and youth. Youth can
+choose from a selection of pharmacists with transparent pricing.
+
+Youth strongly preferred pharmacies as a point of access for con-
+traception due to expediency and privacy
+Deliver products and services via pharmacies: Young people’s priority con-
+cerns for privacy and expediency informed the pivot to supplying products
+via pharmacies instead of clinics, as originally planned. The platform also
+links to all public clinics in the intervention districts for longer-term methods.
+
+Pharmacists lacked confidence in addressing young peoples’ SRH
+needs and had knowledge gaps on FP
+Designed tailored training modules with and for pharmacists and pharmacy
+staff to address common misinformation, provide training on adolescent-
+friendly care, and support self-identification of provider bias to help provi-
+ders improve access to care for adolescents.
+
+Demand-side barriers to quality care
+
+Program lacked content on economic opportunity and job readi-
+ness, making it less appealing to youth and less acceptable to
+parents
+
+The webcomic stories and FAQs now include content on preparing for em-
+ployment and address gender stereotypes on careers. The site links to job
+search resources. The site tagline is “learn about relationships, your body,
+and your future.”
+
+Boys had clearly expressed needs for information on health, rela-
+tionships, and reproductive health
+Content, characters, and the direct-to-consumer platform were codesigned
+and implemented with and for young men.
+
+Youth lacked access to trusted, nonjudgmental information in ac-
+cessible language they could understand
+Characters were designed with youth to represent trusted personas for
+young men, women, and parents. A webcomic format was introduced to
+deliver information in a compelling, locally relevant way, focused on
+addressing key behavioral barriers and social and environmental norms
+that stigmatized access to FP/RH services. All content was reviewed by
+gender and behavior change and validated by youth. Finally, it was ap-
+proved by the National Health Communications Committee to ensure align-
+ment with national guidelines.
+
+Young people were primarily concerned with lack of privacy and
+confidentiality in accessing information and services
+To minimize barriers to engagement and allay fears about confidentiality,
+no identifiable data were collected from youth, even though this limited the
+ability to track individual user engagement. All data from the CyberRwanda
+platform were gathered and stored in compliance with General Data
+Protection Regulation guidelines.The shop was designed so that users can
+order without supplying personal information, without needing to request
+the product in person from the pharmacist. An order code is provided,
+which is needed to collect their order, with an optional SMS to their phone.
+
+Given low levels of knowledge on FP/RH, youth often seek help for a
+specific problem rather than a specific product
+In the shop, we pivoted to include both products for quick access for in-
+formed users and added common scenarios as another pathway to access
+products on the platform for naïve users or users experiencing a crisis (e.g.,
+“I had unprotected sex.”). When a user clicks on those scenarios, they ac-
+cess essential information and recommendations of products and additional
+services available.
+
+Abbreviations: FAQs, frequently asked questions; FP, family planning, RH, reproductive health; SMS, short message service.
+
+S254
+
+I had a perception that when a girl gets pregnant,
+there’s nothing to do other than wait to have a child.
+Or when a girl has forgotten to take emergency contra-
+ceptive after 72 hours after unsafe sex, I thought that
+that it is over; if you attempt to abort, you can die.
+—Male secondary school student, 18 years old,
+interviewed during the pilot
+
+As young people, we fear being seen by a neighbor at the
+shop when you have to buy a contraceptive, you are shy
+that you are judged of what you are going to use the con-
+dom for.—Male secondary school student, 18 years
+old, interviewed during the pilot
+
+Findings from the pilot evaluation revealed
+that pharmacists and pharmacy staff needed to be
+seen as primary users. By doing so, the team fur-
+ther refined CyberRwanda’s role in working with
+pharmacists by expanding the focus audience to
+not only the head pharmacist in a pharmacy but
+also the nurse as young people trusted both but
+went to each for different reasons. Additionally,
+the team revised the training tools in partnership
+with pharmacists to ensure that content and the
+training approach addressed pharmacists’ most
+common information gaps, was acceptable and ac-
+cessible to them, and also leveraged their motiva-
+tions to better serve adolescents. The training has
+been accredited with continuing professional de-
+velopment credits by the National Pharmacy
+Council to increase the value of and trust in the
+program to participating pharmacists.
+
+Designing Educational Content
+Extensive prototyping with a broad range of
+young people revealed how to design educational
+content for digital inclusion, different learning
+styles, and multiple literacy levels. The early and
+continued engagement of a spectrum of hetero-
+geneous young people regarding digital access,
+literacy, educational, and socioeconomic status
+informed the development of an inclusive and
+accessible intervention. Based on youth prefer-
+ences
+for
+shorter
+content,
+the
+intervention
+pivoted to a less text-dependent webcomic for-
+mat delivered in both Kinyarwanda and English
+to accommodate different levels of literacy and
+support visual learners. In response to input
+from youth and parents on what makes a trusted
+health advisor, characters who deliver the con-
+tent through stories were codesigned to represent
+clinic providers, aspirational older peers, and par-
+ents themselves. Given low levels of understand-
+ing about puberty, menstruation, and consent,
+additional topics were added.
+
+Finally, there is little evidence on the level of
+in-person facilitation needed to implement digital
+interventions in school settings. We had found
+that youth were familiar with and actively partici-
+pated in school health clubs. Therefore, we decid-
+ed to compare a facilitated model, building on this
+existing school club culture to facilitate group and
+peer-driven learning (especially for less tech-
+savvy users), with a self-service model that supports
+potentially more private, self-directed learning.
+During the pilot in 3 schools, a higher percentage of
+students reported using CyberRwanda at the self-
+service school as compared to the facilitated schools
+(95% vs. 45% of students, respectively). Qualitative
+interviews with staff and students informed a rede-
+sign of the training and onboarding of teachers to
+reduce gatekeeping of tablets and improve access
+to CyberRwanda in both models during implem-
+entation.
+Given variable levels of digital access especially
+between rural and urban youth, CyberRwanda is
+delivered via tablets in schools and youth centers
+as well as online, rather than relying solely on
+youth access to smartphones. Video instructions
+were designed to help youth with low literacy
+and low confidence using online ordering to easily
+navigate the shop function of the platform.
+
+I was interested by the part called ‘Shop.’ You can order
+contraceptive products using this program and get the
+products without the people knowing what you ordered.
+I like this part so much more than other parts, but I
+didn’t order anything. —Female secondary school
+student, 14 years old, interviewed in pilot study
+
+Accessing Health Care Services
+Design research and prototyping changed the
+interventions’ health care access points to cater to
+youths’ preferred service delivery points of phar-
+macies. In the early design stages, the team’s ini-
+tial assumption
+had been
+that intervention
+would refer youth to primary health care clinics
+for FP/RH service delivery. However, during de-
+sign research, young people shared fears of seek-
+ing health care services at the clinic for fear of
+being seen by fellow community members,
+which clinic staff confirmed.
+
+Youth don’t want to come to the clinic because they are
+afraid of being seen by their parent or someone they
+know. —Nurse, Kigali
+
+Both pharmacists and youth reported that
+they commonly opt to use emergency contra-
+ception to prevent pregnancy after an “accident”
+
+Comparing a
+facilitated and
+self-service model
+for in school
+settings, a higher
+percentage of
+students reported
+using
+CyberRwanda at
+the self-service
+school.
+
+S255
+
+(unprotected sex), as youth perceive this as
+more socially acceptable than admitting to
+“planned” premarital sex, which is often stigma-
+tized. Pharmacists reported seeing the same
+youth return repeatedly for emergency contra-
+ception after multiple “accidents,” suggesting
+young people are using emergency contracep-
+tion as a regular method to avoid provider
+stigma. Given that youth can readily access
+emergency contraception at a pharmacy with
+minimal risk of exposure, they often do not
+seek longer-term contraception at clinics. In
+fact, youth are so reluctant to visit clinics, they
+prefer to pay for products or services (e.g., preg-
+nancy tests and emergency contraception) at the
+pharmacy that could be accessed for a much
+lower cost at the clinic.
+Youth had a strong preference for receiving
+FP/RH services at the pharmacy, valuing the ex-
+pedient, confidential, and private method of ser-
+vice delivery. However, pharmacists were often
+reluctant to provide contraceptive products to
+unmarried adolescents, lacked private spaces for
+counseling, and often had inaccurate knowledge
+about FP. These findings informed a pivot toward
+a direct-to-consumer platform providing stream-
+lined access to and online screening for health
+products supplied by a network of trained phar-
+macists, with signposting to clinics for longer-
+acting FP and other RH care.
+
+I struggle to counsel my customers on FP because our
+pharmacy has no private space. —Pharmacist
+
+I feel more comfortable prescribing the oral contraceptive
+pill to a married woman because waking up to her hus-
+band on a daily basis will remind her to take the pill.
+Unmarried women don’t have this kind of reminder.
+—Pharmacist
+
+Designing for Accessibility
+User testing revealed that despite rapid increases
+in technology ownership and use, for many
+Rwandan youth, especially those with lower
+incomes, using a smartphone or tablet is a new
+skill. CyberRwanda had to be designed to be acces-
+sible and usable for 2 distinct groups: young peo-
+ple who had never used a smartphone before
+with minimal digital literacy and those with prior
+use and greater fluency in using tablets/smart-
+phones. User testing allowed the team to observe
+where young people became confused or lost in-
+terest and allowed them to make design changes
+that made the user experience as streamlined and
+
+intuitive as possible. It was critical to engage those
+with low or no digital literacy in user testing, as
+features and navigations that are often assumed
+to be straightforward by young people with great-
+er technological capabilities often become stan-
+dard design specifications in digital solutions.
+Engaging those with lower digital literacy in user
+testing allowed the product team to more carefully
+integrate user flows that were more intuitive for
+an audience with minimal digital capabilities or
+experience. In Rwanda, online ordering is rela-
+tively new, even for experienced technology
+users. For the shop feature, where youth can order
+health products, prototyping informed the addi-
+tion of written simple instructions to onboard
+new users, design elements to make action and
+navigation items easily noticeable, progress indi-
+cators, and simplification and shortening of the or-
+der process overall. In response to youth requests,
+we developed 2 instructional videos: one to help
+youth understand the CyberRwanda features and
+a second to help them navigate an unfamiliar pro-
+cess of online ordering and product collection at
+the pharmacy.
+
+IMPLICATIONS FOR FUTURE
+PRACTICE AND RESEARCH
+The HCD process, driven and led by youth, was
+used to understand the complex user needs re-
+garding FP/RH and promoted the routine testing,
+learning, and refinement of initial ideas. It paved
+a supported pathway toward implementation and
+evaluation by ensuring that the ultimate interven-
+tion was desirable among many key stakeholders,
+feasible for nationwide implementation and scale.
+Some implications for future practice and research
+follow.
+
+HCD OFFERS FOUNDATIONAL
+METHODS AND MINDSETS TO
+SUPPORT CONTINUED ITERATION
+THROUGHOUT IMPLEMENTATION
+Using an adaptive implementation approach, the
+findings from routine user testing and the impact
+evaluation will inform iterations to the program
+and digital product design throughout the project
+timeline. Applying HCD during the implementa-
+tion and evaluation stages of the intervention
+lends itself well to adaptive learning and iteration;
+allowing for new information to be continuously
+introduced that promotes rapid and informed de-
+cision making about which intervention elements
+
+A shift to a direct-
+to-consumer
+platform provided
+streamlined
+access to and
+online screening
+for health
+products supplied
+by a network of
+trained
+pharmacists.
+
+S256
+
+need to be strengthened or abandoned.24 To
+achieve these aims, CyberRwanda will operate on
+a product release cycle where every 3 months the
+team reviews historical data to assess what new
+features to implement and how to make improve-
+ments. Monitoring data are collected from inter-
+vention sites and pharmacies routinely to identify
+areas of improvement and correct any issues that
+are disrupting site use. Qualitative interviews
+with participants are conducted on a routine basis
+to understand and supplement data gathered from
+quantitative data collection efforts. By taking this
+approach, HCD may help to support the long-term
+sustainability and cost-efficiency of the interven-
+tion by assuming a gradual approach to product
+launch and scale and addressing implementation
+challenges early and often, rather than relying sole-
+ly on endline results.25
+
+Iterative and Equity-Centered Approaches to
+Design Can Allow for the Inclusion of New
+Technology Users in Digital Initiatives
+Digital self-care or direct-to-consumer approaches
+like CyberRwanda have the potential to offer the
+privacy that young people prioritize in FP/RH ser-
+vice delivery, yet require careful design to ensure
+usability by a broad range of users.26,27 User test-
+ing of early product versions revealed usability
+challenges that were addressed and retested in iter-
+ative cycles. This iterative approach to design and
+testing allowed the team to test assumptions and
+observe which features needed improvement to
+enhance the user experience and flow. To ensure
+digital equity and inclusion, particularly among
+those with limited or no access to technology,
+the team was intentional about sampling a di-
+verse spectrum of participants regarding socio-
+economic
+status,
+educational
+status,
+social
+vulnerabilities, and those from rural, urban,
+and peri-urban contexts. Recruitment of diverse
+participants was a recurring challenge during
+this project, and appropriate time and funding
+are needed to support inclusive recruitment.
+This article, along with other international digi-
+tal health guidance from the World Health
+Organization,28,29 offers methods to inform a fi-
+nal product design and implementation model
+that is inclusive of diverse user groups. The
+forthcoming RCT will provide much-needed
+data on uptake and sustained use of the plat-
+form, disaggregated by age and gender among
+diverse youth populations.
+
+Engaging Youth Throughout the Design
+Process Requires Special Considerations,
+Particularly When Designing for Taboo
+Topics
+Given the unique set of vulnerabilities and inher-
+ent power dynamics present when designing with
+youth on sensitive sexual and RH topics, there is a
+critical need for design teams to identify and plan
+for any risks that would compromise youths’ safe-
+ty or compromise the quality of their engagement.
+The importance of upholding the continued safety
+and dignity of young people in the HCD process
+has gained special attention within the adolescent
+sexual and RH and HCD community of practice.
+Recently, several actors in the HCD community
+released a set of guiding principles for the safe
+and ethical engagement of youth during adoles-
+cent and sexual RH program design.12 In line
+with these guiding principles, the team took extra
+care to address power differentials between
+young people and program teams. Throughout
+CyberRwanda’s design phase, the project team
+sought to ensure the safety, dignity, and ethical
+participation of youth. During the initial design
+phases, the project team leveraged gateway activ-
+ities focused on popular culture, future aspira-
+tions, and leisure activities as gateway topics to
+explore more taboo topics. Doing so enabled the
+team to provide a safe space for open and genera-
+tive conversation with youth participants and
+created a foundation to explore sensitive sexual
+health topics. The emphasis on safeguarding and
+protection of youth was considered essential
+throughout all phases of the HCD process to pro-
+tect young people’s safety and wellbeing. To
+maintain the safe and ethical participation of
+youth beyond the design phase throughout im-
+plementation, there was a clear need to under-
+stand what framing would be acceptable to
+parents, as key influencers and decision makers
+in
+their
+children's
+lives.
+The
+visioning
+of
+CyberRwanda as a guide to future success was
+co-created through the sessions with parents
+and has been a foundational framing for the proj-
+ect to date.
+
+CONCLUSION
+Using HCD as an end-to-end approach was instru-
+mental in guiding the team to learn, test, and re-
+fine the intervention before implementation and
+evaluation. It provided a natural approach to cen-
+ter young peoples’ needs, aspirations, and per-
+spectives into the intervention design by having
+youth lead design research, prototyping, and data
+
+HCD may help to
+support the long-
+term sustainability
+and cost-efficiency
+of the intervention
+by addressing
+implementation
+challenges early
+and often, rather
+than relying solely
+on endline results.
+
+S257
+
+collection efforts with their peers. The process to-
+ward designing and implementing CyberRwanda
+has demonstrated the value of supporting youth-
+driven or youth-led HCD approaches that shift
+decision-making power to young people through
+funding, mentorship, and training. Furthermore,
+the HCD process provided a structure to integrate
+and blend technical and design expertise to ensure
+the intervention content was grounded in the ad-
+olescent health evidence and best practice, and the
+visual and product design was developed with
+user needs, access capabilities, and preferences in
+mind. Through trial and learning through continu-
+ous data collection and iteration, HCD informed a
+product and service design model that prioritizes
+digital equity. Through continuous learning and re-
+finement, CyberRwanda’s hybrid implementation
+model was designed to meet the full spectrum of dig-
+ital access and literacy and to reach vulnerable youth
+without access to technology. CyberRwanda’s forth-
+coming RCT will generate critical new data in fields
+of digital health for adolescents and social and be-
+havior change communication. By assessing the dif-
+ference between young people in the self-service
+and facilitated arms, findings will reveal the impact
+of a digital intervention as a stand-alone (self-service
+model) versus that with a person-to-person compo-
+nent (facilitated model). These findings will demon-
+strate which programmatic components lead to
+behavior change and how best to implement digital
+interventions for youth.

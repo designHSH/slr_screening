@@ -1,0 +1,42 @@
+{
+  "file_name": "Bonet-Olivencia_2023_diabetes-self-management-tool-underserve.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Only a single round of usability testing with a relatively small sample limited the team's ability to iteratively evaluate and refine the design.",
+      "justification": "This resource constraint prevented adequate integration of feedback and iteration and limited the designers' capacity to evaluate designs with a sufficiently diverse user sample.",
+      "reference_excerpt": "One of the limitations of this work is that the design requirements and evaluations were conducted with intended users from various representative underserved communities in South Texas and the result may not generalize to all underserved populations. In addition, only one round of usability testing was conducted with a relatively small sample of representative users and nurse educators.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "stakeholder",
+      "barrier_type": "knowledge",
+      "description": "The design process excluded physicians from stakeholder feedback, leaving provider perspectives incomplete.",
+      "justification": "Omission of this external stakeholder group reduced access to provider domain knowledge and constrained the designers' ability to manage user/stakeholder understanding and to specify requirements affecting clinical workflows.",
+      "reference_excerpt": "The focus group was only made up of diabetes educators; however, in the future, feedback from physicians will be requested.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Participant recruitment was geographically limited to underserved communities in South Texas, restricting the representativeness of findings.",
+      "justification": "This contextual limitation impeded the designers' ability to manage evolving, generalizable user understanding and to specify user requirements applicable to broader underserved populations.",
+      "reference_excerpt": "One of the limitations of this work is that the design requirements and evaluations were conducted with intended users from various representative underserved communities in South Texas and the result may not generalize to all underserved populations.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Existing biases toward certain platforms, functionality, or systems posed challenges for deriving platform-independent requirements.",
+      "justification": "This environmental bias hindered the designers' ability to specify unbiased, platform-agnostic user requirements and threatened the fidelity of initial design specifications.",
+      "reference_excerpt": "One of the notable challenges in digital health design is the bias in requirements toward certain platforms, functionality, and/or existing systems.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

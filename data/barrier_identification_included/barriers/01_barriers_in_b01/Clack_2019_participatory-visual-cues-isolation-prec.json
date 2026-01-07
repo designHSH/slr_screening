@@ -1,0 +1,24 @@
+{
+  "file_name": "Clack_2019_participatory-visual-cues-isolation-prec.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "A change in institutional isolation guidelines disrupted the study and evaluation activities, preventing planned quantitative analyses and complicating user testing.",
+      "justification": "This organizational change hindered the designers' ability to evaluate prototypes and integrate feedback because frontline staff focused on guideline discrepancies rather than signage design, limiting the evaluation and iteration workload.",
+      "reference_excerpt": "During this study, we were faced with the challenge of changing institutional guidelines for isolation precautions. This prevented a quantitative analysis of change in practice and presented a challenge during the evaluation with frontline staff, who were not yet familiar with the new guidelines and thus had a tendency to focus on the discrepancies between the \"new\" vs. the current guidelines, rather than signage design.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Safety and feasibility concerns (institutional/regulatory constraints) prevented implementation of some participant-ideated forcing-function solutions and forced designers to adopt less integrated prototypes.",
+      "justification": "These external safety/feasibility constraints limited the team's ability to produce and test certain design solutions, constraining prototyping choices and iteration on potentially high-impact concepts.",
+      "reference_excerpt": "During one workshop, participants working on the problem statement, \"how might we ensure that required isolation measures are respected 100% of the time,\" ideated around forcing function solutions to detect if appropriate personal protective equipment had been donned prior to opening the patient door (Fig. 5). Due to safety and feasibility concerns with this idea, during the prototyping phase these participants instead employed masks suspended in the doorway through which healthcare providers must walk, thereby automatically donning a mask upon room entry.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

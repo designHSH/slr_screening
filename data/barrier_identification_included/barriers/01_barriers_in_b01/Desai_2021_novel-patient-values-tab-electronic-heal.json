@@ -1,0 +1,51 @@
+{
+  "file_name": "Desai_2021_novel-patient-values-tab-electronic-heal.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "Usability testing revealed that users were unfamiliar with underlying source documentation that populated the tab, which confused users during evaluation tasks.",
+      "justification": "This user knowledge gap limited the designers' ability to evaluate the tab accurately and gather valid usability feedback, hindering the 'evaluate designs' and 'manage user understanding' workloads.",
+      "reference_excerpt": "This process revealed a lack of familiarity among users with some of the underlying documentation that sourced the data displayed in the tab.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Clinicians reported perceived lack of time, competing priorities, and difficulty remembering to launch the tab, reducing real-world engagement.",
+      "justification": "Low clinician time and competing workflow priorities constrained designers' ability to facilitate user involvement, collect representative feedback, and run iterative evaluations in clinical settings.",
+      "reference_excerpt": "Our early pilot data have also revealed potential barriers to large-scale implementation, which include perceived lack of time to engage with the tab, competing priorities, incomplete or inaccurate tab content, technical glitches, and difficulty remembering to launch the tab as part of routine workflow.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Technical performance issues (delays in displaying tab content and other glitches) required coordination with the information systems team to diagnose and fix.",
+      "justification": "System performance problems impeded designers' ability to ensure usability and to evaluate the tab reliably, blocking evaluation and iteration until technical optimizations were made.",
+      "reference_excerpt": "In addition, to detect delays in displaying information to the user that might decrease usability, we assessed the time to launch the tab content for selected patients. If time delays were identified, we worked with the information systems team to identify the source of the delay so that it could be rectified; specifically, technical optimizations were made to bring the load times in line with other feature load times in our EHR (ie, no longer than a few seconds).",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "The decision to make the tab read-only (with data editable only in source documents) constrained how the tab could be used and updated.",
+      "justification": "This stakeholder-driven design constraint limited the designers' ability to facilitate direct user updates and rapid iterative edits within the tab, affecting 'facilitate user involvement' and 'integrate feedback & iteration' workloads.",
+      "reference_excerpt": "The Patient Values Tab will be in a read-only format (ie, the data displayed will be captured and edited elsewhere). We chose this approach because we and various key stakeholders we interviewed were concerned that the content would become unwieldy and unstable, ultimately leading to inefficiency for users if multiple modifications were allowed.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Incomplete or inaccurate content in source documentation led to concerns about the tab's content quality.",
+      "justification": "Poor or inconsistent upstream documentation limited designers' ability to ensure accurate information in the tab, hindering 'manage user understanding', 'specify user requirements', and 'evaluate designs' because the artifact's fidelity depended on external data quality.",
+      "reference_excerpt": "Our early pilot data have also revealed potential barriers to large-scale implementation, which include perceived lack of time to engage with the tab, competing priorities, incomplete or inaccurate tab content, technical glitches, and difficulty remembering to launch the tab as part of routine workflow.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

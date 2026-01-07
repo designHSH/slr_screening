@@ -1,0 +1,42 @@
+{
+  "file_name": "Dirin_2015_context-aware-nurse-assistant-cana-finni.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The team used a low-fidelity prototype that was not fully functional, which prevented collecting feedback on performance and functionality.",
+      "justification": "This methodological/resource limitation directly hindered the designers' ability to evaluate the prototype's runtime behavior and functionality with users, constraining the 'Evaluate designs' and 'Integrate feedback & iteration' workloads.",
+      "reference_excerpt": "We did not collect feedback about the performance and the functionality as the application was a low-fidelity prototype.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Handling patients' data raises security and privacy challenges that must be resolved before deployment or field evaluation.",
+      "justification": "These legal/organizational constraints limit the designers' ability to deploy and test the system in real clinical contexts and to use real patient data, impeding 'Evaluate designs', 'Produce design solutions', and iterative refinement based on live use.",
+      "reference_excerpt": "Firstly, handling patients’ data involves security and privacy challenges that must be met with appropriate techniques and policies.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Access to external proprietary systems (medical databases and patient information systems) is administratively and technically challenging.",
+      "justification": "These administrative and technical barriers prevent designers from integrating required data sources and implementing requested features, hindering 'Specify user requirements', 'Produce design solutions', and realistic 'Evaluate designs' in context.",
+      "reference_excerpt": "Secondly, CANA should be able to communicate with various proprietary, subscription-based systems such as medical databases and patient information systems. Thus, administrative and technical challenges related to gaining access to external systems must be solved in order to implement all requested features.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "The regional Apotti programme's current architecture does not mention mobile or context-aware services, limiting integration opportunities.",
+      "justification": "Because the planned regional system lacks mobile/context-aware interfaces, designers cannot rely on unified integrated tools or data sources, constraining their ability to 'Understand context of use' across locations and to 'Produce design solutions' that leverage centralized data.",
+      "reference_excerpt": "The current design of the architecture does not mention mobile or context-aware services.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

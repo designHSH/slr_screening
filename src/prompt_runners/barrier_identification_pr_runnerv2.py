@@ -178,8 +178,8 @@ def main(prompt_yaml: Path, input_dir: Path, output_dir: Path):
 if __name__ == "__main__":
     # === EDIT THESE THREE PATHS ===
     PROMPT_YAML_PATH = Path(r"prompt\barrier_identification_pr.yaml")
-    INPUT_DIR = Path(r"data\test_data\barrier_identification_test\2nd_run\input_2nd")
-    OUTPUT_DIR = Path(r"data\test_data\barrier_identification_test\2nd_run_2nd_smaple")
+    INPUT_DIR = Path(r"data\barrier_identification_included\filename_trunced\01_incl_cleaned_b_01")
+    OUTPUT_DIR = Path(r"data\barrier_identification_included\barriers\01_barriers_in_b01")
     # ==============================
 
     main(PROMPT_YAML_PATH, INPUT_DIR, OUTPUT_DIR)

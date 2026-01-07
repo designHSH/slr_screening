@@ -1,0 +1,1119 @@
+Evidence-based design and evaluation
+of a whole genome sequencing clinical
+report for the reference microbiology
+laboratory
+
+Anamaria Crisan1, Geoffrey McKee2, Tamara Munzner1 and Jennifer L. Gardy2,3
+
+MATERIALS AND METHODS
+
+Overview of Design Study Methodology
+The Design Study Methodology (Sedlmair, Meyer & Munzner, 2012) is an iterative
+framework outlining an approach to human-centered visualization design and evaluation.
+It consists of three phases—Precondition, Core Analysis, and Reflection—that together
+comprise nine stages. The Precondition and Reflection phases focus on establishing
+
+4/25
+
+Figure 2
+Our human-centered design approach. The Core Analysis phase of the Design Study Method-
+ology consists of Discovery, Design, and Implementation stages. Using this methodological backbone, we
+collected and analyzed data using mixed-methods study designs in the Discovery and Design stages, which
+informed the final TB WGS clinical report design.
+
+Full-size
+DOI: 10.7717/peerj.4218/fig-2
+
+collaborations and writing up research findings, respectively, and are not elaborated upon
+further here. We describe our work within each of the three stages of the Core Analysis
+phase: Discovery, Design, and Implementation (Fig. 2). We define domain specialists in this
+case as the TB stakeholders—clinicians, laboratorians, and epidemiologists—who regularly
+use reports from the reference mycobacteriology laboratory in their work.
+Our research was reviewed and approved by the University of British Columbia’s
+Behavioural Research Ethics Board (H10-03336). All data were collected through secure
+means approved by the university and were de-identified for analysis and sharing.
+Anonymized quantitative results from each of the surveys and the analysis code are
+available at https://github.com/amcrisan/TBReportRedesign and in the Supplemental
+Information 1. We also provide the full text of our survey instruments in the Supplemental
+Information 1.
+
+Discovery stage
+In the Discovery stage, we first gathered qualitative data through expert consults to identify
+the data types used in TB diagnosis, treatment, and surveillance tasks; we then gathered
+quantitative data through an online survey to more robustly link particular data types to
+specific tasks. This staged approach to data gathering is known as the exploratory sequential
+model (Creswell, 2014).
+Our expert consults took the form of semi-structured interviews with seven individuals
+recruited from the COMPASS-TB project team, the British Columbia Centre for Disease
+Control (BCCDC), and the British Columbia Public Health Laboratory (BCPHL). The
+
+5/25
+
+interview questions served as prompts to structure the conversation, but experts were
+free to comment, at any depth, on the different aspects of TB diagnosis, treatment, and
+surveillance. We took notes during the consults in order to identify the tasks and data types
+common to TB workflows in the UK and Canada, as well as to determine which tasks could
+be supported by WGS data.
+Informed by the expert consults, we drafted a Task and Data Questionnaire (text in
+Supplemental Information 1) to survey data types used across the TB workflow (see results
+for a list of data types), the role for WGS data in diagnosis, treatment, and surveillance
+tasks, and participants’ confidence in interpreting different data types. The questionnaire
+primarily used multiple choice and true/false type questions, but also included the optional
+entry of freeform text. The questionnaire was deployed online using the FluidSurveys
+platform and participants were recruited using snowball and convenience sampling for
+a one-week period in July, 2016. For questions pertaining to diagnostic and treatment
+tasks, we gathered information only from participants self-identifying as clinicians; for the
+remaining sections of the survey, all participants were prompted to answer each question.
+Only completed questionnaires were used for analysis. For questions pertaining to
+participants’ background, their perception of WGS utility, and their confidence interpreting
+WGS data, we report primarily descriptive statistics. To link TB workflow tasks to specific
+data types, we presented participants with different task-based scenarios related to diagnosis,
+treatment, and surveillance and asked which data types they would use to complete the task.
+For each pair of data and task we assigned a consensus score depending on the proportion
+of participants who reported using a data type for a specific task: 0 for fewer than 25% of
+participants, 1 for 25–50%, 2 for 50–75%, and 3 if more than 75% of participants reported
+using a specific data type for the task at hand. Consensus scores for a data type were also
+summed across the different tasks. Freeform text, when it was provided, was considered
+only to add context to participant responses.
+
+Design stage
+The Discovery stage revealed which data types to include in the redesigned report, while the
+goal of the Design stage was to identify how it should be presented. We used a Design Sprint
+event to produce a series of prototype reports, which were then assessed through a second
+online questionnaire. This survey collected quantitative data on participants’ preference
+for specific design elements, with participants also able to provide qualitative feedback
+on each element—a type of embedded mixed methods study design (Creswell, 2014).
+The Design Sprint was an interactive design session involving members of the University
+of British Columbia’s Information Visualization research group, in which teams created
+alternative designs to report WGS data for the diagnosis, treatment, and surveillance tasks.
+Teams developed paper prototypes (Lloyd & Dykes, 2011; Vredenburg et al., 2002) of a
+complete WGS TB report and, at the completion of the event, presented their prototypes
+and the rationale for each design choice. The paper prototypes were then digitally mocked
+up, both as complete reports and as individual elements (see the results in Figs. 3 and 4);
+these digital prototypes were standardized with respect to text, fonts, and sample data
+where appropriate and used as the basis of the second online survey.
+
+6/25
+
+Figure 3 Digital mockups of complete report prototypes generated during the design sprint. (A) Prototype report 1, (B) prototype report 2, (C)
+prototype report 3, (D) prototype report 4.
+
+Full-size
+DOI: 10.7717/peerj.4218/fig-3
+
+In the Design Choice Questionnaire (text in Supplemental Information 1), we evaluated
+participants’ preferences for individual design elements, comparing the options generated
+during the Design Sprint as well as the initial COMPASS-TB report design, which we
+hereafter refer to as the control design. As with the first survey, the questionnaire used
+FluidSurveys, with participants recruited using snowball and convenience sampling.
+Individuals who had previously participated in the Data and Task Questionnaire were also
+invited to participate. The survey was open for one month beginning September 10, 2016
+and was reopened to recruit additional participants for one month beginning January 5,
+2017, as part of the registration for a TB WGS conference hosted by PHE. Only completed
+surveys were analyzed.
+We used single-selection multiple-choice, Likert scale, and ranking questions to assess
+participant preferences. For multiple-choice and Likert scale questions, we calculated the
+number of participants that selected each option and report the sum. For questions that
+required participants to rank options we calculated a rescaled rank score as follows:
+
+rescaled rank (Di) = 1−
+P−1PP
+p=1Rp −1
+
+N −1
+
+7/25
+
+Figure 4
+Isolated design elements. The original report element, highlighted in red, is broken down into
+isolated design elements, each of which was tested independently in the report design survey. In this exam-
+ple, the original resistance summary yields five different alternative wordings and design elements.
+
+Full-size
+DOI: 10.7717/peerj.4218/fig-4
+
+where for each design choice (Di), i = {1...N} where N is the total number of design
+choices, R = {1...N} is a raw rank (rank selected by a participant in the study), and
+P = {1...P} is the total number of participants. In our study, 1 was the highest rank (most
+preferred) and N was the lowest rank (least preferred) option. As an example, if a design,
+
+8/25
+
+D1, is always ranked 1 (greatest preference by everyone), the sum of those ranks is P,
+resulting in a numerator of 0 and a rescaled rank score of 1; alternatively, if a design, D2, is
+always ranked last (N), the sum of those ranks will be P ∗N, and a rescaled rank score of 0.
+Thus, the rescaled rank score ranges from 1 (consistently ranked as first) to 0 (consistently
+ranked last). This transformation from raw to rescaled ranks allows us to compare across
+questions with different numbers of options, but is predicated on each design alternative
+having a rank, which is why this approach was not extended to multiple choice questions.
+To contextualize rescaled rank scores, we randomly permuted participants’ scores 1,000
+times and pooled the rescaled rank scores across these iterations to obtain an average score
+(intuitively and empirically this is 0.5 for the rank questions and 1
+
+N for multiple choice
+questions) and standard deviation. For each design choice, we plotted its actual rescaled
+rank score against the distribution of random permutations, highlighting whether the score
+was within ± 1, 2, or 3 standard deviations from the random permutation mean score. The
+closer a score was to the mean, the more probable that the participants’ preferences were
+no better than random. We also calculated bootstrapped 95% confidence intervals for both
+rank and multiple choice type questions by re-sampling participants, with replacement,
+over 1,000 iterations.
+
+Implementation stage
+By combining the results of the Design Choice Questionnaire with medical test reporting
+requirements from the ISO15189:2012 standards, we developed a final template for
+reporting TB WGS data in the clinical laboratory. We used deviation from a random score,
+described in the methods, as an indicator of preference, with strong preferences being three
+or more deviations from the random score. When there was no strongly preferred element,
+we explain our design choice in the Design Walkthrough (Supplemental Information 1).
+We also considered consensus between clinicians and non-clinicians, and defaulted to
+clinician preferences in instances of disagreement as they are the primary consumers of this
+report. The final prototype is implemented in LaTeX and is available online as a template
+accessible at: http://www.cs.ubc.ca/labs/imager/tr/2017/MicroReportDesign/.
+
+RESULTS
+
+Expert consults, the Task and Data Questionnaire, and the Design Choice Questionnaires
+recruited a total of 78 participants across different roles in TB management and control
+(Table 1).
+
+Experts emphasized prioritizing information and revealed constraints
+The objective of our expert consults was to understand how reports from the reference
+mycobacteriology laboratory are currently used in the day-to-day workflows of various
+TB stakeholders, including clinicians, laboratorians, epidemiologists, and researchers, and
+what data types are currently used to inform those tasks. Tasks and data types enumerated
+in the interviews were used to populate downstream quantitative questionnaires; however,
+the interviews also provided insights into how stakeholders viewed the role of genomics in
+a clinical laboratory.
+
+9/25
+
+Table 1
+Total study participants across different stages of the Design Study Methodology.
+
+Expert consults
+Task and data questionnaire
+Design choice questionnaire
+
+Stage
+Discovery
+Design
+
+Data Collected
+Qualitative
+Quantitative
+Qualitative & Quantitative
+
+Participants
+N (% survey total)
+N (% survey total)
+N (% survey total)
+
+Clinician
+2
+29%
+7
+40%
+13
+25%
+
+Nurse
+1
+14%
+3
+18%
+5
+9%
+
+Laboratory
+2
+29%
+3
+18%
+8
+15%
+
+Research
+0
+0%
+1
+6%
+8
+15%
+
+Surveillance
+1
+14%
+3
+18%
+8
+15%
+
+Other*
+1
+14%
+0
+0%
+12
+21%
+
+Total
+7
+100%
+17
+100%
+54
+100%
+
+Notes.
+
+*National Reference Laboratory Service.
+
+Amongst the procedural insights, stakeholders frequently reported that the biggest
+benefit of WGS over standard mycobacteriology laboratory protocols was to improve
+testing turnaround times and gather all test results into a single document, rather than
+having multiple lab reports arriving over weeks to months. Several experts emphasized that
+these benefits can onlybe realized if the WGS analytical pipelinehas been clinically validated.
+Although our study team included a clinician and a TB researcher, two surprising procedural
+insights emerged from the consultations. First, multiple experts from a clinical background
+emphasized that this audience has extremely limited time to digest the information found
+on a clinical report. In describing their interaction with a laboratory report, one participant
+noted that ‘‘10 seconds [to review content] is likely, one minute is luxurious’’ while others
+described variations on the theme of wanting bottom-line, actionable information as
+quickly as possible. This insight profoundly shaped downstream decisions around how
+much data to include on a redesigned report and how to arrange it over the report to
+permit both a quick glance and a deeper dive. Second, experts indicated that laboratory
+reports were delivered using a variety of formats, including PDFs appended to electronic
+health records, faxes, or physical mail. This created design constraints at the outset of the
+project—our redesigned report needed to be legible no matter the medium, ruling out
+online interactivity, and needed to be black and white.
+
+Experts vary in their perception of diﬀerent data types
+At the data level, we observed that the experts had differing perceptions of data types
+and desired level of detail between clinicians and non-clinicians, perhaps reflecting the
+clinicians’ procedural need for rapid interpretation. Clinicians emphasized the importance
+of presenting actionable results clearly and omitting those that were not clinically relevant
+for them. For example, when presented with the sequence quality data on the current
+COMPASS-TB report (Fig. 1)—metrics reflecting the quality of the sequencing run and
+downstream bioinformatics analysis—interviewees did not expect the lab to release poor
+quality data, given the presence of strict quality control mechanisms. ISO15189:2012
+standards require some degree of reporting around the measurement procedure and
+
+10/25
+
+results, but this insight suggested such data might best be placed later in the report in
+a simplified format, or described in the report comments. Similarly, experts were also
+divided on the interpretability and utility of the phylogenetic tree in the epidemiological
+relatedness section of the current COMPASS-TB report, with clinicians noting that the
+case belonging to an epidemiological cluster would not impact their use of the genomic
+test results.
+Experts also disagreed about the level of detail needed for WGS data, and this appeared
+to depend upon on whether the expert was a clinician as well as their prior experience
+with WGS through the COMPASS-TB project. For example, one expert indicated that
+‘‘clinicians are wanting to know which mutations conferred resistance’’, while another noted
+that they ‘‘don’t use these [mutations] right now routinely, so it’s not that relevant’’. When
+asked to comment on the resistance summary table in the current COMPASS-TB report
+(Fig. 1), clinicians were concerned about the use of abbreviations for both drug names and
+susceptibility status leading to misinterpretation, and many were uncertain how to use the
+detailed mutation information in the resistotype table.
+
+WGS data is vital, but some lack conﬁdence in its interpretation
+The expert consults provided a detailed overview of the tasks and data associated with TB
+care, allowing us to create a draft workflow outlining the TB diagnosis, treatment, and
+surveillance tasks coupled to the supporting data sources and data types (Fig. S1). This
+workflow was used to design the Task and Data Questionnaire.
+Of the 17 participants responding in full to the Task and Data Questionnaire (Table 1),
+most were from the United Kingdom (88%) and most reported professional experience
+and formal education in infectious diseases and epidemiology (Table S1). Participants
+were less likely to report education at the masters or doctoral level in microbial genomics,
+biochemistry, or bioinformatics (Table S1). Fewer than half (47.1%) of participants had
+participated in TB WGS projects, but all (100%) participants were enthusiastic about the
+role of microbial genomics in infectious disease diagnosis, both today (47.1%) and in the
+near future, pending clinical validation (52.9%).
+When queried about their potential future use of molecular data, whether WGS,
+genotyping, or other, participants indicated they foresaw themselves consulting, often
+or all the time, data on resistance-conferring mutations (82.3% of participants), MIRU-
+VNTR patterns (88.2%), epidemiological cluster membership (76.5%), single nucleotide
+polymorphism/variant distances from other isolates (64.7%), and WGS quality metrics
+(58.8%) (Table S2). However, of the 14 different data types queried, the majority of
+participants only felt confident in interpreting four (MIRU-VNTR, drug susceptibility
+from culture, drug susceptibility from PCR or LPA, genomic clusters)—most participants
+only felt somewhat confident, or not confident at all, interpreting the other data types
+(Table S3).
+Moving from confidence in their own interpretation of laboratory data types to
+confidence in the utility of WGS data in general, the majority of participants were
+confident that information contained within the TB genome can be used to correctly
+perform organism speciation (76.5%), assign a patient to existing clusters (70.0%), rule
+
+11/25
+
+TOTAL 
+SCORE
+Diagnose 
+Latent TB
+
+Patient Identifier
+Same
+3
+3
+3
+3
+3
+3
+3
+2
+1
+1
+1
+1
+26
+
+Sample Collection Date
+Same
+3
+3
+2
+3
+3
+3
+3
+1
+1
+1
+1
+1
+24
+
+Patient Prior TB Results
+Same
+3
+2
+3
+3
+3
+3
+3
+1
+1
+1
+0
+1
+23
+
+Speciation
+Speciation
+1
+3
+2
+3
+3
+3
+3
+2
+1
+1
+1
+1
+23
+
+Sample Type (sputum, fine 
+needle aspirate etc.)
+Same
+2
+3
+2
+3
+3
+3
+3
+1
+1
+1
+0
+1
+22
+
+Culture results
+NA
+1
+3
+2
+3
+3
+3
+3
+2
+1
+1
+0
+1
+22
+
+Sample Collection Site (lymph 
+node, lung etc..)
+Same
+2
+3
+2
+3
+3
+3
+3
+1
+1
+0
+0
+1
+21
+
+Acid Fast Bacilli Smear
+Speciation
+2
+3
+2
+3
+2
+3
+3
+1
+1
+1
+0
+1
+21
+
+Resistotype
+Predicted DST
+0
+2
+3
+1
+3
+3
+2
+2
+1
+1
+1
+1
+19
+
+Phenotypic DST
+Predicted  DST
+0
+2
+3
+2
+3
+3
+2
+1
+1
+1
+0
+1
+18
+
+Chest x-ray
+NA
+3
+3
+2
+3
+0
+2
+3
+1
+0
+0
+0
+0
+17
+
+Report Release Date
+Same
+2
+2
+1
+2
+2
+2
+2
+1
+0
+1
+0
+1
+15
+
+Requester IDs
+Same
+2
+2
+2
+2
+2
+2
+2
+1
+0
+0
+0
+0
+15
+
+Interpretation or comments 
+from reviewer
+Same
+2
+2
+1
+2
+2
+2
+3
+1
+0
+0
+0
+0
+15
+
+Predicted DST
+Predicted DST
+0
+2
+2
+1
+3
+3
+2
+1
+0
+1
+0
+0
+15
+
+MIRU-VNTR
+SNPs
+0
+2
+3
+1
+1
+1
+1
+1
+1
+1
+1
+1
+13
+
+Cluster Assignment
+Same
+0
+2
+2
+1
+1
+1
+0
+1
+1
+1
+1
+1
+11
+
+SNP/variant distance
+SNPs
+0
+1
+2
+1
+1
+1
+0
+1
+1
+1
+1
+1
+10
+
+Phylogenetic Tree
+Same
+0
+2
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+9
+
+Reviewer ID
+Same
+1
+1
+1
+1
+1
+1
+1
+1
+0
+0
+0
+0
+8
+
+TST results
+Speciation*
+3
+1
+1
+1
+0
+0
+0
+1
+0
+0
+0
+0
+7
+
+IGRA results
+Speciation*
+3
+1
+1
+1
+0
+0
+0
+1
+0
+0
+0
+0
+7
+
+Lab QC
+WGS Specific
+0
+1
+2
+1
+1
+1
+0
+1
+0
+0
+0
+0
+7
+
+Spoligotype
+SNPs
+0
+1
+1
+1
+0
+0
+0
+0
+0
+0
+0
+0
+3
+
+RFLP
+SNPs
+0
+1
+1
+1
+0
+0
+0
+0
+0
+0
+0
+0
+3
+
+Degree of Consensus:
+High (3)
+Some (2)
+Low (1)
+Very low (0)
+
+Figure 5
+Extent of consensus between TB workflow tasks and available TB data. Results are redun-
+dantly encoded using colour and a numerical value to represent the degree of consensus between partici-
+pants around using a specific data type to carry out a specific task.
+
+Full-size
+DOI: 10.7717/peerj.4218/fig-5
+
+out transmission events (64.7%), and to a lesser extent were confident TB WGS could be
+used to identify epidemiologically related patients (58.8%) and predict drug susceptibility
+(52.9%) (Table S4). The majority of participants thought genomic data may be able to
+inform clinicians of appropriate treatment regimens (100%) and identify transmission
+events (94.1%); however, participants showed mixed consensus toward whether genomic
+data could be used to monitor treatment progress for TB (47.2%) or diagnose active TB
+(52.9%).
+
+Respondent consensus suggests a role for WGS in diagnosis and
+treatment tasks
+To examine which data types were being used to support diagnosis, treatment, and
+surveillance tasks in the workflow, we assigned a numerical score reflecting respondent
+consensus around each data type-task pair (Fig. 5). We found greater consensus around the
+data types that participants would use in diagnosis and treatment tasks, but little consensus
+around the data they would use for surveillance tasks, contrasting with participants’
+previously stated support for using WGS or other genotyping data for understanding
+TB epidemiology. Overall, the most frequently used data types included administrative
+data (patient ID, sample type, collection site, collection date) and results from current
+laboratory tests (solid or liquid culture, smear status, and speciation), which together were
+used primarily for diagnosis and treatment. Prior test results from a patient were deemed
+important; however, the earlier expert consults indicated that such data was difficult to
+obtain and unlikely to be included in future reports.
+
+12/25
+
+We also queried participants’ perceptions of barriers impacting their workflow, with
+the majority of participants (83.3%) reporting issues with both the timeliness of receiving
+TB data from the reference laboratory and the distribution of test results across multiple
+documents (Table S5)—a finding that corroborated the procedural insights from the
+expert consults.
+
+Prototyping via a design sprint produces a range of design
+alternatives
+Equipped with an understanding of how WGS data might be used in the various TB
+workflow tasks, we embarked on the Design stage of the Design Study Methodology. A
+Design Sprint event involving study team members and information visualization experts
+resulted in four prototype report designs (Fig. 3) and various isolated design elements
+(Fig. 4). Although each prototype used different design elements for the required data
+types, when the prototypes were compared at the end of the event, common themes
+emerged. These included: presenting data in an order informed by the workflow—data
+related to diagnosis, treatment, then surveillance; placing actionable, high-level on the
+front page, with additional details on the over page; and using both an overall summary
+statement at the beginning of the report as well as brief summary statements at the beginning
+of each section.
+To drill down and determine which design elements best communicate the underlying
+data, we isolated individual design elements (Fig. 4) and classified them as wording
+choices—for example, which heading to use for a given section of the report—or design
+choices, such as layout, the use of emphasis, and the use of graphics (Table S6).
+
+The design choice questionnaire quantiﬁes participant preferences
+for speciﬁc design elements
+We next developed an online survey, the Design Choice Questionnaire, to assess
+stakeholders’ preferences for both specific design elements and overall report prototypes.
+The distribution of public health roles amongst survey participants is presented in Table 1;
+all but 11 participants (20%) actively worked with TB data. Participants were employed
+by Academic Institutions (35.2%), Hospitals (24.1%), and Public Health Organizations
+(33.3%), with only 7.4% of participants being employed in some other sector. The majority
+of participants were from the UK (59.2%), while 11.1% were from Canada; the remaining
+29.7% were drawn from the United States (6.5%), Europe (14.8%), Brazil (2.8%), India
+(2.8%), and Gambia (2.8%).
+We first examined participants’ preference for specific wording and design elements
+(Figs. 6A and 6B), comparing elements arising from the prototypes to those used in the
+existing COMPASS-TB report, which acted as a control. Notably, of the 15 wording and
+design elements queried, in only two cases was the control design preferred over a design
+arising from one of the prototypes (note that one query did not compare to a control).
+Furthermore, in eight out of 15 queries (Q6, Q8, Q9, Q10, Q12, Q17, Q5, Q18) participants
+showed strong preferences, wherein the top preference was +3 or more standard deviations
+from the mean for both clinicians and non-clinicians. Figure S1 provides a version of
+
+13/25
+
+14/25
+
+Figure 6 (...continued)
+in the design sprint (black). Lines connect options between clinician and non-clinicians preferences, with
+thicker crossing lines showing discordance between the two groups and vertical lines showing concor-
+dance in preferences. Rescaled rank scores are shown against a reference of random permutations (see
+Methods), with scores closer to 1 indicating the most preferred response. Specific questions are indicated
+with Q; the questions as presented to the participants are shown in Table S6.
+
+Fig. 6 with confidence intervals and indicates concordance between strong preferences and
+non-overlapping confidence intervals.
+The findings from the analysis of wording elements (Fig. 6A) showed that participants
+preferred complete terms to abbreviations, such as writing out ‘‘isoniazid’’ as opposed to
+‘‘INH’’ or ‘‘H’’, or ‘‘resistant’’ as opposed to ‘‘R’’ and that both clinicians and non-clinicians
+were in agreement overthe preferredvocabulary for sectionheadings. Interestingly, wording
+questions related to the treatment task yielded the widest range of rankings.
+Clear preferences were also observed for information design elements, again largely
+concordant between clinicians and non-clinicians (Fig. 6B). Participants preferred elements
+that drew attention to specific data, such summary statements, shading, and tick boxes,
+and many participants preferred that sections be prioritized, with less important details
+relegated to the second page of the report. However, there was less consensus around how
+much detail to include and where. The majority of participants indicated that genomic
+data pertaining to resistance-conferring mutations should be included (Fig. 6B; Q11), but
+were divided as which data should be included and where. Most (85%) wanted to know
+the gene harboring the resistance mutation (i.e., katG; inhA), but only half wanted details
+of the specific mutation (50% wanted the amino acid substitution, 46% wanted to know
+the nucleotide-level change). We did not test any design elements displaying the strength
+of the association between the mutation and the resistance phenotype; however, we will
+add this to a future version of the report pending receipt of the final mutation catalog from
+the ReSeqTB Consortium.
+Interestingly, while both clinicians and non-clinicians reported similar rankings for most
+design elements, one element showed an unusual distribution of scores—the visualization
+for showing genomic relatedness and membership in a cluster. While both groups of
+participants preferred a phylogenetic tree accompanied by a summary table, which is
+the current COMPASS-TB control design, the other four options appeared to be ranked
+randomly, with rescaled rank score close to 0.5, suggesting that none of the alternative
+options were particularly good.
+We also had participants rank their preferences for the four prototype designs (Fig. 6C).
+While all participants ranked Prototype D as their least preferred choice, many citing that
+the images used were too distracting, clinicians and non-clinicians varied in their ranking of
+the other three options, with clinicians preferring option A and non-clinicians preferring B.
+However, qualitative feedback collected for this question revealed that participants found
+comparing individual elements easier than comparing full reports.
+
+15/25
+
+Qualitative data aﬀords additional insights into report design
+The qualitative responses in the Design Choice Questionnaire raised important points
+that would otherwise not have been captured by quantitative data alone. For example,
+the importance of presenting drug susceptibility data clearly emerged from the qualitative
+responses. Participants indicated that ‘‘the report must call attention [to] drug resistance’’
+and expressed concern that the abbreviation of drug names and/or predicted resistance
+phenotype could lead to misinterpretation and pose risks to patient safety, stating that
+‘‘not all clinicians [are] likely to recognize the abbreviations’’ and ‘‘[using the full name]
+reduces the risk of errors, especially if new to TB’’. When choosing how to emphasize
+predicted drug susceptibility information (shading, bolding, alert glyphs, or no emphasis),
+some participants suggested shading draws the quickest attention to [resistance]’’ and that
+‘‘with presbyopia, resistance can be easily missed and therefore shading affords greater patient
+safety’’, but other participants indicated drug susceptibility, rather than resistance, should
+be emphasized: ‘‘not sure that resistant should be shaded—better to shade sensitive drugs in
+my view’’ and ‘‘it would be better to highlight what is working instead of highlight what is not
+working.’’ We opted to highlight resistance given the low incidence of drug-resistant TB in
+the UK and Canada, which were the primary application contexts. Some reported concerns
+as to whether such emphasis was possible with current electronic health records, including
+‘‘[bolding or shading] may not transfer correctly’’ and ‘‘shaded [text] won’t photocopy well.’’
+which prompted us to test both printing and photocopying of the resulting report.
+The issue of clinicians having little time to interact with the report, raised in both
+the expert consults and the Task and Data Questionnaire, also became apparent
+in the qualitative responses to the Design Choice Questionnaire, such as ‘‘the best
+likelihood of success will [come] from the ability to draw attention to someone scanning the
+document quickly’’. However, participants’ perceptions of which design choices best
+promoted rapid synthesis varied. Some preferred summaries in the form of check
+boxes—‘‘[a] tick box is the most straightforward way to summarize it. Reading a summary
+sentence will probably take longer’’ and ‘‘the check boxes provide an at-a-glance result’’—
+while others preferred additional commentary —‘‘interpretation is important; but tick boxes
+alone lack the necessary nuance required for interpretation’’ and that ‘‘tick boxes may cause
+confusion when clinicians read XDR without realizing that option is not selected. Ideal to add
+a comment about resistance’’. To address this concern we added a ‘‘No drug resistance
+predicted’’ option to the check-boxes (absent from the survey design options), and
+included shading elements to emphasize the drug susceptibility result.
+The qualitative responses to Q17 (Fig. 6B) provided further insight into the uncertainty
+around how best to represent genomic relatedness suggestive of an epidemiological
+relatedness. Some participants felt that data related to surveillance tasks should not appear
+in a report that is also meant for clinicians, either because it was not relevant to this
+audience—‘‘[this data] should not appear in the report. It should only be given to field epi
+and researchers. Overloading the clinical report would be deteriorating’’ and ‘‘not useful for
+a clinician’’—or because they were uncertain about its interpretation—‘‘cluster detection
+would be fine for those who already know what a cluster is’’ and ‘‘my patient’s isolate is 6
+SNPs from someone diagnosed 3 years ago. What is the clinical action?’’.
+
+16/25
+
+Of the design choices for cluster detection, several participants articulated that
+many of the options, including the control, ‘‘[included] too much information and [were]
+unnecessary for routine diagnosis/treatment’’. However, others felt that the options did not
+provide sufficient detail and offered alternatives, such as ‘‘if you can combine the
+phylogenetic tree with some kind of graph showing temporal spread that would be perfect.
+Adding geographical data would be a really helpful bonus too’’. This is an area of reporting
+that requires further investigation and was not fully resolved in our study.
+Finally, participants were candid about those design options that did not work well—for
+example, of the report design with many graphics (Fig. 6A, option D), participants indicated
+it was ‘‘distracting; looks like a set of roadworks rather than a microbiology report’’ and that it
+was important to ‘‘keep it simple’’. Their feedback also revealed when our phrasing on the
+survey instruments was unclear.
+
+Developing a ﬁnal report template
+There are no prescriptive guidelines around integrating our quantitative data, qualitative
+data, and ISO15189:2012 reporting requirements; thus, we have attempted to be as
+transparent and empiric as possible in justifying our final design (Fig. 7). A more thorough
+walkthrough is presented in the Fig. S1 and here we highlight selected choices. The final
+prototype is implemented in LaTeX and is available online as a template accessible at:
+http://www.cs.ubc.ca/labs/imager/tr/2017/MicroReportDesign/.
+We first incorporated ISO15189:2012 requirements (see Fig. S1) into the final report
+template and then turned to the preferences expressed in the Design Choice Questionnaire.
+Overall, information was structured to mirror the TB workflow—diagnosis, treatment,
+then surveillance. We chose to limit bolding to relevant information, and used shading
+to highlight important and actionable clinical information, under the rationale that
+appropriate use of emphasis could facilitate an accurate and quick reading of the report,
+with detailed information present but de-emphasized.
+In two instances, our design decisions deviated from participant preferences: we opted
+to use one column instead of two, and we presented detailed genomic resistance data on
+the first page of the report, rather than the second page. A single column was chosen as
+all of the information ranked as important by participants could be presented on a single
+page without the need to condense information into two columns. Because many of the
+resistotype details of the original report, such as mutation source and individual nucleotide
+changes (Fig. 1), were not included in the revised report, it was possible to present all of
+the participants’ desired data in a single table on one page.
+A draft of the final design was presented to a new cohort of TB stakeholders at a
+September, 2017 expert working group on standardized reporting of TB genomic resistance
+data. Through a group discussion, subtle changes to the report were made, including
+updating some of the language used (for example, replacing occurrences of the word
+‘‘sensitive’’ with ‘‘susceptible’’), adding the lineage to the Organism section, and adding
+additional fields to tables describing the sample, and the assay, such as what type of material
+was sequenced (pure culture, direct specimen) and what sequencing platform was used.
+
+17/25
+
+Figure 7
+Original (A) and revised reports (B). The revised report uses empirical evidence gathered
+through multiple stages of a human centered design process. Note that the image in the upper corner of
+the revised report is a placeholder for an organizational logo.
+
+Full-size
+DOI: 10.7717/peerj.4218/fig-7
+
+18/25
+
+DISCUSSION
+
+Microbial genomics is playing an increasingly important role in public health microbiology,
+and its successful implementation in the clinic will rely not just on validation and
+accreditation of WGS-based tests, but also in how effective the resulting reports are
+to stakeholders, including clinicians. Using Design Study Methodology, we developed a
+two-page report template to communicate WGS-derived test results related to TB diagnosis,
+drug susceptibility testing, and clustering.
+To our knowledge, this project is the first formal inquiry into human-centered design
+for microbial genomics reporting. We argue that the application of human-centered design
+methodologies allowed us to improve not only the visual aesthetics of the final report,
+but also its functionality, by carefully coupling stakeholder tasks, data, and constraints to
+techniques from information and graphic design. Giving the original report a ‘‘graphic
+design facelift’’ would not have improved the functionality, as some of the information
+in the original report was found to be unnecessary, presented in a way that could lead
+to misinterpretation, or did not take into account stakeholder constraints. For example,
+interviews and surveys revealed procedural and data constraints our study team had not
+anticipated, including the limited time available for clinicians to read laboratory reports and
+the need for simple, black and white formatting amenable to media ranging from electronic
+delivery to fax—these findings were critical to shaping the downstream design process.
+Furthermore, in nearly every case, study participants preferred our alternative design
+elements, informed by empirical findings in the discovery stage, over the control elements
+derived from the original report. Our approach also suggested that some participants are
+not confident in their ability to interpret certain types of genomic data. As WGS moves
+towards routine clinical use, it is clear that successful implementation of genomic assays
+will also require complementary education and training opportunities for those individuals
+regularly interacting with WGS-derived data.
+Although human-centered information visualization design methodologies are
+commonly used in software development, it could be asked whether they are warranted in
+a report design project. One advantage of tackling the simpler problem of report design is
+that it allows us to demonstrate Design Study Methodology in action and link evidence to
+design decisions more clearly than with a software product. We also collected data with the
+intention of applying it to the development and evaluation of more complex reporting and
+data visualization software that we plan to create. Similarly, others can use our approach
+or our data to inform the design of simple or complex applications elsewhere in pathogen
+genomics and bioinformatics.
+The exploratory nature of this project brings with it certain limitations. First, our
+participants were identified through convenience and snowball sampling within the
+authors’ networks, and thus are likely to be more experienced with the clinical application
+of microbial genomics. While this is appropriate for the context of our collaboration, in
+which our goal is redesigning a report for use by the COMPASS-TB team and collaborating
+laboratories, it does limit our ability to generalize the findings to other settings. WGS is
+only used routinely in a small number of laboratories, and even if its reach were larger,
+
+19/25
+
+these may be settings where English is not the first language used in reporting clinical
+results, or where written text is read in different ways—both of which would affect our
+design choices. Second, we did not have a priori knowledge of the effect sizes (i.e., extent
+of preferential difference for each type of question) in the Design Choice Questionnaire,
+making sample size calculations challenging. Had a priori effect sizes been available, the
+study could be powered, for example, for the smallest or average effect size. To avoid
+mis-characterizing our results, we have relied on primarily descriptive statistics, without
+tests for statistical significance, and assert that our findings are best interpreted as first steps
+toward a better understanding how information and visualization design can play a role in
+reporting pathogen WGS data. However, when confidence intervals were calculated for the
+results of the Design Choice Questionnaire, we observed that non-overlapping confidence
+intervals separated user preferences as well as the deviation from a random score metric that
+we primarily used in our analysis. We argue the latter is a useful measure for exploratory
+studies without clear a priori knowledge of effect sizes for proper sample size calculations.
+Finally, we did not undertake a head-to-head experimental comparison between the
+original report design and the revised design. While this comparison had been planned at
+the outset of our project, the results of the Design Choice Questionnaire showed such a
+clear preference for the alternative designs when comparing isolated components that we
+concluded there was no need for such a final test as it would yield little new evidence.
+For researchers wishing to undertake a similar human-centered design approach, we
+have summarized our primary findings into three experimental guidelines and five design
+guidelines. These guidelines arose from our experience throughout this report redesign
+process, but are intended to apply generally to the process of designing visualizations for
+microbial genomic data or other human health-related information.
+The three experimental guidelines reflect the areas of the design methodology that we
+found to be particularly important in our data collection and analysis as well as the final
+report design process. First, design around tasks. It is tempting to simply ask stakeholders
+what they want to see in a final design, but many of them will not be able to create an effective
+end product because design is not their principal area of expertise. However, stakeholders
+know very well what they do on a daily basis and can indicate data that are relevant to those
+specific tasks and can indicate in which areas they require more support. The role of the
+designer is to marry those tasks, clinical workflows, and constraints into design alternatives.
+Depending on the tasks and context, many design alternatives might be possible, making
+use of colour, more complex visualizations, or interactivity. In other situations, such
+as the one presented here, design constraints limit the range of prototypes that can be
+generated. Second, compare isolated components, and not just whole systems. Here we
+use system to mean either a simple report or a more complex software system. Comparing
+whole systems can overload an individual’s working memory, meaning they may rely on
+heuristics such as preferences around style or distracting elements, when assessing and
+comparing full systems (Shah & Oppenheimer, 2008). Presenting isolated design elements
+and controlling for non-tested factors (i.e., font, text) can reduce the burden on working
+memory and isolate the effect of design alternatives. Finally, compare against a control
+whenever possible. If a prior report or system exists, or if there are commonly agreed
+
+20/25
+
+upon conventions in the literature or field, it is useful to compare novel designs against an
+existing one. More generally, comparison of multiple alternatives is the most critical defense
+against defaulting to ad hoc designs and the most important step of our human-centered
+design methodology.
+Our five design guidelines reflect techniques from information visualization and graphic
+design that we used in an attempt to improve the readability of the report and balance
+different stakeholder information needs. First, structure information such that it mimics
+a stakeholder’s workflow. In this case, the report prioritizes a clinical workflow, and this
+workflow is reflected in the report’s design through the use of gestalt principles (Moore &
+Fitz, 1993)—treating the whole as greater than the sum of its parts. Specifically, we group
+related data and order information hierarchically, so that the document is read according
+to the clinical narrative we established in the Discovery phase. Second, use emphasis
+carefully. Here, bolding, text size, and shading were reserved to highlight important
+data and were not applied to aesthetic aspects of the report design. Third, present dense
+information in a careful and structured manner. Stakeholders should not have to search
+for relevant information—a cognitively expensive task (Chang et al., 2012) that can result
+in information loss (Shneiderman, 1996). Through the combination of gestalt, visual
+hierarchy, and careful use of emphasis, it is possible to present a lot of information by
+creating two layers: a higher-level ‘‘quick glance’’ layer and a more detailed lower layer.
+The quick glance layer should contain the relevant and clinically actionable information
+and should be visually salient (i.e., ‘‘pop-out’’), while the detailed layer should be less
+visually salient and contain additional information that some, but not all, stakeholders may
+wish to have (based on their tasks and data needs). Fourth, use words precisely. Specific
+terminology may not be uniformly understood or consistently interpreted by stakeholders,
+particularly when the designer and the stakeholders come from different domains, or even
+when individuals in the same domain have markedly different daily workflows, such as
+bioinformaticians and clinicians. Finally, if using images, do so judiciously. Images can be
+distracting when they do not convey actionable information relevant to the stakeholder.
+
+CONCLUSIONS
+
+We applied human-centered design methodologies to redesign a clinical report for a
+reference microbiology laboratory, but the techniques we used—drawn from more
+complex applications in information visualization and human–computer interaction—can
+be used in other scenarios, including the development of more complex data dashboards,
+data visualization or other bioinformatics tools. By introducing these techniques to the
+microbial genomics, bioinformatics, and genomic epidemiology communities, we hope to
+inspire their further use of evidence-based, human-centric design.

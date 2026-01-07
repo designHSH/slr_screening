@@ -1,0 +1,60 @@
+{
+  "file_name": "Burchert_2019_app-adaptation-low-intensity-e-mental-he.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Data collection was conducted without audio recordings, which reduced data quality and depth available to researchers.",
+      "justification": "The absence of audio recordings limited designers' ability to manage user understanding and to evaluate and verify user feedback post-hoc, hindering in-depth qualitative insight and rigorous assessment of participant responses.",
+      "reference_excerpt": "Especially working without audio recordings likely has affected data quality and data depth.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The team had difficulty recruiting participants with lower education backgrounds, limiting sample diversity.",
+      "justification": "This recruitment constraint hindered designers' ability to gain a representative understanding of the target population and impaired requirements specification and contextual understanding for less-educated user segments.",
+      "reference_excerpt": "While a heterogeneous age distribution was achieved, it was especially challenging to recruit participants with a lower education background.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Refugees were not pre-screened for symptoms of distress, so participants may not have matched the app's intended clinical target group.",
+      "justification": "Not sampling the intended clinical population constrained the designers' ability to specify accurate user requirements and to evaluate the prototype's suitability and potential health impact for the actual target users.",
+      "reference_excerpt": "In addition, the interviewed refugees were not pre-screened for symptoms of distress. Consequently, the feedback does not necessarily originate from the exact target group of the app (i.e., Syrian refugees with increased distress and impaired functioning).",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The team used prototyping software rather than a fully functioning app, so interactive exercises and real use could only be simulated.",
+      "justification": "Relying on non-functional prototypes limited designers' ability to evaluate interactive features, observe real user behaviour over time, and integrate realistic usability feedback into iteration cycles.",
+      "reference_excerpt": "Since the prototyping software was used instead of providing a functioning version of an actual app, certain elements such as the interactive exercises could only be simulated at this stage. In order to receive actual feedback on a working prototype it will be necessary to provide access to a fully functioning version.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "interaction",
+      "barrier_type": "resource",
+      "description": "Free-list interviews asked respondents to answer for the community, causing some responses to be given as representatives rather than from personal experience.",
+      "justification": "This interactional method choice produced secondary/hearsay data that weakened designers' ability to manage deep, personal user understanding and to accurately characterise contexts of use.",
+      "reference_excerpt": "In the free list interviews, respondents still answered as representatives of the larger group instead of from a personal standpoint. Consequently, this approach may have introduced themes that were rather based on hearsay than on personal experience.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "The planned contact-on-demand e-helper model included a 48-hour response latency that was judged too long and required more efficient e-helper management.",
+      "justification": "Operational constraints around e-helper availability and response time limited designers' ability to define acceptable guidance features and specify feasible system requirements, impeding production of an acceptable support model.",
+      "reference_excerpt": "the suggested response latency of up to 48 h was universally considered as too long and needs to be reduced, e.g., through more efficient systems for e-helper management.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

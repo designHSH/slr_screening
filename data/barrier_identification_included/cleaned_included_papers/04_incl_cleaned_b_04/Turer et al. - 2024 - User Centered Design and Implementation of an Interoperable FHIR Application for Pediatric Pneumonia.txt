@@ -1,0 +1,699 @@
+User-Centered Design and Implementation of an
+Interoperable FHIR Application for Pediatric
+Pneumonia Prognostication in a Randomized Trial
+
+Robert W. Turer1
+Stephen C. Gradwohl2
+Justine Stassun2
+Jakobi Johnson2
+Jason M. Slagle4
+
+Carrie Reale4
+Russ Beebe4
+Hui Nian5
+Yuwei Zhu5
+Daniel Albert6
+Timothy Coffman6
+Hala Alaw6
+
+Tom Wilson6
+Shari Just6
+Perry Peguillan6
+Heather Freeman6
+Donald H. Arnold2
+Judith M. Martin7
+
+Srinivasan Suresh7
+Scott Coglio8
+Ryan Hixon8
+Krow Ampofo3
+Andrew T. Pavia3
+
+Matthew B. Weinger4,9
+Derek J. Williams2
+Asli O. Weitkamp9
+
+1Department of Emergency Medicine and Clinical Informatics Center,
+UT Southwestern Medical Center, Dallas, Texas, United States
+2Department of Pediatrics, Vanderbilt University Medical Center,
+Nashville, Tennessee, United States
+3Department of Pediatrics, University of Utah Health, Salt Lake City,
+Utah, United States
+4Department of Anesthesiology and Institute of Medicine and Public
+Health, Center for Research and Innovation in Systems Safety,
+Vanderbilt University Medical Center, Nashville, Tennessee,
+United States
+5Department of Biostatistics, Vanderbilt University Medical Center,
+Nashville, Tennessee, United States
+
+Appl Clin Inform 2024;15:556–568.
+
+Address for correspondence Robert W. Turer, MD, MS,
+Department of Emergency Medicine and Clinical Informatics Center,
+UT Southwestern Medical Center, 5323 Harry Hines Blvd, Suite
+E4.300, Dallas, TX, 75390, United States
+(e-mail: Robert.turer@utsouthwestern.edu).
+
+6HealthIT, Vanderbilt University Medical Center, Nashville,
+Tennessee, United States
+7Department of Pediatrics, University of Pittsburgh and UPMC Children’s
+Hospital of Pittsburgh, Pittsburgh, Pennsylvania, United States
+8Enterprise Development Services, UPMC Children’s Hospital of
+Pittsburgh, Pittsburgh, Pennsylvania, United States
+9Department of Biomedical Informatics, Vanderbilt University
+Medical Center, Nashville, Tennessee, United States
+
+Keywords
+►FHIR
+►user-centered design
+►electronic health
+record
+►interoperability
+►research informatics
+
+Objective
+
+To support a pragmatic, EHR-based randomized controlled
+trial, we applied UCD methods, evidence-based risk commu-
+nication strategies, and interoperable software architecture
+to design, test, and deploy a prognostic tool for children with
+pneumonia in the ED. In the following sections, we describe
+four critical phases of the project: User Interface Design,
+Software Architecture, Evaluation and Deployment, and
+Second Site Deployment with each containing its respective
+Methods and Results.
+
+User Interface Design
+
+Methods
+We followed national standards9 and a UCD framework
+(►Fig.
+1)
+consisting
+of
+the following
+steps:
+problem
+analysis and user research, conceptual design and early
+prototyping, user interface development with iterative re-
+view and high-ﬁdelity prototyping, formative evaluation,
+and postdeployment summative evaluation. Herein, we
+describe the application of each phase to the design of
+our prognostic tool.
+
+Setting
+VUMC and UPMC are large, academic quaternary referral
+centers in Nashville, Tennessee, Unites States and Pittsburgh,
+Pennsylvania, United States, respectively. VUMC performed
+model design and validation, application design, and initial
+deployment. UPMC subsequently adapted and deployed
+the tool.
+
+Prognostic Model Information
+The previously described multivariable proportional odds
+logistic regression model uses age, sex, race, temperature,
+
+heart rate, respiratory rate, systolic blood pressure, and ratio
+of partial pressure of arterial oxygen to fraction of inspired
+oxygen
+(PaO2:FiO2)
+as
+predictors,
+applying
+restricted
+cubic splines for continuous variables to relax linearity
+assumptions and interaction terms to account for age-de-
+pendent vital sign norms.2 When true PaO2 and FiO2 meas-
+urements were unavailable, we estimated them using
+oxygen ﬂow rates and arterial oxygen saturation.10–13 The
+model predicts three severity classes based on the most
+severe outcome experienced during the encounter: very
+severe represents respiratory failure requiring invasive
+mechanical ventilation, shock requiring vasopressors, or
+death; severe represents other intensive care units (ICU)-
+level care; and mild–moderate represents all other admitted
+or discharged children not requiring ICU care. Our team
+previously validated the model, which demonstrated very
+good discrimination and calibration in the ED setting.2,14
+
+Problem Analysis and User Research
+We conducted user research at VUMC, UPMC, and Primary
+Children’s Hospital in Salt Lake City, Utah, United States. (The
+Utah team contributed to user research but did not partici-
+pate in the implementation aim described in this manu-
+script). User research consisted of ﬁeld observations with
+interactive probing (i.e., contextual inquiry) as well as formal
+interviews with individual providers and nurses in the EDs
+and ICUs.15 We examined care processes for children with
+pneumonia and how clinicians make prognostic- and dispo-
+sition-related decisions. Participants included faculty physi-
+cians, resident and fellow physicians, advanced practice
+providers (APPs), and nurses.
+
+Conceptual Design and Early Prototyping
+Based on the results of problem analysis and user research
+(discussed in “Results”), we proceeded to wireframe develop-
+ment followed by iterative reﬁnement informed by formative
+usability testing.16 We incorporated evidence-based design
+principles into our prototypes with attention paid to numer-
+acy, risk-framing, and visual communication strategies. In-
+formed by user preference for risk aversion, we employed
+negative framing in presenting our predicted outcomes. Neg-
+ative framing emphasizes the potential downside, such as
+stating there is a “5% probability of a very severe outcome,”
+rather than highlighting the positive, like a “95% probability of
+alesssevereoutcome.” WeincorporatedVanBelle’stechniques
+for presenting risk models, including the use of lines for
+representation of relative risks, use of hue for categorical
+differences and saturation/brightness for scale changes, and
+simultaneous use of both numbers and graphs.3,4
+
+Close collaboration between the design, development,
+and analytic teams assured accurate backend functionality
+and feasible user interfaces. Originally, we intended to
+perform in-person user evaluations. However, due to the
+coronavirus disease 2019 pandemic, we adapted our ap-
+proach and conducted individual virtual usability tests,
+allowing users to interact with high-ﬁdelity prototypes
+over a videoconferencing platform.
+
+Results
+
+Problem Analysis and User Research
+The CRISS team observed or interviewed 39 pediatric emer-
+gency medicine team members: 12 faculty physicians, 9
+
+fellows, 11 residents, 4 APPs, and 3 triage nurses. Overall user
+preference themes included risk averseness, accessibility, and
+importance of timing. Risk averseness refers to clinicians’
+reluctance to agree with lower risk estimates from a tool
+than suggested by their clinical gestalt. Quotes suggestive of
+this theme included: “…people are unlikely to downgrade…”
+and “the tool should focus on catching misses.” Accessibility
+referstotheneedfor riskcommunicationstobeembeddedand
+easily accessed within the EHR itself (i.e., clinicians would not
+leave the EHR to obtain risk scores). The importance of timing
+refers to the need to display model results after testing, such as
+labs or chest X-rays, was completed, but before committing to
+disposition decisions.
+
+Conceptual Design and Early Prototyping
+Early design efforts yielded several prototypes, progressing
+from paper prototypes to wireframe diagrams and, ﬁnally,
+high-ﬁdelity prototypes. An image of the high-ﬁdelity pro-
+totype is available in the ►Supplementary Materials (avail-
+able in the online version).
+
+Software Architecture
+
+As we approached the ﬁnal design, we turned our attention
+to software architecture and EHR integration. This section
+details our implementation in Epic at VUMC. Interoperability
+issues faced when adapting the application for Cerner at
+UPMC are discussed later in the manuscript.
+
+Methods
+
+Clinical Decision Support Considerations
+Design requirements and constraints mandated that the sys-
+tem: (1) integrate with an existing pneumonia identiﬁcation
+system (PIS) [VUMC only]; (2) facilitate trial enrollment and
+randomization; (3) allow for downstream reporting; and (4)
+function within both Epic and Cerner.
+The PIS at the VUMC is a natural language processing
+(NLP) system employing a random forest model that predicts
+the likelihood of pneumonia based on chest X-ray radiology
+reports and ﬁles its results to Epic ﬂowsheet rows, which can
+then trigger clinical decision support (CDS).17,18
+
+To address these constraints, we began our architectural
+design using the ﬁve “rights” of CDS (►Table 1).19
+
+Given the PIS’s ability to trigger native EHR workﬂows, we
+chose to use an interruptive alert (Epic BestPractice Advisory
+or BPA) to initiate the CDS workﬂow. We then considered how
+to implement model calculations, the user interface for model
+result display, and the randomization and enrollment module.
+For model calculation, we ﬁrst considered Epic and
+Cerner-native clinical scoring systems but neither could
+handle ordinal outcomes at the time. We then considered
+Epic’s Cognitive Computing platform—a proprietary system
+that integrates advanced predictive models into EHR work-
+ﬂows, but enterprise-level licensing costs, trial deadlines,
+and interoperability concerns made this impractical. We
+ultimately chose to create a custom application designed
+to address our statistical, interface, and interoperability
+needs. During the design phase of this project, both Epic
+and Cerner maintained FHIR APIs, which facilitated interop-
+erable design. Therefore, we chose the SMART on FHIR
+platform to integrate the application with the EHR.8
+
+At VUMC, we used Epic’s Active Guidelines functionality to
+launch our custom application. Active guidelines allows for
+simpliﬁed authentication and authorization, communication
+of application context information, and application interface
+rendering directly within an Epic browser window. Local
+expertise and server infrastructure led us to implement the
+application using JavaScript via the Angular framework (Goo-
+gle, LLC, Mountain View, California, United States).
+
+Knowledge Management Considerations
+Prior to development efforts, we performed Epic FHIR server
+validation. We ﬁrst located predictor variables in Epic based
+on observational and interview-based user research, which
+allowed for veriﬁcation of clinical workﬂows and variation in
+documentation practice. We successfully identiﬁed all pre-
+dictors as data elements in Epic.
+We then built an application entry in Epic’s App Orchard
+to serve as a test harness for the FHIR server and its exposed
+APIs. This entry point facilitated the creation of unique client
+identiﬁers, the exposure of FHIR web services, server end-
+points, and other application settings. Later, the application
+entry facilitated application deployment.
+
+Table 1 Five “rights” design requirements for pediatric pneumonia prognostic tool
+
+Abbreviation: EHR, electronic health record.
+
+Applied Clinical Informatics
+Vol. 15
+
+559
+
+We used Postman (Postman Inc, San Francisco, California,
+United States) to evaluate web services exposed by Epic’s
+FHIR server. Local expertise with the FHIR version STU3 (as
+well as anticipated changes in the R4 version during the time
+course of application development) led us to use this version.
+We explored the following FHIR resource requests:
+
+• Patient.Search
+• Patient.Read
+• Encounter.Search
+• Encounter.Read
+• Observation.Search (U.S. Core vital-signs proﬁle, Lines/
+Drains/Airways proﬁle)
+• Observation.Read
+
+While most patient data—including name, age, demo-
+graphics, and vital signs—could be retrieved through stan-
+dard FHIR requests using either default or U.S. Core proﬁles,
+we encountered barriers concerning oxygen supplementa-
+tion
+data,
+which
+were
+not
+available
+through
+Epic’s
+FHIR implementation. To resolve this issue, we used the
+“Observation.Search” request to extract the required data
+fromEpic’snativeﬂowsheets,whicharen’t partof thestandard
+core proﬁles, successfully meeting our validation criteria.
+A screenshot of the API validation process of an Observation.
+Search request is included in the ►Supplementary Materials
+(available in the online version).
+The Observation.Search request will return multiple
+values that meet the speciﬁed criteria. For most predictors
+(age, sex, temperature, heart rate, respiratory rate, systolic
+blood pressure), we used the ﬁrst documented values
+during the visit. Our estimation of the PaO2:FiO2 ratio
+requires contemporaneous SpO2 measurements and FiO2
+measurements or estimates depending on the modality of
+oxygen provided. To account for this, we used the ﬁrst
+measured SpO2 value and the closest PaO2 or FiO2 value
+within 1 hour of the SpO2 measurement. If a measured or
+estimated PaO2 or FiO2 was unavailable during that win-
+dow, room air was assumed.
+
+Enrollment and Randomization Module
+The pragmatic nature of the clinical trial required enrollment
+to be EHR based and embedded within clinical care under
+waiver of informed consent. The waiver of informed consent
+was justiﬁed based on feasibility concerns. Given the narrow
+time window for clinical decision-making, it was critical that
+clinicians be the ones to enroll patients. It would have been
+neither practical nor safe from a human timing standpoint or
+user interface standpoint for a research assistant to act as the
+middleperson and interrupt the clinical decision-making
+process. Given the conservative framing of the tool from a
+clinical decision-making standpoint, this strategy was con-
+sidered to confer the least risk to the patient.
+We designed the system to handle encounter enrollment
+and randomization to control and intervention groups. To
+facilitate EHR-based randomization, we used a random
+number generator within Epic via MUMPS code to ﬁle a
+random integer between 0 and 1 to a patient-level data
+
+structure (SmartData Element), which corresponded to con-
+trol and intervention arms, respectively, in a roughly 1:1
+ratio (subject to variation from the random number genera-
+tor). We used interruptive alerts (BPAs) to implement the
+randomization and enrollment module and to launch the
+custom app within Epic. Upon successful randomization and
+enrollment, the application launched immediately and au-
+tomatically via ActiveGuidelines.
+
+Reporting Considerations
+From conception, we designed the system to use EHR-native
+data structures to enable downstream reporting. Speciﬁcal-
+ly, our platform needed to write back enrollment, randomi-
+zation, and model result data. Since Epic’s FHIR servers were
+able to write to study-speciﬁc data elements using ﬂowsheet
+rows via the Observation.Create FHIR resource request, we
+used this approach. ►Table 2 shows the data elements the
+application returns to Epic.
+We also considered several other platforms. We refrained
+from using an external database managed by the custom
+development team, given the required downstream federation
+of data sources and the absence of a longitudinally available
+database administrator. We similarly forewent using RED-
+Cap,20 as there were anticipated challenges with integrating
+REDCap data with Epic-native structures in an automated
+fashion without the need for additional custom development.
+Finally, a dashboard was created using Tableau (Tableau
+Software, Mountain View, California, United States) as the
+presentation layer and Epic’s Clarity database as the backend
+layer for longitudinal study reporting.
+
+Results
+The ﬁnal architectural design is shown in ►Fig. 2. The enroll-
+ment and randomization alert are displayed in ►Fig. 3. The
+custom application is shown in ►Fig. 4. A screenshot of the
+reporting dashboard is shown in ►Fig. 5. A video of the ﬁnal
+workﬂow is included in the ►Supplementary Materials
+(available in the online version).
+
+Evaluation and Deployment
+
+Methods
+All modules underwent rigorous testing in distinct environ-
+ments: development for initial code checks, proof of concept
+for feasibility, and test for functionality. They were ﬁrst
+examined individually (component testing) and then together
+through integrated end-to-end testing prior to migration to
+the production environment. End-to-end integration testing
+required real-time collaboration from the following teams:
+
+• Local EHR client access team for enabling FHIR endpoints
+within the EHR.
+• EHR integration team for application access.
+• Custom development team for real-time debugging and
+application deployment.
+• Server administration for app migration.
+• EHR ED team for EHR build migration through develop-
+ment, test, and production environments.
+
+Applied Clinical Informatics
+Vol. 15
+
+560
+
+• Clinical subject matter experts for evaluating score valid-
+ity and app behavior.
+
+User acceptance testing was performed before the appli-
+cation was available to end users. Test cases were written
+using clinical scenarios extracted from a prior study within
+the same grant.
+
+Results
+We unit tested the CDS system, FHIR app, and FHIR app data-
+ﬂows separately, which identiﬁed several conﬁguration prob-
+lems requiring correction prior to end-to-end testing. During
+end-to-end testing, we identiﬁed environmental differences
+between test and production environments requiring correc-
+tionfortheapptofunction.Havingthedevelopmentandclinical
+teams present in real time during end-to-end testing sessions
+allowed for prompt resolution and successful deployment.
+The prognostic tool was successfully deployed to a produc-
+tion environment in November 2020. Between then and study
+completion in November 2022, the enrollment workﬂow at
+VUMC triggered during 1,310 patient encounters, of which
+333 (25.4%) were deemed eligible by clinicians for enroll-
+ment. Of these, 147 (44.1%) were randomized to the inter-
+vention group. Among the intervention group, the model
+was viewed in the FHIR application by at least one user for
+120 (81.6%) encounters. Enrollment for the trial is now
+complete, and results associated with clinician decision-
+making and formal usability evaluation with iterative
+
+updates will be submitted for publication upon completion
+of the primary analyses.
+
+Second Site Deployment (University of
+Pittsburgh Medical Center)
+
+Methods
+Technology, interoperability, workﬂow, and interface chal-
+lenges arose when transitioning the application for use at
+UPMC. The application was developed using the Angular
+framework, with which UPMC’s developers were unfamiliar.
+The necessary training and familiarization took additional
+time that had not been anticipated. Regular meetings
+between the development teams from both sites minimized
+this time cost.
+The VUMC application server was deployed in a Linux
+environment, whereas UPMC employs primarily Windows
+Internet Information Services servers (Microsoft Corpora-
+tion, Redmond, Washington, United States). Deployment at
+UPMC therefore required the deployment of a new Linux
+server and the Nginx web server (F5 Inc, Seattle, Washington,
+United States) for app delivery.
+There were between site variations in vendor FHIR server
+implementations resulting in inconsistent FHIR resource
+availability. Some variables like oxygen delivery required a
+“back door” through Epic’s native web services and Cerner’s
+FHIR server lacked equivalent functions. To address this,
+
+Table 2 Application data elements returned to Epic via FHIR interface
+
+Abbreviations: BP, blood pressure; FHIR, Fast Healthcare Interoperability Resources; ICU, intensive care unit; HR, heart rate; RR, respiratory rate.
+
+Applied Clinical Informatics
+Vol. 15
+
+561
+
+UPMC developers carefully mapped concepts using LOINC
+(Logical Observation Identiﬁers Names and Codes) codes and
+extracted many candidate variables using a mix of FHIR and
+Cerner-native web services.
+Beyond the challenges from an application and server
+standpoint, one-to-one mappable CDS workﬂows do not
+exist between Epic and Cerner for triggering and displaying
+the application and there was differing infrastructure for
+randomizing and enrolling patients. For instance, since the
+NLP-based workﬂow was not available at UPMC, we re-
+quired a different approach to enrollment. Using Cerner’s
+Discern rule-based framework, we initiated the workﬂow
+when a clinician opened the patient’s chart and the follow-
+ing criteria were present: resulted chest X-ray and an ED
+chief
+complaint
+of
+respiratory
+problem,
+cough,
+or
+congestion/upper respiratory infection. Patients were ran-
+
+domized to proceed further based on whether their en-
+counter ID was even or odd. If randomized, the EHR
+displayed a passive alert via an icon on the Cerner ED track
+board (a department-level spreadsheet style tool that
+allows clinicians to monitor ED care). If this icon was
+selected, clinicians would be shown a Cerner Powerform
+(data entry module) that described eligibility criteria and
+facilitated enrollment the patient in the study. If enrolled,
+the FHIR application was launched using Cerner’s mPage
+(web integration) functionality and the remainder of the
+workﬂow was like VUMC’s. ►Fig. 6 depicts the workﬂow
+and architecture at UPMC.
+Weekly meetings with the clinical, UCD, and development
+teams from both sites ensured both application and EHR
+workﬂow versions matched as closely as possible while
+maintaining the integrity of key metrics for downstream
+
+Fig. 2
+Final software architectural design at VUMC for custom application. VUMC, The Vanderbilt University Medical Center.
+
+Applied Clinical Informatics
+Vol. 15
+
+562
+
+reporting. Ultimately, a similar test strategy was employed
+for testing each component and end-to-end integration of
+the app at UPMC before the tool was deployed in production.
+
+Results
+A PowerPoint ﬁle depicting the UPMC workﬂow is included
+in the ►Supplementary Materials (available in the online
+version). The pediatric pneumonia prognostic tool was
+deployed in a production environment from November
+2020 through November 2022. During the study period,
+the UPMC EHR interface triggered during 3,117 encounters.
+Clinicians deemed 201 of 3,117 (6.4%) patients eligible for
+enrollment, of whom 117 (58.2%) were randomized to the
+
+intervention group. Among the intervention group, the
+model was viewed in the FHIR application by at least one
+user during 81 (69.2%) encounters.
+
+Discussion
+
+We employed UCD and CDS principles to design, imple-
+ment, test, and deploy a custom, EHR-integrated FHIR
+application facilitating enrollment, randomization, model
+visualization, data capture, and reporting in support of a
+randomized pragmatic clinical trial. We learned many
+lessons during this process related to knowledge manage-
+ment,
+integrated
+custom
+app
+maintenance,
+and
+
+interoperability. We suspect the differences in enrollment
+rates between sites was related to differences in the enroll-
+ment workﬂow (i.e., the presence or absence of the PIS NLP
+tool), which could lead to a broader range of patients being
+included at the UPMC than at VUMC. This highlights the
+value in tools such as the PIS for focusing enrollment and
+reducing alert fatigue.
+
+Knowledge Management
+Due to the dynamic nature of medical knowledge and
+representation, EHR data structures and features change
+regularly. Ideally, upcoming EHR upgrades or local conﬁgu-
+ration changes, such as where vital signs are recorded, would
+be perfectly communicated to all teams who use them.
+However, communication failures are inevitable with down-
+stream consequences for custom apps. For instance, between
+implementing the PIS and the custom application, many
+
+ﬂowsheet rows in Epic at the VUMC representing oxygen
+delivery changed due to clinical needs. This change was only
+detected by observing clinicians and nurses at the point of
+care. Communication with end users and frequent regression
+testing can identify these changes early.
+Another knowledge management challenge relates to
+changing standards (e.g., FHIR) and individual standard
+implementations (e.g., by vendor systems). Support teams
+usually broadcast these changes, but communication failures
+or nonbroadcast developer level feature changes (e.g., ﬂow-
+sheet access in Epic) can lead to unidentiﬁed bugs. For
+example, after deploying our app, Epic changed how its
+FHIR Server handled patient encounter information during
+application launch, which led to application failure and the
+erroneous exclusion of an eligible encounter. Furthermore,
+this error was only detected after our team noticed aberrant
+behavior from the application and collaborated with our
+
+developers and the EHR vendor to identify the bug. Solutions
+to minimize the impact of these changes include scheduled
+regression testing of both custom apps and launch harnesses,
+frequent communication with vendor technical support
+staff, and ensuring that custom development teams are
+included in new feature reviews from vendor systems.
+
+Integrated Custom App Maintenance
+In contrast to a traditional software development environ-
+ment where detailed automated unit tests can be deployed,
+EHR systems typically use what-you-see-is-what-you-get
+editors that reduce barriers to entry but allow for small
+environmental differences to go undetected. For instance,
+during the implementation of this project, there were several
+times where inconsistent browser allow lists, data structure
+identiﬁers, and user security settings between development,
+test, and production environments variably impacted our
+app in each environment. Furthermore, variable enabling
+of vendor FHIR server features can unexpectedly impact
+integrated applications. Strategies for managing these chal-
+lenges include rigorous regression testing performed in
+each environment and robust application logging to facili-
+tate debugging after unexpected clinical events, which are
+
+often hard to simulate or anticipate in test environments.
+An example where logging was helpful was a case where a
+patient had more than 1,000 vital signs charted over several
+visits, which exceeded the FHIR server’s capacity. This had
+not been anticipated during design, and the audit log
+allowed us to detect and address this issue. Finally, imple-
+menting a “debug mode” for developers in production
+environments (without writing to production data struc-
+tures) was useful for identifying conﬁguration idiosyncra-
+sies between environments. Formal risk analysis during
+architectural design might help teams designing similar
+applications anticipate some of the challenges we encoun-
+tered prior to deployment.21
+
+Interoperability Concerns
+Converting our app for use at a second health system with
+differences in expertise, preferred web development frame-
+works, operating systems, web server platforms, and EHR
+vendors presented many challenges. While the site-speciﬁc
+differences were anticipated early during the design phase,
+the FHIR-related challenges were not. Marketing materials
+sometimes present FHIR as a simple solution for interopera-
+bility betweenvendor systemsorbetweensitesusing thesame
+
+EHR. However, substantial differences exist in FHIR server
+implementation and conﬁguration between vendor systems
+and even different sites using the same system. Therefore,
+conﬁguration at a new site can be quite time intensive due to
+data validation and application testing requirements.
+Furthermore, the knowledge management burden for
+maintaininganintegratedapplicationissubstantialforasingle
+site, but longitudinal surveillance for drift in how clinical
+concepts are represented across multiple systems is an even
+
+greater challenge requiring longitudinal, intentional surveil-
+lance. In the same vein, we recommend teams developing
+similar applications in thefuture should prospectively identify
+necessary data structures natively within each EHR and each
+EHR’s FHIR server before architectural design, as this approach
+would identify problems early (such as the representation of
+oxygen delivery in our application). Dorr et al describe a useful
+approach to assessing data adequacy using FHIR in the setting
+of hypertension management that would be useful for teams
+
+pursuing projects like ours in the future.22 Lobach et al provide
+another useful example of how future investigators can evalu-
+ate and report the viability of FHIR app integration in an EHR
+environment during application design.23
+
+Finally, the FHIR standard, while robustly designed for
+customizability, still has gaps in the U.S. Core proﬁle (as
+demonstrated by the amount of effort needed to model oxy-
+genation) that adds substantial complexity when using the
+standard. In short, FHIR applications are not simply plug-
+and-play and require informaticians and developers with
+expertise in the FHIR standard, local EHR and FHIR conﬁgura-
+tion, and local custom development resources for successful
+interoperability.
+
+Regulatory Concerns
+In 2022, after we designed and deployed our application, the
+Food and Drug Administration (FDA) released recommenda-
+tions about what type of CDS software is subject to FDA
+oversight as a device.24 While our application was not subject
+to these guidelines due to our timeline, it likely would not
+have been considered a device under the FDA criteria. Future
+developers of applications like ours should be mindful of
+these guidelines and review them with their local legal and
+compliance ofﬁces.
+
+Conclusion
+
+The union of UCD principles, modern clinical data standards,
+and a multilayer testing plan facilitated implementation of a
+real-time CDS application that displays prognostic informa-
+tion for children presenting to the ED with pneumonia while
+facilitating a pragmatic, EHR-based randomized clinical trial
+at two health systems with different EHR vendors. Careful
+planning, iterative design, knowledge management, and
+rigorous testing were critical for successful implementation.

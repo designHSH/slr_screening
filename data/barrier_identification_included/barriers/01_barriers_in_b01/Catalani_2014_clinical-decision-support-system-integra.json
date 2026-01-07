@@ -1,0 +1,51 @@
+{
+  "file_name": "Catalani_2014_clinical-decision-support-system-integra.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Fragmented and incomplete clinical information systems (EMR, lab, pharmacy, radiology, TB records) produced missing patient data that produced incorrect reminders.",
+      "justification": "Poor system integration and missing data prevented the design team from producing accurate, actionable decision-support messages and hindered evaluation and iteration during usability testing and lab simulation.",
+      "reference_excerpt": "Clinicians perceived the information systems, however helpful, to frequently suffer from missing patient data. Information system managers understood that this problem derived, in part, from the lack of integration between patient’s EMR, laboratory management information systems, pharmacy information systems, radiology information systems, and TB patient records.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Basic infrastructure and supply-chain limitations (lack of functional printers, unreliable electricity, limited radiology access, and IPT stock-outs) were identified as major implementation stumbling blocks.",
+      "justification": "These external resource constraints directly impeded the team's ability to deliver, test, and scale the paper‑based decision support (production, deployment, and evaluation workloads) and forced the team to spend months addressing feasibility rather than design refinement.",
+      "reference_excerpt": "These included technology systems requirements such as functional printers, reliable electricity, and improvements to EMR data quality and they also included clinical requirements such as adequate IPT stocks and supply-chain management, improved access to radiology, and provider knowledge of TB and IPT standards of care.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "interaction",
+      "barrier_type": "knowledge",
+      "description": "Most clinicians had insufficient knowledge about IPT eligibility and uncertainty about interpreting or ordering chest x-rays.",
+      "justification": "Clinician knowledge gaps limited the team's ability to specify user requirements and design actionable reminders, because providers could not reliably act on or validate the system's recommendations during usability evaluation.",
+      "reference_excerpt": "Clinician knowledge of IPT. Interview transcripts and observation sessions alike revealed that, although some clinicians were quite knowledgeable about global and institutional standards for determining IPT eligibility, most had insufficient knowledge to determine eligibility for their patients. In particular, they often described being unsure about the role of chest x-ray, when and if it should be ordered and how to read radiographs.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "interaction",
+      "barrier_type": "emotional",
+      "description": "Clinicians were hesitant to initiate IPT for eligible patients due to prior experiences with drug 'stock-outs' and fear of contributing to drug resistance.",
+      "justification": "This clinician reluctance reduced the actionability of reminders and hampered the team's ability to observe and iterate on real-world behavior change, affecting evaluation and integration of feedback.",
+      "reference_excerpt": "Providers remained hesitant to start a patient on IPT due to pharmacy shortages. Previous experiences with periodic and long-term ‘‘stock-outs,’’ as participants described them, made clinicians wary of contributing toward drug resistance by exposing patients to IPT and not completing the regimen.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "stakeholder",
+      "barrier_type": "resource",
+      "description": "Operational data‑entry and record‑update processes were ineffective: providers' updates to patient records were not reliably entered into the EMR by the data team.",
+      "justification": "Failure of the data workflow meant corrections from clinicians did not propagate into the system, producing persistent inaccurate reminders and preventing designers from validating fixes during iterative testing and evaluation.",
+      "reference_excerpt": "\"If I see the chest x-ray missing, first I ask the patient if they did it recently. If they say yes, then I ask what the result was. ... I make a note of it to update the information. And sometimes I repeat this note to the data team several times and nothing changes in the system. I keep getting the reminder.\"",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}

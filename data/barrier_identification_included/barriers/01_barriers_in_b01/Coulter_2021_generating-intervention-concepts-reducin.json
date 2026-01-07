@@ -1,0 +1,60 @@
+{
+  "file_name": "Coulter_2021_generating-intervention-concepts-reducin.txt",
+  "barriers": [
+    {
+      "barrier_id": 1,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The COVID-19 pandemic prevented safe in-person engagement, forcing the team to shift to web-based methods that change access and participation dynamics.",
+      "justification": "This external constraint limited the team's ability to conduct in-person user research and contextual inquiry, hindering their ability to understand context of use and to facilitate certain types of user involvement and iterative design activities.",
+      "reference_excerpt": "Moreover, the COVID-19 pandemic hindered our ability to engage safely with participants, and these web-based methods enable our research to continue despite current limitations on in-person research activities.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 2,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Eligibility required participants to have internet, video camera, audio, and microphone access, excluding youth without these resources.",
+      "justification": "Requiring specific technology prevented the researchers from recruiting and involving SGMY without adequate devices or connectivity, limiting participant diversity and constraining the team’s ability to manage user understanding and study contexts of use.",
+      "reference_excerpt": "Eligible youth are aged 14 years to 18 years, live in the United States, identify as sexual and/or gender minorities, and have internet, video camera, audio, and microphone access to attend the virtual sessions.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 3,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "All sessions were conducted in English, excluding non-English-speaking SGMY from participation.",
+      "justification": "Limiting sessions to English reduced the researchers' ability to engage a linguistically diverse sample, which constrains understanding of varied user experiences and limits facilitation of inclusive user involvement and holistic experience design.",
+      "reference_excerpt": "All the sessions will be conducted in English.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 4,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "Recruitment fell short of the planned sample: far fewer participants consented and attended than the target 45-60.",
+      "justification": "The lower-than-planned enrollment and attendance limited the researchers' capacity to generate the intended breadth of ideas and to sustain iterative activities and evaluation across cohorts, hindering facilitate user involvement and produce/evaluate design solutions.",
+      "reference_excerpt": "A total of 50 participants were invited to participate, and 22 consented to participate. In total, 16 SGMY participated in at least one human-centered design session.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 5,
+      "actor": "designer",
+      "barrier_type": "emotional",
+      "description": "The team intentionally did not ask participants about their personal experiences with adolescent relationship abuse to avoid harm.",
+      "justification": "This ethical decision constrained the depth of first-person experiential data the researchers could collect, limiting their ability to manage deep user understanding and specify rich user requirements for intervention design.",
+      "reference_excerpt": "It is important to note that we never inquired about participants’personal experiences with ARA.",
+      "certainty": "certain"
+    },
+    {
+      "barrier_id": 6,
+      "actor": "designer",
+      "barrier_type": "resource",
+      "description": "The study excluded other stakeholder groups (eg, parents and school personnel) from participation.",
+      "justification": "Omitting additional relevant stakeholders limited designers' ability to address the holistic experience and contextual determinants of interventions, reducing perspectives available to inform requirements and concept development.",
+      "reference_excerpt": "In addition to youth, the inclusion of other stakeholders (eg, parents and school personnel) would likely have important insights for intervention concepts, but they are not included in this study.",
+      "certainty": "certain"
+    }
+  ],
+  "note": ""
+}
