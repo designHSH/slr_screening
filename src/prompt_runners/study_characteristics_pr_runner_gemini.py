@@ -23,9 +23,10 @@ import re
 import json
 import csv
 import time
+import hashlib
 import random
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from datetime import datetime, timezone
 
 import yaml
 from dotenv import load_dotenv
@@ -33,232 +34,206 @@ from google import genai
 from google.genai import types
 
 
-# -----------------------------
-# Utilities
-# -----------------------------
-def safe_json_loads(text: str) -> Dict[str, Any]:
-    """
-    More robust than json.loads(response.text) because models sometimes
-    return extra whitespace or accidental wrappers.
-    Strategy:
-    - Try direct loads
-    - If fails, extract first {...} JSON object block and try again
-    """
-    try:
-        return json.loads(text)
-    except Exception:
-        pass
-
-    # Attempt to extract the first JSON object from the text
-    match = re.search(r"\{.*\}", text, flags=re.DOTALL)
-    if not match:
-        raise ValueError("Model response is not valid JSON and no JSON object was found.")
-    return json.loads(match.group(0))
+# =========================
+# Config (as requested)
+# =========================
+INPUT_PDF_FOLDER = r"data\test_data\gemini\test_ch_input"
+OUTPUT_CSV_FILE = r"data\test_data\gemini\study_characteristics_extraction_result\study_characteristics_extraction_results.csv"
+PROMPT_YAML_FILE = r"prompt\study_characteristics_full_text_pr.yaml"
 
 
-def ensure_keys(obj: Dict[str, Any], required: List[str], context: str = "") -> None:
-    missing = [k for k in required if k not in obj]
-    if missing:
-        raise ValueError(f"Missing required key(s) {missing} in {context or 'JSON'}.")
+# =========================
+# Helpers
+# =========================
+CSV_HEADERS = [
+    # Identifiers & metadata
+    "paper_id", "paper_key", "file_name", "model_id", "prompt_version", "run_timestamp",
 
+    # Bibliographic metadata (no evidence)
+    "paper_title", "authors", "publication_date", "author_affiliations",
 
-def as_list(x: Any) -> Optional[List[Any]]:
-    if x is None:
-        return None
-    return x if isinstance(x, list) else [x]
+    # Study intent, domain, region (quote-only evidence)
+    "objective_value", "objective_quote",
+    "domain_value", "domain_quote",
+    "region_value", "region_quote",
 
+    # Design output & approach (quote-only evidence)
+    "designed_solution_value", "designed_solution_quote",
+    "design_methodology_value", "design_methodology_quote",
+    "hcd_ucd_frameworks_value", "hcd_ucd_frameworks_quote",
+    "design_phases_value", "design_phases_quote",
 
-def jdump(x: Any) -> str:
-    """Compact JSON string for storing lists/dicts safely in CSV."""
-    return json.dumps(x, ensure_ascii=False, separators=(",", ":"))
+    # People involved (quote-only evidence)
+    "design_team_value", "design_team_quote",
+    "main_users_value", "main_users_quote",
+    "participants_groups_value", "participants_groups_quote",
+    "participant_activities_value", "participant_activities_quote",
 
-
-# -----------------------------
-# Schema-aware normalization
-# -----------------------------
-BIB_FIELDS = ["paper_title", "authors", "publication_date", "author_affiliations"]
-
-STUDY_FIELDS = [
-    "objective_of_paper",
-    "designed_solution_or_intervention",
-    "domain_of_solution",
-    "design_team_composition",
-    "main_users_or_target_group",
-    "participants_in_design_process",
-    "number_of_participants_in_design_process",
-    "design_methodology",
-    "specific_HCD_UCD_framework_version",
-    "design_process_steps_or_phases",
-    "other_stakeholders_involved_besides_users",
+    # Other stakeholders (quote-only evidence)
+    "other_stakeholders_value", "other_stakeholders_quote",
 ]
 
 
-def normalize_field_node(node: Any, evidence_mode: str) -> Dict[str, Any]:
+def sha256_short(path: Path, n: int = 12) -> str:
+    """Stable ID: P- + first n hex chars of SHA-256 of the PDF bytes."""
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(chunk)
+    return f"P-{h.hexdigest()[:n]}"
+
+
+def make_paper_key_from_filename(filename: str, max_len: int = 80) -> str:
     """
-    Normalizes a field node that should look like:
-      { "value": ..., "evidence": ... } or null (but prompt enforces object)
-    evidence_mode:
-      - "location_only": evidence expected to be {"location": "..."} or null
-      - "quote_and_location": evidence expected to be {"quote": "...", "location": "..."} or null
+    Optional human-readable key derived from filename.
+    Not guaranteed unique; that's okay. Keep it filesystem/CSV safe.
     """
-    if not isinstance(node, dict) or "value" not in node or "evidence" not in node:
-        # If model violated schema, coerce to null-safe structure
-        return {"value": None, "evidence_location": None, "evidence_quote": None, "raw_evidence": None}
-
-    value = node.get("value", None)
-    evidence = node.get("evidence", None)
-
-    # Evidence may be null
-    if evidence is None:
-        return {"value": value, "evidence_location": None, "evidence_quote": None, "raw_evidence": None}
-
-    # Evidence should be dict
-    if not isinstance(evidence, dict):
-        # Preserve as raw evidence for debugging
-        return {"value": value, "evidence_location": None, "evidence_quote": None, "raw_evidence": jdump(evidence)}
-
-    loc = evidence.get("location", None)
-
-    if evidence_mode == "location_only":
-        return {"value": value, "evidence_location": loc, "evidence_quote": None, "raw_evidence": None}
-
-    # quote_and_location
-    quote = evidence.get("quote", None)
-    return {"value": value, "evidence_location": loc, "evidence_quote": quote, "raw_evidence": None}
+    stem = Path(filename).stem.lower()
+    stem = re.sub(r"[^a-z0-9]+", "_", stem).strip("_")
+    return stem[:max_len] if stem else ""
 
 
-def normalize_response_schema(raw: Dict[str, Any]) -> Dict[str, Any]:
+def safe_json_loads(text: str) -> dict:
+    """Parse JSON robustly (handles accidental extra text)."""
+    try:
+        return json.loads(text)
+    except Exception:
+        m = re.search(r"\{.*\}", text, flags=re.DOTALL)
+        if not m:
+            raise ValueError("Response is not valid JSON and no JSON object was found.")
+        return json.loads(m.group(0))
+
+
+def jdump(value) -> str:
+    """Dump lists/dicts as compact JSON for CSV cells."""
+    return json.dumps(value, ensure_ascii=False, separators=(",", ":"))
+
+
+def normalize_to_row(raw: dict) -> dict:
     """
-    Validates and normalizes the model output to a stable internal representation.
-    Produces a dict with:
-      bibliography.<field>.value
-      bibliography.<field>.evidence_location
-      study_characteristics.<field>.value
-      study_characteristics.<field>.evidence_location
-      study_characteristics.<field>.evidence_quote
+    Convert the model JSON into a flat row matching CSV_HEADERS.
+    Assumes raw follows:
+      { "bibliography": {...}, "study_characteristics": {...} }
     """
-    ensure_keys(raw, ["bibliography", "study_characteristics"], context="top-level JSON")
+    if not isinstance(raw, dict) or "bibliography" not in raw or "study_characteristics" not in raw:
+        raise ValueError("JSON missing required top-level keys: bibliography, study_characteristics")
 
-    bib = raw["bibliography"]
-    study = raw["study_characteristics"]
+    bib = raw.get("bibliography") or {}
+    sc = raw.get("study_characteristics") or {}
 
-    if not isinstance(bib, dict) or not isinstance(study, dict):
-        raise ValueError("bibliography and study_characteristics must be JSON objects.")
+    def get_val(obj, key):
+        return obj.get(key, None)
 
-    normalized: Dict[str, Any] = {"bibliography": {}, "study_characteristics": {}}
+    def to_cell(v):
+        if isinstance(v, (list, dict)):
+            return jdump(v)
+        return v
 
-    # Bibliography: location only
-    for f in BIB_FIELDS:
-        node = bib.get(f, {"value": None, "evidence": None})
-        normalized["bibliography"][f] = normalize_field_node(node, evidence_mode="location_only")
+    row = {
+        # Bibliography
+        "paper_title": to_cell(get_val(bib, "paper_title")),
+        "authors": to_cell(get_val(bib, "authors")),
+        "publication_date": to_cell(get_val(bib, "publication_date")),
+        "author_affiliations": to_cell(get_val(bib, "author_affiliations")),
 
-    # Study: quote + location
-    for f in STUDY_FIELDS:
-        node = study.get(f, {"value": None, "evidence": None})
-        normalized["study_characteristics"][f] = normalize_field_node(node, evidence_mode="quote_and_location")
+        # Study characteristics
+        "objective_value": to_cell(get_val(sc, "objective_value")),
+        "objective_quote": to_cell(get_val(sc, "objective_quote")),
 
-    return normalized
+        "domain_value": to_cell(get_val(sc, "domain_value")),
+        "domain_quote": to_cell(get_val(sc, "domain_quote")),
 
+        "region_value": to_cell(get_val(sc, "region_value")),
+        "region_quote": to_cell(get_val(sc, "region_quote")),
 
-# -----------------------------
-# Flattening (CSV-stable)
-# -----------------------------
-def flatten_normalized(normalized: Dict[str, Any], max_activity_slots: int = 10) -> Dict[str, Any]:
-    """
-    Flattens normalized dict into stable CSV columns.
+        "designed_solution_value": to_cell(get_val(sc, "designed_solution_value")),
+        "designed_solution_quote": to_cell(get_val(sc, "designed_solution_quote")),
 
-    Special handling:
-    - number_of_participants_in_design_process:
-        - keep raw JSON in one column: ..._value_json
-        - additionally expand into fixed slots activity_i, participants_i (up to max_activity_slots)
-    """
-    out: Dict[str, Any] = {}
+        "design_methodology_value": to_cell(get_val(sc, "design_methodology_value")),
+        "design_methodology_quote": to_cell(get_val(sc, "design_methodology_quote")),
 
-    # Bibliography fields
-    for f in BIB_FIELDS:
-        node = normalized["bibliography"][f]
-        out[f"bibliography_{f}_value"] = jdump(node["value"]) if isinstance(node["value"], (list, dict)) else node["value"]
-        out[f"bibliography_{f}_evidence_location"] = node["evidence_location"]
-        # No quote for bibliographic fields
-        out[f"bibliography_{f}_evidence_quote"] = None
-        out[f"bibliography_{f}_raw_evidence"] = node["raw_evidence"]
+        "hcd_ucd_frameworks_value": to_cell(get_val(sc, "hcd_ucd_frameworks_value")),
+        "hcd_ucd_frameworks_quote": to_cell(get_val(sc, "hcd_ucd_frameworks_quote")),
 
-    # Study fields
-    for f in STUDY_FIELDS:
-        node = normalized["study_characteristics"][f]
+        "design_phases_value": to_cell(get_val(sc, "design_phases_value")),
+        "design_phases_quote": to_cell(get_val(sc, "design_phases_quote")),
 
-        # Special: activity list
-        if f == "number_of_participants_in_design_process":
-            val = node["value"]
-            out[f"study_characteristics_{f}_value_json"] = None if val is None else jdump(val)
+        "design_team_value": to_cell(get_val(sc, "design_team_value")),
+        "design_team_quote": to_cell(get_val(sc, "design_team_quote")),
 
-            # Expand fixed slots if list-of-objects
-            for i in range(1, max_activity_slots + 1):
-                out[f"study_characteristics_{f}_activity_{i}"] = None
-                out[f"study_characteristics_{f}_participants_{i}"] = None
+        "main_users_value": to_cell(get_val(sc, "main_users_value")),
+        "main_users_quote": to_cell(get_val(sc, "main_users_quote")),
 
-            if isinstance(val, list):
-                for idx, entry in enumerate(val[:max_activity_slots], start=1):
-                    if isinstance(entry, dict):
-                        out[f"study_characteristics_{f}_activity_{idx}"] = entry.get("activity")
-                        out[f"study_characteristics_{f}_participants_{idx}"] = entry.get("participants")
-            else:
-                # If model returns "<n> (total)" or number etc.
-                out[f"study_characteristics_{f}_value"] = val
-        else:
-            out[f"study_characteristics_{f}_value"] = jdump(node["value"]) if isinstance(node["value"], (list, dict)) else node["value"]
+        "participants_groups_value": to_cell(get_val(sc, "participants_groups_value")),
+        "participants_groups_quote": to_cell(get_val(sc, "participants_groups_quote")),
 
-        out[f"study_characteristics_{f}_evidence_location"] = node["evidence_location"]
-        out[f"study_characteristics_{f}_evidence_quote"] = node["evidence_quote"]
-        out[f"study_characteristics_{f}_raw_evidence"] = node["raw_evidence"]
+        "participant_activities_value": to_cell(get_val(sc, "participant_activities_value")),
+        "participant_activities_quote": to_cell(get_val(sc, "participant_activities_quote")),
 
-    return out
+        "other_stakeholders_value": to_cell(get_val(sc, "other_stakeholders_value")),
+        "other_stakeholders_quote": to_cell(get_val(sc, "other_stakeholders_quote")),
+    }
+
+    # Ensure all expected keys exist (fill missing with None)
+    for k in CSV_HEADERS:
+        row.setdefault(k, None)
+
+    return row
 
 
-# -----------------------------
+# =========================
 # Runner
-# -----------------------------
-class GeminiExtractionRunner:
+# =========================
+class GeminiStudyCharacteristicsRunner:
     def __init__(
         self,
         prompt_yaml_path: str,
         model: str = "gemini-2.0-flash-001",
         temperature: float = 0.0,
         response_mime_type: str = "application/json",
+        min_delay_seconds: float = 12.0,
         max_retries: int = 6,
-        base_backoff_sec: float = 5.0,
-        max_activity_slots: int = 10,
+        base_backoff_seconds: float = 5.0,
     ):
         load_dotenv()
         api_key = os.getenv("GEMINI_API_KEY")
         if not api_key:
-            raise EnvironmentError("GEMINI_API_KEY not found in environment (.env).")
+            raise EnvironmentError("GEMINI_API_KEY not found in environment. Put it in .env or environment variables.")
 
         self.client = genai.Client(api_key=api_key)
         self.model_id = model
         self.temperature = temperature
         self.response_mime_type = response_mime_type
+        self.min_delay_seconds = min_delay_seconds
         self.max_retries = max_retries
-        self.base_backoff_sec = base_backoff_sec
-        self.max_activity_slots = max_activity_slots
+        self.base_backoff_seconds = base_backoff_seconds
 
         with open(prompt_yaml_path, "r", encoding="utf-8") as f:
             cfg = yaml.safe_load(f)
 
-        if not isinstance(cfg, dict) or "system_command" not in cfg or "user_command" not in cfg:
-            raise ValueError("Prompt YAML must contain system_command and user_command keys.")
-
-        self.system_command = cfg["system_command"]
+        # Support your YAML: task/version/user_command/system_command
+        self.task = cfg.get("task", "study_characteristics_extraction_full_text")
+        self.prompt_version = str(cfg.get("version", "0.0.0"))
         self.user_command = cfg["user_command"]
+        self.system_command = cfg["system_command"]
 
-    def _already_processed(self, output_csv: Path) -> set:
-        if not output_csv.exists():
+    def _read_processed_ids(self, out_csv: Path) -> set:
+        """Resume-safe: skip files already written (by file_name or paper_id)."""
+        if not out_csv.exists():
             return set()
-        with open(output_csv, "r", encoding="utf-8", newline="") as f:
+        processed = set()
+        with open(out_csv, "r", encoding="utf-8", newline="") as f:
             reader = csv.DictReader(f)
-            return {row.get("file_name") for row in reader if row.get("file_name")}
+            for row in reader:
+                if row.get("file_name"):
+                    processed.add(row["file_name"])
+        return processed
 
-    def _call_gemini_with_retry(self, uploaded_file) -> Dict[str, Any]:
+    def _sleep_min_delay(self):
+        """Fixed pacing to respect RPM quotas."""
+        time.sleep(self.min_delay_seconds)
+
+    def _call_gemini_with_retry(self, uploaded_file) -> dict:
         last_err = None
         for attempt in range(1, self.max_retries + 1):
             try:
@@ -274,98 +249,86 @@ class GeminiExtractionRunner:
                 return safe_json_loads(resp.text)
             except Exception as e:
                 last_err = e
-                s = str(e)
-                is_rate = ("429" in s) or ("RESOURCE_EXHAUSTED" in s) or ("Rate limit" in s)
-                is_transient = is_rate or ("503" in s) or ("500" in s) or ("timeout" in s.lower())
+                msg = str(e)
+                is_rate = ("429" in msg) or ("RESOURCE_EXHAUSTED" in msg) or ("Rate limit" in msg)
+                is_transient = is_rate or ("503" in msg) or ("500" in msg) or ("timeout" in msg.lower())
 
                 if attempt == self.max_retries or not is_transient:
                     break
 
                 # Exponential backoff + jitter
-                sleep_s = min(120.0, self.base_backoff_sec * (2 ** (attempt - 1)))
-                sleep_s = sleep_s * (0.8 + 0.4 * random.random())
+                sleep_s = min(120.0, self.base_backoff_seconds * (2 ** (attempt - 1)))
+                sleep_s *= (0.8 + 0.4 * random.random())
                 print(f"⏳ Transient error (attempt {attempt}/{self.max_retries}). Sleeping {sleep_s:.1f}s. Error: {e}")
                 time.sleep(sleep_s)
 
         raise RuntimeError(f"Gemini call failed after {self.max_retries} retries. Last error: {last_err}")
 
-    def process_folder(self, input_pdf_folder: str, output_csv_path: str) -> None:
-        input_dir = Path(input_pdf_folder)
-        output_file = Path(output_csv_path)
-        output_file.parent.mkdir(parents=True, exist_ok=True)
+    def run(self, input_pdf_folder: str, output_csv_file: str):
+        in_dir = Path(input_pdf_folder)
+        out_csv = Path(output_csv_file)
+        out_csv.parent.mkdir(parents=True, exist_ok=True)
 
-        processed = self._already_processed(output_file)
-        pdf_files = [p for p in sorted(input_dir.glob("*.pdf")) if p.name not in processed]
+        processed_files = self._read_processed_ids(out_csv)
+        pdfs = [p for p in sorted(in_dir.glob("*.pdf")) if p.name not in processed_files]
 
-        print(f"📋 Found {len(pdf_files)} new PDFs. (Skipping {len(processed)} already done)")
+        print(f"📋 Found {len(pdfs)} new PDFs. (Skipping {len(processed_files)} already done)")
 
-        # Determine stable headers:
-        # - If CSV exists, keep its headers
-        existing_headers: Optional[List[str]] = None
-        if output_file.exists():
-            with open(output_file, "r", encoding="utf-8", newline="") as f:
-                reader = csv.reader(f)
-                existing_headers = next(reader, None)
+        # Ensure CSV header exists and is stable
+        if not out_csv.exists():
+            with open(out_csv, "w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=CSV_HEADERS)
+                writer.writeheader()
 
-        for pdf_path in pdf_files:
-            print(f"🚀 Extracting: {pdf_path.name}")
+        for pdf_path in pdfs:
+            print(f"🚀 Processing: {pdf_path.name}")
 
             try:
-                uploaded_file = self.client.files.upload(file=str(pdf_path))
+                # Generate IDs outside Gemini
+                paper_id = sha256_short(pdf_path)
+                paper_key = make_paper_key_from_filename(pdf_path.name)
 
-                raw = self._call_gemini_with_retry(uploaded_file)
-                normalized = normalize_response_schema(raw)
-                row = flatten_normalized(normalized, max_activity_slots=self.max_activity_slots)
+                # Upload PDF
+                uploaded = self.client.files.upload(file=str(pdf_path))
 
-                # Add file_name & optional raw json for audit
+                # Call Gemini
+                raw = self._call_gemini_with_retry(uploaded)
+
+                # Flatten
+                row = normalize_to_row(raw)
+
+                # Add metadata
+                row["paper_id"] = paper_id
+                row["paper_key"] = paper_key
                 row["file_name"] = pdf_path.name
-                row["raw_json"] = jdump(raw)
+                row["model_id"] = self.model_id
+                row["prompt_version"] = self.prompt_version
+                row["run_timestamp"] = datetime.now(timezone.utc).isoformat()
 
-                # Freeze headers:
-                if existing_headers is None:
-                    # Create stable headers from first row
-                    existing_headers = sorted(row.keys())
+                # Write row (stable headers)
+                with open(out_csv, "a", encoding="utf-8", newline="") as f:
+                    writer = csv.DictWriter(f, fieldnames=CSV_HEADERS)
+                    writer.writerow({k: row.get(k) for k in CSV_HEADERS})
 
-                # Fill missing columns with None
-                for h in existing_headers:
-                    if h not in row:
-                        row[h] = None
+                print(f"✅ Saved: {pdf_path.name}  ->  {paper_id}")
 
-                # If new columns appear later, DO NOT silently change headers.
-                # Instead, store extras in raw_json and warn.
-                extras = [k for k in row.keys() if k not in existing_headers]
-                if extras:
-                    print(f"⚠️ New unexpected columns ignored (kept in raw_json): {extras}")
-                    for k in extras:
-                        row.pop(k, None)
-
-                file_exists = output_file.exists()
-                with open(output_file, "a", encoding="utf-8", newline="") as f:
-                    writer = csv.DictWriter(f, fieldnames=existing_headers)
-                    if not file_exists:
-                        writer.writeheader()
-                    writer.writerow(row)
-
-                print(f"✅ Saved: {pdf_path.name}")
-
-                # Conservative pacing (adjust as needed)
-                time.sleep(12)
+                # Delay between requests
+                self._sleep_min_delay()
 
             except Exception as e:
                 print(f"❌ Failed: {pdf_path.name}: {e}")
+                # Optional: add a small delay even on failure to avoid hammering
+                time.sleep(max(3.0, self.min_delay_seconds / 2))
 
 
 if __name__ == "__main__":
-    INPUT_PDF_FOLDER = r"data\test_data\gemini\test_ch_input"
-    OUTPUT_CSV_FILE = r"data\test_data\gemini\study_characteristics_extraction_result\study_characteristics_extraction_results.csv"
-    PROMPT_YAML_FILE = r"prompt\study_characteristics_full_text_pr.yaml"
-
-    runner = GeminiExtractionRunner(
+    runner = GeminiStudyCharacteristicsRunner(
         prompt_yaml_path=PROMPT_YAML_FILE,
         model="gemini-2.0-flash-001",
         temperature=0.0,
+        response_mime_type="application/json",
+        min_delay_seconds=12.0,   # adjust if your quota allows higher RPM
         max_retries=6,
-        base_backoff_sec=5.0,
-        max_activity_slots=10,
+        base_backoff_seconds=5.0,
     )
-    runner.process_folder(INPUT_PDF_FOLDER, OUTPUT_CSV_FILE)
+    runner.run(INPUT_PDF_FOLDER, OUTPUT_CSV_FILE)
