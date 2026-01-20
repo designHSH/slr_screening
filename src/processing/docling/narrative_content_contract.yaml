@@ -1,0 +1,410 @@
+# ============================================================
+# Narrative Content Contract (NCC)
+# ------------------------------------------------------------
+# This contract defines which parts of an academic PDF are
+# allowed to appear in the final Markdown used for LLM ingestion.
+#
+# Core idea:
+#   - Keep ONLY scientific narrative content
+#   - Remove ALL non-narrative content that can disrupt
+#     reading order or semantic integrity
+#
+# This contract is intentionally strict and deterministic.
+# ============================================================
+
+narrative_content_contract:
+
+  # Unique identifier for this contract
+  id: NCC
+
+  # Versioning allows future evolution without ambiguity
+  version: "1.0"
+
+  # Normative means: rules are mandatory, not advisory
+  status: "normative"
+
+  # Scope clarifies where this contract applies in the pipeline
+  scope: "PDF -> Markdown preprocessing for LLM ingestion"
+
+  # High-level objective of the contract
+  objective: >
+    Produce a structurally safe Markdown representation of an academic PDF by
+    retaining only scientific narrative content and removing all non-narrative
+    blocks that can corrupt reading order and downstream LLM extraction.
+
+  # ------------------------------------------------------------
+  # DESIGN PRINCIPLES
+  # These principles justify every rule below.
+  # ------------------------------------------------------------
+  principles:
+
+    # Only content that contributes to scientific reasoning is allowed
+    - id: P1
+      name: "Narrative primacy"
+      rule: "Only content that participates in scientific reasoning is allowed."
+
+    # All decisions must be reproducible and rule-based
+    - id: P2
+      name: "Determinism"
+      rule: "All decisions must be rule-based and reproducible; no probabilistic inference."
+
+    # Structural correctness is more important than content completeness
+    - id: P3
+      name: "Structural safety over completeness"
+      rule: "Preserving narrative order takes precedence over retaining auxiliary content."
+
+    # Removed content must never be relocated or commented in Markdown
+    - id: P4
+      name: "No relocation"
+      rule: "Removed content MUST NOT be moved, appended, or commented in the Markdown output."
+
+  # ------------------------------------------------------------
+  # OUTPUT POLICY
+  # Defines what the Markdown output is allowed to contain
+  # ------------------------------------------------------------
+  output_policy:
+    markdown:
+      # Markdown may include ONLY narrative blocks
+      include_only: "narrative_blocks"
+
+      # Presence of any non-narrative block is forbidden
+      forbid_any: "non_narrative_blocks"
+
+      # Relocating removed content is not allowed
+      relocation: "forbidden"
+
+    # Audit logging is mandatory for traceability and debugging
+    audit:
+      required: true
+      must_log:
+        - dropped_blocks_summary
+        - rules_triggered
+        - section_order_validation
+        - violations
+
+    # Stop processing immediately when a violation is detected
+    fail_fast: true
+
+  # ------------------------------------------------------------
+  # CANONICAL NARRATIVE ORDER
+  # Used for PASS / FAIL validation of section sequencing.
+  # References are optional, but if present must be last.
+  #Canonical order is enforced at the level of section roles, not literal headings.
+  #Each role may have multiple accepted aliases defined in the contract.
+  # ------------------------------------------------------------
+  canonical_narrative_order:
+    - "title"
+    - "abstract"
+    - "introduction"
+    - "methods"
+    - "results"
+    - "discussion"
+    - "conclusion"
+    - "references"
+
+  # ------------------------------------------------------------
+  # ALLOWED BLOCKS
+  # These are the ONLY block types permitted in Markdown.
+  # `required` indicates validation necessity, not importance.
+  # ------------------------------------------------------------
+  allowed_blocks:
+    narrative_blocks:
+
+      # Title is mandatory; document fails if missing
+      - id: NB1
+        type: "title"
+        required: true
+        notes: "Kept as a narrative anchor."
+
+      # All other narrative sections are optional
+      - id: NB2
+        type: "abstract"
+        required: false
+
+      - id: NB3
+        type: "introduction"
+        required: false
+
+      - id: NB4
+        type: "methods"
+        required: false
+        aliases:
+          - "methodology"
+          - "materials and methods"
+          - "materials & methods"
+
+      - id: NB5
+        type: "results"
+        required: false
+
+      - id: NB6
+        type: "discussion"
+        required: false
+
+      - id: NB7
+        type: "conclusion"
+        required: false
+        aliases:
+          - "conclusions"
+
+      # References are allowed but optional; must be last if present
+      - id: NB8
+        type: "references"
+        required: false
+        notes: "Optional; if included must be final section."
+
+  # ------------------------------------------------------------
+  # PROHIBITED BLOCKS
+  # These blocks must be REMOVED entirely from Markdown.
+  # ------------------------------------------------------------
+  prohibited_blocks:
+    non_narrative_blocks:
+
+      # Publisher and platform-related metadata
+      - id: NN1
+        category: "publisher_platform_metadata"
+        examples:
+          - "journal or platform names (e.g., PLOS ONE, Elsevier, ScienceDirect)"
+          - "branding headers/footers"
+          - "platform URLs"
+          - "DOI-only lines"
+          - "open access badges/labels"
+
+      # Editorial and submission lifecycle metadata
+      - id: NN2
+        category: "editorial_submission_metadata"
+        examples:
+          - "citation boxes"
+          - "editor information"
+          - "received/accepted/published dates"
+          - "peer-review notices"
+          - "registered report statements"
+
+      # Legal and licensing statements
+      - id: NN3
+        category: "legal_rights"
+        examples:
+          - "copyright notices"
+          - "Creative Commons / licensing statements"
+          - "All rights reserved declarations"
+
+      # Administrative and compliance declarations
+      - id: NN4
+        category: "administrative_declarations"
+        examples:
+          - "funding statements"
+          - "acknowledgements"
+          - "ethical approval / ethics statements"
+          - "IRB / REB approvals"
+          - "consent statements"
+
+      # Author identity and contact information
+      - id: NN5
+        category: "author_identification_contact"
+        examples:
+          - "author affiliations (departments, institutions, addresses)"
+          - "corresponding author details"
+          - "email / phone / fax / postal address blocks"
+
+  # ------------------------------------------------------------
+  # CLASSIFICATION RULES
+  # Used to decide whether a block is allowed or prohibited.
+  # ------------------------------------------------------------
+  classification_rules:
+
+    # Rule precedence hierarchy
+    precedence:
+      # Prohibited rules always override allowed appearance
+      - "prohibited_overrides_allowed"
+
+      # Explicit section headers override paragraph inference
+      - "explicit_section_anchor_over_plain_paragraph"
+
+      # Ambiguous structure causes failure in strict mode
+      - "fail_on_ambiguous_structure_in_strict_mode"
+
+    # Deterministic text triggers for prohibited content
+    prohibited_matchers:
+
+      - id: PR1
+        category: "publisher_platform_metadata"
+        match_any:
+          - "OPEN ACCESS"
+          - "ScienceDirect"
+          - "PLOS ONE"
+          - "Elsevier"
+          - "Springer"
+          - "IEEE"
+          - "journal homepage"
+
+      - id: PR2
+        category: "editorial_submission_metadata"
+        match_any:
+          - "Citation:"
+          - "Editor:"
+          - "Received:"
+          - "Accepted:"
+          - "Published:"
+          - "Peer Review"
+          - "Registered Report"
+
+      - id: PR3
+        category: "legal_rights"
+        match_any:
+          - "©"
+          - "Copyright"
+          - "Creative Commons"
+          - "All rights reserved"
+          - "license"
+
+      - id: PR4
+        category: "administrative_declarations"
+        match_any:
+          - "Funding"
+          - "Acknowledg"
+          - "Ethic"
+          - "IRB"
+          - "REB"
+          - "Institutional Review Board"
+          - "Research Ethics Board"
+          - "Informed consent"
+
+      - id: PR5
+        category: "author_identification_contact"
+        match_any:
+          - "Department of"
+          - "University"
+          - "Corresponding author"
+          - "E-mail address"
+          - "Email:"
+          - "Tel.:"
+          - "Fax:"
+          - "@"
+
+  # ------------------------------------------------------------
+  # SECTION ANCHOR MATCHERS
+  # Used to detect narrative section boundaries.
+  # ------------------------------------------------------------
+  allowed_section_anchor_matchers:
+
+    - id: SA1
+      type: "abstract"
+      match_any:
+        - "Abstract"
+        - "abstract"
+
+    - id: SA2
+      type: "introduction"
+      match_any:
+        - "Introduction"
+        - "1. Introduction"
+
+    - id: SA3
+      type: "methods"
+      match_any:
+        - "Methods"
+        - "Methodology"
+        - "Materials and Methods"
+        - "Materials & Methods"
+
+    - id: SA4
+      type: "results"
+      match_any:
+        - "Results"
+
+    - id: SA5
+      type: "discussion"
+      match_any:
+        - "Discussion"
+
+    - id: SA6
+      type: "conclusion"
+      match_any:
+        - "Conclusion"
+        - "Conclusions"
+
+    - id: SA7
+      type: "references"
+      match_any:
+        - "References"
+        - "Bibliography"
+
+  # ------------------------------------------------------------
+  # VALIDATION RULES
+  # Define PASS / FAIL criteria.
+  # ------------------------------------------------------------
+  validation:
+    mode:
+      # strict: any violation causes FAIL
+      # best_effort: tolerate minor issues but still drop prohibited blocks
+      default: "strict"
+      allowed:
+        - "strict"
+        - "best_effort"
+
+    required_checks:
+
+      - id: VC1
+        name: "No prohibited blocks in Markdown"
+        fail_if: "any_prohibited_block_present"
+
+      - id: VC2
+        name: "Canonical narrative section order"
+        fail_if: "section_order_violated"
+
+      - id: VC3
+        name: "No narrative text without an anchor"
+        fail_if: "orphan_paragraphs_detected"
+
+      - id: VC4
+        name: "No section interruption"
+        fail_if: "non_narrative_between_narrative_sections"
+
+      - id: VC5
+        name: "References placement"
+        fail_if: "references_not_last_when_present"
+
+  # ------------------------------------------------------------
+  # FAILURE OUTPUT SPECIFICATION
+  # ------------------------------------------------------------
+  failure_output:
+    required: true
+    format: "reject_json"
+    must_include_fields:
+      - doc_id
+      - mode
+      - violations
+      - violated_rules
+      - evidence_snippets
+      - recommendation
+
+  # ------------------------------------------------------------
+  # AUDIT SCHEMA
+  # Defines what diagnostic data must be recorded.
+  # ------------------------------------------------------------
+  audit_schema:
+
+    dropped_blocks_summary:
+      fields:
+        - block_id
+        - category
+        - trigger_rule_ids
+        - excerpt
+
+    rules_triggered:
+      fields:
+        - rule_id
+        - count
+
+    section_order_validation:
+      fields:
+        - detected_sections_in_order
+        - expected_canonical_order
+        - deviations
+
+    violations:
+      fields:
+        - code
+        - message
+        - location_hint
+        - evidence_excerpt
