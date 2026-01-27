@@ -1,104 +1,132 @@
 import os
+import re
 import yaml
 import json
 import csv
 import time
+import threading
 from pathlib import Path
+from datetime import datetime
 from dotenv import load_dotenv
+
 from google import genai
-from google.genai import types, errors
+from google.genai import types
+from pydantic import BaseModel, Field
+from typing import List, Optional
 
-class GeminiScreeningRunner:
-    def __init__(self, prompt_path: str, model: str = "gemini-2.0-flash-001"):
+# --- 1. RESPONSE SCHEMA ---
+class EvidenceSchema(BaseModel):
+    HCD_fullcycle: List[str]
+    TASKS_elements: List[str]
+
+class ScreeningResult(BaseModel):
+    title: str
+    authors: str
+    decision: str
+    confidence: str
+    evidence: EvidenceSchema
+    reasoning: List[str]
+    exclusion_reason: Optional[str] = None
+
+# --- 2. CORE RUNNER CLASS ---
+class Gemini3ScreeningRunner:
+    def __init__(self, prompt_path: Path, model_id: str, thinking_level: str):
         load_dotenv()
-        self.prompt_cfg = self._load_prompt(prompt_path)
-        self.model_id = model
         self.client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+        self.model_id = model_id
+        # Supported for Gemini 3 Flash: 'minimal', 'low', 'medium', 'high'
+        self.thinking_level = thinking_level.upper() 
+        
+        with open(prompt_path, "r", encoding="utf-8") as f:
+            self.prompt_cfg = yaml.safe_load(f)
 
-    def _load_prompt(self, path: str) -> dict:
-        with open(path, "r", encoding="utf-8") as f:
-            return yaml.safe_load(f)
+    def _call_model_with_timeout(self, uploaded_file, timeout_s: int):
+        result = [None]
+        error = [None]
 
-    def get_already_processed(self, csv_path: Path) -> set:
-        """Reads the CSV to see which files are already finished."""
-        if not csv_path.exists():
-            return set()
-        with open(csv_path, "r", encoding="utf-8") as f:
-            reader = csv.DictReader(f)
-            return {row["file_name"] for row in reader if "file_name" in row}
-
-    def run_with_limit(self, pdf_path: Path) -> dict:
-        """Processes a single PDF with automatic retry for rate limits."""
-        max_retries = 3
-        for attempt in range(max_retries):
+        def target():
             try:
-                print(f"🚀 Analyzing: {pdf_path.name}...")
-                uploaded_file = self.client.files.upload(file=str(pdf_path))
+                # Map string to SDK Enum
+                t_level = getattr(types.ThinkingLevel, self.thinking_level, types.ThinkingLevel.MEDIUM)
                 
-                # Standard call (Implicit Caching handles the system_instruction)
-                response = self.client.models.generate_content(
-                    model=self.model_id,
-                    contents=[self.prompt_cfg["user_command"].replace("{{paper_text}}", "See file."), uploaded_file],
-                    config=types.GenerateContentConfig(
-                        system_instruction=self.prompt_cfg["system_command"],
-                        response_mime_type="application/json",
-                        temperature=0.0
+                config = types.GenerateContentConfig(
+                    system_instruction=self.prompt_cfg["system_command"],
+                    response_mime_type="application/json",
+                    response_schema=ScreeningResult,
+                    temperature=0.0,
+                    thinking_config=types.ThinkingConfig(
+                        include_thoughts=True,
+                        thinking_level=t_level
                     )
                 )
                 
-                # Success! Wait 15 seconds to stay under 5 RPM limit
-                print("✅ Done. Cooling down (15s)...")
-                time.sleep(15) 
-                
-                result = {"file_name": pdf_path.name}
-                result.update(json.loads(response.text.strip()))
-                return result
+                response = self.client.models.generate_content(
+                    model=self.model_id,
+                    contents=[self.prompt_cfg["user_command"], uploaded_file],
+                    config=config
+                )
+                result[0] = response
+            except Exception as e:
+                error[0] = e
 
-            except errors.ClientError as e:
-                if "429" in str(e):
-                    wait_time = 30 * (attempt + 1)
-                    print(f"⏳ Rate limit hit. Waiting {wait_time}s before retry...")
-                    time.sleep(wait_time)
-                else:
-                    raise e
-        return {"file_name": pdf_path.name, "error": "Max retries exceeded"}
+        thread = threading.Thread(target=target)
+        thread.start()
+        thread.join(timeout=timeout_s)
 
-    def append_to_csv(self, result: dict, output_path: Path):
-        """Appends a single result to CSV immediately to prevent data loss."""
-        file_exists = output_path.exists()
-        flat_result = self._flatten_result(result)
+        if thread.is_alive():
+            return None, "TIMEOUT"
+        if error[0]:
+            return None, error[0]
+        return result[0], None
+
+    def process_pdf(self, pdf_path: Path, max_retries: int = 3, timeout_s: int = 600) -> dict:
+        print(f"\n--- [{datetime.now().strftime('%H:%M:%S')}] Processing: {pdf_path.name} ---")
         
-        with open(output_path, "a", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=sorted(flat_result.keys()))
-            if not file_exists:
-                writer.writeheader()
-            writer.writerow(flat_result)
+        # Upload Log
+        print(f"  📤 Uploading file ({pdf_path.stat().st_size / 1024:.1f} KB)...")
+        uploaded_file = self.client.files.upload(file=str(pdf_path))
+        print(f"  ✅ Uploaded as: {uploaded_file.name}")
 
-    def _flatten_result(self, result: dict) -> dict:
-        return {k: (json.dumps(v) if isinstance(v, (list, dict)) else v) for k, v in result.items()}
+        for attempt in range(max_retries):
+            print(f"  🧠 Attempt {attempt+1}/{max_retries} | Level: {self.thinking_level}...")
+            start_time = time.time()
+            
+            response, err = self._call_model_with_timeout(uploaded_file, timeout_s)
+            duration = time.time() - start_time
 
+            if err == "TIMEOUT":
+                print(f"  ⚠️ Stalled too long ({timeout_s}s). Retrying...")
+            elif err:
+                print(f"  ❌ API Error: {err}")
+                time.sleep(10) # Backoff
+            else:
+                print(f"  ✨ Success in {duration:.1f}s")
+                try:
+                    data = json.loads(response.text)
+                    data["file_name"] = pdf_path.name
+                    data["process_time"] = f"{duration:.1f}s"
+                    return data
+                except:
+                    break
+        
+        return {"file_name": pdf_path.name, "error": "Failed after retries"}
+
+# --- 3. MAIN EXECUTION BLOCK ---
 if __name__ == "__main__":
-    # CONFIGURATION
-    input_folder = Path(r"data\test_data\gemini\input") 
-    prompt_file = Path(r"prompt\full_text_screening_pr_v012.yaml")
-    output_csv = Path(r"data\test_data\gemini\output\gemini_screening_v012.csv")
+    # SETTINGS
+    TARGET_MODEL = "gemini-3-flash-preview"
+    # Choose: 'minimal', 'low', 'medium', 'high'
+    THINKING_LEVEL_VAR = "low" 
     
+    PROMPT_YAML = Path(r"prompt/full_text_screening_pr_pdf.yaml")
+    INPUT_DIR = Path(r"data\test_data\gemini_screening\input")
+    OUTPUT_CSV = Path(r"data\test_data\gemini_screening\output_gemini_3\gemini_3_low_screening_v012.csv")
 
-    runner = GeminiScreeningRunner(prompt_file)
+    # Initialize with the variable
+    runner = Gemini3ScreeningRunner(PROMPT_YAML, TARGET_MODEL, THINKING_LEVEL_VAR)
     
-    # 1. Check what's already done
-    processed_files = runner.get_already_processed(output_csv)
-    
-    # 2. Get 42 new files
-    all_pdfs = list(input_folder.glob("*.pdf"))
-    queue = [f for f in all_pdfs if f.name not in processed_files][:42]
-
-    print(f"📋 Starting queue: {len(queue)} papers (Skipping {len(processed_files)} already done)")
-
-    for pdf in queue:
-        try:
-            res = runner.run_with_limit(pdf)
-            runner.append_to_csv(res, output_csv)
-        except Exception as e:
-            print(f"❌ Fatal error on {pdf.name}: {e}")
-            break # Stop the loop if something unexpected happens
+    # Run loop...
+    all_pdfs = list(INPUT_DIR.glob("*.pdf"))
+    for pdf in all_pdfs:
+        result = runner.process_pdf(pdf)
+        # Append to CSV logic here...

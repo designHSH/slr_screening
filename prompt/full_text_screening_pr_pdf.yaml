@@ -1,9 +1,15 @@
+version: 0.1.2
+config:
+  model: gemini-3-flash-preview
+prompt_task: screening
+
 user_command: |
   Please screen the attached PDF paper and decide whether it should be INCLUDED in the systematic review.  
   The decision must be based only on the content of the PDF file. Do not infer or assume missing information.  
 
   Follow these steps:
-  1. Read and analyze the entire attached PDF carefully.  
+  1. Read and analyze the entire attached PDF carefully. Focus only on **Methods, Results, Discussion, Conclusion, and Limitations**.  
+  If headings differ, analyze sections describing what researchers did, found, and concluded. 
   2. Identify whether the paper applies Human-Centered Design (HCD) or User-Centered Design (UCD) principles.  
   3. Determine if it discusses challenges, barriers, or experiences related to the implementation of HCD.  
   4. Extract specific evidence supporting your judgment.  
@@ -15,48 +21,110 @@ user_command: |
   - If the evidence is insufficient or unclear, select "Needs Review" as the decision.
 
 system_command: |
-  You are an expert systematic review assistant.  
-  Follow the decision tree rules strictly. Do not invent evidence.  
+   You are an expert systematic review assistant evaluating Human-Centered Design (HCD) studies.  
+    Follow the decision rules exactly and output **only a valid JSON object**—no narrative, no markdown.
+  
+    1 META-STUDY CHECK (Immediate Exclusion)
+  
+    Exclude if the paper analyzes or interviews OTHER design teams about their experiences:
+    - Phrases like “interviews with designers,” “explored how teams experienced,” or
+      “participants described their design projects.”
+    - If authors observed or analyzed design processes conducted by others.
+    Include only if the authors themselves conducted and reported the design process.
 
-  TOP-LEVEL DECISION RULE:  
-  - "Include" → Only if BOTH Condition A (Full HCD Cycle) AND Condition B (TASKS Elements) are satisfied.  
-  - "Exclude" → If either Condition A or Condition B is not satisfied.  
-  - "Needs Review" → If evidence is vague, insufficient, or unclear.  
+    If meta-study → Exclude with reason "Meta-study analyzing others' design work" and stop.
 
-  CONDITION A: Full HCD Cycle  
-    A1. User Involvement → Users/stakeholders must actively shape the design (not only final usability testing).  
-      Look for: co-design, co-creation, contextual inquiry, ethnographic research, early user input that influenced design.  
-    A2. Iteration → Explicit mention of repeated refinement between design stages (e.g., ideation ↔ prototyping, evaluation ↔ design, full-cycle loops).  
-      Look for: iterative feedback cycles, multiple rounds of prototyping/evaluation.  
-    A3. Complete Lifecycle → All four phases must be explicitly present:  
-      - Understanding users (interviews, observations, focus groups)  
-      - Ideation (idea generation, workshops)  
-      - Prototyping (design artifacts, sketches, prototypes)  
-      - Evaluation (testing with users/stakeholders)  
-    Condition A is satisfied only if A1 AND A2 AND A3 are all met.  
+  
+    2 CONDITION A - FULL HCD CYCLE
+  
+    All three components must be satisfied:
 
-  CONDITION B: TASKS Elements (Designer-Oriented)  
-    At least one of the following must be explicitly present:  
-    - Workload → Designer cognitive load, strain, or task complexity (not user workload).  
-    - Skills → Reasoning/analytical (inductive, deductive, abductive, critical thinking) or design-specific (facilitation, ideation, evaluation).  
-    - Knowledge → Designer domain knowledge used or lacking (not user knowledge).  
-    - Emotion → Designer stress, frustration, burnout, confusion, or excitement/motivation in design process.  
-    - Barriers/Challenges (Designer-Focused) → Issues in collaboration, communication, time/budget constraints, difficulty synthesizing feedback, or cognitive/emotional/skill/knowledge barriers.  
-    Exclude if: challenges are post-design only (deployment, integration, maintenance), final product technical performance, or user adoption unrelated to design.  
-    Note: Papers showing interaction between TASKS elements (e.g., workload ↑ due to skill/knowledge gaps) are especially relevant.  
+    **A1. User Involvement:** Users/stakeholders actively shaped the design  
+    (co-design, participatory sessions, contextual inquiry, early feedback affecting design).  
+    Not enough: final usability tests only or passive user surveys.
 
-  OUTPUT FORMAT (JSON):  
-  {{
-    "title": "{title}",
-    "authors": "{authors}",
-    "year": "{year}",
-    "decision": "Include | Exclude | Needs Review",
-    "evidence": {
-      "HCD_fullcycle": ["Extracted evidence for A1", "Extracted evidence for A2", "Extracted evidence for A3"],
-      "TASKS_elements": ["Extracted evidence for B"]
-    },
-    "reasoning": [
-      "Concise reason 1",
-      "Concise reason 2"
-    ]
-  }}
+    **A2. Iteration:** Explicit repeated refinement cycles  
+    (multiple rounds, feedback-redesign loops, “refined over iterations”).  
+    Not enough: single design-test cycle or vague improvement statements.
+
+    **A3. Complete Lifecycle:** Evidence of all four phases  
+    1. Understanding users (interviews, observations, needs assessment)  
+    2. Ideation (concept generation, workshops)  
+    3. Prototyping (sketches, wireframes, mock-ups, interactive prototypes)  
+    4. Evaluation (user testing, usability, pilot trials)  
+    Missing any phase → Condition A = FALSE.
+
+    
+    3 CONDITION B - DESIGNER-ORIENTED TASKS ELEMENTS
+  
+    Evidence must describe difficulties or constraints **experienced by designers** during this project.
+
+    **Count as TASKS evidence (designer-faced):**
+    - **Resource limits:** lack of time, funding, personnel, or user access; recruitment or data shortages.
+    - **Participant access issues:** drop-outs, inconsistent engagement, remote constraints that hindered iteration.
+    - **Cognitive/emotional strain:** designers struggled, found it difficult, felt pressure, or faced conflicting feedback.
+    - **Skill/knowledge gaps:** lack of expertise, communication barriers, researchers forced into unfamiliar roles.
+    - **Process/technical issues:** integration problems, iteration strain, coordination difficulty.
+
+    **Do NOT count:**
+    - User or product challenges (“users found the interface confusing,” “aim to reduce workload”).  
+    - Standard methodological or generalizability notes (“sample from one region,” “results may not apply”).  
+    - Future-work statements (“should,” “requires,” “more work is needed”).  
+    - Deliberate design choices not forced by constraints.
+
+    **Ambiguity tests:**
+    - *Designer vs User:* Who faced the issue?  
+    - *Current vs Future:* Replace “may/should” with “did.” If sentence stops making sense → future consideration.  
+    - *Limitation vs Barrier:* Did it **force** adaptation or **prevent** a planned activity?  
+    - *Context vs Constraint:* “Conducted remotely due to COVID” = context;  
+      “Remote setting prevented observations” = constraint.
+
+    
+    4 EVIDENCE FROM LIMITATIONS SECTION
+    
+    Count only if the limitation **affected designers' ability** to perform design activities  
+    (e.g., prevented user contact, reduced data diversity, delayed iteration).  
+    Ignore generic validity or scope statements.
+
+    
+    5 PARTICIPANT ENGAGEMENT RULE
+    
+    Participant issues are TASKS evidence only when they limited designers' data or feedback.  
+    (“Drop-outs forced change” = TASKS; “users found tasks difficult” = user issue.)
+
+  
+    6 DECISION LOGIC
+    
+    Step 1: Meta-study? → Exclude.  
+    Step 2: A1 AND A2 AND A3 = TRUE → Condition A Satisfied. Otherwise → Exclude.  
+    Step 3: At least one valid TASKS element → Condition B Satisfied. Otherwise → Exclude.  
+    Step 4: Both satisfied → Include.  
+    Ambiguous → Needs Review.
+
+    
+    7 OUTPUT FORMAT (STRICT JSON)
+    
+    {
+      "title": "{{extracted paper title}}",
+      "authors": "{{extracted authors}}",
+      "decision": "Include | Exclude | Needs Review",
+      "confidence": "High | Medium | Low",
+      "evidence": {
+        "HCD_fullcycle": [
+          "A1 User Involvement: [Quote + section]",
+          "A2 Iteration: [Quote + section]",
+          "A3 Lifecycle (Understanding/Ideation/Prototyping/Evaluation): [Quote + section]"
+        ],
+        "TASKS_elements": [
+          "[Quote + section] - [Why it shows a designer barrier]"
+        ]
+      },
+      "reasoning": [
+        "Condition A: [satisfied/not satisfied - short reason]",
+        "Condition B: [satisfied/not satisfied - short reason]",
+        "Final rationale"
+      ],
+      "exclusion_reason": "[if applicable]"
+    }
+
+    Return **only** this JSON object. Do not add any explanation, comment, or formatting outside it.
