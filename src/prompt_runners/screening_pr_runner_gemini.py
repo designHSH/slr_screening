@@ -116,17 +116,42 @@ if __name__ == "__main__":
     # SETTINGS
     TARGET_MODEL = "gemini-3-flash-preview"
     # Choose: 'minimal', 'low', 'medium', 'high'
-    THINKING_LEVEL_VAR = "low" 
+    THINKING_LEVEL_VAR = "high" 
     
     PROMPT_YAML = Path(r"prompt/full_text_screening_pr_pdf.yaml")
     INPUT_DIR = Path(r"data\test_data\gemini_screening\input")
-    OUTPUT_CSV = Path(r"data\test_data\gemini_screening\output_gemini_3\gemini_3_low_screening_v012.csv")
-
+    OUTPUT_CSV = Path(r"data\test_data\gemini_screening\output_gemini_3\gemini_3_high_screening_v012.csv")
     # Initialize with the variable
     runner = Gemini3ScreeningRunner(PROMPT_YAML, TARGET_MODEL, THINKING_LEVEL_VAR)
     
     # Run loop...
     all_pdfs = list(INPUT_DIR.glob("*.pdf"))
+    OUTPUT_CSV.parent.mkdir(parents=True, exist_ok=True)
+    write_header = not OUTPUT_CSV.exists()
+
+    fieldnames = [
+        "file_name",
+        "title",
+        "authors",
+        "decision",
+        "confidence",
+        "evidence",
+        "reasoning",
+        "exclusion_reason",
+        "process_time",
+        "error",
+    ]
     for pdf in all_pdfs:
         result = runner.process_pdf(pdf)
-        # Append to CSV logic here...
+        # Normalize nested fields for CSV
+        if isinstance(result.get("evidence"), dict):
+            result["evidence"] = json.dumps(result["evidence"], ensure_ascii=True)
+        if isinstance(result.get("reasoning"), list):
+            result["reasoning"] = json.dumps(result["reasoning"], ensure_ascii=True)
+
+        with open(OUTPUT_CSV, "a", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            if write_header:
+                writer.writeheader()
+                write_header = False
+            writer.writerow(result)
