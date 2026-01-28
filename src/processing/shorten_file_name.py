@@ -43,7 +43,7 @@ import shutil
 STOPWORDS = {
     "the", "of", "and", "in", "on", "for", "to", "a", "an", "with",
     "using", "use", "from", "by", "at", "into", "after", "based",
-    "during", "through", "user", "centered", "centred", "design"
+    "during", "through"
 }
 
 MAX_TITLE_WORDS = 8
@@ -112,7 +112,7 @@ def build_title_slug(title_part: str) -> str:
 
 def build_new_name(old_name: str) -> str:
     name_no_ext, ext = os.path.splitext(old_name)
-    parts = [p.strip() for p in name_no_ext.split(" - ", maxsplit=2)]
+    parts = [p.strip() for p in re.split(r"\s*-\s*", name_no_ext, maxsplit=2)]
 
     if len(parts) < 3:
         logging.warning(f"Unexpected name format: {old_name}")
@@ -145,7 +145,9 @@ def process_files(input_dir: Path, output_dir: Path | None) -> None:
         writer = csv.writer(csvfile)
         writer.writerow(["old_name", "new_name", "old_path", "new_path"])
 
-        for file_path in input_dir.glob("*.txt"):
+        for file_path in input_dir.iterdir():
+            if not file_path.is_file():
+                continue
             old_name = file_path.name
             old_full = str(file_path.resolve())
 
@@ -183,7 +185,7 @@ def process_files(input_dir: Path, output_dir: Path | None) -> None:
 def main():
     print("=== PAPER RENAME TOOL ===\n")
 
-    input_path = input("Enter INPUT directory (where .txt files are): ").strip()
+    input_path = input("Enter INPUT directory (files will be renamed by pattern): ").strip()
     output_path = input("Enter OUTPUT directory (or press Enter to rename in place): ").strip()
 
     input_dir = Path(input_path)
