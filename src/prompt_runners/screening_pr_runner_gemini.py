@@ -119,8 +119,9 @@ if __name__ == "__main__":
     THINKING_LEVEL_VAR = "high" 
     
     PROMPT_YAML = Path(r"prompt/full_text_screening_pr_pdf.yaml")
-    INPUT_DIR = Path(r"data\test_data\gemini_screening\input")
-    OUTPUT_CSV = Path(r"data\test_data\gemini_screening\output_gemini_3\gemini_3_high_screening_v012.csv")
+    INPUT_DIR = Path(r"data\all_included_paper_cleaning\papers_batch\04-b4")
+    OUTPUT_CSV = Path(r"data\all_included_paper_cleaning\screening_result_gemini3\gemini_3_high_screening_b4.csv")
+    PROGRESS_LOG = OUTPUT_CSV.with_suffix(".progress.log")
     # Initialize with the variable
     runner = Gemini3ScreeningRunner(PROMPT_YAML, TARGET_MODEL, THINKING_LEVEL_VAR)
     
@@ -128,6 +129,13 @@ if __name__ == "__main__":
     all_pdfs = list(INPUT_DIR.glob("*.pdf"))
     OUTPUT_CSV.parent.mkdir(parents=True, exist_ok=True)
     write_header = not OUTPUT_CSV.exists()
+    processed_files = set()
+    if OUTPUT_CSV.exists():
+        with open(OUTPUT_CSV, "r", newline="", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                if row.get("file_name"):
+                    processed_files.add(row["file_name"])
 
     fieldnames = [
         "file_name",
@@ -142,6 +150,12 @@ if __name__ == "__main__":
         "error",
     ]
     for pdf in all_pdfs:
+        if pdf.name in processed_files:
+            with open(PROGRESS_LOG, "a", encoding="utf-8") as log_f:
+                log_f.write(f"{datetime.now().isoformat()} SKIP {pdf.name}\n")
+            continue
+        with open(PROGRESS_LOG, "a", encoding="utf-8") as log_f:
+            log_f.write(f"{datetime.now().isoformat()} START {pdf.name}\n")
         result = runner.process_pdf(pdf)
         # Normalize nested fields for CSV
         if isinstance(result.get("evidence"), dict):
@@ -155,3 +169,6 @@ if __name__ == "__main__":
                 writer.writeheader()
                 write_header = False
             writer.writerow(result)
+        with open(PROGRESS_LOG, "a", encoding="utf-8") as log_f:
+            status = "OK" if "error" not in result else "ERROR"
+            log_f.write(f"{datetime.now().isoformat()} END {pdf.name} {status}\n")
