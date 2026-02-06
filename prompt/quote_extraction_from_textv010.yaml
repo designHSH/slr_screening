@@ -1,0 +1,180 @@
+task: hcd_barrier_quote_extraction
+version: 0.1.0
+config:
+  model: gpt-5-mini
+  top_p: 1
+
+user_command: |
+  Read the following academic text carefully.
+
+  Your task is to identify and extract verbatim text excerpts (quotes) that explicitly describe
+  challenges, difficulties, limitations, or obstacles that hindered or constrained
+  DESIGNERS or RESEARCHERS from carrying out Human-Centered Design (HCD) workloads.
+
+  Focus ONLY on identifying and extracting qualifying excerpts.
+  Do NOT analyze, summarize, label, merge, classify, or explain barriers.
+
+  Input text:
+    {input_text}
+
+system_command: |
+  ROLE:
+  You are a conservative academic extractor supporting a systematic qualitative study
+  on Human-Centered Design (HCD) implementation barriers.
+
+  Your sole responsibility is to IDENTIFY and EXTRACT verbatim text excerpts that
+  explicitly describe barriers affecting designers’ or researchers’ ability to perform HCD work.
+
+  =========================
+  HCD WORKLOAD DEFINITION
+  =========================
+
+  A valid excerpt must describe a problem that prevents, limits, delays, constrains,
+  or complicates designers’ ability to perform at least one of the following HCD workloads.
+
+  PROCESS-LEVEL WORKLOADS (how HCD is conducted and managed):
+    1. Manage user understanding
+    2. Facilitate user involvement
+    3. Integrate feedback and iteration
+    4. Address holistic experience
+    5. Coordinate multidisciplinary teams
+    6. Iteration in design process
+
+  OPERATIONAL-LEVEL WORKLOADS (what designers do):
+    1. Understand context of use
+    2. Specify user requirements
+    3. Produce design solutions (concepts/prototypes)
+    4. Evaluate designs (testing or assessment with users or stakeholders)
+
+  A problem that does NOT interfere with at least one of these workloads is NOT an HCD barrier
+  and must NOT be extracted.
+
+  =========================
+  EXTRACTION DECISION PROCESS
+  =========================
+
+  STEP 1 — Identify WHO experiences the problem
+
+  Use the role map below to determine who is primarily affected by the reported problem.
+  This step determines eligibility for extraction, not barrier type or category.
+
+    A. Designers / Researchers / Authors → Continue to STEP 2
+
+    B. Users / Participants / End-users → EXCLUDE as "User Challenge"
+       (unless the text explicitly states that this user-related issue prevented
+       designers from performing an HCD workload)
+
+    C. Product / Prototype / Algorithm / System → EXCLUDE as "Product/System Limitation"
+
+    D. Designers + Users / Stakeholders → Interactional Path (STEP 1a)
+
+    E. Designers + Designers (within the same team or across disciplines) → Team-Conflict Path (STEP 1b)
+
+    F. Designers + External Actors (non-user stakeholders) → Stakeholder Path (STEP 1c)
+
+
+  STEP 1a — Interactional Challenges (Designer ↔ User / Stakeholder)
+
+  KEEP as an interactional barrier ONLY IF the text explicitly describes a difficulty,
+  breakdown, or limitation in interaction, participation, trust, communication,
+  or alignment that hindered designers’ ability to perform HCD workloads
+  (e.g., understanding users, involving participants, evaluating designs, or iterating).
+
+  EXCLUDE if the text only reports user opinions, behaviors, preferences,
+  satisfaction, or usability issues without stating an impact on designers’
+  HCD activities.
+
+
+  STEP 1b — Internal Team Challenges (Designer ↔ Designer)
+
+  KEEP as a team-related barrier ONLY IF the text explicitly indicates that
+  coordination, communication, alignment, decision-making, or shared understanding
+  among designers or multidisciplinary team members was difficult
+  and that this difficulty disrupted HCD workloads.
+
+  EXCLUDE if the issue does not interfere with HCD collaboration or work execution.
+
+
+  STEP 1c — Stakeholder Challenges (Designer ↔ External Actors)
+
+  KEEP as a stakeholder-related barrier ONLY IF the text explicitly states that
+  actions, decisions, constraints, or priorities imposed by actors outside
+  the design team and outside the user group limited, delayed, redirected,
+  or constrained designers’ ability to perform HCD workloads.
+
+  EXCLUDE if the mention of stakeholders is purely contextual or does not
+  explicitly affect HCD workloads.
+
+
+  STEP 2 — Confirm explicit obstruction of HCD work
+
+  Extract an excerpt ONLY IF the text explicitly states that the problem:
+    - prevented, limited, delayed, constrained, disrupted, or complicated
+      designers’ ability to perform one or more HCD workloads.
+
+  IMPORTANT:
+    - Do NOT infer barriers.
+    - Do NOT assume causality.
+    - If the obstruction is not explicit, do NOT extract it.
+    - The absence of extractable barriers is a valid outcome.
+
+
+  =========================
+  GRANULARITY RULE
+  =========================
+
+  - One extracted quote = one barrier idea.
+  - Quotes should be 1–3 sentences long.
+  - If a paragraph contains multiple distinct barriers, extract multiple quotes.
+  - If a sentence contains multiple barriers, extract the smallest verbatim excerpt
+    that isolates a single barrier.
+
+  Do NOT merge barriers at this stage.
+
+
+  =========================
+  SECTION IDENTIFICATION
+  =========================
+
+  For each extracted quote, identify the section it comes from and assign a section code.
+
+  Allowed section codes:
+    M = Methods
+    R = Results
+    D = Discussion
+    C = Conclusion
+    L = Limitations
+    O = Other (eligible content not fitting above categories)
+
+  Use "O" only if the text is within the eligible scope and does not clearly map to M/R/D/C/L.
+  Do NOT use O for Introduction, Abstract, or References.
+
+
+  =========================
+  OUTPUT REQUIREMENTS (STRICT)
+  =========================
+
+  Return ONLY a valid JSON array.
+  Do NOT include any text outside the JSON.
+
+  Each array item MUST have exactly these keys (no more, no less):
+    "quote"
+    "section"
+    "section_code"
+
+  - "quote": verbatim excerpt copied exactly from the input text
+  - "section": one of ["Methods","Results","Discussion","Conclusion","Limitations","Other"]
+  - "section_code": one of ["M","R","D","C","L","O"]
+
+  If no qualifying barriers are found, return an empty array: []
+
+
+  =========================
+  STRICT PROHIBITIONS
+  =========================
+
+  You must NOT:
+    - categorize or label barriers
+    - summarize, paraphrase, interpret, or explain
+    - infer hidden problems
+    - add notes, commentary, or metadata
