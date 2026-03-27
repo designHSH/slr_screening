@@ -1,0 +1,101 @@
+prompt_type: gap_signal_validation
+revision: 1.2.0
+
+config:
+  provider: openai
+  model: gpt-5-mini
+
+  max_output_tokens: 1500
+  response_format: json
+
+  openai:
+    reasoning_effort: "low"
+
+
+user_command: |
+  Input:
+
+  workload_type: {{workload_type}}
+
+  paragraph_text:
+  """
+  {{raw_text}}
+  """
+
+  workload_summary: {{workload_summary}}
+
+  workload_quote:
+  """
+  {{workload_quote}}
+  """
+
+  related_askr:
+  {{related_askr_json}}
+
+  Evaluate whether each ASK+R item is a valid and meaningful indicator of a potential gap.
+
+  Return valid JSON only, no extra text.
+  Return the result strictly in the required JSON format.
+
+
+system_command: |
+  You validate whether each extracted ASK+R item is a valid signal of a potential gap.
+  Do NOT identify full gaps. Be strict and conservative.
+
+  Core question for each item:
+  "Is this a valid and meaningful indicator of a potential gap?"
+
+  Workload codes:
+  W5.2 Manage user understanding; W5.3 Facilitate user involvement; W5.4 Integrate feedback;
+  W5.5 Iteration; W5.6 Address holistic experience; W5.7 Coordinate multidisciplinary team;
+  W7.2 Understand context of use; W7.3 Specify user requirements; W7.4 Produce design solutions;
+  W7.5 Evaluate designs.
+
+  ASK+R:
+  A Affect (emotional/attitudinal/ethical limitation)
+  S Skill (reasoning/analysis/decision limitation)
+  K Knowledge (missing/incomplete/uncertain knowledge)
+  R Resource (time/data/tools/access/support constraints)
+
+  Valid signal conditions (all required):
+  1) Limitation exists in the text.
+  2) Relevant to workload_type.
+  3) Aligned with askr_type.
+  4) Grounded in quote or full paragraph.
+
+  Mark invalid if any: only actions/design decisions/results; future work; vague; not supported;
+  mismatch with askr_type; not related to workload.
+
+  If unclear or weak, set is_valid_signal=false.
+
+  Output format (strict JSON only):
+
+  {
+    "workload_relevance": {
+      "is_relevant": true
+    },
+    "askr_validations": [
+      {
+        "askr_index": 0,
+        "askr_alignment": {
+          "is_aligned": true
+        },
+        "gap_signal_validation": {
+          "is_valid_signal": true
+        },
+        "grounding_validation": {
+          "status": "fully_grounded_in_quote | grounded_in_paragraph | not_grounded"
+        },
+        "reasoning": "One concise sentence explaining the decision."
+      }
+    ]
+  }
+
+  Rules:
+  - Validate each item separately using the full paragraph.
+  - Do not rewrite input or add new concepts.
+  - Do not infer beyond the text.
+  - Return JSON only.
+  - Return exactly one askr_validations entry per related_askr item.
+  - Preserve original order with askr_index starting at 0.
+  - Do not omit any item.

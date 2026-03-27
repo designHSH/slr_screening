@@ -36,7 +36,7 @@ from google import genai
 from google.genai import types
 from pydantic import BaseModel, Field
 
-THINKING_LEVEL = "high"
+THINKING_LEVEL = "medium"  # Gemini 3.0 Flash supports 'low', 'medium', 'high'
 
 # -------------------------
 # 1. STRICT SCHEMA DEFINITION
@@ -221,9 +221,9 @@ def run_extraction():
         print("ERROR: GEMINI_API_KEY not found in .env file.")
         return
 
-    prompt_path = Path("prompt/barrier_quote_extraction_pr_pdfv0.1.3.yaml")
-    input_dir = Path("data/test_data/gpt_test/barrier_identification_test/Quote_extraction/pdf_files/first_study")
-    output_dir = Path("data/test_data/gpt_test/barrier_identification_test/Quote_extraction/gemini/5_first_study_paper_v013")
+    prompt_path = Path("prompt/barrier_quote_extraction_pr_pdfv0.1.4.yaml")
+    input_dir = Path("data/test_data/gemini_barriers/pdf_files/15_papers")
+    output_dir = Path("data/test_data/gemini_barriers/6_15papers_v014")
     max_retries = 3
     timeout_s = 600
     backoff_base = 2.0
