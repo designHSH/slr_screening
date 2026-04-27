@@ -3,7 +3,7 @@ from pathlib import Path
 from copy import deepcopy
 
 
-SCHEMA_VERSION = "askr_grouped_gap_v0.1"
+SCHEMA_VERSION = "askr_grouped_gap_v0.2"
 
 ASKR_TO_BARRIER_CATEGORY = {
     "A": "emotion",
@@ -49,26 +49,60 @@ def build_grouped_record(
     extraction_obj: dict,
     askr_item: dict,
     source_batch: str,
-    source_gap_file: str
+    source_gap_file: str,
+    run_meta: dict
 ) -> dict:
+    extraction_copy = deepcopy(extraction_obj)
+    extraction_copy["related_askr"] = [deepcopy(askr_item)]
+
     return {
         "source_batch": source_batch,
         "source_gap_file": source_gap_file,
-        "paper": {
-            "paper_key": paper_obj.get("paper_key"),
-            "source_filename": paper_obj.get("source_filename"),
-            "paper_title": paper_obj.get("paper_title"),
-            "paper_authors": paper_obj.get("paper_authors")
-        },
+        "paper": deepcopy(paper_obj),
         "section": deepcopy(section_obj),
         "unit": deepcopy(unit_obj),
-        "extraction": {
-            "workload_type": extraction_obj.get("workload_type"),
-            "workload_summary": extraction_obj.get("workload_summary"),
-            "workload_quote": extraction_obj.get("workload_quote"),
-            "askr": deepcopy(askr_item)
-        }
+        "extraction": extraction_copy,
+        "run_meta": deepcopy(run_meta)
     }
+
+
+def normalize_extractions(record: dict) -> list:
+    extraction_block = record.get("extraction") or record.get("extractions") or {}
+
+    if isinstance(extraction_block, list):
+        return extraction_block
+
+    if isinstance(extraction_block, dict):
+        extractions = extraction_block.get("extractions")
+        if isinstance(extractions, list):
+            return extractions
+
+    return []
+
+
+def normalize_related_askr(extraction_obj: dict) -> list:
+    related_askr = extraction_obj.get("related_askr")
+    if related_askr is None:
+        related_askr = extraction_obj.get("askr_items")
+    if related_askr is None:
+        related_askr = extraction_obj.get("askr")
+
+    if related_askr is None:
+        return []
+
+    if isinstance(related_askr, list):
+        return related_askr
+
+    return [related_askr]
+
+
+def is_gap_signal(askr_item: dict) -> bool:
+    if askr_item.get("gap_signal") is True:
+        return True
+
+    validation = askr_item.get("validation") or {}
+    gap_validation = validation.get("gap_signal_validation") or {}
+    return gap_validation.get("is_valid_signal") is True
 
 
 def process_gap_only_file(file_path: Path, grouped_data: dict, source_batch: str) -> None:
@@ -81,22 +115,27 @@ def process_gap_only_file(file_path: Path, grouped_data: dict, source_batch: str
     for record in records:
         section_obj = record.get("section", {})
         unit_obj = record.get("unit", {})
-        extraction_block = record.get("extraction", {})
-        extractions = extraction_block.get("extractions", [])
+        extractions = normalize_extractions(record)
+        run_meta = record.get("run_meta", {})
 
         for extraction_obj in extractions:
+            if not isinstance(extraction_obj, dict):
+                continue
+
             workload_type = extraction_obj.get("workload_type")
-            related_askr = extraction_obj.get("related_askr", [])
+            related_askr = normalize_related_askr(extraction_obj)
 
             if not workload_type:
                 continue
 
             for askr_item in related_askr:
+                if not isinstance(askr_item, dict):
+                    continue
+
                 askr_type = askr_item.get("askr_type")
-                gap_signal = askr_item.get("gap_signal")
 
                 # Safety check: grouped files should include only gap-bearing items
-                if gap_signal is not True:
+                if not is_gap_signal(askr_item):
                     continue
 
                 if not askr_type:
@@ -118,7 +157,8 @@ def process_gap_only_file(file_path: Path, grouped_data: dict, source_batch: str
                     extraction_obj=extraction_obj,
                     askr_item=askr_item,
                     source_batch=source_batch,
-                    source_gap_file=source_gap_file
+                    source_gap_file=source_gap_file,
+                    run_meta=run_meta
                 )
 
                 grouped_data[group_key]["records"].append(grouped_record)

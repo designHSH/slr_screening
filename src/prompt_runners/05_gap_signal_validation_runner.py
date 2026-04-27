@@ -588,13 +588,13 @@ def process_file(
 def main() -> None:
     print("Gap Signal Validation Runner")
     input_dir_str = input("Please enter the input directory: ").strip()
-    validation_output_dir_str = input("Please enter the validation output directory: ").strip()
-    valid_records_output_dir_str = input("Please enter the valid-record output directory: ").strip()
+    output_dir_str = input("Please enter the output directory: ").strip()
     prompt_file_path_str = input("Please enter the prompt file path: ").strip()
 
     input_dir = Path(input_dir_str)
-    validation_output_dir = Path(validation_output_dir_str)
-    valid_records_output_dir = Path(valid_records_output_dir_str)
+    output_dir = Path(output_dir_str)
+    validation_output_dir = output_dir / "validation"
+    valid_records_output_dir = output_dir / "valid_records"
     prompt_file_path = Path(prompt_file_path_str)
 
     if not input_dir.exists() or not input_dir.is_dir():

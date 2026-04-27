@@ -1,4 +1,5 @@
 import json
+import logging
 from pathlib import Path
 from copy import deepcopy
 
@@ -105,14 +106,31 @@ def build_gap_only_output(source_data: dict) -> dict:
 def process_directory(input_dir: Path, output_dir: Path) -> None:
     json_files = sorted(input_dir.glob("*.json"))
 
+    output_dir.mkdir(parents=True, exist_ok=True)
+    log_path = output_dir / "log.txt"
+
+    logger = logging.getLogger("askr_gap_only_filter")
+    if not logger.handlers:
+        logger.setLevel(logging.INFO)
+        formatter = logging.Formatter("%(asctime)s | %(levelname)s | %(message)s")
+
+        file_handler = logging.FileHandler(log_path, encoding="utf-8")
+        file_handler.setFormatter(formatter)
+        file_handler.setLevel(logging.INFO)
+
+        console_handler = logging.StreamHandler()
+        console_handler.setFormatter(formatter)
+        console_handler.setLevel(logging.INFO)
+
+        logger.addHandler(file_handler)
+        logger.addHandler(console_handler)
+
     if not json_files:
-        print("No JSON files found in the input directory.")
+        logger.info("No JSON files found in the input directory.")
         return
 
-    output_dir.mkdir(parents=True, exist_ok=True)
-
     total_files = len(json_files)
-    print(f"Found {total_files} JSON files.")
+    logger.info("Found %s JSON files.", total_files)
 
     for idx, json_file in enumerate(json_files, start=1):
         try:
@@ -120,7 +138,12 @@ def process_directory(input_dir: Path, output_dir: Path) -> None:
             paper_key = source_data.get("paper", {}).get("paper_key")
 
             if not paper_key:
-                print(f"[{idx}/{total_files}] Skipped {json_file.name}: missing paper.paper_key")
+                logger.warning(
+                    "[%s/%s] Skipped %s: missing paper.paper_key",
+                    idx,
+                    total_files,
+                    json_file.name,
+                )
                 continue
 
             gap_only_data = build_gap_only_output(source_data)
@@ -130,10 +153,23 @@ def process_directory(input_dir: Path, output_dir: Path) -> None:
             kept = gap_only_data["summary"]["kept_records_count"]
             gaps = gap_only_data["summary"]["gap_askr_items_count"]
 
-            print(f"[{idx}/{total_files}] Done: {paper_key} | kept_records={kept} | gap_items={gaps}")
+            logger.info(
+                "[%s/%s] Done: %s | kept_records=%s | gap_items=%s",
+                idx,
+                total_files,
+                paper_key,
+                kept,
+                gaps,
+            )
 
         except Exception as e:
-            print(f"[{idx}/{total_files}] Error processing {json_file.name}: {e}")
+            logger.exception(
+                "[%s/%s] Error processing %s: %s",
+                idx,
+                total_files,
+                json_file.name,
+                e,
+            )
 
 
 def main():

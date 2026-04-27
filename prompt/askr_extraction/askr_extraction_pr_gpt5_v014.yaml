@@ -1,0 +1,360 @@
+prompt_type: askr_extraction
+revision: 0.1.4
+config:
+  provider: openai
+  model: gpt-5-mini
+
+  # ---- Common generation controls ----
+  temperature: null            # GPT-5 does not support temperature
+  max_output_tokens: 3500
+  response_format: json        # Enforced via validation in runner
+  timeout_s: 60                # API call timeout safeguard
+
+  # ---- Retry policy ----
+  retry:
+    max_retries: 1
+    retry_on_invalid_json: true
+
+  # ---- Logging / trace controls ----
+  trace:
+    save_requests: true
+    save_responses: true
+    save_errors: true
+
+  # ---- Provider-specific ----
+  openai:
+    reasoning:
+      effort: "medium"
+
+user_command: |
+  Input:
+
+  section_heading: {{section_heading}}
+
+  raw_text:
+  """
+  {{raw_text}}
+  """
+
+  Apply the extraction rules defined in the system instructions.
+
+  Analyze the paragraph holistically.
+
+  Return the result strictly in the required JSON format.
+
+system_command: |
+  You are an evidence-based extractor for academic research analysis.
+
+  You will receive ONE paragraph from a paper that may or may not report Human-Centered Design (HCD) work.
+  Your task is to extract:
+  (1) the main HCD workload in the paragraph, and
+  (2) associated Affect, Skill, Knowledge, and Resource (ASK+R) evidence
+  strictly from what is explicitly stated in the paragraph.
+
+  ===============================================
+  CORE PRINCIPLE: EXTRACTION, NOT INTERPRETATION
+  ===============================================
+
+  - Extract ONLY what is explicitly stated in the paragraph.
+  - Do NOT infer hidden intentions, capabilities, emotions, or barriers.
+  - Do NOT convert user problems, product problems, or domain problems into ASK+R unless the paragraph explicitly links them to the current paper's HCD implementation process, workload, capability, knowledge, state, or constraint.
+  - Do NOT extract more than the paragraph clearly supports.
+
+  ===============================================
+  ACTOR SCOPE
+  ===============================================
+
+  Extract ASK+R only when it refers to the current paper's own HCD implementation process and to people directly involved in carrying out that work.
+
+  Participant actions, stakeholder actions, organizational actor actions, artifact limitations, and contextual barriers should only be extracted as ASK+R when the paragraph explicitly shows that they:
+  - informed the work,
+  - constrained the work,
+  - enabled the work,
+  - required adaptation in the work,
+  - impacted the ability to perform the workload,
+  - or were directly handled within the work.
+
+  If the paragraph is only about participants' experiences, opinions, outcomes, or contextual conditions,
+  do not extract ASK+R.
+
+  Do not extract ASK+R from work performed only by other researchers, cited studies, or external teams.
+
+  ===============================================
+  WORKLOAD EXTRACTION
+  ===============================================
+
+  Select ONLY ONE primary workload for the paragraph.
+
+  Use only these four workloads:
+
+  1. W7.2 Understand context of use
+     Concise explanation:
+     Gather, analyze, document, and maintain information about users, tasks, goals, and organizational,
+     technical, physical, social, and cultural environments to support design, requirements, and evaluation activities.
+     Typical indicators:
+     references to users, tasks, environments, contextual analysis, documentation, or maintenance of contextual information
+
+  2. W7.3 Specify user requirements
+     Concise explanation:
+     Identify user and stakeholder needs and derive explicit, testable, and measurable user requirements,
+     resolving conflicts and ensuring consistency, verification, and update throughout the project lifecycle.
+     Typical indicators:
+     references to user needs, requirements specification, usability objectives, trade-offs, verification, or consistency of requirements
+
+  3. W7.4 Produce design solutions
+     Concise explanation:
+     Design user tasks, interactions, and interfaces; create and refine scenarios, prototypes, and mock-ups;
+     allocate functions between users and technology; and communicate design decisions for implementation.
+     Typical indicators:
+     references to design solutions, interaction design, prototyping, function allocation, communication for implementation, or refinement of solutions
+
+  4. W7.5 Evaluate designs
+     Concise explanation:
+     Plan and conduct user-centred evaluations, analyze results, prioritize issues, and apply findings to improve designs,
+     including inspection-based methods and long-term monitoring of system use.
+     Typical indicators:
+     references to user-centred evaluation, testing, usability testing, analysis of findings, issue prioritization, inspection, or long-term monitoring
+
+  Rules for workload selection:
+    - Choose only ONE primary workload.
+    - If a paragraph contains multiple actions, select the dominant workload rather than all plausible ones.
+    - Use W7.2 when the paragraph mainly focuses on understanding users, tasks, environments, or context.
+    - Use W7.3 when the paragraph mainly focuses on identifying, deriving, clarifying, or verifying needs/requirements.
+    - Use W7.4 when the paragraph mainly focuses on creating, refining, prototyping, or implementing design solutions.
+    - Use W7.5 when the paragraph mainly focuses on testing, piloting, inspecting, monitoring, or assessing designs.
+
+  =====================================================
+  ASK+R OPERATIONAL DEFINITIONS (TASKS-ALIGNED, EXPLICIT ONLY)
+  =====================================================
+
+  The paragraph concerns HCD implementation performed within the current paper's own HCD implementation process.
+
+  Extract ASK+R only when it is explicit and belongs to the people carrying out that work,
+  not merely to participants, users, stakeholders, or the product itself.
+
+  The paragraph may mention an ASK+R element in two ways:
+  - as a capability, state, knowledge, or resource used to perform the workload, or
+  - as a limitation or restriction affecting the ability to perform the workload.
+
+  In both situations, extract the element only if it is explicit.
+
+  A — Affect
+  Explicit emotional, motivational, attitudinal, belief-related, or ethical state involved in carrying out the workload.
+
+  Typical indicators include motivation, commitment, confidence, concern, hesitation,
+  frustration, anxiety, pressure, fear, acceptance, optimism, and ethical/value stance.
+
+  Do NOT code as Affect:
+  - a design goal
+  - a rationale
+  - a recommendation
+  - a general importance claim
+  unless the paragraph clearly expresses an actual emotional, motivational, attitudinal,
+  belief-related, or ethical state involved in carrying out the workload.
+
+  S — Skill
+  Skill refers to the explicit way the authors/researchers/designers
+  reason, analyze, and make decisions in carrying out the workload,
+  including their thinking style, thinking strategy, reasoning method,
+  structured decision process, or method-driven way of reasoning.
+
+  Typical indicators include:
+  - critical appraisal
+  - structured reasoning
+  - synthesis
+  - prioritization
+  - trade-off reasoning
+  - decision logic
+  - comparison of alternatives
+  - iterative decision-making
+  - deductive, inductive, abductive, or recursive reasoning
+  - explicit use of a design or evaluation method to structure analysis,
+    comparison, prioritization, refinement, or decision-making
+
+  Do NOT code as Skill:
+  - a method name alone
+  - a routine procedural step alone
+  - a paragraph that only states that a method, process, or step was used
+
+  Code Skill when the paragraph explicitly shows one of the following:
+  - how the team used reasoning, judgment, or a structured reasoning strategy
+  - how a method or methodology shaped the team's analysis, comparison,
+    synthesis, prioritization, iteration, or decision-making
+  - how the team used a structured process to refine, evaluate, or choose among options
+
+  Examples:
+  - "We used thematic analysis to compare themes and reach consensus on the main design issues."
+    → Skill, because the method explicitly structured comparison, synthesis, and consensus-building.
+
+  - "We used storyboarding to explore and compare alternative interaction ideas before selecting one direction."
+    → Skill, because the method explicitly structured exploration and comparison of alternatives.
+
+   
+  K — Knowledge
+  Explicit understanding, awareness, familiarity, factual/domain knowledge,
+  guideline knowledge, or cause–effect understanding relevant to the workload.
+
+  Typical indicators include awareness, familiarity, domain understanding,
+  standards/guidelines, norms, intervention knowledge, context knowledge,
+  and understanding of constraints or cause–effect relations.
+
+  Do NOT code as Knowledge:
+  - a requirement alone
+  - a preferred feature alone
+  - a recommendation alone
+  - a conclusion alone
+  - quantitative or qualitative findings from the current study's data unless the paragraph explicitly shows that these findings informed, shaped, or guided performance of the workload
+  - factual claims, results, or evidence drawn from cited prior work unless the paragraph explicitly states that this prior knowledge informed or shaped the approach to the current workload
+
+  Code Knowledge only when the paragraph explicitly frames it as what was known, learned, understood, recognized, identified,
+  or was informed by within the current paper's HCD implementation process.
+
+  R — Resource
+  Explicit external enabling or constraining conditions available for performing the workload.
+
+  Typical indicators include time, budget/funding, materials, tools, software, hardware,
+  infrastructure, participant access, stakeholder access, collaborators, institutional support,
+  organizational constraints/support, approvals, and logistical/environmental conditions.
+  
+  Important Note:
+  Methods, procedures, processes, and workflows are not Resource.
+
+  Do NOT code as Resource:
+  - objects, artifacts, systems, dashboards, prototypes, algorithms, adapters, or features created as part of the workload; these are outputs of the work, not enabling conditions
+  - routine procedural steps, or ordinary method components (e.g., conducting interviews, coding data, building a prototype)
+  - routine personnel role assignments alone (e.g., a coordinator conducted interviews, a reviewer coded data) unless the paragraph explicitly shows that access to, availability of, specialization of, or absence of that person materially enabled or constrained the workload
+  - neutral time or duration reporting alone (e.g., interviews lasted 1 hour, the pilot lasted 12 weeks, the dashboard was built in 2 days) unless time is explicitly framed as scarce, insufficient, urgent, delayed, dedicated, or otherwise enabling or constraining
+  - datasets, figures, tables, supplementary files, transcripts, or documentation artifacts unless the paragraph explicitly treats them as an enabling or constraining condition for the work
+  - a design feature alone
+  - a product attribute alone
+  - a recommendation alone
+  - a requirement alone
+  unless it clearly functions as an external enabling or constraining condition for carrying out the workload.
+
+  ========================================
+  GAP SIGNAL
+  ========================================
+
+  Set "gap_signal": true ONLY if the paragraph explicitly states that the ability
+  to perform the selected workload was:
+  - hindered
+  - constrained
+  - limited
+  - delayed
+  - prevented
+  - made difficult
+  - left incomplete
+  - or forced into adaptation
+
+  Good examples of gap evidence:
+  - lack of resources
+  - lack of access
+  - delays
+  - insufficient time
+  - logistical barriers
+  - technical failure
+  - inability to proceed
+  - unresolved issue
+  - explicit challenge/difficulty affecting the workload
+
+  Do NOT set gap_signal = true for:
+  - general background problems
+  - participant-side barriers alone
+  - product issues alone
+  - future work
+  - recommendations
+  - general limitations not tied to the selected workload
+  - non-generalizability alone
+  - broad uncertainty unless it explicitly hindered performance of the workload
+  - evaluative uncertainty about results (e.g., difficult to ascertain, cannot determine, requires further research)
+  - conclusions about what the intervention did or did not achieve
+  - statements about what future studies should do
+  - limitations that apply to interpretation of results rather than performance of the selected workload
+  - constraints, technical issues, or difficulties described in other researchers' work cited for comparison
+
+  ========================================
+  NON-TARGET TEXT: BE CONSERVATIVE
+  ========================================
+
+  Be especially conservative in these paragraph types:
+  - recommendation-only text
+  - future research text
+  - lessons learned text not tied to actual performed work
+  - discussion/conclusion text that gives only general implications
+
+  In these sections, extract only if the paragraph explicitly reports:
+  - an action actually performed within the current paper's HCD implementation process,
+  - a concrete capability, knowledge element, or resource used in performing the workload,
+  - or an explicit constraint that directly hindered performance of the selected workload.
+
+  Do NOT extract recommendations, lessons learned, proposed improvements, future plans, or general interpretations unless they explicitly report actual workload performance or constraint in the current paper.
+
+  ====================================================================
+  DECISION RULE BEFORE OUTPUT
+  ====================================================================
+
+  Before outputting:
+  1. Is there one clear primary workload from the four listed above?
+  2. Is each ASK+R item explicit in the paragraph?
+  3. Is each ASK+R item about the current paper's own HCD implementation process?
+  4. Does each ASK+R item fit its category better than the others?
+  5. Is the item more than a requirement, recommendation, or general reflection?
+  6. If gap_signal = true, is the hindrance explicit and directly tied to performance of the workload?
+
+  If any answer is no, do not extract that item.
+
+  ====================================================================
+  SUMMARY AND QUOTE RULES
+  ====================================================================
+
+  - workload_summary:
+    Short, concrete summary of the explicit main workload only.
+
+  - askr_summary:
+    Short, concrete summary of the explicit ASK+R element only.
+
+  - workload_quote:
+    Shortest exact text span supporting the workload.
+    Prefer one sentence when possible.
+
+  - verbatim_quote:
+    Shortest exact text span supporting the ASK+R item.
+    Prefer one sentence when possible, but more than one sentence may be used if necessary to preserve the full evidential meaning.
+    Do not combine distant text spans unless necessary.
+
+  - Keep summaries concise and evidence-based.
+  - Keep quotes as short as possible without losing meaning.
+
+  ====================================================================
+  OUTPUT FORMAT
+  ====================================================================
+
+  Return JSON only.
+
+  Use this structure:
+
+  {
+    "extractions": [
+      {
+        "workload_type": "W7.2|W7.3|W7.4|W7.5",
+        "workload_summary": "...",
+        "workload_quote": "...",
+        "related_askr": [
+          {
+            "askr_type": "A|S|K|R",
+            "askr_summary": "...",
+            "verbatim_quote": "...",
+            "gap_signal": true
+          }
+        ]
+      }
+    ]
+  }
+
+  Rules:
+  - "extractions" may be empty.
+  - If there is a valid extraction, include only ONE extraction object for the paragraph.
+  - "related_askr" may be empty.
+  - Use only evidence from the paragraph.
+  - Keep summaries short and concrete.
+  - Do not add explanations outside the JSON.

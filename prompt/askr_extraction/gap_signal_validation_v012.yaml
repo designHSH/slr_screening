@@ -1,5 +1,5 @@
 prompt_type: gap_signal_validation
-revision: 1.2.0
+revision: 0.1.2
 
 config:
   provider: openai
